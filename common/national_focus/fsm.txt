@@ -1,0 +1,1551 @@
+focus_tree = {
+	id = fsm_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = FSM
+		} 
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1400 }
+
+focus = {
+		id = FSM_veto_native_rights_bill
+		icon = GFX_goal_support_communism
+		mutually_exclusive = {
+			focus = FSM_pass_native_rights_bill
+		}
+		x = 10
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		date > 1936.4.3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = FSM_pass_native_rights_bill
+		icon = GFX_focus_generic_treaty
+		mutually_exclusive = {
+			focus = FSM_veto_native_rights_bill
+		}
+		x = 6
+		y = 0
+		relative_position_id = FSM_veto_native_rights_bill
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		date < 1936.4.3
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = FSM_unfair_sufferage
+			add_stability = -0.05
+		}
+	}
+
+#neutralitybranch
+focus = {
+		id = FSM_neutralplaceholder1
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_veto_native_rights_bill }
+		x = -3
+		y = 1
+		relative_position_id = FSM_veto_native_rights_bill
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_neutralplaceholder2
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_neutralplaceholder1 }
+		x = -1
+		y = 1
+		relative_position_id = FSM_neutralplaceholder1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+
+focus = {
+		id = FSM_status_quo
+		icon = GFX_goal_generic_neutrality_focus
+		mutually_exclusive = {
+			focus = FSM_encourage_fascists
+			focus = FSM_kaiser_is_back
+		}
+		prerequisite = { focus = FSM_neutralplaceholder2 }
+		x = 0
+		y = 1
+		relative_position_id = FSM_neutralplaceholder2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = FSM_status_quo
+		}
+	}
+
+focus = {
+		id = FSM_revoke_sanction
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_neutralplaceholder2 }
+		x = 1
+		y = 2
+		relative_position_id = FSM_neutralplaceholder2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		ENG = {add_opinion_modifier = { target = FSM modifier = medium_decrease }
+				}
+		FRA = {add_opinion_modifier = { target = FSM modifier = medium_decrease }
+				}
+		remove_ideas = FSM_sanctions
+		}
+	}
+
+focus = {
+		id = FSM_subsidize_colonial_companies
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_revoke_sanction }
+		x = 0
+		y = 1
+		relative_position_id = FSM_revoke_sanction
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}	
+
+
+focus = {
+		id = FSM_civilian_companies
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = FSM_subsidize_colonial_companies }
+		x = -1
+		y = 1
+		relative_position_id = FSM_subsidize_colonial_companies
+		mutually_exclusive = {
+			focus = FSM_military_companies
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}	
+
+focus = {
+		id = FSM_military_companies
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = FSM_subsidize_colonial_companies }
+		x = 1
+		y = 1
+		relative_position_id = FSM_subsidize_colonial_companies
+		mutually_exclusive = {
+			focus = FSM_civilian_companies
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}	
+
+#Kaiser Is Back Branch
+focus = {
+		id = FSM_kaiser_is_back
+		icon = GFX_focus_ger_return_of_the_kaiser
+		mutually_exclusive = {
+			focus = FSM_encourage_fascists
+			focus = FSM_status_quo
+		}
+		prerequisite = { focus = FSM_neutralplaceholder2 }
+		x = 3
+		y = 1
+		relative_position_id = FSM_neutralplaceholder2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		GER = {
+					has_government = neutrality
+				}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = FSM_join_kaiser_faction
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_kaiser_is_back }
+		x = 0
+		y = 1
+		relative_position_id = FSM_kaiser_is_back
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		GER = {
+					has_government = neutrality
+				}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = {
+			country_event = { hours = 2 id = fsm.6 }
+		}
+		}
+	}
+focus = {
+		id = FSM_reinstate_the_associate_state
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_join_kaiser_faction }
+		x = 0
+		y = 1
+		relative_position_id = FSM_join_kaiser_faction
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		GER = {
+				has_government = neutrality
+				}
+		is_in_faction_with = GER
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_cosmetic_tag = FSM_KAISER
+		}
+	}
+
+#Fascism Branch
+focus = {
+		id = FSM_encourage_fascists
+		icon = GFX_goal_support_fascism
+		mutually_exclusive = {
+			focus = FSM_kaiser_is_back
+			focus = FSM_status_quo
+		}
+		prerequisite = { focus = FSM_neutralplaceholder2 }
+		x = -2
+		y = 1
+		relative_position_id = FSM_neutralplaceholder2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		has_government = fascism
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = FSM_fascist_sympathizers
+		}
+	}
+focus = {
+		id = FSM_snap_elections
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_encourage_fascists }
+		x = 0
+		y = 1
+		relative_position_id = FSM_encourage_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		has_government = fascism
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { hours = 2 id = fsm.7 }
+		}
+	}
+focus = {
+		id = FSM_join_axis
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = FSM_snap_elections }
+		x = 1
+		y = 1
+		relative_position_id = FSM_snap_elections
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = fascism
+		GER = {
+					has_government = fascism
+				}
+		}
+
+		bypass = {
+			is_in_faction_with = GER
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = {
+			country_event = { hours = 2 id = fsm.8 }
+		}
+		}
+	}
+
+focus = {
+		id = FSM_germans_over_all
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = FSM_snap_elections }
+		x = -1
+		y = 1
+		relative_position_id = FSM_snap_elections
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = fascism
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_brotherhood
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_germans_over_all }
+		x = -1
+		y = 1
+		relative_position_id = FSM_germans_over_all
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = fascism
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_unite_germans
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_brotherhood }
+		x = 0
+		y = 1
+		relative_position_id = FSM_brotherhood
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+focus = {
+		id = FSM_military_buildup
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = FSM_germans_over_all }
+		x = 1
+		y = 1
+		relative_position_id = FSM_germans_over_all
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = fascism
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_aggressive_strikes
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_military_buildup }
+		x = 0
+		y = 1
+		relative_position_id = FSM_military_buildup
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = fascism
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+
+focus = {
+		id = FSM_claims_on_tiquea
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_aggressive_strikes }
+		x = 0
+		y = 1
+		relative_position_id = FSM_aggressive_strikes
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = fascism
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_claim = 923
+		}
+	}
+
+focus = {
+		id = FSM_claims_on_antarctica
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_military_buildup }
+		prerequisite = { focus = FSM_antarctic_expedition }
+		x = 1
+		y = 3
+		relative_position_id = FSM_military_buildup
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = fascism
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+#liberalbranch
+focus = {
+		id = FSM_liberalplaceholder1
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_pass_native_rights_bill }
+		x = 3
+		y = 1
+		relative_position_id = FSM_pass_native_rights_bill
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_nationalize_plantations
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_liberalplaceholder1 }
+		x = 1
+		y = 1
+		relative_position_id = FSM_liberalplaceholder1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		consumer_goods_factor = 1.2
+		}
+	}
+
+focus = {
+		id = FSM_liberalplaceholder3
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_liberalplaceholder1 }
+		x = -1
+		y = 1
+		relative_position_id = FSM_liberalplaceholder1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+focus = {
+		id = FSM_accept_german_scientists
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_liberalplaceholder3 }
+		x = -1
+		y = 1
+		relative_position_id = FSM_liberalplaceholder3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+			GER = {
+				NOT= {
+					has_government = fascism
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+#allies branch
+focus = {
+		id = FSM_negotiate_sanctions
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_nationalize_plantations }
+		x = -1
+		y = 1
+		relative_position_id = FSM_nationalize_plantations
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_allied_research_bonus
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = FSM_negotiate_sanctions }
+		x = 0
+		y = 1
+		relative_position_id = FSM_negotiate_sanctions
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_join_allies
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_allied_research_bonus }
+		x = 0
+		y = 1
+		relative_position_id = FSM_allied_research_bonus
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_admit_gdea
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_nationalize_plantations }
+		x = 1
+		y = 1
+		relative_position_id = FSM_nationalize_plantations
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+
+#commonbranch
+focus = {
+		id = FSM_rebuild_the_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = FSM_pass_native_rights_bill focus = FSM_veto_native_rights_bill}
+		x = -3
+		y = 1
+		relative_position_id = FSM_pass_native_rights_bill
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		933 = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = FSM_ripples_of_shanghai
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_rebuild_the_dockyards }
+		x = 0
+		y = 1
+		relative_position_id = FSM_rebuild_the_dockyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_kohn_gambit
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_ripples_of_shanghai }
+		mutually_exclusive = {
+			focus = FSM_open_stocks
+		}
+		x = -1
+		y = 1
+		relative_position_id = FSM_ripples_of_shanghai
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_open_stocks
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_ripples_of_shanghai }
+		mutually_exclusive = {
+			focus = FSM_kohn_gambit
+		}
+		x = 1
+		y = 1
+		relative_position_id = FSM_ripples_of_shanghai
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+focus = {
+		id = FSM_commonplaceholder1
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_kohn_gambit focus = FSM_open_stocks}
+		x = -3
+		y = 1
+		relative_position_id = FSM_open_stocks
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_commonplaceholder2
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_kohn_gambit focus = FSM_open_stocks}
+		x = -1
+		y = 1
+		relative_position_id = FSM_open_stocks
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_antarctic_expedition
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_commonplaceholder1 }
+		x = 0
+		y = 4
+		relative_position_id = FSM_commonplaceholder1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+#annexmanu
+focus = {
+		id = FSM_supress_manu_nationalism
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = FSM_kohn_gambit focus = FSM_open_stocks}
+		x = 1
+		y = 1
+		relative_position_id = FSM_open_stocks
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		country_exists = MNU
+		MNU = {
+					is_puppet_of = ROOT
+				}
+		}
+
+		bypass = {
+		927 = {
+		is_controlled_by = ROOT
+		}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = FSM_annex_manu
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_supress_manu_nationalism }
+		x = 0
+		y = 1
+		relative_position_id = FSM_supress_manu_nationalism
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		MNU = {
+			country_event = { hours = 2 id = fsm.4 }
+		}
+		}
+	}
+
+focus = {
+		id = FSM_sieze_fjinland
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_ripples_of_shanghai }
+		prerequisite = { focus = FSM_join_axis focus = FSM_join_allies}
+		x = -3
+		y = 4
+		relative_position_id = FSM_ripples_of_shanghai
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+			FJN = {
+				is_puppet_of = HOL
+			}
+			HOL = {
+    				has_capitulated = yes
+    			}
+			if = {
+ 			   limit = {
+        			has_government = fascism
+    				}
+    			NOT ={
+    				is_in_faction_with = HOL
+    			}
+    			has_government = fascism
+    			is_in_faction_with = GER
+    		else = {
+    		has_government = democratic
+    		is_in_faction_with = HOL
+    	}
+	}
+		}
+
+		bypass = {
+			FJN = {
+				is_puppet_of = FSM
+			}
+			AND = {
+			owns_state = 912
+			owns_state = 913
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			puppet = FJN
+			HOL = {add_opinion_modifier = { target = FSM modifier = medium_decrease }
+				}
+		}
+	}
+
+
+
+
+
+
+
+#Military Branch
+
+focus = {
+		id = FSM_military_start
+		icon = GFX_goal_support_communism
+		x = 28
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+#air branch
+focus = {
+		id = FSM_airwings
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_military_start }
+		x = 2
+		y = 1
+		relative_position_id = FSM_military_start
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		research_bonus = { naval_equipment = 0.10 }
+		}
+	}
+
+
+#army branch
+focus = {
+		id = FSM_army_reform
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_military_start }
+		x = 0
+		y = 1
+		relative_position_id = FSM_military_start
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+
+
+focus = {
+		id = FSM_army_reform
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_military_start }
+		x = 0
+		y = 1
+		relative_position_id = FSM_military_start
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+
+focus = {
+		id = FSM_bushland_troops
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_army_reform }
+		x = 0
+		y = 1
+		relative_position_id = FSM_army_reform
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+
+#navy branch
+
+focus = {
+		id = FSM_heavy_warships
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_military_start }
+		x = -2
+		y = 1
+		relative_position_id = FSM_military_start
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+
+focus = {
+		id = FSM_austral_dominance_doctrine
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_heavy_warships }
+		x = -2
+		y = 1
+		relative_position_id = FSM_heavy_warships
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		AST = {add_opinion_modifier = { target = FSM modifier = medium_decrease }
+				}
+		NZL = {add_opinion_modifier = { target = FSM modifier = medium_decrease }
+				}
+		}
+	}
+
+focus = {
+		id = FSM_aircraft_carrier
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_heavy_warships }
+		x = 0
+		y = 1
+		relative_position_id = FSM_heavy_warships
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		research_bonus = { naval_equipment = 0.10 }
+		}
+	}
+
+
+
+}

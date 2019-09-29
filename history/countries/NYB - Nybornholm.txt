@@ -1,0 +1,91 @@
+﻿capital = 853
+
+oob = "NYB_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+add_political_power = 500
+set_politics = {
+
+	
+	
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+		democratic = 48
+		fascism = 20
+		communism = 12
+		neutrality = 20
+	
+	}
+set_convoys = 60
+
+create_country_leader = {
+	name = "Aksel Jepsen"
+	desc = "POLITICS_AKSEL_JEPSEN_DESC"
+	picture = "Portrait_NYB_A_Jepsen.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Julius Frandsen"
+	desc = "POLITICS_JULIUS_FRANDSEN_DESC"
+	picture = "Portrait_NYB_J_Frandsen.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anders Thomsen"
+	desc = "POLITICS_ANDERS_THOMSEN_DESC"
+	picture = "Portrait_NYB_A_Thomsen.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Mikkelsen"
+	desc = "POLITICS_WILHELM_MIKKELSEN_DESC"
+	picture = "Portrait_NYB_W_Mikkelsen.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Peter Poulsen"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 3
+}

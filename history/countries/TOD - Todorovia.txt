@@ -1,0 +1,89 @@
+﻿capital = 901
+
+oob = "TOD_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	transport = 1
+}
+
+add_political_power = 200
+set_politics = {
+
+	
+	
+	ruling_party = neutrality
+	last_election = "1934.8.24"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+		democratic = 20
+		fascism = 20
+		communism = 15
+		neutrality = 45
+	}
+set_convoys = 150
+set_stability = 0.6
+set_war_support = 0.1
+
+create_country_leader = {
+	name = "Mauricio Ovorón"
+	desc = "POLITICS_M_OVORON_DESC"
+	picture = "Portrait_TOD_M_Ovoron.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Íñigo Montoya"
+	desc = "POLITICS_INIGO_MONTOYA_DESC"
+	picture = "Portrait_TOD_I_Montoya.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ramiro Antonio Idiazabalez"
+	desc = "POLITICS_RA_IDIAZABALEZ_DESC"
+	picture = "Portrait_TOD_RA_Idiazabalez.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Tomás Angélico Todorov"
+	desc = "POLITICS_TA_TODOROV_DESC"
+	picture = "Portrait_TOD_TA_Todorov.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Juan Pablo Iglesias"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+}

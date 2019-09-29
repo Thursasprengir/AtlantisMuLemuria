@@ -1,0 +1,2975 @@
+focus_tree = {
+	id = tod_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = TOD
+		}
+	}
+	
+
+	default = no
+
+	
+	continuous_focus_position = { x = 20 y = 1200 }
+	
+focus = {
+		id = TOD_start
+		icon = GFX_tod_start
+		x = 10
+		y = 0
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	
+####################################
+#OUTWARD BRANCH
+####################################
+	focus = {
+		id = TOD_cooperation
+		icon = GFX_goal_continuous_increase_nu
+		prerequisite = { focus = TOD_start }
+		mutually_exclusive = {
+			focus = TOD_isolation
+			focus = TOD_conquest
+		}
+		x = 4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = TOD_outwarddemocracy1
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = TOD_cooperation }
+		mutually_exclusive = {
+			focus = TOD_outwardcommunism1
+		}
+		x = 2
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = democratic_influence
+		}
+	}
+
+focus = {
+		id = TOD_outwarddemocracy2
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = TOD_outwarddemocracy1 }
+		x = 2
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					#is_major = yes
+					has_government = democratic
+					NOT = { tag = TOD }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = TOD_republicanism
+				}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_foreignaiddemocracy1
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TOD_outwarddemocracy2 }
+		x = 4
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			901 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+
+focus = {
+		id = TOD_foreignaiddemocracy2
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = TOD_foreignaiddemocracy1 }
+		x = 4
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			900 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+focus = {
+		id = TOD_foreignaiddemocracy3
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = TOD_foreignaiddemocracy2 }
+		x = 4
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			902 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+
+focus = {
+		id = TOD_gloriousvolunteers1
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TOD_outwarddemocracy2 }
+		x = 0
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = volunteer_corps_focus
+		}
+	}
+
+focus = {
+		id = TOD_gearingupforwar1
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = TOD_gloriousvolunteers1 }
+		x = 0
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_gearingupforwar2
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = TOD_gearingupforwar1 }
+		x = 0
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_foreigninvestments
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = TOD_gloriousvolunteers1 }
+		prerequisite = {
+			focus = TOD_foreignaiddemocracy1}
+		x = 2
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.025
+		}
+	}
+
+focus = {
+		id = TOD_foreignownedfactories
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = TOD_foreigninvestments }
+		x = 2
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.025
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = TOD_outwardcommunism1
+		icon = GFX_focus_yug_pan_slavic_congress
+		prerequisite = { focus = TOD_cooperation }
+		mutually_exclusive = {
+			focus = TOD_outwarddemocracy1
+		}
+		x = 6
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
+			add_timed_idea = { idea = communist_influence days = 1095 }
+			set_politics = { ruling_party = communism elections_allowed = yes } #good and nice communism has elections
+			add_popularity = { ideology = communism popularity = 0.25 }
+		}
+	}
+
+focus = {
+		id = TOD_outwardcommunism2
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = TOD_outwardcommunism1 }
+		x = 6
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.1 }
+			add_ideas = socialist_education
+		}
+	}
+
+focus = {
+		id = TOD_outwardcommunism3
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = TOD_outwardcommunism2 }
+		x = 6
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					free_building_slots = { # avoid wastelands
+						building = industrial_complex
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_research_slot = 1
+			if = {
+				limit = {
+					original_research_slots < 3
+				}
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1.0
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 1.0
+					uses = 1
+					category = industry
+				}	
+				add_tech_bonus = {
+					name = infantry_artillery_bonus #@#
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}	
+			}
+		}
+	}
+
+focus = {
+		id = TOD_outwardcommunism4
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = TOD_outwardcommunism3 }
+		x = 6
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					free_building_slots = { # avoid wastelands
+						building = industrial_complex
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_outwardcommunism5
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = TOD_outwardcommunism4 }
+		x = 6
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					free_building_slots = { # avoid wastelands
+						building = industrial_complex
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			ARA = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 1000
+			}
+			add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+			add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = 100
+				}
+			add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+			}
+			CTT = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 1000
+			}
+			add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+			add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = 100
+				}
+			add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+			}
+			CNJ = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 1000
+			}
+			add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+			add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = 100
+				}
+			add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+			}
+			TIQ = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 1000
+			}
+			add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+			add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = 100
+				}
+			add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_outwardcommunism6
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = TOD_outwardcommunism5 }
+		x = 6
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.1 }
+			add_stability = 0.05
+			dismantle_faction = yes
+			create_faction = TOD_fed_tod_soc_states		
+			add_ai_strategy = {
+				type = alliance
+				id = SOV
+				value = -200
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = SOV
+				value = -200
+			}
+			add_ai_strategy = {
+				type = protect
+				id = SOV
+				value = -200
+			}
+			SOV = {
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = -200
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = -200
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = -200
+				}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_foreignadvisors
+		icon = GFX_goal_military_mission
+		prerequisite = {
+			focus = TOD_outwardcommunism2
+			focus = TOD_fascismplaceholder2
+					}
+		x = 8
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Foreign Education Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						owner = TOD
+					}
+					create_unit = {
+						division = "name = \"2nd Foreign Education Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						owner = TOD
+					}
+				}
+		}
+	}
+
+####################################
+#AGGRESSION BRANCH
+####################################
+	focus = {
+		id = TOD_conquest
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = TOD_start }
+		mutually_exclusive = {
+			focus = TOD_cooperation
+			focus = TOD_isolation
+		}
+		x = 10
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.05
+			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
+			add_timed_idea = {
+				idea = nationalism
+				days = 720
+			}
+		}
+	}
+
+focus = {
+		id = TOD_fascismplaceholder1
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TOD_conquest }
+		x = 10
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+
+focus = {
+		id = TOD_fascismplaceholder2
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TOD_fascismplaceholder1 }
+		x = 10
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+focus = {
+		id = TOD_fascismplaceholder3
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TOD_fascismplaceholder2 }
+		x = 13
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+focus = {
+		id = TOD_fascismplaceholder4
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TOD_fascismplaceholder3 }
+		x = 13
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+focus = {
+		id = TOD_fascismplaceholder5
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TOD_fascismplaceholder4 }
+		x = 13
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+focus = {
+		id = TOD_fascismplaceholder6
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TOD_fascismplaceholder5 }
+		x = 13
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+focus = {
+		id = TOD_warfooting1
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = TOD_fascismplaceholder2 }
+		x = 10
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_preparingthepopulation
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = TOD_warfooting1 }
+		x = 10
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = wartime_industry_focus
+		}
+	}
+
+focus = {
+		id = TOD_theyoung
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = TOD_preparingthepopulation }
+		x = 9
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = military_youth_focus
+			add_manpower = 150000
+		}
+	}
+
+focus = {
+		id = TOD_theold
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = TOD_preparingthepopulation }
+		x = 11
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+			add_manpower = 150000
+		}
+	}
+
+focus = {
+		id = TOD_everyone
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = TOD_theyoung}
+		prerequisite = { focus = TOD_theold}
+		x = 10
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_manpower = 300000
+		}
+	}
+
+
+
+
+####################################
+#INWARD BRANCH
+####################################
+	focus = {
+		id = TOD_isolation
+		icon = GFX_goal_political_pressure
+		prerequisite = { focus = TOD_start }
+		mutually_exclusive = {
+			focus = TOD_cooperation
+			focus = TOD_conquest
+		}
+		x = 15
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
+			if = {
+				limit = { NOT = { has_idea = neutrality_idea } }
+				add_ideas = neutrality_idea
+			}
+			add_political_power = 150
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder1
+		icon = GFX_goal_political_pressure
+		prerequisite = { focus = TOD_isolation }
+		x = 15
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = 0.10
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder2
+		icon = GFX_goal_political_pressure
+		prerequisite = { focus = TOD_inwardplaceholder1 }
+		x = 15
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder3
+		icon = GFX_goal_political_pressure
+		prerequisite = { focus = TOD_inwardplaceholder2 }
+		x = 15
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = partisan_suppression_focus
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder4
+		icon = GFX_goal_political_pressure
+		prerequisite = { focus = TOD_inwardplaceholder3 }
+		x = 15
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.2
+			add_timed_idea = {
+			idea = political_turmoil
+				days = 360
+			}
+			add_timed_idea = {
+			idea = shattered_government
+				days = 360
+			}
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder5
+		icon = GFX_goal_political_pressure
+		prerequisite = { focus = TOD_inwardplaceholder4 }
+		x = 15
+		y = 6
+
+		cost = 45
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.3
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder6
+		icon = GFX_goal_political_pressure
+		prerequisite = { focus = TOD_inwardplaceholder5 }
+		x = 15
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.08
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = arms_factory
+									size > 1
+									include_locked = yes
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+							set_state_flag = GER_integrate_war_economies_1
+						}
+						add_popularity = {
+    ideology = neutrality
+    popularity = 0.5
+}
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder7
+		icon = GFX_goal_propaganda
+		prerequisite = { 
+			focus = TOD_inwardplaceholder6 
+			focus = TOD_fascismplaceholder6
+			focus = TOD_outwardcommunism6
+			focus = TOD_reckoning
+			focus = TOD_everyone}
+		x = 15
+		y = 8
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		#the personality cult begins
+			add_ideas = indoctrination_focus
+			add_political_power = 150
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder8
+		icon = GFX_goal_propaganda
+		prerequisite = { focus = TOD_inwardplaceholder7 }
+		x = 15
+		y = 9
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		#the personality cult deepens
+		set_rule = {
+				can_create_factions = yes
+			}
+		create_faction = TOD_center_of_the_world
+		}
+	}
+
+focus = {
+		id = TOD_inwardplaceholder9
+		icon = GFX_goal_propaganda
+		prerequisite = { focus = TOD_inwardplaceholder8 }
+		x = 15
+		y = 10
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		#the personality cult becomes inviolable
+			add_ideas = ideological_fanaticism_focus
+			hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+	}
+	}
+
+focus = {
+		id = TOD_civil_wall
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = TOD_isolation }
+		x = 17
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = TOD
+							is_in_faction_with = TOD
+						}
+						has_full_control_of_state = 901 
+						has_full_control_of_state = 902 
+					}
+				}
+					901 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13973
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13972
+							instant_build = yes
+						}
+					}
+					902 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13970
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13969
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13968
+							instant_build = yes
+						}
+					}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_civil_wall2
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = TOD_civil_wall }
+		x = 17
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = TOD
+							is_in_faction_with = TOD
+						} 
+						has_full_control_of_state = 902 
+					}
+				}
+					902 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13980
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13981
+							instant_build = yes
+						}
+					}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_civil_wall3
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = TOD_civil_wall2 }
+		x = 17
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = TOD
+							is_in_faction_with = TOD
+						} 
+						has_full_control_of_state = 902 
+						has_full_control_of_state = 903 
+					}
+				}
+					902 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13982
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13983
+							instant_build = yes
+						}
+					}
+					903 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 14000
+							instant_build = yes
+						}
+					}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_civil_wall4
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = TOD_civil_wall3 }
+		x = 17
+		y = 5
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = TOD
+							is_in_faction_with = TOD
+						} 
+						has_full_control_of_state = 903 
+						has_full_control_of_state = 900 
+					}
+				}
+					903 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13999
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13998
+							instant_build = yes
+						}
+					}
+					900 = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13997
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13996
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13995
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13994
+							instant_build = yes
+						}
+					}
+			}
+		}
+	}
+
+focus = {
+		id = TOD_civil_wall5
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = TOD_civil_wall4 }
+		x = 17
+		y = 6
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			901 = {
+				#Fortify the coast
+				add_building_construction = {
+					type = coastal_bunker
+					province = 13973
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 13974
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 13975
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 13990
+					level = 2
+					instant_build = yes
+				}
+			}
+			900 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 13991
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 13992
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 13993
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 13994
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+##############################
+#Military BRANCH
+##############################
+
+focus = {
+		id = TOD_militarybuildup
+		icon = GFX_focus_generic_little_entente
+		x = 33
+		y = 0
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_militaryfactories1
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = TOD_militarybuildup }
+		x = 31
+		y = 1
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_militaryfactories2
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = TOD_militaryfactories1 }
+		x = 31
+		y = 2
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_militaryfactories3
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = TOD_militaryfactories2 }
+		x = 31
+		y = 3
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_militarycorps1
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = TOD_militarybuildup }
+		x = 33
+		y = 1
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_militarycorps2
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = TOD_militarycorps1}
+		prerequisite = { focus = TOD_militaryfactories3}
+		prerequisite = { focus = TOD_naval2}
+		x = 33
+		y = 4
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_militarycorps3
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = TOD_militarycorps2}
+		x = 33
+		y = 5
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 25
+			army_experience = 25
+			navy_experience = 25
+		}
+	}
+	
+focus = {
+		id = TOD_airforce
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = TOD_militarycorps3 }
+		x = 33
+		y = 6
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 25
+			901 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}	
+			}				
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_armycorps
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = TOD_militarycorps3 }
+		x = 31
+		y = 6
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_specialcorps
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = TOD_militarycorps3 }
+		x = 35
+		y = 6
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_naval1
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = TOD_militarybuildup }
+		x = 35
+		y = 1
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = MEX_brown_water_navy
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_naval2
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = TOD_naval1}
+		x = 35
+		y = 3
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MEX_brown_water_navy
+				add_idea = MEX_blue_water_navy
+			}
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = tooltip_capital_ships
+				bonus = 1.0
+				uses = 1
+				category = ca_tech
+				category = bb_tech
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_marines1
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = TOD_naval1}
+		x = 37
+		y = 2
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.25
+				uses = 1
+				technology = marines
+			}
+		}
+	}
+	
+focus = {
+		id = TOD_marines_cont
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = TOD_marines1}
+		x = 37
+		y = 3
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.25
+				uses = 1
+				technology = marines2
+			}
+		}
+	}
+
+######################
+#Internal Politics
+######################
+
+focus = {
+		id = TOD_internalpolitics
+		icon = GFX_focus_voter_registration_act
+		x = 26
+		y = 0
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_internalcrisis
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		prerequisite = { focus = TOD_internalpolitics}
+		x = 26
+		y = 1
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_nocompromise
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = TOD_internalcrisis}
+		x = 23
+		y = 2
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_therewillbeblood
+		icon = GFX_focus_AST_squander_bug
+		prerequisite = { focus = TOD_nocompromise}
+		mutually_exclusive = {
+			focus = TOD_exile
+		}
+		x = 22
+		y = 3
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_loyalistmilitias
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = TOD_therewillbeblood}
+		mutually_exclusive = {
+			focus = TOD_mercenaries
+		}
+		x = 20
+		y = 4
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = volunteer_corps_focus
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+focus = {
+		id = TOD_mercenaries
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = TOD_therewillbeblood}
+		mutually_exclusive = {
+			focus = TOD_loyalistmilitias
+		}
+		x = 22
+		y = 4
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = militarism_focus
+			army_experience = 20
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+focus = {
+		id = TOD_exile
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = TOD_nocompromise}
+		mutually_exclusive = {
+			focus = TOD_therewillbeblood
+		}
+		x = 24
+		y = 3
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_allofthem
+		icon = GFX_focus_cze_german_puppet
+		prerequisite = { focus = TOD_exile}
+		mutually_exclusive = {
+			focus = TOD_onlytheinstigators
+		}
+		x = 24
+		y = 4
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_onlytheinstigators
+		icon = GFX_focus_mex_arrest_general_cedillo
+		prerequisite = { focus = TOD_exile}
+		mutually_exclusive = {
+			focus = TOD_allofthem
+		}
+		x = 26
+		y = 4
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_reckoning
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = {
+			focus = TOD_loyalistmilitias
+			focus = TOD_mercenaries
+			focus = TOD_allofthem
+			focus = TOD_onlytheinstigators
+			focus = TOD_greatpatrioticspeech
+					}
+		x = 23
+		y = 7
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_workoncompromise
+		icon = GFX_goal_continuous_boost_freedom
+		prerequisite = { focus = TOD_internalcrisis}
+		x = 29
+		y = 2
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_visitthepeople
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = TOD_workoncompromise}
+		x = 29
+		y = 3
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_addressparliament
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = TOD_visitthepeople}
+		x = 29
+		y = 4
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = TOD_greatpatrioticspeech
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = TOD_addressparliament}
+		x = 29
+		y = 5
+
+		cost = 18
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+
+
+}

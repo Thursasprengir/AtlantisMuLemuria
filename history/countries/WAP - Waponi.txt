@@ -1,0 +1,86 @@
+﻿capital = 869
+
+oob = "WAP_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+add_political_power = 500
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1932.12.10"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+	set_popularities = {
+		democratic = 30
+		fascism = 4
+		communism = 66
+	}
+
+set_convoys = 20
+
+create_country_leader = {
+	name = "Manua Arava"
+	desc = "POLITICS_MANUA_ARAVA_DESC"
+	picture = "Portrait_WAP_Manua_Arava.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pomara Teata"
+	desc = "POLITICS_POMARA_TEATA_DESC"
+	picture = "Portrait_WAP_Pomara_Teata.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Temana Matahi"
+	desc = "POLITICS_TEMANA_MATAHI_DESC"
+	picture = "Portrait_WAP_Temana_Matahi.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ari Eperona"
+	desc = "POLITICS_ARI_EPERONA_DESC"
+	picture = "Portrait_WAP_Ari_Eperona.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Thor Snurri Snurrlsson"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 3
+}

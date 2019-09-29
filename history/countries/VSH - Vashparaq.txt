@@ -1,0 +1,81 @@
+﻿capital = 856
+
+oob = "VSH_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_engineers = 1
+	gw_artillery = 1
+}
+
+add_political_power = 500
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.1.28"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+		democratic = 0
+		fascism = 0
+		communism = 0
+		neutrality = 100
+	}
+set_convoys = 80
+
+create_country_leader = {
+	name = "Neqrumunj Drmudril"
+	desc = "POLITICS_NEQRUMUNJ_DRMUDRIL_DESC"
+	picture = "Portrait_VSH_Neqrumunj_Drmudril.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Zojjua Qsars"
+	desc = "POLITICS_ZOJJUA_QSARS_DESC"
+	picture = "Portrait_VSH_Zojjua_Qsars.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vrepil Oruqijjla"
+	desc = "POLITICS_VREPIL_ORUQIJJLA_DESC"
+	picture = "Portrait_VSH_Vrepil_Oruqijjla.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Drajjiq Horvad"
+	desc = "POLITICS_DRAJJIQ_HORVAD_DESC"
+	picture = "Portrait_VSH_Drajjiq_Horvad.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Miql Litjun"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 3
+}

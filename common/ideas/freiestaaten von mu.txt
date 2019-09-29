@@ -1,0 +1,489 @@
+ideas = {
+
+
+country = {
+		FSM_unfair_sufferage = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				drift_defence_factor = 0.5
+			}
+		}
+		
+		combat_support_ships = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			traits = { combat_support_ships }
+		}
+		
+		floating_airfields = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			traits = { carrier_size_increase }
+		}
+		
+		juggernaut_upgrade = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			traits = { juggernaut_upgrade }
+		}
+		
+		submarine_range_upgrade = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			traits = { submarine_range_upgrade }
+		}
+		
+		large_ship_expertise = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			traits = { large_ship_expertise }
+		}
+	
+	}
+	
+	political_advisor = {
+		FSM_thanikas_bousinissi = {
+			
+			
+			allowed = {
+				original_tag = "FSM"
+			}
+			
+
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+			
+		FSM_anakistas_gobriski = {
+			
+			
+			allowed = {
+				original_tag = "FSM"
+			}
+			
+
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		FSM_laimaria_unismitri = {
+			
+			
+			allowed = {
+				original_tag = "FSM"
+			}
+			
+
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+#NAMES CHANGED UP TO THIS POINT
+	FSM_damaskinos = {
+
+		picture = generic_political_advisor_europe_5
+		
+		allowed = {
+			original_tag = FSM
+		}
+		
+		traits = { compassionate_gentleman }
+	}
+
+	FSM_georgios_papandreou = {
+
+		picture = generic_political_advisor_europe_2
+			
+		allowed = {
+			original_tag = FSM
+		}
+		
+		traits = { silent_workhorse }
+	}
+
+	FSM_evripidis_bakirtris = {
+
+		picture = generic_political_advisor_europe_3
+		
+		allowed = {
+			original_tag = FSM
+		}
+		
+		traits = { war_industrialist }
+	}
+}
+
+theorist = {
+
+	FSM_nikolaos_plastiras = {
+				
+		picture = generic_army_europe_3
+
+		allowed = {
+			original_tag = FSM
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { military_theorist }
+	}
+
+	FSM_eleftherios_venizelos = {
+				
+		picture = generic_political_advisor_europe_1
+			
+		allowed = {
+			original_tag = FSM
+		}
+		
+		research_bonus = {
+			air_doctrine = 0.07
+		}
+		
+		traits = { air_warfare_theorist }
+	}
+}
+	# MILITARY
+	army_chief = {
+		
+		FSM_alexander_papagos = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		FSM_konstantinos_ventiris = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		
+		FSM_panagiotis_gazis = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		FSM_vasilios_tsarpalis = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+	
+		
+		FSM_alexandros_sakellariou = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		FSM_petros_voulgaris = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		FSM_aris_velouchiotis = {
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+			picture = generic_army_europe_1
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		FSM_napoleon_zervas = {
+			
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+			picture = generic_army_europe_2
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		FSM_nikos_beloyannis = {
+			
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+			picture = generic_air_europe_2
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		FSM_aristeidis_moraitinis = {
+			
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+			picture = generic_air_europe_2
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		FSM_gnaf = {
+			
+			picture = generic_air_manufacturer_3
+
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			# trainers for RAF, great handling
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = { 
+			
+		designer = yes
+		
+		FSM_royal_hellenic_naval_shipyard = {
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = FSM
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+}

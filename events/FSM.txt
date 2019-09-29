@@ -1,0 +1,114 @@
+add_namespace = fsm
+
+country_event = {
+
+	id = fsm.1
+	title = fsm.1.t
+	desc = fsm.1.d
+	picture = GFX_report_event_chinese_officers
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FSM
+		has_defensive_war = no
+		date > 1936.4.3
+		NOT = { has_idea = FSM_unfair_sufferage }
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.1.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+}
+country_event = {
+
+	id = fsm.2
+	title = fsm.2.t
+	desc = fsm.2.d
+	picture = GFX_report_event_chinese_officers
+	fire_only_once = yes
+	trigger = {
+		tag = FSM
+		has_defensive_war = no
+		date > 1936.4.3
+		has_idea = FSM_unfair_sufferage
+	}
+	mean_time_to_happen = {
+		days = 12
+	}
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.2.a
+	}
+}
+
+#DMS-GdEA Merger Announced
+country_event = {
+
+	id = fsm.3
+	title = fsm.3.t
+	desc = fsm.3.d
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.3.a
+		set_party_name = { ideology = communism long_name = FSM_communism_coalition_long name = FSM_communism_coalition }
+	}
+}
+#Manu Annexation Event
+country_event = {
+
+	id = fsm.4
+	title = fsm.4.t
+	desc = fsm.4.d
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.4.a
+		FSM = {
+			country_event = { hours = 2 id = fsm.5 }
+		}
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.4.b
+	}
+}
+#Manu Accepts
+country_event = {
+
+	id = fsm.5
+	title = fsm.5.t
+	desc = fsm.5.d
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.5.a
+		MNU = {
+			every_unit_leader = {
+				set_nationality = FSM
+			}
+		}
+		annex_country = { target = MNU transfer_troops = yes }
+	}
+}

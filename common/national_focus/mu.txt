@@ -1,0 +1,2048 @@
+focus_tree = {
+	id = muu_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = MUU
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 2200 }
+
+
+focus = {
+		id = MUU_national_tragedy
+		icon = GFX_goal_support_communism
+		#prerequisite = { focus =  }
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+		x = 7
+		y = 0
+		
+		#relative_position_id = MUU_international_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+
+focus = {
+		id = MUU_emergency_meeting
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = MUU_national_tragedy }
+		mutually_exclusive = {
+			focus = MUU_blame_public
+		}
+		x = -5
+		y = 1
+		
+		relative_position_id = MUU_national_tragedy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = MUU_emergency_restruct
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = MUU_emergency_meeting }
+		mutually_exclusive = {
+			focus = MUU_lower_house_ref
+			focus = MUU_upper_house_ref
+		}
+		x = -3
+		y = 2
+		
+		relative_position_id = MUU_national_tragedy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}			
+			add_stability = 0.15
+		}
+	}
+
+focus = {
+		id = MUU_blame_public
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MUU_national_tragedy }
+		mutually_exclusive = {
+			focus = MUU_emergency_meeting
+			focus = MUU_government_purges
+		}
+		x = -2
+		y = 1
+		
+		relative_position_id = MUU_national_tragedy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+
+focus = {
+		id = MUU_government_purges
+		icon = GFX_focus_SAF_colonialist_crusade
+		prerequisite = { focus = MUU_national_tragedy }
+		mutually_exclusive = {
+			focus = MUU_blame_public
+		}
+		x = 2
+		y = 1
+		
+		relative_position_id = MUU_national_tragedy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.025
+		}
+	}
+
+focus = {
+		id = MUU_mil_corruption
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = MUU_government_purges }
+		mutually_exclusive = {
+			focus = MUU_scapegoats
+			focus = MUU_gov_pogrom
+		}
+		x = -2
+		y = 1
+		
+		relative_position_id = MUU_government_purges
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.025
+			add_war_support = -0.1
+		}
+	}
+
+focus = {
+		id = MUU_mil_corruption_2
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = MUU_mil_corruption }
+		x = -2
+		y = 2
+		
+		relative_position_id = MUU_government_purges
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.2
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = MUU_scapegoats
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = MUU_government_purges }
+		mutually_exclusive = {
+			focus = MUU_mil_corruption
+			focus = MUU_gov_pogrom
+		}
+		x = 0
+		y = 1
+		
+		relative_position_id = MUU_government_purges
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.025
+		}
+	}
+
+focus = {
+		id = MUU_gov_pogrom
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MUU_government_purges }
+		mutually_exclusive = {
+			focus = MUU_mil_corruption
+			focus = MUU_scapegoats
+		}
+		x = 2
+		y = 1
+		
+		relative_position_id = MUU_government_purges
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.025
+		}
+	}
+
+focus = {
+		id = MUU_gov_pogrom_2
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MUU_gov_pogrom }
+		x = 2
+		y = 2
+		
+		relative_position_id = MUU_government_purges
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+		random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = MUU_impeach_ollun
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = MUU_scapegoats
+						focus = MUU_military_engagement}
+		mutually_exclusive = {
+			focus = MUU_peoples_voice
+		}
+		x = 0
+		y = 3
+		
+		relative_position_id = MUU_scapegoats
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		kill_country_leader = yes
+					create_country_leader = {
+						name = "Qatlil Hurumar"
+						desc = "POLITICS_QATLIL_HURUMAR_DESC"
+						picture = "GFX_portrait_mu_qatlil_hurumar"
+						expire = "1965.1.1"
+						ideology = democratic
+						traits = {
+			
+						}
+						}
+		}
+	}
+
+focus = {
+		id = MUU_soviet_aid
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = MUU_national_tragedy }
+		#mutually_exclusive = {
+		#	focus = MUU_blame_public
+		#}
+		x = 5
+		y = 1
+		
+		relative_position_id = MUU_national_tragedy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+			SOV = { add_to_tech_sharing_group = MUU_SOV_tech_group }
+			add_to_tech_sharing_group = MUU_SOV_tech_group
+		}
+	}
+
+focus = {
+		id = MUU_peoples_voice
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = MUU_blame_public
+						focus = MUU_westernization }
+		mutually_exclusive = {
+			focus = MUU_impeach_ollun
+		}
+
+		x = 0
+		y = 4
+		
+		relative_position_id = MUU_blame_public
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					#is_major = yes
+					has_government = democratic
+					NOT = { tag = MUU }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = MUU_republicanism
+				}
+			}
+			add_political_power = 120
+			add_timed_idea = { idea = JAP_strengthen_civilian_government days = 1095 }
+		}
+	}
+
+focus = {
+		id = MUU_upper_house_ref
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = MUU_emergency_meeting }
+		mutually_exclusive = {
+			focus = MUU_emergency_restruct
+		}
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = MUU_emergency_meeting
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+focus = {
+		id = MUU_lower_house_ref
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = MUU_upper_house_ref }
+				
+		x = 0
+		y = 1
+		
+		relative_position_id = MUU_upper_house_ref
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+focus = {
+		id = MUU_old_system
+		icon = GFX_focus_generic_muu_nation
+		prerequisite = { focus = MUU_lower_house_ref }
+				
+		x = -2
+		y = 1
+		
+		relative_position_id = MUU_lower_house_ref
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = neutrality popularity = 0.25 }
+		}
+	}
+
+focus = {
+		id = MUU_westernization
+		icon = GFX_focus_hol_the_fourth_ally
+		prerequisite = { focus = MUU_lower_house_ref}
+				
+		x = 0
+		y = 1
+		
+		relative_position_id = MUU_lower_house_ref
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		if = {
+				limit = {
+					ENG = {
+						exists = yes
+						not = { has_war_with = ROOT }
+						not = { is_in_faction_with = ROOT }
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = ENG
+							is_subject_of = ENG
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = MUU_sucks_up
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						exists = yes
+						not = { has_war_with = ROOT }
+						not = { is_in_faction_with = ROOT }
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = SOV
+							#is_subject_of = SOV
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = MUU_sucks_up
+				}
+			}
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						not = { has_war_with = ROOT }
+						not = { is_in_faction_with = ROOT }
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = USA
+							#is_subject_of = USA
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = MUU_sucks_up
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						exists = yes
+						not = { has_war_with = ROOT }
+						not = { is_in_faction_with = ROOT }
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = FRA
+							#is_subject_of = FRA
+						}
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = MUU_sucks_up
+				}
+			}
+		}
+	}
+
+focus = {
+		id = MUU_military_engagement
+		icon = GFX_goal_continuous_increase_nu
+		prerequisite = { focus = MUU_lower_house_ref 
+						focus = MUU_emergency_restruct}
+				
+		x = 2
+		y = 1
+		
+		relative_position_id = MUU_lower_house_ref
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = MUU_ujjamun_power
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MUU_old_system
+						focus = MUU_impeach_ollun}
+				
+		x = 0
+		y = 2
+		
+		relative_position_id = MUU_old_system
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.25 }
+			add_war_support = 0.2
+		
+		}
+	}
+
+focus = {
+		id = MUU_return_of_empire
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = MUU_ujjamun_power }
+				
+		x = 0
+		y = 1
+		
+		relative_position_id = MUU_ujjamun_power
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		kill_country_leader = yes
+		    set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.25 }
+					create_country_leader = {
+						name = "Nalangqu Gahrijjeom I"
+						desc = "POLITICS_NALANGQU_GAHRIJJEOM_I_DESC"
+						picture = "GFX_portrait_mu_nalangqu_gahrijjeom_i"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+			
+						}
+						}
+		}
+	}
+
+focus = {
+		id = MUU_force_muror
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = MUU_return_of_empire }
+		mutually_exclusive = {
+			focus = MUU_muror_alliance
+		}
+				
+		x = 2
+		y = 1
+		
+		relative_position_id = MUU_return_of_empire
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = GEQ
+			}
+			add_state_claim = 864
+			add_state_claim = 863
+			add_state_claim = 862
+			add_state_claim = 861
+			add_state_claim = 860
+		create_wargoal = {
+				type = annex_everything
+				target = VSH
+			}
+			add_state_claim = 856
+			add_state_claim = 857
+			add_state_claim = 858
+		create_wargoal = {
+				type = annex_everything
+				target = GOP
+			}
+			add_state_claim = 908
+			add_state_claim = 907
+		}
+	}
+
+focus = {
+		id = MUU_muror_alliance
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = MUU_return_of_empire }
+		mutually_exclusive = {
+			focus = MUU_force_muror
+		}
+				
+		x = 0
+		y = 1
+		
+		relative_position_id = MUU_return_of_empire
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		set_rule = { can_create_factions = yes }
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = "MUU_muror_alliance_faction"
+			}
+
+			if = {
+				limit = {
+					GOP = { 
+						is_puppet = no
+						is_in_faction = no
+						has_government = neutrality
+						NOT = { has_war_with = MUU }
+					}					
+				}
+				GOP = { country_event = { id = generic.5 } }
+			}
+			if = {
+				limit = {
+					GEQ = { 
+						is_puppet = no
+						is_in_faction = no
+						has_government = neutrality
+						NOT = { has_war_with = MUU }
+					}					
+				}
+				GEQ = { country_event = { id = generic.5 } }
+			}
+			if = {
+				limit = {
+					VSH = { 
+						is_puppet = no
+						is_in_faction = no
+						has_government = neutrality
+						NOT = { has_war_with = MUU }
+					}					
+				}
+				VSH = { country_event = { id = generic.5 } }
+			}
+		}
+	}
+
+focus = {
+		id = MUU_communist_path
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = MUU_westernization}
+		prerequisite = { focus = MUU_soviet_aid}
+		prerequisite = { focus = MUU_impeach_ollun}
+				
+		x = 0
+		y = 5
+		
+		relative_position_id = MUU_soviet_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		    set_politics = { ruling_party = communism elections_allowed = yes } #good and nice communism has elections
+			add_popularity = { ideology = communism popularity = 0.25 }
+		}
+	}
+
+focus = {
+		id = MUU_nationalist_influences
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = MUU_impeach_ollun
+						focus = MUU_military_engagement}
+				
+		x = -2
+		y = 1
+		
+		relative_position_id = MUU_impeach_ollun
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = fascist_influence days = 1095 }
+		}
+	}
+
+###################
+###MILITARY TREE###
+###################
+	focus = {
+		id = MUU_reorganize
+		icon = GFX_focus_generic_combined_arms
+		x = 22
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	
+	focus = {
+		id = MUU_land_focus
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = MUU_reorganize }
+		x = 16
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_mobility
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = MUU_land_focus }
+		x = 18
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MUU_motorized_infantry
+				uses = 2
+				bonus = 1.0
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_firepower
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = MUU_land_focus }
+		x = 20
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_armor
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = MUU_mobility }
+		prerequisite = { focus = MUU_firepower }
+		x = 20
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_regular_forces
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = MUU_land_focus }
+		x = 16
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MUU_infantry_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_support_forces
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = MUU_regular_forces }
+		x = 16
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MUU_support_forces_bonus
+				uses = 1
+				bonus = 2.0
+				category = support_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = MUU_support_forces }
+		x = 16
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus_i
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = marines
+		}
+		}
+	}
+	
+	focus = {
+		id = MUU_airborne
+		icon = GFX_focus_generic_paratrooper
+		prerequisite = { focus = MUU_special_forces }
+		x = 16
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = paratroopers_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers2
+		}
+		}
+	}
+	
+	focus = {
+		id = MUU_marines
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = MUU_special_forces }
+		prerequisite = { focus = MUU_support_focus } 
+		prerequisite = { focus = MUU_mobility } 
+		x = 18
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = marines_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				}
+		}
+	}
+	
+	focus = {
+		id = MUU_sea_focus
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = MUU_reorganize }
+		x = 22
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_littoral_focus
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = MUU_sea_focus }
+		x = 22
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = MUU_convoy_tactics
+				bonus = 1.0
+				uses = 2
+				category = convoy_defense_tree
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_medium_hulls
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = MUU_littoral_focus }
+		x = 24
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_naval_effort_2dockyards
+			}
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = MUU_sub_effort
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_support_focus
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = MUU_littoral_focus }
+		x = 22
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				uses = 2
+				technology = transport
+				technology = landing_craft
+				technology = tank_landing_craft
+			}
+			add_ideas = escort_effort_focus
+		}
+	}
+	
+	focus = {
+		id = MUU_large_hulls
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = MUU_support_focus }
+		prerequisite = { focus = MUU_medium_hulls }
+		x = 23
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bc_bonus
+				bonus = 1.0
+				uses = 1
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_super_large_hulls
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = MUU_large_hulls }
+		x = 23
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = shbb_bonus
+				bonus = 1.0
+				uses = 1
+				category = shbb_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_carrier_hulls
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = MUU_super_large_hulls }
+		prerequisite = { focus = MUU_naval_air_focus }
+		x = 25
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_air_focus
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = MUU_reorganize }
+		x = 28
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 25
+
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 1.0
+				uses = 2
+				category = battlefield_support_tree
+			}
+
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 5
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 6
+						instant_build = yes
+					}
+					}
+		}
+		}
+	}
+	
+	focus = {
+		id = MUU_rocketry
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = MUU_air_focus }
+		x = 32
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MUU_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_jets
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = MUU_rocketry }
+		x = 32
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = MUU_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = MUU_air_focus }
+		x = 28
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = fighter_command_focus
+				bonus = 0.5
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_light_fighter_focus
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = MUU_fighter_focus }
+		x = 26
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = light_fighter_focus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_naval_air_focus
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = MUU_light_fighter_focus }
+		x = 26
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = naval_bomber
+			}
+			add_tech_bonus = {
+				name = MUU_carrier_warfare_experiments
+				bonus = 1.00
+				uses = 2
+				category = cat_base_strike
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_heavy_fighter_focus
+		icon = GFX_focus_usa_escort_fighters
+		prerequisite = { focus = MUU_fighter_focus }
+		x = 28
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MUU_long_range_escorts
+				bonus = 1.0
+				uses = 2
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_tac_focus
+		icon = GFX_focus_usa_escort_fighters
+		prerequisite = { focus = MUU_heavy_fighter_focus }
+		x = 30
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber		
+			}
+		}
+	}
+	
+	focus = {
+		id = MUU_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = MUU_heavy_fighter_focus }
+		x = 28
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = op_dest_bonus
+				bonus = 1.0
+				uses = 2
+				category = battlefield_support_tree
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+}

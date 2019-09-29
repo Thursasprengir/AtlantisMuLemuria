@@ -1,0 +1,97 @@
+﻿capital = 270
+
+oob = "ARA_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
+}
+
+add_political_power = 200
+set_politics = {
+
+	
+	
+	ruling_party = democratic
+	last_election = "1933.1.24"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+		democratic = 31
+		fascism = 27
+		communism = 42
+	
+	}
+set_convoys = 150
+set_stability = 0.6
+set_war_support = 0.1
+
+create_country_leader = {
+	name = "Enrique Maldonado"
+	desc = "POLITICS_ENRIQUE_MALDONADO_DESC"
+	picture = "Portrait_ARA_Enrique_Maldonado.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Macuma Ángel Morosilvestre"
+	desc = "POLITICS_MA_MOROSILVESTRE_DESC"
+	picture = "Portrait_ARA_MA_Morosilvestre.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "José Estéban Gallegos"
+	desc = "POLITICS_JE_GALLEGOS_DESC"
+	picture = "Portrait_ARA_JE_Gallegos.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Luna Marta Torreón de Pirrajó"
+	desc = "POLITICS_LUNA_MARTA_TORREON_PIRRAJO_DESC"
+	picture = "Portrait_ARA_LMT_Pirrajo.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Daniel Zocalo"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+}

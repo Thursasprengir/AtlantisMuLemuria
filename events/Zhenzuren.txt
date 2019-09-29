@@ -1,0 +1,55 @@
+add_namespace = zhenzuren
+
+country_event = {
+	id = zhenzuren.1
+	title = zhenzuren.1.t
+	desc = zhenzuren.1.d
+	picture = GFX_report_event_chinese_officers
+
+	trigger = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
+		NOT = { has_country_flag = china.101_fired }
+		has_global_flag = CHI_unite
+		tag = ZHE
+		CHI = {
+			has_war_with = JAP 
+			has_defensive_war = yes
+		}
+		JAP = { has_offensive_war = yes }
+
+		is_puppet = no
+		NOT = { has_war_with = CHI }
+		AND = {
+			is_in_faction = no
+		}
+	}
+
+	immediate = {
+		set_country_flag = china.101_fired
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = zhenzuren.1.a
+		CHI = { 
+			add_to_faction = ROOT 
+			country_event = china.106
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "CHI"
+			value = 200
+		}
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = zhenzuren.1.b
+		#Nothing
+	}
+}
