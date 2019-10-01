@@ -1,0 +1,1175 @@
+ideas = {
+
+	political_advisor = {
+		diego_diogo = {
+			
+			
+			allowed = {
+				original_tag = "TOD"
+			}
+			available = {
+				
+			}
+
+			
+			traits = { communist_revolutionary }
+			 
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		go_diego = {
+			
+			picture = USA_harry_white
+			allowed = {
+				original_tag = "TOD"
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { financial_expert }
+			 
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		digo_digo = {
+			
+			picture = generic_political_advisor_europe_1
+			allowed = {
+				original_tag = "TOD"
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { economist }
+			 
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		queso_diego = {
+			
+			picture = USA_whittaker_chambers
+			allowed = {
+				original_tag = "TOD"
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				
+			}
+			
+			traits = { editor }
+			 
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		manzana_diego = {
+			
+			picture = generic_political_advisor_europe_1
+			allowed = {
+				original_tag = "TOD"
+			}
+			allowed_civil_war = {
+				not = { has_government = communism }
+			}
+			available = {
+				
+			}
+			
+
+			
+			traits = { editor }
+			 
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		banana_diego = {
+
+			picture = generic_political_advisor_europe_5
+
+			allowed = {
+				original_tag = TOD
+			}
+			
+			traits = { captain_of_industry }
+			 
+		}
+		tuna_diego = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = TOD
+			}
+			
+			traits = { ideological_crusader }
+			 
+		}
+		manzana_queso = {
+			
+			
+			allowed = {
+				original_tag = "TOD"
+			}
+			
+			available = {
+				}
+			
+			traits = { democratic_reformer }
+			 
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		queso_queso = {
+						
+			allowed = {
+				original_tag = "TOD"
+			}
+			available = {
+			}
+
+			
+			traits = { fascist_demagogue }
+			 
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					is_historical_focus_on = yes
+					factor = 0
+				}
+			}		
+		}
+
+		loro_poro = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			traits = { silent_workhorse }
+			 
+		}
+		inigo_pinigo = {
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = TOD
+			}
+			available = {
+				
+			}
+			
+			traits = { anti_communist_crusader }
+			 
+		}
+
+		mingo_pingo = {
+			
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			traits = { compassionate_gentleman }
+			 
+		}
+
+		bufo_mufo = {
+			
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		rana_pana = {
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = TOD
+			}
+			available = {
+			}
+			
+			traits = { financial_expert }
+		}
+		rana_manzana = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			traits = { war_industrialist }
+		}
+
+		zorro_toro = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			traits = { armaments_organizer }
+		}
+	}
+	
+
+	army_chief = {
+		
+	
+		toro_zorro = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			available = {
+			}
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ieeeee_aaaa = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		lucas_pucas = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		abrir_cerrar = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		cerrar_abrir = {
+			
+			picture = USA_walter_krueger
+			allowed = {
+				original_tag = TOD
+			}
+			available = {
+			}
+			
+
+			
+			traits = { army_chief_planning_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	air_chief = {
+		
+		
+		uno_dos = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { air_chief_reform_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dos_tres = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { air_chief_night_operations_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		tres_quatro = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		quatro_cinco = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	navy_chief = {
+	
+		cinco_seis = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		seis_siete = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			picture = generic_navy_europe_3
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		siete_ocho = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { navy_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	high_command = {
+		ocho_nueve = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nueve_diez = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		diez_onze = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		once_doce = {
+			
+			picture = sabiha_gocen
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { air_strategic_bombing_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dos_uno = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = TOD
+			}
+
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		tres_dos = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		quatro_tres = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		cinco_quatro = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = TOD
+			}
+
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		seis_cinco = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		
+	tank_manufacturer = {
+		
+		tod_national_arms = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}			
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		diego_and_diego = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		pablo_y_diazabal = {
+			
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = TOD
+			}
+			available = {
+			}
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+				light_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+		
+		tanques_tanques = {
+			
+			picture = usa_tank_destroyer_board
+			allowed = {
+				original_tag = TOD
+			}
+			available = {
+			}
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				heavy_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		TOD_national_yards = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		austral_shipyards= {
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+		
+		t_m_e = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		armas_navales = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		tod_aguila = {
+			
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# trainers, and air ambulances?
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ad_astra = {
+			
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# assembled license aircrafts from across the world 
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		per_portam = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		
+		santander = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		enaltecido = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}		
+	}
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		mfg_generico = {
+			
+			picture = generic_infantry_equipment_manufacturer_3
+
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			equipment_bonus = {
+				# rifles and pistols
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		mfg_generico2 = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	
+		
+		mfg_generico3 = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+
+	
+	industrial_concern = {
+					
+		tod_national_oil = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			modifier = {
+			}
+		}
+		
+		maquinas_de_todorovia = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		industria_coral = {
+			
+			picture = usa_general_motors
+			allowed = {
+				original_tag = TOD
+			}
+			available = {
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+	
+	
+	theorist = {
+		dino_dino = {
+				
+		picture = generic_army_europe_2
+
+		allowed = {
+			original_tag = TOD
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { military_theorist }
+	}
+		
+		pino_pino = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+		
+		lino_lino = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		mino_mino = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_base_strike = 0.15
+			}
+			
+			traits = { naval_aviation_pioneer }
+		}
+		
+		tino_tino = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.15
+			}
+			
+			traits = { victory_through_airpower }
+		}
+		
+		sino_sino = {
+				
+		picture = generic_political_advisor_europe_1
+
+		allowed = {
+			original_tag = TOD
+		}
+		
+		research_bonus = {
+			air_doctrine = 0.07
+		}
+		
+		traits = { air_warfare_theorist }
+	}
+		
+		dos_porquerias = {
+			
+			
+			allowed = {
+				original_tag = TOD
+			}
+			
+
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+			
+			traits = { rocket_scientist }
+		}
+	}
+	
+}
