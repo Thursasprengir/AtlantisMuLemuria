@@ -1528,8 +1528,9 @@ focus = {
 			focus = TOD_inwardplaceholder6 
 			focus = TOD_fascismplaceholder6
 			focus = TOD_outwardcommunism6
-			focus = TOD_reckoning
 			focus = TOD_everyone}
+		prerequisite = { 
+			focus = TOD_reckoning}
 		x = 15
 		y = 8
 
@@ -1585,6 +1586,7 @@ focus = {
 				can_create_factions = yes
 			}
 		create_faction = TOD_center_of_the_world
+			add_manpower = 10000
 		}
 	}
 
@@ -2572,6 +2574,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 20
 		}
 	}
 
@@ -2600,6 +2603,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_manpower = -5000
 		}
 	}
 
@@ -2607,6 +2611,9 @@ focus = {
 		id = TOD_nocompromise
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = TOD_internalcrisis}
+		mutually_exclusive = {
+			focus = TOD_workoncompromise
+		}
 		x = 23
 		y = 2
 
@@ -2628,6 +2635,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = -60
+			add_stability = -0.25
 		}
 	}
 
@@ -2659,6 +2668,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_manpower = -5000
 		}
 	}
 
@@ -2690,6 +2700,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = -0.15
 			add_ideas = volunteer_corps_focus
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
@@ -2724,6 +2735,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = -0.15
 			add_ideas = militarism_focus
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
@@ -2758,6 +2770,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_manpower = -5000
 		}
 	}
 
@@ -2789,6 +2802,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			every_army_leader = {
+				add_planning = -1
+			}
 		}
 	}
 
@@ -2820,6 +2836,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			every_army_leader = {
+				add_attack = -1
+			}
+						
 		}
 	}
 
@@ -2854,6 +2874,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Loyalist Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						owner = TOD
+					}
+					create_unit = {
+						division = "name = \"2nd Loyalist Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						owner = TOD
+					}
+				}
 		}
 	}
 
@@ -2861,6 +2891,9 @@ focus = {
 		id = TOD_workoncompromise
 		icon = GFX_goal_continuous_boost_freedom
 		prerequisite = { focus = TOD_internalcrisis}
+		mutually_exclusive = {
+			focus = TOD_nocompromise
+		}
 		x = 29
 		y = 2
 
@@ -2882,6 +2915,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = -0.5
+			add_political_power = -80
 		}
 	}
 
@@ -2910,6 +2945,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.15
 		}
 	}
 
@@ -2938,6 +2974,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
@@ -2966,6 +3003,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = 0.4
+			add_political_power = 60
 		}
 	}
 
