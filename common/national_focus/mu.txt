@@ -763,8 +763,12 @@ focus = {
 focus = {
 		id = MUU_ujjamun_power
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = MUU_old_system
-						focus = MUU_impeach_ollun}
+		prerequisite = { focus = MUU_old_system }
+		prerequisite = { focus = MUU_impeach_ollun}
+		mutually_exclusive = {
+			focus = MUU_communist_path
+			focus = MUU_nationalist_influences
+		}
 				
 		x = 0
 		y = 2
@@ -972,6 +976,10 @@ focus = {
 		prerequisite = { focus = MUU_westernization}
 		prerequisite = { focus = MUU_soviet_aid}
 		prerequisite = { focus = MUU_impeach_ollun}
+		mutually_exclusive = {
+			focus = MUU_ujjamun_power
+			focus = MUU_nationalist_influences
+		}
 				
 		x = 0
 		y = 5
@@ -1003,13 +1011,17 @@ focus = {
 focus = {
 		id = MUU_nationalist_influences
 		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = MUU_impeach_ollun
-						focus = MUU_military_engagement}
+		prerequisite = { focus = MUU_impeach_ollun }
+		prerequisite = { focus = MUU_military_engagement}
+		mutually_exclusive = {
+			focus = MUU_ujjamun_power
+			focus = MUU_communist_path
+		}
 				
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 		
-		relative_position_id = MUU_impeach_ollun
+		relative_position_id = MUU_military_engagement
 
 		cost = 10
 
