@@ -1,4 +1,4 @@
-﻿add_namespace = fsm
+add_namespace = fsm
 
 country_event = {
 
@@ -32,6 +32,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 
 	id = fsm.2
@@ -67,6 +68,24 @@ country_event = {
 		ai_chance = { factor = 100 }
 		name = fsm.3.a
 		set_party_name = { ideology = communism long_name = FSM_communism_coalition_long name = FSM_communism_coalition }
+		 hidden_effect = {
+
+				 if = {
+    				limit = {
+        					has_government = communism
+   						 }
+   						 kill_country_leader = yes #kills current leader
+						}
+		 }
+        create_country_leader = {
+            name = "Sumukivi Aepa’ato"
+            desc = "POLITICS_SUMUKIVI_AEP'ATO_DESC" #description of the new leader.Can be blank
+            picture = "Portrait_Sumukivi_Aep'ato.dds"
+            expire = "1965.1.1" 
+            ideology = leninism
+            traits = {
+            }
+        }
 	}
 }
 #Manu Annexation Event
@@ -111,4 +130,232 @@ country_event = {
 		}
 		annex_country = { target = MNU transfer_troops = yes }
 	}
+}
+#German Kaiser Invite
+country_event = {
+
+	id = fsm.6
+	title = fsm.6.t
+	desc = fsm.6.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.6.a
+		if = {
+ 			limit = { is_in_faction = yes 
+    		}
+    	add_to_faction = FSM
+    	else = {
+        	create_faction = "placeholder_faction_pangerman"
+        	add_to_faction = FSM
+        	}
+		}
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.6.b
+	}
+}
+#Snap Elections for Fascism
+country_event = {
+
+	id = fsm.7
+	title = fsm.7.t
+	desc = fsm.7.d
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.7.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+}
+#Axis Invite
+country_event = {
+
+	id = fsm.8
+	title = fsm.8.t
+	desc = fsm.8.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.8.a
+		if = {
+ 			limit = { is_in_faction = yes 
+    		}
+    	add_to_faction = FSM
+    	else = {
+        	create_faction = "placeholder_faction_pangerman"
+        	add_to_faction = FSM
+        	}
+		}
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.8.b
+	}
+}
+#Allies Invite
+country_event = {
+
+	id = fsm.9
+	title = fsm.9.t
+	desc = fsm.9.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.9.a
+		add_to_faction = FSM
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.9.b
+	}
+}
+#Fjinland Takeover
+country_event = {
+
+	id = fsm.10
+	title = fsm.10.t
+	picture = GFX_report_event_chinese_officers
+	desc = fsm.10.d
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.10.a
+	}
+}
+#Tiquea Destiny
+country_event = {
+
+	id = fsm.11
+	title = fsm.11.t
+	picture = GFX_report_event_chinese_officers
+	desc = fsm.11.d
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		tag = FSM
+		OR = {
+			AND = {
+				OR = {
+							controls_state = 924
+							controls_state = 925
+							controls_state = 926
+							controls_state = 923
+							}
+				TIQ = {
+					has_war_with = FSM
+					has_capitulated = yes
+					is_in_faction = yes
+					}
+				}
+			AND = {
+				OR = {
+							controls_state = 924
+							controls_state = 925
+							controls_state = 926
+							controls_state = 923
+							}
+				NOT = {
+					country_exists = TIQ
+					}
+				}
+			}
+		}
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.11.a
+		puppet = TIQ
+		if = {
+		limit = {
+			 controls_state = 923
+		}
+		transfer_state = 923
+		923 = { set_state_name = "Jillilstaat" }
+		}
+
+
+
+		TIQ ={
+	if = {
+		limit = {
+			FSM = { controls_state = 924 } 
+		}
+		transfer_state = 924
+		}
+	if = {
+		limit = {
+			FSM = { controls_state = 925 } 
+		}
+		transfer_state = 925
+		}
+	if = {
+		limit = {
+			FSM = { controls_state = 926 } 
+		}
+		transfer_state = 926
+		}
+
+		}
+
+	
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.11.b
+		if = {
+		limit = {
+			 controls_state = 923
+		}
+		transfer_state = 923
+		923 = { set_state_name = "Jillilstaat" }
+		}
+
+	}
+}
+#Schoenesland Annexation
+country_event = {
+
+	id = fsm.12
+	title = fsm.12.t
+	desc = fsm.12.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.12.a
+		add_to_faction = FSM
+	}
+
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.12.b
+		}
+	}
+
 }
