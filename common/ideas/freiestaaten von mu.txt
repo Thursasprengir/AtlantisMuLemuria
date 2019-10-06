@@ -78,11 +78,31 @@ country = {
 			picture = generic_research_bonus
 	
 			modifier = {
-					
+					min_export = 0.2
 			}
 		}
 
 		FSM_companies = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+					consumer_goods_factor = -0.05
+					trade_opinion_factor = -0.2
+			}
+		}
+		FSM_status_quo = {
 			
 			
 			allowed = {
