@@ -1,5 +1,5 @@
 prospect_for_resources = {
-	develop_gelim_bauxite_deposits = { #932
+	develop_karlswald_bauxite_deposits = { #932
 		
 		icon = aluminium
 
@@ -22,7 +22,7 @@ prospect_for_resources = {
 			932 = {
 				NOT = {
 					has_state_flag = {
-						flag = gelim_aluminium_developed
+						flag = karlswald_aluminium_developed
 						value = 3
 					}
 				}
@@ -30,7 +30,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = FSM_gelim_aluminium_duration
+		days_remove = FSM_karlswald_aluminium_duration
 
 		modifier = {
 			civilian_factory_use = 12
@@ -45,22 +45,22 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = FSM_gelim_aluminium_duration value = 30 }
+			add_to_variable = { var = FSM_karlswald_aluminium_duration value = 30 }
 			932 = {
 				if = {
 					limit = {
 						NOT = {
-							has_state_flag = gelim_aluminium_developed
+							has_state_flag = karlswald_aluminium_developed
 						}
 					}
 					set_state_flag = {
-						flag = gelim_aluminium_developed
+						flag = karlswald_aluminium_developed
 						value = 1
 					}
 				}
 				else = {
 					modify_state_flag = {
-						flag = gelim_aluminium_developed
+						flag = karlswald_aluminium_developed
 						value = 1
 					}
 				}
@@ -76,13 +76,13 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = FSM_gelim_aluminium_duration value = 60 compare = less_than }
+					check_variable = { var = FSM_karlswald_aluminium_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = FSM_gelim_aluminium_duration value = 60 }
+				set_variable = { var = FSM_karlswald_aluminium_duration value = 60 }
 			}
 		}
 	}
-	develop_koe_iron_deposits = { #931
+	develop_petersstrand_iron_deposits = { #931
 		
 		icon = steel
 
@@ -105,7 +105,7 @@ prospect_for_resources = {
 			931 = {
 				NOT = {
 					has_state_flag = {
-						flag = koe_steel_developed
+						flag = petersstrand_steel_developed
 						value = 3
 					}
 				}
@@ -113,7 +113,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = FSM_koe_steel_duration
+		days_remove = FSM_petersstrand_steel_duration
 
 		modifier = {
 			civilian_factory_use = 12
@@ -128,22 +128,22 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = FSM_koe_steel_duration value = 30 }
+			add_to_variable = { var = FSM_petersstrand_steel_duration value = 30 }
 			931 = {
 				if = {
 					limit = {
 						NOT = {
-							has_state_flag = koe_steel_developed
+							has_state_flag = petersstrand_steel_developed
 						}
 					}
 					set_state_flag = {
-						flag = koe_steel_developed
+						flag = petersstrand_steel_developed
 						value = 1
 					}
 				}
 				else = {
 					modify_state_flag = {
-						flag = koe_steel_developed
+						flag = petersstrand_steel_developed
 						value = 1
 					}
 				}
@@ -159,13 +159,13 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = FSM_koe_steel_duration value = 60 compare = less_than }
+					check_variable = { var = FSM_petersstrand_steel_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = FSM_koe_steel_duration value = 60 }
+				set_variable = { var = FSM_petersstrand_steel_duration value = 60 }
 			}
 		}
 	}
-	develop_faefana_iron_deposits = { #933
+	develop_blaueswasserstaat_iron_deposits = { #933
 		
 		icon = steel
 
@@ -188,7 +188,7 @@ prospect_for_resources = {
 			933 = {
 				NOT = {
 					has_state_flag = {
-						flag = faefana_steel_developed
+						flag = blaueswasserstaat_steel_developed
 						value = 2
 					}
 				}
@@ -196,7 +196,7 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = FSM_faefana_steel_duration
+		days_remove = FSM_blaueswasserstaat_steel_duration
 
 		modifier = {
 			civilian_factory_use = 12
@@ -211,22 +211,22 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = FSM_faefana_steel_duration value = 30 }
+			add_to_variable = { var = FSM_blaueswasserstaat_steel_duration value = 30 }
 			933 = {
 				if = {
 					limit = {
 						NOT = {
-							has_state_flag = faefana_steel_developed
+							has_state_flag = blaueswasserstaat_steel_developed
 						}
 					}
 					set_state_flag = {
-						flag = faefana_steel_developed
+						flag = blaueswasserstaat_steel_developed
 						value = 1
 					}
 				}
 				else = {
 					modify_state_flag = {
-						flag = faefana_steel_developed
+						flag = blaueswasserstaat_steel_developed
 						value = 1
 					}
 				}
@@ -242,9 +242,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = FSM_faefana_steel_duration value = 60 compare = less_than }
+					check_variable = { var = FSM_blaueswasserstaat_steel_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = FSM_faefana_steel_duration value = 60 }
+				set_variable = { var = FSM_blaueswasserstaat_steel_duration value = 60 }
 			}
 		}
 	}
