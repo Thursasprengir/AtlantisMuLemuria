@@ -12,8 +12,8 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			has_tech = construction1
+			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 880
 			controls_state = 880
 		}
@@ -27,14 +27,14 @@ prospect_for_resources = {
 				}
 			}
 		}
-
 		fire_only_once = yes
+
 
 		cost = 25
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 6
 		}
 
 		ai_will_do = {
@@ -47,6 +47,741 @@ prospect_for_resources = {
 					type = aluminium
 					amount = 12
 				}
+			}
+		}
+	}
+	develop_dustartajare_aluminium_deposits = { #882
+		
+		icon = aluminium
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 882
+		}
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 7
+			owns_state = 882
+			controls_state = 882
+		}
+
+		visible = {
+			owns_state = 882
+			controls_state = 882
+			882 = {
+				NOT = {
+					has_state_flag = {
+						flag = dustartajare_aluminium_developed
+						value = 5
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = MUU_dustartajare_aluminium_duration
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_dustartajare_aluminium_duration value = 15 }
+			882 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = dustartajare_aluminium_developed
+						}
+					}
+					set_state_flag = {
+						flag = dustartajare_aluminium_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = dustartajare_aluminium_developed
+						value = 1
+					}
+				}
+			}
+			882 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_dustartajare_aluminium_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_dustartajare_aluminium_duration value = 30 }
+			}
+		}
+	}
+	develop_atulsan_aluminium_deposits = { #881
+		
+		icon = aluminium
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 881
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 881
+			controls_state = 881
+		}
+
+		visible = {
+			owns_state = 881
+			controls_state = 881
+			881 = {
+				NOT = {
+					has_state_flag = {
+						flag = atulsan_aluminium_developed
+						value = 4
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = MUU_atulsan_aluminium_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_atulsan_aluminium_duration value = 30 }
+			881 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = atulsan_aluminium_developed
+						}
+					}
+					set_state_flag = {
+						flag = atulsan_aluminium_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = atulsan_aluminium_developed
+						value = 1
+					}
+				}
+			}
+			881 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_atulsan_aluminium_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_atulsan_aluminium_duration value = 30 }
+			}
+		}
+	}
+	develop_atulsan_tungsten_deposits = { #881
+		
+		icon = tungsten
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 881
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 881
+			controls_state = 881
+		}
+
+		visible = {
+			owns_state = 881
+			controls_state = 881
+			881 = {
+				NOT = {
+					has_state_flag = {
+						flag = atulsan_tungsten_developed
+						value = 3
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = MUU_atulsan_tungsten_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_atulsan_tungsten_duration value = 30 }
+			881 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = atulsan_tungsten_developed
+						}
+					}
+					set_state_flag = {
+						flag = atulsan_tungsten_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = atulsan_tungsten_developed
+						value = 1
+					}
+				}
+			}
+			881 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_atulsan_tungsten_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_atulsan_tungsten_duration value = 30 }
+			}
+		}
+	}
+	develop_tollang_iron_deposits = { #884
+		
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 884
+		}
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 884
+			controls_state = 884
+		}
+
+		visible = {
+			owns_state = 884
+			controls_state = 884
+			884 = {
+				NOT = {
+					has_state_flag = {
+						flag = tollang_steel_developed
+						value = 8
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = MUU_tollang_steel_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_tollang_steel_duration value = 30 }
+			884 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = tollang_steel_developed
+						}
+					}
+					set_state_flag = {
+						flag = tollang_steel_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = tollang_steel_developed
+						value = 1
+					}
+				}
+			}
+			884 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_tollang_steel_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_tollang_steel_duration value = 30 }
+			}
+		}
+	}
+	develop_teqsitlti_iron_deposits = { #883
+		
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 883
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 883
+			controls_state = 883
+		}
+
+		visible = {
+			owns_state = 883
+			controls_state = 883
+			883 = {
+				NOT = {
+					has_state_flag = {
+						flag = teqsitlti_steel_developed
+						value = 6
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = MUU_teqsitlti_steel_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_teqsitlti_steel_duration value = 30 }
+			883 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = teqsitlti_steel_developed
+						}
+					}
+					set_state_flag = {
+						flag = teqsitlti_steel_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = teqsitlti_steel_developed
+						value = 1
+					}
+				}
+			}
+			883 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_teqsitlti_steel_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_teqsitlti_steel_duration value = 30 }
+			}
+		}
+	}
+	develop_mirida_iron_deposits = { #875
+		
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 875
+		}
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 875
+			controls_state = 875
+		}
+
+		visible = {
+			owns_state = 875
+			controls_state = 875
+			875 = {
+				NOT = {
+					has_state_flag = {
+						flag = mirida_steel_developed
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = MUU_mirida_steel_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_mirida_steel_duration value = 30 }
+			875 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = mirida_steel_developed
+						}
+					}
+					set_state_flag = {
+						flag = mirida_steel_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = mirida_steel_developed
+						value = 1
+					}
+				}
+			}
+			875 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_mirida_steel_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_mirida_steel_duration value = 30 }
+			}
+		}
+	}
+	develop_qtir_industrial_district = {
+		
+		icon = generic_construction
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 873
+		}
+
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 873
+			controls_state = 873
+		}
+
+		visible = {
+			owns_state = 873
+			controls_state = 873
+			873 = {
+				NOT = {
+					has_state_flag = qtir_industrial_district_developed
+				}
+			}
+		}
+		fire_only_once = yes
+
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			873 = { set_state_flag = qtir_industrial_district_developed } 
+			873 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	develop_qtir_steel_refineries = { #873
+		
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 873
+		}
+		available = {
+			has_tech = construction4
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 873
+			controls_state = 873
+		}
+
+		visible = {
+			owns_state = 873
+			controls_state = 873
+			873 = {
+				has_state_flag = {
+					flag = qtir_industrial_district_developed
+				}
+				NOT = {
+					has_state_flag = {
+						flag = qtir_steel_developed
+						value = 4
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = MUU_qtir_steel_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_qtir_steel_duration value = 30 }
+			873 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = qtir_steel_developed
+						}
+					}
+					set_state_flag = {
+						flag = qtir_steel_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = qtir_steel_developed
+						value = 1
+					}
+				}
+			}
+			873 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_qtir_steel_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_qtir_steel_duration value = 30 }
+			}
+		}
+	}
+	further_develop_qtir_refineries = { #873
+		
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 873
+		}
+		available = {
+			has_tech = construction5
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 873
+			controls_state = 873
+		}
+
+		visible = {
+			owns_state = 873
+			controls_state = 873
+			873 = {
+				has_state_flag = {
+					flag = qtir_industrial_district_developed
+				}
+				has_state_flag = {
+					flag = qtir_steel_developed
+					value = 4
+				}
+				NOT = {
+					has_state_flag = {
+						flag = qtir_steel_developed2
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = MUU_qtir_steel_duration2
+
+		modifier = {
+			civilian_factory_use = 18
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_qtir_steel_duration2 value = 60 }
+			873 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = qtir_steel_developed2
+						}
+					}
+					set_state_flag = {
+						flag = qtir_steel_developed2
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = qtir_steel_developed2
+						value = 1
+					}
+				}
+			}
+			873 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_qtir_steel_duration2 value = 60 compare = less_than }
+				}
+				set_variable = { var = MUU_qtir_steel_duration2 value = 60 }
 			}
 		}
 	}

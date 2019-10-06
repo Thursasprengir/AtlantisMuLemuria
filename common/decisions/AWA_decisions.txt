@@ -1,0 +1,168 @@
+prospect_for_resources = {
+	develop_houavae_iron_deposits = { #895
+		
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 895
+		}
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 895
+			controls_state = 895
+		}
+
+		visible = {
+			owns_state = 895
+			controls_state = 895
+			895 = {
+				NOT = {
+					has_state_flag = {
+						flag = houavae_steel_developed
+						value = 4
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = AWA_houavae_steel_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = AWA_houavae_steel_duration value = 30 }
+			895 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = houavae_steel_developed
+						}
+					}
+					set_state_flag = {
+						flag = houavae_steel_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = houavae_steel_developed
+						value = 1
+					}
+				}
+			}
+			895 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = AWA_houavae_steel_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = AWA_houavae_steel_duration value = 30 }
+			}
+		}
+	}
+	develop_kaniwha_rubber_farms = { #893
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 893
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 893
+			controls_state = 893
+		}
+
+		visible = {
+			owns_state = 893
+			controls_state = 893
+			893 = {
+				NOT = {
+					has_state_flag = {
+						flag = kaniwha_rubber_developed
+						value = 4
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = AWA_kaniwha_rubber_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = AWA_kaniwha_rubber_duration value = 30 }
+			893 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = kaniwha_rubber_developed
+						}
+					}
+					set_state_flag = {
+						flag = kaniwha_rubber_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = kaniwha_rubber_developed
+						value = 1
+					}
+				}
+			}
+			893 = {
+				add_resource = {
+					type = rubber
+					amount = 6
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = AWA_kaniwha_rubber_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = AWA_kaniwha_rubber_duration value = 30 }
+			}
+		}
+	}
+}

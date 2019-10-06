@@ -1,0 +1,1282 @@
+prospect_for_resources = {
+	develop_lezam_bauxite_deposits = {
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 839
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 839
+			controls_state = 839
+		}
+
+		visible = {
+			owns_state = 839
+			controls_state = 839
+			839 = {
+				NOT = {
+					has_state_flag = lezam_aluminium_developed
+				}
+			}
+		}
+		fire_only_once = yes
+
+
+		cost = 25
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			839 = { set_state_flag = lezam_aluminium_developed } 
+			839 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+	}
+	develop_houkehaka_industrial_district = {
+		
+		icon = generic_construction
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 836
+		}
+
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 836
+			controls_state = 836
+		}
+
+		visible = {
+			owns_state = 836
+			controls_state = 836
+			836 = {
+				NOT = {
+					has_state_flag = houkehaka_industrial_district_developed
+				}
+			}
+		}
+		fire_only_once = yes
+
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			836 = { set_state_flag = houkehaka_industrial_district_developed } 
+			836 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	develop_houkehaka_refineries = { #836
+		
+		icon = tungsten
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 836
+		}
+		available = {
+			has_tech = construction4
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 836
+			controls_state = 836
+		}
+
+		visible = {
+			owns_state = 836
+			controls_state = 836
+			836 = {
+				has_state_flag = {
+					flag = houkehaka_industrial_district_developed
+				}
+				NOT = {
+					has_state_flag = {
+						flag = houkehaka_steel_developed
+						value = 4
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = MUU_houkehaka_steel_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_houkehaka_steel_duration value = 30 }
+			836 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = houkehaka_steel_developed
+						}
+					}
+					set_state_flag = {
+						flag = houkehaka_steel_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = houkehaka_steel_developed
+						value = 1
+					}
+				}
+			}
+			836 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_houkehaka_steel_duration value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_houkehaka_steel_duration value = 30 }
+			}
+		}
+	}
+	further_develop_houkehaka_refineries = { #836
+		
+		icon = oil
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 836
+		}
+		available = {
+			has_tech = construction5
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 836
+			controls_state = 836
+		}
+
+		visible = {
+			owns_state = 836
+			controls_state = 836
+			836 = {
+				has_state_flag = {
+					flag = houkehaka_industrial_district_developed
+				}
+				has_state_flag = {
+					flag = houkehaka_steel_developed
+					value = 4
+				}
+				NOT = {
+					has_state_flag = {
+						flag = houkehaka_steel_developed2
+						value = 4
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = MUU_houkehaka_steel_duration2
+
+		modifier = {
+			civilian_factory_use = 18
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = MUU_houkehaka_steel_duration2 value = 15 }
+			836 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = houkehaka_steel_developed2
+						}
+					}
+					set_state_flag = {
+						flag = houkehaka_steel_developed2
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = houkehaka_steel_developed2
+						value = 1
+					}
+				}
+			}
+			836 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
+				add_resource = {
+					type = aluminium
+					amount = 3
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = MUU_houkehaka_steel_duration2 value = 30 compare = less_than }
+				}
+				set_variable = { var = MUU_houkehaka_steel_duration2 value = 30 }
+			}
+		}
+	}
+	research_haiie_rubber_farms = {
+		
+		icon = generic_research
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 834
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+		}
+
+		visible = {
+			owns_state = 834
+			controls_state = 834
+			834 = {
+				NOT = {
+					has_state_flag = haiie_industrial_district_developed
+				}
+			}
+		}
+		fire_only_once = yes
+
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			834 = { set_state_flag = haiie_industrial_district_developed } 
+			834 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	develop_haiie_plantations = { #834
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 834
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+		}
+
+		visible = {
+			owns_state = 834
+			controls_state = 834
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+				NOT = {
+					has_state_flag = {
+						flag = haiie_rubber_developed
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = HOU_haiie_rubber_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_haiie_rubber_duration value = 30 }
+			834 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = haiie_rubber_developed
+						}
+					}
+					set_state_flag = {
+						flag = haiie_rubber_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = haiie_rubber_developed
+						value = 1
+					}
+				}
+			}
+			834 = {
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_haiie_rubber_duration value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_haiie_rubber_duration value = 60 }
+			}
+		}
+	}
+	further_develop_haiie_plantations = { #834
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 834
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+		}
+
+		visible = {
+			owns_state = 834
+			controls_state = 834
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+				has_state_flag = {
+					flag = haiie_rubber_developed
+					value = 2
+				}
+				NOT = {
+					has_state_flag = {
+						flag = haiie_rubber_developed2
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = HOU_haiie_rubber_duration2
+
+		modifier = {
+			civilian_factory_use = 18
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_haiie_rubber_duration2 value = 30 }
+			834 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = haiie_rubber_developed2
+						}
+					}
+					set_state_flag = {
+						flag = haiie_rubber_developed2
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = haiie_rubber_developed2
+						value = 1
+					}
+				}
+			}
+			834 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_haiie_rubber_duration2 value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_haiie_rubber_duration2 value = 60 }
+			}
+		}
+	}
+	develop_vashparaq_plantations = { #834
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 838
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+			owns_state = 838
+			controls_state = 838
+		}
+
+		visible = {
+			owns_state = 834
+			owns_state = 838
+			controls_state = 834
+			controls_state = 838
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+			}
+			838 = {
+				NOT = {
+					has_state_flag = {
+						flag = vashparaq_rubber_developed
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = HOU_vashparaq_rubber_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_vashparaq_rubber_duration value = 30 }
+			838 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = vashparaq_rubber_developed
+						}
+					}
+					set_state_flag = {
+						flag = vashparaq_rubber_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = vashparaq_rubber_developed
+						value = 1
+					}
+				}
+			}
+			838 = {
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_vashparaq_rubber_duration value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_vashparaq_rubber_duration value = 60 }
+			}
+		}
+	}
+	further_develop_vashparaq_plantations = { #838
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 838
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+			owns_state = 838
+			controls_state = 838
+		}
+
+		visible = {
+			owns_state = 834
+			controls_state = 834
+			owns_state = 838
+			controls_state = 838
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+			}
+			838 = {
+				has_state_flag = {
+					flag = vashparaq_rubber_developed
+					value = 2
+				}
+				NOT = {
+					has_state_flag = {
+						flag = vashparaq_rubber_developed2
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = HOU_vashparaq_rubber_duration2
+
+		modifier = {
+			civilian_factory_use = 18
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_vashparaq_rubber_duration2 value = 30 }
+			838 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = vashparaq_rubber_developed2
+						}
+					}
+					set_state_flag = {
+						flag = vashparaq_rubber_developed2
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = vashparaq_rubber_developed2
+						value = 1
+					}
+				}
+			}
+			838 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_vashparaq_rubber_duration2 value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_vashparaq_rubber_duration2 value = 60 }
+			}
+		}
+	}
+	develop_houlaana_plantations = { #834
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 837
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+			owns_state = 837
+			controls_state = 837
+		}
+
+		visible = {
+			owns_state = 834
+			owns_state = 837
+			controls_state = 834
+			controls_state = 837
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+			}
+			837 = {
+				NOT = {
+					has_state_flag = {
+						flag = houlaana_rubber_developed
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = HOU_houlaana_rubber_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_houlaana_rubber_duration value = 30 }
+			837 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = houlaana_rubber_developed
+						}
+					}
+					set_state_flag = {
+						flag = houlaana_rubber_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = houlaana_rubber_developed
+						value = 1
+					}
+				}
+			}
+			837 = {
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_houlaana_rubber_duration value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_houlaana_rubber_duration value = 60 }
+			}
+		}
+	}
+	further_develop_houlaana_plantations = { #837
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 837
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+			owns_state = 837
+			controls_state = 837
+		}
+
+		visible = {
+			owns_state = 834
+			controls_state = 834
+			owns_state = 837
+			controls_state = 837
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+			}
+			837 = {
+				has_state_flag = {
+					flag = houlaana_rubber_developed
+					value = 2
+				}
+				NOT = {
+					has_state_flag = {
+						flag = houlaana_rubber_developed2
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = HOU_houlaana_rubber_duration2
+
+		modifier = {
+			civilian_factory_use = 18
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_houlaana_rubber_duration2 value = 30 }
+			837 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = houlaana_rubber_developed2
+						}
+					}
+					set_state_flag = {
+						flag = houlaana_rubber_developed2
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = houlaana_rubber_developed2
+						value = 1
+					}
+				}
+			}
+			837 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_houlaana_rubber_duration2 value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_houlaana_rubber_duration2 value = 60 }
+			}
+		}
+	}
+	develop_tiare_plantations = { #834
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 825
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+			owns_state = 825
+			controls_state = 825
+		}
+
+		visible = {
+			owns_state = 834
+			owns_state = 825
+			controls_state = 834
+			controls_state = 825
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+			}
+			825 = {
+				NOT = {
+					has_state_flag = {
+						flag = tiare_rubber_developed
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = HOU_tiare_rubber_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_tiare_rubber_duration value = 30 }
+			825 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = tiare_rubber_developed
+						}
+					}
+					set_state_flag = {
+						flag = tiare_rubber_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = tiare_rubber_developed
+						value = 1
+					}
+				}
+			}
+			825 = {
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_tiare_rubber_duration value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_tiare_rubber_duration value = 60 }
+			}
+		}
+	}
+	further_develop_tiare_plantations = { #825
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 825
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+			owns_state = 825
+			controls_state = 825
+		}
+
+		visible = {
+			owns_state = 834
+			controls_state = 834
+			owns_state = 825
+			controls_state = 825
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+			}
+			825 = {
+				has_state_flag = {
+					flag = tiare_rubber_developed
+					value = 2
+				}
+				NOT = {
+					has_state_flag = {
+						flag = tiare_rubber_developed2
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = HOU_tiare_rubber_duration2
+
+		modifier = {
+			civilian_factory_use = 18
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_tiare_rubber_duration2 value = 30 }
+			825 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = tiare_rubber_developed2
+						}
+					}
+					set_state_flag = {
+						flag = tiare_rubber_developed2
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = tiare_rubber_developed2
+						value = 1
+					}
+				}
+			}
+			825 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_tiare_rubber_duration2 value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_tiare_rubber_duration2 value = 60 }
+			}
+		}
+	}
+	develop_rahi_plantations = { #834
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 826
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+			owns_state = 826
+			controls_state = 826
+		}
+
+		visible = {
+			owns_state = 834
+			owns_state = 826
+			controls_state = 834
+			controls_state = 826
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+			}
+			826 = {
+				NOT = {
+					has_state_flag = {
+						flag = rahi_rubber_developed
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = HOU_rahi_rubber_duration
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_rahi_rubber_duration value = 30 }
+			826 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = rahi_rubber_developed
+						}
+					}
+					set_state_flag = {
+						flag = rahi_rubber_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = rahi_rubber_developed
+						value = 1
+					}
+				}
+			}
+			826 = {
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_rahi_rubber_duration value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_rahi_rubber_duration value = 60 }
+			}
+		}
+	}
+	further_develop_rahi_plantations = { #826
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 826
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 834
+			controls_state = 834
+			owns_state = 826
+			controls_state = 826
+		}
+
+		visible = {
+			owns_state = 834
+			controls_state = 834
+			owns_state = 826
+			controls_state = 826
+			834 = {
+				has_state_flag = {
+					flag = haiie_industrial_district_developed
+				}
+			}
+			826 = {
+				has_state_flag = {
+					flag = rahi_rubber_developed
+					value = 2
+				}
+				NOT = {
+					has_state_flag = {
+						flag = rahi_rubber_developed2
+						value = 2
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = HOU_rahi_rubber_duration2
+
+		modifier = {
+			civilian_factory_use = 18
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_rahi_rubber_duration2 value = 30 }
+			826 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = rahi_rubber_developed2
+						}
+					}
+					set_state_flag = {
+						flag = rahi_rubber_developed2
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = rahi_rubber_developed2
+						value = 1
+					}
+				}
+			}
+			826 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = HOU_rahi_rubber_duration2 value = 60 compare = less_than }
+				}
+				set_variable = { var = HOU_rahi_rubber_duration2 value = 60 }
+			}
+		}
+	}
+}
