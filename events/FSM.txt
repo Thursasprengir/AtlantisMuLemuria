@@ -108,6 +108,10 @@ country_event = {
 	option = {
 		ai_chance = { factor = 0 }
 		name = fsm.4.b
+		country_event = { hours = 2 id = fsm.14 }
+		FSM = {
+			country_event = { hours = 2 id = fsm.13 }
+		}
 	}
 }
 #Manu Accepts
@@ -131,6 +135,53 @@ country_event = {
 		annex_country = { target = MNU transfer_troops = yes }
 	}
 }
+#Manu Rejects / Revolts
+country_event = {
+
+	id = fsm.13
+	title = fsm.13.t
+	desc = fsm.13.d
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 50 }
+		name = fsm.13.a
+	}
+	option = {
+		ai_chance = { factor = 50 }
+		name = fsm.13.b
+		create_wargoal = { type = annex_everything target = MNU }
+	}
+}
+#Manu Uprising
+country_event = {
+
+	id = fsm.14
+	title = fsm.14.t
+	desc = fsm.14.d
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+
+	immediate = { 
+		FSM = {end_puppet = MNU}
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_political_party = {
+    		ideology = fascism
+    		popularity = 80
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 50 }
+		name = fsm.13.a
+	}
+}
+
 #German Kaiser Invite
 country_event = {
 
