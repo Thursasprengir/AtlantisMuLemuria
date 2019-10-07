@@ -173,7 +173,6 @@ prospect_for_resources = {
 				}
 			}
 			836 = {
-				add_extra_state_shared_building_slots = 1
 				add_resource = {
 					type = chromium
 					amount = 6
@@ -206,7 +205,7 @@ prospect_for_resources = {
 		}
 		available = {
 			has_tech = construction5
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 17
 			owns_state = 836
 			controls_state = 836
 		}
@@ -231,7 +230,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 50
+		cost = 100
 		days_remove = MUU_houkehaka_steel_duration2
 
 		modifier = {
@@ -247,7 +246,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = MUU_houkehaka_steel_duration2 value = 15 }
+			add_to_variable = { var = MUU_houkehaka_steel_duration2 value = 60 }
 			836 = {
 				if = {
 					limit = {
@@ -271,15 +270,15 @@ prospect_for_resources = {
 				add_extra_state_shared_building_slots = 1
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 12
 				}
 				add_resource = {
 					type = chromium
-					amount = 6
+					amount = 12
 				}
 				add_resource = {
 					type = aluminium
-					amount = 3
+					amount = 6
 				}
 			}
 		}
@@ -287,9 +286,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = MUU_houkehaka_steel_duration2 value = 30 compare = less_than }
+					check_variable = { var = MUU_houkehaka_steel_duration2 value = 60 compare = less_than }
 				}
-				set_variable = { var = MUU_houkehaka_steel_duration2 value = 30 }
+				set_variable = { var = MUU_houkehaka_steel_duration2 value = 60 }
 			}
 		}
 	}
