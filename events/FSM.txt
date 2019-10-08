@@ -109,8 +109,6 @@ country_event = {
 		ai_chance = { factor = 0 }
 		name = fsm.4.b
 		country_event = { hours = 2 id = fsm.14 }
-		FSM = {
-			country_event = { hours = 2 id = fsm.13 }
 		}
 	}
 }
@@ -166,7 +164,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = { 
-		FSM = {end_puppet = MNU}
+		FSM = {
+		end_puppet = MNU
+		country_event = { hours = 2 id = fsm.13 }
+		}
 		set_politics = {
 			ruling_party = fascism
 		}
