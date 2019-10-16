@@ -942,6 +942,37 @@ focus = {
 		}
 	}
 
+focus = {
+		id = FSM_democratic_1
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_nationalize_plantations }
+		x = 1
+		y = 2
+		relative_position_id = FSM_nationalize_plantations
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+
 #commonbranch
 focus = {
 		id = FSM_rebuild_the_dockyards
