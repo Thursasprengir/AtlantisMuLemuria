@@ -12,7 +12,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1400 }
+	continuous_focus_position = { x = 20 y = 1800 }
 
 focus = {
 		id = FSM_veto_native_rights_bill
@@ -531,7 +531,7 @@ focus = {
 		id = FSM_brotherhood
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = FSM_germans_over_all }
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = FSM_germans_over_all
 
@@ -563,6 +563,116 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FSM_brotherhood
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+focus = {
+		id = FSM_vogelinsel_1
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_unite_germans }
+		x = -1
+		y = 2
+		relative_position_id = FSM_unite_germans
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+focus = {
+		id = FSM_vogelinsel_2
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_vogelinsel_1 }
+		x = 0
+		y = 2
+		relative_position_id = FSM_vogelinsel_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_schoenesland_1
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_unite_germans }
+		x = 0
+		y = 1
+		relative_position_id = FSM_unite_germans
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_schoenesland_2
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_schoenesland_1 }
+		x = 0
+		y = 2
+		relative_position_id = FSM_schoenesland_1
 
 		cost = 10
 
@@ -644,6 +754,33 @@ focus = {
 		}
 	}
 
+focus = {
+		id = FSM_challenge_austral_sea
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_aggressive_strikes }
+		x = -2
+		y = 1
+		relative_position_id = FSM_aggressive_strikes
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
 
 focus = {
 		id = FSM_claims_on_tiquea
@@ -942,6 +1079,7 @@ focus = {
 		}
 	}
 
+
 focus = {
 		id = FSM_democratic_1
 		icon = GFX_focus_generic_soviet_politics
@@ -973,6 +1111,251 @@ focus = {
 		}
 	}
 
+focus = {
+		id = FSM_democratic_2
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_1 }
+		x = 0
+		y = 1
+		relative_position_id = FSM_democratic_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+focus = {
+		id = FSM_democratic_3
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_2 }
+		x = 1
+		y = 1
+		relative_position_id = FSM_democratic_2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+
+focus = {
+		id = FSM_democratic_4
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_2 }
+		x = -1
+		y = 1
+		relative_position_id = FSM_democratic_2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+focus = {
+		id = FSM_democratic_5
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_3}
+		prerequisite = { focus = FSM_democratic_4}
+		x = -1
+		y = 1
+		relative_position_id = FSM_democratic_3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+
+focus = {
+		id = FSM_democratic_6
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_5}
+		x = -4
+		y = 1
+		relative_position_id = FSM_democratic_5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+
+
+focus = {
+		id = FSM_american_union
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_6}
+		x = 1
+		y = 1
+		relative_position_id = FSM_democratic_6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+focus = {
+		id = FSM_centralize
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_6}
+		x = -1
+		y = 1
+		relative_position_id = FSM_democratic_6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+focus = {
+		id = FSM_democratic_7
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_5}
+		x = -1
+		y = 1
+		relative_position_id = FSM_democratic_5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
 #commonbranch
 focus = {
 		id = FSM_rebuild_the_dockyards
