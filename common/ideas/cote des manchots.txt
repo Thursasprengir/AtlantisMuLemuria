@@ -1,0 +1,840 @@
+ideas = {
+
+	# POLITICAL
+	political_advisor = {
+		MCH_maurice_thorez = {
+			
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+			
+		MCH_leon_blum = {
+			
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		MCH_marcel_bucard = {
+			
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			
+			traits = { fascist_demagogue }
+
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		MCH_gaston_henry_haye = {
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			
+			picture = generic_political_advisor_europe_5
+			
+			traits = { silent_workhorse }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		MCH_jacques_duclos = {
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { backroom_backstabber }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+
+		MCH_paul_baudouin = {
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { smooth_talking_charmer }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		MCH_zivony_peshkov = {
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			
+			picture = generic_army_europe_5
+			
+			traits = { war_industrialist }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		MCH_felix_gouin = {
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { captain_of_industry }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		MCH_charles_tillon = {
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+			
+			picture = generic_political_advisor_europe_3
+			
+			traits = { armaments_organizer }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+		MCH_paul_reynaud = {
+			
+			allowed = {
+				original_tag = "MCH"
+			}
+
+			picture = generic_political_advisor_europe_3
+			
+			traits = { quartermaster_general }
+	
+			on_add = {
+			}
+	
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+		
+	# MILITARY
+	army_chief = {
+		
+		
+		MCH_maurice_gamelin = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+
+			cost = 50
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_maxime_weygand = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+
+			cost = 50
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MCH_henri_marie_auguste_bineau = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { army_chief_offensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MCH_pierre_alombert_goget = {
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { army_chief_defensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		
+		MCH_alphonse_georges = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { army_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	navy_chief = {
+		
+		MCH_francois_darlan = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_marcel_gensoul = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { navy_chief_naval_aviation_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_jean_marie_abrial = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	air_chief = {
+			
+		MCH_joseph_vuillemin = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { air_chief_ground_support_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_robert_odic = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { air_chief_all_weather_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_philippe_fequant = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+		
+		MCH_rene_prioux = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_charles_huntziger = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_philippe_leclerc = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		MCH_alfred_heurtaux = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_martial_valin = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_jean_francois_jannekeyn = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		MCH_jean_de_laborde = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { navy_capital_ship_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_emile_muselier = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MCH_rene_emile_godfroy = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+
+		designer = yes
+	
+		# TECHNOLOGY
+		MCH_renault_fra = {
+		
+			picture = renault
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+		}
+	
+		MCH_FRA_AMX = {
+		
+			picture = generic_tank_manufacturer_2
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { fast_tank_manufacturer }
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		MCH_somua = {
+		
+			allowed = {
+				original_tag = MCH
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+		}
+		
+		MCH_mas = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	
+		MCH_schneider = {
+						
+			allowed = {
+				original_tag = MCH
+			}		
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		MCH_morane_saulnier = {
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		MCH_bloch = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		MCH_amiot = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		MCH_levasseur = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+		
+	}
+	naval_manufacturer = {
+
+		designer = yes
+		
+		MCH_fcm = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+	
+	industrial_concern = {	
+		
+		MCH_famh = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+	}
+	
+	
+	theorist = {
+		MCH_charles_de_gaulle = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+			
+			cost = 250
+						
+			research_bonus = {
+				cat_grand_battle_plan = 0.15
+			}
+			
+			traits = { grand_battle_plan_expert }
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+
+					GER = { is_ai = yes }
+					date < 1939.1.1
+				}
+			}
+
+		}
+		
+		MCH_henri_giraud = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+
+					GER = { is_ai = yes }
+					date < 1939.1.1
+				}
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		MCH_louis_kahn = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+			cost = 250
+						
+			research_bonus = {
+				cat_fleet_in_being = 0.15
+			}
+			
+			traits = { grand_fleet_proponent }
+		}
+		
+		MCH_jean_decoux = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		MCH_victor_denain = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+			cost = 250 
+			
+			research_bonus = {
+				cat_operational_integrity = 0.15
+			}
+			
+			traits = { assault_avaition }
+		}
+		
+		MCH_jean_marie_bergeret = {
+						
+			allowed = {
+				original_tag = MCH
+			}
+						
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		MCH_frederic_irene_joliot_curie = {
+			
+			
+			allowed = {
+				original_tag = MCH
+			}
+			
+			
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+	}	
+}

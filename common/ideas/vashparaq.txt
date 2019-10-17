@@ -1,0 +1,1184 @@
+ideas = {
+
+	political_advisor = {
+		VSH_duqum_nietalli = {
+			
+			
+			allowed = {
+				original_tag = "VSH"
+			}
+			available = {
+				
+			}
+
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DEFAULT
+					}
+					factor = 0
+				}
+				modifier = {
+					is_historical_focus_on = yes
+					not = { has_dlc = "Man the Guns" }
+					factor = 0
+				}
+			}
+		}	
+		VSH_ahyumui_nendamru = {
+			
+			picture = USA_harry_white
+			allowed = {
+				original_tag = "VSH"
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { financial_expert }
+			cost = 0
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		VSH_dzam_jumrir = {
+			
+			picture = generic_political_advisor_europe_1
+			allowed = {
+				original_tag = "VSH"
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { economist }
+			cost = 0
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		VSH_qunlunuq_irimudzu = {
+			
+			picture = USA_whittaker_chambers
+			allowed = {
+				original_tag = "VSH"
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+				
+			}
+			
+			traits = { editor }
+			cost = 0
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		VSH_dulutli_amerziad = {
+			
+			picture = generic_political_advisor_europe_1
+			allowed = {
+				original_tag = "VSH"
+			}
+			allowed_civil_war = {
+				not = { has_government = communism }
+			}
+			available = {
+				
+			}
+			
+
+			
+			traits = { editor }
+			cost = 50
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		VSH_tanjiq_muhadow = {
+
+			picture = generic_political_advisor_europe_5
+
+			allowed = {
+				original_tag = VSH
+			}
+			
+			traits = { captain_of_industry }
+		}
+		VSH_ezizi_gyulqun = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = VSH
+			}
+			
+			traits = { ideological_crusader }
+		}
+		VSH_harul_ijjris = {
+			
+			
+			allowed = {
+				original_tag = "VSH"
+			}
+			
+			available = {
+				}
+			
+			traits = { democratic_reformer }
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		VSH_dzaris_tseminui = {
+						
+			allowed = {
+				original_tag = "VSH"
+			}
+			available = {
+			}
+
+			
+			traits = { fascist_demagogue }
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					is_historical_focus_on = yes
+					factor = 0
+				}
+			}		
+		}
+
+		VSH_lobur_dashim = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			traits = { silent_workhorse }
+		}
+		VSH_dzozef_magadi = {
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = VSH
+			}
+			available = {
+				
+			}
+			
+			traits = { anti_communist_crusader }
+		}
+
+		VSH_dzin_tamisin = {
+			
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		VSH_bijjo_pundrapez = {
+			
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		VSH_gurdurum_nalimtsi = {
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = VSH
+			}
+			available = {
+			}
+			
+			traits = { financial_expert }
+		}
+		VSH_pena_qimram = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			traits = { war_industrialist }
+		}
+
+		VSH_tonalu_zimsem = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			traits = { armaments_organizer }
+		}
+	}
+	
+
+	army_chief = {
+		
+	
+		VSH_orutli_usamirez = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			available = {
+			}
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_ergun_landiq = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_marejja_dzor = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_arpren_tsisram = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		VSH_hualpor_dusur = {
+			
+			picture = USA_walter_krueger
+			allowed = {
+				original_tag = VSH
+			}
+			available = {
+			}
+			
+
+			
+			traits = { army_chief_planning_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	air_chief = {
+		
+		
+		VSH_enli_usasor = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { air_chief_reform_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_djrov_tsuus = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { air_chief_night_operations_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		VSH_mairat_hyrden = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		VSH_dzor_gindi = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	navy_chief = {
+	
+		VSH_gulaq_trasmidj = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_guhalaq_jimurru = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			picture = generic_navy_europe_3
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_ridjart_nahunmund = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { navy_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	high_command = {
+		VSH_gordnau_hajjise = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_laqanziz_djuntsa = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_maigul_guruz = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		VSH_midja_mahriq = {
+			
+			picture = sabiha_gocen
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { air_strategic_bombing_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_fuusniq_aroqsats = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = VSH
+			}
+
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_chameru_dahijjiq = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_leimun_lumul = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_badtsiz_maldriave = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = VSH
+			}
+
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_dzamiz_suzareq = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		
+	tank_manufacturer = {
+	
+		designer = yes
+	
+		VSH_murumuq_nasajjin = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		VSH_yollohtli_tamu = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		VSH_qashimshi_tamu = {
+			
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = VSH
+			}
+			available = {
+			}
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+				light_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+		
+		VSH_qashimshitara_mu_tamu = {
+			
+			picture = usa_tank_destroyer_board
+			allowed = {
+				original_tag = VSH
+			}
+			available = {
+			}
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				heavy_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+	}
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		VSH_national_yards = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		VSH_orqiq_otumatiq_ijrri = {
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+		
+		VSH_droade_maude = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		VSH_qaisur_naumenden = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		VSH_tebred_saba_ijrri = {
+			
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# trainers, and air ambulances?
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_suubits_sabajiriq = {
+			
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# assembled license aircrafts from across the world 
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		VSH_qasbaijju_sabajiriq = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		
+		VSH_dzaisaindier = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		VSH_progrusaz_sabajiriq = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}		
+	}
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		VSH_quudjer_tsirarr = {
+			
+			picture = generic_infantry_equipment_manufacturer_3
+
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			equipment_bonus = {
+				# rifles and pistols
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		VSH_heruq_tsirarr = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	
+		
+		VSH_iqurdun_detsamilli = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+
+	
+	industrial_concern = {
+					
+		VSH_national_oil = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			modifier = {
+			}
+		}
+		
+		VSH_eliqtriq_mejjine_tsirarr = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		VSH_qusulli_arbeit_mejjine = {
+			
+			picture = usa_general_motors
+			allowed = {
+				original_tag = VSH
+			}
+			available = {
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+	
+	
+	theorist = {
+		VSH_murjiq_orqijun = {
+				
+		picture = generic_army_europe_2
+
+		allowed = {
+			original_tag = VSH
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { military_theorist }
+	}
+		
+		VSH_surumuj_anuasid = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+		
+		VSH_hisqitla_manilli = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		VSH_bargiz_defumun = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_base_strike = 0.15
+			}
+			
+			traits = { naval_aviation_pioneer }
+		}
+		
+		VSH_gadriz_dzulei = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.15
+			}
+			
+			traits = { victory_through_airpower }
+		}
+		
+		VSH_sayado_puulran = {
+				
+		picture = generic_political_advisor_europe_1
+
+		allowed = {
+			original_tag = VSH
+		}
+		
+		research_bonus = {
+			air_doctrine = 0.07
+		}
+		
+		traits = { air_warfare_theorist }
+	}
+		
+		VSH_hobrair_qotarj = {
+			
+			
+			allowed = {
+				original_tag = VSH
+			}
+			
+
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+			
+			traits = { rocket_scientist }
+		}
+	}
+	
+}
