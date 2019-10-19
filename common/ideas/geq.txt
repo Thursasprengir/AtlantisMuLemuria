@@ -1,5 +1,46 @@
 ideas = {
 
+	country = {
+		
+		GEQ_scientific_backlog = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+		
+		GEQ_murorian_supremacy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = -0.3
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				war_support_factor = 0.10
+				conscription = 0.002
+			}
+		}
+	}
+
 	political_advisor = {
 		GEQ_duqum_nietalli = {
 			

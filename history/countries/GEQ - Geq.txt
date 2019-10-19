@@ -11,7 +11,8 @@ set_technology = {
 	gw_artillery = 1
 }
 
-add_political_power = 300
+add_political_power = 50
+set_stability = 0.72
 
 
 set_politics = {
@@ -24,12 +25,18 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-		democratic = 12
-		fascism = 80
-		communism = 8
+		democratic = 15
+		fascism = 70
+		neutrality = 15
 		
 	}
-set_convoys = 0
+
+add_ideas = {
+	GEQ_scientific_backlog
+	GEQ_murorian_supremacy
+}
+
+set_convoys = 20
 
 create_country_leader = {
 	name = "Qorprujj Drmrilu"
