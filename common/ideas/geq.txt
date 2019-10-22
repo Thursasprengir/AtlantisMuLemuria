@@ -39,6 +39,82 @@ ideas = {
 				conscription = 0.002
 			}
 		}
+		
+		GEQ_murorian2_supremacy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				war_support_factor = 0.10
+				stability_factor = 0.05
+				conscription = 0.002
+			}
+		}
+		
+		GEQ_resurrect_the_empire_of_mug = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.15
+			}
+		}
+		
+		GEQ_support_muror_unification_groups_across_mu = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		
+		GEQ_invest_in_recruitment_tactics = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
 	}
 
 	political_advisor = {

@@ -1,0 +1,64 @@
+﻿add_namespace = geq
+
+country_event = {
+	id = geq.1
+	title = geq.1.t
+	desc = geq.1.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.1.a
+		ai_chance = {
+			base = 65
+		}
+		GEQ = {
+			create_wargoal = {
+				target = VSH
+				type = annex_everything
+			}
+		}
+		GEQ = { country_event = { days = 1 id = geq.2 } }
+	}
+	option = {
+		name = geq.1.b
+		ai_chance = {
+			base = 35
+		}
+		GEQ = { country_event = { days = 1 id = geq.3 } }
+	}
+}
+
+country_event = {
+	id = geq.2
+	title = geq.2.t
+	desc = geq.2.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.2.a
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = geq.3
+	title = geq.3.t
+	desc = geq.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.3.a
+		GEQ = { transfer_state = 856 }
+		GEQ = { transfer_state = 857 }
+		GEQ = { transfer_state = 958 }
+	}
+}

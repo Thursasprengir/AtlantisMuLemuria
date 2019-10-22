@@ -85,4 +85,195 @@ focus_tree = {
 			add_stability = -0.25
 		}
 	}
+	
+	focus = {
+		id = GEQ_muror_inclusion
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = GEQ_support_the_status_quo }
+		mutually_exclusive = {
+			focus = GEQ_liberalization_of_the_reigme
+		}
+		x = 7
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GEQ_murorian_supremacy
+				add_idea = GEQ_murorian2_supremacy
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_muroran_monarchist_support
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = GEQ_muror_inclusion }
+		x = 7
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEQ_resurrect_the_empire_of_mug
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_resurrect_the_empire_of_mu
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = GEQ_muroran_monarchist_support }
+		available = {
+			neutrality > 0.45
+		}
+		x = 7
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+			set_cosmetic_tag = GEQ_REOM
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_support_monarchist_groups_in_mu
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GEQ_resurrect_the_empire_of_mu }
+		x = 9
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			MUU = {
+				add_ideas = GEQ_support_muror_unification_groups_across_mu
+			}
+			VSH = {
+				add_ideas = GEQ_support_muror_unification_groups_across_mu
+			}
+			GOP = {
+				add_ideas = GEQ_support_muror_unification_groups_across_mu
+			}
+			NCA = {
+				add_ideas = GEQ_support_muror_unification_groups_across_mu
+			}
+			NLI = {
+				add_ideas = GEQ_support_muror_unification_groups_across_mu
+			}
+			NHI = {
+				add_ideas = GEQ_support_muror_unification_groups_across_mu
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_recruitment_tactics
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = GEQ_resurrect_the_empire_of_mu }
+		x = 7
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEQ_invest_in_recruitment_tactics
+		}
+	}
+	
+	focus = {
+		id = GEQ_pay_muroran_scientists
+		icon = GFX_focus_research
+		prerequisite = { focus = GEQ_support_monarchist_groups_in_mu }
+		x = 11
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = GEQ_scientific_backlog
+		}
+	}
+	
+	focus = {
+		id = GEQ_demand_vashparaqan_annexation
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GEQ_support_monarchist_groups_in_mu }
+		x = 9
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					VSH = {
+						owns_state = 856
+					}
+				}
+				VSH = {
+					country_event = { days = 1 id = geq.1 }
+				}
+			}
+			else_if = {
+				limit = {
+					HOU = {
+						owns_state = 856
+					}
+				}
+				HOU = {
+					country_event = { days = 1 id = geq.1 }
+				}
+			}
+			else_if = {
+				limit = {
+					MUU = {
+						owns_state = 856
+					}
+				}
+				MUU = {
+					country_event = { days = 1 id = geq.1 }
+				}
+			}
+		}
+	}
 }
