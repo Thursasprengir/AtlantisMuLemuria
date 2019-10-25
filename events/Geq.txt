@@ -13,12 +13,6 @@ country_event = {
 		ai_chance = {
 			base = 65
 		}
-		GEQ = {
-			create_wargoal = {
-				target = VSH
-				type = annex_everything
-			}
-		}
 		GEQ = { country_event = { days = 1 id = geq.2 } }
 	}
 	option = {
@@ -59,6 +53,335 @@ country_event = {
 		name = geq.3.a
 		GEQ = { transfer_state = 856 }
 		GEQ = { transfer_state = 857 }
-		GEQ = { transfer_state = 958 }
+		GEQ = { transfer_state = 858 }
+	}
+}
+
+country_event = {
+	id = geq.4
+	title = geq.4.t
+	desc = geq.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		ENG = {
+			is_in_faction = yes
+			NOT = {
+				has_completed_focus = ENG_revisit_colonial_policy
+			}
+		}
+		NCA = {
+			has_idea = GEQ_ifyourreadingthisyourepic
+			has_defensive_war = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = geq.4.a
+		ai_chance = {
+			base = 90
+		}
+		NCA = { country_event = { days = 1 id = generic.5 } }
+	}
+	option = {
+		name = geq.4.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = geq.5
+	title = geq.5.t
+	desc = geq.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		ENG = {
+			is_in_faction = yes
+			NOT = {
+				has_completed_focus = ENG_revisit_colonial_policy
+			}
+		}
+		NLI = {
+			has_idea = GEQ_ifyourreadingthisyourepic
+			has_defensive_war = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = geq.5.a
+		ai_chance = {
+			base = 90
+		}
+		NLI = { country_event = { days = 1 id = generic.5 } }
+	}
+	option = {
+		name = geq.5.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = geq.6
+	title = geq.6.t
+	desc = geq.6.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		ENG = {
+			is_in_faction = yes
+			NOT = {
+				has_completed_focus = ENG_revisit_colonial_policy
+			}
+		}
+		NHI = {
+			has_idea = GEQ_ifyourreadingthisyourepic
+			has_defensive_war = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = geq.6.a
+		ai_chance = {
+			base = 90
+		}
+		NHI = { country_event = { days = 1 id = generic.5 } }
+	}
+	option = {
+		name = geq.6.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = geq.7
+	title = geq.7.t
+	desc = geq.7.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.7.a
+		ai_chance = {
+			base = 65
+		}
+		GEQ = { country_event = { days = 1 id = geq.8 } }
+	}
+	option = {
+		name = geq.7.b
+		ai_chance = {
+			base = 35
+		}
+		GEQ = { country_event = { days = 1 id = geq.9 } }
+	}
+}
+
+country_event = {
+	id = geq.8
+	title = geq.8.t
+	desc = geq.8.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.8.a
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = geq.9
+	title = geq.9.t
+	desc = geq.9.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.9.a
+		GEQ = { transfer_state = 891 }
+	}
+}
+
+country_event = {
+	id = geq.10
+	title = geq.10.t
+	desc = geq.10.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.10.a
+		ai_chance = {
+			base = 65
+		}
+		GEQ = { country_event = { days = 1 id = geq.11 } }
+	}
+	option = {
+		name = geq.10.b
+		ai_chance = {
+			base = 35
+		}
+		GEQ = { country_event = { days = 1 id = geq.12 } }
+	}
+}
+
+country_event = {
+	id = geq.11
+	title = geq.11.t
+	desc = geq.11.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.11.a
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = geq.12
+	title = geq.12.t
+	desc = geq.12.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.12.a
+		GEQ = { transfer_state = 889 }
+	}
+}
+
+country_event = {
+	id = geq.13
+	title = geq.13.t
+	desc = geq.13.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.13.a
+		ai_chance = {
+			base = 65
+		}
+		GEQ = { country_event = { days = 1 id = geq.8 } }
+	}
+	option = {
+		name = geq.13.b
+		ai_chance = {
+			base = 35
+		}
+		GEQ = { country_event = { days = 1 id = geq.9 } }
+	}
+}
+
+country_event = {
+	id = geq.14
+	title = geq.14.t
+	desc = geq.14.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.14.a
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = geq.15
+	title = geq.15.t
+	desc = geq.15.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.15.a
+		GEQ = { transfer_state = 890 }
+	}
+}
+
+country_event = {
+	id = geq.16
+	title = geq.16.t
+	desc = geq.16.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		ENG = {
+			is_in_faction = yes
+			NOT = {
+				has_completed_focus = ENG_revisit_colonial_policy
+			}
+		}
+		WTS = {
+			has_idea = GEQ_ifyourreadingthisyourepic
+			has_defensive_war = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = geq.16.a
+		ai_chance = {
+			base = 90
+		}
+		WTS = { country_event = { days = 1 id = generic.5 } }
+	}
+	option = {
+		name = geq.16.b
+		ai_chance = {
+			base = 10
+		}
 	}
 }
