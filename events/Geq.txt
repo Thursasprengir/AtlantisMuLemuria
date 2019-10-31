@@ -303,14 +303,14 @@ country_event = {
 		ai_chance = {
 			base = 65
 		}
-		GEQ = { country_event = { days = 1 id = geq.8 } }
+		GEQ = { country_event = { days = 1 id = geq.14 } }
 	}
 	option = {
 		name = geq.13.b
 		ai_chance = {
 			base = 35
 		}
-		GEQ = { country_event = { days = 1 id = geq.9 } }
+		GEQ = { country_event = { days = 1 id = geq.15 } }
 	}
 }
 
@@ -383,5 +383,57 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
+	}
+}
+
+country_event = {
+	id = geq.17
+	title = geq.17.t
+	desc = geq.17.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.17.a
+		ai_chance = {
+			base = 95
+		}
+		add_ideas = GEQ_geq_bonus
+		GEQ = { country_event = { days = 1 id = geq.18 } }
+	}
+	option = {
+		name = geq.17.b
+		ai_chance = {
+			base = 5
+		}
+		GEQ = { country_event = { days = 1 id = geq.19 } }
+	}
+}
+
+country_event = {
+	id = geq.18
+	title = geq.18.t
+	desc = geq.18.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.18.a
+		add_ideas = GEQ_jap_bonus
+	}
+}
+
+country_event = {
+	id = geq.19
+	title = geq.19.t
+	desc = geq.19.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.19.a
 	}
 }

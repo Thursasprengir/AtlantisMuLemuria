@@ -91,7 +91,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = GEQ_support_the_status_quo }
 		mutually_exclusive = {
-			focus = GEQ_liberalization_of_the_reigme
+			focus = GEQ_embrace_geqian_militarism2
 		}
 		x = 7
 		y = 2
@@ -225,7 +225,7 @@ focus_tree = {
 		id = GEQ_pay_muroran_scientists
 		icon = GFX_focus_research
 		prerequisite = { focus = GEQ_support_monarchist_groups_in_mu }
-		x = 11
+		x = 10
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -244,7 +244,7 @@ focus_tree = {
 		id = GEQ_demand_vashparaqan_annexation
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GEQ_support_monarchist_groups_in_mu }
-		x = 9
+		x = 8
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -291,7 +291,7 @@ focus_tree = {
 		id = GEQ_develop_vashparaq
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = GEQ_demand_vashparaqan_annexation }
-		x = 11
+		x = 10
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -362,8 +362,7 @@ focus_tree = {
 	focus = {
 		id = GEQ_invest_in_espionage2
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = GEQ_support_monarchist_groups_in_mu }
-		prerequisite = { focus = GEQ_recruitment_tactics }
+		prerequisite = { focus = GEQ_glory_to_geq focus = GEQ_support_monarchist_groups_in_mu }
 		x = 6
 		y = 6
 		cost = 10
@@ -514,7 +513,7 @@ focus_tree = {
 		id = GEQ_prepare_to_retake_the_south
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = GEQ_demand_vashparaqan_annexation }
-		x = 9
+		x = 8
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -532,7 +531,7 @@ focus_tree = {
 		id = GEQ_retake_the_southern_muror_states
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = GEQ_prepare_to_retake_the_south }
-		x = 9
+		x = 8
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -560,7 +559,7 @@ focus_tree = {
 		available = {
 			owns_state = 880
 		}
-		x = 11
+		x = 10
 		y = 9
 		cost = 10
 		ai_will_do = {
@@ -571,6 +570,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.2
+			set_province_name = {
+				id = 13837
+				name = "Gequjjet"
+				}
+			880 = {
+				set_state_name = "Gequjjet"
+				}
 			add_state_core = 874
 			add_state_core = 876
 			add_state_core = 881
@@ -603,7 +609,7 @@ focus_tree = {
 		id = GEQ_demand_the_manka_peninsula
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = GEQ_integrate_all_resistance }
-		x = 11
+		x = 10
 		y = 10
 		cost = 5
 		ai_will_do = {
@@ -700,7 +706,7 @@ focus_tree = {
 		id = GEQ_demand_british_and_american_colonies
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = GEQ_integrate_all_resistance }
-		x = 13
+		x = 12
 		y = 10
 		cost = 5
 		ai_will_do = {
@@ -778,7 +784,7 @@ focus_tree = {
 		id = GEQ_develop_our_empire
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = GEQ_integrate_all_resistance }
-		x = 9
+		x = 8
 		y = 10
 		cost = 5
 		ai_will_do = {
@@ -852,7 +858,7 @@ focus_tree = {
 		id = GEQ_secure_strategic_locations
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = GEQ_retake_the_southern_muror_states }
-		x = 9
+		x = 8
 		y = 9
 		cost = 10
 		ai_will_do = {
@@ -874,6 +880,178 @@ focus_tree = {
 				target = WAP
 				type = annex_everything
 			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_embrace_geqian_militarism2
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = GEQ_support_the_status_quo }
+		mutually_exclusive = {
+			focus = GEQ_muror_inclusion
+		}
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEQ_embrace_geqian_militarism
+		}
+	}
+	
+	focus = {
+		id = GEQ_support_the_middle_class
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		prerequisite = { focus = GEQ_embrace_geqian_militarism2 }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEQ_support_the_nuclear_family
+		}
+	}
+	
+	focus = {
+		id = GEQ_invest_into_sciences
+		icon = GFX_focus_research
+		prerequisite = { focus = GEQ_support_the_middle_class }
+		mutually_exclusive = {
+			focus = GEQ_ditch_research
+		}
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = GEQ_scientific_backlog
+		}
+	}
+	
+	focus = {
+		id = GEQ_ditch_research
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = GEQ_support_the_middle_class }
+		mutually_exclusive = {
+			focus = GEQ_invest_into_sciences
+		}
+		x = 5
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEQ_ditch_science
+		}
+	}
+	
+	focus = {
+		id = GEQ_glory_to_geq
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GEQ_invest_into_sciences focus = GEQ_ditch_research }
+		x = 4
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.2
+			create_wargoal = {
+				target = VSH
+				type = annex_everything
+			}
+			add_state_core = 856
+			add_state_core = 857
+			add_state_core = 858
+			add_state_core = 820
+			add_state_core = 821
+			add_state_core = 865
+			add_state_core = 866
+			add_state_core = 867
+			add_state_core = 868
+			add_state_core = 838
+			add_state_core = 839
+		}
+	}
+	
+	focus = {
+		id = GEQ_request_to_join_the_japanese_sphere
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GEQ_naval_research_treaty }
+		x = 4
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			JAP = { country_event = { days = 1 id = generic.2 } }
+		}
+	}
+	
+	focus = {
+		id = GEQ_naval_research_treaty
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = GEQ_glory_to_geq }
+		available = {
+			GEQ = {
+				has_idea = GEQ_geq_bonus
+			}
+		}
+		x = 4
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			JAP = { country_event = { days = 1 id = geq.17 } }
+		}
+	}
+	
+	focus = {
+		id = GEQ_develop_the_army
+		icon = GFX_focus_chi_army_reform
+		x = 30
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEQ_geq_bonus
 		}
 	}
 }
