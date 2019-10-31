@@ -294,6 +294,68 @@ focus = {
 		}
 	}	
 
+focus = {
+		id = FSM_maywerken
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = FSM_civilian_companies focus = FSM_military_companies }
+		x = 1
+		y = 1
+		relative_position_id = FSM_civilian_companies
+		mutually_exclusive = {
+			focus = FSM_civilian_companies
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = FSM_communist_hunt
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = FSM_civilian_companies focus = FSM_military_companies }
+		x = 3
+		y = 1
+		relative_position_id = FSM_civilian_companies
+		mutually_exclusive = {
+			focus = FSM_civilian_companies
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}	
+
 #Kaiser Is Back Branch
 focus = {
 		id = FSM_kaiser_is_back
@@ -783,6 +845,53 @@ focus = {
 	}
 
 focus = {
+		id = FSM_request_new_guinea
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_challenge_austral_sea }
+		x = 0
+		y = 1
+		relative_position_id = FSM_challenge_austral_sea
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		OR = {
+		owns_state = 854
+		owns_state = 853
+		SCH = {
+		is_puppet_of = FSM
+		}
+		}
+		}
+
+		bypass = {
+		OR = {
+		AND = {
+		owns_state = 523
+		owns_state = 737
+		}
+		PNG = {
+		is_puppet_of = FSM
+		}
+		}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		AST = {
+				country_event = { hours = 2 id = fsm.15 }
+		}
+		}
+	}
+
+focus = {
 		id = FSM_claims_on_tiquea
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = FSM_aggressive_strikes }
@@ -1051,6 +1160,36 @@ focus = {
 focus = {
 		id = FSM_admit_gdea
 		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_1 }
+		x = 0
+		y = 1
+		relative_position_id = FSM_democratic_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+focus = {
+		id = FSM_democratic_0
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = FSM_nationalize_plantations }
 		x = 1
 		y = 1
@@ -1079,14 +1218,13 @@ focus = {
 		}
 	}
 
-
 focus = {
 		id = FSM_democratic_1
 		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = FSM_nationalize_plantations }
-		x = 1
-		y = 2
-		relative_position_id = FSM_nationalize_plantations
+		prerequisite = { focus = FSM_democratic_0 }
+		x = 0
+		y = 1
+		relative_position_id = FSM_democratic_0
 
 		cost = 10
 
@@ -1115,7 +1253,7 @@ focus = {
 		id = FSM_democratic_2
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = FSM_democratic_1 }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = FSM_democratic_1
 
@@ -1327,7 +1465,7 @@ focus = {
 		}
 	}
 focus = {
-		id = FSM_democratic_7
+		id = FSM_recognize_dutch
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = FSM_democratic_5}
 		x = -1
@@ -1354,6 +1492,89 @@ focus = {
 			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
 			}
 			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+
+focus = {
+		id = FSM_pacific_doctrine
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_5}
+		x = 1
+		y = 1
+		relative_position_id = FSM_democratic_5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+
+focus = {
+		id = FSM_curb_fascism
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_5}
+		x = 3
+		y = 1
+		relative_position_id = FSM_democratic_5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+focus = {
+		id = FSM_ban_japanese_immigration
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_curb_fascism}
+		x = 0
+		y = 1
+		relative_position_id = FSM_curb_fascism
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
 		}
 	}
 #commonbranch
@@ -1963,5 +2184,138 @@ focus = {
 	}
 
 
+#Communist Branch
+focus = {
+		id = FSM_an_unexpected_change_of_plans
+		icon = GFX_goal_support_communism
+		x = 13
+		y = 10
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		allow_branch = {
+        has_government = communism
+   		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_rewrite_constituition
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_an_unexpected_change_of_plans }
+		x = 0
+		y = 1
+		relative_position_id = FSM_an_unexpected_change_of_plans
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = FSM_soviet_aid
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_rewrite_constituition }
+		x = -1
+		y = 1
+		relative_position_id = FSM_rewrite_constituition
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = communism
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		research_bonus = { naval_equipment = 0.10 }
+		}
+	}
+
+
+focus = {
+		id = FSM_nativisation
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_rewrite_constituition }
+		x = 1
+		y = 1
+		relative_position_id = FSM_rewrite_constituition
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		has_government = communism
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		929 = { set_state_name = "Tama'a" }
+		930 = { set_state_name = "Taua" }
+		931 = { set_state_name = "Koe" }
+		934 = { set_state_name = "Haat" }
+		932 = { set_state_name = "Gelim" }
+		933 = { set_state_name = "Fa'efana" }
+		935 = { set_state_name = "Vae" }
+		936 = { set_state_name = "Pa'ia" }
+		}
+
+
+
+
+
+
+		
+		}
+	}
+
 
 }
+

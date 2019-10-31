@@ -409,3 +409,58 @@ country_event = {
 		name = fsm.12.b
 		}
 	}
+#Australia PNG
+country_event = {
+
+	id = fsm.15
+	title = fsm.15.t
+	desc = fsm.15.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.15.a
+		add_to_faction = FSM
+		release = PNG
+		FSM = {
+		puppet = PNG
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.15.b
+		}
+	}
+#PNG Fail
+country_event = {
+
+	id = fsm.16
+	title = fsm.16.t
+	desc = fsm.16.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.16.a
+		}
+	}
+#PNG Succeed
+country_event = {
+
+	id = fsm.17
+	title = fsm.17.t
+	desc = fsm.17.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.17.a
+		}
+	}
