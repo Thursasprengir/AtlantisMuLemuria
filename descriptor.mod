@@ -1,6 +1,5 @@
 ﻿name="AMLDEVELOPMENT"
 path="mod/amldevelopment/"
-replace_path="history/states"
 tags={
 	"Alternative History"
 	"Map"
