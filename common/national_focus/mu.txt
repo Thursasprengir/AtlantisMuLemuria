@@ -16,8 +16,8 @@ focus_tree = {
 
 focus = {
 		id = MUU_national_tragedy
-		icon = GFX_focus_generic_treaty
-		x = 9
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 10
 		y = 0
 
 		cost = 10
@@ -65,12 +65,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = -0.05
 		}
 	}
 	
 focus = {
 		id = MUU_government_purges
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_secret_weapon
 		prerequisite = {focus = MUU_national_tragedy}
 		mutually_exclusive = {focus = MUU_emergency_meeting}
 		x = 14
@@ -93,12 +94,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = MUU_government_purges_happening
+				days = 120
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_upper_reform
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_self_management
 		prerequisite = {focus = MUU_emergency_meeting}
 		mutually_exclusive = {focus = MUU_emergency_reform}
 		x = 4
@@ -121,12 +126,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 	
 focus = {
 		id = MUU_lower_reform
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = {focus = MUU_upper_reform}
 		x = 4
 		y = 3
@@ -148,12 +154,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	
 focus = {
 		id = MUU_emergency_reform
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = {focus = MUU_emergency_meeting}
 		mutually_exclusive = {focus = MUU_upper_reform}
 		x = 6
@@ -176,12 +183,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 200
 		}
 	}
 	
 focus = {
 		id = MUU_scapegoats
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = {focus = MUU_government_purges}
 		x = 13
 		y = 3
@@ -203,12 +211,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.05
 		}
 	}
 	
 focus = {
 		id = MUU_gov_pogrom
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = {focus = MUU_government_purges}
 		mutually_exclusive = {focus = MUU_mil_pogrom}
 		x = 14
@@ -231,12 +240,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = -0.1
 		}
 	}
 	
 focus = {
 		id = MUU_mil_pogrom
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_major_war
 		prerequisite = {focus = MUU_government_purges}
 		mutually_exclusive = {focus = MUU_gov_pogrom}
 		x = 16
@@ -259,12 +269,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = -0.1
 		}
 	}
 	
 focus = {
 		id = MUU_nationalize_1
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {focus = MUU_mil_pogrom focus = MUU_gov_pogrom}
 		x = 15
 		y = 3
@@ -286,12 +297,33 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			879 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			878 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		
 		}
 	}
 	
 focus = {
 		id = MUU_nationalize_2
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {focus = MUU_nationalize_1}
 		x = 15
 		y = 4
@@ -313,12 +345,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			878 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = MUU_nationalize_factories
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_nationalize_conscription
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_military_mission
 		prerequisite = {focus = MUU_nationalize_2}
 		x = 15
 		y = 5
@@ -340,12 +381,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				idea = MUU_extended_conscription
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_impeach_ollun
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = {focus = MUU_scapegoats}
 		x = 13
 		y = 5
@@ -367,6 +411,17 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		kill_country_leader = yes
+					create_country_leader = {
+						name = "Qatlil Hurumar"
+						desc = "POLITICS_QATLIL_HURUMAR_DESC"
+						picture = "GFX_portrait_mu_qatlil_hurumar"
+						expire = "1965.1.1"
+						ideology = democratic
+						traits = {
+			
+						}
+					}
 		}
 	}
 	
@@ -374,9 +429,8 @@ focus = {
 	
 focus = {
 		id = MUU_old_system
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = {focus = MUU_lower_reform focus = MUU_emergency_reform}
-		mutually_exclusive = {focus = MUU_westernization}
 		x = 2
 		y = 4
 
@@ -397,12 +451,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.25 }
 		}
 	}
 	
 focus = {
 		id = MUU_power_ojjamun
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_rom_royal_dictatorship
 		prerequisite = {focus = MUU_old_system}
 		x = 2
 		y = 5
@@ -424,12 +479,25 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			kill_country_leader = yes
+		    set_politics = { ruling_party = neutrality elections_allowed = no } 
+			add_popularity = { ideology = neutrality popularity = 0.25 }
+					create_country_leader = {
+						name = "Nalangqu Gahrijjeom I"
+						desc = "POLITICS_NALANGQU_GAHRIJJEOM_I_DESC"
+						picture = "GFX_portrait_mu_nalangqu_gahrijjeom_i"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+			
+						}
+					}
 		}
 	}
 	##nonaligned left branch##
 focus = {
 		id = MUU_purge_fascists
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = {focus = MUU_power_ojjamun}
 		x = 1
 		y = 6
@@ -451,12 +519,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				idea = MUU_purge_fascists
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_dismantle_militias
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_SAF_colonialist_crusade
 		prerequisite = {focus = MUU_purge_fascists}
 		x = 1
 		y = 7
@@ -478,12 +549,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = -0.05
 		}
 	}
 	
 focus = {
 		id = MUU_civic_education
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_military_academy
 		prerequisite = {focus = MUU_dismantle_militias}
 		x = 1
 		y = 8
@@ -505,12 +577,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				idea = MUU_civic_education_idea
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_general_education
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_research2
 		prerequisite = {focus = MUU_civic_education}
 		x = 1
 		y = 9
@@ -532,17 +607,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	
 focus = {
 		id = MUU_defense_ministry
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_defence
 		prerequisite = {focus = MUU_general_education}
 		x = 1
 		y = 10
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 2
@@ -559,12 +635,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				idea = MUU_ministry_of_defense
+			}
 		}
 	}
 	##nonaligned right branch##
 focus = {
 		id = MUU_persecute_democratic
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_strike_at_democracy3
 		prerequisite = {focus = MUU_power_ojjamun}
 		x = 3
 		y = 6
@@ -586,17 +665,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = MUU_persecuting_democrats
+				days = 360
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_new_elite
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = {focus = MUU_persecute_democratic}
 		x = 3
 		y = 7
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 2
@@ -613,12 +696,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.20
 		}
 	}
 	
 focus = {
 		id = MUU_national_holidays
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = {focus = MUU_new_elite}
 		x = 3
 		y = 8
@@ -640,12 +724,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = MUU_national_holidays
+				days = 280
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_one_people
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_national_unity
 		prerequisite = {focus = MUU_national_holidays}
 		x = 3
 		y = 9
@@ -667,17 +755,47 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			create_wargoal = {
+				target = "GOP"
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "GOP"
+				value = 200
+			}
+			create_wargoal = {
+				target = "VSH"
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "VSH"
+				value = 200
+			}
+			create_wargoal = {
+				target = "GEQ"
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "GEQ"
+				value = 200
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_development_ministry
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_production2
 		prerequisite = {focus = MUU_one_people}
 		x = 3
 		y = 10
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 2
@@ -694,12 +812,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				idea = MUU_ministry_of_development
+			}
 		}
 	}
 	##nonaligned development branches##
 focus = {
 		id = MUU_nonaligned_mil1
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_small_arms
 		prerequisite = {focus = MUU_defense_ministry}
 		x = 0
 		y = 11
@@ -721,12 +842,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				idea = MUU_mil_1
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_nonaligned_mil2
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_position_armies
 		prerequisite = {focus = MUU_nonaligned_mil1}
 		x = 0
 		y = 12
@@ -748,12 +872,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				idea = MUU_mil_2
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_nonaligned_milciv1
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {focus = MUU_defense_ministry}
 		prerequisite = {focus = MUU_development_ministry}
 		x = 2
@@ -776,12 +903,92 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_nonaligned_milciv2
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_continuous_armor_production
 		prerequisite = {focus = MUU_nonaligned_milciv1}
 		x = 2
 		y = 12
@@ -803,12 +1010,92 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_built
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_nonaligned_civ1
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {focus = MUU_development_ministry}
 		x = 4
 		y = 11
@@ -830,12 +1117,72 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = civ_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = civ_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = civ_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built
+			}
 		}
 	}
 	
 focus = {
 		id = MUU_nonaligned_civ2
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = {focus = MUU_nonaligned_civ1}
 		x = 4
 		y = 12
@@ -857,6 +1204,27 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = 01_MUU_tt
+			if = {
+				882 = {
+					limit = {
+						NOT = {has_country_flag = civ_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = dustartajare_developed
+			}
 		}
 	}
 	
@@ -886,15 +1254,17 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				idea = MUU_restored_empire
+			}
 		}
 	}
 	#####DEMOCRATIC#####
 	
 focus = {
 		id = MUU_westernization
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_chi_mission_to_the_us
 		prerequisite = {focus = MUU_lower_reform focus = MUU_emergency_reform}
-		mutually_exclusive = {focus = MUU_old_system}
 		x = 7
 		y = 4
 
@@ -920,7 +1290,7 @@ focus = {
 	
 focus = {
 		id = MUU_voice_public
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_propaganda
 		prerequisite = {focus = MUU_westernization}
 		x = 7
 		y = 5
@@ -947,7 +1317,7 @@ focus = {
 	##democratic left branch##	
 focus = {
 		id = MUU_join_allies
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_support_democracy
 		prerequisite = {focus = MUU_voice_public}
 		x = 6
 		y = 6
@@ -974,7 +1344,7 @@ focus = {
 	
 focus = {
 		id = MUU_acquire_weapons
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_small_arms
 		prerequisite = {focus = MUU_join_allies}
 		x = 6
 		y = 7
@@ -1001,7 +1371,7 @@ focus = {
 	
 focus = {
 		id = MUU_acquire_ships
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_cruiser2
 		prerequisite = {focus = MUU_acquire_weapons}
 		x = 6
 		y = 8
@@ -1028,7 +1398,7 @@ focus = {
 	
 focus = {
 		id = MUU_invite_companies
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_continuous_repairments
 		prerequisite = {focus = MUU_acquire_ships}
 		x = 6
 		y = 9
@@ -1055,7 +1425,7 @@ focus = {
 	##democratic right branch##	
 focus = {
 		id = MUU_extend_voting
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_support_democracy
 		prerequisite = {focus = MUU_voice_public}
 		x = 8
 		y = 6
@@ -1082,7 +1452,7 @@ focus = {
 	
 focus = {
 		id = MUU_transport_infrastructure
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {focus = MUU_extend_voting}
 		x = 8
 		y = 7
@@ -1109,7 +1479,7 @@ focus = {
 	
 focus = {
 		id = MUU_modernize_industry
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_industry_2
 		prerequisite = {focus = MUU_transport_infrastructure}
 		x = 8
 		y = 8
@@ -1163,7 +1533,7 @@ focus = {
 	##democratic final branch##
 focus = {
 		id = MUU_expand_dockyards
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = {focus = MUU_expand_ports}
 		x = 7
 		y = 10
@@ -1190,7 +1560,7 @@ focus = {
 	
 focus = {
 		id = MUU_economic_reforms
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_industry_3
 		prerequisite = {focus = MUU_expand_ports}
 		x = 9
 		y = 10
@@ -1217,7 +1587,7 @@ focus = {
 	
 focus = {
 		id = MUU_rural_workforce
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construction2
 		prerequisite = {focus = MUU_economic_reforms}
 		x = 9
 		y = 11
@@ -1246,9 +1616,8 @@ focus = {
 	
 focus = {
 		id = MUU_soviet_aid
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_support_communism
 		prerequisite = {focus = MUU_impeach_ollun}
-		mutually_exclusive = {focus = MUU_state_first}
 		x = 12
 		y = 6
 
@@ -1274,7 +1643,7 @@ focus = {
 	##communist left branch##
 focus = {
 		id = MUU_fellow_socialists
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = {focus = MUU_soviet_aid}
 		x = 11
 		y = 7
@@ -1301,7 +1670,7 @@ focus = {
 	
 focus = {
 		id = MUU_support_revolutions
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = {focus = MUU_fellow_socialists}
 		x = 11
 		y = 8
@@ -1328,7 +1697,7 @@ focus = {
 	
 focus = {
 		id = MUU_puppet_republics
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = {focus = MUU_support_revolutions}
 		x = 11
 		y = 9
@@ -1355,7 +1724,7 @@ focus = {
 	
 focus = {
 		id = MUU_join_comintern
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = {focus = MUU_puppet_republics}
 		x = 11
 		y = 10
@@ -1382,7 +1751,7 @@ focus = {
 	##communist right branch##
 focus = {
 		id = MUU_expropriate_bourgeoisie
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_industry_1
 		prerequisite = {focus = MUU_soviet_aid}
 		x = 13
 		y = 7
@@ -1409,7 +1778,7 @@ focus = {
 	
 focus = {
 		id = MUU_forced_collectivization
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = {focus = MUU_expropriate_bourgeoisie}
 		x = 13
 		y = 8
@@ -1436,7 +1805,7 @@ focus = {
 	
 focus = {
 		id = MUU_develop_poor
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_concessions
 		prerequisite = {focus = MUU_forced_collectivization}
 		x = 13
 		y = 9
@@ -1463,7 +1832,7 @@ focus = {
 	
 focus = {
 		id = MUU_land_reclamation
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construction
 		prerequisite = {focus = MUU_develop_poor}
 		x = 13
 		y = 10
@@ -1490,7 +1859,7 @@ focus = {
 	
 focus = {
 		id = MUU_reform_religion
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_continuous_increase_nu
 		prerequisite = {focus = MUU_land_reclamation}
 		mutually_exclusive = {focus = MUU_persecute_religion}
 		x = 12
@@ -1518,7 +1887,7 @@ focus = {
 	
 focus = {
 		id = MUU_persecute_religion
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = {focus = MUU_land_reclamation}
 		mutually_exclusive = {focus = MUU_reform_religion}
 		x = 14
@@ -1547,9 +1916,8 @@ focus = {
 	
 focus = {
 		id = MUU_state_first
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_continuous_suppression
 		prerequisite = {focus = MUU_impeach_ollun}
-		mutually_exclusive = {focus = MUU_soviet_aid}
 		x = 16
 		y = 6
 
@@ -1575,7 +1943,7 @@ focus = {
 	##fascist mobilization branch##
 focus = {
 		id = MUU_fascist_conscription
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = {focus = MUU_state_first}
 		x = 15
 		y = 7
@@ -1602,7 +1970,7 @@ focus = {
 	
 focus = {
 		id = MUU_expropriate_foreigners
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = {focus = MUU_fascist_conscription}
 		x = 15
 		y = 8
@@ -1629,7 +1997,7 @@ focus = {
 	
 focus = {
 		id = MUU_convert_factories1
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_continuous_naval_production
 		prerequisite = {focus = MUU_expropriate_foreigners}
 		x = 15
 		y = 9
@@ -1656,7 +2024,7 @@ focus = {
 	
 focus = {
 		id = MUU_convert_factories2
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {focus = MUU_convert_factories1}
 		x = 15
 		y = 10
@@ -1683,7 +2051,7 @@ focus = {
 	##fascist muror conquest branch##
 focus = {
 		id = MUU_claim_muror
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = {focus = MUU_state_first}
 		x = 17
 		y = 7
@@ -1710,7 +2078,7 @@ focus = {
 	
 focus = {
 		id = MUU_conscript_muror
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_small_arms
 		prerequisite = {focus = MUU_claim_muror}
 		x = 17
 		y = 8
@@ -1737,7 +2105,7 @@ focus = {
 	
 focus = {
 		id = MUU_declare_empire
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_continuous_increase_nu
 		prerequisite = {focus = MUU_conscript_muror}
 		x = 17
 		y = 9
@@ -1764,7 +2132,7 @@ focus = {
 	
 focus = {
 		id = MUU_claim_neighbours
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_occypy_states_ongoing_war
 		prerequisite = {focus = MUU_declare_empire}
 		x = 17
 		y = 10
@@ -1791,7 +2159,7 @@ focus = {
 	##fascist total war branch##
 focus = {
 		id = MUU_existential_war
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {focus = MUU_claim_neighbours}
 		prerequisite = {focus = MUU_convert_factories2}
 		x = 16
@@ -1818,7 +2186,7 @@ focus = {
 	}
 focus = {
 		id = MUU_claim_continent
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_major_war
 		prerequisite = {focus = MUU_existential_war}
 		x = 16
 		y = 12
@@ -1844,7 +2212,7 @@ focus = {
 	}
 focus = {
 		id = MUU_unified_empire
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_support_fascism
 		prerequisite = {focus = MUU_claim_continent}
 		x = 16
 		y = 13
