@@ -352,7 +352,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+		add_popularity = {
+    	ideology = communism
+  		  popularity = -0.5
+		}
 		}
 	}	
 
@@ -1126,6 +1129,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_to_tech_sharing_group = commonwealth_research
+		ENG = {
+		add_to_tech_sharing_group = commonwealth_research
+		}
 		}
 	}
 
@@ -1729,7 +1736,7 @@ focus = {
 
 
 focus = {
-		id = FSM_commonplaceholder1
+		id = FSM_more_research
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = FSM_kohn_gambit focus = FSM_open_stocks}
 		x = -3
@@ -1753,6 +1760,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_research_slot = 1
 		}
 	}
 
@@ -1787,10 +1795,10 @@ focus = {
 focus = {
 		id = FSM_antarctic_expedition
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = FSM_commonplaceholder1 }
+		prerequisite = { focus = FSM_more_research }
 		x = 0
 		y = 4
-		relative_position_id = FSM_commonplaceholder1
+		relative_position_id = FSM_more_research
 
 		cost = 10
 
