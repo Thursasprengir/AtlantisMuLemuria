@@ -991,9 +991,7 @@ focus_tree = {
 			add_state_core = 865
 			add_state_core = 866
 			add_state_core = 867
-			add_state_core = 868
-			add_state_core = 838
-			add_state_core = 839
+			add_state_core = 868   
 		}
 	}
 	
@@ -1052,6 +1050,107 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = GEQ_geq_bonus
+		}
+	}
+	
+	focus = {
+		id = GEQ_retake_the_northern_kanagan_nations
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = GEQ_glory_to_geq }
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 838
+			add_state_core = 839
+			create_wargoal = {
+				target = HOU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MHN
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_retake_the_southern_kanagan_nations
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = GEQ_retake_the_northern_kanagan_nations }
+		x = 2
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				target = IKA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MNQ
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_support_equality
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GEQ_liberalization_of_the_reigme }
+		x = 14
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GEQ_murorian_supremacy
+				add_idea = GEQ_democratic_popularity_spreading
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_destroy_the_establishment
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = GEQ_support_equality }
+		x = 14
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.75
+			add_war_support = -0.65
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.3
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			set_politics = { ruling_party = democratic elections_allowed = yes }
 		}
 	}
 }

@@ -304,6 +304,24 @@ ideas = {
 			}
 		}
 		
+		GEQ_democratic_popularity_spreading = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.15
+				stability_weekly = 0.005
+			}
+		}
+		
 		GEQ_prepare_to_retake_the_southe = {
 			
 			allowed = {
