@@ -1,6 +1,18 @@
 ideas = {
 	country = {
-		
+		MUU_rural_isolation = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_limited_conscription
+
+			modifier = {
+				conscription_factor = -0.4 
+			}
+		}
 		MUU_government_purges_happening = {
 			allowed = {
 				always = no
@@ -158,6 +170,48 @@ ideas = {
 				consumer_goods_factor = -0.05 
 				offensive_war_stability_factor = 0.2
 				defensive_war_stability_factor = 0.2
+			}
+		}
+		MUU_westernization = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democracy_drift = 0.02
+				drift_defence_factor = 0.25
+			}
+		}
+		MUU_extend_voting_rights = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_prc_low_popular_support3
+
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+		MUU_economic_reforms = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 	}	
