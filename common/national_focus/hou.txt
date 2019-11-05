@@ -163,7 +163,7 @@ focus = {
 
 focus = {
 		id = HOU_worksecurity
-		icon = GFX_focus_military_academy
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = HOU_civilianworksadmin }
 		x = 1
 		y = 4
@@ -192,7 +192,7 @@ focus = {
 
 focus = {
 		id = HOU_workersrights
-		icon = GFX_focus_self_management
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = HOU_worksecurity }
 		x = 1
 		y = 5
@@ -334,7 +334,7 @@ focus = {
 
 focus = {
 		id = HOU_civiliandefenseinit
-		icon = GFX_goal_small_arms
+		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = HOU_extremeinfrainvest }
 		prerequisite = { focus = HOU_volunteers }
 		x = 3
@@ -419,7 +419,7 @@ focus = {
 
 focus = {
 		id = HOU_usasupport
-		icon = focus_chi_mission_to_the_us
+		icon = GFX_focus_chi_mission_to_the_us
 		prerequisite = { focus = HOU_internationaldemocracy }
 		x = 8
 		y = 3
@@ -477,7 +477,7 @@ focus = {
 
 focus = {
 		id = HOU_volunteers
-		icon = GFX_focus_little_entente
+		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = HOU_militaryplans }
 		x = 7
 		y = 5
@@ -507,7 +507,7 @@ focus = {
 
 focus = {
 		id = HOU_alliances
-		icon = GFX_focus_diplomatic_treaty
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = HOU_volunteers}
 		x = 7
 		y = 6
@@ -619,7 +619,7 @@ focus = {
 
 focus = {
 		id = HOU_localalliance
-		icon = GFX_goal_localalliance
+		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = HOU_alliances}
 		mutually_exclusive = {focus = HOU_allies}
 		mutually_exclusive = {focus = HOU_ententealliance}
@@ -655,7 +655,7 @@ focus = {
 ################
 focus = {
 		id = HOU_nationalism
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = HOU_weakendemocracy }
 		mutually_exclusive = {focus = HOU_communismfocus}
 		x = 12
