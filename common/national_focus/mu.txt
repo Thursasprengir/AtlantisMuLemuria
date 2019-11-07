@@ -875,9 +875,6 @@ focus = {
 			add_ideas = {
 				idea = MUU_mil_2
 			}
-			remove_ideas = {
-				MUU_rural_isolation
-			}
 		}
 	}
 	
@@ -1963,9 +1960,6 @@ focus = {
 					level = 2
 					instant_build = yes
 				}
-			}
-			remove_ideas = {
-				MUU_rural_isolation
 			}
 		}
 	}
@@ -3337,6 +3331,27 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			878 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			881 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			882 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 focus = {
@@ -3363,6 +3378,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			remove_ideas = {
+				MUU_rural_isolation
+			}
 		}
 	}
 focus = {
@@ -3390,6 +3408,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = 0.05
 		}
 	}
 focus = {
@@ -3417,6 +3436,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.05
 		}
 	}
 focus = {
@@ -3444,6 +3464,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				MUU_exterminate_commies
+			}
 		}
 	}
 focus = {
@@ -3471,6 +3494,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				MUU_suppress_commies
+			}
 		}
 	}
 focus = {
@@ -3498,6 +3524,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_popularity = {
+			ideology = communism
+			popularity = 0.15
+			}
+			add_ideas = {
+				MUU_integrate_commies
+			}
 		}
 	}
 focus = {
@@ -3525,6 +3558,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				MUU_embrace_commies
+			}
 		}
 	}
 focus = {
@@ -3551,6 +3587,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1000
+					producer = MUU
+			}	
 		}
 	}
 focus = {
@@ -3577,6 +3618,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = 0.5
 		}
 	}
 focus = {
@@ -3603,6 +3645,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			remove_ideas = {MUU_rural_guerrillas}
 		}
 	}
 focus = {
@@ -3629,6 +3672,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 focus = {
@@ -3655,6 +3699,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {idea = MUU_bribing_politicians days = 180}
 		}
 	}
 focus = {
@@ -3681,6 +3726,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			remove_ideas = {MUU_rural_guerrillas}
 		}
 	}
 focus = {
@@ -3707,6 +3753,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			remove_ideas = {MUU_rural_guerrillas}
 		}
 	}
 focus = {
@@ -3733,6 +3780,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_popularity = {
+			ideology = communism
+			popularity = 0.10
+			}
+			army_experience = 25
 		}
 	}
 focus = {
@@ -3759,6 +3811,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {MUU_control_cities}
 		}
 	}
 focus = {
@@ -3785,6 +3838,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	
@@ -3813,6 +3867,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			army_experience = 100
 		}
 	}
 focus = {
@@ -3839,6 +3894,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 focus = {
@@ -3865,6 +3926,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 focus = {
@@ -3891,6 +3958,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 focus = {
@@ -3917,6 +3991,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 focus = {
@@ -3943,6 +4023,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
 		}
 	}
 focus = {
@@ -3969,6 +4055,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {MUU_special_forces}
 		}
 	}
 focus = {
@@ -3996,6 +4083,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_technology = {marsh_infantry = 1}
 		}
 	}
 focus = {
@@ -4023,6 +4111,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_technology = {marsh_motorized = 1}
 		}
 	}
 focus = {
@@ -4050,6 +4139,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_technology = {marsh_armor = 1}
 		}
 	}
 focus = {
@@ -4076,6 +4166,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 focus = {
@@ -4102,6 +4200,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+			}
 		}
 	}
 focus = {
@@ -4128,6 +4233,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 focus = {
@@ -4154,6 +4266,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ca_tech
+			}
 		}
 	}
 focus = {
@@ -4181,6 +4300,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = bc_tech
+				category = bb_tech
+			}
 		}
 	}
 focus = {
@@ -4209,6 +4337,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 focus = {
@@ -4236,6 +4372,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
 		}
 	}
 focus = {
@@ -4262,6 +4407,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
 		}
 	}
 focus = {
@@ -4288,6 +4440,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
 		}
 	}
 focus = {
@@ -4315,6 +4474,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
 		}
 	}
 focus = {
@@ -4341,6 +4509,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+			}
 		}
 	}
 focus = {
@@ -4367,6 +4541,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+			}
 		}
 	}
 focus = {
@@ -4393,6 +4575,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_building_construction = {
+				type = air_base
+				level = 4
+				instant_build = yes
+			}
+			add_ideas = {MUU_inirliq_airfield1}
 		}
 	}
 focus = {
@@ -4419,6 +4607,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = MUU_inirliq_airfield1
+				add_idea = MUU_inirliq_airfield2
+			}
 		}
 	}
 focus = {
@@ -4445,6 +4637,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
 		}
 	}
 	
