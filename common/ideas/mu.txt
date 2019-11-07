@@ -1,6 +1,18 @@
 ideas = {
 	country = {
-		
+		MUU_rural_isolation = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_limited_conscription
+
+			modifier = {
+				conscription_factor = -0.4 
+			}
+		}
 		MUU_government_purges_happening = {
 			allowed = {
 				always = no
@@ -160,7 +172,187 @@ ideas = {
 				defensive_war_stability_factor = 0.2
 			}
 		}
-	}	
+		MUU_westernization = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democracy_drift = 0.02
+				drift_defence_factor = 0.25
+			}
+		}
+		MUU_extend_voting_rights = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_prc_low_popular_support3
+
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+		MUU_economic_reforms = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		MUU_volunteers = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_limited_conscription
+
+			modifier = {
+				send_volunteers_tension = -0.20
+				send_volunteer_size = 1
+				send_volunteer_divisions_required = -0.25
+			}
+		}
+		MUU_develop_poor = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_prc_low_popular_support3
+
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		MUU_land_reclamation = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_man_five_year_plan_industry
+		}
+		MUU_reform_religion = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_prc_low_popular_support3
+
+			modifier = {
+				stability_weekly = 0.002
+				political_power_gain = -2
+			}
+		}
+		MUU_persecute_religion = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_prc_low_popular_support3
+
+			modifier = {
+				political_power_gain = 0.25
+				communism_drift = 0.05
+			}
+		}
+		MUU_state_above_all = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_saf_ossewabrandwag_2
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				fascism_drift = 0.05
+			}
+		}
+		MUU_state_above_all = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_saf_ossewabrandwag_2
+
+			modifier = {
+				fascism_drift = 0.05
+			}
+		}
+		MUU_fascist_conscription = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_limited_conscription
+
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.2
+			}
+		}
+		MUU_fascist_mobilization = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_limited_conscription
+
+			modifier = {
+				training_time_factor = -0.1
+				economy_cost_factor = -0.50
+				conversion_cost_civ_to_mil_factor = -0.25
+			}
+		}
+		MUU_existential_war = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_limited_conscription
+
+			modifier = {
+				political_power_gain = -1
+				consumer_goods_factor = -0.05 
+				army_speed_factor = 0.05 
+				army_attack_factor = 0.1 
+				army_defence_factor = -0.1 
+			}
+		}
+	}
 
 	political_advisor = {
 		duqum_nietalli = {

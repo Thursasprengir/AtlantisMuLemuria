@@ -392,3 +392,207 @@ prospect_for_resources = {
 		}
 	}
 }
+
+GEQ_fascist_coring = {
+	GEQ_core_vashparaq = {
+
+		icon = decision_generic_civil_support
+
+		available = {
+			GEQ = {
+				controls_state = 856
+				controls_state = 857
+				controls_state = 858
+			}
+		}
+
+		visible = {
+			original_tag = GEQ
+			GEQ = {	
+				has_completed_focus = GEQ_glory_to_geq
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {
+			GEQ = {
+				add_state_core = 856
+				add_state_core = 857
+				add_state_core = 858 
+			}
+		}
+	}
+	
+	GEQ_core_NCA = {
+
+		icon = decision_generic_civil_support
+
+		available = {
+			GEQ = {
+				controls_state = 820
+				controls_state = 821
+			}
+		}
+
+		visible = {
+			original_tag = GEQ
+			GEQ = {	
+				has_completed_focus = GEQ_glory_to_geq
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {
+			GEQ = {
+				add_state_core = 820
+				add_state_core = 821
+			}
+		}
+	}
+	
+	GEQ_core_NLI = {
+
+		icon = decision_generic_civil_support
+
+		available = {
+			GEQ = {
+				controls_state = 867
+				controls_state = 868
+			}
+		}
+
+		visible = {
+			original_tag = GEQ
+			GEQ = {	
+				has_completed_focus = GEQ_glory_to_geq
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {
+			GEQ = {
+				add_state_core = 867
+				add_state_core = 868
+			}
+		}
+	}
+	
+	GEQ_core_NHI = {
+
+		icon = decision_generic_civil_support
+
+		available = {
+			GEQ = {
+				controls_state = 865
+				controls_state = 866
+			}
+		}
+
+		visible = {
+			original_tag = GEQ
+			GEQ = {	
+				has_completed_focus = GEQ_glory_to_geq
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {
+			GEQ = {
+				add_state_core = 865
+				add_state_core = 866
+			}
+		}
+	}
+	
+	GEQ_core_the_lezam_hills = {
+
+		icon = decision_generic_civil_support
+
+		available = {
+			GEQ = {
+				controls_state = 838
+				controls_state = 839
+			}
+		}
+
+		visible = {
+			original_tag = GEQ
+			GEQ = {	
+				has_completed_focus = GEQ_glory_to_geq
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {
+			GEQ = {
+				add_state_core = 838
+				add_state_core = 839
+			}
+		}
+	}
+}

@@ -875,6 +875,9 @@ focus = {
 			add_ideas = {
 				idea = MUU_mil_2
 			}
+			remove_ideas = {
+				MUU_rural_isolation
+			}
 		}
 	}
 	
@@ -1254,6 +1257,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			hidden_effect = {set_cosmetic_tag = MUU_MOO}
 			add_ideas = {
 				idea = MUU_restored_empire
 			}
@@ -1285,6 +1289,35 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_ideas = {
+			idea = MUU_westernization
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_increase
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
 		}
 	}
 	
@@ -1312,6 +1345,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.2
 		}
 	}
 	##democratic left branch##	
@@ -1329,6 +1363,7 @@ focus = {
 		}
 
 		available = {
+			ENG = {is_in_faction_with = FRA}
 		}
 
 		bypass = {
@@ -1339,6 +1374,59 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		ENG = { add_to_faction = MUU }
+		ENG = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_increase
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
+		FRA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_increase
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = protect
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = send_volunteers_desire
+				id = "ROOT"
+				value = 100
+			}
+			add_ai_strategy = {
+				type = support
+				id = "ROOT"
+				value = 100
+			}
+		}
 		}
 	}
 	
@@ -1366,6 +1454,26 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 8000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 1000
+				producer = USA
+			}
 		}
 	}
 	
@@ -1393,6 +1501,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 200
+				producer = USA
+			}
 		}
 	}
 	
@@ -1420,6 +1533,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 2 }
+			add_offsite_building = { type = arms_factory level = 4 }
 		}
 	}
 	##democratic right branch##	
@@ -1447,6 +1562,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = MUU_extend_voting_rights
+				days = 540
+			}
 		}
 	}
 	
@@ -1474,6 +1593,34 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			887 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			884 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			885 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			886 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1501,6 +1648,46 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built1}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built1
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built1}
+						is_coastal = yes
+						free_building_slots = {
+							building = industrial_complex
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built1
+			}
 		}
 	}
 	
@@ -1528,6 +1715,83 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			873 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 13766
+						instant_build = yes
+					}
+				}
+			}
+			873 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = coastal_bunker
+						level = 4
+						province = 13766
+						instant_build = yes
+					}
+				}
+			}
+			888 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 13868
+						instant_build = yes
+					}
+				}
+			}
+			888 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = coastal_bunker
+						level = 4
+						province = 13868
+						instant_build = yes
+					}
+				}
+			}
+			871 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 13756
+						instant_build = yes
+					}
+				}
+			}
+			871 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = coastal_bunker
+						level = 4
+						province = 13756
+						instant_build = yes
+					}
+				}
+			}
+			880 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = coastal_bunker
+						level = 4
+						province = 13837
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	##democratic final branch##
@@ -1555,6 +1819,66 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_builtdem}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_builtdem
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_builtdem}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_builtdem
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_builtdem}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = dockyard
+						level = 4
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_builtdem
+			}
 		}
 	}
 	
@@ -1582,6 +1906,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				MUU_economic_reforms
+			}
 		}
 	}
 	
@@ -1609,10 +1936,41 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			882 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			881 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			876 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			874 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			remove_ideas = {
+				MUU_rural_isolation
+			}
 		}
 	}
 	
-	#####COMMUNIST#####
+	#####GOMMUNIST :DDD#####
 	
 focus = {
 		id = MUU_soviet_aid
@@ -1628,6 +1986,7 @@ focus = {
 		}
 
 		available = {
+			has_government = communism
 		}
 
 		bypass = {
@@ -1638,6 +1997,32 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
+			}
 		}
 	}
 	##communist left branch##
@@ -1665,6 +2050,246 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {limit = {TAH = {has_government = communism}}
+				TAH = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {GEQ = {has_government = communism}}
+				GEQ = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {VSH = {has_government = communism}}
+				VSH = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {NLI = {has_government = communism}}
+				NLI = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {NHI = {has_government = communism}}
+				NHI = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {NCA = {has_government = communism}}
+				NCA = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {MHN = {has_government = communism}}
+				MHN = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {HOU = {has_government = communism}}
+				HOU = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {ZHE = {has_government = communism}}
+				ZHE = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {MNQ = {has_government = communism}}
+				MNQ = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {IKA = {has_government = communism}}
+				IKA = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {WTS = {has_government = communism}}
+				WTS = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {SCH = {has_government = communism}}
+				SCH = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {NYB = {has_government = communism}}
+				NYB = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {MCH = {has_government = communism}}
+				MCH = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {WAP = {has_government = communism}}
+				WAP = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {ZIE = {has_government = communism}}
+				ZIE = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {AWA = {has_government = communism}}
+				AWA = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {TOD = {has_government = communism}}
+				TOD = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {CNJ = {has_government = communism}}
+				CNJ = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {GOP = {has_government = communism}}
+				GOP = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {FJN = {has_government = communism}}
+				FJN = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {BRG = {has_government = communism}}
+				BRG = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {TAH = {has_government = communism}}
+				TAH = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {TIQ = {has_government = communism}}
+				TIQ = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {FSM = {has_government = communism}}
+				FSM = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {MNU = {has_government = communism}}
+				MNU = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {VGI = {has_government = communism}}
+				VGI = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {CTT = {has_government = communism}}
+				CTT = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
+			if = {limit = {ARA = {has_government = communism}}
+				ARA = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = "ROOT" value = 100}
+					add_ai_strategy = {type = protect id = "ROOT" value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = "ROOT" value = 100}
+					add_ai_strategy = {type = support id = "ROOT" value = 100}
+				}
+			}
 		}
 	}
 	
@@ -1692,6 +2317,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				MUU_volunteers
+			}
 		}
 	}
 	
@@ -1719,6 +2347,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {limit = {TAH = {has_government = communism}} puppet = TAH}
+			if = {limit = {AWA = {has_government = communism}} puppet = AWA}
 		}
 	}
 	
@@ -1746,6 +2376,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			SOV = {add_to_faction = MUU}
 		}
 	}
 	##communist right branch##
@@ -1773,6 +2404,28 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = -0.05
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}}}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}}}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}}}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}}}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
 		}
 	}
 	
@@ -1800,6 +2453,24 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = -0.05
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -1827,6 +2498,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = MUU_develop_poor
+				days = 140
+			}
 		}
 	}
 	
@@ -1854,6 +2529,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = 01_MUU_marsh
+			hidden_effect = {
+				add_ideas = {
+					MUU_land_reclamation
+				}
+			}
 		}
 	}
 	
@@ -1882,6 +2563,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = MUU_reform_religion
+				days = 280
+			}
 		}
 	}
 	
@@ -1910,6 +2595,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 200
+			add_ideas = {
+				MUU_persecute_religion
+			}
 		}
 	}
 	#####FASCIST#####
@@ -1938,6 +2628,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		    set_politics = { ruling_party = fascism elections_allowed = no } 
+			add_ideas = {
+				MUU_state_above_all
+			}
 		}
 	}
 	##fascist mobilization branch##
@@ -1965,6 +2659,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				MUU_fascist_conscription
+			}
 		}
 	}
 	
@@ -1992,6 +2689,47 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = 0.05
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
 		}
 	}
 	
@@ -2019,6 +2757,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				MUU_fascist_mobilization
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 800
+				producer = MUU
+			}
 		}
 	}
 	
@@ -2046,6 +2792,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {random_owned_controlled_state = {limit = {industrial_complex > 1} remove_building = {type = industrial_complex level = 2} add_building_construction = {type = arms_factory level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {industrial_complex > 1} remove_building = {type = industrial_complex level = 2} add_building_construction = {type = arms_factory level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {industrial_complex > 1} remove_building = {type = industrial_complex level = 2} add_building_construction = {type = arms_factory level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {industrial_complex > 1} remove_building = {type = industrial_complex level = 2} add_building_construction = {type = arms_factory level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {industrial_complex > 1} remove_building = {type = industrial_complex level = 2} add_building_construction = {type = arms_factory level = 2 instant_build = yes}}}
 		}
 	}
 	##fascist muror conquest branch##
@@ -2073,6 +2824,36 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			create_wargoal = {
+				target = "GOP"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "GOP"
+				value = 200
+			}
+			create_wargoal = {
+				target = "VSH"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "VSH"
+				value = 200
+			}
+			create_wargoal = {
+				target = "GEQ"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "GEQ"
+				value = 200
+			}
 		}
 	}
 	
@@ -2100,6 +2881,17 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_state_core = 856
+			add_state_core = 857
+			add_state_core = 858
+			add_state_core = 907
+			add_state_core = 908
+			add_state_core = 859
+			add_state_core = 860
+			add_state_core = 861
+			add_state_core = 862
+			add_state_core = 863
+			add_state_core = 864
 		}
 	}
 	
@@ -2127,6 +2919,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = 0.2
+			add_stability = 0.1
 		}
 	}
 	
@@ -2154,6 +2948,106 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			create_wargoal = {
+				target = "HOU"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "HOU"
+				value = 200
+			}
+			create_wargoal = {
+				target = "WTS"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "WTS"
+				value = 200
+			}
+			create_wargoal = {
+				target = "NCA"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "NCA"
+				value = 200
+			}
+			create_wargoal = {
+				target = "NHI"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "NHI"
+				value = 200
+			}
+			create_wargoal = {
+				target = "NLI"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "NLI"
+				value = 200
+			}
+			create_wargoal = {
+				target = "MCH"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "MCH"
+				value = 200
+			}
+			create_wargoal = {
+				target = "BRG"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "BRG"
+				value = 200
+			}
+			create_wargoal = {
+				target = "AWA"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "AWA"
+				value = 200
+			}
+			create_wargoal = {
+				target = "TOD"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "TOD"
+				value = 200
+			}
+			create_wargoal = {
+				target = "CNJ"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "CNJ"
+				value = 200
+			}
 		}
 	}
 	##fascist total war branch##
@@ -2182,6 +3076,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {
+				MUU_existential_war
+			}
 		}
 	}
 focus = {
@@ -2208,6 +3105,156 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			create_wargoal = {
+				target = "TAH"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "TAH"
+				value = 200
+			}
+			create_wargoal = {
+				target = "SCH"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "SCH"
+				value = 200
+			}
+			create_wargoal = {
+				target = "NYB"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "NYB"
+				value = 200
+			}
+			create_wargoal = {
+				target = "MNQ"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "MNQ"
+				value = 200
+			}
+			create_wargoal = {
+				target = "MHN"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "MHN"
+				value = 200
+			}
+			create_wargoal = {
+				target = "ZHE"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "ZHE"
+				value = 200
+			}
+			create_wargoal = {
+				target = "FJN"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "FJN"
+				value = 200
+			}
+			create_wargoal = {
+				target = "TIQ"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "TIQ"
+				value = 200
+			}
+			create_wargoal = {
+				target = "FSM"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "FSM"
+				value = 200
+			}
+			create_wargoal = {
+				target = "MNU"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "MNU"
+				value = 200
+			}
+			create_wargoal = {
+				target = "VGI"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "VGI"
+				value = 200
+			}
+			create_wargoal = {
+				target = "CTT"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "CTT"
+				value = 200
+			}
+			create_wargoal = {
+				target = "ARA"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "ARA"
+				value = 200
+			}
+			create_wargoal = {
+				target = "ZIE"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "ZIE"
+				value = 200
+			}
+			create_wargoal = {
+				target = "WAP"
+				type = annex_everything
+				expire = 0
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = "WAP"
+				value = 200
+			}
 		}
 	}
 focus = {
@@ -2234,6 +3281,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.4
+			hidden_effect = {set_cosmetic_tag = MUU_MOO}
 		}
 	}
 	
