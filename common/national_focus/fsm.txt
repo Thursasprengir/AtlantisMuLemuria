@@ -260,6 +260,29 @@ focus = {
 
 		completion_reward = {
 
+		if = {
+ 			   limit = {
+        			has_idea = FSM_companies_open_stocks
+    				}
+			swap_ideas = {
+    				remove_idea = FSM_companies_open_stocks
+    				add_idea = FSM_companies_open_stocks_civilian
+						}
+
+			}
+		if = {
+ 			   limit = {
+        			has_idea = FSM_companies_kohn
+    				}
+			swap_ideas = {
+    				remove_idea = FSM_companies_kohn
+    				add_idea = FSM_companies_kohn_civilian
+						}
+
+			}
+
+
+
 		}
 	}	
 
@@ -290,7 +313,26 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+	if = {
+ 			   limit = {
+        			has_idea = FSM_companies_open_stocks
+    				}
+			swap_ideas = {
+    				remove_idea = FSM_companies_open_stocks
+    				add_idea = FSM_companies_open_stocks_military
+						}
 
+			}
+		if = {
+ 			   limit = {
+        			has_idea = FSM_companies_kohn
+    				}
+			swap_ideas = {
+    				remove_idea = FSM_companies_kohn
+    				add_idea = FSM_companies_kohn_military
+						}
+
+			}
 		}
 	}	
 
@@ -321,7 +363,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+		add_ideas = FSM_maywerken
 		}
 	}	
 
@@ -1101,6 +1143,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		swap_ideas = {
+    	remove_idea = FSM_sanctions
+    	add_idea = FSM_sanctions_modified
+}
 		}
 	}
 
@@ -1699,7 +1745,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+    		remove_idea = FSM_companies
+    		add_idea = FSM_companies_kohn
+			}
 		}
 	}
 
@@ -1731,6 +1780,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		swap_ideas = {
+    		remove_idea = FSM_companies
+    		add_idea = FSM_companies_open_stocks
+			}
 		}
 	}
 
@@ -1817,6 +1870,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_political_power = 100
 		}
 	}
 

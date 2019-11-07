@@ -82,6 +82,26 @@ country = {
 			}
 		}
 
+		FSM_sanctions_modified = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+					min_export = 0.1
+			}
+		}
+
 		FSM_companies = {
 			
 			
@@ -102,6 +122,141 @@ country = {
 					trade_opinion_factor = -0.2
 			}
 		}
+
+		FSM_companies_open_stocks = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+					economy_cost_factor = -0.25	
+					trade_opinion_factor = 0.3
+			}
+		}
+		FSM_companies_open_stocks_civilian = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+			consumer_goods_factor = 0.2
+			economy_cost_factor = -0.25	
+					trade_opinion_factor = 0.3
+			}
+		}
+
+		FSM_companies_open_stocks_military = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+					industrial_capacity_factory = 0.1
+					economy_cost_factor = -0.25	
+					trade_opinion_factor = 0.3
+			}
+		}
+		FSM_companies_kohn = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+					production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		FSM_companies_kohn_military = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+
+			}
+		}
+		FSM_companies_kohn_civilian = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				consumer_goods_factor = 0.2
+					production_factory_max_efficiency_factor = 0.1
+
+			}
+		}
+
+
+
+
+
+
+
+
+
+
 		FSM_status_quo = {
 			
 			
@@ -118,7 +273,31 @@ country = {
 			picture = generic_research_bonus
 	
 			modifier = {
-					
+				drift_defence_factor = 0.5
+				stability_factor = 0.20	
+			}
+		}
+
+		FSM_maywerken = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				refit_speed	 = 0.2
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				equipment_conversion_speed = 0.1
 			}
 		}
 
