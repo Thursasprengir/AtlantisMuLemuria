@@ -318,7 +318,46 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.15
+			}
+		}
+		
+		GEQ_secure_democracy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.05
+				neutrality_drift = -0.05
 				stability_weekly = 0.005
+			}
+		}
+		
+		GEQ_bring_in_capitalism = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.25
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 		

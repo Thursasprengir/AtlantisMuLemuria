@@ -945,7 +945,7 @@ focus_tree = {
 	
 	focus = {
 		id = GEQ_ditch_research
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus = GEQ_support_the_middle_class }
 		mutually_exclusive = {
 			focus = GEQ_invest_into_sciences
@@ -1141,6 +1141,45 @@ focus_tree = {
 				popularity = 0.1
 			}
 			set_politics = { ruling_party = democratic elections_allowed = yes }
+		}
+	}
+	
+	focus = {
+		id = GEQ_stabilize_the_new_state
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GEQ_destroy_the_establishment }
+		x = 14
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.05
+			add_ideas = GEQ_secure_democracy
+		}
+	}
+	
+	focus = {
+		id = GEQ_bring_capitalism_in
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = GEQ_stabilize_the_new_state }
+		x = 18
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = GEQ_bring_in_capitalism
 		}
 	}
 }
