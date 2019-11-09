@@ -201,7 +201,7 @@ country_event = {
     		}
     	add_to_faction = FSM
     	else = {
-        	create_faction = "placeholder_faction_pangerman"
+        	create_faction = "Pan-German Union"
         	add_to_faction = FSM
         	}
 		}
@@ -399,16 +399,18 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 33 }
 		name = fsm.12.a
-		add_to_faction = FSM
 	}
-
 	option = {
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 33 }
 		name = fsm.12.b
+		FSM = {
+		puppet = SCH
+		}
 		}
 	}
+
 #Australia PNG
 country_event = {
 
@@ -464,3 +466,163 @@ country_event = {
 		name = fsm.17.a
 		}
 	}
+
+#Schoenesland Fail
+country_event = {
+
+	id = fsm.18
+	title = fsm.18.t
+	desc = fsm.18.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.18.a
+	}
+	}
+#Schoenesland Fail
+country_event = {
+
+	id = fsm.18
+	title = fsm.18.t
+	desc = fsm.18.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.18.a
+	}
+	}
+#Schoenesland Succeed
+country_event = {
+
+	id = fsm.19
+	title = fsm.19.t
+	desc = fsm.19.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.19.a
+	}
+	}
+
+#Vogelinsel Annexation
+country_event = {
+
+	id = fsm.20
+	title = fsm.20.t
+	desc = fsm.20.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.20.a
+	}
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.20.b
+		FSM = {
+		puppet = VGI
+		}
+		}
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.20.c
+		every_unit_leader = {
+				set_nationality = FSM
+			}
+			FSM = {
+		annex_country = { target = VGI transfer_troops = yes }
+		}
+		}
+	}
+
+
+#Vogelinsel Fail
+country_event = {
+
+	id = fsm.21
+	title = fsm.21.t
+	desc = fsm.21.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.21.a
+	}
+	}
+
+	#Vogelinsel Puppet
+country_event = {
+
+	id = fsm.22
+	title = fsm.22.t
+	desc = fsm.22.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.22.a
+	}
+	}
+
+#Vogelinsel Annex
+country_event = {
+
+	id = fsm.23
+	title = fsm.23.t
+	desc = fsm.23.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 33 }
+		name = fsm.23.a
+	}
+	}
+
+#Invite from FSM
+country_event = {
+
+	id = fsm.24
+	title = fsm.24.t
+	desc = fsm.24.d
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = fsm.24.a
+		FSM = {
+		if = {
+ 			limit = { 
+ 			is_in_faction = yes 
+    		}
+    	add_to_faction = ROOT
+    	else = {
+        	create_faction = "Pan-German Union"
+        	add_to_faction = ROOT
+        	}
+		}
+		}
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = fsm.24.b
+	}
+}
