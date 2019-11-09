@@ -3312,7 +3312,7 @@ focus = {
 	
 focus = {
 		id = MUU_connect_countryside
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_major_alliance
 		x = 22
 		y = 0
 
@@ -3337,7 +3337,7 @@ focus = {
 	}
 focus = {
 		id = MUU_rural_infrastructure
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {focus = MUU_connect_countryside}
 		x = 18
 		y = 1
@@ -3384,7 +3384,7 @@ focus = {
 	}
 focus = {
 		id = MUU_rural_manpower
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = {focus = MUU_rural_infrastructure}
 		x = 18
 		y = 2
@@ -3413,7 +3413,7 @@ focus = {
 	}
 focus = {
 		id = MUU_no_talk
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_anti_comintern_pact
 		prerequisite = {focus = MUU_connect_countryside}
 		mutually_exclusive = {focus = MUU_yes_talk}
 		x = 21
@@ -3442,7 +3442,7 @@ focus = {
 	}
 focus = {
 		id = MUU_yes_talk
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = {focus = MUU_connect_countryside}
 		mutually_exclusive = {focus = MUU_no_talk}
 		x = 25
@@ -3471,7 +3471,7 @@ focus = {
 	}
 focus = {
 		id = MUU_exterminate_communists
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = {focus = MUU_no_talk}
 		mutually_exclusive = {focus = MUU_suppress_communists}
 		x = 20
@@ -3501,7 +3501,7 @@ focus = {
 	}
 focus = {
 		id = MUU_suppress_communists
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_self_management
 		prerequisite = {focus = MUU_no_talk}
 		mutually_exclusive = {focus = MUU_exterminate_communists}
 		x = 22
@@ -3563,7 +3563,7 @@ focus = {
 	}
 focus = {
 		id = MUU_embrace_communists
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = {focus = MUU_yes_talk}
 		mutually_exclusive = {focus = MUU_incorporate_communists}
 		x = 26
@@ -3593,7 +3593,7 @@ focus = {
 	}
 focus = {
 		id = MUU_survey_militias
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_tripartite_pact
 		prerequisite = {focus = MUU_exterminate_communists}
 		x = 20
 		y = 3
