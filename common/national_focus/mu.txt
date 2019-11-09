@@ -4277,7 +4277,7 @@ focus = {
 	}
 focus = {
 		id = MUU_ca_focus
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = {focus = MUU_cl_focus}
 		x = 25
 		y = 10
@@ -4346,7 +4346,7 @@ focus = {
 	}
 focus = {
 		id = MUU_cv_focus
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_navy_carrier
 		prerequisite = {focus = MUU_ca_focus}
 		prerequisite = {focus = MUU_experimental_airfield}
 		mutually_exclusive = {focus = MUU_bb_focus}
@@ -4382,7 +4382,7 @@ focus = {
 	}
 focus = {
 		id = MUU_light_fighter
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = {focus = MUU_military_reforms}
 		mutually_exclusive = {focus = MUU_heavy_fighter}
 		x = 27
@@ -4418,7 +4418,7 @@ focus = {
 	}
 focus = {
 		id = MUU_cas
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_CAS
 		prerequisite = {focus = MUU_light_fighter}
 		x = 27
 		y = 8
@@ -4451,7 +4451,7 @@ focus = {
 	}
 focus = {
 		id = MUU_nav_bomber
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = {focus = MUU_cas}
 		x = 27
 		y = 9
@@ -4484,7 +4484,7 @@ focus = {
 	}
 focus = {
 		id = MUU_heavy_fighter
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = {focus = MUU_military_reforms}
 		mutually_exclusive = {focus = MUU_light_fighter}
 		x = 29
@@ -4520,7 +4520,7 @@ focus = {
 	}
 focus = {
 		id = MUU_tac_bomber
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_build_airforce
 		prerequisite = {focus = MUU_heavy_fighter}
 		x = 29
 		y = 8
@@ -4552,7 +4552,7 @@ focus = {
 	}
 focus = {
 		id = MUU_strat_bomber
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = {focus = MUU_tac_bomber}
 		x = 29
 		y = 9
@@ -4586,7 +4586,7 @@ focus = {
 	}
 focus = {
 		id = MUU_experimental_airfield
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_air_doctrine
 		prerequisite = {focus = MUU_nav_bomber focus = MUU_strat_bomber}
 		x = 28
 		y = 10
@@ -4619,7 +4619,7 @@ focus = {
 	}
 focus = {
 		id = MUU_expand_airfield
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_production2
 		prerequisite = {focus = MUU_experimental_airfield}
 		x = 29
 		y = 11
@@ -4651,7 +4651,7 @@ focus = {
 	}
 focus = {
 		id = MUU_jet_research
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_rocketry
 		prerequisite = {focus = MUU_expand_airfield}
 		x = 29
 		y = 12
