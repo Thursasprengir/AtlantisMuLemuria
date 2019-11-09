@@ -528,7 +528,7 @@ focus = {
 	
 focus = {
 		id = MUU_dismantle_militias
-		icon = GFX_focus_SAF_colonialist_crusade
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = {focus = MUU_purge_fascists}
 		x = 1
 		y = 7
@@ -1350,7 +1350,7 @@ focus = {
 	##democratic left branch##	
 focus = {
 		id = MUU_join_allies
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_goal_support_democracy
 		prerequisite = {focus = MUU_voice_public}
 		x = 6
 		y = 6
@@ -3624,7 +3624,7 @@ focus = {
 	}
 focus = {
 		id = MUU_strike_cells
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = {focus = MUU_survey_militias}
 		x = 20
 		y = 4
@@ -3651,7 +3651,7 @@ focus = {
 	}
 focus = {
 		id = MUU_destroy_militia
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = {focus = MUU_strike_cells}
 		x = 20
 		y = 5
@@ -3678,7 +3678,7 @@ focus = {
 	}
 focus = {
 		id = MUU_limit_influence
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_small_arms
 		prerequisite = {focus = MUU_suppress_communists focus = MUU_incorporate_communists}
 		x = 23
 		y = 3
@@ -3705,7 +3705,7 @@ focus = {
 	}
 focus = {
 		id = MUU_bribe_politicians
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = {focus = MUU_limit_influence}
 		x = 23
 		y = 4
@@ -3732,7 +3732,7 @@ focus = {
 	}
 focus = {
 		id = MUU_deradicalize_youth
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_military_academy
 		prerequisite = {focus = MUU_bribe_politicians}
 		x = 23
 		y = 5
@@ -3759,7 +3759,7 @@ focus = {
 	}
 focus = {
 		id = MUU_absorb_militias
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_military_mission
 		prerequisite = {focus = MUU_embrace_communists}
 		x = 26
 		y = 3
@@ -3791,7 +3791,7 @@ focus = {
 	}
 focus = {
 		id = MUU_expand_influence
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = {focus = MUU_absorb_militias}
 		x = 26
 		y = 4
@@ -3822,7 +3822,7 @@ focus = {
 	}
 focus = {
 		id = MUU_control_cities
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_industry_3
 		prerequisite = {focus = MUU_expand_influence}
 		x = 26
 		y = 5
@@ -3849,7 +3849,7 @@ focus = {
 	}
 focus = {
 		id = MUU_rural_schools
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_military_academy
 		prerequisite = {focus = MUU_control_cities focus = MUU_deradicalize_youth}
 		x = 25
 		y = 6
@@ -3879,7 +3879,7 @@ focus = {
 	
 focus = {
 		id = MUU_military_reforms
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_army_doctrines
 		x = 21
 		y = 6
 
