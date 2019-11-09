@@ -1539,7 +1539,7 @@ focus = {
 	##democratic right branch##	
 focus = {
 		id = MUU_extend_voting
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_goal_support_democracy
 		prerequisite = {focus = MUU_voice_public}
 		x = 8
 		y = 6
@@ -1970,7 +1970,7 @@ focus = {
 	
 focus = {
 		id = MUU_soviet_aid
-		icon = GFX_goal_generic_support_communism
+		icon = GFX_goal_support_communism
 		prerequisite = {focus = MUU_impeach_ollun}
 		x = 12
 		y = 6
@@ -3905,7 +3905,7 @@ focus = {
 	}
 focus = {
 		id = MUU_infantry_equip
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_small_arms
 		prerequisite = {focus = MUU_military_reforms}
 		x = 20
 		y = 7
@@ -3937,7 +3937,7 @@ focus = {
 	}
 focus = {
 		id = MUU_artillery_equip
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_army_artillery
 		prerequisite = {focus = MUU_infantry_equip}
 		x = 20
 		y = 8
@@ -3969,7 +3969,7 @@ focus = {
 	}
 focus = {
 		id = MUU_doctrine_research1
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_research
 		prerequisite = {focus = MUU_artillery_equip}
 		x = 20
 		y = 9
@@ -4002,7 +4002,7 @@ focus = {
 	}
 focus = {
 		id = MUU_motorized_equip
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_army_motorized
 		prerequisite = {focus = MUU_doctrine_research1}
 		x = 20
 		y = 10
@@ -4034,7 +4034,7 @@ focus = {
 	}
 focus = {
 		id = MUU_tank_equip
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = {focus = MUU_motorized_equip}
 		x = 20
 		y = 11
@@ -4066,7 +4066,7 @@ focus = {
 	}
 focus = {
 		id = MUU_special_forces
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_special_forces
 		prerequisite = {focus = MUU_infantry_equip}
 		x = 22
 		y = 8
@@ -4093,7 +4093,7 @@ focus = {
 	}
 focus = {
 		id = MUU_infantry_marsh
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_production2
 		prerequisite = {focus = MUU_special_forces}
 		prerequisite = {focus = MUU_artillery_equip}
 		x = 22
@@ -4121,7 +4121,7 @@ focus = {
 	}
 focus = {
 		id = MUU_motorized_marsh
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_production2
 		prerequisite = {focus = MUU_motorized_equip}
 		prerequisite = {focus = MUU_infantry_marsh}
 		x = 22
@@ -4149,7 +4149,7 @@ focus = {
 	}
 focus = {
 		id = MUU_tank_marsh
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_production2
 		prerequisite = {focus = MUU_motorized_marsh}
 		prerequisite = {focus = MUU_tank_equip}
 		x = 22
