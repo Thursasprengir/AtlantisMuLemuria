@@ -1,5 +1,5 @@
-﻿name="AMLDEVELOPMENT"
-path="mod/amldevelopment/"
+﻿name="Atlantis Mu Lemuria"
+path="mod/aml/"
 tags={
 	"Alternative History"
 	"Map"
