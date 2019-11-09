@@ -441,6 +441,7 @@ focus = {
 		}
 
 		available = {
+			has_idea = MUU_no_talk1
 		}
 
 		bypass = {
@@ -520,7 +521,7 @@ focus = {
 
 		completion_reward = {
 			add_ideas = {
-				idea = MUU_purge_fascists
+				idea = MUU_purge_fascists1
 			}
 		}
 	}
@@ -725,7 +726,7 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = MUU_national_holidays
+				idea = MUU_national_holidays1
 				days = 280
 			}
 		}
@@ -1276,6 +1277,7 @@ focus = {
 		}
 
 		available = {
+			has_idea = MUU_yes_talk1
 		}
 
 		bypass = {
@@ -1287,7 +1289,7 @@ focus = {
 
 		completion_reward = {
 		add_ideas = {
-			idea = MUU_westernization
+			idea = MUU_westernization1
 		}
 		USA = {
 			add_opinion_modifier = {
@@ -1904,7 +1906,7 @@ focus = {
 
 		completion_reward = {
 			add_ideas = {
-				MUU_economic_reforms
+				MUU_economic_reforms1
 			}
 		}
 	}
@@ -1981,6 +1983,7 @@ focus = {
 
 		available = {
 			has_government = communism
+			has_idea = MUU_yes_talk1
 		}
 
 		bypass = {
@@ -2341,8 +2344,32 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {limit = {TAH = {has_government = communism}} puppet = TAH}
-			if = {limit = {AWA = {has_government = communism}} puppet = AWA}
+			custom_effect_tooltip = 01_MUU_puppet
+			hidden_effect = {
+				if = {limit = {TAH = {has_government = communism}} puppet = TAH}
+				if = {limit = {AWA = {has_government = communism}} puppet = AWA}
+				if = {limit = {WTS = {has_government = communism}} puppet = WTS}
+				if = {limit = {CNJ = {has_government = communism}} puppet = CNJ}
+				if = {limit = {VSH = {has_government = communism}} puppet = VSH}
+				if = {limit = {GEQ = {has_government = communism}} puppet = GEQ}
+				if = {limit = {GOP = {has_government = communism}} puppet = GOP}
+				if = {limit = {MCH = {has_government = communism}} puppet = MCH}
+				if = {limit = {BRG = {has_government = communism}} puppet = BRG}
+				if = {limit = {TIQ = {has_government = communism}} puppet = TIQ}
+				if = {limit = {SCH = {has_government = communism}} puppet = SCH}
+				if = {limit = {NYB = {has_government = communism}} puppet = NYB}
+				if = {limit = {MNQ = {has_government = communism}} puppet = MNQ}
+				if = {limit = {NLI = {has_government = communism}} puppet = NLI}
+				if = {limit = {NHI = {has_government = communism}} puppet = NHI}
+				if = {limit = {NCA = {has_government = communism}} puppet = NCA}
+				if = {limit = {WAP = {has_government = communism}} puppet = WAP}
+				if = {limit = {ZIE = {has_government = communism}} puppet = ZIE}
+				if = {limit = {VGI = {has_government = communism}} puppet = VGI}
+				if = {limit = {ARA = {has_government = communism}} puppet = ARA}
+				if = {limit = {CTT = {has_government = communism}} puppet = CTT}
+				if = {limit = {MHN = {has_government = communism}} puppet = MHN}
+				if = {limit = {IKA = {has_government = communism}} puppet = IKA}
+			}
 		}
 	}
 	
@@ -2493,7 +2520,7 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = MUU_develop_poor
+				idea = MUU_develop_poor1
 				days = 140
 			}
 		}
@@ -2526,7 +2553,7 @@ focus = {
 			custom_effect_tooltip = 01_MUU_marsh
 			hidden_effect = {
 				add_ideas = {
-					MUU_land_reclamation
+					MUU_land_reclamation1
 				}
 			}
 		}
@@ -2558,7 +2585,7 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = MUU_reform_religion
+				idea = MUU_reform_religion1
 				days = 280
 			}
 		}
@@ -2592,7 +2619,7 @@ focus = {
 			add_stability = -0.05
 			add_political_power = 200
 			add_ideas = {
-				MUU_persecute_religion
+				MUU_persecute_religion1
 			}
 		}
 	}
@@ -2612,6 +2639,7 @@ focus = {
 		}
 
 		available = {
+			has_idea = MUU_no_talk1
 		}
 
 		bypass = {
@@ -2654,7 +2682,7 @@ focus = {
 
 		completion_reward = {
 			add_ideas = {
-				MUU_fascist_conscription
+				MUU_fascist_conscription1
 			}
 		}
 	}
@@ -3409,6 +3437,7 @@ focus = {
 
 		completion_reward = {
 			add_war_support = 0.05
+			add_ideas = {MUU_no_talk1}
 		}
 	}
 focus = {
@@ -3437,6 +3466,7 @@ focus = {
 
 		completion_reward = {
 			add_stability = 0.05
+			add_ideas = {MUU_yes_talk1}
 		}
 	}
 focus = {
@@ -3494,8 +3524,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				MUU_suppress_commies
+			add_timed_idea = {
+				idea = MUU_suppress_commies
+				days = 180
 			}
 		}
 	}
@@ -3527,9 +3558,6 @@ focus = {
 			add_popularity = {
 			ideology = communism
 			popularity = 0.15
-			}
-			add_ideas = {
-				MUU_integrate_commies
 			}
 		}
 	}
@@ -4586,6 +4614,7 @@ focus = {
 				instant_build = yes
 			}
 			add_ideas = {MUU_inirliq_airfield1}
+			add_timed_idea = {idea = MUU_building_inirliq days = 90}
 		}
 	}
 focus = {
@@ -4612,6 +4641,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_timed_idea = {idea = MUU_building_inirliq days = 180}
+			add_research_slot = 1
 			swap_ideas = {
 				remove_idea = MUU_inirliq_airfield1
 				add_idea = MUU_inirliq_airfield2
