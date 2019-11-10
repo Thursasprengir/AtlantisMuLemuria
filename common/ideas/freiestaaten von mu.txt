@@ -395,6 +395,15 @@ country = {
 				army_core_defence_factor = 0.1 
 			}
 		}
+		FSM_denazification = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				political_power_gain = -0.2
+				fascism_drift = -0.3
+			}
+		}
 		
 		
 		
