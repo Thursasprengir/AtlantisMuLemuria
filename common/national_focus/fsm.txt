@@ -1438,7 +1438,7 @@ focus = {
 #allies branch
 focus = {
 		id = FSM_negotiate_sanctions
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = FSM_nationalize_plantations }
 		x = -1
 		y = 1
@@ -1560,7 +1560,7 @@ focus = {
 	}
 focus = {
 		id = FSM_democratic_0
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = FSM_nationalize_plantations }
 		x = 1
 		y = 1
@@ -1639,7 +1639,7 @@ focus = {
 
 focus = {
 		id = FSM_democratic_2
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = FSM_democratic_1 }
 		x = 2
 		y = 1
@@ -1668,7 +1668,7 @@ focus = {
 	}
 focus = {
 		id = FSM_democratic_3
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = FSM_democratic_2 }
 		x = 1
 		y = 1
@@ -1753,7 +1753,7 @@ focus = {
 
 focus = {
 		id = FSM_democratic_4
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = FSM_democratic_2 }
 		x = -1
 		y = 1
@@ -1818,7 +1818,7 @@ focus = {
 	}
 focus = {
 		id = FSM_democratic_5
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = FSM_democratic_3}
 		prerequisite = { focus = FSM_democratic_4}
 		x = -1
@@ -1849,7 +1849,7 @@ focus = {
 
 focus = {
 		id = FSM_democratic_6
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = FSM_democratic_5}
 		x = -4
 		y = 1
@@ -1879,7 +1879,7 @@ focus = {
 
 focus = {
 		id = FSM_american_union
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		prerequisite = { focus = FSM_democratic_6}
 		x = 1
 		y = 1
@@ -1907,7 +1907,7 @@ focus = {
 	}
 focus = {
 		id = FSM_centralize
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = FSM_democratic_6}
 		x = -1
 		y = 1
@@ -1935,7 +1935,7 @@ focus = {
 	}
 focus = {
 		id = FSM_recognize_dutch
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_hol_oranje_boven
 		prerequisite = { focus = FSM_democratic_5}
 		x = -1
 		y = 1
@@ -1990,7 +1990,7 @@ focus = {
 
 focus = {
 		id = FSM_pacific_doctrine
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = FSM_democratic_5}
 		x = 1
 		y = 1
@@ -2047,7 +2047,7 @@ focus = {
 
 focus = {
 		id = FSM_curb_fascism
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = FSM_democratic_5}
 		x = 3
 		y = 1
@@ -2604,7 +2604,7 @@ focus = {
 #air branch
 focus = {
 		id = FSM_airwings
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = FSM_military_start }
 		x = 2
 		y = 1
@@ -2679,7 +2679,7 @@ focus = {
 
 focus = {
 		id = FSM_bushland_troops
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = FSM_army_reform }
 		x = 0
 		y = 1
@@ -2798,7 +2798,7 @@ focus = {
 
 focus = {
 		id = FSM_aircraft_carrier
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = FSM_heavy_warships }
 		x = 0
 		y = 1
