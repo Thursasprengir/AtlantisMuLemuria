@@ -349,7 +349,7 @@ country = {
 				consumer_goods_factor = 0.05
 			}
 		}
-		FSM_colonial_companies_subsidies2
+		FSM_colonial_companies_subsidies2 = {
 			allowed = {always = no}
 			removal_cost = -1
 			picture = generic_research_bonus
@@ -358,13 +358,21 @@ country = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
+		FSM_plantations_nationalized = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}
 		
 		
 		
 		
 		
 		
-		#############
+		######ideas end here lol#######
 
 		combat_support_ships = {
 			
