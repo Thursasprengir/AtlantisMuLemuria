@@ -1872,9 +1872,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
-			}
-			custom_effect_tooltip = 1_FSM_tt
+			remove_ideas = FSM_sanctions
 		}
 	}
 
@@ -1904,9 +1902,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
-			}
-			custom_effect_tooltip = 1_FSM_tt
+			add_ideas = {FSM_federalism}
 		}
 	}
 focus = {
@@ -1934,9 +1930,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
-			}
-			custom_effect_tooltip = 1_FSM_tt
+			add_ideas = {FSM_centralization}
 		}
 	}
 focus = {
@@ -1964,9 +1958,33 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			add_ideas = {FSM_dutch_immigration}
+			HOL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
 			}
-			custom_effect_tooltip = 1_FSM_tt
 		}
 	}
 
