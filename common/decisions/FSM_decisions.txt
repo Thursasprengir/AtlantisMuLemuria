@@ -249,3 +249,39 @@ prospect_for_resources = {
 		}
 	}
 }
+FSM_immigration = {
+	FSM_immigration1 = {
+		icon = generic_political_discourse
+		allowed = {}
+		available = {
+			has_country_flag = {flag = FSM_democratic2 value < 5}
+		}
+		visible = {
+			has_country_flag = {flag = FSM_democratic2 value < 5}
+		}
+		cost = 25
+		days_remove = 140
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			add_manpower = 20000
+			modify_country_flag = {
+				flag = FSM_democratic2
+				value = 1
+			}
+		}
+
+		complete_effect = {
+		}
+	}
+}

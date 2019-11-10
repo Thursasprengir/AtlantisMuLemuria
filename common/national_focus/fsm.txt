@@ -1396,44 +1396,6 @@ focus = {
 				}
 				set_state_flag = civ_effort_built2
 			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built2}
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				set_state_flag = civ_effort_built2
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built2}
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				set_state_flag = civ_effort_built2
-			}
 		}
 	}
 
@@ -1700,6 +1662,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			hidden_effect = {set_country_flag = {flag = FSM_democratic2 value = 1}}
+			custom_effect_tooltip = 01_FSM_democratic2
 		}
 	}
 focus = {
@@ -1727,6 +1691,63 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_builtquo}
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_builtquo
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_builtquo}
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_builtquo
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_builtquo}
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_builtquo
+			}
 		}
 	}
 
@@ -1755,9 +1776,44 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built2}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built2
 			}
-			custom_effect_tooltip = 1_FSM_tt
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built2}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built2
+			}
 		}
 	}
 focus = {
