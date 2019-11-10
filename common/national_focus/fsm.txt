@@ -990,7 +990,7 @@ focus = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
 						level = 3
@@ -1009,7 +1009,7 @@ focus = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
 						level = 3
@@ -1028,7 +1028,7 @@ focus = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
@@ -1273,6 +1273,44 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built2}
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built2
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built2}
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built2
+			}
 		}
 	}
 
@@ -1301,7 +1339,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			consumer_goods_factor = -0.04
+			add_ideas {FSM_plantations_nationalized}
 		}
 	}
 
@@ -1330,6 +1368,63 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built2}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built2
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built2}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built2
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built2}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built2
+			}
 		}
 	}
 
@@ -1517,9 +1612,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
-			}
-			custom_effect_tooltip = 1_FSM_tt
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
 		}
 	}
 
