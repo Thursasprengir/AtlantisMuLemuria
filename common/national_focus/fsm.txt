@@ -16,7 +16,7 @@ focus_tree = {
 
 focus = {
 		id = FSM_veto_native_rights_bill
-		icon = GFX_focus_tear_paper
+		icon = GFX_goal_generic_forceful_treaty
 		mutually_exclusive = {
 			focus = FSM_pass_native_rights_bill
 		}
@@ -81,7 +81,7 @@ focus = {
 #neutralitybranch
 focus = {
 		id = FSM_neutralplaceholder1
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = FSM_veto_native_rights_bill }
 		x = -3
 		y = 1
@@ -130,7 +130,7 @@ focus = {
 
 focus = {
 		id = FSM_neutralplaceholder2
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = FSM_neutralplaceholder1 }
 		x = -1
 		y = 1
@@ -231,7 +231,7 @@ focus = {
 
 focus = {
 		id = FSM_revoke_sanction
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = FSM_status_quo }
 		x = 1
 		y = 3
@@ -264,7 +264,7 @@ focus = {
 
 focus = {
 		id = FSM_subsidize_colonial_companies
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = FSM_revoke_sanction }
 		x = 0
 		y = 1
@@ -1187,7 +1187,7 @@ focus = {
 
 focus = {
 		id = FSM_claims_on_tiquea
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = FSM_aggressive_strikes }
 		x = 0
 		y = 1
@@ -1217,7 +1217,7 @@ focus = {
 
 focus = {
 		id = FSM_claims_on_antarctica
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = FSM_military_buildup }
 		prerequisite = { focus = FSM_antarctic_expedition }
 		x = 1
@@ -1248,7 +1248,7 @@ focus = {
 	}
 focus = {
 		id = FSM_just_another_research_slot
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_research
 		prerequisite = { focus = FSM_claims_on_antarctica }
 		x = 0
 		y = 1
