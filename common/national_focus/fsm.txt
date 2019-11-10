@@ -2597,7 +2597,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+			army_experience = 25
 		}
 	}
 
@@ -2610,7 +2610,7 @@ focus = {
 		y = 1
 		relative_position_id = FSM_military_start
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 2
@@ -2627,7 +2627,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		research_bonus = { naval_equipment = 0.10 }
+			air_experience = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 4
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				category = cas_bomber
+			}
 		}
 	}
 
@@ -2658,35 +2667,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		}
-	}	
-
-
-focus = {
-		id = FSM_army_reform
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = FSM_military_start }
-		x = 0
-		y = 1
-		relative_position_id = FSM_military_start
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}	
 
@@ -2715,6 +2702,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}	
 
@@ -2745,6 +2739,22 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = bc_tech
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ca_tech
+			}
 		}
 	}	
 
@@ -2756,7 +2766,7 @@ focus = {
 		y = 1
 		relative_position_id = FSM_heavy_warships
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 2
@@ -2773,10 +2783,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		AST = {add_opinion_modifier = { target = FSM modifier = medium_decrease }
-				}
-		NZL = {add_opinion_modifier = { target = FSM modifier = medium_decrease }
-				}
+			navy_experience = 15
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = naval_doctrine
+			}
+			AST = {add_opinion_modifier = { target = FSM modifier = medium_decrease }}
+			NZL = {add_opinion_modifier = { target = FSM modifier = medium_decrease }}
+			add_ideas = {FSM_austral_dominance}
 		}
 	}
 
@@ -2805,7 +2821,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		research_bonus = { naval_equipment = 0.10 }
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 
