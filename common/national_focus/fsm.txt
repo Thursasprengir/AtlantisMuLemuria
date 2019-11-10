@@ -533,109 +533,113 @@ focus = {
 	}	
 
 #Kaiser Is Back Branch
-#focus = {
-#		id = FSM_kaiser_is_back
-#		icon = GFX_focus_ger_return_of_the_kaiser
-#		mutually_exclusive = {
-#			focus = FSM_encourage_fascists
-#			focus = FSM_status_quo
-#		}
-#		prerequisite = { focus = FSM_neutralplaceholder2 }
-#		x = 3
-#		y = 1
-#		relative_position_id = FSM_neutralplaceholder2
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 2
-#		}
-#		
-#		available = {
-#		GER = {
-#					has_government = neutrality
-#				}
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#
-#		}
-#	}
-#
-#focus = {
-#		id = FSM_join_kaiser_faction
-#		icon = GFX_goal_support_communism
-#		prerequisite = { focus = FSM_kaiser_is_back }
-#		x = 0
-#		y = 1
-#		relative_position_id = FSM_kaiser_is_back
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 2
-#		}
-#		
-#		available = {
-#		GER = {
-#					has_government = neutrality
-#				}
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#			GER = {
-#			country_event = { hours = 2 id = fsm.6 }
-#		}
-#		}
-#	}
-#focus = {
-#		id = FSM_reinstate_the_associate_state
-#		icon = GFX_goal_support_communism
-#		prerequisite = { focus = FSM_join_kaiser_faction }
-#		x = 0
-#		y = 1
-#		relative_position_id = FSM_join_kaiser_faction
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 2
-#		}
-#		
-#		available = {
-#		GER = {
-#				has_government = neutrality
-#				}
-#		is_in_faction_with = GER
-#
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#			set_cosmetic_tag = FSM_KAISER
-#			add_ideas = FSM_associate_state
-#		}
-#	}
+focus = {
+		id = FSM_kaiser_is_back
+		icon = GFX_focus_ger_return_of_the_kaiser
+		mutually_exclusive = {
+			focus = FSM_encourage_fascists
+			focus = FSM_status_quo
+		}
+		prerequisite = { focus = FSM_neutralplaceholder2 }
+		x = 3
+		y = 1
+		relative_position_id = FSM_neutralplaceholder2
+
+		cost = 10
+
+		
+		allow_branch = {
+			has_dlc = "Waking the Tiger"
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		GER = {
+					has_government = neutrality
+				}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+focus = {
+		id = FSM_join_kaiser_faction
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_kaiser_is_back }
+		x = 0
+		y = 1
+		relative_position_id = FSM_kaiser_is_back
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		GER = {
+					has_government = neutrality
+				}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = {
+			country_event = { hours = 2 id = fsm.6 }
+		}
+		}
+	}
+focus = {
+		id = FSM_reinstate_the_associate_state
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_join_kaiser_faction }
+		x = 0
+		y = 1
+		relative_position_id = FSM_join_kaiser_faction
+
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		GER = {
+				has_government = neutrality
+				}
+		is_in_faction_with = GER
+
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_cosmetic_tag = FSM_KAISER
+			add_ideas = FSM_associate_state
+		}
+	}
 
 #Fascism Branch
 focus = {
