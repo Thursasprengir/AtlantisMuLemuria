@@ -264,7 +264,7 @@ focus = {
 
 focus = {
 		id = FSM_subsidize_colonial_companies
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FSM_revoke_sanction }
 		x = 0
 		y = 1
@@ -387,7 +387,7 @@ focus = {
 
 focus = {
 		id = FSM_military_companies
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = FSM_subsidize_colonial_companies }
 		x = 1
 		y = 1
@@ -673,7 +673,7 @@ focus = {
 	}
 focus = {
 		id = FSM_snap_elections
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FSM_encourage_fascists }
 		x = 0
 		y = 1
@@ -801,7 +801,7 @@ focus = {
 
 focus = {
 		id = FSM_unite_germans
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = FSM_brotherhood }
 		x = 0
 		y = 1
@@ -832,7 +832,7 @@ focus = {
 	}
 focus = {
 		id = FSM_vogelinsel_1
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = FSM_unite_germans }
 		x = -1
 		y = 2
@@ -862,7 +862,7 @@ focus = {
 	}
 focus = {
 		id = FSM_vogelinsel_2
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = FSM_vogelinsel_1 }
 		x = 0
 		y = 2
@@ -893,7 +893,7 @@ focus = {
 
 focus = {
 		id = FSM_schoenesland_1
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = FSM_unite_germans }
 		x = 0
 		y = 1
@@ -924,7 +924,7 @@ focus = {
 
 focus = {
 		id = FSM_schoenesland_2
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = FSM_schoenesland_1 }
 		x = 0
 		y = 2
@@ -1042,7 +1042,7 @@ focus = {
 
 focus = {
 		id = FSM_aggressive_strikes
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = FSM_military_buildup }
 		x = 0
 		y = 1
@@ -1072,7 +1072,7 @@ focus = {
 
 focus = {
 		id = FSM_challenge_austral_sea
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = FSM_aggressive_strikes }
 		x = -2
 		y = 1
@@ -1140,7 +1140,7 @@ focus = {
 
 focus = {
 		id = FSM_request_new_guinea
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = FSM_challenge_austral_sea }
 		x = 0
 		y = 1
@@ -1402,7 +1402,7 @@ focus = {
 
 focus = {
 		id = FSM_accept_german_scientists
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_research
 		prerequisite = { focus = FSM_liberalplaceholder3 }
 		x = -1
 		y = 1
@@ -2212,7 +2212,7 @@ focus = {
 
 focus = {
 		id = FSM_ripples_of_shanghai
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = FSM_rebuild_the_dockyards }
 		x = 0
 		y = 1
@@ -2241,7 +2241,7 @@ focus = {
 
 focus = {
 		id = FSM_kohn_gambit
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = FSM_ripples_of_shanghai }
 		mutually_exclusive = {
 			focus = FSM_open_stocks
@@ -2276,7 +2276,7 @@ focus = {
 
 focus = {
 		id = FSM_open_stocks
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = FSM_ripples_of_shanghai }
 		mutually_exclusive = {
 			focus = FSM_kohn_gambit
@@ -2312,7 +2312,7 @@ focus = {
 
 focus = {
 		id = FSM_more_research
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_research
 		prerequisite = { focus = FSM_kohn_gambit focus = FSM_open_stocks}
 		x = -3
 		y = 1
@@ -2341,7 +2341,7 @@ focus = {
 
 focus = {
 		id = FSM_commonplaceholder2
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = FSM_kohn_gambit focus = FSM_open_stocks}
 		x = -1
 		y = 1
@@ -2411,7 +2411,7 @@ focus = {
 
 focus = {
 		id = FSM_antarctic_expedition
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = FSM_more_research }
 		x = 0
 		y = 4
@@ -2478,7 +2478,7 @@ focus = {
 
 focus = {
 		id = FSM_annex_manu
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = FSM_supress_manu_nationalism }
 		x = 0
 		y = 1
@@ -2509,7 +2509,7 @@ focus = {
 
 focus = {
 		id = FSM_sieze_fjinland
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = FSM_ripples_of_shanghai }
 		prerequisite = { focus = FSM_join_axis focus = FSM_join_allies}
 		x = -3
@@ -2644,7 +2644,7 @@ focus = {
 #army branch
 focus = {
 		id = FSM_army_reform
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = FSM_military_start }
 		x = 0
 		y = 1
@@ -2716,7 +2716,7 @@ focus = {
 
 focus = {
 		id = FSM_heavy_warships
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = FSM_military_start }
 		x = -2
 		y = 1
@@ -2760,7 +2760,7 @@ focus = {
 
 focus = {
 		id = FSM_austral_dominance_doctrine
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = FSM_heavy_warships }
 		x = -2
 		y = 1
