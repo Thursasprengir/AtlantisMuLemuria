@@ -1842,9 +1842,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
-			}
-			custom_effect_tooltip = 1_FSM_tt
+			hidden_effect = {set_country_flag = {flag = FSM_democratic5 value = 1}}
+			custom_effect_tooltip = 01_FSM_democratic5
 		}
 	}
 
