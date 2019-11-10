@@ -23,7 +23,7 @@ focus = {
 		x = 10
 		y = 0
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 2
@@ -41,6 +41,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = -50
 		}
 	}
 
@@ -103,6 +104,27 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built1}
+						free_building_slots = {
+							building = industrial_complex
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built1
+			}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
 		}
 	}
 
@@ -131,6 +153,44 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_built1}
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built1
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_built1}
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built1
+			}
 		}
 	}
 
@@ -144,7 +204,7 @@ focus = {
 			focus = FSM_kaiser_is_back
 		}
 		prerequisite = { focus = FSM_neutralplaceholder2 }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = FSM_neutralplaceholder2
 
@@ -172,9 +232,9 @@ focus = {
 focus = {
 		id = FSM_revoke_sanction
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = FSM_neutralplaceholder2 }
+		prerequisite = { focus = FSM_status_quo }
 		x = 1
-		y = 2
+		y = 3
 		relative_position_id = FSM_neutralplaceholder2
 
 		cost = 10
@@ -227,7 +287,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_timed_idea = {idea = FSM_colonial_companies_subsidies days = 14}
+			add_ideas = {FSM_colonial_companies_subsidies2}
 		}
 	}	
 
@@ -259,6 +320,44 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_builtquo}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_builtquo
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_builtquo}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_builtquo
+			}
 
 		if = {
  			   limit = {
@@ -313,6 +412,44 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_builtquo}
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_builtquo
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_builtquo}
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_builtquo
+			}
 	if = {
  			   limit = {
         			has_idea = FSM_companies_open_stocks
@@ -343,9 +480,6 @@ focus = {
 		x = 1
 		y = 1
 		relative_position_id = FSM_civilian_companies
-		mutually_exclusive = {
-			focus = FSM_civilian_companies
-		}
 		cost = 10
 
 		ai_will_do = {
@@ -374,9 +508,6 @@ focus = {
 		x = 3
 		y = 1
 		relative_position_id = FSM_civilian_companies
-		mutually_exclusive = {
-			focus = FSM_civilian_companies
-		}
 		cost = 10
 
 		ai_will_do = {
@@ -402,109 +533,109 @@ focus = {
 	}	
 
 #Kaiser Is Back Branch
-focus = {
-		id = FSM_kaiser_is_back
-		icon = GFX_focus_ger_return_of_the_kaiser
-		mutually_exclusive = {
-			focus = FSM_encourage_fascists
-			focus = FSM_status_quo
-		}
-		prerequisite = { focus = FSM_neutralplaceholder2 }
-		x = 3
-		y = 1
-		relative_position_id = FSM_neutralplaceholder2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		
-		available = {
-		GER = {
-					has_government = neutrality
-				}
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
-		}
-	}
-
-focus = {
-		id = FSM_join_kaiser_faction
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = FSM_kaiser_is_back }
-		x = 0
-		y = 1
-		relative_position_id = FSM_kaiser_is_back
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		
-		available = {
-		GER = {
-					has_government = neutrality
-				}
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			GER = {
-			country_event = { hours = 2 id = fsm.6 }
-		}
-		}
-	}
-focus = {
-		id = FSM_reinstate_the_associate_state
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = FSM_join_kaiser_faction }
-		x = 0
-		y = 1
-		relative_position_id = FSM_join_kaiser_faction
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		
-		available = {
-		GER = {
-				has_government = neutrality
-				}
-		is_in_faction_with = GER
-
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			set_cosmetic_tag = FSM_KAISER
-			add_ideas = FSM_associate_state
-		}
-	}
+#focus = {
+#		id = FSM_kaiser_is_back
+#		icon = GFX_focus_ger_return_of_the_kaiser
+#		mutually_exclusive = {
+#			focus = FSM_encourage_fascists
+#			focus = FSM_status_quo
+#		}
+#		prerequisite = { focus = FSM_neutralplaceholder2 }
+#		x = 3
+#		y = 1
+#		relative_position_id = FSM_neutralplaceholder2
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		
+#		available = {
+#		GER = {
+#					has_government = neutrality
+#				}
+#		}
+#
+#		bypass = {
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#
+#		}
+#	}
+#
+#focus = {
+#		id = FSM_join_kaiser_faction
+#		icon = GFX_goal_support_communism
+#		prerequisite = { focus = FSM_kaiser_is_back }
+#		x = 0
+#		y = 1
+#		relative_position_id = FSM_kaiser_is_back
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		
+#		available = {
+#		GER = {
+#					has_government = neutrality
+#				}
+#		}
+#
+#		bypass = {
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			GER = {
+#			country_event = { hours = 2 id = fsm.6 }
+#		}
+#		}
+#	}
+#focus = {
+#		id = FSM_reinstate_the_associate_state
+#		icon = GFX_goal_support_communism
+#		prerequisite = { focus = FSM_join_kaiser_faction }
+#		x = 0
+#		y = 1
+#		relative_position_id = FSM_join_kaiser_faction
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		
+#		available = {
+#		GER = {
+#				has_government = neutrality
+#				}
+#		is_in_faction_with = GER
+#
+#		}
+#
+#		bypass = {
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#			set_cosmetic_tag = FSM_KAISER
+#			add_ideas = FSM_associate_state
+#		}
+#	}
 
 #Fascism Branch
 focus = {
@@ -631,6 +762,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = {FSM_germans_are_super_bros1}
 		}
 	}
 
@@ -660,6 +792,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FSM_germans_are_super_bros1
+				add_idea = FSM_germans_are_super_bros2
+			}
 		}
 	}
 
@@ -688,6 +824,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FSM_germans_are_super_bros2
+				add_idea = FSM_germans_are_super_bros3
+			}
 		}
 	}
 focus = {
@@ -840,6 +980,63 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_built2}
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built2
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = mil_effort_built2}
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built2
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = civ_effort_built2}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built2
+			}
 		}
 	}
 
@@ -869,7 +1066,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_ideas = {FSM_aggressive_strikes1}
 		}
 	}
 
@@ -898,6 +1095,46 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_built
+			}
 		}
 	}
 
@@ -1005,6 +1242,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 250
+			add_war_support = 0.15
 		}
 	}
 

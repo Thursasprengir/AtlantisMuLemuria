@@ -300,6 +300,74 @@ country = {
 				equipment_conversion_speed = 0.1
 			}
 		}
+		FSM_aggressive_strikes1 = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+			 	offensive_war_stability_factor = 0.4 
+				command_power_gain = 0.5
+				max_command_power = 10 
+			}
+		}
+		FSM_germans_are_super_bros1 = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.1 
+			}
+		}
+		FSM_germans_are_super_bros2 = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.1 
+				army_core_attack_factor = 0.15 
+			}
+		}
+		FSM_germans_are_super_bros3 = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.1 
+				army_core_attack_factor = 0.15
+				conscription = 0.05
+			}
+		}
+		FSM_colonial_companies_subsidies = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				consumer_goods_factor = 0.05
+			}
+			remove_effect = {
+				add_ideas = {FSM_colonial_companies_subsidies2}
+			}
+		}
+		FSM_colonial_companies_subsidies2
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+			 	industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		
+		
+		
+		
+		
+		#############
 
 		combat_support_ships = {
 			
