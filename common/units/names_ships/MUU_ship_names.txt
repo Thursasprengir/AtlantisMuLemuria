@@ -1,175 +1,175 @@
 ﻿##### MUU NAME LISTS #####
 ### REGULAR DESTROYER NAMES###
-MUU_DD_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_DESTROYERS
+#MUU_DD_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_DESTROYERS
+#
+#	for_countries = { MUU }
+#
+#	type = ship
+#	ship_types = { ship_hull_light destroyer }			
+#
+#	#link_numbering_with = { MUU_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
+#
+#	prefix = "LM "							
+#	fallback_name = "Taraqlusus TL-%d"					
 
-	for_countries = { MUU }
-
-	type = ship
-	ship_types = { ship_hull_light destroyer }			
-
-	#link_numbering_with = { MUU_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
-
-	prefix = "LM "							
-	fallback_name = "Taraqlusus TL-%d"					
-
-}
+#}
 
 ### ESCORT DESTROYER NAMES###
-MUU_DE_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_DE
+#MUU_DE_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_DE
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_light destroyer }
+#	type = ship
+#	ship_types = { ship_hull_light destroyer }
 	
 	#link_numbering_with = { MUU_DD_HISTORICAL }	
 
-	prefix = "LM "							
-	fallback_name = "Taraqlusustalloj TLT-%d"
+#	prefix = "LM "							
+#	fallback_name = "Taraqlusustalloj TLT-%d"
 
-}
+#}
 
 ### LIGHT CRUISER NAMES###
-MUU_CL_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CL
+#MUU_CL_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_CL
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_cruiser light_cruiser }
+#	type = ship
+#	ship_types = { ship_hull_cruiser light_cruiser }
 	
-	prefix = "LM "							
-	fallback_name = "Qruzuranguri  QA-%d"
+#	prefix = "LM "							
+#	fallback_name = "Qruzuranguri  QA-%d"
 
-}
+#}
 
 ### HEAVY CRUISER NAMES###
-MUU_CA_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CA
+#MUU_CA_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_CA
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_cruiser heavy_cruiser }
+#	type = ship
+#	ship_types = { ship_hull_cruiser heavy_cruiser }
 	
-	prefix = "LM "							
-	fallback_name = "Qruzurðurdi  QD-%d"
+#	prefix = "LM "							
+#	fallback_name = "Qruzurðurdi  QD-%d"
 
-}
+#}
 
 ### A-A LIGHT CRUISER NAMES###
-MUU_CLAA_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CLAA
+#MUU_CLAA_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_CLAA
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_cruiser light_cruiser }
+#	type = ship
+#	ship_types = { ship_hull_cruiser light_cruiser }
 	
-	prefix = "LM "							
-	fallback_name = "Qruzurangurinajesaj  QANJ-%d"
-
-}
+#	prefix = "LM "							
+#	fallback_name = "Qruzurangurinajesaj  QANJ-%d"
+#
+#}
 
 ### MINELAYER NAMES###
-MUU_MINELAYERS_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_MINELAYERS
+#MUU_MINELAYERS_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_MINELAYERS
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
+#	type = ship
+#	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
 	
-	prefix = "LM "							
-	fallback_name = "Baqangaqangaq  BAA-%d"
+#	prefix = "LM "							
+#	fallback_name = "Baqangaqangaq  BAA-%d"
 
-}
+#}
 
 ### BATTLESHIP NAMES ###
-MUU_BB_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_BB
+#MUU_BB_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_BB
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_heavy battleship }
-	link_numbering_with = { MUU_BC_HISTORICAL }
+#	type = ship
+#	ship_types = { ship_hull_heavy battleship }
+#	link_numbering_with = { MUU_BC_HISTORICAL }
 	
-	prefix = "LM "							
-	fallback_name = "Qurangaqlesus QL-%d"		
+#	prefix = "LM "							
+#	fallback_name = "Qurangaqlesus QL-%d"		
 
-	unique = {
-		"Dusiq" "Eshqat" "Gamaq" "Chush" "Chasuz" "Argo" "Cham" "Bada" "Bala" "Aqantu" "Ashtuchet" "Ai" "Ajjal" "Anat" "Arbeit" "Bang" "Chichet" "Chimu" "Chugun" "Dang" "Dasuq" "Deboje" "Qigowenu" "Qijigeng" "Gijnaq" "Yiiq" "Vojjeq" "Zefarjja" "Ajjiqon" "Ningit" "Ningitjeq" "Qidasuq" "Eshqataj" "Domatu" "Domatujeq" "Imriyiiq" "Imideboje" "Qidang" "Aragamaq" "Arayiiq" "Arbeitqi" "Paraq" "Araparaq" "Navparaq" "Vash" "Du" "Ollun" "Prug" "Numura" "Nila" "Pab" "Papa" "Pinya" "Paplui" "Pov" "Omarqa" "Omonung" "Qa" "Qerava'is" "Qon" "Qug" "Quwa" "Reizan" "Laigu" "Rijj" "Rada" "Saeli" "Sames" "Sas" "Sava'is" "Shas" "Sunug" "Talloj" "Tir" "Unap" "Ushimrigar" "Ushqur" "Uru" "Qe" "Qavayu" "Tli" "Tegzu" "Teq" "Taraq" "Ua" "Uarq" "Uidi" "Us" "Yim" "Yoll" "Yoq" "Voyus" "Vate" "Vaizen" "Voj" "Zatuheza" "Zehi" "Zefarj" "Bouvu" "Baman" "Azta" 
-	}
-}
+#	unique = {
+#		"Dusiq" "Eshqat" "Gamaq" "Chush" "Chasuz" "Argo" "Cham" "Bada" "Bala" "Aqantu" "Ashtuchet" "Ai" "Ajjal" "Anat" "Arbeit" "Bang" "Chichet" "Chimu" "Chugun" "Dang" "Dasuq" "Deboje" "Qigowenu" "Qijigeng" "Gijnaq" "Yiiq" "Vojjeq" "Zefarjja" "Ajjiqon" #"Ningit" "Ningitjeq" "Qidasuq" "Eshqataj" "Domatu" "Domatujeq" "Imriyiiq" "Imideboje" "Qidang" "Aragamaq" "Arayiiq" "Arbeitqi" "Paraq" "Araparaq" "Navparaq" "Vash" "Du" "Ollun" "Prug" "Numura" "Nila" "Pab" "Papa" "Pinya" "Paplui" "Pov" "Omarqa" "Omonung" "Qa" #"Qerava'is" "Qon" "Qug" "Quwa" "Reizan" "Laigu" "Rijj" "Rada" "Saeli" "Sames" "Sas" "Sava'is" "Shas" "Sunug" "Talloj" "Tir" "Unap" "Ushimrigar" "Ushqur" "Uru" "Qe" "Qavayu" "Tli" "Tegzu" "Teq" "Taraq" "Ua" "Uarq" "Uidi" "Us" "Yim" "Yoll" "Yoq" "Voyus" "Vate" #"Vaizen" "Voj" "Zatuheza" "Zehi" "Zefarj" "Bouvu" "Baman" "Azta" 
+#	}
+#}
 
 ### BATTLECRUISER NAMES ###
-MUU_BC_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_BC
+#MUU_BC_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_BC
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_heavy battle_cruiser }
-	link_numbering_with = { MUU_BB_HISTORICAL }
+#	type = ship
+#	ship_types = { ship_hull_heavy battle_cruiser }
+#	link_numbering_with = { MUU_BB_HISTORICAL }
 	
-	prefix = "LM "							
-	fallback_name = "Qurangaquruzur QQ-%d"		
+#	prefix = "LM "							
+#	fallback_name = "Qurangaquruzur QQ-%d"		
 
-	unique = {
-		"Dusiq" "Eshqat" "Gamaq" "Chush" "Chasuz" "Argo" "Cham" "Bada" "Bala" "Aqantu" "Ashtuchet" "Ai" "Ajjal" "Anat" "Arbeit" "Bang" "Chichet" "Chimu" "Chugun" "Dang" "Dasuq" "Deboje" "Qigowenu" "Qijigeng" "Gijnaq" "Yiiq" "Vojjeq" "Zefarjja" "Ajjiqon" "Ningit" "Ningitjeq" "Qidasuq" "Eshqataj" "Domatu" "Domatujeq" "Imriyiiq" "Imideboje" "Qidang" "Aragamaq" "Arayiiq" "Arbeitqi" "Paraq" "Araparaq" "Navparaq" "Vash" "Du" "Ollun" "Prug" "Numura" "Nila" "Pab" "Papa" "Pinya" "Paplui" "Pov" "Omarqa" "Omonung" "Qa" "Qerava'is" "Qon" "Qug" "Quwa" "Reizan" "Laigu" "Rijj" "Rada" "Saeli" "Sames" "Sas" "Sava'is" "Shas" "Sunug" "Talloj" "Tir" "Unap" "Ushimrigar" "Ushqur" "Uru" "Qe" "Qavayu" "Tli" "Tegzu" "Teq" "Taraq" "Ua" "Uarq" "Uidi" "Us" "Yim" "Yoll" "Yoq" "Voyus" "Vate" "Vaizen" "Voj" "Zatuheza" "Zehi" "Zefarj" "Bouvu" "Baman" "Azta" "
-	}
-}
+#	unique = {
+#		"Dusiq" "Eshqat" "Gamaq" "Chush" "Chasuz" "Argo" "Cham" "Bada" "Bala" "Aqantu" "Ashtuchet" "Ai" "Ajjal" "Anat" "Arbeit" "Bang" "Chichet" "Chimu" "Chugun" "Dang" "Dasuq" "Deboje" "Qigowenu" "Qijigeng" "Gijnaq" "Yiiq" "Vojjeq" "Zefarjja" "Ajjiqon" #"Ningit" "Ningitjeq" "Qidasuq" "Eshqataj" "Domatu" "Domatujeq" "Imriyiiq" "Imideboje" "Qidang" "Aragamaq" "Arayiiq" "Arbeitqi" "Paraq" "Araparaq" "Navparaq" "Vash" "Du" "Ollun" "Prug" "Numura" "Nila" "Pab" "Papa" "Pinya" "Paplui" "Pov" "Omarqa" "Omonung" "Qa" #"Qerava'is" "Qon" "Qug" "Quwa" "Reizan" "Laigu" "Rijj" "Rada" "Saeli" "Sames" "Sas" "Sava'is" "Shas" "Sunug" "Talloj" "Tir" "Unap" "Ushimrigar" "Ushqur" "Uru" "Qe" "Qavayu" "Tli" "Tegzu" "Teq" "Taraq" "Ua" "Uarq" "Uidi" "Us" "Yim" "Yoll" "Yoq" "Voyus" "Vate" #"Vaizen" "Voj" "Zatuheza" "Zehi" "Zefarj" "Bouvu" "Baman" "Azta" "
+#	}
+#}
 
 ### AIRCRAFT CARRIER NAMES ###
-MUU_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
+#MUU_CV_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_CARRIERS
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
+#	type = ship
+#	ship_types = { ship_hull_carrier carrier }
 	
-	prefix = "LM "							
-	fallback_name = "Chugunlesus CL-%d"	
+#	prefix = "LM "							
+#	fallback_name = "Chugunlesus CL-%d"	
 
-	unique = {
-		"Asetale" "Vashparaq" "Imiz" "Yollohtli" "Navganara" "Navdrmu" "Navjijeq" "Hatmaq" "Geq" "Duqun" "Unjarqi" "Jijeq" "Mauururu" "Ogish" "Qna'a" "Drmu" "Q'tir" "Inirliq" "Mirida" "Girgu" "Neji" "Virqq" "Vatpagchi" "Atuslan" "Dustartajare" "Teqsitli" "Tollang" "Zochtli" "Tesi" "Labn" "Goprug" "Tlaqua" "Uiqaqatel" "Noqale" "Pogi" "Ruju" "Jillil" "Jabash"
-	}
-}
+#	unique = {
+#		"Asetale" "Vashparaq" "Imiz" "Yollohtli" "Navganara" "Navdrmu" "Navjijeq" "Hatmaq" "Geq" "Duqun" "Unjarqi" "Jijeq" "Mauururu" "Ogish" "Qna'a" "Drmu" "Q'tir" "Inirliq" "Mirida" "Girgu" "Neji" "Virqq" "Vatpagchi" "Atuslan" "Dustartajare" "Teqsitli" #"Tollang" "Zochtli" "Tesi" "Labn" "Goprug" "Tlaqua" "Uiqaqatel" "Noqale" "Pogi" "Ruju" "Jillil" "Jabash"
+#	}
+#}
 
 ### LIGHT CARRIER NAMES ###
-MUU_CVL_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CVL
+#MUU_CVL_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_CVL
 
-	for_countries = { MUU }
+#	for_countries = { MUU }
 
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
+#	type = ship
+#	ship_types = { ship_hull_carrier carrier }
 	
-	prefix = "LM "							
-	fallback_name = "Chugunlesusjeq CLj-%d"	
+#	prefix = "LM "							
+#	fallback_name = "Chugunlesusjeq CLj-%d"	
 
-	unique = {
-		"Asetale" "Vashparaq" "Imiz" "Yollohtli" "Navganara" "Navdrmu" "Navjijeq" "Hatmaq" "Geq" "Duqun" "Unjarqi" "Jijeq" "Mauururu" "Ogish" "Qna'a" "Drmu" "Q'tir" "Inirliq" "Mirida" "Girgu" "Neji" "Virqq" "Vatpagchi" "Atuslan" "Dustartajare" "Teqsitli" "Tollang" "Zochtli" "Tesi" "Labn" "Goprug" "Tlaqua" "Uiqaqatel" "Noqale" "Pogi" "Ruju" "Jillil" "Jabash"
-	}
-}
+#	unique = {
+#		"Asetale" "Vashparaq" "Imiz" "Yollohtli" "Navganara" "Navdrmu" "Navjijeq" "Hatmaq" "Geq" "Duqun" "Unjarqi" "Jijeq" "Mauururu" "Ogish" "Qna'a" "Drmu" "Q'tir" "Inirliq" "Mirida" "Girgu" "Neji" "Virqq" "Vatpagchi" "Atuslan" "Dustartajare" "Teqsitli" #"Tollang" "Zochtli" "Tesi" "Labn" "Goprug" "Tlaqua" "Uiqaqatel" "Noqale" "Pogi" "Ruju" "Jillil" "Jabash"
+#	}
+#}
 
 ### SUBMARINES ###
-MUU_SS_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_SUBMARINES
-
-	for_countries = { MUU }
-
-	type = ship
-	ship_types = { ship_hull_submarine submarine }
+#MUU_SS_HISTORICAL = {
+#	name = NAME_THEME_HISTORICAL_SUBMARINES
+#
+#	for_countries = { MUU }
+#
+#	type = ship
+#	ship_types = { ship_hull_submarine submarine }
 	
-	prefix = "LM "							
-	fallback_name = "Eudjoa EJ-%d"	
+#	prefix = "LM "							
+#	fallback_name = "Eudjoa EJ-%d"	
 
-}
+#}
 
 
 
