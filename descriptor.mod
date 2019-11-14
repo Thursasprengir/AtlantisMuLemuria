@@ -5,4 +5,4 @@ tags={
 	"Map"
 	"National Focuses"
 }
-supported_version="1.7.1"
+supported_version="1.8.*"
