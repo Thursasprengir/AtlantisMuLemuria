@@ -1,0 +1,390 @@
+ideas = {
+
+	country = {
+		
+		GEQ_scientific_backlog = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+		
+		GEQ_murorian_supremacy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = -0.3
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				war_support_factor = 0.10
+				conscription = 0.002
+			}
+		}
+		
+		GEQ_murorian2_supremacy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				war_support_factor = 0.10
+				stability_factor = 0.05
+				conscription = 0.002
+			}
+		}
+		
+		GEQ_resurrect_the_empire_of_mug = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.15
+			}
+		}
+		
+		GEQ_support_muror_unification_groups_across_mu = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.03
+				stability_factor = -0.03
+				war_support_factor = -0.03
+			}
+		}
+		
+		GEQ_invest_in_recruitment_tactics = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		GEQ_invest_in_espionage = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				encryption = 1
+				decryption = 1
+			}
+		}
+		
+		GEQ_communist_influences = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.25
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
+		GEQ_ifyourreadingthisyourepic = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		
+		GEQ_newly_formed_state = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				join_faction_tension = 0.5
+				fascism_acceptance = -20
+				democratic_acceptance = -20
+				neutrality_acceptance = -20
+				communism_acceptance = -20
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		
+		GEQ_embrace_geqian_militarism = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.1
+				army_org_factor = 0.15
+				encryption = 1
+				land_reinforce_rate = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				conscription = 0.015
+			}
+		}
+		
+		GEQ_support_the_nuclear_family = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				MONTHLY_POPULATION = 0.5
+			}
+		}
+		
+		GEQ_ditch_science = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+				stability_factor = -0.05
+				political_power_factor = -0.1
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_speed_buildings_factor = 0.2
+				local_resources_factor = 0.2
+				
+			}
+		}
+		
+		GEQ_jap_bonus = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				naval_equipment = 0.2
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.2
+			}
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		
+		GEQ_geq_bonus = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				attrition = -0.1
+				acclimatization_hot_climate_gain_factor = 0.5
+				heat_attrition_factor = -0.5
+				supply_consumption_factor = -0.15
+				out_of_supply_factor = -0.5
+				special_forces_cap = 0.07
+			}
+		}
+		
+		GEQ_democratic_popularity_spreading = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.15
+			}
+		}
+		
+		GEQ_secure_democracy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.05
+				neutrality_drift = -0.05
+				stability_weekly = 0.005
+			}
+		}
+		
+		GEQ_bring_in_capitalism = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.25
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		
+		GEQ_prepare_to_retake_the_southe = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = MUU
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			
+			targeted_modifier = {
+				tag = GOP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+	}
+	
+}
