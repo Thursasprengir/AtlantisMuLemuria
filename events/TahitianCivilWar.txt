@@ -35,27 +35,27 @@ country_event = {
 				ideology = communism
 				size = 0.5
 				capital = 899
-				states = { 899 898 897 }
+				states = { 899 898 }
 			}
 			random_other_country = {
 				limit = {
 					original_tag = TAH
 					has_government = communism
 				}
-				load_oob = "SPR_Civil_War"
+				load_oob = "TAH_Civil_War"
 				set_equipment_fraction = 0.5
 				set_stability = 0.9
 				set_war_support = 0.8
 				country_event = { id = tahiti.3 days = 1 }
 				add_popularity = {
-					ideology = democratic
+					ideology = communism
 					popularity = 0.35
 				}
 			}
 			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
+			set_global_flag = tahitian_civil_war
 			
-			load_oob = "SPA_Civil_War"
+			load_oob = "TAH_civil_war"
 			set_equipment_fraction = 0.5
 			set_stability = 0.9
 			set_war_support = 0.8
@@ -69,7 +69,7 @@ country_event = {
 					original_tag = TAH
 					has_government = communism
 				}
-				set_cosmetic_tag = SPR_civil_war
+				set_cosmetic_tag = TAH_civil_war
 			}
 
 			country_event = { id = tahiti.2 days = 7 }
@@ -94,10 +94,10 @@ country_event = {
 				set_stability = 0.9
 				set_war_support = 0.8
 				country_event = { id = tahiti.2 days = 1 }
-				load_oob = "SPA_Civil_War"
+				load_oob = "TAH_civil_war"
 			}
 			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
+			set_global_flag = tahitian_civil_war
 			
 			set_politics = {
 				ruling_party = communism
@@ -116,9 +116,9 @@ country_event = {
 					original_tag = TAH
 					has_government = fascism
 				}
-				set_cosmetic_tag = SPR_civil_war
+				set_cosmetic_tag = TTI_civil_war
 			}
-			load_oob = "SPR_Civil_War"
+			load_oob = "TTI_civil_war"
 			set_equipment_fraction = 0.5
 			set_stability = 0.9
 			set_war_support = 0.8
@@ -355,6 +355,10 @@ country_event = {
 			ideology = communism
 			popularity = 0.1
 		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
 	}
 
 	# Falange
@@ -365,7 +369,7 @@ country_event = {
 			ruling_party = fascism
 			elections_allowed = no
 		}
-		set_country_flag = SPR_communist_civil_war
+		set_country_flag = TAH_communist_civil_war
 	}
 }
 
@@ -380,7 +384,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = scw_over }
-		has_country_flag = SPR_communist_civil_war
+		has_country_flag = TAH_communist_civil_war
 		has_defensive_war = no
 		date > 1936.2.16 # Trigger at some point after 1936 elections
 	}
@@ -406,7 +410,7 @@ country_event = {
 					original_tag = TAH
 					has_government = communism
 				}
-				load_oob = "SPR_Civil_War"
+				load_oob = "TAH_Civil_War"
 				set_equipment_fraction = 0.7
 				set_stability = 0.8
 				set_war_support = 0.8
@@ -416,9 +420,9 @@ country_event = {
 				}
 			}
 			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
+			set_global_flag = tahitian_civil_war
 			
-			load_oob = "SPA_Civil_War"
+			load_oob = "TAH_civil_war"
 			set_equipment_fraction = 0.7
 			set_stability = 0.9
 			set_war_support = 0.8
@@ -447,16 +451,16 @@ country_event = {
 				set_equipment_fraction = 0.7
 				set_stability = 0.9
 				set_war_support = 0.8
-				load_oob = "SPA_Civil_War"
+				load_oob = "TAH_civil_war"
 			}
 			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
+			set_global_flag = tahitian_civil_war
 			
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
 			}
-			load_oob = "SPR_Civil_War"
+			load_oob = "TAH_Civil_War"
 			set_equipment_fraction = 0.7
 			set_stability = 0.9
 			set_war_support = 0.8

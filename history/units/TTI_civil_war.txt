@@ -1,0 +1,67 @@
+﻿division_template = {
+	name = "Infantry Brigade"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+
+units = {
+	### Army High Command ###
+	division = {
+		name = "1st Brigade"
+		location = 13929
+		division_template = "Infantry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "2nd Brigade"
+		location = 13929
+		division_template = "Infantry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "3rd Brigade"
+		location = 13966
+		division_template = "Infantry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "4th Brigade"
+		location = 13966
+		division_template = "Infantry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "5th Brigade"
+		location = 13936
+		division_template = "Infantry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "6th Brigade"
+		location = 13936
+		division_template = "Infantry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}
