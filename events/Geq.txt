@@ -437,3 +437,123 @@ country_event = {
 		name = geq.19.a
 	}
 }
+
+country_event = {
+	id = geq.20
+	title = geq.20.t
+	desc = geq.20.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.20.a
+		ai_chance = {
+			base = 50
+		}
+		GEQ = { country_event = { days = 1 id = geq.21 } }
+	}
+	option = {
+		name = geq.20.b
+		ai_chance = {
+			base = 50
+		}
+		GEQ = { transfer_state = 820 }
+		GEQ = { transfer_state = 821 }
+		GEQ = { add_state_core = 820 }
+		GEQ = { add_state_core = 821 }
+	}
+}
+
+country_event = {
+	id = geq.21
+	title = geq.21.t
+	desc = geq.21.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.21.a
+	}
+}
+
+country_event = {
+	id = geq.22
+	title = geq.22.t
+	desc = geq.22.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.22.a
+		ai_chance = {
+			base = 50
+		}
+		GEQ = { country_event = { days = 1 id = geq.23 } }
+	}
+	option = {
+		name = geq.22.b
+		ai_chance = {
+			base = 50
+		}
+		GEQ = { transfer_state = 865 }
+		GEQ = { transfer_state = 866 }
+		GEQ = { add_state_core = 865 }
+		GEQ = { add_state_core = 866 }
+	}
+}
+
+country_event = {
+	id = geq.23
+	title = geq.23.t
+	desc = geq.23.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.23.a
+	}
+}
+
+country_event = {
+	id = geq.24
+	title = geq.24.t
+	desc = geq.24.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.24.a
+		ai_chance = {
+			base = 50
+		}
+		GEQ = { country_event = { days = 1 id = geq.25 } }
+	}
+	option = {
+		name = geq.24.b
+		ai_chance = {
+			base = 50
+		}
+		GEQ = { transfer_state = 867 }
+		GEQ = { transfer_state = 868 }
+		GEQ = { add_state_core = 867 }
+		GEQ = { add_state_core = 868 }
+	}
+}
+
+country_event = {
+	id = geq.25
+	title = geq.25.t
+	desc = geq.25.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.25.a
+	}
+}
