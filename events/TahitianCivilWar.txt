@@ -22,7 +22,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120	# Historical outbreak time after elections
+		days = 60	# Historical outbreak time after elections
 	}
 	
 	option = { # Support Nationalists
@@ -52,10 +52,10 @@ country_event = {
 					popularity = 0.35
 				}
 			}
-			news_event = { hours = 6 id = news.63 }
+			news_event = { hours = 6 id = tah.news.63 }
 			set_global_flag = tahitian_civil_war
 			
-			load_oob = "TAH_civil_war"
+			load_oob = "TTI_civil_war"
 			set_equipment_fraction = 0.5
 			set_stability = 0.9
 			set_war_support = 0.8
@@ -83,7 +83,7 @@ country_event = {
 				ideology = fascism
 				size = 0.5
 				capital = 899
-				states = { 899 898 897 }
+				states = { 899 898 }
 			}
 			random_other_country = {
 				limit = {
@@ -94,9 +94,9 @@ country_event = {
 				set_stability = 0.9
 				set_war_support = 0.8
 				country_event = { id = tahiti.2 days = 1 }
-				load_oob = "TAH_civil_war"
+				load_oob = "TTI_civil_war"
 			}
-			news_event = { hours = 6 id = news.63 }
+			news_event = { hours = 6 id = tah.news.63 }
 			set_global_flag = tahitian_civil_war
 			
 			set_politics = {
@@ -419,7 +419,7 @@ country_event = {
 					popularity = 0.35
 				}
 			}
-			news_event = { hours = 6 id = news.63 }
+			news_event = { hours = 6 id = tah.news.63 }
 			set_global_flag = tahitian_civil_war
 			
 			load_oob = "TAH_civil_war"
@@ -453,7 +453,7 @@ country_event = {
 				set_war_support = 0.8
 				load_oob = "TAH_civil_war"
 			}
-			news_event = { hours = 6 id = news.63 }
+			news_event = { hours = 6 id = tah.news.63 }
 			set_global_flag = tahitian_civil_war
 			
 			set_politics = {
@@ -470,7 +470,7 @@ country_event = {
 			}
 			add_popularity = {
 				ideology = communism
-				popularity = 1
+				popularity = 065
 			}	
 			add_popularity = {
 				ideology = democratic
