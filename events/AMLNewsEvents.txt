@@ -1,0 +1,127 @@
+﻿###########################
+# AML News Events
+###########################
+
+add_namespace = AMLnews
+
+
+# The Tahitian Civil War
+news_event = {
+	id = TAH.news.63
+	title = TAH.news.63.t
+	desc = TAH.news.63.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TAH.news.63.a
+		trigger = {
+			NOT = { original_tag = TAH }
+		}
+	}
+	option = {
+		name = TAH.news.63.b
+		trigger = { 
+			original_tag = TAH
+		}
+	}
+}
+
+# End of the Tahitian Civil War (Nationalist victory)
+news_event = {
+	id = TAH.news.64
+	title = TAH.news.64.t
+	desc = TAH.news.64.d
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = tahitian_civil_war
+		NOT = { has_global_flag = tcw_over }
+		TAH = { has_civil_war = no }
+		any_other_country = {
+			original_tag = TAH
+			has_government = fascism
+		}
+		all_country = {
+			OR = {
+				NOT = { original_tag = TAH }
+				has_government = fascism
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = tah_nationalist_victory
+		set_global_flag = tcw_over
+	}
+	
+	option = {
+		name = TAH.news.64.a
+		trigger = {
+			NOT = { original_tag = TAH }
+		}
+	}
+	option = {
+		name = TAH.news.64.b
+		trigger = { original_tag = TAH }
+		delete_unit_template_and_units = { division_template = "Brigada Legionario" }
+	}
+}
+
+# End of the Tahitian Civil War (Republican victory)
+news_event = {
+	id = TAH.news.65
+	title = TAH.news.64.t
+	desc = TAH.news.65.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = Tahitian_civil_war
+		NOT = { has_global_flag = tcw_over }
+		TAH = { has_civil_war = no }
+		any_other_country = {
+			original_tag = TAH
+			NOT = { has_government = fascism }
+		}
+		all_country = {
+			OR = {
+				NOT = { original_tag = TAH }
+				NOT = { has_government = fascism }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = tah_republican_victory
+		set_global_flag = tcw_over
+	}
+	
+	option = {
+		name = news.65.a
+		trigger = {
+			NOT = { original_tag = TAH }
+		}
+	}
+	option = {
+		name = news.64.b
+		trigger = { original_tag = TAH }
+		delete_unit_template_and_units = { division_template = "Brigada Internacionales" }
+	}
+}
+
+
