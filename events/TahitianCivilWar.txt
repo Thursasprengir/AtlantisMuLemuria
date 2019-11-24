@@ -14,7 +14,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_global_flag = scw_over }
+		NOT = { has_global_flag = tcw_over }
 		tag = TAH
 		has_defensive_war = no
 		NOT = { has_government = fascism }
@@ -383,7 +383,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_global_flag = scw_over }
+		NOT = { has_global_flag = tcw_over }
 		has_country_flag = TAH_communist_civil_war
 		has_defensive_war = no
 		date > 1936.2.16 # Trigger at some point after 1936 elections
