@@ -1,15 +1,12 @@
 ﻿division_template = {
-	name = "Infantry Brigade"		
+	name = "Infantry Brigade"	
+	is_locked = yes	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 	}
 }
 
@@ -17,35 +14,35 @@
 units = {
 	### Army High Command ###
 	division = {
-		name = "1st Brigade"
-		location = 13958
+		name = "1st Umanga"
+		location = 13947
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
-		name = "2nd Brigade"
-		location = 13958
+		name = "2nd Umanga"
+		location = 13943
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
-		name = "3rd Brigade"
-		location = 13958
+		name = "3rd Umanga"
+		location = 12148
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
-		name = "4th Brigade"
-		location = 13958
+		name = "4th Umanga"
+		location = 13928
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 }

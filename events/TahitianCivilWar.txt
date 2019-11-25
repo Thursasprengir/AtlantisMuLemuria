@@ -14,11 +14,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_global_flag = scw_over }
+		NOT = { has_global_flag = tcw_over }
 		tag = TAH
 		has_defensive_war = no
-		NOT = { has_government = fascism }
-		date > 1936.2.16 # Trigger at some point after 1936 elections
 	}
 
 	mean_time_to_happen = {
@@ -29,13 +27,12 @@ country_event = {
 		name = tahiti.1.a
 		trigger = { is_ai = no }
 		hidden_effect = {
-			set_capital = 899
 			start_civil_war = {
-				ruling_party = fascism
+				ruling_party = democratic
 				ideology = communism
 				size = 0.5
-				capital = 899
-				states = { 899 898 }
+				capital = 641
+				states = { 641 897 896 }
 			}
 			random_other_country = {
 				limit = {
@@ -49,7 +46,7 @@ country_event = {
 				country_event = { id = tahiti.3 days = 1 }
 				add_popularity = {
 					ideology = communism
-					popularity = 0.35
+					popularity = 1
 				}
 			}
 			news_event = { hours = 6 id = tah.news.63 }
@@ -61,7 +58,7 @@ country_event = {
 			set_war_support = 0.8
 			
 			add_popularity = {
-				ideology = fascism
+				ideology = democratic
 				popularity = 1
 			}
 			random_other_country = {
@@ -74,21 +71,23 @@ country_event = {
 
 			country_event = { id = tahiti.2 days = 7 }
 		}
-		custom_effect_tooltip = nationalists_chosen
+		custom_effect_tooltip = tcw_nationalists_chosen
 	}
 	option = { # Support Communists
 		name = tahiti.1.b
 		hidden_effect = {
+			set_capital = 899
 			start_civil_war = {
-				ideology = fascism
+				ruling_party = communism
+				ideology = democratic
 				size = 0.5
-				capital = 899
-				states = { 899 898 }
+				capital = 641
+				states = { 641 897 896 }
 			}
 			random_other_country = {
 				limit = {
 					original_tag = TAH
-					has_government = fascism
+					has_government = democratic
 				}
 				set_equipment_fraction = 0.5
 				set_stability = 0.9
@@ -108,24 +107,24 @@ country_event = {
 				popularity = 0.5
 			}
 			add_popularity = {
-				ideology = fascism
+				ideology = democratic
 				popularity = -1
 			}	
 			random_other_country = {
 				limit = {
 					original_tag = TAH
-					has_government = fascism
+					has_government = democratic
 				}
 				set_cosmetic_tag = TTI_civil_war
 			}
-			load_oob = "TTI_civil_war"
+			load_oob = "TAH_civil_war"
 			set_equipment_fraction = 0.5
 			set_stability = 0.9
 			set_war_support = 0.8
 			
 			country_event = { id = tahiti.3 days = 7 }
 		}
-		custom_effect_tooltip = republicans_chosen
+		custom_effect_tooltip = tcw_republicans_chosen
 	}
 }
 
@@ -147,7 +146,7 @@ country_event = {
 		name = tahiti.2.a
 		every_other_country = {
 			limit = {
-				has_government = fascism
+				has_government = democratic
 				NOT = { original_tag = TAH}
 			}
 			country_event = { id = tahiti.4 days = 1 }
@@ -254,7 +253,7 @@ country_event = {
 		TAH = { has_civil_war = yes }
 		any_other_country = {
 			original_tag = TAH
-			has_government = fascism
+			has_government = democratic
 			ROOT = { is_lend_leasing = PREV }
 		}
 	}
@@ -269,7 +268,7 @@ country_event = {
 		random_other_country = {
 			limit = {
 				original_tag = TAH
-				has_government = fascism
+				has_government = democratic
 			}
 			add_opinion_modifier = { target = ROOT modifier = lend_leased_spanish_civil_war }
 		}
@@ -309,7 +308,7 @@ country_event = {
 	
 	trigger = {
 		original_tag = TAH
-		has_government = fascism
+		has_government = democratic
 		has_global_flag = nationalist_victory
 		owns_state = 41
 	}
@@ -366,118 +365,9 @@ country_event = {
 		ai_chance = { factor = 0 }
 		name = tahiti.9.b
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = democratic
 			elections_allowed = no
 		}
 		set_country_flag = TAH_communist_civil_war
-	}
-}
-
-# Spanish Civil War if Franco is elected
-country_event = {
-	id = tahiti.10
-	title = tahiti.1.t
-	desc = tahiti.10.d
-	picture = GFX_report_event_spain_civil_war_soldiers
-	
-	fire_only_once = yes
-	
-	trigger = {
-		NOT = { has_global_flag = scw_over }
-		has_country_flag = TAH_communist_civil_war
-		has_defensive_war = no
-		date > 1936.2.16 # Trigger at some point after 1936 elections
-	}
-
-	mean_time_to_happen = {
-		days = 151	# Historical outbreak time after elections
-	}
-	
-	option = { # Support Nationalists
-		name = tahiti.1.a
-		trigger = { is_ai = no }
-		hidden_effect = {
-			set_capital = 176
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = communism
-				size = 0.5
-				capital = 41
-				states = { 41 165 167 168 172 173 175 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = TAH
-					has_government = communism
-				}
-				load_oob = "TAH_Civil_War"
-				set_equipment_fraction = 0.7
-				set_stability = 0.8
-				set_war_support = 0.8
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.35
-				}
-			}
-			news_event = { hours = 6 id = tah.news.63 }
-			set_global_flag = tahitian_civil_war
-			
-			load_oob = "TAH_civil_war"
-			set_equipment_fraction = 0.7
-			set_stability = 0.9
-			set_war_support = 0.8
-			add_popularity = {
-				ideology = fascism
-				popularity = 1
-			}
-			
-		}
-		custom_effect_tooltip = nationalists_chosen
-	}
-	option = { # Support Republicans
-		name = tahiti.10.b
-		hidden_effect = {
-			start_civil_war = {
-				ideology = fascism
-				size = 0.5
-				capital = 176
-				states = { 166 699 178 290 169 170 176 174 171 177 297 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = TAH
-					has_government = fascism
-				}
-				set_equipment_fraction = 0.7
-				set_stability = 0.9
-				set_war_support = 0.8
-				load_oob = "TAH_civil_war"
-			}
-			news_event = { hours = 6 id = tah.news.63 }
-			set_global_flag = tahitian_civil_war
-			
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			load_oob = "TAH_Civil_War"
-			set_equipment_fraction = 0.7
-			set_stability = 0.9
-			set_war_support = 0.8
-			add_popularity = {
-				ideology = fascism
-				popularity = -1
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = 065
-			}	
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.35
-			}
-			
-		}
-		custom_effect_tooltip = republicans_chosen
 	}
 }
