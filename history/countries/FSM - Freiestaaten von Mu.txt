@@ -14,7 +14,8 @@ set_technology = {
 	early_bomber = 1
 	early_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
-	FSM_panzerschiffe = 1
+	early_ship_hull_heavy = 1
+	panzerschiffe = 1
 	basic_depth_charges = 1
 	basic_naval_mines = 1
 	basic_torpedo = 1
@@ -48,8 +49,27 @@ if = {
 }
 ###TERRIFYING FSM SHIPS###
 create_equipment_variant = {
+	name = "Derfflinger Class"
+	type = ship_hull_heavy_1
+	name_group = FSM_BC_HISTORICAL
+	parent_version = 0
+	modules = {
+       	fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bc_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		rear_1_custom_slot = ship_heavy_battery_1
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_secondaries_1
+		front_1_custom_slot = ship_heavy_battery_1
+   	}
+}
+create_equipment_variant = {
 	name = "Holtzendorff Class"
-	type = ship_hull_cruiser_FSM_panzerschiff
+	type = ship_hull_cruiser_panzerschiff
 	name_group = FSM_BC_HISTORICAL
 	parent_version = 0
 	modules = {
