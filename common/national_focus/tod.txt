@@ -17,7 +17,7 @@ focus_tree = {
 	
 focus = {
 		id = TOD_start
-		icon = GFX_tod_start
+		icon = GFX_focus_hou_start #GFX_focus_TOD_start_icon
 		x = 10
 		y = 0
 
@@ -488,7 +488,7 @@ focus = {
 	
 	focus = {
 		id = TOD_outwardcommunism1
-		icon = GFX_focus_yug_pan_slavic_congress
+		icon = GFX_goal_focus_generic_muu_nation.tga #GFX_goal_continuous_increase_nu 
 		prerequisite = { focus = TOD_cooperation }
 		mutually_exclusive = {
 			focus = TOD_outwarddemocracy1
@@ -867,7 +867,7 @@ focus = {
 
 focus = {
 		id = TOD_foreignadvisors
-		icon = GFX_goal_military_mission
+		icon = GFX_goal_localalliance
 		prerequisite = {
 			focus = TOD_outwardcommunism2
 			focus = TOD_fascismplaceholder2
