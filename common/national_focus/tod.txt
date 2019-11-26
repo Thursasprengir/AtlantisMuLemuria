@@ -17,7 +17,7 @@ focus_tree = {
 	
 focus = {
 		id = TOD_start
-		icon = GFX_todorovia_agreement
+		icon = GFX_double_daggers #
 		x = 10
 		y = 0
 
@@ -488,7 +488,7 @@ focus = {
 	
 	focus = {
 		id = TOD_outwardcommunism1
-		icon = GFX_todorovia_agreement #GFX_goal_continuous_increase_nu 
+		icon = GFX_TOD_unique_communism
 		prerequisite = { focus = TOD_cooperation }
 		mutually_exclusive = {
 			focus = TOD_outwarddemocracy1
@@ -946,7 +946,7 @@ focus = {
 
 focus = {
 		id = TOD_fascismplaceholder1
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_TOD_house_todorov
 		prerequisite = { focus = TOD_conquest }
 		x = 10
 		y = 2
