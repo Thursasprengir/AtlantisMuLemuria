@@ -1,11 +1,10 @@
-name="Atlantis Mu Lemuria"
-path="C:\Users\adamn\Documents\Paradox Interactive\Hearts of Iron IV\mod\amldevelopment"
-user_dir = "amldevelopment"
+version="1.1"
 tags={
-	"Alternative History"
 	"Map"
+	"Historical"
+	"Graphics"
+	"Alternative History"
 	"National Focuses"
 }
-picture="AtlantisMuLemuria.png"
-supported_version="1.8.*"
-remote_file_id="1910094849"
+name="amldevelopment"
+supported_version="1.8.1"
