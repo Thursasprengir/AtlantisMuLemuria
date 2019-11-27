@@ -1,10 +1,9 @@
 version="1.1"
 tags={
-	"Map"
-	"Historical"
-	"Graphics"
 	"Alternative History"
+	"Historical"
+	"Map"
 	"National Focuses"
 }
-name="amldevelopment"
+name="AML Dev"
 supported_version="1.8.1"
