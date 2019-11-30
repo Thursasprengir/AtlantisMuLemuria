@@ -1,0 +1,104 @@
+﻿capital = 784
+
+oob = "ANT_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
+}
+
+add_political_power = 300
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 31
+		}
+
+		fascism = {
+			popularity = 42
+		}
+		
+		communism = {
+			popularity = 27
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1934.4.14"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_convoys = 150
+set_national_unity = 0.6
+
+
+create_country_leader = {
+	name = "Diego Paredez"
+	desc = "POLITICS_DIEGO_PAREDEZ_DESC"
+	picture = "Portrait_ANT_Diego_Paredez.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Manuel Poroto de Sevilla"
+	desc = "POLITICS_MANUEL_POROTO_SEVILLA_DESC"
+	picture = "Portrait_ANT_Manuel_Poroto_Sevilla.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Reynaldo José María Nieblas"
+	desc = "POLITICS_RJM_NIEBLAS_DESC"
+	picture = "Portrait_ANT_RJM_Nielbas.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Maximiliano García"
+	desc = "POLITICS_MAXIMILIANO_GARCIA_DESC"
+	picture = "Portrait_ANT_Maximiliano_Garcia.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Enrique Cesped de Burro"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+}
