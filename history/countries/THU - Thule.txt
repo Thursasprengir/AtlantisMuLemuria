@@ -1,0 +1,100 @@
+﻿capital = 743
+
+oob = "THU_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+
+add_political_power = 500
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 81
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 4
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Björkar Thórsson"
+	desc = "POLITICS_BJORKAR_THORSSON_DESC"
+	picture = "Portrait_Thule_Bjorkar_Thorsson.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Amund Haldrsson"
+	desc = "POLITICS_AMUND_HALDRSSON_DESC"
+	picture = "Portrait_Thule_Amund_Haldrsson.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Baldur Svendsson"
+	desc = "POLITICS_BALDUR_SVENDSSON_DESC"
+	picture = "Portrait_Thule_Baldur_Svendsson.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Haudr Gunnar Snurrisson"
+	desc = "POLITICS_HAUDR_GUNNAR_SNURRISSON_DESC"
+	picture = "Portrait_Thule_Haudr_Gunnar_Snurrisson.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Thor Snurri Snurrlsson"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 3
+}
