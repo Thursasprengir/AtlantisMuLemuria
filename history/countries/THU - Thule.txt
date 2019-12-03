@@ -20,32 +20,26 @@ set_technology = {
 }
 
 
-add_political_power = 500
+add_political_power = 15
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 81
-		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 4
-		}
-	}
 	
 	ruling_party = democratic
 	last_election = "1935.10.22"
 	election_frequency = 36
 	elections_allowed = yes
 }
+set_popularities = {
+		democratic = 81
+		fascism = 15
+		communism = 4
+		neutrality = 0
+
+	}
 
 
-set_convoys = 40
+set_convoys = 20
 
 create_country_leader = {
 	name = "Björkar Thórsson"

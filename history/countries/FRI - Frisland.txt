@@ -23,26 +23,19 @@ add_political_power = 500
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 55
-		}
-
-		fascism = {
-			popularity = 44
-		}
-		
-		communism = {
-			popularity = 1
-		}
-	}
 	
 	ruling_party = democratic
 	last_election = "1935.10.22"
 	election_frequency = 60
 	elections_allowed = yes
 }
+set_popularities = {
+		democratic = 50
+		fascism = 49
+		communism = 1
+		neutrality = 0
+
+	}
 
 set_convoys = 40
 

@@ -25,30 +25,23 @@ set_technology = {
 	transport = 1
 }
 
-add_political_power = 300
+add_political_power = 30
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 31
-		}
-
-		fascism = {
-			popularity = 42
-		}
-		
-		communism = {
-			popularity = 27
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1934.4.14"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
-set_convoys = 150
+set_popularities = {
+		democratic = 21
+		fascism = 32
+		communism = 27
+		neutrality = 20
+
+	}
+
+set_convoys = 15
 set_national_unity = 0.6
 
 
