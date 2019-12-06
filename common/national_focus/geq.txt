@@ -1044,12 +1044,46 @@ focus_tree = {
 			add_ideas = GEQ_geq_bonus
 		}
 	}
+	
+	focus = {
+		id = GEQ_build_up_naval_capabilities
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GEQ_naval_research_treaty }
+		available = {
+			GEQ = {
+				has_idea = GEQ_jap_bonus
+			}
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = GEQ
+			}
+		}
+		x = 2
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = GEQ_retake_the_northern_kanagan_nations
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = GEQ_glory_to_geq }
-		x = 2
+		x = 0
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1074,7 +1108,7 @@ focus_tree = {
 		id = GEQ_retake_the_southern_kanagan_nations
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = GEQ_retake_the_northern_kanagan_nations }
-		x = 2
+		x = 0
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -1276,9 +1310,28 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GEQ_invite_foreign_industry
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = GEQ_bring_capitalism_in }
+		x = 14
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			USA = { country_event = { days = 1 id = geq.26 } }
+			ENG = { country_event = { days = 1 id = geq.29 } }
+		}
+	}
+	
+	focus = {
 		id = GEQ_befriend_britain
 		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = GEQ_bring_capitalism_in }
+		prerequisite = { focus = GEQ_invite_foreign_industry }
 		mutually_exclusive = {
 			focus = GEQ_befriend_america
 		}
@@ -1288,8 +1341,8 @@ focus_tree = {
 			}
 		}
 		x = 15
-		y = 6
-		cost = 10
+		y = 7
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1297,13 +1350,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			ENG = {	
+				give_guarantee = GEQ
+			}
 		}
 	}
 	
 	focus = {
 		id = GEQ_befriend_america
 		icon = GFX_focus_chi_mission_to_the_us
-		prerequisite = { focus = GEQ_bring_capitalism_in }
+		prerequisite = { focus = GEQ_invite_foreign_industry }
 		mutually_exclusive = {
 			focus = GEQ_befriend_britain
 		}
@@ -1313,7 +1369,116 @@ focus_tree = {
 			}
 		}
 		x = 13
-		y = 6
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			USA = {	
+				give_guarantee = GEQ
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_resource_exploitation_with_america
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = GEQ_befriend_america }
+		available = {
+			USA = {
+				has_government = democratic
+			}
+			GEQ = {
+				is_guaranteed_by = USA
+			}
+		}
+		x = 13
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 33
+				state = 860
+			}
+			add_resource = {
+				type = rubber
+				amount = 46
+				state = 890
+			}
+			USA = {
+				add_timed_idea = {
+					idea = GEQ_exploiting_dugeqmu_resources
+					days = 225
+				}
+			}
+			add_timed_idea = {
+				idea = GEQ_exploiting_dugeqmu_resources
+				days = 225
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_resource_exploitation_with_britain
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = GEQ_befriend_britain }
+		available = {
+			ENG = {
+				has_government = democratic
+			}
+			GEQ = {
+				is_guaranteed_by = ENG
+			}
+		}
+		x = 15
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 22
+				state = 860
+			}
+			add_resource = {
+				type = rubber
+				amount = 30
+				state = 889
+			}
+			ENG = {
+				add_timed_idea = {
+					idea = GEQ_exploiting_dugeqmu_resources
+					days = 225
+				}
+			}
+			add_timed_idea = {
+				idea = GEQ_exploiting_dugeqmu_resources
+				days = 225
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_invest_in_industry
+		icon = GFX_goal_generic_production
+		x = 22
+		y = 0
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -1322,6 +1487,575 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_infrastructure_in_the_south
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GEQ_invest_in_industry }
+		x = 24
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			862 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			863 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			864 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_infrastructure_in_the_north
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GEQ_invest_in_industry }
+		x = 20
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			859 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			860 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			861 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_invest_in_refining
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = GEQ_infrastructure_in_the_south }
+		x = 24
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 1.0
+				uses = 3
+				category = synth_resources
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_radar_breakthrough
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = GEQ_infrastructure_in_the_south focus = GEQ_infrastructure_in_the_north }
+		x = 22
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 4
+				category = radar_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_extract_resources_in_jijeq
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = GEQ_invest_in_refining }
+		x = 23
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 40
+				state = 863
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_extract_resources_in_mauruuru
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = GEQ_invest_in_refining }
+		x = 25
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_resource = {
+				type = chromium
+				amount = 32
+				state = 864
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_clear_uninhabitable_terrain
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GEQ_infrastructure_in_the_north }
+		x = 20
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			859 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			860 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			861 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_construction_effort_1
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GEQ_clear_uninhabitable_terrain }
+		x = 19
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GEQ_construction_effort_1 }
+		x = 19
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_armament_effort_1
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GEQ_clear_uninhabitable_terrain }
+		x = 21
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_armament_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GEQ_armament_effort_1 }
+		x = 21
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_doctrine_investment_1
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GEQ_develop_the_army }
+		prerequisite = { focus = GEQ_weapons_investments focus = GEQ_motorization_investments }
+		x = 30
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_doctrine_investment_2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GEQ_doctrine_investment_1 }
+		prerequisite = { focus = GEQ_artillery_investments focus = GEQ_armour_investments }
+		x = 30
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_doctrine_investment_3
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GEQ_doctrine_investment_2 }
+		x = 30
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_weapons_investments
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = GEQ_develop_the_army }
+		x = 28
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_artillery_investments
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = GEQ_weapons_investments }
+		x = 28
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_motorization_investments
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = GEQ_develop_the_army }
+		x = 32
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 2
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_armour_investments
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GEQ_motorization_investments }
+		x = 32
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.25
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_develop_the_airforce
+		icon = GFX_goal_generic_build_airforce
+		x = 34
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_air_doctrine_investments
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = GEQ_develop_the_airforce }
+		x = 34
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_fighter_investments
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = GEQ_develop_the_airforce }
+		x = 36
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	
+	focus = {
+		id = GEQ_CAS_investments
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GEQ_fighter_investments }
+		x = 36
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
 		}
 	}
 }
