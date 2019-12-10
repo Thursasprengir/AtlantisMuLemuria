@@ -1,0 +1,253 @@
+focus_tree = {
+	id = atl_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = ATL
+		}
+	}
+	
+
+	default = no
+
+	
+	continuous_focus_position = { x = 20 y = 1200 }
+	
+focus = {
+		id = ATL_fascist
+		icon = GFX_double_daggers #
+		mutually_exclusive = {
+			focus = ATL_isolation
+			focus = ATL_democracy
+			focus = ATL_communist
+		}
+		x = 2
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_isolation
+		icon = GFX_double_daggers #
+		mutually_exclusive = {
+			focus = ATL_fascist
+			focus = ATL_democracy
+			focus = ATL_communist
+		}
+		x = 7
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_democracy
+		icon = GFX_double_daggers #
+		mutually_exclusive = {
+			focus = ATL_fascist
+			focus = ATL_isolation
+			focus = ATL_communist
+		}
+		x = 12
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_communist
+		icon = GFX_double_daggers #
+		mutually_exclusive = {
+			focus = ATL_fascist
+			focus = ATL_isolation
+			focus = ATL_democracy
+		}
+		x = 17
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+####################
+#ATL Fascist Branch#
+####################
+
+	
+focus = {
+		id = ATL_anthropofagoi
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_fascist }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_fascist
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_fascist }
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+
+
+
+
+
+
+#########################
+#ATL Isolationsit Branch#
+#########################
+
+
+
+
+
+
+
+
+#######################
+#ATL Democratic Branch#
+#######################
+
+
+
+
+
+
+######################
+#ATL Communist Branch#
+######################
+
+
+
+
+
+
+
+
+
+
+
+}
