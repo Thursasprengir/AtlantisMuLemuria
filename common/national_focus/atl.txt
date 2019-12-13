@@ -56,7 +56,7 @@ focus = {
 			focus = ATL_democracy
 			focus = ATL_communist
 		}
-		x = 7
+		x = 8
 		y = 0
 
 		cost = 10
@@ -89,7 +89,7 @@ focus = {
 			focus = ATL_isolation
 			focus = ATL_communist
 		}
-		x = 12
+		x = 14
 		y = 0
 
 		cost = 10
@@ -122,7 +122,7 @@ focus = {
 			focus = ATL_isolation
 			focus = ATL_democracy
 		}
-		x = 17
+		x = 20
 		y = 0
 
 		cost = 10
@@ -153,9 +153,40 @@ focus = {
 
 	
 focus = {
-		id = ATL_anthropofagoi
+		id = ATL_fascist1
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_fascist }
+		relative_position_id = ATL_fascist
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_fascist2
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_fascist }
+		relative_position_id = ATL_fascist
 		x = 0
 		y = 1
 
@@ -182,9 +213,10 @@ focus = {
 	}
 	
 focus = {
-		id = ATL_fascist
+		id = ATL_fascist3
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_fascist }
+		relative_position_id = ATL_fascist
 		x = 2
 		y = 1
 
@@ -220,7 +252,96 @@ focus = {
 #ATL Isolationsit Branch#
 #########################
 
+	
+focus = {
+		id = ATL_iso1
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_isolation }
+		relative_position_id = ATL_isolation
+		x = -2
+		y = 1
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_iso2
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_isolation }
+		relative_position_id = ATL_isolation
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_iso3
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_isolation }
+		relative_position_id = ATL_isolation
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
 
 
 
@@ -232,6 +353,96 @@ focus = {
 #######################
 
 
+	
+focus = {
+		id = ATL_democracy1
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_democracy }
+		relative_position_id = ATL_democracy
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_democracy2
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_democracy }
+		relative_position_id = ATL_democracy
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_democracy3
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_democracy }
+		relative_position_id = ATL_democracy
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
 
 
 
@@ -239,8 +450,96 @@ focus = {
 ######################
 #ATL Communist Branch#
 ######################
+	
+focus = {
+		id = ATL_communist1
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_communist }
+		relative_position_id = ATL_communist
+		x = -2
+		y = 1
 
+		cost = 10
 
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_communist2
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_communist }
+		relative_position_id = ATL_communist
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_communist3
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_communist }
+		relative_position_id = ATL_communist
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
 
 
 
