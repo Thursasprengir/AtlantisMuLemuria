@@ -1175,6 +1175,850 @@ focus = {
 			add_political_power = 150
 		}
 	}
+	
+
+####
+#BANK SOC
+####		
+focus = {
+		id = ATL_trading_and_banking_societies
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_secret_societies }
+		relative_position_id = ATL_secret_societies
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}	
+	
+focus = {
+		id = ATL_karistig_dynasty
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_trading_and_banking_societies }
+		relative_position_id = ATL_trading_and_banking_societies
+		x = -4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_tensapiak_cartel
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_trading_and_banking_societies }
+		relative_position_id = ATL_trading_and_banking_societies
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_united_bankers_guild
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_trading_and_banking_societies }
+		relative_position_id = ATL_trading_and_banking_societies
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_rothschilds
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_trading_and_banking_societies }
+		relative_position_id = ATL_trading_and_banking_societies
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_fuggers
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_trading_and_banking_societies }
+		relative_position_id = ATL_trading_and_banking_societies
+		x = 4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+####
+#POLIT SOC
+####		
+focus = {
+		id = ATL_political_news_societies
+		icon = GFX_double_daggers #
+		prerequisite = { 
+				focus = ATL_karistig_dynasty
+				focus = ATL_tensapiak_cartel
+				focus = ATL_united_bankers_guild
+				focus = ATL_rothschilds
+				focus = ATL_fuggers
+				}
+		relative_position_id = ATL_trading_and_banking_societies
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_monarchists
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_political_news_societies }
+		relative_position_id = ATL_political_news_societies
+		x = -5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_black_daggers
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_political_news_societies }
+		relative_position_id = ATL_political_news_societies
+		x = -3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_hexanchial
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_political_news_societies }
+		relative_position_id = ATL_political_news_societies
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_hearsts #American Media Baron establishing a Dynasty in Atlantis to control the news
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_political_news_societies }
+		relative_position_id = ATL_political_news_societies
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+			#huge investment, huge social outrage
+		}
+	}
+	
+focus = {
+		id = ATL_kaiturn_family #local Atlantean family to control the news
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_political_news_societies }
+		relative_position_id = ATL_political_news_societies
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+
+
+
+####
+#Crime SOC
+####	
+focus = {
+		id = ATL_crime_societies
+		icon = GFX_double_daggers #
+		prerequisite = { 
+			focus = ATL_monarchists
+			focus = ATL_black_daggers
+			focus = ATL_hexanchial
+			}
+		prerequisite = { 
+			focus = ATL_hearsts
+			focus = ATL_kaiturn_family
+			}
+		relative_position_id = ATL_political_news_societies
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+focus = {
+		id = ATL_Zichilianak #The Sicilian Mob
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_crime_societies }
+		relative_position_id = ATL_crime_societies
+		x = -4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+focus = {
+		id = ATL_Siegels #Jewish-American Crime Family
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_crime_societies }
+		relative_position_id = ATL_crime_societies
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+focus = {
+		id = ATL_Kaprastiak #Native Atlantean Crime syndicate
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_crime_societies }
+		relative_position_id = ATL_crime_societies
+		x = -0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+focus = {
+		id = ATL_Kaprastiak #Native Atlantean Crime syndicate
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_crime_societies }
+		relative_position_id = ATL_crime_societies
+		x = -0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+####
+#MIL SOC
+####	
+focus = {
+		id = ATL_military_societies
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_crime_societies }
+		relative_position_id = ATL_crime_societies
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_maneaters
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_military_societies }
+		relative_position_id = ATL_military_societies
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_restorationists
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_military_societies }
+		relative_position_id = ATL_military_societies
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+####
+#Religious SOC
+####	
+focus = {
+		id = ATL_religious_societies
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_secret_societies }
+		relative_position_id = ATL_secret_societies
+		x = 4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+
+####
+#EDU SOC
+####	
+focus = {
+		id = ATL_educational_societies
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_secret_societies }
+		relative_position_id = ATL_secret_societies
+		x = 8
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_overturners
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_educational_societies }
+		relative_position_id = ATL_educational_societies
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}	
+	
+focus = {
+		id = ATL_orange_masks
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_educational_societies }
+		relative_position_id = ATL_educational_societies
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_red_bandanas
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_orange_masks }
+		relative_position_id = ATL_orange_masks
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_green_brigade
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_orange_masks }
+		relative_position_id = ATL_orange_masks
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_kenistroiak
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_educational_societies }
+		relative_position_id = ATL_educational_societies
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
 
 ###########################
 #Atlantean Military Branch#
@@ -1184,7 +2028,7 @@ focus = {
 		id = ATL_military_branch
 		icon = GFX_double_daggers #
 		relative_position_id = ATL_secret_societies
-		x = 9
+		x = 19
 		y = 0
 
 		cost = 10
