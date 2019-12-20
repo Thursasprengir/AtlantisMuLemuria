@@ -1151,7 +1151,7 @@ focus = {
 		id = ATL_secret_societies
 		icon = GFX_double_daggers #
 		relative_position_id = ATL_communist
-		x = 9
+		x = 16
 		y = 0
 
 		cost = 10
@@ -1185,7 +1185,7 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_secret_societies }
 		relative_position_id = ATL_secret_societies
-		x = 0
+		x = -7
 		y = 1
 
 		cost = 10
@@ -1215,6 +1215,12 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_trading_and_banking_societies }
 		relative_position_id = ATL_trading_and_banking_societies
+		mutually_exclusive = {
+			focus = ATL_tensapiak_cartel
+			focus = ATL_united_bankers_guild
+			focus = ATL_rothschilds
+			focus = ATL_fuggers
+		}
 		x = -4
 		y = 1
 
@@ -1245,6 +1251,12 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_trading_and_banking_societies }
 		relative_position_id = ATL_trading_and_banking_societies
+		mutually_exclusive = {
+			focus = ATL_karistig_dynasty
+			focus = ATL_united_bankers_guild
+			focus = ATL_rothschilds
+			focus = ATL_fuggers
+		}
 		x = -2
 		y = 1
 
@@ -1275,6 +1287,12 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_trading_and_banking_societies }
 		relative_position_id = ATL_trading_and_banking_societies
+		mutually_exclusive = {
+			focus = ATL_karistig_dynasty
+			focus = ATL_tensapiak_cartel
+			focus = ATL_rothschilds
+			focus = ATL_fuggers
+		}
 		x = 0
 		y = 1
 
@@ -1305,6 +1323,12 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_trading_and_banking_societies }
 		relative_position_id = ATL_trading_and_banking_societies
+		mutually_exclusive = {
+			focus = ATL_karistig_dynasty
+			focus = ATL_tensapiak_cartel
+			focus = ATL_united_bankers_guild
+			focus = ATL_fuggers
+		}
 		x = 2
 		y = 1
 
@@ -1335,6 +1359,12 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_trading_and_banking_societies }
 		relative_position_id = ATL_trading_and_banking_societies
+		mutually_exclusive = {
+			focus = ATL_karistig_dynasty
+			focus = ATL_tensapiak_cartel
+			focus = ATL_united_bankers_guild
+			focus = ATL_rothschilds
+		}
 		x = 4
 		y = 1
 
@@ -1404,6 +1434,10 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
 		relative_position_id = ATL_political_news_societies
+		mutually_exclusive = {
+			focus = ATL_black_daggers
+			focus = ATL_hexanchial
+		}
 		x = -5
 		y = 1
 
@@ -1434,6 +1468,10 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
 		relative_position_id = ATL_political_news_societies
+		mutually_exclusive = {
+			focus = ATL_monarchists
+			focus = ATL_hexanchial
+		}
 		x = -3
 		y = 1
 
@@ -1464,6 +1502,10 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
 		relative_position_id = ATL_political_news_societies
+		mutually_exclusive = {
+			focus = ATL_monarchists
+			focus = ATL_black_daggers
+		}
 		x = -1
 		y = 1
 
@@ -1494,6 +1536,10 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
 		relative_position_id = ATL_political_news_societies
+		mutually_exclusive = {
+			focus = ATL_kaiturn_family
+			focus = ATL_rmvp
+		}
 		x = 1
 		y = 1
 
@@ -1525,6 +1571,10 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
 		relative_position_id = ATL_political_news_societies
+		mutually_exclusive = {
+			focus = ATL_hearsts
+			focus = ATL_rmvp
+		}
 		x = 3
 		y = 1
 
@@ -1550,6 +1600,39 @@ focus = {
 		}
 	}
 	
+focus = {
+		id = ATL_rmvp #Reichsministerium für Volksaufklärung und Propaganda, Nazi Propaganda Machine
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_political_news_societies }
+		relative_position_id = ATL_political_news_societies
+		mutually_exclusive = {
+			focus = ATL_hearsts
+			focus = ATL_kaiturn_family
+		}
+		x = 5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
 
 
 
@@ -1594,7 +1677,7 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_Zichilianak #The Sicilian Mob
+		id = ATL_zichilianak #The Sicilian Mob
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_crime_societies }
 		relative_position_id = ATL_crime_societies
@@ -1623,7 +1706,7 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_Siegels #Jewish-American Crime Family
+		id = ATL_siegels #Jewish-American Crime Family
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_crime_societies }
 		relative_position_id = ATL_crime_societies
@@ -1652,7 +1735,7 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_Kaprastiak #Native Atlantean Crime syndicate
+		id = ATL_kaprastiak #Native Atlantean Crime syndicate
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_crime_societies }
 		relative_position_id = ATL_crime_societies
@@ -1681,11 +1764,11 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_Kaprastiak #Native Atlantean Crime syndicate
+		id = ATL_itorkanak #2nd Native Atlantean Crime syndicate
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_crime_societies }
 		relative_position_id = ATL_crime_societies
-		x = -0
+		x = 2
 		y = 1
 
 		cost = 10
@@ -1716,7 +1799,12 @@ focus = {
 focus = {
 		id = ATL_military_societies
 		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_crime_societies }
+		prerequisite = { 
+			focus = ATL_zichilianak
+			focus = ATL_siegels
+			focus = ATL_kaprastiak
+			focus = ATL_itorkanak
+			}
 		relative_position_id = ATL_crime_societies
 		x = 0
 		y = 2
@@ -1811,7 +1899,109 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_secret_societies }
 		relative_position_id = ATL_secret_societies
-		x = 4
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_gostudi_cult #destroying organized religion from within, increases fascist influence
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_religious_societies }
+		relative_position_id = ATL_religious_societies
+		mutually_exclusive = {
+			focus = ATL_vox_petri
+			focus = ATL_deimila_cult
+		}
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_vox_petri #goal is to overthrow Atlantean Deism with Catholicism
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_religious_societies }
+		relative_position_id = ATL_religious_societies
+		mutually_exclusive = {
+			focus = ATL_gostudi_cult
+			focus = ATL_deimila_cult
+		}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_deimila_cult #preserve Atlantean Deism, lowers foreign influence
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_religious_societies }
+		relative_position_id = ATL_religious_societies
+		mutually_exclusive = {
+			focus = ATL_gostudi_cult
+			focus = ATL_vox_petri
+		}
+		x = 2
 		y = 1
 
 		cost = 10
@@ -1845,8 +2035,8 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_secret_societies }
 		relative_position_id = ATL_secret_societies
-		x = 8
-		y = 3
+		x = 7
+		y = 1
 
 		cost = 10
 
@@ -2028,7 +2218,7 @@ focus = {
 		id = ATL_military_branch
 		icon = GFX_double_daggers #
 		relative_position_id = ATL_secret_societies
-		x = 19
+		x = 22
 		y = 0
 
 		cost = 10
