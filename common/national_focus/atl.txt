@@ -21,7 +21,7 @@ focus_tree = {
 
 focus = {
 		id = ATL_fascist
-		icon = GFX_double_daggers #
+		icon = GFX_double_daggers
 		mutually_exclusive = {
 			focus = ATL_isolation
 			focus = ATL_democracy
@@ -36,7 +36,7 @@ focus = {
 			factor = 2
 		}
 		available = {
-
+			fascism > 0.4
 		}
 
 		bypass = {
@@ -290,7 +290,7 @@ focus = {
 			factor = 2
 		}
 		available = {
-
+			neutrality > 0.1
 		}
 
 		bypass = {
@@ -607,6 +607,66 @@ focus = {
 			add_political_power = 150
 		}
 	}
+	
+focus = {
+		id = ATL_resource_exp1
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_domestic_resource_exploit }
+		relative_position_id = ATL_domestic_resource_exploit
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_resource_exp2
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_resource_exp1 }
+		relative_position_id = ATL_resource_exp1
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
 
 
 
@@ -635,7 +695,7 @@ focus = {
 			factor = 2
 		}
 		available = {
-
+			democratic > 0.5
 		}
 
 		bypass = {
@@ -827,7 +887,7 @@ focus = {
 			factor = 2
 		}
 		available = {
-
+			communism > 0.1
 		}
 
 		bypass = {
@@ -2218,7 +2278,7 @@ focus = {
 		id = ATL_military_branch
 		icon = GFX_double_daggers #
 		relative_position_id = ATL_secret_societies
-		x = 22
+		x = 15
 		y = 0
 
 		cost = 10
@@ -2278,7 +2338,7 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_standard_projects }
 		relative_position_id = ATL_standard_projects
-		x = -4
+		x = 3
 		y = 1
 
 		cost = 10
@@ -2398,7 +2458,7 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_standard_projects }
 		relative_position_id = ATL_standard_projects
-		x =-2
+		x =-1
 		y = 1
 
 		cost = 10
@@ -2432,7 +2492,7 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_international_research }
 		relative_position_id = ATL_international_research
-		x = 1
+		x = 0
 		y = 1
 
 		cost = 10
@@ -2467,7 +2527,7 @@ focus = {
 		prerequisite = { focus = ATL_intl_research_teams
 			focus = ATL_espionage_teams}
 		relative_position_id = ATL_intl_research_teams
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 10
@@ -2527,7 +2587,7 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_standard_projects }
 		relative_position_id = ATL_standard_projects
-		x = 3
+		x = 1
 		y = 1
 
 		cost = 10
@@ -2590,7 +2650,7 @@ focus = {
 		x = 3
 		y = 1
 
-		cost = 10
+		cost = 50
 
 		ai_will_do = {
 			factor = 2
