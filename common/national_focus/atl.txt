@@ -337,71 +337,11 @@ focus = {
 	}
 	
 focus = {
-		id = ATL_executive_power
+		id = ATL_military_power
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_ensure_balance_powers }
 		relative_position_id = ATL_ensure_balance_powers
-		x = -2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-		 
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-	
-focus = {
-		id = ATL_judicial_power
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_ensure_balance_powers }
-		relative_position_id = ATL_ensure_balance_powers
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-		 
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-	
-focus = {
-		id = ATL_legislative_power
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_ensure_balance_powers }
-		relative_position_id = ATL_ensure_balance_powers
-		x = 2
+		x = -4
 		y = 1
 
 		cost = 10
@@ -431,7 +371,7 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_ensure_balance_powers }
 		relative_position_id = ATL_ensure_balance_powers
-		x = 4
+		x = -2
 		y = 1
 
 		cost = 10
@@ -457,11 +397,71 @@ focus = {
 	}
 	
 focus = {
-		id = ATL_military_power
+		id = ATL_executive_power
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_ensure_balance_powers }
 		relative_position_id = ATL_ensure_balance_powers
-		x = -4
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_judicial_power
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_ensure_balance_powers }
+		relative_position_id = ATL_ensure_balance_powers
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_legislative_power
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_ensure_balance_powers }
+		relative_position_id = ATL_ensure_balance_powers
+		x = 4
 		y = 1
 
 		cost = 10
@@ -1088,6 +1088,36 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_restrict_dynastic_rights }
 		relative_position_id = ATL_restrict_dynastic_rights
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+focus = {
+		id = ATL_attack_bourgeoisie
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_quell_social_unrest }
+		relative_position_id = ATL_quell_social_unrest
 		x = 0
 		y = 1
 
