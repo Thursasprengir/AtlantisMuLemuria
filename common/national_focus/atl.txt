@@ -1523,6 +1523,8 @@ focus = {
 		id = ATL_monarchists
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
+		prerequisite = { focus = ATL_karistig_dynasty
+						focus = ATL_tensapiak_cartel}
 		relative_position_id = ATL_political_news_societies
 		mutually_exclusive = {
 			focus = ATL_black_daggers
@@ -1557,6 +1559,8 @@ focus = {
 		id = ATL_black_daggers
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
+		prerequisite = { focus = ATL_karistig_dynasty
+						focus = ATL_tensapiak_cartel}
 		relative_position_id = ATL_political_news_societies
 		mutually_exclusive = {
 			focus = ATL_monarchists
@@ -1591,6 +1595,7 @@ focus = {
 		id = ATL_hexanchial
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
+		prerequisite = { focus = ATL_united_bankers_guild }
 		relative_position_id = ATL_political_news_societies
 		mutually_exclusive = {
 			focus = ATL_monarchists
@@ -1625,6 +1630,7 @@ focus = {
 		id = ATL_hearsts #American Media Baron establishing a Dynasty in Atlantis to control the news
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_political_news_societies }
+		prerequisite = { focus = ATL_rothschilds }
 		relative_position_id = ATL_political_news_societies
 		mutually_exclusive = {
 			focus = ATL_kaiturn_family
@@ -1693,7 +1699,8 @@ focus = {
 focus = {
 		id = ATL_rmvp #Reichsministerium für Volksaufklärung und Propaganda, Nazi Propaganda Machine
 		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_political_news_societies }
+		prerequisite = { focus = ATL_political_news_societies}
+		prerequisite = { focus = ATL_fuggers}
 		relative_position_id = ATL_political_news_societies
 		mutually_exclusive = {
 			focus = ATL_hearsts
@@ -1767,40 +1774,17 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_zichilianak #The Sicilian Mob
+		id = ATL_itorkanak #2nd Native Atlantean Crime syndicate
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_crime_societies }
 		relative_position_id = ATL_crime_societies
+		mutually_exclusive = {
+			focus = ATL_zichilianak
+			focus = ATL_kaprastiak
+			focus = ATL_siegels
+			focus = ATL_ringvereine
+		}
 		x = -4
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-		 
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-focus = {
-		id = ATL_siegels #Jewish-American Crime Family
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_crime_societies }
-		relative_position_id = ATL_crime_societies
-		x = -2
 		y = 1
 
 		cost = 10
@@ -1829,7 +1813,13 @@ focus = {
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_crime_societies }
 		relative_position_id = ATL_crime_societies
-		x = -0
+		mutually_exclusive = {
+			focus = ATL_zichilianak
+			focus = ATL_itorkanak
+			focus = ATL_siegels
+			focus = ATL_ringvereine
+		}
+		x = -2
 		y = 1
 
 		cost = 10
@@ -1854,11 +1844,87 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_itorkanak #2nd Native Atlantean Crime syndicate
+		id = ATL_siegels #Jewish-American Crime Family
 		icon = GFX_double_daggers #
 		prerequisite = { focus = ATL_crime_societies }
 		relative_position_id = ATL_crime_societies
+		mutually_exclusive = {
+			focus = ATL_zichilianak
+			focus = ATL_itorkanak
+			focus = ATL_kaprastiak
+			focus = ATL_ringvereine
+		}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			 NOT = { has_completed_focus = ATL_rmvp }
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+focus = {
+		id = ATL_ringvereine #German 'ring club' criminal syndicate
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_crime_societies }
+		relative_position_id = ATL_crime_societies
+		mutually_exclusive = {
+			focus = ATL_zichilianak
+			focus = ATL_itorkanak
+			focus = ATL_kaprastiak
+			focus = ATL_siegels
+		}
 		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			 NOT = { has_completed_focus = ATL_hearsts }
+		}
+
+		bypass = {
+		 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+focus = {
+		id = ATL_zichilianak #The Sicilian Mob
+		icon = GFX_double_daggers #
+		prerequisite = { focus = ATL_crime_societies }
+		relative_position_id = ATL_crime_societies
+		mutually_exclusive = {
+			focus = ATL_itorkanak
+			focus = ATL_kaprastiak
+			focus = ATL_siegels
+			focus = ATL_ringvereine
+		}
+		x = 4
 		y = 1
 
 		cost = 10
@@ -1894,6 +1960,7 @@ focus = {
 			focus = ATL_siegels
 			focus = ATL_kaprastiak
 			focus = ATL_itorkanak
+			focus = ATL_ringvereine
 			}
 		relative_position_id = ATL_crime_societies
 		x = 0
