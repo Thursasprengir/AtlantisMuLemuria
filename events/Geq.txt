@@ -685,3 +685,99 @@ country_event = {
 		name = geq.28.a
 	}
 }
+
+country_event = {
+	id = geq.32
+	title = geq.32.t
+	desc = geq.32.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GEQ
+		AND = {
+			date > 1937.2.2
+		}
+	}
+	
+	is_triggered_only = no
+	
+	option = {
+		name = geq.32.a
+		ai_chance = {
+			base = 90
+		}
+		add_political_power = 30
+		hidden_effect = { GEQ = { country_event = { days = 10 id = geq.35 } } }
+	}
+	option = {
+		name = geq.32.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.1
+		hidden_effect = { GEQ = { country_event = { days = 400 id = geq.33 } } }
+	}
+}
+
+country_event = {
+	id = geq.33
+	title = geq.33.t
+	desc = geq.33.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.33.a
+		ai_chance = {
+			base = 80
+		}
+	}
+	option = {
+		name = geq.33.b
+		ai_chance = {
+			base = 20
+		}
+		add_war_support = -0.05
+		hidden_effect = { GEQ = { country_event = { days = 1 id = geq.34 } } }
+	}
+}
+
+country_event = {
+	id = geq.34
+	title = geq.34.t
+	desc = geq.34.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.34.a
+		random_list = {
+			30 = {
+				add_ideas = {
+					GEQ_new_researchers
+				}
+			}
+			70 = {
+			}
+		}
+		set_technology = {chemical_experimentation_geq = 1}
+	}
+}
+
+country_event = {
+	id = geq.35
+	title = geq.35.t
+	desc = geq.35.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = geq.35.a
+		add_stability = 0.02
+	}
+}
