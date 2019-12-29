@@ -170,7 +170,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_stability = -0.05
+			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
+			add_timed_idea = {
+				idea = nationalism
+				days = 720
+			}
 		}
 	}
 	
@@ -201,7 +206,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_ideas = military_youth_focus
+			add_manpower = 150000
 		}
 	}
 	
@@ -232,7 +238,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 50
+			add_manpower = 300000
 		}
 	}
 	
@@ -262,7 +269,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_ideas = paramilitarism_focus
+			add_manpower = 150000
 		}
 	}
 
@@ -899,7 +907,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_popularity = { ideology = communism popularity = 0.1 }
 		}
 	}
 	
@@ -959,7 +967,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 50
+			add_ideas = socialist_education
 		}
 	}
 	
@@ -2546,7 +2555,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 	
@@ -2645,7 +2665,19 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			army_experience = 20
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	
@@ -2675,7 +2707,20 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+			air_experience = 25
+			948 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}	
+			}				
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 	
