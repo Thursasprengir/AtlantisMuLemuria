@@ -1446,3 +1446,18 @@ raj_fragmentation_status = {
 		desc = "RULE_OPTION_RAJ_FRAGMENTED_DESC"
 	}
 }
+west_fragmentation_status = {
+	name = "WEST_FRAGMENTATION_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = WEST_FRAGMENTED
+		text = "RULE_OPTION_WEST_FRAGMENTED"
+		desc = "RULE_OPTION_WEST_FRAGMENTED_DESC"
+	}
+}
