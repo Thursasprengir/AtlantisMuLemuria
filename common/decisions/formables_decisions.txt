@@ -1,0 +1,68 @@
+form_naf_category = {
+	
+	form_naf = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = THU
+				original_tag = FRI
+				original_tag = ICE
+			}
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			# Thule
+			custom_trigger_tooltip = {
+				tooltip = form_country_thule_required_states_tt
+				controls_state = 941
+			}
+			# Frisland
+			custom_trigger_tooltip = {
+				tooltip = form_country_frisland_required_states_tt
+				controls_state = 943
+			}
+			# Greenland
+			custom_trigger_tooltip = {
+				tooltip = form_country_greenland_required_states_tt
+				controls_state = 100
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = THU
+				original_tag = FRI
+				original_tag = ICE
+			}
+			NOT = { has_global_flag = form_naf_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = NAF_FEDERATION
+				100 = { add_core_of = ROOT }
+				943 = { add_core_of = ROOT }
+				941 = { add_core_of = ROOT }
+				101 = { add_core_of = ROOT }
+				332 = { add_core_of = ROOT }
+				331 = { add_core_of = ROOT }
+				337 = { add_core_of = ROOT }
+
+			hidden_effect = {
+				news_event = { id = wtt_news.53 hours = 6 }
+				set_global_flag = form_naf_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
