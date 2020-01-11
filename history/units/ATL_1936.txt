@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infantry Division"		
+	name = "Atlantian Standard Unit"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -13,12 +13,12 @@
 	}
 }
 division_template = {
-	name = "Garrison Brigade" 		
+	name = "Atlantian Guard"
 	regiments = {
-		infantry = { x = 0 y = 0 }	
-		infantry = { x = 0 y = 1 }	
-		infantry = { x = 1 y = 0 }	
-		infantry = { x = 1 y = 1 }	
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -29,39 +29,48 @@ division_template = {
 units = {
 	### Army High Command ###
 	division = {
-		name = "1st Division"
+		name = "Zuhaitz Division"
 		location = 14159
-		division_template = "Infantry Division"		
+		division_template = "Atlantian Standard Unit"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
 	division = {
-		name = "2nd Division"
-		location = 14159
-		division_template = "Infantry Division"		
+		name = "Burmiunean Division"
+		location = 14190
+		division_template = "Atlantian Standard Unit"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
 	division = {
-		name = "3rd Division"
-		location = 14159
-		division_template = "Infantry Division"		
+		name = "Yamylaik Division"
+		location = 14178
+		division_template = "Atlantian Standard Unit"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
 	division = {
-		name = "4th Division"
-		location = 14159
-		division_template = "Infantry Division"		
+		name = "Taidorie Division"
+		location = 14157
+		division_template = "Atlantian Standard Unit"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
+
+	}
+	### Colonial Brigades ###
+	division = {
+		name = "Takamafrika Guard"
+		location = 14257
+		division_template = "Atlantian Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 
 	}
 	fleet = {
-		name = "Sumendian Command"			
+		name = "Sumendian Command"
 		naval_base = 14175
 		task_force = {
 			name = "Kolpo Escort Fleet"
@@ -94,7 +103,7 @@ units = {
 		}
 	}
 	fleet = {
-		name = "Takamafrikan Command"			
+		name = "Takamafrikan Command"
 		naval_base = 14257
 		task_force = {
 			name = "Takamafrikan Scout Fleet"
@@ -130,7 +139,7 @@ units = {
 		}
 	}
 	fleet = {
-		name = "High Seas Command"		
+		name = "High Seas Command"
 		naval_base = 14159
 		task_force = {
 			name = "Scout Force"
