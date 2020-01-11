@@ -1,6 +1,6 @@
 focus_tree = {
 	id = tod_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -8,16 +8,16 @@ focus_tree = {
 			tag = TOD
 		}
 	}
-	
+
 
 	default = no
 
-	
+
 	continuous_focus_position = { x = 20 y = 1200 }
-	
+
 focus = {
 		id = TOD_start
-		icon = GFX_double_daggers #
+		icon = GFX_TOD_politics
 		x = 10
 		y = 0
 
@@ -31,7 +31,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -42,8 +42,8 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
-	
+
+
 ####################################
 #OUTWARD BRANCH
 ####################################
@@ -68,7 +68,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -79,7 +79,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 	focus = {
 		id = TOD_outwarddemocracy1
 		icon = GFX_goal_generic_improve_relations
@@ -123,7 +123,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -161,7 +161,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -212,7 +212,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -262,7 +262,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -313,7 +313,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -343,7 +343,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -386,7 +386,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -420,7 +420,7 @@ focus = {
 focus = {
 		id = TOD_foreigninvestments
 		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { 
+		prerequisite = {
 			focus = TOD_gloriousvolunteers1 }
 		prerequisite = {
 			focus = TOD_foreignaiddemocracy1}
@@ -432,7 +432,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -461,7 +461,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -485,7 +485,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = TOD_outwardcommunism1
 		icon = GFX_TOD_unique_communism
@@ -532,7 +532,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -561,7 +561,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -606,14 +606,14 @@ focus = {
 					bonus = 1.0
 					uses = 1
 					category = industry
-				}	
+				}
 				add_tech_bonus = {
 					name = infantry_artillery_bonus #@#
 					bonus = 1.0
 					uses = 1
 					category = infantry_weapons
 					category = artillery
-				}	
+				}
 			}
 		}
 	}
@@ -630,7 +630,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -680,7 +680,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -692,7 +692,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -814,7 +814,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -829,7 +829,7 @@ focus = {
 			add_popularity = { ideology = communism popularity = 0.1 }
 			add_stability = 0.05
 			dismantle_faction = yes
-			create_faction = TOD_fed_tod_soc_states		
+			create_faction = TOD_fed_tod_soc_states
 			add_ai_strategy = {
 				type = alliance
 				id = SOV
@@ -880,7 +880,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -894,11 +894,11 @@ focus = {
 		completion_reward = {
 		random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Foreign Education Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						division = "name = \"Foreign Education Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
 						owner = TOD
 					}
 					create_unit = {
-						division = "name = \"2nd Foreign Education Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						division = "name = \"2nd Foreign Education Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
 						owner = TOD
 					}
 				}
@@ -984,7 +984,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1012,7 +1012,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1040,7 +1040,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1068,7 +1068,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1096,7 +1096,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1124,7 +1124,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1166,7 +1166,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1194,7 +1194,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1223,7 +1223,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1253,7 +1253,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1351,7 +1351,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1393,7 +1393,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1421,7 +1421,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1457,7 +1457,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1485,7 +1485,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1524,12 +1524,12 @@ focus = {
 focus = {
 		id = TOD_inwardplaceholder7
 		icon = GFX_r56_goal_generic_army_elite
-		prerequisite = { 
-			focus = TOD_inwardplaceholder6 
+		prerequisite = {
+			focus = TOD_inwardplaceholder6
 			focus = TOD_fascismplaceholder6
 			focus = TOD_outwardcommunism6
 			focus = TOD_everyone}
-		prerequisite = { 
+		prerequisite = {
 			focus = TOD_reckoning}
 		x = 15
 		y = 8
@@ -1539,7 +1539,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1569,7 +1569,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1602,7 +1602,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
 		}
 
@@ -1647,14 +1647,14 @@ focus = {
 
 		completion_reward = {
 		if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = TOD
 							is_in_faction_with = TOD
 						}
-						has_full_control_of_state = 901 
-						has_full_control_of_state = 902 
+						has_full_control_of_state = 901
+						has_full_control_of_state = 902
 					}
 				}
 					901 = {
@@ -1719,13 +1719,13 @@ focus = {
 
 		completion_reward = {
 		if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = TOD
 							is_in_faction_with = TOD
-						} 
-						has_full_control_of_state = 902 
+						}
+						has_full_control_of_state = 902
 					}
 				}
 					902 = {
@@ -1770,14 +1770,14 @@ focus = {
 
 		completion_reward = {
 		if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = TOD
 							is_in_faction_with = TOD
-						} 
-						has_full_control_of_state = 902 
-						has_full_control_of_state = 903 
+						}
+						has_full_control_of_state = 902
+						has_full_control_of_state = 903
 					}
 				}
 					902 = {
@@ -1830,14 +1830,14 @@ focus = {
 
 		completion_reward = {
 		if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = TOD
 							is_in_faction_with = TOD
-						} 
-						has_full_control_of_state = 903 
-						has_full_control_of_state = 900 
+						}
+						has_full_control_of_state = 903
+						has_full_control_of_state = 900
 					}
 				}
 					903 = {
@@ -1983,7 +1983,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2023,7 +2023,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_militaryfactories1
 		icon = GFX_focus_generic_tank_production
@@ -2041,7 +2041,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2081,7 +2081,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_militaryfactories2
 		icon = GFX_focus_generic_tank_production
@@ -2099,7 +2099,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2124,7 +2124,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_militaryfactories3
 		icon = GFX_focus_generic_tank_production
@@ -2142,7 +2142,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2167,7 +2167,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_militarycorps1
 		icon = GFX_goal_generic_axis_build_infantry
@@ -2185,7 +2185,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2202,7 +2202,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_militarycorps2
 		icon = GFX_goal_generic_axis_build_infantry
@@ -2222,7 +2222,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2245,7 +2245,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_militarycorps3
 		icon = GFX_goal_generic_army_doctrines
@@ -2263,7 +2263,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2276,7 +2276,7 @@ focus = {
 			navy_experience = 25
 		}
 	}
-	
+
 focus = {
 		id = TOD_airforce
 		icon = GFX_goal_generic_air_fighter
@@ -2294,7 +2294,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2308,8 +2308,8 @@ focus = {
 					type = air_base
 					level = 2
 					instant_build = yes
-				}	
-			}				
+				}
+			}
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1.0
@@ -2318,7 +2318,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_armycorps
 		icon = GFX_goal_generic_major_war
@@ -2336,7 +2336,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2358,7 +2358,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_specialcorps
 		icon = GFX_goal_generic_special_forces
@@ -2376,7 +2376,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2396,7 +2396,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_naval1
 		icon = GFX_goal_generic_navy_battleship
@@ -2414,7 +2414,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2432,7 +2432,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_naval2
 		icon = GFX_goal_generic_navy_carrier
@@ -2450,7 +2450,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2477,7 +2477,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_marines1
 		icon = GFX_goal_generic_amphibious_assault
@@ -2495,7 +2495,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2511,7 +2511,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = TOD_marines_cont
 		icon = GFX_goal_generic_amphibious_assault
@@ -2529,7 +2529,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2566,7 +2566,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2595,7 +2595,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2627,7 +2627,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2660,7 +2660,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2692,7 +2692,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2727,7 +2727,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2762,7 +2762,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2794,7 +2794,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2828,7 +2828,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2839,7 +2839,7 @@ focus = {
 			every_army_leader = {
 				add_attack = -1
 			}
-						
+
 		}
 	}
 
@@ -2866,7 +2866,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2876,11 +2876,11 @@ focus = {
 		completion_reward = {
 		random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Loyalist Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						division = "name = \"Loyalist Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
 						owner = TOD
 					}
 					create_unit = {
-						division = "name = \"2nd Loyalist Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						division = "name = \"2nd Loyalist Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
 						owner = TOD
 					}
 				}
@@ -2907,7 +2907,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2937,7 +2937,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2966,7 +2966,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2995,7 +2995,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes

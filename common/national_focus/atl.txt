@@ -1,6 +1,6 @@
 focus_tree = {
 	id = atl_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -8,11 +8,11 @@ focus_tree = {
 			tag = ATL
 		}
 	}
-	
+
 
 	default = no
 
-	
+
 	continuous_focus_position = { x = 20 y = 1200 }
 
 ####################
@@ -21,7 +21,7 @@ focus_tree = {
 
 focus = {
 		id = ATL_fascist
-		icon = GFX_r56_goal_generic_army_elite
+		icon = GFX_ATL_military
 		mutually_exclusive = {
 			focus = ATL_isolation
 			focus = ATL_democracy
@@ -40,7 +40,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -51,7 +51,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_empower_presidency
 		icon = GFX_strike_thunderbolt
@@ -70,7 +70,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -81,7 +81,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_ensure_military_loyalty
 		icon = GFX_r56_focus_generic_army_modernizations
@@ -100,7 +100,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -111,7 +111,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_weaken_judiciary
 		icon = GFX_r56_goal_generic_communist_visible_hand
@@ -131,7 +131,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -142,7 +142,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_tame_legislative
 		icon = GFX_r56_goal_generic_consitution
@@ -162,7 +162,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -178,7 +178,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = ATL_subvert_education
 		icon = GFX_r56_goal_SIA_fire_paper_peoples
@@ -198,7 +198,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -210,7 +210,7 @@ focus = {
 			add_manpower = 150000
 		}
 	}
-	
+
 focus = {
 		id = ATL_reinstitute_military_districts
 		icon = GFX_goal_italy_restructure_the_divisions
@@ -230,7 +230,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -242,7 +242,7 @@ focus = {
 			add_manpower = 300000
 		}
 	}
-	
+
 focus = {
 		id = ATL_reembody_military_dynasties
 		icon = GFX_r56_goal_generic_recruitment
@@ -261,7 +261,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -279,10 +279,10 @@ focus = {
 #########################
 #ATL Isolationsit Branch#
 #########################
-	
+
 focus = {
 		id = ATL_isolation
-		icon = GFX_r56_goal_generic_centralize_power
+		icon = GFX_ALT_isolation
 		mutually_exclusive = {
 			focus = ATL_fascist
 			focus = ATL_democracy
@@ -302,7 +302,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -313,7 +313,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_ensure_balance_powers
 		icon = GFX_r56_goal_generic_consitution
@@ -332,7 +332,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -343,7 +343,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_military_power
 		icon = GFX_r56_goal_AUS_secret_rearmament
@@ -362,7 +362,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -373,7 +373,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_educational_power
 		icon = GFX_r56_goal_SIA_fire_paper_peoples
@@ -392,7 +392,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -403,7 +403,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_executive_power
 		icon = GFX_strike_thunderbolt
@@ -422,7 +422,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -433,7 +433,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_judicial_power
 		icon = GFX_r56_goal_generic_business_bills
@@ -452,7 +452,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -463,7 +463,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_legislative_power
 		icon = GFX_r56_goal_generic_election
@@ -482,7 +482,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -493,7 +493,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_domestic_resource_exploit
 		icon = GFX_r56_goal_BEL_Steel
@@ -514,7 +514,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -525,7 +525,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_domestic_manuf1
 		icon = GFX_goal_italy_expand_libyan_manufactures
@@ -544,7 +544,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -555,7 +555,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_domestic_manuf2
 		icon = GFX_goal_italy_bring_industry_to_the_mezzogiorno
@@ -574,7 +574,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -585,7 +585,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_domestic_manuf3
 		icon = GFX_r56_focus_generic_expansion_of_new_towns
@@ -604,7 +604,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -615,7 +615,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_resource_exp1
 		icon = GFX_r56_goal_generic_excavation
@@ -634,7 +634,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -645,7 +645,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_resource_exp2
 		icon = GFX_goal_mexico_the_green_revolution
@@ -664,7 +664,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -684,7 +684,7 @@ focus = {
 #######################
 #ATL Democratic Branch#
 #######################
-	
+
 focus = {
 		id = ATL_democracy
 		icon = GFX_r56_goal_SIA_democracy_people
@@ -707,7 +707,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -718,7 +718,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_attack_corruption
 		icon = GFX_goal_mexico_quarantine_migrants
@@ -737,7 +737,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -748,7 +748,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_education_initiative
 		icon = GFX_goal_mexico_litteracy_program
@@ -767,7 +767,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -778,7 +778,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_foreign_companies
 		icon = GFX_r56_goal_SIA_improve_industry
@@ -797,7 +797,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -808,7 +808,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_increase_edu_branch_power
 		icon = GFX_r56_goal_SIA_fire_paper_peoples
@@ -827,7 +827,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -838,7 +838,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_foreign_professors
 		icon = GFX_double_daggers #
@@ -858,7 +858,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -876,7 +876,7 @@ focus = {
 ######################
 #ATL Communist Branch#
 ######################
-	
+
 focus = {
 		id = ATL_communist
 		icon = GFX_r56_goal_CRO_communist_republic
@@ -899,7 +899,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -910,7 +910,7 @@ focus = {
 			add_popularity = { ideology = communism popularity = 0.1 }
 		}
 	}
-	
+
 focus = {
 		id = ATL_power_to_the_people
 		icon = GFX_r56_goal_FRA_pcf_sfio_coalition
@@ -929,7 +929,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -940,7 +940,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_communist_reeducation
 		icon = GFX_goal_SOV_education_initiative
@@ -959,7 +959,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -971,7 +971,7 @@ focus = {
 			add_ideas = socialist_education
 		}
 	}
-	
+
 focus = {
 		id = ATL_military_infiltration
 		icon = GFX_r56_goal_SIA_control_army_2
@@ -990,7 +990,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1001,7 +1001,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_education_infiltration
 		icon = GFX_double_daggers #
@@ -1020,7 +1020,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1031,7 +1031,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_merge_mil_edu
 		icon = GFX_r56_goal_SIA_fire_paper_peoples
@@ -1050,7 +1050,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1061,7 +1061,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_restrict_dynastic_rights
 		icon = GFX_double_daggers #
@@ -1080,7 +1080,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1091,7 +1091,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_quell_social_unrest
 		icon = GFX_r56_goal_generic_armed_protest
@@ -1110,7 +1110,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1121,7 +1121,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_attack_bourgeoisie
 		icon = GFX_r56_goal_generic_ban_aristocrats
@@ -1140,7 +1140,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1151,7 +1151,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_empower_peoples_unions
 		icon = GFX_double_daggers #
@@ -1170,7 +1170,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1181,7 +1181,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_weaken_executive_br
 		icon = GFX_double_daggers #
@@ -1200,7 +1200,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1211,7 +1211,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_weaken_judicial_br
 		icon = GFX_double_daggers #
@@ -1230,7 +1230,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1245,7 +1245,7 @@ focus = {
 ############################
 #Atlantean Secret Societies#
 ############################
-	
+
 focus = {
 		id = ATL_secret_societies
 		icon = GFX_double_daggers #
@@ -1263,7 +1263,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1274,11 +1274,11 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 
 ####
 #BANK SOC
-####		
+####
 focus = {
 		id = ATL_trading_and_banking_societies
 		icon = GFX_r56_goal_generic_economics_reform
@@ -1297,7 +1297,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1307,8 +1307,8 @@ focus = {
 		completion_reward = {
 			add_political_power = 150
 		}
-	}	
-	
+	}
+
 focus = {
 		id = ATL_karistig_dynasty
 		icon = GFX_double_daggers #
@@ -1333,7 +1333,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1344,7 +1344,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_tensapiak_cartel
 		icon = GFX_double_daggers #
@@ -1369,7 +1369,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1380,7 +1380,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_united_bankers_guild
 		icon = GFX_r56_goal_GER_two_sided_economics
@@ -1405,7 +1405,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1416,7 +1416,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_rothschilds
 		icon = GFX_double_daggers #
@@ -1441,7 +1441,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1452,7 +1452,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_fuggers
 		icon = GFX_double_daggers #
@@ -1477,7 +1477,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1491,11 +1491,11 @@ focus = {
 
 ####
 #POLIT SOC
-####		
+####
 focus = {
 		id = ATL_political_news_societies
 		icon = GFX_double_daggers #
-		prerequisite = { 
+		prerequisite = {
 				focus = ATL_karistig_dynasty
 				focus = ATL_tensapiak_cartel
 				focus = ATL_united_bankers_guild
@@ -1516,7 +1516,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1527,7 +1527,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_monarchists
 		icon = GFX_double_daggers #
@@ -1552,7 +1552,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1563,7 +1563,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_black_daggers
 		icon = GFX_double_daggers #
@@ -1588,7 +1588,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1599,7 +1599,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_hexanchial
 		icon = GFX_double_daggers #
@@ -1623,7 +1623,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1634,7 +1634,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_hearsts #American Media Baron establishing a Dynasty in Atlantis to control the news
 		icon = GFX_double_daggers #
@@ -1658,7 +1658,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1670,7 +1670,7 @@ focus = {
 			#huge investment, huge social outrage
 		}
 	}
-	
+
 focus = {
 		id = ATL_kaiturn_family #local Atlantean family to control the news
 		icon = GFX_double_daggers #
@@ -1693,7 +1693,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1704,7 +1704,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_rmvp #Reichsministerium für Volksaufklärung und Propaganda, Nazi Propaganda Machine
 		icon = GFX_double_daggers #
@@ -1728,7 +1728,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1744,16 +1744,16 @@ focus = {
 
 ####
 #Crime SOC
-####	
+####
 focus = {
 		id = ATL_crime_societies
 		icon = GFX_double_daggers #
-		prerequisite = { 
+		prerequisite = {
 			focus = ATL_monarchists
 			focus = ATL_black_daggers
 			focus = ATL_hexanchial
 			}
-		prerequisite = { 
+		prerequisite = {
 			focus = ATL_hearsts
 			focus = ATL_kaiturn_family
 			}
@@ -1771,7 +1771,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1806,7 +1806,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1841,7 +1841,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1876,7 +1876,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1911,7 +1911,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1946,7 +1946,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1960,11 +1960,11 @@ focus = {
 
 ####
 #MIL SOC
-####	
+####
 focus = {
 		id = ATL_military_societies
 		icon = GFX_goal_generic_forest_warfare
-		prerequisite = { 
+		prerequisite = {
 			focus = ATL_zichilianak
 			focus = ATL_siegels
 			focus = ATL_kaprastiak
@@ -1985,7 +1985,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -1996,7 +1996,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_maneaters
 		icon = GFX_goal_generic_destroy_government
@@ -2015,7 +2015,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2026,7 +2026,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_restorationists
 		icon = GFX_double_daggers #
@@ -2045,7 +2045,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2059,7 +2059,7 @@ focus = {
 
 ####
 #Religious SOC
-####	
+####
 focus = {
 		id = ATL_religious_societies
 		icon = GFX_double_daggers #
@@ -2078,7 +2078,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2089,7 +2089,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_gostudi_cult #destroying organized religion from within, increases fascist influence
 		icon = GFX_double_daggers #
@@ -2112,7 +2112,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2123,7 +2123,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_vox_petri #goal is to overthrow Atlantean Deism with Catholicism
 		icon = GFX_r56_goal_generic_christianity_and_state
@@ -2146,7 +2146,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2157,7 +2157,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_deimila_cult #preserve Atlantean Deism, lowers foreign influence
 		icon = GFX_double_daggers #
@@ -2180,7 +2180,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2195,7 +2195,7 @@ focus = {
 
 ####
 #EDU SOC
-####	
+####
 focus = {
 		id = ATL_educational_societies
 		icon = GFX_double_daggers #
@@ -2214,7 +2214,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2225,7 +2225,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_overturners
 		icon = GFX_goal_stop
@@ -2244,7 +2244,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2254,8 +2254,8 @@ focus = {
 		completion_reward = {
 			add_political_power = 150
 		}
-	}	
-	
+	}
+
 focus = {
 		id = ATL_orange_masks
 		icon = GFX_double_daggers #
@@ -2274,7 +2274,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2285,7 +2285,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_red_bandanas
 		icon = GFX_double_daggers #
@@ -2304,7 +2304,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2315,7 +2315,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_green_brigade
 		icon = GFX_goal_italy_besagliari
@@ -2334,7 +2334,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2345,7 +2345,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_kenistroiak
 		icon = GFX_double_daggers #
@@ -2364,7 +2364,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2379,7 +2379,7 @@ focus = {
 ###########################
 #Atlantean Military Branch#
 ###########################
-	
+
 focus = {
 		id = ATL_military_branch
 		icon = GFX_goal_generic_forest_warfare
@@ -2397,7 +2397,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2408,7 +2408,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_standard_projects
 		icon = GFX_double_daggers #
@@ -2427,7 +2427,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2438,7 +2438,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_national_defense_initiative
 		icon = GFX_r56_goal_FRA_increase_military_spendings
@@ -2457,7 +2457,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2468,7 +2468,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_strategy_buff1
 		icon = GFX_r56_goal_generic_manpower
@@ -2487,7 +2487,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2498,7 +2498,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_strategy_buff2
 		icon = GFX_r56_goal_generic_liberty_ships
@@ -2517,7 +2517,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2528,7 +2528,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_strategy_buff3
 		icon = GFX_r56_goal_generic_proving_grounds
@@ -2547,7 +2547,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2569,7 +2569,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = ATL_international_research
 		icon = GFX_r56_goal_generic_research_silver_cooperation
@@ -2592,7 +2592,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2603,7 +2603,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_intl_research_teams
 		icon = GFX_r56_goal_generic_research_silver_cooperation
@@ -2626,7 +2626,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2637,7 +2637,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_intl_designs1
 		icon = GFX_r56_goal_NZL_new_charlton_automatic_rifles
@@ -2657,7 +2657,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2680,7 +2680,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = ATL_intl_designs2
 		icon = GFX_r56_goal_ger_panzers
@@ -2699,7 +2699,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2713,8 +2713,8 @@ focus = {
 					type = air_base
 					level = 2
 					instant_build = yes
-				}	
-			}				
+				}
+			}
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1.0
@@ -2723,7 +2723,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = ATL_national_weapons_lab
 		icon = GFX_r56_goal_generic_research_silver
@@ -2742,7 +2742,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2753,7 +2753,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_espionage_teams
 		icon = GFX_r56_goal_generic_foreign_diplomacy
@@ -2772,7 +2772,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2783,7 +2783,7 @@ focus = {
 			#bonuses for studying foreign tech/strategy
 		}
 	}
-	
+
 focus = {
 		id = ATL_super_projects #atomics, VLFP (Very Large Floating Platforms), Computing
 		icon = GFX_r56_goal_generic_supremacy_of_will
@@ -2802,7 +2802,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2813,7 +2813,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_nuclear_chemistry
 		icon = GFX_r56_goal_generic_nuclear_energy
@@ -2832,7 +2832,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2843,7 +2843,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_calculation_machine
 		icon = GFX_double_daggers #
@@ -2862,7 +2862,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
@@ -2873,7 +2873,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-	
+
 focus = {
 		id = ATL_vlfp
 		icon = GFX_r56_goal_generic_sea_navy
@@ -2892,7 +2892,7 @@ focus = {
 		}
 
 		bypass = {
-		 
+
 		}
 
 		cancel_if_invalid = yes
