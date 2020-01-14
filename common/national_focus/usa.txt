@@ -3916,6 +3916,38 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = USA_war_plan_cyan
+		icon = GFX_focus_attack_atlantis
+		x = 2
+		y = 1
+		prerequisite = { focus = USA_war_plans_division }
+		relative_position_id = USA_war_plans_division
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ATL = {
+				add_opinion_modifier = { target = USA modifier = war_plan_cyan }
+			}
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_cyan show_effect_tooltip = yes show_modifiers = yes }
+		}
+	}
+	focus = {
 		id = USA_war_plan_green
 		icon = GFX_focus_attack_mexico
 		x = -1
@@ -4143,35 +4175,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_intervention_in_europe
-		}
-	}
-	focus = {
-		id = USA_war_plan_cyan
-		icon = GFX_focus_attack_atlantis
-		x = -1
-		y = 2
-		prerequisite = { focus = USA_intervention_in_europe }
-		relative_position_id = USA_intervention_in_europe
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_cyan show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
