@@ -13,2900 +13,1823 @@ focus_tree = {
 	default = no
 
 
-	continuous_focus_position = { x = 20 y = 1200 }
+	continuous_focus_position = { x = 20 y = 2200 }
 
 ####################
-#ATL Fascist Branch#
+#  Central Branch  #
 ####################
 
 focus = {
-		id = ATL_fascist
+		id = ATL_main
 		icon = GFX_ATL_military
-		mutually_exclusive = {
-			focus = ATL_isolation
-			focus = ATL_democracy
-			focus = ATL_communist
-		}
-		x = 2
+		mutually_exclusive = {}
+		prerequisite = {}
+		
+		x = 8
 		y = 0
-
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			fascism > 0.4
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_empower_presidency
-		icon = GFX_strike_thunderbolt
-		prerequisite = { focus = ATL_fascist }
-		relative_position_id = ATL_fascist
-		x = -1
+		id = ATL_gostudi
+		icon = GFX_ATL_military
+		mutually_exclusive = {focus = ATL_deimila}
+		mutually_exclusive = {focus = ATL_vox_petri}
+		prerequisite = {focus = ATL_main}
+		
+		x = 6
 		y = 1
-
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_ensure_military_loyalty
-		icon = GFX_r56_focus_generic_army_modernizations
-		prerequisite = { focus = ATL_fascist }
-		relative_position_id = ATL_fascist
-		x = 1
+		id = ATL_deimila
+		icon = GFX_ATL_military
+		mutually_exclusive = {focus = ATL_gostudi}
+		mutually_exclusive = {focus = ATL_vox_petri}
+		prerequisite = {focus = ATL_main}
+		
+		x = 8
 		y = 1
-
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_weaken_judiciary
-		icon = GFX_r56_goal_generic_communist_visible_hand
-		prerequisite = { focus = ATL_empower_presidency}
-		prerequisite = { focus = ATL_ensure_military_loyalty}
-		relative_position_id = ATL_empower_presidency
-		x = -1
+		id = ATL_vox_petri
+		icon = GFX_ATL_military
+		mutually_exclusive = {focus = ATL_gostudi}
+		mutually_exclusive = {focus = ATL_deimila}
+		prerequisite = {focus = ATL_main}
+		
+		x = 10
 		y = 1
-
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_tame_legislative
-		icon = GFX_r56_goal_generic_consitution
-		prerequisite = { focus = ATL_empower_presidency}
-		prerequisite = { focus = ATL_ensure_military_loyalty}
-		relative_position_id = ATL_empower_presidency
-		x = 1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_stability = -0.05
-			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
-			add_timed_idea = {
-				idea = nationalism
-				days = 720
-			}
-		}
-	}
-
-focus = {
-		id = ATL_subvert_education
-		icon = GFX_r56_goal_SIA_fire_paper_peoples
-		prerequisite = { focus = ATL_empower_presidency}
-		prerequisite = { focus = ATL_ensure_military_loyalty}
-		relative_position_id = ATL_empower_presidency
-		x = 3
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = military_youth_focus
-			add_manpower = 150000
-		}
-	}
-
-focus = {
-		id = ATL_reinstitute_military_districts
-		icon = GFX_goal_italy_restructure_the_divisions
-		prerequisite = { focus = ATL_ensure_military_loyalty
-			focus = ATL_military_power}
-		relative_position_id = ATL_ensure_military_loyalty
-		x = 3
+		id = ATL_crime
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_deimila focus = ATL_gostudi focus = ATL_vox_petri}
+		
+		x = 8
 		y = 2
-
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 50
-			add_manpower = 300000
 		}
 	}
-
 focus = {
-		id = ATL_reembody_military_dynasties
-		icon = GFX_r56_goal_generic_recruitment
-		prerequisite = { focus = ATL_reinstitute_military_districts}
-		relative_position_id = ATL_reinstitute_military_districts
-		x = 0
-		y = 1
-
+		id = ATL_attack_itorkanak
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_crime}
+		mutually_exclusive = {focus = ATL_attack_kaprastiak}
+		
+		x = 7
+		y = 3
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_ideas = paramilitarism_focus
-			add_manpower = 150000
 		}
 	}
+focus = {
+		id = ATL_attack_kaprastiak
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_crime}
+		mutually_exclusive = {focus = ATL_attack_itorkanak}
+		
+		x = 9
+		y = 3
+		cost = 10
 
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_befriend_kaprastiak
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_attack_itorkanak}
+		mutually_exclusive = {focus = ATL_attack_all}
+		
+		x = 6
+		y = 4
+		cost = 10
 
-#########################
-#ATL Isolationsit Branch#
-#########################
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_attack_all
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_attack_kaprastiak focus = ATL_attack_itorkanak}
+		mutually_exclusive = {focus = ATL_befriend_itorkanak}
+		mutually_exclusive = {focus = ATL_befriend_kaprastiak}
+		
+		x = 8
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_befriend_itorkanak
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_attack_kaprastiak}
+		mutually_exclusive = {focus = ATL_attack_all}
+		
+		x = 10
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
 focus = {
 		id = ATL_isolation
-		icon = GFX_ALT_isolation
-		mutually_exclusive = {
-			focus = ATL_fascist
-			focus = ATL_democracy
-			focus = ATL_communist
-		}
-		relative_position_id = ATL_fascist
-		x = 10
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			neutrality > 0.1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_ensure_balance_powers
-		icon = GFX_r56_goal_generic_consitution
-		prerequisite = { focus = ATL_isolation }
-		relative_position_id = ATL_isolation
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_military_power
-		icon = GFX_r56_goal_AUS_secret_rearmament
-		prerequisite = { focus = ATL_ensure_balance_powers }
-		relative_position_id = ATL_ensure_balance_powers
-		x = -4
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_educational_power
-		icon = GFX_r56_goal_SIA_fire_paper_peoples
-		prerequisite = { focus = ATL_ensure_balance_powers }
-		relative_position_id = ATL_ensure_balance_powers
-		x = -2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_executive_power
-		icon = GFX_strike_thunderbolt
-		prerequisite = { focus = ATL_ensure_balance_powers }
-		relative_position_id = ATL_ensure_balance_powers
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_judicial_power
-		icon = GFX_r56_goal_generic_business_bills
-		prerequisite = { focus = ATL_ensure_balance_powers }
-		relative_position_id = ATL_ensure_balance_powers
-		x = 2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_legislative_power
-		icon = GFX_r56_goal_generic_election
-		prerequisite = { focus = ATL_ensure_balance_powers }
-		relative_position_id = ATL_ensure_balance_powers
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_befriend_kaprastiak}
+		
 		x = 4
-		y = 1
-
+		y = 5
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_domestic_resource_exploit
-		icon = GFX_r56_goal_BEL_Steel
-		prerequisite = { focus = ATL_executive_power }
-		prerequisite = { focus = ATL_judicial_power }
-		prerequisite = { focus = ATL_legislative_power }
-		relative_position_id = ATL_judicial_power
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_domestic_manuf1
-		icon = GFX_goal_italy_expand_libyan_manufactures
-		prerequisite = { focus = ATL_domestic_resource_exploit }
-		relative_position_id = ATL_domestic_resource_exploit
-		x = -1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_domestic_manuf2
-		icon = GFX_goal_italy_bring_industry_to_the_mezzogiorno
-		prerequisite = { focus = ATL_domestic_manuf1 }
-		relative_position_id = ATL_domestic_manuf1
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_domestic_manuf3
-		icon = GFX_r56_focus_generic_expansion_of_new_towns
-		prerequisite = { focus = ATL_domestic_manuf2 }
-		relative_position_id = ATL_domestic_manuf2
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_resource_exp1
-		icon = GFX_r56_goal_generic_excavation
-		prerequisite = { focus = ATL_domestic_resource_exploit }
-		relative_position_id = ATL_domestic_resource_exploit
-		x = 1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_resource_exp2
-		icon = GFX_goal_mexico_the_green_revolution
-		prerequisite = { focus = ATL_resource_exp1 }
-		relative_position_id = ATL_resource_exp1
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-
-
-
-
-
-#######################
-#ATL Democratic Branch#
-#######################
-
-focus = {
-		id = ATL_democracy
-		icon = GFX_r56_goal_SIA_democracy_people
-		mutually_exclusive = {
-			focus = ATL_fascist
-			focus = ATL_isolation
-			focus = ATL_communist
-		}
-		relative_position_id = ATL_isolation
-		x = 9
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			democratic > 0.5
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_attack_corruption
-		icon = GFX_goal_mexico_quarantine_migrants
-		prerequisite = { focus = ATL_democracy }
-		relative_position_id = ATL_democracy
-		x = -2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_education_initiative
-		icon = GFX_goal_mexico_litteracy_program
-		prerequisite = { focus = ATL_democracy }
-		relative_position_id = ATL_democracy
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_foreign_companies
-		icon = GFX_r56_goal_SIA_improve_industry
-		prerequisite = { focus = ATL_democracy }
-		relative_position_id = ATL_democracy
+		id = ATL_isolation_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_isolation}
+		
 		x = 2
-		y = 1
-
+		y = 6
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
-focus = {
-		id = ATL_increase_edu_branch_power
-		icon = GFX_r56_goal_SIA_fire_paper_peoples
-		prerequisite = { focus = ATL_education_initiative }
-		relative_position_id = ATL_education_initiative
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_foreign_professors
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_foreign_companies }
-		prerequisite = { focus = ATL_education_initiative }
-		relative_position_id = ATL_education_initiative
-		x = 2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-
-
-
-######################
-#ATL Communist Branch#
-######################
-
-focus = {
-		id = ATL_communist
-		icon = GFX_ALT_communism
-		mutually_exclusive = {
-			focus = ATL_fascist
-			focus = ATL_isolation
-			focus = ATL_democracy
-		}
-		relative_position_id = ATL_democracy
-		x = 9
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			communism > 0.1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_popularity = { ideology = communism popularity = 0.1 }
-		}
-	}
-
-focus = {
-		id = ATL_power_to_the_people
-		icon = GFX_r56_goal_FRA_pcf_sfio_coalition
-		prerequisite = { focus = ATL_communist }
-		relative_position_id = ATL_communist
-		x = -2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_communist_reeducation
-		icon = GFX_goal_SOV_education_initiative
-		prerequisite = { focus = ATL_communist }
-		relative_position_id = ATL_communist
-		x = 1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 50
-			add_ideas = socialist_education
-		}
-	}
-
-focus = {
-		id = ATL_military_infiltration
-		icon = GFX_r56_goal_SIA_control_army_2
-		prerequisite = { focus = ATL_communist_reeducation }
-		relative_position_id = ATL_communist_reeducation
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_education_infiltration
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_military_infiltration }
-		relative_position_id = ATL_military_infiltration
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_merge_mil_edu
-		icon = GFX_r56_goal_SIA_fire_paper_peoples
-		prerequisite = { focus = ATL_education_infiltration }
-		relative_position_id = ATL_education_infiltration
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_restrict_dynastic_rights
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_power_to_the_people }
-		relative_position_id = ATL_power_to_the_people
-		x = -1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_quell_social_unrest
-		icon = GFX_r56_goal_generic_armed_protest
-		prerequisite = { focus = ATL_restrict_dynastic_rights }
-		relative_position_id = ATL_restrict_dynastic_rights
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_attack_bourgeoisie
-		icon = GFX_r56_goal_generic_ban_aristocrats
-		prerequisite = { focus = ATL_quell_social_unrest }
-		relative_position_id = ATL_quell_social_unrest
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_empower_peoples_unions
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_power_to_the_people }
-		relative_position_id = ATL_power_to_the_people
-		x = 1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_weaken_executive_br
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_empower_peoples_unions }
-		relative_position_id = ATL_empower_peoples_unions
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_weaken_judicial_br
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_weaken_executive_br }
-		relative_position_id = ATL_weaken_executive_br
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-############################
-#Atlantean Secret Societies#
-############################
-
-focus = {
-		id = ATL_secret_societies
-		icon = GFX_double_daggers #
-		relative_position_id = ATL_communist
-		x = 16
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-
-####
-#BANK SOC
-####
-focus = {
-		id = ATL_trading_and_banking_societies
-		icon = GFX_r56_goal_generic_economics_reform
-		prerequisite = { focus = ATL_secret_societies }
-		relative_position_id = ATL_secret_societies
-		x = -7
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_karistig_dynasty
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_trading_and_banking_societies }
-		relative_position_id = ATL_trading_and_banking_societies
-		mutually_exclusive = {
-			focus = ATL_tensapiak_cartel
-			focus = ATL_united_bankers_guild
-			focus = ATL_rothschilds
-			focus = ATL_fuggers
-		}
-		x = -4
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_tensapiak_cartel
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_trading_and_banking_societies }
-		relative_position_id = ATL_trading_and_banking_societies
-		mutually_exclusive = {
-			focus = ATL_karistig_dynasty
-			focus = ATL_united_bankers_guild
-			focus = ATL_rothschilds
-			focus = ATL_fuggers
-		}
-		x = -2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_united_bankers_guild
-		icon = GFX_r56_goal_GER_two_sided_economics
-		prerequisite = { focus = ATL_trading_and_banking_societies }
-		relative_position_id = ATL_trading_and_banking_societies
-		mutually_exclusive = {
-			focus = ATL_karistig_dynasty
-			focus = ATL_tensapiak_cartel
-			focus = ATL_rothschilds
-			focus = ATL_fuggers
-		}
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_rothschilds
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_trading_and_banking_societies }
-		relative_position_id = ATL_trading_and_banking_societies
-		mutually_exclusive = {
-			focus = ATL_karistig_dynasty
-			focus = ATL_tensapiak_cartel
-			focus = ATL_united_bankers_guild
-			focus = ATL_fuggers
-		}
-		x = 2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_fuggers
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_trading_and_banking_societies }
-		relative_position_id = ATL_trading_and_banking_societies
-		mutually_exclusive = {
-			focus = ATL_karistig_dynasty
-			focus = ATL_tensapiak_cartel
-			focus = ATL_united_bankers_guild
-			focus = ATL_rothschilds
-		}
-		x = 4
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-####
-#POLIT SOC
-####
-focus = {
-		id = ATL_political_news_societies
-		icon = GFX_double_daggers #
-		prerequisite = {
-				focus = ATL_karistig_dynasty
-				focus = ATL_tensapiak_cartel
-				focus = ATL_united_bankers_guild
-				focus = ATL_rothschilds
-				focus = ATL_fuggers
-				}
-		relative_position_id = ATL_trading_and_banking_societies
-		x = 0
-		y = 2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_monarchists
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_political_news_societies }
-		prerequisite = { focus = ATL_karistig_dynasty
-						focus = ATL_tensapiak_cartel}
-		relative_position_id = ATL_political_news_societies
-		mutually_exclusive = {
-			focus = ATL_black_daggers
-			focus = ATL_hexanchial
-		}
-		x = -5
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
 focus = {
 		id = ATL_black_daggers
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_political_news_societies }
-		prerequisite = { focus = ATL_karistig_dynasty
-						focus = ATL_tensapiak_cartel}
-		relative_position_id = ATL_political_news_societies
-		mutually_exclusive = {
-			focus = ATL_monarchists
-			focus = ATL_hexanchial
-		}
-		x = -3
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_hexanchial
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_political_news_societies }
-		prerequisite = { focus = ATL_united_bankers_guild }
-		relative_position_id = ATL_political_news_societies
-		mutually_exclusive = {
-			focus = ATL_monarchists
-			focus = ATL_black_daggers
-		}
-		x = -1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_hearsts #American Media Baron establishing a Dynasty in Atlantis to control the news
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_political_news_societies }
-		prerequisite = { focus = ATL_rothschilds }
-		relative_position_id = ATL_political_news_societies
-		mutually_exclusive = {
-			focus = ATL_kaiturn_family
-			focus = ATL_rmvp
-		}
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_isolation_2}
+		prerequisite = {focus = ATL_gostudi}
+		mutually_exclusive = {focus = ATL_hastugudak}
+		
 		x = 1
-		y = 1
-
+		y = 7
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
-			#huge investment, huge social outrage
 		}
 	}
-
 focus = {
-		id = ATL_kaiturn_family #local Atlantean family to control the news
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_political_news_societies }
-		relative_position_id = ATL_political_news_societies
-		mutually_exclusive = {
-			focus = ATL_hearsts
-			focus = ATL_rmvp
-		}
+		id = ATL_hastugudak
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_isolation_2}
+		mutually_exclusive = {focus = ATL_black_daggers}
+		
 		x = 3
-		y = 1
-
+		y = 7
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_rmvp #Reichsministerium für Volksaufklärung und Propaganda, Nazi Propaganda Machine
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_political_news_societies}
-		prerequisite = { focus = ATL_fuggers}
-		relative_position_id = ATL_political_news_societies
-		mutually_exclusive = {
-			focus = ATL_hearsts
-			focus = ATL_kaiturn_family
+		id = ATL_black_daggers_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_black_daggers}
+		
+		x = 1
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
 		}
+	}
+focus = {
+		id = ATL_kaixanarak
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_black_daggers_2}
+		
+		x = 1
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_kaixanarak_left
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_kaixanarak}
+		
+		x = 0
+		y = 10
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_kaixanarak_right
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_kaixanarak}
+		
+		x = 2
+		y = 10
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_kaixanarak_final
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_kaixanarak_right}
+		prerequisite = {focus = ATL_kaixanarak_left}
+		
+		x = 1
+		y = 11
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_hastugudak_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_hastugudak}
+		
+		x = 3
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_hastugudak_3
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_hastugudak_2}
+		
+		x = 3
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_hexanchials
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_isolation focus = ATL_karistig}
+		
 		x = 5
-		y = 1
-
+		y = 6
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
-
-
-####
-#Crime SOC
-####
 focus = {
-		id = ATL_crime_societies
-		icon = GFX_double_daggers #
-		prerequisite = {
-			focus = ATL_monarchists
-			focus = ATL_black_daggers
-			focus = ATL_hexanchial
-			}
-		prerequisite = {
-			focus = ATL_hearsts
-			focus = ATL_kaiturn_family
-			}
-		relative_position_id = ATL_political_news_societies
-		x = 0
-		y = 2
-
+		id = ATL_hexanchials_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_hexanchials}
+		
+		x = 5
+		y = 7
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
 focus = {
-		id = ATL_itorkanak #2nd Native Atlantean Crime syndicate
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_crime_societies }
-		relative_position_id = ATL_crime_societies
-		mutually_exclusive = {
-			focus = ATL_zichilianak
-			focus = ATL_kaprastiak
-			focus = ATL_siegels
-			focus = ATL_ringvereine
-		}
-		x = -4
-		y = 1
-
+		id = ATL_kaiturn
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_hexanchials_2}
+		
+		x = 5
+		y = 8
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
 focus = {
-		id = ATL_kaprastiak #Native Atlantean Crime syndicate
-		icon = GFX_goal_cuba_support_the_confederation_of_cuban_workers
-		prerequisite = { focus = ATL_crime_societies }
-		relative_position_id = ATL_crime_societies
-		mutually_exclusive = {
-			focus = ATL_zichilianak
-			focus = ATL_itorkanak
-			focus = ATL_siegels
-			focus = ATL_ringvereine
-		}
-		x = -2
-		y = 1
-
+		id = ATL_kaiturn_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_kaiturn}
+		
+		x = 5
+		y = 9
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
 focus = {
-		id = ATL_siegels #Jewish-American Crime Family
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_crime_societies }
-		relative_position_id = ATL_crime_societies
-		mutually_exclusive = {
-			focus = ATL_zichilianak
-			focus = ATL_itorkanak
-			focus = ATL_kaprastiak
-			focus = ATL_ringvereine
-		}
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			 NOT = { has_completed_focus = ATL_rmvp }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-focus = {
-		id = ATL_ringvereine #German 'ring club' criminal syndicate
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_crime_societies }
-		relative_position_id = ATL_crime_societies
-		mutually_exclusive = {
-			focus = ATL_zichilianak
-			focus = ATL_itorkanak
-			focus = ATL_kaprastiak
-			focus = ATL_siegels
-		}
-		x = 2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			 NOT = { has_completed_focus = ATL_hearsts }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-focus = {
-		id = ATL_zichilianak #The Sicilian Mob
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_crime_societies }
-		relative_position_id = ATL_crime_societies
-		mutually_exclusive = {
-			focus = ATL_itorkanak
-			focus = ATL_kaprastiak
-			focus = ATL_siegels
-			focus = ATL_ringvereine
-		}
+		id = ATL_isolation_final_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_hastugudak_3}
+		prerequisite = {focus = ATL_kaiturn_2}
+		
 		x = 4
-		y = 1
-
+		y = 10
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
-####
-#MIL SOC
-####
 focus = {
-		id = ATL_military_societies
-		icon = GFX_goal_generic_forest_warfare
-		prerequisite = {
-			focus = ATL_zichilianak
-			focus = ATL_siegels
-			focus = ATL_kaprastiak
-			focus = ATL_itorkanak
-			focus = ATL_ringvereine
-			}
-		relative_position_id = ATL_crime_societies
-		x = 0
-		y = 2
-
+		id = ATL_isolation_final_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_isolation_final_1}
+		
+		x = 4
+		y = 11
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_maneaters
-		icon = GFX_goal_generic_destroy_government
-		prerequisite = { focus = ATL_military_societies }
-		relative_position_id = ATL_military_societies
-		x = -1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_restorationists
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_military_societies }
-		relative_position_id = ATL_military_societies
-		x = 1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-####
-#Religious SOC
-####
-focus = {
-		id = ATL_religious_societies
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_secret_societies }
-		relative_position_id = ATL_secret_societies
-		x = 1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_gostudi_cult #destroying organized religion from within, increases fascist influence
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_religious_societies }
-		relative_position_id = ATL_religious_societies
-		mutually_exclusive = {
-			focus = ATL_vox_petri
-			focus = ATL_deimila_cult
-		}
-		x = -2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_vox_petri #goal is to overthrow Atlantean Deism with Catholicism
-		icon = GFX_r56_goal_generic_christianity_and_state
-		prerequisite = { focus = ATL_religious_societies }
-		relative_position_id = ATL_religious_societies
-		mutually_exclusive = {
-			focus = ATL_gostudi_cult
-			focus = ATL_deimila_cult
-		}
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_deimila_cult #preserve Atlantean Deism, lowers foreign influence
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_religious_societies }
-		relative_position_id = ATL_religious_societies
-		mutually_exclusive = {
-			focus = ATL_gostudi_cult
-			focus = ATL_vox_petri
-		}
-		x = 2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-
-####
-#EDU SOC
-####
-focus = {
-		id = ATL_educational_societies
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_secret_societies }
-		relative_position_id = ATL_secret_societies
+		id = ATL_karistig
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_attack_all}
+		mutually_exclusive = {focus = ATL_tensapiak}
+		
 		x = 7
-		y = 1
-
+		y = 5
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_overturners
-		icon = GFX_goal_stop
-		prerequisite = { focus = ATL_educational_societies }
-		relative_position_id = ATL_educational_societies
-		x = -2
-		y = 1
-
+		id = ATL_karistig_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_karistig}
+		
+		x = 7
+		y = 6
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
+focus = {
+		id = ATL_tensapiak
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_attack_all}
+		mutually_exclusive = {focus = ATL_karistig}
+		
+		x = 9
+		y = 5
+		cost = 10
 
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_UGB
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_tensapiak}
+		
+		x = 9
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_karistig_2 focus = ATL_UGB}
+		
+		x = 8
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_1}
+		
+		x = 8
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_3
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_2}
+		
+		x = 8
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_allies
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_3}
+		mutually_exclusive = {focus = ATL_central_isolation}
+		
+		x = 8
+		y = 10
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_allies_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_allies}
+		
+		x = 8
+		y = 11
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_isolation
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_3}
+		mutually_exclusive = {focus = ATL_central_allies}
+		
+		x = 6
+		y = 10
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_isolation_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_isolation}
+		
+		x = 6
+		y = 11
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_open
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_befriend_itorkanak}
+		
+		x = 11
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_attack_sicilians
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_open}
+		mutually_exclusive = {focus = ATL_befriend_sicilians}
+		
+		x = 13
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_attack_sicilians_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_attack_sicilians}
+		
+		x = 13
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_attack_ringvereine
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_attack_sicilians_2}
+		
+		x = 13
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_befriend_sicilians
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_open}
+		mutually_exclusive = {focus = ATL_attack_sicilians}
+		
+		x = 15
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_befriend_siegels
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_befriend_sicilians}
+		
+		x = 15
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_befriend_ringvereine
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_befriend_siegels}
+		
+		x = 15
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
 focus = {
 		id = ATL_orange_masks
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_educational_societies }
-		relative_position_id = ATL_educational_societies
-		x = 0
-		y = 1
-
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_UGB}
+		
+		x = 11
+		y = 7
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
 		id = ATL_red_bandanas
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_orange_masks }
-		relative_position_id = ATL_orange_masks
-		x = -1
-		y = 1
-
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_orange_masks}
+		mutually_exclusive = {focus = ATL_green_brigade}
+		
+		x = 10
+		y = 9
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
 		id = ATL_green_brigade
-		icon = GFX_goal_italy_besagliari
-		prerequisite = { focus = ATL_orange_masks }
-		relative_position_id = ATL_orange_masks
-		x = 1
-		y = 1
-
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_orange_masks}
+		mutually_exclusive = {focus = ATL_red_bandanas}
+		
+		x = 12
+		y = 8
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_kenistroiak
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_educational_societies }
-		relative_position_id = ATL_educational_societies
-		x = 2
-		y = 1
-
+		id = ATL_com_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_red_bandanas}
+		
+		x = 10
+		y = 10
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
-###########################
-#Atlantean Military Branch#
-###########################
-
 focus = {
-		id = ATL_military_branch
-		icon = GFX_goal_generic_forest_warfare
-		relative_position_id = ATL_secret_societies
+		id = ATL_com_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_com_1}
+		
+		x = 10
+		y = 11
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_com_3
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_com_2}
+		
+		x = 10
+		y = 12
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_axis_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_green_brigade focus = ATL_attack_ringvereine}
+		
+		x = 12
+		y = 10
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_axis_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_axis_1}
+		
+		x = 12
+		y = 11
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_axis_3
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_axis_2}
+		
+		x = 12
+		y = 12
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_rothschilds
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_befriend_ringvereine}
+		
 		x = 15
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_rothschilds_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_rothschilds}
+		
+		x = 15
+		y = 10
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_USA_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_rothschilds_2}
+		
+		x = 14
+		y = 11
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_USA_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_USA_1}
+		
+		x = 14
+		y = 12
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_UK_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_rothschilds_2}
+		
+		x = 16
+		y = 11
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_UK_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_UK_1}
+		
+		x = 16
+		y = 12
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_allies_final
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_USA_2}
+		prerequisite = {focus = ATL_UK_2}
+		
+		x = 15
+		y = 13
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+###########################################ATLANTIS MILITARY BRANCH###########################################
+focus = {
+		id = ATL_mil_main
+		icon = GFX_ATL_military
+		
+		x = 21
 		y = 0
-
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_standard_projects
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_military_branch }
-		relative_position_id = ATL_military_branch
-		x = -3
+		id = ATL_home_defense
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_mil_main}
+		mutually_exclusive = {focus = ATL_intervention}
+		
+		x = 19
 		y = 1
-
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_national_defense_initiative
-		icon = GFX_r56_goal_FRA_increase_military_spendings
-		prerequisite = { focus = ATL_standard_projects }
-		relative_position_id = ATL_standard_projects
-		x = 3
+		id = ATL_intervention
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_mil_main}
+		mutually_exclusive = {focus = ATL_home_defense}
+		
+		x = 23
 		y = 1
-
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_strategy_buff1
-		icon = GFX_r56_goal_generic_manpower
-		prerequisite = { focus = ATL_national_defense_initiative }
-		relative_position_id = ATL_national_defense_initiative
-		x = 0
-		y = 1
-
+		id = ATL_DD
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_home_defense}
+		
+		x = 19
+		y = 2
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_strategy_buff2
-		icon = GFX_r56_goal_generic_liberty_ships
-		prerequisite = { focus = ATL_strategy_buff1 }
-		relative_position_id = ATL_strategy_buff1
-		x = 0
-		y = 1
-
+		id = ATL_fleet_in_being
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_home_defense}
+		
+		x = 18
+		y = 3
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_strategy_buff3
-		icon = GFX_r56_goal_generic_proving_grounds
-		prerequisite = { focus = ATL_strategy_buff2 }
-		relative_position_id = ATL_strategy_buff2
-		x = 0
-		y = 1
-
+		id = ATL_radars
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_DD}
+		
+		x = 18
+		y = 4
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-			add_tech_bonus = {
-				name = motorized_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = motorized_equipment
-			}
 		}
 	}
-
 focus = {
-		id = ATL_international_research
-		icon = GFX_r56_goal_generic_research_silver_cooperation
-		prerequisite = { focus = ATL_standard_projects }
-		relative_position_id = ATL_standard_projects
-		x =-1
-		y = 1
-
+		id = ATL_fighters
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_radars}
+		
+		x = 19
+		y = 5
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			OR = {
-				has_completed_focus = ATL_communist
-				has_completed_focus = ATL_democracy
-			}
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_intl_research_teams
-		icon = GFX_r56_goal_generic_research_silver_cooperation
-		prerequisite = { focus = ATL_international_research }
-		relative_position_id = ATL_international_research
-		x = 0
-		y = 1
-
+		id = ATL_nav_bombers
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_fighters}
+		
+		x = 19
+		y = 6
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			OR = {
-				has_completed_focus = ATL_communist
-				has_completed_focus = ATL_democracy
-			}
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_intl_designs1
-		icon = GFX_r56_goal_NZL_new_charlton_automatic_rifles
-		prerequisite = { focus = ATL_intl_research_teams
-			focus = ATL_espionage_teams}
-		relative_position_id = ATL_intl_research_teams
-		x = 1
-		y = 1
-
+		id = ATL_strat_bombers
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_nav_bombers}
+		
+		x = 20
+		y = 7
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			army_experience = 20
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
 		}
 	}
-
 focus = {
-		id = ATL_intl_designs2
-		icon = GFX_r56_goal_ger_panzers
-		prerequisite = { focus = ATL_intl_designs1}
-		relative_position_id = ATL_intl_designs1
-		x = 0
-		y = 1
-
+		id = ATL_parasite
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_nav_bombers}
+		
+		x = 18
+		y = 7
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			air_experience = 25
-			948 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
 		}
 	}
-
 focus = {
-		id = ATL_national_weapons_lab
-		icon = GFX_r56_goal_generic_research_silver
-		prerequisite = { focus = ATL_standard_projects }
-		relative_position_id = ATL_standard_projects
-		x = 1
-		y = 1
-
+		id = ATL_mainland_forts
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_radars}
+		
+		x = 17
+		y = 5
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_espionage_teams
-		icon = GFX_r56_goal_generic_foreign_diplomacy
-		prerequisite = { focus = ATL_national_weapons_lab }
-		relative_position_id = ATL_national_weapons_lab
-		x = 0
-		y = 1
-
+		id = ATL_mech
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_mainland_forts}
+		
+		x = 17
+		y = 6
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			#bonuses for studying foreign tech/strategy
 		}
 	}
-
 focus = {
-		id = ATL_super_projects #atomics, VLFP (Very Large Floating Platforms), Computing
-		icon = GFX_r56_goal_generic_supremacy_of_will
-		prerequisite = { focus = ATL_military_branch }
-		relative_position_id = ATL_military_branch
-		x = 3
-		y = 1
-
-		cost = 50
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-focus = {
-		id = ATL_nuclear_chemistry
-		icon = GFX_r56_goal_generic_nuclear_energy
-		prerequisite = { focus = ATL_super_projects }
-		relative_position_id = ATL_super_projects
-		x = -1
-		y = 1
-
+		id = ATL_SS
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_intervention}
+		
+		x = 23
+		y = 2
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_calculation_machine
-		icon = GFX_double_daggers #
-		prerequisite = { focus = ATL_super_projects }
-		relative_position_id = ATL_super_projects
-		x = 1
-		y = 1
-
+		id = ATL_trade_interdiction
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_SS}
+		
+		x = 23
+		y = 3
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
-
 focus = {
-		id = ATL_vlfp
-		icon = GFX_r56_goal_generic_sea_navy
-		prerequisite = { focus = ATL_super_projects }
-		relative_position_id = ATL_super_projects
-		x = 3
-		y = 1
-
+		id = ATL_naval_aviation
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_trade_interdiction}
+		
+		x = 23
+		y = 4
 		cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
 		completion_reward = {
-			add_political_power = 150
 		}
 	}
+focus = {
+		id = ATL_amphibious
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_SS}
+		
+		x = 27
+		y = 3
+		cost = 10
 
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_armor
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_amphibious}
+		
+		x = 27
+		y = 4
+		cost = 10
 
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_heavy_fighters
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_SS}
+		
+		x = 25
+		y = 3
+		cost = 10
 
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_VLFP
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_heavy_fighters}
+		prerequisite = {focus = ATL_naval_aviation}
+		
+		x = 25
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_light_bombers
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_VLFP}
+		
+		x = 25
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_sumendia
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_SS focus = ATL_DD}
+		
+		x = 21
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	
+################################################################## ATLANTEAN AFRICA ##################################################################
+	
+focus = {
+		id = ATL_africa_main
+		icon = GFX_ATL_military
+		prerequisite = {}
+		
+		x = 30
+		y = 0
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_african_ports
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_africa_main}
+		
+		x = 30
+		y = 1
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_african_infra
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_african_ports}
+		
+		x = 30
+		y = 2
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_african_factories_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_african_infra}
+		
+		x = 29
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_african_factories_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_african_factories_1}
+		
+		x = 29
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_african_forts
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_african_infra}
+		
+		x = 31
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_african_airfields
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_african_forts}
+		
+		x = 31
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
 }

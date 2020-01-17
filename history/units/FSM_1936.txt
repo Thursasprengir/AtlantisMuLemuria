@@ -122,7 +122,14 @@ units = {
 		name = "Deutschesmu Marine"		
 		naval_base = 5254
 		task_force = {
-			name = "Hadu Sea Fleet"
+			name = "Battle Fleet"
+			location = 5254
+			ship = {name = "Pitkairn" definition = heavy_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = FSM version_name = "Holtzendorff Class" } } }
+			ship = {name = "Königshafen" definition = heavy_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = FSM version_name = "Holtzendorff Class" } } }
+			ship = {name = "Kriegsengel" pride_of_the_fleet = yes definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FSM version_name = "Derfflinger Class" } } }
+		}
+		task_force = {
+			name = "Scout Fleet"
 			location = 5254
 			ship = {name = "Reichhaltige" definition = destroyer start_experience_factor = 0 equipment = { ship_hull_light_1 = { amount = 1 owner = FSM version_name = "Freya Class" } } }
 			ship = {name = "Karlsbaden" definition = destroyer start_experience_factor = 0 equipment = { ship_hull_light_1 = { amount = 1 owner = FSM version_name = "Freya Class" } } }
@@ -132,9 +139,6 @@ units = {
 			ship = {name = "Schöner Strand" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FSM version_name = "Schwarzenberg Class" } } }
 			ship = {name = "Blaueswasser" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FSM version_name = "Schwarzenberg Class" } } }
 			ship = {name = "Blaueswasser" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FSM version_name = "Schwarzenberg Class" } } }
-			ship = {name = "Pitkairn" definition = heavy_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = FSM version_name = "Holtzendorff Class" } } }
-			ship = {name = "Königshafen" definition = heavy_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = FSM version_name = "Holtzendorff Class" } } }
-			ship = {name = "Kriegsengel" pride_of_the_fleet = yes definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_1 = { amount = 1 owner = FSM version_name = "Derfflinger Class" } } }
 		}
 	}
 }
