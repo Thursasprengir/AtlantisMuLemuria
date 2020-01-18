@@ -26,7 +26,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 40
 		}
 		available = {
 
@@ -90,7 +90,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -139,7 +139,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -273,7 +273,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -306,7 +306,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -398,7 +398,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -483,7 +483,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -511,7 +511,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -657,7 +657,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 40
 		}
 
 		available = {
@@ -686,7 +686,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -715,7 +715,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -751,7 +751,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -781,7 +781,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -814,7 +814,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -845,7 +845,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -875,7 +875,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -906,7 +906,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -937,7 +937,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -962,14 +962,14 @@ focus = {
 		id = FSM_military_buildup
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = FSM_germans_over_all }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = FSM_germans_over_all
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -1055,7 +1055,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -1078,14 +1078,14 @@ focus = {
 		id = FSM_challenge_austral_sea
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = FSM_aggressive_strikes }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = FSM_aggressive_strikes
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -1153,7 +1153,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -1193,14 +1193,14 @@ focus = {
 		id = FSM_claims_on_tiquea
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = FSM_aggressive_strikes }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = FSM_aggressive_strikes
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -1224,14 +1224,14 @@ focus = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = FSM_military_buildup }
 		prerequisite = { focus = FSM_antarctic_expedition }
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = FSM_military_buildup
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 30
 		}
 
 		available = {
@@ -1261,7 +1261,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 60
 		}
 
 		available = {
@@ -1535,37 +1535,7 @@ focus = {
 
 		}
 	}
-
-focus = {
-		id = FSM_admit_gdea
-		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = FSM_democratic_1 }
-		x = 0
-		y = 1
-		relative_position_id = FSM_democratic_1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
-			}
-			custom_effect_tooltip = 1_FSM_tt
-		}
-	}
+	
 focus = {
 		id = FSM_democratic_0
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1650,7 +1620,7 @@ focus = {
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = FSM_democratic_1 }
 		x = 2
-		y = 1
+		y = 2
 		relative_position_id = FSM_democratic_1
 
 		cost = 10
@@ -1859,7 +1829,7 @@ focus = {
 		id = FSM_democratic_6
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = FSM_democratic_5}
-		x = -4
+		x = 0
 		y = 1
 		relative_position_id = FSM_democratic_5
 
@@ -1900,6 +1870,9 @@ focus = {
 		}
 
 		available = {
+			NOT = {
+			has_government = communism
+			}
 		}
 
 		bypass = {
@@ -1945,7 +1918,7 @@ focus = {
 		id = FSM_recognize_dutch
 		icon = GFX_focus_hol_oranje_boven
 		prerequisite = { focus = FSM_democratic_5}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = FSM_democratic_5
 
@@ -2000,7 +1973,7 @@ focus = {
 		id = FSM_pacific_doctrine
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = FSM_democratic_5}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = FSM_democratic_5
 
@@ -2057,7 +2030,7 @@ focus = {
 		id = FSM_curb_fascism
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = FSM_democratic_5}
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = FSM_democratic_5
 
@@ -2171,7 +2144,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -2229,7 +2202,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -2261,7 +2234,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -2296,7 +2269,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -2329,7 +2302,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -2358,7 +2331,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -2428,7 +2401,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -2459,7 +2432,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -2495,7 +2468,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 40
 		}
 
 		available = {
@@ -2516,18 +2489,18 @@ focus = {
 	}
 
 focus = {
-		id = FSM_sieze_fjinland
-		icon = GFX_FSM_fjinland
+		id = FSM_seize_fijnland
+		icon = GFX_FSM_fijn
 		prerequisite = { focus = FSM_ripples_of_shanghai }
-		prerequisite = { focus = FSM_join_axis focus = FSM_join_allies}
-		x = -3
-		y = 4
-		relative_position_id = FSM_ripples_of_shanghai
+		prerequisite = { focus = FSM_join_axis}
+		x = 0
+		y = 1
+		relative_position_id = FSM_join_axis
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -2591,7 +2564,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -2621,7 +2594,7 @@ focus = {
 		cost = 15
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -2661,7 +2634,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -2696,7 +2669,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -2733,7 +2706,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -2777,7 +2750,7 @@ focus = {
 		cost = 15
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -2815,7 +2788,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -2843,10 +2816,15 @@ focus = {
 
 #Communist Branch
 focus = {
-		id = FSM_an_unexpected_change_of_plans
-		icon = GFX_goal_support_communism
-		x = 13
-		y = 10
+		id = FSM_admit_gdea
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_1 }
+		relative_position_id = FSM_democratic_1
+		mutually_exclusive = {
+			focus = FSM_deepen_democracy
+		}
+		x = 0
+		y = 1
 
 		cost = 10
 
@@ -2854,9 +2832,8 @@ focus = {
 			factor = 2
 		}
 
-		allow_branch = {
-        has_government = communism
-   		}
+		available = {
+		}
 
 		bypass = {
 		}
@@ -2866,6 +2843,38 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
+		}
+	}
+
+focus = {
+		id = FSM_an_unexpected_change_of_plans
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = FSM_admit_gdea }
+		x = -1
+		y = 1
+		relative_position_id = FSM_admit_gdea
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
 		}
 	}
 
@@ -2873,7 +2882,7 @@ focus = {
 		id = FSM_rewrite_constituition
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = FSM_an_unexpected_change_of_plans }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = FSM_an_unexpected_change_of_plans
 
@@ -2964,14 +2973,43 @@ focus = {
 		936 = { set_state_name = "Pa'ia" }
 		}
 
+		}
+		
+		
+#################
+#Democracy Branch
+#################
+focus = {
+		id = FSM_deepen_democracy
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = FSM_democratic_1 }
+		relative_position_id = FSM_democratic_1
+		mutually_exclusive = {
+			focus = FSM_admit_gdea
+		}
+		x = 4
+		y = 1
 
+		cost = 10
 
+		ai_will_do = {
+			factor = 2
+		}
 
+		available = {
+		}
 
+		bypass = {
+		}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
+		completion_reward = {
+			hidden_effect = {country_event = { hours = 2 id = fsm.3 }
+			}
+			custom_effect_tooltip = 1_FSM_tt
 		}
 	}
-
-
 }
