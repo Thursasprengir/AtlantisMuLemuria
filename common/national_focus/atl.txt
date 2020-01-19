@@ -660,11 +660,72 @@ focus = {
 		}
 	}
 focus = {
+		id = ATL_central_UGB_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_UGB}
+		mutually_exclusive = {focus = ATL_orange_masks}
+		
+		x = 9
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_UGB_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_UGB_1}
+		
+		x = 9
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = ATL_central_UGB_3
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_UGB_2}
+		
+		x = 9
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
 		id = ATL_central_1
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_karistig_2 focus = ATL_UGB}
 		
-		x = 8
+		x = 7
 		y = 7
 		cost = 10
 
@@ -684,7 +745,7 @@ focus = {
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_central_1}
 		
-		x = 8
+		x = 7
 		y = 8
 		cost = 10
 
@@ -704,7 +765,7 @@ focus = {
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_central_2}
 		
-		x = 8
+		x = 7
 		y = 9
 		cost = 10
 
@@ -764,6 +825,7 @@ focus = {
 		id = ATL_central_isolation
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_central_3}
+		prerequisite = {focus = ATL_karistig_2}
 		mutually_exclusive = {focus = ATL_central_allies}
 		
 		x = 6
@@ -969,7 +1031,7 @@ focus = {
 		prerequisite = {focus = ATL_orange_masks}
 		mutually_exclusive = {focus = ATL_green_brigade}
 		
-		x = 10
+		x = 11
 		y = 9
 		cost = 10
 
