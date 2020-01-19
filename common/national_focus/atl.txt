@@ -660,9 +660,9 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_central_UGB_1
+		id = ATL_central_UBG_1
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_UGB}
+		prerequisite = {focus = ATL_UBG}
 		mutually_exclusive = {focus = ATL_orange_masks}
 		
 		x = 9
@@ -681,29 +681,10 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_central_UGB_2
+		id = ATL_central_UBG_2
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_central_UGB_1}
-		
-		x = 9
-		y = 8
-		cost = 10
-
-		ai_will_do = {factor = 2}
-		available = {}
-		bypass = {}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		
-		completion_reward = {
-		}
-	}
-focus = {
-		id = ATL_central_UGB_3
-		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_central_UGB_2}
+		prerequisite = {focus = ATL_central_UBG_1}
+		prerequisite = {focus = ATL_central_2}
 		
 		x = 9
 		y = 9
@@ -723,7 +704,7 @@ focus = {
 focus = {
 		id = ATL_central_1
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_karistig_2 focus = ATL_UGB}
+		prerequisite = {focus = ATL_karistig_2}
 		
 		x = 7
 		y = 7
@@ -743,9 +724,9 @@ focus = {
 focus = {
 		id = ATL_central_2
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_central_1}
+		prerequisite = {focus = ATL_central_1 focus = ATL_central_UBG_1}
 		
-		x = 7
+		x = 8
 		y = 8
 		cost = 10
 
@@ -825,7 +806,7 @@ focus = {
 		id = ATL_central_isolation
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_central_3}
-		prerequisite = {focus = ATL_karistig_2}
+		prerequisite = {focus = ATL_kaiturn_2}
 		mutually_exclusive = {focus = ATL_central_allies}
 		
 		x = 6
@@ -868,7 +849,7 @@ focus = {
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_befriend_itorkanak}
 		
-		x = 11
+		x = 12
 		y = 5
 		cost = 10
 
@@ -905,7 +886,7 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_attack_sicilians_2
+		id = ATL_attack_ringvereine
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_attack_sicilians}
 		
@@ -925,9 +906,9 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_attack_ringvereine
+		id = ATL_germany
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_attack_sicilians_2}
+		prerequisite = {focus = ATL_attack_ringvereine}
 		
 		x = 13
 		y = 9
@@ -1008,7 +989,7 @@ focus = {
 focus = {
 		id = ATL_orange_masks
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_UGB}
+		prerequisite = {focus = ATL_UBG}
 		
 		x = 11
 		y = 7
@@ -1031,8 +1012,8 @@ focus = {
 		prerequisite = {focus = ATL_orange_masks}
 		mutually_exclusive = {focus = ATL_green_brigade}
 		
-		x = 11
-		y = 9
+		x = 10
+		y = 8
 		cost = 10
 
 		ai_will_do = {factor = 2}
@@ -1130,7 +1111,7 @@ focus = {
 focus = {
 		id = ATL_axis_1
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_green_brigade focus = ATL_attack_ringvereine}
+		prerequisite = {focus = ATL_green_brigade focus = ATL_germany}
 		
 		x = 12
 		y = 10
@@ -1413,7 +1394,7 @@ focus = {
 focus = {
 		id = ATL_fleet_in_being
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_home_defense}
+		prerequisite = {focus = ATL_DD}
 		
 		x = 18
 		y = 3
@@ -1433,7 +1414,7 @@ focus = {
 focus = {
 		id = ATL_radars
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_DD}
+		prerequisite = {focus = ATL_fleet_in_being}
 		
 		x = 18
 		y = 4
