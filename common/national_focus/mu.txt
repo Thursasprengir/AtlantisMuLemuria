@@ -51,7 +51,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 60
 		}
 
 		available = {
@@ -112,7 +112,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 60
 		}
 
 		available = {
@@ -140,7 +140,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 30
 		}
 
 		available = {
@@ -197,7 +197,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -226,7 +226,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -255,7 +255,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -283,7 +283,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -331,7 +331,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -367,7 +367,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -397,7 +397,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -437,7 +437,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 60
 		}
 
 		available = {
@@ -466,7 +466,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -506,7 +506,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -536,7 +536,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -564,7 +564,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -594,7 +594,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -622,7 +622,7 @@ focus = {
 		cost = 15
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -652,7 +652,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -683,7 +683,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -711,7 +711,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -742,7 +742,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 60
 		}
 
 		available = {
@@ -756,17 +756,20 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_state_core = 856
-			add_state_core = 857
-			add_state_core = 858
-			add_state_core = 907
-			add_state_core = 908
-			add_state_core = 859
-			add_state_core = 860
-			add_state_core = 861
-			add_state_core = 862
-			add_state_core = 863
-			add_state_core = 864
+			custom_effect_tooltip = MUU_cores
+			hidden_effect = {
+				add_state_core = 856
+				add_state_core = 857
+				add_state_core = 858
+				add_state_core = 907
+				add_state_core = 908
+				add_state_core = 859
+				add_state_core = 860
+				add_state_core = 861
+				add_state_core = 862
+				add_state_core = 863
+				add_state_core = 864
+			}
 			create_wargoal = {
 				target = "GOP"
 				type = puppet_wargoal_focus
@@ -810,7 +813,7 @@ focus = {
 		cost = 15
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -840,7 +843,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -870,7 +873,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -901,7 +904,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -922,14 +925,14 @@ focus = {
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
-							size > 3
+							size > 4
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
-						level = 4
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -942,54 +945,14 @@ focus = {
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
-							size > 2
+							size > 4
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_state_flag = mil_effort_built
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_country_flag = mil_effort_built}
-						is_coastal = yes
-						free_building_slots = {
-							building = arms_factory
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_state_flag = mil_effort_built
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_country_flag = mil_effort_built}
-						is_coastal = yes
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -1008,7 +971,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -1029,14 +992,14 @@ focus = {
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 4
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -1049,54 +1012,14 @@ focus = {
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 3
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_state_flag = naval_effort_built
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_country_flag = naval_effort_built}
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_state_flag = naval_effort_built
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_country_flag = naval_effort_built}
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1115,7 +1038,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -1202,7 +1125,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 40
 		}
 
 		available = {
@@ -1252,7 +1175,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 60
 		}
 
 		available = {
@@ -3330,7 +3253,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 60
 		}
 
 		available = {
@@ -3356,7 +3279,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -3403,7 +3326,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -3433,7 +3356,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 30
 		}
 
 		available = {
@@ -3491,7 +3414,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -3612,7 +3535,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -3643,7 +3566,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -3670,7 +3593,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 60
 		}
 
 		available = {
@@ -3897,7 +3820,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 12
 		}
 
 		available = {
@@ -3911,7 +3834,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 50
 		}
 	}
 focus = {
@@ -3924,7 +3847,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 12
 		}
 
 		available = {
@@ -3957,7 +3880,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 12
 		}
 
 		available = {
@@ -3993,7 +3916,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -4034,7 +3957,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4067,7 +3990,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -4103,7 +4026,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4131,7 +4054,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4160,7 +4083,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4189,7 +4112,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4217,7 +4140,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 7
 		}
 
 		available = {
@@ -4255,7 +4178,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4291,7 +4214,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -4326,7 +4249,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -4363,7 +4286,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -4439,7 +4362,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4473,7 +4396,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4507,7 +4430,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 15
 		}
 
 		available = {
@@ -4576,7 +4499,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 
 		available = {
@@ -4609,7 +4532,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 30
 		}
 
 		available = {
@@ -4642,7 +4565,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 25
 		}
 
 		available = {
@@ -4678,7 +4601,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -4709,7 +4632,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {

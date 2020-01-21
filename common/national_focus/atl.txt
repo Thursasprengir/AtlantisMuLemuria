@@ -15,9 +15,9 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 2200 }
 
-####################
-#  Central Branch  #
-####################
+###################
+# ATL Main Branch #
+###################
 
 focus = {
 		id = ATL_main
@@ -38,6 +38,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 focus = {
@@ -47,7 +48,7 @@ focus = {
 		mutually_exclusive = {focus = ATL_vox_petri}
 		prerequisite = {focus = ATL_main}
 		
-		x = 6
+		x = 7
 		y = 1
 		cost = 10
 
@@ -60,6 +61,9 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {
+				idea = ATL_gostudis_in_government
+			}
 		}
 	}
 focus = {
@@ -69,7 +73,7 @@ focus = {
 		mutually_exclusive = {focus = ATL_vox_petri}
 		prerequisite = {focus = ATL_main}
 		
-		x = 8
+		x = 9
 		y = 1
 		cost = 10
 
@@ -82,28 +86,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-		}
-	}
-focus = {
-		id = ATL_vox_petri
-		icon = GFX_ATL_military
-		mutually_exclusive = {focus = ATL_gostudi}
-		mutually_exclusive = {focus = ATL_deimila}
-		prerequisite = {focus = ATL_main}
-		
-		x = 10
-		y = 1
-		cost = 10
-
-		ai_will_do = {factor = 2}
-		available = {}
-		bypass = {}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		
-		completion_reward = {
+			add_stability = 0.10
 		}
 	}
 focus = {
@@ -124,6 +107,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_war_support = 0.05
+			add_stability = -0.1
 		}
 	}
 focus = {
@@ -145,6 +130,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			hidden_effect = {add_ideas = {idea = ATL_itorkanak_at_war}}
+			custom_effect_tooltip = ATL_attack_itorkanak_tooltip
 		}
 	}
 focus = {
@@ -166,6 +153,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			hidden_effect = {add_ideas = {idea = ATL_kaprastiak_at_war}}
+			custom_effect_tooltip = ATL_attack_kaprastiak_tooltip
 		}
 	}
 focus = {
@@ -187,6 +176,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_kaprastiak_in_government}
 		}
 	}
 focus = {
@@ -209,6 +199,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			hidden_effect = {
+				if = {ATL = {limit = {has_completed_focus = ATL_attack_itorkanak} add_ideas = {idea = ATL_kaprastiak_at_war}}}
+				if = {ATL = {limit = {has_completed_focus = ATL_attack_kaprastiak} add_ideas = {idea = ATL_itorkanak_at_war}}}
+			}
+			custom_effect_tooltip = ATL_attack_all_tooltip
 		}
 	}
 focus = {
@@ -230,6 +225,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_itorkanak_in_government}
 		}
 	}
 focus = {
@@ -250,6 +246,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_isolation_idea}
 		}
 	}
 focus = {
@@ -270,11 +267,16 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_timed_idea = {
+				idea = ATL_overturners_reforms
+				days = 360
+			}
+			add_research_slot = 1
 		}
 	}
 focus = {
 		id = ATL_black_daggers
-		icon = GFX_ATL_military
+		icon = GFX_focus_black_daggers
 		prerequisite = {focus = ATL_isolation_2}
 		prerequisite = {focus = ATL_gostudi}
 		mutually_exclusive = {focus = ATL_hastugudak}
@@ -292,6 +294,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			hidden_effect = {set_cosmetic_tag = ATL_SP}
+			add_war_support = 0.15
+			add_stability = -0.05
+			add_ideas = {idea = ATL_black_daggers_idea}
 		}
 	}
 focus = {
@@ -313,6 +319,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = -20
 		}
 	}
 focus = {
@@ -333,6 +340,47 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_BD_camps}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
 		}
 	}
 focus = {
@@ -353,6 +401,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_stability = -0.5
+			add_ideas = {idea = ATL_kaixanarak_shock}
 		}
 	}
 focus = {
@@ -373,6 +423,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			custom_effect_tooltip = ATL_naitastarak_tooltip
+			hidden_effect = {set_country_flag = ATL_naitastarak}
 		}
 	}
 focus = {
@@ -393,6 +445,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_tumurzek}
 		}
 	}
 focus = {
@@ -414,6 +467,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {ATL_BD_education}
 		}
 	}
 focus = {
@@ -434,6 +488,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_hastugudak_education}
 		}
 	}
 focus = {
@@ -454,6 +509,15 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			944 = {add_extra_state_shared_building_slots = 2}
+			947 = {add_extra_state_shared_building_slots = 3}
+			945 = {add_extra_state_shared_building_slots = 1}
+			946 = {add_extra_state_shared_building_slots = 2}
+			948 = {add_extra_state_shared_building_slots = 2}
+			949 = {add_extra_state_shared_building_slots = 1}
+			963 = {add_extra_state_shared_building_slots = 4}
+			964 = {add_extra_state_shared_building_slots = 3}
+			965 = {add_extra_state_shared_building_slots = 1}
 		}
 	}
 focus = {
@@ -474,6 +538,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_hexanchials_in_government}
 		}
 	}
 focus = {
@@ -494,6 +559,66 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = civ_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = civ_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
 		}
 	}
 focus = {
@@ -514,6 +639,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_kaiturn_media}
 		}
 	}
 focus = {
@@ -534,6 +660,14 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_timed_idea = {
+				idea = ATL_overtax_foreign_media
+				days = 360
+			}
+			swap_ideas = {
+				remove_idea = ATL_kaiturn_media
+				add_idea = ATL_kaiturn_media_uncontested
+			}
 		}
 	}
 focus = {
@@ -555,6 +689,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_timed_idea = {
+				idea = ATL_substituting_politicians_hastugudak
+				days = 280
+			}
 		}
 	}
 focus = {
@@ -567,7 +705,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {factor = 2}
-		available = {}
+		available = {NOT = {has_idea = ATL_substituting_politicians_hastugudak}}
 		bypass = {}
 
 		cancel_if_invalid = yes
@@ -575,6 +713,20 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			kill_country_leader = yes
+		    set_politics = { ruling_party = neutrality elections_allowed = no }
+			create_country_leader = {
+				name = "Demedrot VI Naizaretal"
+				desc = "POLITICS_DEMEDROT_NAIZARETAL_DESC"
+				picture = "GFX_portrait_ATL_demetrot_naizaretal"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {}
+			}
+			hidden_effect = {set_cosmetic_tag = ATL_SP}
+			add_ideas = {
+				idea = ATL_restored_empire
+			}
 		}
 	}
 focus = {
@@ -596,6 +748,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 120
+			add_ideas = {idea = ATL_karistigs_in_government}
 		}
 	}
 focus = {
@@ -616,6 +770,14 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ATL_karistigs_in_government
+				add_idea = ATL_karistigs_bailed_out
+			}
+			add_timed_idea = {
+				idea = ATL_bailout
+				days = 180
+			}
 		}
 	}
 focus = {
@@ -637,10 +799,32 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_karistig_pissed_off}
+			add_political_power = -25
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = naval_effort_built
+			}
 		}
 	}
 focus = {
-		id = ATL_UGB
+		id = ATL_UBG
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_tensapiak}
 		
@@ -657,14 +841,16 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_UBG_idea}
 		}
 	}
 focus = {
-		id = ATL_central_1
+		id = ATL_central_UBG_1
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_karistig_2 focus = ATL_UGB}
+		prerequisite = {focus = ATL_UBG}
+		mutually_exclusive = {focus = ATL_orange_masks}
 		
-		x = 8
+		x = 9
 		y = 7
 		cost = 10
 
@@ -677,12 +863,74 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ATL_karistig_pissed_off
+				add_idea = ATL_karistig_really_pissed_off
+			}
+			swap_ideas = {
+				remove_idea = ATL_UBG_idea
+				add_idea = ATL_UBG_dominant
+			}
+		}
+	}
+focus = {
+		id = ATL_central_UBG_2
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_UBG_1}
+		prerequisite = {focus = ATL_central_2}
+		
+		x = 9
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			remove_ideas = {idea = ATL_karistig_really_pissed_off}
+			add_timed_idea = {
+				idea = ATL_karistig_sabotaging_government
+				days = 500
+			}
+			swap_ideas = {
+				remove_idea = ATL_UBG_dominant
+				add_idea = ATL_UBG_dominant_2
+			}
+		}
+	}
+focus = {
+		id = ATL_central_1
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_karistig_2}
+		
+		x = 7
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ATL_karistigs_bailed_out
+				add_idea = ATL_karistigs_dominant
+			}
 		}
 	}
 focus = {
 		id = ATL_central_2
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_central_1}
+		prerequisite = {focus = ATL_central_1 focus = ATL_central_UBG_1}
 		
 		x = 8
 		y = 8
@@ -697,14 +945,15 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 focus = {
 		id = ATL_central_3
-		icon = GFX_ATL_military
+		icon = GFX_factoryplanning
 		prerequisite = {focus = ATL_central_2}
 		
-		x = 8
+		x = 7
 		y = 9
 		cost = 10
 
@@ -717,6 +966,47 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = mil_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = mil_effort_built
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_country_flag = civ_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_state_flag = civ_effort_built
+			}
+			add_ideas = {idea = ATL_funding_industries}
 		}
 	}
 focus = {
@@ -738,6 +1028,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ATL_funding_industries
+				add_idea = ATL_americans_funding_industries
+			}
 		}
 	}
 focus = {
@@ -758,12 +1052,136 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			966 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					set_building_level = {
+						type = naval_base
+						level = 1
+						province = 14257
+						instant_build = yes
+					}
+				}
+			}
+			967 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					set_building_level = {
+						type = naval_base
+						level = 1
+						province = 14258
+						instant_build = yes
+					}
+				}
+			}
+			add_ideas = {idea = ATL_leasing_african_ports}
+			USA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
+			}
+		}
+	}
+focus = {
+		id = ATL_central_allies_3
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_allies_2}
+		
+		x = 8
+		y = 12
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			272 = {add_building_construction = {type = infrastructure level = 2 instant_build = yes}}
+			701 = {add_building_construction = {type = infrastructure level = 2 instant_build = yes}}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
+			}
 		}
 	}
 focus = {
 		id = ATL_central_isolation
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_central_3}
+		prerequisite = {focus = ATL_kaiturn_2}
 		mutually_exclusive = {focus = ATL_central_allies}
 		
 		x = 6
@@ -779,6 +1197,22 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			947 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			947 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 focus = {
@@ -799,6 +1233,35 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			hidden_effect = {
+				944 = {set_building_level = {type = infrastructure level = 10 instant_build = yes}}
+				947 = {set_building_level = {type = infrastructure level = 10 instant_build = yes}}
+				945 = {set_building_level = {type = infrastructure level = 10 instant_build = yes}}
+				946 = {set_building_level = {type = infrastructure level = 10 instant_build = yes}}
+				948 = {set_building_level = {type = infrastructure level = 10 instant_build = yes}}
+			}
+			custom_effect_tooltip = ATL_panatlantean_railroad
+		}
+	}
+focus = {
+		id = ATL_central_isolation_3
+		icon = GFX_ATL_military
+		prerequisite = {focus = ATL_central_isolation_2 focus = ATL_isolation_final_2}
+		
+		x = 5
+		y = 12
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = {idea = ATL_atlantic_domination}
 		}
 	}
 focus = {
@@ -806,7 +1269,7 @@ focus = {
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_befriend_itorkanak}
 		
-		x = 11
+		x = 12
 		y = 5
 		cost = 10
 
@@ -819,6 +1282,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				add_political_power = 50
+				remove_idea = ATL_trading_empire
+				add_idea = ATL_trading_empire_2
+			}
 		}
 	}
 focus = {
@@ -840,10 +1308,12 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			ITA = {add_opinion_modifier = { target = ATL modifier = medium_increase }}
+			add_ideas = {idea = ATL_sicilians_enemies}
 		}
 	}
 focus = {
-		id = ATL_attack_sicilians_2
+		id = ATL_attack_ringvereine
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_attack_sicilians}
 		
@@ -860,12 +1330,14 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			GER = {add_opinion_modifier = { target = ATL modifier = medium_increase }}
+			add_ideas = {idea = ATL_ringvereine_enemies}
 		}
 	}
 focus = {
-		id = ATL_attack_ringvereine
+		id = ATL_germany
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_attack_sicilians_2}
+		prerequisite = {focus = ATL_attack_ringvereine}
 		
 		x = 13
 		y = 9
@@ -880,6 +1352,33 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_german_influence}
+			GER = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
+			}
 		}
 	}
 focus = {
@@ -901,6 +1400,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			ITA = {add_opinion_modifier = { target = ATL modifier = medium_decrease }}
+			swap_ideas = {
+				remove_idea = ATL_itorkanak_in_government
+				add_idea = ATL_itorkanak_in_government_sic
+			}
 		}
 	}
 focus = {
@@ -921,6 +1425,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ATL_itorkanak_in_government_sic
+				add_idea = ATL_itorkanak_in_government_sic_sieg
+			}
 		}
 	}
 focus = {
@@ -941,12 +1449,17 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			GER = {add_opinion_modifier = { target = ATL modifier = large_decrease }}
+			swap_ideas = {
+				remove_idea = ATL_itorkanak_in_government_sic_sieg
+				add_idea = ATL_itorkanak_in_government_sic_sieg_ring
+			}
 		}
 	}
 focus = {
 		id = ATL_orange_masks
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_UGB}
+		prerequisite = {focus = ATL_UBG}
 		
 		x = 11
 		y = 7
@@ -961,6 +1474,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_stability = -0.2
+			add_ideas = {idea = ATL_extremists}
 		}
 	}
 focus = {
@@ -970,7 +1485,7 @@ focus = {
 		mutually_exclusive = {focus = ATL_green_brigade}
 		
 		x = 10
-		y = 9
+		y = 8
 		cost = 10
 
 		ai_will_do = {factor = 2}
@@ -982,6 +1497,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 125
+			swap_ideas = {
+				remove_idea = ATL_extremists
+				add_idea = ATL_extremists_red
+			}
 		}
 	}
 focus = {
@@ -1003,6 +1523,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_war_support = 0.15
+			swap_ideas = {
+				remove_idea = ATL_extremists
+				add_idea = ATL_extremists_green
+			}
 		}
 	}
 focus = {
@@ -1023,11 +1548,67 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			remove_ideas = {idea = ATL_UBG_idea}
+			add_timed_idea = {
+				idea = ATL_dismantling_UBG
+				days = 360
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 focus = {
 		id = ATL_com_2
-		icon = GFX_ATL_military
+		icon = GFX_ALT_communism
 		prerequisite = {focus = ATL_com_1}
 		
 		x = 10
@@ -1043,6 +1624,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_timed_idea = {idea = ATL_socialist_tradition days = 720}
 		}
 	}
 focus = {
@@ -1063,12 +1645,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			SOV = {add_to_faction = ATL}
 		}
 	}
 focus = {
 		id = ATL_axis_1
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_green_brigade focus = ATL_attack_ringvereine}
+		prerequisite = {focus = ATL_green_brigade focus = ATL_germany}
 		
 		x = 12
 		y = 10
@@ -1083,6 +1666,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {idea = ATL_green_brigade_recruitment}
 		}
 	}
 focus = {
@@ -1103,6 +1687,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			GER = {add_to_faction = ATL}
 		}
 	}
 focus = {
@@ -1123,6 +1708,42 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			remove_ideas = {idea = ATL_UBG_idea}
+			add_timed_idea = {idea = ATL_dismantling_UBG days = 180}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 focus = {
@@ -1143,6 +1764,9 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_ideas = {idea = ATL_business_with_rothschilds}
 		}
 	}
 focus = {
@@ -1163,6 +1787,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ATL_business_with_rothschilds
+				add_idea = ATL_business_with_rothschilds_2
+			}
 		}
 	}
 focus = {
@@ -1183,6 +1811,32 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			USA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
+			}
 		}
 	}
 focus = {
@@ -1203,6 +1857,14 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			custom_effect_tooltip = ATL_industrial_espionage
+			set_country_flag = ATL_USA_espionage
 		}
 	}
 focus = {
@@ -1223,6 +1885,32 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ROOT"
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
+			}
 		}
 	}
 focus = {
@@ -1243,6 +1931,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ATL_trading_empire_2
+				add_idea = ATL_trading_empire_3
+			}
 		}
 	}
 focus = {
@@ -1264,6 +1956,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			ENG = {add_to_faction = ATL}
 		}
 	}
 ###########################################ATLANTIS MILITARY BRANCH###########################################
@@ -1284,6 +1977,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_timed_idea = {idea = ATL_building_research_center days = 180}
+			add_research_slot = 1
 		}
 	}
 focus = {
@@ -1305,6 +2000,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 focus = {
@@ -1326,6 +2022,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 focus = {
@@ -1346,12 +2043,19 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 focus = {
 		id = ATL_fleet_in_being
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_home_defense}
+		prerequisite = {focus = ATL_DD}
 		
 		x = 18
 		y = 3
@@ -1366,12 +2070,18 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
 		}
 	}
 focus = {
 		id = ATL_radars
 		icon = GFX_ATL_military
-		prerequisite = {focus = ATL_DD}
+		prerequisite = {focus = ATL_fleet_in_being}
 		
 		x = 18
 		y = 4
@@ -1386,11 +2096,17 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
+			}
 		}
 	}
 focus = {
 		id = ATL_fighters
-		icon = GFX_ATL_military
+		icon = GFX_r56_goal_generic_liberty
 		prerequisite = {focus = ATL_radars}
 		
 		x = 19
@@ -1406,6 +2122,15 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			air_experience = 25
+			set_country_flag = ATL_airforce_gap
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+			}
+			custom_effect_tooltip = ATL_air_reforms
 		}
 	}
 focus = {
@@ -1426,11 +2151,18 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
 		}
 	}
 focus = {
 		id = ATL_strat_bombers
-		icon = GFX_ATL_military
+		icon = GFX_r56_goal_generic_multiple_bombers
 		prerequisite = {focus = ATL_nav_bombers}
 		
 		x = 20
@@ -1446,6 +2178,12 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
+			}
 		}
 	}
 focus = {
@@ -1466,6 +2204,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			set_technology = {ATL_parasite_fighter = 1}
 		}
 	}
 focus = {
@@ -1486,11 +2225,60 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			hidden_effect = {
+				944 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14190}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14190}
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14195}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14195}
+				}
+				947 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14184}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14184}
+				}
+				945 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14158}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14158}
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14160}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14160}
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14159}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14159}
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14161}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14161}
+				}
+				946 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14171}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14171}
+				}
+				948 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14178}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14178}
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14179}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14179}
+				}
+				949 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14175}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14175}
+				}
+				963 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14157}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14157}
+				}
+				964 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14156}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14156}
+				}
+				965 = {
+					add_building_construction = {type = bunker level = 3 instant_build = yes province = 14151}
+					add_building_construction = {type = coastal_bunker level = 3 instant_build = yes province = 14151}
+				}
+			}
+			custom_effect_tooltip = ATL_forts
 		}
 	}
 focus = {
 		id = ATL_mech
-		icon = GFX_ATL_military
+		icon = GFX_r56_focus_generic_study_foreign_tanks
 		prerequisite = {focus = ATL_mainland_forts}
 		
 		x = 17
@@ -1506,6 +2294,12 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = motorized_equipment
+			}
 		}
 	}
 focus = {
@@ -1526,6 +2320,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 focus = {
@@ -1546,11 +2347,21 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
 		}
 	}
 focus = {
 		id = ATL_naval_aviation
-		icon = GFX_ATL_military
+		icon = GFX_navalairwarfare
 		prerequisite = {focus = ATL_trade_interdiction}
 		
 		x = 23
@@ -1566,6 +2377,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = naval_air
+			}
 		}
 	}
 focus = {
@@ -1586,6 +2404,12 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+			}
 		}
 	}
 focus = {
@@ -1606,6 +2430,12 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_heavy_armor
+			}
 		}
 	}
 focus = {
@@ -1626,6 +2456,9 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			air_experience = 25
+			set_country_flag = ATL_airforce_gap
+			custom_effect_tooltip = ATL_air_reforms
 		}
 	}
 focus = {
@@ -1647,6 +2480,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			set_technology = {ATL_VLFP = 1}
 		}
 	}
 focus = {
@@ -1667,6 +2501,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			set_technology = {ATL_light_bomber = 1}
 		}
 	}
 focus = {
@@ -1687,6 +2522,14 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			949 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = dockyard
+					level = 6
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1710,6 +2553,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 30
 		}
 	}
 focus = {
@@ -1730,6 +2574,28 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			966 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 14257
+						instant_build = yes
+					}
+				}
+			}
+			967 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 14258
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 focus = {
@@ -1750,6 +2616,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			966 = {add_building_construction = {type = infrastructure level = 3 instant_build = yes}}
+			967 = {add_building_construction = {type = infrastructure level = 3 instant_build = yes}}
 		}
 	}
 focus = {
@@ -1770,6 +2638,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			966 = {add_extra_state_shared_building_slots = 2 add_building_construction = {type = industrial_complex level = 2 instant_build = yes}}
+			967 = {add_extra_state_shared_building_slots = 2 add_building_construction = {type = industrial_complex level = 2 instant_build = yes}}
 		}
 	}
 focus = {
@@ -1790,6 +2660,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			966 = {add_extra_state_shared_building_slots = 2 add_building_construction = {type = arms_factory level = 2 instant_build = yes}}
+			967 = {add_extra_state_shared_building_slots = 2 add_building_construction = {type = arms_factory level = 2 instant_build = yes}}
 		}
 	}
 focus = {
@@ -1810,6 +2682,14 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			966 = {
+				add_building_construction = {type = bunker level = 3 instant_build = yes province = 14257}
+				add_building_construction = {type = coastal_bunker level = 2 instant_build = yes province = 14257}
+			}
+			967 = {
+				add_building_construction = {type = bunker level = 3 instant_build = yes province = 14258}
+				add_building_construction = {type = coastal_bunker level = 2 instant_build = yes province = 14258}
+			}
 		}
 	}
 focus = {
@@ -1830,6 +2710,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			966 = {add_building_construction = {type = air_base level = 3 instant_build = yes}}
+			967 = {add_building_construction = {type = air_base level = 2 instant_build = yes}}
 		}
 	}
 }
