@@ -1,0 +1,856 @@
+ideas = {
+	country = {
+		ATL_trading_empire = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				trade_opinion_factor = trade_opinion_factor = 0.7
+				convoy_escort_efficiency = 0.25
+			}
+		}
+		ATL_trading_empire_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				trade_opinion_factor = trade_opinion_factor = 0.7
+				convoy_escort_efficiency = 0.25
+				consumer_goods_factor = -0.05 
+			}
+		}
+		ATL_trading_empire_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				trade_opinion_factor = trade_opinion_factor = 1
+				convoy_escort_efficiency = 0.25
+				consumer_goods_factor = -0.05 
+			}
+		}
+		ATL_naval_power = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				naval_coordination = 0.01
+				naval_speed_factor = 0.05
+				navy_max_range_factor = 0.15 
+			}
+		}
+		ATL_useless_air_force = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				air_air_superiority_attack_factor = -0.4
+				air_air_superiority_defence_factor = -0.4
+				air_air_superiority_agility_factor = -0.4
+				naval_strike_attack_factor = -0.2
+				naval_strike_targetting_factor = -0.2
+				naval_strike_agility_factor = -0.2
+				air_interception_attack_factor = -0.4
+				air_accidents_factor = 0.4 
+			}
+		}
+		ATL_useless_air_force_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				air_air_superiority_attack_factor = -0.3
+				air_air_superiority_defence_factor = -0.3
+				air_air_superiority_agility_factor = -0.3
+				naval_strike_attack_factor = -0.15
+				naval_strike_targetting_factor = -0.15
+				naval_strike_agility_factor = -0.15
+				air_interception_attack_factor = -0.3
+				air_accidents_factor = 0.3 
+			}
+		}
+		ATL_useless_air_force_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				air_air_superiority_attack_factor = -0.2
+				air_air_superiority_defence_factor = -0.2
+				air_air_superiority_agility_factor = -0.2
+				naval_strike_attack_factor = -0.1
+				naval_strike_targetting_factor = -0.1
+				naval_strike_agility_factor = -0.1
+				air_interception_attack_factor = -0.2
+				air_accidents_factor = 0.2 
+			}
+		}
+		ATL_useless_air_force_4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				air_air_superiority_attack_factor = -0.1
+				air_air_superiority_defence_factor = -0.1
+				air_air_superiority_agility_factor = -0.1
+				naval_strike_attack_factor = -0.05
+				naval_strike_targetting_factor = -0.05
+				naval_strike_agility_factor = -0.05
+				air_interception_attack_factor = -0.1
+				air_accidents_factor = 0.1
+			}
+		}
+		ATL_gostudis_in_government = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				democratic_drift = -0.02
+			}
+		}
+		ATL_kaprastiak_in_government = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				trade_opinion_factor = -0.2 
+				consumer_goods_factor = 0.05 
+			}
+		}
+		ATL_kaprastiak_at_war = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.4
+			}
+		}
+		ATL_itorkanak_in_government = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1 
+			}
+		}
+		ATL_itorkanak_in_government_sic = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				min_export = -0.1
+			}
+		}
+		ATL_itorkanak_in_government_sic_sieg = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				min_export = -0.1
+				local_resources_factor = 0.1
+			}
+		}
+		ATL_itorkanak_in_government_sic_sieg_ring = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.05
+				min_export = -0.1
+				local_resources_factor = 0.1
+			}
+		}
+		ATL_itorkanak_at_war = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.4
+			}
+		}
+		ATL_sicilians_enemies = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+		ATL_ringvereine_enemies = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		ATL_building_research_center = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				consumer_goods_factor = 0.12
+				industrial_capacity_factory = -0.1
+			}
+		}
+		ATL_overturners_reforms = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+		ATL_isolation_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				army_core_attack_factor = 0.15 
+				army_core_defence_factor = 0.1 
+			}
+		}
+		ATL_black_daggers_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				mobilization_speed = 0.1 
+				conscription = 0.015
+			}
+		}
+		ATL_BD_camps = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				naval_retreat_chance = -0.2
+				naval_hit_chance = 0.075
+				army_morale_factor = 0.1
+				offence = 0.1 
+				recon_factor = 0.05
+			}
+		}
+		ATL_kaixanarak_shock = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.30 
+				command_power_gain = -0.2
+			}
+		}
+		ATL_kaixanarak_shock_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.20 
+				command_power_gain = -0.1
+			}
+		}
+		ATL_kaixanarak_shock_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				war_support_factor = -0.10 
+				stability_factor = -0.05
+			}
+		}
+		ATL_tumurzek = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_factor = -0.05
+				no_supply_grace = 60
+				out_of_supply_factor = -0.4
+				supply_consumption_factor = -0.4
+			}
+		}
+		ATL_BD_education = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				fascism_drift = 0.10
+				stability_weekly = 0.002
+				conscription = 0.05
+			}
+		}
+		ATL_hastugudak_education = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				neutrality_drift = 0.015
+			}
+		}
+		ATL_hexanchials_in_government = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+		ATL_kaiturn_media = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				drift_defence_factor = 0.25
+				stability_weekly = 0.003
+			}
+		}
+		ATL_kaiturn_media_uncontested = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				drift_defence_factor = 0.5
+				stability_weekly = 0.003
+				war_support_weekly = 0.002
+			}
+		}
+		ATL_substituting_politicians_hastugudak = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+				political_power_gain = -1.5
+			}
+		}
+		ATL_restored_empire = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				political_power_gain = 0.25
+				conscription = 0.02
+			}
+		}
+		ATL_karistigs_in_government = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_factor = 0.25
+				consumer_goods_factor = 0.02
+			}
+		}
+		ATL_karistigs_bailed_out = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_factor = 0.25
+				consumer_goods_factor = -0.03
+			}
+		}
+		ATL_bailout = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = 0.12
+			}
+		}
+		ATL_karistig_pissed_off = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				political_power_gain = -0.7
+				stability_factor = -0.25
+			}
+		}
+		ATL_karistig_really_pissed_off = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				political_power_gain = -1
+				stability_factor = -0.4
+				min_export = 0.05 
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+		ATL_UBG_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		ATL_UBG_dominant = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = -0.25
+				production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		ATL_UBG_dominant_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = -0.35
+				production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.15 
+				industrial_capacity_dockyard = 0.2 
+			}
+		}
+		ATL_karistig_sabotaging_government = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_weekly = -0.025
+				political_power_gain = -1.1
+				fascism_drift = 0.3
+				neutrality_drift = 0.1
+				communism_drift = 0.4
+			}
+		}
+		ATL_karistigs_dominant = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_factor = 0.35
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1 
+			}
+		}
+		ATL_funding_industries = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+			 	industrial_capacity_factory = 0.02 
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.15
+			}
+		}
+		ATL_americans_funding_industries = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+			 	industrial_capacity_factory = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.15
+				equipment_conversion_speed = 0.25 
+			}
+		}
+		ATL_leasing_african_ports = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = -0.01 
+			}
+		}
+		ATL_atlantic_domination = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				experience_gain_navy = 0.05 
+				navy_max_range_factor = 0.1
+				navy_capital_ship_attack_factor = 0.05 
+				navy_capital_ship_defence_factor = 0.05 
+				navy_screen_attack_factor = 0.1 
+				navy_screen_defence_factor = 0.05 
+			}
+		}
+		ATL_german_influence = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				fascism_drift = 0.05
+			}
+		}
+		ATL_extremists = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				democratic_drift = -0.04
+			}
+		}
+		ATL_extremists_red = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				democratic_drift = -0.04
+				fascism_drift = 0.05
+			}
+		}
+		ATL_extremists_green = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				democratic_drift = -0.04
+				communism_drift = 0.02
+			}
+		}
+		ATL_socialist_tradition = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				communism_drift = 0.02
+				stability_weekly = 0.002
+			}
+		}
+		ATL_business_with_rothschilds = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				decryption_factor = 0.15 
+			}
+		}
+		ATL_business_with_rothschilds_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				decryption_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				industry_free_repair_factor = 1
+			}
+		}
+		ATL_green_brigade_recruitment = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				conscription = 0.05
+				mobilization_speed = 0.1
+			}
+		}
+		ATL_dismantling_UBG = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = 0.05 
+				industrial_capacity_factory = -0.2
+				local_resources_factor = -0.10 				
+			}
+		}
+	}
+}
