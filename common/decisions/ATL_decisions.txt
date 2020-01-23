@@ -52,6 +52,7 @@ ATL_gang_warfare = {
 			if = {
 				limit = { has_idea = ATL_itorkanak_at_war}
 				set_country_flag = ATL_searching_itorkanak
+				clr_country_flag = ATL_currently_searching_itorkanak
 				swap_ideas = {
 					remove_idea = ATL_itorkanak_at_war
 					add_idea = ATL_itorkanak_at_war_2
@@ -60,6 +61,7 @@ ATL_gang_warfare = {
 			else_if = {
 				limit = { has_idea = ATL_itorkanak_at_war_2 }
 				set_country_flag = ATL_searching_itorkanak
+				clr_country_flag = ATL_currently_searching_itorkanak
 				swap_ideas = {
 					remove_idea = ATL_itorkanak_at_war_2
 					add_idea = ATL_itorkanak_at_war_3
@@ -68,6 +70,7 @@ ATL_gang_warfare = {
 			else_if = {
 				limit = { has_idea = ATL_itorkanak_at_war_3 }
 				set_country_flag = ATL_searching_itorkanak
+				clr_country_flag = ATL_currently_searching_itorkanak
 				swap_ideas = {
 					remove_idea = ATL_itorkanak_at_war_3
 					add_idea = ATL_itorkanak_at_war_4
@@ -92,6 +95,7 @@ ATL_gang_warfare = {
 			if = {
 				limit = { has_idea = ATL_kaprastiak_at_war}
 				set_country_flag = ATL_searching_kaprastiak
+				clr_country_flag = ATL_currently_searching_kaprastiak
 				swap_ideas = {
 					remove_idea = ATL_kaprastiak_at_war
 					add_idea = ATL_kaprastiak_at_war_2
@@ -100,6 +104,7 @@ ATL_gang_warfare = {
 			else_if = {
 				limit = { has_idea = ATL_kaprastiak_at_war_2 }
 				set_country_flag = ATL_searching_kaprastiak
+				clr_country_flag = ATL_currently_searching_kaprastiak
 				swap_ideas = {
 					remove_idea = ATL_kaprastiak_at_war_2
 					add_idea = ATL_kaprastiak_at_war_3
@@ -108,6 +113,7 @@ ATL_gang_warfare = {
 			else_if = {
 				limit = { has_idea = ATL_kaprastiak_at_war_3 }
 				set_country_flag = ATL_searching_kaprastiak
+				clr_country_flag = ATL_currently_searching_kaprastiak
 				swap_ideas = {
 					remove_idea = ATL_kaprastiak_at_war_3
 					add_idea = ATL_kaprastiak_at_war_4
