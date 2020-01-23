@@ -44,8 +44,8 @@ news_event = {
 	option = {
 		name = atl.2.a
 		hidden_effect = {clr_country_flag = ATL_searching_itorkanak clr_country_flag = ATL_currently_searching_itorkanak}
-		if = {limit = {has_idea = ATL_balanced_search} remove_idea = ATL_balanced_search}
-		if = {limit = {has_idea = ATL_aggressive_search} remove_idea = ATL_aggressive_search}
+		if = {limit = {has_idea = ATL_balanced_search_itork_idea} remove_idea = ATL_balanced_search_itork_idea}
+		if = {limit = {has_idea = ATL_aggressive_search_itork_idea} remove_idea = ATL_aggressive_search_itork_idea}
 	}
 }
 news_event = {
@@ -205,8 +205,8 @@ news_event = {
 	option = {
 		name = atl.6.a
 		hidden_effect = {clr_country_flag = ATL_searching_kaprastiak clr_country_flag = ATL_currently_searching_kaprastiak}
-		if = {limit = {has_idea = ATL_balanced_search} remove_idea = ATL_balanced_search}
-		if = {limit = {has_idea = ATL_aggressive_search} remove_idea = ATL_aggressive_search}
+		if = {limit = {has_idea = ATL_balanced_search_kapra_idea} remove_idea = ATL_balanced_search_kapra_idea}
+		if = {limit = {has_idea = ATL_aggressive_search_kapra_idea} remove_idea = ATL_aggressive_search_kapra_idea}
 	}
 }
 news_event = {
