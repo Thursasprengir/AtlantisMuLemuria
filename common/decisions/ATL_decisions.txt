@@ -45,7 +45,7 @@ ATL_gang_warfare = {
 		available = {AND = {has_country_flag = ATL_itorkanak_flag}}
 		visible = {has_country_flag = ATL_itorkanak_flag NOT = {has_country_flag = ATL_searching_itorkanak}}
 		cost = 100
-		days_remove = 90
+		days_remove = 30
 		ai_will_do = {factor = 1000}
 		modifier = {weekly_manpower = -1000 industrial_capacity_dockyard = -0.15}
 		remove_effect = {
@@ -88,7 +88,7 @@ ATL_gang_warfare = {
 		available = {AND = {has_country_flag = ATL_kaprastiak_flag}}
 		visible = {has_country_flag = ATL_kaprastiak_flag NOT = {has_country_flag = ATL_searching_kaprastiak}}
 		cost = 100
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = {factor = 1000}
 		modifier = {weekly_manpower = -300 production_speed_buildings_factor = -0.1 industrial_capacity_factory = -0.15}
 		remove_effect = {
