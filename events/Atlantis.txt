@@ -8,6 +8,7 @@ country_event = {
 	trigger = {
 		tag = ATL
 		has_country_flag = ATL_searching_itorkanak
+		NOT = {has_country_flag = ATL_currently_searching_itorkanak}
 	}
 	mean_time_to_happen = {days = 10}
 	
@@ -15,21 +16,21 @@ country_event = {
 		ai_chance = {factor = 300}
 		name = atl.1.a
 		hidden_effect = {country_event = {id = atl.2 days = 50 random = 300}}
-		custom_effect_tooltip = ATL_itork_aggressive_search
 		add_ideas = {idea = ATL_aggressive_search_itork_idea}
+		set_country_flag = ATL_currently_searching_itorkanak
 	}
 	option = {
 		ai_chance = {factor = 200}
 		name = atl.1.b
 		hidden_effect = {country_event = {id = atl.2 days = 70 random = 500}}
-		custom_effect_tooltip = ATL_itork_balanced_search
 		add_ideas = {idea = ATL_balanced_search_itork_idea}
+		set_country_flag = ATL_currently_searching_itorkanak
 	}
 	option = {
 		ai_chance = {factor = 100}
 		name = atl.1.c
 		hidden_effect = {country_event = {id = atl.2 days = 100 random = 600}}
-		custom_effect_tooltip = ATL_itork_passive_search
+		set_country_flag = ATL_currently_searching_itorkanak
 	}
 }
 news_event = {
@@ -42,7 +43,7 @@ news_event = {
 	
 	option = {
 		name = atl.2.a
-		hidden_effect = {clr_country_flag = ATL_searching_itorkanak}
+		hidden_effect = {clr_country_flag = ATL_searching_itorkanak clr_country_flag = ATL_currently_searching_itorkanak}
 		if = {limit = {has_idea = ATL_balanced_search} remove_idea = ATL_balanced_search}
 		if = {limit = {has_idea = ATL_aggressive_search} remove_idea = ATL_aggressive_search}
 	}
@@ -168,6 +169,7 @@ country_event = {
 	trigger = {
 		tag = ATL
 		has_country_flag = ATL_searching_kaprastiak
+		NOT = {has_country_flag = ATL_currently_searching_kaprastiak}
 	}
 	mean_time_to_happen = {days = 10}
 	
@@ -175,21 +177,21 @@ country_event = {
 		ai_chance = {factor = 300}
 		name = atl.5.a
 		hidden_effect = {country_event = {id = atl.6 days = 50 random = 300}}
-		custom_effect_tooltip = ATL_kapra_aggressive_search
 		add_ideas = {idea = ATL_aggressive_search_kapra_idea}
+		set_country_flag = ATL_currently_searching_kaprastiak
 	}
 	option = {
 		ai_chance = {factor = 200}
 		name = atl.5.b
 		hidden_effect = {country_event = {id = atl.6 days = 70 random = 500}}
-		custom_effect_tooltip = ATL_kapra_balanced_search
 		add_ideas = {idea = ATL_balanced_search_kapra_idea}
+		set_country_flag = ATL_currently_searching_kaprastiak
 	}
 	option = {
 		ai_chance = {factor = 100}
 		name = atl.5.c
 		hidden_effect = {country_event = {id = atl.6 days = 100 random = 600}}
-		custom_effect_tooltip = ATL_kapra_passive_search
+		set_country_flag = ATL_currently_searching_kaprastiak
 	}
 }
 news_event = {
@@ -202,7 +204,7 @@ news_event = {
 	
 	option = {
 		name = atl.6.a
-		hidden_effect = {clr_country_flag = ATL_searching_kaprastiak}
+		hidden_effect = {clr_country_flag = ATL_searching_kaprastiak clr_country_flag = ATL_currently_searching_kaprastiak}
 		if = {limit = {has_idea = ATL_balanced_search} remove_idea = ATL_balanced_search}
 		if = {limit = {has_idea = ATL_aggressive_search} remove_idea = ATL_aggressive_search}
 	}
