@@ -179,6 +179,45 @@ ideas = {
 				stability_factor = -0.4
 			}
 		}
+		ATL_kaprastiak_at_war_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+		ATL_kaprastiak_at_war_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		ATL_kaprastiak_at_war_4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
 		ATL_itorkanak_in_government = {
 			allowed = {
 				always = no
@@ -250,6 +289,45 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.4
+			}
+		}
+		ATL_itorkanak_at_war_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+		ATL_itorkanak_at_war_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		ATL_itorkanak_at_war_4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				stability_factor = -0.1
 			}
 		}
 		ATL_sicilians_enemies = {
@@ -850,6 +928,65 @@ ideas = {
 				consumer_goods_factor = 0.05 
 				industrial_capacity_factory = -0.2
 				local_resources_factor = -0.10 				
+			}
+		}
+		ATL_aggressive_search_itork_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_weekly = -0.005
+				consumer_goods_factor = 0.05
+				industrial_capacity_dockyard = -0.5
+			}
+		}
+		ATL_balanced_search_itork_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				stability_factor = -0.15
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		ATL_aggressive_search_kapra_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				consumer_goods_factor = 0.1 
+				industrial_capacity_factory = -0.4
+				local_resources_factor = -0.2
+				stability_factor = -0.3	
+			}
+		}
+		ATL_balanced_search_kapra_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.15
 			}
 		}
 	}

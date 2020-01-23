@@ -78,31 +78,40 @@ technologies = {
 		}
 	}
 	ATL_parasite_fighter = {
+		#enable_equipments = {
+		#	mothership_equipment
+		#}
 		research_cost = 1.0
 		start_year = 1918
 		folder = {
-			name = support_folder
-			position = { x = 0 y = @1918 }
+			name = air_techs_folder
+			position = { x = -2 y = 8 }
 		}
-		category_all_armor = {
-			marsh = {
-				attack = 0.15
-				defence = 0.10
-			}
+		category_strat_bomber = {
+			air_attack = 1
+			air_defence = 0.2
+			air_bombing = -0.05
+		}
+		categories = {
+			air_equipment
 		}
 	}
 	ATL_light_bomber = {
+		#enable_equipments = {
+		#	light_bomber_equipment
+		#}
 		research_cost = 1.0
 		start_year = 1918
 		folder = {
-			name = support_folder
-			position = { x = 0 y = @1918 }
+			name = air_techs_folder
+			position = { x = -2 y = 9 }
 		}
-		category_all_armor = {
-			marsh = {
-				attack = 0.15
-				defence = 0.10
-			}
+		category_cas = {
+			air_range = 0.5
+			air_defence = 0.2
+		}
+		categories = {
+			air_equipment
 		}
 	}
 	ATL_VLFP = {
@@ -110,13 +119,14 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1918 }
+			position = { x = -2 y = 10 }
 		}
-		category_all_armor = {
-			marsh = {
-				attack = 0.15
-				defence = 0.10
-			}
+		carrier = {
+			naval_speed = -0.9
+			surface_visibility = 4
+			anti_air_attack = 0.3
+			carrier_size = 3
+			armor_value = -0.6
 		}
 	}
 	chemical_experimentation_geq = {
