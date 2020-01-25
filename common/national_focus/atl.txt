@@ -1984,7 +1984,7 @@ focus = {
 	}
 focus = {
 		id = ATL_home_defense
-		icon = GFX_ATL_military
+		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = {focus = ATL_mil_main}
 		mutually_exclusive = {focus = ATL_intervention}
 		
@@ -2006,7 +2006,7 @@ focus = {
 	}
 focus = {
 		id = ATL_intervention
-		icon = GFX_ATL_military
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = {focus = ATL_mil_main}
 		mutually_exclusive = {focus = ATL_home_defense}
 		
@@ -2136,7 +2136,7 @@ focus = {
 	}
 focus = {
 		id = ATL_nav_bombers
-		icon = GFX_ATL_military
+		icon = GFX_naval_bomber
 		prerequisite = {focus = ATL_fighters}
 		
 		x = 19
@@ -2163,7 +2163,7 @@ focus = {
 	}
 focus = {
 		id = ATL_strat_bombers
-		icon = GFX_r56_goal_generic_multiple_bombers
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = {focus = ATL_nav_bombers}
 		
 		x = 20
@@ -2189,7 +2189,7 @@ focus = {
 	}
 focus = {
 		id = ATL_parasite
-		icon = GFX_ATL_military
+		icon = GFX_goal_parasite_fighters
 		prerequisite = {focus = ATL_nav_bombers}
 		prerequisite = {has_tech = strategic_bomber3}
 		
@@ -2306,7 +2306,7 @@ focus = {
 	}
 focus = {
 		id = ATL_SS
-		icon = GFX_ATL_military
+		icon = GFX_goal_generic_wolf_pack
 		prerequisite = {focus = ATL_intervention}
 		
 		x = 23
@@ -2333,7 +2333,7 @@ focus = {
 	}
 focus = {
 		id = ATL_trade_interdiction
-		icon = GFX_ATL_military
+		icon = GFX_goal_generic_navy_submarine
 		prerequisite = {focus = ATL_SS}
 		
 		x = 23
@@ -2442,7 +2442,7 @@ focus = {
 	}
 focus = {
 		id = ATL_heavy_fighters
-		icon = GFX_ATL_military
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = {focus = ATL_SS}
 		
 		x = 25
@@ -2487,7 +2487,7 @@ focus = {
 	}
 focus = {
 		id = ATL_light_bombers
-		icon = GFX_ATL_military
+		icon = GFX_r56_goal_generic_multiple_bombers
 		prerequisite = {focus = ATL_VLFP}
 		
 		x = 25
