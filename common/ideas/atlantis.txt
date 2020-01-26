@@ -1056,5 +1056,16 @@ ideas = {
 				supply_consumption_factor = 0.20
 			}
 		}
+		ATL_bomber_range = {
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			removal_cost = -1
+			picture = generic_air_bonus
+			equipment_bonus = {
+				strat_bomber_equipment = {
+					air_range = 0.4 instant = yes
+				}	
+			}
+		}
 	}
 }
