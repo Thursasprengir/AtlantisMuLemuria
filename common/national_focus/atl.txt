@@ -399,6 +399,17 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			all_country = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+				add_ai_strategy = {
+					type = antagonize
+					id = "ROOT"
+					value = 100
+				}
+			}
 			add_stability = -0.5
 			add_ideas = {idea = ATL_kaixanarak_shock}
 		}
