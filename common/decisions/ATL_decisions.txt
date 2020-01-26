@@ -127,6 +127,87 @@ ATL_gang_warfare = {
 			}
 		}
 	}
+	conduct_raid_sicilians = {
+		icon = generic_ignite_civil_war
+		available = {has_idea = ATL_sicilians_enemies}
+		visible = {has_idea = ATL_sicilians_enemies}
+		cost = 150
+		days_remove = 120
+		ai_will_do = {factor = 1000}
+		modifier = {weekly_manpower = -100}
+		remove_effect = {
+			remove_ideas = ATL_itorkanak_at_war_4
+		}
+	}
+	conduct_raid_ringvereine = {
+		icon = generic_ignite_civil_war
+		available = {has_idea = ATL_ringvereine_enemies}
+		visible = {has_idea = ATL_ringvereine_enemies}
+		cost = 150
+		days_remove = 60
+		ai_will_do = {factor = 1000}
+		modifier = {weekly_manpower = -100}
+		remove_effect = {
+			remove_ideas = ATL_itorkanak_at_war_4
+		}
+	}
+}
+ATL_education = {
+	naitastarak_shock_fix = {
+		icon = eng_propaganda_campaigns
+		available = {OR = {has_idea = ATL_kaixanarak_shock has_idea = ATL_kaixanarak_shock_2 has_idea = ATL_kaixanarak_shock_3}}
+		visible = {OR = {has_idea = ATL_kaixanarak_shock has_idea = ATL_kaixanarak_shock_2 has_idea = ATL_kaixanarak_shock_3}}
+		cost = 50
+		days_remove = 360
+		ai_will_do = {factor = 1000}
+		remove_effect = {
+			if = {
+				limit = { has_idea = ATL_kaixanarak_shock }
+				swap_ideas = {
+					remove_idea = ATL_kaixanarak_shock
+					add_idea = ATL_kaixanarak_shock_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = ATL_kaixanarak_shock_2 }
+				swap_ideas = {
+					remove_idea = ATL_kaixanarak_shock_2
+					add_idea = ATL_kaixanarak_shock_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = ATL_kaixanarak_shock_3 }
+				remove_ideas = ATL_kaixanarak_shock_3
+			}
+		}
+	}
+}
+ATL_espionage = {
+	industrial_espionage_decision = {
+		icon = generic_construction
+		available = {has_country_flag = ATL_USA_espionage}
+		visible = {has_country_flag = ATL_USA_espionage}
+		cost = 100
+		complete_effect = {country_event = {id = atl.9}}
+	}
+	divert_resources = {
+		icon = generic_construction
+		available = {has_country_flag = ATL_UK_divert}
+		visible = {has_country_flag = ATL_UK_divert}
+		cost = 200
+		days_remove = 180
+		complete_effect = {add_ideas = {idea = ATL_diverting_to} ENG = {add_ideas = {idea = ATL_diverting_from}}}
+		remove_effect = {remove_ideas = {idea = ATL_diverting_to} ENG = {remove_ideas = {idea = ATL_diverting_from}}}
+	}
+	divert_supplies = {
+		icon = generic_construction
+		available = {has_country_flag = ATL_UK_divert}
+		visible = {has_country_flag = ATL_UK_divert}
+		cost = 200
+		days_remove = 90
+		complete_effect = {add_ideas = {idea = ATL_diverting_supplies_to} ENG = {add_ideas = {idea = ATL_diverting_supplies_from}}}
+		remove_effect = {remove_ideas = {idea = ATL_diverting_supplies_to} ENG = {remove_ideas = {idea = ATL_diverting_supplies_from}}}
+	}
 }
 
 

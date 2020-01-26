@@ -331,6 +331,65 @@ news_event = {
 		}
 	}
 }
+country_event = {
+	id = atl.9
+	title = atl.9.t
+	desc = atl.9.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {factor = 100}
+		name = atl.9.a
+		add_tech_bonus = {
+			name = radar_focus
+			bonus = 1.0
+			uses = 1
+			ahead_reduction = 2
+			category = electronics
+			category = industry
+		}
+	}
+	option = {
+		ai_chance = {factor = 100}
+		name = atl.9.b
+		add_tech_bonus = {
+			name = radar_focus
+			bonus = 1.0
+			uses = 1
+			ahead_reduction = 2
+			category = naval_equipment
+			category = naval_doctrine
+		}
+	}
+	option = {
+		ai_chance = {factor = 100}
+		name = atl.9.c
+		add_tech_bonus = {
+			name = radar_focus
+			bonus = 1.0
+			uses = 1
+			ahead_reduction = 2
+			category = air_equipment
+			category = air_doctrine
+		}
+	}
+	option = {
+		ai_chance = {factor = 100}
+		name = atl.9.d
+		add_tech_bonus = {
+			name = radar_focus
+			bonus = 1.0
+			uses = 1
+			ahead_reduction = 2
+			category = infantry_weapons
+			category = land_doctrine
+			category = artillery
+			category = armor
+			category = motorized_equipment
+		}
+	}
+}
 
 
 

@@ -399,6 +399,17 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			all_country = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+				add_ai_strategy = {
+					type = antagonize
+					id = "ROOT"
+					value = 100
+				}
+			}
 			add_stability = -0.5
 			add_ideas = {idea = ATL_kaixanarak_shock}
 		}
@@ -893,7 +904,7 @@ focus = {
 			remove_ideas = {idea = ATL_karistig_really_pissed_off}
 			add_timed_idea = {
 				idea = ATL_karistig_sabotaging_government
-				days = 500
+				days = 300
 			}
 			swap_ideas = {
 				remove_idea = ATL_UBG_dominant
@@ -1936,6 +1947,7 @@ focus = {
 				}
 			}
 			custom_effect_tooltip = ATL_UK_trade
+			set_country_flag = ATL_UK_divert
 		}
 	}
 focus = {
@@ -2415,7 +2427,7 @@ focus = {
 		}
 	}
 focus = {
-		id = ATL_armor
+		id = ATL_armor_focus
 		icon = GFX_r56_goal_generic_license_tanks
 		prerequisite = {focus = ATL_amphibious}
 		
