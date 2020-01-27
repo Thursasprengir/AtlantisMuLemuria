@@ -425,6 +425,8 @@ adjacency_rule
 	offset = { -6 0 22 }
 }
 
+
+
 #Bella Coola Strait
 adjacency_rule
 {
@@ -459,49 +461,9 @@ adjacency_rule
 		trade = yes
 	}
 	
-	required_provinces = { 10548 14200 }
+	required_provinces = {1799 10228}
 	
-	icon = 13162
-	offset = { -24 0 -22 }
-}
-
-#Nusatsum Strait
-adjacency_rule
-{
-	name = "NUSATSUM_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = {14214 13185}
-	
-	icon = 2976
+	icon = 13166
 	offset = { -21 0 -6 }
 }
 
