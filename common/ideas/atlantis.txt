@@ -1068,4 +1068,236 @@ ideas = {
 			}
 		}
 	}
+	political_advisor = {
+		ATL_silent_workhorse = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {silent_workhorse}
+		}
+		ATL_war_industrialist = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {war_industrialist}
+		}
+		ATL_backroom_backstabber = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {backroom_backstabber}
+		}
+		ATL_prince_of_terror = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {prince_of_terror}
+		}
+		ATL_armaments_organizer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {armaments_organizer}
+		}
+	}
+	tank_manufacturer = {
+		designer = yes
+		ATL_heavy_tank_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {armor = 0.15}
+			traits = {heavy_tank_manufacturer}
+		}
+	}
+	naval_manufacturer = {
+		designer = yes
+		ATL_pacific_fleet_naval_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {naval_equipment = 0.15}
+			traits = {pacific_fleet_naval_manufacturer}
+		}
+		ATL_atlantic_fleet_naval_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {naval_equipment = 0.15}
+			traits = {atlantic_fleet_naval_manufacturer}
+		}
+		ATL_battlefleet_designer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {naval_equipment = 0.15}
+			traits = {battlefleet_designer}
+		}
+	}
+	aircraft_manufacturer = {
+		designer = yes
+		ATL_heavy_aircraft_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {air_equipment = 0.15}
+			traits = {heavy_aircraft_manufacturer}
+		}
+		ATL_naval_aircraft_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {air_equipment = 0.15}
+			traits = {naval_aircraft_manufacturer}
+		}
+		ATL_light_aircraft_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {air_equipment = 0.15}
+			traits = {light_aircraft_manufacturer}
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		ATL_infantry_equipment_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {infantry_weapons = 0.15}
+			traits = {infantry_equipment_manufacturer}
+		}
+		ATL_artillery_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {artillery = 0.15}
+			traits = {artillery_manufacturer}
+		}
+	}
+	industrial_concern = {
+		ATL_refinery_concern = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {synth_resources = 0.15}
+			modifier = {fuel_gain_factor_from_states = 0.1}
+			traits = {refinery_concern}
+		}
+		ATL_electronics_concern = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {electronics = 0.15}
+			traits = {electronics_concern}
+		}
+		ATL_industrial_concern = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			modifier = {industrial_capacity_dockyard = 0.05}
+			research_bonus = {industry = 0.15}
+			traits = {industrial_concern}
+		}
+	}
+	theorist = {
+		ATL_grand_fleet_proponent = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {cat_fleet_in_being = 0.15}
+			cost = 250
+			traits = {grand_fleet_proponent}
+		}
+		ATL_victory_through_airpower = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {cat_strategic_destruction = 0.15}
+			cost = 250
+			traits = {victory_through_airpower}
+		}
+		ATL_rocket_scientist = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {rocketry = 0.15}
+			traits = {rocket_scientist}
+		}
+		ATL_naval_theorist = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {naval_doctrine = 0.10}
+			traits = {naval_theorist}
+		}
+		ATL_military_theorist = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			research_bonus = {land_doctrine = 0.10}
+			traits = {military_theorist}
+		}
+	}
+	army_chief = {
+		ATL_army_chief_morale_2 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {army_chief_morale_2}
+		}
+		ATL_army_chief_offensive_1 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {army_chief_offensive_1}
+		}
+	}
+	navy_chief = {
+		ATL_navy_chief_maneuver_3 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {navy_chief_maneuver_3}
+		}
+		ATL_navy_chief_decisive_battle_3 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {navy_chief_decisive_battle_3}
+		}
+		ATL_navy_fleet_logistics_3 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {navy_fleet_logistics_3}
+		}
+		ATL_navy_naval_air_defense_2 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {navy_naval_air_defense_2}
+		}
+	}
+	air_chief = {
+		ATL_air_strategic_bombing_2 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {air_strategic_bombing_2}
+		}
+		ATL_air_chief_old_guard = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {air_chief_old_guard}
+		}
+	}
+	high_command = {
+		ATL_navy_naval_air_defense_2 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {navy_naval_air_defense_2}
+		}
+		ATL_air_strategic_bombing_1 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {air_strategic_bombing_1}
+		}
+		ATL_navy_screen_2 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {navy_screen_2}
+		}
+		ATL_army_regrouping_1 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {army_regrouping_1}
+		}
+		ATL_navy_capital_ship_3 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {navy_capital_ship_3}
+		}
+		ATL_air_naval_strike_1 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {air_naval_strike_1}
+		}
+		ATL_navy_carrier_2 = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = ATL}
+			traits = {navy_carrier_2}
+		}
+	}
 }

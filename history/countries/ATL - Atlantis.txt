@@ -315,42 +315,114 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Takez Vazilakez"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
+	traits = {trickster infantry_leader}
 	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Oviron Muziviz"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { 
-	#
-	}
+	traits = {naval_invader}
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Baurizo Nunnaka"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { 
-	#
-	}
+	traits = {infantry_leader}
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Tunnaton Dorvanev"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { 
-	#
-	}
+	traits = {panzer_leader}
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Auvizumon Vannezik"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { 
-	#
-	}
+	traits = {trickster}
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_navy_leader = {
+	name = "Bob"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
+	traits = {ironside superior_tactician blue_water_expert}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Bob's Brother"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
+	traits = {ironside spotter green_water_expert}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Bop, Bob's Evil Twin"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
+	traits = {fleet_protector fly_swatter inshore_fighter}
+	skill = 5
+	attack_skill = 2
+	defense_skill = 5
+	maneuvering_skill = 5
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Bob 2, Eletric Boogaloo"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
+	traits = {seawolf superior_tactician blue_water_expert}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Jerry, not Bob"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
+	traits = {blockade_runner fleet_protector}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Bob Again"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
+	traits = {spotter blue_water_expert}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 4
 }
