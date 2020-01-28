@@ -506,3 +506,43 @@ adjacency_rule
 	icon = 2875
 	offset = { -15 0 -10 }
 }
+
+#Gates of Hadu
+adjacency_rule
+{
+	name = "HADU_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = {13903 13904}
+	
+	icon = 2427
+	offset = { -30 0 -17 }
+}
