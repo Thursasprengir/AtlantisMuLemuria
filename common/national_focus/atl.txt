@@ -157,7 +157,7 @@ focus = {
 	}
 focus = {
 		id = ATL_befriend_kaprastiak
-		icon = GFX_ATL_military
+		icon = GFX_hand_coins
 		prerequisite = {focus = ATL_attack_itorkanak}
 		mutually_exclusive = {focus = ATL_attack_all}
 		
@@ -206,7 +206,7 @@ focus = {
 	}
 focus = {
 		id = ATL_befriend_itorkanak
-		icon = GFX_ATL_military
+		icon = GFX_red_sails
 		prerequisite = {focus = ATL_attack_kaprastiak}
 		mutually_exclusive = {focus = ATL_attack_all}
 		
@@ -322,7 +322,7 @@ focus = {
 	}
 focus = {
 		id = ATL_black_daggers_2
-		icon = GFX_ATL_military
+		icon = GFX_focus_secret_rearmament
 		prerequisite = {focus = ATL_black_daggers}
 		
 		x = 1
@@ -1987,6 +1987,7 @@ focus = {
 focus = {
 		id = ATL_mil_main
 		icon = GFX_ATL_military
+		prerequisite = {}
 		
 		x = 21
 		y = 0
