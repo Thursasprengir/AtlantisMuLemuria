@@ -1,5 +1,57 @@
 ideas = {
 	country = {
+		ATL_parasite_fighter = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				category_strat_bomber = {
+					air_attack = 1
+					air_defence = 0.2
+					air_bombing = -0.05
+				}
+			}
+		}
+		ATL_light_bomber = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				category_cas = {
+					air_range = 0.5
+					air_defence = 0.2
+				}
+			}
+		}
+		ATL_VLFP_tech = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				carrier = {
+					naval_speed = -0.9
+					surface_visibility = 4
+					anti_air_attack = 0.3
+					carrier_size = 3
+					armor_value = -0.6
+				}
+			}
+		}
 		ATL_trading_empire = {
 			allowed = {
 				always = no
