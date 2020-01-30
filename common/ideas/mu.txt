@@ -1,5 +1,56 @@
 ideas = {
 	country = {
+		MUU_infantry_marsh = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+			
+
+			modifier = {
+				category_light_infantry = {marsh = {attack = 0.15 defence = 0.10}}
+				category_line_artillery = {marsh = {attack = 0.15 defence = 0.10}}
+				category_support_battalions = {marsh = {attack = 0.15 defence = 0.10}}
+			}
+		}
+		MUU_motorized_marsh = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				category_light_infantry = {marsh = {attack = 0.15 defence = 0.10}}
+				category_line_artillery = {marsh = {attack = 0.15 defence = 0.10}}
+				category_support_battalions = {marsh = {attack = 0.15 defence = 0.10}}
+				mechanized = {marsh = {attack = 0.15 defence = 0.10}}
+				motorized = {marsh = {attack = 0.15 defence = 0.10}}
+			}
+		}
+		MUU_armor_marsh = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				category_light_infantry = {marsh = {attack = 0.15 defence = 0.10}}
+				category_line_artillery = {marsh = {attack = 0.15 defence = 0.10}}
+				category_support_battalions = {marsh = {attack = 0.15 defence = 0.10}}
+				mechanized = {marsh = {attack = 0.15 defence = 0.10}}
+				motorized = {marsh = {attack = 0.15 defence = 0.10}}
+				category_all_armor = {marsh = {attack = 0.15 defence = 0.10}}
+			}
+		}
 		MUU_rural_isolation = {
 			allowed = {
 				always = no

@@ -4068,8 +4068,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {set_technology = {marsh_infantry = 1}}
-			custom_effect_tooltip = 01_MUU_marsh_inf
+			add_ideas = {idea = MUU_marsh_infantry}
 		}
 	}
 focus = {
@@ -4097,8 +4096,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {set_technology = {marsh_motorized = 1}}
-			custom_effect_tooltip = 01_MUU_marsh_mot
+			swap_ideas = {
+				remove_idea = MUU_marsh_infantry
+				add_idea = MUU_marsh_motorized
+			}
 		}
 	}
 focus = {
@@ -4126,8 +4127,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {set_technology = {marsh_armor = 1}}
-			custom_effect_tooltip = 01_MUU_marsh_arm
+			swap_ideas = {
+				remove_idea = MUU_marsh_motorized
+				add_idea = MUU_armor_marsh
+			}
 		}
 	}
 focus = {
