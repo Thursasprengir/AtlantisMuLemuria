@@ -2561,6 +2561,27 @@ focus = {
 			}
 		}
 	}
+focus = {
+		id = ATL_sumendia_2
+		icon = GFX_r56_goal_generic_coastal_navy
+		prerequisite = {focus = ATL_sumendia}
+		
+		x = 21
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = {idea = ATL_lend_lease}
+		}
+	}
 	
 ################################################################## 
 #ATLANTEAN AFRICA 

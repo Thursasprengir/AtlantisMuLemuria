@@ -9,8 +9,13 @@ ideas = {
 
 			picture = limited_conscription
 
-			modifier = {
-				category_strat_bomber = {
+			equipment_bonus = {
+				strat_bomber_equipment = {
+					air_attack = 1
+					air_defence = 0.2
+					air_bombing = -0.05
+				}
+				jet_strat_bomber_equipment = {
 					air_attack = 1
 					air_defence = 0.2
 					air_bombing = -0.05
@@ -1117,6 +1122,21 @@ ideas = {
 				strat_bomber_equipment = {
 					air_range = 0.4 instant = yes
 				}	
+			}
+		}
+		ATL_lend_lease = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+			modifier = {
+				join_faction_tension = -0.25
+				send_volunteers_tension = -0.35
+				lend_lease_tension = -1
 			}
 		}
 	}
