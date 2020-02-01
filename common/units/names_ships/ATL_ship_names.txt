@@ -1,0 +1,198 @@
+﻿##### ATL NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+ATL_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	#link_numbering_with = { ATL_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
+
+	prefix = "ARS "							
+	fallback_name = "Destroyer DD-%d"					
+
+	unique = {											# TO CHECK: "unique = { }" working but does not seem to recognize names already in OOBs
+		 
+	}
+}
+
+### ESCORT DESTROYER NAMES###
+ATL_DE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DE
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	
+	#link_numbering_with = { ATL_DD_HISTORICAL }	
+
+	prefix = "ARS "							
+	fallback_name = "Destroyer Escort DE-%d"
+
+	unique = {
+		#hunting deities
+		"Woden" "Mixcoatl" "Opochtli" "Cernunnos" "Nodens" "Arawn" "Gwyn ap Nudd" "Vosegus" "Fu Xi" "Jiang Ziya" "Neith" "Pakhet" "Wepwawet" "Mielikki" "Nyyrikki" "Tapio" "Apsat" "Dali" "Aristaeus" "Artemis" "Pan" "Banka-Mundi" "Rudra" "Bhadra" "Rundas" "Arnakugsak" "Arnapkapfaaluk" "Nerrivik" "Nujalik" "Pinga" "Sedna" "Tekkeitsertok" "Khonvoum" "Ah Tabai" "Sip" "Yum Kaax" "Skaði" "Ullr" "Diana" "Bugady Musun" "Hinkon" "Devana" "Ipabog" "Podaga" "Bendis" "Ogoun" "Oshosi" "Herne"
+		#wind deities
+		"Shurdhi" "Verbti" "Egoi" "Ilmarinen" "Tuuletar" "Aeolus" "Boreas" "Eurus" "Notus" "Zephyrus" "Aparctias" "Apheliotes" "Argestes" "Caicias" "Circios" "Thraskias" "Euronotus" "Lips" "Skeiron" "Aura" "Cardea" "Kári" "Njord" "Odin" "Sídhe" "Aos Sí" "Borrum" "Vejopatis" "Bieggolmai" "Biegkegaellies" "Dogoda" "Stribog" "Varpulis" "Amun" "Henkhisesui" "Hutchai" "Qebui" "Shenbui" "Shu" "Enlil" "Ninlil" "Pazuzu" "Epigishmog" "Cihuatecayotl" "Ehecatotontli" "Ehecatl" "Mictlanpachecatl" "Tezcatlipoca" "Tlalocayotl" "Viztlampaehecatl" "Oonawieh Unggi" "Da-jo-jo" "Gǎ-oh" "Ne-o-gah" "O-yan-do-ne" "Ya-o-gah" "Silap Inua" "Okaga" "Taku Skanskan" "Tate" "Waziya" "Wiyohipeyata" "Wiyohiyanpa" "Yum" "Hurácan" "Pauahtuns" "Niltsi" "Hotoru" "Huayra-tata" "Guabancex" "Fūjin" "Sinatsuhiko" "Fei Lan" "Feng Po Po" "Feng Closa" "Han Zixian" "Yondung Halmoni" "Amihan" "Anitun Tabu" "Apo Angin" "Buhawi" "Habagat" "Lihangin" "Linamin at Barat" "Szélatya" "Szélanya" "Zada" "Hine-Tu-Whenua" "La'a Maomao" "Pakaa" "Fisaga" "Mata Upola" "Matuu" "Hanui-o-Rangi" "Tāwhirimātea" "Maruts" "Rudra" "Vayu" "Vata"
+		#sky deities
+		"Dyeus" "Hausos" "Menot" "Seul" "Perendi" "Auštaras" "Dievs" "Latobius" "Nuada" "Suilis" "Dagr" "Eostre" "Mēnô" "Nótt" "Sōwilō" "Teiwaz" "Aether" "Astraeus" "Eos" "Helios" "Hemera" "Hera" "Iris" "Nephele" "Nyx" "Selene" "Uranus" "Zeus" "Aditi" "Chandra" "Dyaus Pita" "Indra" "Ratri" "Saranyu" "Surya" "Ushas" "Asmān" "Māh" "Ohrmazd" "Tīštar" "Xwarxšēd" "Uša" "Aurora" "Caelus" "Juno" "Jupiter" "Luna" "Nox" "Sol" "Summanus" "Triglav" "Sabazios" "Amun" "Anhur" "Hathor" "Horus" "Knonsu" "Mehet-Weret" "Nut" "Ra" "Shu" "Thoth" "Achamán" "Achuhucanac" "Asherah" "Ballshamin" "El" "Yahweh" "Ilmari" "Ilmatar" "Ukko" "Perkele" "Taara" "Kug Jumo" "Tõlze" "Piambar" "Shudyr-Shamich" "Uzhara" "Värde-Škaj" "Niškepaz" "Kovava" "Inmar" "Jenmar" "Horagalles" "Mano" "Num" "Num-Toorum-Aś" "Yu Huang Dadi" "Ziwei Dadi" "Changshen Dadi" "Qinghua Dadi" "Taiji Tianhuang Dadi" "Chang'e" "Shang Di" "Xihe" "Zhinü" "Bìfàn Xuánwú Tiandi" "Bìkōng Zhēnjì Tiandi" "Bìluó Yuánshǐ Tiandi" "Bìgě Chéngkāi Tiandi" "Bìyàn Zhūjǐng Tiandi" "Bìhóng Xūkuàng Tiandi" "Bìzhēn Dòngyáng Tiandi" "Bìyáo Jiànggōng Tiandi" "Bìxiá Míngsù Tiandi" "Bìwú Yàodòng Tiandi" "Bìyùn Shǐtú Tiandi" "Bìhào Zhēngxū Tiandi" "Bìshén Zhàozhì Tiandi" "Bìchōng Zǐyào Tiandi" "Bìgě Fànkōng Tiandi" "Bìdòng Xiáyáng Tiandi" "Bìhuá Kāilì Tiandi" "Bìfàn Míngyáo Tiandi" "Bìguāng Hánhuá Tiandi" "Bìyè Zhùyán Tiandi" "Bìdān Huáqì Tiandi" "Bìkuò Címíng Tiandi" "Bìlà Gēyīn Tiandi" "Bìxū Níngyáng Tiandi" "Hwanin" "Hwanung" "Virococha" "Anhuta" "Ataksak" "Negafook" "Torngarsuk" "Atahensic" "Cabaguil" "Hunab Ku" "Tzacol" "Yaya" "Citlalincue" "Cipactibal" "Oxomoco" "Centzonmimixcoa" "Centzonhuitznahua" "Coyolxauhqui" "Maztli" "Tonatiuh" "Tianquiztli" "Citlaltonac" "Citlalmina" "Citlaxonecuilli" "Eototo" "Badessy" "Mulungu" "Nyame" "Olurun" "Shango" "Umvelinqangi" "Xamaba" "Denka" "Utixo" "Altjira" "Baiame" "Bila" "Binbeal" "Bunjil" "Munakulla" "Dhakkan" "Kajura" "Goorialla" "Kunmanggur" "Ngalyod" "Numereji" "Taipan" "Tullon" "Wagyl" "Noongar" "Wanamangura" "Witij" "Bolung" "Galeru" "Julunggul" "Kanmare" "Langal" "Myndie" "Muit" "Ungur" "Wollunqua" "Wonambi" "Wonungar" "Worombi" "Yero" "Tingarna "Yurlunggur" "Murngin" "Zanahary" "Ao" "Ranginui" "Tāwhaki" "Tane-rore" "Te Uira" "Whaitiri" "Uenuku" "Abeguwo" "Amai-te-rangi" "Atua I Kafika" "Ira" "Laufakana'a" "Tangaloa" "Trời" "Hepit" "Teshub" "Ameratsu" "Amenominakanushi" "Izanagi" "Izanami" "Marici" "Tsukuyomi" "Phaya Thaen" "Tengri" "Bai-Ulgan" "Kayra" "Ani" "Tinia" "Anshar" "Anu" "Utu"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+ATL_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "ARS "							
+	fallback_name = "Light Cruiser CL-%d"
+
+	unique = {
+		"Zuhaitz" "Osoa" "Burmuinean" "
+	}
+}
+
+### HEAVY CRUISER NAMES###
+ATL_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "ARS "							
+	fallback_name = "Heavy Cruiser CA-%d"
+
+	unique = {
+		}
+}
+
+### A-A LIGHT CRUISER NAMES###
+ATL_CLAA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CLAA
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "ARS "							
+	fallback_name = "Light Cruiser CLAA-%d"
+
+	unique = {
+		}
+}
+
+### MINELAYER NAMES###
+ATL_MINELAYERS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_MINELAYERS
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
+	
+	prefix = "ARS "							
+	fallback_name = "Minelayer CM-%d"
+
+	unique = {
+		
+	}
+}
+
+### BATTLESHIP NAMES ###
+ATL_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "ARS "							
+	fallback_name = "Battleship BB-%d"		
+
+	unique = {
+		
+	}
+}
+
+### BATTLECRUISER NAMES ###
+ATL_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "ARS "							
+	fallback_name = "Battlecruiser BC-%d"		
+
+	unique = {
+		
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+ATL_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "ARS "							
+	fallback_name = "Carrier CV-%d"	
+
+	unique = {
+
+	}
+}
+
+### LIGHT CARRIER NAMES ###
+ATL_CVL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CVL
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "ARS "							
+	fallback_name = "Carrier CVL-%d"	
+
+	unique = {
+		 
+	}
+}
+
+### SUBMARINES ###
+ATL_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { ATL }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "ARS "							
+	fallback_name = "Submarine SS-%d"	
+
+	unique = {
+		
+	}
+}
+
+
+
+
