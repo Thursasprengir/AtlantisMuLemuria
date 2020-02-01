@@ -111,7 +111,7 @@ focus = {
 	}
 focus = {
 		id = ATL_attack_itorkanak
-		icon = GFX_ATL_military
+		icon = GFX_crush_itorkanak
 		prerequisite = {focus = ATL_crime}
 		mutually_exclusive = {focus = ATL_attack_kaprastiak}
 		
@@ -134,7 +134,7 @@ focus = {
 	}
 focus = {
 		id = ATL_attack_kaprastiak
-		icon = GFX_ATL_military
+		icon = GFX_crush_kaprastiak
 		prerequisite = {focus = ATL_crime}
 		mutually_exclusive = {focus = ATL_attack_itorkanak}
 		
@@ -179,7 +179,7 @@ focus = {
 	}
 focus = {
 		id = ATL_attack_all
-		icon = GFX_ATL_military
+		icon = GFX_crush_both
 		prerequisite = {focus = ATL_attack_kaprastiak focus = ATL_attack_itorkanak}
 		mutually_exclusive = {focus = ATL_befriend_itorkanak}
 		mutually_exclusive = {focus = ATL_befriend_kaprastiak}
@@ -249,7 +249,7 @@ focus = {
 	}
 focus = {
 		id = ATL_isolation_2
-		icon = GFX_ATL_military
+		icon = GFX_overturners
 		prerequisite = {focus = ATL_isolation}
 		
 		x = 2
@@ -481,7 +481,7 @@ focus = {
 	}
 focus = {
 		id = ATL_hastugudak_2
-		icon = GFX_ATL_military
+		icon = GFX_rewrite_history
 		prerequisite = {focus = ATL_hastugudak}
 		
 		x = 3
@@ -653,7 +653,7 @@ focus = {
 	}
 focus = {
 		id = ATL_kaiturn_2
-		icon = GFX_ATL_military
+		icon = GFX_seize_money
 		prerequisite = {focus = ATL_kaiturn}
 		
 		x = 5
@@ -947,7 +947,7 @@ focus = {
 	}
 focus = {
 		id = ATL_central_2
-		icon = GFX_ATL_military
+		icon = GFX_books
 		prerequisite = {focus = ATL_central_1 focus = ATL_central_UBG_1}
 		
 		x = 8
