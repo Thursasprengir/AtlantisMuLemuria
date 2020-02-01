@@ -4355,7 +4355,7 @@ focus = {
 		}
 	}
 focus = {
-		id = MUU_light_fighter
+		id = MUU_light_fighter_focus
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = {focus = MUU_military_reforms}
 		mutually_exclusive = {focus = MUU_heavy_fighter}
@@ -4390,7 +4390,7 @@ focus = {
 		}
 	}
 focus = {
-		id = MUU_cas
+		id = MUU_cas_focus
 		icon = GFX_goal_generic_CAS
 		prerequisite = {focus = MUU_light_fighter}
 		x = 27
@@ -4424,7 +4424,7 @@ focus = {
 		}
 	}
 focus = {
-		id = MUU_nav_bomber
+		id = MUU_nav_bomber_focus
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = {focus = MUU_cas}
 		x = 27
@@ -4458,7 +4458,7 @@ focus = {
 		}
 	}
 focus = {
-		id = MUU_heavy_fighter
+		id = MUU_heavy_fighter_focus
 		icon = GFX_focus_usa_escort_fighters
 		prerequisite = {focus = MUU_military_reforms}
 		mutually_exclusive = {focus = MUU_light_fighter}
@@ -4493,7 +4493,7 @@ focus = {
 		}
 	}
 focus = {
-		id = MUU_tac_bomber
+		id = MUU_tac_bomber_focus
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = {focus = MUU_heavy_fighter}
 		x = 29
@@ -4526,7 +4526,7 @@ focus = {
 		}
 	}
 focus = {
-		id = MUU_strat_bomber
+		id = MUU_strat_bomber_focus
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = {focus = MUU_tac_bomber}
 		x = 29
