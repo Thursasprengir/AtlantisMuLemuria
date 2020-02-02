@@ -13,8 +13,8 @@ ATL_DD_HISTORICAL = {
 	prefix = "ARS "							
 	fallback_name = "Destroyer DD-%d"					
 
-	unique = {											# TO CHECK: "unique = { }" working but does not seem to recognize names already in OOBs
-		 
+	unique = {											
+		 "Kaiturun" "Eshtriat" "Eriskamen" "Gastimrid" "Hurak" "Nimarstul" "Damskritamna" "Ulurkas" "Kurnumal"
 	}
 }
 
@@ -33,12 +33,7 @@ ATL_DE_HISTORICAL = {
 	fallback_name = "Destroyer Escort DE-%d"
 
 	unique = {
-		#hunting deities
-		"Woden" "Mixcoatl" "Opochtli" "Cernunnos" "Nodens" "Arawn" "Gwyn ap Nudd" "Vosegus" "Fu Xi" "Jiang Ziya" "Neith" "Pakhet" "Wepwawet" "Mielikki" "Nyyrikki" "Tapio" "Apsat" "Dali" "Aristaeus" "Artemis" "Pan" "Banka-Mundi" "Rudra" "Bhadra" "Rundas" "Arnakugsak" "Arnapkapfaaluk" "Nerrivik" "Nujalik" "Pinga" "Sedna" "Tekkeitsertok" "Khonvoum" "Ah Tabai" "Sip" "Yum Kaax" "Skaði" "Ullr" "Diana" "Bugady Musun" "Hinkon" "Devana" "Ipabog" "Podaga" "Bendis" "Ogoun" "Oshosi" "Herne"
-		#wind deities
-		"Shurdhi" "Verbti" "Egoi" "Ilmarinen" "Tuuletar" "Aeolus" "Boreas" "Eurus" "Notus" "Zephyrus" "Aparctias" "Apheliotes" "Argestes" "Caicias" "Circios" "Thraskias" "Euronotus" "Lips" "Skeiron" "Aura" "Cardea" "Kári" "Njord" "Odin" "Sídhe" "Aos Sí" "Borrum" "Vejopatis" "Bieggolmai" "Biegkegaellies" "Dogoda" "Stribog" "Varpulis" "Amun" "Henkhisesui" "Hutchai" "Qebui" "Shenbui" "Shu" "Enlil" "Ninlil" "Pazuzu" "Epigishmog" "Cihuatecayotl" "Ehecatotontli" "Ehecatl" "Mictlanpachecatl" "Tezcatlipoca" "Tlalocayotl" "Viztlampaehecatl" "Oonawieh Unggi" "Da-jo-jo" "Gǎ-oh" "Ne-o-gah" "O-yan-do-ne" "Ya-o-gah" "Silap Inua" "Okaga" "Taku Skanskan" "Tate" "Waziya" "Wiyohipeyata" "Wiyohiyanpa" "Yum" "Hurácan" "Pauahtuns" "Niltsi" "Hotoru" "Huayra-tata" "Guabancex" "Fūjin" "Sinatsuhiko" "Fei Lan" "Feng Po Po" "Feng Closa" "Han Zixian" "Yondung Halmoni" "Amihan" "Anitun Tabu" "Apo Angin" "Buhawi" "Habagat" "Lihangin" "Linamin at Barat" "Szélatya" "Szélanya" "Zada" "Hine-Tu-Whenua" "La'a Maomao" "Pakaa" "Fisaga" "Mata Upola" "Matuu" "Hanui-o-Rangi" "Tāwhirimātea" "Maruts" "Rudra" "Vayu" "Vata"
-		#sky deities
-		"Dyeus" "Hausos" "Menot" "Seul" "Perendi" "Auštaras" "Dievs" "Latobius" "Nuada" "Suilis" "Dagr" "Eostre" "Mēnô" "Nótt" "Sōwilō" "Teiwaz" "Aether" "Astraeus" "Eos" "Helios" "Hemera" "Hera" "Iris" "Nephele" "Nyx" "Selene" "Uranus" "Zeus" "Aditi" "Chandra" "Dyaus Pita" "Indra" "Ratri" "Saranyu" "Surya" "Ushas" "Asmān" "Māh" "Ohrmazd" "Tīštar" "Xwarxšēd" "Uša" "Aurora" "Caelus" "Juno" "Jupiter" "Luna" "Nox" "Sol" "Summanus" "Triglav" "Sabazios" "Amun" "Anhur" "Hathor" "Horus" "Knonsu" "Mehet-Weret" "Nut" "Ra" "Shu" "Thoth" "Achamán" "Achuhucanac" "Asherah" "Ballshamin" "El" "Yahweh" "Ilmari" "Ilmatar" "Ukko" "Perkele" "Taara" "Kug Jumo" "Tõlze" "Piambar" "Shudyr-Shamich" "Uzhara" "Värde-Škaj" "Niškepaz" "Kovava" "Inmar" "Jenmar" "Horagalles" "Mano" "Num" "Num-Toorum-Aś" "Yu Huang Dadi" "Ziwei Dadi" "Changshen Dadi" "Qinghua Dadi" "Taiji Tianhuang Dadi" "Chang'e" "Shang Di" "Xihe" "Zhinü" "Bìfàn Xuánwú Tiandi" "Bìkōng Zhēnjì Tiandi" "Bìluó Yuánshǐ Tiandi" "Bìgě Chéngkāi Tiandi" "Bìyàn Zhūjǐng Tiandi" "Bìhóng Xūkuàng Tiandi" "Bìzhēn Dòngyáng Tiandi" "Bìyáo Jiànggōng Tiandi" "Bìxiá Míngsù Tiandi" "Bìwú Yàodòng Tiandi" "Bìyùn Shǐtú Tiandi" "Bìhào Zhēngxū Tiandi" "Bìshén Zhàozhì Tiandi" "Bìchōng Zǐyào Tiandi" "Bìgě Fànkōng Tiandi" "Bìdòng Xiáyáng Tiandi" "Bìhuá Kāilì Tiandi" "Bìfàn Míngyáo Tiandi" "Bìguāng Hánhuá Tiandi" "Bìyè Zhùyán Tiandi" "Bìdān Huáqì Tiandi" "Bìkuò Címíng Tiandi" "Bìlà Gēyīn Tiandi" "Bìxū Níngyáng Tiandi" "Hwanin" "Hwanung" "Virococha" "Anhuta" "Ataksak" "Negafook" "Torngarsuk" "Atahensic" "Cabaguil" "Hunab Ku" "Tzacol" "Yaya" "Citlalincue" "Cipactibal" "Oxomoco" "Centzonmimixcoa" "Centzonhuitznahua" "Coyolxauhqui" "Maztli" "Tonatiuh" "Tianquiztli" "Citlaltonac" "Citlalmina" "Citlaxonecuilli" "Eototo" "Badessy" "Mulungu" "Nyame" "Olurun" "Shango" "Umvelinqangi" "Xamaba" "Denka" "Utixo" "Altjira" "Baiame" "Bila" "Binbeal" "Bunjil" "Munakulla" "Dhakkan" "Kajura" "Goorialla" "Kunmanggur" "Ngalyod" "Numereji" "Taipan" "Tullon" "Wagyl" "Noongar" "Wanamangura" "Witij" "Bolung" "Galeru" "Julunggul" "Kanmare" "Langal" "Myndie" "Muit" "Ungur" "Wollunqua" "Wonambi" "Wonungar" "Worombi" "Yero" "Tingarna "Yurlunggur" "Murngin" "Zanahary" "Ao" "Ranginui" "Tāwhaki" "Tane-rore" "Te Uira" "Whaitiri" "Uenuku" "Abeguwo" "Amai-te-rangi" "Atua I Kafika" "Ira" "Laufakana'a" "Tangaloa" "Trời" "Hepit" "Teshub" "Ameratsu" "Amenominakanushi" "Izanagi" "Izanami" "Marici" "Tsukuyomi" "Phaya Thaen" "Tengri" "Bai-Ulgan" "Kayra" "Ani" "Tinia" "Anshar" "Anu" "Utu"
+		"Likismar" "Zantuzan" "Grehtrin" "Mawrast" "Krikamnis" "Weshan" "Radkris" "Hegrisan" "Lenristam"
 	}
 }
 
@@ -55,7 +50,7 @@ ATL_CL_HISTORICAL = {
 	fallback_name = "Light Cruiser CL-%d"
 
 	unique = {
-		"Zuhaitz" "Osoa" "Burmuinean" "
+		"Zuhaitz" "Osoa" "Burmiunean" "Chuzaseit" "Taidorie" "Anoixte" "Yamylaik" "Doxa" "Tashrets"
 	}
 }
 
@@ -72,6 +67,7 @@ ATL_CA_HISTORICAL = {
 	fallback_name = "Heavy Cruiser CA-%d"
 
 	unique = {
+		"Latasmun" "Zukustane" "Vorea" "Mutsama" "Setitla" "Akitselo" "Sumendia" "Ladskamn" Hemaritsal"
 		}
 }
 
@@ -88,6 +84,7 @@ ATL_CLAA_HISTORICAL = {
 	fallback_name = "Light Cruiser CLAA-%d"
 
 	unique = {
+		"Kirili" "Nars" "Herumasn" "Pilamskru" "Shramsit" "Dekrisna" "Sanmarnma" "Ortusgu" "Asmrisgal"
 		}
 }
 
@@ -104,7 +101,7 @@ ATL_MINELAYERS_HISTORICAL = {
 	fallback_name = "Minelayer CM-%d"
 
 	unique = {
-		
+		"Gerdan" "Reskir" "Jushantur" "Tramardimin" "Larman" "Rizidan" "Aoriu" "Hijmarn"
 	}
 }
 
@@ -121,7 +118,7 @@ ATL_BB_HISTORICAL = {
 	fallback_name = "Battleship BB-%d"		
 
 	unique = {
-		
+		"Blaskidron" "Frunusmar" "Danskigre" "Nartsunre" "Klangashna" "Jiraz" "Hetaz" "Ougerm" "Oprisgan"
 	}
 }
 
@@ -138,7 +135,7 @@ ATL_BC_HISTORICAL = {
 	fallback_name = "Battlecruiser BC-%d"		
 
 	unique = {
-		
+		"Gusm" "Hardin" "Derbut" "Polurd" "Wenidi" "Leanmi" "Keriam" "Drunime" "Reskilant" "Devisrant"
 	}
 }
 
@@ -155,7 +152,7 @@ ATL_CV_HISTORICAL = {
 	fallback_name = "Carrier CV-%d"	
 
 	unique = {
-
+		"Firdis" "Ermat" "Remran" "Dorkil" "Wurgidan" "Namrud" "Ramridis" "Regurdmna"
 	}
 }
 
@@ -172,7 +169,7 @@ ATL_CVL_HISTORICAL = {
 	fallback_name = "Carrier CVL-%d"	
 
 	unique = {
-		 
+		 "Taidrin" "Resparni" "Aldirgri" "Murunstar" "Laigrimna" "Otransin" "Wizanmer" "Elrisna"
 	}
 }
 
@@ -189,7 +186,120 @@ ATL_SS_HISTORICAL = {
 	fallback_name = "Submarine SS-%d"	
 
 	unique = {
-		
+		"Aidrna" "Greasti" "Kingrunas" "Lirstanu" "Aestaril" "Lermri" "Drenkire" "Keronir" "Erdrumzil" "Iprsetin" "Remsirtil" "Dregsirs"
+	}
+}
+
+
+### THEME: Hunting Deities ###
+ATL_HUNTING = {
+	name = NAME_THEME_HUNTING
+
+	for_countries = { ATL }
+
+	type = ship
+	
+	prefix = "ARS "							
+
+	unique = {
+		 #hunting deities
+		"Woden" "Mixcoatl" "Opochtli" "Cernunnos" "Nodens" "Arawn" "Gwyn ap Nudd" "Vosegus" "Fu Xi" "Jiang Ziya" "Neith" "Pakhet" "Wepwawet" "Mielikki" "Nyyrikki" "Tapio" "Apsat" "Dali" "Aristaeus" "Artemis" "Pan" "Banka-Mundi" "Rudra" "Bhadra" "Rundas" "Arnakugsak" "Arnapkapfaaluk" "Nerrivik" "Nujalik" "Pinga" "Sedna" "Tekkeitsertok" "Khonvoum" "Ah Tabai" "Sip" "Yum Kaax" "Skaði" "Ullr" "Diana" "Bugady Musun" "Hinkon" "Devana" "Ipabog" "Podaga" "Bendis" "Ogoun" "Oshosi" "Herne"
+	}
+}
+
+### THEME: Wind Deities ###
+ATL_WIND = {
+	name = NAME_THEME_WIND
+
+	for_countries = { ATL }
+
+	type = ship
+	
+	prefix = "ARS "							
+
+	unique = {
+		#wind deities
+		"Shurdhi" "Verbti" "Egoi" "Ilmarinen" "Tuuletar" "Aeolus" "Boreas" "Eurus" "Notus" "Zephyrus" "Aparctias" "Apheliotes" "Argestes" "Caicias" "Circios" "Thraskias" "Euronotus" "Lips" "Skeiron" "Aura" "Cardea" "Kári" "Njord" "Odin" "Sídhe" "Aos Sí" "Borrum" "Vejopatis" "Bieggolmai" "Biegkegaellies" "Dogoda" "Stribog" "Varpulis" "Amun" "Henkhisesui" "Hutchai" "Qebui" "Shenbui" "Shu" "Enlil" "Ninlil" "Pazuzu" "Epigishmog" "Cihuatecayotl" "Ehecatotontli" "Ehecatl" "Mictlanpachecatl" "Tezcatlipoca" "Tlalocayotl" "Viztlampaehecatl" "Oonawieh Unggi" "Da-jo-jo" "Gǎ-oh" "Ne-o-gah" "O-yan-do-ne" "Ya-o-gah" "Silap Inua" "Okaga" "Taku Skanskan" "Tate" "Waziya" "Wiyohipeyata" "Wiyohiyanpa" "Yum" "Hurácan" "Pauahtuns" "Niltsi" "Hotoru" "Huayra-tata" "Guabancex" "Fūjin" "Sinatsuhiko" "Fei Lan" "Feng Po Po" "Feng Closa" "Han Zixian" "Yondung Halmoni" "Amihan" "Anitun Tabu" "Apo Angin" "Buhawi" "Habagat" "Lihangin" "Linamin at Barat" "Szélatya" "Szélanya" "Zada" "Hine-Tu-Whenua" "La'a Maomao" "Pakaa" "Fisaga" "Mata Upola" "Matuu" "Hanui-o-Rangi" "Tāwhirimātea" "Maruts" "Rudra" "Vayu" "Vata"
+	}
+}
+
+### THEME: Sky Deities ###
+ATL_SKY = {
+	name = NAME_THEME_SKY
+
+	for_countries = { ATL }
+
+	type = ship
+	
+	prefix = "ARS "							
+
+	unique = {
+		#sky deities
+		"Dyeus" "Hausos" "Menot" "Seul" "Perendi" "Auštaras" "Dievs" "Latobius" "Nuada" "Suilis" "Dagr" "Eostre" "Mēnô" "Nótt" "Sōwilō" "Teiwaz" "Aether" "Astraeus" "Eos" "Helios" "Hemera" "Hera" "Iris" "Nephele" "Nyx" "Selene" "Uranus" "Zeus" "Aditi" "Chandra" "Dyaus Pita" "Indra" "Ratri" "Saranyu" "Surya" "Ushas" "Asmān" "Māh" "Ohrmazd" "Tīštar" "Xwarxšēd" "Uša" "Aurora" "Caelus" "Juno" "Jupiter" "Luna" "Nox" "Sol" "Summanus" "Triglav" "Sabazios" "Amun" "Anhur" "Hathor" "Horus" "Knonsu" "Mehet-Weret" "Nut" "Ra" "Shu" "Thoth" "Achamán" "Achuhucanac" "Asherah" "Ballshamin" "El" "Yahweh" "Ilmari" "Ilmatar" "Ukko" "Perkele" "Taara" "Kug Jumo" "Tõlze" "Piambar" "Shudyr-Shamich" "Uzhara" "Värde-Škaj" "Niškepaz" "Kovava" "Inmar" "Jenmar" "Horagalles" "Mano" "Num" "Num-Toorum-Aś" "Yu Huang Dadi" "Ziwei Dadi" "Changshen Dadi" "Qinghua Dadi" "Taiji Tianhuang Dadi" "Chang'e" "Shang Di" "Xihe" "Zhinü" "Bìfàn Xuánwú Tiandi" "Bìkōng Zhēnjì Tiandi" "Bìluó Yuánshǐ Tiandi" "Bìgě Chéngkāi Tiandi" "Bìyàn Zhūjǐng Tiandi" "Bìhóng Xūkuàng Tiandi" "Bìzhēn Dòngyáng Tiandi" "Bìyáo Jiànggōng Tiandi" "Bìxiá Míngsù Tiandi" "Bìwú Yàodòng Tiandi" "Bìyùn Shǐtú Tiandi" "Bìhào Zhēngxū Tiandi" "Bìshén Zhàozhì Tiandi" "Bìchōng Zǐyào Tiandi" "Bìgě Fànkōng Tiandi" "Bìdòng Xiáyáng Tiandi" "Bìhuá Kāilì Tiandi" "Bìfàn Míngyáo Tiandi" "Bìguāng Hánhuá Tiandi" "Bìyè Zhùyán Tiandi" "Bìdān Huáqì Tiandi" "Bìkuò Címíng Tiandi" "Bìlà Gēyīn Tiandi" "Bìxū Níngyáng Tiandi" "Hwanin" "Hwanung" "Virococha" "Anhuta" "Ataksak" "Negafook" "Torngarsuk" "Atahensic" "Cabaguil" "Hunab Ku" "Tzacol" "Yaya" "Citlalincue" "Cipactibal" "Oxomoco" "Centzonmimixcoa" "Centzonhuitznahua" "Coyolxauhqui" "Maztli" "Tonatiuh" "Tianquiztli" "Citlaltonac" "Citlalmina" "Citlaxonecuilli" "Eototo" "Badessy" "Mulungu" "Nyame" "Olurun" "Shango" "Umvelinqangi" "Xamaba" "Denka" "Utixo" "Altjira" "Baiame" "Bila" "Binbeal" "Bunjil" "Munakulla" "Dhakkan" "Kajura" "Goorialla" "Kunmanggur" "Ngalyod" "Numereji" "Taipan" "Tullon" "Wagyl" "Noongar" "Wanamangura" "Witij" "Bolung" "Galeru" "Julunggul" "Kanmare" "Langal" "Myndie" "Muit" "Ungur" "Wollunqua" "Wonambi" "Wonungar" "Worombi" "Yero" "Tingarna "Yurlunggur" "Murngin" "Zanahary" "Ao" "Ranginui" "Tāwhaki" "Tane-rore" "Te Uira" "Whaitiri" "Uenuku" "Abeguwo" "Amai-te-rangi" "Atua I Kafika" "Ira" "Laufakana'a" "Tangaloa" "Troi" "Hepit" "Teshub" "Ameratsu" "Amenominakanushi" "Izanagi" "Izanami" "Marici" "Tsukuyomi" "Phaya Thaen" "Tengri" "Bai-Ulgan" "Kayra" "Ani" "Tinia" "Anshar" "Anu" "Utu"
+	}
+}
+
+### THEME: Death Deities ###
+ATL_DEATH = {
+	name = NAME_THEME_DEATH
+
+	for_countries = { ATL }
+
+	type = ship
+	
+	prefix = "ARS "							
+
+	unique = {
+		#Death Deities
+		"Ala" "Ogbunabali" "Eshu" "Iku" "Aker" "Andjety" "Anubis" "Aqen" "Duamutef" "Hapi" "Imset" "Kherty" "Medjed" "Nephthys" "Osiris" "Qebehseneuf" "Seker" "Serapis" "Cihuateteo" "Coatlicue" "Itztlacoliuhqui" "Mictecacihuatli" "Mictlantecihtli" "Tlaloc" "Xipe Totec" "Xolotl" "Muut" "Luison" "Ta'xet" "Tia" "Supay" "Vichama" "Aipaloovik" "Pana" "El Tío" "Santa Muerte" "San La Muerte" "San Pascualito" "Camazotz" "Ixtab" "Xtabay" "Chepi" "Maquetauire Guayaba" "Opiel Guabiron" "Baron Samedi" "Baron La Croix" "Baron Cimitiere" "Baron Kriminel" "Ghede Nibo" "Maman Brigitte" "Mot" "Aminon" "Barastyr" "Ishtar-Deela" "Yin Changsheng" "Wang Yuan" "Yan Luo" "Bao Zheng" "Dong Ji" "Huang Xile" "Han Qinhu" "Fan Zhongyan" "Kou Zhun" "Cai Yulei" "Zhao He" "Zhang Heng" "Duzi Ren" "Zhou Qi" "Shen Cha" "Yang Yun" "Yan Di" "Ji Kang" "Immortal Wang" "Enma" "Shinigami" "Djall" "Giltine" "Māra" "Morana" "Peckols" "Peklenc" "Veles" "Chernobog" "Erio" "Ankou" "Cichol" "Crom Cruach" "Donn" "Mannanan" "The Morrigan" "Scáthach" "Aita" "Culga" "Februus" "Mani" "Mania" "Mantus" "Orcus" "Tuchulcha" "Vanth" "Tuoni" "Kalma" "Acheron" "Apollo" "Alpheus" "Atropos" "Charon" "Cocytus" "Erebus" "Eridanos" "Erinyes" "Hades" "Hermes" "Keres" "Lampades" "Lethe" "Limos" "Macaria" "Persephone" "Phlegethon" "Styx" "Tartarus" "Thanatos" "Hecate" "Hypnos" "Dea Tacita" "Dis Pater" "Mors" "Libitina" "Nenia Dea" "Pluto" "Proserpina" "Soranus" "Viduus" "Freya" "Hel" "Rán" "Ereshkigal" "Jabru" "Namtar" "Nergal" "Nunsusinak" "Erra" "Azyren" "Erlik" "Nga" "Xargi" "Wuluwaid" "Degei" "Hine-nui-te-pō" "Whiro" "Chitragupta" "Mara" "Yama" "Dhumavati" "Angra Mainyu" "Asto Vidatu" "Batara Kala" "Shingon" "Pong Lalondong" "Kumaktok" "Sidapa" "Magwayen" "Sitan" "Manduyapit" "Mama Guayen" "Badadum"
+	}
+}
+
+### THEME: Fertility Deities ###
+ATL_FERTILITY = {
+	name = NAME_THEME_FERTILITY
+
+	for_countries = { ATL }
+
+	type = ship
+	
+	prefix = "ARS "							
+
+	unique = {
+		#Fertility Deities
+		"Asase Ya" "Mbaba Mwana Waresa" "Oshun" "Bastet" "Heqet" "Heryshaf" "Isis" "Mesenet" "Min" "Renenutet" "Sobek" "Sopdet" "Tawaret" "Tefnut" "Oya" "Kokopelli" "Hanhepi Wi" "Chimala" "Tonacatecuhtli" "Tonacacihuatl" "Xochitlicue" "Xochipilli" "Xochiquetzal" "Quezalcoatl" "Mama Ocllo" "Sara Mama" "Pachamama" "Akna" "Pukkeenegak" "Ixchel" "Maximón" "Chaquén" "Atabey" "Yúcahu" "Ayida-Weddo" "Attar" "Anahit" "Aramazd" "Astoreth" "Hadad" "Nikkal" "Tanit" "Jiutian Xuannü" "Yúnxiāo Niángniáng" "Qióngxiāo Niángniáng" "Bìxiāo Niángniáng" "Chén Jìnggū" "Hutellurra" "Irsirra" "Tawara" "Shaushka" "Prithvi" "Gayatri" "Lajja Gauri" "Manasa" "Parvati" "Sinivali" "Anahita" "Spenta Armaiti" "Ashi" "Kichijōten" "Kuebiko" "Inari Ōkami" "Shinda" "Ama-arhus" "Amasagnul" "Dumuzid" "Gatumdag" "Nanshe" "Nin-imma" "Sharra Itu" "Inanna" "Umay" "Prende" "Laima" "Brigid" "Damara" "Damona" "Epona" "Nantosuelta" "Onuava" "Rosmerta" "Fufluns" "Thesan" "Turan" "Äkräs" "Rauni" "Pellon-Pekko" "Metsik" "Šun-Šočõnava" "Mu-Kyldyśin" "Zarni-Ań" "Aranyanya" "Kalteš-Ekwa" "Ēostre" "Freyr" "Freyja" "Frigg" "Gefjon" "Nerthus" "Thor" "Alphaea" "Demeter" "Dionysus" "Ilithyia" "Phanes" "Priapus" "Tychon" "Bacchus" "Bona Dea" "Candelifera" "Carmenta" "Domidicus" "Domitius" "Fascinus" "Fecunditas" "Feronia" "Inuus" "Jugatinus" "Juno" "Liber" "Libera" "Manturna" "Mutunus Tutunus" "Partula" "Pertuda" "Picumnus" "Prema" "Robigus" "Subigus" "Virginiensis" "Beiwe" "Rana Niejta" "Dagda" "Dzydzilelya" "Jarilo" "Kostroma" "Siebog" "Svetovid" "Zeme" "Živa" "Gedi" "Makemake" "Tagroa Siria" "Tangaroa" "Haumea" "Kamapua'a" "Laka" "Lono" "Nuakea" "Anjea" "Birrahgnooloo" "Dilga" "Kunapipi" "Ungud"
+	}
+}
+
+### THEME: Knowledge Deities ###
+ATL_KNOWLEDGE = {
+	name = NAME_THEME_KNOWLEDGE
+
+	for_countries = { ATL }
+
+	type = ship
+	
+	prefix = "ARS "							
+
+	unique = {
+		#knowledge deities
+		"Sia" "Seshat" "Anansi" "Orunmila" "Tir" "Papa Legba" "Ogma" "Wenchang Wang" "Kui Xing" "Zhuyu Xingjun" "Guan Yu" "Lu Dongbin" "Laozi" "Confucius" "Bao Zheng" "Manjushri" "Menrva" "Athena" "Coeus" "Metis" "Saraswati" "Brihaspati" "Shukra" "Dakshinamurthy" "Hayagriva" "Gayatri" "Savitri" "A'as" "Kamrusepa" "Benzaiten" "Fukurokuju" "Omoikane" "Tenjin" "Al-Kutbay" "Enki" "Nabu" "Nidaba" "Bochica" "Sága" "Snotra" "Vör" "Alviss" "Heimdallr" "Kvasir" "Mimir" "Tyr" "Utgard-Loki" "Vafthrudnir" "Ahura Mazda" "Chista" "Anulap" "Ejebong" "Egeria" "Fabulinus" "Minerva" "Providentia" "Gamayun" "Mergen"
+	}
+}
+
+### THEME: Chief Deities ###
+ATL_CHIEF = {
+	name = NAME_THEME_CHIEF
+
+	for_countries = { ATL }
+
+	type = ship
+	
+	prefix = "ARS "							
+
+	unique = {
+		#chief deities
+		"Gitche Manitou" "Ometeotl" "Baiame" "Nyame" "Huitzilopochtli" "Quezalcoatl" "Debata" "Ba'al" "Ba'al Hammon" "Dagda" "Amun" "Poseidon" "Yuanshi Tianzun" "Theshxwe" "Nana Buluku" "Seyyon" "Mayyon" "Vendhan" "Kotravai" "Ra" "Ukko" "Wōden" "Armazi" "Ghmerti" "Zeus" "Tupa" "Kāne" "Shiva" "Brahma" "Vishnu" "Indra" "Arinna" "Teshub" "Angwusnasomtaka" "Viracocha" "Anguta" "Amenominakanushi" "Izanagi-no-Mikoto" "Amaterasu-Ōmikami" "Dangun" "Wakan Tanka" "Inyan" "Endovelicus" "Kugu" "Jumo" "Tāne" "Hunab Ku" "Itzamna" "Khonvoum" "An" "Enlil" "Marduk" "Coyote" "Chiminugagua" "Dushara" "Odin" "Xucau" "Ahura Mazda" "Bathala" "Kan-Laon" "Jupiter" "Beaivi" "Perun" "Tengri" "Kayra" "Lac Long Quan" "Bondye" "Olurun" "Unkulunkulu" "Umvelinqangi"
 	}
 }
 
