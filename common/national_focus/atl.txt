@@ -2233,7 +2233,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_ideas = {idea = ATL_parasite_fighter}
+			custom_effect_tooltip = 01_ATL_parasite
+			hidden_effect = {set_technology = {ATL_parasite_fighter = 1}}
 		}
 	}
 focus = {
@@ -2509,7 +2510,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_ideas = {idea = ATL_VLFP_tech}
+			custom_effect_tooltip = 01_ATL_VLFP
+			hidden_effect = {set_technology = {ATL_VLFP_tech = 1}}
 		}
 	}
 focus = {
@@ -2530,7 +2532,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_ideas = {idea = ATL_light_bomber}
+			custom_effect_tooltip = 01_ATL_light_bombers
+			hidden_effect = {set_technology = {ATL_light_bomber = 1}}
 		}
 	}
 focus = {

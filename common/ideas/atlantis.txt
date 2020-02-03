@@ -1,62 +1,5 @@
 ideas = {
 	country = {
-		ATL_parasite_fighter = {
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = limited_conscription
-
-			equipment_bonus = {
-				strat_bomber_equipment = {
-					air_attack = 1
-					air_defence = 0.2
-					air_bombing = -0.05
-				}
-				jet_strat_bomber_equipment = {
-					air_attack = 1
-					air_defence = 0.2
-					air_bombing = -0.05
-				}
-			}
-		}
-		ATL_light_bomber = {
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = limited_conscription
-
-			modifier = {
-				category_cas = {
-					air_range = 0.5
-					air_defence = 0.2
-				}
-			}
-		}
-		ATL_VLFP_tech = {
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = limited_conscription
-
-			modifier = {
-				carrier = {
-					naval_speed = -0.9
-					surface_visibility = 4
-					anti_air_attack = 0.3
-					carrier_size = 3
-					armor_value = -0.6
-				}
-			}
-		}
 		ATL_trading_empire = {
 			allowed = {
 				always = no
@@ -823,10 +766,10 @@ ideas = {
 			picture = hol_expand_the_colonial_army
 
 			modifier = {
-			 	industrial_capacity_factory = 0.03
+			 	industrial_capacity_factory = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				local_resources_factor = 0.15
-				equipment_conversion_speed = 0.25 
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		ATL_leasing_african_ports = {
