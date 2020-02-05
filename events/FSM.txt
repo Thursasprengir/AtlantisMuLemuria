@@ -117,15 +117,23 @@ country_event = {
 
 	is_triggered_only = yes
 	
+		
 	option = {
-		ai_chance = { factor = 100 }
 		name = fsm.5.a
+		927 = {
+			if = {
+				limit = { is_owned_by = MNU }
+				add_core_of = FSM
+			}
+		}
 		MNU = {
 			every_unit_leader = {
 				set_nationality = FSM
 			}
 		}
 		annex_country = { target = MNU transfer_troops = yes }
+		add_political_power = 20
+		set_country_flag = MNU_annexed
 	}
 }
 #Manu Rejects / Revolts
