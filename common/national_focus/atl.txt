@@ -67,7 +67,7 @@ focus = {
 	}
 focus = {
 		id = ATL_deimila
-		icon = GFX_ATL_military
+		icon = GFX_deimila_eye
 		mutually_exclusive = {focus = ATL_gostudi}
 		prerequisite = {focus = ATL_main}
 		
@@ -89,7 +89,7 @@ focus = {
 	}
 focus = {
 		id = ATL_crime
-		icon = GFX_ATL_military
+		icon = GFX_cuffs_truncheon
 		prerequisite = {focus = ATL_deimila focus = ATL_gostudi}
 		
 		x = 8
@@ -1310,7 +1310,7 @@ focus = {
 	}
 focus = {
 		id = ATL_attack_sicilians
-		icon = GFX_ATL_military
+		icon = GFX_attack_cosa_nostra
 		prerequisite = {focus = ATL_open}
 		mutually_exclusive = {focus = ATL_befriend_sicilians}
 		
@@ -1402,7 +1402,7 @@ focus = {
 	}
 focus = {
 		id = ATL_befriend_sicilians
-		icon = GFX_ATL_military
+		icon = GFX_ally_cosa_nostra
 		prerequisite = {focus = ATL_open}
 		mutually_exclusive = {focus = ATL_attack_sicilians}
 		
@@ -1428,7 +1428,7 @@ focus = {
 	}
 focus = {
 		id = ATL_befriend_siegels
-		icon = GFX_ATL_military
+		icon = GFX_siegels
 		prerequisite = {focus = ATL_befriend_sicilians}
 		
 		x = 15
