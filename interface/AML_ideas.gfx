@@ -1,5 +1,35 @@
 spriteTypes = {
 
+	### Temps, fill empty slots in the UI ###
+	### DDS files intentionally don't exist to take advantage of a UI bug and not appear in the interface ###
+	spriteType = {
+		name = "GFX_idea_temp_1"
+		texturefile = "gfx/interface/empty.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_temp_2"
+		texturefile = "gfx/interface/empty.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_temp_3"
+		texturefile = "gfx/interface/empty.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_temp_4"
+		texturefile = "gfx/interface/empty.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_temp_5"
+		texturefile = "gfx/interface/empty.tga"
+	}
+
+	###Override for vanilla bug###	
+	spriteType = {
+		name = "GFX_idea_CZE_planning_bonus_KR"
+		texturefile = "gfx/interface/ideas/idea_cze_planning_bonus.dds"
+	}
+
+	###START###
 	spriteType = {
 		name = "GFX_idea_GEQ_scientific_backlog"
 		texturefile = "gfx/interface/ideas/idea_jap_duplicate_research.dds"
@@ -147,5 +177,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_yenamirtal"
 		texturefile = "gfx/interface/ideas/yenamirtal.dds"
+	}
+	spriteType = {
+		name = "GFX_trading_empire"
+		texturefile = "gfx/interface/ideas/trading_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_naval_tradition"
+		texturefile = "gfx/interface/ideas/multiple_ships.tga"
+	}
+	spriteType = {
+		name = "GFX_outdated_airforce"
+		texturefile = "gfx/interface/ideas/old_airplane.dds"
 	}
 }
