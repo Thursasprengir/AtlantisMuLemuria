@@ -8,4 +8,4 @@ tags={
 replace_path = "history/states"
 replace_path = "gfx/loadingscreens"
 name="AML Dev"
-supported_version="1.8.*"
+supported_version="1.8.2"
