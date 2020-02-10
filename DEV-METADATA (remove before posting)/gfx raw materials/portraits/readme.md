@@ -1,2 +1,0 @@
-### Readme
-Portrait raw materials.
