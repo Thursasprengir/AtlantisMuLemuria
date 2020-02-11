@@ -1,0 +1,466 @@
+ideas = {
+
+
+	
+	political_advisor = {
+		CAS_thanikas_bousinissi = {
+			
+			
+			allowed = {
+				original_tag = "CAS"
+			}
+			
+
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+			
+		CAS_anakistas_gobriski = {
+			
+			
+			allowed = {
+				original_tag = "CAS"
+			}
+			
+
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		CAS_laimaria_unismitri = {
+			
+			
+			allowed = {
+				original_tag = "CAS"
+			}
+			
+
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+#NAMES CHANGED UP TO THIS POINT
+	CAS_damaskinos = {
+
+		picture = generic_political_advisor_europe_5
+		
+		allowed = {
+			original_tag = CAS
+		}
+		
+		traits = { compassionate_gentleman }
+	}
+
+	CAS_georgios_papandreou = {
+
+		picture = generic_political_advisor_europe_2
+			
+		allowed = {
+			original_tag = CAS
+		}
+		
+		traits = { silent_workhorse }
+	}
+
+	CAS_evripidis_bakirtris = {
+
+		picture = generic_political_advisor_europe_3
+		
+		allowed = {
+			original_tag = CAS
+		}
+		
+		traits = { war_industrialist }
+	}
+}
+
+theorist = {
+
+	CAS_nikolaos_plastiras = {
+				
+		picture = generic_army_europe_3
+
+		allowed = {
+			original_tag = CAS
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { military_theorist }
+	}
+
+	CAS_eleftherios_venizelos = {
+				
+		picture = generic_political_advisor_europe_1
+			
+		allowed = {
+			original_tag = CAS
+		}
+		
+		research_bonus = {
+			air_doctrine = 0.07
+		}
+		
+		traits = { air_warfare_theorist }
+	}
+}
+	# MILITARY
+	army_chief = {
+		
+		CAS_alexander_papagos = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAS_konstantinos_ventiris = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		
+		CAS_panagiotis_gazis = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAS_vasilios_tsarpalis = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+	
+		
+		CAS_alexandros_sakellariou = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAS_petros_voulgaris = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		CAS_aris_velouchiotis = {
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+			picture = generic_army_europe_1
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		CAS_napoleon_zervas = {
+			
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+			picture = generic_army_europe_2
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAS_nikos_beloyannis = {
+			
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+			picture = generic_air_europe_2
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAS_aristeidis_moraitinis = {
+			
+			
+			allowed = {
+				original_tag = CAS
+			}
+			
+			picture = generic_air_europe_2
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		CAS_gnaf = {
+			picture = generic_air_manufacturer_3
+			allowed = {	original_tag = CAS}
+			research_bonus = {air_equipment = 0.14}
+			traits = { light_aircraft_manufacturer }
+		}
+		CAS_naval_aircraft_manufacturer = {
+			picture = generic_air_manufacturer_3
+			allowed = {original_tag = CAS}
+			research_bonus = {air_equipment = 0.15}
+			traits = {naval_aircraft_manufacturer}
+		}
+		CAS_heavy_aircraft_manufacturer = {
+			picture = generic_air_manufacturer_3
+			allowed = {original_tag = CAS}
+			research_bonus = {air_equipment = 0.15}
+			traits = {heavy_aircraft_manufacturer}
+		}
+		CAS_medium_aircraft_manufacturer = {
+			picture = generic_air_manufacturer_3
+			allowed = {original_tag = CAS}
+			research_bonus = {air_equipment = 0.15}
+			traits = {medium_aircraft_manufacturer}
+		}
+	}
+
+	naval_manufacturer = { 
+			
+		designer = yes
+		
+		CAS_royal_hellenic_naval_shipyard = {
+			picture = generic_naval_manufacturer_1
+			allowed = {	original_tag = CAS	}
+			research_bonus = {naval_equipment = 0.10}
+			traits = { naval_manufacturer }
+		}
+		CAS_pacific_fleet_naval_manufacturer = {
+			picture = generic_naval_manufacturer_1
+			allowed = {original_tag = CAS}
+			research_bonus = {naval_equipment = 0.15}
+			traits = {pacific_fleet_naval_manufacturer}
+		}
+		CAS_battlefleet_designer = {
+			picture = generic_naval_manufacturer_1
+			allowed = {original_tag = CAS}
+			research_bonus = {naval_equipment = 0.15}
+			traits = {battlefleet_designer}
+		}
+		CAS_private_shipyards = {
+			picture = generic_naval_manufacturer_1
+			allowed = {	original_tag = CAS	}
+			research_bonus = {	naval_equipment = 0.15	}
+			traits = { naval_manufacturer }
+		}
+		
+	}
+	tank_manufacturer = {
+		CAS_heavy_tank_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {armor = 0.15}
+			traits = {heavy_tank_manufacturer}
+		}
+		CAS_fast_tank_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {armor = 0.15}
+			traits = {fast_tank_manufacturer}
+		}
+		CAS_med_tank_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {armor = 0.15}
+			traits = {medium_tank_manufacturer}
+		}
+		CAS_generic_tank_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {armor = 0.15}
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+				light_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}		
+	}	
+	materiel_manufacturer = {
+		designer = yes
+		CAS_infantry_equipment_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {infantry_weapons = 0.15}
+			traits = {infantry_equipment_manufacturer}
+		}
+		CAS_artillery_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {artillery = 0.15}
+			traits = {artillery_manufacturer}
+		}
+		CAS_motorized_manufacturer = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {motorized_equipment = 0.15}
+			traits = {motorized_equipment_manufacturer}
+		}
+	}
+	industrial_concern = {
+		CAS_refinery_concern = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {synth_resources = 0.15}
+			modifier = {fuel_gain_factor_from_states = 0.1}
+			traits = {refinery_concern}
+		}
+		CAS_electronics_concern = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			research_bonus = {electronics = 0.15}
+			traits = {electronics_concern}
+		}
+		CAS_industrial_concern = {
+			picture = generic_political_advisor_europe_1
+			allowed = {original_tag = CAS}
+			modifier = {industrial_capacity_dockyard = 0.05}
+			research_bonus = {industry = 0.15}
+			traits = {industrial_concern}
+		}
+	}
+}
