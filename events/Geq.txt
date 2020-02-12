@@ -757,16 +757,12 @@ country_event = {
 		name = geq.34.a
 		random_list = {
 			30 = {
-				add_ideas = {
-					GEQ_new_researchers
-				}
+				set_technology = {chemical_experimentation_geq = 1}
 			}
 			70 = {
 			}
 		}
-		add_ideas = {
-			chemical_experimentation_geq
-		}
+		set_technology = {chemical_experimentation_geq = 1}
 	}
 }
 
