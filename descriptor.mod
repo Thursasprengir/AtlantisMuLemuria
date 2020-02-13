@@ -1,4 +1,4 @@
-version="1.1.2"
+version="1.2"
 tags={
 	"Alternative History"
 	"Historical"
@@ -7,5 +7,5 @@ tags={
 }
 replace_path="history/states"
 name="Atlantis Mu Lemuria"
-supported_version="1.8"
+supported_version="1.8.2"
 remote_file_id="1910094849"
