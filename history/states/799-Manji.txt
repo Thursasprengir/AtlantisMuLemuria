@@ -6,18 +6,28 @@ state={
 	history={
 		owner = ZHE
 		buildings = {
-			infrastructure = 2
-			13234 = {
-				naval_base = 2
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 2
+			13232 = {
+				naval_base = 6
 			}
 
 		}
+		victory_points = {
+			13232 8 
+		}
+	resources={
+		aluminium=6.000
+	}
 		add_core_of = ZHE
 
 	}
 	provinces={
-		13233 13234 
+		13232 13233 13234 13235 13236 13237 13238 		
 	}
-	manpower=896896
+	manpower= 1896896
 	buildings_max_level_factor=1.000
 }
