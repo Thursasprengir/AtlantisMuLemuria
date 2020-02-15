@@ -5,7 +5,11 @@ strategic_region={
 	provinces={
 		3832 4040 4490 4713 5145 5306 5332 5355 5377 5402 5426 5450 5475 5608 5634 13051 13271 13272 13273 13274 13275 13276 13277 13278 13279 13280 13281 13282 13361 13362 13363 13364 13365 13366 
 	}
-	naval_terrain=archipelago
+	naval_terrain=water_fjords
+	static_modifiers={
+				water_modifier_shark_infested=always
+
+	}
 	weather={
 		period={
 			between={ 0.0 30.0 }
