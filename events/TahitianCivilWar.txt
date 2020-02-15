@@ -128,7 +128,7 @@ country_event = {
 	}
 }
 
-# Nationalists: Seek Support
+# Democrats: Seek Support
 country_event = {
 	id = tahiti.2
 	title = tahiti.2.t
@@ -160,7 +160,7 @@ country_event = {
 	}
 }
 
-# Republicans: Seek Support
+# Communists: Seek Support
 country_event = {
 	id = tahiti.3
 	title = tahiti.2.t
@@ -191,7 +191,7 @@ country_event = {
 	}
 }
 
-# Nationalist Tahiti Wants Our Help
+# Democratic Tahiti Wants Our Help
 country_event = {
 	id = tahiti.4
 	title = tahiti.4.t
@@ -206,7 +206,7 @@ country_event = {
 
 	option = {
 		name = tahiti.4.a
-		set_country_flag = promised_help_nationalist_tahiti
+		set_country_flag = promised_help_democratic_tahiti
 		custom_effect_tooltip = tahiti.4.a.tt
 	}
 
@@ -216,7 +216,7 @@ country_event = {
 	}
 }
 
-# Republican Tahiti Wants Our Help
+# Communist Tahiti Wants Our Help
 country_event = {
 	id = tahiti.5
 	title = tahiti.5.t
@@ -231,7 +231,7 @@ country_event = {
 
 	option = {
 		name = tahiti.5.a
-		set_country_flag = promised_help_republican_tahiti
+		set_country_flag = promised_help_communist_tahiti
 		custom_effect_tooltip = tahiti.4.a.tt
 	}
 
@@ -241,7 +241,7 @@ country_event = {
 	}
 }
 
-# Nationalist Tahiti Appreciates our Help
+# Democratic Tahiti Appreciates our Help
 country_event = {
 	id = tahiti.6
 	title = tahiti.6.t
@@ -249,7 +249,7 @@ country_event = {
 	picture = GFX_report_event_finnish_letter
 	
 	trigger = {
-		has_country_flag = promised_help_nationalist_tahiti
+		has_country_flag = promised_help_democratic_tahiti
 		TAH = { has_civil_war = yes }
 		any_other_country = {
 			original_tag = TAH
@@ -264,7 +264,7 @@ country_event = {
 
 	option = {
 		name = tahiti.6.a
-		clr_country_flag = promised_help_nationalist_tahiti
+		clr_country_flag = promised_help_democratic_tahiti
 		random_other_country = {
 			limit = {
 				original_tag = TAH
@@ -275,7 +275,7 @@ country_event = {
 	}
 }
 
-# Republican Tahiti Appreciates our Help
+# Communist Tahiti Appreciates our Help
 country_event = {
 	id = tahiti.7
 	title = tahiti.7.t
@@ -283,7 +283,7 @@ country_event = {
 	picture = GFX_report_event_spain_civil_war_volunteers_01
 	
 	trigger = {
-		has_country_flag = promised_help_republican_tahiti
+		has_country_flag = promised_help_communist_tahiti
 		TAH = { has_civil_war = yes }
 		is_lend_leasing = TAH
 	}
@@ -294,7 +294,7 @@ country_event = {
 
 	option = {
 		name = tahiti.7.a
-		clr_country_flag = promised_help_republican_tahiti
+		clr_country_flag = promised_help_communist_tahiti
 		TAH = { add_opinion_modifier = { target = ROOT modifier = lend_leased_spanish_civil_war } }
 	}
 }

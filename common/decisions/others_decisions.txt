@@ -651,3 +651,86 @@ prospect_for_resources = {
 		}
 	}
 }
+TAH_foreign_support = {
+	support_tahiti_dem1 = {
+		icon = eng_blackshirt_march
+		allowed = {
+			has_manpower = 1000
+		}
+		visible = {
+			has_country_flag = promised_help_democratic_tahiti
+			NOT = {has_country_flag = helped_tahiti_with_manpower}
+		}
+		cost = 25
+		ai_will_do = {factor = 50}
+		complete_effect = {
+			every_other_country = {
+				limit = {has_war_with = TAH}
+				add_manpower = 1000
+			}
+			set_country_flag = helped_tahiti_with_manpower
+			ROOT = {add_manpower = -1000}
+		}
+	}
+	support_tahiti_dem2 = {
+		icon = generic_industry
+		allowed = {
+		}
+		visible = {
+			has_country_flag = promised_help_democratic_tahiti
+			NOT = {has_country_flag = helped_tahiti_with_guns}
+		}
+		cost = 25
+		ai_will_do = {factor = 50}
+		complete_effect = {
+			every_other_country = {
+				limit = {has_war_with = TAH}
+				ROOT = {
+					send_equipment = {
+						target = PREV
+						type = infantry_equipment
+						amount = 1000
+						old_prioritised = yes
+					}
+				}
+			}
+			set_country_flag = helped_tahiti_with_guns
+		}
+	}
+	support_tahiti_com1 = {
+		icon = eng_blackshirt_march
+		allowed = {
+			has_manpower = 1000
+		}
+		visible = {
+			has_country_flag = promised_help_communist_tahiti
+			NOT = {has_country_flag = helped_tahiti_with_manpower}
+		}
+		cost = 25
+		ai_will_do = {factor = 50}
+		complete_effect = {ROOT = {add_manpower = -1000} TAH = {add_manpower = 1000} set_country_flag = helped_tahiti_with_manpower}
+	}
+	support_tahiti_com2 = {
+		icon = generic_industry
+		allowed = {
+			has_equipment = {archetype = infantry_equipment > 1000}
+		}
+		visible = {
+			has_country_flag = promised_help_communist_tahiti
+			NOT = {has_country_flag = helped_tahiti_with_guns}
+		}
+		cost = 25
+		ai_will_do = {factor = 50}
+		complete_effect = {
+			ROOT = {
+				send_equipment = {
+					target = TAH
+					type = infantry_equipment
+					amount = 1000
+					old_prioritised = yes
+				}
+			}
+			set_country_flag = helped_tahiti_with_guns
+		}
+	}
+}

@@ -254,6 +254,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			VSH = {
+				add_ai_strategy = {
+					type = force_build_armies
+					value = 100
+				}
+			}
 			if = {
 				limit = {
 					VSH = {
@@ -444,6 +450,10 @@ focus_tree = {
 					idea = GEQ_newly_formed_state
 					days = 180
 				}
+				add_ai_strategy = {
+					type = force_build_armies
+					value = 100
+				}
 			}
 			NHI = {
 				kill_country_leader = yes
@@ -460,6 +470,10 @@ focus_tree = {
 					idea = GEQ_newly_formed_state
 					days = 180
 				}
+				add_ai_strategy = {
+					type = force_build_armies
+					value = 100
+				}
 			}
 			NCA = {
 				kill_country_leader = yes
@@ -475,6 +489,10 @@ focus_tree = {
 				add_timed_idea = {
 					idea = GEQ_newly_formed_state
 					days = 180
+				}
+				add_ai_strategy = {
+					type = force_build_armies
+					value = 100
 				}
 			}
 		}
