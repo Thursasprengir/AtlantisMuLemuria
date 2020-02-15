@@ -654,8 +654,8 @@ prospect_for_resources = {
 TAH_foreign_support = {
 	support_tahiti_dem1 = {
 		icon = eng_blackshirt_march
-		allowed = {
-			has_manpower = 1000
+		available = {
+			ROOT = {has_manpower = 1000}
 		}
 		visible = {
 			has_country_flag = promised_help_democratic_tahiti
@@ -674,7 +674,8 @@ TAH_foreign_support = {
 	}
 	support_tahiti_dem2 = {
 		icon = generic_industry
-		allowed = {
+		available = {
+			has_equipment =  {infantry_equipment > 999}
 		}
 		visible = {
 			has_country_flag = promised_help_democratic_tahiti
@@ -699,8 +700,8 @@ TAH_foreign_support = {
 	}
 	support_tahiti_com1 = {
 		icon = eng_blackshirt_march
-		allowed = {
-			has_manpower = 1000
+		available = {
+			ROOT = {has_manpower = 1000}
 		}
 		visible = {
 			has_country_flag = promised_help_communist_tahiti
@@ -712,8 +713,8 @@ TAH_foreign_support = {
 	}
 	support_tahiti_com2 = {
 		icon = generic_industry
-		allowed = {
-			has_equipment = {archetype = infantry_equipment > 1000}
+		available = {
+			has_equipment = {infantry_equipment > 999}
 		}
 		visible = {
 			has_country_flag = promised_help_communist_tahiti

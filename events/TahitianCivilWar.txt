@@ -20,7 +20,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 60	# Historical outbreak time after elections
+		days = 60
 	}
 	
 	option = { # Support Nationalists
@@ -208,11 +208,12 @@ country_event = {
 		name = tahiti.4.a
 		set_country_flag = promised_help_democratic_tahiti
 		custom_effect_tooltip = tahiti.4.a.tt
+		ai_chance = { factor = 40 }
 	}
 
 	option = {
 		name = tahiti.4.b
-		
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -233,11 +234,12 @@ country_event = {
 		name = tahiti.5.a
 		set_country_flag = promised_help_communist_tahiti
 		custom_effect_tooltip = tahiti.4.a.tt
+		ai_chance = { factor = 100 }
 	}
 
 	option = {
 		name = tahiti.5.b
-		
+		ai_chance = { factor = 40 }
 	}
 }
 
