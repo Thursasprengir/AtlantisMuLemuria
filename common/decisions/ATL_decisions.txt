@@ -196,8 +196,8 @@ ATL_espionage = {
 		visible = {has_country_flag = ATL_UK_divert}
 		cost = 200
 		days_remove = 180
-		complete_effect = {add_ideas = {idea = ATL_diverting_to} ENG = {add_ideas = {idea = ATL_diverting_from}}}
-		remove_effect = {remove_ideas = {idea = ATL_diverting_to} ENG = {remove_ideas = {idea = ATL_diverting_from}}}
+		complete_effect = {add_ideas = {ATL_diverting_to} ENG = {add_ideas = {ATL_diverting_from}}}
+		remove_effect = {remove_ideas = {ATL_diverting_to} ENG = {remove_ideas = {ATL_diverting_from}}}
 	}
 	divert_supplies = {
 		icon = generic_construction
@@ -205,8 +205,8 @@ ATL_espionage = {
 		visible = {has_country_flag = ATL_UK_divert}
 		cost = 200
 		days_remove = 90
-		complete_effect = {add_ideas = {idea = ATL_diverting_supplies_to} ENG = {add_ideas = {idea = ATL_diverting_supplies_from}}}
-		remove_effect = {remove_ideas = {idea = ATL_diverting_supplies_to} ENG = {remove_ideas = {idea = ATL_diverting_supplies_from}}}
+		complete_effect = {add_ideas = {ATL_diverting_supplies_to} ENG = {add_ideas = {ATL_diverting_supplies_from}}}
+		remove_effect = {remove_ideas = {ATL_diverting_supplies_to} ENG = {remove_ideas = {ATL_diverting_supplies_from}}}
 	}
 }
 foreign_support = {
