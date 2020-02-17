@@ -1,0 +1,93 @@
+﻿##### HOU NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+HOU_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+	for_countries = {HOU}
+	type = ship
+	ship_types = {ship_hull_light}
+	prefix = "NHV "							
+	fallback_name = "Moku-%d"
+	ordered = {
+		1 = {"Moku-%d"}
+		2 = {"Moku-%d"} 
+		3 = {"Moku-%d"} 
+		4 = {"Moku-%d"} 
+		5 = {"Moku-%d"} 
+		6 = {"Moku-%d"} 
+		7 = {"Moku-%d"} 
+		8 = {"Moku-%d"} 
+		9 = {"Moku-%d"} 
+		10 = {"Moku-%d"}
+		11 = {"Moku-%d"} 
+		12 = {"Moku-%d"}
+		13 = {"Moku-%d"}
+		14 = {"Moku-%d"}
+		15 = {"Moku-%d"}
+		16 = {"Moku-%d"}
+		17 = {"Moku-%d"}
+		18 = {"Moku-%d"}
+		19 = {"Moku-%d"}
+		20 = {"Moku-%d"}
+		21 = {"Moku-%d"}
+		22 = {"Moku-%d"}
+		23 = {"Moku-%d"}
+		24 = {"Moku-%d"}
+		25 = {"Moku-%d"}
+		26 = {"Moku-%d"}
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+HOU_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = {HOU}
+
+	type = ship
+	ship_types = {ship_hull_cruiser ship_hull_heavy ship_hull_carrier}
+	
+	prefix = "NHV "							
+	fallback_name = "Battleship BB-%d"		
+
+	unique = {
+		"Hilo" "Hoaka" "Kūkahi" "Kūlua" "Kūkolu" "Kūpau" "'Olekūkahi" "'Olekūlua" "'Olekūkolu" "'Olekūpau" "Huna" "Mohalu" "Hua" "Akua" "Hoku" "Māhealani" "Kulu" "Lā'aukūkahi" "Lā'aukūlua" "Lā'aupau" "Kāloakūkahi" "Kāloakūlua" "Kāloapau" "Kāne" "Lono" "Mauli" "Muku" "Humuma" "Hapakane" "Holokei" "Hokuiwa" "'Iwakeli'i" "Me'e" "Kauamea" "Kamo'i" "" "" "" "" ""
+	}
+}
+
+### SUBMARINES ###
+HOU_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+	for_countries = {HOU}
+	type = ship
+	ship_types = {ship_hull_submarine}					
+	fallback_name = "Pil-%d"
+	ordered = {
+		1 = {"Pil-%d"}
+		2 = {"Pil-%d"} 
+		3 = {"Pil-%d"} 
+		4 = {"Pil-%d"} 
+		5 = {"Pil-%d"} 
+		6 = {"Pil-%d"} 
+		7 = {"Pil-%d"} 
+		8 = {"Pil-%d"} 
+		9 = {"Pil-%d"} 
+		10 = {"Pil-%d"}
+		11 = {"Pil-%d"} 
+		12 = {"Pil-%d"}
+		13 = {"Pil-%d"}
+		14 = {"Pil-%d"}
+		15 = {"Pil-%d"}
+		16 = {"Pil-%d"}
+		17 = {"Pil-%d"}
+		18 = {"Pil-%d"}
+		19 = {"Pil-%d"}
+		20 = {"Pil-%d"}
+		21 = {"Pil-%d"}
+		22 = {"Pil-%d"}
+		23 = {"Pil-%d"}
+		24 = {"Pil-%d"}
+		25 = {"Pil-%d"}
+		26 = {"Pil-%d"}
+	}
+}
