@@ -1,9 +1,9 @@
-﻿add_namespace = zhenzuren
+﻿add_namespace = trinsuyin
 
 country_event = {
-	id = zhenzuren.1
-	title = zhenzuren.1.t
-	desc = zhenzuren.1.d
+	id = trinsuyin.1
+	title = trinsuyin.1.t
+	desc = trinsuyin.1.d
 	picture = GFX_report_event_chinese_officers
 
 	trigger = {
@@ -12,7 +12,7 @@ country_event = {
 		}
 		NOT = { has_country_flag = china.101_fired }
 		has_global_flag = CHI_unite
-		tag = ZHE
+		tag = TRS
 		CHI = {
 			has_war_with = JAP 
 			has_defensive_war = yes
@@ -36,7 +36,7 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 100 }
-		name = zhenzuren.1.a
+		name = trinsuyin.1.a
 		CHI = { 
 			add_to_faction = ROOT 
 			country_event = china.106
@@ -49,7 +49,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = { factor = 0 }
-		name = zhenzuren.1.b
+		name = trinsuyin.1.b
 		#Nothing
 	}
 }
