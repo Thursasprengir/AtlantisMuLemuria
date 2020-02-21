@@ -655,9 +655,9 @@ TAH_foreign_support = {
 	support_tahiti_dem1 = {
 		icon = eng_blackshirt_march
 		available = {
-			ROOT = {has_manpower = 1000}
 		}
 		visible = {
+			TAH = {has_civil_war = yes}
 			has_country_flag = promised_help_democratic_tahiti
 			NOT = {has_country_flag = helped_tahiti_with_manpower}
 		}
@@ -678,6 +678,7 @@ TAH_foreign_support = {
 			has_equipment =  {infantry_equipment > 999}
 		}
 		visible = {
+			TAH = {has_civil_war = yes}
 			has_country_flag = promised_help_democratic_tahiti
 			NOT = {has_country_flag = helped_tahiti_with_guns}
 		}
@@ -701,9 +702,9 @@ TAH_foreign_support = {
 	support_tahiti_com1 = {
 		icon = eng_blackshirt_march
 		available = {
-			ROOT = {has_manpower = 1000}
 		}
 		visible = {
+			TAH = {has_civil_war = yes}
 			has_country_flag = promised_help_communist_tahiti
 			NOT = {has_country_flag = helped_tahiti_with_manpower}
 		}
@@ -717,6 +718,7 @@ TAH_foreign_support = {
 			has_equipment = {infantry_equipment > 999}
 		}
 		visible = {
+			TAH = {has_civil_war = yes}
 			has_country_flag = promised_help_communist_tahiti
 			NOT = {has_country_flag = helped_tahiti_with_guns}
 		}
