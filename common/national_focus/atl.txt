@@ -198,8 +198,8 @@ focus = {
 		
 		completion_reward = {
 			hidden_effect = {
-				if = {ATL = {limit = {has_completed_focus = ATL_attack_itorkanak} set_country_flag = ATL_searching_kaprastiak set_country_flag = ATL_kaprastiak_flag add_ideas = {ATL_kaprastiak_at_war}}}
-				if = {ATL = {limit = {has_completed_focus = ATL_attack_kaprastiak} set_country_flag = ATL_searching_itorkanak set_country_flag = ATL_itorkanak_flag  add_ideas = {ATL_itorkanak_at_war}}}
+				if = {limit = {ATL = {has_completed_focus = ATL_attack_itorkanak}} set_country_flag = ATL_searching_kaprastiak set_country_flag = ATL_kaprastiak_flag add_ideas = {ATL_kaprastiak_at_war}}
+				if = {limit = {ATL = {has_completed_focus = ATL_attack_kaprastiak}} set_country_flag = ATL_searching_itorkanak set_country_flag = ATL_itorkanak_flag add_ideas = {ATL_itorkanak_at_war}}
 			}
 			custom_effect_tooltip = ATL_attack_all_tooltip
 		}
@@ -356,8 +356,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
+					set_state_flag = mil_effort_built
 				}
-				set_state_flag = mil_effort_built
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -376,8 +376,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
+					set_state_flag = mil_effort_built
 				}
-				set_state_flag = mil_effort_built
 			}
 		}
 	}
@@ -399,7 +399,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			all_country = {
+			every_other_country = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = large_decrease
@@ -585,8 +585,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
+					set_state_flag = civ_effort_built
 				}
-				set_state_flag = civ_effort_built
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -605,8 +605,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
+					set_state_flag = civ_effort_built
 				}
-				set_state_flag = civ_effort_built
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -625,8 +625,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
+					set_state_flag = mil_effort_built
 				}
-				set_state_flag = mil_effort_built
 			}
 		}
 	}
@@ -827,8 +827,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
+					set_state_flag = naval_effort_built
 				}
-				set_state_flag = naval_effort_built
 			}
 		}
 	}
@@ -910,7 +910,7 @@ focus = {
 			963 = {add_extra_state_shared_building_slots = 3}
 			964 = {add_extra_state_shared_building_slots = 3}
 			965 = {add_extra_state_shared_building_slots = 1}
-			remove_idea = {idea = ATL_karistig_really_pissed_off}
+			remove_ideas = ATL_karistig_really_pissed_off
 			add_timed_idea = {
 				idea = ATL_karistig_sabotaging_government
 				days = 300
@@ -1001,8 +1001,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
+					set_state_flag = mil_effort_built
 				}
-				set_state_flag = mil_effort_built
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -1021,8 +1021,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
+					set_state_flag = civ_effort_built
 				}
-				set_state_flag = civ_effort_built
 			}
 			add_ideas = {ATL_funding_industries}
 		}
@@ -1568,8 +1568,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			remove_idea = ATL_UBG_idea
-			remove_idea = ATL_karistig_pissed_off
+			remove_ideas = ATL_UBG_idea
+			remove_ideas = ATL_karistig_pissed_off
 			add_timed_idea = {
 				idea = ATL_dismantling_UBG
 				days = 360
@@ -1729,8 +1729,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			remove_idea = {idea = ATL_UBG_idea}
-			remove_idea = ATL_karistig_pissed_off
+			remove_ideas = ATL_UBG_idea
+			remove_ideas = ATL_karistig_pissed_off
 			add_timed_idea = {idea = ATL_dismantling_UBG days = 180}
 			if = {
 				random_owned_controlled_state = {
@@ -2207,7 +2207,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_ideas = {idea = ATL_bomber_range}
+			add_ideas = ATL_bomber_range
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
@@ -2220,7 +2220,7 @@ focus = {
 		id = ATL_parasite
 		icon = GFX_goal_parasite_fighters
 		prerequisite = {focus = ATL_nav_bombers}
-		prerequisite = {has_tech = strategic_bomber3}
+		available = {has_tech = strategic_bomber3}
 		
 		x = 18
 		y = 7
