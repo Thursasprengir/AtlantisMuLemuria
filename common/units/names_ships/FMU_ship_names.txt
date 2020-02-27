@@ -1,24 +1,24 @@
-﻿##### FSM NAME LISTS #####
+﻿##### FMU NAME LISTS #####
 ### REGULAR DESTROYER NAMES###
-FSM_DD_HISTORICAL = {
+FMU_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { FSM }
+	for_countries = { FMU }
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
-	#link_numbering_with = { FSM_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
+	#link_numbering_with = { FMU_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
 						
 	fallback_name = "Zerstörer %d"		
 	unique = {"Blücher" "Seydlitz" "Lützow" "Roon" "Deutschland" "Herta" "Freya" "Vineta" "Siegfried" }
 }
 
 ## LIGHT CRUISER NAMES###
-FSM_CL_HISTORICAL = {
+FMU_CL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CL
 
-	for_countries = { FSM }
+	for_countries = { FMU }
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
@@ -28,10 +28,10 @@ FSM_CL_HISTORICAL = {
 }
 
 ### HEAVY CRUISER NAMES###
-FSM_CA_HISTORICAL = {
+FMU_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
-	for_countries = { FSM }
+	for_countries = { FMU }
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -43,14 +43,14 @@ FSM_CA_HISTORICAL = {
 
 
 ### BATTLECRUISER NAMES ###
-FSM_BC_HISTORICAL = {
+FMU_BC_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BC
 
-	for_countries = { FSM }
+	for_countries = { FMU }
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	link_numbering_with = { FSM_BB_HISTORICAL }
+	link_numbering_with = { FMU_BB_HISTORICAL }
 							
 	fallback_name = "Schlachtkreuzer %d"		
 
@@ -58,10 +58,10 @@ FSM_BC_HISTORICAL = {
 }
 
 ### LIGHT CARRIER NAMES ###
-FSM_CVL_HISTORICAL = {
+FMU_CVL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CVL
 
-	for_countries = { FSM }
+	for_countries = { FMU }
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }

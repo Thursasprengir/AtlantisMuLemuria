@@ -1,6 +1,6 @@
 ﻿capital = 930
 
-oob = "FSM_1936"
+oob = "FMU_1936"
 
 # Starting tech
 set_technology = {
@@ -47,11 +47,11 @@ if = {
 		puppet = MNU
 	}
 }
-###DREADFUL FSM SHIPS###
+###DREADFUL FMU SHIPS###
 create_equipment_variant = {
 	name = "Derfflinger Class"
 	type = ship_hull_heavy_1
-	name_group = FSM_BC_HISTORICAL
+	name_group = FMU_BC_HISTORICAL
 	parent_version = 0
 	modules = {
        	fixed_ship_anti_air_slot = ship_anti_air_1
@@ -70,7 +70,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 	name = "Holtzendorff Class"
 	type = ship_hull_cruiser_panzerschiff
-	name_group = FSM_BC_HISTORICAL
+	name_group = FMU_BC_HISTORICAL
 	parent_version = 0
 	modules = {
        	fixed_ship_anti_air_slot = ship_anti_air_1
@@ -88,7 +88,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 	name = "Schwarzenberg Class"
 	type = ship_hull_cruiser_1
-	name_group = FSM_CL_HISTORICAL
+	name_group = FMU_CL_HISTORICAL
 	parent_version = 0
 	modules = {
 		fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -105,7 +105,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 	name = "Siegfried Class"
 	type = ship_hull_light_1
-	name_group = FSM_DD_HISTORICAL
+	name_group = FMU_DD_HISTORICAL
 	parent_version = 0
 	modules = {
 		fixed_ship_battery_slot = ship_light_battery_1
@@ -121,7 +121,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 	name = "Freya Class"
 	type = ship_hull_light_1
-	name_group = FSM_DD_HISTORICAL
+	name_group = FMU_DD_HISTORICAL
 	parent_version = 0
 	modules = {
 		fixed_ship_battery_slot = ship_light_battery_1
@@ -153,16 +153,16 @@ set_popularities = {
 	}
 	
 add_ideas = {
-		FSM_unfair_sufferage
-		FSM_companies
-		FSM_sanctions
+		FMU_unfair_sufferage
+		FMU_companies
+		FMU_sanctions
 				
 }
 
 create_country_leader = {
 	name = "Heinrich Ganzer"
 	desc = "POLITICS_HEINRICH_GANZER_DESC"
-	picture = "Portrait_FSM_H_Ganzer.dds"
+	picture = "Portrait_FMU_H_Ganzer.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -173,7 +173,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emil Austerlitz"
 	desc = "POLITICS_EMIL_AUSTERLITZ_DESC"
-	picture = "Portrait_FSM_E_Austerlitz.dds"
+	picture = "Portrait_FMU_E_Austerlitz.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -184,7 +184,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jakob Steinman"
 	desc = "POLITICS_JAKOB_STEINMAN_DESC"
-	picture = "Portrait_FSM_J_Steinman.dds"
+	picture = "Portrait_FMU_J_Steinman.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
