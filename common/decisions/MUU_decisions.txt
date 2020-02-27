@@ -808,7 +808,7 @@ MUU_drainage = {
 			owns_state = 888
 			controls_state = 888
 			has_idea = MUU_land_reclamation1
-			NOT = {has_state_flag = marshes_drained}
+			888 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
@@ -816,7 +816,7 @@ MUU_drainage = {
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
 		remove_effect = { 
-			888 = { set_state_flag = marshes_drained } 
+			888 = {set_state_flag = marshes_drained} 
 			888 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
@@ -834,7 +834,7 @@ MUU_drainage = {
 			owns_state = 886
 			controls_state = 886
 			has_idea = MUU_land_reclamation1
-			NOT = {has_state_flag = marshes_drained}
+			886 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
@@ -860,7 +860,7 @@ MUU_drainage = {
 			owns_state = 880
 			controls_state = 880
 			has_idea = MUU_land_reclamation1
-			NOT = {has_state_flag = marshes_drained}
+			880 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
@@ -886,7 +886,7 @@ MUU_drainage = {
 			owns_state = 879
 			controls_state = 879
 			has_idea = MUU_land_reclamation1
-			NOT = {has_state_flag = marshes_drained}
+			879 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
@@ -912,7 +912,7 @@ MUU_drainage = {
 			owns_state = 878
 			controls_state = 878
 			has_idea = MUU_land_reclamation1
-			NOT = {has_state_flag = marshes_drained}
+			878 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
@@ -938,7 +938,7 @@ MUU_drainage = {
 			owns_state = 877
 			controls_state = 877
 			has_idea = MUU_land_reclamation1
-			NOT = {has_state_flag = marshes_drained}
+			877 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
@@ -964,7 +964,7 @@ MUU_drainage = {
 			owns_state = 873
 			controls_state = 873
 			has_idea = MUU_land_reclamation1
-			NOT = {has_state_flag = marshes_drained}
+			873 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
@@ -990,7 +990,7 @@ MUU_drainage = {
 			owns_state = 871
 			controls_state = 871
 			has_idea = MUU_land_reclamation1
-			NOT = {has_state_flag = marshes_drained}
+			871 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
