@@ -342,7 +342,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built}
+						NOT = { has_state_flag = mil_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -362,7 +362,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built}
+						NOT = {has_state_flag = mil_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -406,7 +406,7 @@ focus = {
 				}
 				add_ai_strategy = {
 					type = antagonize
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 			}
@@ -571,7 +571,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = civ_effort_built}
+						NOT = {has_state_flag = civ_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = industrial_complex
@@ -591,7 +591,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = civ_effort_built}
+						NOT = { has_state_flag = civ_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = industrial_complex
@@ -611,7 +611,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built}
+						NOT = { has_state_flag = mil_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -813,7 +813,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_built}
+						NOT = { has_state_flag = naval_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -987,7 +987,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built}
+						NOT = { has_state_flag = mil_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -1007,7 +1007,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = civ_effort_built}
+						NOT = { has_state_flag = civ_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = industrial_complex
@@ -1100,22 +1100,22 @@ focus = {
 				}
 				add_ai_strategy = {
 					type = alliance
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = protect
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = send_volunteers_desire
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = support
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 			}
@@ -1149,22 +1149,22 @@ focus = {
 				}
 				add_ai_strategy = {
 					type = alliance
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = protect
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = send_volunteers_desire
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = support
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 			}
@@ -1175,22 +1175,22 @@ focus = {
 				}
 				add_ai_strategy = {
 					type = alliance
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = protect
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = send_volunteers_desire
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = support
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 			}
@@ -1301,8 +1301,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			swap_ideas = {
 				add_political_power = 50
+			swap_ideas = {
 				remove_idea = ATL_trading_empire
 				add_idea = ATL_trading_empire_2
 			}
@@ -1379,22 +1379,22 @@ focus = {
 				}
 				add_ai_strategy = {
 					type = alliance
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = protect
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = send_volunteers_desire
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = support
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 			}
@@ -1568,7 +1568,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			remove_idea = {idea = ATL_UBG_idea}
+			remove_idea = ATL_UBG_idea
 			remove_idea = ATL_karistig_pissed_off
 			add_timed_idea = {
 				idea = ATL_dismantling_UBG
@@ -1840,22 +1840,22 @@ focus = {
 				}
 				add_ai_strategy = {
 					type = alliance
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = protect
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = send_volunteers_desire
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = support
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 			}
@@ -1914,22 +1914,22 @@ focus = {
 				}
 				add_ai_strategy = {
 					type = alliance
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = protect
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = send_volunteers_desire
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 				add_ai_strategy = {
 					type = support
-					id = "ROOT"
+					id = ROOT
 					value = 100
 				}
 			}
@@ -2207,7 +2207,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add ideas = {idea = ATL_bomber_range}
+			add_ideas = {idea = ATL_bomber_range}
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
