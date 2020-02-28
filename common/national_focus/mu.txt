@@ -381,9 +381,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				idea = MUU_extended_conscription
-			}
+			add_ideas = MUU_extended_conscription
 		}
 	}
 	
@@ -412,16 +410,14 @@ focus = {
 
 		completion_reward = {
 		retire_country_leader = yes
-					create_country_leader = {
-						name = "Qatlil Hurumar"
-						desc = "POLITICS_QATLIL_HURUMAR_DESC"
-						picture = "GFX_portrait_mu_qatlil_hurumar"
-						expire = "1965.1.1"
-						ideology = democratic
-						traits = {
-			
-						}
-					}
+			create_country_leader = {
+				name = "Qatlil Hurumar"
+				desc = "POLITICS_QATLIL_HURUMAR_DESC"
+				picture = "GFX_portrait_mu_qatlil_hurumar"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {}
+			}
 		}
 	}
 	
@@ -524,9 +520,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				idea = MUU_purge_fascists1
-			}
+			add_ideas = MUU_purge_fascists1
 		}
 	}
 	
@@ -582,9 +576,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				idea = MUU_civic_education_idea
-			}
+			add_ideas = MUU_civic_education_idea
 		}
 	}
 	
@@ -640,9 +632,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				idea = MUU_ministry_of_defense
-			}
+			add_ideas = MUU_ministry_of_defense
 		}
 	}
 	##nonaligned right branch##
@@ -835,9 +825,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				idea = MUU_ministry_of_development
-			}
+			add_ideas = MUU_ministry_of_development
 		}
 	}
 	##nonaligned development branches##
@@ -865,9 +853,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				idea = MUU_mil_1
-			}
+			add_ideas = MUU_mil_1
 		}
 	}
 	
@@ -895,9 +881,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				idea = MUU_mil_2
-			}
+			add_ideas = MUU_mil_2
 		}
 	}
 	
@@ -929,7 +913,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built}
+						NOT = {has_state_flag = mil_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -943,13 +927,13 @@ focus = {
 						level = 5
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built}
+						NOT = {has_state_flag = mil_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -963,8 +947,8 @@ focus = {
 						level = 5
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built
+				}
 			}
 		}
 	}
@@ -996,7 +980,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_built}
+						NOT = {has_state_flag = naval_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -1010,13 +994,13 @@ focus = {
 						level = 5
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_built
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_built}
+						NOT = {has_state_flag = naval_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -1030,8 +1014,8 @@ focus = {
 						level = 4
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_built
+				}
 			}
 		}
 	}
@@ -1063,7 +1047,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = civ_effort_built}
+						NOT = {has_state_flag = civ_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = synthetic_refinery
@@ -1077,13 +1061,13 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = civ_effort_built}
+						NOT = {has_state_flag = civ_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = industrial_complex
@@ -1097,13 +1081,13 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = civ_effort_built}
+						NOT = {has_state_flag = civ_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = industrial_complex
@@ -1117,8 +1101,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built
+				}
 			}
 		}
 	}
@@ -1150,15 +1134,6 @@ focus = {
 			custom_effect_tooltip = 01_MUU_tt
 			if = {
 				882 = {
-					limit = {
-						NOT = {has_country_flag = civ_effort_built}
-						is_coastal = yes
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -1198,9 +1173,7 @@ focus = {
 
 		completion_reward = {
 			hidden_effect = {set_cosmetic_tag = MUU_MOO}
-			add_ideas = {
-				idea = MUU_restored_empire
-			}
+			add_ideas = MUU_restored_empire
 		}
 	}
 	#####DEMOCRATIC#####
@@ -1230,9 +1203,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		add_ideas = {
-			idea = MUU_westernization
-		}
+		add_ideas = MUU_westernization1
 		USA = {
 			add_opinion_modifier = {
 				target = ROOT
@@ -1592,7 +1563,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built1}
+						NOT = {has_state_flag = mil_effort_built1}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -1606,13 +1577,13 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built1
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built1}
+						NOT = {has_state_flag = mil_effort_built1}
 						is_coastal = yes
 						free_building_slots = {
 							building = industrial_complex
@@ -1626,8 +1597,8 @@ focus = {
 						level = 4
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built1
+				}
 			}
 		}
 	}
@@ -1763,7 +1734,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_builtdem}
+						NOT = {has_state_flag = naval_effort_builtdem}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -1777,13 +1748,13 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_builtdem
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_builtdem}
+						NOT = {has_state_flag = naval_effort_builtdem}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -1797,13 +1768,13 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_builtdem
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_builtdem}
+						NOT = {has_state_flag = naval_effort_builtdem}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -1817,8 +1788,8 @@ focus = {
 						level = 4
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_builtdem
+				}
 			}
 		}
 	}
@@ -1847,9 +1818,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				MUU_economic_reforms1
-			}
+			add_ideas = MUU_economic_reforms1
 		}
 	}
 	
@@ -2256,9 +2225,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				MUU_volunteers
-			}
+			add_ideas = MUU_volunteers
 		}
 	}
 	
@@ -2385,10 +2352,10 @@ focus = {
 					}
 				}
 			}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value > 3}}}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value > 3}}}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value > 3}}}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value > 3}}}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
 		}
 	}
 	
@@ -2494,9 +2461,7 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = 01_MUU_marsh
 			hidden_effect = {
-				add_ideas = {
-					MUU_land_reclamation1
-				}
+				add_ideas = MUU_land_reclamation1
 			}
 		}
 	}
@@ -2560,9 +2525,7 @@ focus = {
 		completion_reward = {
 			add_stability = -0.05
 			add_political_power = 200
-			add_ideas = {
-				MUU_persecute_religion1
-			}
+			add_ideas = MUU_persecute_religion1
 		}
 	}
 	#####FASCIST#####
@@ -2593,9 +2556,7 @@ focus = {
 
 		completion_reward = {
 		    set_politics = { ruling_party = fascism elections_allowed = no } 
-			add_ideas = {
-				MUU_state_above_all
-			}
+			add_ideas = MUU_state_above_all
 		}
 	}
 	##fascist mobilization branch##
@@ -2623,9 +2584,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				MUU_fascist_conscription1
-			}
+			add_ideas = MUU_fascist_conscription1
 		}
 	}
 	
@@ -2657,7 +2616,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built}
+						NOT = {has_state_flag = mil_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -2671,13 +2630,13 @@ focus = {
 						level = 4
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = mil_effort_built}
+						NOT = {has_state_flag = mil_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = arms_factory
@@ -2691,8 +2650,8 @@ focus = {
 						level = 4
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built
+				}
 			}
 		}
 	}
@@ -2721,9 +2680,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				MUU_fascist_mobilization
-			}
+			add_ideas = MUU_fascist_mobilization
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 800
@@ -3040,9 +2997,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				MUU_existential_war
-			}
+			add_ideas = MUU_existential_war
 		}
 	}
 focus = {
@@ -3379,7 +3334,7 @@ focus = {
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_ideas = {MUU_no_talk1}
+			add_ideas = MUU_no_talk1
 		}
 	}
 focus = {
@@ -3408,7 +3363,7 @@ focus = {
 
 		completion_reward = {
 			add_stability = 0.05
-			add_ideas = {MUU_yes_talk1}
+			add_ideas = MUU_yes_talk1
 		}
 	}
 focus = {
@@ -3436,9 +3391,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				MUU_exterminate_commies
-			}
+			add_ideas = MUU_exterminate_commies
 		}
 	}
 focus = {
@@ -3528,9 +3481,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-				MUU_embrace_commies
-			}
+			add_ideas = MUU_embrace_commies
 		}
 	}
 focus = {
@@ -3786,7 +3737,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {MUU_control_cities}
+			add_ideas = MUU_control_cities
 		}
 	}
 focus = {
@@ -4048,7 +3999,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {MUU_special_forces}
+			add_ideas = MUU_special_forces
 		}
 	}
 focus = {
@@ -4595,7 +4546,7 @@ focus = {
 					instant_build = yes
 				}
 			}
-			add_ideas = {MUU_inirliq_airfield1}
+			add_ideas = MUU_inirliq_airfield1
 			add_timed_idea = {idea = MUU_building_inirliq days = 90}
 		}
 	}

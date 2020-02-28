@@ -73,7 +73,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_idea = FMU_unfair_sufferage
+			remove_ideas = FMU_unfair_sufferage
 			add_stability = -0.05
 		}
 	}
@@ -120,11 +120,11 @@ focus = {
 						level = 4
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built1
+				}
 			}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
 		}
 	}
 
@@ -169,8 +169,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built1
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -188,8 +188,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built1
+				}
 			}
 		}
 	}
@@ -258,7 +258,7 @@ focus = {
 				}
 		FRA = {add_opinion_modifier = { target = FMU modifier = medium_decrease }
 				}
-		remove_idea = FMU_sanctions
+		remove_ideas = FMU_sanctions
 		}
 	}
 
@@ -336,8 +336,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_builtquo
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -355,8 +355,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_builtquo
+				}
 			}
 
 		if = {
@@ -428,8 +428,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_builtquo
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -447,8 +447,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_builtquo
+				}
 			}
 	if = {
  			   limit = {
@@ -1000,8 +1000,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built2
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -1019,8 +1019,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_built2
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -1038,8 +1038,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built2
+				}
 			}
 		}
 	}
@@ -1102,7 +1102,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_built}
+						NOT = {has_state_flag = naval_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -1116,13 +1116,13 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_built
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_built}
+						NOT = {has_state_flag = naval_effort_built}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -1136,8 +1136,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_built
+				}
 			}
 		}
 	}
@@ -1321,8 +1321,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built2
+				}
 			}
 		}
 	}
@@ -1397,8 +1397,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built2
+				}
 			}
 		}
 	}
@@ -1466,9 +1466,9 @@ focus = {
 
 		completion_reward = {
 		swap_ideas = {
-    	remove_idea = FMU_sanctions
-    	add_idea = FMU_sanctions_modified
-}
+			remove_idea = FMU_sanctions
+			add_idea = FMU_sanctions_modified
+		}
 		}
 	}
 
@@ -1561,10 +1561,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-			if = {random_owned_controlled_state = {limit = {NOT = {has_built = {type = infrastructure value>3}} NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
 		}
 	}
 
@@ -1609,8 +1609,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built2
+				}
 			}
 		}
 	}
@@ -1685,8 +1685,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_builtquo
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -1704,8 +1704,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_builtquo
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -1723,8 +1723,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = mil_effort_builtquo
+				}
 			}
 		}
 	}
@@ -1770,8 +1770,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built2
+				}
 			}
 			if = {
 				random_owned_controlled_state = {
@@ -1789,8 +1789,8 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
-				}
 				set_state_flag = civ_effort_built2
+				}
 			}
 		}
 	}
@@ -1850,7 +1850,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_idea = FMU_sanctions_modified
+			remove_ideas = FMU_sanctions_modified
 		}
 	}
 
@@ -2005,7 +2005,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_builtdem}
+						NOT = {has_state_flag = naval_effort_builtdem}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -2019,8 +2019,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_builtdem
+				}
 			}
 		}
 	}
@@ -2158,29 +2158,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		933 = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = dockyard
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
+			933 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -2348,7 +2326,7 @@ focus = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
-						NOT = {has_country_flag = naval_effort_builtdem}
+						NOT = {has_state_flag = naval_effort_builtdem}
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -2362,8 +2340,8 @@ focus = {
 						level = 3
 						instant_build = yes
 					}
-				}
 				set_state_flag = naval_effort_builtdem
+				}
 			}
 			930 = {
 				if = {
@@ -2933,7 +2911,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		research_bonus = { naval_equipment = 0.10 }
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
 		}
 	}
 
