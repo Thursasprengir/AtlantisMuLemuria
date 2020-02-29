@@ -7,6 +7,7 @@ tags={
 }
 replace_path="history/states"
 replace_path="gfx/loadingscreens"
+replace_path="map/strategicregions"
 name="Atlantis Mu Lemuria"
 supported_version="1.9.0"
 remote_file_id="1910094849"
