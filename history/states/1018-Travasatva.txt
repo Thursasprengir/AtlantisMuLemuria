@@ -1,17 +1,22 @@
 state={
 	id=1018
 	name="STATE1018"
-	state_category = small_island
+	state_category = large_town
 
 	history={
 		owner = KUM
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 2
+			14342 = {
+				naval_base = 6
+			}
 		}
 		
 		victory_points = {
-			14342 3 
+			14342 10
 		}
 		add_core_of = KUM
 
@@ -19,6 +24,6 @@ state={
 	provinces={ 
 		8995 14342 14405 14406 14407 14408 14409 
 	}
-	manpower=1023256
+	manpower=4262998
 	buildings_max_level_factor=1.000
 }

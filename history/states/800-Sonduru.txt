@@ -1,14 +1,24 @@
 state={
 	id=800
 	name="STATE_800"
-	state_category = metropolis
+	state_category = large_city
 
 	history={
 		owner = SND
 		add_core_of = SND
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 1
+			dockyard = 1
+			14672 = {
+				naval_base = 5
+			}
+		}
 		
 		victory_points = {
-			14672 3 
+			14672 20 
 		}
 
 	}

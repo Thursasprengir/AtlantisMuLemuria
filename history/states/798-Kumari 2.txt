@@ -1,17 +1,23 @@
 state={
 	id=798
 	name="STATE_798"
-	state_category = small_island
+	state_category = megalopolis
 
 	history={
 		owner = KUM
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 5
+			air_base = 4
+			dockyard = 3
+			14346 = {
+				naval_base = 10
+			}
 		}
 		
 		victory_points = {
-			14346 3 
+			14346 30
 		}
 		add_core_of = KUM
 
@@ -19,6 +25,6 @@ state={
 	provinces={
 			4916 7488 14346 14349 14350 14351 14354 14369 
 	}
-	manpower=985956
+	manpower=8961520
 	buildings_max_level_factor=1.000
 }

@@ -1,14 +1,25 @@
 state={
 	id=1040
 	name="STATE_1040"
-	state_category = small_island
+	state_category = city
 
 	history={
 		owner = FRA
 		add_core_of = PTY
+
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 2
+			dockyard = 1
+			14324 = {
+				naval_base = 6
+			}
+		}
 		
 		victory_points = {
-			14324 3 
+			14324 10
 		}
 
 	}
@@ -16,6 +27,6 @@ state={
 		14322 14323 14324 
 		14971 14972 14973 14974 14975 14982 14983 14984 14985 14986 14987
 	}
-	manpower=986589
+	manpower=1865552
 	buildings_max_level_factor=1.000
 }

@@ -1,14 +1,23 @@
 state={
 	id=1039
 	name="STATE_1039"
-	state_category = metropolis
+	state_category = large_city
 
 	history={
 		owner = SND
 		add_core_of = SND
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 1
+			14287 = {
+				naval_base = 5
+			}
+		}
 		
 		victory_points = {
-			14287 3 
+			14287 20 
 		}
 
 	}
@@ -17,6 +26,6 @@ state={
 		14283 14286 14287 
 		14680 14681 14683 14685 14689 
 	}
-	manpower=2779139
+	manpower=7659512
 	buildings_max_level_factor=1.000
 }

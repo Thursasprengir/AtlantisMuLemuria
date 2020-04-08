@@ -4,20 +4,25 @@ state={
 	resources={
 		steel=4.000
 	}
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = CLA
 		add_core_of = CLA
-		victory_points = {
-			14619 3 
+		buildings = {
+			infrastructure = 2
+			14619 = {
+				naval_base = 1
+			}
 		}
-
+		victory_points = {
+			14619 5
+		}
 	}
 		
 	provinces={ 
 		14261 14613 14616 14617 14618 14619 14620 
 	}
-	manpower=978489
+	manpower=2085232
 	buildings_max_level_factor=1.000
 }
