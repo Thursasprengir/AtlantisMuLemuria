@@ -20,27 +20,26 @@ set_politics = {
 
 	
 	
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1935.10.22"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
-		democratic = 15
-		fascism = 70
-		neutrality = 15
+		democratic = 30
+		fascism = 8
+		communism = 7
+		neutrality = 55
 		
 	}
 
 add_ideas = {
-	GEQ_scientific_backlog
-	GEQ_murorian_supremacy
 }
 
 set_convoys = 20
 
 create_country_leader = {
-	name = "Qorprujj Drmrilu"
+	name = "Wuualagaku Namagali"
 	desc = "POLITICS_QORPRUJJ_DRMRILU_DESC"
 	picture = "Portrait_GEQ_Q_Drmrilu.dds"
 	expire = "1965.1.1"
@@ -51,7 +50,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Horujj Uaqril"
+	name = "Waiiumnaku Aligula"
 	desc = "POLITICS_HORUJJ_UAQRIL_DESC"
 	picture = "Portrait_GEQ_H_Uaqril.dds"
 	expire = "1965.1.1"
@@ -62,7 +61,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jjimi Henjriqs"
+	name = "Sawalagaku Mulmanwua"
 	desc = "POLITICS_JJIMI_HENJRIQS_DESC"
 	picture = "Portrait_GEQ_J_Henjriqs.dds"
 	expire = "1965.1.1"
@@ -72,6 +71,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Akamatuli Tribal Council"
+	desc = "POLITICS_JJIMI_HENJRIQS_DESC"
+	picture = "Portrait_GEQ_J_Henjriqs.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
 
 create_corps_commander = {
 	name = "Qaj Tsimirqi"
