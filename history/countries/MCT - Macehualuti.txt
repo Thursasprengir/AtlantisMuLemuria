@@ -1,4 +1,4 @@
-﻿capital = 995
+﻿capital = 14852
 
 oob = "MCT_1936"
 
@@ -17,24 +17,21 @@ set_stability = 0.72
 
 
 set_politics = {
-
-	
-	
 	ruling_party = fascism
 	last_election = "1935.10.22"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
-		democratic = 15
-		fascism = 70
+		democratic = 13
+		fascism = 67
 		neutrality = 15
+		communism = 5
 		
 	}
 
 add_ideas = {
-	GEQ_scientific_backlog
-	GEQ_murorian_supremacy
+	#
 }
 
 set_convoys = 20
@@ -51,13 +48,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mulaba Benusme"
+	name = "General Laazalikamal"
 	desc = "POLITICS_MULABA_BENUSME_DESC"
 	picture = "Portrait_MCT_M_Benusme.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		#
+		nationalist_symbol
 	}
 }
 
@@ -72,6 +69,17 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Laazalikamal"
+	picture = "Portrait_MCT_M_Benusme.dds"
+	traits = { defensive_doctrine urban_assault_specialist old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	id = 1
+}
 
 create_corps_commander = {
 	name = "Gawban Nuwasmale"
