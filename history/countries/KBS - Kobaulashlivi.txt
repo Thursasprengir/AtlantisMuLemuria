@@ -1,4 +1,4 @@
-﻿capital = 999
+﻿capital = 2905
 
 oob = "KBS_1936"
 
@@ -17,30 +17,28 @@ set_stability = 0.72
 
 
 set_politics = {
-
-	
-	
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1935.10.22"
 	election_frequency = 36
 	elections_allowed = no
 }
+
 set_popularities = {
-		democratic = 15
-		fascism = 70
-		neutrality = 15
+		democratic = 57
+		fascism = 18
+		neutrality = 16
+		communism = 9
 		
 	}
 
 add_ideas = {
-	GEQ_scientific_backlog
-	GEQ_murorian_supremacy
+	#
 }
 
 set_convoys = 20
 
 create_country_leader = {
-	name = "Hurgrewe Lemwisme"
+	name = "Abmahalav Khumalo"
 	desc = "POLITICS_HURGREWE_LEMWISME_DESC"
 	picture = "Portrait_KBS_H_Lemwisme.dds"
 	expire = "1965.1.1"
