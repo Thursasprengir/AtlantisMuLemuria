@@ -1,0 +1,694 @@
+focus_tree = {
+	id = BLM
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BLM
+		}
+	}
+	
+		focus = {
+		id = BLM_second_anglosaxon_reforms
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 13
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		focus = {
+		id = BLM_lemurian_airways
+		icon = GFX_goal_unknown
+		x = 30
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+			focus = {
+		id = BLM_lemurian_air_plan
+		icon = GFX_goal_unknown
+		x = 30
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_lemurian_airways }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+				focus = {
+		id = BLM_lemurian_reconnaissance
+		icon = GFX_goal_unknown
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_lemurian_airways }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+			focus = {
+		id = BLM_BLAI
+		icon = GFX_goal_unknown
+		x = 29
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_lemurian_reconnaissance 
+		focus = BLM_lemurian_air_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#The 3 paths
+	focus = {
+		id = BLM_continue_the_reforms
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_second_anglosaxon_reforms }
+		mutually_exclusive = { 
+				focus = BLM_no_majority_government
+				focus = BLM_act_283 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = BLM_act_283
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_second_anglosaxon_reforms }
+		mutually_exclusive = { 
+				focus = BLM_continue_the_reforms
+				focus = BLM_no_majority_government
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = BLM_no_majority_government
+		icon = GFX_goal_unknown
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_second_anglosaxon_reforms }
+		mutually_exclusive = { 
+				focus = BLM_continue_the_reforms
+				focus = BLM_act_283 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ENG = { puppet = BLM }
+	
+	
+	
+	# Lemuria's "manifest destiny" or in other words, British Lemurians trying to figure out their identity and place in Lemuria and the commonwealth.
+	
+	focus = {
+		id = BLM_our_culture
+		icon = GFX_goal_unknown
+		x = 13
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_our_people }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = BLM_our_place
+		icon = GFX_goal_unknown
+		x = 13
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = BLM_our_people
+		icon = GFX_goal_unknown
+		x = 13
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_our_place }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = BLM_our_lemuria
+		icon = GFX_goal_unknown
+		x = 13
+		y = 23
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_our_culture }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+
+
+# Act 283 path
+
+	focus = {
+		id = BLM_government_reform
+		icon = GFX_goal_unknown
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_federal_sympathies }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = BLM_land_reform
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_nobility_issue }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = BLM_local_garrisons
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_disband_the_ig }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = BLM_nobility_issue
+		icon = GFX_goal_unknown
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_disband_the_ig
+		icon = GFX_goal_unknown
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = BLM_federal_sympathies
+		icon = GFX_goal_generic_national_unity
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		mutually_exclusive = {
+			focus = BLM_completedecentralization
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	focus = {
+		id = BLM_home_islands_agreement
+		icon = GFX_goal_generic_improve_relations
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = BLM_5_year_compensation
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_home_islands_agreement }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		focus = {
+		id = BLM_local_industry
+		icon = GFX_goal_unknown
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_land_reform }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		focus = {
+		id = BLM_completedecentralization
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		mutually_exclusive = {
+			focus = BLM_federal_sympathies
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		focus = {
+		id = BLM_independentrepublics
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_completedecentralization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		focus = {
+		id = BLM_alliedrelations
+		icon = GFX_goal_unknown
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_5_year_compensation
+		focus = BLM_local_garrisons		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		focus = {
+		id = BLM_lemuriandefenseforce
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_5_year_compensation
+		focus = BLM_local_garrisons		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		focus = {
+		id = BLM_lemurianindustrialcentre
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_alliedrelations
+		focus = BLM_local_industry	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		focus = {
+		id = BLM_colonistissues
+		icon = GFX_goal_unknown
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_independentrepublics
+		focus = BLM_government_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		focus = {
+		id = BLM_flagissues
+		icon = GFX_goal_unknown
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_colonistissues }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_newlemuria
+		icon = GFX_goal_unknown
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_flagissues }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		focus = {
+		id = BLM_newmilitaryindustry
+		icon = GFX_goal_unknown
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_local_industry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_unrestmeeting
+		icon = GFX_goal_unknown
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_no_majority_government
+		focus = BLM_continue_the_reforms
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_expand_the_ig
+		icon = GFX_goal_unknown
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_unrestmeeting
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+#
+	focus = {
+		id = BLM_the_queens_lemuria
+		icon = GFX_goal_unknown
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_second_anglosaxon_reforms }
+		mutually_exclusive = { 
+				focus = BLM_continue_the_reforms
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_attract_british_settlers
+		icon = GFX_goal_unknown
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_queens_lemuria }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_australian_british-lemurian_summit
+		icon = GFX_goal_unknown
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_royal_cadet_corps }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_royal_cadet_corps
+		icon = GFX_goal_unknown
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_queens_lemuria }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_reform_the_army
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_australian_british-lemurian_summit }
+		prerequisite = { focus = BLM_expand_the_ig }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_abolish_anglish_societies
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_attract_british_settlers }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_the_british_man
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_abolish_anglish_societies }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_suppress_natives
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_british_man }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_integrate_the_2_colonies
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_british_man }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_the_queens_industry
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_continue_the_reforms }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_the_industrial_new_hampstead
+		icon = GFX_goal_unknown
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_queens_industry }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_fix_the_shipyards
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_industrial_new_hampstead }
+		prerequisite = { focus = BLM_attract_british_settlers }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_found_the_new_hampstead_university
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_queens_industry }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_new_british_education
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_found_the_new_hampstead_university }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_the_roads
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_new_british_education focus = BLM_fix_the_shipyards }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ }
