@@ -1,0 +1,1304 @@
+focus_tree = {
+	id = klk_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = KLK
+		}
+	}
+
+
+	default = no
+
+
+	continuous_focus_position = { x = 20 y = 2200 }
+
+######################
+# Kalari Main Branch #
+######################
+
+focus = {
+		id = KLK_main
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {}
+		
+		x = 11
+		y = 0
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = KLK_oligarchy
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_leftism}
+		prerequisite = {focus = KLK_main}
+		
+		x = 7
+		y = 1
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = KLK_leftism
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_oligarchy}
+		prerequisite = {focus = KLK_main}
+		
+		x = 15
+		y = 1
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_oligarchy_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_oligarchy}
+		
+		x = 3
+		y = 2
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stalinism
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_syndicalism}
+		prerequisite = {focus = KLK_leftism}
+		
+		x = 11
+		y = 2
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_syndicalism
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_stalinism}
+		prerequisite = {focus = KLK_leftism}
+		
+		x = 19
+		y = 2
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+#########################
+# Kalari Traditionalism #
+#########################
+	focus = {
+		id = KLK_olig_mil
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_oligarchy_2}
+		
+		x = 2
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_cult
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_oligarchy_2}
+		
+		x = 4
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_mil_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_mil}
+		
+		x = 1
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_center
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_mil}
+		prerequisite = {focus = KLK_olig_cult}
+		
+		x = 3
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_cult_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_cult}
+		
+		x = 5
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_center_left
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_center}
+		
+		x = 2
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_center_right
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_center}
+		
+		x = 4
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_center_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_center_left}
+		prerequisite = {focus = KLK_olig_center_right}
+		
+		x = 3
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_mil_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_mil_1}
+		
+		x = 1
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_cult_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_cult_1}
+		
+		x = 5
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_mil_left
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_mil_2}
+		
+		x = 0
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_mil_right
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_mil_2}
+		
+		x = 2
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_cult_3
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_cult_2}
+		
+		x = 5
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_olig_final
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_olig_center_2}
+		
+		x = 3
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+####################
+# Kalari Stalinism #
+####################
+	focus = {
+		id = KLK_stal_center_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stalinism}
+		
+		x = 11
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_center_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_1}
+		
+		x = 11
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_center_3
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_2}
+		
+		x = 11
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_center_4
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_3}
+		
+		x = 11
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_center_5
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_4}
+		
+		x = 11
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_final
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_5}
+		
+		x = 11
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_left_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_1}
+		
+		x = 9
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_left_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_left_1}
+		
+		x = 9
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_left_3
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_4}
+		
+		x = 9
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_left_4
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_left_3}
+		
+		x = 9
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_right_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_1}
+		
+		x = 13
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_right_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_right_1}
+		
+		x = 13
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_right_3
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_center_4}
+		
+		x = 13
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_stal_right_4
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_stal_right_3}
+		
+		x = 13
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+######################
+# Kalari Syndicalism #
+######################
+	focus = {
+		id = KLK_synd_dead_branch
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_syndicalism}
+		
+		x = 18
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_right_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_syndicalism}
+		
+		x = 20
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_right_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_right_1}
+		
+		x = 21
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_right_A
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_right_2}
+		
+		x = 23
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_right_B
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_right_2}
+		
+		x = 21
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_right_C
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_right_2}
+		
+		x = 25
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_center_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_syndicalism}
+		
+		x = 19
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_center_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_center_1}
+		
+		x = 19
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_dead_branch_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_center_1}
+		
+		x = 17
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_center_left_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_center_2}
+		
+		x = 18
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_center_left_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_center_left_1}
+		
+		x = 18
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_center_right_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_center_2}
+		
+		x = 20
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_center_right_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_center_right_1}
+		
+		x = 20
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_synd_final
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_synd_center_right_2}
+		prerequisite = {focus = KLK_synd_center_left_2}
+		
+		x = 19
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+#################
+# State Reforms #
+#################
+	focus = {
+		id = KLK_state_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_oligarchy_2 focus = KLK_stalinism}
+		
+		x = 7
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_state_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_state_1}
+		
+		x = 7
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_state_3
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_state_2}
+		
+		x = 7
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+####################
+# Popular Uprising #
+####################
+	focus = {
+		id = KLK_pop_1
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_syndicalism focus = KLK_stalinism}
+		
+		x = 15
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_pop_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_pop_1}
+		
+		x = 15
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_pop_3
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_pop_2}
+		
+		x = 15
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+###########################
+# Political Common Branch #
+###########################
+	focus = {
+		id = KLK_final_left
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_final_center}
+		prerequisite = {focus = KLK_olig_final focus = KLK_stal_final}
+		
+		x = 7
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_final_center
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_final_left}
+		mutually_exclusive = {focus = KLK_final_right}
+		prerequisite = {focus = KLK_stal_final}
+		
+		x = 11
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_final_right
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_final_center}
+		prerequisite = {focus = KLK_synd_final focus = KLK_stal_final}
+		
+		x = 15
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_youth
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_final_center focus = KLK_final_left}
+		
+		x = 9
+		y = 10
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_foreigners
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_final_center focus = KLK_final_right}
+		
+		x = 13
+		y = 10
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_military_main
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {}
+		prerequisite = {focus = KLK_youth focus = KLK_foreigners}
+		
+		x = 11
+		y = 11
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+}
