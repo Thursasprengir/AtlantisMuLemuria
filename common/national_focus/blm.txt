@@ -7,7 +7,7 @@ focus_tree = {
 			tag = BLM
 		}
 	}
-	
+		continuous_focus_position = { x = 50 y = 1500 }
 		focus = {
 		id = BLM_second_anglosaxon_reforms
 		icon = GFX_goal_molotov_ribbentrop_pact
@@ -82,7 +82,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_second_anglosaxon_reforms }
 		mutually_exclusive = { 
-				focus = BLM_no_majority_government
 				focus = BLM_act_283 
 				}
 		ai_will_do = {
@@ -100,29 +99,12 @@ focus_tree = {
 		prerequisite = { focus = BLM_second_anglosaxon_reforms }
 		mutually_exclusive = { 
 				focus = BLM_continue_the_reforms
-				focus = BLM_no_majority_government
 				}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	focus = {
-		id = BLM_no_majority_government
-		icon = GFX_goal_unknown
-		x = 22
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_second_anglosaxon_reforms }
-		mutually_exclusive = { 
-				focus = BLM_continue_the_reforms
-				focus = BLM_act_283 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 	ENG = { puppet = BLM }
 	
@@ -352,6 +334,112 @@ focus_tree = {
 			factor = 1
 		}
 	}
+	focus = {
+		id = BLM_go_through_educational_reforms
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_alliedrelations
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_go_through_educational_reforms
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_alliedrelations
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_federate_assembly
+		icon = GFX_goal_unknown
+		x = 3
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = BLM_go_through_educational_reforms
+		focus = BLM_lemurianindustrialcentre
+		focus = 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_minority_rights
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_federate_assembly }
+		prerequisite = { focus = BLM_newlemuria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_liberty_beacon
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_newlemuria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_suspend_persuction_permanently
+		icon = GFX_goal_unknown
+		x = 9	
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_newlemuria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		focus = {
 		id = BLM_lemuriandefenseforce
 		icon = GFX_goal_unknown
@@ -441,7 +529,6 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-		focus = BLM_no_majority_government
 		focus = BLM_continue_the_reforms
 		}
 		ai_will_do = {
@@ -684,6 +771,68 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_new_british_education focus = BLM_fix_the_shipyards }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_the_roads
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_new_british_education focus = BLM_fix_the_shipyards }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_greatest_monument
+		icon = GFX_goal_unknown
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_roads }
+		prerequisite = { focus = BLM_suppress_natives }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_new_titles
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_integrate_the_2_colonies }
+		prerequisite = { focus = BLM_suppress_natives }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_arturan_problem
+		icon = GFX_goal_unknown
+		x = 17
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_integrate_the_2_colonies }
 		mutually_exclusive = { 
 				
 				}
