@@ -115,8 +115,8 @@ focus_tree = {
 	focus = {
 		id = BLM_our_culture
 		icon = GFX_goal_unknown
-		x = 13
-		y = 22
+		x = 11
+		y = 10
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_our_people }
@@ -128,12 +128,11 @@ focus_tree = {
 	focus = {
 		id = BLM_our_place
 		icon = GFX_goal_unknown
-		x = 13
-		y = 20
+		x = 11
+		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-		}
+		prerequisite = { focus = BLM_federal_lemuria focus = BLM_imperial_lemuria }
 		ai_will_do = {
 			factor = 1
 		}
@@ -142,8 +141,8 @@ focus_tree = {
 	focus = {
 		id = BLM_our_people
 		icon = GFX_goal_unknown
-		x = 13
-		y = 21
+		x = 11
+		y = 11
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_our_place }
@@ -155,8 +154,8 @@ focus_tree = {
 	focus = {
 		id = BLM_our_lemuria
 		icon = GFX_goal_unknown
-		x = 13
-		y = 23
+		x = 11
+		y = 12
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_our_culture }
@@ -411,6 +410,20 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_newlemuria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_federal_lemuria
+		icon = GFX_goal_unknown
+		x = 6	
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_liberty_beacon }
+		prerequisite = { focus = BLM_suspend_persuction_permanently }
+		prerequisite = { focus = BLM_minority_rights }
 		ai_will_do = {
 			factor = 1
 		}
@@ -840,4 +853,23 @@ focus_tree = {
 			factor = 1
 		}
 	}
+	focus = {
+		id = BLM_imperial_lemuria
+		icon = GFX_goal_unknown
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_new_titles }
+		prerequisite = { focus = BLM_arturan_problem }
+		prerequisite = { focus = BLM_greatest_monument }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	######## 		x = 6	y = 8
+	######## 		x = 15	y = 8
  }
