@@ -1171,60 +1171,16 @@ focus = {
 		completion_reward = {
 		}
 	}
-###########################
-# Political Common Branch #
-###########################
-	focus = {
-		id = KLK_final_left
-		icon = GFX_focus_hol_the_foundations_of_defense
-		mutually_exclusive = {focus = KLK_final_center}
-		prerequisite = {focus = KLK_olig_final focus = KLK_stal_final}
-		
-		x = 7
-		y = 9
-		cost = 10
-
-		ai_will_do = {factor = 2}
-		available = {}
-		bypass = {}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		
-		completion_reward = {
-		}
-	}
+##########################
+# Military Tree :D :D :D #
+##########################
 	focus = {
 		id = KLK_final_center
 		icon = GFX_focus_hol_the_foundations_of_defense
-		mutually_exclusive = {focus = KLK_final_left}
-		mutually_exclusive = {focus = KLK_final_right}
-		prerequisite = {focus = KLK_stal_final}
+		prerequisite = {}
 		
-		x = 11
-		y = 9
-		cost = 10
-
-		ai_will_do = {factor = 2}
-		available = {}
-		bypass = {}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = KLK_final_right
-		icon = GFX_focus_hol_the_foundations_of_defense
-		mutually_exclusive = {focus = KLK_final_center}
-		prerequisite = {focus = KLK_synd_final focus = KLK_stal_final}
-		
-		x = 15
-		y = 9
+		x = 29
+		y = 0
 		cost = 10
 
 		ai_will_do = {factor = 2}
@@ -1242,10 +1198,10 @@ focus = {
 		id = KLK_youth
 		icon = GFX_focus_hol_the_foundations_of_defense
 		mutually_exclusive = {}
-		prerequisite = {focus = KLK_final_center focus = KLK_final_left}
+		prerequisite = {focus = KLK_final_center}
 		
-		x = 9
-		y = 10
+		x = 28
+		y = 1
 		cost = 10
 
 		ai_will_do = {factor = 2}
@@ -1263,10 +1219,10 @@ focus = {
 		id = KLK_foreigners
 		icon = GFX_focus_hol_the_foundations_of_defense
 		mutually_exclusive = {}
-		prerequisite = {focus = KLK_final_center focus = KLK_final_right}
+		prerequisite = {focus = KLK_final_center}
 		
-		x = 13
-		y = 10
+		x = 30
+		y = 1
 		cost = 10
 
 		ai_will_do = {factor = 2}
@@ -1286,8 +1242,310 @@ focus = {
 		mutually_exclusive = {}
 		prerequisite = {focus = KLK_youth focus = KLK_foreigners}
 		
-		x = 11
-		y = 11
+		x = 29
+		y = 2
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quality
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_quantity}
+		prerequisite = {focus = KLK_military_main}
+		
+		x = 28
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quantity
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = {focus = KLK_quality}
+		prerequisite = {focus = KLK_military_main}
+		
+		x = 31
+		y = 3
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_air
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quality focus = KLK_quantity}
+		
+		x = 29
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quality_guns
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quality}
+		
+		x = 27
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quality_motor
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quality_guns}
+		
+		x = 27
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quality_fighters
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_air}
+		
+		x = 29
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quality_armor
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quality_motor focus = KLK_quality_fighters}
+		
+		x = 27
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quality_CAS
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quality_motor focus = KLK_quality_fighters}
+		
+		x = 29
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quantity_guns
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quantity}
+		
+		x = 31
+		y = 4
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quantity_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quantity_guns}
+		
+		x = 30
+		y = 5
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quantity_time
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quantity_guns focus = KLK_quantity_2}
+		
+		x = 31
+		y = 6
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quantity_motor
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quantity_time}
+		
+		x = 31
+		y = 7
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_quantity_cheap_ass_airplanes
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quantity_motor}
+		
+		x = 31
+		y = 8
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_military_final
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_quantity_cheap_ass_airplanes focus = KLK_quality_armor focus = KLK_quality_CAS}
+		
+		x = 29
+		y = 9
+		cost = 10
+
+		ai_will_do = {factor = 2}
+		available = {}
+		bypass = {}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KLK_military_final_2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = {focus = KLK_military_final}
+		
+		x = 29
+		y = 10
 		cost = 10
 
 		ai_will_do = {factor = 2}
