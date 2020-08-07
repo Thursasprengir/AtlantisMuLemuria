@@ -1,0 +1,602 @@
+focus_tree = {
+	id = MKU
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MKU
+		}
+	}
+		continuous_focus_position = { x = 50 y = 1500 }
+		focus = {
+		id = MKU_hungry_years
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 13
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#####The 4 paths#####
+	
+	focus = {
+		id = MKU_appeal_west
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_hungry_years }
+		mutually_exclusive = { 
+				focus = MKU_appeal_communism
+				focus = MKU_appeal_locally
+				focus = MKU_dig_ourselves_out
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MKU_appeal_locally
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_hungry_years }
+		mutually_exclusive = { 
+				focus = MKU_appeal_communism
+				focus = MKU_appeal_west
+				focus = MKU_dig_ourselves_out
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MKU_appeal_communism
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_hungry_years }
+		mutually_exclusive = { 
+				focus = MKU_appeal_west
+				focus = MKU_appeal_locally
+				focus = MKU_dig_ourselves_out
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MKU_dig_ourselves_out
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_hungry_years }
+		mutually_exclusive = { 
+				focus = MKU_appeal_communism
+				focus = MKU_appeal_west
+				focus = MKU_appeal_locally
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#####West/Democracy Help#####
+	
+	
+	focus = {
+		id = MKU_west_technical_aid
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_appeal_west }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_material_aid
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_appeal_west }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_humiliating_reforms
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_material_aid }
+		prerequisite = { focus = MKU_west_technical_aid }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_upper_class_discontent
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_humiliating_reforms }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_urban_discontent
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_humiliating_reforms }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_rural_discontent
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_humiliating_reforms }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_societal_reorganization
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_upper_class_discontent }
+		prerequisite = { focus = MKU_west_urban_discontent }
+		prerequisite = { focus = MKU_west_rural_discontent }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_technical_breakthroughs_1
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_societal_reorganization }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_technical_breakthroughs_2
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_technical_breakthroughs_1 }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_technical_breakthroughs_3
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_technical_breakthroughs_2 }
+		prerequisite = { focus = MKU_west_industrial_growth_2 }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_industrial_growth_1
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_societal_reorganization }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_industrial_growth_2
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_industrial_growth_1 }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_industrial_growth_3
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_industrial_growth_2 }
+		prerequisite = { focus = MKU_west_technical_breakthroughs_2 }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_military_advances_1
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_societal_reorganization }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_military_advances_2
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 4
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_military_advances_1 }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_military_advances_3
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 4
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_military_advances_2 }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_west_military_advances_4
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 4
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_west_military_advances_3 }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	#####Local Help#####
+	
+	focus = {
+		id = MKU_strengthen_ties
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_appeal_locally }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_military_ties_only
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_strengthen_ties }
+		mutually_exclusive = { 
+				focus = MKU_complete_allies
+				focus = MKU_cultural_ties_only
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_complete_allies
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_strengthen_ties }
+		mutually_exclusive = { 
+				focus = MKU_military_ties_only
+				focus = MKU_cultural_ties_only
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_cultural_ties_only
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_strengthen_ties }
+		mutually_exclusive = { 
+				focus = MKU_military_ties_only
+				focus = MKU_complete_allies
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+	focus = {
+		id = MKU_integrated_defense #Stay independent, but allied, with Kumari
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_military_ties_only }
+		mutually_exclusive = { 
+				focus = MKU_kumari_umbrella
+				}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus = {
+		id = MKU_kumari_umbrella #Become a protectorate of Kumari
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_military_ties_only }
+		mutually_exclusive = { 
+				focus = MKU_integrated_defense
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_new_military_factories
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MKU_integrated_defense
+			focus = MKU_kumari_umbrella
+			focus = MKU_political_will
+			focus = MKU_grand_kumari_alliance
+				}
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_new_unit_designs
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MKU_integrated_defense
+			focus = MKU_kumari_umbrella
+			focus = MKU_political_will
+			focus = MKU_grand_kumari_alliance
+				}
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_more_military_production
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_new_military_factories}
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_southern_defenses
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_new_military_factories}
+		prerequisite = { focus = MKU_new_unit_designs}
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	
+	focus = {
+		id = MKU_political_will #sucks away all political power for X amount of time
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_complete_allies }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	
+	focus = {
+		id = MKU_one_people_one_government #conversion to mandalism
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_political_will }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	
+	focus = {
+		id = MKU_local_komissars
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_political_will }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	focus = {
+		id = MKU_grand_kumari_alliance #MKU and Kumari form a local power bloc
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_strengthen_ties }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	#####Communism Help#####
+	
+	
+	#####Self Help#####
