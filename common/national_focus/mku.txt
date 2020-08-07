@@ -23,7 +23,7 @@ focus_tree = {
 	#####The 4 paths#####
 	
 	focus = {
-		id = MKU_appeal_west
+		id = MKU_appeal_west #general help from the West
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 2
 		y = 1
@@ -41,7 +41,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MKU_appeal_locally
+		id = MKU_appeal_locally #turn to Kumari
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		x = 10
 		y = 1
@@ -59,9 +59,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MKU_appeal_communism
+		id = MKU_appeal_communism #help me Russia, help, help me Russia!
 		icon = GFX_goal_tfv_sever_ties_with_uk
-		x = 16
+		x = 18
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -77,7 +77,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MKU_dig_ourselves_out
+		id = MKU_dig_ourselves_out #Meru Kumari has photon torpedoes
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		x = 22
 		y = 1
@@ -98,7 +98,7 @@ focus_tree = {
 	
 	
 	focus = {
-		id = MKU_west_technical_aid
+		id = MKU_west_technical_aid #get tech increasing
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 1
 		y = 2
@@ -113,7 +113,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_west_material_aid
+		id = MKU_west_material_aid #build factories, make things
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 3
 		y = 2
@@ -128,7 +128,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_west_humiliating_reforms
+		id = MKU_west_humiliating_reforms #foreign things are happening, people don't like it
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 2
 		y = 3
@@ -361,7 +361,7 @@ focus_tree = {
 	#####Local Help#####
 	
 	focus = {
-		id = MKU_strengthen_ties
+		id = MKU_strengthen_ties #draw a bit closer to Kumari
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 10
 		y = 2
@@ -376,7 +376,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_military_ties_only
+		id = MKU_military_ties_only #either alliance as strong Kumari + weak Meru Kumari, or Kumari overlordship
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 7
 		y = 3
@@ -393,7 +393,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_complete_allies
+		id = MKU_complete_allies #Mandalist path, eventual integration possible
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 10
 		y = 3
@@ -410,9 +410,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_cultural_ties_only
+		id = MKU_cultural_ties_only #allows for equal alliance with Kumari
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 14
+		x = 13
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -471,6 +471,7 @@ focus_tree = {
 			focus = MKU_integrated_defense
 			focus = MKU_kumari_umbrella
 			focus = MKU_political_will
+			focus = MKU_we_lead
 			focus = MKU_grand_kumari_alliance
 				}
 		mutually_exclusive = { 
@@ -516,7 +517,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_southern_defenses
+		id = MKU_southern_defenses #fortify southern border w/ BLM
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 8
 		y = 6
@@ -524,6 +525,21 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_new_military_factories}
 		prerequisite = { focus = MKU_new_unit_designs}
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_southeastern_defenses #fortify southeastern border w/ AKM
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 8
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_southern_defenses}
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
@@ -565,13 +581,29 @@ focus_tree = {
 		
 	
 	focus = {
-		id = MKU_local_komissars
+		id = MKU_means_of_production
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 10
-		y = 5
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MKU_political_will }
+		prerequisite = { focus = MKU_one_people_one_government }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	
+	focus = {
+		id = MKU_local_komissars
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_one_people_one_government }
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
@@ -587,8 +619,25 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MKU_strengthen_ties }
+		prerequisite = { focus = MKU_cultural_ties_only }
 		mutually_exclusive = { 
+			focus = MKU_we_lead
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_we_lead #MKU tries to take the leadership of an MKU/Kumari alliance
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_cultural_ties_only }
+		mutually_exclusive = { 
+			focus = MKU_grand_kumari_alliance
 				}
 		ai_will_do = {
 			factor = 1
@@ -597,6 +646,36 @@ focus_tree = {
 	
 	
 	#####Communism Help#####
+
+	focus = {
+		id = MKU_glorious_communist_future #start down the commie path
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_appeal_communism }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MKU_entrenched_local_attitudes #increase in unrest
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_appeal_communism }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	
 	#####Self Help#####
