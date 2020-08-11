@@ -412,7 +412,7 @@ focus_tree = {
 	focus = {
 		id = MKU_cultural_ties_only #allows for equal alliance with Kumari
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 13
+		x = 15
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -610,12 +610,60 @@ focus_tree = {
 			factor = 1
 		}
 	}
+		
+	
+	focus = {
+		id = MKU_political_consolidation #get some political points and stablization
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_local_komissars }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	
+	focus = {
+		id = MKU_expand_the_revolution #export the glory of Mandalism to our neighbors
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 12
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_political_consolidation }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_we_lead #MKU tries to take the leadership of an MKU/Kumari alliance
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_cultural_ties_only }
+		mutually_exclusive = { 
+			focus = MKU_grand_kumari_alliance
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	
 	focus = {
 		id = MKU_grand_kumari_alliance #MKU and Kumari form a local power bloc
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 14
+		x = 16
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -629,15 +677,63 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_we_lead #MKU tries to take the leadership of an MKU/Kumari alliance
+		id = MKU_military_stablilization_act #MKU military doesn't like this turn of events
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 12
-		y = 4
+		x = 15
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MKU_cultural_ties_only }
+		prerequisite = { focus = MKU_we_lead
+						 focus = MKU_grand_kumari_alliance 
+							}
 		mutually_exclusive = { 
-			focus = MKU_grand_kumari_alliance
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_remind_obligations #Try to rely on their sense of duty
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_military_stablilization_act}
+		mutually_exclusive = {
+				focus = MKU_rely_loyalty
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_remind_obligations #Try to rely on their sense of duty
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_military_stablilization_act}
+		mutually_exclusive = {
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = MKU_rely_loyalty #Try to rely on their loyalty
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MKU_military_stablilization_act}
+		mutually_exclusive = {
+				focus = MKU_remind_obligations
 				}
 		ai_will_do = {
 			factor = 1
