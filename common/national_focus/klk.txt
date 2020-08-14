@@ -38,6 +38,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_war_support = 0.1
+			add_stability = -0.1
 		}
 	}
 focus = {
@@ -59,6 +61,50 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_stability = -0.1
+			USA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 50
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 focus = {
@@ -80,6 +126,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_stability = 0.15
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
 		}
 	}
 	focus = {
@@ -101,6 +152,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {free_trade}
+			add_ideas = {KLK_deregulation}
 		}
 	}
 	focus = {
@@ -122,6 +175,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -143,11 +197,12 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_workers_1}
 		}
 	}
-#########################
-# Kalari Traditionalism #
-#########################
+######################
+# Kalari Oligarchism #
+######################
 	focus = {
 		id = KLK_olig_mil
 		icon = GFX_focus_hol_the_foundations_of_defense
@@ -167,6 +222,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_militarized_state}
 		}
 	}
 	focus = {
@@ -188,6 +244,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_cultural_shift}
+			add_political_power = -25
 		}
 	}
 	focus = {
@@ -209,6 +267,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			custom_effect_tooltip = 01_KLK_mercenary
+			set_country_flag = KLK_mercenary_flag
 		}
 	}
 	focus = {
@@ -231,6 +291,17 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 150
+			create_corps_commander = {
+				name = "Bob again!!1 (yuo didnt xpect that :D D: D did you?)"
+				picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+				traits = { trickster brilliant_strategist }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 1
+			}
 		}
 	}
 	focus = {
@@ -252,6 +323,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_media_licensing}
 		}
 	}
 	focus = {
@@ -273,6 +345,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = KLK_deregulation
+				add_idea = KLK_deregulation_2
+			}
 		}
 	}
 	focus = {
@@ -294,6 +371,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_liberals}
 		}
 	}
 	focus = {
@@ -316,6 +394,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			custom_effect_tooltip = 01_KLK_anti_mandalism
+			set_country_flag = KLK_anti_mandalism_flag
 		}
 	}
 	focus = {
@@ -337,6 +417,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			root_out_resistance_effectiveness_factor = 0.1 
+			resistance_target = -0.1
 		}
 	}
 	focus = {
@@ -889,6 +971,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLK_workers_1
+				add_idea = KLK_workers_2
+			}
 		}
 	}
 	focus = {
@@ -1082,6 +1168,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1169,6 +1256,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 ##########################
