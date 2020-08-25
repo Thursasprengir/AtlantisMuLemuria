@@ -1,0 +1,116 @@
+ideas = {
+	country = {
+		nationalist_tensions = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				
+			}
+			rule = {
+				
+			}
+		}
+		the_old_order = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				
+			}
+			rule = {
+				
+			}
+		}
+		the_imperial_order = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.1
+			}
+			rule = {
+				
+			}
+		}
+		imperial_garrison = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				battlefield_support_tree = 0.1
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+			rule = {
+				
+			}
+		}
+		newbritisheducation = {
+		allowed = { always = no }
+		allowed_civil_war = { always = yes }
+		removal_cost = -1
+		modifier = {
+		research_speed_factor = 0.05
+		  }
+		  rule = {
+		  }
+	}
+	iac = {
+		allowed = { always = no }
+		allowed_civil_war = { always = yes }
+		removal_cost = -1
+		modifier = {
+		stability_factor = 0.10
+		  }
+		  rule = {
+		  }
+	}
+	
+	###############royal industry should have a construction bonus
+	royalindustry = {
+		allowed = { always = no }
+		allowed_civil_war = { always = yes }
+		removal_cost = -1
+		modifier = {
+		production_speed_buildings_factor = 0.05
+		  }
+		  rule = {
+		  }
+	}
+	
+}

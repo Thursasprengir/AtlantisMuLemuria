@@ -18,6 +18,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+					country_event = { id = sasr.1 }
+			}
 	}
 	
 		focus = {
@@ -72,6 +75,69 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = BLM_new_navy
+		icon = GFX_goal_unknown
+		x = 22
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_new_submarines
+		icon = GFX_goal_unknown
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { 
+		focus = BLM_new_navy
+		
+		}
+		mutually_exclusive = { 
+				focus = BLM_new_destroyers
+				}
+	}
+	focus = {
+		id = BLM_new_destroyers
+		icon = GFX_goal_unknown
+		x = 24
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { 
+		focus = BLM_new_navy
+		
+		}
+		mutually_exclusive = { 
+				focus = BLM_new_submarines
+				}
+	}
+	focus = {
+		id = BLM_fund_shipyards
+		icon = GFX_goal_unknown
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { 
+		focus = BLM_new_submarines
+		focus = BLM_new_destroyers
+		}
+	}
+	
 	#The 3 paths
 	focus = {
 		id = BLM_continue_the_reforms
@@ -87,6 +153,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+					country_event = { id = sasr.2 }
+			}
 	}
 
 	focus = {
@@ -103,6 +172,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+					country_event = { id = endreforms.1 }
+			}
 	}
 	
 	
@@ -346,19 +418,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
-	focus = {
-		id = BLM_go_through_educational_reforms
-		icon = GFX_goal_unknown
-		x = 5
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-		focus = BLM_alliedrelations
-		}
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -372,6 +433,9 @@ focus_tree = {
 		focus = BLM_go_through_educational_reforms
 		focus = BLM_lemurianindustrialcentre
 		focus = 
+		}
+		completion_reward = {
+		country_event = 
 		}
 		ai_will_do = {
 			factor = 1
@@ -403,7 +467,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BLM_suspend_persuction_permanently
+		id = BLM_suspend_persecution_permanently
 		icon = GFX_goal_unknown
 		x = 9	
 		y = 7
@@ -422,7 +486,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_liberty_beacon }
-		prerequisite = { focus = BLM_suspend_persuction_permanently }
+		prerequisite = { focus = BLM_suspend_persecution_permanently }
 		prerequisite = { focus = BLM_minority_rights }
 		ai_will_do = {
 			factor = 1
@@ -547,6 +611,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_ideas = iac
+		}
 	}
 	focus = {
 		id = BLM_expand_the_ig
@@ -578,6 +645,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = the_old_order
+			add_idea = the_imperial_order
+						}
+				}
 	}
 	focus = {
 		id = BLM_attract_british_settlers
@@ -592,6 +665,11 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			1008 = { add_extra_state_shared_building_slots = 2 }
+			990 = { add_extra_state_shared_building_slots = 2 }
+			1010 = { add_extra_state_shared_building_slots = 2 }
 		}
 	}
 	focus = {
@@ -693,6 +771,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_the_british_man }
+		prerequisite = { focus = BLM_reform_the_army }
 		mutually_exclusive = { 
 				
 				}
@@ -711,6 +790,27 @@ focus_tree = {
 		mutually_exclusive = { 
 				
 				}
+				completion_reward = {
+		add_ideas = royalindustry 	
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -729,6 +829,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			}
 	}
 	focus = {
 		id = BLM_fix_the_shipyards
@@ -745,6 +863,26 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+							}
+
+
 	}
 	focus = {
 		id = BLM_found_the_new_hampstead_university
@@ -759,6 +897,9 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -775,20 +916,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
-	focus = {
-		id = BLM_the_roads
-		icon = GFX_goal_unknown
-		x = 12
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_new_british_education focus = BLM_fix_the_shipyards }
-		mutually_exclusive = { 
-				
-				}
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+		add_ideas = newbritisheducation
 		}
 	}
 	focus = {
@@ -805,7 +934,74 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 	}
+	
 	focus = {
 		id = BLM_greatest_monument
 		icon = GFX_goal_unknown
