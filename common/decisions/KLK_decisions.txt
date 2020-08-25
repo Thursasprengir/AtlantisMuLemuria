@@ -1,0 +1,128 @@
+KLK_mercenary_decisions = {
+	KLK_hire_infantry = {
+		icon = generic_prepare_civil_war
+		available = {AND = {has_country_flag = KLK_mercenary_flag NOT = {has_country_flag = KLK_hiring}}}
+		visible = {has_country_flag = KLK_mercenary_flag}
+		cost = 100
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		complete_effect = {set_country_flag = KLK_hiring}
+		remove_effect = {
+			clr_country_flag = KLK_hiring
+			division_template = {
+				name = "Mercenary Infantry Unit"
+				is_locked = yes
+				priority = 2
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					artillery_brigade = { x = 1 y = 2 }
+					artillery_brigade = { x = 1 y = 3 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					recon = { x = 0 y = 2 }
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Buff Infantry Division\" division_template = \"Mercenary Infantry Unit\" start_experience_factor = 1.0 start_equipment_factor = 1.0" 
+					owner = ROOT
+				}
+			}
+		}
+	}
+	KLK_hire_mech = {
+		icon = generic_tank
+		available = {AND = {has_tech = motorised_infantry has_country_flag = KLK_mercenary_flag NOT = {has_country_flag = KLK_hiring}}}
+		visible = {has_country_flag = KLK_mercenary_flag}
+		cost = 100
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		complete_effect = {set_country_flag = KLK_hiring}
+		remove_effect = {
+			clr_country_flag = KLK_hiring
+			division_template = {
+				name = "Mercenary Mechanized Unit"
+				is_locked = yes
+				priority = 2
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+					light_armor = { x = 0 y = 1 }
+					light_armor = { x = 0 y = 2 }
+		
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+					mot_artillery_brigade = { x = 2 y = 0 }
+					mot_artillery_brigade = { x = 2 y = 1 }
+					mot_artillery_brigade = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					logistics_company = { x = 0 y = 1 }
+					recon = { x = 0 y = 2 }
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Mechanised Division\"
+					division_template = \"Mercenary Mechanized Unit\"
+					start_experience_factor = 1.0"
+					owner = ROOT
+				}
+			}
+		}
+	}
+}
+KLK_anti_mandalist_decisions = {
+	KLK_attack_mandalists = {
+		icon = generic_army_support
+		available = {NOT = {has_country_flag = KLK_ongoing_operation}}
+		visible = {has_country_flag = KLK_anti_mandalism_flag NOT = {has_country_flag = KLK_no_mandalists}}
+		days_remove = 2
+		ai_will_do = {factor = 1000}
+		complete_effect = {set_country_flag = KLK_ongoing_operation}
+		modifier = {
+			political_power_gain = -0.25
+			experience_gain_army = 0.25 
+			production_speed_buildings_factor = -0.2
+			weekly_manpower = -700
+		}
+		remove_effect = {
+			clr_country_flag = KLK_ongoing_operation
+			if = {
+				limit = {has_idea = KLK_bunch_of_ugly_commies}
+				swap_ideas = {
+					remove_idea = KLK_bunch_of_ugly_commies
+					add_idea = KLK_bunch_of_ugly_commies_2
+				}
+			}
+			else_if = {
+				limit = {has_idea = KLK_bunch_of_ugly_commies_2}
+				swap_ideas = {
+					remove_idea = KLK_bunch_of_ugly_commies_2
+					add_idea = KLK_bunch_of_ugly_commies_3
+				}
+			}
+			else_if = {
+				limit = {has_idea = KLK_bunch_of_ugly_commies_3}
+				swap_ideas = {
+					remove_idea = KLK_bunch_of_ugly_commies_3
+					add_idea = KLK_bunch_of_ugly_commies_4
+				}
+			}
+			else_if = {
+				limit = {has_idea = KLK_bunch_of_ugly_commies_4}
+				remove_ideas = {KLK_bunch_of_ugly_commies_4}
+				set_country_flag = KLK_no_mandalists
+			}
+		}
+	}
+}

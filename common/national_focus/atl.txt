@@ -1301,7 +1301,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-				add_political_power = 50
+			add_political_power = 50
 			swap_ideas = {
 				remove_idea = ATL_trading_empire
 				add_idea = ATL_trading_empire_2
@@ -1882,11 +1882,10 @@ focus = {
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				category = industry
 			}
-			custom_effect_tooltip = ATL_industrial_espionage
-			set_country_flag = ATL_USA_espionage
+			add_ideas = {ATL_USA_espionage}
 		}
 	}
 focus = {

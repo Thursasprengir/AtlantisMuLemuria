@@ -183,13 +183,6 @@ ATL_education = {
 	}
 }
 ATL_espionage = {
-	industrial_espionage_decision = {
-		icon = generic_construction
-		available = {has_country_flag = ATL_USA_espionage}
-		visible = {has_country_flag = ATL_USA_espionage}
-		cost = 100
-		complete_effect = {country_event = {id = atl.9}}
-	}
 	divert_resources = {
 		icon = generic_construction
 		available = {has_country_flag = ATL_UK_divert}
