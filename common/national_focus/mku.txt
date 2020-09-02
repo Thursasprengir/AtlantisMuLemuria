@@ -16,7 +16,14 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_political_power = -50
 		}
 	}
 	
@@ -38,6 +45,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.25 }
+		}
 	}
 
 	focus = {
@@ -55,6 +69,39 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			KUM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
 		}
 	}
 
@@ -74,6 +121,38 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -91,6 +170,13 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.25 }
 		}
 	}
 	
@@ -141,6 +227,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_political_power = -150
+		}
 	}
 	
 	focus = {
@@ -155,6 +248,13 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = -0.05
 		}
 	}
 	
@@ -171,6 +271,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = -0.05
+		}
 	}
 	
 	focus = {
@@ -185,6 +292,13 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = -0.05
 		}
 	}
 	
@@ -202,6 +316,13 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = 0.20
 		}
 	}
 	
@@ -326,6 +447,15 @@ focus_tree = {
 			factor = 1
 		}
 	}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
 	
 	focus = {
 		id = MKU_west_military_advances_3
@@ -339,6 +469,15 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
 		}
 	}
 	
@@ -372,6 +511,13 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_popularity = { ideology = mandalism popularity = 0.15 }
 		}
 	}
 	
@@ -694,7 +840,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_military_stablilization_act #MKU military doesn't like this turn of events
+		id = MKU_military_stabilization_act #MKU military doesn't like this turn of events
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 15
 		y = 5
@@ -717,7 +863,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MKU_military_stablilization_act}
+		prerequisite = { focus = MKU_military_stabilization_act}
 		mutually_exclusive = {
 				focus = MKU_rely_loyalty
 				}
@@ -733,7 +879,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MKU_military_stablilization_act}
+		prerequisite = { focus = MKU_military_stabilization_act}
 		mutually_exclusive = {
 				focus = MKU_remind_obligations
 				}
@@ -776,10 +922,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.25 }
+		}
 	}
 
 	focus = {
-		id = MKU_soviet_brethren #
+		id = MKU_soviet_brethren #Pressures Kumari into giving up Demistalavai (state 992)
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		x = 20
 		y = 3
@@ -801,10 +954,27 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_soviet_brethren }
+		bypass = {
+			992 = { NOT = { is_controlled_by = ROOT } } 
+		}
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
 			factor = 1
+		}
+		
+		completion_reward = {
+			992 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 14411
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -820,6 +990,20 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			1044 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -837,6 +1021,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.05
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -851,6 +1060,13 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = -0.1
 		}
 	}
 
@@ -867,6 +1083,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -25
+		}
 	}
 
 	focus = {
@@ -882,6 +1106,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -896,6 +1144,30 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -957,6 +1229,31 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_heavy_fighter
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
+			}
 		}
 	}
 
@@ -1035,6 +1332,33 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			971 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			1044 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			1045 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1189,6 +1513,33 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			971 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			1044 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			1045 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
