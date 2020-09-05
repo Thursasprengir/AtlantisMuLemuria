@@ -189,12 +189,19 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-		available_if_capitulated = yes
 		prerequisite = { focus = MKU_appeal_west }
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = MKU_western_tech_aid
 		}
 	}
 	
@@ -204,12 +211,36 @@ focus_tree = {
 		x = 3
 		y = 2
 		cost = 10
-		available_if_capitulated = yes
 		prerequisite = { focus = MKU_appeal_west }
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.05
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -324,6 +355,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.20
 		}
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.10 }
+		}
 	}
 	
 	focus = {
@@ -339,6 +373,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = MKU_tech1
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
 	}
 	
 	focus = {
@@ -353,6 +395,14 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = MKU_tech2
+				bonus = 2.0
+				uses = 2
+				category = industry
+			}
 		}
 	}
 	
@@ -370,6 +420,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = MKU_tech3
+				bonus = 3.0
+				uses = 3
+				category = industry
+			}
+		}
 	}
 	
 	focus = {
@@ -378,12 +436,35 @@ focus_tree = {
 		x = 2
 		y = 6
 		cost = 10
-		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_societal_reorganization }
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -393,12 +474,35 @@ focus_tree = {
 		x = 2
 		y = 7
 		cost = 10
-		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_industrial_growth_1 }
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -408,13 +512,36 @@ focus_tree = {
 		x = 2
 		y = 8
 		cost = 10
-		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_industrial_growth_2 }
 		prerequisite = { focus = MKU_west_technical_breakthroughs_2 }
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -431,6 +558,27 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 1.0
+				uses = 3
+				technology = paratroopers
+				technology = paratroopers2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_engineers
+				technology = tech_engineers2
+				technology = tech_engineers3
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+			}
+		}
 	}
 	
 	focus = {
@@ -446,16 +594,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				ahead_reduction = 2
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				category = motorized_equipment
 			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
 		}
+	}
+
 	
 	focus = {
 		id = MKU_west_military_advances_3
@@ -472,11 +626,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			navy_experience = 50
 			add_tech_bonus = {
-				name = armor_bonus
+				name = western_naval_aid
 				bonus = 1.0
-				uses = 2
-				category = armor
+				uses = 7
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+				category = ss_tech
+				category = ca_tech
+				category = cl_tech
+				category = dd_tech
 			}
 		}
 	}
@@ -493,6 +654,19 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = military_air_aid
+				bonus = 2.0
+				uses = 5
+				category = tactical_bomber
+				category = cas_bomber
+				category = heavy_air
+				category = light_fighter
+			}
 		}
 	}
 	
@@ -644,6 +818,41 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 1.0
+				uses = 3
+				technology = paratroopers
+				technology = paratroopers2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_engineers
+				technology = tech_engineers2
+				technology = tech_engineers3
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+			}
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 2
+				category = motorized_equipment
+			}
+		
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		
 		}
 	}
 	
