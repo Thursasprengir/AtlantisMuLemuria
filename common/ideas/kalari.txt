@@ -62,7 +62,7 @@ ideas = {
 			picture = naval_tradition
 			modifier = {
 				trade_laws_cost_factor = 1
-				min_export = 0.05
+				min_export = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.15
 			}
@@ -147,7 +147,7 @@ ideas = {
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
-				democratic_drift = 0.025
+				democratic_drift = 0.01
 			}
 		}
 		KLK_crackdowns = {
@@ -157,8 +157,50 @@ ideas = {
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
-				root_out_resistance_effectiveness_factor = 0.1 
+				root_out_resistance_effectiveness_factor = 0.15 
 				resistance_target = -0.1
+			}
+		}
+		KLK_american_media = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				democratic_drift = 0.01
+			}
+		}
+		KLK_privatized_lands = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				political_power_gain = -0.5
+				communism_drift = 0.05
+			}
+		}
+		KLK_holidays = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				
+			}
+		}
+		KLK_deep_state = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				operative_slot = 2
+				compliance_gain = 0.15
 			}
 		}
 		KLK_ = {
