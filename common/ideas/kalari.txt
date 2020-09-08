@@ -203,22 +203,27 @@ ideas = {
 				compliance_gain = 0.15
 			}
 		}
-		KLK_ = {
+		KLK_emancipation = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				consumer_goods_factor = -0.02
+				conscription = 0.03
 			}
 		}
-		KLK_ = {
+		KLK_community_service = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.15
 			}
 		}
 		KLK_ = {
