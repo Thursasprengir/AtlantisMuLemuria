@@ -2315,7 +2315,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "Friendship Class"					
 						type = ship_hull_heavy_1
-						name_group = WTS_BB_HISTORICAL
+						name_group = ENG_BB_HISTORICAL
 						parent_version = 0
 						modules = {
 							fixed_ship_battery_slot = ship_heavy_battery_1
@@ -2331,7 +2331,7 @@ focus_tree = {
 							rear_1_custom_slot = empty
 						}
 					}
-					load_oob = WTS_battleship_mtg
+					WTS = { load_oob = WTS_battleship_MTG }
 				}
 			}
 			if = {
@@ -2342,7 +2342,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = WTS_battleship_tt
 				hidden_effect = {
-					load_oob = WTS_battleship
+					WTS = { load_oob = WTS_battleship }
 				}
 			}
 		}
