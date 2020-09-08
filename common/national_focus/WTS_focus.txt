@@ -317,7 +317,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_stability = -0.35
+			add_stability = -0.15
 		}
 	}
 
@@ -493,7 +493,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.35 #preferables monthly pop increase
+			add_stability = 0.15 #preferables monthly pop increase
 		}
 	}
 
@@ -807,7 +807,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.15
+			add_stability = 0.10
 		}
 	}
 
@@ -1118,6 +1118,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.10
 			add_popularity = {
 					ideology = democratic
 					popularity = 0.1
@@ -1357,7 +1358,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_claim = 870
 			add_state_claim = 891
 			add_state_claim = 890
 		}
@@ -3400,7 +3400,7 @@ focus_tree = {
 							dockyard > 0
 							free_building_slots = {
 								building = dockyard
-								size > 2
+								size > 1
 								include_locked = yes
 							}
 						}
@@ -3414,14 +3414,14 @@ focus_tree = {
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -3434,7 +3434,7 @@ focus_tree = {
 						dockyard > 0
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 1
 							include_locked = yes
 						}
 					}
@@ -3444,14 +3444,14 @@ focus_tree = {
 						dockyard > 0
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -3464,7 +3464,7 @@ focus_tree = {
 						any_owned_state = {
 							free_building_slots = {
 								building = dockyard
-								size > 2
+								size > 1
 								include_locked = yes
 							}
 						}
@@ -3475,14 +3475,14 @@ focus_tree = {
 						controller = { tag = ROOT }
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
