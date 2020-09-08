@@ -1,5 +1,13 @@
 ﻿capital = 852
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "WTS_1936_naval_mtg"
+	else = {
+		set_naval_oob = "WTS_1936_naval_legacy"
+	}
+}
+
 oob = "WTS_1936"
 
 set_research_slots = 2
@@ -20,11 +28,48 @@ set_technology = {
 	transport = 1
 }
 
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_battleship = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+	}
+}
 
 add_political_power = 270
 
 add_ideas = {
 	GEQ_ifyourreadingthisyourepic
+	WTS_struggling_economy
 }
 
 set_politics = {
@@ -52,16 +97,6 @@ create_country_leader = {
 	picture = "Portrait_WTS_DQ_Patterson.dds"
 	expire = "1965.1.1"
 	ideology = socialism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Bob, the Balanced Centrist"
-	desc = "POLITICS_DQ_PATTERSON_DESC"
-	picture = "Portrait_WTS_DQ_Patterson.dds"
-	expire = "1965.1.1"
-	ideology = centrism
 	traits = {
 		#
 	}
