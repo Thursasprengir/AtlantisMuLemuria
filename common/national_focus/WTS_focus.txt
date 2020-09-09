@@ -96,7 +96,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			set_rule = { can_send_volunteers = yes }
-			add_ideas = WTS_xeni_legeona
+			add_ideas = {WTS_xeni_legeona}
 			hidden_effect = {
 				news_event = { id = WTSnews.52 days = 1 }
 			}
@@ -668,28 +668,6 @@ focus_tree = {
 				}
 			}
 			852 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -2091,7 +2069,7 @@ focus_tree = {
 	focus = {
 		id = WTS_bomber_focus
 		icon = GFX_goal_generic_air_bomber
-
+		mutually_exclusive = { focus = WTS_fighter_focus }
 		prerequisite = { focus = WTS_guardian_angels }
 
 		x = 36
@@ -2437,26 +2415,6 @@ focus_tree = {
 		
 		completion_reward = {
 			851 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2464,26 +2422,6 @@ focus_tree = {
 				}
 			}
 			852 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2852,26 +2790,6 @@ focus_tree = {
 		
 		completion_reward = {
 			851 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -2879,26 +2797,6 @@ focus_tree = {
 				}
 			}
 			852 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -3913,6 +3811,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		851 = {
 			add_building_construction = {
 				type = bunker
 				level = 1
@@ -3936,6 +3835,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 				province = 13569
+			}
 			}
 		}
 	}
@@ -3971,6 +3871,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		851 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -3995,8 +3896,10 @@ focus_tree = {
 				instant_build = yes
 				province = 13569
 			}
+			}
 		}
 	}
+	
 	focus = {
 		id = WTS_terrified_arms_2
 		icon = GFX_goal_generic_small_arms
