@@ -3422,13 +3422,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_manpower = 5000
-			add_tech_bonus = {
-				name = marines_bonus
-				bonus = 1.0
-				uses = 1
-				technology = marines
-				technology = marines2
-			}
+			add_ideas = WTS_tropic_troops
 		}
 	}
 
@@ -3700,6 +3694,7 @@ focus_tree = {
 		available = {
 			NOT = {
 				country_exists = VSH
+				has_government = fascism
 				}
 		}
 		
