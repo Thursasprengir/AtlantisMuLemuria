@@ -10,7 +10,7 @@ ideas = {
 			picture = trading_empire
 
 			modifier = {
-				trade_opinion_factor = -0.5
+				local_resources_factor = -0.30
 				production_factory_max_efficiency_factor = -0.30
 				production_speed_buildings_factor = -0.30
 			}
@@ -235,19 +235,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				ROOT = {
-					reverse_add_opinion_modifier = {
-						target = ENG
-						modifier = faction_traitor
-					}
-				}
-				ENG = {
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = faction_traitor
-						}
-					}
-				}
+				trade_opinion_factor = -0.25
 			}
 		}
 	political_advisor = {
