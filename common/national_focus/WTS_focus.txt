@@ -96,10 +96,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			set_rule = { can_send_volunteers = yes }
-			add_ideas = {WTS_xeni_legeona}
-			hidden_effect = {
-				news_event = { id = WTSnews.52 days = 1 }
-			}
 		}
 	}
 
@@ -168,7 +164,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			factor = 70
 			modifier = {
 				factor = 2
 				any_neighbor_country = {
@@ -1907,7 +1903,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 10
 		}
 
 		available = {
@@ -2255,16 +2251,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				any_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
+			factor = 25
 		}
 
 		available = {
