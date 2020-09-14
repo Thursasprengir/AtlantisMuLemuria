@@ -754,10 +754,11 @@ focus_tree = {
 		id = WTS_new_constitution
 		icon = GFX_focus_rom_abdicate
 
-		prerequisite = { focus = WTS_new_rights }
+		prerequisite = { focus = WTS_unity }
+		prerequisite = { focus = WTS_encourage_peace }
 
-		x = 6
-		y = 4
+		x = 7
+		y = 5
 
 		cost = 10
 
@@ -819,44 +820,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = -0.05
-		}
-	}
-	focus = {
-		id = WTS_raphaels_children
-		icon = GFX_goal_generic_defence
-
-		prerequisite = { focus = WTS_new_rights }
-
-		x = 9
-		y = 5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
 			add_manpower = 10000
 		}
 	}
+
 	#### "Reduecation" Camps ####
 
 	focus = {
@@ -1059,16 +1026,15 @@ focus_tree = {
 		}
 	}
 
-	#### Women's Suffrage ####
 
 	focus = {
-		id = WTS_womens_suffrage
+		id = WTS_unity
 		icon = GFX_goal_generic_national_unity
 
-		prerequisite = { focus = WTS_new_constitution focus = WTS_new_rights }
+		prerequisite = { focus = WTS_new_rights }
 
-		x = 7
-		y = 5
+		x = 6
+		y = 4
 
 		cost = 10
 
@@ -1203,7 +1169,8 @@ focus_tree = {
 		id = WTS_join_allies
 		icon = GFX_focus_chi_british_cooperation # goal_join_allies
 
-		prerequisite = { focus = WTS_womens_suffrage }
+		prerequisite = { focus = WTS_new_constitution }
+		mutually_exclusive = { focus = WTS_join_france}
 
 		x = 8
 		y = 6
@@ -1242,7 +1209,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = WTS_struggling_economy
 			ENG = { 
 				country_event = generic.2 
 			}
@@ -1255,7 +1221,8 @@ focus_tree = {
 		id = WTS_join_france
 		icon = GFX_focus_chi_reach_out_to_france # focus_generic_little_entente
 
-		prerequisite = { focus = WTS_womens_suffrage }
+		prerequisite = { focus = WTS_new_constitution }
+		mutually_exclusive = { focus = WTS_join_allies }
 
 		x = 6
 		y = 6
@@ -1294,7 +1261,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = WTS_struggling_economy
 			FRA = { 
 				country_event = generic.2 
 			}
@@ -1344,6 +1310,7 @@ focus_tree = {
 		icon = GFX_focus_chi_mission_to_germany # goal_join_axis
 
 		prerequisite = { focus = WTS_ban_communism }
+		mutually_exclusive = { focus = WTS_join_italy }
 
 		x = 12
 		y = 8
@@ -1382,7 +1349,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = WTS_struggling_economy
 			GER = { country_event = generic.2 }
 		}
 	}
@@ -1394,6 +1360,7 @@ focus_tree = {
 		icon = GFX_focus_generic_italy_first
 
 		prerequisite = { focus = WTS_ban_communism }
+		mutually_exclusive = { focus = WTS_join_axis }
 
 		x = 14
 		y = 8
@@ -1432,7 +1399,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = WTS_struggling_economy
 			ITA = { 
 				country_event = generic.2
 			}
@@ -2046,20 +2012,15 @@ focus_tree = {
 
 		}
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
-			}
-		}
+completion_reward = {
+            air_experience = 25
+            add_tech_bonus = {
+                name = fighter_bonus
+                bonus = 1.0
+                uses = 1
+                category = light_fighter
+            }
+        }
 	}
 
 
@@ -2099,9 +2060,6 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
 				category = tactical_bomber
 			}
 		}
@@ -3928,7 +3886,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 2500
-				producer = GRE
+				producer = FMU
 			}
 		}
 	}
