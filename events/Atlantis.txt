@@ -1,8 +1,8 @@
-﻿add_namespace = atl
+﻿add_namespace = atlantis
 country_event = {
-	id = atl.1
-	title = atl.1.t
-	desc = atl.1.d
+	id = atlantis.1
+	title = atlantis.1.t
+	desc = atlantis.1.d
 	picture = GFX_news_event_fighting_gangsters
 	
 	trigger = {
@@ -14,35 +14,35 @@ country_event = {
 	
 	option = {
 		ai_chance = {factor = 300}
-		name = atl.1.a
-		hidden_effect = {country_event = {id = atl.2 days = 50 random = 300}}
+		name = atlantis.1.a
+		hidden_effect = {country_event = {id = atlantis.2 days = 50 random = 300}}
 		add_ideas = {ATL_aggressive_search_itork_idea}
 		set_country_flag = ATL_currently_searching_itorkanak
 	}
 	option = {
 		ai_chance = {factor = 200}
-		name = atl.1.b
-		hidden_effect = {country_event = {id = atl.2 days = 70 random = 500}}
+		name = atlantis.1.b
+		hidden_effect = {country_event = {id = atlantis.2 days = 70 random = 500}}
 		add_ideas = {ATL_balanced_search_itork_idea}
 		set_country_flag = ATL_currently_searching_itorkanak
 	}
 	option = {
 		ai_chance = {factor = 100}
-		name = atl.1.c
-		hidden_effect = {country_event = {id = atl.2 days = 100 random = 600}}
+		name = atlantis.1.c
+		hidden_effect = {country_event = {id = atlantis.2 days = 100 random = 600}}
 		set_country_flag = ATL_currently_searching_itorkanak
 	}
 }
 news_event = {
 
-	id = atl.2
-	title = atl.2.t
-	desc = atl.2.d
+	id = atlantis.2
+	title = atlantis.2.t
+	desc = atlantis.2.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
 	
 	option = {
-		name = atl.2.a
+		name = atlantis.2.a
 		hidden_effect = {
 			clr_country_flag = ATL_searching_itorkanak
 			remove_ideas = ATL_balanced_search_itork_idea
@@ -51,9 +51,9 @@ news_event = {
 	}
 }
 news_event = {
-	id = atl.3
-	title = atl.3.t
-	desc = atl.3.d
+	id = atlantis.3
+	title = atlantis.3.t
+	desc = atlantis.3.d
 	picture = GFX_news_event_fighting_gangsters
 	
 	trigger = {
@@ -64,7 +64,7 @@ news_event = {
 	mean_time_to_happen = {days = 280}
 	
 	option = {
-		name = atl.3.a
+		name = atlantis.3.a
 		if = {
 			limit = { has_idea = ATL_itorkanak_at_war_2}
 			swap_ideas = {
@@ -89,9 +89,9 @@ news_event = {
 	}
 }
 news_event = {
-	id = atl.4
-	title = atl.4.t
-	desc = atl.4.d
+	id = atlantis.4
+	title = atlantis.4.t
+	desc = atlantis.4.d
 	
 	picture = GFX_news_event_fighting_gangsters
 	
@@ -99,7 +99,7 @@ news_event = {
 	mean_time_to_happen = {days = 100}
 	
 	option = {
-		name = atl.4.a
+		name = atlantis.4.a
 		if = {
 			limit = {has_idea = ATL_itorkanak_at_war}
 			random_owned_controlled_state = {
@@ -169,9 +169,9 @@ news_event = {
 	}
 }
 country_event = {
-	id = atl.5
-	title = atl.5.t
-	desc = atl.5.d
+	id = atlantis.5
+	title = atlantis.5.t
+	desc = atlantis.5.d
 	picture = GFX_news_event_fighting_gangsters
 	
 	trigger = {
@@ -183,35 +183,35 @@ country_event = {
 	
 	option = {
 		ai_chance = {factor = 300}
-		name = atl.5.a
-		hidden_effect = {country_event = {id = atl.6 days = 50 random = 300}}
+		name = atlantis.5.a
+		hidden_effect = {country_event = {id = atlantis.6 days = 50 random = 300}}
 		add_ideas = {ATL_aggressive_search_kapra_idea}
 		set_country_flag = ATL_currently_searching_kaprastiak
 	}
 	option = {
 		ai_chance = {factor = 200}
-		name = atl.5.b
-		hidden_effect = {country_event = {id = atl.6 days = 70 random = 500}}
+		name = atlantis.5.b
+		hidden_effect = {country_event = {id = atlantis.6 days = 70 random = 500}}
 		add_ideas = {ATL_balanced_search_kapra_idea}
 		set_country_flag = ATL_currently_searching_kaprastiak
 	}
 	option = {
 		ai_chance = {factor = 100}
-		name = atl.5.c
-		hidden_effect = {country_event = {id = atl.6 days = 100 random = 600}}
+		name = atlantis.5.c
+		hidden_effect = {country_event = {id = atlantis.6 days = 100 random = 600}}
 		set_country_flag = ATL_currently_searching_kaprastiak
 	}
 }
 news_event = {
 
-	id = atl.6
-	title = atl.6.t
-	desc = atl.6.d
+	id = atlantis.6
+	title = atlantis.6.t
+	desc = atlantis.6.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
 	
 	option = {
-		name = atl.6.a
+		name = atlantis.6.a
 		hidden_effect = {
 			clr_country_flag = ATL_searching_kaprastiak
 			remove_ideas = ATL_balanced_search_kapra_idea
@@ -220,9 +220,9 @@ news_event = {
 	}
 }
 news_event = {
-	id = atl.7
-	title = atl.7.t
-	desc = atl.7.d
+	id = atlantis.7
+	title = atlantis.7.t
+	desc = atlantis.7.d
 	picture = GFX_news_event_fighting_gangsters
 	
 	trigger = {
@@ -233,7 +233,7 @@ news_event = {
 	mean_time_to_happen = {days = 280}
 	
 	option = {
-		name = atl.7.a
+		name = atlantis.7.a
 		if = {
 			limit = { has_idea = ATL_kaprastiak_at_war_2}
 			swap_ideas = {
@@ -258,9 +258,9 @@ news_event = {
 	}
 }
 news_event = {
-	id = atl.8
-	title = atl.8.t
-	desc = atl.8.d
+	id = atlantis.8
+	title = atlantis.8.t
+	desc = atlantis.8.d
 	
 	picture = GFX_news_event_fighting_gangsters
 	
@@ -268,7 +268,7 @@ news_event = {
 	mean_time_to_happen = {days = 100}
 	
 	option = {
-		name = atl.8.a
+		name = atlantis.8.a
 		if = {
 			limit = {has_idea = ATL_kaprastiak_at_war}
 			random_owned_controlled_state = {
@@ -332,15 +332,15 @@ news_event = {
 	}
 }
 country_event = {
-	id = atl.9
-	title = atl.9.t
-	desc = atl.9.d
+	id = atlantis.9
+	title = atlantis.9.t
+	desc = atlantis.9.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
 	
 	option = {
 		ai_chance = {factor = 100}
-		name = atl.9.a
+		name = atlantis.9.a
 		add_tech_bonus = {
 			name = radar_focus
 			bonus = 1.0
@@ -354,7 +354,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = {factor = 100}
-		name = atl.9.b
+		name = atlantis.9.b
 		add_tech_bonus = {
 			name = radar_focus
 			bonus = 1.0
@@ -366,7 +366,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = {factor = 100}
-		name = atl.9.c
+		name = atlantis.9.c
 		add_tech_bonus = {
 			name = radar_focus
 			bonus = 1.0
@@ -378,7 +378,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = {factor = 100}
-		name = atl.9.d
+		name = atlantis.9.d
 		add_tech_bonus = {
 			name = radar_focus
 			bonus = 1.0
