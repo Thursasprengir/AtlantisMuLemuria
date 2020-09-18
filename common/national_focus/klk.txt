@@ -577,6 +577,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = -50
+			add_ideas = {KLK_regulatory}
 		}
 	}
 	focus = {
@@ -598,6 +600,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_stability = -0.05
+			resistance_target = -0.1
 		}
 	}
 	focus = {
@@ -619,6 +623,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			custom_effect_tooltip = 01_KLK_anti_mandalism
+			set_country_flag = KLK_anti_mandalism_flag
 		}
 	}
 	focus = {
@@ -640,6 +646,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			opinion_gain_monthly_same_ideology_factor = 0.4
 		}
 	}
 	focus = {
@@ -661,6 +668,33 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 100
+			SOV = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
 		}
 	}
 	focus = {
@@ -682,6 +716,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_reformed_nation}
 		}
 	}
 	focus = {
@@ -787,6 +822,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLK_regulatory
+				add_idea = KLK_regulatory_2
+			}
 		}
 	}
 	focus = {
