@@ -10,7 +10,7 @@ focus_tree = {
 		continuous_focus_position = { x = 50 y = 1500 }
 		focus = {
 		id = MKU_hungry_years
-		icon = GFX_r56_goal_generic_citizens
+		icon = GFX_goal_generic_attack_allies
 		x = 15
 		y = 0
 		cost = 10
@@ -31,7 +31,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_appeal_west #general help from the West
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_support_democracy
 		x = 2
 		y = 1
 		cost = 10
@@ -56,7 +56,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_appeal_locally #turn to Kumari
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_focus_bra_federalism
 		x = 10
 		y = 1
 		cost = 10
@@ -107,7 +107,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_appeal_communism #help me Russia, help, help me Russia!
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_generic_goal_communist_reforms
 		x = 21
 		y = 1
 		cost = 10
@@ -157,7 +157,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_dig_ourselves_out #Meru Kumari has photon torpedoes
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_plan
 		x = 28
 		y = 1
 		cost = 10
@@ -207,7 +207,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_material_aid #build factories, make things
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_focus_generic_industry_2
 		x = 3
 		y = 2
 		cost = 10
@@ -246,7 +246,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_humiliating_reforms #foreign things are happening, people don't like it
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_armed_protest
 		x = 2
 		y = 3
 		cost = 10
@@ -269,7 +269,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_upper_class_discontent
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_GRE_opposition
 		x = 0
 		y = 4
 		cost = 10
@@ -291,7 +291,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_urban_discontent
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_citizens
 		x = 2
 		y = 4
 		cost = 10
@@ -313,7 +313,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_rural_discontent
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_overturners
 		x = 4
 		y = 4
 		cost = 10
@@ -335,7 +335,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_societal_reorganization
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_FRA_reynaud_economic_reforms
 		x = 2
 		y = 5
 		cost = 10
@@ -362,7 +362,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_technical_breakthroughs_1
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_goal_civilian_production
 		x = 0
 		y = 6
 		cost = 10
@@ -385,7 +385,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_technical_breakthroughs_2
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_SIA_improve_industry
 		x = 0
 		y = 7
 		cost = 10
@@ -408,7 +408,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_technical_breakthroughs_3
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_power_plant
 		x = 0
 		y = 8
 		cost = 10
@@ -432,11 +432,88 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_industrial_growth_1
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_factoryplanning
 		x = 2
 		y = 6
 		cost = 10
 		prerequisite = { focus = MKU_west_societal_reorganization }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MKU_west_industrial_growth_2
+		icon = GFX_goal_italy_bring_industry_to_the_mezzogiorno
+		x = 2
+		y = 7
+		cost = 10
+		prerequisite = { focus = MKU_west_industrial_growth_1 }
+		mutually_exclusive = { 
+				}
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MKU_west_industrial_growth_3
+		icon = GFX_r56_focus_generic_expansion_of_new_towns
+		x = 2
+		y = 8
+		cost = 10
+		prerequisite = { focus = MKU_west_industrial_growth_2 }
+		prerequisite = { focus = MKU_west_technical_breakthroughs_2 }
 		mutually_exclusive = { 
 				}
 		ai_will_do = {
@@ -469,85 +546,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_west_industrial_growth_2
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 2
-		y = 7
-		cost = 10
-		prerequisite = { focus = MKU_west_industrial_growth_1 }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = industrial_complex
-						level = 4
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = MKU_west_industrial_growth_3
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 2
-		y = 8
-		cost = 10
-		prerequisite = { focus = MKU_west_industrial_growth_2 }
-		prerequisite = { focus = MKU_west_technical_breakthroughs_2 }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 6
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
 		id = MKU_west_military_advances_1
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_army_elite
 		x = 4
 		y = 6
 		cost = 10
@@ -583,7 +583,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_military_advances_2
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_FRA_increase_military_spendings
 		x = 4
 		y = 7
 		cost = 10
@@ -613,7 +613,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_military_advances_3
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_large_fleet
 		x = 4
 		y = 8
 		cost = 10
@@ -644,7 +644,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_west_military_advances_4
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_zero_blue
 		x = 4
 		y = 9
 		cost = 10
@@ -675,7 +675,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_strengthen_ties #draw a bit closer to Kumari
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_goal_localalliance
 		x = 10
 		y = 2
 		cost = 10
@@ -697,7 +697,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_military_ties_only #either alliance as strong Kumari + weak Meru Kumari, or Kumari overlordship
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_focus_generic_army_modernizations
 		x = 7
 		y = 3
 		cost = 10
@@ -714,7 +714,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_complete_allies #Mandalist path, eventual integration possible
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_goal_generic_aristocratic_cooperation
 		x = 10
 		y = 3
 		cost = 10
@@ -731,7 +731,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_cultural_ties_only #allows for equal alliance with Kumari
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_AUS_emergency_powers
 		x = 15
 		y = 3
 		cost = 10
@@ -750,7 +750,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_integrated_defense #Stay independent, but allied, with Kumari
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_focus_generic_collective_defense
 		x = 6
 		y = 4
 		cost = 10
@@ -766,7 +766,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_kumari_umbrella #Become a protectorate of Kumari
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_class_a_reservists
 		x = 8
 		y = 4
 		cost = 10
@@ -782,7 +782,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_new_military_factories
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_manufacturers_cooperation
 		x = 6
 		y = 5
 		cost = 10
@@ -803,7 +803,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_new_unit_designs
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_license_tanks
 		x = 8
 		y = 5
 		cost = 10
@@ -858,7 +858,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_more_military_production
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_polish_wartime_industry
 		x = 6
 		y = 6
 		cost = 10
@@ -873,7 +873,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_southern_defenses #fortify southern border w/ BLM
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_city_chain_forts
 		x = 8
 		y = 6
 		cost = 10
@@ -889,7 +889,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_southeastern_defenses #fortify southeastern border w/ AKM
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_goal_fortificationpush
 		x = 8
 		y = 7
 		cost = 10
@@ -905,7 +905,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_political_will #sucks away all political power for X amount of time
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_election_chaos
 		x = 10
 		y = 4
 		cost = 10
@@ -921,7 +921,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_one_people_one_government #conversion to mandalism
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_FRA_mobilisation
 		x = 10
 		y = 5
 		cost = 10
@@ -937,7 +937,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_means_of_production
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_FRA_VIC_rationing
 		x = 10
 		y = 6
 		cost = 10
@@ -953,7 +953,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_local_komissars
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_communist_victory
 		x = 12
 		y = 6
 		cost = 10
@@ -969,7 +969,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_political_consolidation #get some political points and stablization
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_communist_visible_hand
 		x = 12
 		y = 7
 		cost = 10
@@ -985,7 +985,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_expand_the_revolution #export the glory of Mandalism to our neighbors
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_goal_stop
 		x = 12
 		y = 8
 		cost = 10
@@ -1001,7 +1001,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_kumari_union #gives Kumari the option to annex us
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_fist_with_flags
 		x = 10
 		y = 8
 		cost = 10
@@ -1017,7 +1017,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_we_lead #MKU tries to take the leadership of an MKU/Kumari alliance
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_SIA_control_army_2
 		x = 14
 		y = 4
 		cost = 10
@@ -1034,7 +1034,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_grand_kumari_alliance #MKU and Kumari form a local power bloc
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_morale_bonus
 		x = 16
 		y = 4
 		cost = 10
@@ -1050,7 +1050,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_military_stabilization_act #MKU military doesn't like this turn of events
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_army_mobilization
 		x = 15
 		y = 5
 		cost = 10
@@ -1067,7 +1067,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_remind_obligations #Try to rely on their sense of duty
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_centralize_power
 		x = 14
 		y = 6
 		cost = 10
@@ -1083,7 +1083,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_rely_loyalty #Try to rely on their loyalty
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_manpower
 		x = 16
 		y = 6
 		cost = 10
@@ -1099,7 +1099,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_military_response #huge hit to democrats, communists, and fascists in government
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_r56_goal_generic_military_government
 		x = 15
 		y = 7
 		cost = 10
@@ -1120,7 +1120,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_glorious_communist_future #start down the commie path
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_CRO_communist_republic
 		x = 20
 		y = 2
 		cost = 10
@@ -1142,7 +1142,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_soviet_brethren #Pressures Kumari into giving up Demistalavai (state 992)
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_comm_purge
 		x = 20
 		y = 3
 		cost = 10
@@ -1157,7 +1157,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_soviet_naval_bases #the Soviets help us build naval bases!
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_commie_investments
 		x = 20
 		y = 4
 		cost = 10
@@ -1189,7 +1189,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_soviet_air_bases #the Soviets help us build air bases!
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_commie_investments
 		x = 18
 		y = 4
 		cost = 10
@@ -1218,7 +1218,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_red_production_advisors #increase production tech research
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_communist_armysmall
 		x = 19
 		y = 5
 		cost = 10
@@ -1242,14 +1242,14 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
-							size > 2
+							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
-						level = 4
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1259,7 +1259,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_entrenched_local_attitudes #increase in unrest
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_ban_aristocrats
 		x = 22
 		y = 2
 		cost = 10
@@ -1281,7 +1281,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_placate_masses #spend money, convince people -increase consumer goods requ-
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_cuba_law_of_sugar_coordination
 		x = 22
 		y = 3
 		cost = 10
@@ -1304,7 +1304,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_industrial_revolution
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_investinfactories
 		x = 22
 		y = 4
 		cost = 10
@@ -1330,10 +1330,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1343,7 +1343,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_industrial_revolution_2
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_FRA_increase_military_spendings
 		x = 22
 		y = 5
 		cost = 10
@@ -1363,16 +1363,34 @@ focus_tree = {
 			if = {
 				random_owned_controlled_state = {
 					limit = {
+						NOT = {has_state_flag = mil_effort_built1}
+							free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
 						free_building_slots = {
 							building = industrial_complex
 							size > 1
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1382,7 +1400,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_soviet_technological_revolution #incr tech research -add a research slot-
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_communist_brain
 		x = 21
 		y = 6
 		cost = 10
@@ -1398,7 +1416,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_soviet_military_research #military research bonus
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_communist_revolt
 		x = 18
 		y = 7
 		cost = 10
@@ -1413,7 +1431,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_soviet_consumer_patterns #decreases need for consumer goods
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_Controlled_Economy
 		x = 20
 		y = 7
 		cost = 10
@@ -1428,7 +1446,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_soviet_air_power #air research bonus
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_communist_pride
 		x = 22
 		y = 7
 		cost = 10
@@ -1468,7 +1486,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_soviet_workers_paradise #infrastructure boost
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_promote_ruralism
 		x = 24
 		y = 7
 		cost = 10
@@ -1483,7 +1501,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_badboy_kumari #sours relationship with Kumari
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_backstab
 		x = 24
 		y = 4
 		cost = 10
@@ -1498,7 +1516,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_defend_against_kumari #defenses against Kumari
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_italy_restructure_the_divisions
 		x = 24
 		y = 5
 		cost = 10
@@ -1516,7 +1534,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_mountain_troops #Meru Kumari prepares for war with mountain neighbors
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_r56_generic_mountain_warfare
 		x = 26
 		y = 2
 		cost = 10
@@ -1531,7 +1549,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_mountain_supply #Meru Kumari prepares infrastructure into mts
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_modernizing_the_cavalry
 		x = 26
 		y = 3
 		cost = 10
@@ -1573,7 +1591,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_special_forces #Meru Kumari prepares special forces
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_double_daggers
 		x = 28
 		y = 2
 		cost = 10
@@ -1588,7 +1606,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_civilian_preparation #Meru Kumari prepares civilians for the conflict
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_modernizing_the_cavalry2
 		x = 28
 		y = 3
 		cost = 10
@@ -1603,7 +1621,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_support_battalions #Meru Kumari prepares artillery and tanks
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_army_mobilization2
 		x = 30
 		y = 2
 		cost = 10
@@ -1618,7 +1636,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_military_industry #Meru Kumari prepares military-industrial complex
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_focus_generic_study_foreign_tanks
 		x = 30
 		y = 3
 		cost = 10
@@ -1633,7 +1651,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_meru_kumari_forever #Meru Kumari shifts national outlook to fascist
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_italy_victory_in_the_civil_war
 		x = 28
 		y = 4
 		cost = 10
@@ -1650,7 +1668,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_demand_onipravelu #Meru Kumari starts absorbing surrounding areas
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_land_seizure
 		x = 27
 		y = 5
 		cost = 10
@@ -1665,7 +1683,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_demand_hakarnisha #Meru Kumari starts absorbing surrounding areas
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_land_seizure
 		x = 29
 		y = 5
 		cost = 10
@@ -1680,7 +1698,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_insult_neighbors #gain political capital by pissing off neighbors
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_backstab
 		x = 31
 		y = 5
 		cost = 10
@@ -1695,7 +1713,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_consolidation_civ #consolidate gains, civilian industry
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_generic_agrarian_reform_focus
 		x = 26
 		y = 6
 		cost = 10
@@ -1711,7 +1729,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_consolidation_infra #consolidate gains, build infrastructure
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_public_works_A
 		x = 28
 		y = 6
 		cost = 10
@@ -1754,7 +1772,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_political_gains #gain political capital
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_mexico_open_the_borders
 		x = 27
 		y = 7
 		cost = 10
@@ -1770,7 +1788,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_consolidation_mil #consolidate gains, military industry
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_infantry_offensive
 		x = 30
 		y = 6
 		cost = 10
@@ -1786,7 +1804,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKU_mil_research_groups #military research groups - add research slot
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_national_defense_fund
 		x = 30
 		y = 7
 		cost = 10
@@ -1806,7 +1824,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_economic_recovery
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_generic_consumer_goods
 		x = 21
 		y = 10
 		cost = 10
@@ -1821,7 +1839,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_civilian_focus
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_wheat
 		x = 19
 		y = 11
 		cost = 10
@@ -1836,7 +1854,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_education_focus
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_supremacy_of_will
 		x = 19
 		y = 12
 		cost = 10
@@ -1851,7 +1869,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_foreign_faculty #slight research bonus, slight destabilization
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_research_silver_cooperation
 		x = 18
 		y = 13
 		cost = 10
@@ -1866,7 +1884,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_industrial_focus
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_investinfactories
 		x = 21
 		y = 11
 		cost = 10
@@ -1881,7 +1899,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_engineering_focus
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_shipbuilding
 		x = 21
 		y = 12
 		cost = 10
@@ -1896,7 +1914,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_industrial_research
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_italy_establish_the_sme
 		x = 21
 		y = 13
 		cost = 10
@@ -1912,7 +1930,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_infrastructure_focus
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_focus_generic_tank_production
 		x = 23
 		y = 11
 		cost = 10
@@ -1927,7 +1945,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_military_infrast_focus
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_goal_generic_construct_military
 		x = 23
 		y = 12
 		cost = 10
@@ -1942,7 +1960,7 @@ focus_tree = {
 
 	focus = {
 		id = MKU_military_research_initiative
-		icon = GFX_goal_tfv_sever_ties_with_uk
+		icon = GFX_r56_goal_generic_recruitment
 		x = 23
 		y = 14
 		cost = 10
