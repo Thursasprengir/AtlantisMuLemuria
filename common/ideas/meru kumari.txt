@@ -59,7 +59,9 @@ ideas = {
 				original_tag = "MKU"
 			}
 			allowed_civil_war = {
-				has_government = mandalism
+				NOT = {	has_government = communism}
+				NOT = { has_government = democratic}
+				NOT = { has_government = fascism}
 			}
 			available = {
 				
@@ -105,7 +107,9 @@ ideas = {
 				original_tag = "MKU"
 			}
 			allowed_civil_war = {
-				has_government = mandalism
+				NOT = {	has_government = communism}
+				NOT = { has_government = democratic}
+				NOT = { has_government = fascism}
 			}
 			available = {
 				

@@ -3676,7 +3676,11 @@ completion_reward = {
 		}
 
 		available = {
-
+			ENG = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = no
+				is_faction_leader = yes
+			}
 		}
 		
 		bypass = {
@@ -3684,7 +3688,7 @@ completion_reward = {
 		}
 
 		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		
 		complete_tooltip = {
@@ -3857,7 +3861,11 @@ completion_reward = {
 		}
 
 		available = {
-
+			GER = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = no
+				is_faction_leader = yes
+			}
 		}
 		
 		bypass = {
@@ -3865,7 +3873,7 @@ completion_reward = {
 		}
 
 		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		
 		complete_tooltip = {
@@ -3907,7 +3915,11 @@ completion_reward = {
 		}
 
 		available = {
-
+			SOV = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = no
+				is_faction_leader = yes
+			}
 		}
 		
 		bypass = {
@@ -3915,7 +3927,7 @@ completion_reward = {
 		}
 
 		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		
 		complete_tooltip = {

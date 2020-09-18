@@ -191,6 +191,26 @@ ideologies = {
 			centrism = {
 			}
 			
+			mainline_mandalism = {
+			}
+			
+			commie_mandalism = {
+			}
+			
+			socio_mandalism = {
+			}
+			
+			anarcho_mandalism = {
+			}
+			
+			anti_western_mandalism = {
+				can_be_randomly_selected = no
+			}
+			
+			anti_commie_mandalism = {
+				can_be_randomly_selected = no
+			}
+			
 			islamic_fundamentalism = {
 				can_be_randomly_selected = no
 			}
@@ -204,7 +224,8 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 124 124 124 }
+		color = { 150 150 150 }
+		#color = { 244 117 0 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -237,67 +258,4 @@ ideologies = {
 	}
 
 
-	mandalism = {
-		
-		types = {
-		
-			mainline_mandalism = {
-			}
-			
-			commie_mandalism = {
-			}
-			
-			socio_mandalism = {
-			}
-			
-			anarcho_mandalism = {
-			}
-			
-			anti_western_mandalism = {
-				can_be_randomly_selected = no
-			}
-			
-			anti_commie_mandalism = {
-				can_be_randomly_selected = no
-			}
-			
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_MANDALIST_1"
-			"FACTION_NAME_MANDALIST_2"
-			"FACTION_NAME_MANDALIST_3"
-			"FACTION_NAME_MANDALIST_4"
-			"FACTION_NAME_MANDALIST_5"
-		}
-		
-		color = { 244 117 0 }
-		
-		war_impact_on_world_tension = 0.75		#Mandalism less threatening
-		faction_impact_on_world_tension = 0.5
-		
-		ai_communist = yes # uses the mandalist AI behaviour
-		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-		
-		can_collaborate = yes
-		
-		modifiers = {
-			puppet_cost_factor = -0.3
-			civilian_intel_to_others = 10.0
-			army_intel_to_others = 7.5
-			navy_intel_to_others = 12.5
-			airforce_intel_to_others = 7.5
-			hidden_modifier = { join_faction_tension = -0.1 }
-		}
-		
-		faction_modifiers = {
-			
-		}
-
-	}
 }
