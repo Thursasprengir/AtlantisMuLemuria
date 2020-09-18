@@ -1,0 +1,143 @@
+prospect_for_resources = {
+	develop_single_chakkrumivan = {
+		icon = steel
+		highlight_states = {state = 1018}
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 1018
+			controls_state = 1018
+		}
+		visible = {
+			owns_state = 1018
+			controls_state = 1018
+			1018 = {NOT = {has_state_flag = steel_developed}}
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 6
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			1018 = { set_state_flag = steel_developed } 
+			1018 = {add_resource = {type = steel amount = 12}}
+		}
+	}
+	develop_repeatable_demistalavai = {
+		icon = steel
+		allowed = {}
+		highlight_states = {state = 992}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 992
+			controls_state = 992
+		}
+		visible = {
+			owns_state = 992
+			controls_state = 992
+			992 = {NOT = {has_state_flag = {flag = steel_developed value = 6}}}
+		}
+		cost = 25
+		days_remove = time_demistalavai
+		modifier = {civilian_factory_use = 3}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 100
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_to_variable = {var = time_demistalavai value = 10}
+			992 = {
+				if = {
+					limit = {NOT = {has_state_flag = steel_developed}}
+					set_state_flag = {flag = steel_developed value = 1}
+				}
+				else = {modify_state_flag = {flag = steel_developed value = 1}}
+			}
+			992 = {
+				add_resource = {type = steel amount = 4}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {check_variable = {var = time_demistalavai value = 20 compare = less_than}}
+				set_variable = {var = time_demistalavai value = 20}
+			}
+		}
+	}
+	develop_demistalavai_industrial_district = {
+		icon = generic_construction
+		allowed = {}
+		highlight_states = {
+			state = 992
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 992
+			controls_state = 992
+		}
+		visible = {
+			owns_state = 992
+			controls_state = 992
+			992 = {NOT = {has_state_flag = industrial_district_developed}}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		modifier = {civilian_factory_use = 12}
+		ai_will_do = {factor = 1}
+		remove_effect = {
+			992 = {set_state_flag = industrial_district_developed} 
+			992 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+			}
+		}
+	}
+	develop_demistalavai_industries = {
+		icon = steel
+		allowed = {}
+		highlight_states = {state = 992}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 992
+			controls_state = 992
+		}
+		visible = {
+			owns_state = 992
+			controls_state = 992
+			992 = {has_state_flag = {flag = industrial_district_developed}}
+		}
+		cost = 25
+		days_remove = demistalavai_industry_duration
+		modifier = {civilian_factory_use = 12}
+		ai_will_do = {factor = 1 modifier = {has_political_power < 200 factor = 0}}
+		remove_effect = {
+			add_to_variable = { var = demistalavai_industry_duration value = 30 }
+			992 = {
+				if = {
+					limit = {NOT = {has_state_flag = industry_developed}}
+					set_state_flag = {flag = industry_developed value = 1}
+				}
+				else = {modify_state_flag = {flag = industry_developed value = 1}}
+			}
+			992 = {add_resource = {type = steel amount = 6}}
+		}
+		complete_effect = {
+			if = {
+				limit = {check_variable = {var = demistalavai_industry_duration value = 30 compare = less_than}}
+				set_variable = { var = demistalavai_industry_duration value = 30 }
+			}
+		}
+	}
+}
