@@ -1,0 +1,327 @@
+﻿add_namespace = merukumari
+country_event = { #The Meru Alliance
+	id = merukumari.1
+	title = merukumari.1.t
+	desc = merukumari.1.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {factor = 300}
+		name = merukumari.1.a
+		
+	}
+	option = {
+		ai_chance = {factor = 200}
+		name = merukumari.1.b
+		
+	}
+	option = {
+		ai_chance = {factor = 100}
+		name = merukumari.1.c
+		
+	}
+}
+country_event = { #The Kumari Alliance Proposal
+
+	id = merukumari.2
+	title = merukumari.2.t
+	desc = merukumari.2.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	
+	option = {
+		KUM = {
+			country_event = { id = merukumari.5 }
+		}
+		
+	}
+}
+
+country_event = { #Kumari gets to annex Meru Kumari
+	id = merukumari.3
+	title = merukumari.3.t
+	desc = merukumari.3.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	
+	
+	option = {
+		KUM = {
+			country_event = { id = merukumari.4 }
+		}
+	}
+}
+
+country_event = { #The Kumari Union
+	id = merukumari.4
+	title = merukumari.4.t
+	desc = merukumari.4.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	
+	option = {
+		name = merukumari.4.a
+		971 = {
+			if = {
+				limit = { is_owned_by = MKU }
+				add_core_of = KUM
+			}
+		}
+		1044 = {
+			if = {
+				limit = { is_owned_by = MKU }
+				add_core_of = KUM
+			}
+		}
+		1045 = {
+			if = {
+				limit = { is_owned_by = MKU }
+				add_core_of = KUM
+			}
+		}
+		MKU = {
+			every_unit_leader = {
+				set_nationality = KUM
+			}
+		}
+		annex_country = { target = MKU transfer_troops = yes }
+		set_country_flag = MKU_annexed
+		add_war_support = 0.1
+		add_stability = 0.05
+		
+	}
+}
+
+country_event = { The Kumari Alliance Proposal - Kumari's Decision
+	id = merukumari.5
+	title = merukumari.5.t
+	desc = merukumari.5.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {factor = 300}
+		name = merukumari.5.a
+		create_faction = MKU_kumari_alliance
+		MKU = { add_to_faction = ROOT }
+	}
+	option = {
+		ai_chance = {factor = 0}
+		name = merukumari.5.b
+		MKU = {
+				add_opinion_modifier = { target = KUM modifier = alliance_rejection }
+			}
+	}
+}
+
+news_event = {
+
+	id = merukumari.6
+	title = merukumari.6.t
+	desc = merukumari.6.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	
+	option = {
+		name = merukumari.6.a
+		hidden_effect = {
+			clr_country_flag = ATL_searching_kaprastiak
+			remove_ideas = ATL_balanced_search_kapra_idea
+			remove_ideas = ATL_aggressive_search_kapra_idea
+		}
+	}
+}
+news_event = {
+	id = merukumari.7
+	title = merukumari.7.t
+	desc = merukumari.7.d
+	picture = GFX_news_event_fighting_gangsters
+	
+	trigger = {
+		tag = ATL
+		has_country_flag = ATL_kaprastiak_flag
+		NOT = {has_idea = ATL_kaprastiak_at_war}
+	}
+	mean_time_to_happen = {days = 280}
+	
+	option = {
+		name = merukumari.7.a
+		if = {
+			limit = { has_idea = ATL_kaprastiak_at_war_2}
+			swap_ideas = {
+				remove_idea = ATL_kaprastiak_at_war_2
+				add_idea = ATL_kaprastiak_at_war
+			}
+		}
+		else_if = {
+			limit = { has_idea = ATL_kaprastiak_at_war_3 }
+			swap_ideas = {
+				remove_idea = ATL_kaprastiak_at_war_3
+				add_idea = ATL_kaprastiak_at_war_2
+			}
+		}
+		else_if = {
+			limit = { has_idea = ATL_kaprastiak_at_war_4 }
+			swap_ideas = {
+				remove_idea = ATL_kaprastiak_at_war_4
+				add_idea = ATL_kaprastiak_at_war_3
+			}
+		}
+	}
+}
+news_event = {
+	id = merukumari.8
+	title = merukumari.8.t
+	desc = merukumari.8.d
+	
+	picture = GFX_news_event_fighting_gangsters
+	
+	trigger = {tag = ATL has_country_flag = ATL_kaprastiak_flag}
+	mean_time_to_happen = {days = 100}
+	
+	option = {
+		name = merukumari.8.a
+		if = {
+			limit = {has_idea = ATL_kaprastiak_at_war}
+			random_owned_controlled_state = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			}
+			random_owned_controlled_state = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			}
+			random_owned_controlled_state = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+		}
+		else_if = {
+			limit = { has_idea = ATL_kaprastiak_at_war_2 }
+			random_owned_controlled_state = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			}
+			random_owned_controlled_state = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+		}
+		else_if = {
+			limit = { has_idea = ATL_kaprastiak_at_war_3 }
+			random_owned_controlled_state = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			random_owned_controlled_state = {
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+		}
+		else_if = {
+			limit = { has_idea = ATL_kaprastiak_at_war_4 }
+			random_owned_controlled_state = {
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = merukumari.9
+	title = merukumari.9.t
+	desc = merukumari.9.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {factor = 100}
+		name = merukumari.9.a
+		add_tech_bonus = {
+			name = radar_focus
+			bonus = 1.0
+			uses = 1
+			ahead_reduction = 2
+			category = electronics
+			category = industry
+			category = rocketry
+			category = nuclear
+		}
+	}
+	option = {
+		ai_chance = {factor = 100}
+		name = merukumari.9.b
+		add_tech_bonus = {
+			name = radar_focus
+			bonus = 1.0
+			uses = 1
+			ahead_reduction = 2
+			category = naval_equipment
+			category = naval_doctrine
+		}
+	}
+	option = {
+		ai_chance = {factor = 100}
+		name = merukumari.9.c
+		add_tech_bonus = {
+			name = radar_focus
+			bonus = 1.0
+			uses = 1
+			ahead_reduction = 2
+			category = air_equipment
+			category = air_doctrine
+		}
+	}
+	option = {
+		ai_chance = {factor = 100}
+		name = merukumari.9.d
+		add_tech_bonus = {
+			name = radar_focus
+			bonus = 1.0
+			uses = 1
+			ahead_reduction = 2
+			category = infantry_weapons
+			category = land_doctrine
+			category = artillery
+			category = armor
+			category = motorized_equipment
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
