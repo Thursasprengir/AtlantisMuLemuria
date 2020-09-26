@@ -1,4 +1,143 @@
 ideas = {
+	political_advisor = {
+			BLM_peterssen = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = AST
+			}
+			
+			cost = 150
+
+			traits = { silent_workhorse }
+
+			available = {
+				if = {
+				}
+			}
+		}
+		BLM_fascist_politician = {
+			
+			allowed = {
+				original_tag = BLM
+				
+			}
+			available = {
+			}
+
+			picture = generic_political_advisor_europe_4
+			
+			traits = { fascist_demagogue }
+		
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		BLM_communist_politician = {
+			
+			allowed = {
+				original_tag = BLM
+				
+			}
+			available = {
+			}
+
+			picture = generic_political_advisor_europe_4
+			
+			traits = { communist_revolutionary }
+		
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		BLM_democratic_politician = {
+			
+			allowed = {
+				original_tag = BLM
+				
+			}
+			available = {
+			}
+
+			picture = generic_political_advisor_europe_4
+			
+			traits = { democratic_reformer }
+		
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		BLM_loyalist_politician = {
+			
+			allowed = {
+				original_tag = BLM
+				
+			}
+			available = {
+			}
+
+			picture = generic_political_advisor_europe_4
+			
+			traits = { monarchist_media_mogul }
+		
+			do_effect = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+		army_chief = {
+		markusthomson = {
+
+        allowed = {
+            original_tag = BLM
+        }
+
+        available = {
+            has_completed_focus = BLM_reform_the_army
+        }
+
+        traits = {
+            army_chief_organizational_2
+        }
+
+        on_add = {
+            
+        }
+
+        do_effect = {
+         
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+					}
 	country = {
 		nationalist_tensions = {
 			allowed = {
@@ -39,6 +178,66 @@ ideas = {
 				
 			}
 		}
+		equal_peoples = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				
+			}
+			rule = {
+			}
+			}
+		
+		######consumer_goods_factor
+		
+		payingbritainback = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				
+			}
+			rule = {
+			}
+			}
+		
+		britishlemurianpayments = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				
+			}
+			rule = {
+			}
+			}
+		
+		
 		the_imperial_order = {
 			allowed = {
 				always = no
@@ -80,6 +279,28 @@ ideas = {
 				
 			}
 		}
+		better_imperial_garrison = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				battlefield_support_tree = 0.1
+			}
+			
+			modifier = {
+				stability_factor = 0.10
+			}
+			rule = {
+				
+			}
+		}
 		newbritisheducation = {
 		allowed = { always = no }
 		allowed_civil_war = { always = yes }
@@ -113,4 +334,5 @@ ideas = {
 		  }
 	}
 	
+}
 }

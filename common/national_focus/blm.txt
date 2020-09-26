@@ -158,6 +158,8 @@ focus_tree = {
 			}
 	}
 
+
+###########ends the reforms, avoids civil war, forms a democratic federation in lemuria
 	focus = {
 		id = BLM_act_283
 		icon = GFX_goal_tfv_sever_ties_with_uk
@@ -173,7 +175,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-					country_event = { id = endreforms.1 }
+					country_event = { id = sasr.3 }
 			}
 	}
 	
@@ -268,6 +270,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			1008 = { add_extra_state_shared_building_slots = 1 }
+			990 = { add_extra_state_shared_building_slots = 1 }
+			1010 = { add_extra_state_shared_building_slots = 1 }
+			976 = { add_extra_state_shared_building_slots = 1 }
+			1007 = { add_extra_state_shared_building_slots = 1 }
+			978 = { add_extra_state_shared_building_slots = 1 }
+		}
 	}
 
 	focus = {
@@ -294,6 +304,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = { country_event = sasr.97 }
 	}
 	focus = {
 		id = BLM_disband_the_ig
@@ -336,6 +347,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		country_event = { id = sasr.96 }
+		}
+		
 	}
 
 	focus = {
@@ -348,6 +363,10 @@ focus_tree = {
 		prerequisite = { focus = BLM_home_islands_agreement }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		country_event = { id = sasr.93 }
+	
 		}
 	}
 
@@ -362,6 +381,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			}
 	}
 		focus = {
 		id = BLM_completedecentralization
@@ -385,9 +422,49 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
+		available = { 
+			is_subject = no
+		}
 		prerequisite = { focus = BLM_completedecentralization }
 		ai_will_do = {
 			factor = 1
+		}
+		
+	
+		completion_reward = {
+		AUD = {
+					transfer_state = 984
+					984 = { add_core_of = ARG }
+					transfer_state = 1013
+					1013 = { add_core_of = ARG }
+					add_opinion_modifier = { target = BLM modifier = BLM_returned_our_territory }
+				}
+		QLA = {
+					transfer_state = 1006
+					1006 = { add_core_of = QLA }
+					transfer_state = 988
+					988 = { add_core_of = QLA }
+					transfer_state = 986
+					986 = { add_core_of = QLA }
+					add_opinion_modifier = { target = BLM modifier = BLM_returned_our_territory }
+				}
+		WRB = {
+					transfer_state = 1050
+					1050 = { add_core_of = WRB }
+					transfer_state = 974
+					974 = { add_core_of = WRB }
+					transfer_state = 975
+					975 = { add_core_of = WRB }
+					transfer_state = 1052
+					1052 = { add_core_of = WRB }
+					transfer_state = 1051
+					1051 = { add_core_of = WRB }
+					add_opinion_modifier = { target = BLM modifier = BLM_returned_our_territory }
+				}
+			puppet = AUD
+			puppet = QLA
+			puppet = WRB
+		
 		}
 	}
 		focus = {
@@ -523,6 +600,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level =3
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+	}
 	}
 		focus = {
 		id = BLM_colonistissues
@@ -574,6 +669,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
 	}
 	focus = {
 		id = BLM_unrestmeeting
@@ -605,9 +717,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = imperial_garrison
+			add_idea = better_imperial_garrison
+						}
+				}
 	}
 	
-#
+#########
 	focus = {
 		id = BLM_the_queens_lemuria
 		icon = GFX_goal_unknown
@@ -661,6 +779,7 @@ focus_tree = {
 			factor = 1
 		}
 	}
+	########## cadet corps is recon school, have it give a bonus to recon school and radio
 	focus = {
 		id = BLM_royal_cadet_corps
 		icon = GFX_goal_unknown
@@ -674,6 +793,9 @@ focus_tree = {
 				}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		
 		}
 	}
 	focus = {
@@ -691,6 +813,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			
+		}
 	}
 	focus = {
 		id = BLM_abolish_anglish_societies
@@ -706,6 +847,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+					country_event = { id = sasr.99 }
+			}
+		
 	}
 	focus = {
 		id = BLM_the_british_man
@@ -721,6 +866,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+					country_event = { id = sasr.98 }
+			}
+		
 	}
 	focus = {
 		id = BLM_suppress_natives
