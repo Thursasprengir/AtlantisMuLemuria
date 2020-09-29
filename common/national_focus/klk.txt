@@ -646,7 +646,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			opinion_gain_monthly_same_ideology_factor = 0.4
+			add_ideas = {KLK_allies_abroad}
 		}
 	}
 	focus = {
@@ -738,6 +738,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_stal_education}
 		}
 	}
 	focus = {
@@ -759,6 +760,14 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_timed_idea = {
+				idea = KLK_forced_education
+				days = 120
+			}
+			swap_ideas = {
+				remove_idea = KLK_stal_education
+				add_idea = KLK_stal_education_2
+			}
 		}
 	}
 	focus = {
@@ -780,6 +789,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_revolutions}
 		}
 	}
 	focus = {
@@ -801,6 +811,21 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			create_wargoal = {
+				target = "CLA"
+				type = topple_government
+				expire = 0
+			}
+			create_wargoal = {
+				target = "LSN"
+				type = topple_government
+				expire = 0
+			}
+			create_wargoal = {
+				target = "KUM"
+				type = topple_government
+				expire = 0
+			}
 		}
 	}
 	focus = {
@@ -847,6 +872,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			1027 = {add_building_construction = {type = infrastructure level = 2 instant_build = yes}}
+			1028 = {add_building_construction = {type = infrastructure level = 2 instant_build = yes}}
+			981 = {add_building_construction = {type = infrastructure level = 2 instant_build = yes}}
+			1029 = {add_building_construction = {type = infrastructure level = 1 instant_build = yes}}
+			1000 = {add_building_construction = {type = infrastructure level = 2 instant_build = yes}}
 		}
 	}
 	focus = {
@@ -868,6 +898,59 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 50
+			PRC = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+			SIK = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
 		}
 	}
 	focus = {
@@ -889,6 +972,21 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			create_wargoal = {
+				target = "SDU"
+				type = topple_government
+				expire = 0
+			}
+			create_wargoal = {
+				target = "UTU"
+				type = topple_government
+				expire = 0
+			}
+			create_wargoal = {
+				target = "BLM"
+				type = topple_government
+				expire = 0
+			}
 		}
 	}
 ######################
@@ -913,6 +1011,20 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {free_building_slots = {building = industrial_complex size > 2 include_locked = yes}}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {type = industrial_complex level = 3 instant_build = yes}
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {free_building_slots = {building = industrial_complex size > 0 include_locked = yes}}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+				}
+			}
 		}
 	}
 	focus = {
@@ -934,6 +1046,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_volunteers}
 		}
 	}
 	focus = {
@@ -955,6 +1068,20 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			kill_country_leader = yes
+		    set_politics = { ruling_party = neutrality elections_allowed = no }
+			create_country_leader = {
+				name = "MANDALIST DUDE"
+				desc = "POLITICS_MANDALIST_DUDE_DESC"
+				picture = "GFX_portrait_ATL_demetrot_naizaretal"
+				expire = "1965.1.1"
+				ideology = anarcho_mandalism
+				traits = {}
+			}
+			swap_ideas = {
+				remove_idea = KLK_bunch_of_ugly_commies
+				add_idea = KLK_bunch_of_nice_commies
+			}
 		}
 	}
 	focus = {
@@ -976,6 +1103,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			custom_effect_tooltip = 01_CLA_mand
+			CLA = {
+				set_country_flag = mandalists_flag
+			}
 		}
 	}
 	focus = {
@@ -997,6 +1128,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			custom_effect_tooltip = 01_KUM_mand
+			KUM = {
+				set_country_flag = mandalists_flag
+			}
 		}
 	}
 	focus = {
@@ -1018,6 +1153,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			custom_effect_tooltip = 01_LSN_mand
+			LSN = {
+				set_country_flag = mandalists_flag
+			}
 		}
 	}
 	focus = {
@@ -1064,6 +1203,9 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			1027 = {add_building_construction = {type = infrastructure level = 3 instant_build = yes}}
+			1028 = {add_building_construction = {type = infrastructure level = 2 instant_build = yes}}
+			1000 = {add_building_construction = {type = infrastructure level = 4 instant_build = yes}}
 		}
 	}
 	focus = {
@@ -1085,6 +1227,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_militias}
 		}
 	}
 	focus = {
@@ -1106,6 +1249,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_healthcare}
 		}
 	}
 	focus = {
@@ -1127,6 +1271,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.15
 		}
 	}
 	focus = {
@@ -1148,6 +1294,16 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = KLK_workers_2
+				add_idea = KLK_workers_3
+			}
 		}
 	}
 	focus = {
@@ -1169,6 +1325,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_improvised_arms}
 		}
 	}
 	focus = {
@@ -1191,6 +1348,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_red_kingdom}
 		}
 	}
 #################

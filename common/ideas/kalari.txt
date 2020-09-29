@@ -1,5 +1,15 @@
 ideas = {
 	country = {
+		KLK_bunch_of_nice_commies = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance3
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
 		KLK_bunch_of_ugly_commies = {
 			allowed = {
 				always = no
@@ -7,7 +17,7 @@ ideas = {
 			removal_cost = -1
 			picture = chi_war_of_resistance3
 			modifier = {
-				mandalism_drift = 0.05
+				neutrality_drift = 0.05
 				political_power_gain = -0.8
 			}
 		}
@@ -18,7 +28,7 @@ ideas = {
 			removal_cost = -1
 			picture = chi_war_of_resistance2
 			modifier = {
-				mandalism_drift = 0.04
+				neutrality_drift = 0.04
 				political_power_gain = -0.6
 			}
 		}
@@ -29,7 +39,7 @@ ideas = {
 			removal_cost = -1
 			picture = chi_war_of_resistance
 			modifier = {
-				mandalism_drift = 0.02
+				neutrality_drift = 0.02
 				political_power_gain = -0.4
 			}
 		}
@@ -87,6 +97,17 @@ ideas = {
 			picture = naval_tradition
 			modifier = {
 				compliance_gain = 0.3
+			}
+		}
+		KLK_workers_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				compliance_gain = 0.3
+				consumer_goods_factor = -0.05
 			}
 		}
 		KLK_decentralized_production = {
@@ -262,40 +283,124 @@ ideas = {
 				political_power_gain = 0.5
 			}
 		}
-		KLK_ = {
+		KLK_allies_abroad = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.4
 			}
 		}
-		KLK_ = {
+		KLK_stal_education = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				research_speed_factor = 0.05
 			}
 		}
-		KLK_ = {
+		KLK_stal_education_2 = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				political_power_gain = -0.1
+				research_speed_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				experience_gain_air_factor = 0.1
+				experience_gain_army_factor = 0.15
 			}
 		}
-		KLK_ = {
+		KLK_forced_education = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				stability_weekly = -0.01
+			}
+		}
+		KLK_revolutions = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				army_org_factor = 0.05
+				minimum_training_level = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		KLK_volunteers = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_license_production
+
+			modifier = {
+				send_volunteers_tension = -0.5
+				lend_lease_tension = -1
+			}
+		}
+		KLK_militias = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				non_core_manpower = 0.1
+				minimum_training_level = -0.2
+			}
+		}
+		KLK_healthcare = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				compliance_gain = 0.3 
+				resistance_target = -0.1 
+				war_support_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		KLK_improvised_arms = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.35
+					reliability = -0.4
+					instant = yes
+				}
+			}
+		}
+		KLK_red_kingdom = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				partisan_effect = 0.1 
+				non_core_manpower = 0.15
+				out_of_supply_factor = -0.25 				
 			}
 		}
 		KLK_ = {
