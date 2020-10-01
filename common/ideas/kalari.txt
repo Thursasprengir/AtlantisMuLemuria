@@ -403,31 +403,58 @@ ideas = {
 				out_of_supply_factor = -0.25 				
 			}
 		}
-		KLK_ = {
+		KLK_youth_idea = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				conscription_factor = 0.1
 			}
 		}
-		KLK_ = {
+		KLK_foreigner_idea = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				weekly_manpower = 1400
 			}
 		}
-		KLK_ = {
+		KLK_professional = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
+				special_forces_cap = 0.02
+				max_command_power = 25
+			}
+		}
+		KLK_militia_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.25
+			}
+		}
+		KLK_militia_idea_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				conscription = 0.015
+				training_time_army_factor = -0.3
+				non_core_manpower = 0.01
 			}
 		}
 	}

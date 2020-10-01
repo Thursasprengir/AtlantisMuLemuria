@@ -1521,6 +1521,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1542,6 +1549,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_youth_idea}
 		}
 	}
 	focus = {
@@ -1563,6 +1571,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_timed_idea = {
+				idea = KLK_foreigner_idea
+				days = 280
+			}
 		}
 	}
 	focus = {
@@ -1584,6 +1596,20 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {free_building_slots = {building = arms_factory size > 1 include_locked = yes}}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {type = arms_factory level = 2 instant_build = yes}
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {free_building_slots = {building = arms_factory size > 0 include_locked = yes}}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1605,6 +1631,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_professional}
 		}
 	}
 	focus = {
@@ -1626,6 +1653,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_ideas = {KLK_militia_idea}
 		}
 	}
 	focus = {
@@ -1646,6 +1674,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			981 = {add_building_construction = {type = air_base level = 2 instant_build = yes}}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1666,6 +1701,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -1686,6 +1728,12 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
 		}
 	}
 	focus = {
@@ -1706,6 +1754,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+			}
 		}
 	}
 	focus = {
@@ -1726,6 +1781,12 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
 		}
 	}
 	focus = {
@@ -1746,6 +1807,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
 		}
 	}
 	focus = {
@@ -1755,7 +1823,7 @@ focus = {
 		
 		x = 31
 		y = 4
-		cost = 10
+		cost = 5
 
 		ai_will_do = {factor = 2}
 		available = {}
@@ -1766,6 +1834,36 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 700
+				producer = ATL
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 80
+				producer = GER
+			}
 		}
 	}
 	focus = {
@@ -1775,7 +1873,7 @@ focus = {
 		
 		x = 30
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {factor = 2}
 		available = {}
@@ -1786,6 +1884,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = KLK_militia_idea
+				add_idea = KLK_militia_idea_2
+			}
 		}
 	}
 	focus = {
@@ -1806,6 +1908,13 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1826,6 +1935,11 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 500
+				producer = USA
+			}
 		}
 	}
 	focus = {
@@ -1846,6 +1960,51 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 50
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 60
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 25
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 10
+				producer = ATL
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 1000
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 12
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 10
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 8
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 10
+				producer = JAP
+			}
 		}
 	}
 	focus = {
@@ -1866,6 +2025,21 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 	focus = {
@@ -1886,6 +2060,46 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				set_state_flag = naval_effort_built
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {has_state_flag = naval_effort_built}
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				set_state_flag = naval_effort_built
+				}
+			}
 		}
 	}
 }
