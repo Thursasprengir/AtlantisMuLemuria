@@ -1,0 +1,29 @@
+﻿add_namespace = mandalism
+country_event = {
+	id = mandalism.1
+	title = mandalism.1.t
+	desc = mandalism.1.d
+	picture = GFX_news_event_fighting_gangsters
+	trigger = {
+		tag = KLK
+		has_country_flag = mandalists_flag
+	}
+	option = {
+		name = mandalism.1.a
+		hidden_effect = {
+			clr_country_flag = KLK_searching_itorkanak
+			remove_ideas = KLK_balanced_search_itork_idea
+			remove_ideas = KLK_aggressive_search_itork_idea
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

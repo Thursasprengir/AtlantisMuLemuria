@@ -398,7 +398,6 @@ ideas = {
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
-				partisan_effect = 0.1 
 				non_core_manpower = 0.15
 				out_of_supply_factor = -0.25 				
 			}
@@ -455,6 +454,16 @@ ideas = {
 				conscription = 0.015
 				training_time_army_factor = -0.3
 				non_core_manpower = 0.01
+			}
+		}
+		KLK_stal_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				resistance_target = -0.1
 			}
 		}
 	}
