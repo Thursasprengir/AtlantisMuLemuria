@@ -1,23 +1,29 @@
 focus_tree = {
-	id = CHO
+	id = CLA
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = CHO
+			tag = CLA
 		}
 	}
 		continuous_focus_position = { x = 50 y = 1500 }
 		
-		focus = {
-		id = INDOLEM_industrial_improvements
+				focus = {
+		id = INDOLEM2_work_with_capitalists
 		icon = GFX_goal_generic_attack_allies
-		x = 11
-		y = 5
+		x = 9
+		y = 0
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
 		}
 
 		cancel_if_invalid = yes
@@ -29,9 +35,124 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_capitalist_disagreements
+		id = INDOLEM2_generous_loans
 		icon = GFX_goal_generic_attack_allies
-		x = 10
+		prerequisite = { focus = INDOLEM2_work_with_capitalists }
+		mutually_exclusive = {
+			focus = INDOLEM2_stingy_loans
+		}
+		x = -1
+		y = 1
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = INDOLEM2_stingy_loans
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_work_with_capitalists }
+		mutually_exclusive = {
+			focus = INDOLEM2_generous_loans
+		}
+		x = 1
+		y = 1
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = INDOLEM2_dam_rivers
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_generous_loans }
+		x = -1
+		y = 2
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = INDOLEM2_more_oil_plants
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_stingy_loans }
+		x = 1
+		y = 2
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		focus = {
+		id = INDOLEM2_capitalist_disagreements
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_dam_rivers focus = INDOLEM2_more_oil_plants }
+		x = 0
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -46,12 +167,54 @@ focus_tree = {
 			#add_political_power = -50
 		}
 	}
-		
-		focus = {
-		id = INDOLEM_industrial_research
+	focus = {
+		id = INDOLEM2_industrial_gains
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_capitalist_disagreements }
-		x = 10
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_capitalist_disagreements }
+		mutually_exclusive = { focus = INDOLEM2_invest_public_research }
+		x = -3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	focus = {
+		id = INDOLEM2_industrial_improvements
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_industrial_gains }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = INDOLEM2_consumer_factories
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_industrial_improvements }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -2
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
@@ -66,53 +229,12 @@ focus_tree = {
 			#add_political_power = -50
 		}
 	}
-		
-		focus = {
-		id = INDOLEM_primary_industrial_lines
+	focus = {
+		id = INDOLEM2_consumer_factories2
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_capitalist_disagreements }
-		x = 8
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		
-		focus = {
-		id = INDOLEM_infrastructure_prep
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_capitalist_disagreements }
-		x = 12
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		
-		focus = {
-		id = INDOLEM_industrial_gains
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_industrial_research }
-		prerequisite = { focus = INDOLEM_primary_industrial_lines }
-		x = 9
+		prerequisite = { focus = INDOLEM2_consumer_factories }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -2
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -127,13 +249,14 @@ focus_tree = {
 			#add_political_power = -50
 		}
 	}
-		
-		focus = {
-		id = INDOLEM_infrastructure_gains
+	
+	focus = {
+		id = INDOLEM2_dockyard_construction
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_infrastructure_prep }
-		x = 11
-		y = 8
+		prerequisite = { focus = INDOLEM2_industrial_improvements }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -4
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -147,13 +270,13 @@ focus_tree = {
 			#add_political_power = -50
 		}
 	}
-		
-		focus = {
-		id = INDOLEM_industrial_insights
+	focus = {
+		id = INDOLEM2_dockyard_construction2
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_industrial_gains }
-		x = 8
-		y = 8
+		prerequisite = { focus = INDOLEM2_dockyard_construction }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -4
+		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -167,13 +290,46 @@ focus_tree = {
 			#add_political_power = -50
 		}
 	}
-		
 		focus = {
-		id = INDOLEM_old_roads_new_airfields
+		id = INDOLEM2_military_factories
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_industrial_gains }
-		prerequisite = { focus = INDOLEM_infrastructure_gains }
-		x = 10
+		prerequisite = { focus = INDOLEM2_industrial_improvements }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	focus = {
+		id = INDOLEM2_military_factories2
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_military_factories }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = INDOLEM2_old_roads_new_airfields
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_consumer_factories2 }
+		prerequisite = { focus = INDOLEM2_military_factories2 focus = INDOLEM2_dockyard_construction2 }
+		x = -4
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -188,13 +344,42 @@ focus_tree = {
 			#add_political_power = -50
 		}
 	}
-		
-		focus = {
-		id = INDOLEM_refined_industrial_lines
+	focus = {
+		id = INDOLEM2_invest_public_research
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_industrial_insights }
-		x = 8
-		y = 9
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_capitalist_disagreements }
+		mutually_exclusive = { focus = INDOLEM2_industrial_gains }
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+		
+	focus = {
+		id = INDOLEM2_production_improvements
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_invest_public_research }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = 0
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -208,12 +393,162 @@ focus_tree = {
 			#add_political_power = -50
 		}
 	}
-		
-		focus = {
-		id = INDOLEM_radar_insights
+	
+	focus = {
+		id = INDOLEM2_construction_improvements
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_old_roads_new_airfields }
-		x = 10
+		prerequisite = { focus = INDOLEM2_production_improvements }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = 0
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = INDOLEM2_industrial_research
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_invest_public_research }
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = INDOLEM2_computer_assisted_research
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_industrial_research }
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = INDOLEM2_synthized_research
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_invest_public_research }
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = INDOLEM2_oil_processing
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_synthized_research }
+		mutually_exclusive = { focus = INDOLEM2_oil_refining }
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	focus = {
+		id = INDOLEM2_oil_refining
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_synthized_research }
+		mutually_exclusive = { focus = INDOLEM2_oil_processing }
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = INDOLEM2_radar_insights
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_computer_assisted_research }
+		prerequisite = { focus = INDOLEM2_oil_processing focus = INDOLEM2_oil_refining focus = INDOLEM2_construction_improvements }
+		x = 2
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	focus = {
+		id = INDOLEM2_the_bomb
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_old_roads_new_airfields }
+		prerequisite = { focus = INDOLEM2_radar_insights }
+		x = 0
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -229,201 +564,24 @@ focus_tree = {
 		}
 	}
 	
-
-
-
-
-
-		
-		focus = {
-		id = INDOLEM_work_with_capitalists
-		icon = GFX_goal_generic_attack_allies
-		x = 9
-		y = 0
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		THIS = {
-					has_government = democratic
-				}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		
-		focus = {
-		id = INDOLEM_generous_loans
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_work_with_capitalists }
-		mutually_exclusive = {
-			focus = INDOLEM_stingy_loans
-		}
-		x = -1
-		y = 1
-		relative_position_id = INDOLEM_work_with_capitalists
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		THIS = {
-					has_government = democratic
-				}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		
-		focus = {
-		id = INDOLEM_stingy_loans
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_work_with_capitalists }
-		mutually_exclusive = {
-			focus = INDOLEM_generous_loans
-		}
-		x = 1
-		y = 1
-		relative_position_id = INDOLEM_work_with_capitalists
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		THIS = {
-					has_government = democratic
-				}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		
-		focus = {
-		id = INDOLEM_dam_rivers
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_generous_loans }
-		x = -1
-		y = 2
-		relative_position_id = INDOLEM_work_with_capitalists
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		THIS = {
-					has_government = democratic
-				}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		
-		focus = {
-		id = INDOLEM_more_oil_plants
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_stingy_loans }
-		x = 1
-		y = 2
-		relative_position_id = INDOLEM_work_with_capitalists
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		THIS = {
-					has_government = democratic
-				}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		focus = {
-		id = INDOLEM_capitalist_disagreements
-		icon = GFX_goal_generic_attack_allies
-		x = 10
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		focus = {
-		id = INDOLEM_invest_public_research
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_capitalist_disagreements }
-		x = 0
-		y = 4
-		relative_position_id = INDOLEM_work_with_capitalists
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		THIS = {
-					has_government = democratic
-				}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-		
-		focus = {
-		id = INDOLEM_round_up_mandalists
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = INDOLEM2_round_up_mandalists
 		icon = GFX_goal_generic_attack_allies
 		x = 5
 		y = 0
-		relative_position_id = INDOLEM_work_with_capitalists
+		relative_position_id = INDOLEM2_work_with_capitalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -445,12 +603,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_reestablish_capitalist_ties
+		id = INDOLEM2_reestablish_capitalist_ties
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_round_up_mandalists}
+		prerequisite = { focus = INDOLEM2_round_up_mandalists}
 		x = 0
 		y = 1
-		relative_position_id = INDOLEM_round_up_mandalists
+		relative_position_id = INDOLEM2_round_up_mandalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -472,12 +630,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_capitalist_immigrants
+		id = INDOLEM2_capitalist_immigrants
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_reestablish_capitalist_ties}
+		prerequisite = { focus = INDOLEM2_reestablish_capitalist_ties}
 		x = -1
 		y = 2
-		relative_position_id = INDOLEM_round_up_mandalists
+		relative_position_id = INDOLEM2_round_up_mandalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -499,12 +657,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_encourage_local_business
+		id = INDOLEM2_encourage_local_business
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_reestablish_capitalist_ties}
+		prerequisite = { focus = INDOLEM2_reestablish_capitalist_ties}
 		x = 1
 		y = 2
-		relative_position_id = INDOLEM_round_up_mandalists
+		relative_position_id = INDOLEM2_round_up_mandalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -526,15 +684,15 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_invite_american_investors
+		id = INDOLEM2_invite_american_investors
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_capitalist_immigrants}
+		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
 		mutually_exclusive = {
-			focus = INDOLEM_no_foreigners
+			focus = INDOLEM2_no_foreigners
 		}
 		x = -2
 		y = 3
-		relative_position_id = INDOLEM_round_up_mandalists
+		relative_position_id = INDOLEM2_round_up_mandalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -556,15 +714,15 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_invite_european_investors
+		id = INDOLEM2_invite_european_investors
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_capitalist_immigrants}
+		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
 		mutually_exclusive = {
-			focus = INDOLEM_no_foreigners
+			focus = INDOLEM2_no_foreigners
 		}
 		x = 2
 		y = 3
-		relative_position_id = INDOLEM_round_up_mandalists
+		relative_position_id = INDOLEM2_round_up_mandalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -586,16 +744,16 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_no_foreigners
+		id = INDOLEM2_no_foreigners
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_capitalist_immigrants}
+		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
 		mutually_exclusive = {
-			focus = INDOLEM_invite_american_investors
-			focus = INDOLEM_invite_european_investors
+			focus = INDOLEM2_invite_american_investors
+			focus = INDOLEM2_invite_european_investors
 		}
 		x = 0
 		y = 3
-		relative_position_id = INDOLEM_round_up_mandalists
+		relative_position_id = INDOLEM2_round_up_mandalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -621,11 +779,11 @@ focus_tree = {
 	
 		
 		focus = {
-		id = INDOLEM_seize_industrial_wealth
+		id = INDOLEM2_seize_industrial_wealth
 		icon = GFX_goal_generic_attack_allies
 		x = 13
 		y = 0
-		relative_position_id = INDOLEM_work_with_capitalists
+		relative_position_id = INDOLEM2_work_with_capitalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -647,12 +805,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_patrol_border
+		id = INDOLEM2_patrol_border
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_seize_industrial_wealth}
+		prerequisite = { focus = INDOLEM2_seize_industrial_wealth}
 		x = 0
 		y = 1
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -674,11 +832,11 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_limit_political_participation
+		id = INDOLEM2_limit_political_participation
 		icon = GFX_goal_generic_attack_allies
 		x = 3
 		y = 0
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -700,12 +858,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_purge_capitalists
+		id = INDOLEM2_purge_capitalists
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_limit_political_participation}
+		prerequisite = { focus = INDOLEM2_limit_political_participation}
 		x = 3
 		y = 1
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -727,12 +885,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_founding_documents
+		id = INDOLEM2_founding_documents
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_purge_capitalists}
+		prerequisite = { focus = INDOLEM2_purge_capitalists}
 		x = 1
 		y = 2
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -754,12 +912,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_destruction_capitalist_symbols
+		id = INDOLEM2_destruction_capitalist_symbols
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_purge_capitalists}
+		prerequisite = { focus = INDOLEM2_purge_capitalists}
 		x = 3
 		y = 2
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -781,11 +939,11 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_public_farmlands
+		id = INDOLEM2_public_farmlands
 		icon = GFX_goal_generic_attack_allies
 		x = 5
 		y = 0
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -807,12 +965,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_public_factories
+		id = INDOLEM2_public_factories
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_public_farmlands}
+		prerequisite = { focus = INDOLEM2_public_farmlands}
 		x = 5
 		y = 1
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -834,12 +992,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_redistribute_land
+		id = INDOLEM2_redistribute_land
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_public_factories}
+		prerequisite = { focus = INDOLEM2_public_factories}
 		x = 5
 		y = 2
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -861,13 +1019,13 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_all_public_land
+		id = INDOLEM2_all_public_land
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_destruction_capitalist_symbols}
-		prerequisite = { focus = INDOLEM_redistribute_land}
+		prerequisite = { focus = INDOLEM2_destruction_capitalist_symbols}
+		prerequisite = { focus = INDOLEM2_redistribute_land}
 		x = 4
 		y = 3
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -889,12 +1047,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_dockworkers
+		id = INDOLEM2_dockworkers
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_all_public_land}
+		prerequisite = { focus = INDOLEM2_all_public_land}
 		x = 2
 		y = 4
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -916,12 +1074,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_labor_unions
+		id = INDOLEM2_labor_unions
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_all_public_land}
+		prerequisite = { focus = INDOLEM2_all_public_land}
 		x = 4
 		y = 4
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -943,12 +1101,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_military_unions
+		id = INDOLEM2_military_unions
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_all_public_land}
+		prerequisite = { focus = INDOLEM2_all_public_land}
 		x = 6
 		y = 4
-		relative_position_id = INDOLEM_seize_industrial_wealth
+		relative_position_id = INDOLEM2_seize_industrial_wealth
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -974,13 +1132,13 @@ focus_tree = {
 	
 		
 		focus = {
-		id = INDOLEM_establish_secret_police
+		id = INDOLEM2_establish_secret_police
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_round_up_mandalists
-						focus = INDOLEM_patrol_border}
+		prerequisite = { focus = INDOLEM2_round_up_mandalists
+						focus = INDOLEM2_patrol_border}
 		x = 5
 		y = 2
-		relative_position_id = INDOLEM_round_up_mandalists
+		relative_position_id = INDOLEM2_round_up_mandalists
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -996,12 +1154,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_control_unions
+		id = INDOLEM2_control_unions
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_establish_secret_police}
+		prerequisite = { focus = INDOLEM2_establish_secret_police}
 		x = -1
 		y = 1
-		relative_position_id = INDOLEM_establish_secret_police
+		relative_position_id = INDOLEM2_establish_secret_police
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1017,12 +1175,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_infiltrate_religious_groups
+		id = INDOLEM2_infiltrate_religious_groups
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_establish_secret_police}
+		prerequisite = { focus = INDOLEM2_establish_secret_police}
 		x = 1
 		y = 1
-		relative_position_id = INDOLEM_establish_secret_police
+		relative_position_id = INDOLEM2_establish_secret_police
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1046,15 +1204,15 @@ focus_tree = {
 	
 		
 		focus = {
-		id = INDOLEM_modernize_military
+		id = INDOLEM2_modernize_military
 		icon = GFX_goal_generic_attack_allies
 			mutually_exclusive = {
-			focus = INDOLEM_modernize_military
-			focus = INDOLEM_mass_assault
+			focus = INDOLEM2_modernize_military
+			focus = INDOLEM2_mass_assault
 		}
 		x = 4
 		y = 0
-		relative_position_id = INDOLEM_public_farmlands
+		relative_position_id = INDOLEM2_public_farmlands
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1070,12 +1228,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_tractor_works
+		id = INDOLEM2_tractor_works
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_modernize_military }
+		prerequisite = { focus = INDOLEM2_modernize_military }
 		x = 0
 		y = 1
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1091,12 +1249,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_inefficient_engines
+		id = INDOLEM2_inefficient_engines
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_tractor_works focus = INDOLEM_automobile_designs}
+		prerequisite = { focus = INDOLEM2_tractor_works focus = INDOLEM2_automobile_designs}
 		x = 0
 		y = 2
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1112,12 +1270,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_heavy_tanks
+		id = INDOLEM2_heavy_tanks
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_inefficient_engines}
+		prerequisite = { focus = INDOLEM2_inefficient_engines}
 		x = 0
 		y = 4
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1133,11 +1291,11 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_mass_assault
+		id = INDOLEM2_mass_assault
 		icon = GFX_goal_generic_attack_allies
 		x = 6
 		y = 0
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1153,12 +1311,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_local_rifles
+		id = INDOLEM2_local_rifles
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_mass_assault}
+		prerequisite = { focus = INDOLEM2_mass_assault}
 		x = 6
 		y = 1
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1174,12 +1332,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_heavy_weapons
+		id = INDOLEM2_heavy_weapons
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_local_rifles}
+		prerequisite = { focus = INDOLEM2_local_rifles}
 		x = 6
 		y = 2
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1195,12 +1353,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_artillery
+		id = INDOLEM2_artillery
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_heavy_weapons}
+		prerequisite = { focus = INDOLEM2_heavy_weapons}
 		x = 6
 		y = 3
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1216,12 +1374,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_automobile_designs
+		id = INDOLEM2_automobile_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_modernize_military focus = INDOLEM_mass_assault}
+		prerequisite = { focus = INDOLEM2_modernize_military focus = INDOLEM2_mass_assault}
 		x = 3
 		y = 1
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1237,12 +1395,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_trackbed_trucks
+		id = INDOLEM2_trackbed_trucks
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_modernize_military}
+		prerequisite = { focus = INDOLEM2_modernize_military}
 		x = 3
 		y = 2
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1258,12 +1416,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_armored_trucks
+		id = INDOLEM2_armored_trucks
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_trackbed_trucks}
+		prerequisite = { focus = INDOLEM2_trackbed_trucks}
 		x = 3
 		y = 3
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1279,17 +1437,17 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_medium_tanks
+		id = INDOLEM2_medium_tanks
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_armored_trucks }
-		prerequisite = {  focus = INDOLEM_inefficient_engines }
+		prerequisite = { focus = INDOLEM2_armored_trucks }
+		prerequisite = {  focus = INDOLEM2_inefficient_engines }
 		mutually_exclusive = {
-			focus = INDOLEM_medium_tanks
-			focus = INDOLEM_light_tanks
+			focus = INDOLEM2_medium_tanks
+			focus = INDOLEM2_light_tanks
 		}
 		x = 2
 		y = 4
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1305,13 +1463,13 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_light_tanks
+		id = INDOLEM2_light_tanks
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_armored_trucks}
-		prerequisite = { focus = INDOLEM_artillery}
+		prerequisite = { focus = INDOLEM2_armored_trucks}
+		prerequisite = { focus = INDOLEM2_artillery}
 		x = 4
 		y = 4
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1327,12 +1485,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_rocket_artillery
+		id = INDOLEM2_rocket_artillery
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_artillery}
+		prerequisite = { focus = INDOLEM2_artillery}
 		x = 6
 		y = 4
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1348,12 +1506,12 @@ focus_tree = {
 	}
 		
 		focus = {
-		id = INDOLEM_anti_air
+		id = INDOLEM2_anti_air
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_artillery}
+		prerequisite = { focus = INDOLEM2_artillery}
 		x = 8
 		y = 4
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1371,11 +1529,11 @@ focus_tree = {
 	
 		
 	focus = {
-		id = INDOLEM_aviation_school
+		id = INDOLEM2_aviation_school
 		icon = GFX_goal_generic_attack_allies
 		x = 12
 		y = 0
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1391,12 +1549,12 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_early_air_designs
+		id = INDOLEM2_early_air_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_aviation_school}
+		prerequisite = { focus = INDOLEM2_aviation_school}
 		x = 12
 		y = 1
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1412,15 +1570,15 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_local_air_designs
+		id = INDOLEM2_local_air_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_early_air_designs}
+		prerequisite = { focus = INDOLEM2_early_air_designs}
 		mutually_exclusive = {
-			focus = INDOLEM_int_air_designs
+			focus = INDOLEM2_int_air_designs
 		}
 		x = 10
 		y = 2
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1436,12 +1594,12 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_self_taught
+		id = INDOLEM2_self_taught
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_local_air_designs}
+		prerequisite = { focus = INDOLEM2_local_air_designs}
 		x = 10
 		y = 4
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1457,15 +1615,15 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_int_air_designs
+		id = INDOLEM2_int_air_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_early_air_designs}
+		prerequisite = { focus = INDOLEM2_early_air_designs}
 		mutually_exclusive = {
-			focus = INDOLEM_local_air_designs
+			focus = INDOLEM2_local_air_designs
 		}
 		x = 13
 		y = 2
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1481,15 +1639,15 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_british_designs
+		id = INDOLEM2_british_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_int_air_designs}
+		prerequisite = { focus = INDOLEM2_int_air_designs}
 		mutually_exclusive = {
-			focus = INDOLEM_german_designs
+			focus = INDOLEM2_german_designs
 		}
 		x = 12
 		y = 3
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1505,15 +1663,15 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_german_designs
+		id = INDOLEM2_german_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_int_air_designs}
+		prerequisite = { focus = INDOLEM2_int_air_designs}
 		mutually_exclusive = {
-			focus = INDOLEM_british_designs
+			focus = INDOLEM2_british_designs
 		}
 		x = 14
 		y = 3
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1529,12 +1687,12 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_british_instructors
+		id = INDOLEM2_british_instructors
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_british_designs}
+		prerequisite = { focus = INDOLEM2_british_designs}
 		x = 12
 		y = 4
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1550,12 +1708,12 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_german_instructors
+		id = INDOLEM2_german_instructors
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_german_designs}
+		prerequisite = { focus = INDOLEM2_german_designs}
 		x = 14
 		y = 4
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1571,14 +1729,14 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_tactical_bombers
+		id = INDOLEM2_tactical_bombers
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_self_taught
-					focus = INDOLEM_british_instructors
-					focus = INDOLEM_german_instructors}
+		prerequisite = { focus = INDOLEM2_self_taught
+					focus = INDOLEM2_british_instructors
+					focus = INDOLEM2_german_instructors}
 		x = 9
 		y = 5
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1594,14 +1752,14 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_heavy_fighters
+		id = INDOLEM2_heavy_fighters
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_self_taught
-					focus = INDOLEM_british_instructors
-					focus = INDOLEM_german_instructors}
+		prerequisite = { focus = INDOLEM2_self_taught
+					focus = INDOLEM2_british_instructors
+					focus = INDOLEM2_german_instructors}
 		x = 11
 		y = 5
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1617,14 +1775,14 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_fighters
+		id = INDOLEM2_fighters
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_self_taught
-					focus = INDOLEM_british_instructors
-					focus = INDOLEM_german_instructors}
+		prerequisite = { focus = INDOLEM2_self_taught
+					focus = INDOLEM2_british_instructors
+					focus = INDOLEM2_german_instructors}
 		x = 13
 		y = 5
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1640,14 +1798,14 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_close_air
+		id = INDOLEM2_close_air
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_self_taught
-					focus = INDOLEM_british_instructors
-					focus = INDOLEM_german_instructors}
+		prerequisite = { focus = INDOLEM2_self_taught
+					focus = INDOLEM2_british_instructors
+					focus = INDOLEM2_german_instructors}
 		x = 15
 		y = 5
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1663,13 +1821,13 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_adv_air_training
+		id = INDOLEM2_adv_air_training
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_anti_air}
-		prerequisite = { focus = INDOLEM_tactical_bombers}
+		prerequisite = { focus = INDOLEM2_anti_air}
+		prerequisite = { focus = INDOLEM2_tactical_bombers}
 		x = 8
 		y = 6
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1685,12 +1843,12 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_strategic_bombers
+		id = INDOLEM2_strategic_bombers
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_tactical_bombers}
+		prerequisite = { focus = INDOLEM2_tactical_bombers}
 		x = 10
 		y = 6
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1706,12 +1864,12 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_jet_tech
+		id = INDOLEM2_jet_tech
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_fighters}
+		prerequisite = { focus = INDOLEM2_fighters}
 		x = 13
 		y = 6
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1727,13 +1885,13 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_naval_air_designs
+		id = INDOLEM2_naval_air_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_close_air}
-		prerequisite = { focus = INDOLEM_carrier_designs}
+		prerequisite = { focus = INDOLEM2_close_air}
+		prerequisite = { focus = INDOLEM2_carrier_designs}
 		x = 17
 		y = 6
-		relative_position_id = INDOLEM_modernize_military
+		relative_position_id = INDOLEM2_modernize_military
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1754,11 +1912,11 @@ focus_tree = {
 	
 		
 	focus = {
-		id = INDOLEM_mahanian_doctrine
+		id = INDOLEM2_mahanian_doctrine
 		icon = GFX_goal_generic_attack_allies
 		x = 7
 		y = 0
-		relative_position_id = INDOLEM_aviation_school
+		relative_position_id = INDOLEM2_aviation_school
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1774,16 +1932,16 @@ focus_tree = {
 	}	
 		
 	focus = {
-		id = INDOLEM_strike_below
+		id = INDOLEM2_strike_below
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_mahanian_doctrine}
+		prerequisite = { focus = INDOLEM2_mahanian_doctrine}
 		mutually_exclusive = {
-			focus = INDOLEM_defend_coasts
-			focus = INDOLEM_maritime_projection
+			focus = INDOLEM2_defend_coasts
+			focus = INDOLEM2_maritime_projection
 		}
 		x = -3
 		y = 1
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1799,12 +1957,12 @@ focus_tree = {
 	}		
 		
 	focus = {
-		id = INDOLEM_sub_designs
+		id = INDOLEM2_sub_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_strike_below}
+		prerequisite = { focus = INDOLEM2_strike_below}
 		x = -3
 		y = 2
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1820,12 +1978,12 @@ focus_tree = {
 	}			
 		
 	focus = {
-		id = INDOLEM_minelayer_designs
+		id = INDOLEM2_minelayer_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_sub_designs}
+		prerequisite = { focus = INDOLEM2_sub_designs}
 		x = -3
 		y = 3
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1841,16 +1999,16 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_defend_coasts
+		id = INDOLEM2_defend_coasts
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_mahanian_doctrine}
+		prerequisite = { focus = INDOLEM2_mahanian_doctrine}
 		mutually_exclusive = {
-			focus = INDOLEM_strike_below
-			focus = INDOLEM_maritime_projection
+			focus = INDOLEM2_strike_below
+			focus = INDOLEM2_maritime_projection
 		}
 		x = 0
 		y = 1
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1866,13 +2024,13 @@ focus_tree = {
 	}	
 		
 	focus = {
-		id = INDOLEM_destroyer_designs
+		id = INDOLEM2_destroyer_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_defend_coasts
-						focus = INDOLEM_strike_below}
+		prerequisite = { focus = INDOLEM2_defend_coasts
+						focus = INDOLEM2_strike_below}
 		x = -1
 		y = 2
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1888,13 +2046,13 @@ focus_tree = {
 	}	
 		
 	focus = {
-		id = INDOLEM_cruiser_designs
+		id = INDOLEM2_cruiser_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_defend_coasts
-						focus = INDOLEM_maritime_projection}
+		prerequisite = { focus = INDOLEM2_defend_coasts
+						focus = INDOLEM2_maritime_projection}
 		x = 1
 		y = 2
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1910,13 +2068,13 @@ focus_tree = {
 	}	
 		
 	focus = {
-		id = INDOLEM_naval_invasion
+		id = INDOLEM2_naval_invasion
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_destroyer_designs
-						focus = INDOLEM_cruiser_designs}
+		prerequisite = { focus = INDOLEM2_destroyer_designs
+						focus = INDOLEM2_cruiser_designs}
 		x = 0
 		y = 3
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1932,16 +2090,16 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_maritime_projection
+		id = INDOLEM2_maritime_projection
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_mahanian_doctrine}
+		prerequisite = { focus = INDOLEM2_mahanian_doctrine}
 		mutually_exclusive = {
-			focus = INDOLEM_strike_below
-			focus = INDOLEM_defend_coasts
+			focus = INDOLEM2_strike_below
+			focus = INDOLEM2_defend_coasts
 		}
 		x = 3
 		y = 1
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1957,12 +2115,12 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = INDOLEM_heavy_cruiser
+		id = INDOLEM2_heavy_cruiser
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_maritime_projection}
+		prerequisite = { focus = INDOLEM2_maritime_projection}
 		x = 3
 		y = 2
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1979,12 +2137,12 @@ focus_tree = {
 	
 		
 	focus = {
-		id = INDOLEM_carrier_designs
+		id = INDOLEM2_carrier_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_heavy_cruiser}
+		prerequisite = { focus = INDOLEM2_heavy_cruiser}
 		x = 2
 		y = 3
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -2000,12 +2158,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = INDOLEM_battleship_designs
+		id = INDOLEM2_battleship_designs
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM_heavy_cruiser}
+		prerequisite = { focus = INDOLEM2_heavy_cruiser}
 		x = 4
 		y = 3
-		relative_position_id = INDOLEM_mahanian_doctrine
+		relative_position_id = INDOLEM2_mahanian_doctrine
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
