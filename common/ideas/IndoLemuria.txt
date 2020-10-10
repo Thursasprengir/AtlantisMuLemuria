@@ -1,0 +1,41 @@
+ideas = {
+	country = {
+		LEM_industrial_gains = {
+			
+
+			available = {
+				has_government = democratic #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1		
+			}
+		}
+		LEM_industrial_research = {
+			
+
+			available = {
+				has_government = democratic #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1		
+			}
+		}
+	}

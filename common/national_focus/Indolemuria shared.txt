@@ -1,0 +1,1516 @@
+	#the hook#
+
+	shared_focus = {
+		id = INDOLEM2_the_hooks
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 50
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+	
+	
+	shared_focus = {
+		id = INDOLEM2_work_with_capitalists
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = INDOLEM2_the_hooks }
+		x = 40
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_generous_loans
+		icon = GFX_
+		prerequisite = { focus = INDOLEM2_work_with_capitalists }
+		mutually_exclusive = {
+			focus = INDOLEM2_stingy_loans
+		}
+		x = -1
+		y = 1
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_stingy_loans
+		icon = GFX_
+		prerequisite = { focus = INDOLEM2_work_with_capitalists }
+		mutually_exclusive = {
+			focus = INDOLEM2_generous_loans
+		}
+		x = 1
+		y = 1
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_dam_rivers
+		icon = GFX_
+		prerequisite = { focus = INDOLEM2_generous_loans }
+		x = -1
+		y = 2
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = -0.10
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_more_oil_plants
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = INDOLEM2_stingy_loans }
+		x = 1
+		y = 2
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+		add_extra_state_shared_building_slots = 1
+			random_owned_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			random_owned_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		shared_focus = {
+		id = INDOLEM2_capitalist_disagreements
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_dam_rivers focus = INDOLEM2_more_oil_plants }
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_industrial_gains
+		icon = GFX_focus_generic_industry_1
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_capitalist_disagreements }
+		mutually_exclusive = { focus = INDOLEM2_invest_public_research }
+		x = -3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_ideas = LEM_industrial_gains
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_industrial_improvements
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_industrial_gains }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	shared_focus = {
+		id = INDOLEM2_consumer_factories
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_industrial_improvements }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_consumer_factories2
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_consumer_factories }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -2
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_dockyard_construction
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_industrial_improvements }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_dockyard_construction2
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_dockyard_construction }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -4
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		shared_focus = {
+		id = INDOLEM2_military_factories
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_industrial_improvements }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_military_factories2
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_military_factories }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = -6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_old_roads_new_airfields
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_consumer_factories2 }
+		prerequisite = { focus = INDOLEM2_military_factories2 focus = INDOLEM2_dockyard_construction2 }
+		x = -4
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_invest_public_research
+		icon = GFX_focus_research
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_capitalist_disagreements }
+		mutually_exclusive = { focus = INDOLEM2_industrial_gains }
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+		
+	shared_focus = {
+		id = INDOLEM2_production_improvements
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_invest_public_research }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_construction_improvements
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_production_improvements }
+		relative_position_id = INDOLEM2_work_with_capitalists
+		x = 0
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_industrial_research
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_invest_public_research }
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_computer_assisted_research
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_industrial_research }
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_synthized_research
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_invest_public_research }
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_oil_processing
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_synthized_research }
+		mutually_exclusive = { focus = INDOLEM2_oil_refining }
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_oil_refining
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_synthized_research }
+		mutually_exclusive = { focus = INDOLEM2_oil_processing }
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_radar_insights
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_computer_assisted_research }
+		prerequisite = { focus = INDOLEM2_oil_processing focus = INDOLEM2_oil_refining focus = INDOLEM2_construction_improvements }
+		x = 2
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_the_bomb
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = INDOLEM2_work_with_capitalists
+		prerequisite = { focus = INDOLEM2_old_roads_new_airfields }
+		prerequisite = { focus = INDOLEM2_radar_insights }
+		x = 0
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	shared_focus = {
+		id = INDOLEM2_round_up_mandalists
+		prerequisite = { focus = INDOLEM2_work_with_capitalists }
+		icon = GFX_goal_generic_attack_allies
+		x = 6
+		y = 1
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_reestablish_capitalist_ties
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_round_up_mandalists}
+		x = 0
+		y = 1
+		relative_position_id = INDOLEM2_round_up_mandalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_capitalist_immigrants
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_reestablish_capitalist_ties}
+		x = -1
+		y = 2
+		relative_position_id = INDOLEM2_round_up_mandalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_encourage_local_business
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_reestablish_capitalist_ties}
+		x = 1
+		y = 2
+		relative_position_id = INDOLEM2_round_up_mandalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_invite_american_investors
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
+		mutually_exclusive = {
+			focus = INDOLEM2_no_foreigners
+		}
+		x = -2
+		y = 3
+		relative_position_id = INDOLEM2_round_up_mandalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_invite_european_investors
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
+		mutually_exclusive = {
+			focus = INDOLEM2_no_foreigners
+		}
+		x = 2
+		y = 3
+		relative_position_id = INDOLEM2_round_up_mandalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_no_foreigners
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
+		mutually_exclusive = {
+			focus = INDOLEM2_invite_american_investors
+			focus = INDOLEM2_invite_european_investors
+		}
+		x = 0
+		y = 3
+		relative_position_id = INDOLEM2_round_up_mandalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = democratic
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	
+	#mandalism
+	
+		
+	shared_focus = {
+		id = INDOLEM2_seize_industrial_wealth
+		icon = GFX_
+		prerequisite = { focus = INDOLEM2_founding_documents }
+		x = 13
+		y = 1
+		relative_position_id = INDOLEM2_work_with_capitalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_patrol_border
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_seize_industrial_wealth}
+		x = 0
+		y = 1
+		relative_position_id = INDOLEM2_seize_industrial_wealth
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_limit_political_participation
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_founding_documents }
+		x = -1
+		y = 1
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_purge_capitalists
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_limit_political_participation}
+		x = 3
+		y = 1
+		relative_position_id = INDOLEM2_seize_industrial_wealth
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		
+		shared_focus = {
+		id = INDOLEM2_destruction_capitalist_symbols
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_purge_capitalists}
+		x = 3
+		y = 2
+		relative_position_id = INDOLEM2_seize_industrial_wealth
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_founding_documents
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = INDOLEM2_the_hooks }
+		x = 7
+		y = 1
+		relative_position_id = INDOLEM2_the_hooks
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = .05
+		}
+	}
+		shared_focus = {
+		id = INDOLEM2_public_farmlands
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_founding_documents }	
+		x = 5
+		y = 0
+		relative_position_id = INDOLEM2_seize_industrial_wealth
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_public_factories
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_public_farmlands}
+		x = 5
+		y = 1
+		relative_position_id = INDOLEM2_seize_industrial_wealth
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_redistribute_land
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_public_factories}
+		x = 5
+		y = 2
+		relative_position_id = INDOLEM2_seize_industrial_wealth
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	shared_focus = {
+		id = INDOLEM2_reorganize_government
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_destruction_capitalist_symbols}
+		prerequisite = { focus = INDOLEM2_redistribute_land}
+		x = 0
+		y = 4
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+ #Local Branch
+	shared_focus = {
+		id = INDOLEM2_establish_local_authorities
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_reorganize_government}
+		x = -2
+		y = 5
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_local_production
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_establish_local_authorities}
+		x = -1
+		y = 6
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_entice_resource_collection
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_establish_local_authorities}
+		x = -3
+		y = 6
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_compensation_from_rich
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_entice_resource_collection}
+		x = -3
+		y = 7
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	#Regional Branch
+	shared_focus = {
+		id = INDOLEM2_designate_regional
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_reorganize_government}
+		x = 0
+		y = 5
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	shared_focus = {
+		id = INDOLEM2_regional_tax
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_designate_regional}
+		prerequisite = { focus = INDOLEM2_local_production}
+		prerequisite = { focus = INDOLEM2_force_open_gold}
+		x = 0
+		y = 7
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_statues
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_regional_tax focus = INDOLEM2_compensation_from_rich}
+		x = -2
+		y = 8
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	#the state
+	shared_focus = {
+		id = INDOLEM2_the_national
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_reorganize_government}
+		x = 2
+		y = 5
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	shared_focus = {
+		id = INDOLEM2_force_open_gold
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_the_national}
+		prerequisite = { focus = INDOLEM2_designate_regional}
+		x = 1
+		y = 6
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	shared_focus = {
+		id = INDOLEM2_deal_with_abandon_factories
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_force_open_gold}
+		x = 1
+		y = 8
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_gurillia_required_reading
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_the_national}
+		prerequisite = { focus = INDOLEM2_designate_regional}
+		x = 3
+		y = 6
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_join_kalari
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_the_national}
+		prerequisite = { focus = INDOLEM2_designate_regional}
+		x = 3
+		y = 7
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	shared_focus = {
+		id = INDOLEM2_consolidate_orange_wave
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_statues}
+		prerequisite = { focus = INDOLEM2_regional_tax}
+		prerequisite = { focus = INDOLEM2_deal_with_abandon_factories}
+		x = 0
+		y = 10
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	#Spycraft
+		
+	shared_focus = {
+		id = INDOLEM2_establish_secret_police
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_round_up_mandalists
+						focus = INDOLEM2_patrol_border}
+		x = 5
+		y = 2
+		relative_position_id = INDOLEM2_round_up_mandalists
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_control_unions
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_establish_secret_police}
+		x = -1
+		y = 1
+		relative_position_id = INDOLEM2_establish_secret_police
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		shared_focus = {
+		id = INDOLEM2_infiltrate_religious_groups
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = INDOLEM2_establish_secret_police}
+		x = 1
+		y = 1
+		relative_position_id = INDOLEM2_establish_secret_police
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+		
