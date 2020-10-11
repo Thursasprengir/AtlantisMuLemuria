@@ -180,31 +180,12 @@
 			}
 		}
 	}
-		shared_focus = {
-		id = INDOLEM2_capitalist_disagreements
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_dam_rivers focus = INDOLEM2_more_oil_plants }
-		x = 0
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			add_stability = 0.10
-		}
-	}
 	shared_focus = {
 		id = INDOLEM2_industrial_gains
 		icon = GFX_focus_generic_industry_1
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_capitalist_disagreements }
+		prerequisite = { focus = INDOLEM2_dam_rivers 
+						focus = INDOLEM2_more_oil_plants }
 		mutually_exclusive = { focus = INDOLEM2_invest_public_research }
 		x = -3
 		y = 4
@@ -261,28 +242,7 @@
 		completion_reward = {
 			#add_political_power = -50
 		}
-	}
-	shared_focus = {
-		id = INDOLEM2_consumer_factories2
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM2_consumer_factories }
-		relative_position_id = INDOLEM2_work_with_capitalists
-		x = -2
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-	
+	}	
 	shared_focus = {
 		id = INDOLEM2_dockyard_construction
 		icon = GFX_goal_generic_attack_allies
@@ -290,26 +250,6 @@
 		relative_position_id = INDOLEM2_work_with_capitalists
 		x = -4
 		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-	shared_focus = {
-		id = INDOLEM2_dockyard_construction2
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM2_dockyard_construction }
-		relative_position_id = INDOLEM2_work_with_capitalists
-		x = -4
-		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -336,34 +276,16 @@
 			factor = 100
 		}
 	}
-	shared_focus = {
-		id = INDOLEM2_military_factories2
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM2_military_factories }
-		relative_position_id = INDOLEM2_work_with_capitalists
-		x = -6
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
 	
 	shared_focus = {
 		id = INDOLEM2_old_roads_new_airfields
 		icon = GFX_goal_generic_attack_allies
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_consumer_factories2 }
-		prerequisite = { focus = INDOLEM2_military_factories2 focus = INDOLEM2_dockyard_construction2 }
+		prerequisite = { focus = INDOLEM2_consumer_factories }
+		prerequisite = { focus = INDOLEM2_military_factories 
+						focus = INDOLEM2_dockyard_construction }
 		x = -4
-		y = 9
+		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -381,7 +303,8 @@
 		id = INDOLEM2_invest_public_research
 		icon = GFX_focus_research
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_capitalist_disagreements }
+		prerequisite = { focus = INDOLEM2_dam_rivers 
+						focus = INDOLEM2_more_oil_plants }
 		mutually_exclusive = { focus = INDOLEM2_industrial_gains }
 		x = 2
 		y = 4
@@ -430,10 +353,11 @@
 	shared_focus = {
 		id = INDOLEM2_construction_improvements
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = INDOLEM2_production_improvements }
+		prerequisite = { focus = INDOLEM2_production_improvements
+						focus = INDOLEM2_consumer_factories }
 		relative_position_id = INDOLEM2_work_with_capitalists
 		x = 0
-		y = 6
+		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -449,32 +373,11 @@
 	}
 	
 	shared_focus = {
-		id = INDOLEM2_industrial_research
+		id = INDOLEM2_computing_technology
 		icon = GFX_goal_generic_attack_allies
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_invest_public_research }
 		x = 2
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			#add_political_power = -50
-		}
-	}
-	
-	shared_focus = {
-		id = INDOLEM2_computer_assisted_research
-		icon = GFX_goal_generic_attack_allies
-		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_industrial_research }
-		x = 2
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
@@ -491,7 +394,7 @@
 	}
 	
 	shared_focus = {
-		id = INDOLEM2_synthized_research
+		id = INDOLEM2_early_synthetic_materials
 		icon = GFX_goal_generic_attack_allies
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_invest_public_research }
@@ -512,10 +415,10 @@
 	}
 	
 	shared_focus = {
-		id = INDOLEM2_oil_processing
+		id = INDOLEM2_synthetic_insulators
 		icon = GFX_goal_generic_attack_allies
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_synthized_research }
+		prerequisite = { focus = INDOLEM2_early_synthetic_materials }
 		mutually_exclusive = { focus = INDOLEM2_oil_refining }
 		x = 4
 		y = 6
@@ -536,7 +439,7 @@
 		id = INDOLEM2_oil_refining
 		icon = GFX_goal_generic_attack_allies
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_synthized_research }
+		prerequisite = { focus = INDOLEM2_early_synthetic_materials }
 		mutually_exclusive = { focus = INDOLEM2_oil_processing }
 		x = 6
 		y = 6
@@ -558,10 +461,11 @@
 		id = INDOLEM2_radar_insights
 		icon = GFX_goal_generic_attack_allies
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_computer_assisted_research }
-		prerequisite = { focus = INDOLEM2_oil_processing focus = INDOLEM2_oil_refining focus = INDOLEM2_construction_improvements }
+		prerequisite = { focus = INDOLEM2_computing_technology }
+		prerequisite = { focus = INDOLEM2_synthetic_insulators 
+							focus = INDOLEM2_oil_refining }
 		x = 2
-		y = 8
+		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -576,13 +480,13 @@
 		}
 	}
 	shared_focus = {
-		id = INDOLEM2_the_bomb
+		id = INDOLEM2_enhanced_air
 		icon = GFX_goal_generic_attack_allies
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_old_roads_new_airfields }
-		prerequisite = { focus = INDOLEM2_radar_insights }
+		prerequisite = { focus = INDOLEM2_old_roads_new_airfields
+						focus = INDOLEM2_radar_insights }
 		x = 0
-		y = 10
+		y = 8
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
