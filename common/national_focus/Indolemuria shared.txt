@@ -47,7 +47,7 @@
 		
 		shared_focus = {
 		id = INDOLEM2_generous_loans
-		icon = GFX_
+		icon = GFX_piles_of_money
 		prerequisite = { focus = INDOLEM2_work_with_capitalists }
 		mutually_exclusive = {
 			focus = INDOLEM2_stingy_loans
@@ -204,7 +204,7 @@
 	}
 	shared_focus = {
 		id = INDOLEM2_industrial_improvements
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = INDOLEM2_industrial_gains }
 		relative_position_id = INDOLEM2_work_with_capitalists
 		x = -4
@@ -219,13 +219,13 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_ideas = LEM_industrial_improvements
 		}
 	}
 
 	shared_focus = {
 		id = INDOLEM2_consumer_factories
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = INDOLEM2_industrial_improvements }
 		relative_position_id = INDOLEM2_work_with_capitalists
 		x = -2
@@ -240,12 +240,41 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
-		}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
 	}	
 	shared_focus = {
 		id = INDOLEM2_dockyard_construction
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = INDOLEM2_industrial_improvements }
 		relative_position_id = INDOLEM2_work_with_capitalists
 		x = -4
@@ -258,14 +287,42 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-
 		completion_reward = {
-			#add_political_power = -50
-		}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
 	}
 		shared_focus = {
 		id = INDOLEM2_military_factories
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = INDOLEM2_industrial_improvements }
 		relative_position_id = INDOLEM2_work_with_capitalists
 		x = -6
@@ -274,12 +331,44 @@
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
-		}
+			}
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
 	}
 	
 	shared_focus = {
 		id = INDOLEM2_old_roads_new_airfields
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_build_airforce
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_consumer_factories }
 		prerequisite = { focus = INDOLEM2_military_factories 
@@ -296,8 +385,38 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
-		}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
 	}
 	shared_focus = {
 		id = INDOLEM2_invest_public_research
@@ -331,7 +450,7 @@
 		
 	shared_focus = {
 		id = INDOLEM2_production_improvements
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = INDOLEM2_invest_public_research }
 		relative_position_id = INDOLEM2_work_with_capitalists
 		x = 0
@@ -346,13 +465,13 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_ideas = LEM_production_improvements
 		}
 	}
 	
 	shared_focus = {
 		id = INDOLEM2_construction_improvements
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = INDOLEM2_production_improvements
 						focus = INDOLEM2_consumer_factories }
 		relative_position_id = INDOLEM2_work_with_capitalists
@@ -368,13 +487,13 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_ideas = LEM_construction_gains
 		}
 	}
 	
 	shared_focus = {
 		id = INDOLEM2_computing_technology
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_production2
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_invest_public_research }
 		x = 2
@@ -389,13 +508,18 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_ideas = LEM_industrial_research
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = computing_tech
+			}
 		}
 	}
 	
 	shared_focus = {
 		id = INDOLEM2_early_synthetic_materials
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_oil_refinery
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_invest_public_research }
 		x = 5
@@ -410,13 +534,17 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = synth_resources
+			}
 		}
 	}
 	
 	shared_focus = {
 		id = INDOLEM2_synthetic_insulators
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_early_synthetic_materials }
 		mutually_exclusive = { focus = INDOLEM2_oil_refining }
@@ -432,12 +560,16 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = synth_resources
+			}
 		}
 	}
 	shared_focus = {
 		id = INDOLEM2_oil_refining
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_factoryplanning
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_early_synthetic_materials }
 		mutually_exclusive = { focus = INDOLEM2_oil_processing }
@@ -453,13 +585,18 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			random_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 24
+				}
+			}
 		}
 	}
 	
 	shared_focus = {
 		id = INDOLEM2_radar_insights
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_control_the_radio
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_computing_technology }
 		prerequisite = { focus = INDOLEM2_synthetic_insulators 
@@ -476,12 +613,16 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
 		}
 	}
 	shared_focus = {
 		id = INDOLEM2_enhanced_air
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_radar2
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_old_roads_new_airfields
 						focus = INDOLEM2_radar_insights }
@@ -497,7 +638,12 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_ideas = LEM_air_power   
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
 		}
 	}
 	
@@ -516,7 +662,7 @@
 	shared_focus = {
 		id = INDOLEM2_round_up_mandalists
 		prerequisite = { focus = INDOLEM2_work_with_capitalists }
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_CZE_german_puppet
 		x = 6
 		y = 1
 		relative_position_id = INDOLEM2_work_with_capitalists
@@ -536,13 +682,13 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_stability = .10
 		}
 	}
 		
 		shared_focus = {
 		id = INDOLEM2_reestablish_capitalist_ties
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_business_bills
 		prerequisite = { focus = INDOLEM2_round_up_mandalists}
 		x = 0
 		y = 1
@@ -563,13 +709,13 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_political_power = 50
 		}
 	}
 		
 		shared_focus = {
 		id = INDOLEM2_capitalist_immigrants
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_
 		prerequisite = { focus = INDOLEM2_reestablish_capitalist_ties}
 		x = -1
 		y = 2
@@ -590,13 +736,13 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_stability = -.05
 		}
 	}
 		
 		shared_focus = {
 		id = INDOLEM2_encourage_local_business
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_farm_tractor
 		prerequisite = { focus = INDOLEM2_reestablish_capitalist_ties}
 		x = 1
 		y = 2
@@ -617,13 +763,19 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			random_owned_state = {
+				add_state_modifier = {
+					modifier = {
+						local_resources = 2.0
+					}
+				}
+			}
 		}
 	}
 		
 		shared_focus = {
 		id = INDOLEM2_invite_american_investors
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_chi_mission_to_the_us
 		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
 		mutually_exclusive = {
 			focus = INDOLEM2_no_foreigners
@@ -647,13 +799,18 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			USA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
 		}
 	}
 		
 		shared_focus = {
 		id = INDOLEM2_invite_european_investors
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
 		mutually_exclusive = {
 			focus = INDOLEM2_no_foreigners
@@ -676,8 +833,32 @@
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
+
 		completion_reward = {
-			#add_political_power = -50
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ITA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
 		}
 	}
 		
@@ -1260,7 +1441,7 @@
 	}
 	
 	shared_focus = {
-		id = INDOLEM2_gurillia_required_reading
+		id = INDOLEM2_guerillia_required_reading
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = INDOLEM2_the_national}
 		prerequisite = { focus = INDOLEM2_designate_regional}
@@ -1292,8 +1473,9 @@
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = INDOLEM2_the_national}
 		prerequisite = { focus = INDOLEM2_designate_regional}
+		mutually_exclusive = { focus = INDOLEM2_consolidate_orange_wave }
 		x = 3
-		y = 7
+		y = 10
 		relative_position_id = INDOLEM2_founding_documents
 		cost = 10
 		available_if_capitulated = yes
@@ -1321,6 +1503,7 @@
 		prerequisite = { focus = INDOLEM2_statues}
 		prerequisite = { focus = INDOLEM2_regional_tax}
 		prerequisite = { focus = INDOLEM2_deal_with_abandon_factories}
+		mutually_exclusive = { focus = INDOLEM2_join_kalari }
 		x = 0
 		y = 10
 		relative_position_id = INDOLEM2_founding_documents

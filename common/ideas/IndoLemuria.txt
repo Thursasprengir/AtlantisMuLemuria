@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		LEM_industrial_gains = {
+		LEM_construction_gains = {
 			
 
 			available = {
@@ -17,6 +17,63 @@ ideas = {
 			
 			modifier = {
 				production_speed_buildings_factor = 0.1		
+			}
+		}
+		LEM_industrial_gains = {
+			
+
+			available = {
+				has_government = democratic #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05	
+			}
+		}
+		LEM_industrial_improvements = {
+			
+
+			available = {
+				has_government = democratic #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		LEM_production_improvements = {
+			
+
+			available = {
+				has_government = democratic #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.2
 			}
 		}
 		LEM_industrial_research = {
@@ -38,4 +95,25 @@ ideas = {
 				research_speed_factor = 0.1		
 			}
 		}
+		LEM_air_power = {
+		
+		
+			available = {
+				has_government = democratic #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				air_accidents_factor = -0.15	
+			}
+		}
 	}
+
+	
