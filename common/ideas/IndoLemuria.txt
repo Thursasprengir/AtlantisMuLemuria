@@ -114,6 +114,164 @@ ideas = {
 				air_accidents_factor = -0.15	
 			}
 		}
-	}
-
 	
+		LEM_mandal = {
+		
+		
+			available = {
+				has_government = neutrality #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+					political_power_factor = -0.25
+					surrender_limit = 0.20
+			}
+		}
+			
+		LEM_local_mandal = {
+		
+		
+			available = {
+				has_government = neutrality #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				non_core_manpower = 0.02
+			}
+		}		
+		
+		LEM_production_mandal = {
+		
+		
+			available = {
+				has_government = neutrality #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.10
+			}
+		}
+		LEM_resource_mandal = {
+		
+		
+			available = {
+				has_government = neutrality #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+					local_resources_factor = 0.1
+			}
+		}
+							
+		LEM_national_mandal = {
+		
+		
+			available = {
+				has_government = neutrality #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				min_export = -0.05
+				trade_opinion_factor = -0.25
+
+			}
+		}		
+		LEM_partisan_mandal = {
+		
+		
+			available = {
+				has_government = neutrality #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		LEM_spy_union = {
+		
+		
+			available = {
+				has_government = neutrality #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				intelligence_agency_defense = 1
+			}
+		}
+		
+		LEM_spy_religion = {
+		
+		
+			available = {
+				has_government = neutrality #remove if King in power
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				root_out_resistance_effectiveness_factor = 0.1
+			}
+		}
