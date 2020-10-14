@@ -10,6 +10,9 @@
 		ai_will_do = {
 			factor = 100
 		}
+		available = {
+		ROOT = {has_country_flag = capitalists_win has_country_flag = mandalists_win}
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
@@ -32,6 +35,7 @@
 		}
 
 		available = {
+		ROOT = {has_country_flag = capitalists_win}
 		THIS = {
 					has_government = democratic
 				}
@@ -1048,6 +1052,7 @@
 		available = {
 		THIS = {
 					has_government = neutrality
+					ROOT = {has_country_flag = mandalists_win }
 				}
 		}
 
