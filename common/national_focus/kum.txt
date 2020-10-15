@@ -1,0 +1,1015 @@
+focus_tree = {
+	id = KUM
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KUM
+		}
+	}
+		continuous_focus_position = { x = 50 y = 1500 }
+		
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	shared_focus = INDOLEM2_the_hooks	
+	focus = {
+		id = KUM_modernize_military
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 0
+		mutually_exclusive = { focus = KUM_mass_assault }
+		relative_position_id = KUM_public_farmlands
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_tractor_works
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_modernize_military}
+		x = 0
+		y = 1
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_inefficient_engines
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_tractor_works }
+		prerequisite = { focus = KUM_automobile_designs }
+		x = 0
+		y = 2
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_heavy_tanks
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_inefficient_engines}
+		x = 0
+		y = 4
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_mass_assault
+		icon = GFX_goal_generic_attack_allies
+		x = 6
+		y = 0
+		mutually_exclusive = { focus = KUM_modernize_military }
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_local_rifles
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_mass_assault}
+		x = 6
+		y = 1
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_heavy_weapons
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_local_rifles}
+		x = 6
+		y = 2
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_artillery
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_heavy_weapons}
+		x = 6
+		y = 3
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_automobile_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_modernize_military}
+		prerequisite = { focus = KUM_mass_assault}
+		x = 3
+		y = 1
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_trackbed_trucks
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_modernize_military}
+		x = 3
+		y = 2
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_armored_trucks
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_trackbed_trucks}
+		x = 3
+		y = 3
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_medium_tanks
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_armored_trucks focus = KUM_inefficient_engines}
+		mutually_exclusive = { focus = KUM_light_tanks }
+		x = 2
+		y = 4
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_light_tanks
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_armored_trucks}
+		prerequisite = { focus = KUM_artillery}
+		mutually_exclusive = { focus = KUM_medium_tanks_tanks }
+		x = 4
+		y = 4
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_rocket_artillery
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_artillery}
+		x = 6
+		y = 4
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+		focus = {
+		id = KUM_anti_air
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_artillery}
+		x = 8
+		y = 4
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	
+		
+	focus = {
+		id = KUM_aviation_school
+		icon = GFX_goal_generic_attack_allies
+		x = 12
+		y = 0
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_early_air_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_aviation_school}
+		x = 12
+		y = 1
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_local_air_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_early_air_designs}
+		mutually_exclusive = {
+			focus = KUM_int_air_designs
+		}
+		x = 10
+		y = 2
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_self_taught
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_local_air_designs}
+		x = 10
+		y = 4
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_int_air_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_early_air_designs}
+		mutually_exclusive = {
+			focus = KUM_local_air_designs
+		}
+		x = 13
+		y = 2
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_british_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_int_air_designs}
+		mutually_exclusive = {
+			focus = KUM_german_designs
+		}
+		x = 12
+		y = 3
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_german_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_int_air_designs}
+		mutually_exclusive = {
+			focus = KUM_british_designs
+		}
+		x = 14
+		y = 3
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_british_instructors
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_british_designs}
+		x = 12
+		y = 4
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_german_instructors
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_german_designs}
+		x = 14
+		y = 4
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_tactical_bombers
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_self_taught
+					focus = KUM_british_instructors
+					focus = KUM_german_instructors}
+		x = 9
+		y = 5
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_heavy_fighters
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_self_taught
+					focus = KUM_british_instructors
+					focus = KUM_german_instructors}
+		x = 11
+		y = 5
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_fighters
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_self_taught
+					focus = KUM_british_instructors
+					focus = KUM_german_instructors}
+		x = 13
+		y = 5
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_close_air
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_self_taught
+					focus = KUM_british_instructors
+					focus = KUM_german_instructors}
+		x = 15
+		y = 5
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_adv_air_training
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_anti_air}
+		prerequisite = { focus = KUM_tactical_bombers}
+		x = 8
+		y = 6
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_strategic_bombers
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_tactical_bombers}
+		x = 10
+		y = 6
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_jet_tech
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_fighters}
+		x = 13
+		y = 6
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_naval_air_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_close_air}
+		prerequisite = { focus = KUM_carrier_designs}
+		x = 17
+		y = 6
+		relative_position_id = KUM_modernize_military
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	
+	
+	
+	
+		
+	focus = {
+		id = KUM_mahanian_doctrine
+		icon = GFX_goal_generic_attack_allies
+		x = 7
+		y = 0
+		relative_position_id = KUM_aviation_school
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}	
+		
+	focus = {
+		id = KUM_strike_below
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_mahanian_doctrine}
+		mutually_exclusive = {
+			focus = KUM_defend_coasts
+			focus = KUM_maritime_projection
+		}
+		x = -3
+		y = 1
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}		
+		
+	focus = {
+		id = KUM_sub_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_strike_below}
+		x = -3
+		y = 2
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}			
+		
+	focus = {
+		id = KUM_minelayer_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_sub_designs}
+		x = -3
+		y = 3
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_defend_coasts
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_mahanian_doctrine}
+		mutually_exclusive = {
+			focus = KUM_strike_below
+			focus = KUM_maritime_projection
+		}
+		x = 0
+		y = 1
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}	
+		
+	focus = {
+		id = KUM_destroyer_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_defend_coasts
+						focus = KUM_strike_below}
+		x = -1
+		y = 2
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}	
+		
+	focus = {
+		id = KUM_cruiser_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_defend_coasts
+						focus = KUM_maritime_projection}
+		x = 1
+		y = 2
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}	
+		
+	focus = {
+		id = KUM_naval_invasion
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_destroyer_designs
+						focus = KUM_cruiser_designs}
+		x = 0
+		y = 3
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_maritime_projection
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_mahanian_doctrine}
+		mutually_exclusive = {
+			focus = KUM_strike_below
+			focus = KUM_defend_coasts
+		}
+		x = 3
+		y = 1
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+		
+	focus = {
+		id = KUM_heavy_cruiser
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_maritime_projection}
+		x = 3
+		y = 2
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+		
+	focus = {
+		id = KUM_carrier_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_heavy_cruiser}
+		x = 2
+		y = 3
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = KUM_battleship_designs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_heavy_cruiser}
+		x = 4
+		y = 3
+		relative_position_id = KUM_mahanian_doctrine
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
