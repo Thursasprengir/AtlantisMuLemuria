@@ -576,7 +576,7 @@
 		icon = GFX_factoryplanning
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_early_synthetic_materials }
-		mutually_exclusive = { focus = INDOLEM2_oil_processing }
+		mutually_exclusive = { focus = INDOLEM2_synthetic_insulators }
 		x = 6
 		y = 6
 		cost = 10
@@ -1531,7 +1531,7 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			KLK = { add_to_faction = ROOT }
+			KLK = { annex = ROOT }
 		}
 	}
 	
@@ -1561,7 +1561,7 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			add_stability = .30
+			KLK = { add_to_faction = ROOT }
 		}
 	}
 	
