@@ -1,0 +1,581 @@
+focus_tree = {
+
+	id = CLA
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CLA
+		}
+	}
+	
+	
+	
+#	focus = {
+#		id = CLA_
+#		icon = GFX_
+
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+
+#		x = 0
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+
+	focus = {
+		id = CLA_crop_failure
+		icon = GFX_
+		
+		x = 5
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	#left
+	focus = {
+		id = CLA_reach_out_to_lem
+		icon = GFX_
+		prerequisite = { focus = CLA_crop_failure }
+		mutually_exclusive = { focus = CLA_consolidate }
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_purchase_crop
+		icon = GFX_
+		prerequisite = { focus = CLA_reach_out_to_lem }
+		x = 2
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_fertalizer
+		icon = GFX_
+		prerequisite = { focus = CLA_purchase_crop }
+		x = 0
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+		focus = {
+		id = CLA_hunt_hellpig
+		icon = GFX_
+		prerequisite = { focus = CLA_purchase_crop }
+		x = 2
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CLA_bailouts for farmers
+		icon = GFX_
+		prerequisite = { focus = CLA_fertalizer focus = CLA_hunt_hellpig }
+		x = 2
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_prison_labor
+		icon = GFX_
+		prerequisite = { focus = CLA_bailouts }
+		prerequisite = { focus = CLA_order_factory_worker_to_farm }
+		x = 3
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = CLA_convert_cashcrops_to_food
+		icon = GFX_
+		prerequisite = { focus = CLA_reach_out_to_lem }
+		x = 4
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_order_factory_worker_to_farm
+		icon = GFX_
+		prerequisite = { focus = CLA_convert_cashcrops_to_food }
+		x = 4
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_rich_convert_grass_to_pasture
+		icon = GFX_
+		prerequisite = { focus = CLA_convert_cashcrops_to_food }
+		x = 6
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_clear_land
+		icon = GFX_
+		prerequisite = { focus = CLA_rich_convert_grass_to_pasture }
+		x = 4
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_distribute_seeds
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_rich_convert_grass_to_pasture focus = CLA_order_factory_worker_to_farm }
+		x = 5
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_crises_contained
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_clear_land }
+		prerequisite = { focus = CLA_prison_labor focus = CLA_distribute_seeds }
+		x = 4
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	
+	
+	#right	
+	focus = {
+		id = CLA_consolidate
+		icon = GFX_
+		prerequisite = { focus = CLA_crop_failure }
+		mutually_exclusive = { focus = CLA_reach_out_to_lem }
+		x = 7
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
