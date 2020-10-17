@@ -42,20 +42,22 @@ focus_tree = {
 #		continue_if_invalid = no
 #		available_if_capitulated = yes
 #
-#		complete_tooltip = {
-#
-#		}
-#
+#		complete_tooltip = { r56_goal_generic_agriculture2
+#r56_focus_POL_agrarian_reform
+#		} goal_generic_agrarian_reform_focus
+#r56_goal_generic_farm_tractor
+#r56_goal_generic_agriculture
+#r56_goal_generic_agrarian_reform
 #		completion_reward = {
 #
 #		}
 #	}
 
 
-
+	shared_focus = INDOLEM2_the_hooks
 	focus = {
 		id = CLA_crop_failure
-		icon = GFX_
+		icon = GFX_r56_goal_generic_plan 
 		
 		x = 7
 		y = 0
@@ -83,13 +85,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+
+			add_ideas = LEM_famine
 		}
 	}
 	#left
 	focus = {
 		id = CLA_reach_out_to_lem
-		icon = GFX_
+		icon = GFX_focus_bra_federalism
 		prerequisite = { focus = CLA_crop_failure }
 		mutually_exclusive = { focus = CLA_draconian_measures }
 		x = 3
@@ -118,12 +121,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_stability = -.30
+
 		}
 	}
 	
 	focus = {
 		id = CLA_purchase_crop
-		icon = GFX_
+		icon = GFX_bailout_money
 		prerequisite = { focus = CLA_reach_out_to_lem }
 		x = 2
 		y = 2
@@ -151,12 +156,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+				add_political_power = 100
 		}
 	}
 	
 	focus = {
 		id = CLA_fertalizer
-		icon = GFX_
+		icon = GFX_goal_mexico_the_green_revolution
 		prerequisite = { focus = CLA_purchase_crop }
 		x = 0
 		y = 3
@@ -184,12 +190,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_state_modifier = {
+				modifier = {
+					local_resources = 0.1
+				}
+			}
 		}
 	}
 	
 		focus = {
 		id = CLA_hunt_hellpig
-		icon = GFX_
+		icon = GFX_r56_goal_generic_infantry_offensive
 		prerequisite = { focus = CLA_purchase_crop }
 		x = 2
 		y = 3
@@ -217,11 +228,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = CLA_bailouts for farmers
-		icon = GFX_
+		icon = GFX_r56_goal_generic_banking
 		prerequisite = { focus = CLA_fertalizer focus = CLA_hunt_hellpig }
 		x = 2
 		y = 4
@@ -249,12 +261,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		 add_stability = .05
 		}
 	}
 	
 	focus = {
 		id = CLA_prison_labor
-		icon = GFX_
+		icon = GFX_r56_goal_generic_seperation
 		prerequisite = { focus = CLA_bailouts }
 		prerequisite = { focus = CLA_order_factory_worker_to_farm }
 		x = 3
@@ -283,6 +296,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 	
@@ -302,7 +316,7 @@ focus_tree = {
 	
 	focus = {
 		id = CLA_convert_cashcrops_to_food
-		icon = GFX_
+		icon = GFX_goal_cuba_law_of_sugar_coordination
 		prerequisite = { focus = CLA_reach_out_to_lem }
 		x = 4
 		y = 2
@@ -330,12 +344,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = .05
 		}
 	}
 	
 	focus = {
 		id = CLA_order_factory_worker_to_farm
-		icon = GFX_
+		icon = GFX_goal_generic_agrarian_reform_focus
 		prerequisite = { focus = CLA_convert_cashcrops_to_food }
 		x = 4
 		y = 3
@@ -363,6 +378,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+				add_ideas = LEM_factory_farm
 		}
 	}
 	
@@ -396,6 +412,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	
@@ -429,6 +448,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	
@@ -462,12 +484,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_stability = 0.1
 		}
 	}
 	
 	focus = {
 		id = CLA_bountiful_harvest
-		icon = GFX_distribute_seeds
+		icon = GFX_r56_goal_generic_wheat
 		prerequisite = { focus = CLA_clear_land }
 		prerequisite = { focus = CLA_prison_labor focus = CLA_distribute_seeds }
 		x = 4`
@@ -496,6 +519,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.15
 		}
 	}
 	
@@ -505,7 +529,7 @@ focus_tree = {
 	#right	
 	focus = {
 		id = CLA_draconian_measures
-		icon = GFX_
+		icon = GFX_r56_goal_AUS_emergency_powers
 		prerequisite = { focus = CLA_crop_failure }
 		mutually_exclusive = { focus = CLA_reach_out_to_lem }
 		x = 11
@@ -534,12 +558,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = -0.50
 		}
 	}
 	
 	focus = {
 		id = CLA_go_alone
-		icon = GFX_distribute_seeds
+		icon = GFX_turn_away
 		prerequisite = { focus = CLA_draconian_measures }
 		x = 9
 		y = 2
@@ -567,11 +592,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = LEM_famine2  
 		}
 	}
 	focus = {
 		id = CLA_food_riots
-		icon = GFX_distribute_seeds
+		icon = GFX_goal_italy_besagliari
 		prerequisite = { focus = CLA_go_alone }
 		x = 8
 		y = 3
@@ -599,11 +625,47 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_manpower = -5000
+		}
+	}
+	
+	focus = {
+		id = CLA_stop_cannibalism
+		icon = GFX_arrow_heart
+		prerequisite = { focus = CLA_go_alone }
+		x = 10
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -5000
+			add_stability = .10
 		}
 	}
 	focus = {
 		id = CLA_shift_nonessential_industry 
-		icon = GFX_distribute_seeds
+		icon = GFX_factoryplanning
 		prerequisite = { focus = CLA_food_riots }
 		x = 9
 		y = 4
@@ -631,6 +693,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = LEM_nonessential
 		}
 	}
 	
@@ -665,13 +728,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	
 	
 	focus = {
 		id = CLA_bulldose_shanty_towns
-		icon = GFX_distribute_seeds
+		icon = GFX_r56_goal_COG_Jungle_Railroad
 		prerequisite = { focus = CLA_crackdown_press }
 		x = 11
 		y = 5
@@ -699,6 +765,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	
@@ -706,42 +775,9 @@ focus_tree = {
 	
 	focus = {
 		id = CLA_crackdown_press
-		icon = GFX_distribute_seeds
-		prerequisite = { focus = CLA_go_alone focus = CLA_rich_distribution }
-		x = 11
-		y = 3
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = CLA_crackdown_press
-		icon = GFX_distribute_seeds
+		icon = GFX_r56_goal_generic_censorship
 		prerequisite = { focus = CLA_go_alone focus = CLA_forced_labor }
-		x = 11
+		x = 12
 		y = 3
 
 		cost = 10
@@ -767,9 +803,44 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 250
 		}
 	}
 	
+
+	focus = {
+		id = CLA_nationalize_press
+		icon = GFX_r56_generic_goal_communist_reforms
+		prerequisite = { focus = CLA_crackdown_press }
+		x = 12
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		add_stability = .10
+		}
+	}
 	
 	focus = {
 		id = CLA_forced_labor
@@ -801,6 +872,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 	
@@ -834,12 +906,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = .05
 		}
 	}
 	
 	focus = {
 		id = CLA_dead_men_dont_speak
-		icon = GFX_distribute_seeds
+		icon = GFX_r56_goal_generic_backstab
 		prerequisite = { focus = CLA_bulldose_shanty_towns }
 		prerequisite = { focus = CLA_mountain_farms focus = CLA_enforced_rationing }
 		x = 11
@@ -868,6 +941,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = .10
 		}
 	}
 	

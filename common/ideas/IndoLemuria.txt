@@ -275,3 +275,53 @@ ideas = {
 				root_out_resistance_effectiveness_factor = 0.1
 			}
 		}
+		#generic tree
+#Dying
+		LEM_famine = {
+
+			available = {
+			}
+
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = -10
+			}
+		}
+		
+		LEM_factory_farm = {
+
+			available = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+	#Dying2
+		LEM_famine2 = {
+
+			available = {
+			}
+
+			
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = -5
+			}
+		}
+		LEM_nonessential = {
+
+			available = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
