@@ -11,7 +11,7 @@ focus_tree = {
 		}
 	}
 	
-	
+	continuous_focus_position = { x = 100 y = 1700 }
 	
 #	focus = {
 #		id = CLA_
@@ -57,7 +57,7 @@ focus_tree = {
 		id = CLA_crop_failure
 		icon = GFX_
 		
-		x = 5
+		x = 7
 		y = 0
 
 		cost = 10
@@ -91,7 +91,7 @@ focus_tree = {
 		id = CLA_reach_out_to_lem
 		icon = GFX_
 		prerequisite = { focus = CLA_crop_failure }
-		mutually_exclusive = { focus = CLA_consolidate }
+		mutually_exclusive = { focus = CLA_draconian_measures }
 		x = 3
 		y = 1
 
@@ -466,11 +466,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CLA_crises_contained
+		id = CLA_bountiful_harvest
 		icon = GFX_distribute_seeds
 		prerequisite = { focus = CLA_clear_land }
 		prerequisite = { focus = CLA_prison_labor focus = CLA_distribute_seeds }
-		x = 4
+		x = 4`
 		y = 6
 
 		cost = 10
@@ -504,12 +504,177 @@ focus_tree = {
 	
 	#right	
 	focus = {
-		id = CLA_consolidate
+		id = CLA_draconian_measures
 		icon = GFX_
 		prerequisite = { focus = CLA_crop_failure }
 		mutually_exclusive = { focus = CLA_reach_out_to_lem }
-		x = 7
+		x = 11
 		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_go_alone
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_draconian_measures }
+		x = 9
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CLA_food_riots
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_go_alone }
+		x = 8
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CLA_shift_nonessential_industry 
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_food_riots }
+		x = 9
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = CLA_mountain_farms
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_shift_nonessential_industry }
+		x = 9
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = CLA_bulldose_shanty_towns
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_crackdown_press }
+		x = 11
+		y = 5
 
 		cost = 10
 
@@ -539,12 +704,207 @@ focus_tree = {
 	
 	
 	
+	focus = {
+		id = CLA_crackdown_press
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_go_alone focus = CLA_rich_distribution }
+		x = 11
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_crackdown_press
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_go_alone focus = CLA_forced_labor }
+		x = 11
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = CLA_forced_labor
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_draconian_measures }
+		x = 13
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_enforced_rationing
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_forced_labor focus = CLA_crackdown_press}
+		x = 13
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CLA_dead_men_dont_speak
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_bulldose_shanty_towns }
+		prerequisite = { focus = CLA_mountain_farms focus = CLA_enforced_rationing }
+		x = 11
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
 	
 	
 	
-	
-	
-	
+	focus = {
+		id = CLA_crises_contained
+		icon = GFX_distribute_seeds
+		prerequisite = { focus = CLA_dead_men_dont_speak focus = CLA_bountiful_harvest }
+		x = 7
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
 	
 	
 	
