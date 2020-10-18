@@ -8,23 +8,612 @@ focus_tree = {
 		}
 	}
 		continuous_focus_position = { x = 50 y = 1500 }
-		
 
 
 
-	
-	
-	
-	
-	
-	
-	
-	shared_focus = INDOLEM2_the_hooks	
+
+	focus = {
+		id = KUM_stop_support
+		icon = GFX_goal_generic_attack_allies
+		x = 2
+		y = 0
+		mutually_exclusive = { focus = KUM_support_pantiyans }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_closer_french_ties
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_stop_support}
+		x = 0
+		y = 1
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_demonize_pantiya
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_closer_french_ties}
+		x = -1
+		y = 2
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_invite_foreign_media
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_closer_french_ties}
+		x = 1
+		y = 2
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_french_investments
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_invite_foreign_media}
+		prerequisite = { focus = KUM_demonize_pantiya}
+		x = 0
+		y = 3
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_franco_kumari_dev_zone
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_french_investments}
+		x = -1
+		y = 4
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_pantiyan_volunteers
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_french_investments}
+		x = 1
+		y = 4
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+
+	focus = {
+		id = KUM_support_pantiyans
+		icon = GFX_goal_generic_attack_allies
+		x = 4
+		y = 0
+		mutually_exclusive = { focus = KUM_stop_support }
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+
+	focus = {
+		id = KUM_military_camps
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_support_pantiyans}
+		x = 4
+		y = 1
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_military_camps
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_military_camps}
+		x = 3
+		y = 2
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_deny_support
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_military_camps}
+		x = 5
+		y = 2
+		relative_position_id = KUM_stop_support
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+
+
+
+	focus = {
+		id = KUM_succession_crisis
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = KUM_stop_support
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_legitimate_heir
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_succession_crisis}
+		mutually_exclusive = { focus = KUM_stronger_candidate }
+		relative_position_id = KUM_stop_support
+		x = 7
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_stronger_candidate
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_succession_crisis}
+		mutually_exclusive = { focus = KUM_legitimate_heir }
+		relative_position_id = KUM_stop_support
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_strong_monarchy
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_stronger_candidate
+						focus = KUM_legitimate_heir}
+		mutually_exclusive = { focus = KUM_weak_monarchy }
+		relative_position_id = KUM_stop_support
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_weak_monarchy
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_stronger_candidate
+						focus = KUM_legitimate_heir}
+		mutually_exclusive = { focus = KUM_strong_monarchy }
+		relative_position_id = KUM_stop_support
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_expel_foreign_media
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_strong_monarchy}
+		prerequisite = { focus = KUM_deny_support}
+		relative_position_id = KUM_stop_support
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_unity_government
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_strong_monarchy
+						focus = KUM_weak_monarchy}
+		relative_position_id = KUM_stop_support
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_incr_industrial_investments
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_expel_foreign_media
+						focus = KUM_unity_government}
+		relative_position_id = KUM_stop_support
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_ignore_genocide
+		icon = GFX_goal_generic_attack_allies
+		mutually_exclusive = { focus = KUM_address_genocide }
+		relative_position_id = KUM_stop_support
+		x = 16
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_address_genocide
+		icon = GFX_goal_generic_attack_allies
+		mutually_exclusive = { focus = KUM_ignore_genocide }
+		relative_position_id = KUM_stop_support
+		x = 18
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_deal_with_generals
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_ignore_genocide
+						focus = KUM_address_genocide}
+		relative_position_id = KUM_stop_support
+		x = 17
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_reinstate_teravamsincha
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_deal_with_generals}
+		mutually_exclusive = { focus = KUM_reject_teravamsincha }
+		relative_position_id = KUM_stop_support
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_existence_is_enough
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_reinstate_teravamsincha}
+		mutually_exclusive = { focus = KUM_return_teravamsincha_lands }
+		relative_position_id = KUM_stop_support
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_return_teravamsincha_lands
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_reinstate_teravamsincha}
+		mutually_exclusive = { focus = KUM_existence_is_enough }
+		relative_position_id = KUM_stop_support
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_reject_teravamsincha
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_deal_with_generals}
+		mutually_exclusive = { focus = KUM_reinstate_teravamsincha }
+		relative_position_id = KUM_stop_support
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_teravamsincha_brazil
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_reject_teravamsincha}
+		relative_position_id = KUM_stop_support
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 	focus = {
 		id = KUM_modernize_military
 		icon = GFX_goal_generic_attack_allies
-		x = 0
-		y = 0
+		x = 18
+		y = 2
+		prerequisite = { focus = KUM_deal_with_generals}
 		mutually_exclusive = { focus = KUM_mass_assault }
 		relative_position_id = KUM_public_farmlands
 		cost = 10
@@ -110,6 +699,7 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = 6
 		y = 0
+		prerequisite = { focus = KUM_deal_with_generals}
 		mutually_exclusive = { focus = KUM_modernize_military }
 		relative_position_id = KUM_modernize_military
 		cost = 10
@@ -347,6 +937,7 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = 12
 		y = 0
+		prerequisite = { focus = KUM_deal_with_generals}
 		relative_position_id = KUM_modernize_military
 		cost = 10
 		available_if_capitulated = yes
@@ -728,6 +1319,7 @@ focus_tree = {
 	focus = {
 		id = KUM_mahanian_doctrine
 		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KUM_deal_with_generals }
 		x = 7
 		y = 0
 		relative_position_id = KUM_aviation_school
@@ -991,29 +1583,22 @@ focus_tree = {
 			#add_political_power = -50
 		}
 	}
+
 	
-
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
 shared_focus = INDOLEM2_the_hooks
-		x = 22
-		y = 0
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    x = 35
+	y = 0
 	
 	
 	
 }
+	
