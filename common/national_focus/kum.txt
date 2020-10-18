@@ -14,8 +14,8 @@ focus_tree = {
 
 	focus = {
 		id = KUM_stop_support
-		icon = GFX_goal_generic_attack_allies
-		x = 2
+		icon = GFX_r56_goal_generic_infantry_flames
+		x = 6
 		y = 0
 		mutually_exclusive = { focus = KUM_support_pantiyans }
 		cost = 10
@@ -34,7 +34,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_closer_french_ties
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = KUM_stop_support}
 		x = 0
 		y = 1
@@ -76,7 +76,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_invite_foreign_media
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = KUM_closer_french_ties}
 		x = 1
 		y = 2
@@ -97,7 +97,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_french_investments
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_aristocratic_cooperation
 		prerequisite = { focus = KUM_invite_foreign_media}
 		prerequisite = { focus = KUM_demonize_pantiya}
 		x = 0
@@ -140,7 +140,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_pantiyan_volunteers
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_mexico_litteracy_program
 		prerequisite = { focus = KUM_french_investments}
 		x = 1
 		y = 4
@@ -184,7 +184,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_military_camps
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_army
 		prerequisite = { focus = KUM_support_pantiyans}
 		x = 4
 		y = 1
@@ -204,8 +204,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = KUM_military_camps
-		icon = GFX_goal_generic_attack_allies
+		id = KUM_sabotage_missions
+		icon = GFX_kaboom
 		prerequisite = { focus = KUM_military_camps}
 		x = 3
 		y = 2
@@ -226,7 +226,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_deny_support
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_infantry_flames
 		prerequisite = { focus = KUM_military_camps}
 		x = 5
 		y = 2
@@ -250,7 +250,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_succession_crisis
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_monarchy_1
 		relative_position_id = KUM_stop_support
 		x = 8
 		y = 0
@@ -270,7 +270,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_legitimate_heir
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = KUM_succession_crisis}
 		mutually_exclusive = { focus = KUM_stronger_candidate }
 		relative_position_id = KUM_stop_support
@@ -292,7 +292,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_stronger_candidate
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_rom_royal_dictatorship
 		prerequisite = { focus = KUM_succession_crisis}
 		mutually_exclusive = { focus = KUM_legitimate_heir }
 		relative_position_id = KUM_stop_support
@@ -314,7 +314,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_strong_monarchy
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = KUM_stronger_candidate
 						focus = KUM_legitimate_heir}
 		mutually_exclusive = { focus = KUM_weak_monarchy }
@@ -337,7 +337,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_weak_monarchy
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_rom_handle_king
 		prerequisite = { focus = KUM_stronger_candidate
 						focus = KUM_legitimate_heir}
 		mutually_exclusive = { focus = KUM_strong_monarchy }
@@ -360,7 +360,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_expel_foreign_media
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_renounce_the_treaty_of_triannon
 		prerequisite = { focus = KUM_strong_monarchy}
 		prerequisite = { focus = KUM_deny_support}
 		relative_position_id = KUM_stop_support
@@ -382,7 +382,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_unity_government
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = KUM_strong_monarchy
 						focus = KUM_weak_monarchy}
 		relative_position_id = KUM_stop_support
@@ -404,7 +404,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_incr_industrial_investments
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = KUM_expel_foreign_media
 						focus = KUM_unity_government}
 		relative_position_id = KUM_stop_support
@@ -426,7 +426,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_ignore_genocide
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_small_infantry
 		mutually_exclusive = { focus = KUM_address_genocide }
 		relative_position_id = KUM_stop_support
 		x = 16
@@ -447,7 +447,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_address_genocide
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_manpower
 		mutually_exclusive = { focus = KUM_ignore_genocide }
 		relative_position_id = KUM_stop_support
 		x = 18
@@ -468,7 +468,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_deal_with_generals
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = KUM_ignore_genocide
 						focus = KUM_address_genocide}
 		relative_position_id = KUM_stop_support
@@ -518,6 +518,29 @@ focus_tree = {
 		relative_position_id = KUM_stop_support
 		x = 10
 		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			#add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = KUM_strengthen_military
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = KUM_unity_government}
+		prerequisite = { focus = KUM_return_teravamsincha_lands
+						focus = KUM_existence_is_enough}
+		relative_position_id = KUM_stop_support
+		x = 9
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -610,8 +633,8 @@ focus_tree = {
 
 	focus = {
 		id = KUM_modernize_military
-		icon = GFX_goal_generic_attack_allies
-		x = 18
+		icon = GFX_goal_italy_besagliari
+		x = 22
 		y = 2
 		prerequisite = { focus = KUM_deal_with_generals}
 		mutually_exclusive = { focus = KUM_mass_assault }
