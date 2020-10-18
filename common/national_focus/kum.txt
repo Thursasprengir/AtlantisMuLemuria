@@ -633,7 +633,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_modernize_military
-		icon = GFX_goal_italy_besagliari
+		icon = GFX_r56_goal_SIA_money_army
 		x = 22
 		y = 2
 		prerequisite = { focus = KUM_deal_with_generals}
@@ -655,7 +655,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_tractor_works
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = KUM_modernize_military}
 		x = 0
 		y = 1
@@ -698,7 +698,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_heavy_tanks
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_license_tanks
 		prerequisite = { focus = KUM_inefficient_engines}
 		x = 0
 		y = 4
@@ -719,7 +719,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_mass_assault
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_italy_besagliari
 		x = 6
 		y = 0
 		prerequisite = { focus = KUM_deal_with_generals}
@@ -741,7 +741,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_local_rifles
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_preparation
 		prerequisite = { focus = KUM_mass_assault}
 		x = 6
 		y = 1
@@ -762,7 +762,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_heavy_weapons
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_machine_gun
 		prerequisite = { focus = KUM_local_rifles}
 		x = 6
 		y = 2
@@ -783,7 +783,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_artillery
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = KUM_heavy_weapons}
 		x = 6
 		y = 3
@@ -826,7 +826,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_trackbed_trucks
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_modernizing_the_cavalry
 		prerequisite = { focus = KUM_modernize_military}
 		x = 3
 		y = 2
@@ -868,7 +868,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_medium_tanks
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = KUM_armored_trucks focus = KUM_inefficient_engines}
 		mutually_exclusive = { focus = KUM_light_tanks }
 		x = 2
@@ -890,7 +890,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_light_tanks
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_BEL_light_tanks
 		prerequisite = { focus = KUM_armored_trucks}
 		prerequisite = { focus = KUM_artillery}
 		mutually_exclusive = { focus = KUM_medium_tanks_tanks }
@@ -913,7 +913,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_rocket_artillery
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = KUM_artillery}
 		x = 6
 		y = 4
@@ -957,7 +957,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_aviation_school
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_air_fighter2
 		x = 12
 		y = 0
 		prerequisite = { focus = KUM_deal_with_generals}
@@ -978,7 +978,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_early_air_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = KUM_aviation_school}
 		x = 12
 		y = 1
@@ -999,7 +999,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_local_air_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_zero_blue
 		prerequisite = { focus = KUM_early_air_designs}
 		mutually_exclusive = {
 			focus = KUM_int_air_designs
@@ -1023,7 +1023,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_self_taught
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = KUM_local_air_designs}
 		x = 10
 		y = 4
@@ -1044,7 +1044,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_int_air_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_r56_goal_generic_multiple_bombers
 		prerequisite = { focus = KUM_early_air_designs}
 		mutually_exclusive = {
 			focus = KUM_local_air_designs
@@ -1068,7 +1068,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_british_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_chi_flying_tigers
 		prerequisite = { focus = KUM_int_air_designs}
 		mutually_exclusive = {
 			focus = KUM_german_designs
@@ -1116,7 +1116,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_british_instructors
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = KUM_british_designs}
 		x = 12
 		y = 4
@@ -1137,7 +1137,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_german_instructors
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = KUM_german_designs}
 		x = 14
 		y = 4
@@ -1181,7 +1181,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_heavy_fighters
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = { focus = KUM_self_taught
 					focus = KUM_british_instructors
 					focus = KUM_german_instructors}
@@ -1227,7 +1227,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_close_air
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = KUM_self_taught
 					focus = KUM_british_instructors
 					focus = KUM_german_instructors}
@@ -1250,7 +1250,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_adv_air_training
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = KUM_anti_air}
 		prerequisite = { focus = KUM_tactical_bombers}
 		x = 8
@@ -1272,7 +1272,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_strategic_bombers
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = KUM_tactical_bombers}
 		x = 10
 		y = 6
@@ -1293,7 +1293,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_jet_tech
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_rocketry
 		prerequisite = { focus = KUM_fighters}
 		x = 13
 		y = 6
@@ -1314,7 +1314,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_naval_air_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = KUM_close_air}
 		prerequisite = { focus = KUM_carrier_designs}
 		x = 17
@@ -1341,7 +1341,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_mahanian_doctrine
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = KUM_deal_with_generals }
 		x = 7
 		y = 0
@@ -1362,7 +1362,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_strike_below
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = KUM_mahanian_doctrine}
 		mutually_exclusive = {
 			focus = KUM_defend_coasts
@@ -1387,7 +1387,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_sub_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = KUM_strike_below}
 		x = -3
 		y = 2
@@ -1408,7 +1408,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_minelayer_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_cruiser2
 		prerequisite = { focus = KUM_sub_designs}
 		x = -3
 		y = 3
@@ -1429,7 +1429,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_defend_coasts
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = KUM_mahanian_doctrine}
 		mutually_exclusive = {
 			focus = KUM_strike_below
@@ -1454,7 +1454,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_destroyer_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = KUM_defend_coasts
 						focus = KUM_strike_below}
 		x = -1
@@ -1476,7 +1476,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_cruiser_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = { focus = KUM_defend_coasts
 						focus = KUM_maritime_projection}
 		x = 1
@@ -1498,7 +1498,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_naval_invasion
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = KUM_destroyer_designs
 						focus = KUM_cruiser_designs}
 		x = 0
@@ -1545,7 +1545,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_heavy_cruiser
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = KUM_maritime_projection}
 		x = 3
 		y = 2
@@ -1567,7 +1567,7 @@ focus_tree = {
 		
 	focus = {
 		id = KUM_carrier_designs
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = KUM_heavy_cruiser}
 		x = 2
 		y = 3
