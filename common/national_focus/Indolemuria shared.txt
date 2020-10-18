@@ -3,7 +3,7 @@
 	shared_focus = {
 		id = INDOLEM2_the_hooks
 		icon = GFX_focus_spr_masters_of_our_own_fate
-		x = 60
+		x = 56
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -26,7 +26,8 @@
 		id = INDOLEM2_work_with_capitalists
 		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = INDOLEM2_the_hooks }
-		x = 40
+		relative_position_id = INDOLEM2_the_hooks
+		x = -10
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
