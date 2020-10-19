@@ -48,11 +48,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-			completion_reward = {
-			add_popularity = {
-					ideology = democratic
-					popularity = 0.05
-			}
+		completion_reward = {
 			FRA = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -79,7 +75,10 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_political_power = 50
+			FRA = {
+				1060 = { add_compliance = 10 }
+			}
 		}
 	}
 
@@ -143,7 +142,10 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_offsite_building = { type = arms_factory level = 1 }
+			FRA = {
+				991 = { add_compliance = 10 }
+			}
 		}
 	}
 
@@ -164,7 +166,10 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_offsite_building = { type = industrial_complex level = 1 }
+			FRA = {
+				add_manpower = 10000
+			}
 		}
 	}
 
@@ -186,7 +191,13 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_manpower = 5000
+			FRA = {
+				991 = { add_compliance = -20 }
+				1041 = { add_compliance = -20 }
+				1040 = { add_compliance = -20 }
+				1060 = { add_compliance = -20 }
+			}
 		}
 	}
 
@@ -208,7 +219,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_manpower = 5000
 		}
 	}
 
@@ -229,7 +240,8 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			unlock_decision_category_tooltip = blow_the_works
+			custom_effect_tooltip = blow_the_works_tt_doesnt_work
 		}
 	}
 
@@ -250,7 +262,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
 		}
 	}
 
@@ -273,7 +290,8 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			set_stability = -0.2
+			add_ideas = KUM_succession_crisis
 		}
 	}
 
@@ -295,7 +313,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			set_political_power = -100
 		}
 	}
 
@@ -317,7 +335,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_war_support = 0.2
 		}
 	}
 
@@ -340,7 +358,11 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_stability = .10
+			swap_ideas = {
+				remove_idea = KUM_succession_crisis
+				add_idea = KUM_strong_monarch 
+			}
 		}
 	}
 
@@ -363,7 +385,11 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_stability = .30
+			swap_ideas = {
+				remove_idea = KUM_succession_crisis
+				add_idea = KUM_weak_monarch
+			}	
 		}
 	}
 
@@ -385,7 +411,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_idea = KUM_expel_media
 		}
 	}
 
@@ -407,7 +433,9 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			remove_ideas = KUM_strong_monarch
+			remove_ideas = KUM_weak_monarch
+			
 		}
 	}
 
@@ -429,7 +457,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_ideas = KUM_industrial_invest
 		}
 	}
 
@@ -493,7 +521,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			#add_political_power = -50 
 		}
 	}
 
