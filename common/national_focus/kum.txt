@@ -28,7 +28,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_political_power = 50
 		}
 	}
 
@@ -48,8 +48,17 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		completion_reward = {
-			#add_political_power = -50
+			completion_reward = {
+			add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
 		}
 	}
 
@@ -91,7 +100,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_stability = 0.05
 		}
 	}
 
@@ -113,7 +122,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+					add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 
