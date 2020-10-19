@@ -174,7 +174,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CLA_fertalizer
+		id = CLA_fertilizer
 		icon = GFX_goal_mexico_the_green_revolution
 		prerequisite = { focus = CLA_purchase_crop }
 		x = 0
@@ -245,9 +245,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CLA_bailouts for farmers
+		id = CLA_bailouts_for_farmers
 		icon = GFX_r56_goal_generic_banking
-		prerequisite = { focus = CLA_fertalizer focus = CLA_hunt_hellpig }
+		prerequisite = { focus = CLA_fertilizer focus = CLA_hunt_hellpig }
 		x = 2
 		y = 4
 
@@ -281,7 +281,7 @@ focus_tree = {
 	focus = {
 		id = CLA_prison_labor
 		icon = GFX_r56_goal_generic_seperation
-		prerequisite = { focus = CLA_bailouts }
+		prerequisite = { focus = CLA_bailouts_for_farmers }
 		prerequisite = { focus = CLA_order_factory_worker_to_farm }
 		x = 3
 		y = 5
@@ -396,7 +396,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CLA_rich_convert_grass_to_pasture
+		id = CLA_convert_grass_to_pasture
 		icon = GFX_
 		prerequisite = { focus = CLA_convert_cashcrops_to_food }
 		x = 6
@@ -434,7 +434,7 @@ focus_tree = {
 	focus = {
 		id = CLA_clear_land
 		icon = GFX_
-		prerequisite = { focus = CLA_rich_convert_grass_to_pasture }
+		prerequisite = { focus = CLA_convert_grass_to_pasture }
 		x = 4
 		y = 4
 
@@ -470,7 +470,7 @@ focus_tree = {
 	focus = {
 		id = CLA_distribute_seeds
 		icon = GFX_distribute_seeds
-		prerequisite = { focus = CLA_rich_convert_grass_to_pasture focus = CLA_order_factory_worker_to_farm }
+		prerequisite = { focus = CLA_convert_grass_to_pasture focus = CLA_order_factory_worker_to_farm }
 		x = 5
 		y = 5
 
@@ -749,7 +749,7 @@ focus_tree = {
 	
 	
 	focus = {
-		id = CLA_bulldose_shanty_towns
+		id = CLA_bulldoze_shanty_towns
 		icon = GFX_r56_goal_COG_Jungle_Railroad
 		prerequisite = { focus = CLA_crackdown_press }
 		x = 11
@@ -924,9 +924,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CLA_dead_men_dont_speak
+		id = CLA_dead_men_tell_no_tales
 		icon = GFX_r56_goal_generic_backstab
-		prerequisite = { focus = CLA_bulldose_shanty_towns }
+		prerequisite = { focus = CLA_bulldoze_shanty_towns }
 		prerequisite = { focus = CLA_mountain_farms focus = CLA_enforced_rationing }
 		x = 11
 		y = 6
@@ -963,7 +963,7 @@ focus_tree = {
 	focus = {
 		id = CLA_crises_contained
 		icon = GFX_distribute_seeds
-		prerequisite = { focus = CLA_dead_men_dont_speak focus = CLA_bountiful_harvest }
+		prerequisite = { focus = CLA_dead_men_tell_no_tales focus = CLA_bountiful_harvest }
 		x = 7
 		y = 7
 
@@ -1913,7 +1913,7 @@ focus_tree = {
 		}
 	}
 
-	
+	}
 	
 	
 	
