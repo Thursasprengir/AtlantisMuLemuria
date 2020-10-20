@@ -543,7 +543,16 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			create_field_marshal = {
+				name = "Kuklowes Matsinka"
+				picture = "Portrait_The_Raj_Army_Generic.dds"
+				traits = { defensive_doctrine }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}	
 		}
 	}
 
@@ -565,7 +574,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_war_support = .10
 		}
 	}
 
@@ -610,7 +619,16 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			create_field_marshal = {
+				name = "Lowdwark Panrebatsa"
+				picture = "Portrait_The_Raj_Army_Generic_2.dds"
+				traits = { offensive_doctrine }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}	
 		}
 	}
 
@@ -632,7 +650,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_war_support = -0.1
 		}
 	}
 
@@ -653,7 +671,28 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+		add_opinion_modifier = {
+		    target = BRA
+			modifier = large_increase
+		}
+		BRA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_increase
+			}
+		}
+		BRA = { 			
+			create_field_marshal = {
+				name = "Lowdwark Panrebatsa"
+				picture = "Portrait_The_Raj_Army_Generic_2.dds"
+				traits = { offensive_doctrine }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+				}	
+			}
 		}
 	}
 
