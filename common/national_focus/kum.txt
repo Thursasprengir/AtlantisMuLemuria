@@ -478,7 +478,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_stability = .1
 		}
 	}
 
@@ -499,7 +499,8 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_stability = -.1
+			add_political_power = 100
 		}
 	}
 
@@ -521,7 +522,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50 
+			add_political_power = -50 
 		}
 	}
 
@@ -599,7 +600,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_war_support = .1
 		}
 	}
 
@@ -686,7 +687,7 @@ focus_tree = {
 		}
 		BRA = { 			
 			create_field_marshal = {
-				name = "Lowdwark Panrebatsa"
+				name = "Lowunratsa Panellindra"
 				picture = "Portrait_The_Raj_Army_Generic_2.dds"
 				traits = { offensive_doctrine }
 				skill = 2
@@ -728,7 +729,16 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = mobile_warfare
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = superior_firepower
+			}
 		}
 	}
 		
@@ -749,7 +759,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_ideas = KUM_leaky_engine
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_armor
+			}
 		}
 	}
 		
@@ -771,7 +786,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_political_power = 50
 		}
 	}
 		
@@ -792,7 +807,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			remove_ideas = KUM_leaky_engine
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_armor
+			}
 		}
 	}
 		
@@ -814,7 +834,16 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = trench_warfare
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = mass_assault
+			}
 		}
 	}
 		
@@ -835,7 +864,11 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 		
@@ -856,7 +889,11 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_anti_tank
+			}
 		}
 	}
 		
@@ -877,7 +914,11 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 		
@@ -898,14 +939,20 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			set_technology = {
+				armored_car1 = 1
+			}
+			set_technology = {
+				armored_car2 = 1
+			}
 		}
 	}
+	
 		
 		focus = {
 		id = KUM_trackbed_trucks
 		icon = GFX_r56_goal_generic_modernizing_the_cavalry
-		prerequisite = { focus = KUM_modernize_military}
+		prerequisite = { focus = KUM_automobile_designs}
 		x = 3
 		y = 2
 		relative_position_id = KUM_modernize_military
@@ -919,9 +966,14 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
+	
 		
 		focus = {
 		id = KUM_armored_trucks
@@ -940,9 +992,14 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 	}
+	
 		
 		focus = {
 		id = KUM_medium_tanks
@@ -962,7 +1019,11 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_medium_armor
+			}
 		}
 	}
 		
@@ -985,7 +1046,11 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_light_armor
+			}
 		}
 	}
 		
@@ -1006,9 +1071,14 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = rocket_artillery
+			}
 		}
 	}
+		
 		
 		focus = {
 		id = KUM_anti_air
@@ -1027,10 +1097,13 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				technology = interwar_antiair
+			}
 		}
 	}
-	
 	
 		
 	focus = {
