@@ -1105,7 +1105,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				technology = interwar_antiair
 			}
 		}
@@ -1129,7 +1129,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			air_experience = 10
 		}
 	}
 		
@@ -1150,7 +1150,11 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 		
@@ -1174,9 +1178,14 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
 		}
 	}
+		
 		
 	focus = {
 		id = KUM_self_taught
@@ -1195,7 +1204,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_ideas = KUM_trial_error
 		}
 	}
 		
@@ -1219,7 +1228,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_political_power = 150
 		}
 	}
 		
@@ -1243,10 +1252,15 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			ENG = {
+			create_production_license = { 
+				target = KUM
+				equipment = { type = fighter_equipment_1` }
+				}
+			}
 		}
 	}
-		
+	
 	focus = {
 		id = KUM_german_designs
 		icon = GFX_goal_generic_attack_allies
@@ -1267,7 +1281,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			GER = {
+			create_production_license = { 
+				target = KUM
+				equipment = { type = fighter_equipment_1 }
+				}
+			}
 		}
 	}
 		
@@ -1288,7 +1307,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = strategic_destruction_bonus
+				bonus = 1.0
+				uses = 2
+				category = strategic_destruction_tree
+			}
 		}
 	}
 		
@@ -1309,9 +1333,15 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 2
+				category = operational_integrity_tree
+			}
 		}
 	}
+
 		
 	focus = {
 		id = KUM_tactical_bombers
@@ -1332,9 +1362,15 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+			}
 		}
 	}
+
 		
 	focus = {
 		id = KUM_heavy_fighters
@@ -1355,10 +1391,14 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_heavy_fighter
+			}
 		}
 	}
-		
 	focus = {
 		id = KUM_fighters
 		icon = GFX_goal_generic_attack_allies
@@ -1378,7 +1418,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
 		}
 	}
 		
@@ -1401,7 +1446,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
 		}
 	}
 		
@@ -1423,7 +1473,14 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			remove_ideas = KUM_trial_error
+			add_ace = {
+				name = "Kythonea"
+				surname = "Guthrona"
+				callsign = "Marinara"
+				type = fighter_genius
+				is_female = yes
+			}
 		}
 	}
 		
@@ -1444,7 +1501,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+			}
 		}
 	}
 		
@@ -1465,7 +1527,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
 		}
 	}
 		
@@ -1487,7 +1554,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_air
+			}
 		}
 	}
 	
@@ -1513,7 +1585,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			navy_experience = 10
 		}
 	}	
 		
@@ -1538,7 +1610,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_trade_interdiction
+			}
 		}
 	}		
 		
@@ -1559,7 +1636,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}			
 		
@@ -1580,9 +1662,15 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_minelaying
+			}
 		}
-	}
+	}			
+	
 		
 	focus = {
 		id = KUM_defend_coasts
@@ -1604,8 +1692,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		completion_reward = {
-			#add_political_power = -50
+	completion_reward = {
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_fleet_in_being
+			}
 		}
 	}	
 		
@@ -1626,8 +1719,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		completion_reward = {
-			#add_political_power = -50
+	completion_reward = {
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}	
 		
@@ -1648,8 +1746,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		completion_reward = {
-			#add_political_power = -50
+	completion_reward = {
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+			}
 		}
 	}	
 		
@@ -1670,8 +1773,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		completion_reward = {
-			#add_political_power = -50
+	completion_reward = {
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
 		}
 	}
 		
@@ -1695,8 +1803,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		completion_reward = {
-			#add_political_power = -50
+	completion_reward = {
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_base_strike
+			}
 		}
 	}
 		
@@ -1716,11 +1829,15 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		completion_reward = {
-			#add_political_power = -50
+	completion_reward = {
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = ca_tech
+			}
 		}
 	}
-	
 		
 	focus = {
 		id = KUM_carrier_designs
@@ -1738,8 +1855,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 
-		completion_reward = {
-			#add_political_power = -50
+	completion_reward = {
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 	
@@ -1760,7 +1882,12 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			#add_political_power = -50
+			add_tech_bonus = {
+				name = operational_integrity_bonus
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+			}
 		}
 	}
 
