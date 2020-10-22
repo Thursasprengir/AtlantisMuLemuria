@@ -85,6 +85,9 @@ focus_tree = {
 	focus = {
 		id = KUM_invite_foreign_media
 		icon = GFX_focus_hol_the_foundations_of_defense
+		available = {
+			not = { has_completed_focus = KUM_expel_foreign_media}
+		}
 		prerequisite = { focus = KUM_closer_french_ties}
 		x = 1
 		y = 2
@@ -399,6 +402,9 @@ focus_tree = {
 		prerequisite = { focus = KUM_strong_monarchy}
 		prerequisite = { focus = KUM_deny_support}
 		relative_position_id = KUM_stop_support
+		available = {
+			not = { has_completed_focus = KUM_invite_foreign_media}
+		}
 		x = 6
 		y = 3
 		cost = 10
