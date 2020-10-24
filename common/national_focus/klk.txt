@@ -61,6 +61,9 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			set_variable = {var = KLK.duration value = 100}
+			set_country_flag = mandalists_flag
+			hidden_effect = {country_event = {id = mandalism.1 days = 10 random = 100}}
 			add_stability = -0.1
 			USA = {
 				add_opinion_modifier = {
@@ -394,6 +397,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			set_variable = {var = KLK.regain_cost value = 200}
 			custom_effect_tooltip = 01_KLK_anti_mandalism
 			set_country_flag = KLK_anti_mandalism_flag
 		}
@@ -551,6 +555,8 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			activate_mission = KLK_assassination_infiltrate
+			set_variable = {var = KLK.assassination_cost value = 250}
 			add_ideas = {KLK_deep_state}
 			set_country_flag = KLK_deep_state_flag
 		}
@@ -1096,7 +1102,7 @@ focus = {
 
 		ai_will_do = {factor = 2}
 		available = {}
-		bypass = {}
+		bypass = {CLA = {has_country_flag = mandalists_flag}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1121,7 +1127,7 @@ focus = {
 
 		ai_will_do = {factor = 2}
 		available = {}
-		bypass = {}
+		bypass = {KUM = {has_country_flag = mandalists_flag}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1146,7 +1152,7 @@ focus = {
 
 		ai_will_do = {factor = 2}
 		available = {}
-		bypass = {}
+		bypass = {LSN = {has_country_flag = mandalists_flag}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no

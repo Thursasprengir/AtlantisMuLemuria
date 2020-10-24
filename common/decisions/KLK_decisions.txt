@@ -1,11 +1,15 @@
 KLK_mercenary_decisions = {
 	KLK_hire_infantry = {
 		icon = generic_prepare_civil_war
-		available = {AND = {has_country_flag = KLK_mercenary_flag NOT = {has_country_flag = KLK_hiring}}}
+		available = {AND = {has_country_flag = mandalists_flag has_country_flag = KLK_mercenary_flag NOT = {has_country_flag = KLK_hiring}}}
 		visible = {has_country_flag = KLK_mercenary_flag}
-		cost = 100
-		days_remove = 10
+		days_remove = 15
 		ai_will_do = {factor = 1}
+		modifier = {
+			industrial_capacity_factory = -1
+			consumer_goods_factor = 0.15
+			research_speed_factor = -0.1
+		}
 		complete_effect = {set_country_flag = KLK_hiring}
 		remove_effect = {
 			clr_country_flag = KLK_hiring
@@ -26,12 +30,12 @@ KLK_mercenary_decisions = {
 				}
 				support = {
 					artillery = { x = 0 y = 0 }
-					recon = { x = 0 y = 2 }
+					recon = { x = 0 y = 1 }
 				}
 			}
 			capital_scope = {
 				create_unit = {
-					division = "name = \"Buff Infantry Division\" division_template = \"Mercenary Infantry Unit\" start_experience_factor = 1.0 start_equipment_factor = 1.0" 
+					division = "name = \"Mercenary Infantry Division\" division_template = \"Mercenary Infantry Unit\" start_experience_factor = 1.0 start_equipment_factor = 1.0" 
 					owner = ROOT
 				}
 			}
@@ -39,11 +43,15 @@ KLK_mercenary_decisions = {
 	}
 	KLK_hire_mech = {
 		icon = generic_tank
-		available = {AND = {has_tech = motorised_infantry has_country_flag = KLK_mercenary_flag NOT = {has_country_flag = KLK_hiring}}}
+		available = {AND = {has_country_flag = mandalists_flag has_tech = motorised_infantry has_country_flag = KLK_mercenary_flag NOT = {has_country_flag = KLK_hiring}}}
 		visible = {has_country_flag = KLK_mercenary_flag}
-		cost = 100
-		days_remove = 10
+		days_remove = 50
 		ai_will_do = {factor = 1}
+		modifier = {
+			industrial_capacity_factory = -1
+			consumer_goods_factor = 0.15
+			research_speed_factor = -0.1
+		}
 		complete_effect = {set_country_flag = KLK_hiring}
 		remove_effect = {
 			clr_country_flag = KLK_hiring
@@ -78,13 +86,300 @@ KLK_mercenary_decisions = {
 			}
 		}
 	}
+	KLK_hire_manpower = {
+		icon = generic_tank
+		available = {AND = {has_country_flag = mandalists_flag has_country_flag = KLK_mercenary_flag NOT = {has_country_flag = KLK_hiring}}}
+		visible = {has_country_flag = KLK_mercenary_flag}
+		days_remove = 80
+		ai_will_do = {factor = 1}
+		modifier = {
+			industrial_capacity_factory = -1
+			consumer_goods_factor = 0.15
+			research_speed_factor = -0.1
+		}
+		complete_effect = {set_country_flag = KLK_hiring}
+		remove_effect = {
+			clr_country_flag = KLK_hiring
+			add_manpower = 15000
+		}
+	}
 }
 KLK_anti_mandalist_decisions = {
+	KLK_test = {
+		visible = {always = no}
+		icon = generic_army_support
+		complete_effect = {
+			set_temp_variable = {tempmin = KLK.duration}
+			set_temp_variable = {tempmax = KLK.duration}
+			multiply_temp_variable = {var = tempmin value = 0.8}
+			multiply_temp_variable = {var = tempmax value = 1.25}
+			randomize_temp_variable = {
+				var = tempduration
+				distribution = uniform
+				min = tempmin
+				max = tempmax
+			}
+			set_variable = {var = KLK.timevariable value = tempduration}
+		}
+	}
+	KLK_assassination_infiltrate = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 90
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = KLK_assassination_reduce_cost}
+		}
+	}
+	KLK_assassination_reduce_cost = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 10
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			custom_effect_tooltip = KLK_reduce_cost
+			multiply_variable = {var = KLK.assassination_cost value = 0.5}
+			hidden_effect = {activate_mission = KLK_assassination_infiltrate}
+		}
+	}
+	KLK_assassination_1 = {
+		icon = generic_army_support
+		visible = {
+			has_country_flag = KLK_deep_state_flag
+			NOT = {has_country_flag = mandalist_leader_killed1}
+		}
+		cost = KLK.assassination_cost
+		days_remove = 50
+		remove_effect = {
+			set_country_flag = mandalist_leader_killed1
+			multiply_variable = {var = KLK.duration value = 2}
+			multiply_variable = {var = KLK.assassination_cost value = 1.5}
+		}
+	}
+	KLK_assassination_2 = {
+		icon = generic_army_support
+		visible = {
+			has_country_flag = mandalist_leader_killed1
+			NOT = {has_country_flag = mandalist_leader_killed2}
+		}
+		cost = KLK.assassination_cost
+		days_remove = 75
+		remove_effect = {
+			set_country_flag = mandalist_leader_killed2
+			multiply_variable = {var = KLK.duration value = 1.5}
+			multiply_variable = {var = KLK.assassination_cost value = 1.5}
+		}
+	}
+	KLK_assassination_3 = {
+		icon = generic_army_support
+		visible = {
+			has_country_flag = mandalist_leader_killed2
+			NOT = {has_country_flag = mandalist_boss_killed}
+		}
+		cost = KLK.assassination_cost
+		days_remove = 120
+		complete_effect = {
+			remove_mission = KLK_assassination_infiltrate
+			remove_mission = KLK_assassination_reduce_cost
+		}
+		remove_effect = {
+			set_country_flag = mandalist_boss_killed
+			multiply_variable = {var = KLK.duration value = 3}
+			multiply_variable = {var = KLK.regain_cost value = 0.5}
+			hidden_effect = {news_event = {id = mandalism.6 days = 3}}
+		}
+	}
+	KLK_regain_land1000 = {
+		visible = {
+			has_country_flag = KLK_anti_mandalism_flag
+			1000 = {has_state_flag = mandalist_activity_0}
+			NOT = {1027 = {has_state_flag = mandalist_activity_2}}
+			NOT = {has_country_flag = some_major_gangsta_shit_going_on}
+		}
+		available = {has_manpower > 12000}
+		is_good = yes
+		cost = KLK.regain_cost
+		days_remove = 7
+		complete_effect = {
+			add_manpower = -12000
+			set_country_flag = some_major_gangsta_shit_going_on
+			remove_mission = KLK_mandalist_offensive1
+			remove_mission = KLK_mandalist_offensive2
+			remove_mission = KLK_mandalist_offensive3
+			remove_mission = KLK_mandalist_offensive4
+		}
+		remove_effect = {
+			activate_decision = KLK_test
+			clr_country_flag = some_major_gangsta_shit_going_on
+			if = {
+				limit = {1027 = {has_state_flag = mandalist_activity_1}}
+				1027 = {clr_state_flag = mandalist_activity_1}
+				1027 = {add_core_of = KLK}
+				hidden_effect = {activate_mission = KLK_mandalist_offensive4}
+			}
+			else_if = {
+				limit = {1027 = {has_state_flag = mandalist_activity_0}}
+				1027 = {clr_state_flag = mandalist_activity_0}
+				remove_ideas = KLK_mandalist_guerrillas_debuff_0
+				1027 = {damage_building = {type = infrastructure damage = 3}}
+				1027 = {damage_building = {type = industrial_complex damage = 1}}
+				hidden_effect = {activate_mission = KLK_mandalist_offensive4}
+			}
+			else_if = {
+				limit = {1028 = {has_state_flag = mandalist_activity_2}}
+				1028 = {clr_state_flag = mandalist_activity_2}
+				1028 = {set_demilitarized_zone = no}
+				hidden_effect = {activate_mission = KLK_mandalist_offensive3}
+			}
+			else_if = {
+				limit = {1028 = {has_state_flag = mandalist_activity_1}}
+				1028 = {clr_state_flag = mandalist_activity_1}
+				1028 = {add_core_of = KLK}
+				hidden_effect = {activate_mission = KLK_mandalist_offensive3}
+			}
+			else_if = {
+				limit = {1028 = {has_state_flag = mandalist_activity_0}}
+				1028 = {clr_state_flag = mandalist_activity_0}
+				remove_ideas = KLK_mandalist_guerrillas_debuff_0
+				hidden_effect = {activate_mission = KLK_mandalist_offensive3}
+				1028 = {damage_building = {type = infrastructure damage = 3}}
+				1028 = {damage_building = {type = industrial_complex damage = 1}}
+			}
+			else_if = {
+				limit = {1029 = {has_state_flag = mandalist_activity_2}}
+				1029 = {clr_state_flag = mandalist_activity_2}
+				1029 = {set_demilitarized_zone = no}
+				hidden_effect = {activate_mission = KLK_mandalist_offensive2}
+			}
+			else_if = {
+				limit = {1029 = {has_state_flag = mandalist_activity_1}}
+				1029 = {clr_state_flag = mandalist_activity_1}
+				1029 = {add_core_of = KLK}
+				hidden_effect = {activate_mission = KLK_mandalist_offensive2}
+			}
+			else_if = {
+				limit = {1029 = {has_state_flag = mandalist_activity_0}}
+				1029 = {clr_state_flag = mandalist_activity_0}
+				remove_ideas = KLK_mandalist_guerrillas_debuff_0
+				hidden_effect = {activate_mission = KLK_mandalist_offensive2}
+				1029 = {damage_building = {type = infrastructure damage = 3}}
+				1029 = {damage_building = {type = industrial_complex damage = 1}}
+			}
+			else_if = {
+				limit = {1000 = {has_state_flag = mandalist_activity_2}}
+				1000 = {clr_state_flag = mandalist_activity_2}
+				1000 = {set_demilitarized_zone = no}
+				hidden_effect = {activate_mission = KLK_mandalist_offensive1}
+			}
+			else_if = {
+				limit = {1000 = {has_state_flag = mandalist_activity_1}}
+				1000 = {clr_state_flag = mandalist_activity_1}
+				1000 = {add_core_of = KLK}
+				hidden_effect = {activate_mission = KLK_mandalist_offensive1}
+			}
+			else_if = {
+				limit = {1000 = {has_state_flag = mandalist_activity_0}}
+				1000 = {clr_state_flag = mandalist_activity_0}
+				remove_ideas = KLK_mandalist_guerrillas_debuff_0
+				clr_country_flag = mandalists_flag
+				add_country_flag = mandalists_defeated
+				hidden_effect = {news_event = {id = mandalism.8 days = 3}}
+				1000 = {damage_building = {type = infrastructure damage = 3}}
+				1000 = {damage_building = {type = industrial_complex damage = 1}}
+			}
+		}
+	}
+	KLK_mandalist_offensive1 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = KLK.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = KLK_lose_land1}}
+	}
+	KLK_lose_land1 = {
+		visible = {
+			always = no
+		}
+		is_good = no
+		days_remove = 7
+		modifier = {weekly_manpower = -10000}
+		complete_effect = {set_country_flag = some_major_gangsta_shit_going_on}
+		remove_effect = {
+			clr_country_flag = some_major_gangsta_shit_going_on
+			hidden_effect = {country_event = {id = mandalism.1}}
+		}
+	}
+	KLK_mandalist_offensive2 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = KLK.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = KLK_lose_land2}}
+	}
+	KLK_lose_land2 = {
+		visible = {
+			always = no
+		}
+		is_good = no
+		days_remove = 7
+		modifier = {weekly_manpower = -10000}
+		complete_effect = {set_country_flag = some_major_gangsta_shit_going_on}
+		remove_effect = {
+			clr_country_flag = some_major_gangsta_shit_going_on
+			hidden_effect = {country_event = {id = mandalism.2}}
+		}
+	}
+	KLK_mandalist_offensive3 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = KLK.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = KLK_lose_land3}}
+	}
+	KLK_lose_land3 = {
+		visible = {
+			always = no
+		}
+		is_good = no
+		days_remove = 7
+		modifier = {weekly_manpower = -10000}
+		complete_effect = {set_country_flag = some_major_gangsta_shit_going_on}
+		remove_effect = {
+			clr_country_flag = some_major_gangsta_shit_going_on
+			hidden_effect = {country_event = {id = mandalism.3}}
+		}
+	}
+	KLK_mandalist_offensive4 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = KLK.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = KLK_lose_land4}}
+	}
+	KLK_lose_land4 = {
+		visible = {
+			always = no
+		}
+		is_good = no
+		days_remove = 7
+		modifier = {weekly_manpower = -10000}
+		complete_effect = {set_country_flag = some_major_gangsta_shit_going_on}
+		remove_effect = {
+			clr_country_flag = some_major_gangsta_shit_going_on
+			hidden_effect = {country_event = {id = mandalism.4}}
+		}
+	}
 	KLK_attack_mandalists = {
 		icon = generic_army_support
 		available = {NOT = {has_country_flag = KLK_ongoing_operation}}
 		visible = {has_country_flag = KLK_anti_mandalism_flag NOT = {has_country_flag = KLK_no_mandalists}}
-		days_remove = 2
+		days_remove = 100
 		ai_will_do = {factor = 1000}
 		complete_effect = {set_country_flag = KLK_ongoing_operation}
 		modifier = {
@@ -94,6 +389,7 @@ KLK_anti_mandalist_decisions = {
 			weekly_manpower = -700
 		}
 		remove_effect = {
+			multiply_variable = {var = KLK.duration value = 1.5}
 			clr_country_flag = KLK_ongoing_operation
 			if = {
 				limit = {has_idea = KLK_bunch_of_ugly_commies}
@@ -123,7 +419,6 @@ KLK_anti_mandalist_decisions = {
 			}
 		}
 	}
-	KLK_regain_land
 }
 prospect_for_resources = {
 	develop_repeatable_velaccamaveiyil = {

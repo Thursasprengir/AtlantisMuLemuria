@@ -210,7 +210,7 @@ ideas = {
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
-				
+				stability_weekly = 0.003
 			}
 		}
 		KLK_deep_state = {
@@ -464,6 +464,59 @@ ideas = {
 			picture = naval_tradition
 			modifier = {
 				resistance_target = -0.1
+			}
+		}
+		KLK_mandalist_guerrillas_debuff = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				stability_factor = -0.05
+			}	
+		}
+		KLK_mandalist_guerrillas_debuff_0 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				stability_factor = -0.09
+			}
+		}
+		KLK_mandalist_guerrillas_debuff_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		KLK_mandalist_guerrillas_debuff_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				stability_factor = -0.35
+			}
+		}
+		KLK_crippled_economy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = naval_tradition
+			modifier = {
+				stability_factor = -0.1
+				industry_free_repair_factor = -0.5
+				local_resources_factor = -0.20
+				production_speed_buildings_factor = -0.1
 			}
 		}
 	}
