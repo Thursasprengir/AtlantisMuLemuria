@@ -1,0 +1,519 @@
+################################
+##### British Lemurian Civil War
+################################
+
+add_namespace = blm
+
+country_event = {
+	id = blm.1 #Second Anglo-Saxon Reforms
+	title = blm.1.t
+	desc = blm.1.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.1.1
+		add_stability = -0.15
+		add_political_power = 50
+		}
+	}
+	
+country_event = {
+	id = blm.2 #Continue the Reforms
+	title = blm.2.t
+	desc = blm.2.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.2.1
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.3 #Quell Major Riots
+	title = blm.3.t
+	desc = blm.3.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.3.1
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.4 #Arcadia Rebels!
+	title = blm.4.t
+	desc = blm.4.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.4.a #Declare Military Government
+		add_stability = 0.10
+		add_political_power = -50
+		set_country_flag = BL_independence_movements_suppressed
+		}
+	option = {
+		name = blm.4.b #Allow Them Independence
+		add_stability = 0.10
+		add_political_power = -50
+		set_country_flag = BL_independence_movements_allowed
+		}
+   }
+	
+country_event = {
+	id = blm.5 #Absorb Suisse (declared Military Government)
+	title = blm.5.t
+	desc = blm.5.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.5.1
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.6 #The Werreurbro Rebellion
+	title = blm.6.t
+	desc = blm.6.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		limit = { has_idea = BL_independence_movements_suppressed}
+		name = blm.6.a #Attack Werreubro
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		limit = { has_idea = BL_independence_movements_suppressed}
+		name = blm.6.b #Grant Werruerbrian Independence
+		#Werreurbro granted independence
+		}
+	option = {
+		limit = { has_idea = BL_independence_movements_allowed}
+		name = blm.6.c #Grant Werruerbrian Independence
+		#Werreurbro given independence
+		}
+   }
+	
+country_event = {
+	id = blm.7 #Audenshyre Declares Independence
+	title = blm.7.t
+	desc = blm.7.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.7.a #Don't attack Audenshyre, yet
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		name = blm.7.b #Grant Audenshyrian Independence
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		limit = { has_idea = BL_independence_movements_allowed}
+		name = blm.7.c #Grant Audenshyre Independence
+		#Audenshyre given independence
+		}
+   }
+	
+country_event = {
+	id = blm.8 #The Qlach Avengers
+	title = blm.8.t
+	desc = blm.8.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.8.a #Attack the Natives
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		name = blm.8.b #Allow the Natives Freedom
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		limit = { has_idea = BL_independence_movements_allowed}
+		name = blm.8.c #Grant Native Independence
+		#Free Lemurian Nation given independence
+		}
+   }
+	
+country_event = {
+	id = blm.9 #Northern Ackerson Desert Seized
+	title = blm.9.t
+	desc = blm.9.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		limit = { has_idea = BL_independence_movements_suppressed}
+		name = blm.9.a #Damn them!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		limit = { has_idea = BL_independence_movements_allowed}
+		name = blm.9.b #Damn them!
+		}
+   }
+	
+country_event = {
+	id = blm.10 #The Workers Union of Lemuria
+	title = blm.10.t
+	desc = blm.10.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.10.a #No home for Communists
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		name = blm.10.b #Acknowledge the Workers Union
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		limit = { has_idea = BL_independence_movements_allowed}
+		name = blm.10.c #Grant WUL Independence
+		#WUL given independence
+		}
+   }
+	
+country_event = {
+	id = blm.11 #The Rise of the Anarchists
+	title = blm.11.t
+	desc = blm.11.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		limit = { has_idea = BL_independence_movements_suppressed}
+		name = blm.11.a #We'll fight them, too!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		limit = { has_idea = BL_independence_movements_allowed}
+		name = blm.11.b #How is this our problem?
+		#Anarchists attack Communists in WUL
+		}
+   }
+	
+country_event = {
+	id = blm.12 #Approach Audenshyre
+	title = blm.12.t
+	desc = blm.12.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.12.1 #We're sure this is a good deal
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.13 #The Republican Forces
+	title = blm.13.t
+	desc = blm.13.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.13.a #They're rebels, no matter their goals!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		name = blm.13.b #We must end this war now.
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.14 #Declaration of the Free Cities
+	title = blm.14.t
+	desc = blm.14.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.14.a #Britain will keep them safe
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.15 #The End of the Civil War (Consolidate regained territory, absorb Artura)
+	title = blm.15.t
+	desc = blm.15.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.15.a #Finally, some peace!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.16 #Petition the Allies for Support (to regain N Ackerson Desert)
+	title = blm.16.t
+	desc = blm.16.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.16.a #We must restore order!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.17 #Make Clear Demands for Northern Ackerson Desert
+	title = blm.17.t
+	desc = blm.17.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.17.a #Our claim will hold for now (back down)
+		add_stability = 0.10
+		add_political_power = -50
+		}
+	option = {
+		name = blm.17.b #We shall fight for our land!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+   
+   
+   
+   
+   
+   
+   
+	
+country_event = {
+	id = blm.20 #A Diminished Dominion
+	title = blm.20.t
+	desc = blm.20.d
+	#picture = 
+	
+	#is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.120.a #British Lemuria is better now, despite our losses
+		add_stability = 0.10
+		add_political_power = -50
+		}
+		
+   }
+	
+country_event = {
+	id = blm.26 #The Defeat of Werreurbro
+	title = blm.26.t
+	desc = blm.26.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.26.a #Order triumphs!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.28 #Declaring Victory over the Natives
+	title = blm.28.t
+	desc = blm.28.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.28.a #Order prevails!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.30 #Defeat of the Communists
+	title = blm.30.t
+	desc = blm.30.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.30.a #No home for Communists
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.31 #Defeat of the Anarchists
+	title = blm.31.t
+	desc = blm.31.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.31.1 #They couldn't rule themselves
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
+	
+country_event = {
+	id = blm.33 #The Military Crushes Republican Forces
+	title = blm.33.t
+	desc = blm.33.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.33.a #Rightful government reestablished!
+		add_stability = 0.10
+		add_political_power = -50
+		}
+   }
