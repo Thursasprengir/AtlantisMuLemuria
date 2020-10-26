@@ -37,8 +37,8 @@ country_event = {
  	}
 	option = {
 		name = blm.2.1
-		add_stability = 0.10
-		add_political_power = -50
+		add_stability = 0.-10
+		add_political_power = -150
 		}
    }
 	
@@ -56,7 +56,7 @@ country_event = {
  	}
 	option = {
 		name = blm.3.1
-		add_stability = 0.10
+		add_stability = 0.05
 		add_political_power = -50
 		}
    }
@@ -78,12 +78,16 @@ country_event = {
 		add_stability = 0.10
 		add_political_power = -50
 		set_country_flag = BL_independence_movements_suppressed
+		set_country_flag = BL_civil_war
+		#Arcadia declares independence
+		#declare war on Arcadia
 		}
 	option = {
 		name = blm.4.b #Allow Them Independence
 		add_stability = 0.10
 		add_political_power = -50
 		set_country_flag = BL_independence_movements_allowed
+		#Arcadia released ?as a puppet, or completely free?
 		}
    }
 	
@@ -100,9 +104,10 @@ country_event = {
  		} 		
  	}
 	option = {
-		name = blm.5.1
+		name = blm.5.1 #Begin integrating their bureaucracy
 		add_stability = 0.10
 		add_political_power = -50
+		#annex Suisse
 		}
    }
 	
@@ -127,12 +132,12 @@ country_event = {
 	option = {
 		limit = { has_idea = BL_independence_movements_suppressed}
 		name = blm.6.b #Grant Werruerbrian Independence
-		#Werreurbro granted independence
+		#Werreurbro granted independence ?as a puppet or completely free?
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.6.c #Grant Werruerbrian Independence
-		#Werreurbro given independence
+		#Werreurbro given independence ?as a puppet or completely free?
 		}
    }
 	
@@ -157,11 +162,12 @@ country_event = {
 		name = blm.7.b #Grant Audenshyrian Independence
 		add_stability = 0.10
 		add_political_power = -50
+		#Audenshyre granted independence ?as a puppet or completely free?
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.7.c #Grant Audenshyre Independence
-		#Audenshyre given independence
+		#Audenshyre given independence ?as a puppet or completely free?
 		}
    }
 	
@@ -181,16 +187,18 @@ country_event = {
 		name = blm.8.a #Attack the Natives
 		add_stability = 0.10
 		add_political_power = -50
+		#Qlach Avengers declare independence
 		}
 	option = {
 		name = blm.8.b #Allow the Natives Freedom
 		add_stability = 0.10
 		add_political_power = -50
+		#Free Lemurian Nation granted freedom ?as a puppet or completely free?
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.8.c #Grant Native Independence
-		#Free Lemurian Nation given independence
+		#Free Lemurian Nation given independence ?as a puppet or completely free?
 		}
    }
 	
@@ -234,16 +242,18 @@ country_event = {
 		name = blm.10.a #No home for Communists
 		add_stability = 0.10
 		add_political_power = -50
+		#WUL declares independence
 		}
 	option = {
 		name = blm.10.b #Acknowledge the Workers Union
 		add_stability = 0.10
 		add_political_power = -50
+		#WUL granted independence ?as a puppet or completely free?
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
-		name = blm.10.c #Grant WUL Independence
-		#WUL given independence
+		name = blm.10.c #Grant WUL Independence 
+		#WUL given independence ?as a puppet or completely free?
 		}
    }
 	
@@ -264,6 +274,7 @@ country_event = {
 		name = blm.11.a #We'll fight them, too!
 		add_stability = 0.10
 		add_political_power = -50
+		#Anarchists declare independence - attack them
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
@@ -288,6 +299,7 @@ country_event = {
 		name = blm.12.1 #We're sure this is a good deal
 		add_stability = 0.10
 		add_political_power = -50
+		#annex Audenshyre
 		}
    }
 	
@@ -307,11 +319,14 @@ country_event = {
 		name = blm.13.a #They're rebels, no matter their goals!
 		add_stability = 0.10
 		add_political_power = -50
+		#BL Republican Forces declare civil war
 		}
 	option = {
 		name = blm.13.b #We must end this war now.
 		add_stability = 0.10
 		add_political_power = -50
+		#Republicans sweep through government, Military government collapses, civil war ends.
+		clr_country_flag = BL_civil_war
 		}
    }
 	
@@ -350,6 +365,7 @@ country_event = {
 		name = blm.15.a #Finally, some peace!
 		add_stability = 0.10
 		add_political_power = -50
+		clr_country_flag = BL_civil_war
 		}
    }
 	
@@ -369,6 +385,7 @@ country_event = {
 		name = blm.16.a #We must restore order!
 		add_stability = 0.10
 		add_political_power = -50
+		#fire event for Britain, France, and US to support or not support BL reclaiming N Ack. Desert)
 		}
    }
 	
