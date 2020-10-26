@@ -799,7 +799,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BLM_reform_the_army
+		id = BLM_lemurian_waysmen
 		icon = GFX_goal_unknown
 		x = 18
 		y = 5
@@ -807,6 +807,79 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_australian_british-lemurian_summit }
 		prerequisite = { focus = BLM_expand_the_ig }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		#
+			
+		}
+	}
+	focus = {
+		id = BLM_abolish_anglish_societies
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_attract_british_settlers }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+					country_event = { id = sasr.99 }
+			}
+		
+	}
+	focus = {
+		id = BLM_incentivize_british_industries
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_abolish_anglish_societies }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				#
+			}
+		
+	}
+	focus = {
+		id = BLM_suppress_natives #abolish Anglishism
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_incentivize_british_industries }
+		mutually_exclusive = { 
+				
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_reform_the_army #Modern Army
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_incentivize_british_industries}
+		prerequisite = { focus = BLM_lemurian_waysmen }
 		mutually_exclusive = { 
 				
 				}
@@ -831,75 +904,6 @@ focus_tree = {
 				set_state_flag = GER_german_war_economy
 			}
 			
-		}
-	}
-	focus = {
-		id = BLM_abolish_anglish_societies
-		icon = GFX_goal_unknown
-		x = 15
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_attract_british_settlers }
-		mutually_exclusive = { 
-				
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-					country_event = { id = sasr.99 }
-			}
-		
-	}
-	focus = {
-		id = BLM_the_british_man
-		icon = GFX_goal_unknown
-		x = 15
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_abolish_anglish_societies }
-		mutually_exclusive = { 
-				
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-					country_event = { id = sasr.98 }
-			}
-		
-	}
-	focus = {
-		id = BLM_suppress_natives
-		icon = GFX_goal_unknown
-		x = 14
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_the_british_man }
-		mutually_exclusive = { 
-				
-				}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = BLM_integrate_the_2_colonies
-		icon = GFX_goal_unknown
-		x = 16
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_the_british_man }
-		prerequisite = { focus = BLM_reform_the_army }
-		mutually_exclusive = { 
-				
-				}
-		ai_will_do = {
-			factor = 1
 		}
 	}
 	focus = {
@@ -1148,8 +1152,8 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BLM_integrate_the_2_colonies }
 		prerequisite = { focus = BLM_suppress_natives }
+		prerequisite = { focus = BLM_reform_the_army }
 		mutually_exclusive = { 
 				
 				}
@@ -1158,19 +1162,22 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BLM_arturan_problem
+		id = BLM_british_man
 		icon = GFX_goal_unknown
 		x = 17
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BLM_integrate_the_2_colonies }
+		prerequisite = { focus = BLM_reform_the_army }
 		mutually_exclusive = { 
 				
 				}
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+					country_event = { id = sasr.98 }
+			}
 	}
 	focus = {
 		id = BLM_imperial_lemuria
@@ -1180,8 +1187,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_new_titles }
-		prerequisite = { focus = BLM_arturan_problem }
 		prerequisite = { focus = BLM_greatest_monument }
+		prerequisite = { focus = BLM_british_man }
 		mutually_exclusive = { 
 				
 				}
