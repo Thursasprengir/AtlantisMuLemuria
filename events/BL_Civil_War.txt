@@ -31,14 +31,11 @@ country_event = {
 	
 	is_triggered_only = yes
 	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
 	option = {
 		name = blm.2.1
 		add_stability = 0.-10
 		add_political_power = -150
+		hidden_effect = {country_event = {id = blm.3 days = 15 random = 72}}
 		}
    }
 	
@@ -58,6 +55,7 @@ country_event = {
 		name = blm.3.1
 		add_stability = 0.05
 		add_political_power = -50
+		hidden_effect = {country_event = {id = blm.4 days = 60 random = 300}}
 		}
    }
 	
