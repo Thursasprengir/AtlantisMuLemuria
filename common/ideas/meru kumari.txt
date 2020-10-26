@@ -10,10 +10,22 @@ ideas = {
 			picture = limited_conscription
 
 			modifier = {
-				#conscription_factor = -0.4 
+				research_speed_factor = 0.05
 			}
 		}
-		
+		MKU_com_consume = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
 		MKU_conscription1 = {
 			allowed = {
 				always = no
@@ -27,7 +39,19 @@ ideas = {
 				conscription_factor = 0.04 
 			}
 		}
-		
+		MKU_prepare_civies = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = limited_conscription
+
+			modifier = {
+				partisan_effect = 0.10
+			}
+		}
 		MKU_conscription_tiny = {
 			allowed = {
 				always = no

@@ -712,7 +712,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+		KUM = { create_faction = the_solem_pact }
 		}
 	}
 	
@@ -733,7 +733,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+		KUM = { create_faction = kandam_confederacy }
 		}
 	}
 	
@@ -754,7 +754,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			add_stability = 0.05
 		}
 	}
 	
@@ -776,7 +776,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			KUM = { add_to_faction = MKU }
 		}
 	}
 	
@@ -796,7 +796,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+		KUM = { puppet = MKU }
 		}
 	}
 	
@@ -821,9 +821,39 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
+	
 	
 	focus = {
 		id = MKU_new_unit_designs
@@ -895,7 +925,36 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1110,7 +1169,36 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 		
@@ -1130,7 +1218,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			add_stability = 0.05
 		}
 	}
 		
@@ -1150,30 +1238,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+		add_stability = 0.15
 		}
-	}
-		
-	
-	focus = {
-		id = MKU_expand_the_revolution #export the glory of Mandalism to our neighbors
-		icon = GFX_goal_stop
-		x = 12
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_political_consolidation }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-		
+	}	
 	
 	focus = {
 		id = MKU_kumari_union #gives Kumari the option to annex us
@@ -1371,7 +1438,13 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			set_political_party = {
+				ideology = communism
+				popularity = 50
+			}
+			set_politics = {
+				ruling_party = communism
+			}
 		}
 	}
 
@@ -1632,6 +1705,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	focus = {
@@ -1647,7 +1723,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+	completion_reward = {
+			add_tech_bonus = {
+				name = army
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
 	}
+
 
 	focus = {
 		id = MKU_soviet_consumer_patterns #decreases need for consumer goods
@@ -1662,8 +1747,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+	completion_reward = {
+			add_ideas = MKU_com_consume
+		}
 	}
-
 	focus = {
 		id = MKU_soviet_air_power #air research bonus
 		icon = GFX_r56_goal_generic_communist_pride
@@ -1719,10 +1806,29 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			971 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			1044 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			1045 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
-
 	focus = {
 		id = MKU_badboy_kumari #sours relationship with Kumari
 		icon = GFX_r56_goal_generic_backstab
@@ -1738,9 +1844,21 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			ROOT = {
+				add_opinion_modifier = {
+					target = KUM
+					modifier = large_decrease
+				}
+			}
+			KUM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
 		}
 	}
+
 
 	focus = {
 		id = MKU_defend_against_kumari #defenses against Kumari
@@ -1757,7 +1875,50 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			971 = {
+				add_building_construction = {
+					type = bunker
+					province = 14778
+					level = 2
+				}
+				add_building_construction = {
+					type = bunker
+					province = 14777
+					level = 2
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4770
+					level = 2
+				}
+				add_building_construction = {
+					type = bunker
+					province = 14784
+					level = 2
+				}
+				add_building_construction = {
+					type = bunker
+					province = 14785
+					level = 2
+				}
+			}
+			1044 = {
+				add_building_construction = {
+					type = bunker
+					province = 14786
+					level = 2
+				}
+				add_building_construction = {
+					type = bunker
+					province = 14787
+					level = 2
+				}
+				add_building_construction = {
+					type = bunker
+					province = 5393
+					level = 2
+				}
+			}
 		}
 	}
 	
@@ -1779,7 +1940,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = mountaineers_tech
+			}
 		}
 	}
 	
@@ -1840,28 +2005,14 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				technology = tech_special_forces
+			}
 		}
 	}
 	
-	focus = {
-		id = MKU_civilian_preparation #Meru Kumari prepares civilians for the conflict
-		icon = GFX_r56_goal_generic_modernizing_the_cavalry2
-		x = 28
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_special_forces }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
 	
 	focus = {
 		id = MKU_support_battalions #Meru Kumari prepares artillery and tanks
@@ -1878,7 +2029,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = support_tech
+			}
 		}
 	}
 	
@@ -1897,7 +2053,23 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -1918,7 +2090,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			add_war_support = .10
 		}
 	}
 	
@@ -1937,7 +2109,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			add_state_claim = 1047
 		}
 	}
 	
@@ -1956,7 +2128,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			add_state_claim = 1020
 		}
 	}
 	
@@ -1975,7 +2147,54 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			ROOT = {
+				add_opinion_modifier = {
+					target = KUM
+					modifier = large_decrease
+				}
+			}
+			KUM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = AKM
+					modifier = large_decrease
+				}
+			}
+			AKM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = RTR
+					modifier = large_decrease
+				}
+			}
+			RTR = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = BLM
+					modifier = large_decrease
+				}
+			}
+			BLM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
 		}
 	}
 	
@@ -1995,7 +2214,36 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+					random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -2058,7 +2306,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			add_political_power = 150
 		}
 	}
 	
@@ -2078,10 +2326,38 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+					random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
-	
 	focus = {
 		id = MKU_mil_research_groups #military research groups - add research slot
 		icon = GFX_r56_goal_generic_national_defense_fund
@@ -2097,209 +2373,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+		add_research_slot = 1
 		}
 	}
-	
-	
-	
- ###digging out of the economic hole
- 
-
-	focus = {
-		id = MKU_economic_recovery
-		icon = GFX_goal_generic_consumer_goods
-		x = 21
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = {  }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_civilian_focus
-		icon = GFX_r56_goal_generic_wheat
-		x = 19
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_economic_recovery }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_education_focus
-		icon = GFX_r56_goal_generic_supremacy_of_will
-		x = 19
-		y = 12
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_civilian_focus }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_foreign_faculty #slight research bonus, slight destabilization
-		icon = GFX_r56_goal_generic_research_silver_cooperation
-		x = 18
-		y = 13
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_education_focus }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_industrial_focus
-		icon = GFX_investinfactories
-		x = 21
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_economic_recovery }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_engineering_focus
-		icon = GFX_r56_goal_generic_shipbuilding
-		x = 21
-		y = 12
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_industrial_focus }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_industrial_research
-		icon = GFX_goal_italy_establish_the_sme
-		x = 21
-		y = 13
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_engineering_focus }
-		prerequisite = { focus = MKU_education_focus }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_infrastructure_focus
-		icon = GFX_focus_generic_tank_production
-		x = 23
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_economic_recovery }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_military_infrast_focus
-		icon = GFX_goal_generic_construct_military
-		x = 23
-		y = 12
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_infrastructure_focus }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = MKU_military_research_initiative
-		icon = GFX_r56_goal_generic_recruitment
-		x = 23
-		y = 14
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MKU_military_infrast_focus }
-		prerequisite = { focus = MKU_industrial_research }
-		mutually_exclusive = { 
-				}
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-		
-		}
-	}
-
-shared_focus = INDOLEM2_the_hooks
-
-	
-	
+		shared_focus = INDOLEM2_the_hooks
 }
