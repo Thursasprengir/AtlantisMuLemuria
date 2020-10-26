@@ -1,0 +1,243 @@
+﻿add_namespace = mandgeneric
+country_event = {
+	id = mandgeneric.1
+	title = mandgeneric.1.t
+	desc = mandgeneric.1.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.1.a
+		if = {
+			limit = {1000 = {has_state_flag = mandalist_activity_1}}
+			1000 = {set_state_flag = mandalist_activity_2}
+			1000 = {set_demilitarized_zone = yes}
+			multiply_variable = {var = KLK.duration value = 0.7}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive2
+			}
+		}
+		else_if = {
+			limit = {1000 = {has_state_flag = mandalist_activity_0}}
+			1000 = {set_state_flag = mandalist_activity_1}
+			1000 = {remove_core_of = KLK}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive1
+			}
+		}
+		else_if = {
+			1000 = {set_state_flag = mandalist_activity_0}
+			add_ideas = KLK_mandalist_guerrillas_debuff
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive1
+			}
+		}
+	}
+}
+country_event = {
+	id = mandgeneric.2
+	title = mandgeneric.2.t
+	desc = mandgeneric.2.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.2.a
+		if = {
+			limit = {1029 = {has_state_flag = mandalist_activity_1}}
+			1029 = {set_state_flag = mandalist_activity_2}
+			1029 = {set_demilitarized_zone = yes}
+			multiply_variable = {var = KLK.duration value = 0.7}
+			if = {
+				limit = {NOT = {has_country_flag = KLK_multiplier1}}
+				multiply_variable = {var = KLK.regain_cost value = 0.7}
+				set_country_flag = KLK_multiplier1
+			}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive3
+				if = {
+					limit = {
+						NOT = {has_country_flag = KLK_increased_conscription}
+					}
+					country_event = {id = mandgeneric.7 days = 10}
+				}
+			}
+		}
+		else_if = {
+			limit = {1029 = {has_state_flag = mandalist_activity_0}}
+			1029 = {set_state_flag = mandalist_activity_1}
+			1029 = {remove_core_of = KLK}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive2
+			}
+		}
+		else_if = {
+			1029 = {set_state_flag = mandalist_activity_0}
+			swap_ideas = {
+				remove_idea = KLK_mandalist_guerrillas_debuff
+				add_idea = KLK_mandalist_guerrillas_debuff_0
+			}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive2
+			}
+		}
+	}
+}
+country_event = {
+	id = mandgeneric.3
+	title = mandgeneric.3.t
+	desc = mandgeneric.3.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.3.a
+		if = {
+			limit = {1028 = {has_state_flag = mandalist_activity_1}}
+			1028 = {set_state_flag = mandalist_activity_2}
+			1028 = {set_demilitarized_zone = yes}
+			multiply_variable = {var = KLK.duration value = 0.7}
+			if = {
+				limit = {NOT = {has_country_flag = KLK_multiplier2}}
+				multiply_variable = {var = KLK.regain_cost value = 0.5}
+				set_country_flag = KLK_multiplier2
+			}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive4
+			}
+		}
+		else_if = {
+			limit = {1028 = {has_state_flag = mandalist_activity_0}}
+			1028 = {set_state_flag = mandalist_activity_1}
+			1028 = {remove_core_of = KLK}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive3
+			}
+		}
+		else_if = {
+			1028 = {set_state_flag = mandalist_activity_0}
+			swap_ideas = {
+				remove_idea = KLK_mandalist_guerrillas_debuff_0
+				add_idea = KLK_mandalist_guerrillas_debuff_1
+			}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive3
+			}
+		}
+	}
+}
+country_event = {
+	id = mandgeneric.4
+	title = mandgeneric.4.t
+	desc = mandgeneric.4.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.4.a
+		if = {
+			limit = {1027 = {has_state_flag = mandalist_activity_1}}
+			1027 = {set_state_flag = mandalist_activity_2}
+			1027 = {set_demilitarized_zone = yes}
+			hidden_effect = {country_event = {id = mandgeneric.5 days = 10}}
+		}
+		else_if = {
+			limit = {1027 = {has_state_flag = mandalist_activity_0}}
+			1027 = {set_state_flag = mandalist_activity_1}
+			1027 = {remove_core_of = KLK}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive4
+			}
+		}
+		else_if = {
+			1027 = {set_state_flag = mandalist_activity_0}
+			swap_ideas = {
+				remove_idea = KLK_mandalist_guerrillas_debuff_1
+				add_idea = KLK_mandalist_guerrillas_debuff_2
+			}
+			hidden_effect = {
+				activate_decision = KLK_test
+				activate_mission = KLK_mandalist_offensive4
+			}
+		}
+	}
+}
+country_event = {
+	id = mandgeneric.5
+	title = mandgeneric.5.t
+	desc = mandgeneric.5.d
+	picture = GFX_news_event_fighting_gangsters
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.5.a
+	}
+	option = {
+		name = mandgeneric.5.b
+	}
+}
+news_event = {
+	id = mandgeneric.6
+	title = mandgeneric.6.t
+	desc = mandgeneric.6.d
+	picture = GFX_news_event_fighting_gangsters
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.6.a
+	}
+}
+country_event = {
+	id = mandgeneric.7
+	title = mandgeneric.7.t
+	desc = mandgeneric.7.d
+	picture = GFX_news_event_fighting_gangsters
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.7.a
+		if = {limit = {has_idea = limited_conscription} add_ideas = extensive_conscription}
+		else_if = {limit = {has_idea = volunteer_only} add_ideas = limited_conscription}
+		add_timed_idea = {
+			idea = KLK_crippled_economy
+			days = 360
+		}
+		set_country_flag = KLK_increased_conscription
+	}
+	option = {
+		name = mandgeneric.7.b
+		set_country_flag = KLK_increased_conscription
+	}
+}
+news_event = {
+	id = mandgeneric.8
+	title = mandgeneric.8.t
+	desc = mandgeneric.8.d
+	picture = GFX_news_event_fighting_gangsters
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.8.a
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
