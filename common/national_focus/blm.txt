@@ -257,6 +257,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = 0.10
+		}
 	}
 
 	focus = {
@@ -356,6 +359,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = 0.15
+		}
 	}
 
 
@@ -437,6 +443,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = 0.40
+		}
 	}
 		focus = {
 		id = BLM_independentrepublics
@@ -504,7 +513,105 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ENG 
+					modifier = large_increase
+				}
+			}
+			AST = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = AST 
+					modifier = large_increase
+				}
+			}
+			NZL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = NZL 
+					modifier = large_increase
+				}
+			}
+			RAJ = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = RAJ 
+					modifier = large_increase
+				}
+			}
+			SAF = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = SAF 
+					modifier = large_increase
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ENG 
+					modifier = large_increase
+				}
+			}
+			MAL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = MAL
+					modifier = large_increase
+				}
+			}
+			CAN = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = CAN 
+					modifier = large_increase
+				}
+			}
+		}
+	}	
 	focus = {
 		id = BLM_go_through_educational_reforms
 		icon = GFX_focus_generic_military_academy
