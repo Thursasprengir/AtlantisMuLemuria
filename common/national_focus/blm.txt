@@ -23,7 +23,7 @@ focus_tree = {
 			}
 	}
 	
-		focus = {
+	focus = {
 		id = BLM_lemurian_airways
 		icon = GFX_goal_lemurian_airways
 		x = 30
@@ -35,7 +35,7 @@ focus_tree = {
 		}
 	}
 	
-			focus = {
+	focus = {
 		id = BLM_lemurian_air_plan
 		icon = GFX_focus_generic_air_defense
 		x = 30
@@ -59,7 +59,7 @@ focus_tree = {
 			factor = 1
 		}
 	}
-			focus = {
+	focus = {
 		id = BLM_BLAI
 		icon = GFX_goal_blai
 		x = 29
@@ -291,8 +291,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		
+		completion_reward = {
+			division_template = {
+				name = "Local Garrison"
+				is_locked = yes
+				division_names_group = USA_INF_01
+					priority = 0
+				template_counter = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+				}
+				support = { 
+					military_police = { x = 0 y = 0 }
+				} 
+			}
+			
+			
+			
+			load_oob = "BLM_local_garrisons"
+		}
 	}
-
 	focus = {
 		id = BLM_nobility_issue
 		icon = GFX_goal_unknown
@@ -316,6 +336,9 @@ focus_tree = {
 		prerequisite = { focus = BLM_act_283 }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = imperial_garrison
 		}
 	}
 
@@ -584,6 +607,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			load_oob = BLM_prof_army
 		}
 	}
 		focus = {
