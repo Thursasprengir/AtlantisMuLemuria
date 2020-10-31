@@ -81,7 +81,8 @@ country_event = {
 		ARC = {
 			add_state_core = 977
 			}
-			}
+		set_country_flag = BLM_arcadia_attack
+		}
 		release = ARC
 		declare_war_on = {
 			target = ARC
@@ -155,6 +156,7 @@ country_event = {
 		add_state_core = 1051
 		add_state_core = 1052
 		}
+		set_country_flag = BLM_werreurbro_attack
 		}
 		release = WRB
 		declare_war_on = {
@@ -244,7 +246,27 @@ country_event = {
 		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
 		}
 	option = {
-		name = blm.7.b #Grant Audenshyrian Independence
+		name = blm.7.b #Don't attack Audenshyre, yet
+		add_stability = 0.10
+		add_political_power = -50
+		hidden_effect = {
+		AUD = {
+		add_state_core = 984
+		}
+		set_country_flag = BLM_audenshyre_attack
+		}
+		release = AUD
+		declare_war_on = {
+			target = WRB
+			type = annex_everything
+				}
+		hidden_effect = {
+		remove_state_core = 984
+		}
+		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
+		}
+	option = {
+		name = blm.7.c #Grant Audenshyrian Independence
 		add_stability = 0.10
 		add_political_power = -50
 		hidden_effect = {
@@ -261,7 +283,7 @@ country_event = {
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
-		name = blm.7.c #Grant Audenshyre Independence
+		name = blm.7.d #Grant Audenshyre Independence
 		hidden_effect = {
 		AUD = {
 		add_state_core = 984
@@ -291,6 +313,7 @@ country_event = {
 		QLA = {		
 		add_state_core = 986
 		}
+		set_country_flag = BLM_qlach_attack
 		}
 		release = QLA
 		declare_war_on = {
@@ -373,6 +396,7 @@ country_event = {
 		add_state_core = 979
 		add_state_core = 978
 		}
+		set_country_flag = BLM_WUL_attack
 		}
 		release = WUL
 		declare_war_on = {
@@ -487,6 +511,7 @@ country_event = {
 	trigger = {
 		NOT = {
 		has_country_flag = diminished_dominion
+		has_country_flag = BLM_audenshyre_attack
 			}
 	}
 	
@@ -513,11 +538,7 @@ country_event = {
 	desc = blm.13.d
 	#picture = 
 	
-	trigger = {
-		NOT = {
-		has_country_flag = diminished_dominion
-			}
-	}
+	is_triggered_only = yes
 	
  	immediate = {
  		hidden_effect = {
@@ -529,7 +550,7 @@ country_event = {
 		add_political_power = -50
 		start_civil_war = {
 			ideology = democratic
-			size = 0.45
+			size = 0.30
 			only_own_territory = yes
 			capital = 1012
 			states = { 
@@ -587,7 +608,7 @@ country_event = {
    }
 	
 country_event = {
-	id = blm.15 #The End of the Civil War (Consolidate regained territory, absorb Artura)
+	id = blm.15 #The End of the Civil War (absorb Artura, whether they like it or not)
 	title = blm.15.t
 	desc = blm.15.d
 	#picture = 
@@ -717,7 +738,10 @@ country_event = {
 	desc = blm.25.d
 	#picture = 
 	
-	is_triggered_only = yes
+	trigger = {
+		tag = BLM
+		has_full_control_of_state = 977
+	}
 	
  	immediate = {
  		hidden_effect = {
@@ -737,7 +761,13 @@ country_event = {
 	desc = blm.26.d
 	#picture = 
 	
-	is_triggered_only = yes
+	trigger = {
+		tag = BLM
+		has_full_control_of_state = 974
+		has_full_control_of_state = 1050
+		has_full_control_of_state = 1051
+		has_full_control_of_state = 1052		
+	}
 	
  	immediate = {
  		hidden_effect = {
@@ -760,7 +790,11 @@ country_event = {
 	desc = blm.28.d
 	#picture = 
 	
-	is_triggered_only = yes
+	trigger = {
+		tag = BLM
+		has_full_control_of_state = 986
+		has_country_flag = BLM_qlach_attack
+	}
 	
  	immediate = {
  		hidden_effect = {
@@ -780,7 +814,13 @@ country_event = {
 	desc = blm.30.d
 	#picture = 
 	
-	is_triggered_only = yes
+	trigger = {
+		tag = BLM
+		has_full_control_of_state = 978
+		has_full_control_of_state = 979
+		has_full_control_of_state = 980
+		has_country_flag = BLM_commie_attack
+	}
 	
  	immediate = {
  		hidden_effect = {
@@ -802,7 +842,12 @@ country_event = {
 	desc = blm.31.d
 	#picture = 
 	
-	is_triggered_only = yes
+	trigger = {
+		tag = BLM
+		NOT = {
+			country_exists = FAN
+				}
+	}
 	
  	immediate = {
  		hidden_effect = {
