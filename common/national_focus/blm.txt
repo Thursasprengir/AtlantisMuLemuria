@@ -851,11 +851,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-			remove_idea = imperial_garrison
+			remove_ideas = imperial_garrison
 			add_ideas = better_imperial_garrison
-						}
-				}
+		}
 	}
 	
 #########
@@ -871,11 +869,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-			remove_idea = the_old_order
-			add_ideas = the_imperial_order
-						}
-				}
+			remove_ideas = the_old_order
+			add_ideas = the_imperial_order			
+		}
 	}
 	focus = {
 		id = BLM_attract_british_settlers
@@ -911,6 +907,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_command_power = 10
+		}
 	}
 	########## cadet corps is recon school, have it give a bonus to recon school and radio
 	focus = {
@@ -928,7 +927,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = recon_tech
+			}
 		}
 	}
 	focus = {
@@ -947,8 +950,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		#
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = signal_company_tech
+			}
 		}
 	}
 	focus = {
