@@ -77,15 +77,28 @@ country_event = {
 		add_political_power = -50
 		set_country_flag = BL_independence_movements_suppressed
 		set_country_flag = BL_civil_war
-		#Arcadia declares independence
-		#declare war on Arcadia
+		ARC = {
+			add_state_core = 977
+			}
+		release = ARC
+		declare_war_on = {
+			target = ARC
+			type = annex_everything
+				}
+		remove_state_core = 977
+		hidden_effect = {country_event = {id = blm.5 days = 15 random = 300}}
 		}
 	option = {
 		name = blm.4.b #Allow Them Independence
 		add_stability = 0.10
 		add_political_power = -50
 		set_country_flag = BL_independence_movements_allowed
-		#Arcadia released ?as a puppet, or completely free?
+		ARC = {
+			add_state_core = 977
+			}
+		release = ARC
+		remove_state_core = 977
+		hidden_effect = {country_event = {id = blm.6 days = 60 random = 300}}
 		}
    }
 	
@@ -105,7 +118,12 @@ country_event = {
 		name = blm.5.1 #Begin integrating their bureaucracy
 		add_stability = 0.10
 		add_political_power = -50
-		#annex Suisse
+		annex_country = {
+			target = SSS
+			transfer_troops = yes
+		}
+		set_country_leader_ideology = neutrality
+		hidden_effect = {country_event = {id = blm.6 days = 60 random = 300}}
 		}
    }
 	
@@ -123,19 +141,57 @@ country_event = {
  	}
 	option = {
 		limit = { has_idea = BL_independence_movements_suppressed}
-		name = blm.6.a #Attack Werreubro
+		name = blm.6.a #Attack Werreurbro
 		add_stability = 0.10
 		add_political_power = -50
+		WRB = {
+		add_state_core = 974
+		add_state_core = 1050
+		add_state_core = 1051
+		add_state_core = 1052
+		}
+		release = WRB
+		remove_state_core = 974
+		remove_state_core = 1050
+		remove_state_core = 1051
+		remove_state_core = 1052
+		declare_war_on = {
+			target = WRB
+			type = annex_everything
+				}
+		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_suppressed}
-		name = blm.6.b #Grant Werruerbrian Independence
-		#Werreurbro granted independence ?as a puppet or completely free?
+		name = blm.6.b #Grant Werreurbrian Independence
+		WRB = {
+		add_state_core = 974
+		add_state_core = 1050
+		add_state_core = 1051
+		add_state_core = 1052
+		}
+		release_puppet = WRB
+		remove_state_core = 974
+		remove_state_core = 1050
+		remove_state_core = 1051
+		remove_state_core = 1052
+		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
-		name = blm.6.c #Grant Werruerbrian Independence
-		#Werreurbro given independence ?as a puppet or completely free?
+		name = blm.6.c #Grant Werreurbrian Independence
+		WRB = {
+		add_state_core = 974
+		add_state_core = 1050
+		add_state_core = 1051
+		add_state_core = 1052
+		}
+		release = WRB
+		remove_state_core = 974
+		remove_state_core = 1050
+		remove_state_core = 1051
+		remove_state_core = 1052
+		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
 		}
    }
 	
@@ -155,17 +211,37 @@ country_event = {
 		name = blm.7.a #Don't attack Audenshyre, yet
 		add_stability = 0.10
 		add_political_power = -50
+		AUD = {
+		add_state_core = 984
+		}
+		release = AUD
+		remove_state_core = 984
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = AUD
+				}
+		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
 		}
 	option = {
 		name = blm.7.b #Grant Audenshyrian Independence
 		add_stability = 0.10
 		add_political_power = -50
-		#Audenshyre granted independence ?as a puppet or completely free?
+		AUD = {
+		add_state_core = 984
+		}
+		release_puppet = AUD
+		remove_state_core = 984
+		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.7.c #Grant Audenshyre Independence
-		#Audenshyre given independence ?as a puppet or completely free?
+		AUD = {
+		add_state_core = 984
+		}
+		release = AUD
+		remove_state_core = 984
+		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
 		}
    }
 	
@@ -185,18 +261,31 @@ country_event = {
 		name = blm.8.a #Attack the Natives
 		add_stability = 0.10
 		add_political_power = -50
-		#Qlach Avengers declare independence
+		QLA = {		
+		add_state_core = 986
+		}
+		release = QLA
+		remove_state_core = 986
+		declare_war_on = {
+			target = QLA
+			type = annex_everything
+				}
+		hidden_effect = {country_event = {id = blm.9 days = 15 random = 300}}
 		}
 	option = {
 		name = blm.8.b #Allow the Natives Freedom
 		add_stability = 0.10
 		add_political_power = -50
-		#Free Lemurian Nation granted freedom ?as a puppet or completely free?
+		release_puppet = QLA
+		remove_state_core = 986
+		hidden_effect = {country_event = {id = blm.9 days = 15 random = 300}}
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.8.c #Grant Native Independence
-		#Free Lemurian Nation given independence ?as a puppet or completely free?
+		release = QLA
+		remove_state_core = 986
+		hidden_effect = {country_event = {id = blm.9 days = 15 random = 300}}
 		}
    }
 	
@@ -217,10 +306,20 @@ country_event = {
 		name = blm.9.a #Damn them!
 		add_stability = 0.10
 		add_political_power = -50
+		KLK = {
+			set_state_owner = 1006
+			set_state_controller = 1006
+			}
+		hidden_effect = {country_event = {id = blm.10 days = 15 random = 300}}
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.9.b #Damn them!
+		KLK = {
+			set_state_owner = 1006
+			set_state_controller = 1006
+			}
+		hidden_effect = {country_event = {id = blm.10 days = 15 random = 300}}
 		}
    }
 	
@@ -240,18 +339,49 @@ country_event = {
 		name = blm.10.a #We shall eliminate them
 		add_stability = 0.10
 		add_political_power = -50
-		#WUL declares independence
+		WUL = {
+		add_state_core = 980
+		add_state_core = 979
+		add_state_core = 978
+		}
+		release = WUL
+		remove_state_core = 980
+		remove_state_core = 979
+		remove_state_core = 978
+		declare_war_on = {
+			target = WUL
+			type = annex_everything
+				}
+		hidden_effect = {country_event = {id = blm.11 days = 15 random = 300}}
 		}
 	option = {
 		name = blm.10.b #Acknowledge the Workers Union
 		add_stability = 0.10
 		add_political_power = -50
-		#WUL granted independence ?as a puppet or completely free?
+		WUL = {
+		add_state_core = 980
+		add_state_core = 979
+		add_state_core = 978
+		}
+		release = WRB
+		remove_state_core = 980
+		remove_state_core = 979
+		remove_state_core = 978
+		hidden_effect = {country_event = {id = blm.11 days = 15 random = 300}}
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.10.c #Grant WUL Independence 
-		#WUL given independence ?as a puppet or completely free?
+		WUL = {
+		add_state_core = 980
+		add_state_core = 979
+		add_state_core = 978
+		}
+		release = WUL
+		remove_state_core = 980
+		remove_state_core = 979
+		remove_state_core = 978
+		hidden_effect = {country_event = {id = blm.11 days = 15 random = 300}}
 		}
    }
 	
@@ -271,13 +401,37 @@ country_event = {
 		limit = { has_idea = BL_independence_movements_suppressed}
 		name = blm.11.a #We'll fight them, too!
 		add_stability = 0.10
-		add_political_power = -50
-		#Anarchists declare independence - attack them
+		add_political_power = -50 
+		FAN = {
+		add_state_core = 978
+		}
+		WUL = {
+		release = FAN
+		declare_war_on = {
+			target = FAN
+			type = annex_everything
+				}
+			}
+		declare_war_on = {
+			target = FAN
+			type = annex_everything
+				}
+		hidden_effect = {country_event = {id = blm.12 days = 15 random = 300}}
 		}
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.11.b #How is this our problem?
-		#Anarchists attack Communists in WUL
+		FAN = {
+		add_state_core = 978
+		}
+		WUL = {
+		release = FAN
+		declare_war_on = {
+			target = FAN
+			type = annex_everything
+				}
+			}
+		hidden_effect = {country_event = {id = blm.12 days = 15 random = 300}}
 		}
    }
 	
@@ -297,7 +451,12 @@ country_event = {
 		name = blm.12.1 #We're sure this is a good deal
 		add_stability = 0.10
 		add_political_power = -50
-		#annex Audenshyre
+		annex_country = {
+			target = AUD
+			transfer_troops = yes
+		}
+		add_state_core = 984
+		hidden_effect = {country_event = {id = blm.13 days = 15 random = 300}}
 		}
    }
 	
@@ -317,14 +476,24 @@ country_event = {
 		name = blm.13.a #They're rebels, no matter their goals!
 		add_stability = 0.10
 		add_political_power = -50
-		#BL Republican Forces declare civil war
+		start_civil_war = {
+			ideology = democratic
+			size = 0.45
+			only_own_territory = yes
+			capital = 1012
+			states = { 
+				1012 1010 1009 1008 1007 1005 985
+				}
+			}
+		hidden_effect = {country_event = {id = blm.14 days = 15 random = 300}}
 		}
 	option = {
 		name = blm.13.b #We must end this war now.
 		add_stability = 0.10
-		add_political_power = -50
-		#Republicans sweep through government, Military government collapses, civil war ends.
+		add_political_power = -500
+		set_country_leader_ideology = democratic
 		clr_country_flag = BL_civil_war
+		hidden_effect = {country_event = {id = blm.14 days = 15 random = 300}}
 		}
    }
 	
@@ -344,6 +513,17 @@ country_event = {
 		name = blm.14.a #Britain will keep them safe
 		add_stability = 0.10
 		add_political_power = -50
+		FCT = {
+		add_state_core = 976
+		add_state_core = 975
+		}
+		release = FCT
+		remove_state_core = 976
+		remove_state_core = 975
+		ENG = {
+			puppet = FCT
+			}
+		hidden_effect = {country_event = {id = blm.15 days = 15 random = 300}}
 		}
    }
 	
@@ -364,6 +544,11 @@ country_event = {
 		add_stability = 0.10
 		add_political_power = -50
 		clr_country_flag = BL_civil_war
+		annex_country = {
+			target = RTR
+			transfer_troops = yes
+		}
+		hidden_effect = {country_event = {id = blm.16 days = 15 random = 300}}
 		}
    }
 	
@@ -384,6 +569,7 @@ country_event = {
 		add_stability = 0.10
 		add_political_power = -50
 		#fire event for Britain, France, and US to support or not support BL reclaiming N Ack. Desert)
+		hidden_effect = {country_event = {id = blm.17 days = 15 random = 300}}
 		}
    }
 	
@@ -401,13 +587,22 @@ country_event = {
  	}
 	option = {
 		name = blm.17.a #Our claim will hold for now (back down)
-		add_stability = 0.10
-		add_political_power = -50
+		add_stability = -0.10
+		add_political_power = -150
 		}
 	option = {
 		name = blm.17.b #We shall fight for our land!
 		add_stability = 0.10
 		add_political_power = -50
+		create_wargoal = {
+			type = take_state_focus
+			target = KLK
+			generator = { 1006 }
+			}
+			declare_war_on = {
+				target = KLK
+				type = take_state_focus
+				}
 		}
    }
    
@@ -434,8 +629,29 @@ country_event = {
 		name = blm.20.a #British Lemuria is better now, despite our losses
 		add_stability = 0.10
 		add_political_power = -50
+		set_country_flag = diminished_dominion
 		}
 		
+   }
+	
+country_event = {
+	id = blm.25 #The Defeat of Arcadia
+	title = blm.25.t
+	desc = blm.25.d
+	#picture = 
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 		} 		
+ 	}
+	option = {
+		name = blm.25.a #Rebels Crushed
+		add_stability = 0.10
+		add_political_power = -50
+		add_state_core = 977
+		}
    }
 	
 country_event = {
@@ -454,6 +670,10 @@ country_event = {
 		name = blm.26.a #Order triumphs!
 		add_stability = 0.10
 		add_political_power = -50
+		add_state_core = 974
+		add_state_core = 1050
+		add_state_core = 1051
+		add_state_core = 1052
 		}
    }
 	
@@ -473,6 +693,7 @@ country_event = {
 		name = blm.28.a #Order prevails!
 		add_stability = 0.10
 		add_political_power = -50
+		add_state_core = 986
 		}
    }
 	
@@ -492,6 +713,9 @@ country_event = {
 		name = blm.30.a #No home for Communists
 		add_stability = 0.10
 		add_political_power = -50
+		add_state_core = 980
+		add_state_core = 979
+		add_state_core = 978
 		}
    }
 	

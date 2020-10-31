@@ -901,6 +901,33 @@
 	
 	#mandalism
 	
+	shared_focus = {
+		id = INDOLEM2_founding_documents
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = INDOLEM2_the_hooks }
+		x = 7
+		y = 1
+		relative_position_id = INDOLEM2_the_hooks
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		THIS = {
+					has_government = neutrality
+					ROOT = {has_country_flag = mandalists_win }
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_stability = .05
+		}
+	}
 		
 	shared_focus = {
 		id = INDOLEM2_seize_industrial_wealth
@@ -959,10 +986,10 @@
 		shared_focus = {
 		id = INDOLEM2_limit_political_participation
 		icon = GFX_r56_goal_SIA_crackdown_on_democrats
+		relative_position_id = INDOLEM2_founding_documents
 		prerequisite = { focus = INDOLEM2_founding_documents }
 		x = -1
 		y = 1
-		relative_position_id = INDOLEM2_founding_documents
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1035,33 +1062,6 @@
 
 		completion_reward = {
 			add_stability = .1
-		}
-	}
-	shared_focus = {
-		id = INDOLEM2_founding_documents
-		icon = GFX_focus_hol_the_foundations_of_defense
-		prerequisite = { focus = INDOLEM2_the_hooks }
-		x = 7
-		y = 1
-		relative_position_id = INDOLEM2_the_hooks
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		THIS = {
-					has_government = neutrality
-					ROOT = {has_country_flag = mandalists_win }
-				}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			add_stability = .05
 		}
 	}
 		shared_focus = {
@@ -1532,7 +1532,7 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			KLK = { annex = ROOT }
+			KLK = { annex_country = ROOT }
 		}
 	}
 	

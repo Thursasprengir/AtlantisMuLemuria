@@ -363,7 +363,7 @@ focus_tree = {
 			add_stability = .10
 			swap_ideas = {
 				remove_idea = KUM_succession_crisis
-				add_idea = KUM_strong_monarch 
+				add_ideas = KUM_strong_monarch 
 			}
 		}
 	}
@@ -390,7 +390,7 @@ focus_tree = {
 			add_stability = .30
 			swap_ideas = {
 				remove_idea = KUM_succession_crisis
-				add_idea = KUM_weak_monarch
+				add_ideas = KUM_weak_monarch
 			}	
 		}
 	}
@@ -416,7 +416,7 @@ focus_tree = {
 		continue_if_invalid = no
 
 		completion_reward = {
-			add_idea = KUM_expel_media
+			add_ideas = KUM_expel_media
 		}
 	}
 
@@ -719,11 +719,11 @@ focus_tree = {
 	focus = {
 		id = KUM_modernize_military
 		icon = GFX_r56_goal_SIA_money_army
-		x = 22
-		y = 2
+		relative_position_id = KUM_deal_with_generals
+		x = -1
+		y = 1
 		prerequisite = { focus = KUM_deal_with_generals}
 		mutually_exclusive = { focus = KUM_mass_assault }
-		relative_position_id = KUM_public_farmlands
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {

@@ -19,7 +19,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-					country_event = { id = sasr.1 }
+					country_event = { id = blm.1 }
 			}
 	}
 	
@@ -154,7 +154,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-					country_event = { id = sasr.2 }
+					country_event = { id = blm.2 }
 			}
 	}
 
@@ -853,7 +853,7 @@ focus_tree = {
 		completion_reward = {
 		swap_ideas = {
 			remove_idea = imperial_garrison
-			add_idea = better_imperial_garrison
+			add_ideas = better_imperial_garrison
 						}
 				}
 	}
@@ -861,19 +861,19 @@ focus_tree = {
 #########
 	focus = {
 		id = BLM_the_queens_lemuria
+		prerequisite = { focus = BLM_continue_the_reforms }
 		icon = GFX_focus_generic_monarchy_2
 		x = 16
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BLM_second_anglosaxon_reforms }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 		swap_ideas = {
 			remove_idea = the_old_order
-			add_idea = the_imperial_order
+			add_ideas = the_imperial_order
 						}
 				}
 	}
