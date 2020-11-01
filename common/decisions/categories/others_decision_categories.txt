@@ -17,7 +17,15 @@ KLK_mercenary_decisions = {
 KLK_anti_mandalist_decisions = {
 	icon = category_military_operation
 	allowed = {
-		original_tag = KLK
+		OR = {
+			original_tag = KLK
+			original_tag = KUM
+			original_tag = MKU
+			original_tag = LSN
+			original_tag = CLA
+			original_tag = SDU
+			original_tag = UTU
+		}
 	}
 }
 
