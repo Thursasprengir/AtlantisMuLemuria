@@ -697,7 +697,6 @@ country_event = {
 		add_stability = 0.10
 		add_political_power = -50
 		hidden_effect = {
-		hidden_effect = {
 		AUD = {
 		add_state_core = 984
 		}
@@ -724,10 +723,15 @@ country_event = {
 	option = {
 		limit = { has_idea = BL_independence_movements_allowed}
 		name = blm.48.a #Grant Native Independence
+		hidden_effect = {
+		QLA = {		
+		add_state_core = 986
+		}
+		}
 		release = QLA
 		hidden_effect = {remove_state_core = 986}
 		hidden_effect = {country_event = {id = blm.49 days = 15 random = 300}}
-		}
+   }
    }
 	
 country_event = {
