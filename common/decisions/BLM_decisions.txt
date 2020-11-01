@@ -181,17 +181,19 @@ prospect_for_resources = {
 }
 
 BLM_recore = {
-	recore_arcaida_republic = {
+	recore_arcadia_republic = {
 		icon = aluminium
 		highlight_states = {state = 977}
 		available = {
 			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 977
 			controls_state = 977
+			has_country_flag = BL_civil_war_over
 		}
 		visible = {
 			owns_state = 977
 			controls_state = 977
+			has_country_flag = BL_civil_war_over
 		}
 		fire_only_once = yes
 		cost = 100
@@ -215,6 +217,7 @@ BLM_recore = {
 			controls_state = 1051
 			owns_state = 1052
 			controls_state = 1052
+			has_country_flag = BL_civil_war_over
 		}
 		visible = {
 			owns_state = 974
@@ -225,6 +228,7 @@ BLM_recore = {
 			controls_state = 1051
 			owns_state = 1052
 			controls_state = 1052
+			has_country_flag = BL_civil_war_over
 		}
 		fire_only_once = yes
 		cost = 100
@@ -245,10 +249,12 @@ BLM_recore = {
 			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 984
 			controls_state = 984
+			has_country_flag = BL_civil_war_over
 		}
 		visible = {
 			owns_state = 984
 			controls_state = 984
+			has_country_flag = BL_civil_war_over
 		}
 		fire_only_once = yes
 		cost = 100
@@ -266,10 +272,12 @@ BLM_recore = {
 			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 986
 			controls_state = 986
+			has_country_flag = BL_civil_war_over
 		}
 		visible = {
 			owns_state = 986
 			controls_state = 986
+			has_country_flag = BL_civil_war_over
 		}
 		fire_only_once = yes
 		cost = 100
@@ -291,6 +299,7 @@ BLM_recore = {
 			controls_state = 979
 			owns_state = 978
 			controls_state = 978
+			has_country_flag = BL_civil_war_over
 		}
 		visible = {
 			owns_state = 980
@@ -299,6 +308,7 @@ BLM_recore = {
 			controls_state = 979
 			owns_state = 978
 			controls_state = 978
+			has_country_flag = BL_civil_war_over
 		}
 		fire_only_once = yes
 		cost = 100
@@ -309,105 +319,6 @@ BLM_recore = {
 			add_state_core = 980
 			add_state_core = 978
 			add_state_core = 979
-		}
-	}
-	recore_free_euro_lem = {
-		icon = aluminium
-		highlight_states = {state = 978}
-		available = {
-			num_of_civilian_factories_available_for_projects > 5
-			owns_state = 978
-			controls_state = 978
-		}
-		visible = {
-			owns_state = 978
-			controls_state = 978
-		}
-		fire_only_once = yes
-		cost = 100
-		days_remove = 365
-		modifier = {civilian_factory_use = 5}
-		ai_will_do = {factor = 100}
-		complete_effect = {
-			add_state_core = 978
-		}
-	}
-	recore_free_cities = {
-		icon = aluminium 
-		highlight_states = {state = 975 state = 976}
-		available = {
-			num_of_civilian_factories_available_for_projects > 10
-			owns_state = 975
-			controls_state = 975
-			owns_state = 976
-			controls_state = 976
-		}
-		visible = {
-			owns_state = 975
-			controls_state = 975			
-			owns_state = 976
-			controls_state = 976
-		}
-		fire_only_once = yes
-		cost = 100
-		days_remove = 365
-		modifier = {civilian_factory_use = 10}
-		ai_will_do = {factor = 100}
-		complete_effect = {
-			add_state_core = 975
-			add_state_core = 976
-		}
-	}
-	recore_artura = {
-		icon = aluminium 
-		highlight_states = {state = 972 state = 1015 state = 1014}
-		available = {
-			num_of_civilian_factories_available_for_projects > 15
-			owns_state = 972
-			controls_state = 972
-			owns_state = 1015
-			controls_state = 1015
-			owns_state = 1014
-			controls_state = 1014
-		}
-		visible = {
-			owns_state = 972
-			controls_state = 972
-			owns_state = 1015
-			controls_state = 1015
-			owns_state = 1014
-			controls_state = 1014
-		}
-		fire_only_once = yes
-		cost = 100
-		days_remove = 365
-		modifier = {civilian_factory_use = 15}
-		ai_will_do = {factor = 100}
-		complete_effect = {
-			add_state_core = 972
-			add_state_core = 1015
-			add_state_core = 1014
-		}
-	}
-	recore_north_ackerson = {
-		icon = aluminium
-		highlight_states = {state = 1006 }
-		available = {
-			num_of_civilian_factories_available_for_projects > 5
-			owns_state = 1006
-			controls_state = 1006
-		}
-		visible = {
-			owns_state = 1006
-			controls_state = 1006
-		}
-		fire_only_once = yes 
-		cost = 100
-		days_remove = 365
-		modifier = {civilian_factory_use = 5}
-		ai_will_do = {factor = 100}
-		complete_effect = {
-			add_state_core = 1006
 		}
 	}	
 }
