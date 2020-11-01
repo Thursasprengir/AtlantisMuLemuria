@@ -215,7 +215,7 @@ country_event = {
 		add_state_core = 984
 		}
 		}
-		release = AUD
+		release_puppet = AUD
 		create_wargoal = {
 			type = puppet_wargoal_focus
 			target = AUD
@@ -245,6 +245,22 @@ country_event = {
 		}
 		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
 		}
+	option = {
+		name = blm.7.c #Grant Audenshyrian Independence
+		add_stability = 0.10
+		add_political_power = -50
+		hidden_effect = {
+		AUD = {
+		add_state_core = 984
+		}
+		}
+		release = AUD
+		hidden_effect = {
+		remove_state_core = 984
+		}
+		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
+		set_country_flag = BLM_wimp_out_audenshyre
+	}
    }
 	
 country_event = {
@@ -280,6 +296,11 @@ country_event = {
 		name = blm.8.b #Allow the Natives Freedom
 		add_stability = 0.10
 		add_political_power = -50
+		hidden_effect = {
+		QLA = {		
+		add_state_core = 986
+		}
+		}
 		release_puppet = QLA
 		hidden_effect = {remove_state_core = 986}
 		hidden_effect = {country_event = {id = blm.9 days = 15 random = 300}}
@@ -359,7 +380,7 @@ country_event = {
 		add_state_core = 978
 		}
 		}
-		release = WRB
+		release = WUL
 		hidden_effect = {
 		remove_state_core = 980
 		remove_state_core = 979
@@ -434,9 +455,15 @@ country_event = {
 			transfer_troops = yes
 		}
 		hidden_effect = {add_state_core = 984}
-		hidden_effect = {country_event = {id = blm.13 days = 15 random = 300}}
+		hidden_effect = {
+			if = {
+			NOT = {
+				has_country_flag = diminished_dominion
+				}
+			}
+			country_event = {id = blm.13 days = 15 random = 300}}
 		}
-   }
+   } 
 	
 country_event = {
 	id = blm.13 #Rise of the Republicans
