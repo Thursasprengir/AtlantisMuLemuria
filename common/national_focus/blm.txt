@@ -186,57 +186,57 @@ focus_tree = {
 	
 	# Lemuria's "manifest destiny" or in other words, British Lemurians trying to figure out their identity and place in Lemuria and the commonwealth.
 	
-	focus = {
-		id = BLM_our_culture
-		icon = GFX_goal_unknown
-		x = 11
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_our_people }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#	focus = {
+#		id = BLM_our_culture
+#		icon = GFX_goal_unknown
+#		x = 11
+#		y = 10
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = BLM_our_people }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 
-	focus = {
-		id = BLM_our_place
-		icon = GFX_goal_unknown
-		x = 11
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_federal_lemuria focus = BLM_imperial_lemuria }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#	focus = {
+#		id = BLM_our_place
+#		icon = GFX_goal_unknown
+#		x = 11
+#		y = 9
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = BLM_federal_lemuria focus = BLM_imperial_lemuria }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 	
-	focus = {
-		id = BLM_our_people
-		icon = GFX_goal_unknown
-		x = 11
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_our_place }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#	focus = {
+#		id = BLM_our_people
+#		icon = GFX_goal_unknown
+#		x = 11
+#		y = 11
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = BLM_our_place }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 
-	focus = {
-		id = BLM_our_lemuria
-		icon = GFX_goal_unknown
-		x = 11
-		y = 12
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BLM_our_culture }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#	focus = {
+#		id = BLM_our_lemuria
+#		icon = GFX_goal_unknown
+#		x = 11
+#		y = 12
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = BLM_our_culture }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 
 
 
@@ -318,7 +318,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BLM_nobility_issue
-		icon = GFX_goal_unknown
+		icon = GFX_goal_mexico_axel
 		x = 1
 		y = 2
 		cost = 10
@@ -331,7 +331,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BLM_disband_the_ig
-		icon = GFX_goal_unknown
+		icon = GFX_r56_goal_generic_break_army
 		x = 3
 		y = 2
 		cost = 10
@@ -431,7 +431,7 @@ focus_tree = {
 	}
 		focus = {
 		id = BLM_completedecentralization
-		icon = GFX_goal_unknown
+		icon = GFX_r56_goal_generic_citizens
 		x = 9
 		y = 2
 		cost = 10
@@ -449,7 +449,7 @@ focus_tree = {
 	}
 		focus = {
 		id = BLM_independentrepublics
-		icon = GFX_goal_unknown
+		icon = GFX_r56_goal_generic_consitution
 		x = 9
 		y = 3
 		cost = 10
@@ -631,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BLM_federate_assembly
-		icon = GFX_goal_unknown
+		icon = GFX_r56_goal_generic_election
 		x = 3
 		y = 6
 		cost = 10
@@ -650,7 +650,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BLM_minority_rights
-		icon = GFX_goal_unknown
+		icon = GFX_r56_goal_generic_fist_with_flags
 		x = 3
 		y = 7
 		cost = 10
@@ -663,7 +663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BLM_liberty_beacon
-		icon = GFX_goal_unknown
+		icon = GFX_r56_goal_FRA_victor
 		x = 6
 		y = 7
 		cost = 10
@@ -675,7 +675,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BLM_suspend_persecution_permanently
-		icon = GFX_goal_unknown
+		icon = GFX_focus_bra_federalism
 		x = 9	
 		y = 7
 		cost = 10
@@ -687,7 +687,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BLM_federal_lemuria
-		icon = GFX_goal_unknown
+		icon = GFX_goal_mexico_litteracy_program
 		x = 6	
 		y = 8
 		cost = 10
@@ -721,7 +721,7 @@ focus_tree = {
 	}
 		focus = {
 		id = BLM_lemurianindustrialcentre
-		icon = GFX_goal_unknown
+		icon = GFX_factoryplanning
 		x = 3
 		y = 5
 		cost = 10
@@ -754,7 +754,7 @@ focus_tree = {
 	}
 		focus = {
 		id = BLM_colonistissues
-		icon = GFX_goal_unknown
+		icon = GFX_focus_bra_populism
 		x = 8
 		y = 4
 		cost = 10
@@ -769,7 +769,7 @@ focus_tree = {
 	}
 		focus = {
 		id = BLM_flagissues
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AST_never_gallipoli
 		x = 8
 		y = 5
 		cost = 10
