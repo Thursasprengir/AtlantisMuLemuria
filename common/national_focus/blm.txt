@@ -22,10 +22,10 @@ focus_tree = {
 					country_event = { id = blm.1 }
 			}
 	}
-	
+
 	focus = {
 		id = BLM_lemurian_airways
-		icon = GFX_goal_lemurian_airways
+		icon = GFX_lemurian_airways
 		x = 30
 		y = 0
 		cost = 10
@@ -34,7 +34,7 @@ focus_tree = {
 			factor = 1
 		}
 	}
-	
+
 	focus = {
 		id = BLM_lemurian_air_plan
 		icon = GFX_focus_generic_air_defense
@@ -66,15 +66,15 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-		focus = BLM_lemurian_reconnaissance 
+		prerequisite = {
+		focus = BLM_lemurian_reconnaissance
 		focus = BLM_lemurian_air_plan
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	focus = {
 		id = BLM_new_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -96,11 +96,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_new_navy
-		
+
 		}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = BLM_new_destroyers
 				}
 	}
@@ -114,11 +114,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_new_navy
-		
+
 		}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = BLM_new_submarines
 				}
 	}
@@ -132,12 +132,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_new_submarines
 		focus = BLM_new_destroyers
 		}
 	}
-	
+
 	#The 3 paths
 	focus = {
 		id = BLM_continue_the_reforms
@@ -147,8 +147,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_second_anglosaxon_reforms }
-		mutually_exclusive = { 
-				focus = BLM_act_283 
+		mutually_exclusive = {
+				focus = BLM_act_283
 				}
 		ai_will_do = {
 			factor = 1
@@ -168,7 +168,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_second_anglosaxon_reforms }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = BLM_continue_the_reforms
 				}
 		ai_will_do = {
@@ -178,14 +178,14 @@ focus_tree = {
 					country_event = { id = sasr.3 }
 			}
 	}
-	
-	
+
+
 	#ENG = { puppet = BLM }
-	
-	
-	
+
+
+
 	# Lemuria's "manifest destiny" or in other words, British Lemurians trying to figure out their identity and place in Lemuria and the commonwealth.
-	
+
 #	focus = {
 #		id = BLM_our_culture
 #		icon = GFX_goal_unknown
@@ -211,7 +211,7 @@ focus_tree = {
 #			factor = 1
 #		}
 #	}
-	
+
 #	focus = {
 #		id = BLM_our_people
 #		icon = GFX_goal_unknown
@@ -294,7 +294,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			division_template = {
 				name = "Local Garrison"
@@ -306,13 +306,13 @@ focus_tree = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
 				}
-				support = { 
+				support = {
 					military_police = { x = 0 y = 0 }
-				} 
+				}
 			}
-			
-			
-			
+
+
+
 			load_oob = "BLM_local_garrisons"
 		}
 	}
@@ -379,7 +379,7 @@ focus_tree = {
 		completion_reward = {
 		country_event = { id = sasr.96 }
 		}
-		
+
 	}
 
 	focus = {
@@ -395,7 +395,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		country_event = { id = sasr.93 }
-	
+
 		}
 	}
 
@@ -454,15 +454,15 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		available = { 
+		available = {
 			is_subject = no
 		}
 		prerequisite = { focus = BLM_completedecentralization }
 		ai_will_do = {
 			factor = 1
 		}
-		
-	
+
+
 		completion_reward = {
 		AUD = {
 					transfer_state = 984
@@ -496,7 +496,7 @@ focus_tree = {
 			puppet = AUD
 			puppet = QLA
 			puppet = WRB
-		
+
 		}
 	}
 		focus = {
@@ -506,9 +506,9 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_5_year_compensation
-		focus = BLM_local_garrisons		
+		focus = BLM_local_garrisons
 		}
 		ai_will_do = {
 			factor = 1
@@ -522,7 +522,7 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = ENG 
+					target = ENG
 					modifier = large_increase
 				}
 			}
@@ -534,7 +534,7 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = AST 
+					target = AST
 					modifier = large_increase
 				}
 			}
@@ -546,7 +546,7 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = NZL 
+					target = NZL
 					modifier = large_increase
 				}
 			}
@@ -558,7 +558,7 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = RAJ 
+					target = RAJ
 					modifier = large_increase
 				}
 			}
@@ -570,7 +570,7 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = SAF 
+					target = SAF
 					modifier = large_increase
 				}
 			}
@@ -582,7 +582,7 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = ENG 
+					target = ENG
 					modifier = large_increase
 				}
 			}
@@ -606,12 +606,12 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = CAN 
+					target = CAN
 					modifier = large_increase
 				}
 			}
 		}
-	}	
+	}
 	focus = {
 		id = BLM_go_through_educational_reforms
 		icon = GFX_focus_generic_military_academy
@@ -619,7 +619,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_alliedrelations
 		}
 		ai_will_do = {
@@ -639,10 +639,10 @@ focus_tree = {
 		prerequisite = {
 		focus = BLM_go_through_educational_reforms
 		focus = BLM_lemurianindustrialcentre
-		#focus = 
+		#focus =
 			}
 		completion_reward = {
-			#country_event = 
+			#country_event =
 			}
 		ai_will_do = {
 			factor = 1
@@ -676,7 +676,7 @@ focus_tree = {
 	focus = {
 		id = BLM_suspend_persecution_permanently
 		icon = GFX_focus_bra_federalism
-		x = 9	
+		x = 9
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -688,7 +688,7 @@ focus_tree = {
 	focus = {
 		id = BLM_federal_lemuria
 		icon = GFX_goal_mexico_litteracy_program
-		x = 6	
+		x = 6
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
@@ -699,8 +699,8 @@ focus_tree = {
 			factor = 1
 		}
 	}
-	
-	
+
+
 		focus = {
 		id = BLM_lemuriandefenseforce
 		icon = GFX_focus_generic_license_production
@@ -708,9 +708,9 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_5_year_compensation
-		focus = BLM_local_garrisons		
+		focus = BLM_local_garrisons
 		}
 		ai_will_do = {
 			factor = 1
@@ -726,9 +726,9 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_alliedrelations
-		focus = BLM_local_industry	
+		focus = BLM_local_industry
 		}
 		ai_will_do = {
 			factor = 1
@@ -759,7 +759,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_independentrepublics
 		focus = BLM_government_reform
 		}
@@ -827,7 +827,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_continue_the_reforms
 		}
 		ai_will_do = {
@@ -844,7 +844,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 		focus = BLM_unrestmeeting
 		}
 		ai_will_do = {
@@ -855,7 +855,7 @@ focus_tree = {
 			add_ideas = better_imperial_garrison
 		}
 	}
-	
+
 #########
 	focus = {
 		id = BLM_the_queens_lemuria
@@ -870,19 +870,19 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = the_old_order
-			add_ideas = the_imperial_order			
+			add_ideas = the_imperial_order
 		}
 	}
 	focus = {
 		id = BLM_attract_british_settlers
-		icon = GFX_goal_stop
+		icon = GFX_goal_british_come
 		x = 15
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_the_queens_lemuria }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -901,8 +901,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_royal_cadet_corps }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -920,8 +920,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_the_queens_lemuria }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -943,8 +943,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_australian_british-lemurian_summit }
 		prerequisite = { focus = BLM_expand_the_ig }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -965,8 +965,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_attract_british_settlers }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -974,7 +974,7 @@ focus_tree = {
 		completion_reward = {
 					country_event = { id = sasr.99 }
 			}
-		
+
 	}
 	focus = {
 		id = BLM_incentivize_british_industries
@@ -984,8 +984,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_abolish_anglish_societies }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -996,9 +996,9 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
-		
+
 		completion_reward = {
 			random_owned_state = {
 				limit = {
@@ -1031,7 +1031,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 	}
 	focus = {
 		id = BLM_suppress_natives #abolish Anglishism
@@ -1041,8 +1041,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_incentivize_british_industries }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1057,8 +1057,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_incentivize_british_industries}
 		prerequisite = { focus = BLM_lemurian_waysmen }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1080,7 +1080,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_german_war_economy
 			}
-			
+
 		}
 	}
 	focus = {
@@ -1091,11 +1091,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_continue_the_reforms }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 				completion_reward = {
-		add_ideas = royalindustry 	
+		add_ideas = royalindustry
 		}
 		completion_reward = {
 		random_owned_controlled_state = {
@@ -1127,8 +1127,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_the_queens_industry }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1161,8 +1161,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_the_industrial_new_hampstead }
 		prerequisite = { focus = BLM_attract_british_settlers }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1196,8 +1196,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_the_queens_industry }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1208,14 +1208,14 @@ focus_tree = {
 	}
 	focus = {
 		id = BLM_new_british_education
-		icon = GFX_r56_goal_generic_research_silver
+		icon = GFX_new_british_education
 		x = 11
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_found_the_new_hampstead_university }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1232,8 +1232,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_new_british_education focus = BLM_fix_the_shipyards }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1247,7 +1247,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				
+
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1263,7 +1263,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				
+
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1279,7 +1279,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				
+
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1295,7 +1295,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				
+
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1305,7 +1305,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = BLM_greatest_monument
 		icon = GFX_focus_eng_imperial_federation
@@ -1315,8 +1315,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_the_roads }
 		prerequisite = { focus = BLM_suppress_natives }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1331,8 +1331,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_suppress_natives }
 		prerequisite = { focus = BLM_reform_the_army }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1346,8 +1346,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_reform_the_army }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
@@ -1366,8 +1366,8 @@ focus_tree = {
 		prerequisite = { focus = BLM_new_titles }
 		prerequisite = { focus = BLM_greatest_monument }
 		prerequisite = { focus = BLM_british_man }
-		mutually_exclusive = { 
-				
+		mutually_exclusive = {
+
 				}
 		ai_will_do = {
 			factor = 1
