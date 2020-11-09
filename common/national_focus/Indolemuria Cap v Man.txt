@@ -20,8 +20,8 @@
 			add_political_power = -50
 		}
 	}
-	
-	
+
+
 	shared_focus = {
 		id = INDOLEM2_work_with_capitalists
 		icon = GFX_focus_mex_privatisation
@@ -49,7 +49,7 @@
 			add_stability = -0.05
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_generous_loans
 		icon = GFX_piles_of_money
@@ -81,7 +81,7 @@
 			}
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_stingy_loans
 		icon = GFX_bailout_money
@@ -113,10 +113,10 @@
 			}
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_dam_rivers
-		icon = GFX_
+		icon = GFX_goal_italy_expand_hydroelectricity_production
 		prerequisite = { focus = INDOLEM2_generous_loans }
 		x = -1
 		y = 2
@@ -143,7 +143,7 @@
 			}
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_more_oil_plants
 		icon = GFX_goal_generic_oil_refinery
@@ -189,7 +189,7 @@
 		id = INDOLEM2_industrial_gains
 		icon = GFX_focus_generic_industry_1
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_dam_rivers 
+		prerequisite = { focus = INDOLEM2_dam_rivers
 						focus = INDOLEM2_more_oil_plants }
 		mutually_exclusive = { focus = INDOLEM2_invest_public_research }
 		x = -3
@@ -275,8 +275,8 @@
 					instant_build = yes
 				}
 			}
-		}	
-	}	
+		}
+	}
 	shared_focus = {
 		id = INDOLEM2_dockyard_construction
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -323,7 +323,7 @@
 					instant_build = yes
 				}
 			}
-		}	
+		}
 	}
 		shared_focus = {
 		id = INDOLEM2_military_factories
@@ -368,15 +368,15 @@
 					instant_build = yes
 				}
 			}
-		}	
+		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_old_roads_new_airfields
 		icon = GFX_goal_generic_build_airforce
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_consumer_factories }
-		prerequisite = { focus = INDOLEM2_military_factories 
+		prerequisite = { focus = INDOLEM2_military_factories
 						focus = INDOLEM2_dockyard_construction }
 		x = -4
 		y = 7
@@ -420,14 +420,14 @@
 					instant_build = yes
 				}
 			}
-		}	
-		
+		}
+
 	}
 	shared_focus = {
 		id = INDOLEM2_invest_public_research
 		icon = GFX_focus_research
 		relative_position_id = INDOLEM2_work_with_capitalists
-		prerequisite = { focus = INDOLEM2_dam_rivers 
+		prerequisite = { focus = INDOLEM2_dam_rivers
 						focus = INDOLEM2_more_oil_plants }
 		mutually_exclusive = { focus = INDOLEM2_industrial_gains }
 		x = 2
@@ -451,8 +451,8 @@
 			add_research_slot = 1
 		}
 	}
-	
-		
+
+
 	shared_focus = {
 		id = INDOLEM2_production_improvements
 		icon = GFX_goal_generic_production
@@ -473,7 +473,7 @@
 			add_ideas = LEM_production_improvements
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_construction_improvements
 		icon = GFX_goal_generic_construction2
@@ -495,7 +495,7 @@
 			add_ideas = LEM_construction_gains
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_computing_technology
 		icon = GFX_goal_generic_production2
@@ -521,7 +521,7 @@
 			}
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_early_synthetic_materials
 		icon = GFX_goal_generic_oil_refinery
@@ -546,10 +546,10 @@
 			}
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_synthetic_insulators
-		icon = GFX_
+		icon = GFX_r56_goal_generic_modernizing_the_cavalry2
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_early_synthetic_materials }
 		mutually_exclusive = { focus = INDOLEM2_oil_refining }
@@ -598,13 +598,13 @@
 			}
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_radar_insights
 		icon = GFX_r56_goal_generic_control_the_radio
 		relative_position_id = INDOLEM2_work_with_capitalists
 		prerequisite = { focus = INDOLEM2_computing_technology }
-		prerequisite = { focus = INDOLEM2_synthetic_insulators 
+		prerequisite = { focus = INDOLEM2_synthetic_insulators
 							focus = INDOLEM2_oil_refining }
 		x = 2
 		y = 7
@@ -643,7 +643,7 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			add_ideas = LEM_air_power   
+			add_ideas = LEM_air_power
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -651,19 +651,19 @@
 			}
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
 	shared_focus = {
 		id = INDOLEM2_round_up_mandalists
 		prerequisite = { focus = INDOLEM2_work_with_capitalists }
@@ -690,7 +690,7 @@
 			add_stability = .10
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_reestablish_capitalist_ties
 		icon = GFX_r56_goal_generic_business_bills
@@ -717,10 +717,10 @@
 			add_political_power = 50
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_capitalist_immigrants
-		icon = GFX_
+		icon = GFX_r56_goal_FRA_class_collaboration
 		prerequisite = { focus = INDOLEM2_reestablish_capitalist_ties}
 		x = -1
 		y = 2
@@ -744,7 +744,7 @@
 			add_stability = -.05
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_encourage_local_business
 		icon = GFX_r56_goal_generic_farm_tractor
@@ -777,7 +777,7 @@
 			}
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_invite_american_investors
 		icon = GFX_focus_chi_mission_to_the_us
@@ -812,7 +812,7 @@
 			}
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_invite_european_investors
 		icon = GFX_focus_chi_british_cooperation
@@ -866,10 +866,10 @@
 			}
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_no_foreigners
-		icon = GFX_
+		icon = GFX_goal_no_investment
 		prerequisite = { focus = INDOLEM2_capitalist_immigrants}
 		mutually_exclusive = {
 			focus = INDOLEM2_invite_american_investors
@@ -897,10 +897,10 @@
 			add_political_power = 150
 		}
 	}
-	
-	
+
+
 	#mandalism
-	
+
 	shared_focus = {
 		id = INDOLEM2_founding_documents
 		icon = GFX_focus_hol_the_foundations_of_defense
@@ -928,7 +928,7 @@
 			add_stability = .05
 		}
 	}
-		
+
 	shared_focus = {
 		id = INDOLEM2_seize_industrial_wealth
 		icon = GFX_money_grab
@@ -955,7 +955,7 @@
 			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_patrol_border
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -982,7 +982,7 @@
 			add_political_power = 50
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_limit_political_participation
 		icon = GFX_r56_goal_SIA_crackdown_on_democrats
@@ -1009,7 +1009,7 @@
 			add_political_power = 50
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_purge_capitalists
 		icon = GFX_goal_mexico_quarantine_migrants
@@ -1036,8 +1036,8 @@
 			add_stability = .05
 		}
 	}
-		
-		
+
+
 		shared_focus = {
 		id = INDOLEM2_destruction_capitalist_symbols
 		icon = GFX_break_monopoly
@@ -1067,7 +1067,7 @@
 		shared_focus = {
 		id = INDOLEM2_public_farmlands
 		icon = GFX_r56_goal_generic_wheat
-		prerequisite = { focus = INDOLEM2_founding_documents }	
+		prerequisite = { focus = INDOLEM2_founding_documents }
 		x = 5
 		y = 0
 		relative_position_id = INDOLEM2_seize_industrial_wealth
@@ -1090,9 +1090,9 @@
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 			}
-		}	
+		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_public_factories
 		icon = GFX_goal_italy_bring_industry_to_the_mezzogiorno
@@ -1146,12 +1146,12 @@
 					instant_build = yes
 				}
 			}
-		}	
-	}	
-		
+		}
+	}
+
 		shared_focus = {
 		id = INDOLEM2_redistribute_land
-		icon = GFX_
+		icon = GFX_r56_goal_generic_promote_ruralism
 		prerequisite = { focus = INDOLEM2_public_factories}
 		x = 5
 		y = 2
@@ -1177,7 +1177,7 @@
 			}
 		}
 	}
-		
+
 	shared_focus = {
 		id = INDOLEM2_reorganize_government
 		icon = GFX_mandalism
@@ -1205,7 +1205,7 @@
 			add_ideas = LEM_mandal
 		}
 	}
-		
+
  #Local Branch
 	shared_focus = {
 		id = INDOLEM2_establish_local_authorities
@@ -1230,10 +1230,10 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			add_ideas = LEM_local_mandal 
+			add_ideas = LEM_local_mandal
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_local_production
 		icon = GFX_focus_generic_industry_2
@@ -1257,13 +1257,13 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			add_ideas = LEM_production_mandal 
+			add_ideas = LEM_production_mandal
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_entice_resource_collection
-		icon = GFX_
+		icon = GFX_r56_goal_BEL_trade_pact
 		prerequisite = { focus = INDOLEM2_establish_local_authorities}
 		x = -3
 		y = 6
@@ -1287,7 +1287,7 @@
 			add_ideas = LEM_resource_mandal
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_compensation_from_rich
 		icon = GFX_goal_mexico_litteracy_program
@@ -1369,7 +1369,7 @@
 			add_political_power = 50
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_statues
 		icon = GFX_
@@ -1399,7 +1399,7 @@
 	#the state
 	shared_focus = {
 		id = INDOLEM2_the_national
-		icon = GFX_
+		icon = GFX_r56_goal_BEL_african_alliance
 		prerequisite = { focus = INDOLEM2_reorganize_government}
 		x = 2
 		y = 5
@@ -1420,7 +1420,7 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			add_ideas = LEM_national_mandal 
+			add_ideas = LEM_national_mandal
 		}
 	}
 
@@ -1451,10 +1451,10 @@
 			add_stability = -.10
 		}
 	}
-		
+
 	shared_focus = {
 		id = INDOLEM2_deal_with_abandon_factories
-		icon = GFX_
+		icon = GFX_goal_mexico_become_industrialised
 		prerequisite = { focus = INDOLEM2_force_open_gold}
 		x = 1
 		y = 8
@@ -1478,7 +1478,7 @@
 			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_guerillia_required_reading
 		icon = GFX_goal_generic_attack_allies
@@ -1503,10 +1503,10 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			add_ideas = LEM_partisan_mandal 
+			add_ideas = LEM_partisan_mandal
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_join_kalari
 		icon = GFX_
@@ -1535,7 +1535,7 @@
 			KLK = { annex_country = ROOT }
 		}
 	}
-	
+
 	shared_focus = {
 		id = INDOLEM2_consolidate_orange_wave
 		icon = GFX_
@@ -1565,9 +1565,9 @@
 			KLK = { add_to_faction = ROOT }
 		}
 	}
-	
+
 	#Spycraft
-		
+
 	shared_focus = {
 		id = INDOLEM2_establish_secret_police
 		icon = GFX_
@@ -1589,7 +1589,7 @@
 			create_intelligence_agency = yes
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_control_unions
 		icon = GFX_
@@ -1610,7 +1610,7 @@
 			add_ideas = LEM_spy_union
 		}
 	}
-		
+
 		shared_focus = {
 		id = INDOLEM2_infiltrate_religious_groups
 		icon = GFX_
@@ -1631,12 +1631,3 @@
 			add_ideas = LEM_spy_religion
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-		
