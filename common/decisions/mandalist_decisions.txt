@@ -1,0 +1,164 @@
+KLK_anti_mandalist_decisions = {
+	mand_time = {
+		visible = {always = no}
+		icon = generic_army_support
+		complete_effect = {
+			if = {
+				limit = {original_tag = KUM}
+				set_temp_variable = {tempmin = KUM.duration}
+				set_temp_variable = {tempmax = KUM.duration}
+				multiply_temp_variable = {var = tempmin value = 0.8}
+				multiply_temp_variable = {var = tempmax value = 1.25}
+				randomize_temp_variable = {
+					var = tempduration
+					distribution = uniform
+					min = tempmin
+					max = tempmax
+				}
+				set_variable = {var = KUM.timevariable value = tempduration}
+			}
+			if = {
+				limit = {original_tag = LSN}
+				set_temp_variable = {tempmin = LSN.duration}
+				set_temp_variable = {tempmax = LSN.duration}
+				multiply_temp_variable = {var = tempmin value = 0.8}
+				multiply_temp_variable = {var = tempmax value = 1.25}
+				randomize_temp_variable = {
+					var = tempduration
+					distribution = uniform
+					min = tempmin
+					max = tempmax
+				}
+				set_variable = {var = LSN.timevariable value = tempduration}
+			}
+			if = {
+				limit = {original_tag = CLA}
+				set_temp_variable = {tempmin = CLA.duration}
+				set_temp_variable = {tempmax = CLA.duration}
+				multiply_temp_variable = {var = tempmin value = 0.8}
+				multiply_temp_variable = {var = tempmax value = 1.25}
+				randomize_temp_variable = {
+					var = tempduration
+					distribution = uniform
+					min = tempmin
+					max = tempmax
+				}
+				set_variable = {var = CLA.timevariable value = tempduration}
+			}
+		}
+	}
+	KUM_mandalist_offensive1 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = KUM.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = mand_lose_land1}}
+	}
+	CLA_mandalist_offensive1 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = CLA.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = mand_lose_land1}}
+	}
+	LSN_mandalist_offensive1 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = LSN.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = mand_lose_land1}}
+	}
+	mand_lose_land1 = {
+		visible = {always = no}
+		is_good = no
+		days_remove = 7
+		modifier = {weekly_manpower = -10000}
+		complete_effect = {set_country_flag = some_major_gangsta_shit_going_on}
+		remove_effect = {
+			clr_country_flag = some_major_gangsta_shit_going_on
+			hidden_effect = {country_event = {id = mandgeneric.1}}
+		}
+	}
+	KUM_mandalist_offensive2 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = KUM.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = mand_lose_land2}}
+	}
+	CLA_mandalist_offensive2 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = CLA.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = mand_lose_land2}}
+	}
+	mand_lose_land2 = {
+		visible = {
+			always = no
+		}
+		is_good = no
+		days_remove = 7
+		modifier = {weekly_manpower = -10000}
+		complete_effect = {set_country_flag = some_major_gangsta_shit_going_on}
+		remove_effect = {
+			clr_country_flag = some_major_gangsta_shit_going_on
+			hidden_effect = {country_event = {id = mandgeneric.2}}
+		}
+	}
+	KUM_mandalist_offensive3 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = KUM.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = mand_lose_land3}}
+	}
+	CLA_mandalist_offensive3 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = CLA.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = mand_lose_land3}}
+	}
+	mand_lose_land3 = {
+		visible = {
+			always = no
+		}
+		is_good = no
+		days_remove = 7
+		modifier = {weekly_manpower = -10000}
+		complete_effect = {set_country_flag = some_major_gangsta_shit_going_on}
+		remove_effect = {
+			clr_country_flag = some_major_gangsta_shit_going_on
+			hidden_effect = {country_event = {id = mandgeneric.3}}
+		}
+	}
+	KUM_mandalist_offensive4 = {
+		icon = generic_army_support
+		available = {hidden_trigger = {always = no}}
+		activation = {always = no}
+		is_good = no
+		days_mission_timeout = KUM.timevariable
+		timeout_effect = {hidden_effect = {activate_decision = mand_lose_land4}}
+	}
+	mand_lose_land4 = {
+		visible = {
+			always = no
+		}
+		is_good = no
+		days_remove = 7
+		modifier = {weekly_manpower = -10000}
+		complete_effect = {set_country_flag = some_major_gangsta_shit_going_on}
+		remove_effect = {
+			clr_country_flag = some_major_gangsta_shit_going_on
+			hidden_effect = {country_event = {id = mandgeneric.4}}
+		}
+	}
+}

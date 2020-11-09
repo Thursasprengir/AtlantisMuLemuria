@@ -200,6 +200,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			set_country_flag = KLK_mandalists_in_power
 			add_ideas = {KLK_workers_1}
 		}
 	}
@@ -1102,7 +1103,6 @@ focus = {
 
 		ai_will_do = {factor = 2}
 		available = {}
-		bypass = {CLA = {has_country_flag = mandalists_flag}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1112,7 +1112,9 @@ focus = {
 			custom_effect_tooltip = 01_CLA_mand
 			CLA = {
 				set_country_flag = mandalists_flag
+				country_event = {id = mandgeneric.1}
 			}
+			set_variable = {var = CLA.duration value = 50}
 		}
 	}
 	focus = {
@@ -1127,7 +1129,6 @@ focus = {
 
 		ai_will_do = {factor = 2}
 		available = {}
-		bypass = {KUM = {has_country_flag = mandalists_flag}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1137,7 +1138,9 @@ focus = {
 			custom_effect_tooltip = 01_KUM_mand
 			KUM = {
 				set_country_flag = mandalists_flag
+				country_event = {id = mandgeneric.1}
 			}
+			set_variable = {var = KUM.duration value = 50}
 		}
 	}
 	focus = {
@@ -1152,7 +1155,6 @@ focus = {
 
 		ai_will_do = {factor = 2}
 		available = {}
-		bypass = {LSN = {has_country_flag = mandalists_flag}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1162,7 +1164,9 @@ focus = {
 			custom_effect_tooltip = 01_LSN_mand
 			LSN = {
 				set_country_flag = mandalists_flag
+				country_event = {id = mandgeneric.1}
 			}
+			set_variable = {var = LSN.duration value = 50}
 		}
 	}
 	focus = {
