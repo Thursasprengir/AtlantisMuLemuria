@@ -1101,7 +1101,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			custom_effect_tooltip = 01_CLA_mand
+			custom_effect_tooltip = 01_KUM_mand
 			KUM = {
 				set_country_flag = mandalists_flag
 				country_event = {id = mandgeneric.1}
@@ -1127,7 +1127,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			custom_effect_tooltip = 01_KUM_mand
+			custom_effect_tooltip = 01_CLA_mand
 			CLA = {
 				set_country_flag = mandalists_flag
 				country_event = {id = mandgeneric.1}
@@ -1768,7 +1768,7 @@ focus = {
 	focus = {
 		id = KLK_quality_armor
 		icon = GFX_focus_generic_tank_production
-		prerequisite = {focus = KLK_quality_motor focus = KLK_quality_fighters}
+		prerequisite = {focus = KLK_quality_motor}
 		
 		x = 27
 		y = 7

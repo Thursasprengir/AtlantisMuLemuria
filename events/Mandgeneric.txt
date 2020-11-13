@@ -265,22 +265,22 @@ country_event = {
 		else_if = {
 			limit = {1021 = {has_state_flag = mandalist_activity_0}}
 			1021 = {set_state_flag = mandalist_activity_1}
-			1021 = {remove_core_of = KLK}
-			1020 = {remove_core_of = KLK}
+			1021 = {remove_core_of = KUM}
+			1020 = {remove_core_of = KUM}
 			hidden_effect = {
 				activate_decision = mand_time
-				activate_mission = KLK_mandalist_offensive4
+				activate_mission = KUM_mandalist_offensive4
 			}
 		}
 		else_if = {
 			1021 = {set_state_flag = mandalist_activity_0}
 			swap_ideas = {
-				remove_idea = KLK_mandalist_guerrillas_debuff_1
-				add_idea = KLK_mandalist_guerrillas_debuff_2
+				remove_idea = KUM_mandalist_guerrillas_debuff_1
+				add_idea = KUM_mandalist_guerrillas_debuff_2
 			}
 			hidden_effect = {
 				activate_decision = mand_time
-				activate_mission = KLK_mandalist_offensive4
+				activate_mission = KUM_mandalist_offensive4
 			}
 		}
 	}
@@ -294,11 +294,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = mandgeneric.5.a
-		news_event = {id = mandgeneric.10}
+		KLK = {news_event = {id = mandgeneric.10}}
 	}
 	option = {
 		name = mandgeneric.5.b
-		news_event = {id = mandgeneric.10}
+		KLK = {news_event = {id = mandgeneric.10}}
 	}
 }
 news_event = {
@@ -362,10 +362,31 @@ news_event = {
 	desc = mandgeneric.10.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	major = yes
 	fire_only_once = yes
 	option = {
 		name = mandgeneric.10.a
+	}
+}
+news_event = {
+	id = mandgeneric.11
+	title = mandgeneric.11.t
+	desc = mandgeneric.11.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mandgeneric.11.a
+	}
+}
+news_event = {
+	id = mandgeneric.12
+	title = mandgeneric.12.t
+	desc = mandgeneric.12.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mandgeneric.12.a
 	}
 }
 
