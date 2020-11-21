@@ -178,9 +178,36 @@ country_event = {
 	option = {
 		name = mandalism.5.a
 		set_country_flag = mandalists_victorious
+		add_ideas = KLK_razed_country
+		add_ideas = KLK_FUD
+		hidden_effect = {
+			remove_mission = KLK_assassination_infiltrate
+			remove_mission = KLK_assassination_reduce_cost
+		}
 	}
 	option = {
 		name = mandalism.5.b
+		MKL = {
+			set_state_owner = 1000
+			set_state_controller = 1000
+			set_state_owner = 1027
+			set_state_controller = 1027
+			set_state_owner = 1028
+			set_state_controller = 1028
+			set_state_owner = 1029
+			set_state_controller = 1029
+		}
+		hidden_effect = {MKL = {load_oob = "MKL_cw"}}
+		hidden_effect = {
+			remove_mission = KLK_assassination_infiltrate
+			remove_mission = KLK_assassination_reduce_cost
+		}
+		MKL = {
+			declare_war_on = {
+				target = KLK
+				type = topple_government
+			}
+		}
 	}
 }
 news_event = {
