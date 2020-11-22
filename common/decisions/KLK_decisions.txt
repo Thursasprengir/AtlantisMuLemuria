@@ -151,6 +151,13 @@ KLK_anti_mandalist_decisions = {
 	KLK_assassination_1 = {
 		icon = generic_army_support
 		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = BOMBOCLAAT
+					has_country_flag = mandalists_defeated
+					has_country_flag = mandalists_victorious
+				}
+			}
 			has_country_flag = KLK_deep_state_flag
 			NOT = {has_country_flag = mandalist_leader_killed1}
 		}
@@ -165,6 +172,13 @@ KLK_anti_mandalist_decisions = {
 	KLK_assassination_2 = {
 		icon = generic_army_support
 		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = BOMBOCLAAT
+					has_country_flag = mandalists_defeated
+					has_country_flag = mandalists_victorious
+				}
+			}
 			has_country_flag = mandalist_leader_killed1
 			NOT = {has_country_flag = mandalist_leader_killed2}
 		}
@@ -179,6 +193,13 @@ KLK_anti_mandalist_decisions = {
 	KLK_assassination_3 = {
 		icon = generic_army_support
 		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = BOMBOCLAAT
+					has_country_flag = mandalists_defeated
+					has_country_flag = mandalists_victorious
+				}
+			}
 			has_country_flag = mandalist_leader_killed2
 			NOT = {has_country_flag = mandalist_boss_killed}
 		}
@@ -425,6 +446,68 @@ KLK_anti_mandalist_decisions = {
 				set_country_flag = KLK_no_mandalists
 				multiply_variable = {var = KLK.duration value = 1.5}
 			}
+		}
+	}
+	KLK_recore_1000 = {
+		icon = generic_nationalism
+		available = {
+			NOT = {has_country_flag = KLK_recoring}
+		}
+		visible = {
+			has_country_flag = mandalists_defeated
+			1000 = {NOT = {is_core_of = KLK}}
+		}
+		days_remove = 150
+		ai_will_do = {factor = 1000}
+		complete_effect = {set_country_flag = KLK_recoring}
+		remove_effect = {
+			clr_country_flag = KLK_recoring
+			1000 = {add_core_of = KLK}
+		}
+	}
+	KLK_recore_1027 = {
+		icon = generic_nationalism
+		available = {NOT = {has_country_flag = KLK_recoring}}
+		visible = {
+			has_country_flag = mandalists_defeated
+			1027 = {NOT = {is_core_of = KLK}}
+		}
+		days_remove = 150
+		ai_will_do = {factor = 1000}
+		complete_effect = {set_country_flag = KLK_recoring}
+		remove_effect = {
+			clr_country_flag = KLK_recoring
+			1027 = {add_core_of = KLK}
+		}
+	}
+	KLK_recore_1028 = {
+		icon = generic_nationalism
+		available = {NOT = {has_country_flag = KLK_recoring}}
+		visible = {
+			has_country_flag = mandalists_defeated
+			1028 = {NOT = {is_core_of = KLK}}
+		}
+		days_remove = 150
+		ai_will_do = {factor = 1000}
+		complete_effect = {set_country_flag = KLK_recoring}
+		remove_effect = {
+			clr_country_flag = KLK_recoring
+			1028 = {add_core_of = KLK}
+		}
+	}
+	KLK_recore_1029 = {
+		icon = generic_nationalism
+		available = {NOT = {has_country_flag = KLK_recoring}}
+		visible = {
+			has_country_flag = mandalists_defeated
+			1029 = {NOT = {is_core_of = KLK}}
+		}
+		days_remove = 150
+		ai_will_do = {factor = 1000}
+		complete_effect = {set_country_flag = KLK_recoring}
+		remove_effect = {
+			clr_country_flag = KLK_recoring
+			1029 = {add_core_of = KLK}
 		}
 	}
 }

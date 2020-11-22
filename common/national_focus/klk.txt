@@ -563,6 +563,9 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				NOT = {has_country_flag = BOMBOCLAAT}
+			}
 			activate_mission = KLK_assassination_infiltrate
 			set_variable = {var = KLK.assassination_cost value = 250}
 			add_ideas = {KLK_deep_state}
@@ -1084,10 +1087,15 @@ focus = {
 		
 		completion_reward = {
 		    set_politics = { ruling_party = neutrality elections_allowed = no }
-			swap_ideas = {
-				remove_idea = KLK_bunch_of_ugly_commies
-				add_idea = KLK_bunch_of_nice_commies
+			hidden_effect = {
+				remove_ideas = {
+					KLK_bunch_of_ugly_commies
+					KLK_bunch_of_ugly_commies_2
+					KLK_bunch_of_ugly_commies_3
+					KLK_bunch_of_ugly_commies_4
+				}
 			}
+			add_ideas = KLK_bunch_of_nice_commies
 		}
 	}
 	focus = {

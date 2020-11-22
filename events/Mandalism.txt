@@ -180,6 +180,8 @@ country_event = {
 		set_country_flag = mandalists_victorious
 		add_ideas = KLK_razed_country
 		add_ideas = KLK_FUD
+		set_politics = {ruling_party = neutrality elections_allowed = no}
+		clr_country_flag = mandalists_flag
 		hidden_effect = {
 			remove_mission = KLK_assassination_infiltrate
 			remove_mission = KLK_assassination_reduce_cost
@@ -187,20 +189,27 @@ country_event = {
 	}
 	option = {
 		name = mandalism.5.b
-		MKL = {
-			set_state_owner = 1000
-			set_state_controller = 1000
-			set_state_owner = 1027
-			set_state_controller = 1027
-			set_state_owner = 1028
-			set_state_controller = 1028
-			set_state_owner = 1029
-			set_state_controller = 1029
+		hidden_effect = {
+			MKL = {
+				set_state_owner = 1000
+				set_state_controller = 1000
+				set_state_owner = 1027
+				set_state_controller = 1027
+				set_state_owner = 1028
+				set_state_controller = 1028
+				set_state_owner = 1029
+				set_state_controller = 1029
+				1000 = {add_core_of = KLK}
+				1027 = {add_core_of = KLK}
+				1028 = {add_core_of = KLK}
+				1029 = {add_core_of = KLK}
+			}
 		}
 		hidden_effect = {MKL = {load_oob = "MKL_cw"}}
 		hidden_effect = {
 			remove_mission = KLK_assassination_infiltrate
 			remove_mission = KLK_assassination_reduce_cost
+			remove_ideas = KLK_mandalist_guerrillas_debuff_2
 		}
 		MKL = {
 			declare_war_on = {
@@ -208,8 +217,12 @@ country_event = {
 				type = topple_government
 			}
 		}
+		set_country_flag = BOMBOCLAAT
+		set_variable = {var = MKL.spawntime value = 1}
+		MKL = {activate_mission = MKL_spawn_endless_dudes_with_guns}
 	}
 }
+#asanvarinnu killed
 news_event = {
 	id = mandalism.6
 	title = mandalism.6.t
@@ -243,6 +256,7 @@ country_event = {
 		set_country_flag = KLK_increased_conscription
 	}
 }
+#mandalists defeated
 news_event = {
 	id = mandalism.8
 	title = mandalism.8.t
@@ -254,11 +268,30 @@ news_event = {
 		name = mandalism.8.a
 	}
 }
-
-
-
-
-
+#mandalists win civil war
+country_event = {
+	id = mandalism.9
+	title = mandalism.9.t
+	desc = mandalism.9.d
+	picture = GFX_news_event_fighting_gangsters
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mandalism.9.a
+	}
+}
+#mandalists lose civil war
+country_event = {
+	id = mandalism.10
+	title = mandalism.10.t
+	desc = mandalism.10.d
+	picture = GFX_news_event_fighting_gangsters
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mandalism.10.a
+	}
+}
 
 
 
