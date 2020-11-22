@@ -8,6 +8,10 @@ on_actions = {
 					ROOT = { tag = KLK }
 				}
 				clr_country_flag = BOMBOCLAAT
+				MKL = {
+					remove_mission = MKL_spawn_endless_dudes_with_guns
+					remove_mission = MKL_reload
+				}
 				KLK = {
 					set_state_owner = 1000
 					set_state_controller = 1000
@@ -69,6 +73,10 @@ on_actions = {
 				limit = {
 					FROM = { tag = KLK }
 					ROOT = { tag = MKL }
+				}
+				MKL = {
+					remove_mission = MKL_spawn_endless_dudes_with_guns
+					remove_mission = MKL_reload
 				}
 				clr_country_flag = BOMBOCLAAT
 				KLK = {

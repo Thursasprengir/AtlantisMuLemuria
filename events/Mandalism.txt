@@ -181,10 +181,31 @@ country_event = {
 		add_ideas = KLK_razed_country
 		add_ideas = KLK_FUD
 		set_politics = {ruling_party = neutrality elections_allowed = no}
+		load_focus_tree = {tree = klk_focus keep_completed = no}
+		complete_national_focus = KLK_main
+		complete_national_focus = KLK_leftism
+		complete_national_focus = KLK_syndicalism
+		complete_national_focus = KLK_synd_right_1
+		complete_national_focus = KLK_synd_right_2
 		clr_country_flag = mandalists_flag
 		hidden_effect = {
 			remove_mission = KLK_assassination_infiltrate
 			remove_mission = KLK_assassination_reduce_cost
+		}
+		clr_country_flag = KLK_mercenary_flag
+		clr_country_flag = KLK_anti_mandalism_flag
+		clr_country_flag = KLK_deep_state_flag
+		remove_ideas = {
+			KLK_deregulation
+			KLK_deregulation_2
+			KLK_cultural_shift
+			KLK_militarized_state
+			KLK_crackdowns
+			KLK_liberals
+			KLK_deep_state
+			KLK_media_licensing
+			KLK_american_media
+			KLK_holidays
 		}
 	}
 	option = {
