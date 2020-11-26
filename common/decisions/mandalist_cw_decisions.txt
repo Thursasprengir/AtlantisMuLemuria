@@ -1,0 +1,209 @@
+Mandalist_decisions = {
+	MKL_spawn_endless_dudes_with_guns = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = MKL.spawntime
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MKL_reload}
+			1029 = {
+				create_unit = {
+					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+					owner = MKL
+				}
+			}
+			add_to_variable = {
+				var = MKL.spawntime
+				value = 1
+			}
+		}
+	}
+	MKL_reload = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 1
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MKL_spawn_endless_dudes_with_guns}
+		}
+	}
+	MKM_spawn_endless_dudes_with_guns = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = MKM.spawntime
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MKM_reload}
+			1023 = {
+				create_unit = {
+					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+					owner = MKM
+				}
+				create_unit = {
+					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+					owner = MKM
+				}
+				create_unit = {
+					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+					owner = MKM
+				}
+			}
+			add_to_variable = {
+				var = MKM.spawntime
+				value = 1
+			}
+		}
+	}
+	MKM_reload = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 1
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MKM_spawn_endless_dudes_with_guns}
+		}
+	}
+	MKM_reload_2 = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 1
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MKM_rearm}
+		}
+	}
+	MKM_rearm = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 10
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = MKM
+			}
+			hidden_effect = {activate_mission = MKM_reload_2}
+		}
+	}
+	MCL_spawn_endless_dudes_with_guns = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = MCL.spawntime
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MCL_reload}
+			1033 = {
+				create_unit = {
+					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+					owner = MCL
+				}
+				create_unit = {
+					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+					owner = MCL
+				}
+			}
+			add_to_variable = {
+				var = MCL.spawntime
+				value = 1
+			}
+		}
+	}
+	MCL_reload = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 1
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MCL_spawn_endless_dudes_with_guns}
+		}
+	}
+	MCL_reload_2 = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 1
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MCL_rearm}
+		}
+	}
+	MCL_rearm = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 10
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = MCL
+			}
+			hidden_effect = {activate_mission = MCL_reload_2}
+		}
+	}
+	MLS_spawn_endless_dudes_with_guns = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = MLS.spawntime
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MLS_reload}
+			1030 = {
+				create_unit = {
+					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+					owner = MLS
+				}
+			}
+			add_to_variable = {
+				var = MLS.spawntime
+				value = 1
+			}
+		}
+	}
+	MLS_reload = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 1
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MLS_spawn_endless_dudes_with_guns}
+		}
+	}
+	MLS_reload_2 = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 1
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			hidden_effect = {activate_mission = MLS_rearm}
+		}
+	}
+	MLS_rearm = {
+		icon = generic_army_support
+		is_good = yes
+		days_mission_timeout = 10
+		available = {hidden_trigger = { always = no }}
+		activation = {always = no}
+		timeout_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = MLS
+			}
+			hidden_effect = {activate_mission = MLS_reload_2}
+		}
+	}
+}

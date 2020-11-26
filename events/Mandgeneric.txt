@@ -38,6 +38,15 @@ country_event = {
 				hidden_effect = {
 					activate_decision = mand_time
 					activate_mission = KUM_mandalist_offensive1
+					1023 = {add_core_of = MKM}
+					1024 = {add_core_of = MKM}
+					1025 = {add_core_of = MKM}
+					1022 = {add_core_of = MKM}
+					1026 = {add_core_of = MKM}
+					1058 = {add_core_of = MKM}
+					1019 = {add_core_of = MKM}
+					1021 = {add_core_of = MKM}
+					1020 = {add_core_of = MKM}
 				}
 			}
 		}
@@ -70,6 +79,12 @@ country_event = {
 				1001 = {set_state_flag = mandalist_activity_0}
 				add_ideas = CLA_mandalist_guerrillas_debuff
 				hidden_effect = {
+					1001 = {add_core_of = MCL}
+					1032 = {add_core_of = MCL}
+					1002 = {add_core_of = MCL}
+					1033 = {add_core_of = MCL}
+					1034 = {add_core_of = MCL}
+					1031 = {add_core_of = MCL}
 					activate_decision = mand_time
 					activate_mission = CLA_mandalist_offensive1
 				}
@@ -99,6 +114,7 @@ country_event = {
 				hidden_effect = {
 					activate_decision = mand_time
 					activate_mission = LSN_mandalist_offensive1
+					1030 = {add_core_of = MLS}
 				}
 			}
 		}
@@ -137,7 +153,10 @@ country_event = {
 			}
 			else_if = {
 				1022 = {set_state_flag = mandalist_activity_0}
-				add_ideas = KUM_mandalist_guerrillas_debuff
+				swap_ideas = {
+					remove_idea = KUM_mandalist_guerrillas_debuff
+					add_idea = KUM_mandalist_guerrillas_debuff_1
+				}
 				hidden_effect = {
 					activate_decision = mand_time
 					activate_mission = KUM_mandalist_offensive2
@@ -167,7 +186,10 @@ country_event = {
 			}
 			else_if = {
 				1033 = {set_state_flag = mandalist_activity_0}
-				add_ideas = CLA_mandalist_guerrillas_debuff
+				swap_ideas = {
+					remove_idea = CLA_mandalist_guerrillas_debuff
+					add_idea = CLA_mandalist_guerrillas_debuff_1
+				}
 				hidden_effect = {
 					activate_decision = mand_time
 					activate_mission = CLA_mandalist_offensive2
@@ -209,7 +231,10 @@ country_event = {
 			}
 			else_if = {
 				1058 = {set_state_flag = mandalist_activity_0}
-				add_ideas = KUM_mandalist_guerrillas_debuff
+				swap_ideas = {
+					remove_idea = KUM_mandalist_guerrillas_debuff_1
+					add_idea = KUM_mandalist_guerrillas_debuff_2
+				}
 				hidden_effect = {
 					activate_decision = mand_time
 					activate_mission = KUM_mandalist_offensive3
@@ -238,7 +263,10 @@ country_event = {
 			}
 			else_if = {
 				1034 = {set_state_flag = mandalist_activity_0}
-				add_ideas = CLA_mandalist_guerrillas_debuff
+				swap_ideas = {
+					remove_idea = CLA_mandalist_guerrillas_debuff_1
+					add_idea = CLA_mandalist_guerrillas_debuff_2
+				}
 				hidden_effect = {
 					activate_decision = mand_time
 					activate_mission = CLA_mandalist_offensive3
@@ -275,8 +303,8 @@ country_event = {
 		else_if = {
 			1021 = {set_state_flag = mandalist_activity_0}
 			swap_ideas = {
-				remove_idea = KUM_mandalist_guerrillas_debuff_1
-				add_idea = KUM_mandalist_guerrillas_debuff_2
+				remove_idea = KUM_mandalist_guerrillas_debuff_2
+				add_idea = KUM_mandalist_guerrillas_debuff_3
 			}
 			hidden_effect = {
 				activate_decision = mand_time
@@ -290,50 +318,139 @@ country_event = {
 	title = mandgeneric.5.t
 	desc = mandgeneric.5.d
 	picture = GFX_news_event_fighting_gangsters
-	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
+		ai_chance = {factor = 0}
 		name = mandgeneric.5.a
-		KLK = {news_event = {id = mandgeneric.10}}
-	}
-	option = {
-		name = mandgeneric.5.b
-		KLK = {news_event = {id = mandgeneric.10}}
-	}
-}
-news_event = {
-	id = mandgeneric.6
-	title = mandgeneric.6.t
-	desc = mandgeneric.6.d
-	picture = GFX_news_event_fighting_gangsters
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = mandgeneric.6.a
-	}
-}
-country_event = {
-	id = mandgeneric.7
-	title = mandgeneric.7.t
-	desc = mandgeneric.7.d
-	picture = GFX_news_event_fighting_gangsters
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = mandgeneric.7.a
-		if = {limit = {has_idea = limited_conscription} add_ideas = extensive_conscription}
-		else_if = {limit = {has_idea = volunteer_only} add_ideas = limited_conscription}
-		add_timed_idea = {
-			idea = KLK_crippled_economy
-			days = 360
+		set_country_flag = mandalists_victorious
+		set_politics = {ruling_party = neutrality elections_allowed = no}
+		if = {
+			limit = {original_tag = KUM}
+			remove_ideas = KUM_mandalist_guerrillas_debuff_3
+			hidden_effect = {
+				1023 = {add_core_of = KUM}
+				1024 = {add_core_of = KUM}
+				1025 = {add_core_of = KUM}
+				1022 = {add_core_of = KUM}
+				1026 = {add_core_of = KUM}
+				1058 = {add_core_of = KUM}
+				1019 = {add_core_of = KUM}
+				1021 = {add_core_of = KUM}
+				1020 = {add_core_of = KUM}
+			}
 		}
-		set_country_flag = KLK_increased_conscription
+		else_if = {
+			limit = {original_tag = CLA}
+			remove_ideas = CLA_mandalist_guerrillas_debuff_2
+			hidden_effect = {
+				1001 = {add_core_of = CLA}
+				1032 = {add_core_of = CLA}
+				1002 = {add_core_of = CLA}
+				1033 = {add_core_of = CLA}
+				1034 = {add_core_of = CLA}
+				1031 = {add_core_of = CLA}
+			}
+		}
+		else_if = {
+			limit = {original_tag = LSN}
+			remove_ideas = LSN_mandalist_guerrillas_debuff
+			hidden_effect = {1030 = {add_core_of = LSN}}
+		}
 	}
 	option = {
-		name = mandgeneric.7.b
-		set_country_flag = KLK_increased_conscription
+		ai_chance = {factor = 300}
+		name = mandgeneric.5.b
+		set_country_flag = BOMBOCLAAT
+		if = {
+			limit = {original_tag = KUM}
+			remove_ideas = KUM_mandalist_guerrillas_debuff_3
+			hidden_effect = {
+				1023 = {add_core_of = KUM}
+				1024 = {add_core_of = KUM}
+				1025 = {add_core_of = KUM}
+				1022 = {add_core_of = KUM}
+				1026 = {add_core_of = KUM}
+				1058 = {add_core_of = KUM}
+				1019 = {add_core_of = KUM}
+				1021 = {add_core_of = KUM}
+				1020 = {add_core_of = KUM}
+				MKM = {
+					set_state_owner = 1023
+					set_state_controller = 1023
+					set_state_owner = 1024
+					set_state_controller = 1024
+					set_state_owner = 1025
+					set_state_controller = 1025
+					set_state_owner = 1022
+					set_state_controller = 1022
+					set_state_owner = 1026
+					set_state_controller = 1026
+					set_state_owner = 1058
+					set_state_controller = 1058
+					set_state_owner = 1019
+					set_state_controller = 1019
+					set_state_owner = 1021
+					set_state_controller = 1021
+					set_state_owner = 1020
+					set_state_controller = 1020
+					MKM = {load_oob = "MKM_cw"}
+				}
+			}
+			MKM = {declare_war_on = {target = KUM type = topple_government}}
+			set_variable = {var = MKM.spawntime value = 1}
+			MKM = {activate_mission = MKM_spawn_endless_dudes_with_guns}
+			MKM = {activate_mission = MKM_rearm}
+		}
+		else_if = {
+			limit = {original_tag = CLA}
+			remove_ideas = CLA_mandalist_guerrillas_debuff_2
+			hidden_effect = {
+				1001 = {add_core_of = CLA}
+				1032 = {add_core_of = CLA}
+				1002 = {add_core_of = CLA}
+				1033 = {add_core_of = CLA}
+				1034 = {add_core_of = CLA}
+				1031 = {add_core_of = CLA}
+				MCL = {
+					set_state_owner = 1001
+					set_state_controller = 1001
+					set_state_owner = 1032
+					set_state_controller = 1032
+					set_state_owner = 1002
+					set_state_controller = 1002
+					set_state_owner = 1033
+					set_state_controller = 1033
+					set_state_owner = 1034
+					set_state_controller = 1034
+					set_state_owner = 1031
+					set_state_controller = 1031
+					MCL = {load_oob = "MCL_cw"}
+				}
+			}
+			MCL = {declare_war_on = {target = CLA type = topple_government}}
+			set_variable = {var = MCL.spawntime value = 1}
+			MCL = {activate_mission = MCL_spawn_endless_dudes_with_guns}
+			MCL = {activate_mission = MCL_rearm}
+		}
+		else_if = {
+			limit = {original_tag = LSN}
+			remove_ideas = LSN_mandalist_guerrillas_debuff
+			hidden_effect = {
+				1030 = {add_core_of = LSN}
+				MLS = {
+					set_state_owner = 1030
+					set_state_controller = 1030
+					MLS = {load_oob = "MLS_cw"}
+				}
+			}
+			MLS = {declare_war_on = {target = LSN type = topple_government}}
+			set_variable = {var = MLS.spawntime value = 1}
+			MLS = {activate_mission = MLS_spawn_endless_dudes_with_guns}
+			MLS = {activate_mission = MLS_rearm}
+		}
 	}
 }
+#mandalists defeated
 news_event = {
 	id = mandgeneric.8
 	title = mandgeneric.8.t
@@ -345,6 +462,7 @@ news_event = {
 		name = mandgeneric.8.a
 	}
 }
+#mandalists victorious
 news_event = {
 	id = mandgeneric.9
 	title = mandgeneric.9.t
@@ -356,40 +474,6 @@ news_event = {
 		name = mandgeneric.9.a
 	}
 }
-news_event = {
-	id = mandgeneric.10
-	title = mandgeneric.10.t
-	desc = mandgeneric.10.d
-	picture = GFX_news_event_fighting_gangsters
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = mandgeneric.10.a
-	}
-}
-news_event = {
-	id = mandgeneric.11
-	title = mandgeneric.11.t
-	desc = mandgeneric.11.d
-	picture = GFX_news_event_fighting_gangsters
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = mandgeneric.11.a
-	}
-}
-news_event = {
-	id = mandgeneric.12
-	title = mandgeneric.12.t
-	desc = mandgeneric.12.d
-	picture = GFX_news_event_fighting_gangsters
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = mandgeneric.12.a
-	}
-}
-
 
 
 

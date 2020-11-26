@@ -1,0 +1,74 @@
+﻿capital = 1023
+
+set_stability = 1
+set_war_support = 1
+
+set_research_slots = 0
+
+set_technology = {
+	gw_artillery = 1
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	elections_allowed = no
+}
+
+set_popularities = {
+		communism = 15
+		neutrality = 85
+		}
+
+create_country_leader = {
+	name = "Mansurdu Bigreshta"
+	desc = "POLITICS_MANSURDU_BIGRESHTA_DESC"
+	picture = "Portrait_KLK_M_Bigreshta.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Latsgrivva Vandri"
+	desc = "POLITICS_LATSGRIVVA_VANDRI_DESC"
+	picture = "Portrait_KLK_L_Vandri.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pentumur Il"
+	desc = "POLITICS_PENTUMUR_IL_DESC"
+	picture = "Portrait_KLK_P_Il.dds"
+	expire = "1965.1.1"
+	ideology = mainline_mandalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Asanvarinnu"
+	desc = "POLITICS_ANHARAVSHA_TRIMIVURDA_DESC"
+	picture = "portrait_asanvarinnu.dds"
+	expire = "1965.1.1"
+	ideology = anarcho_mandalism
+	traits = {
+		indomitable_perseverance
+	}
+}
+
+
+create_corps_commander = {
+	name = "Asanvarinnu"
+	portrait_path = "gfx/leaders/MKL/portrait_asanvarinnu.dds"
+	traits = { trickster }
+	skill = 3
+}
