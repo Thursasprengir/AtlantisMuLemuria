@@ -55,6 +55,30 @@ Mandalist_decisions = {
 				var = MKM.spawntime
 				value = 1
 			}
+			if = {
+				check_variable = {MKM.spawntime > 15}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+					producer = MKM
+				}
+			}
+			if = {
+				check_variable = {MKM.spawntime > 20}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 1000
+					producer = MKM
+				}
+			}
+			if = {
+				check_variable = {MKM.spawntime > 25}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = 1000
+					producer = MKM
+				}
+			}
 		}
 	}
 	MKM_reload = {
@@ -114,6 +138,30 @@ Mandalist_decisions = {
 				var = MCL.spawntime
 				value = 1
 			}
+			if = {
+				check_variable = {MCL.spawntime > 15}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 700
+					producer = MCL
+				}
+			}
+			if = {
+				check_variable = {MCL.spawntime > 20}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 700
+					producer = MCL
+				}
+			}
+			if = {
+				check_variable = {MCL.spawntime > 25}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = 700
+					producer = MCL
+				}
+			}
 		}
 	}
 	MCL_reload = {
@@ -168,6 +216,30 @@ Mandalist_decisions = {
 			add_to_variable = {
 				var = MLS.spawntime
 				value = 1
+			}
+			if = {
+				check_variable = {MLS.spawntime > 15}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 500
+					producer = MLS
+				}
+			}
+			if = {
+				check_variable = {MLS.spawntime > 20}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 500
+					producer = MLS
+				}
+			}
+			if = {
+				check_variable = {MLS.spawntime > 25}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = 500
+					producer = MLS
+				}
 			}
 		}
 	}
