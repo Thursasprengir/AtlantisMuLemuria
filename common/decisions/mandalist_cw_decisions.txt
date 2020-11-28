@@ -1,4 +1,62 @@
 Mandalist_decisions = {
+	KUM_second_rebellion = {
+		icon = generic_air
+		available = {
+			KUM = {
+				has_war_with = MKM
+				casualties > 50000
+				NOT = {controls_state = 1019}
+			}
+			NOT = {has_country_flag = KAPOOYAH}
+		}
+		visible = {original_tag = MKM}
+		ai_will_do = {factor = 1000}
+		complete_effect = {
+			set_technology = {tech_mountaineers = 1}
+			KUM = {country_event = mandgeneric.10}
+			set_country_flag = KAPOOYAH
+		}
+	}
+	CLA_second_rebellion = {
+		icon = generic_air
+		available = {
+			CLA = {
+				has_war_with = MCL
+				casualties > 20000
+				NOT = {
+					AND = {
+						controls_state = 1031
+						controls_state = 1034
+					}
+				}
+			}
+			NOT = {has_country_flag = KAPOOYAH}
+		}
+		visible = {original_tag = MCL}
+		ai_will_do = {factor = 1000}
+		complete_effect = {
+			set_technology = {tech_mountaineers = 1}
+			CLA = {country_event = mandgeneric.10}
+			set_country_flag = KAPOOYAH
+		}
+	}
+	LSN_second_rebellion = {
+		icon = generic_air
+		available = {
+			LSN = {
+				has_war_with = MLS
+				casualties > 10000
+			}
+			NOT = {has_country_flag = KAPOOYAH}
+		}
+		visible = {original_tag = MLS}
+		ai_will_do = {factor = 1000}
+		complete_effect = {
+			set_technology = {tech_mountaineers = 1}
+			LSN = {country_event = mandgeneric.10}
+			set_country_flag = KAPOOYAH
+		}
+	}
 	MKL_spawn_endless_dudes_with_guns = {
 		icon = generic_army_support
 		is_good = yes
@@ -37,44 +95,75 @@ Mandalist_decisions = {
 		activation = {always = no}
 		timeout_effect = {
 			hidden_effect = {activate_mission = MKM_reload}
-			1023 = {
-				create_unit = {
-					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
-					owner = MKM
-				}
-				create_unit = {
-					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
-					owner = MKM
-				}
-				create_unit = {
-					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
-					owner = MKM
-				}
-			}
 			add_to_variable = {
 				var = MKM.spawntime
 				value = 1
 			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = MKM
+			}
 			if = {
-				check_variable = {MKM.spawntime > 15}
+				limit = {check_variable = {MKM.spawntime < 11}}
+				1023 = {
+					create_unit = {
+						division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+						owner = MKM
+					}
+				}
+			}
+			else_if = {
+				limit = {check_variable = {MKM.spawntime < 16}}
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
+					type = infantry_equipment_0
 					amount = 1000
 					producer = MKM
 				}
+				1023 = {
+					create_unit = {
+						division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+				}
 			}
-			if = {
-				check_variable = {MKM.spawntime > 20}
+			else_if = {
+				limit = {check_variable = {MKM.spawntime < 21}}
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_2
+					type = infantry_equipment_0
 					amount = 1000
 					producer = MKM
 				}
+				1023 = {
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+				}
 			}
-			if = {
-				check_variable = {MKM.spawntime > 25}
+			else = {
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_3
+					type = artillery_equipment_1
 					amount = 1000
 					producer = MKM
 				}
@@ -113,6 +202,30 @@ Mandalist_decisions = {
 				amount = 2000
 				producer = MKM
 			}
+			if = {
+				limit = {check_variable = {MKM.spawntime > 15}}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1400
+					producer = MKM
+				}
+			}
+			if = {
+				limit = {check_variable = {MKM.spawntime > 20}}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1000
+					producer = MKM
+				}
+			}
+			if = {
+				limit = {check_variable = {MKM.spawntime > 25}}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 100
+					producer = MKM
+				}
+			}
 			hidden_effect = {activate_mission = MKM_reload_2}
 		}
 	}
@@ -124,41 +237,60 @@ Mandalist_decisions = {
 		activation = {always = no}
 		timeout_effect = {
 			hidden_effect = {activate_mission = MCL_reload}
-			1033 = {
-				create_unit = {
-					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
-					owner = MCL
-				}
-				create_unit = {
-					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
-					owner = MCL
-				}
-			}
 			add_to_variable = {
 				var = MCL.spawntime
 				value = 1
 			}
 			if = {
-				check_variable = {MCL.spawntime > 15}
+				limit = {check_variable = {MCL.spawntime < 11}}
+				1033 = {
+					create_unit = {
+						division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+						owner = MCL
+					}
+					create_unit = {
+						division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+						owner = MCL
+					}
+				}
+			}
+			else_if = {
+				limit = {check_variable = {MCL.spawntime < 16}}
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
+					type = infantry_equipment_0
 					amount = 700
 					producer = MCL
 				}
+				1033 = {
+					create_unit = {
+						division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+						owner = MCL
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MCL
+					}
+				}
 			}
-			if = {
-				check_variable = {MCL.spawntime > 20}
+			else_if = {
+				limit = {check_variable = {MCL.spawntime < 21}}
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_2
+					type = infantry_equipment_0
 					amount = 700
 					producer = MCL
 				}
+				1033 = {
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MCL
+					}
+				}
 			}
-			if = {
-				check_variable = {MCL.spawntime > 25}
+			else = {
+				limit = {check_variable = {MCL.spawntime < 26}}
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_3
-					amount = 700
+					type = artillery_equipment_1
+					amount = 100
 					producer = MCL
 				}
 			}
@@ -196,6 +328,30 @@ Mandalist_decisions = {
 				amount = 1000
 				producer = MCL
 			}
+			if = {
+				limit = {check_variable = {MCL.spawntime > 16}}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 700
+					producer = MCL
+				}
+			}
+			if = {
+				limit = {check_variable = {MCL.spawntime > 21}}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 400
+					producer = MCL
+				}
+			}
+			if = {
+				limit = {check_variable = {MCL.spawntime > 26}}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 50
+					producer = MCL
+				}
+			}
 			hidden_effect = {activate_mission = MCL_reload_2}
 		}
 	}
@@ -207,39 +363,34 @@ Mandalist_decisions = {
 		activation = {always = no}
 		timeout_effect = {
 			hidden_effect = {activate_mission = MLS_reload}
-			1030 = {
-				create_unit = {
-					division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
-					owner = MLS
+			if = {
+				limit = {check_variable = {MCL.spawntime < 11}}
+				1030 = {
+					create_unit = {
+						division = "name = \"Mandalist Militia\" division_template = \"Mandalist Militias\" start_experience_factor = 0.2"
+						owner = MLS
+					}
+				}
+			}
+			else_if = {
+				limit = {check_variable = {MCL.spawntime < 21}}
+				1030 = {
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MLS
+					}
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 30
+					producer = MLS
 				}
 			}
 			add_to_variable = {
 				var = MLS.spawntime
 				value = 1
-			}
-			if = {
-				check_variable = {MLS.spawntime > 15}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 500
-					producer = MLS
-				}
-			}
-			if = {
-				check_variable = {MLS.spawntime > 20}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_2
-					amount = 500
-					producer = MLS
-				}
-			}
-			if = {
-				check_variable = {MLS.spawntime > 25}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_3
-					amount = 500
-					producer = MLS
-				}
 			}
 		}
 	}
@@ -272,8 +423,32 @@ Mandalist_decisions = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
-				amount = 500
+				amount = 1000
 				producer = MLS
+			}
+			if = {
+				limit = {check_variable = {MLS.spawntime > 15}}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 500
+					producer = MLS
+				}
+			}
+			if = {
+				limit = {check_variable = {MLS.spawntime > 20}}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 300
+					producer = MLS
+				}
+			}
+			if = {
+				limit = {check_variable = {MLS.spawntime > 25}}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 50
+					producer = MLS
+				}
 			}
 			hidden_effect = {activate_mission = MLS_reload_2}
 		}

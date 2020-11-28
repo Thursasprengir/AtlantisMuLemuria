@@ -11,7 +11,7 @@
 			factor = 100
 		}
 		available = {
-		ROOT = {has_country_flag = capitalists_win has_country_flag = mandalists_win}
+		ROOT = {has_country_flag = mandalists_defeated has_country_flag = mandalists_victorious}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -36,7 +36,7 @@
 		}
 
 		available = {
-		ROOT = {has_country_flag = capitalists_win}
+		ROOT = {has_country_flag = mandalists_defeated}
 		THIS = {
 					has_government = democratic
 				}
@@ -917,7 +917,7 @@
 		available = {
 		THIS = {
 					has_government = neutrality
-					ROOT = {has_country_flag = mandalists_win }
+					ROOT = {has_country_flag = mandalists_victorious }
 				}
 		}
 
@@ -1504,35 +1504,6 @@
 
 		completion_reward = {
 			add_ideas = LEM_partisan_mandal
-		}
-	}
-
-	shared_focus = {
-		id = INDOLEM2_join_kalari
-		icon = GFX_
-		prerequisite = { focus = INDOLEM2_the_national}
-		prerequisite = { focus = INDOLEM2_designate_regional}
-		mutually_exclusive = { focus = INDOLEM2_consolidate_orange_wave }
-		x = 3
-		y = 10
-		relative_position_id = INDOLEM2_founding_documents
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		THIS = {
-					has_government = neutrality
-				}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		completion_reward = {
-			KLK = { annex_country = ROOT }
 		}
 	}
 

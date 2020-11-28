@@ -191,6 +191,8 @@ country_event = {
 		hidden_effect = {
 			remove_mission = KLK_assassination_infiltrate
 			remove_mission = KLK_assassination_reduce_cost
+			country_event = {id = mandalism.11 days = 100}
+			country_event = {id = mandalism.12 days = 120}
 		}
 		clr_country_flag = KLK_mercenary_flag
 		clr_country_flag = KLK_anti_mandalism_flag
@@ -312,6 +314,72 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = mandalism.10.a
+	}
+}
+#screwed up country
+country_event = {
+	id = mandalism.11
+	title = mandalism.11.t
+	desc = mandalism.11.d
+	picture = GFX_news_event_fighting_gangsters
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mandalism.11.a
+		if = {
+			limit = {
+				KLK = {has_idea = KLK_razed_country}
+				swap_ideas = {
+					remove_idea = KLK_razed_country
+					add_idea = KLK_razed_country_2
+				}
+				country_event = {id = mandalism.11 days = 100}
+			}
+		}
+		if = {
+			limit = {
+				KLK = {has_idea = KLK_razed_country_2}
+				swap_ideas = {
+					remove_idea = KLK_razed_country_2
+					add_idea = KLK_razed_country_3
+				}
+				country_event = {id = mandalism.11 days = 100}
+			}
+		}
+		if = {
+			limit = {
+				KLK = {has_idea = KLK_razed_country_3}
+				remove_ideas = KLK_razed_country_3
+			}
+		}
+	}
+}
+#trust
+country_event = {
+	id = mandalism.12
+	title = mandalism.12.t
+	desc = mandalism.12.d
+	picture = GFX_news_event_fighting_gangsters
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = mandalism.12.a
+		if = {
+			limit = {
+				KLK = {has_idea = KLK_FUD}
+				swap_ideas = {
+					remove_idea = KLK_FUD
+					add_idea = KLK_FUD_2
+				}
+				country_event = {id = mandalism.12 days = 120}
+			}
+		}
+		if = {
+			limit = {
+				KLK = {has_idea = KLK_FUD_2}
+				remove_ideas = KLK_FUD_2
+			}
+		}
 	}
 }
 

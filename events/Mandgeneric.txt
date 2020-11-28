@@ -324,6 +324,8 @@ country_event = {
 		name = mandgeneric.5.a
 		set_country_flag = mandalists_victorious
 		set_politics = {ruling_party = neutrality elections_allowed = no}
+		complete_national_focus = INDOLEM2_the_hooks
+		add_ideas = MAN_nonaligned_idea
 		if = {
 			limit = {original_tag = KUM}
 			remove_ideas = KUM_mandalist_guerrillas_debuff_3
@@ -363,6 +365,10 @@ country_event = {
 		set_country_flag = BOMBOCLAAT
 		if = {
 			limit = {original_tag = KUM}
+			add_ai_strategy = {
+				type = force_build_armies
+				value = 100
+			}
 			remove_ideas = KUM_mandalist_guerrillas_debuff_3
 			hidden_effect = {
 				1023 = {add_core_of = KUM}
@@ -375,6 +381,7 @@ country_event = {
 				1021 = {add_core_of = KUM}
 				1020 = {add_core_of = KUM}
 				MKM = {
+					inherit_technology = KUM
 					set_state_owner = 1023
 					set_state_controller = 1023
 					set_state_owner = 1024
@@ -412,6 +419,7 @@ country_event = {
 				1034 = {add_core_of = CLA}
 				1031 = {add_core_of = CLA}
 				MCL = {
+					inherit_technology = CLA
 					set_state_owner = 1001
 					set_state_controller = 1001
 					set_state_owner = 1032
@@ -438,6 +446,7 @@ country_event = {
 			hidden_effect = {
 				1030 = {add_core_of = LSN}
 				MLS = {
+					inherit_technology = LSN
 					set_state_owner = 1030
 					set_state_controller = 1030
 					MLS = {load_oob = "MLS_cw"}
@@ -472,6 +481,242 @@ news_event = {
 	fire_only_once = yes
 	option = {
 		name = mandgeneric.9.a
+	}
+}
+#too many casualties
+country_event = {
+	id = mandgeneric.10
+	title = mandgeneric.10.t
+	desc = mandgeneric.10.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.10.a
+		ai_chance = {factor = 0}
+		set_country_flag = mandalists_victorious
+		set_politics = {ruling_party = neutrality elections_allowed = no}
+		complete_national_focus = INDOLEM2_the_hooks
+		add_ideas = MAN_nonaligned_idea
+		if = {
+			limit = {original_tag = KUM}
+			remove_ideas = KUM_mandalist_guerrillas_debuff_3
+			hidden_effect = {
+				1023 = {add_core_of = KUM}
+				1024 = {add_core_of = KUM}
+				1025 = {add_core_of = KUM}
+				1022 = {add_core_of = KUM}
+				1026 = {add_core_of = KUM}
+				1058 = {add_core_of = KUM}
+				1019 = {add_core_of = KUM}
+				1021 = {add_core_of = KUM}
+				1020 = {add_core_of = KUM}
+			}
+		}
+		else_if = {
+			limit = {original_tag = CLA}
+			remove_ideas = CLA_mandalist_guerrillas_debuff_2
+			hidden_effect = {
+				1001 = {add_core_of = CLA}
+				1032 = {add_core_of = CLA}
+				1002 = {add_core_of = CLA}
+				1033 = {add_core_of = CLA}
+				1034 = {add_core_of = CLA}
+				1031 = {add_core_of = CLA}
+			}
+		}
+		else_if = {
+			limit = {original_tag = LSN}
+			remove_ideas = LSN_mandalist_guerrillas_debuff
+			hidden_effect = {1030 = {add_core_of = LSN}}
+		}
+	}
+	option = {
+		name = mandgeneric.10.b
+		ai_chance = {factor = 300}
+		if = {
+			limit = {original_tag = KUM}
+			custom_effect_tooltip = KUM_casualties
+			hidden_effect = {
+				1054 = {add_core_of = MKM}
+				992 = {add_core_of = MKM}
+				1018 = {add_core_of = MKM}
+				1017 = {add_core_of = MKM}
+				1003 = {add_core_of = MKM}
+				KUM = {add_timed_idea = {idea = MAN_defeatism days = 180}}
+				MKM = {
+					set_state_controller = 1017
+					set_state_controller = 1003
+				}
+				1023 = {
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Cavalry\" division_template = \"Mandalist Cavalry\" start_experience_factor = 0.4"
+						owner = MKM
+					}
+				}
+				1003 = {
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+				}
+				1017 = {
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MKM
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {original_tag = CLA}
+			custom_effect_tooltip = CLA_casualties
+			hidden_effect = {
+				809 = {add_core_of = MCL}
+				CLA = {add_timed_idea = {idea = MAN_defeatism days = 180}}
+				809 = {
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MCL
+						prioritize_location = 14262
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MCL
+						prioritize_location = 14262
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MCL
+						prioritize_location = 14262
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MCL
+						prioritize_location = 14262
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MCL
+						prioritize_location = 14262
+					}
+					create_unit = {
+						division = "name = \"Mandalist Mountain Militias\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MCL
+						prioritize_location = 14262
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {original_tag = LSN}
+			custom_effect_tooltip = LSN_casualties
+			hidden_effect = {
+				982 = {add_core_of = MLS}
+				LSN = {add_timed_idea = {idea = MAN_defeatism days = 180}}
+				982 = {
+					create_unit = {
+						division = "name = \"Mandalist Heavy Infantry\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MLS
+					}
+					create_unit = {
+						division = "name = \"Mandalist Heavy Infantry\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MLS
+					}
+					create_unit = {
+						division = "name = \"Mandalist Heavy Infantry\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MLS
+					}
+					create_unit = {
+						division = "name = \"Mandalist Heavy Infantry\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MLS
+					}
+					create_unit = {
+						division = "name = \"Mandalist Heavy Infantry\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MLS
+					}
+					create_unit = {
+						division = "name = \"Mandalist Heavy Infantry\" division_template = \"Mandalist Mountaineers\" start_experience_factor = 0.5"
+						owner = MLS
+					}
+				}
+			}
+		}
 	}
 }
 

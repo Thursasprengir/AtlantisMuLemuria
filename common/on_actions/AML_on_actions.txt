@@ -99,6 +99,7 @@ on_actions = {
 					FROM = { tag = MKM }
 					ROOT = { tag = KUM }
 				}
+				complete_national_focus = INDOLEM2_the_hooks
 				clr_country_flag = BOMBOCLAAT
 				MKM = {
 					remove_mission = MKM_spawn_endless_dudes_with_guns
@@ -128,7 +129,7 @@ on_actions = {
 				}
 				set_country_flag = mandalists_victorious
 				set_politics = {ruling_party = neutrality elections_allowed = no}
-				KUM = {add_ideas = KUM_nonaligned_idea}
+				KUM = {add_ideas = MAN_nonaligned_idea}
 				KUM = {white_peace = MKM}
 				country_event = {id = mandgeneric.9}
 				MKM = {
@@ -140,6 +141,14 @@ on_actions = {
 						division_template = "Infantry Division"
 						disband = yes #will refund equipment and manpower
 					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
 				}
 			}
 			if = {
@@ -147,6 +156,7 @@ on_actions = {
 					FROM = { tag = KUM }
 					ROOT = { tag = MKM }
 				}
+				complete_national_focus = INDOLEM2_the_hooks
 				MKM = {
 					remove_mission = MKM_spawn_endless_dudes_with_guns
 					remove_mission = MKM_reload_2
@@ -183,6 +193,7 @@ on_actions = {
 					FROM = { tag = MCL }
 					ROOT = { tag = CLA }
 				}
+				complete_national_focus = INDOLEM2_the_hooks
 				clr_country_flag = BOMBOCLAAT
 				MCL = {
 					remove_mission = MCL_spawn_endless_dudes_with_guns
@@ -206,7 +217,7 @@ on_actions = {
 				}
 				set_country_flag = mandalists_victorious
 				set_politics = {ruling_party = neutrality elections_allowed = no}
-				CLA = {add_ideas = CLA_nonaligned_idea}
+				CLA = {add_ideas = MAN_nonaligned_idea}
 				CLA = {white_peace = MCL}
 				country_event = {id = mandgeneric.9}
 				MCL = {
@@ -218,6 +229,14 @@ on_actions = {
 						division_template = "Infantry Division"
 						disband = yes #will refund equipment and manpower
 					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
 				}
 			}
 			if = {
@@ -225,6 +244,7 @@ on_actions = {
 					FROM = { tag = CLA }
 					ROOT = { tag = MCL }
 				}
+				complete_national_focus = INDOLEM2_the_hooks
 				MCL = {
 					remove_mission = MCL_spawn_endless_dudes_with_guns
 					remove_mission = MCL_reload_2
@@ -255,6 +275,7 @@ on_actions = {
 					FROM = { tag = MLS }
 					ROOT = { tag = LSN }
 				}
+				complete_national_focus = INDOLEM2_the_hooks
 				clr_country_flag = BOMBOCLAAT
 				MLS = {
 					remove_mission = MLS_spawn_endless_dudes_with_guns
@@ -268,7 +289,7 @@ on_actions = {
 				}
 				set_country_flag = mandalists_victorious
 				set_politics = {ruling_party = neutrality elections_allowed = no}
-				LSN = {add_ideas = LSN_nonaligned_idea}
+				LSN = {add_ideas = MAN_nonaligned_idea}
 				LSN = {white_peace = MLS}
 				country_event = {id = mandgeneric.9}
 				MLS = {
@@ -280,6 +301,14 @@ on_actions = {
 						division_template = "Infantry Division"
 						disband = yes #will refund equipment and manpower
 					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
 				}
 			}
 			if = {
@@ -287,6 +316,7 @@ on_actions = {
 					FROM = { tag = LSN }
 					ROOT = { tag = MLS }
 				}
+				complete_national_focus = INDOLEM2_the_hooks
 				MLS = {
 					remove_mission = MLS_spawn_endless_dudes_with_guns
 					remove_mission = MLS_reload
