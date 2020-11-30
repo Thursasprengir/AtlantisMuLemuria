@@ -6,11 +6,11 @@
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
-		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
 	}
 	support = {
 		recon = {x = 0 y = 0}
-		artillery = {x = 0 y = 0}
+		artillery = {x = 0 y = 1}
 	}
 }
 division_template = {
@@ -24,7 +24,7 @@ division_template = {
 	}
 	support = {
 		recon = {x = 0 y = 0}
-		artillery = {x = 0 y = 0}
+		artillery = {x = 0 y = 1}
 	}
 }
 
@@ -35,7 +35,7 @@ units = {
 		location = 14813
 		division_template = "Div. d'Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division = {
@@ -43,7 +43,7 @@ units = {
 		location = 14838
 		division_template = "Div. d'Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -51,7 +51,7 @@ units = {
 		location = 5346
 		division_template = "Div. d'Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -59,7 +59,7 @@ units = {
 		location = 5346
 		division_template = "Div. d'Infanterie"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division = {
@@ -67,7 +67,7 @@ units = {
 		location = 14813
 		division_template = "Div. d'Infanterie"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -75,7 +75,7 @@ units = {
 		location = 14815
 		division_template = "Div. d'Infanterie"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division = {
@@ -83,7 +83,7 @@ units = {
 		location = 8399
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 }

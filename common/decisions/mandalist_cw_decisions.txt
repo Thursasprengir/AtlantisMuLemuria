@@ -7,14 +7,14 @@ Mandalist_decisions = {
 				casualties > 50000
 				NOT = {controls_state = 1019}
 			}
-			NOT = {has_country_flag = KAPOOYAH}
+			MKM = {NOT = {has_country_flag = KAPOOYAH}}
 		}
 		visible = {original_tag = MKM}
 		ai_will_do = {factor = 1000}
 		complete_effect = {
 			set_technology = {tech_mountaineers = 1}
 			KUM = {country_event = mandgeneric.10}
-			set_country_flag = KAPOOYAH
+			MKM = {set_country_flag = KAPOOYAH}
 		}
 	}
 	CLA_second_rebellion = {
@@ -30,14 +30,14 @@ Mandalist_decisions = {
 					}
 				}
 			}
-			NOT = {has_country_flag = KAPOOYAH}
+			MCL = {NOT = {has_country_flag = KAPOOYAH}}
 		}
 		visible = {original_tag = MCL}
 		ai_will_do = {factor = 1000}
 		complete_effect = {
 			set_technology = {tech_mountaineers = 1}
 			CLA = {country_event = mandgeneric.10}
-			set_country_flag = KAPOOYAH
+			MCL = {set_country_flag = KAPOOYAH}
 		}
 	}
 	LSN_second_rebellion = {
@@ -47,14 +47,14 @@ Mandalist_decisions = {
 				has_war_with = MLS
 				casualties > 10000
 			}
-			NOT = {has_country_flag = KAPOOYAH}
+			MLS = {NOT = {has_country_flag = KAPOOYAH}}
 		}
 		visible = {original_tag = MLS}
 		ai_will_do = {factor = 1000}
 		complete_effect = {
 			set_technology = {tech_mountaineers = 1}
 			LSN = {country_event = mandgeneric.10}
-			set_country_flag = KAPOOYAH
+			MLS = {set_country_flag = KAPOOYAH}
 		}
 	}
 	MKL_spawn_endless_dudes_with_guns = {

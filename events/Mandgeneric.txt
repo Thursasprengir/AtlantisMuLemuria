@@ -348,6 +348,8 @@ country_event = {
 				1019 = {set_demilitarized_zone = no}
 				1021 = {set_demilitarized_zone = no}
 				1020 = {set_demilitarized_zone = no}
+				SDU = {country_event = {id = mandgeneric.11 days = 30}}
+				MKU = {country_event = {id = mandgeneric.11 days = 10}}
 			}
 		}
 		else_if = {
@@ -366,6 +368,10 @@ country_event = {
 				1033 = {set_demilitarized_zone = no}
 				1034 = {set_demilitarized_zone = no}
 				1031 = {set_demilitarized_zone = no}
+				if = {
+					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+					KUM = {add_ai_strategy = {type = alliance id = CLA value = 1000}}
+				}
 			}
 		}
 		else_if = {
@@ -374,6 +380,10 @@ country_event = {
 			hidden_effect = {
 				1030 = {add_core_of = LSN}
 				1030 = {set_demilitarized_zone = no}
+				if = {
+					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+					KUM = {add_ai_strategy = {type = alliance id = LSN value = 1000}}
+				}
 			}
 		}
 	}
@@ -383,10 +393,6 @@ country_event = {
 		set_country_flag = BOMBOCLAAT
 		if = {
 			limit = {original_tag = KUM}
-			add_ai_strategy = {
-				type = force_build_armies
-				value = 100
-			}
 			remove_ideas = MAN_mandalist_guerrillas_debuff_3
 			hidden_effect = {
 				1023 = {add_core_of = KUM}
@@ -483,7 +489,6 @@ news_event = {
 	title = mandgeneric.8.t
 	desc = mandgeneric.8.d
 	picture = GFX_news_event_fighting_gangsters
-	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = mandgeneric.8.a
@@ -496,7 +501,6 @@ news_event = {
 	desc = mandgeneric.9.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	fire_only_once = yes
 	option = {
 		name = mandgeneric.9.a
 	}
@@ -510,20 +514,16 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = mandgeneric.10.a
-		ai_chance = {
-			if = {
-				limit = {original_tag = CLA}
-				factor = 1000
-			}
-			else = {factor = 10}
-		}
+		ai_will_do = {base = 10 factor = 1}
 		set_country_flag = mandalists_victorious
 		set_politics = {ruling_party = neutrality elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_ideas = MAN_nonaligned_idea
+		clr_country_flag = BOMBOCLAAT
+		custom_effect_tooltip = MAN_white_peace_tooltip
 		if = {
 			limit = {original_tag = KUM}
-			remove_ideas = MAN_mandalist_guerrillas_debuff_3
+			KUM = {white_peace = MKM}
 			hidden_effect = {
 				1023 = {add_core_of = KUM}
 				1024 = {add_core_of = KUM}
@@ -534,11 +534,66 @@ country_event = {
 				1019 = {add_core_of = KUM}
 				1021 = {add_core_of = KUM}
 				1020 = {add_core_of = KUM}
+				1023 = {set_demilitarized_zone = no}
+				1024 = {set_demilitarized_zone = no}
+				1025 = {set_demilitarized_zone = no}
+				1022 = {set_demilitarized_zone = no}
+				1026 = {set_demilitarized_zone = no}
+				1058 = {set_demilitarized_zone = no}
+				1019 = {set_demilitarized_zone = no}
+				1021 = {set_demilitarized_zone = no}
+				1020 = {set_demilitarized_zone = no}
+				KUM = {
+					set_state_owner = 1023
+					set_state_controller = 1023
+					set_state_owner = 1024
+					set_state_controller = 1024
+					set_state_owner = 1025
+					set_state_controller = 1025
+					set_state_owner = 1022
+					set_state_controller = 1022
+					set_state_owner = 1026
+					set_state_controller = 1026
+					set_state_owner = 1058
+					set_state_controller = 1058
+					set_state_owner = 1019
+					set_state_controller = 1019
+					set_state_owner = 1021
+					set_state_controller = 1021
+					set_state_owner = 1020
+					set_state_controller = 1020
+				}
+				SDU = {country_event = {id = mandgeneric.11}}
+				MKU = {country_event = {id = mandgeneric.11}}
+				MKM = {
+					remove_mission = MKM_spawn_endless_dudes_with_guns
+					remove_mission = MKM_reload_2
+					remove_mission = MKM_reload
+					remove_mission = MKM_rearm
+				}
+				country_event = {id = mandgeneric.9}
+				MKM = {
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Militias"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Infantry Division"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
+				}
 			}
 		}
 		else_if = {
 			limit = {original_tag = CLA}
-			remove_ideas = MAN_mandalist_guerrillas_debuff_2
 			hidden_effect = {
 				1001 = {add_core_of = CLA}
 				1032 = {add_core_of = CLA}
@@ -546,20 +601,110 @@ country_event = {
 				1033 = {add_core_of = CLA}
 				1034 = {add_core_of = CLA}
 				1031 = {add_core_of = CLA}
+				1001 = {set_demilitarized_zone = no}
+				1032 = {set_demilitarized_zone = no}
+				1002 = {set_demilitarized_zone = no}
+				1033 = {set_demilitarized_zone = no}
+				1034 = {set_demilitarized_zone = no}
+				1031 = {set_demilitarized_zone = no}
+				CLA = {
+					set_state_owner = 1001
+					set_state_controller = 1001
+					set_state_owner = 1032
+					set_state_controller = 1032
+					set_state_owner = 1002
+					set_state_controller = 1002
+					set_state_owner = 1033
+					set_state_controller = 1033
+					set_state_owner = 1034
+					set_state_controller = 1034
+					set_state_owner = 1031
+					set_state_controller = 1031
+				}
+				if = {
+					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+					KUM = {add_ai_strategy = {type = alliance id = CLA value = 1000}}
+				}
+				MCL = {
+					remove_mission = MCL_spawn_endless_dudes_with_guns
+					remove_mission = MCL_reload_2
+					remove_mission = MCL_reload
+					remove_mission = MCL_rearm
+				}
+				CLA = {white_peace = MCL}
+				country_event = {id = mandgeneric.9}
+				MCL = {
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Militias"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Infantry Division"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
+				}
 			}
 		}
 		else_if = {
 			limit = {original_tag = LSN}
-			remove_ideas = MAN_mandalist_guerrillas_debuff
-			hidden_effect = {1030 = {add_core_of = LSN}}
+			hidden_effect = {
+				1030 = {add_core_of = LSN}
+				1030 = {set_demilitarized_zone = no}
+				LSN = {
+					set_state_owner = 1030
+					set_state_controller = 1030
+				}
+				if = {
+					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+					KUM = {add_ai_strategy = {type = alliance id = LSN value = 1000}}
+				}
+				MLS = {
+					remove_mission = MLS_spawn_endless_dudes_with_guns
+					remove_mission = MLS_reload_2
+					remove_mission = MLS_reload
+					remove_mission = MLS_rearm
+				}
+				LSN = {white_peace = MLS}
+				country_event = {id = mandgeneric.9}
+				MLS = {
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Militias"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Infantry Division"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
+				}
+			}
 		}
 	}
 	option = {
 		name = mandgeneric.10.b
-		ai_chance = {factor = 10}
+		ai_will_do = {
+			base = 10
+			modifier = {tag = CLA factor = 0}
+			factor = 1
+		}
+		custom_effect_tooltip = MAN_casualties
 		if = {
 			limit = {original_tag = KUM}
-			custom_effect_tooltip = KUM_casualties
 			hidden_effect = {
 				1054 = {add_core_of = MKM}
 				992 = {add_core_of = MKM}
@@ -669,7 +814,6 @@ country_event = {
 		}
 		else_if = {
 			limit = {original_tag = CLA}
-			custom_effect_tooltip = CLA_casualties
 			hidden_effect = {
 				809 = {add_core_of = MCL}
 				CLA = {add_timed_idea = {idea = MAN_defeatism days = 180}}
@@ -709,7 +853,6 @@ country_event = {
 		}
 		else_if = {
 			limit = {original_tag = LSN}
-			custom_effect_tooltip = LSN_casualties
 			hidden_effect = {
 				982 = {add_core_of = MLS}
 				LSN = {add_timed_idea = {idea = MAN_defeatism days = 180}}
@@ -741,6 +884,203 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+#Mandalists knock on your door. What would you do? What can you even do?
+country_event = {
+	id = mandgeneric.11
+	title = mandgeneric.11.t
+	desc = mandgeneric.11.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.11.a
+		ai_will_do = {
+			base = 10
+			modifier = {tag = SDU factor = 0}
+			factor = 1
+		}
+		set_country_flag = mandalists_victorious
+		set_politics = {ruling_party = neutrality elections_allowed = no}
+		complete_national_focus = INDOLEM2_the_hooks
+		add_ideas = MAN_nonaligned_idea
+		if = {
+			limit = {original_tag = SDU}
+			if = {
+				limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+				SDU = {country_event = {id = mandgeneric.17 days = 25}}
+			}
+			hidden_effect = {UTU = {country_event = {id = mandgeneric.11}}}
+		}
+		if = {
+			limit = {original_tag = UTU}
+			if = {
+				limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+				UTU = {country_event = {id = mandgeneric.17 days = 30}}
+			}
+		}
+		if = {
+			limit = {original_tag = MKU}
+			MKU = {set_country_flag = MKU_kumarikkandam}
+			if = {
+				limit = {MKU = {has_completed_focus = MKU_complete_allies}}
+				MKU = {country_event = {id = mandgeneric.15 days = 5}}
+			}
+		}
+	}
+	option = {
+		name = mandgeneric.11.b
+		ai_will_do = {
+			base = 10
+			modifier = {NOT = {tag = SDU} factor = 0}
+			factor = 1
+		}
+		set_country_flag = mandalists_defeated
+		complete_national_focus = INDOLEM2_the_hooks
+		add_timed_idea = {
+			idea = MAN_angry_mandalists
+			days = 180
+		}
+		if = {
+			limit = {original_tag = SDU}
+			hidden_effect = {UTU = {country_event = {id = mandgeneric.12}}}
+		}
+	}
+}
+#Uturan princedom won't have any more mandalists. All dead in Siduru. RIP my dudes
+country_event = {
+	id = mandgeneric.12
+	title = mandgeneric.12.t
+	desc = mandgeneric.12.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.12.a
+		set_country_flag = mandalists_defeated
+		complete_national_focus = INDOLEM2_the_hooks
+	}
+}
+#dutch east indies having a real problem in their hands huehehue
+country_event = {
+	id = mandgeneric.13
+	title = mandgeneric.13.t
+	desc = mandgeneric.13.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.13.a
+		ai_will_do = {base = 10 factor = 1}
+		CLA = {
+			set_state_owner = 994
+			set_state_controller = 994
+		}
+	}
+	option = {
+		name = mandgeneric.13.b
+		ai_will_do = {
+			base = 10
+			modifier = {is_historical_focus_on = yes factor = 0}
+			factor = 1
+		}
+		CLA = {
+			create_wargoal = {
+				target = "INS"
+				type = take_core_state
+				expire = 0
+			}
+		}
+	}
+}
+#Bortugal having a real problem in their hands huehehue
+country_event = {
+	id = mandgeneric.14
+	title = mandgeneric.14.t
+	desc = mandgeneric.14.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.14.a
+		UTU = {
+			set_state_owner = 1061
+			set_state_controller = 1061
+		}
+	}
+	option = {
+		name = mandgeneric.14.b
+		UTU = {
+			create_wargoal = {
+				target = "POR"
+				type = take_core_state
+				expire = 0
+			}
+		}
+	}
+}
+#Kumarikkandam invite sent
+country_event = {
+	id = mandgeneric.15
+	title = mandgeneric.15.t
+	desc = mandgeneric.15.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.15.a
+		KUM = {country_event = {id = mandgeneric.16}}
+	}
+	option = {
+		ai_chance = {factor = 0}
+		name = mandgeneric.15.b
+	}
+}
+#Kumarikkandam invite received
+country_event = {
+	id = mandgeneric.16
+	title = mandgeneric.16.t
+	desc = mandgeneric.16.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.16.a
+		KUM = {set_country_flag = KUM_kumarikkandam}
+		KUM = {create_faction = kandam_confederacy}
+		KUM = {add_to_faction = MKU}
+		if = {
+			limit = {CLA = {has_country_flag = mandalists_victorious}}
+			CLA = {country_event = {id = mandgeneric.17 days = 25}}
+		}
+		if = {
+			limit = {LSN = {has_country_flag = mandalists_victorious}}
+			LSN = {country_event = {id = mandgeneric.17 days = 20}}
+		}
+		if = {
+			limit = {UTU = {has_country_flag = mandalists_victorious}}
+			UTU = {country_event = {id = mandgeneric.17 days = 25}}
+		}
+		if = {
+			limit = {SDU = {has_country_flag = mandalists_victorious}}
+			SDU = {country_event = {id = mandgeneric.17 days = 30}}
+		}
+		KLK = {country_event = {id = mandgeneric.17 days = 10}}
+	}
+	option = {
+		name = mandgeneric.16.b
+		ai_chance = {factor = 0}
+	}
+}
+#another one joins the club
+country_event = {
+	id = mandgeneric.17
+	title = mandgeneric.17.t
+	desc = mandgeneric.17.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.17.a
+		KUM = {add_to_faction = ROOT}
+	}
+	option = {
+		name = mandgeneric.17.b
+		ai_chance = {factor = 0}
 	}
 }
 

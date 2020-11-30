@@ -128,6 +128,8 @@ on_actions = {
 					set_state_controller = 1020
 				}
 				set_country_flag = mandalists_victorious
+				SDU = {country_event = {id = mandgeneric.11 days = 30}}
+				MKU = {country_event = {id = mandgeneric.11 days = 10}}
 				set_politics = {ruling_party = neutrality elections_allowed = no}
 				KUM = {add_ideas = MAN_nonaligned_idea}
 				KUM = {white_peace = MKM}
@@ -187,6 +189,9 @@ on_actions = {
 				set_country_flag = mandalists_defeated
 				KUM = {white_peace = MKM}
 				country_event = {id = mandgeneric.8}
+				SDU = {country_event = {id = mandgeneric.12}}
+				UTU = {country_event = {id = mandgeneric.12}}
+				MKU = {country_event = {id = mandgeneric.12}}
 			}
 			if = {
 				limit = {
@@ -216,6 +221,10 @@ on_actions = {
 					set_state_controller = 1031
 				}
 				set_country_flag = mandalists_victorious
+				if = {
+					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+					CLA = {country_event = {id = mandgeneric.17 days = 12}}
+				}
 				set_politics = {ruling_party = neutrality elections_allowed = no}
 				CLA = {add_ideas = MAN_nonaligned_idea}
 				CLA = {white_peace = MCL}
@@ -288,6 +297,10 @@ on_actions = {
 					set_state_controller = 1030
 				}
 				set_country_flag = mandalists_victorious
+				if = {
+					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+					LSN = {country_event = {id = mandgeneric.17 days = 12}}
+				}
 				set_politics = {ruling_party = neutrality elections_allowed = no}
 				LSN = {add_ideas = MAN_nonaligned_idea}
 				LSN = {white_peace = MLS}
