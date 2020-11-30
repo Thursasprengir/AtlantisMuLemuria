@@ -34,7 +34,7 @@ country_event = {
 			}
 			else_if = {
 				1023 = {set_state_flag = mandalist_activity_0}
-				add_ideas = KUM_mandalist_guerrillas_debuff
+				add_ideas = MAN_mandalist_guerrillas_debuff
 				hidden_effect = {
 					activate_decision = mand_time
 					activate_mission = KUM_mandalist_offensive1
@@ -77,7 +77,7 @@ country_event = {
 			}
 			else_if = {
 				1001 = {set_state_flag = mandalist_activity_0}
-				add_ideas = CLA_mandalist_guerrillas_debuff
+				add_ideas = MAN_mandalist_guerrillas_debuff
 				hidden_effect = {
 					1001 = {add_core_of = MCL}
 					1032 = {add_core_of = MCL}
@@ -110,7 +110,7 @@ country_event = {
 			}
 			else_if = {
 				1030 = {set_state_flag = mandalist_activity_0}
-				add_ideas = LSN_mandalist_guerrillas_debuff
+				add_ideas = MAN_mandalist_guerrillas_debuff
 				hidden_effect = {
 					activate_decision = mand_time
 					activate_mission = LSN_mandalist_offensive1
@@ -154,8 +154,8 @@ country_event = {
 			else_if = {
 				1022 = {set_state_flag = mandalist_activity_0}
 				swap_ideas = {
-					remove_idea = KUM_mandalist_guerrillas_debuff
-					add_idea = KUM_mandalist_guerrillas_debuff_1
+					remove_idea = MAN_mandalist_guerrillas_debuff
+					add_idea = MAN_mandalist_guerrillas_debuff_1
 				}
 				hidden_effect = {
 					activate_decision = mand_time
@@ -187,8 +187,8 @@ country_event = {
 			else_if = {
 				1033 = {set_state_flag = mandalist_activity_0}
 				swap_ideas = {
-					remove_idea = CLA_mandalist_guerrillas_debuff
-					add_idea = CLA_mandalist_guerrillas_debuff_1
+					remove_idea = MAN_mandalist_guerrillas_debuff
+					add_idea = MAN_mandalist_guerrillas_debuff_1
 				}
 				hidden_effect = {
 					activate_decision = mand_time
@@ -232,8 +232,8 @@ country_event = {
 			else_if = {
 				1058 = {set_state_flag = mandalist_activity_0}
 				swap_ideas = {
-					remove_idea = KUM_mandalist_guerrillas_debuff_1
-					add_idea = KUM_mandalist_guerrillas_debuff_2
+					remove_idea = MAN_mandalist_guerrillas_debuff_1
+					add_idea = MAN_mandalist_guerrillas_debuff_2
 				}
 				hidden_effect = {
 					activate_decision = mand_time
@@ -264,8 +264,8 @@ country_event = {
 			else_if = {
 				1034 = {set_state_flag = mandalist_activity_0}
 				swap_ideas = {
-					remove_idea = CLA_mandalist_guerrillas_debuff_1
-					add_idea = CLA_mandalist_guerrillas_debuff_2
+					remove_idea = MAN_mandalist_guerrillas_debuff_1
+					add_idea = MAN_mandalist_guerrillas_debuff_2
 				}
 				hidden_effect = {
 					activate_decision = mand_time
@@ -303,8 +303,8 @@ country_event = {
 		else_if = {
 			1021 = {set_state_flag = mandalist_activity_0}
 			swap_ideas = {
-				remove_idea = KUM_mandalist_guerrillas_debuff_2
-				add_idea = KUM_mandalist_guerrillas_debuff_3
+				remove_idea = MAN_mandalist_guerrillas_debuff_2
+				add_idea = MAN_mandalist_guerrillas_debuff_3
 			}
 			hidden_effect = {
 				activate_decision = mand_time
@@ -320,7 +320,7 @@ country_event = {
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
 	option = {
-		ai_chance = {factor = 0}
+		ai_chance = {factor = 10}
 		name = mandgeneric.5.a
 		set_country_flag = mandalists_victorious
 		set_politics = {ruling_party = neutrality elections_allowed = no}
@@ -328,7 +328,7 @@ country_event = {
 		add_ideas = MAN_nonaligned_idea
 		if = {
 			limit = {original_tag = KUM}
-			remove_ideas = KUM_mandalist_guerrillas_debuff_3
+			remove_ideas = MAN_mandalist_guerrillas_debuff_3
 			hidden_effect = {
 				1023 = {add_core_of = KUM}
 				1024 = {add_core_of = KUM}
@@ -339,11 +339,20 @@ country_event = {
 				1019 = {add_core_of = KUM}
 				1021 = {add_core_of = KUM}
 				1020 = {add_core_of = KUM}
+				1023 = {set_demilitarized_zone = no}
+				1024 = {set_demilitarized_zone = no}
+				1025 = {set_demilitarized_zone = no}
+				1022 = {set_demilitarized_zone = no}
+				1026 = {set_demilitarized_zone = no}
+				1058 = {set_demilitarized_zone = no}
+				1019 = {set_demilitarized_zone = no}
+				1021 = {set_demilitarized_zone = no}
+				1020 = {set_demilitarized_zone = no}
 			}
 		}
 		else_if = {
 			limit = {original_tag = CLA}
-			remove_ideas = CLA_mandalist_guerrillas_debuff_2
+			remove_ideas = MAN_mandalist_guerrillas_debuff_2
 			hidden_effect = {
 				1001 = {add_core_of = CLA}
 				1032 = {add_core_of = CLA}
@@ -351,16 +360,25 @@ country_event = {
 				1033 = {add_core_of = CLA}
 				1034 = {add_core_of = CLA}
 				1031 = {add_core_of = CLA}
+				1001 = {set_demilitarized_zone = no}
+				1032 = {set_demilitarized_zone = no}
+				1002 = {set_demilitarized_zone = no}
+				1033 = {set_demilitarized_zone = no}
+				1034 = {set_demilitarized_zone = no}
+				1031 = {set_demilitarized_zone = no}
 			}
 		}
 		else_if = {
 			limit = {original_tag = LSN}
-			remove_ideas = LSN_mandalist_guerrillas_debuff
-			hidden_effect = {1030 = {add_core_of = LSN}}
+			remove_ideas = MAN_mandalist_guerrillas_debuff
+			hidden_effect = {
+				1030 = {add_core_of = LSN}
+				1030 = {set_demilitarized_zone = no}
+			}
 		}
 	}
 	option = {
-		ai_chance = {factor = 300}
+		ai_chance = {factor = 10}
 		name = mandgeneric.5.b
 		set_country_flag = BOMBOCLAAT
 		if = {
@@ -369,7 +387,7 @@ country_event = {
 				type = force_build_armies
 				value = 100
 			}
-			remove_ideas = KUM_mandalist_guerrillas_debuff_3
+			remove_ideas = MAN_mandalist_guerrillas_debuff_3
 			hidden_effect = {
 				1023 = {add_core_of = KUM}
 				1024 = {add_core_of = KUM}
@@ -410,7 +428,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {original_tag = CLA}
-			remove_ideas = CLA_mandalist_guerrillas_debuff_2
+			remove_ideas = MAN_mandalist_guerrillas_debuff_2
 			hidden_effect = {
 				1001 = {add_core_of = CLA}
 				1032 = {add_core_of = CLA}
@@ -442,7 +460,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {original_tag = LSN}
-			remove_ideas = LSN_mandalist_guerrillas_debuff
+			remove_ideas = MAN_mandalist_guerrillas_debuff
 			hidden_effect = {
 				1030 = {add_core_of = LSN}
 				MLS = {
@@ -492,14 +510,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = mandgeneric.10.a
-		ai_chance = {factor = 0}
+		ai_chance = {
+			if = {
+				limit = {original_tag = CLA}
+				factor = 1000
+			}
+			else = {factor = 10}
+		}
 		set_country_flag = mandalists_victorious
 		set_politics = {ruling_party = neutrality elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_ideas = MAN_nonaligned_idea
 		if = {
 			limit = {original_tag = KUM}
-			remove_ideas = KUM_mandalist_guerrillas_debuff_3
+			remove_ideas = MAN_mandalist_guerrillas_debuff_3
 			hidden_effect = {
 				1023 = {add_core_of = KUM}
 				1024 = {add_core_of = KUM}
@@ -514,7 +538,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {original_tag = CLA}
-			remove_ideas = CLA_mandalist_guerrillas_debuff_2
+			remove_ideas = MAN_mandalist_guerrillas_debuff_2
 			hidden_effect = {
 				1001 = {add_core_of = CLA}
 				1032 = {add_core_of = CLA}
@@ -526,13 +550,13 @@ country_event = {
 		}
 		else_if = {
 			limit = {original_tag = LSN}
-			remove_ideas = LSN_mandalist_guerrillas_debuff
+			remove_ideas = MAN_mandalist_guerrillas_debuff
 			hidden_effect = {1030 = {add_core_of = LSN}}
 		}
 	}
 	option = {
 		name = mandgeneric.10.b
-		ai_chance = {factor = 300}
+		ai_chance = {factor = 10}
 		if = {
 			limit = {original_tag = KUM}
 			custom_effect_tooltip = KUM_casualties
