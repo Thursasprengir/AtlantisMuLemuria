@@ -583,4 +583,250 @@ ideas = {
 			}
 		}
 	}
+	political_advisor = {
+
+		KLK_quartermaster_gen = {
+
+			picture = generic_political_advisor_south_america_2
+
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { quartermaster_general }
+		}
+
+		KLK_backstabber = {
+
+			picture = generic_political_advisor_south_america_1
+				
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { backroom_backstabber }
+		}
+
+		KLK_prince_of_terror = {
+
+			picture = generic_political_advisor_south_america_3
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { prince_of_terror }
+		}
+	}
+
+	army_chief = {
+
+		KLK_offensive_2 = {
+
+			picture = generic_army_south_america_3
+			
+			allowed = {
+				original_tag = KLK
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KLK_defensive_2 = {
+
+			picture = generic_army_south_america_2
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		KLK_ground_support_2 = {
+
+			picture = generic_air_south_america_3
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KLK_night_ops_2 = {
+
+			picture = generic_air_south_america_2
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { air_chief_night_operations_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		KLK_maneuver_2 = {
+
+			picture = generic_navy_south_america_2
+			
+			allowed = {
+				original_tag = KLK
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KLK_commerce_raiding_2 = {
+
+			picture = generic_navy_south_america_1
+			
+			allowed = {
+				original_tag = KLK
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		KLK_regrouping_2 = {
+			ledger = army
+			picture = generic_army_south_america_1
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		KLK_logistics_2 = {
+			ledger = army
+			picture = generic_army_south_america_4
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KLK_close_air_support_2 = {
+			ledger = air
+			picture = generic_air_south_america_1
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KLK_capital_ship_2 = {
+			ledger = navy
+			picture = generic_navy_south_america_2
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		KLK_mil_theorist = {
+			ledger = army
+			picture = generic_army_south_america_5
+
+			allowed = {
+				original_tag = KLK
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		KLK_naval_theorist = {
+			ledger = navy
+			picture = generic_navy_south_america_1
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		KLK_air_theorist = {
+			ledger = air
+			picture = generic_air_south_america_1
+			
+			allowed = {
+				original_tag = KLK
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
 }

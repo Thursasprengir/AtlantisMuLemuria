@@ -1,121 +1,35 @@
 ideas = {
-	country = {
-		KUM_succession_crisis = {
-
-			available = {
-			}
-			picture = SPA_disjointed_carlist_juntas
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = -0.01
-			}
-		}
-		
-		KUM_expel_media = {
-
-			available = { 
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				intelligence_agency_defense = 1
-			}
-		}
-		
-		KUM_weak_monarch = {
-
-			available = {
-			}
-
-			removal_cost = -1
-			picture = hungarian_monarchy_democratic
-			modifier = {
-				political_power_gain = 0.5
-			}
-		}
-		
-		KUM_strong_monarch = {
-
-			available = {
-			}
- 
-			removal_cost = -1
-			picture = hungarian_monarchy
-			modifier = {
-				political_power_gain = 1.0
-			}
-		}
-		
-		
-		KUM_industrial_invest = {
-
-			available = {
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_buildings_factor = 0.1
-			}
-		}
-		KUM_leaky_engine = {
-
-			available = {
-			}
-			picture = generic_acquire_tanks
-			removal_cost = -1
-			
-			modifier = {
-				fuel_gain_factor = -0.2
-			}
-		}
-		
-		KUM_trial_error = {
-
-			available = {
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				air_accidents_factor = 0.50
-				experience_gain_air = 0.05
-			}
-		}
-		}
-		
+	
 	political_advisor = {
 
-		KUM_quartermaster_gen = {
+		SSS_quartermaster_gen = {
 
 			picture = generic_political_advisor_south_america_2
 
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { quartermaster_general }
 		}
 
-		KUM_backstabber = {
+		SSS_backstabber = {
 
 			picture = generic_political_advisor_south_america_1
 				
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { backroom_backstabber }
 		}
 
-		KUM_prince_of_terror = {
+		SSS_prince_of_terror = {
 
 			picture = generic_political_advisor_south_america_3
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { prince_of_terror }
@@ -124,12 +38,12 @@ ideas = {
 
 	army_chief = {
 
-		KUM_offensive_2 = {
+		SSS_offensive_2 = {
 
 			picture = generic_army_south_america_3
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}		
 			
 			traits = { army_chief_offensive_2 }
@@ -139,12 +53,12 @@ ideas = {
 			}
 		}
 
-		KUM_defensive_2 = {
+		SSS_defensive_2 = {
 
 			picture = generic_army_south_america_2
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { army_chief_defensive_2 }
@@ -157,12 +71,12 @@ ideas = {
 
 	air_chief = {
 
-		KUM_ground_support_2 = {
+		SSS_ground_support_2 = {
 
 			picture = generic_air_south_america_3
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { air_chief_ground_support_2 }
@@ -172,12 +86,12 @@ ideas = {
 			}
 		}
 
-		KUM_night_ops_2 = {
+		SSS_night_ops_2 = {
 
 			picture = generic_air_south_america_2
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { air_chief_night_operations_2 }
@@ -191,12 +105,12 @@ ideas = {
 
 	navy_chief = {
 
-		KUM_maneuver_2 = {
+		SSS_maneuver_2 = {
 
 			picture = generic_navy_south_america_2
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 					
 			traits = { navy_chief_maneuver_2 }
@@ -206,12 +120,12 @@ ideas = {
 			}
 		}
 
-		KUM_commerce_raiding_2 = {
+		SSS_commerce_raiding_2 = {
 
 			picture = generic_navy_south_america_1
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 					
 			traits = { navy_chief_commerce_raiding_2 }
@@ -224,12 +138,12 @@ ideas = {
 
 	high_command = {
 
-		KUM_regrouping_2 = {
+		SSS_regrouping_2 = {
 			ledger = army
 			picture = generic_army_south_america_1
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { army_regrouping_2 }
@@ -239,12 +153,12 @@ ideas = {
 			}
 		}
 		
-		KUM_logistics_2 = {
+		SSS_logistics_2 = {
 			ledger = army
 			picture = generic_army_south_america_4
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { army_logistics_2 }
@@ -254,12 +168,12 @@ ideas = {
 			}
 		}
 
-		KUM_close_air_support_2 = {
+		SSS_close_air_support_2 = {
 			ledger = air
 			picture = generic_air_south_america_1
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { air_close_air_support_2 }
@@ -269,12 +183,12 @@ ideas = {
 			}
 		}
 
-		KUM_capital_ship_2 = {
+		SSS_capital_ship_2 = {
 			ledger = navy
 			picture = generic_navy_south_america_2
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			traits = { navy_capital_ship_2 }
@@ -286,12 +200,12 @@ ideas = {
 	}	
 
 	theorist = {
-		KUM_mil_theorist = {
+		SSS_mil_theorist = {
 			ledger = army
 			picture = generic_army_south_america_5
 
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			research_bonus = {
@@ -301,12 +215,12 @@ ideas = {
 			traits = { military_theorist }
 		}
 		
-		KUM_naval_theorist = {
+		SSS_naval_theorist = {
 			ledger = navy
 			picture = generic_navy_south_america_1
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			research_bonus = {
@@ -316,12 +230,12 @@ ideas = {
 			traits = { naval_theorist }
 		}	
 
-		KUM_air_theorist = {
+		SSS_air_theorist = {
 			ledger = air
 			picture = generic_air_south_america_1
 			
 			allowed = {
-				original_tag = KUM
+				original_tag = SSS
 			}
 			
 			research_bonus = {
@@ -332,7 +246,4 @@ ideas = {
 		}
 
 	}
-		
-		
 }
-
