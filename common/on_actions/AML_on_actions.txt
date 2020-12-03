@@ -1,5 +1,6 @@
 on_actions = {
 	# ROOT is capitulated country, FROM is winner
+	################################################################## Rise of Mandalism
 	on_capitulation = {
 		effect = {
 			if = {
@@ -360,7 +361,8 @@ on_actions = {
 			}
 		}
 	}
-	
+	################################################################## BLM civil war
+	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
 		effect = {
 			if = {
@@ -368,7 +370,11 @@ on_actions = {
 					FROM = { tag = BLM }
 					ROOT = { tag = ARC }
 				}
-				BLM = {annex_country = ARC}
+				if = {
+					limit = {BLM = {ARC_independence_movements_allowed}}
+					BLM = {annex_country = ARC}
+				}
+				else = {BLM = {puppet = ARC}}
 			}
 			if = {
 				limit = {
