@@ -72,7 +72,7 @@ country_event = {
  		} 		
  	}
 	option = {
-		name = blm.4.a #Declare Military Government
+		name = blm.4.a #Declare Military Government, declare war on Arcadia
 		add_stability = 0.10
 		add_political_power = -50
 		set_country_flag = BL_independence_movements_suppressed
@@ -96,7 +96,25 @@ country_event = {
 		hidden_effect = {country_event = {id = blm.5 days = 15 random = 300}}
 		}
 	option = {
-		name = blm.4.b #Allow Them Independence
+		name = blm.4.b #Allow Them Some Independence
+		add_stability = 0.10
+		add_political_power = -50
+		set_country_flag = BL_independence_movements_allowed
+		hidden_effect = {
+		ARC = {
+			add_state_core = 977
+			}
+			}
+		release_puppet = ARC
+		hidden_effect = {
+		ARC = { 
+			load_oob = "ARC_rebellion"
+			}
+			remove_state_core = 977}
+		hidden_effect = {country_event = {id = blm.46 days = 60 random = 300}}
+		}
+	option = {
+		name = blm.4.b #Allow Them Full Independence
 		add_stability = 0.10
 		add_political_power = -50
 		set_country_flag = BL_independence_movements_allowed
@@ -243,7 +261,7 @@ country_event = {
 		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
 		}
 	option = {
-		name = blm.7.b #Kill them all
+		name = blm.7.b #Kill them all (Attack)
 		add_stability = 0.10
 		add_political_power = -50
 		hidden_effect = {
@@ -329,6 +347,24 @@ country_event = {
 		}
 		}
 		release_puppet = QLA
+		hidden_effect = {
+		QLA = { 
+			load_oob = "QLA_rebellion"
+			}
+			remove_state_core = 986}
+		hidden_effect = {country_event = {id = blm.9 days = 15 random = 300}}
+		set_country_flag = BLM_wimp_out_qlach
+		}
+	option = {
+		name = blm.8.c #Allow the Natives Complete Freedom
+		add_stability = 0.10
+		add_political_power = -50
+		hidden_effect = {
+		QLA = {		
+		add_state_core = 986
+		}
+		}
+		release = QLA
 		hidden_effect = {
 		QLA = { 
 			load_oob = "QLA_rebellion"
