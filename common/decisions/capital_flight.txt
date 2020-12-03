@@ -1,0 +1,247 @@
+KLK_anti_mandalist_decisions = {
+	KUM_capitalflight = {
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			AND = {
+				ROOT = {has_country_flag = capitalflight_destination}
+				KUM = {has_country_flag = capitalflight_source}
+			}
+		}
+		ai_will_do = {factor = 1000}
+		days_remove = 45
+		cost = 120
+		complete_effect = {
+			KUM = {clr_country_flag = capitalflight_source}
+		}
+		remove_effect = {
+			ROOT = {
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = arms_factory size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+					}
+				}
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = industrial_complex size > 1 include_locked = yes}}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+					}
+				}
+			}
+		}
+	}
+	KLK_capitalflight = {
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			AND = {
+				ROOT = {has_country_flag = capitalflight_destination}
+				KLK = {has_country_flag = capitalflight_source}
+			}
+		}
+		ai_will_do = {factor = 1000}
+		days_remove = 30
+		cost = 80
+		complete_effect = {
+			KLK = {clr_country_flag = capitalflight_source}
+		}
+		remove_effect = {
+			ROOT = {
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = arms_factory size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+					}
+				}
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = industrial_complex size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+					}
+				}
+			}
+		}
+	}
+	LSN_capitalflight = {
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			AND = {
+				ROOT = {has_country_flag = capitalflight_destination}
+				LSN = {has_country_flag = capitalflight_source}
+			}
+		}
+		ai_will_do = {factor = 1000}
+		days_remove = 30
+		cost = 80
+		complete_effect = {
+			LSN = {clr_country_flag = capitalflight_source}
+		}
+		remove_effect = {
+			ROOT = {
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = arms_factory size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+					}
+				}
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = industrial_complex size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+					}
+				}
+			}
+		}
+	}
+	CLA_capitalflight = {
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			AND = {
+				ROOT = {has_country_flag = capitalflight_destination}
+				CLA = {has_country_flag = capitalflight_source}
+			}
+		}
+		ai_will_do = {factor = 1000}
+		days_remove = 30
+		cost = 80
+		complete_effect = {
+			CLA = {clr_country_flag = capitalflight_source}
+		}
+		remove_effect = {
+			ROOT = {
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = arms_factory size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+					}
+				}
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = industrial_complex size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+					}
+				}
+			}
+		}
+	}
+	MKU_capitalflight = {
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			AND = {
+				ROOT = {has_country_flag = capitalflight_destination}
+				MKU = {has_country_flag = capitalflight_source}
+			}
+		}
+		ai_will_do = {factor = 1000}
+		days_remove = 30
+		cost = 80
+		complete_effect = {
+			MKU = {clr_country_flag = capitalflight_source}
+		}
+		remove_effect = {
+			ROOT = {
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = arms_factory size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+					}
+				}
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = industrial_complex size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+					}
+				}
+			}
+		}
+	}
+	UTU_capitalflight = {
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			AND = {
+				ROOT = {has_country_flag = capitalflight_destination}
+				UTU = {has_country_flag = capitalflight_source}
+			}
+		}
+		ai_will_do = {factor = 1000}
+		days_remove = 30
+		cost = 80
+		complete_effect = {
+			UTU = {clr_country_flag = capitalflight_source}
+		}
+		remove_effect = {
+			ROOT = {
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = arms_factory size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+					}
+				}
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = industrial_complex size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+					}
+				}
+			}
+		}
+	}
+	SDU_capitalflight = {
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			AND = {
+				ROOT = {has_country_flag = capitalflight_destination}
+				SDU = {has_country_flag = capitalflight_source}
+			}
+		}
+		ai_will_do = {factor = 1000}
+		days_remove = 30
+		cost = 80
+		complete_effect = {
+			SDU = {clr_country_flag = capitalflight_source}
+		}
+		remove_effect = {
+			ROOT = {
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = arms_factory size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+					}
+				}
+				if = {
+					random_owned_controlled_state = {
+						limit = {free_building_slots = {building = industrial_complex size > 0 include_locked = yes}}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+					}
+				}
+			}
+		}
+	}
+}
