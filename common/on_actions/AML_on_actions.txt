@@ -347,4 +347,51 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = BLM }
+					ROOT = { tag = ARC }
+				}
+				BLM = {annex_country = ARC}
+			}
+			if = {
+				limit = {
+					FROM = { tag = BLM }
+					ROOT = { tag = QLA }
+				}
+				BLM = {annex_country = QLA}
+			}
+			if = {
+				limit = {
+					FROM = { tag = BLM }
+					ROOT = { tag = WRB }
+				}
+				BLM = {annex_country = WRB}
+			}
+			if = {
+				limit = {
+					FROM = { tag = BLM }
+					ROOT = { tag = WUL }
+				}
+				BLM = {annex_country = WUL}
+			}
+			if = {
+				limit = {
+					FROM = { tag = BLM }
+					ROOT = { tag = FAN }
+				}
+				BLM = {annex_country = FAN}
+			}
+			if = {
+				limit = {
+					FROM = { tag = BLM }
+					ROOT = { tag = FLM }
+				}
+				BLM = {annex_country = FLM}
+			}
+		}
+	}
 }
