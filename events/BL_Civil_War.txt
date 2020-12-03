@@ -64,30 +64,19 @@ country_event = {
 	title = blm.4.t
 	desc = blm.4.d
 	#picture = 
-	
 	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
 	option = {
 		name = blm.4.a #Declare Military Government, declare war on Arcadia
 		add_stability = 0.10
 		add_political_power = -50
 		set_country_flag = BL_independence_movements_suppressed
 		set_country_flag = BL_civil_war
-		hidden_effect = {
-		ARC = {
-			add_state_core = 977
-			}
-		set_country_flag = BLM_arcadia_attack
-		}
+		hidden_effect = {set_country_flag = BLM_arcadia_attack}
 		release = ARC
 		declare_war_on = {
 			target = ARC
 			type = annex_everything
-				}
+		}
 		hidden_effect = {
 		ARC = { 
 			load_oob = "ARC_rebellion"
@@ -163,13 +152,7 @@ country_event = {
 	title = blm.6.t
 	desc = blm.6.d
 	#picture = 
-	
 	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
 	option = {
 		limit = { has_idea = BL_independence_movements_suppressed}
 		name = blm.6.a #Attack Werreurbro
@@ -177,10 +160,10 @@ country_event = {
 		add_political_power = -50
 		hidden_effect = {
 		WRB = {
-		add_state_core = 974
-		add_state_core = 1050
-		add_state_core = 1051
-		add_state_core = 1052
+			add_state_core = 974
+			add_state_core = 1050
+			add_state_core = 1051
+			add_state_core = 1052
 		}
 		set_country_flag = BLM_werreurbro_attack
 		}
@@ -240,10 +223,10 @@ country_event = {
 		WRB = { 
 			load_oob = "WRB_rebellion"
 			}
-		remove_state_core = 974
-		remove_state_core = 1050
-		remove_state_core = 1051
-		remove_state_core = 1052
+			remove_state_core = 974
+			remove_state_core = 1050
+			remove_state_core = 1051
+			remove_state_core = 1052
 		}
 		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
 		set_country_flag = BLM_wimp_out_werrerbro
