@@ -39,6 +39,7 @@ on_actions = {
 				complete_national_focus = KLK_synd_right_2
 				KLK = {white_peace = MKL}
 				country_event = {id = mandalism.9}
+				country_event = {id = mandcapital.2 days = 5}
 				MKL = {
 					delete_unit_template_and_units = {
 						division_template = "Mandalist Militias"
@@ -93,6 +94,12 @@ on_actions = {
 				set_country_flag = mandalists_defeated
 				KLK = {white_peace = MKL}
 				country_event = {id = mandalism.10}
+				LSN = {country_event = {id = mandgeneric.18 days = 10}}
+				CLA = {country_event = {id = mandgeneric.18 days = 10}}
+				KUM = {country_event = {id = mandgeneric.18 days = 10}}
+				MKU = {country_event = {id = mandgeneric.18 days = 10}}
+				UTU = {country_event = {id = mandgeneric.18 days = 10}}
+				SDU = {country_event = {id = mandgeneric.18 days = 10}}
 			}
 			if = {
 				limit = {
@@ -128,6 +135,7 @@ on_actions = {
 					set_state_controller = 1020
 				}
 				set_country_flag = mandalists_victorious
+				country_event = {id = mandcapital.2 days = 5}
 				SDU = {country_event = {id = mandgeneric.11 days = 30}}
 				MKU = {country_event = {id = mandgeneric.11 days = 10}}
 				set_politics = {ruling_party = neutrality elections_allowed = no}
@@ -187,6 +195,7 @@ on_actions = {
 					set_state_controller = 1020
 				}
 				set_country_flag = mandalists_defeated
+				country_event = {id = mandcapital.1 days = 5}
 				KUM = {white_peace = MKM}
 				country_event = {id = mandgeneric.8}
 				SDU = {country_event = {id = mandgeneric.12}}
@@ -221,6 +230,7 @@ on_actions = {
 					set_state_controller = 1031
 				}
 				set_country_flag = mandalists_victorious
+				country_event = {id = mandcapital.2 days = 5}
 				if = {
 					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
 					CLA = {country_event = {id = mandgeneric.17 days = 12}}
@@ -276,6 +286,7 @@ on_actions = {
 					set_state_controller = 1031
 				}
 				set_country_flag = mandalists_defeated
+				country_event = {id = mandcapital.1 days = 5}
 				CLA = {white_peace = MCL}
 				country_event = {id = mandgeneric.8}
 			}
@@ -297,6 +308,7 @@ on_actions = {
 					set_state_controller = 1030
 				}
 				set_country_flag = mandalists_victorious
+				country_event = {id = mandcapital.2 days = 5}
 				if = {
 					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
 					LSN = {country_event = {id = mandgeneric.17 days = 12}}
@@ -342,6 +354,7 @@ on_actions = {
 					set_state_controller = 1030
 				}
 				set_country_flag = mandalists_defeated
+				country_event = {id = mandcapital.1 days = 5}
 				LSN = {white_peace = MLS}
 				country_event = {id = mandgeneric.8}
 			}

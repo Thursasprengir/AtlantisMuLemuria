@@ -326,6 +326,7 @@ country_event = {
 		set_politics = {ruling_party = neutrality elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_ideas = MAN_nonaligned_idea
+		country_event = {id = mandcapital.2 days = 5}
 		if = {
 			limit = {original_tag = KUM}
 			remove_ideas = MAN_mandalist_guerrillas_debuff_3
@@ -519,6 +520,7 @@ country_event = {
 		set_politics = {ruling_party = neutrality elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_ideas = MAN_nonaligned_idea
+		country_event = {id = mandcapital.2 days = 5}
 		clr_country_flag = BOMBOCLAAT
 		custom_effect_tooltip = MAN_white_peace_tooltip
 		if = {
@@ -901,6 +903,7 @@ country_event = {
 			factor = 1
 		}
 		set_country_flag = mandalists_victorious
+		country_event = {id = mandcapital.2 days = 5}
 		set_politics = {ruling_party = neutrality elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_ideas = MAN_nonaligned_idea
@@ -936,6 +939,7 @@ country_event = {
 			factor = 1
 		}
 		set_country_flag = mandalists_defeated
+		country_event = {id = mandcapital.1 days = 5}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_timed_idea = {
 			idea = MAN_angry_mandalists
@@ -957,6 +961,7 @@ country_event = {
 	option = {
 		name = mandgeneric.12.a
 		set_country_flag = mandalists_defeated
+		country_event = {id = mandcapital.1 days = 5}
 		complete_national_focus = INDOLEM2_the_hooks
 	}
 }
@@ -1081,6 +1086,19 @@ country_event = {
 	option = {
 		name = mandgeneric.17.b
 		ai_chance = {factor = 0}
+	}
+}
+#revolution failed in KLK
+country_event = {
+	id = mandgeneric.18
+	title = mandgeneric.18.t
+	desc = mandgeneric.18.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	option = {
+		name = mandgeneric.18.a
+		set_country_flag = mandalists_defeated
+		complete_national_focus = INDOLEM2_the_hooks
 	}
 }
 
