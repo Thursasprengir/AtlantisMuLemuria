@@ -161,6 +161,20 @@ on_actions = {
 						disband = yes #will refund equipment and manpower
 					}
 				}
+				MKM = {delete_unit = {state = 1023 disband = yes}}
+				MKM = {delete_unit = {state = 1024 disband = yes}}
+				MKM = {delete_unit = {state = 1025 disband = yes}}
+				MKM = {delete_unit = {state = 1022 disband = yes}}
+				MKM = {delete_unit = {state = 1026 disband = yes}}
+				MKM = {delete_unit = {state = 1058 disband = yes}}
+				MKM = {delete_unit = {state = 1019 disband = yes}}
+				MKM = {delete_unit = {state = 1021 disband = yes}}
+				MKM = {delete_unit = {state = 1020 disband = yes}}
+				MKM = {delete_unit = {state = 1054 disband = yes}}
+				MKM = {delete_unit = {state = 992 disband = yes}}
+				MKM = {delete_unit = {state = 1018 disband = yes}}
+				MKM = {delete_unit = {state = 1017 disband = yes}}
+				MKM = {delete_unit = {state = 1003 disband = yes}}
 			}
 			if = {
 				limit = {
@@ -202,6 +216,20 @@ on_actions = {
 				SDU = {country_event = {id = mandgeneric.12}}
 				UTU = {country_event = {id = mandgeneric.12}}
 				MKU = {country_event = {id = mandgeneric.12}}
+				MKM = {delete_unit = {state = 1023 disband = yes}}
+				MKM = {delete_unit = {state = 1024 disband = yes}}
+				MKM = {delete_unit = {state = 1025 disband = yes}}
+				MKM = {delete_unit = {state = 1022 disband = yes}}
+				MKM = {delete_unit = {state = 1026 disband = yes}}
+				MKM = {delete_unit = {state = 1058 disband = yes}}
+				MKM = {delete_unit = {state = 1019 disband = yes}}
+				MKM = {delete_unit = {state = 1021 disband = yes}}
+				MKM = {delete_unit = {state = 1020 disband = yes}}
+				MKM = {delete_unit = {state = 1054 disband = yes}}
+				MKM = {delete_unit = {state = 992 disband = yes}}
+				MKM = {delete_unit = {state = 1018 disband = yes}}
+				MKM = {delete_unit = {state = 1017 disband = yes}}
+				MKM = {delete_unit = {state = 1003 disband = yes}}
 			}
 			if = {
 				limit = {
@@ -258,6 +286,13 @@ on_actions = {
 						disband = yes #will refund equipment and manpower
 					}
 				}
+				MCL = {delete_unit = {state = 1001 disband = yes}}
+				MCL = {delete_unit = {state = 1032 disband = yes}}
+				MCL = {delete_unit = {state = 1002 disband = yes}}
+				MCL = {delete_unit = {state = 1033 disband = yes}}
+				MCL = {delete_unit = {state = 1034 disband = yes}}
+				MCL = {delete_unit = {state = 1031 disband = yes}}
+				MCL = {delete_unit = {state = 809 disband = yes}}
 			}
 			if = {
 				limit = {
@@ -290,6 +325,13 @@ on_actions = {
 				country_event = {id = mandcapital.1 days = 5}
 				CLA = {white_peace = MCL}
 				country_event = {id = mandgeneric.8}
+				MCL = {delete_unit = {state = 1001 disband = yes}}
+				MCL = {delete_unit = {state = 1032 disband = yes}}
+				MCL = {delete_unit = {state = 1002 disband = yes}}
+				MCL = {delete_unit = {state = 1033 disband = yes}}
+				MCL = {delete_unit = {state = 1034 disband = yes}}
+				MCL = {delete_unit = {state = 1031 disband = yes}}
+				MCL = {delete_unit = {state = 809 disband = yes}}
 			}
 			if = {
 				limit = {
@@ -336,6 +378,8 @@ on_actions = {
 						disband = yes #will refund equipment and manpower
 					}
 				}
+				MLS = {delete_unit = {state = 1030 disband = yes}}
+				MLS = {delete_unit = {state = 982 disband = yes}}
 			}
 			if = {
 				limit = {
@@ -358,59 +402,11 @@ on_actions = {
 				country_event = {id = mandcapital.1 days = 5}
 				LSN = {white_peace = MLS}
 				country_event = {id = mandgeneric.8}
+				MLS = {delete_unit = {state = 1030 disband = yes}}
+				MLS = {delete_unit = {state = 982 disband = yes}}
 			}
 		}
 	}
 	################################################################## BLM civil war
 	# ROOT is capitulated country, FROM is winner
-	on_capitulation = {
-		effect = {
-			if = {
-				limit = {
-					FROM = { tag = BLM }
-					ROOT = { tag = ARC }
-				}
-				if = {
-					limit = {BLM = {ARC_independence_movements_allowed}}
-					BLM = {annex_country = ARC}
-				}
-				else = {BLM = {puppet = ARC}}
-			}
-			if = {
-				limit = {
-					FROM = { tag = BLM }
-					ROOT = { tag = QLA }
-				}
-				BLM = {annex_country = QLA}
-			}
-			if = {
-				limit = {
-					FROM = { tag = BLM }
-					ROOT = { tag = WRB }
-				}
-				BLM = {annex_country = WRB}
-			}
-			if = {
-				limit = {
-					FROM = { tag = BLM }
-					ROOT = { tag = WUL }
-				}
-				BLM = {annex_country = WUL}
-			}
-			if = {
-				limit = {
-					FROM = { tag = BLM }
-					ROOT = { tag = FAN }
-				}
-				BLM = {annex_country = FAN}
-			}
-			if = {
-				limit = {
-					FROM = { tag = BLM }
-					ROOT = { tag = FLM }
-				}
-				BLM = {annex_country = FLM}
-			}
-		}
-	}
 }

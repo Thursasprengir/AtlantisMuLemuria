@@ -515,7 +515,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = mandgeneric.10.a
-		ai_will_do = {base = 10 factor = 1}
+		ai_chance = {base = 10 factor = 1}
 		set_country_flag = mandalists_victorious
 		set_politics = {ruling_party = neutrality elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
@@ -699,7 +699,7 @@ country_event = {
 	}
 	option = {
 		name = mandgeneric.10.b
-		ai_will_do = {
+		ai_chance = {
 			base = 10
 			modifier = {tag = CLA factor = 0}
 			factor = 1
@@ -897,7 +897,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = mandgeneric.11.a
-		ai_will_do = {
+		ai_chance = {
 			base = 10
 			modifier = {tag = SDU factor = 0}
 			factor = 1
@@ -933,7 +933,7 @@ country_event = {
 	}
 	option = {
 		name = mandgeneric.11.b
-		ai_will_do = {
+		ai_chance = {
 			base = 10
 			modifier = {NOT = {tag = SDU} factor = 0}
 			factor = 1
@@ -974,7 +974,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = mandgeneric.13.a
-		ai_will_do = {base = 10 factor = 1}
+		ai_chance = {base = 10 factor = 1}
 		CLA = {
 			set_state_owner = 994
 			set_state_controller = 994
@@ -982,7 +982,7 @@ country_event = {
 	}
 	option = {
 		name = mandgeneric.13.b
-		ai_will_do = {
+		ai_chance = {
 			base = 10
 			modifier = {is_historical_focus_on = yes factor = 0}
 			factor = 1
@@ -1082,6 +1082,14 @@ country_event = {
 	option = {
 		name = mandgeneric.17.a
 		KUM = {add_to_faction = ROOT}
+		if = {
+			limit = {original_tag = CLA}
+			CLA = {country_event = {id = mandgeneric.13 days = 30}}
+		}
+		if = {
+			limit = {original_tag = UTU}
+			UTU = {country_event = {id = mandgeneric.14 days = 30}}
+		}
 	}
 	option = {
 		name = mandgeneric.17.b
