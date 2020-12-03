@@ -224,6 +224,30 @@ country_event = {
 		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
 		set_country_flag = BLM_wimp_out_werrerbro
 		}
+	option = {
+		limit = { has_idea = BL_independence_movements_suppressed}
+		name = blm.6.c #Grant Werreurbrian Independence
+		hidden_effect = {
+		WRB = {
+		add_state_core = 974
+		add_state_core = 1050
+		add_state_core = 1051
+		add_state_core = 1052
+		}
+		}
+		release = WRB
+		hidden_effect = {
+		WRB = { 
+			load_oob = "WRB_rebellion"
+			}
+		remove_state_core = 974
+		remove_state_core = 1050
+		remove_state_core = 1051
+		remove_state_core = 1052
+		}
+		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
+		set_country_flag = BLM_wimp_out_werrerbro
+		}
    }
 	
 country_event = {
