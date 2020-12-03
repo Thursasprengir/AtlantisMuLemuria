@@ -189,6 +189,7 @@ BLM_recore = {
 			owns_state = 977
 			controls_state = 977
 			has_country_flag = BL_civil_war_over
+			977 = {has_active_resistance = no}
 		}
 		visible = {
 			owns_state = 977
@@ -200,7 +201,7 @@ BLM_recore = {
 		days_remove = 365
 		modifier = {civilian_factory_use = 5}
 		ai_will_do = {factor = 100}
-		complete_effect = {
+		remove_effect = {
 			add_state_core = 977
 		}
 	}
@@ -218,6 +219,10 @@ BLM_recore = {
 			owns_state = 1052
 			controls_state = 1052
 			has_country_flag = BL_civil_war_over
+			974 = {has_active_resistance = no}
+			1050 = {has_active_resistance = no}
+			1051 = {has_active_resistance = no}
+			1052 = {has_active_resistance = no}
 		}
 		visible = {
 			owns_state = 974
@@ -235,7 +240,7 @@ BLM_recore = {
 		days_remove = 365
 		modifier = {civilian_factory_use = 20}
 		ai_will_do = {factor = 100}
-		complete_effect = {
+		remove_effect = {
 			add_state_core = 974
 			add_state_core = 1050
 			add_state_core = 1051
@@ -250,6 +255,7 @@ BLM_recore = {
 			owns_state = 984
 			controls_state = 984
 			has_country_flag = BL_civil_war_over
+			984 = {has_active_resistance = no}
 		}
 		visible = {
 			owns_state = 984
@@ -261,7 +267,7 @@ BLM_recore = {
 		days_remove = 365
 		modifier = {civilian_factory_use = 5}
 		ai_will_do = {factor = 100}
-		complete_effect = {
+		remove_effect = {
 			add_state_core = 984
 		}
 	}
@@ -273,6 +279,7 @@ BLM_recore = {
 			owns_state = 986
 			controls_state = 986
 			has_country_flag = BL_civil_war_over
+			986 = {has_active_resistance = no}
 		}
 		visible = {
 			owns_state = 986
@@ -284,7 +291,7 @@ BLM_recore = {
 		days_remove = 365
 		modifier = {civilian_factory_use = 5}
 		ai_will_do = {factor = 100}
-		complete_effect = {
+		remove_effect = {
 			add_state_core = 986
 		}
 	}
@@ -300,6 +307,9 @@ BLM_recore = {
 			owns_state = 978
 			controls_state = 978
 			has_country_flag = BL_civil_war_over
+			980 = {has_active_resistance = no}
+			979 = {has_active_resistance = no}
+			978 = {has_active_resistance = no}
 		}
 		visible = {
 			owns_state = 980
@@ -315,7 +325,7 @@ BLM_recore = {
 		days_remove = 365
 		modifier = {civilian_factory_use = 15}
 		ai_will_do = {factor = 100}
-		complete_effect = {
+		remove_effect = {
 			add_state_core = 980
 			add_state_core = 978
 			add_state_core = 979
