@@ -331,5 +331,107 @@ BLM_recore = {
 			add_state_core = 979
 		}
 	}
+	recore_artura = {
+		icon = aluminium
+		highlight_states = {state = 972 state = 1014 state = 1015}
+		available = {
+			num_of_civilian_factories_available_for_projects > 15
+			owns_state = 972
+			controls_state = 972
+			owns_state = 1014
+			controls_state = 1014
+			owns_state = 1015
+			controls_state = 1015
+			has_country_flag = BL_civil_war_over
+			972 = {has_active_resistance = no}
+			1014 = {has_active_resistance = no}
+			1015 = {has_active_resistance = no}
+		}
+		visible = {
+			owns_state = 972
+			controls_state = 972
+			owns_state = 1014
+			controls_state = 1014
+			owns_state = 1015
+			controls_state = 1015
+			has_country_flag = BL_civil_war_over
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 365
+		modifier = {civilian_factory_use = 15}
+		ai_will_do = {factor = 100}
+		remove_effect = {
+			add_state_core = 972
+			add_state_core = 1014
+			add_state_core = 1015
+		}
+	}
+	recore_flm = {
+		icon = aluminium
+		highlight_states = {state = 1009 state = 1005 state = 1012 state = 985}
+		available = {
+			num_of_civilian_factories_available_for_projects > 20
+			owns_state = 1009
+			controls_state = 1009
+			owns_state = 1005
+			controls_state = 1005
+			owns_state = 1012
+			controls_state = 1012
+			owns_state = 985
+			controls_state = 985
+			has_country_flag = BL_civil_war_over
+			985 = {has_active_resistance = no}
+			1005 = {has_active_resistance = no}
+			1009 = {has_active_resistance = no}
+			1012 = {has_active_resistance = no}
+		}
+		visible = {
+			owns_state = 985
+			controls_state = 985
+			owns_state = 1005
+			controls_state = 1005
+			owns_state = 1009
+			controls_state = 1009
+			owns_state = 1012
+			controls_state = 1012
+			has_country_flag = BL_civil_war_over
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 365
+		modifier = {civilian_factory_use = 20}
+		ai_will_do = {factor = 100}
+		remove_effect = {
+			add_state_core = 985
+			add_state_core = 1005
+			add_state_core = 1009
+			add_state_core = 1012
+		}
+	}
+	recore_sss = {
+		icon = aluminium
+		highlight_states = {state = 983}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 983
+			controls_state = 983
+			has_country_flag = BL_civil_war_over
+			983 = {has_active_resistance = no}
+		}
+		visible = {
+			owns_state = 983
+			controls_state = 983
+			has_country_flag = BL_civil_war_over
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 365
+		modifier = {civilian_factory_use = 5}
+		ai_will_do = {factor = 100}
+		remove_effect = {
+			add_state_core = 983
+		}
+	}
 }
 	
