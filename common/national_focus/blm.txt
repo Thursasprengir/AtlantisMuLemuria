@@ -647,6 +647,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 	focus = {
 		id = BLM_minority_rights
@@ -660,6 +663,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_manpower = 120000
+			army_experience = 50
+		}
 	}
 	focus = {
 		id = BLM_liberty_beacon
@@ -672,6 +679,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.2
+			}
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = BLM_suspend_persecution_permanently
@@ -683,6 +697,9 @@ focus_tree = {
 		prerequisite = { focus = BLM_flagissues }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BLM_final
 		}
 	}
 	focus = {
@@ -697,6 +714,12 @@ focus_tree = {
 		prerequisite = { focus = BLM_minority_rights }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BLM_final
+				add_idea = BLM_final2
+			}
 		}
 	}
 
@@ -750,9 +773,9 @@ focus_tree = {
 				}
 				set_state_flag = GER_german_war_economy
 			}
+		}
 	}
-	}
-		focus = {
+	focus = {
 		id = BLM_colonistissues
 		icon = GFX_focus_bra_populism
 		x = 8
@@ -766,6 +789,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = -0.1
+		}
 	}
 		focus = {
 		id = BLM_flagissues
@@ -778,19 +806,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = 0.1
+		}
 	}
-#	focus = {
-#		id = BLM_newlemuria
-#		icon = GFX_goal_unknown
-#		x = 8
-#		y = 6
-#		cost = 10
-#		available_if_capitulated = yes
-#		prerequisite = { focus = BLM_flagissues }
-#		ai_will_do = {
-#			factor = 1
-#		}
-#	}
 		focus = {
 		id = BLM_newmilitaryindustry
 		icon = GFX_r56_goal_FRA_increase_military_spendings
@@ -818,7 +837,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			}
+		}
 	}
 	focus = {
 		id = BLM_unrestmeeting

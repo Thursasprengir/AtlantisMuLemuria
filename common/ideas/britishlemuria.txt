@@ -469,6 +469,24 @@ ideas = {
 				
 			}
 		}
+		BLM_final = {
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		BLM_final2 = {
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.1
+				drift_defence_factor = 0.25 
+			}
+		}
 		imperial_garrison = {
 			allowed = {
 				always = no
