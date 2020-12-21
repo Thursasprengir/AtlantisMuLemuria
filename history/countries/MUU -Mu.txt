@@ -154,7 +154,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Dayum Sohollo"
 	picture = "Portrait_MUU_dayum_sohollo.dds"
-	traits = {  armor_officer trait_reckless }
+	traits = {armor_officer media_personality}
 	skill = 5
 	attack_skill = 7 
 	defense_skill = 3
@@ -165,12 +165,23 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Umundr Modaqri"
 	picture = "Portrait_MUU_umundr_modaqri.dds"
-	traits = { trait_cautious harsh_leader }
+	traits = {brilliant_strategist harsh_leader trait_reckless}
 	skill = 5
-	attack_skill = 3
-	defense_skill = 5
+	attack_skill = 5
+	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Uajsun Unijum"
+	picture = "Portrait_MUU_uajsun_unijum.dds"
+	traits = {swamp_fox trickster infantry_officer}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -226,17 +237,6 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Uajsun Unijum"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = {  panzer_leader career_officer infantry_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 4
 }
 
 create_corps_commander = {
