@@ -47,27 +47,100 @@ add_ideas = {
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.8
-add_political_power = 118
 
 set_popularities = {
 		democratic = 40
 		fascism = 35
 		communism = 5
 		neutrality = 20
-
 	}
-
 set_politics = {
-	
 		ruling_party = democratic
 		last_election = "1936.6.17"
 		election_frequency = 60
 		elections_allowed = yes
 }
 
-add_ideas = {
 
-}
+
+###ARRAY INITIALIZATION
+add_to_array = {array = ATL.944_array value = 944 index = 0}	#id
+add_to_array = {array = ATL.944_array value = 3 index = 1}		#free
+add_to_array = {array = ATL.944_array value = 10 index = 2}		#kapra_probability
+add_to_array = {array = ATL.944_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.945_array value = 945 index = 0}	#id
+add_to_array = {array = ATL.945_array value = 4 index = 1}		#free
+add_to_array = {array = ATL.945_array value = 10 index = 2}		#kapra_probability
+add_to_array = {array = ATL.945_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.946_array value = 946 index = 0}	#id
+add_to_array = {array = ATL.946_array value = 2 index = 1}		#free
+add_to_array = {array = ATL.946_array value = 10 index = 2}		#kapra_probability
+add_to_array = {array = ATL.946_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.947_array value = 947 index = 0}	#id
+add_to_array = {array = ATL.947_array value = 2 index = 1}		#free
+add_to_array = {array = ATL.947_array value = 10 index = 2}		#kapra_probability
+add_to_array = {array = ATL.947_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.948_array value = 948 index = 0}	#id
+add_to_array = {array = ATL.948_array value = 3 index = 1}		#free
+add_to_array = {array = ATL.948_array value = 10 index = 2}		#kapra_probability
+add_to_array = {array = ATL.948_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.949_array value = 949 index = 0}	#id
+add_to_array = {array = ATL.949_array value = 3 index = 1}		#free
+add_to_array = {array = ATL.949_array value = 10 index = 2}		#kapra_probability
+add_to_array = {array = ATL.949_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.963_array value = 963 index = 0}	#id
+add_to_array = {array = ATL.963_array value = 2 index = 1}		#free
+add_to_array = {array = ATL.963_array value = 0 index = 2}		#kapra_probability
+add_to_array = {array = ATL.963_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.964_array value = 964 index = 0}	#id
+add_to_array = {array = ATL.964_array value = 2 index = 1}		#free
+add_to_array = {array = ATL.964_array value = 0 index = 2}		#kapra_probability
+add_to_array = {array = ATL.964_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.965_array value = 965 index = 0}	#id
+add_to_array = {array = ATL.965_array value = 2 index = 1}		#free
+add_to_array = {array = ATL.965_array value = 0 index = 2}		#kapra_probability
+add_to_array = {array = ATL.965_array value = 10 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.966_array value = 966 index = 0}	#id
+add_to_array = {array = ATL.966_array value = 1 index = 1}		#free
+add_to_array = {array = ATL.966_array value = 0 index = 2}		#kapra_probability
+add_to_array = {array = ATL.966_array value = 0 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.967_array value = 967 index = 0}	#id
+add_to_array = {array = ATL.967_array value = 1 index = 1}		#free
+add_to_array = {array = ATL.967_array value = 0 index = 2}		#kapra_probability
+add_to_array = {array = ATL.967_array value = 0 index = 3}		#itork_probability
+
+add_to_array = {array = ATL.968_array value = 968 index = 0}	#id
+add_to_array = {array = ATL.968_array value = 1 index = 1}		#free
+add_to_array = {array = ATL.968_array value = 0 index = 2}		#kapra_probability
+add_to_array = {array = ATL.968_array value = 0 index = 3}		#itork_probability
+
+set_variable = {var = var_police_cost value = 200}
+set_variable = {var = var_police_cooldown value = 60}
+set_variable = {var = var_kapra_cooldown value = 20}
+set_variable = {var = var_itork_cooldown value = 15}
+
+add_to_array = {array = ATL.kapra_success_array value = 100 index = 0}		# success without reaction
+add_to_array = {array = ATL.kapra_success_array value = 50 index = 1}		# success with reaction
+add_to_array = {array = ATL.kapra_success_array value = 0 index = 2}		# failure without reaction
+add_to_array = {array = ATL.kapra_success_array value = 50 index = 3}		# failure with reaction
+
+add_to_array = {array = ATL.itork_success_array value = 100 index = 0}		# success without reaction
+add_to_array = {array = ATL.itork_success_array value = 50 index = 1}		# success with reaction
+add_to_array = {array = ATL.itork_success_array value = 0 index = 2}		# failure without reaction
+add_to_array = {array = ATL.itork_success_array value = 50 index = 3}		# failure with reaction
+
+#activate_mission  = ATL_select_target_kapra
+
 ###MIGHTY ATLANTEAN SHIPS###
 create_equipment_variant = {
 	name = "SS-E-C"

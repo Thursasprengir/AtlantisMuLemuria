@@ -128,7 +128,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			hidden_effect = {set_country_flag = ATL_itorkanak_flag set_country_flag = ATL_searching_itorkanak add_ideas = {ATL_itorkanak_at_war}}
+			#hidden_effect = {set_country_flag = ATL_itorkanak_flag set_country_flag = ATL_searching_itorkanak add_ideas = {ATL_itorkanak_at_war}}
 			custom_effect_tooltip = ATL_attack_itorkanak_tooltip
 		}
 	}
@@ -151,7 +151,7 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			hidden_effect = {set_country_flag = ATL_kaprastiak_flag set_country_flag = ATL_searching_kaprastiak add_ideas = {ATL_kaprastiak_at_war}}
+			#hidden_effect = {set_country_flag = ATL_kaprastiak_flag set_country_flag = ATL_searching_kaprastiak add_ideas = {ATL_kaprastiak_at_war}}
 			custom_effect_tooltip = ATL_attack_kaprastiak_tooltip
 		}
 	}
@@ -197,10 +197,10 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			hidden_effect = {
-				if = {limit = {ATL = {has_completed_focus = ATL_attack_itorkanak}} set_country_flag = ATL_searching_kaprastiak set_country_flag = ATL_kaprastiak_flag add_ideas = {ATL_kaprastiak_at_war}}
-				if = {limit = {ATL = {has_completed_focus = ATL_attack_kaprastiak}} set_country_flag = ATL_searching_itorkanak set_country_flag = ATL_itorkanak_flag add_ideas = {ATL_itorkanak_at_war}}
-			}
+			#hidden_effect = {
+			#	if = {limit = {ATL = {has_completed_focus = ATL_attack_itorkanak}} set_country_flag = ATL_searching_kaprastiak set_country_flag = ATL_kaprastiak_flag add_ideas = {ATL_kaprastiak_at_war}}
+			#	if = {limit = {ATL = {has_completed_focus = ATL_attack_kaprastiak}} set_country_flag = ATL_searching_itorkanak set_country_flag = ATL_itorkanak_flag add_ideas = {ATL_itorkanak_at_war}}
+			#}
 			custom_effect_tooltip = ATL_attack_all_tooltip
 		}
 	}
@@ -736,6 +736,7 @@ focus = {
 			add_ideas = {
 				ATL_restored_empire
 			}
+			set_capital = 948
 		}
 	}
 focus = {

@@ -1,3 +1,70 @@
+political_actions = {
+	ATL_give_refuge_ger = {
+		icon = generic_research
+        allowed = {original_tag = ATL}
+		visible = {NOT = { has_government = fascism } NOT = { has_government = communism }}
+        cost = 100
+        fire_only_once = yes
+        days_remove = -1
+        available = {GER = { NOT = { has_government = ROOT } }}
+        modifier = {
+            research_speed_factor = 0.05
+            stability_factor = -0.05
+        }
+        remove_trigger = {
+            OR = {
+                GER = { has_government = ROOT }
+                AND = {
+                    country_exists = WGR
+                    WGR = { has_government = ROOT }
+                }
+                AND = {
+                    country_exists = DDR
+                    DDR = { has_government = ROOT }
+                }
+            }
+        }
+    }
+    ATL_give_refuge_ita = {
+    	icon = generic_research
+        allowed = {original_tag = ATL}
+		visible = {
+            NOT = { has_government = fascism }
+            NOT = { has_government = communism }
+        }
+        cost = 100
+        fire_only_once = yes
+        days_remove = -1
+        available = {
+            ITA = { NOT = { has_government = ROOT } }
+        }
+        modifier = {
+            research_speed_factor = 0.05
+            stability_factor = -0.05
+        }
+        remove_trigger = {ITA = { has_government = ROOT }}
+    }
+}
+ATL_cores = {
+	core_takamafrika = {
+		icon = generic_nationalism
+		cost = 100
+		visible = { 966 = { NOT = { is_core_of = ATL}}}
+		available = {AND = {has_completed_focus = ATL_african_airfields has_completed_focus = ATL_african_factories_2}}
+		days_remove = 150
+		ai_will_do = {factor = 1000}
+		remove_effect = {966 = {add_core_of = ATL}}
+	}
+	core_zenigal = {
+		icon = generic_nationalism
+		cost = 100
+		visible = { 967 = { NOT = { is_core_of = ATL}}}
+		available = {AND = {has_completed_focus = ATL_african_airfields has_completed_focus = ATL_african_factories_2}}
+		days_remove = 150
+		ai_will_do = {factor = 1000}
+		remove_effect = {967 = {add_core_of = ATL}}
+	}
+}
 ATL_outdated_air_force_fix = {
 	fix_air_force = {
 		icon = generic_air
