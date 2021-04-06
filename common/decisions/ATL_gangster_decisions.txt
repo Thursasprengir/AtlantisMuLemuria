@@ -1,5 +1,82 @@
+ATL_gang_warfare = {
+	########### Spy Decisions
+	ATL_spy_defense = {
+		icon = generic_research
+		available = { has_done_agency_upgrade = upgrade_passive_defense}
+		visible = { has_intelligence_agency = yes }
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+	ATL_spy_partisan = {
+		icon = generic_research
+		available = { has_done_agency_upgrade = upgrade_anti_partisan}
+		visible = { has_intelligence_agency = yes }
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+	ATL_spy_interrogation = {
+		icon = generic_research
+		available = { has_done_agency_upgrade = upgrade_interrogation_techniques}
+		visible = { has_intelligence_agency = yes }
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+	########### Global Decisions
+	ATL_fortify = {
+		icon = generic_research
+		available = {}
+		visible = {}
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+	ATL_curfews_toggle = {
+		icon = generic_research
+		available = {}
+		visible = {}
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+	ATL_factory_curfews_toggle = {
+		icon = generic_research
+		available = {}
+		visible = {}
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+	ATL_dockyard_curfews_toggle = {
+		icon = generic_research
+		available = {}
+		visible = {}
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+	ATL_fortify = {
+		icon = generic_research
+		available = {}
+		visible = {}
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+	ATL_training = {
+		icon = generic_research
+		available = {}
+		visible = {}
+		cost = 50
+		days_remove = 10
+		remove_effect = {}
+	}
+}
+
 ATL_kaprastiak_war_category = {
-	########### Anti-Kaprastiak operations
+	########### Anti-Kaprastiak police operations
 	ATL_police_k_944 = {
 		icon = { key = akitselo_k_1 trigger = {ATL = { has_idea = ATL_kapra_burmiunean_1}} }
 		icon = { key = akitselo_k_2 trigger = {ATL = { has_idea = ATL_kapra_burmiunean_2}} }
@@ -127,91 +204,127 @@ ATL_kaprastiak_war_category = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 944 }
-		timeout_effect = {944 = {kapra_up_burmiunean = yes}}
+		timeout_effect = {944 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_burmiunean = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			944 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_burmiunean = yes}}}
+		}
 	}
 	ATL_kapra_945_attack = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 945 }
-		timeout_effect = {945 = {kapra_up_4 = yes}}
+		timeout_effect = {945 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_4 = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			945 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_4 = yes}}}
+		}
 	}
 	ATL_kapra_946_attack = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 946 }
-		timeout_effect = {946 = {kapra_up_2 = yes}}
+		timeout_effect = {946 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			946 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_2 = yes}}}
+		}
 	}
 	ATL_kapra_947_attack = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 947 }
-		timeout_effect = {947 = {kapra_up_2 = yes}}
+		timeout_effect = {947 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			947 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_2 = yes}}}
+		}
 	}
 	ATL_kapra_948_attack = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 948 }
-		timeout_effect = {948 = {kapra_up_yamylaik = yes}}
+		timeout_effect = {948 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_yamylaik = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			948 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_yamylaik = yes}}}
+		}
 	}
 	ATL_kapra_949_attack = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 949 }
-		timeout_effect = {949 = {kapra_up_anoixte = yes}}
+		timeout_effect = {949 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_anoixte = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			949 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_anoixte = yes}}}
+		}
 	}
 	ATL_kapra_963_attack = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 963 }
-		timeout_effect = {963 = {kapra_up_2 = yes}}
+		timeout_effect = {963 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			963 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_2 = yes}}}
+		}
 	}
 	ATL_kapra_964_attack = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 964 }
-		timeout_effect = {964 = {kapra_up_2 = yes}}
+		timeout_effect = {964 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			964 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_2 = yes}}}
+		}
 	}
 	ATL_kapra_965_attack = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 965 }
-		timeout_effect = {965 = {kapra_up_2 = yes}}
+		timeout_effect = {965 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
-		complete_effect = { add_manpower = -1500 }
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			965 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_2 = yes}}}
+		}
 	}
 	########## Selection loop
 	ATL_select_target_kapra = {
@@ -241,6 +354,17 @@ ATL_kaprastiak_war_category = {
 		days_mission_timeout = var_kapra_cooldown
 		is_good = no
 		timeout_effect = { activate_mission = ATL_select_target_kapra }
+	}
+	ATL_start = {
+		icon = generic_nationalism
+		visible = {NOT = {has_country_flag = ATL_started}}
+		ai_will_do = {factor = 1000}
+		complete_effect = { activate_mission = ATL_select_target_kapra }
+	}
+	ATL_test = {
+		icon = generic_nationalism
+		ai_will_do = {factor = 1000}
+		complete_effect = { set_country_flag = test_flag }
 	}
 }
 
