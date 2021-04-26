@@ -8,18 +8,27 @@ state={
 	history={
 		owner = TRS
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 4
+			dockyard = 5
+			air_base = 2
+			13254 = {
+				naval_base = 8
+			}
 
 		}
 		add_core_of = TRS
+		victory_points = {
+			13254 50 
+		}
 
 	}
 	provinces={
 		13240 13242 13253 13254 13255 13256 13258 
 	}
-	manpower=162153
-	state_category = town
+	manpower=10162153
+	state_category = megalopolis
 
 	buildings_max_level_factor=1.000
 }
