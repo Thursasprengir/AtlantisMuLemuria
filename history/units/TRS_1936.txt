@@ -1,5 +1,7 @@
 ﻿division_template = {
-	name = "Infantry Division"		
+	name = "Juntuán" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
+	division_names_group = CHI_INF_01
+									# 1 engineering regiment, 1 recon regiment
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -10,55 +12,320 @@
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
 
+division_template = {
+	name = "Diàndòng" 			# Motorized divisions - 4 motorized infantry regiments (3k men each), 1 recon regiment, 
+	division_names_group = CHI_MOT_01
+										#1 engineer regiment, 1 mounted artillery regiment
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Hǎijūn"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+	division_names_group = JAP_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+}
+
+division_template = {
+	name = "Qīngxíng" 	# Independent Mixed Brigade: 5 infantry battalions (4k men total), 1 field artillery basttalion - abstracted into infantry,
+	division_names_group = JAP_IMB_01
+										# 1 engineering battalion
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		light_armor = { x= 2 y = 0 }
+		light_armor = { x= 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
 
 units = {
 	### Army High Command ###
-	division = {
-		name = "1st Division"
-		location = 13241
-		division_template = "Infantry Division"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13241 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
 	}
-	division = {
-		name = "2nd Division"
-		location = 13266
-		division_template = "Infantry Division"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13241 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
 	}
-	division = {
-		name = "3rd Division"
-		location = 14288
-		division_template = "Infantry Division"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 14288 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
 	}
-	division = {
-		name = "4th Division"
-		location = 14301
-		division_template = "Infantry Division"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 14288 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
 	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13256 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 13256 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 14300 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 14997 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13259 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13261 #Asahigawa
+		division_template = "Juntuán" 
+		start_experience_factor = 0.3
+	}
+	division = { # Motorized
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13252 #Asahigawa
+		division_template = "Diàndòng" 
+		start_experience_factor = 0.3
+	}
+	division = { # Motorized
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13252 #Asahigawa
+		division_template = "Diàndòng" 
+		start_experience_factor = 0.3
+	}
+	division = { # Motorized
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 14295 #Asahigawa
+		division_template = "Diàndòng" 
+		start_experience_factor = 0.3
+	}
+	division = { # Motorized
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 14295 #Asahigawa
+		division_template = "Diàndòng" 
+		start_experience_factor = 0.3
+	}
+	division = { # Marine
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13269 #Asahigawa
+		division_template = "Hǎijūn" 
+		start_experience_factor = 0.3
+	}
+	division = { # Marine
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13269 #Asahigawa
+		division_template = "Hǎijūn" 
+		start_experience_factor = 0.3
+	}
+	division = { # Marine
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13269 #Asahigawa
+		division_template = "Hǎijūn" 
+		start_experience_factor = 0.3
+	}
+	division = { # Marine
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13249 #Asahigawa
+		division_template = "Hǎijūn" 
+		start_experience_factor = 0.3
+	}
+	division = { # Marine
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13249 #Asahigawa
+		division_template = "Hǎijūn" 
+		start_experience_factor = 0.3
+	}
+	division = { # Tank
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13240 #Asahigawa
+		division_template = "Qīngxíng"
+		start_experience_factor = 0.3
+	}
+	division = { # Tank
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 14303 #Asahigawa
+		division_template = "Qīngxíng" 
+		start_experience_factor = 0.3
+	}
+
 }
 
 ## STARTING PRODUCTION ##
-instant_effect = {
+instant_effect = 
+{
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
 			creator = "TRS"
 		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "TRS" 
+		}
 		requested_factories = 1
-		progress = 0.75
-		efficiency = 100
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "TRS" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "TRS" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_nav_bomber_equipment_1
+			creator = "TRS" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
 	}
 }
