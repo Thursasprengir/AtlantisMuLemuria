@@ -6,7 +6,7 @@ units = {
 ### IJN ###
 	#Yokosuka (Tokyo)
 	fleet = {
-		name = "Dai 1 Kantai"			
+		name = "The Modern Bulshit"			
 		naval_base = 13254  #Yokosuka
 		task_force = {
 			name = "1 Kantai"
@@ -17,12 +17,12 @@ units = {
 			ship = { name = "Fuso" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TRS version_name = "Fuso/Ise Class"} } }
 			ship = { name = "Yamashiro" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Fuso/Ise Class"} } }
 			#Dai 8 Sentai
-			ship = { name = "Sendai" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Sendai Class"} } }
-			ship = { name = "Jintsu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Sendai Class"} } }
+			ship = { name = "Sendai" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
+			ship = { name = "Jintsu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 			ship = { name = "Nagara" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 		}
 		task_force = {
-			name = "1 Suirai Sentai" #A part of "Dai 1 Kantai"
+			name = "1 Suirai Sentai" #Minlayer/torp"
 			location = 13254  #Yokosuka
 			#Flagship
 			ship = { name = "Abukuma" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
@@ -35,10 +35,10 @@ units = {
 			ship = { name = "Wakaba" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Fubuki Class"} } }		
 			ship = { name = "Hatsushimo" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Fubuki Class"} } }
 			#Dai 30 Kuchikutai
-			ship = { name = "Mutsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
-			ship = { name = "Kisaragi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
-			ship = { name = "Yayoi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
-			ship = { name = "Uzuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
+			ship = { name = "Mutsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Katsuriki Class" } } }
+			ship = { name = "Kisaragi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Katsuriki Class" } } }
+			ship = { name = "Yayoi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Katsuriki Class"  } } }
+			ship = { name = "Uzuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Katsuriki Class" } } }
 		}
 		task_force = {
 			name = "1 Sensui Sentai" # A part of "Dai 1 Kantai"
@@ -69,7 +69,7 @@ units = {
 		task_force = {
 			name = "1 Koku Sentai" # A part of "Dai 1 Kantai"
 			location = 13254  #Yokosuka
-			ship = { name = "Ryujo" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = TRS version_name = "Ryujo Class" } } 				
+			ship = { name = "Ryujo" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = TRS version_name = "Ryujo Class" } } 		
 				air_wings = { 
 					cv_fighter_equipment_0 =  { owner = "TRS" amount = 24 } # historical 24
 					cv_CAS_equipment_1 = { owner = "TRS" amount = 12 } 	# historical 12
@@ -84,10 +84,10 @@ units = {
 		task_force = {
 			name = "Yokosuka Yobikantai" # Patrol and reserve fleet, including ships under modernization
 			location = 13254  #Yokosuka
-			ship = { name = "Mutsu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Nagato Class" } } }
-			ship = { name = "Takao" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = TRS version_name = "Myoko Class"} } }
-			ship = { name = "Chokai" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = TRS version_name = "Myoko Class"} } }
-			ship = { name = "Maya" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = TRS version_name = "Myoko Class"} } }
+			ship = { name = "Mutsu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Fuso/Ise Class" } } }
+			ship = { name = "Kiso" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
+			ship = { name = "Kiso" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
+			ship = { name = "Kiso" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 			ship = { name = "Isuzu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 			ship = { name = "Kiso" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 			# Dai 3 Kuchikutai
@@ -95,15 +95,14 @@ units = {
 			ship = { name = "Yukaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
 			ship = { name = "Tachikaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
 			ship = { name = "Hokaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
-			# Dai 10 Kuchikutai
-			ship = { name = "Yugiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Fubuki Class"} } }	
-			ship = { name = "Sagiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Fubuki Class"} } }		
+			ship = { name = "Tachikaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
+			ship = { name = "Hokaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
 		}
 	}
 	
 	#Sasebo (Nagasaki)
 	fleet = {
-		name = "Dai 2 Kantai"			
+		name = "to be shitified"			
 		naval_base = 14294  #Sasebo
 		task_force = {	
 			name = "2 Kantai"
@@ -209,7 +208,7 @@ units = {
 	
 	#Taiwan (Goaxing)
 	fleet = {
-		name = "Dai 3 Kantai"			
+		name = "to be shitified"				
 		naval_base = 14301	# Taiwan
 		task_force = {
 			name = "3 Kantai" #Later assigned for the Chinese theater
@@ -274,7 +273,7 @@ units = {
 
 	#Hiroshima (Kure)
 	fleet = {
-		name = "Kure Kantai"			
+		name = "to be shitified"			
 		naval_base = 13241  # Hiroshima
 		task_force = {
 			name = "Kure Yobikantai" # Patrol and reserve fleet, including ships under modernization
