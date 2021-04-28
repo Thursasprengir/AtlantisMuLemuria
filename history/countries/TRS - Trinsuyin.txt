@@ -103,14 +103,14 @@ set_politics = {
 }
 
 set_popularities = {
-		democratic = 0
-		fascism = 30
-		communism = 30
+		democratic = 10
+		fascism = 20
+		communism = 20
 			#banned = no #default is no
-		neutrality = 40
+		neutrality = 50
 		}
 
-set_convoys = 80
+set_convoys = 280
 
 if = {
 	limit = {
@@ -685,7 +685,7 @@ if = {
 			create_equipment_variant = {
 				name = "TCA-1 Class" #Carrier First Carrier Design
 				type = ship_hull_carrier_conversion_bb
-				name_group = JAP_CV_HISTORICAL
+				name_group = CHI_CV_HISTORICAL
 				parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -701,7 +701,7 @@ if = {
 		create_equipment_variant = {
 			name = "TB-12 Class" #AA Battleship 12th Battleship Design
 			type = ship_hull_pre_dreadnought
-			name_group = JAP_BB_HISTORICAL
+			name_group = CHI_BB_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_heavy_battery_1
@@ -718,9 +718,28 @@ if = {
 		obsolete = yes
 		}
 		create_equipment_variant = {
+			name = "TB-12B Class" #AA Battleship 12th Battleship Design
+			type = ship_hull_pre_dreadnought
+			name_group = CHI_BB_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = ship_anti_air_1
+				mid_1_custom_slot = ship_secondaries_1
+				rear_1_custom_slot = ship_secondaries_1
+			}
+		obsolete = yes
+		}
+		create_equipment_variant = {
 			name = "TCR-35 Class" #35th Cruiser Design
 			type = ship_hull_cruiser_1
-			name_group = JAP_CA_HISTORICAL
+			name_group = CHI_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_1
@@ -734,12 +753,12 @@ if = {
 				mid_2_custom_slot = ship_light_medium_battery_1
 				rear_1_custom_slot = ship_light_medium_battery_1
 			}
-		obsolete = no
+		obsolete = yes
 		}
 		create_equipment_variant = {
 			name = "TD-25D Class" #25th Depthcharge Destroyer Design
 			type = ship_hull_light_1
-			name_group = JAP_DD_HISTORICAL
+			name_group = CHI_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
@@ -751,12 +770,12 @@ if = {
 				mid_1_custom_slot = ship_depth_charge_1
 				rear_1_custom_slot = ship_depth_charge_1
 			}
-		obsolete = no
+		obsolete = yes
 		}
 		create_equipment_variant = {
 			name = "TD-11A Class" #11th AA Destroyer Design
 			type = ship_hull_light_1
-			name_group = JAP_DD_HISTORICAL
+			name_group = CHI_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
@@ -768,12 +787,32 @@ if = {
 				mid_1_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = ship_anti_air_1
 			}
-		obsolete = no
+		obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "TD-432CD Class" #432 Costal Defence
+			type = ship_hull_cruiser_coastal_defense_ship
+			name_group = CHI_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				front_1_custom_slot = ship_anti_air_1		
+				mid_1_custom_slot = ship_anti_air_1
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = ship_medium_battery_1
+			}
+			obsolete = yes
 		}
 		create_equipment_variant = {
 			name = "TS-4 Class"
 			type = ship_hull_submarine_1
-			name_group = HOU_SS_HISTORICAL
+			name_group = CHI_SS_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_torpedo_slot = ship_torpedo_sub_1
