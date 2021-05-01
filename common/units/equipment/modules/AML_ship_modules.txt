@@ -12,7 +12,7 @@ equipment_modules = {
 
 
 	vlfp_ship_secondaries = {
-		category = ship_secondaries
+		category = vlfp_ship_secondaries
 		gfx = ship_secondaries_3
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -29,10 +29,6 @@ equipment_modules = {
 			lg_armor_piercing = 8
 		}
 		
-		can_convert_from = {
-			module_category = ship_secondaries
-			convert_cost_ic = 150
-		}
 		critical_parts = { damaged_secondaries }
 	}
 
@@ -45,7 +41,7 @@ equipment_modules = {
 
 
 	vlfp_ship_anti_air = {
-		category = ship_anti_air
+		category = vlfp_ship_anti_air
 		sfx = sfx_ui_sd_module_turret
 
 		add_equipment_type = anti_air
@@ -71,7 +67,7 @@ equipment_modules = {
 
 
 	vlfp_carrier_ship_engine = {
-		category = carrier_ship_engine
+		category = vlfp_carrier_ship_engine
 		sfx = sfx_ui_sd_module_engine
 		
 		
@@ -94,7 +90,7 @@ equipment_modules = {
 #  # #   #  # # #       # #    #  # #  # #   
 ###  ###  ##  # #     ##  #    #  #  ##  ### 
 	vlfp_ship_deck_space = {
-		category = ship_deck_space
+		category = vlfp_ship_deck_space
 		gfx = ship_deck_space
 
 		add_equipment_type = capital_ship
@@ -119,7 +115,7 @@ equipment_modules = {
 #    ##  ### ###      #  #  # #  # # # ##  
 
 	vlfp_ship_extra_fuel_tank = {
-		category = ship_extra_fuel_tank
+		category = vlfp_ship_extra_fuel_tank
 		
 		
 		add_stats = {

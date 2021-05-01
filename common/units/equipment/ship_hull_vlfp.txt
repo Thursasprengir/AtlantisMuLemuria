@@ -31,12 +31,12 @@ equipments = {
 			}
 			fixed_ship_deck_slot_2 = {
 				required = no
-				allowed_module_categories = { ship_deck_space ship_carrier_armor }
+				allowed_module_categories = { vlfp_ship_deck_space ship_carrier_armor }
 				gfx = ship_deck_space_slot
 			}
 			fixed_ship_anti_air_slot = {
 				required = no
-				allowed_module_categories = { ship_anti_air }
+				allowed_module_categories = { vlfp_ship_anti_air }
 			}
 			fixed_ship_radar_slot = {
 				required = no
@@ -44,67 +44,74 @@ equipments = {
 			}
 			fixed_ship_engine_slot = {
 				required = yes
-				allowed_module_categories = { carrier_ship_engine }
+				allowed_module_categories = { vlfp_carrier_ship_engine }
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries }
+				allowed_module_categories = { vlfp_ship_secondaries }
 			}
 			
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_deck_space
+					vlfp_ship_deck_space
 					ship_carrier_armor
-					ship_secondaries
+					vlfp_ship_secondaries
+					vlfp_ship_extra_fuel_tank
 				}
 			}
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_secondaries
-					ship_deck_space
+					vlfp_ship_secondaries
+					vlfp_ship_deck_space
 					ship_carrier_armor
+					vlfp_ship_extra_fuel_tank
 				}
 			}
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_secondaries
-					ship_deck_space
+					vlfp_ship_secondaries
+					vlfp_ship_deck_space
 					ship_carrier_armor
+					vlfp_ship_extra_fuel_tank
 				}
 			}
 			mid_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_secondaries
-					ship_deck_space
+					vlfp_ship_secondaries
+					vlfp_ship_deck_space
 					ship_carrier_armor
+					vlfp_ship_extra_fuel_tank
 				}
 			}
 			mid_4_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_secondaries
-					ship_deck_space
+					vlfp_ship_secondaries
+					vlfp_ship_deck_space
 					ship_carrier_armor
+					vlfp_ship_extra_fuel_tank
 				}
 			}
 			mid_5_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_secondaries
-					ship_deck_space
+					vlfp_ship_secondaries
+					vlfp_ship_deck_space
 					ship_carrier_armor
+					vlfp_ship_extra_fuel_tank
 				}
 			}
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_secondaries
-					ship_deck_space
+					vlfp_ship_secondaries
+					vlfp_ship_deck_space
 					ship_carrier_armor
+					vlfp_ship_extra_fuel_tank
 				}
 			}
 		}
@@ -150,7 +157,7 @@ equipments = {
 		naval_speed = 6
 		reliability = 0.70
 		
-		naval_range = 2000
+		naval_range = 1000
 		
 		max_strength = 500
 		
