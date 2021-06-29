@@ -8,7 +8,8 @@ ATL_gang_warfare = {
 		days_remove = 10
 		remove_effect = {
 			set_country_flag = spy_defense_flag
-			add_to_variable = {var = ATL.kapra_success_array^2 value = 25 }
+			add_to_variable = {var = var_kapra_cooldown value = 25 }
+			add_to_variable = {var = var_itork_cooldown value = 25 }
 		}
 	}
 	ATL_spy_partisan = {
@@ -29,6 +30,7 @@ ATL_gang_warfare = {
 		days_remove = 10
 		remove_effect = {
 			set_country_flag = spy_interrogation_flag
+			add_to_variable = {var = var_political_power_block value = 25}
 		}
 	}
 	########### Global Decisions
@@ -42,22 +44,31 @@ ATL_gang_warfare = {
 			set_country_flag = fortify_flag
 			subtract_from_variable = {var = ATL.kapra_success_array^0 value = 25 }
 			add_to_variable = {var = ATL.kapra_success_array^2 value = 25 }
+			subtract_from_variable = {var = ATL.itork_success_array^0 value = 25 }
+			add_to_variable = {var = ATL.itork_success_array^2 value = 25 }
 		}
 	}
 	ATL_factory_curfews_toggle = {
 		icon = generic_research
 		available = {}
 		visible = {}
-		cost = 50
 		days_remove = 10
 		remove_effect = {
 			if = {
 				limit = {has_country_flag = factory_curfew_flag}
 				remove_ideas = ATL_factory_curfew_idea
+				add_to_variable = {var = ATL.kapra_success_array^0 value = 30 }
+				add_to_variable = {var = ATL.kapra_success_array^1 value = 30 }
+				subtract_from_variable = {var = ATL.kapra_success_array^2 value = 30 }
+				subtract_from_variable = {var = ATL.kapra_success_array^3 value = 30 }
 			}
 			else = {
 				add_ideas = ATL_factory_curfew_idea
 				set_country_flag = factory_curfew_flag
+				subtract_from_variable = {var = ATL.kapra_success_array^0 value = 30 }
+				subtract_from_variable = {var = ATL.kapra_success_array^1 value = 30 }
+				add_to_variable = {var = ATL.kapra_success_array^2 value = 30 }
+				add_to_variable = {var = ATL.kapra_success_array^3 value = 30 }
 			}
 		}
 	}
@@ -71,10 +82,18 @@ ATL_gang_warfare = {
 			if = {
 				limit = {has_country_flag = dockyard_curfew_flag}
 				remove_ideas = ATL_dockyard_curfew_idea
+				add_to_variable = {var = ATL.itork_success_array^0 value = 30 }
+				add_to_variable = {var = ATL.itork_success_array^1 value = 30 }
+				subtract_from_variable = {var = ATL.itork_success_array^2 value = 30 }
+				subtract_from_variable = {var = ATL.itork_success_array^3 value = 30 }
 			}
 			else = {
 				add_ideas = ATL_dockyard_curfew_idea
 				set_country_flag = dockyard_curfew_flag
+				subtract_from_variable = {var = ATL.itork_success_array^0 value = 30 }
+				subtract_from_variable = {var = ATL.itork_success_array^1 value = 30 }
+				add_to_variable = {var = ATL.itork_success_array^2 value = 30 }
+				add_to_variable = {var = ATL.itork_success_array^3 value = 30 }
 			}
 		}
 	}
@@ -86,10 +105,29 @@ ATL_gang_warfare = {
 		days_remove = 10
 		remove_effect = {
 			set_country_flag = training_flag
+			add_to_variable = {var = var_police_casualties value = 2000 }
 			subtract_from_variable = {var = ATL.kapra_success_array^0 value = 10 }
 			subtract_from_variable = {var = ATL.kapra_success_array^1 value = 10 }
 			add_to_variable = {var = ATL.kapra_success_array^2 value = 10 }
 			add_to_variable = {var = ATL.kapra_success_array^3 value = 10 }
+			subtract_from_variable = {var = ATL.itork_success_array^0 value = 10 }
+			subtract_from_variable = {var = ATL.itork_success_array^1 value = 10 }
+			add_to_variable = {var = ATL.itork_success_array^2 value = 10 }
+			add_to_variable = {var = ATL.itork_success_array^3 value = 10 }
+		}
+	}
+	ATL_equip = {
+		icon = generic_research
+		available = {
+			has_equipment = {infantry_equipment > 10}
+			has_equipment = {support_equipment > 10}
+		}
+		visible = { NOT = {has_country_flag = equip_flag}}
+		cost = 50
+		days_remove = 10
+		remove_effect = {
+			set_country_flag = equip_flag
+			add_to_variable = {var = var_police_casualties value = 1000 }
 		}
 	}
 }
@@ -223,14 +261,14 @@ ATL_kaprastiak_war_category = {
 		activation = { always = no }
 		days_mission_timeout = 14
 		highlight_state_targets = { state = 944 }
-		timeout_effect = {944 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_burmiunean = yes}}}}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
+		timeout_effect = {944 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_burmiunean = yes}}}}
 		complete_effect = {
 			add_manpower = var_police_casualties
 			add_political_power = var_political_power_block
-			944 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_burmiunean = yes}}}
+			944 = {random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_burmiunean = yes }}}
 		}
 	}
 	ATL_kapra_945_attack = {
@@ -345,6 +383,133 @@ ATL_kaprastiak_war_category = {
 			965 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_2 = yes}}}
 		}
 	}
+	########### Itorkanak attack missions
+	ATL_itork_944_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 944 }
+		timeout_effect = {944 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_burmiunean = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			944 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_burmiunean = yes}}}
+		}
+	}
+	ATL_itork_945_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 945 }
+		timeout_effect = {945 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_4 = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			945 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_4 = yes}}}
+		}
+	}
+	ATL_itork_946_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 946 }
+		timeout_effect = {946 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			946 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_2 = yes}}}
+		}
+	}
+	ATL_itork_947_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 947 }
+		timeout_effect = {947 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			947 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_2 = yes}}}
+		}
+	}
+	ATL_itork_948_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 948 }
+		timeout_effect = {948 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_yamylaik = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			948 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_yamylaik = yes}}}
+		}
+	}
+	ATL_itork_949_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 949 }
+		timeout_effect = {949 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_anoixte = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			949 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_anoixte = yes}}}
+		}
+	}
+	ATL_itork_963_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 963 }
+		timeout_effect = {963 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			963 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_2 = yes}}}
+		}
+	}
+	ATL_itork_964_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 964 }
+		timeout_effect = {964 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			964 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_2 = yes}}}
+		}
+	}
+	ATL_itork_965_attack = {
+		activation = { always = no }
+		days_mission_timeout = 14
+		highlight_state_targets = { state = 965 }
+		timeout_effect = {965 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
+		is_good = no
+		selectable_mission = yes
+		days_remove = 5
+		complete_effect = {
+			add_manpower = var_police_casualties
+			add_political_power = var_political_power_block
+			965 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_2 = yes}}}
+		}
+	}
 	########## Selection loop
 	ATL_select_target_kapra = {
 		visible = { always = no }
@@ -353,15 +518,42 @@ ATL_kaprastiak_war_category = {
 		days_mission_timeout = 10
 		timeout_effect = {
 			random_list = {
-				ATL.944_array^2 = { activate_mission = ATL_kapra_944_attack}
-				ATL.945_array^2 = { activate_mission = ATL_kapra_945_attack}
-				ATL.946_array^2 = { activate_mission = ATL_kapra_946_attack}
-				ATL.947_array^2 = { activate_mission = ATL_kapra_947_attack}
-				ATL.948_array^2 = { activate_mission = ATL_kapra_948_attack}
-				ATL.949_array^2 = { activate_mission = ATL_kapra_949_attack}
-				ATL.963_array^2 = { activate_mission = ATL_kapra_963_attack}
-				ATL.964_array^2 = { activate_mission = ATL_kapra_964_attack}
-				ATL.965_array^2 = { activate_mission = ATL_kapra_965_attack}
+				ATL.944_array^2 = {
+					if = {limit = {check_variable = {ATL.944_array^1 > 0}} activate_mission = ATL_kapra_944_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_burmiunean = yes itork_down_burmiunean = yes }}}
+				}
+				ATL.945_array^2 = {
+					if = {limit = {check_variable = {ATL.945_array^1 > 0}} activate_mission = ATL_kapra_945_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_4 = yes itork_down_4 = yes }}}
+				}
+				ATL.946_array^2 = {
+					if = {limit = {check_variable = {ATL.946_array^1 > 0}} activate_mission = ATL_kapra_946_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+				ATL.947_array^2 = {
+					if = {limit = {check_variable = {ATL.947_array^1 > 0}} activate_mission = ATL_kapra_947_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+				ATL.948_array^2 = {
+					if = {limit = {check_variable = {ATL.948_array^1 > 0}} activate_mission = ATL_kapra_948_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_yamylaik = yes itork_down_yamylaik = yes }}}
+				}
+				ATL.949_array^2 = {
+					if = {limit = {check_variable = {ATL.949_array^1 > 0}} activate_mission = ATL_kapra_949_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_anoixte = yes itork_down_anoixte = yes }}}
+				}
+				ATL.963_array^2 = {
+					if = {limit = {check_variable = {ATL.963_array^1 > 0}} activate_mission = ATL_kapra_963_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+				ATL.964_array^2 = {
+					if = {limit = {check_variable = {ATL.964_array^1 > 0}} activate_mission = ATL_kapra_964_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+				ATL.965_array^2 = {
+					if = {limit = {check_variable = {ATL.965_array^1 > 0}} activate_mission = ATL_kapra_965_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
 			}
 			activate_mission = ATL_cooldown_kapra
 		}
@@ -374,11 +566,69 @@ ATL_kaprastiak_war_category = {
 		is_good = no
 		timeout_effect = { activate_mission = ATL_select_target_kapra }
 	}
+	ATL_select_target_itork = {
+		visible = { always = no }
+		available = { hidden_trigger = { always = no }}
+		activation = { always = no }
+		days_mission_timeout = 10
+		timeout_effect = {
+			random_list = {
+				ATL.944_array^3 = {
+					if = {limit = {check_variable = {ATL.944_array^1 > 0}} activate_mission = ATL_itork_944_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_burmiunean = yes kapra_down_burmiunean = yes }}}
+				}
+				ATL.945_array^3 = {
+					if = {limit = {check_variable = {ATL.945_array^1 > 0}} activate_mission = ATL_itork_945_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_4 = yes kapra_down_4 = yes }}}
+				}
+				ATL.946_array^3 = {
+					if = {limit = {check_variable = {ATL.946_array^1 > 0}} activate_mission = ATL_itork_946_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_2 = yes kapra_down_2 = yes }}}
+				}
+				ATL.947_array^3 = {
+					if = {limit = {check_variable = {ATL.947_array^1 > 0}} activate_mission = ATL_itork_947_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_2 = yes kapra_down_2 = yes }}}
+				}
+				ATL.948_array^3 = {
+					if = {limit = {check_variable = {ATL.948_array^1 > 0}} activate_mission = ATL_itork_948_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_yamylaik = yes kapra_down_yamylaik = yes }}}
+				}
+				ATL.949_array^3 = {
+					if = {limit = {check_variable = {ATL.949_array^1 > 0}} activate_mission = ATL_itork_949_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_anoixte = yes kapra_down_anoixte = yes }}}
+				}
+				ATL.963_array^3 = {
+					if = {limit = {check_variable = {ATL.963_array^1 > 0}} activate_mission = ATL_itork_963_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_2 = yes kapra_down_2 = yes }}}
+				}
+				ATL.964_array^3 = {
+					if = {limit = {check_variable = {ATL.964_array^1 > 0}} activate_mission = ATL_itork_964_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_2 = yes kapra_down_2 = yes }}}
+				}
+				ATL.965_array^3 = {
+					if = {limit = {check_variable = {ATL.965_array^1 > 0}} activate_mission = ATL_itork_965_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_2 = yes kapra_down_2 = yes }}}
+				}
+			}
+			activate_mission = ATL_cooldown_itork
+		}
+	}
+	ATL_cooldown_itork = {
+		visible = {has_country_flag = itork_visible}
+		available = { hidden_trigger = {always = no}}
+		activation = { always = no}
+		days_mission_timeout = var_itork_cooldown
+		is_good = no
+		timeout_effect = { activate_mission = ATL_select_target_itork }
+	}
 	ATL_start = {
 		icon = generic_nationalism
 		visible = {NOT = {has_country_flag = ATL_started}}
 		ai_will_do = {factor = 1000}
-		complete_effect = { activate_mission = ATL_select_target_kapra }
+		complete_effect = {
+			activate_mission = ATL_select_target_kapra
+			activate_mission = ATL_select_target_itork
+		}
 	}
 	ATL_test = {
 		icon = generic_nationalism
