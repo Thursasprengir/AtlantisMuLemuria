@@ -3,43 +3,46 @@ ATL_gang_warfare = {
 	ATL_spy_defense = {
 		icon = generic_research
 		available = { has_done_agency_upgrade = upgrade_passive_defense}
-		visible = { has_intelligence_agency = yes }
+		visible = { NOT = {has_country_flag = spy_defense_flag}}
 		cost = 50
 		days_remove = 10
-		remove_effect = {}
+		remove_effect = {
+			set_country_flag = spy_defense_flag
+			add_to_variable = {var = ATL.kapra_success_array^2 value = 25 }
+		}
 	}
 	ATL_spy_partisan = {
 		icon = generic_research
 		available = { has_done_agency_upgrade = upgrade_anti_partisan}
-		visible = { has_intelligence_agency = yes }
+		visible = { NOT = {has_country_flag = spy_partisan_flag}}
 		cost = 50
 		days_remove = 10
-		remove_effect = {}
+		remove_effect = {
+			set_country_flag = spy_partisan_flag
+		}
 	}
 	ATL_spy_interrogation = {
 		icon = generic_research
 		available = { has_done_agency_upgrade = upgrade_interrogation_techniques}
-		visible = { has_intelligence_agency = yes }
+		visible = { NOT = {has_country_flag = spy_interrogation_flag}}
 		cost = 50
 		days_remove = 10
-		remove_effect = {}
+		remove_effect = {
+			set_country_flag = spy_interrogation_flag
+		}
 	}
 	########### Global Decisions
 	ATL_fortify = {
 		icon = generic_research
 		available = {}
-		visible = {}
+		visible = { NOT = {has_country_flag = fortify_flag}}
 		cost = 50
 		days_remove = 10
-		remove_effect = {}
-	}
-	ATL_curfews_toggle = {
-		icon = generic_research
-		available = {}
-		visible = {}
-		cost = 50
-		days_remove = 10
-		remove_effect = {}
+		remove_effect = {
+			set_country_flag = fortify_flag
+			subtract_from_variable = {var = ATL.kapra_success_array^0 value = 25 }
+			add_to_variable = {var = ATL.kapra_success_array^2 value = 25 }
+		}
 	}
 	ATL_factory_curfews_toggle = {
 		icon = generic_research
@@ -47,7 +50,16 @@ ATL_gang_warfare = {
 		visible = {}
 		cost = 50
 		days_remove = 10
-		remove_effect = {}
+		remove_effect = {
+			if = {
+				limit = {has_country_flag = factory_curfew_flag}
+				remove_ideas = ATL_factory_curfew_idea
+			}
+			else = {
+				add_ideas = ATL_factory_curfew_idea
+				set_country_flag = factory_curfew_flag
+			}
+		}
 	}
 	ATL_dockyard_curfews_toggle = {
 		icon = generic_research
@@ -55,23 +67,30 @@ ATL_gang_warfare = {
 		visible = {}
 		cost = 50
 		days_remove = 10
-		remove_effect = {}
-	}
-	ATL_fortify = {
-		icon = generic_research
-		available = {}
-		visible = {}
-		cost = 50
-		days_remove = 10
-		remove_effect = {}
+		remove_effect = {
+			if = {
+				limit = {has_country_flag = dockyard_curfew_flag}
+				remove_ideas = ATL_dockyard_curfew_idea
+			}
+			else = {
+				add_ideas = ATL_dockyard_curfew_idea
+				set_country_flag = dockyard_curfew_flag
+			}
+		}
 	}
 	ATL_training = {
 		icon = generic_research
 		available = {}
-		visible = {}
+		visible = { NOT = {has_country_flag = training_flag}}
 		cost = 50
 		days_remove = 10
-		remove_effect = {}
+		remove_effect = {
+			set_country_flag = training_flag
+			subtract_from_variable = {var = ATL.kapra_success_array^0 value = 10 }
+			subtract_from_variable = {var = ATL.kapra_success_array^1 value = 10 }
+			add_to_variable = {var = ATL.kapra_success_array^2 value = 10 }
+			add_to_variable = {var = ATL.kapra_success_array^3 value = 10 }
+		}
 	}
 }
 

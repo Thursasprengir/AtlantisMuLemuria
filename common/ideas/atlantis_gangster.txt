@@ -108,5 +108,17 @@ ideas = {
 			picture = trading_empire
 			modifier = {political_power_gain = -0.5 stability_factor = -0.1}
 		}
+		ATL_factory_curfew_idea = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = trading_empire
+			modifier = {political_power_gain = -0.1 industrial_capacity_factory = -0.5 consumer_goods_factor = 0.1}
+		}
+		ATL_dockyard_curfew_idea = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = trading_empire
+			modifier = {political_power_gain = -0.1 industrial_capacity_dockyard = -0.5}
+		}
 	}
 }
