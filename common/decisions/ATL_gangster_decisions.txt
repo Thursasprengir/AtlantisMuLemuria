@@ -76,7 +76,6 @@ ATL_gang_warfare = {
 		icon = generic_research
 		available = {}
 		visible = {}
-		cost = 50
 		days_remove = 10
 		remove_effect = {
 			if = {
@@ -139,7 +138,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = akitselo_k_2 trigger = {ATL = { has_idea = ATL_kapra_burmiunean_2}} }
 		icon = { key = akitselo_k_3 trigger = {ATL = { has_idea = ATL_kapra_burmiunean_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.944_array^1 value = 3 compare = equals}}}
+		visible = { OR = { has_idea = ATL_kapra_burmiunean_1 has_idea = ATL_kapra_burmiunean_2 has_idea = ATL_kapra_burmiunean_3 }}
 		highlight_state_targets = { state = 944 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -154,7 +153,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = mutsarna_k_3 trigger = {ATL = { has_idea = ATL_kapra_4_3}} }
 		icon = { key = mutsarna_k_4 trigger = {ATL = { has_idea = ATL_kapra_4_4}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.945_array^1 value = 4 compare = equals}}}
+		visible = { OR = { has_idea = ATL_kapra_4_1 has_idea = ATL_kapra_4_2 has_idea = ATL_kapra_4_3 has_idea = ATL_kapra_4_4 }}
 		highlight_state_targets = { state = 945 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -167,7 +166,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_1 trigger = {946 = {has_state_flag = kapra_flag_1}} }
 		icon = { key = small_city_k_2 trigger = {946 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.946_array^1 value = 2 compare = equals}}}
+		visible = { OR = { 946 = {has_state_flag = kapra_flag_1} 946 = {has_state_flag = kapra_flag_2} }}
 		highlight_state_targets = { state = 946 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -180,7 +179,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_1 trigger = {947 = {has_state_flag = kapra_flag_1}} }
 		icon = { key = small_city_k_2 trigger = {947 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.947_array^1 value = 2 compare = equals}}}
+		visible = { OR = { 947 = {has_state_flag = kapra_flag_1} 947 = {has_state_flag = kapra_flag_2} }}
 		highlight_state_targets = { state = 947 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -194,7 +193,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = akitselo_k_2 trigger = {ATL = { has_idea = ATL_kapra_yamylaik_2}} }
 		icon = { key = akitselo_k_3 trigger = {ATL = { has_idea = ATL_kapra_yamylaik_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.948_array^1 value = 3 compare = equals}}}
+		visible = { OR = { has_idea = ATL_kapra_yamylaik_1 has_idea = ATL_kapra_yamylaik_2 has_idea = ATL_kapra_yamylaik_3 }}
 		highlight_state_targets = { state = 948 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -208,7 +207,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = akitselo_k_2 trigger = {ATL = { has_idea = ATL_kapra_anoixte_2}} }
 		icon = { key = akitselo_k_3 trigger = {ATL = { has_idea = ATL_kapra_anoixte_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.949_array^1 value = 3 compare = equals}}}
+		visible = { OR = { has_idea = ATL_kapra_anoixte_1 has_idea = ATL_kapra_anoixte_2 has_idea = ATL_kapra_anoixte_3 }}
 		highlight_state_targets = { state = 949 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -221,7 +220,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_1 trigger = {963 = {has_state_flag = kapra_flag_1}} }
 		icon = { key = small_city_k_2 trigger = {963 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.963_array^1 value = 2 compare = equals}}}
+		visible = { OR = { 963 = {has_state_flag = kapra_flag_1} 963 = {has_state_flag = kapra_flag_2} }}
 		highlight_state_targets = { state = 963 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -234,7 +233,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_1 trigger = {964 = {has_state_flag = kapra_flag_1}} }
 		icon = { key = small_city_k_2 trigger = {964 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.964_array^1 value = 2 compare = equals}}}
+		visible = { OR = { 964 = {has_state_flag = kapra_flag_1} 964 = {has_state_flag = kapra_flag_2} }}
 		highlight_state_targets = { state = 964 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -247,7 +246,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_1 trigger = {965 = {has_state_flag = kapra_flag_1}} }
 		icon = { key = small_city_k_2 trigger = {965 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
-		visible = { NOT = { check_variable = { var = ATL.965_array^1 value = 2 compare = equals}}}
+		visible = { OR = { 965 = {has_state_flag = kapra_flag_1} 965 = {has_state_flag = kapra_flag_2} }}
 		highlight_state_targets = { state = 965 }
 		on_map_mode = map_and_decisions_view
 		cost = var_police_cost
@@ -383,6 +382,196 @@ ATL_kaprastiak_war_category = {
 			965 = { random_list = {ATL.kapra_success_array^3 = {} ATL.kapra_success_array^1 = {kapra_up_2 = yes}}}
 		}
 	}
+	########## Kaprastiak selection loop
+	ATL_select_target_kapra = {
+		visible = { always = no }
+		available = { hidden_trigger = { always = no }}
+		activation = { always = no }
+		days_mission_timeout = 10
+		timeout_effect = {
+			random_list = {
+				ATL.944_array^2 = {
+					if = {limit = {check_variable = {ATL.944_array^1 > 0}} activate_mission = ATL_kapra_944_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_burmiunean = yes itork_down_burmiunean = yes }}}
+				}
+				ATL.945_array^2 = {
+					if = {limit = {check_variable = {ATL.945_array^1 > 0}} activate_mission = ATL_kapra_945_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_4 = yes itork_down_4 = yes }}}
+				}
+				ATL.946_array^2 = {
+					if = {limit = {check_variable = {ATL.946_array^1 > 0}} activate_mission = ATL_kapra_946_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+				ATL.947_array^2 = {
+					if = {limit = {check_variable = {ATL.947_array^1 > 0}} activate_mission = ATL_kapra_947_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+				ATL.948_array^2 = {
+					if = {limit = {check_variable = {ATL.948_array^1 > 0}} activate_mission = ATL_kapra_948_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_yamylaik = yes itork_down_yamylaik = yes }}}
+				}
+				ATL.949_array^2 = {
+					if = {limit = {check_variable = {ATL.949_array^1 > 0}} activate_mission = ATL_kapra_949_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_anoixte = yes itork_down_anoixte = yes }}}
+				}
+				ATL.963_array^2 = {
+					if = {limit = {check_variable = {ATL.963_array^1 > 0}} activate_mission = ATL_kapra_963_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+				ATL.964_array^2 = {
+					if = {limit = {check_variable = {ATL.964_array^1 > 0}} activate_mission = ATL_kapra_964_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+				ATL.965_array^2 = {
+					if = {limit = {check_variable = {ATL.965_array^1 > 0}} activate_mission = ATL_kapra_965_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
+				}
+			}
+			activate_mission = ATL_cooldown_kapra
+		}
+	}
+	ATL_cooldown_kapra = {
+		visible = {has_country_flag = kapra_visible}
+		available = { hidden_trigger = {always = no}}
+		activation = { always = no}
+		days_mission_timeout = var_kapra_cooldown
+		is_good = no
+		timeout_effect = { activate_mission = ATL_select_target_kapra }
+	}
+	ATL_start_k = {
+		icon = generic_nationalism
+		visible = {NOT = {has_country_flag = ATL_startedk}}
+		ai_will_do = {factor = 1000}
+		complete_effect = {
+			activate_mission = ATL_select_target_kapra
+			set_country_flag = ATL_startedk
+		}
+	}
+}
+ATL_itorkanak_war_category = {
+	########### Anti-Itorkanak police operations
+	ATL_police_i_944 = {
+		icon = { key = akitselo_i_1 trigger = {ATL = { has_idea = ATL_itork_burmiunean_1}} }
+		icon = { key = akitselo_i_2 trigger = {ATL = { has_idea = ATL_itork_burmiunean_2}} }
+		icon = { key = akitselo_i_3 trigger = {ATL = { has_idea = ATL_itork_burmiunean_3}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { has_idea = ATL_itork_burmiunean_1 has_idea = ATL_itork_burmiunean_2 has_idea = ATL_itork_burmiunean_3 }}
+		highlight_state_targets = { state = 944 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 944 = { random_list = {ATL.itork_success_array^3 = {itork_down_burmiunean = yes } ATL.itork_success_array^1 = {}}} }
+	}
+	ATL_police_i_945 = {
+		icon = { key = mutsarna_i_1 trigger = {ATL = { has_idea = ATL_itork_4_1}} }
+		icon = { key = mutsarna_i_2 trigger = {ATL = { has_idea = ATL_itork_4_2}} }
+		icon = { key = mutsarna_i_3 trigger = {ATL = { has_idea = ATL_itork_4_3}} }
+		icon = { key = mutsarna_i_4 trigger = {ATL = { has_idea = ATL_itork_4_4}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { has_idea = ATL_itork_4_1 has_idea = ATL_itork_4_2 has_idea = ATL_itork_4_3 has_idea = ATL_itork_4_4 }}
+		highlight_state_targets = { state = 945 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 945 = { random_list = {ATL.itork_success_array^3 = {itork_down_4 = yes } ATL.itork_success_array^1 = {}}} }
+	}
+	ATL_police_i_946 = {
+		icon = { key = small_city_i_1 trigger = {946 = {has_state_flag = itork_flag_1}} }
+		icon = { key = small_city_i_2 trigger = {946 = {has_state_flag = itork_flag_2}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { 946 = {has_state_flag = itork_flag_1} 946 = {has_state_flag = itork_flag_2} }}
+		highlight_state_targets = { state = 946 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 946 = { random_list = {ATL.itork_success_array^3 = {itork_down_2 = yes } ATL.itork_success_array^1 = {}}} }
+	}
+	ATL_police_i_947 = {
+		icon = { key = small_city_i_1 trigger = {947 = {has_state_flag = itork_flag_1}} }
+		icon = { key = small_city_i_2 trigger = {947 = {has_state_flag = itork_flag_2}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { 947 = {has_state_flag = itork_flag_1} 947 = {has_state_flag = itork_flag_2} }}
+		highlight_state_targets = { state = 947 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 947 = { random_list = {ATL.itork_success_array^3 = {itork_down_2 = yes } ATL.itork_success_array^1 = {}}} }
+	}
+	ATL_police_i_948 = {
+		icon = { key = akitselo_i_1 trigger = {ATL = { has_idea = ATL_itork_yamylaik_1}} }
+		icon = { key = akitselo_i_2 trigger = {ATL = { has_idea = ATL_itork_yamylaik_2}} }
+		icon = { key = akitselo_i_3 trigger = {ATL = { has_idea = ATL_itork_yamylaik_3}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { has_idea = ATL_itork_yamylaik_1 has_idea = ATL_itork_yamylaik_2 has_idea = ATL_itork_yamylaik_3 }}
+		highlight_state_targets = { state = 948 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 948 = { random_list = {ATL.itork_success_array^3 = {itork_down_yamylaik = yes } ATL.itork_success_array^1 = {}}} }
+	}
+	ATL_police_i_949 = {
+		icon = { key = akitselo_i_1 trigger = {ATL = { has_idea = ATL_itork_anoixte_1}} }
+		icon = { key = akitselo_i_2 trigger = {ATL = { has_idea = ATL_itork_anoixte_2}} }
+		icon = { key = akitselo_i_3 trigger = {ATL = { has_idea = ATL_itork_anoixte_3}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { has_idea = ATL_itork_anoixte_1 has_idea = ATL_itork_anoixte_2 has_idea = ATL_itork_anoixte_3 }}
+		highlight_state_targets = { state = 949 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 949 = { random_list = {ATL.itork_success_array^3 = {itork_down_anoixte = yes } ATL.itork_success_array^1 = {}}} }
+	}
+	ATL_police_i_963 = {
+		icon = { key = small_city_i_1 trigger = {963 = {has_state_flag = itork_flag_1}} }
+		icon = { key = small_city_i_2 trigger = {963 = {has_state_flag = itork_flag_2}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { 963 = {has_state_flag = itork_flag_1} 963 = {has_state_flag = itork_flag_2} }}
+		highlight_state_targets = { state = 963 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 963 = { random_list = {ATL.itork_success_array^3 = {itork_down_2 = yes } ATL.itork_success_array^1 = {}}} }
+	}
+	ATL_police_i_964 = {
+		icon = { key = small_city_i_1 trigger = {964 = {has_state_flag = itork_flag_1}} }
+		icon = { key = small_city_i_2 trigger = {964 = {has_state_flag = itork_flag_2}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { 964 = {has_state_flag = itork_flag_1} 964 = {has_state_flag = itork_flag_2} }}
+		highlight_state_targets = { state = 964 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 964 = { random_list = {ATL.itork_success_array^3 = {itork_down_2 = yes } ATL.itork_success_array^1 = {}}} }
+	}
+	ATL_police_i_965 = {
+		icon = { key = small_city_i_1 trigger = {965 = {has_state_flag = itork_flag_1}} }
+		icon = { key = small_city_i_2 trigger = {965 = {has_state_flag = itork_flag_2}} }
+		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
+		visible = { OR = { 965 = {has_state_flag = itork_flag_1} 965 = {has_state_flag = itork_flag_2} }}
+		highlight_state_targets = { state = 965 }
+		on_map_mode = map_and_decisions_view
+		cost = var_police_cost
+		days_remove = var_police_cooldown
+		modifier = { weekly_manpower = -500 }
+		complete_effect = { set_country_flag = ATL_police_acting}
+		remove_effect = { clr_country_flag = ATL_police_acting 965 = { random_list = {ATL.itork_success_array^3 = {itork_down_2 = yes } ATL.itork_success_array^1 = {}}} }
+	}
 	########### Itorkanak attack missions
 	ATL_itork_944_attack = {
 		activation = { always = no }
@@ -510,62 +699,7 @@ ATL_kaprastiak_war_category = {
 			965 = { random_list = {ATL.itork_success_array^3 = {} ATL.itork_success_array^1 = {itork_up_2 = yes}}}
 		}
 	}
-	########## Selection loop
-	ATL_select_target_kapra = {
-		visible = { always = no }
-		available = { hidden_trigger = { always = no }}
-		activation = { always = no }
-		days_mission_timeout = 10
-		timeout_effect = {
-			random_list = {
-				ATL.944_array^2 = {
-					if = {limit = {check_variable = {ATL.944_array^1 > 0}} activate_mission = ATL_kapra_944_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_burmiunean = yes itork_down_burmiunean = yes }}}
-				}
-				ATL.945_array^2 = {
-					if = {limit = {check_variable = {ATL.945_array^1 > 0}} activate_mission = ATL_kapra_945_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_4 = yes itork_down_4 = yes }}}
-				}
-				ATL.946_array^2 = {
-					if = {limit = {check_variable = {ATL.946_array^1 > 0}} activate_mission = ATL_kapra_946_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
-				}
-				ATL.947_array^2 = {
-					if = {limit = {check_variable = {ATL.947_array^1 > 0}} activate_mission = ATL_kapra_947_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
-				}
-				ATL.948_array^2 = {
-					if = {limit = {check_variable = {ATL.948_array^1 > 0}} activate_mission = ATL_kapra_948_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_yamylaik = yes itork_down_yamylaik = yes }}}
-				}
-				ATL.949_array^2 = {
-					if = {limit = {check_variable = {ATL.949_array^1 > 0}} activate_mission = ATL_kapra_949_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_anoixte = yes itork_down_anoixte = yes }}}
-				}
-				ATL.963_array^2 = {
-					if = {limit = {check_variable = {ATL.963_array^1 > 0}} activate_mission = ATL_kapra_963_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
-				}
-				ATL.964_array^2 = {
-					if = {limit = {check_variable = {ATL.964_array^1 > 0}} activate_mission = ATL_kapra_964_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
-				}
-				ATL.965_array^2 = {
-					if = {limit = {check_variable = {ATL.965_array^1 > 0}} activate_mission = ATL_kapra_965_attack}
-					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes itork_down_2 = yes }}}
-				}
-			}
-			activate_mission = ATL_cooldown_kapra
-		}
-	}
-	ATL_cooldown_kapra = {
-		visible = {has_country_flag = kapra_visible}
-		available = { hidden_trigger = {always = no}}
-		activation = { always = no}
-		days_mission_timeout = var_kapra_cooldown
-		is_good = no
-		timeout_effect = { activate_mission = ATL_select_target_kapra }
-	}
+	########## Itorkanak selection loop
 	ATL_select_target_itork = {
 		visible = { always = no }
 		available = { hidden_trigger = { always = no }}
@@ -621,22 +755,16 @@ ATL_kaprastiak_war_category = {
 		is_good = no
 		timeout_effect = { activate_mission = ATL_select_target_itork }
 	}
-	ATL_start = {
+	ATL_start_i = {
 		icon = generic_nationalism
-		visible = {NOT = {has_country_flag = ATL_started}}
+		visible = {NOT = {has_country_flag = ATL_startedi}}
 		ai_will_do = {factor = 1000}
 		complete_effect = {
-			activate_mission = ATL_select_target_kapra
 			activate_mission = ATL_select_target_itork
+			set_country_flag = ATL_startedi
 		}
 	}
-	ATL_test = {
-		icon = generic_nationalism
-		ai_will_do = {factor = 1000}
-		complete_effect = { set_country_flag = test_flag }
-	}
 }
-
 
 
 
