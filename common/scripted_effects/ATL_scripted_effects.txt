@@ -2,6 +2,10 @@
 kapra_up_4 = {
 	custom_effect_tooltip = ATL_kapra_up_tt
 	hidden_effect = {
+		if = {
+			limit = {check_variable = {var = var = ATL.945_array^1 value = 0 compare = equals}}
+			itork_down_4 = yes
+		}
 		subtract_from_variable = {var = ATL.945_array^1 value = 1}
 		if = {
 			limit = { ATL = { has_idea = ATL_kapra_4_3 } }
@@ -60,6 +64,10 @@ kapra_down_4 = {
 kapra_up_yamylaik = {
 	custom_effect_tooltip = ATL_kapra_up_tt
 	hidden_effect = {
+		if = {
+			limit = {check_variable = {var = var = ATL.948_array^1 value = 0 compare = equals}}
+			itork_down_yamylaik = yes
+		}
 		subtract_from_variable = {var = ATL.948_array^1 value = 1}
 		if = {
 			limit = { ATL = { has_idea = ATL_kapra_yamylaik_2 }}
@@ -100,6 +108,10 @@ kapra_down_yamylaik = {
 kapra_up_burmiunean = {
 	custom_effect_tooltip = ATL_kapra_up_tt
 	hidden_effect = {
+		if = {
+			limit = {check_variable = {var = var = ATL.944_array^1 value = 0 compare = equals}}
+			itork_down_burmiunean = yes
+		}
 		subtract_from_variable = {var = ATL.944_array^1 value = 1}
 		if = {
 			limit = { ATL = { has_idea = ATL_kapra_burmiunean_2 }}
@@ -140,6 +152,10 @@ kapra_down_burmiunean = {
 kapra_up_anoixte = {
 	custom_effect_tooltip = ATL_kapra_up_tt
 	hidden_effect = {
+		if = {
+			limit = {check_variable = {var = var = ATL.949_array^1 value = 0 compare = equals}}
+			itork_down_anoixte = yes
+		}
 		subtract_from_variable = {var = ATL.949_array^1 value = 1}
 		if = {
 			limit = { ATL = { has_idea = ATL_kapra_anoixte_2 }}
@@ -181,6 +197,11 @@ kapra_down_anoixte = {
 kapra_up_2 = {
 	custom_effect_tooltip = ATL_kapra_up_tt
 	hidden_effect = {
+		if = { limit = { state = 946 } if = { limit = {check_variable = {var = var = ATL.946_array^1 value = 0 compare = equals}} 946 = {itork_down_2 = yes}}}
+		if = { limit = { state = 947 } if = { limit = {check_variable = {var = var = ATL.947_array^1 value = 0 compare = equals}} 947 = {itork_down_2 = yes}}}
+		if = { limit = { state = 963 } if = { limit = {check_variable = {var = var = ATL.963_array^1 value = 0 compare = equals}} 963 = {itork_down_2 = yes}}}
+		if = { limit = { state = 964 } if = { limit = {check_variable = {var = var = ATL.964_array^1 value = 0 compare = equals}} 964 = {itork_down_2 = yes}}}
+		if = { limit = { state = 965 } if = { limit = {check_variable = {var = var = ATL.965_array^1 value = 0 compare = equals}} 965 = {itork_down_2 = yes}}}
 		if = {
 			limit = { has_state_flag = kapra_flag_1 }
 			clr_state_flag = kapra_flag_1
@@ -237,6 +258,10 @@ kapra_down_2 = {
 itork_up_4 = {
 	custom_effect_tooltip = ATL_itork_up_tt
 	hidden_effect = {
+		if = {
+			limit = {check_variable = {var = var = ATL.945_array^1 value = 0 compare = equals}}
+			kapra_down_4 = yes
+		}
 		subtract_from_variable = {var = ATL.945_array^1 value = 1}
 		if = {
 			limit = { ATL = { has_idea = ATL_itork_4_3 } }
@@ -288,6 +313,10 @@ itork_down_4 = {
 itork_up_yamylaik = {
 	custom_effect_tooltip = ATL_itork_up_tt
 	hidden_effect = {
+		if = {
+			limit = {check_variable = {var = var = ATL.948_array^1 value = 0 compare = equals}}
+			kapra_down_yamylaik = yes
+		}
 		subtract_from_variable = {var = ATL.948_array^1 value = 1}
 		if = {
 			limit = { ATL = { has_idea = ATL_itork_yamylaik_2 }}
@@ -328,6 +357,10 @@ itork_down_yamylaik = {
 itork_up_burmiunean = {
 	custom_effect_tooltip = ATL_itork_up_tt
 	hidden_effect = {
+		if = {
+			limit = {check_variable = {var = var = ATL.944_array^1 value = 0 compare = equals}}
+			kapra_down_burmiunean = yes
+		}
 		subtract_from_variable = {var = ATL.944_array^1 value = 1}
 		if = {
 			limit = { ATL = { has_idea = ATL_itork_burmiunean_2 }}
@@ -368,6 +401,10 @@ itork_down_burmiunean = {
 itork_up_anoixte = {
 	custom_effect_tooltip = ATL_itork_up_tt
 	hidden_effect = {
+		if = {
+			limit = {check_variable = {var = var = ATL.949_array^1 value = 0 compare = equals}}
+			kapra_down_anoixte = yes
+		}
 		subtract_from_variable = {var = ATL.949_array^1 value = 1}
 		if = {
 			limit = { ATL = { has_idea = ATL_itork_anoixte_2 }}
@@ -409,6 +446,11 @@ itork_down_anoixte = {
 itork_up_2 = {
 	custom_effect_tooltip = ATL_itork_up_tt
 	hidden_effect = {
+		if = { limit = { state = 946 } if = { limit = {check_variable = {var = var = ATL.946_array^1 value = 0 compare = equals}} 946 = {kapra_down_2 = yes}}}
+		if = { limit = { state = 947 } if = { limit = {check_variable = {var = var = ATL.947_array^1 value = 0 compare = equals}} 947 = {kapra_down_2 = yes}}}
+		if = { limit = { state = 963 } if = { limit = {check_variable = {var = var = ATL.963_array^1 value = 0 compare = equals}} 963 = {kapra_down_2 = yes}}}
+		if = { limit = { state = 964 } if = { limit = {check_variable = {var = var = ATL.964_array^1 value = 0 compare = equals}} 964 = {kapra_down_2 = yes}}}
+		if = { limit = { state = 965 } if = { limit = {check_variable = {var = var = ATL.965_array^1 value = 0 compare = equals}} 965 = {kapra_down_2 = yes}}}
 		if = {
 			limit = { has_state_flag = itork_flag_1 }
 			clr_state_flag = itork_flag_1
