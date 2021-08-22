@@ -2,17 +2,29 @@
 state={
 	id=580
 	name="STATE_580" # Tobolsk
-	manpower = 88126
+	manpower = 788126
 	
-	state_category = wasteland
+	state_category = large_city
 
 	history={
 		owner = SOV
+		victory_points = {
+				4710 10
+			}
+			victory_points = {
+				1774 10
+			}
+			victory_points = {
+				1659 25
+			}
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 4
+			
 		}
 		add_core_of = SOV
+		add_core_of = HBO
 	}
 
 	provinces={
