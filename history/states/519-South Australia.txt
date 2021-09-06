@@ -6,8 +6,26 @@ state={
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 3
+			arms_factory = 1
+			dockyard = 2
+			air_base = 1
+			8186= {
+				naval_base = 4
+				coastal_bunker = 1
+			}
+			10927 = {
+				naval_base = 2
+			}
+			5225= {
+				coastal_bunker = 2
+			}
+		}
+		victory_points = {
+			8186 10
+		}
+		victory_points = {
+			10927 5 
 		}
 		add_core_of = AST
 
@@ -18,5 +36,5 @@ state={
 	}
 	manpower=200800
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 }
