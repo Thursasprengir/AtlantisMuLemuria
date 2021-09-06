@@ -2,16 +2,23 @@
 state={
 	id=1064
 	name="STATE_1064"
+	resources={
+		steel=32 # was: 136
+	}
 	history={
 		owner = PRJ
+		add_core_of = PRJ
 		buildings = {
-			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 2
 			air_base = 1
 		}
 		victory_points = {
-			14999 13
+			14999 25
+			}
+			victory_points = {
+			12929 10
 			}
 	}
 	provinces={
@@ -19,5 +26,5 @@ state={
 	}
 	manpower=4140288
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_city
 }
