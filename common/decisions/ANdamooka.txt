@@ -5,7 +5,7 @@ Andamooka_canal = {
 
 		available = {
 			has_full_control_of_state = 519
-			num_of_civilian_factories > 15
+			num_of_civilian_factories > 11
 		}
 	
 		visible = {
@@ -19,7 +19,7 @@ Andamooka_canal = {
 		cost = 120
 	
 		modifier = {
-			civilian_factory_use = 15
+			civilian_factory_use = 10
 		}
 	
 		remove_effect = {
@@ -53,7 +53,7 @@ Andamooka_canal = {
 						}
 					}
 				}
-				NOT = { has_country_flag = blew_up_suez }
+				NOT = { has_country_flag = blew_up_andamooka }
 			}
 			modifier = {
 				factor = 200 # Prioritize if UK
@@ -104,7 +104,7 @@ Andamooka_canal = {
 							owns_state = 519
 						}
 					}
-					random_country = { 
+					random_country = { `
 						limit = {
 							owns_state = 519
 						}
@@ -122,7 +122,7 @@ Andamooka_canal = {
 					}
 				}
 				set_country_flag = blew_up_andamooka
-				set_global_flag = SUEZ_CANAL_BLOCKED
+				set_global_flag = ANDAMOOKA_CANAL_BLOCKED
 			}
 			effect_tooltip = {
 				if = {
