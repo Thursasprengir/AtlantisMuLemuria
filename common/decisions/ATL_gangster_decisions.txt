@@ -775,6 +775,15 @@ ATL_itorkanak_war_category = {
 		is_good = no
 		timeout_effect = { activate_mission = ATL_select_target_itork }
 	}
+	
+	end_hostilities = {
+		icon = VLFP
+		cost = 0
+		remove_effect = {
+			kapra_end = yes
+			itork_end = yes
+		}
+	}
 }
 
 
