@@ -1,0 +1,92 @@
+﻿##### CHINA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+TRS_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { TRS }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	fallback_name = "Ch'ü %d"					
+
+}
+
+### LIGHT CRUISER NAMES###
+TRS_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { TRS }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	fallback_name = "Hsün %d"
+
+}
+
+### HEAVY CRUISER NAMES###
+TRS_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { TRS }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	fallback_name = "Chunghsün %d"
+
+}
+
+
+### BATTLESHIP NAMES ###
+TRS_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { TRS }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	fallback_name = "Chan %d"		
+
+}
+
+### BATTLECRUISER NAMES ###
+TRS_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { TRS }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	fallback_name = "Chanhsün %dn"		
+
+}
+
+### AIRCRAFT CARRIER NAMES ###
+TRS_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { TRS }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	fallback_name = "Hang %d"	
+
+}
+
+### SUBMARINES ###
+TRS_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { TRS }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	fallback_name = "Ch'ien %d"
+
+}
