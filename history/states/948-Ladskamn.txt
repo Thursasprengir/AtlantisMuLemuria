@@ -1,6 +1,10 @@
+
 state={
 	id=948
-	name="STATE_948" #East Atlantis
+	name="STATE_948"
+	resources={
+		steel=10.000
+	}
 
 	history={
 		owner = ATL
@@ -11,23 +15,16 @@ state={
 			dockyard = 6
 			anti_air_building = 2
 			air_base = 4
-			14178 = {
-				naval_base = 6
-			}
+
 		}
 		add_core_of = ATL
-		victory_points = {
-			14178 35 #Yamylaik
-		}
 
 	}
-	
+
 	provinces={
-		14176 14177 14178 14179 14180 14181 14182 
+		14176 14179 14180 14181 14182 
 	}
-	manpower= 10986552
-	state_category = megalopolis
-	resources = {steel = 10}
-
+	manpower=6986552
 	buildings_max_level_factor=1.000
+	state_category=large_city
 }

@@ -1,6 +1,11 @@
+
 state={
 	id=947
-	name="STATE_947" #West Atlantis
+	name="STATE_947"
+	resources={
+		steel=8.000
+		aluminium=30.000
+	}
 
 	history={
 		owner = ATL
@@ -12,7 +17,9 @@ state={
 			anti_air_building = 2
 			14184 = {
 				naval_base = 5
+
 			}
+
 		}
 		add_core_of = ATL
 		victory_points = {
@@ -20,13 +27,11 @@ state={
 		}
 
 	}
-	
-	provinces={
-		14183 14184 14185 14186 14187 14188 14189 
-	}
-	manpower= 7536880
-	state_category = large_city
-	resources = {steel = 15 aluminium = 40 oil = 6}
 
+	provinces={
+		14184 14185 14186 14187 14188 
+	}
+	manpower=7536880
 	buildings_max_level_factor=1.000
+	state_category=large_city
 }
