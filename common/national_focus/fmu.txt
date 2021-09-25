@@ -15,12 +15,12 @@ focus_tree = {
 	continuous_focus_position = { x = 20 y = 1800 }
 
 focus = {
-		id = FMU_veto_native_rights_bill
+		id = FMU_reject_versailles
 		icon = GFX_goal_generic_forceful_treaty
 		mutually_exclusive = {
-			focus = FMU_pass_native_rights_bill
+			focus = FMU_renegotiate_versailles
 		}
-		x = 10
+		x = 4
 		y = 0
 
 		cost = 10
@@ -32,2744 +32,1639 @@ focus = {
 
 		}
 
-		bypass = {
-		date > 1936.4.3
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = -50
-		}
-	}
-
-
-	focus = {
-		id = FMU_pass_native_rights_bill
-		icon = GFX_focus_generic_treaty
-		mutually_exclusive = {
-			focus = FMU_veto_native_rights_bill
-		}
-		x = 6
-		y = 0
-		relative_position_id = FMU_veto_native_rights_bill
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-		date < 1936.4.3
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			remove_ideas = FMU_unfair_sufferage
-			add_stability = -0.05
-		}
-	}
-
-#neutralitybranch
-focus = {
-		id = FMU_neutralplaceholder1
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = FMU_veto_native_rights_bill }
-		x = -3
-		y = 1
-		relative_position_id = FMU_veto_native_rights_bill
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built1}
-						free_building_slots = {
-							building = industrial_complex
-							size > 3
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = industrial_complex
-						level = 4
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_built1
-				}
-			}
-			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
+			add_stability = -0.15
+			#remove_ideas = FMU_versailles_treaty
+			#rel boost with Ger
+			#rel drop with non-germany majors
 		}
 	}
 
 focus = {
-		id = FMU_neutralplaceholder2
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = FMU_neutralplaceholder1 }
-		x = -1
-		y = 1
-		relative_position_id = FMU_neutralplaceholder1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_built1}
-						free_building_slots = {
-							building = arms_factory
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_built1
-				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_built1}
-						free_building_slots = {
-							building = arms_factory
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_built1
-				}
-			}
-		}
-	}
-
-
-
-focus = {
-		id = FMU_status_quo
-		icon = GFX_goal_generic_neutrality_focus
-		mutually_exclusive = {
-			focus = FMU_encourage_fascists
-#			focus = FMU_kaiser_is_back
-		}
-		prerequisite = { focus = FMU_neutralplaceholder2 }
-		x = 1
-		y = 1
-		relative_position_id = FMU_neutralplaceholder2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		add_ideas = FMU_status_quo
-		}
-	}
-
-focus = {
-		id = FMU_revoke_sanction
+		id = FMU_GER_relations
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = FMU_status_quo }
+		x = 0
+		y = 1
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_reject_versailles }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#huge rel boost with Ger
+			#remove demilitarized zone in north of country
+		}
+	}
+
+focus = {
+		id = FMU_german_peoples_compact
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 2
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_GER_relations }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#requests admission to the Axis
+		}
+	}
+
+focus = {
+		id = FMU_sudencreutz_volk
+		icon = GFX_goal_generic_forceful_treaty
+		x = -1
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_german_peoples_compact }
+		mutually_exclusive = {
+				focus = FMU_federation_of_brothers
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#event chain to try to annex other Muan German nations
+		}
+	}
+
+focus = {
+		id = FMU_federation_of_brothers
+		icon = GFX_goal_generic_forceful_treaty
 		x = 1
 		y = 3
-		relative_position_id = FMU_neutralplaceholder2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		ENG = {add_opinion_modifier = { target = FMU modifier = medium_decrease }
-				}
-		FRA = {add_opinion_modifier = { target = FMU modifier = medium_decrease }
-				}
-		remove_ideas = FMU_sanctions
-		}
-	}
-
-focus = {
-		id = FMU_subsidize_colonial_companies
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = FMU_revoke_sanction }
-		x = 0
-		y = 1
-		relative_position_id = FMU_revoke_sanction
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_timed_idea = {idea = FMU_colonial_companies_subsidies days = 14}
-			add_ideas = {FMU_colonial_companies_subsidies2}
-		}
-	}
-
-
-focus = {
-		id = FMU_civilian_companies
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = FMU_subsidize_colonial_companies }
-		x = -1
-		y = 1
-		relative_position_id = FMU_subsidize_colonial_companies
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_german_peoples_compact }
 		mutually_exclusive = {
-			focus = FMU_military_companies
-		}
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_builtquo}
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_builtquo
+				focus = FMU_sudencreutz_volk
 				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_builtquo}
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_builtquo
-				}
-			}
-
-		if = {
- 			   limit = {
-        			has_idea = FMU_companies_open_stocks
-    				}
-			swap_ideas = {
-    				remove_idea = FMU_companies_open_stocks
-    				add_idea = FMU_companies_open_stocks_civilian
-						}
-
-			}
-		if = {
- 			   limit = {
-        			has_idea = FMU_companies_kohn
-    				}
-			swap_ideas = {
-    				remove_idea = FMU_companies_kohn
-    				add_idea = FMU_companies_kohn_civilian
-						}
-
-			}
-
-
-
-		}
-	}
-
-focus = {
-		id = FMU_military_companies
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = FMU_subsidize_colonial_companies }
-		x = 1
-		y = 1
-		relative_position_id = FMU_subsidize_colonial_companies
-		mutually_exclusive = {
-			focus = FMU_civilian_companies
-		}
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_builtquo}
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_builtquo
-				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_builtquo}
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_builtquo
-				}
-			}
-	if = {
- 			   limit = {
-        			has_idea = FMU_companies_open_stocks
-    				}
-			swap_ideas = {
-    				remove_idea = FMU_companies_open_stocks
-    				add_idea = FMU_companies_open_stocks_military
-						}
-
-			}
-		if = {
- 			   limit = {
-        			has_idea = FMU_companies_kohn
-    				}
-			swap_ideas = {
-    				remove_idea = FMU_companies_kohn
-    				add_idea = FMU_companies_kohn_military
-						}
-
-			}
-		}
-	}
-
-focus = {
-		id = FMU_maywerken
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = FMU_civilian_companies focus = FMU_military_companies }
-		x = 1
-		y = 1
-		relative_position_id = FMU_civilian_companies
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		add_ideas = FMU_maywerken
-		}
-	}
-
-	focus = {
-		id = FMU_communist_hunt
-		icon = GFX_goal_anti_comintern_pact
-		prerequisite = { focus = FMU_civilian_companies focus = FMU_military_companies }
-		x = 3
-		y = 1
-		relative_position_id = FMU_civilian_companies
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		add_popularity = {
-    	ideology = communism
-  		  popularity = -0.5
-		}
-		}
-	}
-
-#Kaiser Is Back Branch
-#focus = {
-#		id = FMU_kaiser_is_back
-#		icon = GFX_focus_ger_return_of_the_kaiser
-#		mutually_exclusive = {
-#			focus = FMU_encourage_fascists
-#			focus = FMU_status_quo
-#		}
-#		prerequisite = { focus = FMU_neutralplaceholder2 }
-#		x = 3
-#		y = 1
-#		relative_position_id = FMU_neutralplaceholder2
-#
-#		cost = 10
-#
-#
-#		allow_branch = {
-#			has_dlc = "Waking the Tiger"
-#		}
-#
-#		ai_will_do = {
-#			factor = 2
-#		}
-#
-#		available = {
-#		GER = {
-#					has_government = neutrality
-#				}
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#
-#		}
-#	}
-#
-#focus = {
-#		id = FMU_join_kaiser_faction
-#		icon = GFX_goal_support_communism
-#		prerequisite = { focus = FMU_kaiser_is_back }
-#		x = 0
-#		y = 1
-#		relative_position_id = FMU_kaiser_is_back
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 2
-#		}
-#
-#		available = {
-#		GER = {
-#					has_government = neutrality
-#				}
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#			GER = {
-#			country_event = { hours = 2 id = fmu.6 }
-#		}
-#		}
-#	}
-#focus = {
-#		id = FMU_reinstate_the_associate_state
-#		icon = GFX_goal_support_communism
-#		prerequisite = { focus = FMU_join_kaiser_faction }
-#		x = 0
-#		y = 1
-#		relative_position_id = FMU_join_kaiser_faction
-#
-#		cost = 10
-#		ai_will_do = {
-#			factor = 2
-#		}
-#
-#		available = {
-#		GER = {
-#				has_government = neutrality
-#				}
-#		is_in_faction_with = GER
-#
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#			set_cosmetic_tag = FMU_KAISER
-#			add_ideas = FMU_associate_state
-#		}
-#	}
-
-#Fascism Branch
-focus = {
-		id = FMU_encourage_fascists
-		icon = GFX_goal_support_fascism
-		mutually_exclusive = {
-#			focus = FMU_kaiser_is_back
-			focus = FMU_status_quo
-		}
-		prerequisite = { focus = FMU_neutralplaceholder2 }
-		x = -2
-		y = 1
-		relative_position_id = FMU_neutralplaceholder2
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 40
 		}
-
 		available = {
+
 		}
 
-		bypass = {
-		has_government = fascism
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = FMU_fascist_sympathizers
-		}
-	}
-focus = {
-		id = FMU_snap_elections
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = FMU_encourage_fascists }
-		x = 0
-		y = 1
-		relative_position_id = FMU_encourage_fascists
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-		}
-
-		bypass = {
-		has_government = fascism
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			country_event = { hours = 2 id = fmu.7 }
-		}
-	}
-focus = {
-		id = FMU_join_axis
-		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { focus = FMU_snap_elections }
-		x = 1
-		y = 1
-		relative_position_id = FMU_snap_elections
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		has_government = fascism
-		GER = {
-					has_government = fascism
-				}
-		}
-
-		bypass = {
-			is_in_faction_with = GER
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			GER = {
-			country_event = { hours = 2 id = fmu.8 }
-		}
+			#event chain to bring other Muan Germans into the Axis
 		}
 	}
 
 focus = {
-		id = FMU_germans_over_all
-		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = FMU_snap_elections }
-		x = -1
-		y = 1
-		relative_position_id = FMU_snap_elections
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		has_government = fascism
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = {FMU_germans_are_super_bros1}
-		}
-	}
-
-focus = {
-		id = FMU_brotherhood
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = FMU_germans_over_all }
+		id = FMU_emphasize_german_identity
+		icon = GFX_goal_generic_forceful_treaty
 		x = -3
-		y = 1
-		relative_position_id = FMU_germans_over_all
+		y = 4
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_sudencreutz_volk }
+		prerequisite = { focus = FMU_federation_of_brothers }
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 40
 		}
-
 		available = {
-		has_government = fascism
+
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FMU_germans_are_super_bros1
-				add_idea = FMU_germans_are_super_bros2
-			}
+			add_stability = 0.1
+			#decreases civilian good req
+			#increases non-core manpower
 		}
 	}
 
 focus = {
-		id = FMU_unite_germans
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = FMU_brotherhood }
+		id = FMU_nur_deutsch
+		icon = GFX_goal_generic_forceful_treaty
+		x = -3
+		y = 5
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_emphasize_german_identity }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.2 #for 5 years
+			#after 5 years increase stability. Perhaps best done as a modifier?
+		}
+	}
+
+focus = {
+		id = FMU_kriegspfad
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
-		y = 1
-		relative_position_id = FMU_brotherhood
+		y = 4
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_sudencreutz_volk }
+		prerequisite = { focus = FMU_federation_of_brothers }
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 20
+			factor = 40
 		}
-
 		available = {
+
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FMU_germans_are_super_bros2
-				add_idea = FMU_germans_are_super_bros3
-			}
-		}
-	}
-focus = {
-		id = FMU_vogelinsel_1
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = FMU_unite_germans }
-		x = -1
-		y = 2
-		relative_position_id = FMU_unite_germans
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		VGI = {
-			country_event = { hours = 2 id = fmu.24 }
-		}
-		}
-	}
-focus = {
-		id = FMU_vogelinsel_2
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = FMU_vogelinsel_1 }
-		x = 0
-		y = 2
-		relative_position_id = FMU_vogelinsel_1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		VGI = {
-			country_event = { hours = 2 id = fmu.20 }
-		}
+			#bonus war support
+			#bonus mobilization speed
 		}
 	}
 
 focus = {
-		id = FMU_schoenesland_1
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = FMU_unite_germans }
-		x = 0
-		y = 1
-		relative_position_id = FMU_unite_germans
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		SCH = {
-			country_event = { hours = 2 id = fmu.24 }
-		}
-		}
-	}
-
-focus = {
-		id = FMU_schoenesland_2
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = FMU_schoenesland_1 }
-		x = 0
-		y = 2
-		relative_position_id = FMU_schoenesland_1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		SCH = {
-			country_event = { hours = 2 id = fmu.12 }
-		}
-		}
-	}
-
-
-focus = {
-		id = FMU_military_buildup
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = FMU_germans_over_all }
-		x = 0
-		y = 1
-		relative_position_id = FMU_germans_over_all
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		has_government = fascism
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_built2}
-						free_building_slots = {
-							building = arms_factory
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_built2
-				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_built2}
-						free_building_slots = {
-							building = arms_factory
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_built2
-				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built2}
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_built2
-				}
-			}
-		}
-	}
-
-focus = {
-		id = FMU_aggressive_strikes
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = FMU_military_buildup }
-		x = 0
-		y = 1
-		relative_position_id = FMU_military_buildup
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-		has_government = fascism
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = {FMU_aggressive_strikes1}
-		}
-	}
-
-focus = {
-		id = FMU_challenge_austral_sea
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = FMU_aggressive_strikes }
-		x = -1
-		y = 1
-		relative_position_id = FMU_aggressive_strikes
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = naval_effort_built}
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = naval_effort_built
-				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = naval_effort_built}
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = naval_effort_built
-				}
-			}
-		}
-	}
-
-focus = {
-		id = FMU_request_new_guinea
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = FMU_challenge_austral_sea }
-		x = 0
-		y = 1
-		relative_position_id = FMU_challenge_austral_sea
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-		OR = {
-		owns_state = 854
-		owns_state = 853
-		SCH = {
-		is_puppet_of = FMU
-		}
-		}
-		}
-
-		bypass = {
-		OR = {
-		AND = {
-		owns_state = 523
-		owns_state = 737
-		}
-		PNG = {
-		is_puppet_of = FMU
-		}
-		}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		AST = {
-				country_event = { hours = 2 id = fmu.15 }
-		}
-		}
-	}
-
-focus = {
-		id = FMU_claims_on_tiquea
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = FMU_aggressive_strikes }
-		x = 1
-		y = 1
-		relative_position_id = FMU_aggressive_strikes
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		has_government = fascism
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_state_claim = 923
-		}
-	}
-
-focus = {
-		id = FMU_claims_on_antarctica
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = FMU_military_buildup }
-		prerequisite = { focus = FMU_antarctic_expedition }
+		id = FMU_germanic_research_pact
+		icon = GFX_goal_generic_forceful_treaty
 		x = 2
-		y = 3
-		relative_position_id = FMU_military_buildup
+		y = 4
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_sudencreutz_volk }
+		prerequisite = { focus = FMU_federation_of_brothers }
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 30
+			factor = 40
 		}
-
 		available = {
-		has_government = fascism
+
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 250
-			add_war_support = 0.15
+			#join German/Axis Research group
 		}
 	}
+
 focus = {
-		id = FMU_just_another_research_slot
-		icon = GFX_focus_research
-		prerequisite = { focus = FMU_claims_on_antarctica }
+		id = FMU_ocean_destiny
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
-		y = 1
-		relative_position_id = FMU_claims_on_antarctica
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
-#liberalbranch
-focus = {
-		id = FMU_liberalplaceholder1
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = FMU_pass_native_rights_bill }
-		x = 3
-		y = 1
-		relative_position_id = FMU_pass_native_rights_bill
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built2}
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = industrial_complex
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_built2
+		y = 5
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_kriegspfad }
+		mutually_exclusive = {
+				focus = FMU_our_land
 				}
-			}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#ship construction bonus
 		}
 	}
 
 focus = {
-		id = FMU_nationalize_plantations
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = FMU_liberalplaceholder1 }
+		id = FMU_pitkairn_schiffwerke
+		icon = GFX_goal_generic_forceful_treaty
+		x = -3
+		y = 6
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_ocean_destiny }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add navalyards to pitkairn
+		}
+	}
+
+focus = {
+		id = FMU_ship_bounties
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 6
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_ocean_destiny }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increase war support
+			#increase civilian goods need
+		}
+	}
+
+focus = {
+		id = FMU_weapons_drills
+		icon = GFX_goal_generic_forceful_treaty
+		x = 2
+		y = 6
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_ocean_destiny }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increase ship cost, increase ship attack and defense
+			#add 30 Navy Exp
+			#if MtG - research bonus on Fire Control methods and Damage Control
+		}
+	}
+
+focus = {
+		id = FMU_success_breeds_success
+		icon = GFX_goal_generic_forceful_treaty
+		x = -3
+		y = 7
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_pitkairn_schiffwerke
+				}
+		prerequisite = { 
+			focus = FMU_ship_bounties
+				}
+		prerequisite = { 
+			focus = FMU_weapons_drills
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#large political power boost
+		}
+	}
+
+focus = {
+		id = FMU_walls_of_steel
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 7
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_pitkairn_schiffwerke
+				}
+		prerequisite = { 
+			focus = FMU_ship_bounties
+				}
+		prerequisite = { 
+			focus = FMU_weapons_drills
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#fortification boost
+			#unlocks 18 width Marine Template, spawns two divisions in capital
+		}
+	}
+
+focus = {
+		id = FMU_schimmelpferds_address
+		icon = GFX_goal_generic_forceful_treaty
+		x = -3
+		y = 8
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_success_breeds_success
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#unlocks when x% of navy from peak numbers no longer exists
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#loss of war support
+			add_stability = -0.1
+			#bonus to neutral and democratic government representation
+		}
+	}
+
+focus = {
+		id = FMU_austral_ocean
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 8
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_success_breeds_success
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#fleet larger than AST AND NZD
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to fleet engagements
+		}
+	}
+
+focus = {
+		id = FMU_defend_defend_defend
+		icon = GFX_goal_generic_forceful_treaty
+		x = -3
+		y = 9
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_schimmelpferds_address
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#lose naval bonuses
+			#coastal defense bonus
+			#large bonus to neutral and democratic parties
+		}
+	}
+
+focus = {
+		id = FMU_veranderungen_tag
+		icon = GFX_goal_generic_forceful_treaty
+		x = -3
+		y = 10
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_defend_defend_defend
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#if neutral + democratic <30% = massive civil war
+			#if neutral + democratic <60% but >30% = balanced civil war
+			#if neutral + democratic <60% = much of the army quits, democratic coup, leaves axis and war ends.
+		}
+	}
+
+focus = {
+		id = FMU_wellington_raid
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 9
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_austral_ocean
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#NZL exists and has more than 300 convoys
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#remove 300 convoys from NZL and give to FMU
+			#"Modern Day Piracy" relations modifier with all enemy nations
+		}
+	}
+
+focus = {
+		id = FMU_pacific_dominance
+		icon = GFX_goal_generic_forceful_treaty
+		x = -1
+		y = 10
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_wellington_raid
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to capital ship attacks and defense
+			#if MtG - research bonus to ammo and torpedo
+		}
+	}
+
+focus = {
+		id = FMU_southern_atlantic_gambit
+		icon = GFX_goal_generic_forceful_treaty
 		x = 1
-		y = 1
-		relative_position_id = FMU_liberalplaceholder1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas {FMU_plantations_nationalized}
-		}
-	}
-
-focus = {
-		id = FMU_liberalplaceholder3
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = FMU_liberalplaceholder1 }
-		x = -1
-		y = 1
-		relative_position_id = FMU_liberalplaceholder1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built2}
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_built2
+		y = 10
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_wellington_raid
 				}
-			}
-		}
-	}
-
-
-focus = {
-		id = FMU_accept_german_scientists
-		icon = GFX_focus_research
-		prerequisite = { focus = FMU_liberalplaceholder3 }
-		x = -1
-		y = 1
-		relative_position_id = FMU_liberalplaceholder3
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 40
 		}
-
 		available = {
 		}
 
-		bypass = {
-			GER = {
-				NOT= {
-					has_government = fascism
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to submarine range & attack
+			#copy of "Long Lance" national spirit from Japan
+		}
+	}
+
+focus = {
+		id = FMU_unternehmen_lowenherz
+		icon = GFX_goal_generic_forceful_treaty
+		x = 2
+		y = 9
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_success_breeds_success
 				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
-
-#allies branch
-focus = {
-		id = FMU_negotiate_sanctions
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = FMU_nationalize_plantations }
-		x = -1
-		y = 1
-		relative_position_id = FMU_nationalize_plantations
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 40
 		}
-
 		available = {
+			#fleet larger than AST and NZD have fewer than X number of capital ships
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-		swap_ideas = {
-			remove_idea = FMU_sanctions
-			add_idea = FMU_sanctions_modified
-		}
+			#massive boost to war support
+			#increases capitulation level
+			#add political power
+			#2x naval doctrine 50% bounus
 		}
 	}
 
 focus = {
-		id = FMU_allied_research_bonus
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = FMU_negotiate_sanctions }
-		x = 0
-		y = 1
-		relative_position_id = FMU_negotiate_sanctions
+		id = FMU_our_land
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 5
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_kriegspfad }
+		mutually_exclusive = {
+				focus = FMU_ocean_destiny
+				}
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 40
 		}
-
 		available = {
+
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-		add_to_tech_sharing_group = commonwealth_research
-		ENG = {
-		add_to_tech_sharing_group = commonwealth_research
-		}
-		}
-	}
-
-focus = {
-		id = FMU_join_allies
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = FMU_allied_research_bonus }
-		x = 0
-		y = 1
-		relative_position_id = FMU_allied_research_bonus
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		ENG = {
-			country_event = { hours = 2 id = fmu.9 }
-		}
-
+			#ship construction bonus
 		}
 	}
 	
-focus = {
-		id = FMU_democratic_0
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = FMU_nationalize_plantations }
-		x = 1
-		y = 1
-		relative_position_id = FMU_nationalize_plantations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-			if = {random_owned_controlled_state = {limit = {infrastructure<4 NOT = {has_state_flag = infra_built}}add_building_construction = {type = infrastructure level = 2 instant_build = yes} set_state_flag = infra_built}}
-		}
-	}
 
 focus = {
-		id = FMU_democratic_1
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = FMU_democratic_0 }
-		x = 0
-		y = 1
-		relative_position_id = FMU_democratic_0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built2}
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = industrial_complex
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_built2
-				}
-			}
-		}
-	}
-
-focus = {
-		id = FMU_democratic_2
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = FMU_democratic_1 }
-		x = 2
-		y = 2
-		relative_position_id = FMU_democratic_1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			hidden_effect = {set_country_flag = {flag = FMU_democratic2 value = 1}}
-			custom_effect_tooltip = 01_FMU_democratic2
-		}
-	}
-focus = {
-		id = FMU_democratic_3
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = FMU_democratic_2 }
-		x = 1
-		y = 1
-		relative_position_id = FMU_democratic_2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_builtquo}
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_builtquo
-				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_builtquo}
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_builtquo
-				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = mil_effort_builtquo}
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = mil_effort_builtquo
-				}
-			}
-		}
-	}
-
-focus = {
-		id = FMU_democratic_4
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = FMU_democratic_2 }
-		x = -1
-		y = 1
-		relative_position_id = FMU_democratic_2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built2}
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_built2
-				}
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = civ_effort_built2}
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				set_state_flag = civ_effort_built2
-				}
-			}
-		}
-	}
-focus = {
-		id = FMU_democratic_5
-		icon = GFX_FMU_warishell
-		prerequisite = { focus = FMU_democratic_3}
-		prerequisite = { focus = FMU_democratic_4}
-		x = -1
-		y = 1
-		relative_position_id = FMU_democratic_3
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			hidden_effect = {set_country_flag = {flag = FMU_democratic5 value = 1}}
-			custom_effect_tooltip = 01_FMU_democratic5
-		}
-	}
-
-focus = {
-		id = FMU_democratic_6
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = FMU_democratic_5}
-		x = 0
-		y = 1
-		relative_position_id = FMU_democratic_5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			remove_ideas = FMU_sanctions_modified
-		}
-	}
-
-
-focus = {
-		id = FMU_american_union
-		icon = GFX_focus_usa_guarantee_the_american_dream
-		prerequisite = { focus = FMU_democratic_6}
-		x = 1
-		y = 1
-		relative_position_id = FMU_democratic_6
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-			NOT = {
-			has_government = communism
-			}
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = {FMU_federalism}
-		}
-	}
-focus = {
-		id = FMU_centralize
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = FMU_democratic_6}
-		x = -1
-		y = 1
-		relative_position_id = FMU_democratic_6
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = {FMU_centralization}
-		}
-	}
-focus = {
-		id = FMU_recognize_dutch
-		icon = GFX_focus_hol_oranje_boven
-		prerequisite = { focus = FMU_democratic_5}
-		x = -2
-		y = 1
-		relative_position_id = FMU_democratic_5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = {FMU_dutch_immigration}
-			HOL = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = medium_increase
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = protect
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = send_volunteers_desire
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = support
-					id = ROOT
-					value = 100
-				}
-			}
-		}
-	}
-
-focus = {
-		id = FMU_pacific_doctrine
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = FMU_democratic_5}
-		x = 2
-		y = 1
-		relative_position_id = FMU_democratic_5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cl_tech
-			}
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = naval_effort_builtdem}
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = naval_effort_builtdem
-				}
-			}
-		}
-	}
-
-
-focus = {
-		id = FMU_curb_fascism
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = FMU_democratic_5}
-		x = 4
-		y = 1
-		relative_position_id = FMU_democratic_5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_timed_idea = {idea = FMU_denazification days = 140}
-		}
-	}
-focus = {
-		id = FMU_ban_japanese_immigration
-		icon = GFX_focus_AST_war_japan
-		prerequisite = { focus = FMU_curb_fascism}
-		x = 0
-		y = 1
-		relative_position_id = FMU_curb_fascism
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			USA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = medium_increase
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = protect
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = send_volunteers_desire
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = support
-					id = ROOT
-					value = 100
-				}
-			}
-			JAP = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = large_decrease
-				}
-				add_ai_strategy = {
-					type = declare_war
-					id = ROOT
-					value = 50
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = ROOT
-					value = 50
-				}
-				add_ai_strategy = {
-					type = antagonize
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = prepare_for_war
-					id = ROOT
-					value = 50
-				}
-			}
-		}
-	}
-#commonbranch
-focus = {
-		id = FMU_rebuild_the_dockyards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = FMU_pass_native_rights_bill focus = FMU_veto_native_rights_bill}
-		x = -3
-		y = 1
-		relative_position_id = FMU_pass_native_rights_bill
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			933 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-focus = {
-		id = FMU_ripples_of_shanghai
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = FMU_rebuild_the_dockyards }
-		x = 0
-		y = 1
-		relative_position_id = FMU_rebuild_the_dockyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_war_support = 0.1
-		}
-	}
-
-focus = {
-		id = FMU_kohn_gambit
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = FMU_ripples_of_shanghai }
-		mutually_exclusive = {
-			focus = FMU_open_stocks
-		}
-		x = -1
-		y = 1
-		relative_position_id = FMU_ripples_of_shanghai
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			swap_ideas = {
-    		remove_idea = FMU_companies
-    		add_idea = FMU_companies_kohn
-			}
-		}
-	}
-
-focus = {
-		id = FMU_open_stocks
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = FMU_ripples_of_shanghai }
-		mutually_exclusive = {
-			focus = FMU_kohn_gambit
-		}
-		x = 1
-		y = 1
-		relative_position_id = FMU_ripples_of_shanghai
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		swap_ideas = {
-    		remove_idea = FMU_companies
-    		add_idea = FMU_companies_open_stocks
-			}
-		}
-	}
-
-
-focus = {
-		id = FMU_more_research
-		icon = GFX_focus_research
-		prerequisite = { focus = FMU_kohn_gambit focus = FMU_open_stocks}
-		x = -3
-		y = 1
-		relative_position_id = FMU_open_stocks
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		add_research_slot = 1
-		}
-	}
-
-focus = {
-		id = FMU_commonplaceholder2
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = FMU_kohn_gambit focus = FMU_open_stocks}
-		x = -1
-		y = 1
-		relative_position_id = FMU_open_stocks
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				random_owned_controlled_state = {
-					limit = {
-						NOT = {has_state_flag = naval_effort_builtdem}
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				set_state_flag = naval_effort_builtdem
-				}
-			}
-			930 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 5254
-						instant_build = yes
-					}
-				}
-			}
-			930 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = coastal_bunker
-						level = 4
-						province = 5254
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-focus = {
-		id = FMU_antarctic_expedition
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = FMU_more_research }
-		x = 0
-		y = 4
-		relative_position_id = FMU_more_research
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		add_political_power = 100
-		}
-	}
-
-
-#annexmanu
-focus = {
-		id = FMU_supress_manu_nationalism
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = FMU_kohn_gambit focus = FMU_open_stocks}
-		x = 1
-		y = 1
-		relative_position_id = FMU_open_stocks
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-		country_exists = MNU
-		MNU = {
-					is_puppet_of = ROOT
-				}
-		}
-
-		bypass = {
-		927 = {
-		is_controlled_by = ROOT
-		}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = -20
-		}
-	}
-
-focus = {
-		id = FMU_annex_manu
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = FMU_supress_manu_nationalism }
-		x = 0
-		y = 1
-		relative_position_id = FMU_supress_manu_nationalism
+		id = FMU_never_a_neutral_nation
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 6
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_our_land }
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 40
 		}
-
 		available = {
+
 		}
 
-		bypass = {
-		927 = {
-		is_controlled_by = ROOT
-		}
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			annex_country = { target = MNU transfer_troops = yes }	
-			}
-	}
+			#massive war support bonus
+			#malus with neighbors
+			#bonus resource production, reduce resources to market
+			#"Our Land" national modifier, improved by completing war goals that follow
+		}
+	}	
 
 focus = {
-		id = FMU_seize_fijnland
-		icon = GFX_FMU_fijn
-		prerequisite = { focus = FMU_ripples_of_shanghai }
-		prerequisite = { focus = FMU_join_axis}
-		x = 0
-		y = 1
-		relative_position_id = FMU_join_axis
+		id = FMU_prepare_take_southern_coasts
+		icon = GFX_goal_generic_forceful_treaty
+		x = 3
+		y = 7
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_never_a_neutral_nation }
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 20
+			factor = 40
 		}
-
 		available = {
-			FJN = {
-				is_puppet_of = HOL
-			}
-			HOL = {
-    				has_capitulated = yes
-    			}
-			if = {
- 			   limit = {
-        			has_government = fascism
-    				}
-    			NOT ={
-    				is_in_faction_with = HOL
-    			}
-    			has_government = fascism
-    			is_in_faction_with = GER
-    		else = {
-    		has_government = democratic
-    		is_in_faction_with = HOL
-    	}
-	}
+			#canaje exists
 		}
 
-		bypass = {
-			FJN = {
-				is_puppet_of = FMU
-			}
-			AND = {
-			owns_state = 912
-			owns_state = 913
-			}
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			puppet = FJN
-			HOL = {add_opinion_modifier = { target = FMU modifier = medium_decrease }
+			#war goal vs Canaje
+			#bonus to "Our Land" modifier
+		}
+	}	
+
+focus = {
+		id = FMU_spine_of_the_continent
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 7
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_never_a_neutral_nation }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#goprug exists
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#war goal vs goprug
+			#bonus to "Our Land" modifier
+		}
+	}
+
+focus = {
+		id = FMU_northeastern_offensive
+		icon = GFX_goal_generic_forceful_treaty
+		x = 7
+		y = 7
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_never_a_neutral_nation }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#tiquea exists
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#war goal vs tiquea
+			#bonus to "Our Land" modifier
+		}
+	}
+
+focus = {
+		id = FMU_western_offensive
+		icon = GFX_goal_generic_forceful_treaty
+		x = 3
+		y = 8
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_prepare_take_southern_coasts }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#TOD and Awarurua exist
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#war goal vs Awarurua
+			#war goal vs TOD
+			#bonus to "Our Land" modifier
+		}
+	}
+
+focus = {
+		id = FMU_mines_of_baraga
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 8
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_spine_of_the_continent }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#baraga exists
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#war goal vs baraga
+			#bonus to "Our Land" modifier
+		}
+	}
+
+focus = {
+		id = FMU_unternehmen_faust
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 9
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_western_offensive }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#Mu exists
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#war goal vs Mu
+			#bonus to "Our Land" modifier
+		}
+	}
+
+focus = {
+		id = FMU_unternehmen_kreissage
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 8
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_northeastern_offensive }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#Cote des Manchots exists
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#war goal vs CdM
+			#bonus to "Our Land" modifier
+		}
+	}
+
+focus = {
+		id = FMU_dagger_in_the_back
+		icon = GFX_goal_generic_forceful_treaty
+		x = 7
+		y = 9
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_unternehmen_kreissage }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#Prometida, Arisla and Vogelinsel exist
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#event that annexes Prometida, Arisla and Vogelinsel or goes to war with them
+		}
+	}
+
+focus = {
+		id = FMU_east_to_west_invasion
+		icon = GFX_goal_generic_forceful_treaty
+		x = 3
+		y = 10
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_unternehmen_faust }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#lots of land forts along Mu/Houpo'e border
+			#relations malus with Japan and Trinsuyin
+		}
+	}
+
+focus = {
+		id = FMU_our_mighty_home
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 10
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_unternehmen_faust }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#fortification construction bonus
+			#civilian construction bonus
+			#repair bonus
+		}
+	}
+	
+	
+	
+	
+	
+	
+
+focus = {
+		id = FMU_develop_west_coast
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 1
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_reject_versailles
+			focus = FMU_renegotiate_versailles
 				}
-		}
-	}
-
-
-
-
-
-
-
-#Military Branch
-
-focus = {
-		id = FMU_military_start
-		icon = GFX_goal_generic_military_sphere
-		x = 28
-		y = 0
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			factor = 40
 		}
-
 		available = {
+
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 25
+			#civ factories in western coastal provinces
 		}
 	}
 
-#air branch
 focus = {
-		id = FMU_airwings
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = FMU_military_start }
-		x = 2
+		id = FMU_develop_east_coast
+		icon = GFX_goal_generic_forceful_treaty
+		x = 7
 		y = 1
-		relative_position_id = FMU_military_start
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 4
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				category = cas_bomber
-			}
-		}
-	}
-
-
-#army branch
-focus = {
-		id = FMU_army_reform
-		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = FMU_military_start }
-		x = 0
-		y = 1
-		relative_position_id = FMU_military_start
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_reject_versailles
+			focus = FMU_renegotiate_versailles
+				}
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			factor = 40
 		}
-
 		available = {
+
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 2
-				category = infantry_weapons
-				category = artillery
-			}
+			#civ factories in eastern coastal provinces
 		}
 	}
 
 focus = {
-		id = FMU_bushland_troops
-		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = FMU_army_reform }
-		x = 0
-		y = 1
-		relative_position_id = FMU_army_reform
+		id = FMU_blauwasser_shipping_lanes
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 2
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_develop_east_coast }
+		prerequisite = { focus = FMU_develop_west_coast }
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 15
+			factor = 40
 		}
-
 		available = {
+
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 25
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			#creates a few naval bases along Southern Coast
 		}
 	}
 
-#navy branch
-
 focus = {
-		id = FMU_heavy_warships
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = FMU_military_start }
-		x = -2
+		id = FMU_national_dev_campaign
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
 		y = 1
-		relative_position_id = FMU_military_start
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_reject_versailles
+			focus = FMU_renegotiate_versailles
+				}
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			factor = 40
 		}
-
 		available = {
+
 		}
 
-		bypass = {
-		}
+		#bypass = {
+		#date > 1936.4.3
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 2
-				category = bc_tech
-				category = bb_tech
-			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = ca_tech
-			}
+			#bonus to construction of infrastructure and factories
 		}
 	}
 
 focus = {
-		id = FMU_austral_dominance_doctrine
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = FMU_heavy_warships }
-		x = -2
-		y = 1
-		relative_position_id = FMU_heavy_warships
-
-		cost = 15
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			navy_experience = 15
-			add_tech_bonus = {
-				name = naval_doc_bonus
-				bonus = 1.0
-				uses = 3
-				category = naval_doctrine
-			}
-			AST = {add_opinion_modifier = { target = FMU modifier = medium_decrease }}
-			NZL = {add_opinion_modifier = { target = FMU modifier = medium_decrease }}
-			add_ideas = {FMU_austral_dominance}
-		}
-	}
-
-focus = {
-		id = FMU_aircraft_carrier
-		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = FMU_heavy_warships }
-		x = 0
-		y = 1
-		relative_position_id = FMU_heavy_warships
+		id = FMU_eisenbahnen
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 2
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_national_dev_campaign }
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 20
+			factor = 40
+		}
+		available = {
+
 		}
 
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increases infrastructure (and railroads when available)
+		}
+	}
+
+focus = {
+		id = FMU_eisengewolbe
+		icon = GFX_goal_generic_forceful_treaty
+		x = 7
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_eisenbahnen }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add resources to mountains
+			#resource extraction efficiency gain
+		}
+	}
+
+focus = {
+		id = FMU_ebenen_autobahn
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_eisenbahnen }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#infrastructure bonuses across nation (west and south maybe?)
+		}
+	}
+
+focus = {
+		id = FMU_koenigshafen_stockmarket
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 4
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_blauwasser_shipping_lanes }
+		prerequisite = { focus = FMU_eisengewolbe }
+		prerequisite = { focus = FMU_ebenen_autobahn }
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#minor production efficiency growth
+			#boost construction speed
+			#reduce consumer goods need
+		}
+	}
+
+focus = {
+		id = FMU_civil_works_research_admin
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 2
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_national_dev_campaign }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add research slot
+			#bonus to production research
+		}
+	}
+
+focus = {
+		id = FMU_1938_domestic_tech_fair
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_civil_works_research_admin }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		date > 1938.1.1
+		}
+
+		bypass = {
+		date > 1938.12.31
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#production bonuses
+		}
+	}
+
+focus = {
+		id = FMU_1940_domestic_tech_fair
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 4
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_1938_domestic_tech_fair }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		date > 1940.1.1
+		}
+
+		bypass = {
+		date > 1940.12.31
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#production bonuses
+		}
+	}
+
+focus = {
+		id = FMU_1942_domestic_tech_fair
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 5
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_1940_domestic_tech_fair }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		date > 1942.1.1
+		}
+
+		bypass = {
+		date > 1942.12.31
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#production bonuses
+		}
+	}
+
+focus = {
+		id = FMU_1944_domestic_tech_fair
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 6
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_1942_domestic_tech_fair }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		date > 1944.1.1
+		}
+
+		bypass = {
+		date > 1944.12.31
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#production bonuses
+		}
+	}
+
+focus = {
+		id = FMU_kings_university
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 7
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_1944_domestic_tech_fair }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		#government is neutral
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#extra research slot
+			#research speed bonus
+		}
+	}
+
+focus = {
+		id = FMU_national_university
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 7
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_1944_domestic_tech_fair }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		#government is democratic or fascist
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#extra research slot
+			#research speed bonus
+		}
+	}
+
+focus = {
+		id = FMU_peoples_university
+		icon = GFX_goal_generic_forceful_treaty
+		x = 13
+		y = 7
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_1944_domestic_tech_fair }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		#government is communist
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#extra research slot
+			#research speed bonus
+		}
+	}
+
+focus = {
+		id = FMU_national_research_dev
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 8
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_kings_university
+			focus = FMU_national_university
+			focus = FMU_peoples_university
+			}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 		}
 
@@ -2781,38 +1676,326 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cv_tech
-			}
+			#extra research slot
 		}
 	}
 
-
-#Communist Branch
 focus = {
-		id = FMU_admit_gdea
-		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = FMU_democratic_1 }
-		relative_position_id = FMU_democratic_1
+		id = FMU_einsteins_theorem
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 9
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_national_research_dev }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#nuclear research bonus
+		}
+	}
+
+focus = {
+		id = FMU_unternehmen_sternenmacher
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 10
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_unternehmen_faust
+			focus = FMU_einsteins_theorem 
+			}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#atomic weapons research bonus
+		}
+	}
+	
+	
+	
+	
+
+focus = {
+		id = FMU_integrate_manu
+		icon = GFX_goal_generic_forceful_treaty
+		x = 12
+		y = 1
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_reject_versailles
+			focus = FMU_renegotiate_versailles
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#annexes Manu
+			#small political power boost
+			#malus to international relations for 3 years
+		}
+	}
+
+focus = {
+		id = FMU_diplomatic_outreach
+		icon = GFX_goal_generic_forceful_treaty
+		x = 15
+		y = 1
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_reject_versailles
+			focus = FMU_renegotiate_versailles
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#Decrease generate war tension
+		}
+	}
+
+focus = {
+		id = FMU_european_section
+		icon = GFX_goal_generic_forceful_treaty
+		x = 13
+		y = 2
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_diplomatic_outreach }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to diplomacy with European nations
+		}
+	}
+
+focus = {
+		id = FMU_muan_section
+		icon = GFX_goal_generic_forceful_treaty
+		x = 15
+		y = 2
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_diplomatic_outreach }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to diplomacy with Muan neighbors
+		}
+	}
+
+focus = {
+		id = FMU_american_section
+		icon = GFX_goal_generic_forceful_treaty
+		x = 17
+		y = 2
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_diplomatic_outreach }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to diplomacy with N and S American nations
+		}
+	}
+
+focus = {
+		id = FMU_charm_offensive
+		icon = GFX_goal_generic_forceful_treaty
+		x = 14
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_european_section
+			focus = FMU_muan_section 
+			focus = FMU_american_section }
 		mutually_exclusive = {
-			focus = FMU_deepen_democracy
+			focus = FMU_velvet_glove_iron_fist
 		}
-		x = 0
-		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#trade relations bonus
+			#general relations bonus
+		}
+	}
+
+focus = {
+		id = FMU_velvet_glove_iron_fist
+		icon = GFX_goal_generic_forceful_treaty
+		x = 16
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { 
+			focus = FMU_european_section
+			focus = FMU_muan_section 
+			focus = FMU_american_section }
+		mutually_exclusive = {
+			focus = FMU_charm_offensive
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease justify war goal time
+			#tiny world tension increase
+		}
+	}
+
+
+
+
+	focus = {
+		id = FMU_renegotiate_versailles
+		icon = GFX_focus_generic_treaty
+		mutually_exclusive = {
+			focus = FMU_reject_versailles
+		}
+		x = 25
+		y = 0
+		#relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 2
 		}
-
-		available = {
-		}
+		#available = {
+		#date < 1936.4.3
+		#}
 
 		bypass = {
 		}
@@ -2822,27 +2005,376 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fmu.3 }
-			}
-			custom_effect_tooltip = 1_FMU_tt
+			#allows decisions to remove debts to WWI major powers
+			add_stability = -0.01
 		}
 	}
 
-focus = {
-		id = FMU_an_unexpected_change_of_plans
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = FMU_admit_gdea }
+	focus = {
+		id = FMU_modern_germanic_state
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_renegotiate_versailles }
+		mutually_exclusive = {
+			focus = FMU_twee_talen
+			focus = FMU_tapestry_many_colors
+		}
 		x = -1
 		y = 1
-		relative_position_id = FMU_admit_gdea
+		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 20
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
 		}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increase war support
+			#relations malus with neighbors
+		}
+	}
+
+	focus = {
+		id = FMU_twee_talen
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_renegotiate_versailles }
+		mutually_exclusive = {
+			focus = FMU_modern_germanic_state
+			focus = FMU_tapestry_many_colors
+		}
+		x = 1
+		y = 1
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increase factory output
+			add_stability = 0.05
+			#increase need for consumer goods
+		}
+	}
+
+	focus = {
+		id = FMU_heartland_development
+		icon = GFX_focus_generic_treaty
+		prerequisite = { 
+			focus = FMU_modern_germanic_state
+			focus = FMU_twee_talen }
+		x = 0
+		y = 2
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add building slots
+			#add mil factories
+			#add civ factories
+		}
+	}
+
+	focus = {
+		id = FMU_compensate_landowners
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_heartland_development }
+		x = -1
+		y = 3
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increase war support
+			#production time decrease for 2 years
+		}
+	}
+
+	focus = {
+		id = FMU_limit_democratic_reforms
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_heartland_development }
+		x = -1
+		y = 3
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#boost neutrality
+		}
+	}
+
+	focus = {
+		id = FMU_reform_voting_laws
+		icon = GFX_focus_generic_treaty
+		prerequisite = { 
+			focus = FMU_compensate_landowners
+			focus = FMU_limit_democratic_reforms	}
+		x = 0
+		y = 4
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease stability for 3 years
+			#massive neutrality boost
+			#production bonus
+		}
+	}
+
+	focus = {
+		id = FMU_new_constitution
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_reform_voting_laws }
+		x = 0
+		y = 5
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add political power
+			#decrease stability for a while
+			#construction speed boost for infrastructure and fortifications
+		}
+	}
+
+	focus = {
+		id = FMU_strengthen_central
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_new_constitution }
+		x = -2
+		y = 6
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease stability for a while
+			#increase civilian production for a while
+			#add political power
+		}
+	}
+
+	focus = {
+		id = FMU_ban_communists
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_new_constitution }
+		x = 0
+		y = 6
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease communist support
+			#enables decisions allowing governemnt to attack communists in nation - seizes SOV equipment if successful
+		}
+	}
+
+	focus = {
+		id = FMU_ban_fascists
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_new_constitution }
+		x = 2
+		y = 6
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease fascist support
+			#enables decisions allowing governemnt to attack fascists in nation - seizes GER equipment if successful
+		}
+	}
+
+	focus = {
+		id = FMU_install_noble_houses
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_strengthen_central }
+		x = -2
+		y = 7
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease civilian production speed
+			#increase military production speed
+			#decrease mil factory production time
+			#decrease production growth
+		}
+	}
+
+	focus = {
+		id = FMU_ban_democrats
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_ban_communists }
+		prerequisite = { focus = FMU_ban_fascists }
+		x = 1
+		y = 7
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
 		available = {
+		#less than 5% Fascist support
+		#less than 5% Communist support
 		}
 
 		bypass = {
@@ -2853,24 +2385,26 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			#decrease democratic support
+			#enables decisions allowing governemnt to attack or "reeducate" democrats in nation - different bonus based on choice
 			
 		}
 	}
 
-focus = {
-		id = FMU_rewrite_constitution
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = FMU_an_unexpected_change_of_plans }
-		x = -1
-		y = 1
-		relative_position_id = FMU_an_unexpected_change_of_plans
+	focus = {
+		id = FMU_elect_kaiser
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_install_noble_houses }
+		prerequisite = { focus = FMU_ban_democrats }
+		x = 0
+		y = 8
+		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
 		}
 
@@ -2882,25 +2416,26 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			#starts Elect Kaiser event/decision chain. 3 candidates: Liberal, Moderate, Hardliner
+			
 		}
 	}
 
-focus = {
-		id = FMU_soviet_aid
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = FMU_rewrite_constitution }
+	focus = {
+		id = FMU_white_immigration
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_elect_kaiser }
 		x = -1
-		y = 1
-		relative_position_id = FMU_rewrite_constitution
+		y = 9
+		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 2
 		}
-
 		available = {
-		has_government = communism
+		#not has Liberal Kaiser
 		}
 
 		bypass = {
@@ -2911,75 +2446,26 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 2
-				category = industry
-			}
+			#raise world tension
+			#increase core manpower
+			#decrease non-core manpower
+			
 		}
 	}
 
-
-focus = {
-		id = FMU_nativisation
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = FMU_rewrite_constitution }
+	focus = {
+		id = FMU_encourage_settlement
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_elect_kaiser }
 		x = 1
-		y = 1
-		relative_position_id = FMU_rewrite_constitution
+		y = 9
+		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 2
 		}
-
-		available = {
-		has_government = communism
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		929 = { set_state_name = "Tama'a" }
-		930 = { set_state_name = "Taua" }
-		931 = { set_state_name = "Koe" }
-		934 = { set_state_name = "Haat" }
-		932 = { set_state_name = "Gelim" }
-		933 = { set_state_name = "Fa'efana" }
-		935 = { set_state_name = "Vae" }
-		936 = { set_state_name = "Pa'ia" }
-		}
-
-		}
-		
-		
-#################
-#Democracy Branch
-#################
-focus = {
-		id = FMU_deepen_democracy
-		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = FMU_democratic_1 }
-		relative_position_id = FMU_democratic_1
-		mutually_exclusive = {
-			focus = FMU_admit_gdea
-		}
-		x = 4
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
 		available = {
 		}
 
@@ -2991,9 +2477,1639 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {country_event = { hours = 2 id = fmu.3 }
-			}
-			custom_effect_tooltip = 1_FMU_tt
+			add_stability = -0.05
+			#decrease factory construction time
+			#increase non-core manpower
+			
 		}
 	}
+
+	focus = {
+		id = FMU_factories_of_gold
+		icon = GFX_focus_generic_treaty
+		prerequisite = { 
+			focus = FMU_white_immigration
+			focus = FMU_encourage_settlement }
+		x = 0
+		y = 10
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.1
+			#MAJOR increase in production capacity
+			#MAJOR increase in factory construction speed
+			
+		}
+	}
+
+
+
+	focus = {
+		id = FMU_tapestry_many_colors
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_renegotiate_versailles }
+		mutually_exclusive = {
+			focus = FMU_modern_germanic_state
+			focus = FMU_twee_talen
+		}
+		x = 8
+		y = 1
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#massive relations malus with Germany
+			#relations boost with neighbors
+			#increased need for consumer goods
+			#decrease war support
+			#increase stability
+		}
+	}
+
+	focus = {
+		id = FMU_commit_to_neutrality
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_tapestry_many_colors}
+		mutually_exclusive = {
+			focus = FMU_path_of_socialism
+		}
+		x = 6
+		y = 2
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#democratic support boost
+		}
+	}
+
+	focus = {
+		id = FMU_increase_product_profits
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_commit_to_neutrality}
+		mutually_exclusive = {
+			focus = FMU_path_of_socialism
+		}
+		x = 6
+		y = 3
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increase civ and mil factory 
+		}
+	}
+
+	focus = {
+		id = FMU_cont_democratic_reforms
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_increase_product_profits}
+		x = 6
+		y = 4
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#democratic support boost
+			add_stability = 0.7
+			#lend-lease tension decrease
+		}
+	}
+
+	focus = {
+		id = FMU_regional_development_authorities
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_tapestry_many_colors}
+		x = 8
+		y = 3
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#reduced factor construction time
+			#reduced need for consumer goods
+			#add building slots in random province
+		}
+	}
+
+	focus = {
+		id = FMU_strengthen_ties
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_cont_democratic_reforms}
+		x = 6
+		y = 5
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#massive relations boost with democratic nations
+			#allow volunteers
+		}
+	}
+
+	focus = {
+		id = FMU_womens_suffrage
+		icon = GFX_focus_generic_treaty
+		prerequisite = { 
+			focus = FMU_cont_democratic_reforms
+			focus = FMU_unite_with_comintern
+			focus = FMU_educate_muan_brethren
+				}
+		x = 8
+		y = 5
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#production bonus
+			#increase core manpower
+		}
+	}
+
+	focus = {
+		id = FMU_path_of_socialism
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_tapestry_many_colors}
+		mutually_exclusive = {
+			focus = FMU_commit_to_neutrality
+		}
+		x = 12
+		y = 2
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#communist support boost
+		}
+	}
+
+	focus = {
+		id = FMU_soviet_brethren
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_path_of_socialism}
+		mutually_exclusive = {
+			focus = FMU_muan_socialism
+		}
+		x = 11
+		y = 3
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#relations boost with SOV
+		}
+	}
+
+	focus = {
+		id = FMU_unite_with_comintern
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_soviet_brethren}
+		x = 11
+		y = 4
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#relations boost with SOV
+		}
+	}
+
+	focus = {
+		id = FMU_muan_socialism
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_path_of_socialism}
+		mutually_exclusive = {
+			focus = FMU_soviet_brethren
+		}
+		x = 13
+		y = 3
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#relations malus with SOV
+			#strengthen communists in nation
+			#can form factions
+		}
+	}
+
+	focus = {
+		id = FMU_educate_muan_brethren
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_muan_socialism}
+		x = 13
+		y = 4
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#relations malus with SOV
+			#strengthen communists in nation
+			#can form factions
+		}
+	}
+
+	focus = {
+		id = FMU_peoples_brigades
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_path_of_socialism}
+		x = 15
+		y = 3
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to infantry designs
+			#spawns a few 'People's Brigade' units in capital
+		}
+	}
+
+	focus = {
+		id = FMU_int_volunteer_brigades
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_path_of_socialism}
+		x = 15
+		y = 4
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus rel with communist nations
+			#decreases lend-lease level
+		}
+	}
+
+	focus = {
+		id = FMU_free_volunteers
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_int_volunteer_brigades}
+		prerequisite = { 
+			focus = FMU_unite_with_comintern
+			focus = FMU_educate_muan_brethren
+				}
+		x = 15
+		y = 5
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus rel with communist nations
+			#decreases lend-lease level
+		}
+	}
+
+	focus = {
+		id = FMU_ache_of_war
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_strengthen_ties}
+		x = 6
+		y = 6
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#military production bonus
+			#asks to join Allies
+		}
+	}
+
+	focus = {
+		id = FMU_influence_baraga
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_ache_of_war}
+		x = 4
+		y = 7
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			#is member of Allies
+		}
+
+		bypass = {
+			#baraga does not exist
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#fires event trying to influence Baraga to join the Allies
+		}
+	}
+
+	focus = {
+		id = FMU_influence_tiquea
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_ache_of_war}
+		x = 6
+		y = 7
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			#is member of Allies
+		}
+
+		bypass = {
+			#tiquea does not exist
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#fires event trying to influence tiquea to join the Allies
+		}
+	}
+
+	focus = {
+		id = FMU_influence_canaje
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_ache_of_war}
+		x = 8
+		y = 7
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			#is member of Allies
+		}
+
+		bypass = {
+			#canaje does not exist
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#fires event trying to influence canaje to join the Allies
+		}
+	}
+
+	focus = {
+		id = FMU_tech_sharing
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_ache_of_war}
+		x = 10
+		y = 7
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			#is member of Allies
+		}
+
+		bypass = {
+			#canaje does not exist
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#joins Allied tech sharing
+		}
+	}
+
+	focus = {
+		id = FMU_influence_cdm
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_influence_baraga}
+		prerequisite = { focus = FMU_influence_tiquea}
+		x = 5
+		y = 8
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			#is member of Allies
+		}
+
+		bypass = {
+			#CdM does not exist
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#fires event trying to influence Cote des Manchots to join the Allies
+		}
+	}
+
+	focus = {
+		id = FMU_influence_TOD
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_influence_canaje}
+		prerequisite = { focus = FMU_influence_tiquea}
+		x = 7
+		y = 8
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			#is member of Allies
+		}
+
+		bypass = {
+			#TOD does not exist
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#fires event trying to influence TOD to join the Allies (only 0.5% chance of success)
+		}
+	}
+
+
+
+	focus = {
+		id = FMU_prepare_revolutionary_front
+		icon = GFX_focus_generic_treaty
+		prerequisite = { 
+			focus = FMU_unite_with_comintern
+			focus = FMU_educate_muan_brethren
+				}
+		x = 12
+		y = 5
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increase compliance in occupied territory
+			#war planning speed increase
+		}
+	}
+
+	focus = {
+		id = FMU_discuss_with_SOV
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_unite_with_comintern }
+		prerequisite = { focus = FMU_prepare_revolutionary_front }
+		x = 11
+		y = 6
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+			#SOV does not exist
+			#SOV relations is bad
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decision chain, offers SOV chance to send war materiel, chance to get dragged into war in Europe
+		}
+	}
+
+	focus = {
+		id = FMU_finalize_plan
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_prepare_revolutionary_front }
+		prerequisite = { focus = FMU_educate_muan_brethren }
+		x = 13
+		y = 6
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#increase capitulation level
+			#increase war support
+			#increase material production bonus
+		}
+	}
+
+	focus = {
+		id = FMU_for_the_revolution
+		icon = GFX_focus_generic_treaty
+		prerequisite = { 
+			focus = FMU_discuss_with_SOV
+			focus = FMU_finalize_plan }
+		x = 12
+		y = 7
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add war goals "liberate"/puppet Fijnland, Tiquea, Goprug and Baraga
+		}
+	}
+
+	focus = {
+		id = FMU_revolution_by_word
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_for_the_revolution }
+		mutually_exclusive = {
+			focus = FMU_revolution_by_sword
+		}
+		x = 11
+		y = 8
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to spies
+			#influence Mu toward communism
+			#if LaR - add agent slots, increase spy defense
+		}
+	}
+
+	focus = {
+		id = FMU_revolution_by_sword
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_for_the_revolution }
+		mutually_exclusive = {
+			focus = FMU_revolution_by_word
+		}
+		x = 13
+		y = 8
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#conquer/puppet war goal vs Mu, fortifications built on Goprug/Mu border if owned or GOP is a puppet
+		}
+	}
+
+
+#MILITARY PIECE OF TREE
+
+
+
+	focus = {
+		id = FMU_law_14056
+		icon = GFX_focus_generic_treaty
+		x = 26
+		y = 0
+		relative_position_id = FMU_renegotiate_versailles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add 75 points to Army, Navy and Air Force
+		}
+	}
+
+	focus = {
+		id = FMU_clause_a
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_law_14056 }
+		x = -3
+		y = 1
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#national modifier "Baluwasser Navy" adds mild bonus for surface ships
+			#increase naval base on southern coast
+		}
+	}
+
+	focus = {
+		id = FMU_commerce_focus
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_clause_a }
+		mutually_exclusive = {
+			focus = FMU_surface_fleet_focus
+		}
+		x = -5
+		y = 2
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to sub and destroyer designs
+			#adds coastal defense ship designs
+			#spawns a few coastal defense ships
+		}
+	}
+
+	focus = {
+		id = FMU_defend_shipping
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_commerce_focus }
+		x = -6
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to destroyers and cruisers
+			#detection and anti-raiding bonuses
+		}
+	}
+
+	focus = {
+		id = FMU_control_shipping
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_commerce_focus }
+		x = -4
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to submarine detection and construction speed
+			#trade interdiction Doctrine bonus
+		}
+	}
+
+	focus = {
+		id = FMU_surface_fleet_focus
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_clause_a }
+		mutually_exclusive = {
+			focus = FMU_surface_fleet_focus
+		}
+		x = -1
+		y = 2
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to cruiser and battleship designs
+		}
+	}
+
+	focus = {
+		id = FMU_strike_fleets
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_surface_fleet_focus }
+		mutually_exclusive = {
+			focus = FMU_theater_groups
+		}
+		x = -2
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#cruiser design bonus
+			#fleet in being doctrine bonus
+		}
+	}
+
+	focus = {
+		id = FMU_theater_groups
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_surface_fleet_focus }
+		mutually_exclusive = {
+			focus = FMU_strike_fleets
+		}
+		x = 0
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#cruiser and capital ship design bonus
+			#base strike doctrine bonus
+		}
+	}
+
+	focus = {
+		id = FMU_uboat_docks
+		icon = GFX_focus_generic_treaty
+		prerequisite = { 
+			focus = FMU_control_shipping
+			focus = FMU_strike_fleets}
+		x = -3
+		y = 4
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#massive bonus to submarine construction
+		}
+	}
+
+
+
+	focus = {
+		id = FMU_clause_b
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_law_14056 }
+		x = 3
+		y = 1
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#creates a bunch of military installations
+		}
+	}
+
+	focus = {
+		id = FMU_addendum_9f
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_clause_b }
+		x = 3
+		y = 2
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#extra air points
+			#small bonus to aircraft design research
+		}
+	}
+
+	focus = {
+		id = FMU_power_projection
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_theater_groups }
+		prerequisite = { focus = FMU_addendum_9f }
+		x = 0
+		y = 4
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to carrier designs
+		}
+	}
+
+	focus = {
+		id = FMU_luftaufklarung
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_addendum_9f }
+		x = 3
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#if no LaR - radar bonus
+			#if LaR - scout plane range and design bonus
+		}
+	}
+
+	focus = {
+		id = FMU_jagdflugzeuge
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_addendum_9f }
+		x = 5
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#fighter/heavy fighter design bonus
+		}
+	}
+
+	focus = {
+		id = FMU_nat_airbase_production
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_luftaufklarung }
+		prerequisite = { focus = FMU_jagdflugzeuge }
+		x = 4
+		y = 4
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#adds airbases in two random states
+		}
+	}
+
+	focus = {
+		id = FMU_naval_air_designs
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_jagdflugzeuge }
+		prerequisite = { focus = FMU_cas_tac_designs}
+		x = 6
+		y = 4
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to naval fighter and bomber designs
+		}
+	}
+
+	focus = {
+		id = FMU_long_range_bomber
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_nat_airbase_production }
+		x = 4
+		y = 5
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#strategic bomber design bonus
+		}
+	}
+
+	focus = {
+		id = FMU_cas_tac_designs
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_addendum_9f }
+		x = 7
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#CAS and TAC bomber design bonus
+		}
+	}
+
+	focus = {
+		id = FMU_raketentechnik
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_addendum_9f }
+		x = 9
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#rocket tech bonus
+		}
+	}
+
+	focus = {
+		id = FMU_advanced_rocketry
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_raketentechnik}
+		x = 9
+		y = 4
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#rocketry design bonus
+		}
+	}
+
+	focus = {
+		id = FMU_early_ramjet_engines
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_advanced_rocketry }
+		x = 9
+		y = 5
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#jet engine bonus
+			#jet aircraft design bonus
+		}
+	}
+
+
+
+	focus = {
+		id = FMU_high_alt_spy_planes
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_luftaufklarung }
+		prerequisite = { focus = FMU_early_ramjet_engines }
+		x = 3
+		y = 6
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#enables Jet Engine Reconnaisance Aircraft (this design/tech needs to be made)
+		}
+	}
+
+
+
+	focus = {
+		id = FMU_jet_strat_bombers
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_long_range_bomber }
+		prerequisite = { focus = FMU_early_ramjet_engines }
+		x = 7
+		y = 6
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#bonus to jet strategic bomber design
+		}
+	}
+
 }
