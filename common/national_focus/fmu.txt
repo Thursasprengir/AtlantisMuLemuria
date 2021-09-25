@@ -3407,7 +3407,7 @@ focus = {
 	}
 
 
-#MILITARY PIECE OF TREE
+#MILITARY/Industrial PIECE OF TREE
 
 
 
@@ -4109,6 +4109,163 @@ focus = {
 
 		completion_reward = {
 			#bonus to jet strategic bomber design
+		}
+	}
+	
+	
+
+	focus = {
+		id = FMU_crucial_industry
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_clause_b }
+		x = 12
+		y = 2
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add civ and mil industries
+		}
+	}
+
+	focus = {
+		id = FMU_invite_civ_designers
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_crucial_industry }
+		x = 12
+		y = 3
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#unlocks designers in government modifiers
+		}
+	}
+
+	focus = {
+		id = FMU_nationalize_uli_traktor
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_invite_civ_designers }
+		mutually_exclusive = {
+			focus = FMU_divert_engines
+		}		
+		x = 11
+		y = 4
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#adds a few mil factories
+			add_stability = -0.05
+			#decrease need for civilian goods
+		}
+	}
+
+	focus = {
+		id = FMU_zilver_industrieel
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_nationalize_uli_traktor }
+		x = 11
+		y = 5
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#adds civ industry in Fijnland, slight increase in compliance in Fijnland
+		}
+	}
+
+	focus = {
+		id = FMU_divert_engines
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = FMU_invite_civ_designers }
+		mutually_exclusive = {
+			focus = FMU_nationalize_uli_traktor
+		}		
+		x = 13
+		y = 4
+		relative_position_id = FMU_law_14056
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = {
+		#date < 1936.4.3
+		#}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease war support
+			add_stability = 0.05
+			#decrease need for civilian goods
 		}
 	}
 
