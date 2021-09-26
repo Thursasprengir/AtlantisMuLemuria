@@ -42,15 +42,67 @@ focus = {
 
 		completion_reward = {
 			add_stability = -0.15
-			#remove_ideas = FMU_versailles_treaty
-			#rel boost with Ger
-			#rel drop with non-germany majors
+			remove_ideas = FMU_sanctions
+			ENG = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
+			AST = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
+			BLM = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
+			NZL = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
+			SAF = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
+			RAJ = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
+			FRA = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
+			ATL = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
+			USA = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_broke_versailles
+				}
+			}
 		}
 	}
 
 focus = {
 		id = FMU_GER_relations
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_chi_mission_to_germany
 		x = 0
 		y = 1
 		relative_position_id = FMU_reject_versailles
@@ -74,14 +126,23 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#huge rel boost with Ger
-			#remove demilitarized zone in north of country
+			GER = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_shared_heritage
+				}
+			}
+			add_opinion_modifier = { 
+					target = GER
+					modifier = FMU_shared_heritage
+				}
+			929 = { set_demilitarized_zone = no } #Why?
 		}
 	}
 
 focus = {
 		id = FMU_german_peoples_compact
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_BUL_the_fatherland_front
 		x = 0
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -105,13 +166,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#requests admission to the Axis
+			GER = {add_to_faction = FMU}
 		}
 	}
 
 focus = {
 		id = FMU_sudencreutz_volk
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = -1
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -144,7 +205,7 @@ focus = {
 
 focus = {
 		id = FMU_federation_of_brothers
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 1
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -177,7 +238,7 @@ focus = {
 
 focus = {
 		id = FMU_emphasize_german_identity
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = -3
 		y = 4
 		relative_position_id = FMU_reject_versailles
@@ -203,14 +264,13 @@ focus = {
 
 		completion_reward = {
 			add_stability = 0.1
-			#decreases civilian good req
-			#increases non-core manpower
+			add_ideas = FMU_we_are_german
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_nur_deutsch
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = -3
 		y = 5
 		relative_position_id = FMU_reject_versailles
@@ -234,14 +294,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = -0.2 #for 5 years
-			#after 5 years increase stability. Perhaps best done as a modifier?
+			add_timed_idea = {
+				idea = FMU_no_dutch
+				days = 1825
+			}
 		}
 	}
 
 focus = {
 		id = FMU_kriegspfad
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_generic_combined_arms
 		x = 0
 		y = 4
 		relative_position_id = FMU_reject_versailles
@@ -266,14 +328,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus war support
+			add_war_support = .1 war support
 			#bonus mobilization speed
 		}
 	}
 
 focus = {
 		id = FMU_germanic_research_pact
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_tfv_generic_tech_sharing
 		x = 2
 		y = 4
 		relative_position_id = FMU_reject_versailles
@@ -298,13 +360,17 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#join German/Axis Research group
+			add_to_tech_sharing_group = ger_dem_research
+			every_other_country = {
+				limit = { is_in_faction_with = GER }
+				add_to_tech_sharing_group = ger_dem_research 
+			}
 		}
 	}
 
 focus = {
 		id = FMU_ocean_destiny
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_generic_cruiser2
 		x = 0
 		y = 5
 		relative_position_id = FMU_reject_versailles
@@ -331,13 +397,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#ship construction bonus
+			add_ideas = FMU_boat_production #I cant make boatsproduce faster but i can make more docks
 		}
 	}
 
 focus = {
 		id = FMU_pitkairn_schiffwerke
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = -3
 		y = 6
 		relative_position_id = FMU_reject_versailles
@@ -361,13 +427,25 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#add navalyards to pitkairn
+			936 = { #forthe love of god use state names not city names when tree building
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
 focus = {
 		id = FMU_ship_bounties
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_mex_privatisation
 		x = 0
 		y = 6
 		relative_position_id = FMU_reject_versailles
@@ -391,14 +469,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#increase war support
-			#increase civilian goods need
+			add_war_support = .05
+			add_ideas = FMU_boat_bounty
 		}
 	}
 
 focus = {
 		id = FMU_weapons_drills
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_navy_cruiser
 		x = 2
 		y = 6
 		relative_position_id = FMU_reject_versailles
@@ -422,15 +500,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#increase ship cost, increase ship attack and defense
-			#add 30 Navy Exp
-			#if MtG - research bonus on Fire Control methods and Damage Control
+			add_ideas = FMU_hurty_boats #No way to increase ship cost
+			navy_experience = 30
+			#if MtG - research bonus on Fire Control methods and Damage Control Kiran:not possible
 		}
 	}
 
 focus = {
 		id = FMU_success_breeds_success
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_support_fascism
 		x = -3
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -462,13 +540,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#large political power boost
+			add_political_power = 200
 		}
 	}
 
 focus = {
 		id = FMU_walls_of_steel
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_construct_military
 		x = 0
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -500,14 +578,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#fortification boost
+			add_ideas = FMU_build_forts
 			#unlocks 18 width Marine Template, spawns two divisions in capital
 		}
 	}
 
 focus = {
 		id = FMU_schimmelpferds_address
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_ger_oppose_hitler
 		x = -3
 		y = 8
 		relative_position_id = FMU_reject_versailles
@@ -541,7 +619,7 @@ focus = {
 
 focus = {
 		id = FMU_austral_ocean
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_generic_navy_battleship2
 		x = 0
 		y = 8
 		relative_position_id = FMU_reject_versailles
@@ -567,7 +645,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus to fleet engagements
+			add_ideas = FMU_austral_cordination
 		}
 	}
 
