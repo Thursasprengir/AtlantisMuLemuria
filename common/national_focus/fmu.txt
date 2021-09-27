@@ -26,7 +26,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 		available = {
 
@@ -964,6 +964,7 @@ focus = {
 				type = annex_everything
 				target = CNJ
 				}
+			remove_ideas = FMU_our_land_1
 			add_ideas = FMU_our_land_2
 		}
 	}	
@@ -1001,6 +1002,7 @@ focus = {
 				type = annex_everything
 				target = GOP
 				}
+			remove_ideas = FMU_our_land_1
 			add_ideas = FMU_our_land_2			
 				#bonus to "Our Land" modifier
 		}
@@ -1039,6 +1041,7 @@ focus = {
 				type = annex_everything
 				target = TIQ
 				}
+			remove_ideas = FMU_our_land_1
 			add_ideas = FMU_our_land_2	
 			#bonus to "Our Land" modifier
 		}
@@ -1085,6 +1088,7 @@ focus = {
 				type = annex_everything
 				target = TOD
 				}
+			remove_ideas = FMU_our_land_2
 			add_ideas = FMU_our_land_3
 			#war goal vs Awarurua
 			#war goal vs TOD
@@ -1126,6 +1130,7 @@ focus = {
 				type = annex_everything
 				target = BRG
 				}
+			remove_ideas = FMU_our_land_2
 			add_ideas = FMU_our_land_3
 			#bonus to "Our Land" modifier
 		}
@@ -1164,6 +1169,7 @@ focus = {
 				type = annex_everything
 				target = MUU
 				}
+			remove_ideas = FMU_our_land_3
 			add_ideas = FMU_our_land_4
 			#bonus to "Our Land" modifier
 		}
@@ -1202,6 +1208,7 @@ focus = {
 				type = annex_everything
 				target = MCH
 				}
+			remove_ideas = FMU_our_land_2
 			add_ideas = FMU_our_land_3
 			#bonus to "Our Land" modifier
 		}
@@ -1537,7 +1544,7 @@ focus = {
 
 focus = {
 		id = FMU_national_dev_campaign
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 10
 		y = 1
 		relative_position_id = FMU_reject_versailles
@@ -1564,13 +1571,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = FMU_national_dev_1
 			#bonus to construction of infrastructure and factories
 		}
 	}
 
 focus = {
 		id = FMU_eisenbahnen
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 8
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -1594,13 +1602,41 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		936 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			936 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 			#increases infrastructure (and railroads when available)
 		}
 	}
 
 focus = {
 		id = FMU_eisengewolbe
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 7
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -1624,6 +1660,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_resource = {
+			type = oil
+			amount = 20
+			state = 936
+			}
+		add_resource = {
+			type = aluminium
+			amount = 16
+			state = 935
+			}
 			#add resources to mountains
 			#resource extraction efficiency gain
 		}
@@ -1631,7 +1677,7 @@ focus = {
 
 focus = {
 		id = FMU_ebenen_autobahn
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 9
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -1655,13 +1701,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_ideas = FMU_national_dev_2
 			#infrastructure bonuses across nation (west and south maybe?)
 		}
 	}
 
 focus = {
-		id = FMU_koenigshafen_stockmarket
-		icon = GFX_goal_generic_forceful_treaty
+		id = FMU_Blauwasser_stockmarket
+		icon = GFX_
 		x = 6
 		y = 4
 		relative_position_id = FMU_reject_versailles
@@ -1688,6 +1735,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = FMU_companies_open_stocks_military
 			#minor production efficiency growth
 			#boost construction speed
 			#reduce consumer goods need
@@ -1696,7 +1744,7 @@ focus = {
 
 focus = {
 		id = FMU_civil_works_research_admin
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_research2
 		x = 11
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -1720,14 +1768,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#add research slot
+			add_research_slot = 1
 			#bonus to production research
 		}
 	}
 
 focus = {
 		id = FMU_1938_domestic_tech_fair
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 11
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -1751,13 +1799,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#production bonuses
+			add_ideas = FMU_tech_fair_1
 		}
 	}
 
 focus = {
 		id = FMU_1940_domestic_tech_fair
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 11
 		y = 4
 		relative_position_id = FMU_reject_versailles
@@ -1781,13 +1829,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#production bonuses
+			add_ideas = FMU_tech_fair_2
 		}
 	}
 
 focus = {
 		id = FMU_1942_domestic_tech_fair
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 11
 		y = 5
 		relative_position_id = FMU_reject_versailles
@@ -1811,13 +1859,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#production bonuses
+			add_ideas = FMU_tech_fair_3
 		}
 	}
 
 focus = {
 		id = FMU_1944_domestic_tech_fair
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 11
 		y = 6
 		relative_position_id = FMU_reject_versailles
@@ -1841,13 +1889,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#production bonuses
+			add_ideas = FMU_tech_fair_4
 		}
 	}
 
 focus = {
 		id = FMU_kings_university
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 9
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -1859,7 +1907,7 @@ focus = {
 			factor = 40
 		}
 		available = {
-		#government is neutral
+			has_government = neutrality
 		}
 
 		bypass = {
@@ -1870,6 +1918,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_research_slot = 1
 			#extra research slot
 			#research speed bonus
 		}
@@ -1877,7 +1926,7 @@ focus = {
 
 focus = {
 		id = FMU_national_university
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 11
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -1889,6 +1938,12 @@ focus = {
 			factor = 40
 		}
 		available = {
+			OR = {
+				has_government = democratic
+			}
+			OR = {
+				has_government = fascism
+			}
 		#government is democratic or fascist
 		}
 
@@ -1900,6 +1955,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_research_slot = 1
 			#extra research slot
 			#research speed bonus
 		}
@@ -1907,7 +1963,7 @@ focus = {
 
 focus = {
 		id = FMU_peoples_university
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 13
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -1919,7 +1975,7 @@ focus = {
 			factor = 40
 		}
 		available = {
-		#government is communist
+			has_government = communism
 		}
 
 		bypass = {
@@ -1930,6 +1986,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_research_slot = 1
 			#extra research slot
 			#research speed bonus
 		}
@@ -1937,7 +1994,7 @@ focus = {
 
 focus = {
 		id = FMU_national_research_dev
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 11
 		y = 8
 		relative_position_id = FMU_reject_versailles
@@ -1963,7 +2020,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#extra research slot
+			add_research_slot = 1
 		}
 	}
 
