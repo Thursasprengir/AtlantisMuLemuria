@@ -427,7 +427,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			936 = { #forthe love of god use state names not city names when tree building
+			936 = { 
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1707,7 +1707,7 @@ focus = {
 	}
 
 focus = {
-		id = FMU_Blauwasser_stockmarket
+		id = FMU_blauwasser_stockmarket
 		icon = GFX_
 		x = 6
 		y = 4
@@ -1940,8 +1940,6 @@ focus = {
 		available = {
 			OR = {
 				has_government = democratic
-			}
-			OR = {
 				has_government = fascism
 			}
 		#government is democratic or fascist
@@ -3912,7 +3910,7 @@ focus = {
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_clause_a }
 		mutually_exclusive = {
-			focus = FMU_surface_fleet_focus
+			focus = FMU_commerce_focus
 		}
 		x = -1
 		y = 2
