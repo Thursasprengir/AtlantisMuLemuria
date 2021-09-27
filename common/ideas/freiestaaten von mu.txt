@@ -504,7 +504,62 @@ country = {
 			removal_cost = -1	
 
 		}
+		
+		FMU_pacific_boats= {
 
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				navy_capital_ship_attack_factor = 0.2
+				navy_capital_ship_defence_factor = 0.2
+			}
+
+			
+			removal_cost = -1	
+
+		}
+		FMU_South_A_boats = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				navy_submarine_attack_factor = 0.2
+				navy_submarine_detection_factor = 0.2
+			}
+
+			
+			removal_cost = -1	
+
+		}
+		FMU_the_long_lance = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				naval_torpedo_screen_penetration_factor = 0.2
+			}
+		}
 		FMU_build_forts = {
 
 
@@ -544,8 +599,106 @@ country = {
 
 		}
 
+#LanD Ideas
 
-		
+		FMU_army_production = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+
+			
+			removal_cost = -1	
+
+		}
+		######ideas end here lol#######
+	}
+	
+	FMU_our_land_1 = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+			}
+
+			
+			removal_cost = -1	
+
+		}
+		FMU_our_land_2 = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+			}
+
+			
+			removal_cost = -1	
+
+		}
+		FMU_our_land_3 = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+			}
+
+			
+			removal_cost = -1	
+
+		}
+		FMU_our_land_4 = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+			}
+
+			
+			removal_cost = -1	
+
+		}
 		######ideas end here lol#######
 	}
 	

@@ -717,7 +717,7 @@ focus = {
 
 focus = {
 		id = FMU_wellington_raid
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_red_sails
 		x = 0
 		y = 9
 		relative_position_id = FMU_reject_versailles
@@ -744,13 +744,20 @@ focus = {
 
 		completion_reward = {
 			#remove 300 convoys from NZL and give to FMU
+			every_country = { 
+				has_war_with = FMU
+					add_opinion_modifier = {
+					target = ROOT
+					modifier = FMU_modern_pirates
+					}	
+			}
 			#"Modern Day Piracy" relations modifier with all enemy nations
 		}
 	}
 
 focus = {
 		id = FMU_pacific_dominance
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = -1
 		y = 10
 		relative_position_id = FMU_reject_versailles
@@ -775,14 +782,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus to capital ship attacks and defense
+			add_ideas = FMU_pacific_boats
 			#if MtG - research bonus to ammo and torpedo
 		}
 	}
 
 focus = {
 		id = FMU_southern_atlantic_gambit
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 1
 		y = 10
 		relative_position_id = FMU_reject_versailles
@@ -807,14 +814,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus to submarine range & attack
-			#copy of "Long Lance" national spirit from Japan
+			add_ideas = FMU_South_A_boats
+			add_ideas = FMU_the_long_lance
 		}
 	}
 
 focus = {
 		id = FMU_unternehmen_lowenherz
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 2
 		y = 9
 		relative_position_id = FMU_reject_versailles
@@ -840,16 +847,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#massive boost to war support
-			#increases capitulation level
-			#add political power
-			#2x naval doctrine 50% bounus
+			add_war_support = 2
+			surrender_limit = 0.1
+			add_political_power = 200
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 		}
 	}
 
 focus = {
 		id = FMU_our_land
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 5
 		y = 5
 		relative_position_id = FMU_reject_versailles
@@ -876,14 +888,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#ship construction bonus
+			add_ideas = FMU_army_production
 		}
 	}
 	
 
 focus = {
 		id = FMU_never_a_neutral_nation
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 5
 		y = 6
 		relative_position_id = FMU_reject_versailles
@@ -907,16 +919,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#massive war support bonus
-			#malus with neighbors
-			#bonus resource production, reduce resources to market
-			#"Our Land" national modifier, improved by completing war goals that follow
+			add_war_support = .20
+			every_neighbor_country = { 
+					add_opinion_modifier = {
+					target = root
+					modifier = FMU_expansion_plans
+					}	
+			}
+			#bonus resource production, reduce resources to market #to much
+			add_ideas = FMU_our_land_1
 		}
 	}	
 
 focus = {
 		id = FMU_prepare_take_southern_coasts
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 3
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -928,7 +945,10 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#canaje exists
+			CNJ = {
+				exists = yes
+				is_puppet = no
+			}
 		}
 
 		#bypass = {
@@ -940,14 +960,17 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#war goal vs Canaje
-			#bonus to "Our Land" modifier
+			create_wargoal = {
+				type = annex_everything
+				target = CNJ
+				}
+			add_ideas = FMU_our_land_2
 		}
 	}	
 
 focus = {
 		id = FMU_spine_of_the_continent
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 5
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -959,7 +982,10 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#goprug exists
+			GOP = {
+				exists = yes
+				is_puppet = no
+			}
 		}
 
 		#bypass = {
@@ -971,14 +997,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#war goal vs goprug
-			#bonus to "Our Land" modifier
+			create_wargoal = {
+				type = annex_everything
+				target = GOP
+				}
+			add_ideas = FMU_our_land_2			
+				#bonus to "Our Land" modifier
 		}
 	}
 
 focus = {
 		id = FMU_northeastern_offensive
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 7
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -990,7 +1020,10 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#tiquea exists
+			TIQ = {
+				exists = yes
+				is_puppet = no
+			}
 		}
 
 		#bypass = {
@@ -1002,14 +1035,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#war goal vs tiquea
+			create_wargoal = {
+				type = annex_everything
+				target = TIQ
+				}
+			add_ideas = FMU_our_land_2	
 			#bonus to "Our Land" modifier
 		}
 	}
 
 focus = {
 		id = FMU_western_offensive
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 3
 		y = 8
 		relative_position_id = FMU_reject_versailles
@@ -1021,7 +1058,14 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#TOD and Awarurua exist
+			AWA = {
+				exists = yes
+				is_puppet = no
+			}
+			TOD = {
+				exists = yes
+				is_puppet = no
+			}
 		}
 
 		#bypass = {
@@ -1033,6 +1077,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AWA
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = TOD
+				}
+			add_ideas = FMU_our_land_3
 			#war goal vs Awarurua
 			#war goal vs TOD
 			#bonus to "Our Land" modifier
@@ -1041,7 +1094,7 @@ focus = {
 
 focus = {
 		id = FMU_mines_of_baraga
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 5
 		y = 8
 		relative_position_id = FMU_reject_versailles
@@ -1053,7 +1106,10 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#baraga exists
+			BRG = {
+				exists = yes
+				is_puppet = no
+			}
 		}
 
 		#bypass = {
@@ -1065,14 +1121,19 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#war goal vs baraga
+		
+			create_wargoal = {
+				type = annex_everything
+				target = BRG
+				}
+			add_ideas = FMU_our_land_3
 			#bonus to "Our Land" modifier
 		}
 	}
 
 focus = {
 		id = FMU_unternehmen_faust
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 5
 		y = 9
 		relative_position_id = FMU_reject_versailles
@@ -1084,7 +1145,10 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#Mu exists
+			MUU = {
+				exists = yes
+				is_puppet = no
+			}
 		}
 
 		#bypass = {
@@ -1096,15 +1160,19 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#war goal vs Mu
+			create_wargoal = {
+				type = annex_everything
+				target = MUU
+				}
+			add_ideas = FMU_our_land_4
 			#bonus to "Our Land" modifier
 		}
 	}
 
 focus = {
 		id = FMU_unternehmen_kreissage
-		icon = GFX_goal_generic_forceful_treaty
-		x = 5
+		icon = GFX_
+		x = 7
 		y = 8
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_northeastern_offensive }
@@ -1115,7 +1183,10 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#Cote des Manchots exists
+			MCH = {
+				exists = yes
+				is_puppet = no
+			}
 		}
 
 		#bypass = {
@@ -1127,7 +1198,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#war goal vs CdM
+			create_wargoal = {
+				type = annex_everything
+				target = MCH
+				}
+			add_ideas = FMU_our_land_3
 			#bonus to "Our Land" modifier
 		}
 	}
@@ -1227,11 +1302,11 @@ focus = {
 	
 	
 	
-	
+	#industry#
 
 focus = {
 		id = FMU_develop_west_coast
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 5
 		y = 1
 		relative_position_id = FMU_reject_versailles
@@ -1258,13 +1333,68 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#civ factories in western coastal provinces
+			929 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			930 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			931 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			927 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
 focus = {
 		id = FMU_develop_east_coast
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 7
 		y = 1
 		relative_position_id = FMU_reject_versailles
@@ -1291,13 +1421,54 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#civ factories in eastern coastal provinces
+			936 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			935 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			933 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
 focus = {
 		id = FMU_blauwasser_shipping_lanes
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_
 		x = 6
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -1322,7 +1493,45 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#creates a few naval bases along Southern Coast
+			933 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			931 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			931 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 5659
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
