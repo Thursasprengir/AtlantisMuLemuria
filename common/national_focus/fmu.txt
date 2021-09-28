@@ -2114,6 +2114,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			annex_country = { target = MNU transfer_troops = yes }	
+			add_political_power = 60
+			add_named_threat = { threat = 3 name = FMU_manu_threat }
 			#annexes Manu
 			#small political power boost
 			#malus to international relations for 3 years
@@ -2152,7 +2155,7 @@ focus = {
 			#Decrease generate war tension
 		}
 	}
-
+#Dont know why no work
 focus = {
 		id = FMU_european_section
 		icon = GFX_goal_generic_forceful_treaty
@@ -2179,7 +2182,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus to diplomacy with European nations
+			#IF = {
+			#	any_country = {
+			#		is_on_continent = europe
+			#	}
+			#	add_opinion_modifier = FMU_diplo_outreach
+			#}
 		}
 	}
 
@@ -2209,7 +2217,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus to diplomacy with Muan neighbors
+			#IF = {
+			#	any_country = {
+			#		is_on_continent = Mu
+			#	}
+			#	add_opinion_modifier = FMU_diplo_outreach
+			#}
 		}
 	}
 
@@ -2239,7 +2252,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus to diplomacy with N and S American nations
+			#IF = {
+			#	any_country = {
+			#		is_on_continent = North_America
+			#	}
+			#	add_opinion_modifier = FMU_diplo_outreach
+			#}
+			#IF = {
+			#	any_country = {
+			#		is_on_continent = South_America
+			#	}
+			#	add_opinion_modifier = FMU_diplo_outreach
+			#}
 		}
 	}
 
@@ -2325,7 +2349,7 @@ focus = {
 		icon = GFX_focus_generic_treaty
 		mutually_exclusive = {
 			focus = FMU_reject_versailles
-		}
+		} 
 		x = 25
 		y = 0
 		#relative_position_id = FMU_renegotiate_versailles
@@ -2338,7 +2362,7 @@ focus = {
 		#available = {
 		#date < 1936.4.3
 		#}
-
+ 
 		bypass = {
 		}
 
@@ -2347,8 +2371,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#allows decisions to remove debts to WWI major powers
-			add_stability = -0.01
+			add_political_power = 120
+			unlock_decision_category_tooltip = FMU_pay_back_debt_to_the_ifc_category
+			custom_effect_tooltip = GRE_pay_back_debt_tt
 		}
 	}
 
