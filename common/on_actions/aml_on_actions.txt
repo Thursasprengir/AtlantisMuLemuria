@@ -1,0 +1,412 @@
+on_actions = {
+	# ROOT is capitulated country, FROM is winner
+	################################################################## Rise of Mandalism
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = MKL }
+					ROOT = { tag = KLK }
+				}
+				clr_country_flag = BOMBOCLAAT
+				MKL = {
+					remove_mission = MKL_spawn_endless_dudes_with_guns
+					remove_mission = MKL_reload
+				}
+				KLK = {
+					set_state_owner = 1000
+					set_state_controller = 1000
+					set_state_owner = 1027
+					set_state_controller = 1027
+					set_state_owner = 1028
+					set_state_controller = 1028
+					set_state_owner = 1029
+					set_state_controller = 1029
+				}
+				1000 = {add_core_of = KLK}
+				1027 = {add_core_of = KLK}
+				1028 = {add_core_of = KLK}
+				1029 = {add_core_of = KLK}
+				clr_country_flag = mandalists_flag
+				set_country_flag = mandalists_victorious
+				add_ideas = KLK_razed_country
+				add_ideas = KLK_FUD
+				set_politics = {ruling_party = neutrality elections_allowed = no}
+				load_focus_tree = {tree = klk_focus keep_completed = no}
+				complete_national_focus = KLK_main
+				complete_national_focus = KLK_leftism
+				complete_national_focus = KLK_syndicalism
+				complete_national_focus = KLK_synd_right_1
+				complete_national_focus = KLK_synd_right_2
+				KLK = {white_peace = MKL}
+				country_event = {id = mandalism.9}
+				country_event = {id = mandcapital.2 days = 5}
+				MKL = {
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Militias"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Infantry Division"
+						disband = yes #will refund equipment and manpower
+					}
+				}
+				clr_country_flag = KLK_mercenary_flag
+				clr_country_flag = KLK_anti_mandalism_flag
+				clr_country_flag = KLK_deep_state_flag
+				remove_ideas = {
+					KLK_deregulation
+					KLK_deregulation_2
+					KLK_cultural_shift
+					KLK_militarized_state
+					KLK_crackdowns
+					KLK_liberals
+					KLK_deep_state
+					KLK_media_licensing
+					KLK_american_media
+					KLK_holidays
+				}
+				if = {
+					limit = {has_completed_focus = KLK_state_2}
+					set_research_slot = 2
+				}
+			}
+			if = {
+				limit = {
+					FROM = { tag = KLK }
+					ROOT = { tag = MKL }
+				}
+				MKL = {
+					remove_mission = MKL_spawn_endless_dudes_with_guns
+					remove_mission = MKL_reload
+				}
+				clr_country_flag = BOMBOCLAAT
+				KLK = {
+					set_state_owner = 1000
+					set_state_controller = 1000
+					set_state_owner = 1027
+					set_state_controller = 1027
+					set_state_owner = 1028
+					set_state_controller = 1028
+					set_state_owner = 1029
+					set_state_controller = 1029
+				}
+				clr_country_flag = mandalists_flag
+				set_country_flag = mandalists_defeated
+				KLK = {white_peace = MKL}
+				country_event = {id = mandalism.10}
+				LSN = {country_event = {id = mandgeneric.18 days = 10}}
+				CLA = {country_event = {id = mandgeneric.18 days = 10}}
+				KUM = {country_event = {id = mandgeneric.18 days = 10}}
+				MKU = {country_event = {id = mandgeneric.18 days = 10}}
+				UTU = {country_event = {id = mandgeneric.18 days = 10}}
+				SDU = {country_event = {id = mandgeneric.18 days = 10}}
+			}
+			if = {
+				limit = {
+					FROM = { tag = MKM }
+					ROOT = { tag = KUM }
+				}
+				complete_national_focus = INDOLEM2_the_hooks
+				clr_country_flag = BOMBOCLAAT
+				MKM = {
+					remove_mission = MKM_spawn_endless_dudes_with_guns
+					remove_mission = MKM_reload_2
+					remove_mission = MKM_reload
+					remove_mission = MKM_rearm
+				}
+				KUM = {
+					set_state_owner = 1023
+					set_state_controller = 1023
+					set_state_owner = 1024
+					set_state_controller = 1024
+					set_state_owner = 1025
+					set_state_controller = 1025
+					set_state_owner = 1022
+					set_state_controller = 1022
+					set_state_owner = 1026
+					set_state_controller = 1026
+					set_state_owner = 1058
+					set_state_controller = 1058
+					set_state_owner = 1019
+					set_state_controller = 1019
+					set_state_owner = 1021
+					set_state_controller = 1021
+					set_state_owner = 1020
+					set_state_controller = 1020
+				}
+				set_country_flag = mandalists_victorious
+				country_event = {id = mandcapital.2 days = 5}
+				SDU = {country_event = {id = mandgeneric.11 days = 30}}
+				MKU = {country_event = {id = mandgeneric.11 days = 10}}
+				set_politics = {ruling_party = neutrality elections_allowed = no}
+				KUM = {add_ideas = MAN_nonaligned_idea}
+				KUM = {white_peace = MKM}
+				country_event = {id = mandgeneric.9}
+				MKM = {
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Militias"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Infantry Division"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
+				}
+				MKM = {delete_unit = {state = 1023 disband = yes}}
+				MKM = {delete_unit = {state = 1024 disband = yes}}
+				MKM = {delete_unit = {state = 1025 disband = yes}}
+				MKM = {delete_unit = {state = 1022 disband = yes}}
+				MKM = {delete_unit = {state = 1026 disband = yes}}
+				MKM = {delete_unit = {state = 1058 disband = yes}}
+				MKM = {delete_unit = {state = 1019 disband = yes}}
+				MKM = {delete_unit = {state = 1021 disband = yes}}
+				MKM = {delete_unit = {state = 1020 disband = yes}}
+				MKM = {delete_unit = {state = 1054 disband = yes}}
+				MKM = {delete_unit = {state = 992 disband = yes}}
+				MKM = {delete_unit = {state = 1018 disband = yes}}
+				MKM = {delete_unit = {state = 1017 disband = yes}}
+				MKM = {delete_unit = {state = 1003 disband = yes}}
+			}
+			if = {
+				limit = {
+					FROM = { tag = KUM }
+					ROOT = { tag = MKM }
+				}
+				complete_national_focus = INDOLEM2_the_hooks
+				MKM = {
+					remove_mission = MKM_spawn_endless_dudes_with_guns
+					remove_mission = MKM_reload_2
+					remove_mission = MKM_reload
+					remove_mission = MKM_rearm
+				}
+				clr_country_flag = BOMBOCLAAT
+				KUM = {
+					set_state_owner = 1023
+					set_state_controller = 1023
+					set_state_owner = 1024
+					set_state_controller = 1024
+					set_state_owner = 1025
+					set_state_controller = 1025
+					set_state_owner = 1022
+					set_state_controller = 1022
+					set_state_owner = 1026
+					set_state_controller = 1026
+					set_state_owner = 1058
+					set_state_controller = 1058
+					set_state_owner = 1019
+					set_state_controller = 1019
+					set_state_owner = 1021
+					set_state_controller = 1021
+					set_state_owner = 1020
+					set_state_controller = 1020
+				}
+				set_country_flag = mandalists_defeated
+				country_event = {id = mandcapital.1 days = 5}
+				KUM = {white_peace = MKM}
+				country_event = {id = mandgeneric.8}
+				SDU = {country_event = {id = mandgeneric.12}}
+				UTU = {country_event = {id = mandgeneric.12}}
+				MKU = {country_event = {id = mandgeneric.12}}
+				MKM = {delete_unit = {state = 1023 disband = yes}}
+				MKM = {delete_unit = {state = 1024 disband = yes}}
+				MKM = {delete_unit = {state = 1025 disband = yes}}
+				MKM = {delete_unit = {state = 1022 disband = yes}}
+				MKM = {delete_unit = {state = 1026 disband = yes}}
+				MKM = {delete_unit = {state = 1058 disband = yes}}
+				MKM = {delete_unit = {state = 1019 disband = yes}}
+				MKM = {delete_unit = {state = 1021 disband = yes}}
+				MKM = {delete_unit = {state = 1020 disband = yes}}
+				MKM = {delete_unit = {state = 1054 disband = yes}}
+				MKM = {delete_unit = {state = 992 disband = yes}}
+				MKM = {delete_unit = {state = 1018 disband = yes}}
+				MKM = {delete_unit = {state = 1017 disband = yes}}
+				MKM = {delete_unit = {state = 1003 disband = yes}}
+			}
+			if = {
+				limit = {
+					FROM = { tag = MCL }
+					ROOT = { tag = CLA }
+				}
+				complete_national_focus = INDOLEM2_the_hooks
+				clr_country_flag = BOMBOCLAAT
+				MCL = {
+					remove_mission = MCL_spawn_endless_dudes_with_guns
+					remove_mission = MCL_reload_2
+					remove_mission = MCL_reload
+					remove_mission = MCL_rearm
+				}
+				CLA = {
+					set_state_owner = 1001
+					set_state_controller = 1001
+					set_state_owner = 1032
+					set_state_controller = 1032
+					set_state_owner = 1002
+					set_state_controller = 1002
+					set_state_owner = 1033
+					set_state_controller = 1033
+					set_state_owner = 1034
+					set_state_controller = 1034
+					set_state_owner = 1031
+					set_state_controller = 1031
+				}
+				set_country_flag = mandalists_victorious
+				country_event = {id = mandcapital.2 days = 5}
+				if = {
+					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+					CLA = {country_event = {id = mandgeneric.17 days = 12}}
+				}
+				set_politics = {ruling_party = neutrality elections_allowed = no}
+				CLA = {add_ideas = MAN_nonaligned_idea}
+				CLA = {white_peace = MCL}
+				country_event = {id = mandgeneric.9}
+				MCL = {
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Militias"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Infantry Division"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
+				}
+				MCL = {delete_unit = {state = 1001 disband = yes}}
+				MCL = {delete_unit = {state = 1032 disband = yes}}
+				MCL = {delete_unit = {state = 1002 disband = yes}}
+				MCL = {delete_unit = {state = 1033 disband = yes}}
+				MCL = {delete_unit = {state = 1034 disband = yes}}
+				MCL = {delete_unit = {state = 1031 disband = yes}}
+				MCL = {delete_unit = {state = 809 disband = yes}}
+			}
+			if = {
+				limit = {
+					FROM = { tag = CLA }
+					ROOT = { tag = MCL }
+				}
+				complete_national_focus = INDOLEM2_the_hooks
+				MCL = {
+					remove_mission = MCL_spawn_endless_dudes_with_guns
+					remove_mission = MCL_reload_2
+					remove_mission = MCL_reload
+					remove_mission = MCL_rearm
+				}
+				clr_country_flag = BOMBOCLAAT
+				CLA = {
+					set_state_owner = 1001
+					set_state_controller = 1001
+					set_state_owner = 1032
+					set_state_controller = 1032
+					set_state_owner = 1002
+					set_state_controller = 1002
+					set_state_owner = 1033
+					set_state_controller = 1033
+					set_state_owner = 1034
+					set_state_controller = 1034
+					set_state_owner = 1031
+					set_state_controller = 1031
+				}
+				set_country_flag = mandalists_defeated
+				country_event = {id = mandcapital.1 days = 5}
+				CLA = {white_peace = MCL}
+				country_event = {id = mandgeneric.8}
+				MCL = {delete_unit = {state = 1001 disband = yes}}
+				MCL = {delete_unit = {state = 1032 disband = yes}}
+				MCL = {delete_unit = {state = 1002 disband = yes}}
+				MCL = {delete_unit = {state = 1033 disband = yes}}
+				MCL = {delete_unit = {state = 1034 disband = yes}}
+				MCL = {delete_unit = {state = 1031 disband = yes}}
+				MCL = {delete_unit = {state = 809 disband = yes}}
+			}
+			if = {
+				limit = {
+					FROM = { tag = MLS }
+					ROOT = { tag = LSN }
+				}
+				complete_national_focus = INDOLEM2_the_hooks
+				clr_country_flag = BOMBOCLAAT
+				MLS = {
+					remove_mission = MLS_spawn_endless_dudes_with_guns
+					remove_mission = MLS_reload_2
+					remove_mission = MLS_reload
+					remove_mission = MLS_rearm
+				}
+				LSN = {
+					set_state_owner = 1030
+					set_state_controller = 1030
+				}
+				set_country_flag = mandalists_victorious
+				country_event = {id = mandcapital.2 days = 5}
+				if = {
+					limit = {KUM = {has_country_flag = KUM_kumarikkandam}}
+					LSN = {country_event = {id = mandgeneric.17 days = 12}}
+				}
+				set_politics = {ruling_party = neutrality elections_allowed = no}
+				LSN = {add_ideas = MAN_nonaligned_idea}
+				LSN = {white_peace = MLS}
+				country_event = {id = mandgeneric.9}
+				MLS = {
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Militias"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Infantry Division"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Cavalry"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mandalist Mountaineers"
+						disband = yes #will refund equipment and manpower
+					}
+				}
+				MLS = {delete_unit = {state = 1030 disband = yes}}
+				MLS = {delete_unit = {state = 982 disband = yes}}
+			}
+			if = {
+				limit = {
+					FROM = { tag = LSN }
+					ROOT = { tag = MLS }
+				}
+				complete_national_focus = INDOLEM2_the_hooks
+				MLS = {
+					remove_mission = MLS_spawn_endless_dudes_with_guns
+					remove_mission = MLS_reload
+					remove_mission = MLS_reload_2
+					remove_mission = MLS_rearm
+				}
+				clr_country_flag = BOMBOCLAAT
+				LSN = {
+					set_state_owner = 1030
+					set_state_controller = 1030
+				}
+				set_country_flag = mandalists_defeated
+				country_event = {id = mandcapital.1 days = 5}
+				LSN = {white_peace = MLS}
+				country_event = {id = mandgeneric.8}
+				MLS = {delete_unit = {state = 1030 disband = yes}}
+				MLS = {delete_unit = {state = 982 disband = yes}}
+			}
+		}
+	}
+	################################################################## BLM civil war
+	# ROOT is capitulated country, FROM is winner
+}
