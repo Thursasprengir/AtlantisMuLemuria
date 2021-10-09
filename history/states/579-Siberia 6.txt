@@ -1,23 +1,25 @@
 
 state={
 	id=579
-	name="STATE_579" # Salekhard
-	manpower = 345484
-	
-	state_category = city
+	name="STATE_579"
 
 	history={
 		owner = SOV
 		victory_points = {
-				3169 5 
-			}
-			victory_points = {
-				7738 10 
-			}
-			victory_points = {
-				4669 15 
-			}
-			
+			3169 5 
+		}
+		victory_points = {
+			7738 10 
+		}
+		victory_points = {
+			10365 10 
+		}
+		victory_points = {
+			4669 20
+		}
+		victory_points = {
+			10564 20 
+		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
@@ -30,9 +32,13 @@ state={
 		}
 		add_core_of = SOV
 		add_core_of = HBO
+
 	}
 
 	provinces={
-		1664 1684 3169 4669 7689 7738 8461 9142 
+		96 1664 1684 1729 1757 3169 3336 3415 4669 4733 4761 7689 7738 7809 8461 9142 10536 10564 10635 12517 12545 
 	}
+	manpower=645484
+	buildings_max_level_factor=1.000
+	state_category=city
 }

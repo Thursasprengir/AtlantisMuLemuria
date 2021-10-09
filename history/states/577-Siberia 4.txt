@@ -1,20 +1,29 @@
 
 state={
 	id=577 # Surgut
-	manpower = 29299
+	manpower = 729299
 	name="STATE_577"
 	resources={
 		oil=13 # was: 14
 	}
 	
-	state_category = wasteland
+	state_category = city
 
 	history={
 		owner = SOV
+		victory_points = {
+			7685 10 
+		}
+		victory_points = {
+			4730 10 
+		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
 		}
 		add_core_of = SOV
+		add_core_of = HBO
 	}
 
 	provinces={
