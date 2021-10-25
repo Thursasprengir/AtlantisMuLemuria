@@ -2183,7 +2183,7 @@ focus = {
 
 		completion_reward = {
 			#IF = {
-			#	any_country = {
+			#	all_country = {
 			#		is_on_continent = europe
 			#	}
 			#	add_opinion_modifier = FMU_diplo_outreach
@@ -2373,7 +2373,7 @@ focus = {
 		completion_reward = {
 			add_political_power = 120
 			unlock_decision_category_tooltip = FMU_pay_back_debt_to_the_ifc_category
-			custom_effect_tooltip = GRE_pay_back_debt_tt
+			custom_effect_tooltip = FMU_pay_back_debt_tt
 		}
 	}
 
@@ -2406,8 +2406,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = .20
+			every_neighbor_country = { 
+					add_opinion_modifier = {
+					target = root
+					modifier = FMU_bad_diplo_outreach
+					}	
+			}
 			#increase war support
-			#relations malus with neighbors
 		}
 	}
 
@@ -2440,8 +2446,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#increase factory output
+			#increase factory output #K says no
 			add_stability = 0.05
+			add_ideas = FMU_double_identity
 			#increase need for consumer goods
 		}
 	}
@@ -2474,8 +2481,34 @@ focus = {
 
 		completion_reward = {
 			#add building slots
-			#add mil factories
-			#add civ factories
+			932 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			934 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -2504,7 +2537,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#increase war support
+			add_war_support = .1
 			#production time decrease for 2 years
 		}
 	}
@@ -2534,7 +2567,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#boost neutrality
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -2566,8 +2602,12 @@ focus = {
 
 		completion_reward = {
 			#decrease stability for 3 years
-			#massive neutrality boost
-			#production bonus
+			add_stability = -0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+			#production bonus #k: why?
 		}
 	}
 
@@ -2596,9 +2636,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#add political power
+			add_political_power = 150
+			add_stability = -0.1
 			#decrease stability for a while
-			#construction speed boost for infrastructure and fortifications
+			#construction speed boost for infrastructure and fortifications #K: again why?
 		}
 	}
 
@@ -2606,7 +2647,7 @@ focus = {
 		id = FMU_strengthen_central
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_new_constitution }
-		x = -2
+		x = -1
 		y = 6
 		relative_position_id = FMU_renegotiate_versailles
 
@@ -2627,78 +2668,78 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#decrease stability for a while
+			add_political_power = 120
 			#increase civilian production for a while
 			#add political power
 		}
 	}
 
-	focus = {
-		id = FMU_ban_communists
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = FMU_new_constitution }
-		x = 0
-		y = 6
-		relative_position_id = FMU_renegotiate_versailles
+	#focus = {
+	#	id = FMU_ban_communists
+	#	icon = GFX_focus_generic_treaty
+	#	prerequisite = { focus = FMU_new_constitution }
+	#	x = 0
+	#	y = 6
+	#	relative_position_id = FMU_renegotiate_versailles
 
-		cost = 10
+	#	cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
+	#	ai_will_do = {
+	#		factor = 2
+	#	}
 		#available = {
 		#date < 1936.4.3
 		#}
 
-		bypass = {
-		}
+	#	bypass = {
+	#	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
 
-		completion_reward = {
+	#	completion_reward = {
 			#decrease communist support
 			#enables decisions allowing governemnt to attack communists in nation - seizes SOV equipment if successful
-		}
-	}
+	#	}
+	#}
 
-	focus = {
-		id = FMU_ban_fascists
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = FMU_new_constitution }
-		x = 2
-		y = 6
-		relative_position_id = FMU_renegotiate_versailles
+	#focus = {
+	#	id = FMU_ban_fascists
+	#	icon = GFX_focus_generic_treaty
+	#	prerequisite = { focus = FMU_new_constitution }
+	#	x = 2
+	#	y = 6
+	#	relative_position_id = FMU_renegotiate_versailles
 
-		cost = 10
+	#	cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
+	#	ai_will_do = {
+	#		factor = 2
+	#	}
 		#available = {
 		#date < 1936.4.3
 		#}
 
-		bypass = {
-		}
+	#	bypass = {
+	#	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
 
-		completion_reward = {
+	#	completion_reward = {
 			#decrease fascist support
 			#enables decisions allowing governemnt to attack fascists in nation - seizes GER equipment if successful
-		}
-	}
+	#	}
+	#}
 
 	focus = {
 		id = FMU_install_noble_houses
 		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = FMU_strengthen_central }
-		x = -2
-		y = 7
+		prerequisite = { focus = FMU_new_constitution }
+		x = 1
+		y = 6
 		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
@@ -2718,6 +2759,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_stability = 0.2
+			#K: What does instaling noble house have to do with industry?
 			#decrease civilian production speed
 			#increase military production speed
 			#decrease mil factory production time
@@ -2725,46 +2768,46 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = FMU_ban_democrats
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = FMU_ban_communists }
-		prerequisite = { focus = FMU_ban_fascists }
-		x = 1
-		y = 7
-		relative_position_id = FMU_renegotiate_versailles
+	#focus = {
+	#	id = FMU_ban_democrats
+	#	icon = GFX_focus_generic_treaty
+	#	prerequisite = { focus = FMU_ban_communists }
+	#	prerequisite = { focus = FMU_ban_fascists }
+	#	x = 1
+	#	y = 7
+	#	relative_position_id = FMU_renegotiate_versailles
 
-		cost = 10
+	#	cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
+	#	ai_will_do = {
+	#		factor = 2
+	#	}
+	#	available = {
 		#less than 5% Fascist support
 		#less than 5% Communist support
-		}
+	#	}
 
-		bypass = {
-		}
+	#	bypass = {
+	#	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
 
-		completion_reward = {
+	#	completion_reward = {
 			#decrease democratic support
 			#enables decisions allowing governemnt to attack or "reeducate" democrats in nation - different bonus based on choice
 			
-		}
-	}
+	#	}
+	#}
 
 	focus = {
 		id = FMU_elect_kaiser
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_install_noble_houses }
-		prerequisite = { focus = FMU_ban_democrats }
+		prerequisite = { focus = FMU_strengthen_central }
 		x = 0
-		y = 8
+		y = 7
 		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
@@ -2793,7 +2836,7 @@ focus = {
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_elect_kaiser }
 		x = -1
-		y = 9
+		y = 8
 		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
@@ -2813,7 +2856,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#raise world tension
+			add_ideas = FMU_white_imigration
+			#raise world tension #K:why? its imigration not industrial genocide
 			#increase core manpower
 			#decrease non-core manpower
 			
@@ -2825,7 +2869,7 @@ focus = {
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_elect_kaiser }
 		x = 1
-		y = 9
+		y = 8
 		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
@@ -2847,6 +2891,7 @@ focus = {
 			add_stability = -0.05
 			#decrease factory construction time
 			#increase non-core manpower
+			add_ideas = FMU_enforced_conscription
 			
 		}
 	}
@@ -2858,7 +2903,7 @@ focus = {
 			focus = FMU_white_immigration
 			focus = FMU_encourage_settlement }
 		x = 0
-		y = 10
+		y = 9
 		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
@@ -2878,6 +2923,7 @@ focus = {
 
 		completion_reward = {
 			add_stability = -0.1
+			add_ideas = FMU_golden_factory
 			#MAJOR increase in production capacity
 			#MAJOR increase in factory construction speed
 			
