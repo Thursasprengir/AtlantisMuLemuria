@@ -1,7 +1,7 @@
 ideas = {
 
 
-country = {
+	country = {
 		FMU_unfair_sufferage = {
 			allowed = {always = no}
 			allowed_civil_war = {always = yes}
@@ -621,9 +621,9 @@ country = {
 
 		}
 		######ideas end here lol#######
-	}
 	
-	FMU_our_land_1 = {
+	
+		FMU_our_land_1 = {
 
 
 			allowed = {
@@ -758,9 +758,9 @@ country = {
 		FMU_debt_to_the_ifc = {
 				
 			allowed = {
-				always = no
+				original_tag = FMU
 			}
-
+			
 			picture = GRE_debt_to_the_ifc
 				
 			removal_cost = -1
@@ -774,7 +774,7 @@ country = {
 		FMU_debt_to_the_ifc_2 = {
 				
 			allowed = {
-				always = no
+				original_tag = FMU
 			}
 			
 			allowed_civil_war = {
@@ -799,7 +799,7 @@ country = {
 		FMU_debt_to_the_ifc_3 = {
 				
 			allowed = {
-				always = no
+				original_tag = FMU
 			}
 
 			allowed_civil_war = {
@@ -823,7 +823,7 @@ country = {
 		FMU_paying_off_debt_small = {
 				
 			allowed = {
-				always = no
+				original_tag = FMU
 			}
 
 			allowed_civil_war = {
@@ -843,7 +843,7 @@ country = {
 		FMU_paying_off_debt_large = {
 				
 			allowed = {
-				always = no
+				original_tag = FMU
 			}
 
 			allowed_civil_war = {
@@ -859,8 +859,55 @@ country = {
 				min_export = 0.25			
 			}
 		}
-	}
+		#renigotiate Vesralia
+		FMU_double_identity = {
 
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+
+			picture = eng_imperial_conscription
+			
+			removal_cost = -1	
+
+		}
+	
+		FMU_white_imigration = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		FMU_enforced_conscription = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				local_non_core_manpower = 0.3 
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		FMU_golden_factory = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+				production_factory_max_efficiency_factor = 0.5 
+			}
+		}
 	political_advisor = {
 		FMU_thanikas_bousinissi = {
 			

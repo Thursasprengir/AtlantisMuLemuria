@@ -152,14 +152,52 @@ set_popularities = {
 
 	}
 1936.1.1 = {
-	set_variable = { var = FMU_debt_to_the_ifc_britain_var value = 10 }		
-	set_variable = { var = FMU_debt_to_the_ifc_france_var value = 10 }
-	set_variable = { var = FMU_debt_to_the_ifc_italy_var value = 10 }
-	set_variable = { var = FMU_debt_to_the_ifc_paid_var value = 0 }
-	add_ideas = {
-		FMU_debt_to_the_ifc
+	if = {
+		limit = { has_dlc = "Battle for the Bosporus" }
+		add_opinion_modifier = { 
+			target = ROM
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = TUR
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = YUG
+			modifier = BFTB_balkan_pact_ally
+		}
+		add_opinion_modifier = { 
+			target = BUL
+			modifier = BFTB_balkan_pact_enemy
+		}
+		add_opinion_modifier = { 
+			target = HUN
+			modifier = BFTB_balkan_pact_enemy
+		}
+	
+		add_ideas = {
+			export_focus
+			limited_conscription
+			civilian_economy
+			FMU_debt_to_the_ifc
+		}
+
+		set_variable = { var = FMU_debt_to_the_ifc_britain_var value = 10 }
+		set_variable = { var = FMU_debt_to_the_ifc_france_var value = 10 }
+		set_variable = { var = FMU_debt_to_the_ifc_italy_var value = 10 }
+		set_variable = { var = FMU_debt_to_the_ifc_paid_var value = 0 }
+
+	
 	}
-				
+
+	if = {
+		limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
+		add_ideas = {
+			export_focus
+			limited_conscription
+			civilian_economy
+		}
+	}
 }
 
 create_country_leader = {
