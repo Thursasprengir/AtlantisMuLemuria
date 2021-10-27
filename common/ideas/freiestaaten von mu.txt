@@ -392,7 +392,7 @@ ideas = {
 				ships_at_battle_start = 0.25 
 			}
 		}
-		
+		#New Ideas
 		FMU_we_are_german = {
 
 
@@ -906,6 +906,93 @@ ideas = {
 				industrial_capacity_factory = 0.3
 				industrial_capacity_dockyard = 0.3
 				production_factory_max_efficiency_factor = 0.5 
+			}
+		}
+		
+		
+		#Democratic
+		FMU_consumer_goods = {
+				
+			allowed = {
+				original_tag = FMU
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SPR_relocate_the_gold_reserves
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.15				
+			}
+		}
+		FMU_regional_dev_authority = {
+				
+			allowed = {
+				original_tag = FMU
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SPR_relocate_the_gold_reserves
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.05	
+				production_speed_buildings_factor = 0.1				
+			}
+		}
+		FMU_womens_rights = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				conscription_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		FMU_democratic_weapons = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				production_factory_efficiency_gain_factor = .15
+			}
+		}
+		#commie ideas
+		FMU_revolution_front = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				compliance_growth_on_our_occupied_states = 0.25
+				max_planning_factor = 0.1
+			}
+		}
+		FMU_socialist_plan = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				surrender_limit = 0.1
+			}
+		}
+		FMU_commie_spies = {
+			allowed = {always = no}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				foreign_subversive_activites = -0.3
+				crypto_strength = 1
+				decryption_power = 1
 			}
 		}
 	political_advisor = {

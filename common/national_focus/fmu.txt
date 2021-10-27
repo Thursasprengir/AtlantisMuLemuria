@@ -2480,6 +2480,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_ideas = neutrality_influence
 			#add building slots
 			932 = { 
 				if = {
@@ -2638,6 +2639,10 @@ focus = {
 		completion_reward = {
 			add_political_power = 150
 			add_stability = -0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
 			#decrease stability for a while
 			#construction speed boost for infrastructure and fortifications #K: again why?
 		}
@@ -2961,6 +2966,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			GER = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_angry_german_bros
+				}
+			}
+			every_neighbor_country = {
+				add_opinion_modifier = {
+					target = FMU
+					modifier = FMU_diplo_outreach
+				}
+			}
+			add_ideas = FMU_consumer_goods
+			add_war_support = -0.05
+			add_stability = 0.05
 			#massive relations malus with Germany
 			#relations boost with neighbors
 			#increased need for consumer goods
@@ -2997,6 +3017,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = democratic_influence
 			#democratic support boost
 		}
 	}
@@ -3029,7 +3050,34 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#increase civ and mil factory 
+			935 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			931 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -3058,8 +3106,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
 			#democratic support boost
-			add_stability = 0.7
+			add_stability = 0.1
 			#lend-lease tension decrease
 		}
 	}
@@ -3090,7 +3142,14 @@ focus = {
 
 		completion_reward = {
 			#reduced factor construction time
+			add_ideas = FMU_regional_dev_authority
 			#reduced need for consumer goods
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			}
 			#add building slots in random province
 		}
 	}
@@ -3120,6 +3179,36 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			If ={
+				any_country = {
+					has_government = democratic
+				}
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_democratic_reachout
+				}
+			}#K: idk if this works
+			USA = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_democratic_reachout
+				}
+			}
+			ATL = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_democratic_reachout
+				}
+			}
+			ENG = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_democratic_reachout
+				}
+			}
+			set_rule = {
+				can_send_volunteers = yes
+			}
 			#massive relations boost with democratic nations
 			#allow volunteers
 		}
@@ -3154,6 +3243,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = FMU_womens_rights
 			#production bonus
 			#increase core manpower
 		}
@@ -3187,7 +3277,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#communist support boost
+			add_ideas =communist_influence
 		}
 	}
 
@@ -3219,7 +3309,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#relations boost with SOV
+			SOV = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_communist_reachout
+				}
+			}
 		}
 	}
 
@@ -3236,9 +3331,9 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		#available = {
-		#date < 1936.4.3
-		#}
+		available = {
+			has_government = communism
+		}
 
 		bypass = {
 		}
@@ -3248,7 +3343,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#relations boost with SOV
+			SOV = {add_to_faction = FMU}
 		}
 	}
 
@@ -3280,6 +3375,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "Short Commies"
+			SOV = {
+				add_opinion_modifier = { 
+					target = FMU
+					modifier = FMU_angry_communist
+				}
+			}
 			#relations malus with SOV
 			#strengthen communists in nation
 			#can form factions
@@ -3311,6 +3414,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
 			#relations malus with SOV
 			#strengthen communists in nation
 			#can form factions
@@ -3319,7 +3426,7 @@ focus = {
 
 	focus = {
 		id = FMU_peoples_brigades
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_path_of_socialism}
 		x = 15
 		y = 3
@@ -3343,6 +3450,43 @@ focus = {
 
 		completion_reward = {
 			#bonus to infantry designs
+			division_template = {
+				name = "People's Brigade"
+				is_locked = no
+				division_names_group = FMU_INF_01
+				priority = 0
+				template_counter = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+				}
+				support = { 
+					military_police = { x = 0 y = 0 }
+				} 
+			}
+			create_unit = {
+				division = "name = \"1st People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = FMU
+				prioritize_location = 5254
+				}
+			create_unit = {
+				division = "name = \"2nd People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = FMU
+				prioritize_location = 5254
+				}
+			create_unit = {
+				division = "name = \"4th People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = FMU
+				prioritize_location = 5254
+				}
+			create_unit = {
+				division = "name = \"3rd People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = FMU
+				prioritize_location = 5254
+				}
+				
 			#spawns a few 'People's Brigade' units in capital
 		}
 	}
@@ -3350,7 +3494,7 @@ focus = {
 	focus = {
 		id = FMU_int_volunteer_brigades
 		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = FMU_path_of_socialism}
+		prerequisite = { focus = FMU_peoples_brigades}
 		x = 15
 		y = 4
 		relative_position_id = FMU_renegotiate_versailles
@@ -3372,44 +3516,43 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus rel with communist nations
-			#decreases lend-lease level
+			can_send_volunteers = yes
 		}
 	}
 
-	focus = {
-		id = FMU_free_volunteers
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = FMU_int_volunteer_brigades}
-		prerequisite = { 
-			focus = FMU_unite_with_comintern
-			focus = FMU_educate_muan_brethren
-				}
-		x = 15
-		y = 5
-		relative_position_id = FMU_renegotiate_versailles
+	#focus = {
+	#	id = FMU_free_volunteers
+	#	icon = GFX_focus_generic_treaty
+	#	prerequisite = { focus = FMU_int_volunteer_brigades}
+	#	prerequisite = { 
+	#		focus = FMU_unite_with_comintern
+	#		focus = FMU_educate_muan_brethren
+	#			}
+	#	x = 15
+	#	y = 5
+	#	relative_position_id = FMU_renegotiate_versailles
 
-		cost = 10
+	#	cost = 10
 
-		ai_will_do = {
-			factor = 2
-		}
+		#ai_will_do = {
+		#	factor = 2
+		#}
 		#available = {
 		#date < 1936.4.3
 		#}
 
-		bypass = {
-		}
+		#bypass = {
+		#}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = no
 
-		completion_reward = {
+		#completion_reward = {
 			#bonus rel with communist nations
 			#decreases lend-lease level
-		}
-	}
+		#}
+	#}
 
 	focus = {
 		id = FMU_ache_of_war
@@ -3437,7 +3580,8 @@ focus = {
 
 		completion_reward = {
 			#military production bonus
-			#asks to join Allies
+			add_ideas = FMU_democratic_weapons
+			ENG = {add_to_faction = FMU}
 		}
 	}
 
@@ -3557,7 +3701,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#joins Allied tech sharing
+			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
 
@@ -3655,6 +3799,7 @@ focus = {
 		completion_reward = {
 			#increase compliance in occupied territory
 			#war planning speed increase
+			add_ideas = FMU_revolution_front
 		}
 	}
 
@@ -3717,7 +3862,7 @@ focus = {
 
 		completion_reward = {
 			#increase capitulation level
-			#increase war support
+			add_war_support = .15
 			#increase material production bonus
 		}
 	}
@@ -3749,7 +3894,36 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FJN
+				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = TIQ
+				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = BRG
+				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GOP
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = VGI
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = CTT
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = ARA
+				}
 			#add war goals "liberate"/puppet Fijnland, Tiquea, Goprug and Baraga
+			
 		}
 	}
 
@@ -3782,7 +3956,10 @@ focus = {
 
 		completion_reward = {
 			#bonus to spies
-			#influence Mu toward communism
+			MUU = {
+				add_ideas = communist_influence
+			}
+			add_ideas = FMU_commie_spies
 			#if LaR - add agent slots, increase spy defense
 		}
 	}
@@ -3815,6 +3992,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MUU
+				}
 			#conquer/puppet war goal vs Mu, fortifications built on Goprug/Mu border if owned or GOP is a puppet
 		}
 	}
