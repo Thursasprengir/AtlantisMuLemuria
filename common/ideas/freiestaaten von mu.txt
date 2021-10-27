@@ -995,6 +995,49 @@ ideas = {
 				decryption_power = 1
 			}
 		}
+	#New Military Ideas
+	FMU_shipping_lane_bonus = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				navy_submarine_attack_factor = 0.2
+				navy_submarine_defence_factor = 0.2
+
+			}
+
+			
+			removal_cost = -1	
+
+		}
+		FMU_control_shipping_bonus = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+
+				navy_submarine_detection_factor = 0.2
+
+			}
+
+			
+			removal_cost = -1	
+
+		}
 	political_advisor = {
 		FMU_thanikas_bousinissi = {
 			
