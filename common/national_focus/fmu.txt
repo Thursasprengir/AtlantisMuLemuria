@@ -4029,6 +4029,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			army_experience = 75
+			navy_experience = 75
+			air_experience = 75
 			#add 75 points to Army, Navy and Air Force
 		}
 	}
@@ -4058,6 +4061,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			933 = {
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					instant_build = yes
+					province = 8787
+				}
+			}
 			#national modifier "Baluwasser Navy" adds mild bonus for surface ships
 			#increase naval base on southern coast
 		}
@@ -4091,8 +4102,19 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
 			#bonus to sub and destroyer designs
 			#adds coastal defense ship designs
+			FMU = { load_oob = FMU_commerce }
 			#spawns a few coastal defense ships
 		}
 	}
@@ -4122,6 +4144,17 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cl_tech
+			}
+			add_ideas= FMU_shipping_lane_bonus
 			#bonus to destroyers and cruisers
 			#detection and anti-raiding bonuses
 		}
@@ -4153,6 +4186,12 @@ focus = {
 
 		completion_reward = {
 			#bonus to submarine detection and construction speed
+			add_ideas= FMU_shipping_lane_bonus
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_trade_interdiction
+			}
 			#trade interdiction Doctrine bonus
 		}
 	}
@@ -4185,6 +4224,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = BB_tech
+			}
 			#bonus to cruiser and battleship designs
 		}
 	}
@@ -4217,6 +4266,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_fleet_in_being
+			}
 			#cruiser design bonus
 			#fleet in being doctrine bonus
 		}
@@ -4250,6 +4309,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cv_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_base_strike
+			}
 			#cruiser and capital ship design bonus
 			#base strike doctrine bonus
 		}
@@ -4282,7 +4356,20 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#massive bonus to submarine construction
+			931 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+	
+			}#massive bonus to submarine construction
 		}
 	}
 
@@ -4313,9 +4400,24 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#creates a bunch of military installations
+			936 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+	
+			}#creates a bunch of military installations
 		}
 	}
+		
+	
 
 	focus = {
 		id = FMU_addendum_9f
@@ -4342,8 +4444,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#extra air points
-			#small bonus to aircraft design research
+			air_experience = 10
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = medium_air
+			}
 		}
 	}
 
@@ -4373,7 +4479,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#bonus to carrier designs
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cv_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
 		}
 	}
 

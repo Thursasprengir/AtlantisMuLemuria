@@ -135,7 +135,23 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_mine_layer_1
 	}
 }
-
+create_equipment_variant = {
+		name = "Valkyria Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = FMU_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = yes
+	}
+}
 set_politics = {
 
 	
@@ -155,27 +171,7 @@ set_popularities = {
 1936.1.1 = {
 	if = {
 		limit = { has_dlc = "Battle for the Bosporus" }
-		add_opinion_modifier = { 
-			target = ROM
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = TUR
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = YUG
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = BUL
-			modifier = BFTB_balkan_pact_enemy
-		}
-		add_opinion_modifier = { 
-			target = HUN
-			modifier = BFTB_balkan_pact_enemy
-		}
-	
+			
 		add_ideas = {
 			export_focus
 			limited_conscription
