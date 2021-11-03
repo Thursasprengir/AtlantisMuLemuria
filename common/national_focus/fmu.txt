@@ -2808,7 +2808,7 @@ focus = {
 
 	focus = {
 		id = FMU_elect_kaiser
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_install_noble_houses }
 		prerequisite = { focus = FMU_strengthen_central }
 		x = 0
@@ -3556,7 +3556,7 @@ focus = {
 
 	focus = {
 		id = FMU_ache_of_war
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_strengthen_ties}
 		x = 6
 		y = 6
@@ -3587,7 +3587,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_baraga
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_ache_of_war}
 		x = 4
 		y = 7
@@ -3617,7 +3617,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_tiquea
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_ache_of_war}
 		x = 6
 		y = 7
@@ -3647,7 +3647,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_canaje
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_ache_of_war}
 		x = 8
 		y = 7
@@ -3677,7 +3677,7 @@ focus = {
 
 	focus = {
 		id = FMU_tech_sharing
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_ache_of_war}
 		x = 10
 		y = 7
@@ -3707,7 +3707,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_cdm
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_influence_baraga}
 		prerequisite = { focus = FMU_influence_tiquea}
 		x = 5
@@ -3738,7 +3738,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_TOD
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_influence_canaje}
 		prerequisite = { focus = FMU_influence_tiquea}
 		x = 7
@@ -3805,7 +3805,7 @@ focus = {
 
 	focus = {
 		id = FMU_discuss_with_SOV
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_unite_with_comintern }
 		prerequisite = { focus = FMU_prepare_revolutionary_front }
 		x = 11
@@ -4487,7 +4487,7 @@ focus = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = medium_air
+				category = medium_air 
 			}
 		}
 	}
@@ -4517,6 +4517,25 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+						}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_scout_plane 
+			}
+		}
+
+		if = {
+			limit = { not = { has_dlc = "La Resistance"} }
+				add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
+			}
 			#if no LaR - radar bonus
 			#if LaR - scout plane range and design bonus
 		}
@@ -4547,6 +4566,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = air_equipment 
+			}
 			#fighter/heavy fighter design bonus
 		}
 	}
@@ -4577,6 +4601,20 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
 			#adds airbases in two random states
 		}
 	}
@@ -4607,6 +4645,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
 			#bonus to naval fighter and bomber designs
 		}
 	}
@@ -4636,6 +4679,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_strategic_bomber
+			}
 			#strategic bomber design bonus
 		}
 	}
@@ -4665,6 +4713,17 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+			}
+			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cas_bomber
+			}
 			#CAS and TAC bomber design bonus
 		}
 	}
@@ -4694,6 +4753,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = rocketry
+			}
 			#rocket tech bonus
 		}
 	}
@@ -4723,6 +4787,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = rocketry
+			}
 			#rocketry design bonus
 		}
 	}
@@ -4752,8 +4821,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#jet engine bonus
-			#jet aircraft design bonus
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = jet_technology
+			}
 		}
 	}
 
@@ -4785,6 +4857,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = jet_fighter1 
+			}
 			#enables Jet Engine Reconnaisance Aircraft (this design/tech needs to be made)
 		}
 	}
@@ -4817,6 +4894,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = jet_strategic_bomber1
+			}
 			#bonus to jet strategic bomber design
 		}
 	}
@@ -4848,13 +4930,41 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#add civ and mil industries
+			random_owned_state = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			random_owned_state = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
+			#add civ and mil industries
 	}
 
 	focus = {
 		id = FMU_invite_civ_designers
-		icon = GFX_focus_generic_treaty
+		icon = GFX_
 		prerequisite = { focus = FMU_crucial_industry }
 		x = 12
 		y = 3
@@ -4909,7 +5019,20 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#adds a few mil factories
+		934 = {
+			if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 			add_stability = -0.05
 			#decrease need for civilian goods
 		}
@@ -4940,6 +5063,34 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		 913 = {
+			if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		912 = {
+			if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 			#adds civ industry in Fijnland, slight increase in compliance in Fijnland
 		}
 	}
@@ -4973,6 +5124,7 @@ focus = {
 
 		completion_reward = {
 			#decrease war support
+			add_war_support = -0.05
 			add_stability = 0.05
 			#decrease need for civilian goods
 		}
