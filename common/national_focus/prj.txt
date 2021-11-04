@@ -1,0 +1,183 @@
+focus_tree = {
+
+	id = Wrightsville_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PRJ
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1700 }
+
+	############################
+	######## CATEGORY ##########
+	############################
+
+#	focus = {
+#		id = PRJ_
+#		icon = GFX_
+
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+
+#		x = 0
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+	############################
+	######### POLITICS ##########
+	############################
+
+	focus = {
+		id = PRJ_abandon_ethiopia
+		icon = GFX_
+
+		prerequisite = { focus = }
+		mutually_exclusive = { focus = PRJ_save_ethiopia  }
+		x = 20
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = PRJ_save_ethiopia
+		icon = GFX_
+
+		prerequisite = { focus = }
+		mutually_exclusive = { focus = PRJ_abandon_ethiopia }
+		x = 22
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "Italian Bitch Brigade"
+			PRJ = {add_to_faction = ETH}
+		}
+	}
+	
+	############################
+	######### LEft POLITICS ##########
+	############################
+	
+	focus = {
+		id = PRJ_steady_as_she_goes
+		icon = GFX_
+
+		prerequisite = { focus = PRJ_abandon_ethiopia }
+		x = -10
+		x = -10
+		y = 1
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "Italian Bitch Brigade"
+			PRJ = {add_to_faction = ETH}
+		}
+	}
+	
