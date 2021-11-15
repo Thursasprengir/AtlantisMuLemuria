@@ -489,6 +489,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = .1
+			add_named_threat = { 
+				threat = 5 
+				name = PRJ_total_war
+			}
 		}
 	}
 	focus = {
@@ -773,12 +777,11 @@ focus_tree = {
 	focus = {
 		id = PRJ_proper_alliance
 		icon = GFX_
-		prerequisite = { focus = PRJ_heavy_rail_ETH_capital }
-		prerequisite = { focus = PRJ_emergancy_fortifications }
-		x = 11
-		y = 3
+		prerequisite = { focus = PRJ_white_peace }
+		x = 9
+		y = 5
 		relative_position_id = PRJ_abandon_ethiopia
-
+		mutually_exclusive = {	focus = PRJ_control_ethiopia }
 		cost = 10
 
 		ai_will_do = {
@@ -805,4 +808,125 @@ focus_tree = {
 			create_faction = "Free Africa Movement"
 			}
 		}
+	
+	focus = {
+		id = PRJ_control_ethiopia
+		icon = GFX_
+		prerequisite = { focus = PRJ_white_peace }
+		x = 11
+		y = 5
+		relative_position_id = PRJ_abandon_ethiopia
+		mutually_exclusive = {	focus = PRJ_proper_alliance	}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		puppet = ETH
+		}
 	}
+	
+	focus = {
+		id = PRJ_prepare_for_more
+		icon = GFX_
+		prerequisite = { focus = PRJ_control_ethiopia focus = PRJ_proper_alliance }
+		x = 10
+		y = 6
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		ETH = {
+			every_owned_state = {	
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+		PRJ = {
+			every_owned_state = {	
+					add_extra_state_shared_building_slots = 2
+					}
+			}
+		}
+	}
+	
+	####PUPPETS####
+	
+	focus = {
+		id = PRJ_free_africa
+		icon = GFX_
+		prerequisite = { focus = PRJ_faith_and_arms focus = PRJ_prepare_for_more }
+		x = 0
+		y = 7
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		puppet = ETH
+		}
+	}
+	
+	
+	
+	
+	
+	
