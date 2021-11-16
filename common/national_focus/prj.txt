@@ -921,12 +921,805 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		puppet = ETH
+			add_ideas = PRJ_free_african_nations
+		}
+	}
+	#clients North of Yohannia
+	focus = {
+		id = PRJ_client_sudan
+		icon = GFX_
+		prerequisite = { focus = PRJ_free_africa  }
+		x = -2
+		y = 8
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			549 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			551 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			SUD = {
+				remove_state_core = 1067
+			}
+			549 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			551 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = SUD
+			
+		}
+	}
+	
+	focus = {
+		id = PRJ_client_egypt
+		icon = GFX_
+		prerequisite = { focus = PRJ_client_sudan  }
+		x = -2
+		y = 10
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			452 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			447 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			446 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			456 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			457 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			453 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			456 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			446 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			447 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = EGY
+			
 		}
 	}
 	
 	
+	focus = {
+		id = PRJ_client_tripoli
+		icon = GFX_
+		prerequisite = { focus = PRJ_client_egypt  }
+		x = -4
+		y = 11
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			451 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			450 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			449 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			448 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			663 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			662 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			661` = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			448 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			450 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = LBA
+			
+		}
+	}
 	
+	focus = {
+		id = PRJ_client_israel
+		icon = GFX_
+		prerequisite = { focus = PRJ_client_egypt  }
+		mutually_exclusive = { focus = PRJ_client_palestine }
+		x = -2
+		y = 11
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			454 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			454 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = ISR
+			
+		}
+	}
 	
+	focus = {
+		id = PRJ_client_palestine
+		icon = GFX_
+		prerequisite = { focus = PRJ_client_egypt  }
+		mutually_exclusive = { focus = PRJ_client_israel }
+		x = -0
+		y = 11
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			454 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			454 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = PAL
+			
+		}
+	}
 	
+	focus = {
+		id = PRJ_client_jordon
+		icon = GFX_
+		prerequisite = { focus = PRJ_client_palestine focus = PRJ_client_israel }
+		x = -1 
+		y = 12
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			455 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			455 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = JOR	
+		}
+	}
 	
+	focus = {
+		id = PRJ_client_syria
+		icon = GFX_
+		prerequisite = { focus = PRJ_client_jordon }
+		x = -1
+		y = 13
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			553 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			554 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			680 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			677 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+			
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			553 = {
+				add_core_of = SYR
+			}
+			554 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			667 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = SYR
+			
+		}
+	}
+	
+	focus = {
+		id = PRJ_client_tunisia
+		icon = GFX_
+		prerequisite = { focus = PRJ_client_tripoli  }
+		x = -4
+		y = 12
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			458 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			665 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			460 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			513 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			513 = {
+				add_core_of = TUN
+			}
+			514 = {
+				add_core_of = TUN
+			}
+			460 = {
+				add_core_of = TUN
+			}
+			458 = {
+				add_core_of = TUN
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			459 = { 
+				add_core_of = TUN
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = TUN
+			
+		}
+	}
+	focus = {
+		id = PRJ_client_morocco
+		icon = GFX_
+		prerequisite = { focus = PRJ_client_tunisia  }
+		x = -4
+		y = 13
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			461 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			462 = {
+				AND = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = { 
+			461 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			462 = { 
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			release_puppet_on_controlled = MOR
+			
+		}
+	}
