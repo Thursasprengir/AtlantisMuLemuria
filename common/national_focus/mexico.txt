@@ -28,7 +28,7 @@ focus_tree = {
 	continuous_focus_position = { x = 70 y = 1100 }
 
 	focus = {
-		id = MEX_focus_plan_of_agua_prieta
+		id = MEX_focus_plan_of_agua_prieta #will now be called Plan of Durango as Agua Prieta is now in RGR
 		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 23
 		y = 0
@@ -53,6 +53,37 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = MEX_focus_rio_grande_is_mexican
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 30
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			add_stability = -0.05
+			#add RGR states as cores
+			#negative relations with RGR
 		}
 	}
 
@@ -3407,7 +3438,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_ban_political_militias
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
+		prerequisite = { focus = MEX_focus_rio_grande_is_mexican }
 		mutually_exclusive = { focus = MEX_focus_legacy_of_revolution }
 		x = 4
 		y = 1
@@ -3574,8 +3605,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_depoliticised_army
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = MEX_focus_control_the_army }
-		prerequisite = { focus = MEX_focus_ban_political_militias }
+		prerequisite = { focus = MEX_focus_control_the_army  focus = MEX_focus_ban_political_militias}
 		x = 3
 		y = 1
 		relative_position_id = MEX_focus_control_the_army
@@ -3651,7 +3681,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_legacy_of_revolution
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = MEX_focus_plan_of_agua_prieta }
+		prerequisite = { focus = MEX_focus_rio_grande_is_mexican }
 		mutually_exclusive = { focus = MEX_focus_ban_political_militias }
 		x = 9
 		y = 1
@@ -6076,11 +6106,103 @@ focus_tree = {
 		}
 		will_lead_to_war_with = USA
 	}
+	focus = {
+		id = MEX_focus_reclaim_rio_grande
+		icon = GFX_focus_generic_strike_at_democracy3
+		prerequisite = { focus = MEX_focus_seize_the_panama_canal }
+		x = -3
+		y = 1
+		relative_position_id = MEX_focus_seize_the_panama_canal
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+			
+			modifier = {
+				factor = 0.1
+				is_historical_focus_on = yes
+			}
+		}
+
+		available = {
+			threat > 0.5
+			NOT = {
+				is_in_faction_with = RGR
+			}
+			NOT = {
+				has_non_aggression_pact_with = RGR
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = threat_mexico_reclaimed_rio_grande
+			}
+			if = {
+				limit = {
+					country_exists = RGR
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = RGR
+					expire = 0
+					generator = { 375 376 377 378 379 380 382 }
+				}
+			}
+			every_other_country = {
+				limit = {
+					NOT = { tag = RGR }
+					original_tag = RGR
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						expire = 0
+						generator = { 375 376 377 378 379 380 382 }
+					}
+				}
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						state = 375
+						state = 376
+						state = 377
+						state = 378
+						state = 379
+						state = 380
+						state = 382
+					}
+					NOT = {
+						is_core_of = ROOT
+					}
+					NOT = {
+						is_claimed_by = ROOT
+					}
+				}
+				add_claim_by = ROOT
+			}
+		}
+		will_lead_to_war_with = RGR
+	}
 	
 	focus = {
 		id = MEX_focus_redeem_aztlan
 		icon = GFX_focus_mex_redeem_aztlan
-		prerequisite = { focus = MEX_focus_rescind_the_mexican_cession }
+		prerequisite = { focus = MEX_focus_rescind_the_mexican_cession}
+		prerequisite = { focus = MEX_focus_reclaim_rio_grande}
 		x = 0
 		y = 1
 		relative_position_id = MEX_focus_rescind_the_mexican_cession
