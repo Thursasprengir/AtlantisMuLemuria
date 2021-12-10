@@ -673,11 +673,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			build_railway = {
+				level = 2
+				path = { 1504 8019 10734 5010 }
+			}
 			 1065 = {
 				add_building_construction = {
-					type = infrastructure
-					level = 2
+					type = supply_node
+					level = 1
 					instant_build = yes
+					province = 10734
 				}
 			}
 		}
@@ -3374,4 +3379,119 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = PRJ_ETH_sea_rails
+		prerequisite = { focus = PRJ_ETH_military_factory }
+		prerequisite = { focus = PRJ_ETH_steel_factory }
+		x = 7
+		y = 9
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {		
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = { 
+			build_railway = {
+				path = { 8019 8062 4995 }
+			}
+			build_railway = {
+				path = { 5010 5097 7944 2072 12766 }
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_ETH_chemicals
+		prerequisite = { focus = PRJ_ETH_alumin_factory }
+		prerequisite = { focus = PRJ_ETH_steel_factory }
+		x = 9
+		y = 9
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {		
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = { 
+			1066 = {
+				add_resource = {
+					type = rubber
+					amount = 3
+				}
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_ETH_war_command
+		prerequisite = { focus = PRJ_ETH_occupy_yemen }
+		x = 12
+		y = 9
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {		
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes 
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = { 
+			ETH = {
+				add_ideas = PRJ_ETH_war_command
+				}
+			add_ideas = PRJ_ETH_war_command
+			}
+		}
 	

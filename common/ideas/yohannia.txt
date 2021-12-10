@@ -16,17 +16,28 @@ ideas = {
 		}
 		PRJ_mobilization = {
 			allowed = {always = no}
+			picture = usa_tank_destroyer_board
 			removal_cost = -1
 			modifier = {
-				conscription_factor = 0.1
-				conscription = 0.05
+				conscription_factor = 0.01
+				conscription = 0.01
 			}
 		}
 		PRJ_free_african_nations = {
 			allowed = {always = no}
+			picture = usa_tank_destroyer_board
 			removal_cost = -1
 			modifier = {
 				autonomy_gain = 0.1
+			}
+		}
+		PRJ_ETH_war_command = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				offence = 0.1
+				defence = 0.1
 			}
 		}
 	}
