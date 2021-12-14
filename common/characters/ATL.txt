@@ -1,3 +1,377 @@
 characters={
-
+	ATL_silent_workhorse={
+		name = ATL_silent_workhorse
+		portraits ={
+			army ={
+				small="generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ATL_silent_workhorse
+			allowed  = {original_tag  = ATL}
+			traits  = {silent_workhorse}
+			ai_will_do  = {factor  = 2.000}
+		}		
+	}
+	ATL_war_industrialist = {
+		name = ATL_war_industrialist
+		portraits = {army = {small = "generic_political_advisor_europe_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = ATL_war_industrialist
+			allowed  = {original_tag  = ATL}
+			traits  = {war_industrialist}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	ATL_backroom_backstabber = {
+		name = ATL_backroom_backstabber
+		portraits = {army = {small = "generic_political_advisor_europe_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = ATL_backroom_backstabber
+			allowed  = {original_tag  = ATL}
+			traits  = {backroom_backstabber}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	ATL_prince_of_terror = {
+		name = ATL_prince_of_terror
+		portraits = {army = {small = "generic_political_advisor_europe_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = ATL_prince_of_terror
+			allowed  = {original_tag  = ATL}
+			traits  = {prince_of_terror}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	ATL_armaments_organizer = {
+		name = ATL_armaments_organizer
+		portraits = {army = {small = "generic_political_advisor_europe_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = ATL_armaments_organizer
+			allowed  = {original_tag  = ATL}
+			traits  = {armaments_organizer}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	ATL_democratic_politician = {
+		name = ATL_democratic_politician
+		portraits = {army = {small = "generic_political_advisor_europe_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = ATL_democratic_politician
+			allowed  = {original_tag  = ATL}
+			traits  = {democratic_reformer}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	ATL_fascist_demagogue = {
+		name = ATL_fascist_demagogue
+		portraits = {army = {small = "generic_political_advisor_europe_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = ATL_fascist_demagogue
+			allowed  = {original_tag  = ATL}
+			traits  = {fascist_demagogue}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	ATL_communist_revolutionary = {
+		name = ATL_communist_revolutionary
+		portraits = {army = {small = "generic_political_advisor_europe_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = ATL_communist_revolutionary
+			allowed  = {original_tag  = ATL}
+			traits  = {communist_revolutionary}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	ATL_grand_fleet_proponent={
+		name = ATL_grand_fleet_proponent
+		portraits={army={small="GFX_idea_ENG_jfc_fuller"}}
+		advisor={
+			cost = 200
+			slot = theorist
+			idea_token = james_somerville
+			ledger = navy
+			allowed = {original_tag = ATL}
+			traits = {grand_fleet_proponent}
+		}
+	}
+	ATL_victory_through_airpower = {
+		name = ATL_victory_through_airpower
+		portraits = {army={small="GFX_idea_james_somerville"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = ATL_victory_through_airpower
+			ledger = air
+			allowed = {original_tag = ATL}			
+			traits = {victory_through_airpower}
+		}
+	}
+	ATL_rocket_scientist = {
+		name = ATL_rocket_scientist
+		portraits = {army={small="GFX_idea_arthur_harris"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = ATL_rocket_scientist
+			ledger = air
+			allowed = {original_tag = ATL}	
+			research_bonus = {rocketry = 0.15}		
+			traits = {rocket_scientist}
+		}
+	}
+	ATL_naval_theorist = {
+		name = ATL_naval_theorist
+		portraits = {army={small="GFX_idea_james_chadwick"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = ATL_naval_theorist
+			ledger = navy
+			allowed = {original_tag = ATL}			
+			traits = {naval_theorist}
+		}
+	}
+	ATL_military_theorist = {
+		name = ATL_military_theorist
+		portraits = {army={small="GFX_idea_frank_whittle"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = ATL_military_theorist
+			ledger = army
+			allowed = {original_tag = ATL}			
+			traits = {military_theorist}
+		}
+	}
+	ATL_army_chief_morale_2={
+		name=ATL_army_chief_morale_2
+		portraits={army={small="GFX_idea_edmund_ironside"}}
+		advisor={
+			slot = army_chief
+			idea_token = ATL_army_chief_morale_2
+			allowed = {original_tag = ATL}
+			traits = {army_chief_morale_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_army_chief_offensive_2={
+		name=ATL_army_chief_offensive_2
+		portraits={army={small="GFX_idea_edmund_ironside"}}
+		advisor={
+			slot = army_chief
+			idea_token = ATL_army_chief_offensive_2
+			allowed = {original_tag = ATL}
+			traits = {army_chief_offensive_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_army_chief_drill_2={
+		name=ATL_army_chief_drill_2
+		portraits={army={small="GFX_idea_edmund_ironside"}}
+		advisor={
+			slot = army_chief
+			idea_token = ATL_army_chief_drill_2
+			allowed = {original_tag = ATL}
+			traits = {army_chief_drill_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_army_chief_planning_2={
+		name=ATL_army_chief_planning_2
+		portraits={army={small="GFX_idea_edmund_ironside"}}
+		advisor={
+			slot = army_chief
+			idea_token = ATL_army_chief_planning_2
+			allowed = {original_tag = ATL}
+			traits = {army_chief_planning_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_navy_chief_maneuver_3={
+		name=ATL_navy_chief_maneuver_3
+		portraits={army={small="GFX_idea_ernle_chatfield"}}
+		advisor={
+			slot = navy_chief
+			idea_token = ATL_navy_chief_maneuver_3
+			allowed = {original_tag = ATL}
+			traits = {navy_chief_maneuver_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_navy_chief_decisive_battle_3={
+		name=ATL_navy_chief_decisive_battle_3
+		portraits={army={small="GFX_idea_ernle_chatfield"}}
+		advisor={
+			slot = navy_chief
+			idea_token = ATL_navy_chief_decisive_battle_3
+			allowed = {original_tag = ATL}
+			traits = {navy_chief_decisive_battle_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_navy_fleet_logistics_3={
+		name=ATL_navy_fleet_logistics_3
+		portraits={army={small="GFX_idea_ernle_chatfield"}}
+		advisor={
+			slot = navy_chief
+			idea_token = ATL_navy_fleet_logistics_3
+			allowed = {original_tag = ATL}
+			traits = {navy_fleet_logistics_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_navy_naval_air_defense_2={
+		name=ATL_navy_naval_air_defense_2
+		portraits={army={small="GFX_idea_ernle_chatfield"}}
+		advisor={
+			slot = navy_chief
+			idea_token = ATL_navy_naval_air_defense_2
+			allowed = {original_tag = ATL}
+			traits = {navy_naval_air_defense_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_air_strategic_bombing_2={
+		name=ATL_air_strategic_bombing_2
+		portraits={army={small="GFX_idea_cyril_newall"}}
+		advisor={
+			slot = air_chief
+			idea_token = ATL_air_strategic_bombing_2
+			allowed = {original_tag = ATL}
+			traits = {air_strategic_bombing_2}
+			cost = 100
+			ai_will_do = {factor = 1.000}
+		}
+	}
+	ATL_air_chief_old_guard={
+		name=ATL_air_chief_old_guard
+		portraits={army={small="GFX_idea_cyril_newall"}}
+		advisor={
+			slot = air_chief
+			idea_token = ATL_air_chief_old_guard
+			allowed = {original_tag = ATL}
+			traits = {air_chief_old_guard}
+			cost = 100
+			ai_will_do = {factor = 1.000}
+		}
+	}
+	ATL_air_strategic_bombing_1={
+		name=ATL_air_strategic_bombing_1
+		portraits={army={small="GFX_idea_kenneth_anderson"}}
+		advisor={
+			slot = high_command
+			idea_token = ATL_air_strategic_bombing_1
+			ledger = army
+			allowed = {original_tag = ATL}
+			traits = {air_strategic_bombing_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}	
+	ATL_navy_screen_2={
+		name=ATL_navy_screen_2
+		portraits={army={small="GFX_idea_kenneth_anderson"}}
+		advisor={
+			slot = high_command
+			idea_token = ATL_navy_screen_2
+			ledger = army
+			allowed = {original_tag = ATL}
+			traits = {navy_screen_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_army_regrouping_1={
+		name=ATL_army_regrouping_1
+		portraits={army={small="GFX_idea_kenneth_anderson"}}
+		advisor={
+			slot = high_command
+			idea_token = ATL_army_regrouping_1
+			ledger = army
+			allowed = {original_tag = ATL}
+			traits = {army_regrouping_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_navy_capital_ship_3={
+		name=ATL_navy_capital_ship_3
+		portraits={army={small="GFX_idea_kenneth_anderson"}}
+		advisor={
+			slot = high_command
+			idea_token = ATL_navy_capital_ship_3
+			ledger = army
+			allowed = {original_tag = ATL}
+			traits = {navy_capital_ship_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_air_naval_strike_1={
+		name=ATL_air_naval_strike_1
+		portraits={army={small="GFX_idea_kenneth_anderson"}}
+		advisor={
+			slot = high_command
+			idea_token = ATL_air_naval_strike_1
+			ledger = army
+			allowed = {original_tag = ATL}
+			traits = {air_naval_strike_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	ATL_navy_carrier_2={
+		name=ATL_navy_carrier_2
+		portraits={army={small="GFX_idea_kenneth_anderson"}}
+		advisor={
+			slot = high_command
+			idea_token = ATL_navy_carrier_2
+			ledger = army
+			allowed = {original_tag = ATL}
+			traits = {navy_carrier_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
