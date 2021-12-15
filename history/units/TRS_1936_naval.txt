@@ -3,27 +3,25 @@
 
 ##### OOB #####
 units = {
-### IJN ###
-	#Yokosuka (Tokyo)
 	fleet = {
-		name = "The Modern Bulshit"			
-		naval_base = 13254  #Yokosuka
+		name = "Ladenshua Gunaan"			
+		naval_base = 13254  
 		task_force = {
-			name = "1 Kantai"
-			location = 13254  #Yokosuka
-			#Dai 1 Sentai
+			name = "1 Gunaan"
+			location = 13254  
+			#Dai 1 Anluwaam
 			ship = { name = "Nagato"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Nagato Class" } } }
 			ship = { name = "Haruna" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TRS version_name = "Kongo Class"} } }
 			ship = { name = "Fuso" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TRS version_name = "Fuso/Ise Class"} } }
 			ship = { name = "Yamashiro" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Fuso/Ise Class"} } }
-			#Dai 8 Sentai
+			#Dai 8 Anluwaam
 			ship = { name = "Sendai" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 			ship = { name = "Jintsu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 			ship = { name = "Nagara" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 		}
 		task_force = {
-			name = "1 Suirai Sentai" #Minlayer/torp"
-			location = 13254  #Yokosuka
+			name = "1 Gunaan Daliam" #Minlayer/torp"
+			location = 13254  
 			#Flagship
 			ship = { name = "Abukuma" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 			#Dai 9 Kuchikutai
@@ -41,8 +39,8 @@ units = {
 			ship = { name = "Uzuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Katsuriki Class" } } }
 		}
 		task_force = {
-			name = "1 Sensui Sentai" # A part of "Dai 1 Kantai"
-			location = 13254  #Yokosuka
+			name = "1 Gunaan Daliam"
+			location = 13254  
 			#Kaidai-class Submarines
 			ship = { name = "I-51" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Kaidai III Class"} } }
 			ship = { name = "I-152" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Kaidai III Class"} } }		
@@ -67,8 +65,8 @@ units = {
 			ship = { name = "I-171" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Kaidai III Class"} } }
 		}
 		task_force = {
-			name = "1 Koku Sentai" # A part of "Dai 1 Kantai"
-			location = 13254  #Yokosuka
+			name = "1 Nalamang Anluwaam" 
+			location = 13254  
 			ship = { name = "Ryujo" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = TRS version_name = "Ryujo Class" } } 		
 				air_wings = { 
 					cv_fighter_equipment_0 =  { owner = "TRS" amount = 24 } # historical 24
@@ -82,8 +80,8 @@ units = {
 			ship = { name = "Hatakaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Mutsuki Class"} } }
 		}
 		task_force = {
-			name = "Yokosuka Yobikantai" # Patrol and reserve fleet, including ships under modernization
-			location = 13254  #Yokosuka
+			name = "Guanshuim Gunaan" # Patrol and reserve fleet, including ships under modernization
+			location = 13254  
 			ship = { name = "Mutsu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Fuso/Ise Class" } } }
 			ship = { name = "Kiso" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
 			ship = { name = "Lingaat" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Kuma/Nagara Class"} } }
@@ -100,23 +98,23 @@ units = {
 		}
 	}
 	
-	#Sasebo (Nagasaki)
+	
 	fleet = {
-		name = "Shittened"			
-		naval_base = 14294  #Sasebo
+		name = "Huxamteng Gunaan"			
+		naval_base = 14294  
 		task_force = {	
-			name = "2 Kantai"
-			location = 14294  #Sasebo
-			#Dai 5 Sentai
+			name = "2 Gunaan"
+			location = 14294  
+			#Dai 5 Anluwaam
 			ship = { name = "Haguro" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }
 			ship = { name = "Nachi" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }
 			ship = { name = "Myoko" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }
 			ship = { name = "Ashigara" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }
 			ship = { name = "Atago" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }
-			#Dai 7 Sentai
+			#Dai 7 Anluwaam
 			ship = { name = "Aoba" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }
 			ship = { name = "Kinugasa" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }
-			# Dai 2 Koku Sentai
+			# Dai 2 Koku Anluwaam
 			ship = { name = "Kaga" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = TRS version_name = "TCA-1 Class"} } 			
 				air_wings = { 
 					cv_fighter_equipment_0 =  { owner = "TRS" amount = 16 } # historical 16
@@ -126,8 +124,8 @@ units = {
 			}
 		}
 		task_force = {	
-			name = "2 Suirai Sentai" #A part of "Dai 2 Kantai"
-			location = 14294  #Sasebo
+			name = "2 Naxishui Anluwaam"
+			location = 14294  
 			#Flagship
 			ship = { name = "Naka" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TD-25D Class"} } }
 			#Dai 6 Kuchikutai, Type III Fubuki-class destroyers
@@ -151,8 +149,8 @@ units = {
 			ship = { name = "Yunagi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "TD-11A Class"} } }
 		}
 		task_force = {	
-			name = "2 Sensui Sentai" #A part of "Dai 2 Kantai"
-			location = 14294  #Sasebo
+			name = "2 Gunaan Daliam"
+			location = 14294  
 			#Flagship
 			ship = { name = "Kinu" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }	
 			#Junsen-class Submarines
@@ -164,16 +162,16 @@ units = {
 			ship = { name = "I-6" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "TS-4 Class"} } }	
 		}
 		task_force = {
-			name = "3 Sensui Sentai"
-			location = 14294 #Sasebo
+			name = "3 Gunaan Daliam"
+			location = 14294 
 			ship = { name = "I-121" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "TS-4 Class"} } }		
 			ship = { name = "I-122" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "TS-4 Class"} } }			
 			ship = { name = "I-123" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "TS-4 Class"} } }		
 			ship = { name = "I-124" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "TS-4 Class"} } }	
 		}
 		task_force = {
-			name = "Sasebo Yobikantai" # Patrol and reserve fleet, including ships under modernization
-			location = 14294  #Sasebo
+			name = "Tsai Gunaan" # Patrol and reserve fleet, including ships under modernization
+			location = 14294  
 			ship = { name = "Kongo" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "TB-12 Class"} } }
 			ship = { name = "Kirishima" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "TB-12 Class"} } }
 			ship = { name = "Akagi" definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = TRS version_name = "TCA-1 Class"} } 				
@@ -206,17 +204,17 @@ units = {
 		}
 	}
 	
-	#Taiwan (Goaxing)
+	
 	fleet = {
-		name = "Shited"				
-		naval_base = 14301	# Taiwan
+		name = "Baxenguaam Gunaan"				
+		naval_base = 14301	
 		task_force = {
-			name = "3 Kantai" #Later assigned for the Chinese theater
-			location = 14301	# Taiwan
-			#Dai 10 Sentai
+			name = "3 Gunaan" 
+			location = 14301	
+			#Dai 10 Anluwaam
 			ship = { name = "Izumo" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = TRS version_name = "TD-432CD Class"} } }
 			ship = { name = "Kuma" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class" } } }
-			#Dai 11 Sentai, Momi-class destroyers
+			#Dai 11 Anluwaam, Momi-class destroyers
 			#Dai 25 Kuchikutai
 			ship = { name = "Kaya" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "TD-25D Class"} } }
 			ship = { name = "Nashi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "TD-25D Class"} } }
@@ -247,8 +245,8 @@ units = {
 			ship = { name = "Itsukushima" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "TD-11A Class"} } }
 		}
 		task_force = {
-			name = "5 Suirai Sentai" #A part of "Dai 3 Kantai"
-			location = 14301	# Taiwan
+			name = "5 Naxishui Anluwaam" #A part of "Dai 3 Gunaan"
+			location = 14301	
 			#Flagship
 			ship = { name = "Yubari" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class" } } } 
 			##Dai 13 Kuchikutai
@@ -261,8 +259,8 @@ units = {
 			ship = { name = "Asagao" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "TD-25D Class"} } }
 		}
 		task_force = {
-			name = "Makou Keibi Sentai"
-			location = 14301	# Taiwan
+			name = "Kinamalaan Anluwaam"
+			location = 14301	
 			#Dai 4 Kuchikutai
 			ship = { name = "Shimakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "TD-11A Class"} } }
 			ship = { name = "Nadakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "TD-11A Class"} } }
@@ -271,13 +269,13 @@ units = {
 		}
 	}
 
-	#Hiroshima (Kure)
+
 	fleet = {
-		name = "Shited"			
-		naval_base = 13241  # Hiroshima
+		name = "Salandulang Gunaan"			
+		naval_base = 13241  
 		task_force = {
-			name = "Kure Yobikantai" # Patrol and reserve fleet, including ships under modernization
-			location = 13241  # Hiroshima
+			name = "Shenamaa Gunaan" # Patrol and reserve fleet, including ships under modernization
+			location = 13241  
 			ship = { name = "Ise" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "TB-12B Class"} } }		
 			ship = { name = "Hyuga" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "TB-12B Class"} } }
 			ship = { name = "Mogami" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "TCR-35 Class"} } }
@@ -301,8 +299,8 @@ units = {
 			ship = { name = "Ushio" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "TD-25D Class"} } }
 		}
 		task_force = {
-			name = "3 Sensui Kantai"
-			location = 13241  # Hiroshima
+			name = "3 Tsengalu Gunaan"
+			location = 13241  
 			#Kaichu-class Submarines
 			ship = { name = "Ro-26" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "TS-4 Class"} } }
 			ship = { name = "Ro-27" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "TS-4 Class"} } }
