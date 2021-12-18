@@ -918,8 +918,11 @@
  #Tigardy - Artilery/Cannon
  #Kar-Axiqan - Anti-Tank Anti-Landship
  #Hotwana - Anti-Air
- #Gandaalna - Rocket
- #Grietian - Motor Wagon
+ #Gandaalna - Rocket1
+ #Grie tian - Motor Wagon1
+ #Satnamwa - Light
+ #Metasnwa - Medium
+ #Hamanulsa - Heavy
  PRJ_infantry_equipment_0:0 "Washenga-Malipta"
  PRJ_infantry_equipment_0_short:0 "Was-Ta"
  PRJ_infantry_equipment_0_desc:0 "The Was-Ta was a long rifle produced by Malipta Arms since 1912. Already obsolete, its design was the foundation for the Future of Yohannian Armements."
@@ -932,9 +935,9 @@
  PRJ_infantry_equipment_3:0 "Nbutwanat-Malipta"
  PRJ_infantry_equipment_3_short:0 "Nbu-Ta"
  PRJ_infantry_equipment_3_desc:0 "The Nbu-Ta was the result of King Roderiqs Request for a high capatcity automatic rifle with a decent sized magazine to counter the atlanteans new weapons that were being fielded against them in the north. 30 rounds and easy to clean in the mud of the Sudd. It was the weapon used in 'Operation Whiteout' the Final Engadgement of the War against the Allies."
- PRJ_infantry_at:0 "42-Karaxiqan"
+ PRJ_infantry_at:0 "42-Kar-Axiqan"
  PRJ_infantry_at_desc:0 "The 42-Karaxiqan was an anti armor launcher it required two people to operate  but in a pinch 1 person could do so if they tried. It saw limited use, and was quickly replaced by the much more user friendly 44-Karaxiqan."
- PRJ_infantry_at2:0 "44-Karaxiqan"
+ PRJ_infantry_at2:0 "44-Kar-Axiqan"
  PRJ_infantry_at2_desc:0 "The 42-Karaxiqan was devoloped to counter the increasingly armored Atlantean tanks that showed up on the battlefield. Produced in large quantities, it equipped every Yohannian infantry division in the north by the end of the World War 2."
  PRJ_artillery_equipment_1:0 "18-Tigardy/3in"
  PRJ_artillery_equipment_1_short:0 "18-Dy/3"
@@ -942,12 +945,12 @@
  PRJ_artillery_equipment_2_short:0 "24-Dy/4"
  PRJ_artillery_equipment_3:0 "32-Tigardy/6in"
  PRJ_artillery_equipment_3_short:0 "32-Dy/6"
- PRJ_anti_air_equipment_1:0 "20-Hotwana/2in"
- PRJ_anti_air_equipment_1_short:0 "20-Na/2"
- PRJ_anti_air_equipment_2:0 "34-Hotwana/1.5in"
- PRJ_anti_air_equipment_2_short:0 "34-Na/1.5"
- PRJ_anti_air_equipment_3:0 "46-Hotwana/4.1"
- PRJ_anti_air_equipment_3_short:0 "46-Na/4.1"
+ PRJ_anti_air_equipment_1:0 "20-Kar-Hotwana/2in"
+ PRJ_anti_air_equipment_1_short:0 "20-Kna/2"
+ PRJ_anti_air_equipment_2:0 "34-Kar-Hotwana/1.5in"
+ PRJ_anti_air_equipment_2_short:0 "34-Kna/1.5"
+ PRJ_anti_air_equipment_3:0 "46-Kar-Hotwana/4.1"
+ PRJ_anti_air_equipment_3_short:0 "46-Kna/4.1"
  PRJ_anti_tank_equipment_1:0 "37-Myrt-Karaxiqan/4In"
  PRJ_anti_tank_equipment_1_short:0 "37-Mkn/4"
  PRJ_anti_tank_equipment_2:0 "61-Myrt-Karaxiqan/5in"
@@ -970,35 +973,40 @@
  PRJ_mechanized_equipment_2_desc:0 "The Yas-Qar is the first viable dedicated armored personnel carrier of the Yohannian Army. It is completely covered and features an uncovered machine gun on top of it. with tracks designed specifically for traversing the mud of the Sudd"
  PRJ_mechanized_equipment_3:0 "Yascenl Qarina-44"
  PRJ_mechanized_equipment_3_short:0 "Yas/Ina-44"
- PRJ_mechanized_equipment_3_desc:0 "The Yas/Qar-44 was the final design itteration of the Yascenl series of mechanized infantry vehicles with improved engine preformance and used extensivly in 'Operation Drysleep' "
+ PRJ_mechanized_equipment_3_desc:0 "The Yas/Qar-44 was the final design itteration of the Yascenl series of mechanized infantry vehicles with improved engine preformance and used extensivly in 'Operation Denial' "
  PRJ_gw_tank_equipment:0 "Neta-Axiqan"
  PRJ_gw_tank_equipment_short:0 "Net/qan"
  PRJ_gw_tank_equipment_desc:0 "The Neta-Axiqan was the first yohannian based tank designed by the defense branch of Zecharus Motors its rugged design based on images of the British landship was adopted quickly into the Yohannian Army as its first main battle tank. Its dificulty to produce was overlooked as the continued modernization of the Yohannian Military was top priority."
  #Error Brain Broke
- PRJ_light_tank_equipment_1:0 "Burgusamin 200-Atkindo-Čanak"
- PRJ_light_tank_equipment_1_short:0 "Bur/200-Ak-Č"
- PRJ_light_tank_equipment_1_desc:0 "The Bur/200-Ak-Č is the first tank to enter service in the Atlantean army. Designed by Burgusamin Motor, this diminute tank fits three crewmen. It was first introduced in 1935 and equipped one mobile division."
- PRJ_light_tank_artillery_equipment_1:0 "Burgusamin 200-Hakanonrade"
- PRJ_light_tank_artillery_equipment_1_short:0 "Bur/200-Hk"
- PRJ_light_tank_artillery_equipment_1_desc:0 "The Bur/200-Hk is a short 75mm cannon bolted over a Bur/200-Ak-Č chassis."
- PRJ_light_tank_destroyer_equipment_1:0 "Burgusamin 200-Hasexkiuxpanŧerade"
- PRJ_light_tank_destroyer_equipment_1_short:0 "Bur/200-Hskp"
- PRJ_light_tank_destroyer_equipment_1_desc:0 "The Hasexkiuxpanŧerade is a modified Bur/200-Ak-Č with its turret substituted by a 40mm cannon fitted into a vertical mantlet. More capable of piercing armored vehicles than its tank cousin."
- PRJ_light_tank_aa_equipment_1:0 "Burgusamin 200-Haéirsexpleinrade"
- PRJ_light_tank_aa_equipment_1_short:0 "Bur/200-Hés"
- PRJ_light_tank_aa_equipment_1_desc:0 "An anti-air cannon mounted on the chassis of a Bur/200-Ak-Č."
- PRJ_light_tank_equipment_2:0 "Burgusamin 400-Atkindo-Čanak"
- PRJ_light_tank_equipment_2_short:0 "Bur/400-Ak-Č"
- PRJ_light_tank_equipment_2_desc:0 "The Bur/400-Ak-Č is a very well-rounded light tank, but never saw mass production. Designed originally to equip the new Atlantean armored divisions, after the fall of France the Atlantean army shifted its focus to larger and more armored heavy tanks."
- PRJ_light_tank_artillery_equipment_2:0 "Burgusamin 400-Habamħutekberade"
- PRJ_light_tank_artillery_equipment_2_short:0 "Bur/400-Hbħ"
- PRJ_light_tank_artillery_equipment_2_desc:0 "The Bur/400-Hbħ is turretless Bur/400-Ak-Č that carries a heavy 130mm mortar on it."
- PRJ_light_tank_destroyer_equipment_2:0 "Burgusamin 400-Hasexkiuxpanŧerade"
- PRJ_light_tank_destroyer_equipment_2_short:0 "Bur/400-Hskp"
- PRJ_light_tank_destroyer_equipment_2_desc:0 "The Bur/400-Hskp became the first Atlantean tank destroyer project to feature a completely closed casemate for the gun. Never got to prototype stage."
- PRJ_light_tank_aa_equipment_2:0 "Burgusamin 400-Haéirsexpleinrade"
- PRJ_light_tank_aa_equipment_2_short:0 "Bur/400-Hés"
- PRJ_light_tank_aa_equipment_2_desc:0 "A quadruple 20mm anti-air automatic cannon mounted on a Bur/400-Ak-Č chassis."
+ #Satnamwa - Light
+ #Metasnwa - Medium
+ #Hamanulsa - Heavy
+ PRJ_light_tank_equipment_1:0 "Pertanoona 7 - Phronsa"
+ PRJ_light_tank_equipment_1_short:0 "Phronsa"
+ PRJ_light_tank_equipment_1_desc:0 "The Pertanoona 7 - Phronsa first introduced in 1938 and the first tank light tanks to see operations on the front lines ."
+ PRJ_light_tank_artillery_equipment_1:0 Pertanoona 7 - Tigardy Axiqan"
+ PRJ_light_tank_artillery_equipment_1_short:0 "P7/Yan"
+ PRJ_light_tank_artillery_equipment_1_desc:0 "The P7/Yan is a short 3in cannon bolted over a  Pertanoona 7 chassis."
+ PRJ_light_tank_destroyer_equipment_1:0 "Pertanoona 7 - Bumietya Axiqan "
+ PRJ_light_tank_destroyer_equipment_1_short:0 "P7/Ban "
+ PRJ_light_tank_destroyer_equipment_1_desc:0 "The P7/Ban is a modified Pertanoona 7 with its turret substituted by a 40mm cannon fitted into a vertical mantlet."
+ PRJ_light_tank_aa_equipment_1:0 "Pertanoona 7 - Kar-Hotwana "
+ PRJ_light_tank_aa_equipment_1_short:0 "P7/Kna"
+ PRJ_light_tank_aa_equipment_1_desc:0 "An anti-air cannon mounted on the chassis of a  Pertanoona 7."
+ 
+ PRJ_light_tank_equipment_2:0 "Pertanoona 16 - Sheeprana "
+ PRJ_light_tank_equipment_2_short:0 "Sheeprana"
+ PRJ_light_tank_equipment_2_desc:0 "The Sheeprana is a very well-rounded light tank. Its speed and weight made it very suitable towards the frontlines of the jungles of the Congo.
+ PRJ_light_tank_artillery_equipment_2:0 "Sheeprana 16 - Tigardy Axiqan"
+ PRJ_light_tank_artillery_equipment_2_short:0 "Shp/16-Yan"
+ PRJ_light_tank_artillery_equipment_2_desc:0 "The Shp/16-Yan is an specially equipt artilery piece that carries a heavy 130mm mortar on it."
+ PRJ_light_tank_destroyer_equipment_2:0 "Sheeprana 16 - Bumietya Axiqan"
+ PRJ_light_tank_destroyer_equipment_2_short:0 "Shp/16-Ban"
+ PRJ_light_tank_destroyer_equipment_2_desc:0 "The Shp/16-Ban was a prototyped but never built tank destroyer project, deamed to unweildy by its test piliots and mechanicst stated its dificulty to maintain would be easier to just build a new one thant to repair it."
+ PRJ_light_tank_aa_equipment_2:0 Sheeprana 16 - Kar-Hotwana"
+ PRJ_light_tank_aa_equipment_2_short:0 "Shp/16-Kna"
+ PRJ_light_tank_aa_equipment_2_desc:0 "A double 30mm anti-air automatic cannon mounted on a Pertanoona 16 chassis."
+ #Errror
  PRJ_light_tank_equipment_3:0 "Burgusamin-Yenámirtal 500-Aŧehedeko-Čanak"
  PRJ_light_tank_equipment_3_short:0 "Bur-Yen/500-Az-Č"
  PRJ_light_tank_equipment_3_desc:0 "The Bur-Yen/500-Az-Č was a joint venture between Burgusamin Motor Company and Yenámirtal Motors. With the intent of equipping the colonial troops, the Texhepasak, the Bur-Yen/500-Az-Č was designed as a fast, lightly armored vehicle with large fuel tanks and wide tracks for operation in difficult terrains far from supply bases. Entered large scale production, but saw use only in the deserts of Lybia, where it proved itself a versatile and dependable vehicle."
@@ -1116,27 +1124,15 @@
  PRJ_fighter_equipment_0:0 "Wright-Asorsak Model 3 Żavók"
  PRJ_fighter_equipment_0_short:0 "Wri-Aso 3 Żavók"
  PRJ_fighter_equipment_0_desc:0 "The Żavók was the first airplane to enter service into the then neglected Atlantean Air Force. Woefully inadequate for its time, it was maintained in service until the years prior to the outbreak of the World War 2."
- PRJ_cv_fighter_equipment_0:0 "Wright-Asorsak Model 5 Ħorodoŧ"
- PRJ_cv_fighter_equipment_0_short:0 "Wri-Aso 5 Ħorodoŧ"
- PRJ_cv_fighter_equipment_0_desc:0 "The Ħorodoŧ was an early attempt to build a carrier capable airplane. A few prototypes were built and tested, but never entered service."
  PRJ_fighter_equipment_1:0 "Wright-Asorsak 013 Čiénet"
  PRJ_fighter_equipment_1_short:0 "Wri-Aso/013 Čiénet"
  PRJ_fighter_equipment_1_desc:0 "A well-rounded airplane, the Čiénet was the first fighter to meet the requirements of the Atlantean Air Force after its massive program to modernize its squadrons."
- PRJ_cv_fighter_equipment_1:0 "Wotarnial 014 Travkat"
- PRJ_cv_fighter_equipment_1_short:0 "Wot/014 Travkat"
- PRJ_cv_fighter_equipment_1_desc:0 "The diminute Travkat was an experimental naval fighter that sported a powerful engine and straight foldable wings."
  PRJ_fighter_equipment_2:0 "Satexregekaz-Miganutahamek 313 Iwunral"
  PRJ_fighter_equipment_2_short:0 "Sat-Mig/313 Iwunral"
  PRJ_fighter_equipment_2_desc:0 "The first production model from the Army Aviation Research Group. Went into full production in late 1940, in time to fight over France and Germany."
- PRJ_cv_fighter_equipment_2:0 "Wright-Asorsak 214 Mipie"
- PRJ_cv_fighter_equipment_2_short:0 "Wri-Aso/214 Mipie"
- PRJ_cv_fighter_equipment_2_desc:0 "The first operational naval fighter of the Atlantean Navy. Lightly built and agile, lacked firepower in comparison with its peers."
  PRJ_fighter_equipment_3:0 "Satexregekaz-Miganutahamek 613 Temlipe"
  PRJ_fighter_equipment_3_short:0 "Sat-Mig/613 Temlipe"
  PRJ_fighter_equipment_3_desc:0 "The Temlipe was the last of the propeller-powered fighters of Atlantis. Agile, fast and dependable, it was a far-cry from the early and unrealiable Atlantean fighters."
- PRJ_cv_fighter_equipment_3:0 "Wright-Asorsak 514 Tergride"
- PRJ_cv_fighter_equipment_3_short:0 "Wri-Aso/514 Tergride"
- PRJ_cv_fighter_equipment_3_desc:0 "The only Atlantean naval fighter to see combat, it was the symbol of the Atlantean air power in the ending years of the Second World War. Mass produced and operating from the Atlantean VLFPs, it saw extensive combat over Germany as scout for light bombers."
  PRJ_jet_fighter_equipment_1:0 "Satexregekaz-Miganutahamek 025 Dinax"
  PRJ_jet_fighter_equipment_1_short:0 "Sat-Mig/025 Dinax"
  PRJ_jet_fighter_equipment_1_desc:0 "The Dinax was the first Atlantean jet to be built. Produced in limited quantities and saw no combat action."
@@ -1146,39 +1142,21 @@
  PRJ_CAS_equipment_1:0 "Wotarnial 118 Anavile"
  PRJ_CAS_equipment_1_short:0 "Wot/118 Anavile"
  PRJ_CAS_equipment_1_desc:0 "The Anavile was a light aircraft built to carry small bombloads. Although lightly armed, it was fast and well armored to sustain ground fire."
- PRJ_cv_CAS_equipment_1:0 
- PRJ_cv_CAS_equipment_1_short:0 
- PRJ_cv_CAS_equipment_1_desc:0 
  PRJ_CAS_equipment_2:0 "
  PRJ_CAS_equipment_2_short:0 
- PRJ_CAS_equipment_2_desc:0 
- PRJ_cv_CAS_equipment_2:0 
- PRJ_cv_CAS_equipment_2_short:0 
- PRJ_cv_CAS_equipment_2_desc:0 
+ PRJ_CAS_equipment_2_desc:0  
  PRJ_CAS_equipment_3:0 
  PRJ_CAS_equipment_3_short:0 
  PRJ_CAS_equipment_3_desc:0 
- PRJ_cv_CAS_equipment_3:0 
- PRJ_cv_CAS_equipment_3_short:0 
- PRJ_cv_CAS_equipment_3_desc:0 
  PRJ_nav_bomber_equipment_1:0 
  PRJ_nav_bomber_equipment_1_short:0 
  PRJ_nav_bomber_equipment_1_desc:0 
- PRJ_cv_nav_bomber_equipment_1:0 
- PRJ_cv_nav_bomber_equipment_1_short:0 
- MUU_cv_nav_bomber_equipment_1_desc:0 
  PRJ_nav_bomber_equipment_2:0 
  PRJ_nav_bomber_equipment_2_short:0 
  PRJ_nav_bomber_equipment_2_desc:0 
- PRJ_cv_nav_bomber_equipment_2:0 
- PRJ_cv_nav_bomber_equipment_2_short:0 
- PRJ_cv_nav_bomber_equipment_2_desc:0 
  PRJ_nav_bomber_equipment_3:0 
  PRJ_nav_bomber_equipment_3_short:0 
- PRJ_nav_bomber_equipment_3_desc:0 
- PRJ_cv_nav_bomber_equipment_3:0 
- PRJ_cv_nav_bomber_equipment_3_short:0 
- PRJ_cv_nav_bomber_equipment_3_desc:0 
+ PRJ_nav_bomber_equipment_3_desc:0  
  PRJ_heavy_fighter_equipment_1:0 
  PRJ_heavy_fighter_equipment_1_short:0 
  PRJ_heavy_fighter_equipment_1_desc:0 
