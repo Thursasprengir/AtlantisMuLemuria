@@ -30,6 +30,7 @@ focus_tree = {
 	focus = {
 		id = HOU_peacetalks
 		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = { focus = HOU_crush_the_communists }
 		x = 15
 		y = 0
 
@@ -699,7 +700,7 @@ focus_tree = {
 		relative_position_id = HOU_eliminate_democratic_parties	
 		prerequisite = { focus = HOU_eliminate_democratic_parties focus = HOU_council_of_reconciliation}		
 		
-		x = 5
+		x = 4
 		y = 1
 
 		cost = 5
@@ -924,7 +925,7 @@ focus_tree = {
 		prerequisite = { focus = HOU_peacetalks }
 		mutually_exclusive = { focus = HOU_antidemocracy_propaganda }		
 		
-		x = 4
+		x = 5
 		y = 1
 
 		cost = 5
@@ -980,9 +981,1547 @@ focus_tree = {
 			#increase stability, decrease opinion from democratic nations
 		}
 	}
+	focus = {
+		id = HOU_reorganize_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_council_of_reconciliation	
+		prerequisite = { focus = HOU_council_of_reconciliation }
+		mutually_exclusive = { focus = HOU_inward_focus }		
+		
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#neutral ideology boost
+		}
+	}
+	focus = {
+		id = HOU_inward_focus
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_council_of_reconciliation	
+		prerequisite = { focus = HOU_council_of_reconciliation }
+		mutually_exclusive = { focus = HOU_reorganize_constitution }				
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#fascism ideology boost
+		}
+	}
+	focus = {
+		id = HOU_blessings_of_industry
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_reorganize_constitution	
+		prerequisite = { focus = HOU_reorganize_constitution }		
+		
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#2x industrial research bonus, inc construction speed
+		}
+	}
+	focus = {
+		id = HOU_trade
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_blessings_of_industry	
+		prerequisite = { focus = HOU_blessings_of_industry }		
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#imp trade opinions, lowers cost of trade laws, adds convoys, incr resources to market, lowers required consumer goods
+		}
+	}
+	focus = {
+		id = HOU_national_highway_system
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_reorganize_constitution	
+		prerequisite = { focus = HOU_reorganize_constitution focus = HOU_inward_focus}		
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#add infrastructure to central provinces, add building slots
+		}
+	}
+	focus = {
+		id = HOU_extend_road_network
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_national_highway_system	
+		prerequisite = { focus = HOU_national_highway_system}		
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#add infrastructure to outlying provinces, add building slots
+		}
+	}
+	focus = {
+		id = HOU_working_public
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_inward_focus	
+		prerequisite = { focus = HOU_inward_focus}		
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#add civ/mil industries, inc factory and dockyard output, 2x industrial research bonus
+		}
+	}
+	focus = {
+		id = HOU_expand_armed_forces
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_working_public	
+		prerequisite = { focus = HOU_working_public}		
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#imp reinforce rate, inc mobilization speed, inc recruitable factor
+		}
+	}
+	focus = {
+		id = HOU_blessed_isolation
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_trade	
+		prerequisite = { focus = HOU_trade }
+		prerequisite = { focus = HOU_extend_road_network }		
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#massive temporary bonus to fortification construction
+		}
+	}
+	focus = {
+		id = HOU_seize_war_tech
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_blessed_isolation	
+		prerequisite = { focus = HOU_blessed_isolation }		
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#extra research slot
+		}
+	}
+	focus = {
+		id = HOU_defensive_offense
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_extend_road_network	
+		prerequisite = { focus = HOU_expand_armed_forces }
+		prerequisite = { focus = HOU_extend_road_network }		
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#core attack and defense, offense bonus, incr war support
+		}
+	}
+	focus = {
+		id = HOU_time_is_now
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_defensive_offense	
+		prerequisite = { focus = HOU_defensive_offense }	
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#war goals on neighbors
+		}
+	}
 	
 	
+############################
+## Houpo'ean Historial Path
+############################
+
+	focus = {
+		id = HOU_crush_the_communists
+		icon = GFX_focus_hol_the_foundations_of_defense
+		mutually_exclusive = { focus = HOU_peacetalks }
+		x = 30
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#decrease communism support, decrease manpower, decrease stability
+		}
+	}
+	focus = {
+		id = HOU_anticommunist_campaign
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_crush_the_communists	
+		prerequisite = { focus = HOU_crush_the_communists }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#decrease manpower by X, subtract weapons and supplies
+		}
+	}
+	focus = {
+		id = HOU_national_connections
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_anticommunist_campaign	
+		prerequisite = { focus = HOU_anticommunist_campaign }
+		
+		x = -6
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#infrastructure construction speed boost
+		}
+	}
+	focus = {
+		id = HOU_bonds_of_blood
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_national_connections	
+		prerequisite = { focus = HOU_national_connections }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr capitulation threshold, incr core attack and defense
+		}
+	}
+	focus = {
+		id = HOU_look_to_your_brother
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_bonds_of_blood
+		prerequisite = { focus = HOU_bonds_of_blood }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr stability, incr production, incr monthly population growth
+		}
+	}
+	focus = {
+		id = HOU_expand_ports
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_bonds_of_blood
+		prerequisite = { focus = HOU_bonds_of_blood }
+		
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#add naval base, add dockyard
+		}
+	}
+	focus = {
+		id = HOU_seek_int_investment
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_look_to_your_brother
+		prerequisite = { focus = HOU_look_to_your_brother }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#mirror Greek Investment Events. No longer valid once Loto Aai falls.
+		}
+	}
+	focus = {
+		id = HOU_great_science_academy
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_seek_int_investment
+		prerequisite = { focus = HOU_seek_int_investment }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr research speed
+		}
+	}
+	focus = {
+		id = HOU_inland_shelter_camps
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_seek_int_investment
+		prerequisite = { focus = HOU_seek_int_investment }
+		
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr capitulation threshold, decrease factory bomb vulnerability, ?incr core defense?
+		}
+	}
+	focus = {
+		id = HOU_dept_applied_sciences
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_great_science_academy
+		prerequisite = { focus = HOU_great_science_academy }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#add research slot
+		}
+	}
+	focus = {
+		id = HOU_build_on_strength
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_great_science_academy
+		prerequisite = { focus = HOU_great_science_academy }
+		
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr special forces limit, bonus to special forces
+		}
+	}
+	focus = {
+		id = HOU_industrial_buildup
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_anticommunist_campaign	
+		prerequisite = { focus = HOU_anticommunist_campaign }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#add civ & mil factories in core areas
+		}
+	}
+	focus = {
+		id = HOU_day_of_mourning
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_industrial_buildup	
+		prerequisite = { focus = HOU_industrial_buildup }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#Kill Pres Mako Oriata. Haifatu Manutea becomes president. Incr manpower. Huge stability decrease.
+		}
+	}
+	focus = {
+		id = HOU_full_investigation
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_day_of_mourning	
+		prerequisite = { focus = HOU_day_of_mourning }
+		mutually_exclusive = { focus = HOU_perfidious_communists }
+		
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#decr speed on all construction and production for a period of time
+		}
+	}
+	focus = {
+		id = HOU_rapprochement_communists
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_full_investigation	
+		prerequisite = { focus = HOU_full_investigation }
+		mutually_exclusive = { focus = HOU_lack_of_evidence }
+		
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr surrender threshold
+		}
+	}
+	focus = {
+		id = HOU_lack_of_evidence
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_full_investigation	
+		prerequisite = { focus = HOU_full_investigation }
+		mutually_exclusive = { focus = HOU_rapprochement_communists }
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr war support, decr stability, decr communism support
+		}
+	}
+	focus = {
+		id = HOU_respond_to_japan
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_rapprochement_communists	
+		prerequisite = { focus = HOU_rapprochement_communists focus = HOU_lack_of_evidence}
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#kill a number of generals and admirals
+		}
+	}
+	focus = {
+		id = HOU_kanagan_defense_pact
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_respond_to_japan	
+		prerequisite = { focus = HOU_respond_to_japan }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#form KDP, invites Malihini
+		}
+	}
+	focus = {
+		id = HOU_negotiate_port_access
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_kanagan_defense_pact	
+		prerequisite = { focus = HOU_kanagan_defense_pact }
+		
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#USA loans production capacity to HOU
+		}
+	}
+	focus = {
+		id = HOU_evacuate_gold_supply
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_negotiate_port_access	
+		prerequisite = { focus = HOU_negotiate_port_access }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#decision to evacuate gold supply: with each X% that gets evacuated it increases defense by X, like by 10% increments
+		}
+	}
+	focus = {
+		id = HOU_legitimate_government
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_evacuate_gold_supply	
+		prerequisite = { focus = HOU_evacuate_gold_supply }
+		mutually_exclusive = { focus = HOU_not_go_quietly }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#switch gov to communism
+		}
+	}
+	focus = {
+		id = HOU_not_go_quietly
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_evacuate_gold_supply	
+		prerequisite = { focus = HOU_evacuate_gold_supply }
+		mutually_exclusive = { focus = HOU_legitimate_government }
+		
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#Fires Civil War event
+		}
+	}
+	focus = {
+		id = HOU_volunteers_aplenty
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_legitimate_government
+		prerequisite = { focus = HOU_legitimate_government }
+		
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#creates numerous volunteer brigades
+		}
+	}
+	focus = {
+		id = HOU_abandon_kdp
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_legitimate_government
+		prerequisite = { focus = HOU_legitimate_government }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#dissolve KDP, joins Comintern
+		}
+	}
+	focus = {
+		id = HOU_move_capital
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_abandon_kdp
+		prerequisite = { focus = HOU_abandon_kdp }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#Capital to Wainuiomu
+		}
+	}
 	
+	
+	focus = {
+		id = HOU_perfidious_communists
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_day_of_mourning	
+		prerequisite = { focus = HOU_day_of_mourning }
+		mutually_exclusive = { focus = HOU_full_investigation }
+		
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#decr stability. Drastic decrease in communism support. Decr manpower.
+		}
+	}
+	focus = {
+		id = HOU_one_people_one_heart
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_perfidious_communists	
+		prerequisite = { focus = HOU_perfidious_communists }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr support for fascism
+		}
+	}
+
+	focus = {
+		id = HOU_northwestern_enemies
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_one_people_one_heart	
+		prerequisite = { focus = HOU_one_people_one_heart }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#??? Maybe incr defense/attack on core?
+		}
+	}
+	focus = {
+		id = HOU_warn_your_neighbor
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_one_people_one_heart	
+		prerequisite = { focus = HOU_one_people_one_heart }
+		
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr fascism in neighboring kanagan nations
+		}
+	}
+	focus = {
+		id = HOU_sound_alarm
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_warn_your_neighbor	
+		prerequisite = { focus = HOU_warn_your_neighbor }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#form Kanagan Defense Pact, invites Malihini, Ikaika, Awarurua, Waponi and Tahiti
+		}
+	}
+	focus = {
+		id = HOU_prepare_defenses
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_northwestern_enemies	
+		prerequisite = { focus = HOU_northwestern_enemies }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#fortification construction bonus. Add sea-fort levels in Loto Aai
+		}
+	}
+
+	focus = {
+		id = HOU_continue_purge_communists
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_lack_of_evidence	
+		prerequisite = { focus = HOU_lack_of_evidence }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr war support, incr stability, decr communism support
+		}
+	}
+	focus = {
+		id = HOU_request_int_lend_lease
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_continue_purge_communists	
+		prerequisite = { focus = HOU_continue_purge_communists }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#'Request Assistance' decisions for US, UK, France, Germany, Atlantis, Italy
+		}
+	}
+	focus = {
+		id = HOU_expand_KDP
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_kanagan_defense_pact	
+		prerequisite = { focus = HOU_kanagan_defense_pact }
+		mutually_exclusive = { focus = HOU_pyrrhic_fighting}
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#invites Ikaika to KDP
+		}
+	}
+	focus = {
+		id = HOU_pyrrhic_fighting
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_request_int_lend_lease	
+		prerequisite = { focus = HOU_request_int_lend_lease focus = HOU_prepare_defenses }
+		mutually_exclusive = { focus = HOU_expand_KDP }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#Major boost to core territory defense
+		}
+	}
+	focus = {
+		id = HOU_bitter_end
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_pyrrhic_fighting	
+		prerequisite = { focus = HOU_pyrrhic_fighting}
+		mutually_exclusive = { focus = HOU_desperate_gamble }
+		
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#Incr defense, attack on core territory. Incr capitulation threshold
+		}
+	}
+	focus = {
+		id = HOU_desperate_gamble
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_pyrrhic_fighting	
+		prerequisite = { focus = HOU_pyrrhic_fighting}
+		mutually_exclusive = { focus = HOU_bitter_end }
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#Event cedes territory to Japan and Trinsuyin, ends war, becomes puppet of Japan
+		}
+	}
 	
 	
 	
