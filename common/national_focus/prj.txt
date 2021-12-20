@@ -3461,7 +3461,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRJ_ETH_war_command
+		id = PRJ_ETH_war_command_focus
 		prerequisite = { focus = PRJ_ETH_occupy_yemen }
 		x = 12
 		y = 9
@@ -3492,6 +3492,161 @@ focus_tree = {
 				add_ideas = PRJ_ETH_war_command
 				}
 			add_ideas = PRJ_ETH_war_command
+		}
+	}
+	focus = {
+		id = PRJ_ETH_purchase_somaliland
+		prerequisite = { focus = PRJ_ETH_war_command_focus }
+		x = 11
+		y = 10
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+			has_war_with = ENG
+			has_war_with = FRA
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes 
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = { 
+			ETH = {
+				transfer_state = 269
+				transfer_state = 268
 			}
 		}
+	}
 	
+	focus = {
+		id = PRJ_purchase_kenya
+		prerequisite = { focus = PRJ_ETH_war_command_focus }
+		x = 13
+		y = 10
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+			has_war_with = ENG
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes 
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = { 
+			
+			transfer_state = 1070
+			transfer_state = 547
+			add_state_core = 547
+			add_state_core = 1070
+			1070 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			547 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = PRJ_fufill_promise
+		prerequisite = { focus = PRJ_purchase_kenya }
+		prerequisite = { focus = PRJ_ETH_purchase_somaliland }
+		x = 11
+		y = 11
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+			has_war_with = ENG
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes 
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = { 
+			ENG = {add_to_faction = ETH}
+			ENG = {add_to_faction = PRJ}
+		}
+	}
+	focus = {
+		id = PRJ_renegade
+		prerequisite = { focus = PRJ_purchase_kenya }
+		prerequisite = { focus = PRJ_ETH_purchase_somaliland }
+		x = 13
+		y = 11
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+			has_war_with = ENG
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			ETH= { 
+				custom_effect_tooltip = PRJ_down_with_europe
+				add_stability = -.2
+				declare_war_on = {
+					target = ENG
+					type = take_core_state 
+				}
+			}
+			custom_effect_tooltip = PRJ_down_with_europe
+			add_stability = -.2
+			declare_war_on = {
+				target = ENG
+				type = take_core_state 
+			}
+		}
+	}
