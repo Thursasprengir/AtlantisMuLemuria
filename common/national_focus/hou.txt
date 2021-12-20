@@ -2522,9 +2522,773 @@ focus_tree = {
 			#Event cedes territory to Japan and Trinsuyin, ends war, becomes puppet of Japan
 		}
 	}
+
+############################
+## National Improvement
+############################
+
 	
+	focus = {
+		id = HOU_national_improvement
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_crush_the_communists
+		
+		x = 5
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#decrease factory production time
+		}
+	}
+	focus = {
+		id = HOU_nat_railway_proj
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_national_improvement
+		prerequisite = { focus = HOU_national_improvement}
+		
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#adds/increases central province railways
+		}
+	}
+	focus = {
+		id = HOU_rubber_plantations
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = HOU_nat_railway_proj}
+		relative_position_id = HOU_nat_railway_proj
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#adds rubber production to central areas
+		}
+	}
 	
+	focus = {
+		id = HOU_factory_of_the_world
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = HOU_national_improvement}
+		relative_position_id = HOU_national_improvement
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#adds factories in central provinces
+		}
+	}
 	
-	
+	focus = {
+		id = HOU_houpoean_steel
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_factory_of_the_world
+		prerequisite = { focus = HOU_factory_of_the_world}
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#adds steel production to northern provinces
+		}
+	}
+	focus = {
+		id = HOU_nat_highways_proj
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = HOU_national_improvement}
+		relative_position_id = HOU_national_improvement
+		
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#adds infrastructure to central provinces
+		}
+	}
+	focus = {
+		id = HOU_valley_of_maui
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_nat_highways_proj
+		prerequisite = { focus = HOU_nat_highways_proj}
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#incr manpower and stability
+		}
+	}
+
+##########################
+## Military Branches
+##########################
+
+	focus = {
+		id = HOU_found_the_air_force
+		icon = GFX_goal_generic_build_airforce
+		x = 42
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			air_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = HOU_found_the_air_force_AB
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = HOU_found_the_air_force_AB_2
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				prioritize = { 46 79 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					free_building_slots = {
+						building = air_base
+						size > 2
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = HOU_found_the_air_force_AB
+			}
+			random_owned_controlled_state = {
+				prioritize = { 46 79 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					free_building_slots = {
+						building = air_base
+						size > 2
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = HOU_found_the_air_force_AB_2
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_purchase_designs
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = HOU_found_the_air_force }
+		mutually_exclusive = { focus = HOU_home_designs }
+		x = 3
+		y = 1
+		relative_position_id = HOU_found_the_air_force
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = HOU_purchase_designs #copy of ROM_purchase_designs
+		}
+	}
+
+	focus = {
+		id = HOU_air_defense
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = HOU_purchase_designs }
+		mutually_exclusive = { focus = HOU_ground_support }
+		x = 2
+		y = 1
+		relative_position_id = HOU_purchase_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = HOU_air_defense
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_operational_integrity
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_ground_support
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = HOU_purchase_designs }
+		mutually_exclusive = { focus = HOU_air_defense }
+		x = 0
+		y = 1
+		relative_position_id = HOU_purchase_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = HOU_ground_support
+				cost_reduction = 0.25
+				uses = 2
+				category = battlefield_support_tree
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_medium_bombers
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = HOU_ground_support }
+		x = 0
+		y = 2
+		relative_position_id = HOU_purchase_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_medium_bombers
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_acquire_fighters
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HOU_air_defense }
+		x = 2
+		y = 2
+		relative_position_id = HOU_purchase_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_tech = fighter3
+				has_tech = heavy_fighter3
+			}
+			OR = {
+				GER = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_HOU = yes
+							is_available_heavy_fighter_HOU = yes
+						}
+					}
+				}
+				FRA = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_HOU = yes
+							is_available_heavy_fighter_HOU = yes
+						}
+					}
+				}
+				ITA = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_HOU = yes
+							is_available_heavy_fighter_HOU = yes
+						}
+					}
+				}
+				ENG = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_HOU = yes
+							is_available_heavy_fighter_HOU = yes
+						}
+					}
+				}
+				USA = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_HOU = yes
+							is_available_heavy_fighter_HOU = yes
+						}
+					}
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = DOD_romania.150
+		}
+	}
+
+	focus = {
+		id = HOU_home_designs
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = HOU_found_the_air_force }
+		mutually_exclusive = { focus = HOU_purchase_designs }
+		x = -2
+		y = 1
+		relative_position_id = HOU_found_the_air_force
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = HOU_home_designs
+		}
+	}
+
+	focus = {
+		id = HOU_air_superiority
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HOU_home_designs }
+		mutually_exclusive = { focus = HOU_strategic_bomber_force }
+		x = 2
+		y = 1
+		relative_position_id = HOU_home_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = HOU_air_superiority
+				cost_reduction = 0.25
+				uses = 2
+				category = strategic_destruction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_cas
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = HOU_air_superiority }
+		x = -1
+		y = 1
+		relative_position_id = HOU_air_superiority
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_cas
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_anuenue_09
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = HOU_air_superiority }
+		x = 1
+		y = 1
+		relative_position_id = HOU_air_superiority
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			#Give generic fighter bonus if fighter_2 already researched
+			if = {
+				limit = {
+					has_tech = fighter2
+				}
+				add_tech_bonus = {
+					name = HOU_anuenue_09
+					bonus = 1.0
+					ahead_reduction = 2
+					uses = 1
+					category = light_fighter
+				}
+				else = {
+					add_tech_bonus = {
+						name = HOU_anuenue_09
+						bonus = 1.0
+						ahead_reduction = 2
+						uses = 1
+						technology = fighter2
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_strategic_bomber_force
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = HOU_home_designs }
+		mutually_exclusive = { focus = HOU_air_superiority }
+		x = -1
+		y = 1
+		relative_position_id = HOU_home_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_strategic_bomber_force
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_heavy_bombers
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = HOU_strategic_bomber_force }
+		x = 0
+		y = 1
+		relative_position_id = HOU_strategic_bomber_force
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_heavy_bombers
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+	}
+
+
 	
 }
