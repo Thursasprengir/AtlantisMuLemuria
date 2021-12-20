@@ -1,6 +1,6 @@
 focus_tree = {
 
-	id = Wrightsville_focus
+	id = Yohannia_focus
 	
 	country = {
 		factor = 0
@@ -133,7 +133,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			create_faction = "Italian Bitch Brigade"
+			create_faction = "Aphoxia"
 			PRJ = {add_to_faction = ETH}
 		}
 	}
@@ -1775,13 +1775,7 @@ focus_tree = {
 					is_controlled_by = PRJ
 				}
 			}
-			538 = {
-				AND = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			295 = {
+			1115 = {
 				AND = {
 					is_owned_by = PRJ
 					is_controlled_by = PRJ
@@ -1825,26 +1819,7 @@ focus_tree = {
 					}
 				}
 			}
-			538 = { 
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			295 = { 
+			1115 = { 
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -2178,7 +2153,11 @@ focus_tree = {
 
 		completion_reward = { 
 			ZAM = { 
+				add_state_core = 1116
 				set_cosmetic_tag = PRJ_ZAM_puppet
+			}
+			COG = {
+				remove_state_core = 1116
 			}
 			771 = {
 				if = {
@@ -2200,6 +2179,25 @@ focus_tree = {
 				}
 			}
 			
+			1116 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			release_puppet_on_controlled = ZAM
 			
 		}
@@ -2463,6 +2461,11 @@ focus_tree = {
 
 		completion_reward = { 
 			add_state_core = 548	
+			548 = { 
+				if = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
 	}
 	
@@ -2507,7 +2510,17 @@ focus_tree = {
 
 		completion_reward = { 
 			add_state_core = 768
-			add_state_core = 769			
+			add_state_core = 769
+			768 = { 
+				if = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			769 = { 
+				if = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
 	}
 	
@@ -2545,7 +2558,12 @@ focus_tree = {
 		}
 
 		completion_reward = { 
-			add_state_core = 1069			
+			add_state_core = 1069	
+			1069 = { 
+				if = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
 	}
 	
@@ -2584,6 +2602,11 @@ focus_tree = {
 
 		completion_reward = { 
 			add_state_core = 1067	
+			1067 = { 
+				if = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
 	}
 	
@@ -2622,6 +2645,11 @@ focus_tree = {
 
 		completion_reward = { 
 			add_state_core = 1071
+			1071 = { 
+				if = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
 	}
 	
@@ -2664,13 +2692,17 @@ focus_tree = {
 
 		}
 
-		completion_reward = { 
+		completion_reward = {
+			build_railway = {
+				level = 2
+				path = { 14999 5160 10860 1939 5196 5210 }
+			}
 			1069 = { 
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -2680,7 +2712,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -2725,6 +2757,11 @@ focus_tree = {
 
 		completion_reward = { 
 			add_state_core = 1071
+			1071 = { 
+				if = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 		}
 	}
 	
@@ -2762,12 +2799,16 @@ focus_tree = {
 		}
 
 		completion_reward = { 
+			build_railway = {
+				level = 2
+				path = { 12929 7088 12783 2154 6027 }
+			}
 			1070 = { 
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -2810,12 +2851,16 @@ focus_tree = {
 		}
 
 		completion_reward = { 
+			build_railway = {
+				level = 2
+				path = { 14999 5160 10860 11017 10932 4171 3854 12989 12929 }
+			}
 			1071 = { 
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -3647,6 +3692,662 @@ focus_tree = {
 			declare_war_on = {
 				target = ENG
 				type = take_core_state 
+			}
+		}
+	}
+	
+	###INDUSTRY###
+	focus = {
+		id = PRJ_industrial_park
+		prerequisite = { focus = PRJ_save_ethiopia focus = PRJ_abandon_ethiopia }
+
+		x = 1
+		y = 1
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1064 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_finish_modern_rails
+		prerequisite = { focus = PRJ_industrial_park }
+
+		x = 0
+		y = 2
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			build_railway = {
+				level = 2
+				path = { 14999 15000 15001 15004 }
+			}
+			build_railway = {
+				level = 2
+				path = { 14999 15000 15002 15003}
+			}
+			build_railway = {
+				level = 2
+				path = { 14999 12929 11145 15003 15004 }
+			}
+		}
+	}
+	focus = {
+		id = PRJ_civilian_projects
+		prerequisite = { focus = PRJ_finish_modern_rails }
+
+		x = -2
+		y = 3
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1064 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1073 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1074 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1075 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_civilian_projects_2
+		prerequisite = { focus = PRJ_civilian_projects }
+
+		x = -2
+		y = 4
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1064 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1073 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1074 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1075 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRJ_civilian_projects_3
+		prerequisite = { focus = PRJ_civilian_projects_2 }
+
+		x = -2
+		y = 5
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1064 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1073 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1074 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1075 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_military_projects
+		prerequisite = { focus = PRJ_finish_modern_rails }
+
+		x = 0
+		y = 3
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1064 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1073 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1074 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1075 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_military_projects_2
+		prerequisite = { focus = PRJ_military_projects }
+
+		x = 0
+		y = 4
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1064 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			1073 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			1074 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			1075 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRJ_military_projects_3
+		prerequisite = { focus = PRJ_military_projects_2 }
+
+		x = 0
+		y = 5
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1064 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			1073 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2 
+					instant_build = yes
+				}
+			}
+			1074 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			1075 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_turkana_cleanup
+		prerequisite = { focus = PRJ_industrial_park }
+
+		x = 2
+		y = 2
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = PRJ_oil
+		prerequisite = { focus = PRJ_turkana_cleanup }
+
+		x = 2
+		y = 3
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1075 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRJ_oil_2
+		prerequisite = { focus = PRJ_oil }
+
+		x = 2
+		y = 4
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1075 = {
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_rubber
+		prerequisite = { focus = PRJ_turkana_cleanup }
+
+		x = 4
+		y = 3
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1075 = {
+				add_resource = {
+					type = rubber
+					amount = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRJ_rubber_2
+		prerequisite = { focus = PRJ_rubber }
+
+		x = 4
+		y = 4
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1075 = {
+				add_resource = {
+					type = rubber
+					amount = 8
+				}
 			}
 		}
 	}
