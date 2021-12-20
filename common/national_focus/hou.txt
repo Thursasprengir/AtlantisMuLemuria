@@ -3290,5 +3290,813 @@ focus_tree = {
 	}
 
 
+	focus = {
+		id = HOU_fund_inuhumuku_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 52
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			navy_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = HOU_expand_the_inuhumuku_shipyards_AB
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				prioritize = { 46 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HOU_expand_the_inuhumuku_shipyards_AB
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_coastal_defense_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = HOU_fund_inuhumuku_shipyards }
+		mutually_exclusive = { focus = HOU_power_projection }
+		x = -1
+		y = 1
+		relative_position_id = HOU_fund_inuhumuku_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = HOU_coastal_defense_navy_designer
+		}
+	}
+
+	focus = {
+		id = HOU_coastal_defense_ships
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = HOU_coastal_defense_navy }
+		x = -1
+		y = 1
+		relative_position_id = HOU_coastal_defense_navy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = HOU_coastal_defense_ships
+			#custom_effect_tooltip = HOU_coastal_defense_ships_tech_tt
+			if = { 
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = { coastal_defense_ships = 1 } 
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_modern_destroyers
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = HOU_coastal_defense_navy focus = HOU_power_projection }
+		x = 1
+		y = 1
+		relative_position_id = HOU_coastal_defense_navy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_modern_destroyers
+				bonus = 3.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_torpedo_boats
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = HOU_coastal_defense_ships }
+		x = -2
+		y = 2
+		relative_position_id = HOU_coastal_defense_navy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HOU_coastal_defense_ships_2
+				remove_idea = HOU_coastal_defense_ships
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_modern_submarines
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = HOU_modern_destroyers }
+		x = 0
+		y = 2
+		relative_position_id = HOU_coastal_defense_navy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_modern_submarines
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_power_projection
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = HOU_fund_inuhumuku_shipyards }
+		mutually_exclusive = { focus = HOU_coastal_defense_navy }
+		x = 1
+		y = 1
+		relative_position_id = HOU_fund_inuhumuku_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {			
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = HOU_power_projection_designer
+		}
+	}
+
+	focus = {
+		id = HOU_capital_ships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = HOU_power_projection }
+		x = 1
+		y = 1
+		relative_position_id = HOU_power_projection
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_capital_ships
+				bonus = 1.0
+				uses = 2
+				category = ca_tech
+				category = bb_tech
+				category = bc_tech
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_modern_naval_bombers
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = HOU_modern_destroyers }
+		x = 2
+		y = 2
+		relative_position_id = HOU_coastal_defense_navy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_torpedo_bombers
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_adv_naval_doctrines
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = HOU_modern_naval_bombers }
+		prerequisite = { focus = HOU_modern_submarines }
+		x = -1
+		y = 1
+		relative_position_id = HOU_modern_naval_bombers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_torpedo_bombers
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = HOU_aircraft_carriers
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = HOU_capital_ships }
+		x = 2
+		y = 2
+		relative_position_id = HOU_power_projection
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_expand_the_marine_regiment
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+				category = marine_tech
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = HOU_strong_army
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 59
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			army_experience = 25
+			random_owned_controlled_state = {
+				#prioritize = { 46 }
+				limit = {
+					
+				}
+				#add_extra_state_shared_building_slots = 2
+				#add_building_construction = {
+				#	type = dockyard
+				#	level = 2
+				#	instant_build = yes
+				#}
+				#set_state_flag = HOU_expand_the_inuhumuku_shipyards_AB
+			}
+		}
+	}
+	focus = {
+		id = HOU_begin_army_reforms
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_strong_army	
+		prerequisite = { focus = HOU_strong_army }	
+		
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#decrease recruitment time, add army exp
+		}
+	}
+	focus = {
+		id = HOU_landborne_designs
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_strong_army	
+		prerequisite = { focus = HOU_strong_army }	
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#bonus to infantry fighting in forest and jungle
+		}
+	}
+	focus = {
+		id = HOU_standardized_vehicle_templates
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_begin_army_reforms	
+		prerequisite = { focus = HOU_begin_army_reforms }
+		prerequisite = { focus = HOU_landborne_designs }	
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = HOU_special_forces
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_landborne_designs	
+		prerequisite = { focus = HOU_landborne_designs }	
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = HOU_mass_assault_doctrine
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_standardized_vehicle_templates	
+		prerequisite = { focus = HOU_standardized_vehicle_templates }	
+		
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = HOU_mobile_warfare
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_standardized_vehicle_templates	
+		prerequisite = { focus = HOU_standardized_vehicle_templates }	
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = HOU_offroad_designs
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_mass_assault_doctrine	
+		prerequisite = { focus = HOU_mass_assault_doctrine }
+		prerequisite = { focus = HOU_mobile_warfare }	
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = HOU_armored_designs
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_offroad_designs	
+		prerequisite = { focus = HOU_offroad_designs }
+		
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = HOU_mechanized_designs
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_offroad_designs	
+		prerequisite = { focus = HOU_offroad_designs }
+		
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = HOU_offensive_designs
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_armored_designs	
+		mutually_exclusive = { focus = HOU_defensive_designs }
+		prerequisite = { focus = HOU_mechanized_designs focus = HOU_armored_designs }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = HOU_defensive_designs
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HOU_mechanized_designs	
+		mutually_exclusive = { focus = HOU_offensive_designs }
+		prerequisite = { focus = HOU_mechanized_designs focus = HOU_armored_designs }
+		
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			#
+		}
+	}
+	
 	
 }
