@@ -1,0 +1,3078 @@
+focus_tree = {
+	id = trs_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = TRS
+		}
+	}
+
+
+	default = no
+
+
+	continuous_focus_position = { x = 20 y = 1200 }
+
+focus = {
+		id = TRS_state_of_the_economy
+		icon = GFX_TRS_politics
+		x = 10
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#?
+		}
+	}
+focus = {
+		id = TRS_cut_back_spending
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_state_of_the_economy }
+		mutually_exclusive = { focus = TRS_military_uprising }
+		relative_position_id = TRS_state_of_the_economy
+		x = -5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#Hyper-inflation, take this from China
+		}
+	}
+focus = {
+		id = TRS_no_more_cuts
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_cut_back_spending }
+		relative_position_id = TRS_cut_back_spending
+		x = -5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease int relations/JAP relations. Incr stability
+		}
+	}
+focus = {
+		id = TRS_continue_austerity_measures
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_cut_back_spending }
+		relative_position_id = TRS_cut_back_spending
+		x = 5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#decrease stability, decrease manpower, modify 'cripple economy' to be less severe
+		}
+	}
+focus = {
+		id = TRS_a_stronger_nation
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_no_more_cuts }
+		relative_position_id = TRS_no_more_cuts
+		mutually_exclusive = { focus = TRS_voice_of_the_people }
+		mutually_exclusive = { focus = TRS_japanese_zaibatsu_payments }
+		x = -3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#incr fascism support
+		}
+	}
+focus = {
+		id = TRS_nat_youth_programs
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_a_stronger_nation }
+		relative_position_id = TRS_a_stronger_nation
+		x = -0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_martial_society
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_nat_youth_programs }
+		relative_position_id = TRS_nat_youth_programs
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_father_to_the_nation
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_nat_youth_programs }
+		relative_position_id = TRS_nat_youth_programs
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_ever_expanding
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_martial_society }
+		prerequisite = { focus = TRS_father_to_the_nation }
+		relative_position_id = TRS_nat_youth_programs
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_every_woman_a_goddess
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_ever_expanding }
+		relative_position_id = TRS_ever_expanding
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_every_man_a_fortress
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_ever_expanding }
+		relative_position_id = TRS_ever_expanding
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_downsize_army
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_a_stronger_nation focus = TRS_voice_of_the_people }
+		relative_position_id = TRS_a_stronger_nation
+		mutually_exclusive = { focus = TRS_increase_conscription }
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_downsize_navy
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_downsize_army }
+		relative_position_id = TRS_downsize_army
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_finalize_economic_austerity
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_downsize_navy }
+		relative_position_id = TRS_downsize_navy
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_increase_conscription
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_a_stronger_nation focus = TRS_voice_of_the_people }
+		relative_position_id = TRS_a_stronger_nation
+		mutually_exclusive = { focus = TRS_downsize_army }
+		x = 5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_expand_navy
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_increase_conscription }
+		relative_position_id = TRS_increase_conscription
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_declare_add_debts_waived
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_expand_navy }
+		relative_position_id = TRS_expand_navy
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_economic_recovery
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_finalize_economic_austerity focus = TRS_declare_add_debts_waived }
+		relative_position_id = TRS_finalize_economic_austerity
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_voice_of_the_people
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_no_more_cuts focus = TRS_continue_austerity_measures}
+		relative_position_id = TRS_continue_austerity_measures
+		mutually_exclusive = { focus = TRS_a_stronger_nation }
+		mutually_exclusive = { focus = TRS_japanese_zaibatsu_payments }
+		x = -5
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_peoples_councils
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_voice_of_the_people}
+		relative_position_id = TRS_voice_of_the_people
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_youthful_education
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_voice_of_the_people}
+		relative_position_id = TRS_voice_of_the_people
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_strike_comrades
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_peoples_councils}
+		prerequisite = { focus = TRS_youthful_education}
+		relative_position_id = TRS_peoples_councils
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_join_comintern
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_strike_comrades}
+		relative_position_id = TRS_strike_comrades
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_int_volunteers
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_join_comintern}
+		relative_position_id = TRS_join_comintern
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_soviet_naval_bases
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_join_comintern}
+		relative_position_id = TRS_join_comintern
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_japanese_zaibatsu_payments
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_continue_austerity_measures }
+		relative_position_id = TRS_continue_austerity_measures
+		mutually_exclusive = { focus = TRS_a_stronger_nation }
+		mutually_exclusive = { focus = TRS_voice_of_the_people }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_reject_further_jap_investments
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_japanese_zaibatsu_payments }
+		relative_position_id = TRS_japanese_zaibatsu_payments
+		mutually_exclusive = { focus = TRS_allow_further_jap_investments }
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_default_on_loans
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_reject_further_jap_investments }
+		relative_position_id = TRS_reject_further_jap_investments
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_economic_stabilization
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_default_on_loans focus = TRS_blood_money }
+		relative_position_id = TRS_default_on_loans
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_allow_further_jap_investments
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_japanese_zaibatsu_payments }
+		relative_position_id = TRS_japanese_zaibatsu_payments
+		mutually_exclusive = { focus = TRS_reject_further_jap_investments }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_blood_money
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_allow_further_jap_investments }
+		relative_position_id = TRS_allow_further_jap_investments
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_national_university
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_default_on_loans focus = TRS_blood_money }
+		prerequisite = { focus = TRS_factory_conversions}
+		relative_position_id = TRS_blood_money
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_economic_revival
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_economic_stabilization}
+		prerequisite = { focus = TRS_national_university}
+		relative_position_id = TRS_economic_stabilization
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_gov_loans_to_businesses
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_japanese_zaibatsu_payments }
+		relative_position_id = TRS_japanese_zaibatsu_payments
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_factory_conversions
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_gov_loans_to_businesses }
+		relative_position_id = TRS_gov_loans_to_businesses
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_civilian_factories
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_gov_loans_to_businesses focus = TRS_further_coordination_jap }
+		relative_position_id = TRS_gov_loans_to_businesses
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_benefitting_the_people
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_civilian_factories }
+		relative_position_id = TRS_civilian_factories
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+
+focus = {
+		id = TRS_military_uprising
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_state_of_the_economy }
+		mutually_exclusive = { focus = TRS_cut_back_spending }
+		relative_position_id = TRS_state_of_the_economy
+		x = 7
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_long_live_emperor
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_military_uprising }
+		relative_position_id = TRS_military_uprising
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_further_coordination_jap
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_long_live_emperor }
+		relative_position_id = TRS_long_live_emperor
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_pacify_the_people
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_further_coordination_jap }
+		relative_position_id = TRS_further_coordination_jap
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_encourage_universities
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_further_coordination_jap }
+		relative_position_id = TRS_further_coordination_jap
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_martial_training
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_pacify_the_people }
+		relative_position_id = TRS_pacify_the_people
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_japanese_zaibatsus
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_military_uprising }
+		relative_position_id = TRS_military_uprising
+		x = 8
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_kawasaki
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_japanese_zaibatsus }
+		relative_position_id = TRS_japanese_zaibatsus
+		x = -4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_tsetsai_naval_base
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_kawasaki }
+		relative_position_id = TRS_kawasaki
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_capital_naval_base
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_tsetsai_naval_base }
+		prerequisite = { focus = TRS_dulgwa_mabong_naval_base}
+		relative_position_id = TRS_tsetsai_naval_base
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_tokyo_weyluchanao_cable
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_capital_naval_base }
+		relative_position_id = TRS_capital_naval_base
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_dulgwa_mabong_naval_base
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_kawasaki }
+		relative_position_id = TRS_kawasaki
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_lease_rengitsiu
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_tsetsai_naval_base }
+		prerequisite = { focus = TRS_dulgwa_mabong_naval_base }
+		relative_position_id = TRS_dulgwa_mabong_naval_base
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_kashikawa_arsenal
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_japanese_zaibatsus }
+		relative_position_id = TRS_japanese_zaibatsus
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_daunangchik_military_arms
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_kashikawa_arsenal}
+		relative_position_id = TRS_kashikawa_arsenal
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_moiloxiumang_artillery
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_kashikawa_arsenal}
+		relative_position_id = TRS_kashikawa_arsenal
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_mitsubishi
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_japanese_zaibatsus }
+		relative_position_id = TRS_japanese_zaibatsus
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_bolster_aircraft_production
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_mitsubishi }
+		prerequisite = { focus = TRS_aluminum_production }
+		relative_position_id = TRS_mitsubishi
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+
+
+focus = {
+		id = TRS_japanese_investments
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_military_uprising }
+		relative_position_id = TRS_military_uprising
+		x = 14
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_steel_production
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_japanese_investments }
+		relative_position_id = TRS_japanese_investments
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_aluminum_production
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_steel_production }
+		prerequisite = { focus = TRS_civilan_works }
+		relative_position_id = TRS_steel_production
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_civilan_works
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_japanese_investments }
+		relative_position_id = TRS_japanese_investments
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_dulgwa_mabong_chrome
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_civilan_works }
+		prerequisite = { focus = TRS_steel_production }
+		relative_position_id = TRS_civilan_works
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_chaansau_rubber
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_aluminum_production }
+		prerequisite = { focus = TRS_dulgwa_mabong_chrome }
+		relative_position_id = TRS_aluminum_production
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+
+
+focus = {
+		id = TRS_eject_usa
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_state_of_the_economy }
+		relative_position_id = TRS_state_of_the_economy
+		x = 24
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_claims_against_houpoe
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_eject_usa }
+		relative_position_id = TRS_eject_usa
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_mainland_success
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_claims_against_houpoe}
+		relative_position_id = TRS_claims_against_houpoe
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+	
+	
+	
+	
+	
+focus = {
+		id = TRS_chinese_immigrants
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_state_of_the_economy
+		x = 28
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_citizenship_for_all
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_chinese_immigrants}
+		relative_position_id = TRS_chinese_immigrants
+		mutually_exclusive = { focus = TRS_temporary_immigration }
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_nation_of_immigrants
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_citizenship_for_all}
+		relative_position_id = TRS_citizenship_for_all
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_temporary_immigration
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_chinese_immigrants}
+		relative_position_id = TRS_chinese_immigrants
+		mutually_exclusive = { focus = TRS_citizenship_for_all }
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_reinforce_our_culture
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_temporary_immigration}
+		relative_position_id = TRS_temporary_immigration
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_expand_mil_factories
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_nation_of_immigrants focus = TRS_reinforce_our_culture}
+		relative_position_id = TRS_nation_of_immigrants
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_continue_mil_fact_expansion
+		icon = GFX_TRS_politics
+		prerequisite = { focus = TRS_expand_mil_factories}
+		relative_position_id = TRS_expand_mil_factories
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+	
+	
+	
+	
+focus = {
+		id = TRS_army_modernization
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_chinese_immigrants
+		x = 10
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_mobile_forces
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_army_modernization
+		prerequisite = { focus = TRS_army_modernization}
+		mutually_exclusive = { focus = TRS_armored_forces }
+		x = -3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_work_with_maisata
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_weapons_research
+		x = -2
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_fighter_designs
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_work_with_maisata
+		prerequisite = { focus = TRS_work_with_maisata}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_interceptor_designs
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_fighter_designs
+		prerequisite = { focus = TRS_fighter_designs}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_bomber_designs
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_fighter_designs
+		prerequisite = { focus = TRS_fighter_designs}
+		prerequisite = { focus = TRS_dulgwa_mabong_airbases}
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_tac_bombers
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_bomber_designs
+		prerequisite = { focus = TRS_bomber_designs}
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_strat_bombers
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_bomber_designs
+		prerequisite = { focus = TRS_bomber_designs}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_naval_bombers
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_bomber_designs
+		prerequisite = { focus = TRS_bomber_designs}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_weapons_research
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_mobile_forces
+		prerequisite = { focus = TRS_mobile_forces}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_air_power
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_weapons_research
+		prerequisite = { focus = TRS_work_with_maisata}
+		prerequisite = { focus = TRS_weapons_research}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_dulgwa_mabong_airbases
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_air_power
+		prerequisite = { focus = TRS_air_power}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_tsetsai_airbases
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_air_power
+		prerequisite = { focus = TRS_air_power}
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_armored_forces
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_army_modernization
+		prerequisite = { focus = TRS_army_modernization}
+		mutually_exclusive = { focus = TRS_mobile_forces }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_light_tanks
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_armored_forces
+		prerequisite = { focus = TRS_armored_forces}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_land_doctrines
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_light_tanks
+		prerequisite = { focus = TRS_weapons_research focus = TRS_light_tanks}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_kiue_paa_tsear
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_army_modernization
+		prerequisite = { focus = TRS_army_modernization}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_special_forces_training
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_kiue_paa_tsear
+		prerequisite = { focus = TRS_kiue_paa_tsear}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_retrain_marines
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_special_forces_training
+		prerequisite = { focus = TRS_special_forces_training}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_found_paratrooper_divisions
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_special_forces_training
+		prerequisite = { focus = TRS_special_forces_training}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+
+
+focus = {
+		id = TRS_third_naval_modernization
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_army_modernization
+		x = 10
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_capital_ship_doctrine
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_third_naval_modernization
+		prerequisite = { focus = TRS_third_naval_modernization}
+		mutually_exclusive = { focus = TRS_light_ship_doctrine }
+		x = -3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_increase_hull_size
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_capital_ship_doctrine
+		prerequisite = { focus = TRS_capital_ship_doctrine}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_air_integration
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_increase_hull_size
+		prerequisite = { focus = TRS_increase_hull_size}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_national_naval_arsenal
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_increase_hull_size
+		prerequisite = { focus = TRS_increase_hull_size focus = TRS_cruiser_focus}
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_light_ship_doctrine
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_third_naval_modernization
+		prerequisite = { focus = TRS_third_naval_modernization}
+		mutually_exclusive = { focus = TRS_capital_ship_doctrine }
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_cruiser_focus
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_light_ship_doctrine
+		prerequisite = { focus = TRS_light_ship_doctrine}
+		mutually_exclusive = { focus = TRS_submarine_focus }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_submarine_focus
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_light_ship_doctrine
+		prerequisite = { focus = TRS_light_ship_doctrine}
+		mutually_exclusive = { focus = TRS_cruiser_focus }
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_expand_merchant_fleet
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_submarine_focus
+		prerequisite = { focus = TRS_cruiser_focus focus = TRS_submarine_focus}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_upgrade_emperors_chain
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_third_naval_modernization
+		prerequisite = { focus = TRS_third_naval_modernization}
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_national_dockyards
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_third_naval_modernization
+		prerequisite = { focus = TRS_third_naval_modernization}
+		x = 4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_increase_construction_slips
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_national_dockyards
+		prerequisite = { focus = TRS_national_dockyards}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+focus = {
+		id = TRS_purchase_japanese_convoys
+		icon = GFX_TRS_politics
+		relative_position_id = TRS_national_dockyards
+		prerequisite = { focus = TRS_national_dockyards}
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#
+		}
+	}
+
+
+}
