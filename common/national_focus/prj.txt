@@ -523,13 +523,53 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = PRJ_roderiq_bcomes_a_leader
+			PRJ_King_Roderiq = {
+				set_character_flag = PRJ_his_war
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_core_teritory
+		icon = GFX_
+		prerequisite = { focus = PRJ_warrior_king }
+
+		x = -13
+		y = 7
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
 
 		}
 
 		completion_reward = {
-			#turn Roderiq into Godly General set as immortal
+			
 		}
 	}
+	
 		############################
 	######### Right POLITICS ##########
 	############################

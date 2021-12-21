@@ -1,12 +1,13 @@
 characters={
 #leaders
 	PRJ_King_Roderiq={
-		name =PRJ_King_Roderiq
+		name = PRJ_King_Roderiq
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/PRJ/Portrait_PRJ_King_Roderiq.dds"
 			}
 			army = {
+				large = "gfx/leaders/PRJ/Portrait_PRJ_King_Roderiq_Army.dds"
 				small = "GFX_idea_SOV_lev_trotsky"
 			}
 		}
@@ -16,12 +17,13 @@ characters={
 			expire = "1980.12.24.23"
 		}
 		field_marshal = {
-			traits = { brilliant_strategist mobile_warfare_expert organizer politically_connected }
+			traits = { brilliant_strategist mobile_warfare_expert organizer politically_connected trickster }
 			skill = 5
 			attack_skill = 5
 			defense_skill = 5
 			planning_skill = 5
 			logistics_skill = 5
+			visible = { has_character_flag = PRJ_his_war } 
 		}		
 	}
 	PRJ_Amfri_Yuriye = {
@@ -152,7 +154,7 @@ characters={
 			idea_token = PRJ_prince_of_terror
 			allowed  = {original_tag  = PRJ}
 			traits  = {prince_of_terror}
-			ai_will_do  = {factor  = 2.000}
+			ai_will_do  = {factor  = 10.000}
 		}
 	}
 	PRJ_armaments_organizer = {
@@ -174,7 +176,7 @@ characters={
 			idea_token = PRJ_democratic_politician
 			allowed  = {original_tag  = PRJ}
 			traits  = {democratic_reformer}
-			ai_will_do  = {factor  = 2.000}
+			ai_will_do  = {factor  = 1.000}
 		}
 	}
 	PRJ_fascist_demagogue = {
@@ -185,7 +187,7 @@ characters={
 			idea_token = PRJ_fascist_demagogue
 			allowed  = {original_tag  = PRJ}
 			traits  = {fascist_demagogue}
-			ai_will_do  = {factor  = 2.000}
+			ai_will_do  = {factor  = 1.000}
 		}
 	}
 	PRJ_communist_revolutionary = {
@@ -196,7 +198,7 @@ characters={
 			idea_token = PRJ_communist_revolutionary
 			allowed  = {original_tag  = PRJ}
 			traits  = {communist_revolutionary}
-			ai_will_do  = {factor  = 2.000}
+			ai_will_do  = {factor  = 1.000}
 		}
 	}
 	PRJ_grand_fleet_proponent={
