@@ -40,6 +40,26 @@ ideas = {
 				defence = 0.1
 			}
 		}
+	
+	PRJ_core_priority = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.5
+				occupation_cost = 0.5
+			}
+		
+		}
+	PRJ_outer_priority = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				subjects_autonomy_gain = 0.5
+				master_ideology_drift = 0.03
+			}
+		}
 	}
 	political_advisor = {
 

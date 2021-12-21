@@ -538,7 +538,7 @@ focus_tree = {
 		id = PRJ_core_teritory
 		icon = GFX_
 		prerequisite = { focus = PRJ_warrior_king }
-
+		mutually_exclusive = { focus = PRJ_new_subjects }
 		x = -13
 		y = 7
 		relative_position_id = PRJ_abandon_ethiopia
@@ -566,7 +566,44 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = PRJ_core_priority
+		}
+	}
+	
+	focus = {
+		id = PRJ_new_subjects
+		icon = GFX_
+		prerequisite = { focus = PRJ_warrior_king }
+		mutually_exclusive = { focus = PRJ_core_teritory }
+		x = -11
+		y = 7
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = PRJ_outer_priority
+			add_war_support = -0.10
 		}
 	}
 	
@@ -934,7 +971,7 @@ focus_tree = {
 		id = PRJ_free_africa
 		icon = GFX_
 		prerequisite = { focus = PRJ_faith_and_arms focus = PRJ_prepare_for_more }
-		x = 0
+		x = 1
 		y = 7
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -969,7 +1006,7 @@ focus_tree = {
 		id = PRJ_client_sudan
 		icon = GFX_
 		prerequisite = { focus = PRJ_free_africa  }
-		x = -2
+		x = -1
 		y = 8
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1059,7 +1096,7 @@ focus_tree = {
 		id = PRJ_client_egypt
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_sudan  }
-		x = -2
+		x = -1
 		y = 10
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1190,7 +1227,7 @@ focus_tree = {
 		id = PRJ_client_tripoli
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_egypt  }
-		x = -4
+		x = -3
 		y = 11
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1308,7 +1345,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_egypt  }
 		mutually_exclusive = { focus = PRJ_client_palestine }
-		x = -2
+		x = -1
 		y = 11
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1371,7 +1408,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_egypt  }
 		mutually_exclusive = { focus = PRJ_client_israel }
-		x = -0
+		x = 1
 		y = 11
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1433,7 +1470,7 @@ focus_tree = {
 		id = PRJ_client_jordon
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_palestine focus = PRJ_client_israel }
-		x = -1 
+		x = 0
 		y = 12
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1494,7 +1531,7 @@ focus_tree = {
 		id = PRJ_client_syria
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_jordon }
-		x = -1
+		x = 0
 		y = 13
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1597,7 +1634,7 @@ focus_tree = {
 		id = PRJ_client_tunisia
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_tripoli  }
-		x = -4
+		x = -3
 		y = 12
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1710,7 +1747,7 @@ focus_tree = {
 		id = PRJ_client_morocco
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_tunisia  }
-		x = -4
+		x = -3
 		y = 13
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1798,7 +1835,7 @@ focus_tree = {
 		id = PRJ_client_congo
 		icon = GFX_
 		prerequisite = { focus = PRJ_free_africa }
-		x = 0
+		x = 1
 		y = 8
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -1887,7 +1924,7 @@ focus_tree = {
 		id = PRJ_client_chad
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_congo }
-		x = 0
+		x = 1
 		y = 9
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -2001,7 +2038,7 @@ focus_tree = {
 		id = PRJ_client_gabon #May he bless us with steam sales
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_chad }
-		x = 0
+		x = 1
 		y = 10
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -2097,7 +2134,7 @@ focus_tree = {
 		id = PRJ_client_tanzania 
 		icon = GFX_
 		prerequisite = { focus = PRJ_free_africa }
-		x = 2
+		x = 3
 		y = 8
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -2161,7 +2198,7 @@ focus_tree = {
 		id = PRJ_client_zambia
 		icon = GFX_
 		prerequisite = { focus = PRJ_client_tanzania }
-		x = 2
+		x = 3
 		y = 9
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -2246,7 +2283,7 @@ focus_tree = {
 	focus = {
 		id = PRJ_client_malawi 
 		prerequisite = { focus = PRJ_client_tanzania }
-		x = 4
+		x = 5
 		y = 9
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -2308,7 +2345,7 @@ focus_tree = {
 	focus = {
 		id = PRJ_client_zimbabwe 
 		prerequisite = { focus = PRJ_client_zambia }
-		x = 2
+		x = 3
 		y = 10
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -2370,7 +2407,7 @@ focus_tree = {
 	focus = {
 		id = PRJ_client_mozambique #Nya<3 (=^･ω･^=)
 		prerequisite = { focus = PRJ_client_malawi }
-		x = 4
+		x = 5
 		y = 10
 		relative_position_id = PRJ_abandon_ethiopia
 		
@@ -4357,7 +4394,6 @@ focus_tree = {
 	focus = {
 		id = PRJ_rubber_2
 		prerequisite = { focus = PRJ_rubber }
-
 		x = 4
 		y = 4
 		relative_position_id = PRJ_abandon_ethiopia
