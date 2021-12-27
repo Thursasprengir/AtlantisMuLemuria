@@ -1,24 +1,26 @@
-state=
-{
+
+state={
 	id=767
-	name="STATE_767" # previously North Darfur, now Zerzura
-	manpower = 8143
-	
-	state_category = rural
-	
-	history= {
+	name="STATE_767"
+
+	history={
 		victory_points = {
-			8103 9 #Zerzura
+			8103 9 
 		}
-		add_core_of = SUD
+		add_core_of = ZER
 		owner = ENG
 		buildings = {
 			infrastructure = 3
+
 		}
+
 	}
+
 	provinces={
-		7987 8103 
-		15040 15042
-		12836 4138 
+		4138 7987 8103 12836 15040 15042 15043 15044 15045 15046 
 	}
+	manpower=3358143
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

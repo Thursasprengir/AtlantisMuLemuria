@@ -1,0 +1,120 @@
+﻿capital = 1064
+
+oob = "PRJ_1936"
+
+set_research_slots = 3
+starting_train_buffer = 5
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	basic_train = 1
+	
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mobile_warfare = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		engine_tech_1 = 1
+		armor_tech_1 = 1
+	}
+}
+add_political_power = 200
+
+add_ideas = {
+	limited_conscription
+	PRJ_spy_defense
+}
+
+set_politics = {
+
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+		democratic = 15
+		fascism = 15
+		communism = 10
+			#banned = no #default is no
+		neutrality = 60
+		}
+
+set_convoys = 100
+
+recruit_character = PRJ_King_Roderiq
+recruit_character = PRJ_Amfri_Yuriye
+recruit_character = PRJ_Warqneh_Hassbah
+recruit_character = PRJ_Lexande_Melaqe
+recruit_character = PRJ_Qaleb_Shada
+
+recruit_character = PRJ_silent_workhorse
+recruit_character = PRJ_war_industrialist
+recruit_character = PRJ_backroom_backstabber
+recruit_character = PRJ_prince_of_terror
+recruit_character = PRJ_armaments_organizer
+recruit_character = PRJ_democratic_politician
+recruit_character = PRJ_fascist_demagogue
+recruit_character = PRJ_communist_revolutionary
+recruit_character = PRJ_grand_fleet_proponent
+recruit_character = PRJ_victory_through_airpower
+recruit_character = PRJ_rocket_scientist
+recruit_character = PRJ_naval_theorist
+recruit_character = PRJ_military_theorist
+recruit_character = PRJ_army_chief_morale_2
+recruit_character = PRJ_army_chief_offensive_2
+recruit_character = PRJ_army_chief_drill_2
+recruit_character = PRJ_army_chief_planning_2
+recruit_character = PRJ_navy_naval_air_defense_2
+recruit_character = PRJ_navy_fleet_logistics_3
+recruit_character = PRJ_navy_chief_decisive_battle_3
+recruit_character = PRJ_navy_chief_maneuver_3
+recruit_character = PRJ_air_strategic_bombing_2
+recruit_character = PRJ_air_chief_old_guard
+recruit_character = PRJ_air_strategic_bombing_1
+recruit_character = PRJ_navy_screen_2	
+recruit_character = PRJ_army_regrouping_1
+recruit_character = PRJ_navy_capital_ship_3
+recruit_character = PRJ_air_naval_strike_1
+recruit_character = PRJ_navy_carrier_2
+
+create_equipment_variant = {
+	name = "Neta-Axiqan"
+	type = light_tank_chassis_0
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 1
+		tank_nsb_armor_upgrade = 2
+	}
+}
