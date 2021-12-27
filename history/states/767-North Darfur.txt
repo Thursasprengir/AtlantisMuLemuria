@@ -1,20 +1,24 @@
 state=
 {
 	id=767
-	name="STATE_767" # North Darfur
+	name="STATE_767" # previously North Darfur, now Zerzura
 	manpower = 8143
 	
-	state_category = wasteland
-	impassable = yes
+	state_category = rural
 	
 	history= {
+		victory_points = {
+			8103 9 #Zerzura
+		}
 		add_core_of = SUD
 		owner = ENG
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 		}
 	}
 	provinces={
-		7987 8103 10900
+		7987 8103 
+		15040 15042
+		12836 4138 
 	}
 }
