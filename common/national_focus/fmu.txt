@@ -633,7 +633,28 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#fleet larger than AST AND NZD
+			AND = {
+			naval_strength_comparison = {
+						other = AST
+						ratio > 0.60
+						sub_unit_def_weights = {
+							carrier = 0.25
+							battleship = 1
+							battle_cruiser = 0.8
+							heavy_cruiser = 0.5
+						}
+					}
+			naval_strength_comparison = {
+						other = NZL
+						ratio > 0.60
+						sub_unit_def_weights = {
+							carrier = 0.25
+							battleship = 1
+							battle_cruiser = 0.8
+							heavy_cruiser = 0.5
+						}
+					}
+					}
 		}
 
 		#bypass = {
