@@ -360,10 +360,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_to_tech_sharing_group = ger_dem_research
+			add_to_tech_sharing_group = ger_fmu_research
 			every_other_country = {
 				limit = { is_in_faction_with = GER }
-				add_to_tech_sharing_group = ger_dem_research 
+				add_to_tech_sharing_group = ger_fmu_research 
 			}
 		}
 	}
@@ -667,6 +667,7 @@ focus = {
 
 		completion_reward = {
 			add_ideas = FMU_austral_cordination
+			set_global_flag = unternehmen_lowenherz
 		}
 	}
 
@@ -847,7 +848,7 @@ focus = {
 		y = 9
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { 
-			focus = FMU_success_breeds_success
+			focus = FMU_austral_ocean
 				}
 
 		cost = 10
@@ -856,7 +857,21 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#fleet larger than AST and NZD have fewer than X number of capital ships
+			has_global_flag = unternehmen_lowenherz			
+			AND = {
+				AST = {
+					has_navy_size = {
+								type = capital_ship
+								size < 2 
+						}
+					}
+				NZL = {
+					has_navy_size = {
+								type = capital_ship
+								size < 1
+						}
+					}
+				}
 		}
 
 		#bypass = {
@@ -2882,7 +2897,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = FMU_white_imigration
+			add_ideas = FMU_white_immigration_laws
 			#raise world tension #K:why? its imigration not industrial genocide
 			#increase core manpower
 			#decrease non-core manpower
