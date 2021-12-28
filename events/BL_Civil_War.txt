@@ -66,6 +66,7 @@ country_event = {
 		set_country_flag = BL_civil_war
 		hidden_effect = {set_country_flag = BLM_arcadia_attack}
 		release = ARC
+		hidden_effect = {ARC = {can_join_factions = no}}
 		declare_war_on = {
 			target = ARC
 			type = annex_everything
@@ -149,6 +150,7 @@ country_event = {
 			set_country_flag = BLM_werreurbro_attack
 		}
 		release = WRB
+		hidden_effect = {WRB = {can_join_factions = no}}
 		declare_war_on = {
 			target = WRB
 			type = annex_everything
@@ -246,6 +248,7 @@ country_event = {
 			set_country_flag = BLM_audenshyre_attack
 		}
 		release = AUD
+		hidden_effect = {AUD = {can_join_factions = no}}
 		declare_war_on = {
 			target = AUD
 			type = annex_everything
@@ -293,6 +296,7 @@ country_event = {
 			set_country_flag = BLM_qlach_attack
 		}
 		release = QLA
+		hidden_effect = {QLA = {can_join_factions = no}}
 		declare_war_on = {
 			target = QLA
 			type = annex_everything
@@ -369,6 +373,7 @@ country_event = {
 		}
 		set_country_flag = BLM_WUL_attack}
 		release = WUL
+		hidden_effect = {WUL = {can_join_factions = no}}
 		declare_war_on = {
 			target = WUL
 			type = annex_everything
@@ -420,6 +425,7 @@ country_event = {
 			}
 		WUL = {
 		release = FAN
+		hidden_effect = {FAN = {can_join_factions = no}}
 		declare_war_on = {
 			target = FAN
 			type = annex_everything
@@ -486,6 +492,7 @@ country_event = {
 		ai_chance = {factor = 1}
 		hidden_effect = {set_country_flag = BLM_FLM_attack}
 		release = FLM
+		hidden_effect = {FLM = {can_join_factions = no}}
 		declare_war_on = {
 			target = FLM
 			type = annex_everything
@@ -550,6 +557,7 @@ country_event = {
 		}
 		}
 		release = FCT
+		hidden_effect = {FCT = {can_join_factions = no}}
 		FCT = { 
 			load_oob = "FCT_freedom"
 			}
@@ -577,6 +585,14 @@ country_event = {
 			target = RTR
 			transfer_troops = yes
 		}
+		hidden_effect = {ARC = {can_join_factions = yes}}
+		hidden_effect = {WRB = {can_join_factions = yes}}
+		hidden_effect = {AUD = {can_join_factions = yes}}
+		hidden_effect = {QLA = {can_join_factions = yes}}
+		hidden_effect = {FAN = {can_join_factions = yes}}
+		hidden_effect = {WUL = {can_join_factions = yes}}
+		hidden_effect = {FLM = {can_join_factions = yes}}
+		hidden_effect = {FCT = {can_join_factions = yes}}
 		hidden_effect = {
 			country_event = {id = blm.16 days = 15 random = 300}}
 		}
