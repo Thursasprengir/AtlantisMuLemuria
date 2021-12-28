@@ -427,13 +427,14 @@ ideas = {
 			}
 
 			modifier = {
-				add_stability = -0.2
+				stability_factor = -0.2
 			}
 
 			
 			removal_cost = -1	
 
 		}
+		
 		FMU_boat_production = {
 
 
@@ -614,6 +615,46 @@ ideas = {
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
+			}
+
+			
+			removal_cost = -1	
+
+		}
+
+		FMU_white_immigration_laws = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				#add recruitable population
+			}
+
+			
+			removal_cost = -1	
+
+		}
+
+		FMU_ache_of_war = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
 			}
 
 			
