@@ -83,7 +83,7 @@ country_event = {
 				}
 			}
 		ARC = {load_oob = "ARC_rebellion"}}
-		hidden_effect = {country_event = {id = blm.5 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.5 days = 45 random = 300}}
 	}
 	option = {
 		name = blm.4.b #Allow Them Some Independence
@@ -121,7 +121,7 @@ country_event = {
 		}
 		set_country_leader_ideology = neutrality
 		hidden_effect = {
-			country_event = {id = blm.6 days = 60 random = 300}
+			country_event = {id = blm.6 days = 90 random = 300}
 			country_event = {id = blm.60 days = 15 random = 300}
 		}
 	}
@@ -166,7 +166,7 @@ country_event = {
 			remove_state_core = 1051
 			remove_state_core = 1052
 		}
-		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
 	}
 	option = {
 		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
@@ -187,7 +187,7 @@ country_event = {
 			remove_state_core = 1051
 			remove_state_core = 1052
 		}
-		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
 		set_country_flag = BLM_wimp_out_werrerbro
 	}
 	option = {
@@ -209,7 +209,7 @@ country_event = {
 			remove_state_core = 1051
 			remove_state_core = 1052
 		}
-		hidden_effect = {country_event = {id = blm.7 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
 		set_country_flag = BLM_wimp_out_werrerbro
 	}
 }
@@ -229,7 +229,7 @@ country_event = {
 			target = AUD
 		}
 		hidden_effect = {AUD = {load_oob = "AUD_rebellion"}}
-		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
 	}
 	option = {
 		name = blm.7.b #Kill them all (Attack)
@@ -257,7 +257,7 @@ country_event = {
 		hidden_effect = {
 			AUD = {load_oob = "AUD_rebellion"}
 		}
-		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
 	}
 	option = {
 		name = blm.7.c #Grant Audenshyrian Independence
@@ -267,7 +267,7 @@ country_event = {
 		hidden_effect = {
 			AUD = {load_oob = "AUD_rebellion"}
 		}
-		hidden_effect = {country_event = {id = blm.8 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
 		set_country_flag = BLM_wimp_out_audenshyre
 	}
 }
@@ -306,7 +306,7 @@ country_event = {
 			QLA = {load_oob = "QLA_rebellion"}
 			remove_state_core = 986
 		}
-		hidden_effect = {country_event = {id = blm.9 days = 15 random = 300}}}
+		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}}
 	option = {
 		name = blm.8.b #Allow the Natives Freedom
 		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
@@ -317,7 +317,7 @@ country_event = {
 		hidden_effect = {
 			QLA = {load_oob = "QLA_rebellion"}
 			remove_state_core = 986}
-		hidden_effect = {country_event = {id = blm.9 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}
 		set_country_flag = BLM_wimp_out_qlach
 		}
 	option = {
@@ -331,7 +331,7 @@ country_event = {
 			QLA = {load_oob = "QLA_rebellion"}
 			remove_state_core = 986
 		}
-		hidden_effect = {country_event = {id = blm.9 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}
 		set_country_flag = BLM_wimp_out_qlach
 	}
 }
@@ -353,7 +353,7 @@ country_event = {
 				value = 100
 			}
 		}
-		hidden_effect = {country_event = {id = blm.10 days = 15 random = 300}}}
+		hidden_effect = {country_event = {id = blm.10 days = 150 random = 300}}}
    }
 	
 country_event = {
@@ -387,7 +387,7 @@ country_event = {
 			remove_state_core = 979
 			remove_state_core = 978
 		}
-		hidden_effect = {country_event = {id = blm.11 days = 15 random = 300}}}
+		hidden_effect = {country_event = {id = blm.11 days = 150 random = 300}}}
 	option = {
 		name = blm.10.b #Acknowledge the Workers Union
 		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
@@ -399,7 +399,7 @@ country_event = {
 			load_oob = "WUL_rebellion"
 			}
 		}
-		hidden_effect = {country_event = {id = blm.11 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.11 days = 150 random = 300}}
 		set_country_flag = BLM_wimp_out_workersunion
 		}
    }
@@ -447,7 +447,7 @@ country_event = {
 				has_country_flag = BLM_audenshyre_attack
 					}
 				}
-			country_event = {id = blm.12 days = 15 random = 300}}
+			country_event = {id = blm.12 days = 150 random = 300}}
 		}
    }
 	
@@ -471,7 +471,7 @@ country_event = {
 				has_country_flag = diminished_dominion
 				}
 			}
-			country_event = {id = blm.13 days = 15 random = 300}}
+			country_event = {id = blm.13 days = 150 random = 300}}
 		}
    } 
 	
@@ -516,7 +516,7 @@ country_event = {
 			remove_state_core = 1005
 			remove_state_core = 1009
 			remove_state_core = 1012
-			country_event = {id = blm.14 days = 15 random = 300}
+			country_event = {id = blm.14 days = 60 random = 300}
 		}
 	}
 	option = {
@@ -535,7 +535,7 @@ country_event = {
 					has_country_flag = diminished_dominion
 					}
 				}
-			country_event = {id = blm.14 days = 15 random = 300}}
+			country_event = {id = blm.14 days = 60 random = 300}}
 		}
    }
 	
@@ -566,7 +566,7 @@ country_event = {
 		remove_state_core = 975
 		}
 		ENG = {puppet = FCT}
-		hidden_effect = {country_event = {id = blm.15 days = 15 random = 300}}
+		hidden_effect = {country_event = {id = blm.15 days = 350 random = 300}}
 		}
    }
 	
@@ -576,6 +576,20 @@ country_event = {
 	desc = blm.15.d
 	#picture = 
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			OR = {
+			has_war_with = ARC
+			has_war_with = WRB
+			has_war_with = AUD
+			has_war_with = QLA
+			has_war_with = FAN
+			has_war_with = WUL
+			has_war_with = FLM
+			has_war_with = FCT
+			}
+		}
+	}
 	option = {
 		name = blm.15.a #Finally, some peace!
 		add_stability = 0.05
@@ -594,7 +608,7 @@ country_event = {
 		hidden_effect = {FLM = {can_join_factions = yes}}
 		hidden_effect = {FCT = {can_join_factions = yes}}
 		hidden_effect = {
-			country_event = {id = blm.16 days = 15 random = 300}}
+			country_event = {id = blm.16 days = 30 random = 300}}
 		}
    }
 	
