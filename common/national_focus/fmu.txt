@@ -16,7 +16,7 @@ focus_tree = {
 
 focus = {
 		id = FMU_reject_versailles
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		mutually_exclusive = {
 			focus = FMU_renegotiate_versailles
 		}
@@ -2123,7 +2123,7 @@ focus = {
 
 focus = {
 		id = FMU_integrate_manu
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_CZE_german_puppet
 		x = 12
 		y = 1
 		relative_position_id = FMU_reject_versailles
@@ -2161,7 +2161,7 @@ focus = {
 
 focus = {
 		id = FMU_diplomatic_outreach
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_continuous_increase_nu
 		x = 15
 		y = 1
 		relative_position_id = FMU_reject_versailles
@@ -2194,7 +2194,7 @@ focus = {
 #Dont know why no work
 focus = {
 		id = FMU_european_section
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 13
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -2229,7 +2229,7 @@ focus = {
 
 focus = {
 		id = FMU_muan_section
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 15
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -2264,7 +2264,7 @@ focus = {
 
 focus = {
 		id = FMU_american_section
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 17
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -2305,7 +2305,7 @@ focus = {
 
 focus = {
 		id = FMU_charm_offensive
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_major_alliance
 		x = 14
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -2342,7 +2342,7 @@ focus = {
 
 focus = {
 		id = FMU_velvet_glove_iron_fist
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_dangerous_deal
 		x = 16
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -2382,7 +2382,7 @@ focus = {
 
 	focus = {
 		id = FMU_renegotiate_versailles
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_hol_the_foundations_of_defense
 		mutually_exclusive = {
 			focus = FMU_reject_versailles
 		}
@@ -2415,7 +2415,7 @@ focus = {
 
 	focus = {
 		id = FMU_modern_germanic_state
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = FMU_renegotiate_versailles }
 		mutually_exclusive = {
 			focus = FMU_twee_talen
@@ -2455,7 +2455,7 @@ focus = {
 
 	focus = {
 		id = FMU_twee_talen
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = FMU_renegotiate_versailles }
 		mutually_exclusive = {
 			focus = FMU_modern_germanic_state
@@ -2491,7 +2491,7 @@ focus = {
 
 	focus = {
 		id = FMU_heartland_development
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construction
 		prerequisite = {
 			focus = FMU_modern_germanic_state
 			focus = FMU_twee_talen }
@@ -2551,7 +2551,7 @@ focus = {
 
 	focus = {
 		id = FMU_compensate_landowners
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_continuous_increase_nu
 		prerequisite = { focus = FMU_heartland_development }
 		x = -1
 		y = 3
@@ -2650,7 +2650,7 @@ focus = {
 
 	focus = {
 		id = FMU_new_constitution
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = FMU_reform_voting_laws }
 		x = 0
 		y = 5
@@ -2777,7 +2777,7 @@ focus = {
 
 	focus = {
 		id = FMU_install_noble_houses
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = FMU_new_constitution }
 		x = 1
 		y = 6
@@ -2844,7 +2844,7 @@ focus = {
 
 	focus = {
 		id = FMU_elect_kaiser
-		icon = GFX_
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = FMU_install_noble_houses }
 		prerequisite = { focus = FMU_strengthen_central }
 		x = 0
@@ -2939,7 +2939,7 @@ focus = {
 
 	focus = {
 		id = FMU_factories_of_gold
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = {
 			focus = FMU_white_immigration
 			focus = FMU_encourage_settlement }
@@ -2975,7 +2975,7 @@ focus = {
 
 	focus = {
 		id = FMU_tapestry_many_colors
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_hol_the_fourth_ally
 		prerequisite = { focus = FMU_renegotiate_versailles }
 		mutually_exclusive = {
 			focus = FMU_modern_germanic_state
@@ -3027,7 +3027,7 @@ focus = {
 
 	focus = {
 		id = FMU_commit_to_neutrality
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = FMU_tapestry_many_colors}
 		mutually_exclusive = {
 			focus = FMU_path_of_socialism
@@ -3060,7 +3060,7 @@ focus = {
 
 	focus = {
 		id = FMU_increase_product_profits
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construction
 		prerequisite = { focus = FMU_commit_to_neutrality}
 		mutually_exclusive = {
 			focus = FMU_path_of_socialism
@@ -3154,7 +3154,7 @@ focus = {
 
 	focus = {
 		id = FMU_regional_development_authorities
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = FMU_tapestry_many_colors}
 		x = 8
 		y = 3
@@ -3252,7 +3252,7 @@ focus = {
 
 	focus = {
 		id = FMU_womens_suffrage
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_women_in_military
 		prerequisite = {
 			focus = FMU_cont_democratic_reforms
 			focus = FMU_unite_with_comintern
@@ -3287,7 +3287,7 @@ focus = {
 
 	focus = {
 		id = FMU_path_of_socialism
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = FMU_tapestry_many_colors}
 		mutually_exclusive = {
 			focus = FMU_commit_to_neutrality
@@ -3319,7 +3319,7 @@ focus = {
 
 	focus = {
 		id = FMU_soviet_brethren
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_SOV_the_supreme_soviet
 		prerequisite = { focus = FMU_path_of_socialism}
 		mutually_exclusive = {
 			focus = FMU_muan_socialism
@@ -3356,7 +3356,7 @@ focus = {
 
 	focus = {
 		id = FMU_unite_with_comintern
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = FMU_soviet_brethren}
 		x = 11
 		y = 4
@@ -3385,7 +3385,7 @@ focus = {
 
 	focus = {
 		id = FMU_muan_socialism
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = FMU_path_of_socialism}
 		mutually_exclusive = {
 			focus = FMU_soviet_brethren
@@ -3427,7 +3427,7 @@ focus = {
 
 	focus = {
 		id = FMU_educate_muan_brethren
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_socialist_science
 		prerequisite = { focus = FMU_muan_socialism}
 		x = 13
 		y = 4
@@ -3462,7 +3462,7 @@ focus = {
 
 	focus = {
 		id = FMU_peoples_brigades
-		icon = GFX_
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = FMU_path_of_socialism}
 		x = 15
 		y = 3
@@ -3529,7 +3529,7 @@ focus = {
 
 	focus = {
 		id = FMU_int_volunteer_brigades
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = FMU_peoples_brigades}
 		x = 15
 		y = 4
@@ -3592,7 +3592,7 @@ focus = {
 
 	focus = {
 		id = FMU_ache_of_war
-		icon = GFX_
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = FMU_strengthen_ties}
 		x = 6
 		y = 6
@@ -3623,7 +3623,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_baraga
-		icon = GFX_
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_ache_of_war}
 		x = 4
 		y = 7
@@ -3653,7 +3653,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_tiquea
-		icon = GFX_
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_ache_of_war}
 		x = 6
 		y = 7
@@ -3683,7 +3683,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_canaje
-		icon = GFX_
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_ache_of_war}
 		x = 8
 		y = 7
@@ -3713,7 +3713,7 @@ focus = {
 
 	focus = {
 		id = FMU_tech_sharing
-		icon = GFX_
+		icon = GFX_goal_continuous_research
 		prerequisite = { focus = FMU_ache_of_war}
 		x = 10
 		y = 7
@@ -3743,7 +3743,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_cdm
-		icon = GFX_
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_influence_baraga}
 		prerequisite = { focus = FMU_influence_tiquea}
 		x = 5
@@ -3774,7 +3774,7 @@ focus = {
 
 	focus = {
 		id = FMU_influence_TOD
-		icon = GFX_
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_influence_canaje}
 		prerequisite = { focus = FMU_influence_tiquea}
 		x = 7
@@ -3807,7 +3807,7 @@ focus = {
 
 	focus = {
 		id = FMU_prepare_revolutionary_front
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = {
 			focus = FMU_unite_with_comintern
 			focus = FMU_educate_muan_brethren
@@ -3841,7 +3841,7 @@ focus = {
 
 	focus = {
 		id = FMU_discuss_with_SOV
-		icon = GFX_
+		icon = GFX_focus_SOV_ally_bukharinists
 		prerequisite = { focus = FMU_unite_with_comintern }
 		prerequisite = { focus = FMU_prepare_revolutionary_front }
 		x = 11
@@ -3905,7 +3905,7 @@ focus = {
 
 	focus = {
 		id = FMU_for_the_revolution
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		prerequisite = {
 			focus = FMU_discuss_with_SOV
 			focus = FMU_finalize_plan }
@@ -3965,7 +3965,7 @@ focus = {
 
 	focus = {
 		id = FMU_revolution_by_word
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_eng_global_defense
 		prerequisite = { focus = FMU_for_the_revolution }
 		mutually_exclusive = {
 			focus = FMU_revolution_by_sword
@@ -4002,7 +4002,7 @@ focus = {
 
 	focus = {
 		id = FMU_revolution_by_sword
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = FMU_for_the_revolution }
 		mutually_exclusive = {
 			focus = FMU_revolution_by_word
@@ -4043,7 +4043,7 @@ focus = {
 
 	focus = {
 		id = FMU_law_14056
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_military_mission
 		x = 26
 		y = 0
 		relative_position_id = FMU_renegotiate_versailles
@@ -4074,7 +4074,7 @@ focus = {
 
 	focus = {
 		id = FMU_clause_a
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = FMU_law_14056 }
 		x = -3
 		y = 1
@@ -4112,7 +4112,7 @@ focus = {
 
 	focus = {
 		id = FMU_commerce_focus
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = FMU_clause_a }
 		mutually_exclusive = {
 			focus = FMU_surface_fleet_focus
@@ -4157,7 +4157,7 @@ focus = {
 
 	focus = {
 		id = FMU_defend_shipping
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = FMU_commerce_focus }
 		x = -6
 		y = 3
@@ -4198,7 +4198,7 @@ focus = {
 
 	focus = {
 		id = FMU_control_shipping
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = FMU_commerce_focus }
 		x = -4
 		y = 3
@@ -4234,7 +4234,7 @@ focus = {
 
 	focus = {
 		id = FMU_surface_fleet_focus
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = { focus = FMU_clause_a }
 		mutually_exclusive = {
 			focus = FMU_commerce_focus
@@ -4276,7 +4276,7 @@ focus = {
 
 	focus = {
 		id = FMU_strike_fleets
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = FMU_surface_fleet_focus }
 		mutually_exclusive = {
 			focus = FMU_theater_groups
@@ -4319,7 +4319,7 @@ focus = {
 
 	focus = {
 		id = FMU_theater_groups
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = FMU_surface_fleet_focus }
 		mutually_exclusive = {
 			focus = FMU_strike_fleets
@@ -4367,7 +4367,7 @@ focus = {
 
 	focus = {
 		id = FMU_uboat_docks
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = {
 			focus = FMU_control_shipping
 			focus = FMU_strike_fleets}
@@ -4413,7 +4413,7 @@ focus = {
 
 	focus = {
 		id = FMU_clause_b
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = FMU_law_14056 }
 		x = 3
 		y = 1
@@ -4457,7 +4457,7 @@ focus = {
 
 	focus = {
 		id = FMU_addendum_9f
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = FMU_clause_b }
 		x = 3
 		y = 2
@@ -4491,7 +4491,7 @@ focus = {
 
 	focus = {
 		id = FMU_power_projection
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = FMU_theater_groups }
 		prerequisite = { focus = FMU_addendum_9f }
 		x = 1
@@ -4530,7 +4530,7 @@ focus = {
 
 	focus = {
 		id = FMU_luftaufklarung
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = FMU_addendum_9f }
 		x = 3
 		y = 3
@@ -4579,7 +4579,7 @@ focus = {
 
 	focus = {
 		id = FMU_jagdflugzeuge
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = FMU_addendum_9f }
 		x = 5
 		y = 3
@@ -4613,7 +4613,7 @@ focus = {
 
 	focus = {
 		id = FMU_nat_airbase_production
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = FMU_luftaufklarung }
 		prerequisite = { focus = FMU_jagdflugzeuge }
 		x = 4
@@ -4657,7 +4657,7 @@ focus = {
 
 	focus = {
 		id = FMU_naval_air_designs
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = FMU_jagdflugzeuge }
 		prerequisite = { focus = FMU_cas_tac_designs}
 		x = 6
@@ -4692,7 +4692,7 @@ focus = {
 
 	focus = {
 		id = FMU_long_range_bomber
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = FMU_nat_airbase_production }
 		x = 4
 		y = 5
@@ -4726,7 +4726,7 @@ focus = {
 
 	focus = {
 		id = FMU_cas_tac_designs
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_generic_aircraft_production
 		prerequisite = { focus = FMU_addendum_9f }
 		x = 7
 		y = 3
@@ -4766,7 +4766,7 @@ focus = {
 
 	focus = {
 		id = FMU_raketentechnik
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_rocketry
 		prerequisite = { focus = FMU_addendum_9f }
 		x = 9
 		y = 3
@@ -4800,7 +4800,7 @@ focus = {
 
 	focus = {
 		id = FMU_advanced_rocketry
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_rocketry
 		prerequisite = { focus = FMU_raketentechnik}
 		x = 9
 		y = 4
@@ -4834,7 +4834,7 @@ focus = {
 
 	focus = {
 		id = FMU_early_ramjet_engines
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_eng_special_air_service
 		prerequisite = { focus = FMU_advanced_rocketry }
 		x = 9
 		y = 5
@@ -4869,7 +4869,7 @@ focus = {
 
 	focus = {
 		id = FMU_high_alt_spy_planes
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = FMU_luftaufklarung }
 		prerequisite = { focus = FMU_early_ramjet_engines }
 		x = 3
@@ -4943,7 +4943,7 @@ focus = {
 
 	focus = {
 		id = FMU_crucial_industry
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = FMU_clause_b }
 		x = 12
 		y = 2
@@ -5000,7 +5000,7 @@ focus = {
 
 	focus = {
 		id = FMU_invite_civ_designers
-		icon = GFX_
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = FMU_crucial_industry }
 		x = 12
 		y = 3
@@ -5029,7 +5029,7 @@ focus = {
 
 	focus = {
 		id = FMU_nationalize_uli_traktor
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus = FMU_invite_civ_designers }
 		mutually_exclusive = {
 			focus = FMU_divert_engines
@@ -5076,7 +5076,7 @@ focus = {
 
 	focus = {
 		id = FMU_zilver_industrieel
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_construction
 		prerequisite = { focus = FMU_nationalize_uli_traktor }
 		x = 11
 		y = 5
@@ -5133,7 +5133,7 @@ focus = {
 
 	focus = {
 		id = FMU_divert_engines
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = FMU_invite_civ_designers }
 		mutually_exclusive = {
 			focus = FMU_nationalize_uli_traktor
