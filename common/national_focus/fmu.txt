@@ -44,55 +44,55 @@ focus = {
 			add_stability = -0.15
 			remove_ideas = FMU_sanctions
 			ENG = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
 			}
 			AST = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
 			}
 			BLM = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
 			}
 			NZL = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
 			}
 			SAF = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
 			}
 			RAJ = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
 			}
 			FRA = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
 			}
 			ATL = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
 			}
 			USA = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_broke_versailles
 				}
@@ -127,12 +127,12 @@ focus = {
 
 		completion_reward = {
 			GER = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_shared_heritage
 				}
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 					target = GER
 					modifier = FMU_shared_heritage
 				}
@@ -172,7 +172,7 @@ focus = {
 
 focus = {
 		id = FMU_sudencreutz_volk
-		icon = GFX_
+		icon = GFX_goal_generic_major_alliance
 		x = -1
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -205,7 +205,7 @@ focus = {
 
 focus = {
 		id = FMU_federation_of_brothers
-		icon = GFX_
+		icon = GFX_goal_generic_alliance
 		x = 1
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -238,7 +238,7 @@ focus = {
 
 focus = {
 		id = FMU_emphasize_german_identity
-		icon = GFX_
+		icon = GFX_focus_ger_reichskommisariats
 		x = -3
 		y = 4
 		relative_position_id = FMU_reject_versailles
@@ -270,7 +270,7 @@ focus = {
 
 	focus = {
 		id = FMU_nur_deutsch
-		icon = GFX_
+		icon = GFX_focus_generic_strike_at_democracy1
 		x = -3
 		y = 5
 		relative_position_id = FMU_reject_versailles
@@ -427,7 +427,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			936 = { 
+			936 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -512,13 +512,13 @@ focus = {
 		x = -3
 		y = 7
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_pitkairn_schiffwerke
 				}
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_ship_bounties
 				}
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_weapons_drills
 				}
 
@@ -550,13 +550,13 @@ focus = {
 		x = 0
 		y = 7
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_pitkairn_schiffwerke
 				}
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_ship_bounties
 				}
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_weapons_drills
 				}
 
@@ -589,7 +589,7 @@ focus = {
 		x = -3
 		y = 8
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_success_breeds_success
 				}
 
@@ -623,7 +623,7 @@ focus = {
 		x = 0
 		y = 8
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_success_breeds_success
 				}
 
@@ -677,7 +677,7 @@ focus = {
 		x = -3
 		y = 9
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_schimmelpferds_address
 				}
 
@@ -710,7 +710,7 @@ focus = {
 		x = -3
 		y = 10
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_defend_defend_defend
 				}
 
@@ -743,7 +743,7 @@ focus = {
 		x = 0
 		y = 9
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_austral_ocean
 				}
 
@@ -766,12 +766,12 @@ focus = {
 
 		completion_reward = {
 			#remove 300 convoys from NZL and give to FMU
-			every_country = { 
+			every_country = {
 				has_war_with = FMU
 					add_opinion_modifier = {
 					target = ROOT
 					modifier = FMU_modern_pirates
-					}	
+					}
 			}
 			#"Modern Day Piracy" relations modifier with all enemy nations
 		}
@@ -779,11 +779,11 @@ focus = {
 
 focus = {
 		id = FMU_pacific_dominance
-		icon = GFX_
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = -1
 		y = 10
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_wellington_raid
 				}
 
@@ -811,11 +811,11 @@ focus = {
 
 focus = {
 		id = FMU_southern_atlantic_gambit
-		icon = GFX_
+		icon = GFX_goal_generic_navy_submarine
 		x = 1
 		y = 10
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_wellington_raid
 				}
 
@@ -843,11 +843,11 @@ focus = {
 
 focus = {
 		id = FMU_unternehmen_lowenherz
-		icon = GFX_
+		icon = GFX_goal_generic_navy_battleship
 		x = 2
 		y = 9
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_austral_ocean
 				}
 
@@ -857,12 +857,12 @@ focus = {
 			factor = 40
 		}
 		available = {
-			has_global_flag = unternehmen_lowenherz			
+			has_global_flag = unternehmen_lowenherz
 			AND = {
 				AST = {
 					has_navy_size = {
 								type = capital_ship
-								size < 2 
+								size < 2
 						}
 					}
 				NZL = {
@@ -897,7 +897,7 @@ focus = {
 
 focus = {
 		id = FMU_our_land
-		icon = GFX_
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 5
 		y = 5
 		relative_position_id = FMU_reject_versailles
@@ -927,11 +927,11 @@ focus = {
 			add_ideas = FMU_army_production
 		}
 	}
-	
+
 
 focus = {
 		id = FMU_never_a_neutral_nation
-		icon = GFX_
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		x = 5
 		y = 6
 		relative_position_id = FMU_reject_versailles
@@ -956,20 +956,20 @@ focus = {
 
 		completion_reward = {
 			add_war_support = .20
-			every_neighbor_country = { 
+			every_neighbor_country = {
 					add_opinion_modifier = {
 					target = root
 					modifier = FMU_expansion_plans
-					}	
+					}
 			}
 			#bonus resource production, reduce resources to market #to much
 			add_ideas = FMU_our_land_1
 		}
-	}	
+	}
 
 focus = {
 		id = FMU_prepare_take_southern_coasts
-		icon = GFX_
+		icon = GFX_goal_generic_position_armies
 		x = 3
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -1003,11 +1003,11 @@ focus = {
 			remove_ideas = FMU_our_land_1
 			add_ideas = FMU_our_land_2
 		}
-	}	
+	}
 
 focus = {
 		id = FMU_spine_of_the_continent
-		icon = GFX_
+		icon = GFX_focus_ger_oppose_hitler
 		x = 5
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -1039,14 +1039,14 @@ focus = {
 				target = GOP
 				}
 			remove_ideas = FMU_our_land_1
-			add_ideas = FMU_our_land_2			
+			add_ideas = FMU_our_land_2
 				#bonus to "Our Land" modifier
 		}
 	}
 
 focus = {
 		id = FMU_northeastern_offensive
-		icon = GFX_
+		icon = GFX_goal_generic_occupy_start_war
 		x = 7
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -1078,14 +1078,14 @@ focus = {
 				target = TIQ
 				}
 			remove_ideas = FMU_our_land_1
-			add_ideas = FMU_our_land_2	
+			add_ideas = FMU_our_land_2
 			#bonus to "Our Land" modifier
 		}
 	}
 
 focus = {
 		id = FMU_western_offensive
-		icon = GFX_
+		icon = GFX_goal_generic_axis_build_infantry
 		x = 3
 		y = 8
 		relative_position_id = FMU_reject_versailles
@@ -1134,7 +1134,7 @@ focus = {
 
 focus = {
 		id = FMU_mines_of_baraga
-		icon = GFX_
+		icon = GFX_goal_generic_demand_territory
 		x = 5
 		y = 8
 		relative_position_id = FMU_reject_versailles
@@ -1161,7 +1161,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+
 			create_wargoal = {
 				type = annex_everything
 				target = BRG
@@ -1174,7 +1174,7 @@ focus = {
 
 focus = {
 		id = FMU_unternehmen_faust
-		icon = GFX_
+		icon = GFX_goal_generic_major_war
 		x = 5
 		y = 9
 		relative_position_id = FMU_reject_versailles
@@ -1213,7 +1213,7 @@ focus = {
 
 focus = {
 		id = FMU_unternehmen_kreissage
-		icon = GFX_
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 7
 		y = 8
 		relative_position_id = FMU_reject_versailles
@@ -1340,20 +1340,20 @@ focus = {
 			#repair bonus
 		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	#industry#
 
 focus = {
 		id = FMU_develop_west_coast
-		icon = GFX_
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 5
 		y = 1
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_reject_versailles
 			focus = FMU_renegotiate_versailles
 				}
@@ -1376,7 +1376,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			929 = { 
+			929 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1390,7 +1390,7 @@ focus = {
 					}
 				}
 			}
-			930 = { 
+			930 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1404,7 +1404,7 @@ focus = {
 					}
 				}
 			}
-			931 = { 
+			931 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1418,7 +1418,7 @@ focus = {
 					}
 				}
 			}
-			927 = { 
+			927 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1437,11 +1437,11 @@ focus = {
 
 focus = {
 		id = FMU_develop_east_coast
-		icon = GFX_
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 7
 		y = 1
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_reject_versailles
 			focus = FMU_renegotiate_versailles
 				}
@@ -1464,7 +1464,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			936 = { 
+			936 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1478,7 +1478,7 @@ focus = {
 					}
 				}
 			}
-			935 = { 
+			935 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1492,7 +1492,7 @@ focus = {
 					}
 				}
 			}
-			933 = { 
+			933 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1511,7 +1511,7 @@ focus = {
 
 focus = {
 		id = FMU_blauwasser_shipping_lanes
-		icon = GFX_
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 6
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -1536,7 +1536,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			933 = { 
+			933 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1550,7 +1550,7 @@ focus = {
 					}
 				}
 			}
-			931 = { 
+			931 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1580,11 +1580,11 @@ focus = {
 
 focus = {
 		id = FMU_national_dev_campaign
-		icon = GFX_
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 10
 		y = 1
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_reject_versailles
 			focus = FMU_renegotiate_versailles
 				}
@@ -1614,7 +1614,7 @@ focus = {
 
 focus = {
 		id = FMU_eisenbahnen
-		icon = GFX_
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 8
 		y = 2
 		relative_position_id = FMU_reject_versailles
@@ -1638,7 +1638,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		936 = { 
+		936 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1652,7 +1652,7 @@ focus = {
 					}
 				}
 			}
-			936 = { 
+			936 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -1672,7 +1672,7 @@ focus = {
 
 focus = {
 		id = FMU_eisengewolbe
-		icon = GFX_
+		icon = GFX_goal_generic_oil_refinery
 		x = 7
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -1713,7 +1713,7 @@ focus = {
 
 focus = {
 		id = FMU_ebenen_autobahn
-		icon = GFX_
+		icon = GFX_goal_generic_construct_civilian
 		x = 9
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -1744,14 +1744,14 @@ focus = {
 
 focus = {
 		id = FMU_blauwasser_stockmarket
-		icon = GFX_
+		icon = GFX_goal_generic_positive_trade_relations
 		x = 6
 		y = 4
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_blauwasser_shipping_lanes }
 		prerequisite = { focus = FMU_eisengewolbe }
 		prerequisite = { focus = FMU_ebenen_autobahn }
-		
+
 
 		cost = 10
 
@@ -1811,7 +1811,7 @@ focus = {
 
 focus = {
 		id = FMU_1938_domestic_tech_fair
-		icon = GFX_
+		icon = GFX_focus_research2
 		x = 11
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -1841,7 +1841,7 @@ focus = {
 
 focus = {
 		id = FMU_1940_domestic_tech_fair
-		icon = GFX_
+		icon = GFX_focus_research2
 		x = 11
 		y = 4
 		relative_position_id = FMU_reject_versailles
@@ -1871,7 +1871,7 @@ focus = {
 
 focus = {
 		id = FMU_1942_domestic_tech_fair
-		icon = GFX_
+		icon = GFX_focus_research2
 		x = 11
 		y = 5
 		relative_position_id = FMU_reject_versailles
@@ -1901,7 +1901,7 @@ focus = {
 
 focus = {
 		id = FMU_1944_domestic_tech_fair
-		icon = GFX_
+		icon = GFX_focus_research2
 		x = 11
 		y = 6
 		relative_position_id = FMU_reject_versailles
@@ -1931,7 +1931,7 @@ focus = {
 
 focus = {
 		id = FMU_kings_university
-		icon = GFX_
+		icon = GFX_focus_research
 		x = 9
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -1962,7 +1962,7 @@ focus = {
 
 focus = {
 		id = FMU_national_university
-		icon = GFX_
+		icon = GFX_focus_research
 		x = 11
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -1997,7 +1997,7 @@ focus = {
 
 focus = {
 		id = FMU_peoples_university
-		icon = GFX_
+		icon = GFX_focus_research
 		x = 13
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -2028,11 +2028,11 @@ focus = {
 
 focus = {
 		id = FMU_national_research_dev
-		icon = GFX_
+		icon = GFX_goal_continuous_research
 		x = 11
 		y = 8
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_kings_university
 			focus = FMU_national_university
 			focus = FMU_peoples_university
@@ -2092,9 +2092,9 @@ focus = {
 		x = 11
 		y = 10
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_unternehmen_faust
-			focus = FMU_einsteins_theorem 
+			focus = FMU_einsteins_theorem
 			}
 
 		cost = 10
@@ -2116,10 +2116,10 @@ focus = {
 			#atomic weapons research bonus
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 
 focus = {
 		id = FMU_integrate_manu
@@ -2127,7 +2127,7 @@ focus = {
 		x = 12
 		y = 1
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_reject_versailles
 			focus = FMU_renegotiate_versailles
 				}
@@ -2150,7 +2150,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			annex_country = { target = MNU transfer_troops = yes }	
+			annex_country = { target = MNU transfer_troops = yes }
 			add_political_power = 60
 			add_named_threat = { threat = 3 name = FMU_manu_threat }
 			#annexes Manu
@@ -2165,7 +2165,7 @@ focus = {
 		x = 15
 		y = 1
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_reject_versailles
 			focus = FMU_renegotiate_versailles
 				}
@@ -2309,9 +2309,9 @@ focus = {
 		x = 14
 		y = 3
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_european_section
-			focus = FMU_muan_section 
+			focus = FMU_muan_section
 			focus = FMU_american_section }
 		mutually_exclusive = {
 			focus = FMU_velvet_glove_iron_fist
@@ -2346,9 +2346,9 @@ focus = {
 		x = 16
 		y = 3
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_european_section
-			focus = FMU_muan_section 
+			focus = FMU_muan_section
 			focus = FMU_american_section }
 		mutually_exclusive = {
 			focus = FMU_charm_offensive
@@ -2385,7 +2385,7 @@ focus = {
 		icon = GFX_focus_generic_treaty
 		mutually_exclusive = {
 			focus = FMU_reject_versailles
-		} 
+		}
 		x = 25
 		y = 0
 		#relative_position_id = FMU_renegotiate_versailles
@@ -2398,7 +2398,7 @@ focus = {
 		#available = {
 		#date < 1936.4.3
 		#}
- 
+
 		bypass = {
 		}
 
@@ -2443,11 +2443,11 @@ focus = {
 
 		completion_reward = {
 			add_war_support = .20
-			every_neighbor_country = { 
+			every_neighbor_country = {
 					add_opinion_modifier = {
 					target = root
 					modifier = FMU_bad_diplo_outreach
-					}	
+					}
 			}
 			#increase war support
 		}
@@ -2492,7 +2492,7 @@ focus = {
 	focus = {
 		id = FMU_heartland_development
 		icon = GFX_focus_generic_treaty
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_modern_germanic_state
 			focus = FMU_twee_talen }
 		x = 0
@@ -2518,7 +2518,7 @@ focus = {
 		completion_reward = {
 		add_ideas = neutrality_influence
 			#add building slots
-			932 = { 
+			932 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -2532,7 +2532,7 @@ focus = {
 					}
 				}
 			}
-			934 = { 
+			934 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -2614,7 +2614,7 @@ focus = {
 	focus = {
 		id = FMU_reform_voting_laws
 		icon = GFX_focus_generic_treaty
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_compensate_landowners
 			focus = FMU_limit_democratic_reforms	}
 		x = 0
@@ -2838,7 +2838,7 @@ focus = {
 	#	completion_reward = {
 			#decrease democratic support
 			#enables decisions allowing governemnt to attack or "reeducate" democrats in nation - different bonus based on choice
-			
+
 	#	}
 	#}
 
@@ -2868,7 +2868,7 @@ focus = {
 
 		completion_reward = {
 			#starts Elect Kaiser event/decision chain. 3 candidates: Liberal, Moderate, Hardliner
-			
+
 		}
 	}
 
@@ -2901,7 +2901,7 @@ focus = {
 			#raise world tension #K:why? its imigration not industrial genocide
 			#increase core manpower
 			#decrease non-core manpower
-			
+
 		}
 	}
 
@@ -2933,14 +2933,14 @@ focus = {
 			#decrease factory construction time
 			#increase non-core manpower
 			add_ideas = FMU_enforced_conscription
-			
+
 		}
 	}
 
 	focus = {
 		id = FMU_factories_of_gold
 		icon = GFX_focus_generic_treaty
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_white_immigration
 			focus = FMU_encourage_settlement }
 		x = 0
@@ -2967,7 +2967,7 @@ focus = {
 			add_ideas = FMU_golden_factory
 			#MAJOR increase in production capacity
 			#MAJOR increase in factory construction speed
-			
+
 		}
 	}
 
@@ -3003,7 +3003,7 @@ focus = {
 
 		completion_reward = {
 			GER = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_angry_german_bros
 				}
@@ -3086,7 +3086,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			935 = { 
+			935 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -3100,7 +3100,7 @@ focus = {
 					}
 				}
 			}
-			931 = { 
+			931 = {
 				if = {
 					limit = {
 						is_owned_by = ROOT
@@ -3219,25 +3219,25 @@ focus = {
 				any_country = {
 					has_government = democratic
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_democratic_reachout
 				}
 			}#K: idk if this works
 			USA = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_democratic_reachout
 				}
 			}
 			ATL = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_democratic_reachout
 				}
 			}
 			ENG = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_democratic_reachout
 				}
@@ -3253,7 +3253,7 @@ focus = {
 	focus = {
 		id = FMU_womens_suffrage
 		icon = GFX_focus_generic_treaty
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_cont_democratic_reforms
 			focus = FMU_unite_with_comintern
 			focus = FMU_educate_muan_brethren
@@ -3346,7 +3346,7 @@ focus = {
 
 		completion_reward = {
 			SOV = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_communist_reachout
 				}
@@ -3414,7 +3414,7 @@ focus = {
 			set_rule = { can_create_factions = yes }
 			create_faction = "Short Commies"
 			SOV = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_angry_communist
 				}
@@ -3498,9 +3498,9 @@ focus = {
 					infantry = { x = 0 y = 2 }
 					infantry = { x = 0 y = 3 }
 				}
-				support = { 
+				support = {
 					military_police = { x = 0 y = 0 }
-				} 
+				}
 			}
 			create_unit = {
 				division = "name = \"1st People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
@@ -3522,7 +3522,7 @@ focus = {
 				owner = FMU
 				prioritize_location = 5254
 				}
-				
+
 			#spawns a few 'People's Brigade' units in capital
 		}
 	}
@@ -3560,7 +3560,7 @@ focus = {
 	#	id = FMU_free_volunteers
 	#	icon = GFX_focus_generic_treaty
 	#	prerequisite = { focus = FMU_int_volunteer_brigades}
-	#	prerequisite = { 
+	#	prerequisite = {
 	#		focus = FMU_unite_with_comintern
 	#		focus = FMU_educate_muan_brethren
 	#			}
@@ -3808,7 +3808,7 @@ focus = {
 	focus = {
 		id = FMU_prepare_revolutionary_front
 		icon = GFX_focus_generic_treaty
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_unite_with_comintern
 			focus = FMU_educate_muan_brethren
 				}
@@ -3906,7 +3906,7 @@ focus = {
 	focus = {
 		id = FMU_for_the_revolution
 		icon = GFX_focus_generic_treaty
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_discuss_with_SOV
 			focus = FMU_finalize_plan }
 		x = 12
@@ -3959,7 +3959,7 @@ focus = {
 				target = ARA
 				}
 			#add war goals "liberate"/puppet Fijnland, Tiquea, Goprug and Baraga
-			
+
 		}
 	}
 
@@ -4368,7 +4368,7 @@ focus = {
 	focus = {
 		id = FMU_uboat_docks
 		icon = GFX_focus_generic_treaty
-		prerequisite = { 
+		prerequisite = {
 			focus = FMU_control_shipping
 			focus = FMU_strike_fleets}
 		x = -3
@@ -4404,7 +4404,7 @@ focus = {
 						instant_build = yes
 					}
 				}
-	
+
 			}#massive bonus to submarine construction
 		}
 	}
@@ -4448,12 +4448,12 @@ focus = {
 						instant_build = yes
 					}
 				}
-	
+
 			}#creates a bunch of military installations
 		}
 	}
-		
-	
+
+
 
 	focus = {
 		id = FMU_addendum_9f
@@ -4523,7 +4523,7 @@ focus = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = medium_air 
+				category = medium_air
 			}
 		}
 	}
@@ -4560,7 +4560,7 @@ focus = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = cat_scout_plane 
+				category = cat_scout_plane
 			}
 		}
 
@@ -4605,7 +4605,7 @@ focus = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = air_equipment 
+				category = air_equipment
 			}
 			#fighter/heavy fighter design bonus
 		}
@@ -4754,7 +4754,7 @@ focus = {
 				uses = 1
 				category = tactical_bomber
 			}
-			
+
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -4896,7 +4896,7 @@ focus = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = jet_fighter1 
+				category = jet_fighter1
 			}
 			#enables Jet Engine Reconnaisance Aircraft (this design/tech needs to be made)
 		}
@@ -4938,8 +4938,8 @@ focus = {
 			#bonus to jet strategic bomber design
 		}
 	}
-	
-	
+
+
 
 	focus = {
 		id = FMU_crucial_industry
@@ -5033,7 +5033,7 @@ focus = {
 		prerequisite = { focus = FMU_invite_civ_designers }
 		mutually_exclusive = {
 			focus = FMU_divert_engines
-		}		
+		}
 		x = 11
 		y = 4
 		relative_position_id = FMU_law_14056
@@ -5137,7 +5137,7 @@ focus = {
 		prerequisite = { focus = FMU_invite_civ_designers }
 		mutually_exclusive = {
 			focus = FMU_nationalize_uli_traktor
-		}		
+		}
 		x = 13
 		y = 4
 		relative_position_id = FMU_law_14056
