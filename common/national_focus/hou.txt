@@ -13,7 +13,7 @@
 
 focus_tree = {
 	id = houpoe_focus_tree
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -22,14 +22,14 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 70 y = 1100 }
 
 	focus = {
 		id = HOU_peacetalks
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_dangerous_deal
 		mutually_exclusive = { focus = HOU_crush_the_communists }
 		x = 15
 		y = 0
@@ -41,11 +41,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -63,11 +63,11 @@ focus_tree = {
 ############################
 	focus = {
 		id = HOU_antidemocracy_propaganda
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_peacetalks	
+		icon = GFX_goal_generic_propaganda
+		relative_position_id = HOU_peacetalks
 		prerequisite = { focus = HOU_peacetalks }
-		mutually_exclusive = { focus = HOU_moderation_governance }		
-		
+		mutually_exclusive = { focus = HOU_moderation_governance }
+
 		x = -4
 		y = 1
 
@@ -78,11 +78,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -95,10 +95,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_eliminate_democratic_parties
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_antidemocracy_propaganda	
-		prerequisite = { focus = HOU_antidemocracy_propaganda }		
-		
+		icon = GFX_focus_generic_strike_at_democracy2
+		relative_position_id = HOU_antidemocracy_propaganda
+		prerequisite = { focus = HOU_antidemocracy_propaganda }
+
 		x = 0
 		y = 1
 
@@ -109,11 +109,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -126,10 +126,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_new_capital
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_eliminate_democratic_parties	
-		prerequisite = { focus = HOU_eliminate_democratic_parties}		
-		
+		icon = GFX_focus_generic_self_management
+		relative_position_id = HOU_eliminate_democratic_parties
+		prerequisite = { focus = HOU_eliminate_democratic_parties}
+
 		x = -1
 		y = 1
 
@@ -140,11 +140,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -157,12 +157,12 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_pure_marxism
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_new_capital	
-		prerequisite = { focus = HOU_new_capital}	
+		icon = GFX_focus_prc_agrarian_socialism
+		relative_position_id = HOU_new_capital
+		prerequisite = { focus = HOU_new_capital}
 		mutually_exclusive = { focus = HOU_stalinism }
-		mutually_exclusive = { focus = HOU_kanagan_communism }	
-		
+		mutually_exclusive = { focus = HOU_kanagan_communism }
+
 		x = -2
 		y = 1
 
@@ -173,11 +173,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -190,11 +190,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_denounce_assassination
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_pure_marxism	
-		prerequisite = { focus = HOU_pure_marxism}	
-		mutually_exclusive = { focus = HOU_invite_trotsky }	
-		
+		icon = GFX_focus_SOV_purge_trotskyists
+		relative_position_id = HOU_pure_marxism
+		prerequisite = { focus = HOU_pure_marxism}
+		mutually_exclusive = { focus = HOU_invite_trotsky }
+
 		x = -2
 		y = 1
 
@@ -209,7 +209,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -222,11 +222,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_invite_trotsky
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_pure_marxism	
-		prerequisite = { focus = HOU_pure_marxism}	
+		icon = GFX_focus_fra_loyalty_trotzky
+		relative_position_id = HOU_pure_marxism
+		prerequisite = { focus = HOU_pure_marxism}
 		mutually_exclusive = { focus = HOU_denounce_assassination }
-		
+
 		x = 0
 		y = 1
 
@@ -241,7 +241,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -254,10 +254,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_establish_kafakafas
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_invite_trotsky	
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = HOU_invite_trotsky
 		prerequisite = { focus = HOU_invite_trotsky focus = HOU_denounce_assassination}
-		
+
 		x = 0
 		y = 1
 
@@ -271,7 +271,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -284,10 +284,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_peoples_army
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_establish_kafakafas	
-		prerequisite = { focus = HOU_establish_kafakafas focus = HOU_puaa_molotov focus = HOU_sinohoupoean_treaty}	
-		
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		relative_position_id = HOU_establish_kafakafas
+		prerequisite = { focus = HOU_establish_kafakafas focus = HOU_puaa_molotov focus = HOU_sinohoupoean_treaty}
+
 		x = 0
 		y = 1
 
@@ -301,7 +301,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -314,12 +314,12 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_stalinism
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_new_capital	
-		prerequisite = { focus = HOU_new_capital}	
+		icon = GFX_focus_generic_soviet_politics
+		relative_position_id = HOU_new_capital
+		prerequisite = { focus = HOU_new_capital}
 		mutually_exclusive = { focus = HOU_pure_marxism }
-		mutually_exclusive = { focus = HOU_kanagan_communism }	
-		
+		mutually_exclusive = { focus = HOU_kanagan_communism }
+
 		x = 0
 		y = 1
 
@@ -330,11 +330,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -347,10 +347,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_bastion_of_the_revolution
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_stalinism	
-		prerequisite = { focus = HOU_stalinism}		
-		
+		icon = GFX_goal_fortify_the_westwall
+		relative_position_id = HOU_stalinism
+		prerequisite = { focus = HOU_stalinism}
+
 		x = 0
 		y = 1
 
@@ -361,11 +361,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -378,10 +378,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_puaa_molotov
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_bastion_of_the_revolution	
-		prerequisite = { focus = HOU_bastion_of_the_revolution}		
-		
+		icon = GFX_focus_generic_join_comintern
+		relative_position_id = HOU_bastion_of_the_revolution
+		prerequisite = { focus = HOU_bastion_of_the_revolution}
+
 		x = 0
 		y = 1
 
@@ -392,11 +392,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -409,10 +409,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_peoples_navy
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_puaa_molotov	
-		prerequisite = { focus = HOU_establish_kafakafas focus = HOU_puaa_molotov focus = HOU_sinohoupoean_treaty}	
-		
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = HOU_puaa_molotov
+		prerequisite = { focus = HOU_establish_kafakafas focus = HOU_puaa_molotov focus = HOU_sinohoupoean_treaty}
+
 		x = 0
 		y = 1
 
@@ -426,7 +426,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -437,15 +437,15 @@ focus_tree = {
 			#add navy points, naval doctrine bonus
 		}
 	}
-	
+
 	focus = {
-		id = HOU_kanagan_communism 
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_new_capital	
-		prerequisite = { focus = HOU_new_capital}	
+		id = HOU_kanagan_communism
+		icon = GFX_goal_support_communism
+		relative_position_id = HOU_new_capital
+		prerequisite = { focus = HOU_new_capital}
 		mutually_exclusive = { focus = HOU_pure_marxism }
-		mutually_exclusive = { focus = HOU_stalinism }	
-		
+		mutually_exclusive = { focus = HOU_stalinism }
+
 		x = 2
 		y = 1
 
@@ -456,11 +456,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -471,13 +471,13 @@ focus_tree = {
 			#inc manpower, inc division org
 		}
 	}
-	
+
 	focus = {
-		id = HOU_chastise_int_communists 
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_kanagan_communism	
-		prerequisite = { focus = HOU_kanagan_communism}	
-		
+		id = HOU_chastise_int_communists
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		relative_position_id = HOU_kanagan_communism
+		prerequisite = { focus = HOU_kanagan_communism}
+
 		x = 0
 		y = 1
 
@@ -488,11 +488,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -503,13 +503,13 @@ focus_tree = {
 			#communism boost to all Kanagan nations
 		}
 	}
-	
+
 	focus = {
-		id = HOU_sinohoupoean_treaty 
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_chastise_int_communists	
-		prerequisite = { focus = HOU_chastise_int_communists}	
-		
+		id = HOU_sinohoupoean_treaty
+		icon = GFX_focus_chi_united_front
+		relative_position_id = HOU_chastise_int_communists
+		prerequisite = { focus = HOU_chastise_int_communists}
+
 		x = 0
 		y = 1
 
@@ -520,11 +520,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -537,10 +537,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_int_support_for_revolution
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_sinohoupoean_treaty	
+		icon = GFX_focus_eng_global_defense
+		relative_position_id = HOU_sinohoupoean_treaty
 		prerequisite = { focus = HOU_establish_kafakafas focus = HOU_puaa_molotov focus = HOU_sinohoupoean_treaty}
-		
+
 		x = 0
 		y = 1
 
@@ -554,7 +554,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -567,11 +567,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_peoples_academy_of_science
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_peoples_army	
+		icon = GFX_focus_research
+		relative_position_id = HOU_peoples_army
 		prerequisite = { focus = HOU_peoples_army}
-		prerequisite = { focus = HOU_peoples_navy}	
-		
+		prerequisite = { focus = HOU_peoples_navy}
+
 		x = 1
 		y = 1
 
@@ -585,7 +585,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -598,11 +598,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_export_the_revolution
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_prc_infiltration
 		relative_position_id = HOU_peoples_navy
 		prerequisite = {focus = HOU_peoples_navy}
-		prerequisite = {focus = HOU_int_support_for_revolution}	
-		
+		prerequisite = {focus = HOU_int_support_for_revolution}
+
 		x = 1
 		y = 1
 
@@ -616,7 +616,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -629,11 +629,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_culture_of_innovation
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_research2
 		relative_position_id = HOU_peoples_academy_of_science
 		prerequisite = {focus = HOU_peoples_academy_of_science}
-		prerequisite = {focus = HOU_export_the_revolution}	
-		
+		prerequisite = {focus = HOU_export_the_revolution}
+
 		x = 1
 		y = 1
 
@@ -647,7 +647,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -660,10 +660,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_secret_weapons
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_wonderweapons
 		relative_position_id = HOU_culture_of_innovation
-		prerequisite = { focus = HOU_culture_of_innovation}	
-		
+		prerequisite = { focus = HOU_culture_of_innovation}
+
 		x = 0
 		y = 1
 
@@ -677,7 +677,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -691,15 +691,15 @@ focus_tree = {
 
 ############################
 ## Houpo'e's 5 Year Plans
-############################	
-	
-	
+############################
+
+
 	focus = {
 		id = HOU_first_five_year_plan
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_eliminate_democratic_parties	
-		prerequisite = { focus = HOU_eliminate_democratic_parties focus = HOU_council_of_reconciliation}		
-		
+		icon = GFX_goal_generic_consumer_goods
+		relative_position_id = HOU_eliminate_democratic_parties
+		prerequisite = { focus = HOU_eliminate_democratic_parties focus = HOU_council_of_reconciliation}
+
 		x = 4
 		y = 1
 
@@ -710,11 +710,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -727,10 +727,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_bureau_of_human_sciences
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_military_academy
 		relative_position_id = HOU_first_five_year_plan
-		prerequisite = { focus = HOU_first_five_year_plan}		
-		
+		prerequisite = { focus = HOU_first_five_year_plan}
+
 		x = 0
 		y = 1
 
@@ -741,11 +741,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -758,10 +758,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_new_houpoean_man
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_military_mission
 		relative_position_id = HOU_bureau_of_human_sciences
-		prerequisite = { focus = HOU_bureau_of_human_sciences}		
-		
+		prerequisite = { focus = HOU_bureau_of_human_sciences}
+
 		x = -1
 		y = 1
 
@@ -772,11 +772,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -789,10 +789,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_kofana
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_continuous_increase_nu
 		relative_position_id = HOU_bureau_of_human_sciences
-		prerequisite = { focus = HOU_bureau_of_human_sciences}		
-		
+		prerequisite = { focus = HOU_bureau_of_human_sciences}
+
 		x = 1
 		y = 1
 
@@ -803,11 +803,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -820,11 +820,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_more_alike_than_not
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_improve_relations
 		relative_position_id = HOU_new_houpoean_man
 		prerequisite = { focus = HOU_new_houpoean_man}
-		prerequisite = { focus = HOU_kofana}		
-		
+		prerequisite = { focus = HOU_kofana}
+
 		x = 1
 		y = 1
 
@@ -835,11 +835,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -852,10 +852,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_our_neighbors_our_friends
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_intelligence_exchange
 		relative_position_id = HOU_more_alike_than_not
-		prerequisite = { focus = HOU_more_alike_than_not}		
-		
+		prerequisite = { focus = HOU_more_alike_than_not}
+
 		x = 0
 		y = 1
 
@@ -866,11 +866,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -883,10 +883,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_second_five_year_plan
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_construction
 		relative_position_id = HOU_our_neighbors_our_friends
-		prerequisite = { focus = HOU_our_neighbors_our_friends}		
-		
+		prerequisite = { focus = HOU_our_neighbors_our_friends}
+
 		x = 0
 		y = 1
 
@@ -897,11 +897,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -912,19 +912,19 @@ focus_tree = {
 			#infrastructure construction bonus, production bonus
 		}
 	}
-	
-	
+
+
 
 ####################################
 ## Houpo'e Nationalist/Isolationist
 ####################################
 	focus = {
 		id = HOU_moderation_governance
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_peacetalks	
+		icon = GFX_focus_generic_self_management
+		relative_position_id = HOU_peacetalks
 		prerequisite = { focus = HOU_peacetalks }
-		mutually_exclusive = { focus = HOU_antidemocracy_propaganda }		
-		
+		mutually_exclusive = { focus = HOU_antidemocracy_propaganda }
+
 		x = 5
 		y = 1
 
@@ -935,11 +935,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -952,10 +952,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_council_of_reconciliation
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_moderation_governance	
-		prerequisite = { focus = HOU_moderation_governance }		
-		
+		icon = GFX_focus_generic_industry_3
+		relative_position_id = HOU_moderation_governance
+		prerequisite = { focus = HOU_moderation_governance }
+
 		x = 0
 		y = 1
 
@@ -966,11 +966,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -984,10 +984,10 @@ focus_tree = {
 	focus = {
 		id = HOU_reorganize_constitution
 		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_council_of_reconciliation	
+		relative_position_id = HOU_council_of_reconciliation
 		prerequisite = { focus = HOU_council_of_reconciliation }
-		mutually_exclusive = { focus = HOU_inward_focus }		
-		
+		mutually_exclusive = { focus = HOU_inward_focus }
+
 		x = -1
 		y = 1
 
@@ -998,11 +998,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1015,11 +1015,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_inward_focus
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_council_of_reconciliation	
+		icon = GFX_goal_generic_defence
+		relative_position_id = HOU_council_of_reconciliation
 		prerequisite = { focus = HOU_council_of_reconciliation }
-		mutually_exclusive = { focus = HOU_reorganize_constitution }				
-		
+		mutually_exclusive = { focus = HOU_reorganize_constitution }
+
 		x = 1
 		y = 1
 
@@ -1030,11 +1030,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1047,10 +1047,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_blessings_of_industry
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_reorganize_constitution	
-		prerequisite = { focus = HOU_reorganize_constitution }		
-		
+		icon = GFX_goal_generic_production
+		relative_position_id = HOU_reorganize_constitution
+		prerequisite = { focus = HOU_reorganize_constitution }
+
 		x = -1
 		y = 1
 
@@ -1061,11 +1061,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1078,10 +1078,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_trade
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_blessings_of_industry	
-		prerequisite = { focus = HOU_blessings_of_industry }		
-		
+		icon = GFX_goal_generic_trade
+		relative_position_id = HOU_blessings_of_industry
+		prerequisite = { focus = HOU_blessings_of_industry }
+
 		x = 0
 		y = 1
 
@@ -1092,11 +1092,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1109,10 +1109,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_national_highway_system
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_reorganize_constitution	
-		prerequisite = { focus = HOU_reorganize_constitution focus = HOU_inward_focus}		
-		
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = HOU_reorganize_constitution
+		prerequisite = { focus = HOU_reorganize_constitution focus = HOU_inward_focus}
+
 		x = 1
 		y = 1
 
@@ -1123,11 +1123,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1140,10 +1140,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_extend_road_network
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_national_highway_system	
-		prerequisite = { focus = HOU_national_highway_system}		
-		
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = HOU_national_highway_system
+		prerequisite = { focus = HOU_national_highway_system}
+
 		x = 0
 		y = 1
 
@@ -1154,11 +1154,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1171,10 +1171,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_working_public
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_inward_focus	
-		prerequisite = { focus = HOU_inward_focus}		
-		
+		icon = GFX_goal_generic_production2
+		relative_position_id = HOU_inward_focus
+		prerequisite = { focus = HOU_inward_focus}
+
 		x = 1
 		y = 1
 
@@ -1185,11 +1185,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1202,10 +1202,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_expand_armed_forces
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_working_public	
-		prerequisite = { focus = HOU_working_public}		
-		
+		icon = GFX_goal_generic_axis_build_infantry
+		relative_position_id = HOU_working_public
+		prerequisite = { focus = HOU_working_public}
+
 		x = 0
 		y = 1
 
@@ -1216,11 +1216,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1233,11 +1233,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_blessed_isolation
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_trade	
+		icon = GFX_goal_generic_fortify_city
+		relative_position_id = HOU_trade
 		prerequisite = { focus = HOU_trade }
-		prerequisite = { focus = HOU_extend_road_network }		
-		
+		prerequisite = { focus = HOU_extend_road_network }
+
 		x = 1
 		y = 1
 
@@ -1248,11 +1248,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1265,10 +1265,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_seize_war_tech
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_blessed_isolation	
-		prerequisite = { focus = HOU_blessed_isolation }		
-		
+		icon = GFX_focus_research2
+		relative_position_id = HOU_blessed_isolation
+		prerequisite = { focus = HOU_blessed_isolation }
+
 		x = 0
 		y = 1
 
@@ -1279,11 +1279,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1296,11 +1296,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_defensive_offense
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_extend_road_network	
+		icon = GFX_goal_generic_defence
+		relative_position_id = HOU_extend_road_network
 		prerequisite = { focus = HOU_expand_armed_forces }
-		prerequisite = { focus = HOU_extend_road_network }		
-		
+		prerequisite = { focus = HOU_extend_road_network }
+
 		x = 1
 		y = 1
 
@@ -1311,11 +1311,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1328,10 +1328,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_time_is_now
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_defensive_offense	
-		prerequisite = { focus = HOU_defensive_offense }	
-		
+		icon = GFX_goal_generic_occupy_start_war
+		relative_position_id = HOU_defensive_offense
+		prerequisite = { focus = HOU_defensive_offense }
+
 		x = 0
 		y = 1
 
@@ -1342,11 +1342,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1357,15 +1357,15 @@ focus_tree = {
 			#war goals on neighbors
 		}
 	}
-	
-	
+
+
 ############################
 ## Houpo'ean Historial Path
 ############################
 
 	focus = {
 		id = HOU_crush_the_communists
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_anti_comintern_pact
 		mutually_exclusive = { focus = HOU_peacetalks }
 		x = 30
 		y = 0
@@ -1377,11 +1377,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1394,10 +1394,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_anticommunist_campaign
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_crush_the_communists	
+		icon = GFX_goal_generic_propaganda
+		relative_position_id = HOU_crush_the_communists
 		prerequisite = { focus = HOU_crush_the_communists }
-		
+
 		x = 0
 		y = 1
 
@@ -1408,11 +1408,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1425,10 +1425,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_national_connections
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_anticommunist_campaign	
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = HOU_anticommunist_campaign
 		prerequisite = { focus = HOU_anticommunist_campaign }
-		
+
 		x = -6
 		y = 1
 
@@ -1439,11 +1439,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1456,10 +1456,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_bonds_of_blood
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_national_connections	
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = HOU_national_connections
 		prerequisite = { focus = HOU_national_connections }
-		
+
 		x = 0
 		y = 1
 
@@ -1470,11 +1470,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1487,10 +1487,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_look_to_your_brother
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_military_academy
 		relative_position_id = HOU_bonds_of_blood
 		prerequisite = { focus = HOU_bonds_of_blood }
-		
+
 		x = 0
 		y = 1
 
@@ -1501,11 +1501,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1518,10 +1518,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_expand_ports
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = HOU_bonds_of_blood
 		prerequisite = { focus = HOU_bonds_of_blood }
-		
+
 		x = 2
 		y = 1
 
@@ -1532,11 +1532,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1549,10 +1549,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_seek_int_investment
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_concessions
 		relative_position_id = HOU_look_to_your_brother
 		prerequisite = { focus = HOU_look_to_your_brother }
-		
+
 		x = 0
 		y = 1
 
@@ -1563,11 +1563,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1580,10 +1580,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_great_science_academy
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_research
 		relative_position_id = HOU_seek_int_investment
 		prerequisite = { focus = HOU_seek_int_investment }
-		
+
 		x = 0
 		y = 1
 
@@ -1594,11 +1594,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1611,10 +1611,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_inland_shelter_camps
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_defence
 		relative_position_id = HOU_seek_int_investment
 		prerequisite = { focus = HOU_seek_int_investment }
-		
+
 		x = 2
 		y = 1
 
@@ -1625,11 +1625,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1642,10 +1642,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_dept_applied_sciences
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_research2
 		relative_position_id = HOU_great_science_academy
 		prerequisite = { focus = HOU_great_science_academy }
-		
+
 		x = 0
 		y = 1
 
@@ -1656,11 +1656,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1673,10 +1673,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_build_on_strength
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_special_forces
 		relative_position_id = HOU_great_science_academy
 		prerequisite = { focus = HOU_great_science_academy }
-		
+
 		x = 2
 		y = 1
 
@@ -1687,11 +1687,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1704,10 +1704,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_industrial_buildup
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_anticommunist_campaign	
+		icon = GFX_goal_generic_construction
+		relative_position_id = HOU_anticommunist_campaign
 		prerequisite = { focus = HOU_anticommunist_campaign }
-		
+
 		x = 0
 		y = 1
 
@@ -1718,11 +1718,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1735,10 +1735,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_day_of_mourning
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_industrial_buildup	
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		relative_position_id = HOU_industrial_buildup
 		prerequisite = { focus = HOU_industrial_buildup }
-		
+
 		x = 0
 		y = 1
 
@@ -1749,11 +1749,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1766,11 +1766,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_full_investigation
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_day_of_mourning	
+		icon = GFX_focus_generic_self_management
+		relative_position_id = HOU_day_of_mourning
 		prerequisite = { focus = HOU_day_of_mourning }
 		mutually_exclusive = { focus = HOU_perfidious_communists }
-		
+
 		x = -1
 		y = 1
 
@@ -1781,11 +1781,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1798,11 +1798,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_rapprochement_communists
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_full_investigation	
+		icon = GFX_goal_tripartite_pact
+		relative_position_id = HOU_full_investigation
 		prerequisite = { focus = HOU_full_investigation }
 		mutually_exclusive = { focus = HOU_lack_of_evidence }
-		
+
 		x = -1
 		y = 1
 
@@ -1813,11 +1813,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1830,11 +1830,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_lack_of_evidence
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_full_investigation	
+		icon = GFX_goal_continuous_def_against_influence
+		relative_position_id = HOU_full_investigation
 		prerequisite = { focus = HOU_full_investigation }
 		mutually_exclusive = { focus = HOU_rapprochement_communists }
-		
+
 		x = 1
 		y = 1
 
@@ -1845,11 +1845,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1862,10 +1862,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_respond_to_japan
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_rapprochement_communists	
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		relative_position_id = HOU_rapprochement_communists
 		prerequisite = { focus = HOU_rapprochement_communists focus = HOU_lack_of_evidence}
-		
+
 		x = 0
 		y = 1
 
@@ -1876,11 +1876,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1894,9 +1894,9 @@ focus_tree = {
 	focus = {
 		id = HOU_kanagan_defense_pact
 		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_respond_to_japan	
+		relative_position_id = HOU_respond_to_japan
 		prerequisite = { focus = HOU_respond_to_japan }
-		
+
 		x = 0
 		y = 1
 
@@ -1907,11 +1907,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1924,10 +1924,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_negotiate_port_access
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_kanagan_defense_pact	
+		icon = GFX_focus_generic_treaty
+		relative_position_id = HOU_kanagan_defense_pact
 		prerequisite = { focus = HOU_kanagan_defense_pact }
-		
+
 		x = -2
 		y = 1
 
@@ -1938,11 +1938,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1955,10 +1955,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_evacuate_gold_supply
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_negotiate_port_access	
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		relative_position_id = HOU_negotiate_port_access
 		prerequisite = { focus = HOU_negotiate_port_access }
-		
+
 		x = 0
 		y = 1
 
@@ -1969,11 +1969,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1986,11 +1986,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_legitimate_government
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_evacuate_gold_supply	
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		relative_position_id = HOU_evacuate_gold_supply
 		prerequisite = { focus = HOU_evacuate_gold_supply }
 		mutually_exclusive = { focus = HOU_not_go_quietly }
-		
+
 		x = 0
 		y = 1
 
@@ -2001,11 +2001,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2018,11 +2018,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_not_go_quietly
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_evacuate_gold_supply	
+		icon = GFX_goal_continuous_suppression
+		relative_position_id = HOU_evacuate_gold_supply
 		prerequisite = { focus = HOU_evacuate_gold_supply }
 		mutually_exclusive = { focus = HOU_legitimate_government }
-		
+
 		x = 2
 		y = 1
 
@@ -2033,11 +2033,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2050,10 +2050,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_volunteers_aplenty
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_little_entente
 		relative_position_id = HOU_legitimate_government
 		prerequisite = { focus = HOU_legitimate_government }
-		
+
 		x = -2
 		y = 1
 
@@ -2064,11 +2064,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2081,10 +2081,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_abandon_kdp
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		relative_position_id = HOU_legitimate_government
 		prerequisite = { focus = HOU_legitimate_government }
-		
+
 		x = 0
 		y = 1
 
@@ -2095,11 +2095,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2112,10 +2112,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_move_capital
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_demand_territory
 		relative_position_id = HOU_abandon_kdp
 		prerequisite = { focus = HOU_abandon_kdp }
-		
+
 		x = 0
 		y = 1
 
@@ -2126,11 +2126,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2141,15 +2141,15 @@ focus_tree = {
 			#Capital to Wainuiomu
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = HOU_perfidious_communists
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_day_of_mourning	
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = HOU_day_of_mourning
 		prerequisite = { focus = HOU_day_of_mourning }
 		mutually_exclusive = { focus = HOU_full_investigation }
-		
+
 		x = 2
 		y = 1
 
@@ -2160,11 +2160,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2177,10 +2177,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_one_people_one_heart
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_perfidious_communists	
+		icon = GFX_goal_support_fascism
+		relative_position_id = HOU_perfidious_communists
 		prerequisite = { focus = HOU_perfidious_communists }
-		
+
 		x = 0
 		y = 1
 
@@ -2191,11 +2191,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2209,10 +2209,10 @@ focus_tree = {
 
 	focus = {
 		id = HOU_northwestern_enemies
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_one_people_one_heart	
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = HOU_one_people_one_heart
 		prerequisite = { focus = HOU_one_people_one_heart }
-		
+
 		x = 0
 		y = 1
 
@@ -2223,11 +2223,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2240,10 +2240,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_warn_your_neighbor
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_one_people_one_heart	
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = HOU_one_people_one_heart
 		prerequisite = { focus = HOU_one_people_one_heart }
-		
+
 		x = 2
 		y = 1
 
@@ -2254,11 +2254,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2271,10 +2271,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_sound_alarm
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_warn_your_neighbor	
+		icon = GFX_focus_generic_support_the_left_right
+		relative_position_id = HOU_warn_your_neighbor
 		prerequisite = { focus = HOU_warn_your_neighbor }
-		
+
 		x = 0
 		y = 1
 
@@ -2285,11 +2285,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2302,10 +2302,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_prepare_defenses
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_northwestern_enemies	
+		icon = GFX_focus_generic_coastal_fort
+		relative_position_id = HOU_northwestern_enemies
 		prerequisite = { focus = HOU_northwestern_enemies }
-		
+
 		x = 0
 		y = 1
 
@@ -2316,11 +2316,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2334,10 +2334,10 @@ focus_tree = {
 
 	focus = {
 		id = HOU_continue_purge_communists
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_lack_of_evidence	
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = HOU_lack_of_evidence
 		prerequisite = { focus = HOU_lack_of_evidence }
-		
+
 		x = 0
 		y = 1
 
@@ -2348,11 +2348,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2365,10 +2365,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_request_int_lend_lease
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_continue_purge_communists	
+		icon = GFX_focus_generic_treaty
+		relative_position_id = HOU_continue_purge_communists
 		prerequisite = { focus = HOU_continue_purge_communists }
-		
+
 		x = 0
 		y = 1
 
@@ -2379,11 +2379,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2396,11 +2396,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_expand_KDP
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_kanagan_defense_pact	
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = HOU_kanagan_defense_pact
 		prerequisite = { focus = HOU_kanagan_defense_pact }
 		mutually_exclusive = { focus = HOU_pyrrhic_fighting}
-		
+
 		x = 0
 		y = 1
 
@@ -2411,11 +2411,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2428,11 +2428,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_pyrrhic_fighting
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_request_int_lend_lease	
+		icon = GFX_goal_generic_defence
+		relative_position_id = HOU_request_int_lend_lease
 		prerequisite = { focus = HOU_request_int_lend_lease focus = HOU_prepare_defenses }
 		mutually_exclusive = { focus = HOU_expand_KDP }
-		
+
 		x = 0
 		y = 1
 
@@ -2443,11 +2443,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2460,11 +2460,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_bitter_end
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_pyrrhic_fighting	
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = HOU_pyrrhic_fighting
 		prerequisite = { focus = HOU_pyrrhic_fighting}
 		mutually_exclusive = { focus = HOU_desperate_gamble }
-		
+
 		x = -1
 		y = 1
 
@@ -2475,11 +2475,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2492,11 +2492,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_desperate_gamble
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_pyrrhic_fighting	
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		relative_position_id = HOU_pyrrhic_fighting
 		prerequisite = { focus = HOU_pyrrhic_fighting}
 		mutually_exclusive = { focus = HOU_bitter_end }
-		
+
 		x = 1
 		y = 1
 
@@ -2507,11 +2507,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2527,12 +2527,12 @@ focus_tree = {
 ## National Improvement
 ############################
 
-	
+
 	focus = {
 		id = HOU_national_improvement
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_industry_2
 		relative_position_id = HOU_crush_the_communists
-		
+
 		x = 5
 		y = 0
 
@@ -2543,11 +2543,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2560,10 +2560,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_nat_railway_proj
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = HOU_national_improvement
 		prerequisite = { focus = HOU_national_improvement}
-		
+
 		x = -2
 		y = 1
 
@@ -2574,11 +2574,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2591,10 +2591,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_rubber_plantations
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = HOU_nat_railway_proj}
 		relative_position_id = HOU_nat_railway_proj
-		
+
 		x = 0
 		y = 1
 
@@ -2605,11 +2605,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2620,13 +2620,13 @@ focus_tree = {
 			#adds rubber production to central areas
 		}
 	}
-	
+
 	focus = {
 		id = HOU_factory_of_the_world
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = HOU_national_improvement}
 		relative_position_id = HOU_national_improvement
-		
+
 		x = 0
 		y = 1
 
@@ -2637,11 +2637,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2652,13 +2652,13 @@ focus_tree = {
 			#adds factories in central provinces
 		}
 	}
-	
+
 	focus = {
 		id = HOU_houpoean_steel
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_generic_steel
 		relative_position_id = HOU_factory_of_the_world
 		prerequisite = { focus = HOU_factory_of_the_world}
-		
+
 		x = 0
 		y = 1
 
@@ -2669,11 +2669,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2686,10 +2686,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_nat_highways_proj
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = HOU_national_improvement}
 		relative_position_id = HOU_national_improvement
-		
+
 		x = 2
 		y = 1
 
@@ -2700,11 +2700,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2717,10 +2717,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_valley_of_maui
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_military_sphere
 		relative_position_id = HOU_nat_highways_proj
 		prerequisite = { focus = HOU_nat_highways_proj}
-		
+
 		x = 0
 		y = 1
 
@@ -2731,11 +2731,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3152,7 +3152,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no 
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -3413,9 +3413,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = HOU_coastal_defense_ships
 			#custom_effect_tooltip = HOU_coastal_defense_ships_tech_tt
-			if = { 
+			if = {
 				limit = { has_dlc = "Man the Guns" }
-				set_technology = { coastal_defense_ships = 1 } 
+				set_technology = { coastal_defense_ships = 1 }
 			}
 		}
 	}
@@ -3553,7 +3553,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = HOU_power_projection_designer
 		}
@@ -3706,8 +3706,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = HOU_strong_army
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -3740,7 +3740,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				#prioritize = { 46 }
 				limit = {
-					
+
 				}
 				#add_extra_state_shared_building_slots = 2
 				#add_building_construction = {
@@ -3754,10 +3754,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_begin_army_reforms
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_strong_army	
-		prerequisite = { focus = HOU_strong_army }	
-		
+		icon = GFX_focus_chi_army_reform
+		relative_position_id = HOU_strong_army
+		prerequisite = { focus = HOU_strong_army }
+
 		x = -1
 		y = 1
 
@@ -3768,11 +3768,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3785,10 +3785,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_landborne_designs
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_strong_army	
-		prerequisite = { focus = HOU_strong_army }	
-		
+		icon = GFX_goal_generic_special_forces
+		relative_position_id = HOU_strong_army
+		prerequisite = { focus = HOU_strong_army }
+
 		x = 1
 		y = 1
 
@@ -3799,11 +3799,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3816,11 +3816,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_standardized_vehicle_templates
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_begin_army_reforms	
+		icon = GFX_goal_generic_army_motorized
+		relative_position_id = HOU_begin_army_reforms
 		prerequisite = { focus = HOU_begin_army_reforms }
-		prerequisite = { focus = HOU_landborne_designs }	
-		
+		prerequisite = { focus = HOU_landborne_designs }
+
 		x = 1
 		y = 1
 
@@ -3831,11 +3831,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3848,10 +3848,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_special_forces
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_landborne_designs	
-		prerequisite = { focus = HOU_landborne_designs }	
-		
+		icon = GFX_goal_generic_special_forces
+		relative_position_id = HOU_landborne_designs
+		prerequisite = { focus = HOU_landborne_designs }
+
 		x = 1
 		y = 1
 
@@ -3862,11 +3862,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3879,10 +3879,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_mass_assault_doctrine
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_standardized_vehicle_templates	
-		prerequisite = { focus = HOU_standardized_vehicle_templates }	
-		
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = HOU_standardized_vehicle_templates
+		prerequisite = { focus = HOU_standardized_vehicle_templates }
+
 		x = -1
 		y = 1
 
@@ -3893,11 +3893,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3910,10 +3910,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_mobile_warfare
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_standardized_vehicle_templates	
-		prerequisite = { focus = HOU_standardized_vehicle_templates }	
-		
+		icon = GFX_goal_generic_army_tanks
+		relative_position_id = HOU_standardized_vehicle_templates
+		prerequisite = { focus = HOU_standardized_vehicle_templates }
+
 		x = 1
 		y = 1
 
@@ -3924,11 +3924,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3941,11 +3941,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_offroad_designs
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_mass_assault_doctrine	
+		icon = GFX_goal_generic_army_motorized
+		relative_position_id = HOU_mass_assault_doctrine
 		prerequisite = { focus = HOU_mass_assault_doctrine }
-		prerequisite = { focus = HOU_mobile_warfare }	
-		
+		prerequisite = { focus = HOU_mobile_warfare }
+
 		x = 1
 		y = 1
 
@@ -3956,11 +3956,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3973,10 +3973,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_armored_designs
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_offroad_designs	
+		icon = GFX_focus_generic_tank_production
+		relative_position_id = HOU_offroad_designs
 		prerequisite = { focus = HOU_offroad_designs }
-		
+
 		x = -1
 		y = 1
 
@@ -3987,11 +3987,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -4004,10 +4004,10 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_mechanized_designs
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_offroad_designs	
+		icon = GFX_goal_generic_army_motorized
+		relative_position_id = HOU_offroad_designs
 		prerequisite = { focus = HOU_offroad_designs }
-		
+
 		x = 1
 		y = 1
 
@@ -4018,11 +4018,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -4035,11 +4035,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_offensive_designs
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_armored_designs	
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = HOU_armored_designs
 		mutually_exclusive = { focus = HOU_defensive_designs }
 		prerequisite = { focus = HOU_mechanized_designs focus = HOU_armored_designs }
-		
+
 		x = 0
 		y = 1
 
@@ -4050,11 +4050,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -4067,11 +4067,11 @@ focus_tree = {
 	}
 	focus = {
 		id = HOU_defensive_designs
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = HOU_mechanized_designs	
+		icon = GFX_goal_generic_build_tank
+		relative_position_id = HOU_mechanized_designs
 		mutually_exclusive = { focus = HOU_offensive_designs }
 		prerequisite = { focus = HOU_mechanized_designs focus = HOU_armored_designs }
-		
+
 		x = 0
 		y = 1
 
@@ -4082,11 +4082,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -4097,6 +4097,6 @@ focus_tree = {
 			#
 		}
 	}
-	
-	
+
+
 }
