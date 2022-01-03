@@ -18,18 +18,18 @@ add_political_power = 200
 set_politics = {
 
 	
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 36
 	elections_allowed = no
 }
 
 set_popularities = {
-		democratic = 49
+		democratic = 0
 		fascism = 24
 		communism = 27
 			#banned = no #default is no
-		neutrality = 0
+		neutrality = 49
 		}
 
 set_convoys = 80
@@ -68,9 +68,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vinandra Noraspartrisha"
-	desc = "POLITICS_V_NORASPARTRISHA_DESC"
-	picture = "Portrait_LSN_V_Noraspartrisha.dds"
+	name = "Parandish Teminasokoth"
+	desc = "POLITICS_P_TEMINASOKOTH_DESC"
+	picture = "Portrait_LSN_P_Teminasokoth.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
