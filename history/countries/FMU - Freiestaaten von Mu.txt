@@ -12,26 +12,133 @@ set_technology = {
 	gwtank = 1
 	early_fighter = 1
 	early_bomber = 1
+	panzerschiffe = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
 	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
 	early_ship_hull_heavy = 1
+	basic_ship_hull_heavy = 1
+	basic_ship_hull_carrier = 1
 	early_ship_hull_carrier = 1
 	panzerschiffe = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
+	pre_dreadnoughts = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	mtg_transport = 1
 	basic_torpedo = 1
-	basic_secondary_battery = 1
+	improved_ship_torpedo_launcher = 1
 	basic_battery = 1
 	basic_light_battery = 1
 	basic_medium_battery = 1
-	mtg_transport = 1
+	basic_heavy_battery = 1
+	basic_secondary_battery = 1
+	improved_secondary_battery = 1
+	basic_depth_charges = 1
+	sonar = 1
 	basic_cruiser_armor_scheme = 1
 }
 
+starting_train_buffer = 2
 set_research_slots = 3
 set_convoys = 55
 set_stability = 0.8
 set_war_support = 0.2
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 36
+	fascism = 20
+	neutrality = 44
+}
+
+#Leaders
+recruit_character = FMU_H_Ganzer
+recruit_character = FMU_E_Austerlitz
+recruit_character = FMU_J_Steinman
+recruit_character = FMU_K_Ymir
+#Army
+recruit_character = FMU_Anslem_Guderian
+recruit_character = FMU_Uther_von_Rindige
+recruit_character = FMU_T_Degurachaff #Shes not visible Calmdown
+recruit_character = FMU_J_Artlet
+recruit_character = FMU_L_Smith
+#Navy
+recruit_character = FMU_F_Slade
+recruit_character = FMU_C_Wagner
+recruit_character = FMU_A_Roth
+recruit_character = FMU_G_Boehm
+recruit_character = FMU_W_Kuhn
+recruit_character = FMU_A_Wolff
+#Theorists
+recruit_character = FMU_rocket_scientist
+recruit_character = FMU_nuclear_scientist
+recruit_character = FMU_close_air_support_proponent
+recruit_character = FMU_air_warfare_theorist
+recruit_character = FMU_dive_bomber_theorist
+recruit_character = FMU_naval_theorist
+recruit_character = FMU_army_chief_organization
+recruit_character = FMU_army_chief_drill
+recruit_character = FMU_army_chief_offensive
+recruit_character = FMU_army_chief_maneuver
+recruit_character = FMU_air_chief_ground_support
+recruit_character = FMU_air_chief_all_weather
+#HighCom
+recruit_character = FMU_army_infantry
+recruit_character = FMU_army_logistics
+recruit_character = FMU_air_close_air_support
+recruit_character = FMU_air_bomber_interception
+recruit_character = FMU_navy_naval_air_defense
+recruit_character = FMU_navy_anti_submarine
+#PoliticalAdvisors
+recruit_character = FMU_fortification_engineer
+recruit_character = FMU_armaments_organizer
+recruit_character = FMU_captain_of_industry
+recruit_character = FMU_war_industrialist
+recruit_character = FMU_communist_revolutionary
+recruit_character = FMU_democratic_reformer
+recruit_character = FMU_fascist_demagogue
+recruit_character = FMU_backroom_backstabber
+recruit_character = FMU_silent_workhorse
+recruit_character = FMU_smooth_talking_charmer
+recruit_character = FMU_anti_fascist_agent
+recruit_character = FMU_monarchist_media_mogul
+recruit_character = FMU_economist
+recruit_character = FMU_connected_citizen
+recruit_character = FMU_liberal_journalist
+recruit_character = FMU_head_of_intelligence
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
 
 if = {
 	limit = {
@@ -136,36 +243,23 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-		name = "Valkyria Class"
-		type = ship_hull_carrier_conversion_bb
-		name_group = FMU_CV_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_deck_slot_1 = ship_deck_space
-			fixed_ship_deck_slot_2 = ship_deck_space
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = ship_deck_space
-		}
-		obsolete = yes
+	name = "Valkyria Class"
+	type = ship_hull_carrier_conversion_bb
+	name_group = FMU_CV_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space
+		fixed_ship_deck_slot_2 = ship_deck_space
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		mid_1_custom_slot = ship_deck_space
 	}
+	obsolete = yes
 }
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1934.3.5"
-	election_frequency = 48
-	elections_allowed = yes
 
-}
-set_popularities = {
-		democratic = 36
-		neutrality = 42
-		fascism = 20
-		communism = 2
 
-	}
 1936.1.1 = {
 	if = {
 		limit = { has_dlc = "Battle for the Bosporus" }
@@ -195,57 +289,6 @@ set_popularities = {
 	}
 }
 
-create_country_leader = {
-	name = "Heinrich Ganzer"
-	desc = "POLITICS_HEINRICH_GANZER_DESC"
-	picture = "Portrait_FMU_H_Ganzer.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	#
-	}
-}
-create_country_leader = {
-	name = "Emil Austerlitz"
-	desc = "POLITICS_EMIL_AUSTERLITZ_DESC"
-	picture = "Portrait_FMU_E_Austerlitz.dds"
-	expire = "1965.1.1"
-	ideology = neutrality
-	traits = {
-	#
-	}
-}
-
-create_country_leader = {
-	name = "Jakob Steinman"
-	desc = "POLITICS_JAKOB_STEINMAN_DESC"
-	picture = "Portrait_FMU_J_Steinman.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
 
 
-create_field_marshal = {
-	name = "Anslem Guderian"
-	portrait_path = "gfx/leaders/GER/Portrait_Germany_Generic_land_2.dds"
-	traits = { defensive_doctrine offensive_doctrine }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_field_marshal = {
-	name = "Uther von Rindigen"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { offensive_doctrine }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
 

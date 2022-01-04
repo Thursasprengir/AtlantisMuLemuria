@@ -22,6 +22,10 @@ set_technology = {
 	mobile_warfare = 1
 }
 
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+starting_truck_buffer = 0.8
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -48,8 +52,6 @@ add_ideas = {
 }
 
 set_politics = {
-
-	
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 36
