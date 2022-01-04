@@ -17,7 +17,7 @@ focus_tree = {
 
 focus = {
 		id = TRS_state_of_the_economy
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_industry_3
 		x = 10
 		y = 0
 
@@ -44,7 +44,7 @@ focus = {
 	}
 focus = {
 		id = TRS_cut_back_spending
-		icon = GFX_TRS_politics
+		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = TRS_state_of_the_economy }
 		mutually_exclusive = { focus = TRS_military_uprising }
 		relative_position_id = TRS_state_of_the_economy
@@ -74,7 +74,7 @@ focus = {
 	}
 focus = {
 		id = TRS_no_more_cuts
-		icon = GFX_TRS_politics
+		icon = GFX_focus_fra_devalue_the_franc
 		prerequisite = { focus = TRS_cut_back_spending }
 		relative_position_id = TRS_cut_back_spending
 		x = -5
@@ -103,7 +103,7 @@ focus = {
 	}
 focus = {
 		id = TRS_continue_austerity_measures
-		icon = GFX_TRS_politics
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		prerequisite = { focus = TRS_cut_back_spending }
 		relative_position_id = TRS_cut_back_spending
 		x = 5
@@ -132,7 +132,7 @@ focus = {
 	}
 focus = {
 		id = TRS_a_stronger_nation
-		icon = GFX_TRS_politics
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = TRS_no_more_cuts }
 		relative_position_id = TRS_no_more_cuts
 		mutually_exclusive = { focus = TRS_voice_of_the_people }
@@ -163,7 +163,7 @@ focus = {
 	}
 focus = {
 		id = TRS_nat_youth_programs
-		icon = GFX_TRS_politics
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		prerequisite = { focus = TRS_a_stronger_nation }
 		relative_position_id = TRS_a_stronger_nation
 		x = -0
@@ -192,7 +192,7 @@ focus = {
 	}
 focus = {
 		id = TRS_martial_society
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = TRS_nat_youth_programs }
 		relative_position_id = TRS_nat_youth_programs
 		x = -1
@@ -221,7 +221,7 @@ focus = {
 	}
 focus = {
 		id = TRS_father_to_the_nation
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = TRS_nat_youth_programs }
 		relative_position_id = TRS_nat_youth_programs
 		x = 1
@@ -250,7 +250,7 @@ focus = {
 	}
 focus = {
 		id = TRS_ever_expanding
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = TRS_martial_society }
 		prerequisite = { focus = TRS_father_to_the_nation }
 		relative_position_id = TRS_nat_youth_programs
@@ -280,7 +280,7 @@ focus = {
 	}
 focus = {
 		id = TRS_every_woman_a_goddess
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_women_in_military
 		prerequisite = { focus = TRS_ever_expanding }
 		relative_position_id = TRS_ever_expanding
 		x = -1
@@ -309,7 +309,7 @@ focus = {
 	}
 focus = {
 		id = TRS_every_man_a_fortress
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = TRS_ever_expanding }
 		relative_position_id = TRS_ever_expanding
 		x = 1
@@ -338,7 +338,7 @@ focus = {
 	}
 focus = {
 		id = TRS_downsize_army
-		icon = GFX_TRS_politics
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = TRS_a_stronger_nation focus = TRS_voice_of_the_people }
 		relative_position_id = TRS_a_stronger_nation
 		mutually_exclusive = { focus = TRS_increase_conscription }
@@ -368,7 +368,7 @@ focus = {
 	}
 focus = {
 		id = TRS_downsize_navy
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_africa_naval
 		prerequisite = { focus = TRS_downsize_army }
 		relative_position_id = TRS_downsize_army
 		x = 0
@@ -397,7 +397,7 @@ focus = {
 	}
 focus = {
 		id = TRS_finalize_economic_austerity
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = TRS_downsize_navy }
 		relative_position_id = TRS_downsize_navy
 		x = 0
@@ -426,7 +426,7 @@ focus = {
 	}
 focus = {
 		id = TRS_increase_conscription
-		icon = GFX_TRS_politics
+		icon = GFX_youth_brigade
 		prerequisite = { focus = TRS_a_stronger_nation focus = TRS_voice_of_the_people }
 		relative_position_id = TRS_a_stronger_nation
 		mutually_exclusive = { focus = TRS_downsize_army }
@@ -456,7 +456,7 @@ focus = {
 	}
 focus = {
 		id = TRS_expand_navy
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = TRS_increase_conscription }
 		relative_position_id = TRS_increase_conscription
 		x = 0
@@ -485,7 +485,7 @@ focus = {
 	}
 focus = {
 		id = TRS_declare_all_debts_waived
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = TRS_expand_navy }
 		relative_position_id = TRS_expand_navy
 		x = 0
@@ -514,7 +514,7 @@ focus = {
 	}
 focus = {
 		id = TRS_economic_recovery
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = TRS_finalize_economic_austerity focus = TRS_declare_all_debts_waived }
 		relative_position_id = TRS_finalize_economic_austerity
 		x = 1
@@ -543,7 +543,7 @@ focus = {
 	}
 focus = {
 		id = TRS_voice_of_the_people
-		icon = GFX_TRS_politics
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = TRS_no_more_cuts focus = TRS_continue_austerity_measures}
 		relative_position_id = TRS_continue_austerity_measures
 		mutually_exclusive = { focus = TRS_a_stronger_nation }
@@ -574,7 +574,7 @@ focus = {
 	}
 focus = {
 		id = TRS_peoples_councils
-		icon = GFX_TRS_politics
+		icon = GFX_focus_SOV_approach_tukahchevsky
 		prerequisite = { focus = TRS_voice_of_the_people}
 		relative_position_id = TRS_voice_of_the_people
 		x = -1
@@ -603,7 +603,7 @@ focus = {
 	}
 focus = {
 		id = TRS_youthful_education
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_socialist_science
 		prerequisite = { focus = TRS_voice_of_the_people}
 		relative_position_id = TRS_voice_of_the_people
 		x = 1
@@ -632,7 +632,7 @@ focus = {
 	}
 focus = {
 		id = TRS_strike_comrades
-		icon = GFX_TRS_politics
+		icon = GFX_focus_SOV_breadbasket_of_the_union
 		prerequisite = { focus = TRS_peoples_councils}
 		prerequisite = { focus = TRS_youthful_education}
 		relative_position_id = TRS_peoples_councils
@@ -662,7 +662,7 @@ focus = {
 	}
 focus = {
 		id = TRS_join_comintern
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = TRS_strike_comrades}
 		relative_position_id = TRS_strike_comrades
 		x = 0
@@ -691,7 +691,7 @@ focus = {
 	}
 focus = {
 		id = TRS_int_volunteers
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = TRS_join_comintern}
 		relative_position_id = TRS_join_comintern
 		x = -1
@@ -720,7 +720,7 @@ focus = {
 	}
 focus = {
 		id = TRS_soviet_naval_bases
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = TRS_join_comintern}
 		relative_position_id = TRS_join_comintern
 		x = 1
@@ -749,7 +749,7 @@ focus = {
 	}
 focus = {
 		id = TRS_japanese_zaibatsu_payments
-		icon = GFX_TRS_politics
+		icon = GFX_focus_jap_zaibatsu
 		prerequisite = { focus = TRS_continue_austerity_measures }
 		relative_position_id = TRS_continue_austerity_measures
 		mutually_exclusive = { focus = TRS_a_stronger_nation }
@@ -839,7 +839,7 @@ focus = {
 	}
 focus = {
 		id = TRS_economic_stabilization
-		icon = GFX_TRS_politics
+		icon = GFX_goal_continuous_repairments
 		prerequisite = { focus = TRS_default_on_loans focus = TRS_blood_money }
 		relative_position_id = TRS_default_on_loans
 		x = 1
@@ -927,7 +927,7 @@ focus = {
 	}
 focus = {
 		id = TRS_national_university
-		icon = GFX_TRS_politics
+		icon = GFX_focus_research
 		prerequisite = { focus = TRS_default_on_loans focus = TRS_blood_money }
 		prerequisite = { focus = TRS_factory_conversions}
 		relative_position_id = TRS_blood_money
@@ -957,7 +957,7 @@ focus = {
 	}
 focus = {
 		id = TRS_economic_revival
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = TRS_economic_stabilization}
 		prerequisite = { focus = TRS_national_university}
 		relative_position_id = TRS_economic_stabilization
@@ -987,7 +987,7 @@ focus = {
 	}
 focus = {
 		id = TRS_gov_loans_to_businesses
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = TRS_japanese_zaibatsu_payments }
 		relative_position_id = TRS_japanese_zaibatsu_payments
 		x = 2
@@ -1016,7 +1016,7 @@ focus = {
 	}
 focus = {
 		id = TRS_factory_conversions
-		icon = GFX_TRS_politics
+		icon = GFX_focus_SOV_merge_plants
 		prerequisite = { focus = TRS_gov_loans_to_businesses }
 		relative_position_id = TRS_gov_loans_to_businesses
 		x = 0
@@ -1896,11 +1896,11 @@ focus = {
 			#
 		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 focus = {
 		id = TRS_chinese_immigrants
 		icon = GFX_TRS_politics
@@ -2105,10 +2105,10 @@ focus = {
 			#
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 focus = {
 		id = TRS_army_modernization
 		icon = GFX_TRS_politics
