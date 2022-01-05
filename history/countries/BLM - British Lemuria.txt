@@ -50,55 +50,37 @@ if = {
 
 set_convoys = 80
 
-
-create_country_leader = {
-	name = "Sir Andrew Mercey-Chaucer II"
-	desc = "POLITICS_AM_CHAUCER_DESC"
-	picture = "Portrait_BLM_A_M_Chaucer_II.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Finley Phillips"
-	desc = "POLITICS_FINLEY_PHILLIPS_DESC"
-	picture = "Portrait_BLM_F_Phillips.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rob Anglow"
-	desc = "POLITICS_ROB_ANGLOW_DESC"
-	picture = "Portrait_BLM_R_Anglow.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Homeland Peoples Council"
-	desc = "POLITICS_PEOPLES_COUNCIL_DESC"
-	picture = "Portrait_BLM_Peoples_Council.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-
-create_corps_commander = {
-	name = "George Livingston III"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
-	skill = 3
-}
+#Political Leaders
+recruit_character = BLM_Sir_A_M_Chaucer_II
+recruit_character = BLM_Finley_Phillips
+recruit_character = BLM_Rob_Anglow
+recruit_character = BLM_Homeland_Peoples_Council
+#Mil Leaders
+recruit_character = BLM_George_Livingston_III
+#Highcom
+recruit_character = BLM_army_entrenchment
+recruit_character = BLM_air_chief_reform
+recruit_character = BLM_navy_chief_decisive_battle
+recruit_character = BLM_air_warfare_theorist
+recruit_character = BLM_military_theorist
+recruit_character = BLM_army_regrouping
+recruit_character = BLM_navy_chief_naval_aviation
+recruit_character = BLM_air_chief_ground_support
+recruit_character = BLM_air_bomber_interception
+recruit_character = BLM_army_infantry
+recruit_character = BLM_army_chief_defensive
+recruit_character = BLM_army_chief_offensive
+recruit_character = BLM_army_chief_maneuver
+recruit_character = BLM_army_commando
+#advisors
+recruit_character = BLM_captain_of_industry
+recruit_character = BLM_popular_figurehead
+recruit_character = BLM_quartermaster_general
+recruit_character = BLM_backroom_backstabber
+recruit_character = BLM_silent_workhorse
+recruit_character = BLM_smooth_talking_charmer
+recruit_character = BLM_war_industrialist
+recruit_character = BLM_compassionate_gentleman
+recruit_character = BLM_fascist_demagogue
+recruit_character = BLM_communist_revolutionary
+recruit_character = BLM_democratic_reformer
