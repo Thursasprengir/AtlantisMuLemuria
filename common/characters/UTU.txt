@@ -1,0 +1,893 @@
+characters={
+	UTU_P_H_B_Gashmratavi={
+		name=UTU_P_H_B_Gashmratavi
+		portraits={
+			civilian={
+				large="gfx/leaders/UTU/Portrait_UTU_P_H_B_Gashmratavi.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	UTU_E_Samprivana={
+		name="UTU_E_Samprivana"
+		portraits={
+			civilian={
+				large="GFX_UTU_E_Samprivana"
+			}
+		}
+		country_leader={
+			ideology=fascism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	UTU_O_Newansvraba={
+		name=UTU_O_Newansvraba
+		portraits={
+			civilian={
+				large="GFX_UTU_O_Newansvraba"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	UTU_J_Nalvahal={
+		name=UTU_J_Nalvahal
+		portraits={
+			civilian={
+				large="GFX_UTU_J_Nalvahal"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	UTU_naibhotre_begvresha={
+		name=UTU_naibhotre_begvresha
+		portraits={
+			army={
+				large="GFX_UTU_naibhotre_begvresha"
+				small="gfx/interface/ideas/idea_UTU_naibhotre_begvresha.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	UTU_mani_ganguly={
+		name=UTU_mani_ganguly
+		portraits={
+			army={
+				large="GFX_UTU_mani_ganguly"
+				small="gfx/interface/ideas/idea_UTU_mani_ganguly.dds"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	UTU_dabran_chandragahal={
+		name=UTU_dabran_chandragahal
+		portraits={
+			army={
+				large="GFX_UTU_dabran_chandragahal"
+				small="gfx/interface/ideas/idea_UTU_dabran_chandragahal.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	UTU_ravi_lakhanpashat={
+		name=ravi_lakhanpashat
+		portraits={
+			army={
+				large="GFX_ravi_lakhanpashat"
+				small="gfx/interface/ideas/idea_ravi_lakhanpashat.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+	### Empty characters that can become unit leaders later ###
+
+	UTU_minaki_meiya = {
+		name=UTU_minaki_meiya
+		portraits={
+			army={
+				large="GFX_UTU_minaki_meiya"
+				small="gfx/interface/ideas/idea_UTU_minaki_meiya.dds"
+			}
+		}
+	}
+
+	UTU_surya_bhinampa = {
+		name=UTU_surya_bhinampa
+		portraits={
+			army={
+				large="GFX_UTU_surya_bhinampa"
+				small="gfx/interface/ideas/idea_UTU_surya_bhinampa.dds"
+			}
+		}
+	}
+	
+	UTU_ajarhruna_devingahal = {
+		name=UTU_ajarhruna_devingahal
+		portraits={
+			army={
+				large="GFX_UTU_ajarhruna_devingahal"
+				small="gfx/interface/ideas/idea_UTU_ajarhruna_devingahal.dds"
+			}
+		}
+	}
+
+	UTU_shivva_kamhashahal = {
+		name=UTU_shivva_kamhashahal
+		portraits={
+			army={
+				large="GFX_UTU_shivva_kamhashahal"
+				small="gfx/interface/ideas/idea_UTU_shivva_kamhashahal.dds"
+			}
+		}
+	}
+	
+	UTU_vijayanu_igenshamparath = {
+		name=UTU_vijayanu_igenshamparath
+		portraits={
+			army={
+				large="GFX_UTU_vijayanu_igenshamparath"
+				small="gfx/interface/ideas/idea_UTU_vijayanu_igenshamparath.dds"
+			}
+		}
+	}
+
+
+	### THEORISTS ###
+
+	UTU_sahanil_amanprahal={
+		name=UTU_sahanil_amanprahal
+		portraits={
+			army={
+				small="GFX_idea_UTU_sahanil_amanprahal" #small="GFX_idea_generic_army_arab_1"
+			}
+		}
+		advisor={
+			cost = 100	
+			slot = theorist
+			idea_token = UTU_sahanil_amanprahal
+			ledger = army
+			allowed = {
+				original_tag = UTU
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	UTU_rama_answatha={
+		name=UTU_rama_answatha
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = UTU_rama_answatha
+			ledger = air
+			allowed = {
+				original_tag = UTU
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+
+	UTU_karthikar_sengathamptra={
+		name=UTU_karthikar_sengathamptra
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = UTU_karthikar_sengathamptra
+			ledger = navy
+			allowed = {
+				original_tag = UTU
+			}
+			
+			traits = {
+				naval_theorist
+			}
+		}
+	}
+
+	UTU_nuermak_sokamanji={
+		name=UTU_nuermak_sokamanji
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = UTU_nuermak_sokamanji
+			ledger = army
+			allowed = {
+				original_tag = UTU
+				has_dlc = "Together for Victory"
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+
+	### ARMY CHIEFS ###
+
+	UTU_farsij_nalamethahal={
+		name=UTU_farsij_nalamethahal
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = UTU_farsij_nalamethahal
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_laksheth_vattachay={
+		name=UTU_laksheth_vattachay
+		portraits={
+			army={
+				small="GFX_idea_UTU_laksheth_vattachay" #small="GFX_idea_generic_army_europe_5"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = UTU_laksheth_vattachay
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_devak_sathindrigahal={
+		name=UTU_devak_sathindrigahal
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = UTU_devak_sathindrigahal
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_rejath_khumpa={
+		name=UTU_rejath_khumpa
+		portraits={
+			army={
+				small="GFX_idea_UTU_rejath_khumpa" #small="GFX_idea_generic_army_arab_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = UTU_rejath_khumpa
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_nethinga_gayennam={
+		name=UTU_nethinga_gayennam
+		portraits={
+			army={
+				small="GFX_idea_UTU_nethinga_gayennam" #small="GFX_idea_generic_army_arab_3"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = UTU_nethinga_gayennam
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	UTU_kijiran_vrishejath={
+		name=UTU_kijiran_vrishejath
+		portraits={
+			army={
+				small="GFX_idea_UTU_kijiran_vrishejath" #small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = UTU_kijiran_vrishejath
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_venalam_uparthang={
+		name=UTU_venalam_uparthang
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = UTU_venalam_uparthang
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_jaisal_singprana={
+		name=UTU_jaisal_singprana
+		portraits={
+			army={
+				small="GFX_idea_UTU_jaisal_singprana" #small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = UTU_jaisal_singprana
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_kathal_pillasavva={
+		name=UTU_kathal_pillasavva
+		portraits={
+			army={
+				small="GFX_idea_UTU_kathal_pillasavva" #small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = UTU_kathal_pillasavva
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+
+	### AIR CHIEFS ###
+
+	UTU_rishi_sharma={
+		name=UTU_rishi_sharma
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = UTU_rishi_sharma
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_lekesh_patelmahal={
+		name=UTU_lekesh_patelmahal
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = UTU_lekesh_patelmahal
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_diyavva_sanesh={
+		name=UTU_diyavva_sanesh
+		portraits={
+			army={
+				small="GFX_idea_UTU_diyavva_sanesh" #small="GFX_idea_generic_air_arab_2"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = UTU_diyavva_sanesh
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	UTU_navanagaya_pisathandra={
+		name=UTU_navanagaya_pisathandra
+		portraits={
+			army={
+				small="GFX_idea_UTU_navanagaya_pisathandra" #small="GFX_idea_generic_army_arab_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = UTU_navanagaya_pisathandra
+			ledger = army
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_vihs_mashangmahal={
+		name=UTU_vihs_mashangmahal
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = UTU_vihs_mashangmahal
+			ledger = air
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				air_air_combat_training_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_praveesh_kamhathevvan={
+		name=UTU_praveesh_kamhathevvan
+		portraits={
+			army={
+				small="GFX_idea_UTU_praveesh_kamhathevvan" #small="GFX_idea_generic_air_arab_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = UTU_praveesh_kamhathevvan
+			ledger = navy
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	UTU_shakwan_banshigath={
+		name=UTU_shakwan_banshigath
+		portraits={
+			army={
+				small="GFX_idea_UTU_shakwan_banshigath" #small="GFX_idea_generic_air_arab_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = UTU_shakwan_banshigath
+			ledger = air
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				air_close_air_support_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	UTU_vitamvash_sabwagthal={
+		name=UTU_vitamvash_sabwagthal
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = UTU_vitamvash_sabwagthal
+			ledger = navy
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				navy_anti_submarine_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	### POLITICAL ADVISORS ###
+
+	UTU_sauraba_mashathavvat={
+		name=UTU_sauraba_mashathavvat
+		portraits={
+			army={
+				smalL="GFX_idea_UTU_sauraba_mashathavvat" #small="GFX_idea_generic_political_advisor_india_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_sauraba_mashathavvat
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	UTU_yangkath_ramamahal={
+		name=UTU_yangkath_ramamahal
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_india_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_yangkath_ramamahal
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	UTU_hiten_bhame={
+		name=UTU_hiten_bhame
+		portraits={
+			army={
+				small="GFX_idea_UTU_hiten_bhame" #small="GFX_idea_generic_political_advisor_india_1"
+			}
+			civilian ={
+				large = "GFX_UTU_hiten_bhame" #Can become country leader (Communism -> Stalinism) (Fascism -> Nazism)
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_subhas_chanda_bose
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+	
+	UTU_jaan_varshamgahal={
+		name=UTU_jaan_varshamgahal
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_jaan_varshamgahal
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
+	
+	UTU_pranpat_rebimathavva={
+		name=UTU_pranpat_rebimathavva
+		portraits={
+			army={
+				small="GFX_idea_UTU_pranpat_rebimathavva" #small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_pranpat_rebimathavva
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				popular_figurehead 
+			}
+		}
+	}
+
+	UTU_barisinath_emgarshangahal={
+		name=UTU_barisinath_emgarshangahal
+		portraits={
+			army={
+				small="GFX_idea_UTU_barisinath_emgarshangahal" #small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_barisinath_emgarshangahal
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				compassionate_gentleman 
+			}
+		}		
+	}
+
+	UTU_jagwarap_senbahathy={
+		name=UTU_jagwarap_senbahathy
+		portraits={
+			army={
+				small="GFX_idea_UTU_jagwarap_senbahathy" #small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_jagwarap_senbahathy
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				captain_of_industry 
+			}
+		}
+	}
+
+	UTU_balam_tangerama={
+		name=UTU_balam_tangerama
+		portraits={
+			army={
+				small="GFX_idea_UTU_balam_tangerama" #small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_balam_tangerama
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				backroom_backstabber 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	
+	UTU_jayesh_t_sanswethi={
+		name=UTU_jayesh_t_sanswethi
+		portraits={
+			army={
+				small= "GFX_idea_UTU_jayesh_t_sanswethi" #small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTU_jayesh_t_sanswethi
+			allowed = {
+				original_tag = UTU
+			}
+			traits = {
+				ideological_crusader 
+			}
+		}
+	}
+	
+	#Illusive Gentleman auto-generated
+}
