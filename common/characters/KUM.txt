@@ -1,0 +1,459 @@
+characters={
+	KUM_H_Tamdrinetta={
+		name=KUM_H_Tamdrinetta
+		portraits={
+			civilian={
+				large="GFX_portrait_KUM_H_Tamdrinetta"
+				small="gfx/interface/ideas/idea_KUM_H_Tamdrinetta.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	KUM_P_T_Indrimeshna={
+		name=KUM_P_T_Indrimeshna
+		portraits={
+			civilian={
+				large="gfx/leaders/KUM/Portrait_KUM_P_T_Indrimeshna.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ hawk }
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+
+	KUM_S_Drumuvatali={
+		name=KUM_S_Drumuvatali
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/portrait_asia_generic_3.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ financial_expert armaments_organizer }
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	
+	KUM_G_Norundenna={
+		name=KUM_G_Norundenna
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ financial_expert }
+			expire="1969.1.1.12"
+			id=-1
+		}
+	}
+	
+	
+	KUM_linggruta_handruvarti={
+		name=KUM_linggruta_handruvarti
+		portraits={
+			army={
+				large="gfx/leaders/MUU/Portrait_KUM_linggruta_handruvarti.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	KUM_amshanartha_inswagatal={
+		advisor={
+			slot = army_chief
+			idea_token = KUM_amshanartha_inswagatal
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_entrenchment_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=KUM_amshanartha_inswagatal
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+
+	### THEORISTS ###
+
+	
+	KUM_silent_workhorse={
+		name = KUM_silent_workhorse
+		portraits ={
+			army ={
+				small="generic_political_advisor_asia_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KUM_silent_workhorse
+			allowed  = {original_tag  = KUM}
+			traits  = {silent_workhorse}
+			ai_will_do  = {factor  = 2.000}
+		}		
+	}
+	KUM_war_industrialist = {
+		name = KUM_war_industrialist
+		portraits = {army = {small = "generic_political_advisor_asia_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KUM_war_industrialist
+			allowed  = {original_tag  = KUM}
+			traits  = {war_industrialist}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	KUM_backroom_backstabber = {
+		name = KUM_backroom_backstabber
+		portraits = {army = {small = "generic_political_advisor_asia_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KUM_backroom_backstabber
+			allowed  = {original_tag  = KUM}
+			traits  = {backroom_backstabber}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	KUM_prince_of_terror = {
+		name = KUM_prince_of_terror
+		portraits = {army = {small = "generic_political_advisor_asia_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KUM_prince_of_terror
+			allowed  = {original_tag  = KUM}
+			traits  = {prince_of_terror}
+			ai_will_do  = {factor  = 10.000}
+		}
+	}
+	KUM_armaments_organizer = {
+		name = KUM_armaments_organizer
+		portraits = {army = {small = "generic_political_advisor_asia_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KUM_armaments_organizer
+			allowed  = {original_tag  = KUM}
+			traits  = {armaments_organizer}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	KUM_democratic_politician = {
+		name = KUM_democratic_politician
+		portraits = {army = {small = "generic_political_advisor_asia_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KUM_democratic_politician
+			allowed  = {original_tag  = KUM}
+			traits  = {democratic_reformer}
+			ai_will_do  = {factor  = 1.000}
+		}
+	}
+	KUM_fascist_demagogue = {
+		name = KUM_fascist_demagogue
+		portraits = {army = {small = "generic_political_advisor_asia_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KUM_fascist_demagogue
+			allowed  = {original_tag  = KUM}
+			traits  = {fascist_demagogue}
+			ai_will_do  = {factor  = 1.000}
+		}
+	}
+	KUM_communist_revolutionary = {
+		name = KUM_communist_revolutionary
+		portraits = {army = {small = "generic_political_advisor_asia_1"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KUM_communist_revolutionary
+			allowed  = {original_tag  = KUM}
+			traits  = {communist_revolutionary}
+			ai_will_do  = {factor  = 1.000}
+		}
+	}
+	KUM_grand_fleet_proponent={
+		name = KUM_grand_fleet_proponent
+		portraits={army={small="GFX_idea_asia_generic_navy_3"}}
+		advisor={
+			cost = 200
+			slot = theorist
+			idea_token = james_somerville
+			ledger = navy
+			allowed = {original_tag = KUM}
+			traits = {grand_fleet_proponent}
+		}
+	}
+	KUM_victory_through_airpower = {
+		name = KUM_victory_through_airpower
+		portraits = {army={small="GFX_idea_generic_air_asia_2"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = KUM_victory_through_airpower
+			ledger = air
+			allowed = {original_tag = KUM}			
+			traits = {victory_through_airpower}
+		}
+	}
+	KUM_rocket_scientist = {
+		name = KUM_rocket_scientist
+		portraits = {army={small="GFX_idea_generic_air_asia_1"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = KUM_rocket_scientist
+			ledger = air
+			allowed = {original_tag = KUM}	
+			research_bonus = {rocketry = 0.15}		
+			traits = {rocket_scientist}
+		}
+	}
+	KUM_naval_theorist = {
+		name = KUM_naval_theorist
+		portraits = {army={small="GFX_idea_generic_navy_asia_3"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = KUM_naval_theorist
+			ledger = navy
+			allowed = {original_tag = KUM}			
+			traits = {naval_theorist}
+		}
+	}
+	KUM_military_theorist = {
+		name = KUM_military_theorist
+		portraits = {army={small="GFX_idea_generic_army_asia_5"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = KUM_military_theorist
+			ledger = army
+			allowed = {original_tag = KUM}			
+			traits = {military_theorist}
+		}
+	}
+	KUM_army_chief_morale_2={
+		name=KUM_army_chief_morale_2
+		portraits={army={small="GFX_idea_generic_army_asia_2"}}
+		advisor={
+			slot = army_chief
+			idea_token = KUM_army_chief_morale_2
+			allowed = {original_tag = KUM}
+			traits = {army_chief_morale_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_army_chief_offensive_2={
+		name=KUM_army_chief_offensive_2
+		portraits={army={small="GFX_idea_generic_army_asia_4"}}
+		advisor={
+			slot = army_chief
+			idea_token = KUM_army_chief_offensive_2
+			allowed = {original_tag = KUM}
+			traits = {army_chief_offensive_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_army_chief_drill_2={
+		name=KUM_army_chief_drill_2
+		portraits={army={small="GFX_idea_generic_army_asia_3"}}
+		advisor={
+			slot = army_chief
+			idea_token = KUM_army_chief_drill_2
+			allowed = {original_tag = KUM}
+			traits = {army_chief_drill_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_army_chief_planning_2={
+		name=KUM_army_chief_planning_2
+		portraits={army={small="GFX_idea_generic_army_asia_1"}}
+		advisor={
+			slot = army_chief
+			idea_token = KUM_army_chief_planning_2
+			allowed = {original_tag = KUM}
+			traits = {army_chief_planning_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_navy_chief_maneuver_3={
+		name=KUM_navy_chief_maneuver_3
+		portraits={army={small="GFX_idea_generic_navy_asia_3"}}
+		advisor={
+			slot = navy_chief
+			idea_token = KUM_navy_chief_maneuver_3
+			allowed = {original_tag = KUM}
+			traits = {navy_chief_maneuver_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_navy_chief_decisive_battle_3={
+		name=KUM_navy_chief_decisive_battle_3
+		portraits={army={small="GFX_idea_generic_navy_asia_2"}}
+		advisor={
+			slot = navy_chief
+			idea_token = KUM_navy_chief_decisive_battle_3
+			allowed = {original_tag = KUM}
+			traits = {navy_chief_decisive_battle_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_navy_fleet_logistics_3={
+		name=KUM_navy_fleet_logistics_3
+		portraits={army={small="GFX_idea_generic_navy_asia_1"}}
+		advisor={
+			slot = navy_chief
+			idea_token = KUM_navy_fleet_logistics_3
+			allowed = {original_tag = KUM}
+			traits = {navy_fleet_logistics_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_navy_naval_air_defense_2={
+		name=KUM_navy_naval_air_defense_2
+		portraits={army={small="GFX_idea_generic_navy_asia_3"}}
+		advisor={
+			slot = navy_chief
+			idea_token = KUM_navy_naval_air_defense_2
+			allowed = {original_tag = KUM}
+			traits = {navy_naval_air_defense_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_air_strategic_bombing_2={
+		name=KUM_air_strategic_bombing_2
+		portraits={army={small="GFX_idea_generic_air_asia_3"}}
+		advisor={
+			slot = air_chief
+			idea_token = KUM_air_strategic_bombing_2
+			allowed = {original_tag = KUM}
+			traits = {air_strategic_bombing_2}
+			cost = 100
+			ai_will_do = {factor = 1.000}
+		}
+	}
+	KUM_air_chief_old_guard={
+		name=KUM_air_chief_old_guard
+		portraits={army={small="GFX_idea_generic_air_asia_2"}}
+		advisor={
+			slot = air_chief
+			idea_token = KUM_air_chief_old_guard
+			allowed = {original_tag = KUM}
+			traits = {air_chief_old_guard}
+			cost = 100
+			ai_will_do = {factor = 1.000}
+		}
+	}
+	KUM_air_strategic_bombing_1={
+		name=KUM_air_strategic_bombing_1
+		portraits={army={small="GFX_idea_generic_air_asia_1"}}
+		advisor={
+			slot = high_command
+			idea_token = KUM_air_strategic_bombing_1
+			ledger = army
+			allowed = {original_tag = KUM}
+			traits = {air_strategic_bombing_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}	
+	KUM_navy_screen_2={
+		name=KUM_navy_screen_2
+		portraits={army={small="GFX_idea_generic_navy_asia_3"}}
+		advisor={
+			slot = high_command
+			idea_token = KUM_navy_screen_2
+			ledger = army
+			allowed = {original_tag = KUM}
+			traits = {navy_screen_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_army_regrouping_1={
+		name=KUM_army_regrouping_1
+		portraits={army={small="GFX_idea_generic_army_asia_1"}}
+		advisor={
+			slot = high_command
+			idea_token = KUM_army_regrouping_1
+			ledger = army
+			allowed = {original_tag = KUM}
+			traits = {army_regrouping_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_navy_capital_ship_3={
+		name=KUM_navy_capital_ship_3
+		portraits={army={small="GFX_idea_generic_navy_asia_3"}}
+		advisor={
+			slot = high_command
+			idea_token = KUM_navy_capital_ship_3
+			ledger = army
+			allowed = {original_tag = KUM}
+			traits = {navy_capital_ship_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_air_naval_strike_1={
+		name=KUM_air_naval_strike_1
+		portraits={army={small="GFX_idea_generic_air_asia_2"}}
+		advisor={
+			slot = high_command
+			idea_token = KUM_air_naval_strike_1
+			ledger = army
+			allowed = {original_tag = KUM}
+			traits = {air_naval_strike_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KUM_navy_carrier_2={
+		name=KUM_navy_carrier_2
+		portraits={army={small="GFX_idea_generic_navy_asia_2"}}
+		advisor={
+			slot = high_command
+			idea_token = KUM_navy_carrier_2
+			ledger = army
+			allowed = {original_tag = KUM}
+			traits = {navy_carrier_2}
+			cost = 100
+			ai_will_do = {factor = 10.000}
+		}
+	}
+}
