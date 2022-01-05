@@ -1,0 +1,633 @@
+characters={
+	MUU_Ollun_Necumejjil={
+		name=MUU_Ollun_Necumejjil
+		portraits={
+			civilian={
+				large="gfx/leaders/AUS/Portrait_Austria_Kurt_Schuschnigg.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+		}
+	}
+	MUU_Sir_A_MMUU_Nyel_Tsitlalli_Chaucer_II={
+		name=MUU_Nyel_Tsitlalli
+		portraits={
+			civilian={
+				large="gfx/leaders/MUU/Portrait_MUU_Nyel_Tsitlalli.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+		}
+	}
+	MUU_Qijutsli_Tsipir={
+		name=MUU_Qijutsli_Tsipir
+		portraits={
+			civilian={
+				large="gfx/leaders/MUU/Portrait_MUU_Qijutsli_Tsipir.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			expire="1965.1.1.1"
+
+		}
+	}
+	MUU_Iqajj_Donaquaq={
+		name=MUU_Iqajj_Donaquaq
+		portraits={
+			civilian={
+				large="gfx/leaders/MUU/Portrait_MUU_Iqajj_Donaquaq.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+		}
+	}
+	#MilCom
+	MUU_iaod_milinjui={
+		name=MUU_iaod_milinjui
+		portraits={
+			army={
+				large="gfx/leaders/MUU/Portrait_MUU_iaod_milinjui.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	MUU_dayum_sohollo={
+		advisor={
+			slot = army_chief
+			idea_token = MUU_dayum_sohollo
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_entrenchment_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_dayum_sohollo
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	MUU_umundr_modaqri={
+		advisor={
+			slot = air_chief
+			idea_token = MUU_umundr_modaqri
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_umundr_modaqri
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	MUU_uajsun_unijum={
+		advisor={		
+			slot = navy_chief
+			idea_token = MUU_uajsun_unijum
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_uajsun_unijum
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	MUU_dayum_tsipir={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = MUU_dayum_tsipir
+			ledger = air
+				allowed = {
+					original_tag = MUU
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name=MUU_dayum_tsipir
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	MUU_daqiryig_modaqri={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = MUU_daqiryig_modaqri
+			ledger = army
+				allowed = {
+					original_tag = MUU
+				}
+
+				traits = {
+					military_theorist
+				}
+		}
+		name=MUU_daqiryig_modaqri
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	MUU_naqfu_houmarka={
+		advisor={
+			slot = high_command
+			idea_token = MUU_naqfu_houmarka
+			ledger = army
+				allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_regrouping_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_naqfu_houmarka
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	MUU_letut_tsitlalli={
+		advisor={
+			slot = navy_chief
+			idea_token = MUU_letut_tsitlalli
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_letut_tsitlalli
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	MUU_hajjump_gahrijjeom={
+		advisor={	
+			slot = air_chief
+			idea_token = MUU_hajjump_gahrijjeom
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_hajjump_gahrijjeom
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	MUU_donaq_allalletli={
+		advisor={		
+			slot = high_command
+			idea_token = MUU_donaq_allalletli
+			ledger = air
+				allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_donaq_allalletli
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	MUU_zaqajj_ellismuri={
+		advisor={	
+			slot = high_command
+			idea_token = MUU_zaqajj_ellismuri
+			ledger = army
+				allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_zaqajj_ellismuri
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	MUU_iqajj_fascollem={
+		advisor={
+			slot = army_chief
+			idea_token = MUU_iqajj_fascollem
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_iqajj_fascollem
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	MUU_tusi_jujjuru={
+		advisor={
+			
+			
+			slot = army_chief
+			idea_token = MUU_tusi_jujjuru
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_tusi_jujjuru
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	MUU_nalangqu_itlit={
+		advisor={
+			slot = army_chief
+			idea_token = MUU_nalangqu_itlit
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_nalangqu_itlit
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	MUU_davyeu_vumeqallu={
+		advisor={	
+			slot = high_command
+			idea_token = MUU_davyeu_vumeqallu
+			ledger = army
+				allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_commando_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=MUU_davyeu_vumeqallu
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	MUU_vallan_ellomu_saqatrusum={
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_vallan_ellomu_saqatrusum
+			allowed  = {
+					original_tag  = MUU
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name=MUU_vallan_ellomu_saqatrusum
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	MUU_daqdeq_a_sanduem={
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_daqdeq_a_sanduem
+			allowed  = {
+					original_tag  = MUU
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name=MUU_daqdeq_a_sanduem
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	
+	MUU_qijutsli_dorfusru={
+		name=MUU_quartermaster_general
+		portraits={
+			army={
+				small="GFX_idea_MUU_qijutsli_dorfusru" #small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_qijutsli_dorfusru
+			allowed = {
+				original_tag = MUU
+			}
+			traits = {
+				quartermaster_general 
+			}
+		}		
+	}
+	
+	MUU_gorump_sohollo={
+		name=MUU_gorump_sohollo
+		portraits={
+			army={
+				small="GFX_idea_MUU_gorump_sohollo" #small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_gorump_sohollo
+			allowed = {
+				original_tag = MUU
+			}
+			traits = {
+				backroom_backstabber 
+			}
+		}		
+	}
+
+	MUU_tucume_m_milinjui={
+		name=MUU_tucume_m_milinjui
+		portraits={
+			army={
+				small="GFX_idea_MUU_tucume_m_milinjui" 
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_tucume_m_milinjui
+			allowed = {
+				original_tag = MUU
+			}
+			cost = 100.000
+			traits = {
+				smooth_talking_charmer 
+			}
+			available = {
+
+			}
+		}		
+	}
+
+	MUU_silent_workhorse={
+		name=MUU_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_MUU_herbert_v_evatt" #small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_herbert_v_evatt
+			allowed = {
+				original_tag = MUU
+			}
+			cost = 100.000
+			traits = {
+				silent_workhorse 
+			}
+			available = {
+				}
+			}
+		}		
+	}
+
+	MUU_war_industrialist={
+		name=MUU_war_industrialist
+		portraits={
+			army={
+				small="GFX_idea_MUU_jack_beasley" #small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_jack_beasley
+			allowed = {
+				original_tag = MUU
+			}
+			traits = {
+				war_industrialist 
+			}
+		}		
+	}
+
+	MUU_compassionate_gentleman={
+		name= MUU_compassionate_gentleman
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_frank_forde
+			allowed = {
+				original_tag = MUU
+			}
+			traits = {
+				compassionate_gentleman 
+			}
+		}		
+	}
+
+	MUU_fascist_demagogue={
+		name= MUU_fascist_demagogue
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_generic_fascist_demagogue
+			allowed = {
+				original_tag = MUU
+			}
+			available = {
+				
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	MUU_communist_revolutionary={
+		name=MUU_communist_revolutionary
+		portraits={
+			army={
+				small="GFX_idea_MUU_lance_sharkey" #small="GFX_idea_generic_communist_revolutionary_western_european_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_lance_sharkey
+			allowed = {
+				original_tag = MUU
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+	
+	MUU_democratic_reformer={
+		name=MUU_democratic_reformer
+		portraits={
+			army={
+				small="GFX_idea_MUU_arthur_calwell" #small="GFX_idea_generic_democratic_reformer_western_european_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MUU_arthur_calwell
+			allowed = {
+				original_tag = MUU
+			}
+			available = {
+				
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	#Illusive Gentleman auto-generated
+}
+
