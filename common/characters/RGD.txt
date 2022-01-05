@@ -1,0 +1,903 @@
+characters={
+	RGD_rogelio_cabrero_de_cunado={
+		name=RGD_rogelio_cabrero_de_cunado
+		portraits={
+			civilian={
+				large="Portrait_RGD_RCdeCUNADO"
+			}
+		}
+		country_leader={
+			ideology= moderatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	RGD_A_Ortega={ 
+		name=RGD_A_Ortega
+		portraits={
+			army={
+				large="GFX_Portrait_RGD_A_Ortega" 
+			}
+			civilian={
+				large="GFX_Portrait_RGD_A_Ortega" 
+			}
+		}
+		country_leader={
+			ideology= falangism
+			traits={fascist_militia_leader }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	RGD_VCdeESPINOZA={
+		name=RGD_VCdeESPINOZA
+		portraits={
+			civilian={
+				large="GFX_Portrait_RGD_VCdeESPINOZA" 
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	RGD_H_ESTEVEZ={
+		name=RGD_H_ESTEVEZ
+		portraits={
+			civilian={
+				large="GFX_portrait_RGD_H_ESTEVEZ" 
+			}
+			army={
+				large="GFX_portrait_RGD_H_ESTEVEZ" 
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	RGD_A_LOSA={
+		name=RGD_A_LOSA
+		portraits={
+			civilian={
+				large="GFX_Portrait_RGD_A_LOSA"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ devoted_trotskyist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	RGD_H_Gomez={
+		name=RGD_H_Gomez
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_4.dds" #Can become country leader later (Communism -> Leninism)
+			}
+		}
+		field_marshal={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RGD_D_E_Terrazas = {
+		name=RGD_D_E_Terrazas
+		portraits={
+			civilian={
+				large="GFX_portrait_RGD_D_E_Terrazas"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = RGD_D_E_Terrazas
+			ledger = army
+			allowed = {
+				original_tag = RGD
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+				}
+			}
+			traits = {
+				superior_firepower_expert
+			}
+		}
+
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=703
+		}
+	}
+
+	RGD_L_J_Hierra = {
+		name=RGD_L_J_Hierra
+		portraits={
+			civilian={
+				large="GFX_portrait_RGD_L_J_Hierra" 
+			}
+		}
+
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=703
+		}
+	}
+
+	RGD_J_P_de_la_Risa={
+		name=RGD_J_P_de_la_Risa
+		portraits={
+			army={
+				large="gfx/leaders/RGD/Portrait_RGD_J_P_de_la_Risa.dds"
+				small="gfx/interface/ideas/idea_RGD_J_P_de_la_Risa.dds"
+			}
+			civilian={
+				large="gfx/leaders/RGD/Portrait_RGD_J_P_de_la_Risa.dds"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	RGD_X_Rosales = { 
+		name=RGD_X_Rosales
+		portraits={
+			army={
+				large="GFX_portrait_RGD_X_Rosales" #Can become unit leader (field marshal)
+				small="GFX_idea_RGD_X_Rosales"
+			}
+			civilian={
+				large="GFX_portrait_RGD_X_Rosales" 
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RGD_TN_Quesada = {
+		name=RGD_TN_Quesada
+		portraits={
+			civilian={
+				large="GFX_portrait_RGD_TN_Quesada" 
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RGD_R_P_PORRAS={
+		name=RGD_R_P_PORRAS
+		portraits={
+			army={
+				large="GFX_portrait_RGD_R_P_PORRAS" 
+				small="GFX_portrait_RGD_R_P_PORRAS" 
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	RGD_S_P_de_Nunez={
+		name=RGD_S_P_de_Nunez
+		portraits={
+			army={
+				large="GFX_portrait_RGD_S_P_de_Nunez"
+				small="gfx/interface/ideas/idea_RGD_S_P_de_Nunez.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RGD_R_Ochoa={
+		name=RGD_R_Ochoa
+		portraits={
+			army={
+				large="GFX_portrait_RGD_R_Ochoa"
+				small="gfx/interface/ideas/idea_RGD_R_Ochoa.dds"
+			}
+		}
+		navy_leader={
+			traits={ navy_media_personality }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RGD_ramon_fregoso={
+		name=RGD_ramon_fregoso
+		portraits={
+			civilian={
+				large="GFX_portrait_RGD_ramon_fregoso"
+			}
+			army={
+				large="GFX_portrait_RGD_ramon_fregoso"
+				small="gfx/interface/ideas/idea_RGD_ramon_fregoso.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RGD_ramon_fregoso
+			ledger = army
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	RGD_juanito_gil={
+		name=RGD_juanito_gil
+		portraits={
+			civilian={
+				large="GFX_portrait_RGD_juanito_gil" 
+				#small="gfx/interface/ideas/idea_RGD_juanito_gil.dds" 
+			}
+			army={
+				large="GFX_portrait_RGD_juanito_gil_military"
+				#small="gfx/interface/ideas/idea_RGD_juanito_gil_military.dds" 
+				small="gfx/interface/ideas/idea_RGD_juanito_gil.dds" 
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RGD_juanito_gil
+			cost = 75.000
+			allowed = {
+				original_tag = RGD
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+				}
+			}
+			traits = {
+				war_industrialist 
+			}
+			modifier = {
+				mobilization_laws_cost_factor = -0.25
+			}
+		}
+
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RGD_marcos_bilbao={
+		name=RGD_marcos_bilbao
+		portraits={
+			civilian={
+				large="GFX_portraitRGD_marcos_bilbao"
+			}
+			army={
+				large="GFX_portrait_RGD_marcos_bilbao"
+				small="gfx/interface/ideas/idea_RGD_marcos_bilbao.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = RGD_marcos_bilbao
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				navy_fleet_logistics_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RGD_reynaldo_caraveo={
+		name=RGD_reynaldo_caraveo
+		portraits={
+			army={
+				large="GFX_portrait_RGD_reynaldo_caraveo"
+				small="gfx/interface/ideas/idea_RGD_reynaldo_caraveo.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = RGD_reynaldo_caraveo
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		navy_leader={
+			traits={ navy_media_personality }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+	RGD_curro_rabago={ 
+		name=RGD_curro_rabago
+		portraits={
+			army={
+				large="GFX_Portrait_South_America_Generic_land_2"
+				small="gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+			}
+		}
+	}
+
+	RGD_eustaquio_manriquez = { 
+		name=RGD_eustaquio_manriquez
+		portraits={
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+				small="gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+			}
+		}
+	}
+
+	RGD_luis_capetillo = { 
+		name=RGD_luis_capetillo
+		portraits={
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+				small="gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+			}
+		}
+	}
+
+	### THEORISTS ###
+
+	RGD_damian_de_la_garza={
+		name=RGD_damian_de_la_garza
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RGD_damian_de_la_garza
+			ledger = army
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	RGD_maximiliano_gabaldon={
+		name=RGD_maximiliano_gabaldon
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RGD_maximiliano_gabaldon
+			ledger = air
+			allowed = {
+				original_tag = RGD
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+
+
+	### ARMY CHIEFS ###
+
+	RGD_renato_aro={
+		name=RGD_renato_aro
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_renato_aro.dds"
+				large="GFX_portrait_RGD_renato_aro" 
+			}
+			civilian={
+				large="GFX_portrait_RGD_renato_aro" 
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RGD_renato_aro
+			cost = 75.000
+			allowed = {
+				original_tag = RGD
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RGD_guillermo_gonzalvez={
+		name=RGD_guillermo_gonzalvez
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_guillermo_gonzalvez.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RGD_guillermo_gonzalvez
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RGD_alberto_canizares={
+		name=RGD_alberto_canizares
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_alberto_canizares.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RGD_alberto_canizares
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	### NAVY CHIEFS ###
+
+
+	### AIR CHIEFS ###
+
+	RGD_julio_canino={
+		name=RGD_julio_canino
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_julio_canino.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = RGD_julio_canino
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				air_air_combat_training_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RGD_mario_castaneda={
+		name=RGD_mario_castaneda
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_mario_castaneda.dds"
+				large="GFX_portrait_RGD_mario_castaneda"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = RGD_mario_castaneda
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ war_hero }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	RGD_geraldo_casiano={
+		name=RGD_geraldo_casiano
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RGD_geraldo_casiano
+			ledger = air
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				air_strategic_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RGD_tito_galindo={
+		name=RGD_tito_galindo
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_tito_galindo.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RGD_tito_galindo
+			ledger = army
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RGD_oscar_ferraz={
+		name=RGD_oscar_ferraz
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_oscar_ferraz.dds"
+				large = "GFX_portrait_RGD_oscar_ferraz" 
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RGD_oscar_ferraz
+			ledger = army
+			allowed = {
+				original_tag = RGD
+				has_dlc = "Man the Guns"
+			}
+			traits = {
+				army_cavalry_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		
+	RGD_agustin_isidro={
+		name=RGD_agustin_isidro
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_agustin_isidro.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RGD_agustin_isidro
+			ledger = navy
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				navy_naval_air_defense_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### POLITICAL ADVISORS ###	
+	
+	RGD_pablo_mandujano={
+		name=RGD_pablo_mandujano
+		portraits={
+			army={
+				large="GFX_portrait_RGD_pablo_mandujano" #Can become unit leader later
+				small="gfx/interface/ideas/idea_RGD_pablo_mandujano.dds"
+			}
+			civilian = {
+				large="GFX_portrait_RGD_pablo_mandujano" 
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RGD_pablo_mandujano
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				ambitious_union_boss 
+			}
+		}
+	}
+
+	RGD_emilio_encarnacion={
+		name=RGD_emilio_encarnacion
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_emilio_encarnacion.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RGD_emilio_encarnacion
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				syncretic_revanchist 
+			}
+		}
+	}
+
+	RGD_cesar_duran={
+		name=RGD_cesar_duran
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_cesar_duran.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RGD_cesar_duran
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				social_reformer 
+			}
+		}
+	}
+
+	RGD_simon_tercio={
+		name=RGD_simon_tercio
+		portraits={
+			army={
+				small="GFX_idea_RGD_simon_tercio"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RGD_simon_tercio
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				smooth_talking_charmer 
+			}
+		}
+	}
+
+	RGD_diego_pascual_paz={
+		name=RGD_diego_pascual_paz
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_diego_pascual_paz.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RGD_diego_pascual_paz
+			cost = 75.000
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				financial_expert 
+			}
+		}
+	}
+
+	RGD_claudio_cara_de_ortegon={
+		name=RGD_claudio_cara_de_ortegon
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_RGD_claudio_cara_de_ortegon.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RGD_claudio_cara_de_ortegon
+			cost = 75.000
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				captain_of_industry 
+			}
+		}
+	}
+
+	RGD_rainerio_candella={
+		name=RGD_rainerio_candella
+		portraits={
+			army={
+				small="GFX_idea_RGD_rainerio_candella"
+				large = "GFX_portrait_RGD_rainerio_candella" 
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RGD_rainerio_candella
+			cost = 50.000
+			allowed = {
+				original_tag = RGD
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	}
+	
+	# Illusive Gentleman auto-generated
+}

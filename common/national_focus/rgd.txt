@@ -457,7 +457,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RGD_educate_children
+		id = v
 		icon = GFX_focus_research
 		mutually_exclusive = { focus = RGD_working_education }
 		prerequisite = { focus = RGD_time_for_change }
@@ -1086,37 +1086,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			#war score requirements drop?
-		}
-	}
-	focus = {
-		id = RGD_invite_durango
-		icon = GFX_focus_hol_the_foundations_of_defense
-		prerequisite = { focus = RGD_expand_borders}
-		relative_position_id = RGD_expand_borders
-		
-		x = 0
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			#durango leaves mexico and joins RGD
 		}
 	}
 	focus = {

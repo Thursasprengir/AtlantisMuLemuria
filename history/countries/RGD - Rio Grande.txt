@@ -96,7 +96,7 @@ set_war_support = 0.05
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = yes
@@ -108,157 +108,42 @@ set_popularities = {
 	neutrality = 22
 }
 
-create_country_leader = {
-	name = "Rogelio Cabrero de Cuñado"
-	desc = "POLITICS_ROGELIO_C_de_CUNADO_DESC"
-	picture = "Portrait_RGD_RCdeCUNADO.dds"
-	expire = "1965.1.1"
-	ideology = moderatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Abrán Ortega"
-	desc = "POLITICS_ABRAN_ORTEGA_DESC"
-	picture = "GFX_Portrait_RGD_A_Ortega.dds"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
-		fascist_militia_leader
-	}
-}
-
-create_country_leader = { 
-	name = "Virgilio Chavez de Espinoza"
-	desc = "POLITICS_VIRGILIO_CHAVEZ_DE_ESPINOZA_DESC"
-	picture = "GFX_Portrait_RGD_VCdeESPINOZA.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = { # Stalinist, took over after assassination of Trotsky. 1940-1959
-	name = "Heriberto Estévez"
-	desc = "POLITICS_HERIBERTO_ESTEVEZ_DESC"
-	picture = "GFX_Portrait_RGD_H_ESTEVEZ.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_country_leader = { # Trotskyist, led the PCM 1929-1940
-	name = "Abelino Losa"
-	desc = "POLITICS_ABELINO_LOSA_DESC"
-	picture = "GFX_Portrait_RGD_A_LOSA.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		devoted_trotskyist
-	}
-}
-
-create_field_marshal = {
-	name = "Demario Efrain Terrazas"
-	gfx = "GFX_portrait_D_E_Terrazas.dds"
-	traits = { politically_connected }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Hilario Gomez"
-	gfx = "GFX_portrait_RGD_H_Gomez"
-	traits = { infantry_officer } 
-	skill = 3
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Leandro Jesús Hierra"
-	gfx = "GFX_portrait_RGD_L_J_Hierra"
-	traits = { war_hero } 
-	skill = 3
-    attack_skill = 4
-    defense_skill = 1
-    planning_skill = 2
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Jerico Pobres de la Risa"
-	gfx = "GFX_portrait_RGD_J_P_de_la_Risa"
-	traits = { media_personality }
-	skill = 3
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Xavier Rosales"
-	gfx = "GFX_portrait_RGD_X_Rosales"
-	traits = { career_officer }
-	skill = 3
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Tohias N. Quesada"
-	gfx = "GFX_portrait_RGD_TN_Quesada"
-	traits = { politically_connected }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Roldán Pablo Porras"
-	gfx = "GFX_portrait_RGD_R_P_PORRAS"
-	traits = { politically_connected }
-	skill = 3
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 3
-}
-
-create_navy_leader = {
-	name = "Saturnín Prieto de Núñez"
-	gfx = "GFX_portrait_RGD_S_P_de_Nunez"
-	traits = { old_guard_navy }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Rosario Ochoa"
-	gfx = "GFX_portrait_RGD_R_Ochoa"
-	traits = { navy_media_personality }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-
-
+recruit_character = RGD_rogelio_cabrero_de_cunado
+recruit_character = RGD_A_Ortega
+recruit_character = RGD_VCdeESPINOZA
+recruit_character = RGD_H_ESTEVEZ
+recruit_character = RGD_A_LOSA
+recruit_character = RGD_H_Gomez
+recruit_character = RGD_D_E_Terrazas
+recruit_character = RGD_L_J_Hierra
+recruit_character = RGD_J_P_de_la_Risa
+recruit_character = RGD_X_Rosales
+recruit_character = RGD_TN_Quesada
+recruit_character = RGD_R_P_PORRAS
+recruit_character = RGD_S_P_de_Nunez
+recruit_character = RGD_R_Ochoa
+recruit_character = RGD_ramon_fregoso
+recruit_character = RGD_juanito_gil
+recruit_character = RGD_marcos_bilbao
+recruit_character = RGD_reynaldo_caraveo
+recruit_character = RGD_curro_rabago
+recruit_character = RGD_eustaquio_manriquez
+recruit_character = RGD_luis_capetillo
+recruit_character = RGD_damian_de_la_garza
+recruit_character = RGD_maximiliano_gabaldon
+recruit_character = RGD_renato_aro
+recruit_character = RGD_guillermo_gonzalvez
+recruit_character = RGD_alberto_canizares
+recruit_character = RGD_julio_canino
+recruit_character = RGD_mario_castaneda
+recruit_character = RGD_geraldo_casiano
+recruit_character = RGD_tito_galindo
+recruit_character = RGD_oscar_ferraz
+recruit_character = RGD_agustin_isidro
+recruit_character = RGD_pablo_mandujano
+recruit_character = RGD_emilio_encarnacion
+recruit_character = RGD_cesar_duran
+recruit_character = RGD_simon_tercio
+recruit_character = RGD_diego_pascual_paz
+recruit_character = RGD_claudio_cara_de_ortegon
+recruit_character = RGD_rainerio_candella
