@@ -1,0 +1,475 @@
+characters={
+	CNJ_eylo_alava={
+		name="Eylo Álava"
+		portraits={
+			civilian={
+				large="gfx/leaders/CNJ/Portrait_CNJ_E_Alava.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_E_ALAVA_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CNJ_gonzalo_diaz={
+		name="Gonzalo Díaz"
+		portraits={
+			civilian={
+				large="gfx/leaders/CNJ/Portrait_CNJ_G_Diaz.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_G_DIAZ_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CNJ_rodrigo_todorov={
+		name="Rodrigo Todorov"
+		portraits={
+			civilian={
+				large="gfx/leaders/CNJ/Portrait_CNJ_R_Todorov.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_R_TODOROV_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CNJ_vela_tellez={
+		name="Vela Téllez"
+		portraits={
+			civilian={
+				large="gfx/leaders/CNJ/Portrait_CNJ_V_Tellez.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_V_TELLEZ_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CNJ_munio_vigilaz={
+		name="Munio Vigílaz"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CNJ_diego_sanjurjo={
+		name="Diego Sanjurjo"
+		portraits={
+			navy={
+				small=""
+			}
+			navy={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	CNJ_emilio_espartero={
+		name="Emilio Espartero"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CNJ_alberto_rojo={
+		name="Alberto Rojo"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CNJ_eusebio_ayala={
+		advisor={
+			slot = navy_chief
+			idea_token = CNJ_eusebio_ayala
+			ledger  = navy 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_eusebio_ayala"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	CNJ_german_busch_beccera={
+		advisor={
+			slot = political_advisor
+			idea_token = CNJ_german_busch_beccera
+			allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="CNJ_german_busch_beccera"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	CNJ_jose_santos_quinteros={
+		advisor={
+			slot = air_chief
+			idea_token = CNJ_jose_santos_quinteros
+			ledger  = air 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_jose_santos_quinteros"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	CNJ_fabian_vaca_chavez={
+		advisor={
+			slot = high_command
+			idea_token = CNJ_fabian_vaca_chavez
+			ledger  = air 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					air_naval_strike_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_fabian_vaca_chavez"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	CNJ_enrique_baldivieso_aparicio={
+		advisor={
+			slot = theorist
+			idea_token = CNJ_enrique_baldivieso_aparicio
+			allowed  = {
+					original_tag  = CNJ
+				}
+				ledger  = army 
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="CNJ_enrique_baldivieso_aparicio"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	CNJ_roberto_hinojosa={
+		advisor={
+			slot = army_chief
+			idea_token = CNJ_roberto_hinojosa
+			ledger  = army 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_roberto_hinojosa"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	CNJ_carlos_altamirano={
+		advisor={
+			slot = high_command
+			idea_token = CNJ_carlos_altamirano
+			ledger  = army 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					army_artillery_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_carlos_altamirano"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	CNJ_alberto_ostria_gutierrez={
+		advisor={
+			slot = theorist
+			idea_token = CNJ_alberto_ostria_gutierrez
+			ledger  = navy 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="CNJ_alberto_ostria_gutierrez"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	CNJ_enrique_finot={
+		advisor={
+			slot = political_advisor
+			idea_token = CNJ_enrique_finot
+			allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					fortification_engineer 
+				}
+		}
+		name="CNJ_enrique_finot"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	CNJ_tomas_monje_gutierrez={
+		advisor={
+			slot = high_command
+			idea_token = CNJ_tomas_monje_gutierrez
+			ledger  = army 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_tomas_monje_gutierrez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	CNJ_gil_ibarra_juarez={
+		advisor={
+			slot = navy_chief
+			idea_token = CNJ_gil_ibarra_juarez
+			ledger  = navy 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_gil_ibarra_juarez"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_3"
+			}
+		}
+	}
+	CNJ_gualberto_villarroel_lopez={
+		advisor={
+			slot = army_chief
+			idea_token = CNJ_gualberto_villarroel_lopez
+			ledger  = army 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					army_chief_old_guard 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_gualberto_villarroel_lopez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	CNJ_jose_maria_gutierrez={
+		advisor={
+			slot = political_advisor
+			idea_token = CNJ_jose_maria_gutierrez
+			allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="CNJ_jose_maria_gutierrez"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	CNJ_david_toro_ruilova={
+		advisor={
+			slot = air_chief
+			idea_token = CNJ_david_toro_ruilova
+			ledger  = air 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_david_toro_ruilova"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	CNJ_julian_montellano_carrasco={
+		advisor={
+			slot = high_command
+			idea_token = CNJ_julian_montellano_carrasco
+			allowed  = {
+					original_tag  = CNJ
+				}
+				ledger  = navy 
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CNJ_julian_montellano_carrasco"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	CNJ_hector_bilbao_roja={
+		advisor={
+			slot = theorist
+			idea_token = CNJ_hector_bilbao_roja
+			ledger  = air 
+				allowed  = {
+					original_tag  = CNJ
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="CNJ_hector_bilbao_roja"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+}

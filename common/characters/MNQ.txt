@@ -1,0 +1,458 @@
+characters={
+	MNQ_analisa_escudero_de_huertero={
+		name="Analisa Escudero de Huertero"
+		portraits={
+			civilian={
+				large="gfx/leaders/MNQ/Portrait_MNQ_AE_Huertero.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AE_HUERTERO_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MNQ_iago_maria_borrodo={
+		name="Iago María Borrodo"
+		portraits={
+			civilian={
+				large="gfx/leaders/MNQ/Portrait_MNQ_IM_Borrodo.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_IM_BORRODO_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MNQ_madroi_umiare={
+		name="Madroí Umiaré"
+		portraits={
+			civilian={
+				large="gfx/leaders/MNQ/Portrait_MNQ_M_Umiare.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_M_UMIARE_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MNQ_amadeus_albazal={
+		name="Amadeus Albazal"
+		portraits={
+			civilian={
+				large="gfx/leaders/MNQ/Portrait_MNQ_A_Albazal.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AMADEUS_ALBAZAL_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MNQ_pablo_pablito_de_urqiza={
+		name="Pablo 'Pablito' de Urqiza"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine organisational_leader }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MNQ_adolphe_ortega={
+		name="Adolphe Ortega"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MNQ_rafael_valdes={
+		name="Rafael Valdés"
+		portraits={
+			navy={
+				small=""
+			}
+			navy={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	MNQ_german_busch_beccera={
+		advisor={
+			slot = political_advisor
+			idea_token = MNQ_german_busch_beccera
+			allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="MNQ_german_busch_beccera"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	MNQ_alberto_ostria_gutierrez={
+		advisor={
+			slot = theorist
+			idea_token = MNQ_alberto_ostria_gutierrez
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="MNQ_alberto_ostria_gutierrez"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	MNQ_gualberto_villarroel_lopez={
+		advisor={
+			slot = army_chief
+			idea_token = MNQ_gualberto_villarroel_lopez
+			ledger  = army 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					army_chief_old_guard 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_gualberto_villarroel_lopez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	MNQ_julian_montellano_carrasco={
+		advisor={
+			slot = high_command
+			idea_token = MNQ_julian_montellano_carrasco
+			ledger  = air 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_julian_montellano_carrasco"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	MNQ_hector_bilbao_roja={
+		advisor={
+			slot = theorist
+			idea_token = MNQ_hector_bilbao_roja
+			ledger  = air 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="MNQ_hector_bilbao_roja"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	MNQ_carlos_altamirano={
+		advisor={
+			slot = high_command
+			idea_token = MNQ_carlos_altamirano
+			ledger  = army 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					army_artillery_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_carlos_altamirano"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	MNQ_eusebio_ayala={
+		advisor={
+			slot = navy_chief
+			idea_token = MNQ_eusebio_ayala
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_eusebio_ayala"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	MNQ_gil_ibarra_juarez={
+		advisor={
+			slot = navy_chief
+			idea_token = MNQ_gil_ibarra_juarez
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_gil_ibarra_juarez"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_3"
+			}
+		}
+	}
+	MNQ_enrique_finot={
+		advisor={
+			slot = political_advisor
+			idea_token = MNQ_enrique_finot
+			allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					fortification_engineer 
+				}
+		}
+		name="MNQ_enrique_finot"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	MNQ_tomas_monje_gutierrez={
+		advisor={
+			slot = high_command
+			idea_token = MNQ_tomas_monje_gutierrez
+			ledger  = army 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_tomas_monje_gutierrez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	MNQ_jose_santos_quinteros={
+		advisor={
+			slot = air_chief
+			idea_token = MNQ_jose_santos_quinteros
+			ledger  = air 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_jose_santos_quinteros"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	MNQ_enrique_baldivieso_aparicio={
+		advisor={
+			slot = theorist
+			idea_token = MNQ_enrique_baldivieso_aparicio
+			ledger  = army 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="MNQ_enrique_baldivieso_aparicio"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	MNQ_jose_maria_gutierrez={
+		advisor={
+			slot = political_advisor
+			idea_token = MNQ_jose_maria_gutierrez
+			allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="MNQ_jose_maria_gutierrez"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	MNQ_david_toro_ruilova={
+		advisor={
+			slot = air_chief
+			idea_token = MNQ_david_toro_ruilova
+			ledger  = air 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_david_toro_ruilova"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	MNQ_fabian_vaca_chavez={
+		advisor={
+			slot = high_command
+			idea_token = MNQ_fabian_vaca_chavez
+			ledger  = air 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					air_naval_strike_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_fabian_vaca_chavez"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	MNQ_roberto_hinojosa={
+		advisor={
+			slot = army_chief
+			idea_token = MNQ_roberto_hinojosa
+			ledger  = army 
+				allowed  = {
+					original_tag  = MNQ
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MNQ_roberto_hinojosa"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+}

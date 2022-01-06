@@ -1,0 +1,569 @@
+characters={
+	IKA_lolani_taleni={
+		name="Lolani Taleni"
+		portraits={
+			civilian={
+				large="gfx/leaders/IKA/Portrait_IKA_L_Taleni.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LOLANI_TALENI_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	IKA_akalona_lamego={
+		name="Akalona Lamego"
+		portraits={
+			civilian={
+				large="gfx/leaders/IKA/Portrait_IKA_A_Lamego.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AKALONA_LAMEGO_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	IKA_ihipa_simi={
+		name="Ihipa Simi"
+		portraits={
+			civilian={
+				large="gfx/leaders/IKA/Portrait_IKA_I_Simi.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_IHIPA_SIMI_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	IKA_ewe_liuka={
+		name="Ewe Liuka"
+		portraits={
+			civilian={
+				large="gfx/leaders/IKA/Portrait_IKA_E_Liuka.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EWE_LIUKA_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	IKA_aperhama_tanumafili={
+		name="Aperhama Tanumafili"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster offensive_doctrine guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	IKA_mako_sau_la={
+		name="Mako Sau La"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Kanagan Mu/Portrait_Kanagan_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	IKA_haoena_takaloa={
+		name="Ha'oena Takaloa"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Kanagan Mu/Portrait_Kanagan_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	IKA_tobi_oriata={
+		name="Tobi Oriata"
+		portraits={
+			navy={
+				small=""
+			}
+			navy={
+				large="gfx/leaders/Kanagan Mu/Portrait_Kanagan_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ gunnery_expert cuts_corners }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	IKA_uinirau_kaiwi={
+		advisor={
+			slot = high_command
+			idea_token = IKA_uinirau_kaiwi
+			ledger  = air 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_uinirau_kaiwi"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_3"
+			}
+		}
+	}
+	IKA_ruatapu_kamearoha={
+		advisor={
+			slot = army_chief
+			idea_token = IKA_ruatapu_kamearoha
+			ledger  = army 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_ruatapu_kamearoha"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	IKA_kiwa_lani={
+		advisor={
+			slot = theorist
+			idea_token = IKA_kiwa_lani
+			ledger  = army 
+				allowed  = {
+					original_tag  = IKA
+				}
+				research_bonus  = {
+					land_doctrine  = 0.070
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="IKA_kiwa_lani"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	IKA_liko_rongo={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_liko_rongo
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="IKA_liko_rongo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	IKA_ahuura_arana={
+		advisor={
+			slot = air_chief
+			idea_token = IKA_ahuura_arana
+			ledger  = air 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_ahuura_arana"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	IKA_siaosi_kapule={
+		advisor={
+			slot = theorist
+			idea_token = IKA_siaosi_kapule
+			allowed  = {
+					original_tag  = IKA
+				}
+				ledger  = navy 
+				research_bonus  = {
+					naval_doctrine  = 0.070
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="IKA_siaosi_kapule"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	IKA_kekino_keahi={
+		advisor={
+			slot = air_chief
+			idea_token = IKA_kekino_keahi
+			ledger  = air 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_kekino_keahi"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	IKA_rewi_kapure={
+		advisor={
+			slot = army_chief
+			idea_token = IKA_rewi_kapure
+			ledger  = army 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					army_chief_drill_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_rewi_kapure"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	IKA_ura_hale={
+		advisor={
+			slot = high_command
+			idea_token = IKA_ura_hale
+			ledger  = navy 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_ura_hale"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	IKA_uati_kahue={
+		advisor={
+			slot = high_command
+			idea_token = IKA_uati_kahue
+			ledger  = army 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_uati_kahue"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	IKA_liona_kura={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_liona_kura
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="IKA_liona_kura"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	IKA_pomare_hekekia={
+		advisor={
+			slot = army_chief
+			idea_token = IKA_pomare_hekekia
+			ledger  = army 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_pomare_hekekia"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	IKA_ahohako_maherona={
+		advisor={
+			slot = navy_chief
+			idea_token = IKA_ahohako_maherona
+			ledger  = air 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_ahohako_maherona"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	IKA_rutu_iona={
+		advisor={
+			slot = army_chief
+			idea_token = IKA_rutu_iona
+			ledger  = army 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_rutu_iona"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	IKA_aalona_karama={
+		advisor={
+			slot = navy_chief
+			idea_token = IKA_aalona_karama
+			ledger  = navy 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_aalona_karama"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	IKA_keao_parakiko={
+		advisor={
+			slot = air_chief
+			idea_token = IKA_keao_parakiko
+			ledger  = air 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					air_chief_safety_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_keao_parakiko"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	IKA_dawid_taaronga={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_dawid_taaronga
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="IKA_dawid_taaronga"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	IKA_kelekolio_kekoa={
+		advisor={
+			slot = high_command
+			idea_token = IKA_kelekolio_kekoa
+			ledger  = air 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					air_strategic_bombing_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_kelekolio_kekoa"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	IKA_turoa_kahananui={
+		advisor={
+			slot = high_command
+			idea_token = IKA_turoa_kahananui
+			ledger  = army 
+				allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					army_commando_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="IKA_turoa_kahananui"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	IKA_kopaka_hine={
+		advisor={
+			slot = theorist
+			idea_token = IKA_kopaka_hine
+			ledger  = air 
+				allowed  = {
+					original_tag  = IKA
+				}
+				research_bonus  = {
+					air_doctrine  = 0.070
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="IKA_kopaka_hine"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+}

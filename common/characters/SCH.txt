@@ -1,0 +1,100 @@
+characters={
+	SCH_axel_dingwald={
+		name="Axel Dingwald"
+		portraits={
+			civilian={
+				large="gfx/leaders/SCH/Portrait_SCH_Axel_Dingwald.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AXEL_DINGWALD_DESC"
+			ideology=fascism_ideology
+			traits={ assassination_survivor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SCH_bob_the_oligarch={
+		name="Bob the Oligarch"
+		portraits={
+			civilian={
+				large="gfx/leaders/SCH/Portrait_SCH_Axel_Dingwald.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AXEL_DINGWALD_DESC"
+			ideology=oligarchism
+			traits={ assassination_survivor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SCH_humbert_muller={
+		name="Humbert Müller"
+		portraits={
+			civilian={
+				large="gfx/leaders/SCH/Portrait_SCH_H_Muller.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HUMBERT_MULLER_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SCH_andrei_schulz={
+		name="Andrei Schulz"
+		portraits={
+			civilian={
+				large="gfx/leaders/SCH/Portrait_SCH_A_Schulz.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ANDREI_SCHULZ_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SCH_otto_richter={
+		name="Otto Richter"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine defensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	SCH_gunther_von_kluge={
+		name="Günther von Kluge"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine organisational_leader }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

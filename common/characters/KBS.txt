@@ -1,0 +1,432 @@
+characters={
+	KBS_abmahalav_khumalo={
+		name="Abmahalav Khumalo"
+		portraits={
+			civilian={
+				large="gfx/leaders/KBS/Portrait_KBS_A_Khumalo.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_A_KHUMALO_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KBS_petela_wetmeri={
+		name="Petela Wetmeri"
+		portraits={
+			civilian={
+				large="gfx/leaders/KBS/Portrait_KBS_P_Wetmeri.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PETELA_WETMERI_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KBS_upweonu_bembigre={
+		name="Upweonu Bembigre"
+		portraits={
+			civilian={
+				large="gfx/leaders/KBS/Portrait_KBS_U_Bembigre.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_UPWEONU_BEMBIGRE_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KBS_leitu_nuwesde={
+		name="Leitu Nuwesde"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster offensive_doctrine guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	KBS_pambre_elusiti={
+		name="Pambre Elusiti"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ dealbroker editor }
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	KBS_pakaristre_shamshkio={
+		name="Pakaristre Shamshki'o"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer engineer_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	KBS_logistics_2={
+		advisor={
+			slot = high_command
+			idea_token = KBS_logistics_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	KBS_regrouping_2={
+		advisor={
+			slot = high_command
+			idea_token = KBS_regrouping_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_regrouping_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	KBS_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = KBS_prince_of_terror
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="KBS_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	KBS_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = KBS_ground_support_2
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	KBS_maneuver_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KBS_maneuver_2
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	KBS_offensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KBS_offensive_2
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_offensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	KBS_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KBS_defensive_2
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	KBS_naval_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KBS_naval_theorist
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KBS
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="KBS_naval_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	KBS_mil_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KBS_mil_theorist
+			ledger  = army 
+				allowed  = {
+					original_tag  = KBS
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="KBS_mil_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	KBS_air_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KBS_air_theorist
+			ledger  = air 
+				allowed  = {
+					original_tag  = KBS
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="KBS_air_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	KBS_commerce_raiding_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KBS_commerce_raiding_2
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_commerce_raiding_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	KBS_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = KBS_backstabber
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="KBS_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	KBS_night_ops_2={
+		advisor={
+			slot = air_chief
+			idea_token = KBS_night_ops_2
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_night_ops_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	KBS_close_air_support_2={
+		advisor={
+			slot = high_command
+			idea_token = KBS_close_air_support_2
+			ledger  = air 
+				allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	KBS_quartermaster_gen={
+		advisor={
+			slot = political_advisor
+			idea_token = KBS_quartermaster_gen
+			allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="KBS_quartermaster_gen"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	KBS_capital_ship_2={
+		advisor={
+			slot = high_command
+			idea_token = KBS_capital_ship_2
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KBS
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KBS_capital_ship_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+}

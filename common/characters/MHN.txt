@@ -1,0 +1,567 @@
+characters={
+	MHN_purotu_mana={
+		name="Purotu Mana"
+		portraits={
+			civilian={
+				large="gfx/leaders/MHN/Portrait_MHN_Purotu_Mana.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PUROTU_MANA_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MHN_ponui_rairii={
+		name="Ponui Ra'irii"
+		portraits={
+			civilian={
+				large="gfx/leaders/MHN/Portrait_MHN_Ponui_Rairii.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PONUI_RAIRII_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MHN_hoatapu_fareani={
+		name="Hoatapu Fareani"
+		portraits={
+			civilian={
+				large="gfx/leaders/MHN/Portrait_MHN_Hoatapu_Fareani.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HOATAPU_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MHN_moehau_ettini={
+		name="Moehau Ettini"
+		portraits={
+			civilian={
+				large="gfx/leaders/MHN/Portrait_MHN_Moehau_Ettini.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MOEHAU_ETTINI_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MHN_reia_tearri={
+		name="Reia Tearri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster offensive_doctrine guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MHN_halialoha_malielegaoi={
+		name="Hali'aloha Malielegaoi"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MHN_mako_sau_la={
+		name="Mako Sau La"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MHN_heiva_mataafa={
+		name="Heiva Mata'afa"
+		portraits={
+			navy={
+				small=""
+			}
+			navy={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	MHN_kopaka_hine={
+		advisor={
+			slot = theorist
+			idea_token = MHN_kopaka_hine
+			ledger  = air 
+				allowed  = {
+					original_tag  = MHN
+				}
+				research_bonus  = {
+					air_doctrine  = 0.070
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="MHN_kopaka_hine"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	MHN_dawid_taaronga={
+		advisor={
+			slot = political_advisor
+			idea_token = MHN_dawid_taaronga
+			allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="MHN_dawid_taaronga"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	MHN_siaosi_kapule={
+		advisor={
+			slot = theorist
+			idea_token = MHN_siaosi_kapule
+			allowed  = {
+					original_tag  = MHN
+				}
+				ledger  = navy 
+				research_bonus  = {
+					naval_doctrine  = 0.070
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="MHN_siaosi_kapule"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	MHN_uinirau_kaiwi={
+		advisor={
+			slot = high_command
+			idea_token = MHN_uinirau_kaiwi
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_uinirau_kaiwi"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_3"
+			}
+		}
+	}
+	MHN_kekino_keahi={
+		advisor={
+			slot = air_chief
+			idea_token = MHN_kekino_keahi
+			ledger  = air 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_kekino_keahi"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	MHN_ura_hale={
+		advisor={
+			slot = high_command
+			idea_token = MHN_ura_hale
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_ura_hale"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	MHN_liona_kura={
+		advisor={
+			slot = political_advisor
+			idea_token = MHN_liona_kura
+			allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="MHN_liona_kura"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	MHN_liko_rongo={
+		advisor={
+			slot = political_advisor
+			idea_token = MHN_liko_rongo
+			allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="MHN_liko_rongo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	MHN_keao_parakiko={
+		advisor={
+			slot = air_chief
+			idea_token = MHN_keao_parakiko
+			ledger  = air 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					air_chief_safety_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_keao_parakiko"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	MHN_ahohako_maherona={
+		advisor={
+			slot = navy_chief
+			idea_token = MHN_ahohako_maherona
+			ledger  = air 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_ahohako_maherona"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	MHN_rutu_iona={
+		advisor={
+			slot = army_chief
+			idea_token = MHN_rutu_iona
+			ledger  = army 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_rutu_iona"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	MHN_kiwa_lani={
+		advisor={
+			slot = theorist
+			idea_token = MHN_kiwa_lani
+			ledger  = army 
+				allowed  = {
+					original_tag  = MHN
+				}
+				research_bonus  = {
+					land_doctrine  = 0.070
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="MHN_kiwa_lani"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	MHN_rewi_kapure={
+		advisor={
+			slot = army_chief
+			idea_token = MHN_rewi_kapure
+			ledger  = army 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					army_chief_drill_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_rewi_kapure"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	MHN_kelekolio_kekoa={
+		advisor={
+			slot = high_command
+			idea_token = MHN_kelekolio_kekoa
+			ledger  = air 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					air_strategic_bombing_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_kelekolio_kekoa"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	MHN_ahuura_arana={
+		advisor={
+			slot = air_chief
+			idea_token = MHN_ahuura_arana
+			ledger  = air 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_ahuura_arana"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	MHN_ruatapu_kamearoha={
+		advisor={
+			slot = army_chief
+			idea_token = MHN_ruatapu_kamearoha
+			ledger  = army 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_ruatapu_kamearoha"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	MHN_aalona_karama={
+		advisor={
+			slot = navy_chief
+			idea_token = MHN_aalona_karama
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_aalona_karama"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	MHN_pomare_hekekia={
+		advisor={
+			slot = army_chief
+			idea_token = MHN_pomare_hekekia
+			ledger  = army 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_pomare_hekekia"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	MHN_turoa_kahananui={
+		advisor={
+			slot = high_command
+			idea_token = MHN_turoa_kahananui
+			ledger  = army 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					army_commando_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_turoa_kahananui"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	MHN_uati_kahue={
+		advisor={
+			slot = high_command
+			idea_token = MHN_uati_kahue
+			ledger  = army 
+				allowed  = {
+					original_tag  = MHN
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="MHN_uati_kahue"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+}

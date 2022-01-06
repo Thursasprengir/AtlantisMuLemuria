@@ -1,0 +1,451 @@
+characters={
+	RTR_robert_haining={
+		name="Robert Haining"
+		portraits={
+			civilian={
+				large="gfx/leaders/RTR/Portrait_RTR_R_Haining.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ROBERT_HAINING_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	RTR_reginald_p_duckman={
+		name="Reginald P. Duckman"
+		portraits={
+			civilian={
+				large="gfx/leaders/RTR/Portrait_RTR_R_P_Duckman.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_REGINALD_P_DUCKMAN_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	RTR_alistair_bruce={
+		name="Alistair Bruce"
+		portraits={
+			civilian={
+				large="gfx/leaders/RTR/Portrait_RTR_A_Bruce.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ALISTAIR_BRUCE_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	RTR_edgar_houses={
+		name="Edgar Houses"
+		portraits={
+			civilian={
+				large="gfx/leaders/RTR/Portrait_RTR_E_Houses.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EDGAR_HOUSES_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	RTR_andrew_wiggin={
+		name="Andrew Wiggin"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster offensive_doctrine guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	RTR_william_thesiger={
+		name="William Thesiger"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	RTR_cyril_haig={
+		name="Cyril Haig"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	RTR_offensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = RTR_offensive_2
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_offensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	RTR_logistics_2={
+		advisor={
+			slot = high_command
+			idea_token = RTR_logistics_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	RTR_regrouping_2={
+		advisor={
+			slot = high_command
+			idea_token = RTR_regrouping_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_regrouping_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	RTR_mil_theorist={
+		advisor={
+			slot = theorist
+			idea_token = RTR_mil_theorist
+			ledger  = army 
+				allowed  = {
+					original_tag  = RTR
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="RTR_mil_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	RTR_quartermaster_gen={
+		advisor={
+			slot = political_advisor
+			idea_token = RTR_quartermaster_gen
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="RTR_quartermaster_gen"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	RTR_maneuver_2={
+		advisor={
+			slot = navy_chief
+			idea_token = RTR_maneuver_2
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	RTR_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = RTR_backstabber
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="RTR_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	RTR_naval_theorist={
+		advisor={
+			slot = theorist
+			idea_token = RTR_naval_theorist
+			ledger  = navy 
+				allowed  = {
+					original_tag  = RTR
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="RTR_naval_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	RTR_air_theorist={
+		advisor={
+			slot = theorist
+			idea_token = RTR_air_theorist
+			ledger  = air 
+				allowed  = {
+					original_tag  = RTR
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="RTR_air_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	RTR_capital_ship_2={
+		advisor={
+			slot = high_command
+			idea_token = RTR_capital_ship_2
+			ledger  = navy 
+				allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_capital_ship_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	RTR_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = RTR_defensive_2
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	RTR_night_ops_2={
+		advisor={
+			slot = air_chief
+			idea_token = RTR_night_ops_2
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_night_ops_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	RTR_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = RTR_ground_support_2
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	RTR_close_air_support_2={
+		advisor={
+			slot = high_command
+			idea_token = RTR_close_air_support_2
+			ledger  = air 
+				allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	RTR_commerce_raiding_2={
+		advisor={
+			slot = navy_chief
+			idea_token = RTR_commerce_raiding_2
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="RTR_commerce_raiding_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	RTR_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = RTR_prince_of_terror
+			allowed  = {
+					original_tag  = RTR
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="RTR_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+}

@@ -456,4 +456,435 @@ characters={
 			ai_will_do = {factor = 10.000}
 		}
 	}
+	KUM_ahintu_uvruvatri={
+		name="Ahintu Uvruvatri"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	KUM_wessampiri_civvandra={
+		name="Wessampiri Civvandra"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	KUM_ilmoragri_vingradri={
+		name="Ilmoragri Vingradri"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	KUM_pontrimatri_selamta={
+		name="Pontrimatri Selamta"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	KUM_ashmeq_rantri={
+		name="Ashmeq Rantri"
+		portraits={
+			navy={
+				small=""
+			}
+			navy={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	KUM_air_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KUM_air_theorist
+			ledger  = air 
+				allowed  = {
+					original_tag  = KUM
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="KUM_air_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	KUM_close_air_support_2={
+		advisor={
+			slot = high_command
+			idea_token = KUM_close_air_support_2
+			ledger  = air 
+				allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	KUM_naval_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KUM_naval_theorist
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KUM
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="KUM_naval_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	KUM_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = KUM_prince_of_terror
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="KUM_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	KUM_offensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KUM_offensive_2
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_offensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	KUM_mil_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KUM_mil_theorist
+			ledger  = army 
+				allowed  = {
+					original_tag  = KUM
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="KUM_mil_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	KUM_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KUM_defensive_2
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	KUM_quartermaster_gen={
+		advisor={
+			slot = political_advisor
+			idea_token = KUM_quartermaster_gen
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="KUM_quartermaster_gen"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	KUM_regrouping_2={
+		advisor={
+			slot = high_command
+			idea_token = KUM_regrouping_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_regrouping_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	KUM_maneuver_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KUM_maneuver_2
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	KUM_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = KUM_ground_support_2
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	KUM_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = KUM_backstabber
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="KUM_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	KUM_night_ops_2={
+		advisor={
+			slot = air_chief
+			idea_token = KUM_night_ops_2
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_night_ops_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	KUM_capital_ship_2={
+		advisor={
+			slot = high_command
+			idea_token = KUM_capital_ship_2
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_capital_ship_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	KUM_logistics_2={
+		advisor={
+			slot = high_command
+			idea_token = KUM_logistics_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	KUM_commerce_raiding_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KUM_commerce_raiding_2
+			allowed  = {
+					original_tag  = KUM
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KUM_commerce_raiding_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
 }

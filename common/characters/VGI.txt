@@ -1,0 +1,480 @@
+characters={
+	VGI_arnold_von_ebbingen={
+		name="Arnold von Ebbingen"
+		portraits={
+			civilian={
+				large="gfx/leaders/VGI/Portrait_VGI_A_Ebbingen.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ARNOLD_EBBINGEN_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	VGI_bob_the_oligarch_2={
+		name="Falke Ibenhardt"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_FALKE_Ibenhardt_DESC"
+			ideology=oligarchism
+			traits={ assassination_survivor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	VGI_eduard_eikeman={
+		name="Eduard Eikeman"
+		portraits={
+			civilian={
+				large="gfx/leaders/VGI/Portrait_VGI_E_Eikeman.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EDUARD_EIKEMAN_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	VGI_dietrich_von_mauzinglow={
+		name="Dietrich von Mauzinglow"
+		portraits={
+			civilian={
+				large="gfx/leaders/VGI/Portrait_VGI_D_Mauzinglow.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_DIETRICH_MAUZINGLOW_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	VGI_eckhard_von_danzig={
+		name="Eckhard von Danzig"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine defensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	VGI_felix_haubersted={
+		name="Felix Haubersted"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine organisational_leader }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	VGI_elias_paulanski={
+		name="Elias Paulanski"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	VGI_odilo_globocnik={
+		advisor={
+			slot = army_chief
+			idea_token = VGI_odilo_globocnik
+			ledger  = army 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					army_entrenchment_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_odilo_globocnik"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	VGI_paul_von_hegedus={
+		advisor={
+			slot = navy_chief
+			idea_token = VGI_paul_von_hegedus
+			ledger  = navy 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_paul_von_hegedus"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	VGI_otto_meixner_von_zweienstamm={
+		advisor={
+			slot = theorist
+			idea_token = VGI_otto_meixner_von_zweienstamm
+			ledger  = army 
+				allowed  = {
+					original_tag  = VGI
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="VGI_otto_meixner_von_zweienstamm"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	VGI_eduard_freiherr={
+		advisor={
+			slot = army_chief
+			idea_token = VGI_eduard_freiherr
+			ledger  = army 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_eduard_freiherr"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	VGI_franz_bohme={
+		advisor={
+			slot = army_chief
+			idea_token = VGI_franz_bohme
+			ledger  = army 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					army_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_franz_bohme"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	VGI_wilhelm_zehner={
+		advisor={
+			slot = high_command
+			idea_token = VGI_wilhelm_zehner
+			ledger  = army 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_wilhelm_zehner"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	VGI_alexander_lohr={
+		advisor={
+			slot = air_chief
+			idea_token = VGI_alexander_lohr
+			ledger  = air 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_alexander_lohr"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	VGI_ernst_kaltenbrunner={
+		advisor={
+			slot = army_chief
+			idea_token = VGI_ernst_kaltenbrunner
+			ledger  = army 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_ernst_kaltenbrunner"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	VGI_julius_raab={
+		advisor={
+			slot = political_advisor
+			idea_token = VGI_julius_raab
+			allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="VGI_julius_raab"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	VGI_leopold_figl={
+		advisor={
+			slot = political_advisor
+			idea_token = VGI_leopold_figl
+			allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="VGI_leopold_figl"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	VGI_josef_teufl={
+		advisor={
+			slot = navy_chief
+			idea_token = VGI_josef_teufl
+			ledger  = air 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_josef_teufl"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	VGI_eugen_beyer={
+		advisor={
+			slot = high_command
+			idea_token = VGI_eugen_beyer
+			ledger  = army 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					army_commando_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_eugen_beyer"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	VGI_lothar_rendulic={
+		advisor={
+			slot = high_command
+			idea_token = VGI_lothar_rendulic
+			ledger  = army 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_lothar_rendulic"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	VGI_otto_schobel={
+		advisor={
+			slot = air_chief
+			idea_token = VGI_otto_schobel
+			ledger  = air 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_otto_schobel"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	VGI_viktor_seebauer={
+		advisor={
+			slot = high_command
+			idea_token = VGI_viktor_seebauer
+			ledger  = air 
+				allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					air_bomber_interception_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VGI_viktor_seebauer"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	VGI_arthur_seyss-inquart={
+		advisor={
+			slot = political_advisor
+			idea_token = VGI_arthur_seyss-inquart
+			allowed  = {
+					original_tag  = VGI
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="VGI_arthur_seyss-inquart"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	VGI_julius_yllam={
+		advisor={
+			slot = theorist
+			idea_token = VGI_julius_yllam
+			ledger  = air 
+				allowed  = {
+					original_tag  = VGI
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="VGI_julius_yllam"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+}

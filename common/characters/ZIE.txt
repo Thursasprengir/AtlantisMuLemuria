@@ -1,0 +1,652 @@
+characters={
+	ZIE_braam_alberdingk={
+		name="Braam Alberdingk"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZIE/Portrait_ZIE_B_Alberdingk.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_B_ALBERDINGK_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ZIE_ambroos_buelen={
+		name="Ambroos Buelen"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZIE/Portrait_ZIE_A_Buelen.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AMBROOS_BUELEN_DESC"
+			ideology=conservatism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	ZIE_gillis_bezuidenhout={
+		name="Gillis Bezuidenhout"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZIE/Portrait_ZIE_G_Bezuidenhout.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GILLIS_BEZUIDENHOUT_DESC"
+			ideology=marxism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	ZIE_jurriaan_hummel={
+		name="Jurriaan Hummel"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZIE/Portrait_ZIE_J_Hummel.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JURRIAAN_HUMMEL_DESC"
+			ideology=fascism_ideology
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	ZIE_marnix_koopman={
+		name="Marnix Koopman"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZIE/Portrait_ZIE_M_Koopman.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MARNIX_KOOPMAN_DESC"
+			ideology=moderatism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	ZIE_martijn_rademaker={
+		name="Martijn Rademaker"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster offensive_doctrine guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ZIE_adriaan_dijxhoorn={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_adriaan_dijxhoorn
+			allowed  = {
+					original_tag  = ZIE
+				}
+				available  = {
+					or  = {
+						has_government  = democratic 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="ZIE_adriaan_dijxhoorn"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	ZIE_godfried_van_voorst_tot_voorst={
+		advisor={
+			slot = theorist
+			idea_token = ZIE_godfried_van_voorst_tot_voorst
+			allowed  = {
+					original_tag  = ZIE
+				}
+				ledger  = army 
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="ZIE_godfried_van_voorst_tot_voorst"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	ZIE_maarten_belzer={
+		advisor={
+			slot = high_command
+			idea_token = ZIE_maarten_belzer
+			ledger  = army 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					army_concealment_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_maarten_belzer"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	ZIE_jan_goudriaan={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_jan_goudriaan
+			allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="ZIE_jan_goudriaan"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	ZIE_henri_winkelman={
+		advisor={
+			slot = army_chief
+			idea_token = ZIE_henri_winkelman
+			ledger  = army 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_henri_winkelman"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	ZIE_jacob_adriaan_de_wilde={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_jacob_adriaan_de_wilde
+			allowed  = {
+					original_tag  = ZIE
+				}
+				available  = {
+					or  = {
+						has_government  = democratic 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					genial_anti_revolutionary 
+				}
+		}
+		name="ZIE_jacob_adriaan_de_wilde"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	ZIE_izaak_reijnders={
+		advisor={
+			slot = army_chief
+			idea_token = ZIE_izaak_reijnders
+			ledger  = army 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					army_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_izaak_reijnders"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	ZIE_charles_douw_van_der_krap={
+		advisor={
+			slot = high_command
+			idea_token = ZIE_charles_douw_van_der_krap
+			allowed  = {
+					original_tag  = ZIE
+				}
+				ledger  = air 
+				traits  = {
+					air_naval_strike_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_charles_douw_van_der_krap"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	ZIE_prince_bernhard={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_prince_bernhard
+			cost  = 100.000
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					adventurous_daredevil 
+				}
+		}
+		name="ZIE_prince_bernhard"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+	}
+	ZIE_petrus_wilhelmus_best={
+		advisor={
+			slot = air_chief
+			idea_token = ZIE_petrus_wilhelmus_best
+			ledger  = air 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_petrus_wilhelmus_best"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	ZIE_hein_ter_poorten={
+		advisor={
+			slot = army_chief
+			idea_token = ZIE_hein_ter_poorten
+			ledger  = army 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_hein_ter_poorten"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	ZIE_cornelis_van_geelkerken={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_cornelis_van_geelkerken
+			allowed  = {
+					original_tag  = ZIE
+				}
+				available  = {
+					has_government  = fascism 
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="ZIE_cornelis_van_geelkerken"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	ZIE_hendrik_seyffardt={
+		advisor={
+			slot = army_chief
+			idea_token = ZIE_hendrik_seyffardt
+			ledger  = army 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				available  = {
+					has_government  = fascism 
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_hendrik_seyffardt"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	ZIE_meinout_rost_van_tonningen={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_meinout_rost_van_tonningen
+			allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="ZIE_meinout_rost_van_tonningen"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_western_european_2d"
+			}
+		}
+	}
+	ZIE_antonie_pannekoek={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_antonie_pannekoek
+			allowed  = {
+					original_tag  = ZIE
+				}
+				available  = {
+					has_government  = communism 
+				}
+				traits  = {
+					council_communist 
+				}
+		}
+		name="ZIE_antonie_pannekoek"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	ZIE_adrianus_rudolphus_van_den_bent={
+		advisor={
+			slot = high_command
+			idea_token = ZIE_adrianus_rudolphus_van_den_bent
+			ledger  = army 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_adrianus_rudolphus_van_den_bent"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	ZIE_walraven_van_hall={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_walraven_van_hall
+			allowed  = {
+					original_tag  = ZIE
+				}
+				available  = {
+					has_capitulated  = yes 
+					or  = {
+						has_government  = democratic 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					resistance_banker 
+				}
+		}
+		name="ZIE_walraven_van_hall"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	ZIE_nico_van_straten={
+		advisor={
+			slot = high_command
+			idea_token = ZIE_nico_van_straten
+			ledger  = army 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					army_cavalry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_nico_van_straten"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	ZIE_marius_raaijmakers={
+		advisor={
+			slot = theorist
+			idea_token = ZIE_marius_raaijmakers
+			ledger  = air 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="ZIE_marius_raaijmakers"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	ZIE_hendrik_van_oyen={
+		advisor={
+			slot = air_chief
+			idea_token = ZIE_hendrik_van_oyen
+			ledger  = air 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_hendrik_van_oyen"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	ZIE_conrad_helfrich={
+		advisor={
+			slot = navy_chief
+			idea_token = ZIE_conrad_helfrich
+			ledger  = navy 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					navy_chief_commerce_raiding_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_conrad_helfrich"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	ZIE_willem_schermerhorn={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_willem_schermerhorn
+			allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="ZIE_willem_schermerhorn"
+		portraits={
+			army={
+				small="GFX_idea_generic_democratic_reformer_western_european_2d"
+			}
+		}
+	}
+	ZIE_anton_de_kom={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_anton_de_kom
+			allowed  = {
+					original_tag  = ZIE
+				}
+				available  = {
+					has_government  = communism 
+				}
+				traits  = {
+					colonial_communist 
+				}
+		}
+		name="ZIE_anton_de_kom"
+		portraits={
+			army={
+				small="GFX_idea_generic_communist_africa"
+			}
+		}
+	}
+	ZIE_karel_doorman={
+		advisor={
+			slot = navy_chief
+			idea_token = ZIE_karel_doorman
+			ledger  = navy 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					navy_chief_decisive_battle_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ZIE_karel_doorman"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	ZIE_johan_furstner={
+		advisor={
+			slot = theorist
+			idea_token = ZIE_johan_furstner
+			ledger  = navy 
+				allowed  = {
+					original_tag  = ZIE
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="ZIE_johan_furstner"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	ZIE_saul_de_groot={
+		advisor={
+			slot = political_advisor
+			idea_token = ZIE_saul_de_groot
+			allowed  = {
+					original_tag  = ZIE
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="ZIE_saul_de_groot"
+		portraits={
+			army={
+				small="GFX_idea_generic_communist_revolutionary_western_european_2d"
+			}
+		}
+	}
+}

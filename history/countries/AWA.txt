@@ -1,0 +1,547 @@
+characters={
+	AWA_ahonui_pinati={
+		name="Ahonui Pinati"
+		portraits={
+			civilian={
+				large="gfx/leaders/AWA/Portrait_AWA_A_Pinati.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AHONUI_PINATI_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	AWA_haku_mumea={
+		name="Haku Mumea"
+		portraits={
+			civilian={
+				large="gfx/leaders/AWA/Portrait_AWA_H_Mumea.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HAKU_MUMEA_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	AWA_halemano_faga={
+		name="Halemano Faga"
+		portraits={
+			civilian={
+				large="gfx/leaders/AWA/Portrait_AWA_H_Faga.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HALEMANO_FAGA_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	AWA_halialoha_mauiliu={
+		name="Hali'aloha Mauiliu"
+		portraits={
+			civilian={
+				large="gfx/leaders/AWA/Portrait_AWA_H_Mauiliu.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HALIALOHA_MAUILIU_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	AWA_inoa_mataafa={
+		name="Inoa Mata'afa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster offensive_doctrine guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	AWA_hailani_taleni={
+		name="Hailani Taleni"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	AWA_akalona_tuitama={
+		name="Akalona Tuitama"
+		portraits={
+			navy={
+				small=""
+			}
+			navy={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	AWA_kopaka_hine={
+		advisor={
+			slot = theorist
+			idea_token = AWA_kopaka_hine
+			allowed  = {
+					original_tag  = AWA
+				}
+				ledger  = air 
+				research_bonus  = {
+					air_doctrine  = 0.070
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="AWA_kopaka_hine"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	AWA_dawid_taaronga={
+		advisor={
+			slot = political_advisor
+			idea_token = AWA_dawid_taaronga
+			allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="AWA_dawid_taaronga"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	AWA_liona_kura={
+		advisor={
+			slot = political_advisor
+			idea_token = AWA_liona_kura
+			allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="AWA_liona_kura"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	AWA_siaosi_kapule={
+		advisor={
+			slot = theorist
+			idea_token = AWA_siaosi_kapule
+			allowed  = {
+					original_tag  = AWA
+				}
+				ledger  = navy 
+				research_bonus  = {
+					naval_doctrine  = 0.070
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="AWA_siaosi_kapule"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	AWA_ahohako_maherona={
+		advisor={
+			slot = navy_chief
+			idea_token = AWA_ahohako_maherona
+			ledger  = navy 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_ahohako_maherona"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	AWA_turoa_kahananui={
+		advisor={
+			slot = high_command
+			idea_token = AWA_turoa_kahananui
+			ledger  = army 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					army_commando_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_turoa_kahananui"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	AWA_kiwa_lani={
+		advisor={
+			slot = theorist
+			idea_token = AWA_kiwa_lani
+			allowed  = {
+					original_tag  = AWA
+				}
+				ledger  = army 
+				research_bonus  = {
+					land_doctrine  = 0.070
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="AWA_kiwa_lani"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	AWA_keao_parakiko={
+		advisor={
+			slot = air_chief
+			idea_token = AWA_keao_parakiko
+			ledger  = air 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					air_chief_safety_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_keao_parakiko"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	AWA_uinirau_kaiwi={
+		advisor={
+			slot = high_command
+			idea_token = AWA_uinirau_kaiwi
+			ledger  = navy 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_uinirau_kaiwi"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_3"
+			}
+		}
+	}
+	AWA_ruatapu_kamearoha={
+		advisor={
+			slot = army_chief
+			idea_token = AWA_ruatapu_kamearoha
+			ledger  = army 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_ruatapu_kamearoha"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	AWA_uati_kahue={
+		advisor={
+			slot = high_command
+			idea_token = AWA_uati_kahue
+			ledger  = army 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_uati_kahue"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	AWA_ahuura_arana={
+		advisor={
+			slot = air_chief
+			idea_token = AWA_ahuura_arana
+			ledger  = air 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_ahuura_arana"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	AWA_kelekolio_kekoa={
+		advisor={
+			slot = high_command
+			idea_token = AWA_kelekolio_kekoa
+			ledger  = air 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					air_strategic_bombing_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_kelekolio_kekoa"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	AWA_rutu_iona={
+		advisor={
+			slot = army_chief
+			idea_token = AWA_rutu_iona
+			ledger  = army 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_rutu_iona"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	AWA_rewi_kapure={
+		advisor={
+			slot = army_chief
+			idea_token = AWA_rewi_kapure
+			ledger  = army 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					army_chief_drill_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_rewi_kapure"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	AWA_liko_rongo={
+		advisor={
+			slot = political_advisor
+			idea_token = AWA_liko_rongo
+			allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="AWA_liko_rongo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	AWA_ura_hale={
+		advisor={
+			slot = high_command
+			idea_token = AWA_ura_hale
+			ledger  = navy 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_ura_hale"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	AWA_pomare_hekekia={
+		advisor={
+			slot = army_chief
+			idea_token = AWA_pomare_hekekia
+			ledger  = army 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_pomare_hekekia"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	AWA_kekino_keahi={
+		advisor={
+			slot = air_chief
+			idea_token = AWA_kekino_keahi
+			ledger  = air 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_kekino_keahi"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	AWA_aalona_karama={
+		advisor={
+			slot = navy_chief
+			idea_token = AWA_aalona_karama
+			ledger  = navy 
+				allowed  = {
+					original_tag  = AWA
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="AWA_aalona_karama"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+}

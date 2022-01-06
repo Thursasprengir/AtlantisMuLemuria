@@ -1,0 +1,1121 @@
+characters={
+	MKU_tangrivvi_mandrigonal={
+		name="Tangrivvi Mandrigonal"
+		portraits={
+			civilian={
+				large="gfx/leaders/MKU/Portrait_MKU_T_MANDRIGONAL.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_T_MANDRIGONAL_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MKU_uppandrasha_tabrisilli={
+		name="Uppandrasha Tabrisilli"
+		portraits={
+			civilian={
+				large="gfx/leaders/MKU/Portrait_MKU_U_Tabrisilli.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_U_TABRISILLI_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MKU_y_randargarsha={
+		name="Y. Randargarsha"
+		portraits={
+			civilian={
+				large="gfx/leaders/MKU/Portrait_MKU_Y_Randargarsha.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Y_RANDARGARSHA_DESC"
+			ideology=centrism
+			traits={ indomitable_perseverance }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MKU_amin_tovrishala={
+		name="Amin Tovrishala"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster offensive_doctrine guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MKU_intornera_pameshra={
+		name="Intornera Pameshra"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+	MKU_atahiman_pantashan={
+		name="Atahiman Pantashan"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MKU_jashasthra_buthrami={
+		advisor={
+			slot = political_advisor
+			idea_token = jashasthra_buthrami
+			allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="jashasthra_buthrami"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	MKU_ashmeq_nelverimma={
+		advisor={
+			slot = high_command
+			idea_token = ashmeq_nelverimma
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ashmeq_nelverimma"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	MKU_amran_treshtrin={
+		advisor={
+			slot = army_chief
+			idea_token = amran_treshtrin
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					army_chief_drill_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="amran_treshtrin"
+		portraits={
+			army={
+				small="GFX_idea_amran_treshtrin"
+			}
+		}
+	}
+	MKU_bergamun_neprintri={
+		advisor={
+			slot = theorist
+			idea_token = bergamun_neprintri
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				cost  = 250.000
+				research_bonus  = {
+					cat_base_strike  = 0.150
+				}
+				traits  = {
+					naval_aviation_pioneer 
+				}
+		}
+		name="bergamun_neprintri"
+		portraits={
+			army={
+				small="GFX_idea_bergamun_neprintri"
+			}
+		}
+	}
+	MKU_omordura_dimtristra={
+		advisor={
+			slot = political_advisor
+			idea_token = omordura_dimtristra
+			allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="omordura_dimtristra"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	MKU_kohran_rantri={
+		advisor={
+			slot = army_chief
+			idea_token = kohran_rantri
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="kohran_rantri"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	MKU_jutri_hapnidra={
+		advisor={
+			slot = high_command
+			idea_token = jutri_hapnidra
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					air_strategic_bombing_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="jutri_hapnidra"
+		portraits={
+			army={
+				small="GFX_idea_sabiha_gocen"
+			}
+		}
+	}
+	MKU_ahintu_shandrindri={
+		advisor={
+			slot = theorist
+			idea_token = ahintu_shandrindri
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				research_bonus  = {
+					rocketry  = 0.150
+				}
+				traits  = {
+					rocket_scientist 
+				}
+		}
+		name="ahintu_shandrindri"
+		portraits={
+			army={
+				small="GFX_idea_ahintu_shandrindri"
+			}
+		}
+	}
+	MKU_vekrinta_selamta={
+		advisor={
+			slot = air_chief
+			idea_token = vekrinta_selamta
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="vekrinta_selamta"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	MKU_olutripan_ramnagran={
+		advisor={
+			slot = army_chief
+			idea_token = olutripan_ramnagran
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				available  = {
+				}
+				traits  = {
+					army_chief_planning_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="olutripan_ramnagran"
+		portraits={
+			army={
+				small="GFX_idea_USA_walter_krueger"
+			}
+		}
+	}
+	MKU_pontrimatri_lensashre={
+		advisor={
+			slot = air_chief
+			idea_token = pontrimatri_lensashre
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					air_chief_reform_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="pontrimatri_lensashre"
+		portraits={
+			army={
+				small="GFX_idea_pontrimatri_lensashre"
+			}
+		}
+	}
+	MKU_dvashrat_pameshra={
+		advisor={
+			slot = navy_chief
+			idea_token = dvashrat_pameshra
+			allowed  = {
+					original_tag  = MKU
+				}
+				ledger  = navy 
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="dvashrat_pameshra"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	MKU_liqorin_ertusul={
+		advisor={
+			slot = political_advisor
+			idea_token = liqorin_ertusul
+			allowed  = {
+					original_tag  = MKU
+				}
+				allowed_civil_war  = {
+					not  = {
+						has_government  = communism 
+					}
+					not  = {
+						has_government  = democratic 
+					}
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				available  = {
+				}
+				traits  = {
+					editor 
+				}
+				do_effect  = {
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="liqorin_ertusul"
+		portraits={
+			army={
+				small="GFX_idea_USA_whittaker_chambers"
+			}
+		}
+	}
+	MKU_iloporga_wisannatra={
+		advisor={
+			slot = high_command
+			idea_token = iloporga_wisannatra
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					air_tactical_bombing_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="iloporga_wisannatra"
+		portraits={
+			army={
+				small="GFX_idea_iloporga_wisannatra"
+			}
+		}
+	}
+	MKU_humenin_destriga={
+		advisor={
+			slot = high_command
+			idea_token = humenin_destriga
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="humenin_destriga"
+		portraits={
+			army={
+				small="GFX_idea_humenin_destriga"
+			}
+		}
+	}
+	MKU_shintrantra_elintu={
+		advisor={
+			slot = political_advisor
+			idea_token = shintrantra_elintu
+			allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="shintrantra_elintu"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	MKU_numeshre_civvandra={
+		advisor={
+			slot = high_command
+			idea_token = numeshre_civvandra
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					army_commando_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="numeshre_civvandra"
+		portraits={
+			army={
+				small="GFX_idea_numeshre_civvandra"
+			}
+		}
+	}
+	MKU_semshu_minvrindri={
+		advisor={
+			slot = theorist
+			idea_token = semshu_minvrindri
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				cost  = 250.000
+				research_bonus  = {
+					cat_strategic_destruction  = 0.150
+				}
+				traits  = {
+					victory_through_airpower 
+				}
+		}
+		name="semshu_minvrindri"
+		portraits={
+			army={
+				small="GFX_idea_semshu_minvrindri"
+			}
+		}
+	}
+	MKU_sindrin_cortanrda={
+		advisor={
+			slot = theorist
+			idea_token = sindrin_cortanrda
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				research_bonus  = {
+					air_doctrine  = 0.070
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="sindrin_cortanrda"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	MKU_ertushat_perginvannu={
+		advisor={
+			slot = navy_chief
+			idea_token = ertushat_perginvannu
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					navy_chief_old_guard 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ertushat_perginvannu"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	MKU_limtri_eshgashina={
+		advisor={
+			slot = high_command
+			idea_token = limtri_eshgashina
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					navy_screen_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="limtri_eshgashina"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	MKU_huneshar_mintetri={
+		advisor={
+			slot = theorist
+			idea_token = huneshar_mintetri
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				research_bonus  = {
+					land_doctrine  = 0.070
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="huneshar_mintetri"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	MKU_wessampiri_cutraska={
+		advisor={
+			slot = political_advisor
+			idea_token = wessampiri_cutraska
+			allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="wessampiri_cutraska"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	MKU_avnati_dringatri={
+		advisor={
+			slot = high_command
+			idea_token = avnati_dringatri
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="avnati_dringatri"
+		portraits={
+			army={
+				small="GFX_idea_avnati_dringatri"
+			}
+		}
+	}
+	MKU_ermeti_urtunrima={
+		advisor={
+			slot = army_chief
+			idea_token = ermeti_urtunrima
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ermeti_urtunrima"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	MKU_mekil_beppantra={
+		advisor={
+			slot = high_command
+			idea_token = mekil_beppantra
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="mekil_beppantra"
+		portraits={
+			army={
+				small="GFX_idea_mekil_beppantra"
+			}
+		}
+	}
+	MKU_lanshatri_narbaha={
+		advisor={
+			slot = political_advisor
+			idea_token = lanshatri_narbaha
+			allowed  = {
+					original_tag  = MKU
+				}
+				allowed_civil_war  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				available  = {
+				}
+				traits  = {
+					editor 
+				}
+				cost  = 50.000
+				do_effect  = {
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="lanshatri_narbaha"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	MKU_opprusnal_dertisgartha={
+		advisor={
+			slot = political_advisor
+			idea_token = opprusnal_dertisgartha
+			allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="opprusnal_dertisgartha"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	MKU_ilmoragri_vingradri={
+		advisor={
+			slot = political_advisor
+			idea_token = ilmoragri_vingradri
+			allowed  = {
+					original_tag  = MKU
+				}
+				available  = {
+				}
+				traits  = {
+					anti_communist_crusader 
+				}
+		}
+		name="ilmoragri_vingradri"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	MKU_gedriza_pantashan={
+		advisor={
+			slot = political_advisor
+			idea_token = gedriza_pantashan
+			allowed  = {
+					original_tag  = MKU
+				}
+				available  = {
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 10.000
+					modifier  = {
+						is_historical_focus_on  = yes 
+						has_game_rule  = {
+							rule  = USA_ai_behavior 
+							option  = default 
+						}
+						factor  = 0.000
+					}
+					modifier  = {
+						is_historical_focus_on  = yes 
+						not  = {
+							has_dlc = "Man the Guns"
+						}
+						factor  = 0.000
+					}
+				}
+		}
+		name="gedriza_pantashan"
+		portraits={
+			army={
+				small="GFX_idea_idea_generic_air_africa_1"
+			}
+		}
+	}
+	MKU_torminel_tinshamra={
+		advisor={
+			slot = theorist
+			idea_token = torminel_tinshamra
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MKU
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="torminel_tinshamra"
+		portraits={
+			army={
+				small="GFX_idea_torminel_tinshamra"
+			}
+		}
+	}
+	MKU_tunriska_untrimir={
+		advisor={
+			slot = political_advisor
+			idea_token = tunriska_untrimir
+			allowed  = {
+					original_tag  = MKU
+				}
+				available  = {
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 10.000
+					modifier  = {
+						is_historical_focus_on  = yes 
+						factor  = 0.000
+					}
+				}
+		}
+		name="tunriska_untrimir"
+		portraits={
+			army={
+				small="GFX_idea_tunriska_untrimir"
+			}
+		}
+	}
+	MKU_hashtrat_uvruvatri={
+		advisor={
+			slot = air_chief
+			idea_token = hashtrat_uvruvatri
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="hashtrat_uvruvatri"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	MKU_itrashantri_rinporna={
+		advisor={
+			slot = army_chief
+			idea_token = itrashantri_rinporna
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				available  = {
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="itrashantri_rinporna"
+		portraits={
+			army={
+				small="GFX_idea_itrashantri_rinporna"
+			}
+		}
+	}
+	MKU_wannantri_seksharkarthe={
+		advisor={
+			slot = political_advisor
+			idea_token = wannantri_seksharkarthe
+			allowed  = {
+					original_tag  = MKU
+				}
+				available  = {
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="wannantri_seksharkarthe"
+		portraits={
+			army={
+				small="GFX_idea_wannantri_seksharkarthe"
+			}
+		}
+	}
+	MKU_intornera_ongre={
+		advisor={
+			slot = air_chief
+			idea_token = intornera_ongre
+			ledger  = air 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					air_chief_safety_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="intornera_ongre"
+		portraits={
+			army={
+				small="GFX_idea_intornera_ongre"
+			}
+		}
+	}
+	MKU_naradrisha_gamutrandra={
+		advisor={
+			slot = theorist
+			idea_token = naradrisha_gamutrandra
+			ledger  = army 
+				allowed  = {
+					original_tag  = MKU
+				}
+				cost  = 250.000
+				research_bonus  = {
+					cat_mobile_warfare  = 0.150
+				}
+				traits  = {
+					mobile_warfare_expert 
+				}
+		}
+		name="naradrisha_gamutrandra"
+		portraits={
+			army={
+				small="GFX_idea_naradrisha_gamutrandra"
+			}
+		}
+	}
+	MKU_predigar_tatamize={
+		advisor={
+			slot = political_advisor
+			idea_token = predigar_tatamize
+			allowed  = {
+					original_tag  = MKU
+				}
+				allowed_civil_war  = {
+					has_government  = communism 
+				}
+				available  = {
+				}
+				traits  = {
+					economist 
+				}
+				do_effect  = {
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="predigar_tatamize"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	MKU_atahiman_nayanendra={
+		advisor={
+			slot = political_advisor
+			idea_token = atahiman_nayanendra
+			allowed  = {
+					original_tag  = MKU
+				}
+				allowed_civil_war  = {
+					not  = {
+						has_government  = communism 
+					}
+					not  = {
+						has_government  = democratic 
+					}
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				available  = {
+				}
+				traits  = {
+					financial_expert 
+				}
+				do_effect  = {
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="atahiman_nayanendra"
+		portraits={
+			army={
+				small="GFX_idea_idea_generic_air_africa_2"
+			}
+		}
+	}
+	MKU_nebbriste_merimora={
+		advisor={
+			slot = political_advisor
+			idea_token = nebbriste_merimora
+			allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="nebbriste_merimora"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_6"
+			}
+		}
+	}
+	MKU_orburunghitha_amtrishtha={
+		advisor={
+			slot = political_advisor
+			idea_token = orburunghitha_amtrishtha
+			allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					silent_workhorse 
+				}
+		}
+		name="orburunghitha_amtrishtha"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	MKU_trimandra_entupara={
+		advisor={
+			slot = high_command
+			idea_token = trimandra_entupara
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					navy_fleet_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="trimandra_entupara"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	MKU_tumus_umtrishu={
+		advisor={
+			slot = navy_chief
+			idea_token = tumus_umtrishu
+			ledger  = navy 
+				allowed  = {
+					original_tag  = MKU
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="tumus_umtrishu"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	MKU_cheshmirtri_meshmratme={
+		advisor={
+			slot = political_advisor
+			idea_token = cheshmirtri_meshmratme
+			allowed  = {
+					original_tag  = MKU
+				}
+				available  = {
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="cheshmirtri_meshmratme"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_6"
+			}
+		}
+	}
+}

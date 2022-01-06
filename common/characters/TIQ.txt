@@ -1,0 +1,437 @@
+characters={
+	TIQ_manuel_esquidero={
+		name="Manuel Esquidero"
+		portraits={
+			civilian={
+				large="gfx/leaders/TIQ/Portrait_TIQ_M_Esquidero.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_M_ESQUIDERO_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TIQ_juan_david_aulavacia={
+		name="Juan David Aulavacia"
+		portraits={
+			civilian={
+				large="gfx/leaders/TIQ/Portrait_TIQ_JD_Aulavacia.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JD_AULAVACIA_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TIQ_pablo_enrique_todosantos={
+		name="Pablo Enrique Todosantos"
+		portraits={
+			civilian={
+				large="gfx/leaders/TIQ/Portrait_TIQ_PE_Todosantos.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PE_TODOSANTOS_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TIQ_juan_diego_marquez={
+		name="Juan Diego Marquez"
+		portraits={
+			civilian={
+				large="gfx/leaders/TIQ/Portrait_TIQ_JD_Marquez.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JD_MARQUEZ_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TIQ_pedro_orejon_saldivar={
+		name="Pedro 'Orejón' Saldivar"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine organisational_leader }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	TIQ_eduardo_alonso={
+		name="Eduardo Alonso"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	TIQ_luis_podesta_costa={
+		advisor={
+			slot = political_advisor
+			idea_token = TIQ_luis_podesta_costa
+			allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="TIQ_luis_podesta_costa"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	TIQ_pedro_pablo_ramirez={
+		advisor={
+			slot = army_chief
+			idea_token = TIQ_pedro_pablo_ramirez
+			ledger  = army 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_pedro_pablo_ramirez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	TIQ_hortensio_quijano={
+		advisor={
+			slot = theorist
+			idea_token = TIQ_hortensio_quijano
+			ledger  = air 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="TIQ_hortensio_quijano"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	TIQ_thomas_martinez={
+		advisor={
+			slot = high_command
+			idea_token = TIQ_thomas_martinez
+			ledger  = army 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_thomas_martinez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	TIQ_antonio_parodi={
+		advisor={
+			slot = air_chief
+			idea_token = TIQ_antonio_parodi
+			ledger  = air 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_antonio_parodi"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	TIQ_jose_tamborni={
+		advisor={
+			slot = air_chief
+			idea_token = TIQ_jose_tamborni
+			ledger  = air 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_jose_tamborni"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	TIQ_uribaldi_diaz_brittenberg={
+		advisor={
+			slot = high_command
+			idea_token = TIQ_uribaldi_diaz_brittenberg
+			ledger  = air 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_uribaldi_diaz_brittenberg"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	TIQ_eleazar_videla={
+		advisor={
+			slot = high_command
+			idea_token = TIQ_eleazar_videla
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_eleazar_videla"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	TIQ_pedro_s_casal={
+		advisor={
+			slot = navy_chief
+			idea_token = TIQ_pedro_s_casal
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_pedro_s_casal"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	TIQ_heriberto_la_galine={
+		advisor={
+			slot = navy_chief
+			idea_token = TIQ_heriberto_la_galine
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_heriberto_la_galine"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	TIQ_edelmiro_farrell={
+		advisor={
+			slot = theorist
+			idea_token = TIQ_edelmiro_farrell
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="TIQ_edelmiro_farrell"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	TIQ_francisco_m_velez={
+		advisor={
+			slot = high_command
+			idea_token = TIQ_francisco_m_velez
+			ledger  = army 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_francisco_m_velez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	TIQ_ramon_castillo={
+		advisor={
+			slot = political_advisor
+			idea_token = TIQ_ramon_castillo
+			allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="TIQ_ramon_castillo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	TIQ_manuel_maria_de_iriondo={
+		advisor={
+			slot = political_advisor
+			idea_token = TIQ_manuel_maria_de_iriondo
+			allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="TIQ_manuel_maria_de_iriondo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	TIQ_manuel_a_rodriguez={
+		advisor={
+			slot = army_chief
+			idea_token = TIQ_manuel_a_rodriguez
+			ledger  = army 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TIQ_manuel_a_rodriguez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	TIQ_agustin_pedro_justo={
+		advisor={
+			slot = theorist
+			idea_token = TIQ_agustin_pedro_justo
+			ledger  = army 
+				allowed  = {
+					original_tag  = TIQ
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="TIQ_agustin_pedro_justo"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+}

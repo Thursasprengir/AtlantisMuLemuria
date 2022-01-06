@@ -1,0 +1,78 @@
+characters={
+	FRS_arnulf_svartsson={
+		name="Arnulf Svartsson"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRS/Portrait_Frisland_Arnulf_Svartsson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ARNULF_SVARTSSON_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRS_magnus_olaffsson={
+		name="Magnus Olaffsson"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRS/Portrait_Frisland_Magnus_Olaffsson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MAGNUS_OLAFFSSON_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRS_stieg_tryvegsson={
+		name="Stieg Tryvegsson"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRS/Portrait_Frisland_Stieg_Tryvegsson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_STIEG_TRYVEGSSON_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRS_grim_njalsson={
+		name="Grim Njalsson"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRS/Portrait_Frisland_Grim_Njalsson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GRIM_NJALSSON_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRS_egil_skallagrimsson={
+		name="Egil Skallagrimsson"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster offensive_doctrine guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

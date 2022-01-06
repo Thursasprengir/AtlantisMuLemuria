@@ -1,0 +1,138 @@
+characters={
+	MCH_augustin_lefebvre={
+		name="Augustin Lefebvre"
+		portraits={
+			civilian={
+				large="gfx/leaders/MCH/Portrait_MUI_A_Lefebvre.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AUGUSTIN_LEFEBVRE_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MCH_denis_masson={
+		name="Denis Masson"
+		portraits={
+			civilian={
+				large="gfx/leaders/MCH/Portrait_MUI_D_Masson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_DENIS_MASSON_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MCH_geraud_gautier={
+		name="Géraud Gautier"
+		portraits={
+			civilian={
+				large="gfx/leaders/MCH/Portrait_MUI_G_Gautier.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GERAUD_GAUTIER_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MCH_mael_vasseur={
+		name="Maël Vasseur"
+		portraits={
+			civilian={
+				large="gfx/leaders/MCH/Portrait_MUI_M_Vasseur.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MAEL_VASSEUR_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MCH_onesime_charpentier={
+		name="Onésime Charpentier"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MCH_john_smith={
+		name="John Smith"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Kanagan Mu/Portrait_Kanagan_Generic_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MCH_john_taylor={
+		name="John Taylor"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/Kanagan Mu/Portrait_Kanagan_Generic_land_1.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard brilliant_strategist offensive_doctrine aggressive_assaulter }
+			skill=2
+			attack_skill=5
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MCH_alex_walker={
+		name="Alex Walker"
+		portraits={
+			navy={
+				small=""
+			}
+			navy={
+				large="gfx/leaders/Kanagan Mu/Portrait_Kanagan_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+}
