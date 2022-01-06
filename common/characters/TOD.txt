@@ -1,0 +1,1469 @@
+characters={
+	TOD_mauricio_ovoron={
+		name="Mauricio Ovorón"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_M_OVORON_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TOD_inigo_montoya={
+		name="Íñigo Montoya"
+		portraits={
+			civilian={
+				large="gfx/leaders/TOD/Portrait_TOD_I_Montoya.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_INIGO_MONTOYA_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TOD_ramiro_antonio_idiazabalez={
+		name="Ramiro Antonio Idiazabalez"
+		portraits={
+			civilian={
+				large="gfx/leaders/TOD/Portrait_TOD_RA_Idiazabalez.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_RA_IDIAZABALEZ_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TOD_tomas_angelico_todorov={
+		name="Tomás Angélico Todorov"
+		portraits={
+			civilian={
+				large="gfx/leaders/TOD/Portrait_TOD_TA_Todorov.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TA_TODOROV_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TOD_juan_pablo_iglesias={
+		name="Juan Pablo Iglesias"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_mateo_millanastray={
+		name="Mateo Millán-Astray"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_ignacio_de_albornoz={
+		name="Ignacio de Albornoz"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless armor_officer }
+			skill=5
+			attack_skill=7
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	TOD_gaspar_espartero={
+		name="Gaspar Espartero"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious harsh_leader }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	TOD_raimundo_narvaez={
+		name="Raimundo Narváez"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	TOD_pascual_munoz={
+		name="Pascual Muñoz"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard harsh_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	TOD_nicolas_cabrera={
+		name="Nicolás Cabrera"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	TOD_benito_franco={
+		name="Benito Franco"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	TOD_mariano_yague={
+		name="Mariano Yagüe"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	TOD_damaso_bugallal={
+		name="Dámaso Bugallal"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer infantry_officer panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	TOD_calixto_maroto={
+		name="Calixto Maroto"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer harsh_leader infantry_officer politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_melchor_martinezcampos={
+		name="Melchor Martínez-Campos"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	TOD_segismundo_de_carvajal={
+		name="Segismundo de Carvajal"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	TOD_sebastian_de_orleans={
+		name="Sebastián de Orleans"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast caustic_personality naval_lineage blockade_runner }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_joaquin_gonzalez={
+		name="Joaquín González"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_federico_topete={
+		name="Federico Topete"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold naval_lineage superior_tactician spotter }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_juan_julio_mina={
+		name="Juan Julio Mina"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ naval_lineage superior_tactician spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_leopoldo_p._hevia={
+		name="Leopoldo P. Hevia"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer naval_lineage }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_gabino_cervera={
+		name="Gabino Cervera"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners naval_lineage spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_pedro_alonso={
+		name="Pedro Alonso"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_1.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold naval_lineage fleet_protector superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_agustin_n_allendesalazar={
+		name="Agustín N. Allendesalazar"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ career_officer naval_lineage }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	TOD_dos_uno={
+		advisor={
+			slot = high_command
+			idea_token = dos_uno
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					navy_screen_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_dos_uno"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	TOD_bufo_mufo={
+		advisor={
+			slot = political_advisor
+			idea_token = bufo_mufo
+			allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="TOD_bufo_mufo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_6"
+			}
+		}
+	}
+	TOD_dos_tres={
+		advisor={
+			slot = air_chief
+			idea_token = dos_tres
+			ledger  = air 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_dos_tres"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	TOD_abrir_cerrar={
+		advisor={
+			slot = army_chief
+			idea_token = abrir_cerrar
+			ledger  = army 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_abrir_cerrar"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	TOD_dino_dino={
+		advisor={
+			slot = theorist
+			idea_token = dino_dino
+			ledger  = army 
+				allowed  = {
+					original_tag  = TOD
+				}
+				research_bonus  = {
+					land_doctrine  = 0.070
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="TOD_dino_dino"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	TOD_tino_tino={
+		advisor={
+			slot = theorist
+			idea_token = tino_tino
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = air 
+				cost  = 250.000
+				research_bonus  = {
+					cat_strategic_destruction  = 0.150
+				}
+				traits  = {
+					victory_through_airpower 
+				}
+		}
+		name="TOD_tino_tino"
+		portraits={
+			army={
+				small="GFX_idea_tino_tino"
+			}
+		}
+	}
+	TOD_mingo_pingo={
+		advisor={
+			slot = political_advisor
+			idea_token = mingo_pingo
+			allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="TOD_mingo_pingo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	TOD_uno_dos={
+		advisor={
+			slot = air_chief
+			idea_token = uno_dos
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = air 
+				traits  = {
+					air_chief_reform_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_uno_dos"
+		portraits={
+			army={
+				small="GFX_idea_uno_dos"
+			}
+		}
+	}
+	TOD_lucas_pucas={
+		advisor={
+			slot = army_chief
+			idea_token = lucas_pucas
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = army 
+				traits  = {
+					army_chief_drill_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_lucas_pucas"
+		portraits={
+			army={
+				small="GFX_idea_lucas_pucas"
+			}
+		}
+	}
+	TOD_seis_siete={
+		advisor={
+			slot = navy_chief
+			idea_token = seis_siete
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = navy 
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_seis_siete"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	TOD_once_doce={
+		advisor={
+			slot = high_command
+			idea_token = once_doce
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = air 
+				traits  = {
+					air_strategic_bombing_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_once_doce"
+		portraits={
+			army={
+				small="GFX_idea_sabiha_gocen"
+			}
+		}
+	}
+	TOD_sino_sino={
+		advisor={
+			slot = theorist
+			idea_token = sino_sino
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = air 
+				research_bonus  = {
+					air_doctrine  = 0.070
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="TOD_sino_sino"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	TOD_queso_diego={
+		advisor={
+			slot = political_advisor
+			idea_token = queso_diego
+			allowed  = {
+					original_tag  = TOD
+				}
+				allowed_civil_war  = {
+					has_government  = communism 
+				}
+				available  = {
+				}
+				traits  = {
+					editor 
+				}
+				do_effect  = {
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="TOD_queso_diego"
+		portraits={
+			army={
+				small="GFX_idea_USA_whittaker_chambers"
+			}
+		}
+	}
+	TOD_tres_dos={
+		advisor={
+			slot = high_command
+			idea_token = tres_dos
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = air 
+				traits  = {
+					air_tactical_bombing_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_tres_dos"
+		portraits={
+			army={
+				small="GFX_idea_tres_dos"
+			}
+		}
+	}
+	TOD_zorro_toro={
+		advisor={
+			slot = political_advisor
+			idea_token = zorro_toro
+			allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="TOD_zorro_toro"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	TOD_quatro_tres={
+		advisor={
+			slot = high_command
+			idea_token = quatro_tres
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = navy 
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_quatro_tres"
+		portraits={
+			army={
+				small="GFX_idea_quatro_tres"
+			}
+		}
+	}
+	TOD_diez_onze={
+		advisor={
+			slot = high_command
+			idea_token = diez_onze
+			ledger  = army 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_diez_onze"
+		portraits={
+			army={
+				small="GFX_idea_diez_onze"
+			}
+		}
+	}
+	TOD_toro_zorro={
+		advisor={
+			slot = army_chief
+			idea_token = toro_zorro
+			ledger  = army 
+				allowed  = {
+					original_tag  = TOD
+				}
+				available  = {
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_toro_zorro"
+		portraits={
+			army={
+				small="GFX_idea_toro_zorro"
+			}
+		}
+	}
+	TOD_ocho_nueve={
+		advisor={
+			slot = high_command
+			idea_token = ocho_nueve
+			ledger  = army 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					army_commando_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_ocho_nueve"
+		portraits={
+			army={
+				small="GFX_idea_ocho_nueve"
+			}
+		}
+	}
+	TOD_manzana_queso={
+		advisor={
+			slot = political_advisor
+			idea_token = manzana_queso
+			allowed  = {
+					original_tag  = TOD
+				}
+				available  = {
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="TOD_manzana_queso"
+		portraits={
+			army={
+				small="GFX_idea_manzana_queso"
+			}
+		}
+	}
+	TOD_go_diego={
+		advisor={
+			slot = political_advisor
+			idea_token = go_diego
+			allowed  = {
+					original_tag  = TOD
+				}
+				allowed_civil_war  = {
+					has_government  = communism 
+				}
+				available  = {
+				}
+				traits  = {
+					financial_expert 
+				}
+				do_effect  = {
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="TOD_go_diego"
+		portraits={
+			army={
+				small="GFX_idea_USA_harry_white"
+			}
+		}
+	}
+	TOD_rana_manzana={
+		advisor={
+			slot = political_advisor
+			idea_token = rana_manzana
+			allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="TOD_rana_manzana"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	TOD_cinco_seis={
+		advisor={
+			slot = navy_chief
+			idea_token = cinco_seis
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_cinco_seis"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	TOD_ieeeee_aaaa={
+		advisor={
+			slot = army_chief
+			idea_token = ieeeee_aaaa
+			ledger  = army 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_ieeeee_aaaa"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	TOD_tres_quatro={
+		advisor={
+			slot = air_chief
+			idea_token = tres_quatro
+			ledger  = air 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_tres_quatro"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	TOD_siete_ocho={
+		advisor={
+			slot = navy_chief
+			idea_token = siete_ocho
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					navy_chief_old_guard 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_siete_ocho"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	TOD_pino_pino={
+		advisor={
+			slot = theorist
+			idea_token = pino_pino
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = army 
+				cost  = 250.000
+				research_bonus  = {
+					cat_mobile_warfare  = 0.150
+				}
+				traits  = {
+					mobile_warfare_expert 
+				}
+		}
+		name="TOD_pino_pino"
+		portraits={
+			army={
+				small="GFX_idea_pino_pino"
+			}
+		}
+	}
+	TOD_cerrar_abrir={
+		advisor={
+			slot = army_chief
+			idea_token = cerrar_abrir
+			allowed  = {
+					original_tag  = TOD
+				}
+				available  = {
+				}
+				ledger  = army 
+				traits  = {
+					army_chief_planning_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_cerrar_abrir"
+		portraits={
+			army={
+				small="GFX_idea_USA_walter_krueger"
+			}
+		}
+	}
+	TOD_manzana_diego={
+		advisor={
+			slot = political_advisor
+			idea_token = manzana_diego
+			allowed  = {
+					original_tag  = TOD
+				}
+				allowed_civil_war  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				available  = {
+				}
+				traits  = {
+					editor 
+				}
+				do_effect  = {
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_manzana_diego"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	TOD_diego_diogo={
+		advisor={
+			slot = political_advisor
+			idea_token = diego_diogo
+			allowed  = {
+					original_tag  = TOD
+				}
+				available  = {
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="TOD_diego_diogo"
+		portraits={
+			army={
+				small="GFX_idea_diego_diogo"
+			}
+		}
+	}
+	TOD_seis_cinco={
+		advisor={
+			slot = high_command
+			idea_token = seis_cinco
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = navy 
+				traits  = {
+					navy_amphibious_assault_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_seis_cinco"
+		portraits={
+			army={
+				small="GFX_idea_seis_cinco"
+			}
+		}
+	}
+	TOD_inigo_pinigo={
+		advisor={
+			slot = political_advisor
+			idea_token = inigo_pinigo
+			allowed  = {
+					original_tag  = TOD
+				}
+				available  = {
+				}
+				traits  = {
+					anti_communist_crusader 
+				}
+		}
+		name="TOD_inigo_pinigo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	TOD_mino_mino={
+		advisor={
+			slot = theorist
+			idea_token = mino_mino
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = air 
+				cost  = 250.000
+				research_bonus  = {
+					cat_base_strike  = 0.150
+				}
+				traits  = {
+					naval_aviation_pioneer 
+				}
+		}
+		name="TOD_mino_mino"
+		portraits={
+			army={
+				small="GFX_idea_mino_mino"
+			}
+		}
+	}
+	TOD_loro_poro={
+		advisor={
+			slot = political_advisor
+			idea_token = loro_poro
+			allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					silent_workhorse 
+				}
+		}
+		name="TOD_loro_poro"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	TOD_quatro_cinco={
+		advisor={
+			slot = air_chief
+			idea_token = quatro_cinco
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = air 
+				traits  = {
+					air_chief_safety_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_quatro_cinco"
+		portraits={
+			army={
+				small="GFX_idea_quatro_cinco"
+			}
+		}
+	}
+	TOD_cinco_quatro={
+		advisor={
+			slot = high_command
+			idea_token = cinco_quatro
+			ledger  = navy 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					navy_fleet_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_cinco_quatro"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	TOD_lino_lino={
+		advisor={
+			slot = theorist
+			idea_token = lino_lino
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = navy 
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="TOD_lino_lino"
+		portraits={
+			army={
+				small="GFX_idea_lino_lino"
+			}
+		}
+	}
+	TOD_rana_pana={
+		advisor={
+			slot = political_advisor
+			idea_token = rana_pana
+			allowed  = {
+					original_tag  = TOD
+				}
+				available  = {
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="TOD_rana_pana"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_6"
+			}
+		}
+	}
+	TOD_dos_porquerias={
+		advisor={
+			slot = theorist
+			idea_token = dos_porquerias
+			allowed  = {
+					original_tag  = TOD
+				}
+				ledger  = air 
+				research_bonus  = {
+					rocketry  = 0.150
+				}
+				traits  = {
+					rocket_scientist 
+				}
+		}
+		name="TOD_dos_porquerias"
+		portraits={
+			army={
+				small="GFX_idea_dos_porquerias"
+			}
+		}
+	}
+	TOD_tuna_diego={
+		advisor={
+			slot = political_advisor
+			idea_token = tuna_diego
+			allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="TOD_tuna_diego"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	TOD_banana_diego={
+		advisor={
+			slot = political_advisor
+			idea_token = banana_diego
+			allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="TOD_banana_diego"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	TOD_digo_digo={
+		advisor={
+			slot = political_advisor
+			idea_token = digo_digo
+			allowed  = {
+					original_tag  = TOD
+				}
+				allowed_civil_war  = {
+					has_government  = communism 
+				}
+				available  = {
+				}
+				traits  = {
+					economist 
+				}
+				do_effect  = {
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="TOD_digo_digo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	TOD_queso_queso={
+		advisor={
+			slot = political_advisor
+			idea_token = queso_queso
+			allowed  = {
+					original_tag  = TOD
+				}
+				available  = {
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 10.000
+					modifier  = {
+						is_historical_focus_on  = yes 
+						factor  = 0.000
+					}
+				}
+		}
+		name="TOD_queso_queso"
+		portraits={
+			army={
+				small="GFX_idea_queso_queso"
+			}
+		}
+	}
+	TOD_nueve_diez={
+		advisor={
+			slot = high_command
+			idea_token = nueve_diez
+			ledger  = army 
+				allowed  = {
+					original_tag  = TOD
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="TOD_nueve_diez"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+}

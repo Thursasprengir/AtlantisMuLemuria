@@ -38,270 +38,72 @@ set_convoys = 150
 set_stability = 0.6
 set_war_support = 0.1
 
-create_country_leader = {
-	name = "Mauricio Ovorón"
-	desc = "POLITICS_M_OVORON_DESC"
-	picture = "Portrait_TOD_M_Ovoron.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Íñigo Montoya"
-	desc = "POLITICS_INIGO_MONTOYA_DESC"
-	picture = "Portrait_TOD_I_Montoya.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ramiro Antonio Idiazabalez"
-	desc = "POLITICS_RA_IDIAZABALEZ_DESC"
-	picture = "Portrait_TOD_RA_Idiazabalez.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Tomás Angélico Todorov"
-	desc = "POLITICS_TA_TODOROV_DESC"
-	picture = "Portrait_TOD_TA_Todorov.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Juan Pablo Iglesias"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Mateo Millán-Astray"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
-	skill = 3
-}
-
-
-create_corps_commander = {
-	name = "Ignacio de Albornoz"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = {  armor_officer trait_reckless }
-	skill = 5
-	attack_skill = 7 
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Gaspar Espartero"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { trait_cautious harsh_leader }
-	skill = 5
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Raimundo Narváez"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { armor_officer trait_reckless }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Pascual Muñoz"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { old_guard harsh_leader }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Nicolás Cabrera"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = {  commando infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Benito Franco"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { infantry_officer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Mariano Yagüe"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = {  trickster career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Dámaso Bugallal"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = {  panzer_leader career_officer infantry_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Calixto Maroto"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.ddss"
-	traits = { politically_connected infantry_officer career_officer harsh_leader }
-	skill = 1 
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Melchor Martínez-Campos"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { infantry_officer  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Segismundo de Carvajal"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { armor_officer trait_reckless }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_navy_leader = {
-	name = "Sebastián de Orleans"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { aviation_enthusiast caustic_personality blockade_runner naval_lineage }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 6
-}
-
-create_navy_leader = {
-	name = "Joaquín González"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { gentlemanly blue_water_expert naval_lineage superior_tactician spotter }
-	skill = 5
-	attack_skill = 3
-	defense_skill = 3
-	maneuvering_skill = 5
-	coordination_skill = 5
-}
-
-create_navy_leader = {
-	name = "Federico Topete"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { bold superior_tactician spotter naval_lineage}
-	skill = 4
-	attack_skill = 5
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Juan Julio Mina"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { superior_tactician spotter naval_lineage}
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Leopoldo P. Hevia"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { navy_career_officer naval_lineage}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Gabino Cervera"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { cuts_corners spotter naval_lineage}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Pedro Alonso"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { bold fleet_protector superior_tactician naval_lineage}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
-
-create_navy_leader = {
-	name = "Agustín N. Allendesalazar"
-	picture = "gfx/leaders/MUCONT/generic_kanagan1.dds"
-	traits = { career_officer naval_lineage}
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 3
-}
+recruit_character = TOD_mauricio_ovoron
+recruit_character = TOD_inigo_montoya
+recruit_character = TOD_ramiro_antonio_idiazabalez
+recruit_character = TOD_tomas_angelico_todorov
+recruit_character = TOD_juan_pablo_iglesias
+recruit_character = TOD_mateo_millanastray
+recruit_character = TOD_ignacio_de_albornoz
+recruit_character = TOD_gaspar_espartero
+recruit_character = TOD_raimundo_narvaez
+recruit_character = TOD_pascual_munoz
+recruit_character = TOD_nicolas_cabrera
+recruit_character = TOD_benito_franco
+recruit_character = TOD_mariano_yague
+recruit_character = TOD_damaso_bugallal
+recruit_character = TOD_calixto_maroto
+recruit_character = TOD_melchor_martinezcampos
+recruit_character = TOD_segismundo_de_carvajal
+recruit_character = TOD_sebastian_de_orleans
+recruit_character = TOD_joaquin_gonzalez
+recruit_character = TOD_federico_topete
+recruit_character = TOD_juan_julio_mina
+recruit_character = TOD_leopoldo_p._hevia
+recruit_character = TOD_gabino_cervera
+recruit_character = TOD_pedro_alonso
+recruit_character = TOD_agustin_n_allendesalazar
+recruit_character = TOD_dos_uno
+recruit_character = TOD_bufo_mufo
+recruit_character = TOD_dos_tres
+recruit_character = TOD_abrir_cerrar
+recruit_character = TOD_dino_dino
+recruit_character = TOD_tino_tino
+recruit_character = TOD_mingo_pingo
+recruit_character = TOD_uno_dos
+recruit_character = TOD_lucas_pucas
+recruit_character = TOD_seis_siete
+recruit_character = TOD_once_doce
+recruit_character = TOD_sino_sino
+recruit_character = TOD_queso_diego
+recruit_character = TOD_tres_dos
+recruit_character = TOD_zorro_toro
+recruit_character = TOD_quatro_tres
+recruit_character = TOD_diez_onze
+recruit_character = TOD_toro_zorro
+recruit_character = TOD_ocho_nueve
+recruit_character = TOD_manzana_queso
+recruit_character = TOD_go_diego
+recruit_character = TOD_rana_manzana
+recruit_character = TOD_cinco_seis
+recruit_character = TOD_ieeeee_aaaa
+recruit_character = TOD_tres_quatro
+recruit_character = TOD_siete_ocho
+recruit_character = TOD_pino_pino
+recruit_character = TOD_cerrar_abrir
+recruit_character = TOD_manzana_diego
+recruit_character = TOD_diego_diogo
+recruit_character = TOD_seis_cinco
+recruit_character = TOD_inigo_pinigo
+recruit_character = TOD_mino_mino
+recruit_character = TOD_loro_poro
+recruit_character = TOD_quatro_cinco
+recruit_character = TOD_cinco_quatro
+recruit_character = TOD_lino_lino
+recruit_character = TOD_rana_pana
+recruit_character = TOD_dos_porquerias
+recruit_character = TOD_tuna_diego
+recruit_character = TOD_banana_diego
+recruit_character = TOD_digo_digo
+recruit_character = TOD_queso_queso
+recruit_character = TOD_nueve_diez
