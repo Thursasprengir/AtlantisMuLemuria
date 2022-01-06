@@ -1,0 +1,650 @@
+characters={
+	SDU_P_Methibradas={
+		name=SDU_P_Methibradas
+		portraits={
+			civilian={
+				large="gfx/leaders/SDU/Portrait_SDU_P_Methibradas.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+		}
+	}
+	SDU_J_Q_Naritya={
+		name=SDU_J_Q_Naritya
+		portraits={
+			civilian={
+				large="gfx/leaders/SDU/Portrait_SDU_J_Q_Naritya.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+		}
+	}
+	SDU_H_Bhordrel={
+		name=SDU_H_Bhordrel
+		portraits={
+			civilian={
+				large="gfx/leaders/SDU/Portrait_SDU_H_Bhordrel.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
+			}
+		}
+		country_leader={
+			ideology=l
+			expire="1965.1.1.1"
+
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SDU_H_Bhordrel
+			allowed  = {
+					original_tag  = SDU
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+	}
+	SDU_G_Vilpandria={
+		name=SDU_G_Vilpandria
+		portraits={
+			civilian={
+				large="gfx/leaders/SDU/Portrait_SDU_G_Vilpandria.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+		}
+		traits = {
+		indomitable_perseverance
+		}
+	}
+	
+	
+	#MilCom
+	
+	
+	SDU_L_Umsarvetya={
+		name=SDU_L_Umsarvetya
+		portraits={
+			army={
+				large="gfx/leaders/SDU/Portrait_SDU_L_Umsarvetya.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	SDU_army_entrenchment={
+		advisor={
+			slot = army_chief
+			idea_token = AUS_odilo_globocnik
+			allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					army_entrenchment_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_army_entrenchment
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	SDU_air_chief_reform={
+		advisor={
+			slot = air_chief
+			idea_token = AUS_alexander_lohr
+			allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_air_chief_reform
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	SDU_navy_chief_decisive_battle={
+		advisor={		
+			slot = navy_chief
+			idea_token = AUS_paul_von_hegedus
+			allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_navy_chief_decisive_battle
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	SDU_air_warfare_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = AUS_julius_yllam
+			ledger = air
+				allowed = {
+					original_tag = SDU
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name=AUS_julius_yllam
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	SDU_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = AUS_otto_meixner_von_zweienstamm
+			ledger = army
+				allowed = {
+					original_tag = SDU
+				}
+
+				traits = {
+					military_theorist
+				}
+		}
+		name=SDU_military_theorist
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	SDU_army_regrouping={
+		advisor={
+			slot = high_command
+			idea_token = AUS_wilhelm_zehner
+			ledger = army
+				allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					army_regrouping_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_army_regrouping
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	SDU_navy_chief_naval_aviation={
+		advisor={
+			slot = navy_chief
+			idea_token = AUS_josef_teufl
+			allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_navy_chief_naval_aviation
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	SDU_air_chief_ground_support={
+		advisor={	
+			slot = air_chief
+			idea_token = AUS_otto_schobel
+			allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_air_chief_ground_support
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SDU_air_bomber_interception={
+		advisor={		
+			slot = high_command
+			idea_token = AUS_viktor_seebauer
+			ledger = air
+				allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_air_bomber_interception
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SDU_army_infantry={
+		advisor={	
+			slot = high_command
+			idea_token = AUS_lothar_rendulic
+			ledger = army
+				allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_army_infantry
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	SDU_army_chief_defensive={
+		advisor={
+			slot = army_chief
+			idea_token = AUS_ernst_kaltenbrunner
+			allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_army_chief_defensive
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	SDU_army_chief_offensive={
+		advisor={
+			
+			
+			slot = army_chief
+			idea_token = AUS_eduard_freiherr
+			allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_army_chief_offensive
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	SDU_army_chief_maneuver={
+		advisor={
+			slot = army_chief
+			idea_token = AUS_franz_bohme
+			allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_army_chief_maneuver
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	SDU_army_commando={
+		advisor={	
+			slot = high_command
+			idea_token = AUS_eugen_beyer
+			ledger = army
+				allowed = {
+					original_tag = SDU
+				}
+				traits = {
+					army_commando_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SDU_army_commando
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	SDU_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = AUS_julius_raab
+			allowed  = {
+					original_tag  = SDU
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name=SDU_captain_of_industry
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	SDU_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = AUS_leopold_figl
+			allowed  = {
+					original_tag  = SDU
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name=SDU_popular_figurehead
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	
+	SDU_quartermaster_general={
+		name=SDU_quartermaster_general
+		portraits={
+			army={
+				small="GFX_idea_AST_alexander_hore_ruthven" #small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_alexander_hore_ruthven
+			allowed = {
+				original_tag = SDU
+			}
+			traits = {
+				quartermaster_general 
+			}
+		}		
+	}
+	
+	SDU_backroom_backstabber={
+		name=SDU_backroom_backstabber
+		portraits={
+			army={
+				small="GFX_idea_AST_robert_g_menzies" #small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_robert_g_menzies
+			allowed = {
+				original_tag = SDU
+			}
+			traits = {
+				backroom_backstabber 
+			}
+		}		
+	}
+
+	SDU_smooth_talking_charmer={
+		name=SDU_smooth_talking_charmer
+		portraits={
+			army={
+				small="GFX_idea_AST_ben_chifley" #small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_ben_chifley
+			allowed = {
+				original_tag = AST
+			}
+			cost = 100.000
+			traits = {
+				smooth_talking_charmer 
+			}
+			available = {
+
+			}
+		}		
+	}
+
+	SDU_silent_workhorse={
+		name=SDU_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_AST_herbert_v_evatt" #small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_herbert_v_evatt
+			allowed = {
+				original_tag = SDU
+			}
+			cost = 100.000
+			traits = {
+				silent_workhorse 
+			}
+			available = {
+				}
+			}
+		}		
+	}
+
+	SDU_war_industrialist={
+		name=SDU_war_industrialist
+		portraits={
+			army={
+				small="GFX_idea_AST_jack_beasley" #small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_jack_beasley
+			allowed = {
+				original_tag = SDU
+			}
+			traits = {
+				war_industrialist 
+			}
+		}		
+	}
+
+	SDU_compassionate_gentleman={
+		name= SDU_compassionate_gentleman
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_frank_forde
+			allowed = {
+				original_tag = SDU
+			}
+			traits = {
+				compassionate_gentleman 
+			}
+		}		
+	}
+
+	SDU_fascist_demagogue={
+		name= SDU_fascist_demagogue
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_generic_fascist_demagogue
+			allowed = {
+				original_tag = SDU
+			}
+			available = {
+				
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	SDU_communist_revolutionary={
+		name=SDU_communist_revolutionary
+		portraits={
+			army={
+				small="GFX_idea_AST_lance_sharkey" #small="GFX_idea_generic_communist_revolutionary_western_european_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_lance_sharkey
+			allowed = {
+				original_tag = SDU
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+	
+	SDU_democratic_reformer={
+		name=SDU_democratic_reformer
+		portraits={
+			army={
+				small="GFX_idea_AST_arthur_calwell" #small="GFX_idea_generic_democratic_reformer_western_european_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AST_arthur_calwell
+			allowed = {
+				original_tag = AST
+			}
+			available = {
+				
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	#Illusive Gentleman auto-generated
+}
+
