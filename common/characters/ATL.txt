@@ -1,4 +1,235 @@
 characters={
+	ATL_Avaskanta_Carras={
+		name=ATL_Avaskanta_Carras
+		portraits={
+			civilian={
+				large="gfx/leaders/ATL/Portrait_ATL_Avaskanta_Carras.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+		}
+	}
+	ATL_Biroze_Kavris={
+		name=BLM_Sir_A_M_Chaucer_II
+		portraits={
+			civilian={
+				large="gfx/leaders/ATL/Portrait_ATL_Biroze_Kavris.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+		}
+	}
+	ATL_Zannaz_Terzha={
+		name=ATL_Zannaz_Terzha
+		portraits={
+			civilian={
+				large="gfx/leaders/ATL/Portrait_ATL_Zannaz_Terzha.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+
+		}
+	}
+	ATL_Shava_Valliz={
+		name=ATL_Shava_Valliz
+		portraits={
+			civilian={
+				large="gfx/leaders/ATL/Portrait_ATL_Shava_Valliz.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+		}
+	}
+	#MilCom
+	ATL_Auvizumon_Vannezik={
+		name=ATL_Auvizumon_Vannezik
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		field_marshal={
+			traits = {trickster}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	ATL_Takez_Vazilake={
+		name=ATL_Takez_Vazilake
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits = {trickster infantry_leader}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	ATL_Oviron_Muziviz={
+		name=ATL_Oviron_Muziviz
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits = {naval_invader}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	ATL_Baurizo_Nunnaka={
+		name=ATL_Baurizo_Nunnaka
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits = {infantry_leader}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ATL_Tunnaton_Dorvanev={
+		name=ATL_Tunnaton_Dorvanev
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits = {panzer_leader}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	#navy
+	ATL_Klistran_Frestiak={
+		name=ATL_Klistran_Frestiak
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+				small="gfx/interface/ideas/idea_ENG_bernard_rawlings.dds"
+			}
+		}
+		traits = {ironside superior_tactician blue_water_expert}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 3
+		}
+	}
+
+	ATL_Lenistur_Polistkamal={
+		name=ATL_Lenistur_Polistkamal
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+				small="gfx/interface/ideas/idea_ENG_bernard_rawlings.dds"
+			}
+		}
+		traits = {ironside spotter green_water_expert}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
+	ATL_Whedunt_Gromstinak={
+		name=ATL_Whedunt_Gromstinak
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+				small="gfx/interface/ideas/idea_ENG_bernard_rawlings.dds"
+			}
+		}
+		traits = {fleet_protector fly_swatter inshore_fighter}
+			skill = 5
+			attack_skill = 2
+			defense_skill = 5
+			maneuvering_skill = 5
+			coordination_skill = 4
+		}
+	}
+	ATL_Erstama_Hurdnial={
+		name=ATL_Erstama_Hurdnial
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+				small="gfx/interface/ideas/idea_ENG_bernard_rawlings.dds"
+			}
+		}
+		traits = {seawolf superior_tactician blue_water_expert}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 1
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
+	}
+	ATL_Meran_Jelastiek={
+		name=ATL_Meran_Jelastiek
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+				small="gfx/interface/ideas/idea_ENG_bernard_rawlings.dds"
+			}
+		}
+		traits = {blockade_runner fleet_protector}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+	ATL_Jestitze_Munurak={
+		name=ATL_Jestitze_Munurak
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+				small="gfx/interface/ideas/idea_ENG_bernard_rawlings.dds"
+			}
+		}
+		traits = {spotter blue_water_expert}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
+	
+	
 	ATL_silent_workhorse={
 		name = ATL_silent_workhorse
 		portraits ={

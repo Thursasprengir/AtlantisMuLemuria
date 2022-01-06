@@ -64,35 +64,7 @@ set_politics = {
 		elections_allowed = yes
 }
 
-recruit_character = ATL_silent_workhorse
-recruit_character = ATL_war_industrialist
-recruit_character = ATL_backroom_backstabber
-recruit_character = ATL_prince_of_terror
-recruit_character = ATL_armaments_organizer
-recruit_character = ATL_democratic_politician
-recruit_character = ATL_fascist_demagogue
-recruit_character = ATL_communist_revolutionary
-recruit_character = ATL_grand_fleet_proponent
-recruit_character = ATL_victory_through_airpower
-recruit_character = ATL_rocket_scientist
-recruit_character = ATL_naval_theorist
-recruit_character = ATL_military_theorist
-recruit_character = ATL_army_chief_morale_2
-recruit_character = ATL_army_chief_offensive_2
-recruit_character = ATL_army_chief_drill_2
-recruit_character = ATL_army_chief_planning_2
-recruit_character = ATL_navy_naval_air_defense_2
-recruit_character = ATL_navy_fleet_logistics_3
-recruit_character = ATL_navy_chief_decisive_battle_3
-recruit_character = ATL_navy_chief_maneuver_3
-recruit_character = ATL_air_strategic_bombing_2
-recruit_character = ATL_air_chief_old_guard
-recruit_character = ATL_air_strategic_bombing_1
-recruit_character = ATL_navy_screen_2	
-recruit_character = ATL_army_regrouping_1
-recruit_character = ATL_navy_capital_ship_3
-recruit_character = ATL_air_naval_strike_1
-recruit_character = ATL_navy_carrier_2
+
 
 ###ARRAY INITIALIZATION
 
@@ -373,163 +345,60 @@ create_equipment_variant = {
 	}
 	obsolete = no
 }
+#Political advisors
+recruit_character = ATL_silent_workhorse
+recruit_character = ATL_war_industrialist
+recruit_character = ATL_backroom_backstabber
+recruit_character = ATL_prince_of_terror
+recruit_character = ATL_armaments_organizer
+recruit_character = ATL_democratic_politician
+recruit_character = ATL_fascist_demagogue
+recruit_character = ATL_communist_revolutionary
+recruit_character = ATL_grand_fleet_proponent
+recruit_character = ATL_victory_through_airpower
+recruit_character = ATL_rocket_scientist
+recruit_character = ATL_naval_theorist
+recruit_character = ATL_military_theorist
+recruit_character = ATL_army_chief_morale_2
+recruit_character = ATL_army_chief_offensive_2
+recruit_character = ATL_army_chief_drill_2
+recruit_character = ATL_army_chief_planning_2
+recruit_character = ATL_navy_naval_air_defense_2
+recruit_character = ATL_navy_fleet_logistics_3
+recruit_character = ATL_navy_chief_decisive_battle_3
+recruit_character = ATL_navy_chief_maneuver_3
+recruit_character = ATL_air_strategic_bombing_2
+recruit_character = ATL_air_chief_old_guard
+recruit_character = ATL_air_strategic_bombing_1
+recruit_character = ATL_navy_screen_2	
+recruit_character = ATL_army_regrouping_1
+recruit_character = ATL_navy_capital_ship_3
+recruit_character = ATL_air_naval_strike_1
+recruit_character = ATL_navy_carrier_2
+#leaders
+recruit_character = ATL_Avaskanta_Carras
+recruit_character = ATL_Biroze_Kavris
+recruit_character = ATL_Zannaz_Terzha
+recruit_character = ATL_Shava_Valliz
+#MilCom
+recruit_character = ATL_Auvizumon_Vannezik
+recruit_character = ATL_Takez_Vazilake
+recruit_character = ATL_Oviron_Muziviz
+recruit_character = ATL_Baurizo_Nunnaka
+recruit_character = ATL_Tunnaton_Dorvanev
+#NavCom
+recruit_character = ATL_Klistran_Frestiak
+recruit_character = ATL_Lenistur_Polistkamal
+recruit_character = ATL_Whedunt_Gromstinak
+recruit_character = ATL_Erstama_Hurdnial
+recruit_character = ATL_Meran_Jelastiek
+recruit_character = ATL_Jestitze_Munurak
 
 
-create_country_leader = {
-	name = "Avaskanta Carras"
-	desc = "POLITICS_AVASKANTUS_CARRAS_DESC"
-	picture = "Portrait_ATL_Avaskanta_Carras.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Biroze Kavris"
-	desc = "POLITICS_BIROZ_KAVRIS_DESC"
-	picture = "Portrait_ATL_Biroze_Kavris.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Shava Valliz"
-	desc = "POLITICS_SHAVA_VALLIZ_DESC"
-	picture = "Portrait_ATL_Shava_Valliz.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Zannaz Terzha"
-	desc = "POLITICS_ZANNAZ_TERZHA_DESC"
-	picture = "Portrait_ATL_Zannaz_Terzha.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
 
-create_field_marshal = {
-	name = "Auvizumon Vannezik"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {trickster}
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Takez Vazilakez"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {trickster infantry_leader}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
 
-create_corps_commander = {
-	name = "Oviron Muziviz"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {naval_invader}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 3
-}
 
-create_corps_commander = {
-	name = "Baurizo Nunnaka"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {infantry_leader}
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
 
-create_corps_commander = {
-	name = "Tunnaton Dorvanev"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {panzer_leader}
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_navy_leader = {
-	name = "Klistran Frestiak"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {ironside superior_tactician blue_water_expert}
-	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	maneuvering_skill = 5
-	coordination_skill = 3
-}
-create_navy_leader = {
-	name = "Lenistur Polistkamal"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {ironside spotter green_water_expert}
-	skill = 5
-	attack_skill = 5
-	defense_skill = 4
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
-create_navy_leader = {
-	name = "Whedunt Gromstinak"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {fleet_protector fly_swatter inshore_fighter}
-	skill = 5
-	attack_skill = 2
-	defense_skill = 5
-	maneuvering_skill = 5
-	coordination_skill = 4
-}
-create_navy_leader = {
-	name = "Erstama Hurdnial"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {seawolf superior_tactician blue_water_expert}
-	skill = 4
-	attack_skill = 5
-	defense_skill = 1
-	maneuvering_skill = 4
-	coordination_skill = 3
-}
-create_navy_leader = {
-	name = "Meran Jelastiek"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
-	traits = {blockade_runner fleet_protector}
-	skill = 4
-	attack_skill = 2
-	defense_skill = 3
-	maneuvering_skill = 4
-	coordination_skill = 4
-}
-create_navy_leader = {
-	name = "Jestitze Munurak"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {spotter blue_water_expert}
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 4
-}

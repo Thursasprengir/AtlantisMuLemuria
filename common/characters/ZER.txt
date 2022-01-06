@@ -1,19 +1,19 @@
 characters={
 #leaders
-	PRJ_King_Roderiq={
-		name = PRJ_King_Roderiq
+	ZER_King_Aleksanaros={
+		name = ZER_King_Aleksanaros
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PRJ/Portrait_PRJ_King_Roderiq.dds"
+				large = "gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
 			}
 			army = {
-				large = "gfx/leaders/PRJ/Portrait_PRJ_King_Roderiq_Army.dds"
+				large = "gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
 				small = "GFX_idea_SOV_lev_trotsky"
 			}
 		}
 		country_leader = {
 			ideology = centrism
-			traits= { roderiq_nightmare_genius }
+			traits = { imperial_connections }
 			expire = "1980.12.24.23"
 		}
 		field_marshal = {
@@ -26,11 +26,11 @@ characters={
 			visible = { has_character_flag = PRJ_his_war } 
 		}		
 	}
-	PRJ_Amfri_Yuriye = {
-		name = PRJ_Amfri_Yuriye
+	ZER_Kosma_Angaelos = {
+		name = ZER_Kosma_Angaelos
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PRJ/Portrait_PRJ_A_Yuriye.dds"
+				large = "gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
 			}
 		}
 		country_leader = {
@@ -40,11 +40,11 @@ characters={
 		}		
 	}
 	
-	PRJ_Warqneh_Hassbah = {
-		name = PRJ_Warqneh_Hassbah
+	ZER_Yeshak_Moussa = {
+		name = ZER_Yeshak_Moussa
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PRJ/Portrait_PRJ_W_Hassbah.dds"
+				large = "gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
 			}
 		}
 		country_leader = {
@@ -54,11 +54,11 @@ characters={
 		}		
 	}
 	
-	PRJ_Lexande_Melaqe = {
-		name = PRJ_Lexande_Melaqe
+	ZER_Sarabion_El_Shawan = {
+		name = ZER_Sarabion_El_Shawan
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PRJ/Portrait_PRJ_L_Melaqe.dds"
+				large = "gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
 			}
 		}
 		country_leader = {
@@ -68,18 +68,18 @@ characters={
 		}		
 	}
 	#comanders
-	PRJ_Qaleb_Shada = {
-		name = PRJ_Qaleb_Shada
+	ZER_Krystafer_Awad = {
+		name = ZER_Krystafer_Awad
 		portraits = {
 			army = {
-				large = "gfx/leaders/PRJ/Portrait_Africa_Generic_land_1.dds"
+				large = "gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
 			}
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = PRJ_Qaleb_Shada
+			idea_token = ZER_Krystafer_Awad
 			allowed = {
-				original_tag = PRJ
+				original_tag = ZER
 			}
 			traits = {
 				army_chief_maneuver_2
@@ -100,8 +100,8 @@ characters={
 		}
 	}
 	
-	PRJ_silent_workhorse={
-		name = PRJ_silent_workhorse
+	ZER_silent_workhorse={
+		name = ZER_silent_workhorse
 		portraits ={
 			army ={
 				small="generic_political_advisor_africa_1"
@@ -109,343 +109,343 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = PRJ_silent_workhorse
-			allowed  = {original_tag  = PRJ}
+			idea_token = ZER_silent_workhorse
+			allowed  = {original_tag  = ZER}
 			traits  = {silent_workhorse}
 			ai_will_do  = {factor  = 2.000}
 		}		
 	}
-	PRJ_war_industrialist = {
-		name = PRJ_war_industrialist
+	ZER_war_industrialist = {
+		name = ZER_war_industrialist
 		portraits = {army = {small = "generic_political_advisor_africa_1"}}
 		advisor = {
 			slot = political_advisor
-			idea_token = PRJ_war_industrialist
-			allowed  = {original_tag  = PRJ}
+			idea_token = ZER_war_industrialist
+			allowed  = {original_tag  = ZER}
 			traits  = {war_industrialist}
 			ai_will_do  = {factor  = 2.000}
 		}
 	}
-	PRJ_backroom_backstabber = {
-		name = PRJ_backroom_backstabber
+	ZER_backroom_backstabber = {
+		name = ZER_backroom_backstabber
 		portraits = {army = {small = "generic_political_advisor_africa_1"}}
 		advisor = {
 			slot = political_advisor
-			idea_token = PRJ_backroom_backstabber
-			allowed  = {original_tag  = PRJ}
+			idea_token = ZER_backroom_backstabber
+			allowed  = {original_tag  = ZER}
 			traits  = {backroom_backstabber}
 			ai_will_do  = {factor  = 2.000}
 		}
 	}
-	PRJ_prince_of_terror = {
-		name = PRJ_prince_of_terror
+	ZER_prince_of_terror = {
+		name = ZER_prince_of_terror
 		portraits = {army = {small = "generic_political_advisor_africa_1"}}
 		advisor = {
 			slot = political_advisor
-			idea_token = PRJ_prince_of_terror
-			allowed  = {original_tag  = PRJ}
+			idea_token = ZER_prince_of_terror
+			allowed  = {original_tag  = ZER}
 			traits  = {prince_of_terror}
 			ai_will_do  = {factor  = 10.000}
 		}
 	}
-	PRJ_armaments_organizer = {
-		name = PRJ_armaments_organizer
+	ZER_armaments_organizer = {
+		name = ZER_armaments_organizer
 		portraits = {army = {small = "generic_political_advisor_africa_1"}}
 		advisor = {
 			slot = political_advisor
-			idea_token = PRJ_armaments_organizer
-			allowed  = {original_tag  = PRJ}
+			idea_token = ZER_armaments_organizer
+			allowed  = {original_tag  = ZER}
 			traits  = {armaments_organizer}
 			ai_will_do  = {factor  = 2.000}
 		}
 	}
-	PRJ_democratic_politician = {
-		name = PRJ_democratic_politician
+	ZER_democratic_politician = {
+		name = ZER_democratic_politician
 		portraits = {army = {small = "generic_political_advisor_africa_1"}}
 		advisor = {
 			slot = political_advisor
-			idea_token = PRJ_democratic_politician
-			allowed  = {original_tag  = PRJ}
+			idea_token = ZER_democratic_politician
+			allowed  = {original_tag  = ZER}
 			traits  = {democratic_reformer}
 			ai_will_do  = {factor  = 1.000}
 		}
 	}
-	PRJ_fascist_demagogue = {
-		name = PRJ_fascist_demagogue
+	ZER_fascist_demagogue = {
+		name = ZER_fascist_demagogue
 		portraits = {army = {small = "generic_political_advisor_africa_1"}}
 		advisor = {
 			slot = political_advisor
-			idea_token = PRJ_fascist_demagogue
-			allowed  = {original_tag  = PRJ}
+			idea_token = ZER_fascist_demagogue
+			allowed  = {original_tag  = ZER}
 			traits  = {fascist_demagogue}
 			ai_will_do  = {factor  = 1.000}
 		}
 	}
-	PRJ_communist_revolutionary = {
-		name = PRJ_communist_revolutionary
+	ZER_communist_revolutionary = {
+		name = ZER_communist_revolutionary
 		portraits = {army = {small = "generic_political_advisor_africa_1"}}
 		advisor = {
 			slot = political_advisor
-			idea_token = PRJ_communist_revolutionary
-			allowed  = {original_tag  = PRJ}
+			idea_token = ZER_communist_revolutionary
+			allowed  = {original_tag  = ZER}
 			traits  = {communist_revolutionary}
 			ai_will_do  = {factor  = 1.000}
 		}
 	}
-	PRJ_grand_fleet_proponent={
-		name = PRJ_grand_fleet_proponent
+	ZER_grand_fleet_proponent={
+		name = ZER_grand_fleet_proponent
 		portraits={army={small="GFX_idea_africa_generic_navy_3"}}
 		advisor={
 			cost = 200
 			slot = theorist
 			idea_token = james_somerville
 			ledger = navy
-			allowed = {original_tag = PRJ}
+			allowed = {original_tag = ZER}
 			traits = {grand_fleet_proponent}
 		}
 	}
-	PRJ_victory_through_airpower = {
-		name = PRJ_victory_through_airpower
+	ZER_victory_through_airpower = {
+		name = ZER_victory_through_airpower
 		portraits = {army={small="GFX_idea_generic_air_africa_2"}}
 		advisor = {
 			cost = 200
 			slot = theorist
-			idea_token = PRJ_victory_through_airpower
+			idea_token = ZER_victory_through_airpower
 			ledger = air
-			allowed = {original_tag = PRJ}			
+			allowed = {original_tag = ZER}			
 			traits = {victory_through_airpower}
 		}
 	}
-	PRJ_rocket_scientist = {
-		name = PRJ_rocket_scientist
+	ZER_rocket_scientist = {
+		name = ZER_rocket_scientist
 		portraits = {army={small="GFX_idea_generic_air_africa_1"}}
 		advisor = {
 			cost = 200
 			slot = theorist
-			idea_token = PRJ_rocket_scientist
+			idea_token = ZER_rocket_scientist
 			ledger = air
-			allowed = {original_tag = PRJ}	
+			allowed = {original_tag = ZER}	
 			research_bonus = {rocketry = 0.15}		
 			traits = {rocket_scientist}
 		}
 	}
-	PRJ_naval_theorist = {
-		name = PRJ_naval_theorist
+	ZER_naval_theorist = {
+		name = ZER_naval_theorist
 		portraits = {army={small="GFX_idea_generic_navy_africa_3"}}
 		advisor = {
 			cost = 200
 			slot = theorist
-			idea_token = PRJ_naval_theorist
+			idea_token = ZER_naval_theorist
 			ledger = navy
-			allowed = {original_tag = PRJ}			
+			allowed = {original_tag = ZER}			
 			traits = {naval_theorist}
 		}
 	}
-	PRJ_military_theorist = {
-		name = PRJ_military_theorist
+	ZER_military_theorist = {
+		name = ZER_military_theorist
 		portraits = {army={small="GFX_idea_generic_army_africa_5"}}
 		advisor = {
 			cost = 200
 			slot = theorist
-			idea_token = PRJ_military_theorist
+			idea_token = ZER_military_theorist
 			ledger = army
-			allowed = {original_tag = PRJ}			
+			allowed = {original_tag = ZER}			
 			traits = {military_theorist}
 		}
 	}
-	PRJ_army_chief_morale_2={
-		name=PRJ_army_chief_morale_2
+	ZER_army_chief_morale_2={
+		name=ZER_army_chief_morale_2
 		portraits={army={small="GFX_idea_generic_army_africa_2"}}
 		advisor={
 			slot = army_chief
-			idea_token = PRJ_army_chief_morale_2
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_army_chief_morale_2
+			allowed = {original_tag = ZER}
 			traits = {army_chief_morale_2}
 			cost = 100
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_army_chief_offensive_2={
-		name=PRJ_army_chief_offensive_2
+	ZER_army_chief_offensive_2={
+		name=ZER_army_chief_offensive_2
 		portraits={army={small="GFX_idea_generic_army_africa_4"}}
 		advisor={
 			slot = army_chief
-			idea_token = PRJ_army_chief_offensive_2
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_army_chief_offensive_2
+			allowed = {original_tag = ZER}
 			traits = {army_chief_offensive_2}
 			cost = 100
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_army_chief_drill_2={
-		name=PRJ_army_chief_drill_2
+	ZER_army_chief_drill_2={
+		name=ZER_army_chief_drill_2
 		portraits={army={small="GFX_idea_generic_army_africa_3"}}
 		advisor={
 			slot = army_chief
-			idea_token = PRJ_army_chief_drill_2
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_army_chief_drill_2
+			allowed = {original_tag = ZER}
 			traits = {army_chief_drill_2}
 			cost = 100
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_army_chief_planning_2={
-		name=PRJ_army_chief_planning_2
+	ZER_army_chief_planning_2={
+		name=ZER_army_chief_planning_2
 		portraits={army={small="GFX_idea_generic_army_africa_1"}}
 		advisor={
 			slot = army_chief
-			idea_token = PRJ_army_chief_planning_2
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_army_chief_planning_2
+			allowed = {original_tag = ZER}
 			traits = {army_chief_planning_2}
 			cost = 100
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_navy_chief_maneuver_3={
-		name=PRJ_navy_chief_maneuver_3
+	ZER_navy_chief_maneuver_3={
+		name=ZER_navy_chief_maneuver_3
 		portraits={army={small="GFX_idea_generic_navy_africa_3"}}
 		advisor={
 			slot = navy_chief
-			idea_token = PRJ_navy_chief_maneuver_3
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_navy_chief_maneuver_3
+			allowed = {original_tag = ZER}
 			traits = {navy_chief_maneuver_3}
 			cost = 200
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_navy_chief_decisive_battle_3={
-		name=PRJ_navy_chief_decisive_battle_3
+	ZER_navy_chief_decisive_battle_3={
+		name=ZER_navy_chief_decisive_battle_3
 		portraits={army={small="GFX_idea_generic_navy_africa_2"}}
 		advisor={
 			slot = navy_chief
-			idea_token = PRJ_navy_chief_decisive_battle_3
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_navy_chief_decisive_battle_3
+			allowed = {original_tag = ZER}
 			traits = {navy_chief_decisive_battle_3}
 			cost = 200
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_navy_fleet_logistics_3={
-		name=PRJ_navy_fleet_logistics_3
+	ZER_navy_fleet_logistics_3={
+		name=ZER_navy_fleet_logistics_3
 		portraits={army={small="GFX_idea_generic_navy_africa_1"}}
 		advisor={
 			slot = navy_chief
-			idea_token = PRJ_navy_fleet_logistics_3
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_navy_fleet_logistics_3
+			allowed = {original_tag = ZER}
 			traits = {navy_fleet_logistics_3}
 			cost = 200
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_navy_naval_air_defense_2={
-		name=PRJ_navy_naval_air_defense_2
+	ZER_navy_naval_air_defense_2={
+		name=ZER_navy_naval_air_defense_2
 		portraits={army={small="GFX_idea_generic_navy_africa_3"}}
 		advisor={
 			slot = navy_chief
-			idea_token = PRJ_navy_naval_air_defense_2
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_navy_naval_air_defense_2
+			allowed = {original_tag = ZER}
 			traits = {navy_naval_air_defense_2}
 			cost = 100
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_air_strategic_bombing_2={
-		name=PRJ_air_strategic_bombing_2
+	ZER_air_strategic_bombing_2={
+		name=ZER_air_strategic_bombing_2
 		portraits={army={small="GFX_idea_generic_air_africa_3"}}
 		advisor={
 			slot = air_chief
-			idea_token = PRJ_air_strategic_bombing_2
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_air_strategic_bombing_2
+			allowed = {original_tag = ZER}
 			traits = {air_strategic_bombing_2}
 			cost = 100
 			ai_will_do = {factor = 1.000}
 		}
 	}
-	PRJ_air_chief_old_guard={
-		name=PRJ_air_chief_old_guard
+	ZER_air_chief_old_guard={
+		name=ZER_air_chief_old_guard
 		portraits={army={small="GFX_idea_generic_air_africa_2"}}
 		advisor={
 			slot = air_chief
-			idea_token = PRJ_air_chief_old_guard
-			allowed = {original_tag = PRJ}
+			idea_token = ZER_air_chief_old_guard
+			allowed = {original_tag = ZER}
 			traits = {air_chief_old_guard}
 			cost = 100
 			ai_will_do = {factor = 1.000}
 		}
 	}
-	PRJ_air_strategic_bombing_1={
-		name=PRJ_air_strategic_bombing_1
+	ZER_air_strategic_bombing_1={
+		name=ZER_air_strategic_bombing_1
 		portraits={army={small="GFX_idea_generic_air_africa_1"}}
 		advisor={
 			slot = high_command
-			idea_token = PRJ_air_strategic_bombing_1
+			idea_token = ZER_air_strategic_bombing_1
 			ledger = army
-			allowed = {original_tag = PRJ}
+			allowed = {original_tag = ZER}
 			traits = {air_strategic_bombing_1}
 			cost = 50
 			ai_will_do = {factor = 2.000}
 		}
 	}	
-	PRJ_navy_screen_2={
-		name=PRJ_navy_screen_2
+	ZER_navy_screen_2={
+		name=ZER_navy_screen_2
 		portraits={army={small="GFX_idea_generic_navy_africa_3"}}
 		advisor={
 			slot = high_command
-			idea_token = PRJ_navy_screen_2
+			idea_token = ZER_navy_screen_2
 			ledger = army
-			allowed = {original_tag = PRJ}
+			allowed = {original_tag = ZER}
 			traits = {navy_screen_2}
 			cost = 100
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_army_regrouping_1={
-		name=PRJ_army_regrouping_1
+	ZER_army_regrouping_1={
+		name=ZER_army_regrouping_1
 		portraits={army={small="GFX_idea_generic_army_africa_1"}}
 		advisor={
 			slot = high_command
-			idea_token = PRJ_army_regrouping_1
+			idea_token = ZER_army_regrouping_1
 			ledger = army
-			allowed = {original_tag = PRJ}
+			allowed = {original_tag = ZER}
 			traits = {army_regrouping_1}
 			cost = 50
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_navy_capital_ship_3={
-		name=PRJ_navy_capital_ship_3
+	ZER_navy_capital_ship_3={
+		name=ZER_navy_capital_ship_3
 		portraits={army={small="GFX_idea_generic_navy_africa_3"}}
 		advisor={
 			slot = high_command
-			idea_token = PRJ_navy_capital_ship_3
+			idea_token = ZER_navy_capital_ship_3
 			ledger = army
-			allowed = {original_tag = PRJ}
+			allowed = {original_tag = ZER}
 			traits = {navy_capital_ship_3}
 			cost = 200
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_air_naval_strike_1={
-		name=PRJ_air_naval_strike_1
+	ZER_air_naval_strike_1={
+		name=ZER_air_naval_strike_1
 		portraits={army={small="GFX_idea_generic_air_africa_2"}}
 		advisor={
 			slot = high_command
-			idea_token = PRJ_air_naval_strike_1
+			idea_token = ZER_air_naval_strike_1
 			ledger = army
-			allowed = {original_tag = PRJ}
+			allowed = {original_tag = ZER}
 			traits = {air_naval_strike_1}
 			cost = 50
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	PRJ_navy_carrier_2={
-		name=PRJ_navy_carrier_2
+	ZER_navy_carrier_2={
+		name=ZER_navy_carrier_2
 		portraits={army={small="GFX_idea_generic_navy_africa_2"}}
 		advisor={
 			slot = high_command
-			idea_token = PRJ_navy_carrier_2
+			idea_token = ZER_navy_carrier_2
 			ledger = army
-			allowed = {original_tag = PRJ}
+			allowed = {original_tag = ZER}
 			traits = {navy_carrier_2}
 			cost = 100
 			ai_will_do = {factor = 2.000}
