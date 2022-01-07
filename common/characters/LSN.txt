@@ -430,4 +430,1114 @@ characters={
 			}
 		}
 	}
+###################
+###CORPS COMMANDERS
+###################
+	
+	LSN_corps_commander_1={
+		name="LSN_corps_commander_1"
+		portraits={
+			army={
+				large="gfx/leaders/LSN/Portrait_LSN_corps_commander_1.dds"
+				small="gfx/interface/ideas/idea_LSN_corps_commander_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	LSN_corps_commander_2={
+		name=LSN_corps_commander_2
+		portraits={
+			army={
+				large="gfx/leaders/LSN/Portrait_LSN_corps_commander_2.dds"
+				small="gfx/interface/ideas/idea_LSN_corps_commander_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	LSN_corps_commander_3={
+		name=LSN_corps_commander_3
+		portraits={
+			army={
+				large="gfx/leaders/LSN/Portrait_LSN_corps_commander_3.dds"
+				small="gfx/interface/ideas/idea_LSN_corps_commander_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	LSN_corps_commander_4={
+		name=LSN_corps_commander_4
+		portraits={
+			army={
+				large="gfx/leaders/LSN/Portrait_LSN_corps_commander_4.dds"
+				small="gfx/interface/ideas/idea_LSN_corps_commander_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	LSN_naval_leader_1={
+		name=LSN_naval_leader_1
+		portraits={
+			army={
+				large="gfx/leaders/LSN/Portrait_LSN_naval_leader_1.dds"
+			}
+			army={
+				small="GFX_idea_LSN_naval_leader_1"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	LSN_naval_leader_2={
+		name=LSN_naval_leader_2
+		portraits={
+			army={
+				large="gfx/leaders/LSN/Portrait_LSN_naval_leader_2.dds"
+				small="gfx/interface/ideas/idea_LSN_naval_leader_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast superior_tactician spotter }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	LSN_naval_leader_3={
+		name=LSN_naval_leader_
+		portraits={
+			navy={
+				small="GFX_idea_LSN_naval_leader_3"
+			}
+			army={
+				large="gfx/leaders/USA/Portrait_LSN_naval_leader_3.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gunnery_expert superior_tactician spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	LSN_naval_leader_4={
+		name=LSN_naval_leader_4
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_LSN_naval_leader_4.dds"
+				small="gfx/interface/ideas/idea_LSN_naval_leader_4.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	LSN_naval_leader_5={
+		name=LSN_naval_leader_5
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_LSN_naval_leader_5.dds"
+				small="gfx/interface/ideas/idea_LSN_naval_leader_5.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	LSN_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_anti_communist_crusader
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="LSN_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_LSN_anti_communist_crusader"
+			}
+		}
+	}
+	LSN_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_armaments_organizer
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="LSN_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_LSN_armaments_organizer"
+			}
+		}
+	}
+	LSN_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_backroom_backstabber
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="LSN_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_LSN_backroom_backstabber"
+			}
+		}
+	}
+	LSN_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_captain_of_industry
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="LSN_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_LSN_captain_of_industry"
+			}
+		}
+	}
+	LSN_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_communist_revolutionary
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="LSN_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_LSN_communist_revolutionary"
+			}
+		}
+	}
+	LSN_compassionate_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_compassionate_gentleman
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="LSN_compassionate_gentleman"
+		portraits={
+			army={
+				small="GFX_idea_LSN_compassionate_gentleman"
+			}
+		}
+	}
+	LSN_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_democratic_reformer
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="LSN_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_LSN_captain_of_industry"
+			}
+		}
+	}	
+	LSN_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_economist
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="LSN_economist"
+		portraits={
+			army={
+				small="GFX_idea_LSN_economist"
+			}
+		}
+	}
+	LSN_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_editor
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="LSN_editor"
+		portraits={
+			army={
+				small="GFX_idea_LSN_editor"
+			}
+		}
+	}
+	LSN_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_fascist_demagogue
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="LSN_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_LSN_fascist_demagogue"
+			}
+		}
+	}
+	LSN_financial_expert={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_financial_expert
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="LSN_financial_expert"
+		portraits={
+			army={
+				small="GFX_idea_LSN_financial_expert"
+			}
+		}
+	}
+	LSN_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_head_of_intelligence
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="LSN_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_LSN_head_of_intelligence"
+			}
+		}
+	}
+	LSN_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_ideological_crusader
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="LSN_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_LSN_ideological_crusader"
+			}
+		}
+	}
+	LSN_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_popular_figurehead
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="LSN_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_LSN_popular_figurehead"
+			}
+		}
+	}
+	LSN_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_prince_of_terror
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="LSN_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_LSN_prince_of_terror"
+			}
+		}
+	}
+	LSN_silent_workhorse={
+		name=LSN_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_LSN_silent_workhorse"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_silent_workhorse
+			allowed  = {
+				original_tag  = LSN
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	LSN_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_smooth_talking_charmer
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="LSN_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_LSN_smooth_talking_charmer"
+			}
+		}
+	}
+	
+	LSN_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = LSN_war_industrialist
+			allowed  = {
+					original_tag  = LSN
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="LSN_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_LSN_war_industrialist"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	LSN_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = LSN_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = LSN
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="LSN_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	LSN_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = LSN_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = LSN
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="LSN_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	LSN_naval_theorist={
+		name=LSN_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_LSN_naval_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = LSN_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = LSN
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+	LSN_naval_aviation_pioneer={
+		name=LSN_naval_aviation_pioneer
+		portraits={
+			army={
+				small="GFX_idea_LSN_naval_aviation_pioneer"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = LSN_naval_aviation_pioneer
+			ledger = navy
+			allowed = {
+				original_tag = LSN
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+
+	LSN_victory_through_airpower={
+		name=LSN_victory_through_airpower
+		portraits={
+			army={
+				small="GFX_idea_LSN_victory_through_airpower"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = LSN_victory_through_airpower
+			ledger = air
+			allowed = {
+				original_tag = LSN
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+	LSN_nuclear_scientist={
+		name=LSN_nuclear_scientist
+		portraits={
+			army={
+				small="GFX_idea_LSN_nuclear_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = LSN_nuclear_scientist
+			ledger = army
+			allowed = {
+				original_tag = LSN
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	LSN_rocket_scientist={
+		name=LSN_rocket_scientist
+		portraits={
+			army={
+				small="GFX_idea_LSN_rocket_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = LSN_rocket_scientist
+			ledger = air
+			allowed = {
+				original_tag = LSN
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	LSN_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = LSN_army_chief_defensive_2
+			allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_chief_defensive_2"
+			}
+		}
+	}
+	LSN_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = LSN_army_chief_drill_2
+			allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_chief_drill_2"
+			}
+		}
+	}
+	LSN_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = LSN_army_chief_maneuver_2
+			allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_chief_maneuver_2"
+			}
+		}
+	}
+	LSN_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = LSN_army_chief_morale_2
+			allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_chief_morale_2"
+			}
+		}
+	}
+	LSN_army_chief_offensive_2={
+		name=LSN_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_chief_offensive_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = LSN_army_chief_offensive_2
+			allowed = {
+				original_tag = LSN
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LSN_army_chief_organizational_1={
+		name=LSN_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_chief_organizational_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = LSN_army_chief_organizational_1
+			allowed = {
+				original_tag = LSN
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	LSN_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = LSN_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	LSN_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = LSN_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	LSN_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = LSN_air_chief_ground_support_2
+			allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	LSN_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = LSN_air_chief_reform_2
+			allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	LSN_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_LSN_army_armored_1"
+			}
+		}
+	}
+	LSN_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_entrenchment_1"
+			}
+		}
+	}
+	LSN_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_infantr_1"
+			}
+		}
+	}
+	LSN_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_army_logistics_2"
+			}
+		}
+	}
+	LSN_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_air_bomber_interception_2"
+			}
+		}
+	}
+	LSN_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_air_close_air_support_2"
+			}
+		}
+	}
+	LSN_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_navy_screen_2"
+			}
+		}
+	}
+	LSN_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_LSN_navy_anti_submarine_1"
+			}
+		}
+	}
+	LSN_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = LSN_navy_naval_air_defense
+			ledger = navy
+				allowed = {
+					original_tag = LSN
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="LSN_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_LSN_navy_naval_air_defense_2"
+			}
+		}
+	}
 }

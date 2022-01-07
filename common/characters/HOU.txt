@@ -175,4 +175,1114 @@ characters={
 			legacy_id=-1
 		}
 	}
+###################
+###CORPS COMMANDERS
+###################
+	
+	HOU_corps_commander_1={
+		name="HOU_corps_commander_1"
+		portraits={
+			army={
+				large="gfx/leaders/HOU/Portrait_HOU_corps_commander_1.dds"
+				small="gfx/interface/ideas/idea_HOU_corps_commander_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	HOU_corps_commander_2={
+		name=HOU_corps_commander_2
+		portraits={
+			army={
+				large="gfx/leaders/HOU/Portrait_HOU_corps_commander_2.dds"
+				small="gfx/interface/ideas/idea_HOU_corps_commander_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	HOU_corps_commander_3={
+		name=HOU_corps_commander_3
+		portraits={
+			army={
+				large="gfx/leaders/HOU/Portrait_HOU_corps_commander_3.dds"
+				small="gfx/interface/ideas/idea_HOU_corps_commander_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	HOU_corps_commander_4={
+		name=HOU_corps_commander_4
+		portraits={
+			army={
+				large="gfx/leaders/HOU/Portrait_HOU_corps_commander_4.dds"
+				small="gfx/interface/ideas/idea_HOU_corps_commander_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	HOU_naval_leader_1={
+		name=HOU_naval_leader_1
+		portraits={
+			army={
+				large="gfx/leaders/HOU/Portrait_HOU_naval_leader_1.dds"
+			}
+			army={
+				small="GFX_idea_HOU_naval_leader_1"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	HOU_naval_leader_2={
+		name=HOU_naval_leader_2
+		portraits={
+			army={
+				large="gfx/leaders/HOU/Portrait_HOU_naval_leader_2.dds"
+				small="gfx/interface/ideas/idea_HOU_naval_leader_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast superior_tactician spotter }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	HOU_naval_leader_3={
+		name=HOU_naval_leader_
+		portraits={
+			navy={
+				small="GFX_idea_HOU_naval_leader_3"
+			}
+			army={
+				large="gfx/leaders/USA/Portrait_HOU_naval_leader_3.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gunnery_expert superior_tactician spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	HOU_naval_leader_4={
+		name=HOU_naval_leader_4
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_HOU_naval_leader_4.dds"
+				small="gfx/interface/ideas/idea_HOU_naval_leader_4.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	HOU_naval_leader_5={
+		name=HOU_naval_leader_5
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_HOU_naval_leader_5.dds"
+				small="gfx/interface/ideas/idea_HOU_naval_leader_5.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	HOU_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_anti_communist_crusader
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="HOU_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_HOU_anti_communist_crusader"
+			}
+		}
+	}
+	HOU_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_armaments_organizer
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="HOU_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_HOU_armaments_organizer"
+			}
+		}
+	}
+	HOU_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_backroom_backstabber
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="HOU_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_HOU_backroom_backstabber"
+			}
+		}
+	}
+	HOU_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_captain_of_industry
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="HOU_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_HOU_captain_of_industry"
+			}
+		}
+	}
+	HOU_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_communist_revolutionary
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="HOU_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_HOU_communist_revolutionary"
+			}
+		}
+	}
+	HOU_compassionate_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_compassionate_gentleman
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="HOU_compassionate_gentleman"
+		portraits={
+			army={
+				small="GFX_idea_HOU_compassionate_gentleman"
+			}
+		}
+	}
+	HOU_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_democratic_reformer
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="HOU_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_HOU_captain_of_industry"
+			}
+		}
+	}	
+	HOU_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_economist
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="HOU_economist"
+		portraits={
+			army={
+				small="GFX_idea_HOU_economist"
+			}
+		}
+	}
+	HOU_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_editor
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="HOU_editor"
+		portraits={
+			army={
+				small="GFX_idea_HOU_editor"
+			}
+		}
+	}
+	HOU_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_fascist_demagogue
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="HOU_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_HOU_fascist_demagogue"
+			}
+		}
+	}
+	HOU_financial_expert={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_financial_expert
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="HOU_financial_expert"
+		portraits={
+			army={
+				small="GFX_idea_HOU_financial_expert"
+			}
+		}
+	}
+	HOU_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_head_of_intelligence
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="HOU_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_HOU_head_of_intelligence"
+			}
+		}
+	}
+	HOU_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_ideological_crusader
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="HOU_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_HOU_ideological_crusader"
+			}
+		}
+	}
+	HOU_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_popular_figurehead
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="HOU_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_HOU_popular_figurehead"
+			}
+		}
+	}
+	HOU_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_prince_of_terror
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="HOU_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_HOU_prince_of_terror"
+			}
+		}
+	}
+	HOU_silent_workhorse={
+		name=HOU_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_HOU_silent_workhorse"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_silent_workhorse
+			allowed  = {
+				original_tag  = HOU
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	HOU_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_smooth_talking_charmer
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="HOU_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_HOU_smooth_talking_charmer"
+			}
+		}
+	}
+	
+	HOU_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = HOU_war_industrialist
+			allowed  = {
+					original_tag  = HOU
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="HOU_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_HOU_war_industrialist"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	HOU_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = HOU_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = HOU
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="HOU_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	HOU_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = HOU_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = HOU
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="HOU_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	HOU_naval_theorist={
+		name=HOU_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_HOU_naval_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = HOU_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = HOU
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+	HOU_naval_aviation_pioneer={
+		name=HOU_naval_aviation_pioneer
+		portraits={
+			army={
+				small="GFX_idea_HOU_naval_aviation_pioneer"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = HOU_naval_aviation_pioneer
+			ledger = navy
+			allowed = {
+				original_tag = HOU
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+
+	HOU_victory_through_airpower={
+		name=HOU_victory_through_airpower
+		portraits={
+			army={
+				small="GFX_idea_HOU_victory_through_airpower"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = HOU_victory_through_airpower
+			ledger = air
+			allowed = {
+				original_tag = HOU
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+	HOU_nuclear_scientist={
+		name=HOU_nuclear_scientist
+		portraits={
+			army={
+				small="GFX_idea_HOU_nuclear_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = HOU_nuclear_scientist
+			ledger = army
+			allowed = {
+				original_tag = HOU
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	HOU_rocket_scientist={
+		name=HOU_rocket_scientist
+		portraits={
+			army={
+				small="GFX_idea_HOU_rocket_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = HOU_rocket_scientist
+			ledger = air
+			allowed = {
+				original_tag = HOU
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	HOU_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = HOU_army_chief_defensive_2
+			allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_chief_defensive_2"
+			}
+		}
+	}
+	HOU_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = HOU_army_chief_drill_2
+			allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_chief_drill_2"
+			}
+		}
+	}
+	HOU_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = HOU_army_chief_maneuver_2
+			allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_chief_maneuver_2"
+			}
+		}
+	}
+	HOU_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = HOU_army_chief_morale_2
+			allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_chief_morale_2"
+			}
+		}
+	}
+	HOU_army_chief_offensive_2={
+		name=HOU_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_chief_offensive_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = HOU_army_chief_offensive_2
+			allowed = {
+				original_tag = HOU
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	HOU_army_chief_organizational_1={
+		name=HOU_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_chief_organizational_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = HOU_army_chief_organizational_1
+			allowed = {
+				original_tag = HOU
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	HOU_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = HOU_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	HOU_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = HOU_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	HOU_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = HOU_air_chief_ground_support_2
+			allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	HOU_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = HOU_air_chief_reform_2
+			allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	HOU_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_HOU_army_armored_1"
+			}
+		}
+	}
+	HOU_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_entrenchment_1"
+			}
+		}
+	}
+	HOU_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_infantr_1"
+			}
+		}
+	}
+	HOU_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_army_logistics_2"
+			}
+		}
+	}
+	HOU_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_air_bomber_interception_2"
+			}
+		}
+	}
+	HOU_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_air_close_air_support_2"
+			}
+		}
+	}
+	HOU_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_navy_screen_2"
+			}
+		}
+	}
+	HOU_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_HOU_navy_anti_submarine_1"
+			}
+		}
+	}
+	HOU_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = HOU_navy_naval_air_defense
+			ledger = navy
+				allowed = {
+					original_tag = HOU
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="HOU_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_HOU_navy_naval_air_defense_2"
+			}
+		}
+	}
 }

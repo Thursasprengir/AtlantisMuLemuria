@@ -566,4 +566,1114 @@ characters={
 			}
 		}
 	}
+###################
+###CORPS COMMANDERS
+###################
+	
+	IKA_corps_commander_1={
+		name="IKA_corps_commander_1"
+		portraits={
+			army={
+				large="gfx/leaders/IKA/Portrait_IKA_corps_commander_1.dds"
+				small="gfx/interface/ideas/idea_IKA_corps_commander_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	IKA_corps_commander_2={
+		name=IKA_corps_commander_2
+		portraits={
+			army={
+				large="gfx/leaders/IKA/Portrait_IKA_corps_commander_2.dds"
+				small="gfx/interface/ideas/idea_IKA_corps_commander_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	IKA_corps_commander_3={
+		name=IKA_corps_commander_3
+		portraits={
+			army={
+				large="gfx/leaders/IKA/Portrait_IKA_corps_commander_3.dds"
+				small="gfx/interface/ideas/idea_IKA_corps_commander_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	IKA_corps_commander_4={
+		name=IKA_corps_commander_4
+		portraits={
+			army={
+				large="gfx/leaders/IKA/Portrait_IKA_corps_commander_4.dds"
+				small="gfx/interface/ideas/idea_IKA_corps_commander_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	IKA_naval_leader_1={
+		name=IKA_naval_leader_1
+		portraits={
+			army={
+				large="gfx/leaders/IKA/Portrait_IKA_naval_leader_1.dds"
+			}
+			army={
+				small="GFX_idea_IKA_naval_leader_1"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	IKA_naval_leader_2={
+		name=IKA_naval_leader_2
+		portraits={
+			army={
+				large="gfx/leaders/IKA/Portrait_IKA_naval_leader_2.dds"
+				small="gfx/interface/ideas/idea_IKA_naval_leader_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast superior_tactician spotter }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	IKA_naval_leader_3={
+		name=IKA_naval_leader_
+		portraits={
+			navy={
+				small="GFX_idea_IKA_naval_leader_3"
+			}
+			army={
+				large="gfx/leaders/USA/Portrait_IKA_naval_leader_3.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gunnery_expert superior_tactician spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	IKA_naval_leader_4={
+		name=IKA_naval_leader_4
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_IKA_naval_leader_4.dds"
+				small="gfx/interface/ideas/idea_IKA_naval_leader_4.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	IKA_naval_leader_5={
+		name=IKA_naval_leader_5
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_IKA_naval_leader_5.dds"
+				small="gfx/interface/ideas/idea_IKA_naval_leader_5.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	IKA_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_anti_communist_crusader
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="IKA_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_IKA_anti_communist_crusader"
+			}
+		}
+	}
+	IKA_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_armaments_organizer
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="IKA_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_IKA_armaments_organizer"
+			}
+		}
+	}
+	IKA_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_backroom_backstabber
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="IKA_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_IKA_backroom_backstabber"
+			}
+		}
+	}
+	IKA_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_captain_of_industry
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="IKA_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_IKA_captain_of_industry"
+			}
+		}
+	}
+	IKA_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_communist_revolutionary
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="IKA_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_IKA_communist_revolutionary"
+			}
+		}
+	}
+	IKA_compassionate_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_compassionate_gentleman
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="IKA_compassionate_gentleman"
+		portraits={
+			army={
+				small="GFX_idea_IKA_compassionate_gentleman"
+			}
+		}
+	}
+	IKA_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_democratic_reformer
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="IKA_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_IKA_captain_of_industry"
+			}
+		}
+	}	
+	IKA_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_economist
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="IKA_economist"
+		portraits={
+			army={
+				small="GFX_idea_IKA_economist"
+			}
+		}
+	}
+	IKA_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_editor
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="IKA_editor"
+		portraits={
+			army={
+				small="GFX_idea_IKA_editor"
+			}
+		}
+	}
+	IKA_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_fascist_demagogue
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="IKA_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_IKA_fascist_demagogue"
+			}
+		}
+	}
+	IKA_financial_expert={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_financial_expert
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="IKA_financial_expert"
+		portraits={
+			army={
+				small="GFX_idea_IKA_financial_expert"
+			}
+		}
+	}
+	IKA_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_head_of_intelligence
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="IKA_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_IKA_head_of_intelligence"
+			}
+		}
+	}
+	IKA_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_ideological_crusader
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="IKA_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_IKA_ideological_crusader"
+			}
+		}
+	}
+	IKA_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_popular_figurehead
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="IKA_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_IKA_popular_figurehead"
+			}
+		}
+	}
+	IKA_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_prince_of_terror
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="IKA_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_IKA_prince_of_terror"
+			}
+		}
+	}
+	IKA_silent_workhorse={
+		name=IKA_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_IKA_silent_workhorse"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_silent_workhorse
+			allowed  = {
+				original_tag  = IKA
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	IKA_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_smooth_talking_charmer
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="IKA_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_IKA_smooth_talking_charmer"
+			}
+		}
+	}
+	
+	IKA_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = IKA_war_industrialist
+			allowed  = {
+					original_tag  = IKA
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="IKA_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_IKA_war_industrialist"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	IKA_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = IKA_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = IKA
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="IKA_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	IKA_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = IKA_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = IKA
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="IKA_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	IKA_naval_theorist={
+		name=IKA_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_IKA_naval_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = IKA_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = IKA
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+	IKA_naval_aviation_pioneer={
+		name=IKA_naval_aviation_pioneer
+		portraits={
+			army={
+				small="GFX_idea_IKA_naval_aviation_pioneer"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = IKA_naval_aviation_pioneer
+			ledger = navy
+			allowed = {
+				original_tag = IKA
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+
+	IKA_victory_through_airpower={
+		name=IKA_victory_through_airpower
+		portraits={
+			army={
+				small="GFX_idea_IKA_victory_through_airpower"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = IKA_victory_through_airpower
+			ledger = air
+			allowed = {
+				original_tag = IKA
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+	IKA_nuclear_scientist={
+		name=IKA_nuclear_scientist
+		portraits={
+			army={
+				small="GFX_idea_IKA_nuclear_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = IKA_nuclear_scientist
+			ledger = army
+			allowed = {
+				original_tag = IKA
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	IKA_rocket_scientist={
+		name=IKA_rocket_scientist
+		portraits={
+			army={
+				small="GFX_idea_IKA_rocket_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = IKA_rocket_scientist
+			ledger = air
+			allowed = {
+				original_tag = IKA
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	IKA_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = IKA_army_chief_defensive_2
+			allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_chief_defensive_2"
+			}
+		}
+	}
+	IKA_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = IKA_army_chief_drill_2
+			allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_chief_drill_2"
+			}
+		}
+	}
+	IKA_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = IKA_army_chief_maneuver_2
+			allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_chief_maneuver_2"
+			}
+		}
+	}
+	IKA_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = IKA_army_chief_morale_2
+			allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_chief_morale_2"
+			}
+		}
+	}
+	IKA_army_chief_offensive_2={
+		name=IKA_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_chief_offensive_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = IKA_army_chief_offensive_2
+			allowed = {
+				original_tag = IKA
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	IKA_army_chief_organizational_1={
+		name=IKA_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_chief_organizational_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = IKA_army_chief_organizational_1
+			allowed = {
+				original_tag = IKA
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	IKA_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = IKA_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	IKA_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = IKA_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	IKA_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = IKA_air_chief_ground_support_2
+			allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	IKA_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = IKA_air_chief_reform_2
+			allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	IKA_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_IKA_army_armored_1"
+			}
+		}
+	}
+	IKA_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_entrenchment_1"
+			}
+		}
+	}
+	IKA_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_infantr_1"
+			}
+		}
+	}
+	IKA_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_army_logistics_2"
+			}
+		}
+	}
+	IKA_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_air_bomber_interception_2"
+			}
+		}
+	}
+	IKA_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_air_close_air_support_2"
+			}
+		}
+	}
+	IKA_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_navy_screen_2"
+			}
+		}
+	}
+	IKA_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_IKA_navy_anti_submarine_1"
+			}
+		}
+	}
+	IKA_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = IKA_navy_naval_air_defense
+			ledger = navy
+				allowed = {
+					original_tag = IKA
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="IKA_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_IKA_navy_naval_air_defense_2"
+			}
+		}
+	}
 }

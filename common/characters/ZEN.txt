@@ -1,0 +1,1174 @@
+characters={
+###############
+###DEMOCRATIC
+###############
+	ZEN_socialism_leader={
+		name="ZEN_socialism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZEN/Portrait_ZEN_socialism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ captain_of_industry dealbroker }
+			expire="1955.1.1.12"
+			id=-1
+		}
+	}
+	
+	ZEN_anarchist_communism_leader={
+		name="ZEN_anarchist_communism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZEN/Portrait_ZEN_anarchist_communism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	ZEN_generic_fascism_leader={
+		name="ZEN_generic_fascism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZEN/Portrait_ZEN_generic_fascism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1949.1.1.12"
+			id=-1
+		}
+	}
+	
+	ZEN_anarchism_leader={
+		name="ZEN_anarchism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZEN/Portrait_ZEN_anarchism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchism
+			expire="1949.1.1.12"
+			id=-1
+		}
+	}
+	
+	
+	
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+	ZEN_corps_commander_1={
+		name="ZEN_corps_commander_1"
+		portraits={
+			army={
+				large="gfx/leaders/ZEN/Portrait_ZEN_corps_commander_1.dds"
+				small="gfx/interface/ideas/idea_ZEN_corps_commander_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	ZEN_corps_commander_2={
+		name=ZEN_corps_commander_2
+		portraits={
+			army={
+				large="gfx/leaders/ZEN/Portrait_ZEN_corps_commander_2.dds"
+				small="gfx/interface/ideas/idea_ZEN_corps_commander_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	ZEN_corps_commander_3={
+		name=ZEN_corps_commander_3
+		portraits={
+			army={
+				large="gfx/leaders/ZEN/Portrait_ZEN_corps_commander_3.dds"
+				small="gfx/interface/ideas/idea_ZEN_corps_commander_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	ZEN_corps_commander_4={
+		name=ZEN_corps_commander_4
+		portraits={
+			army={
+				large="gfx/leaders/ZEN/Portrait_ZEN_corps_commander_4.dds"
+				small="gfx/interface/ideas/idea_ZEN_corps_commander_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	ZEN_naval_leader_1={
+		name=ZEN_naval_leader_1
+		portraits={
+			army={
+				large="gfx/leaders/ZEN/Portrait_ZEN_naval_leader_1.dds"
+			}
+			army={
+				small="GFX_idea_ZEN_naval_leader_1"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	ZEN_naval_leader_2={
+		name=ZEN_naval_leader_2
+		portraits={
+			army={
+				large="gfx/leaders/ZEN/Portrait_ZEN_naval_leader_2.dds"
+				small="gfx/interface/ideas/idea_ZEN_naval_leader_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast superior_tactician spotter }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	ZEN_naval_leader_3={
+		name=ZEN_naval_leader_
+		portraits={
+			navy={
+				small="GFX_idea_ZEN_naval_leader_3"
+			}
+			army={
+				large="gfx/leaders/USA/Portrait_ZEN_naval_leader_3.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gunnery_expert superior_tactician spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	ZEN_naval_leader_4={
+		name=ZEN_naval_leader_4
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_ZEN_naval_leader_4.dds"
+				small="gfx/interface/ideas/idea_ZEN_naval_leader_4.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	ZEN_naval_leader_5={
+		name=ZEN_naval_leader_5
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_ZEN_naval_leader_5.dds"
+				small="gfx/interface/ideas/idea_ZEN_naval_leader_5.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	ZEN_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_anti_communist_crusader
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="ZEN_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_anti_communist_crusader"
+			}
+		}
+	}
+	ZEN_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_armaments_organizer
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="ZEN_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_armaments_organizer"
+			}
+		}
+	}
+	ZEN_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_backroom_backstabber
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="ZEN_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_backroom_backstabber"
+			}
+		}
+	}
+	ZEN_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_captain_of_industry
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="ZEN_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_captain_of_industry"
+			}
+		}
+	}
+	ZEN_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_communist_revolutionary
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="ZEN_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_communist_revolutionary"
+			}
+		}
+	}
+	ZEN_compassionate_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_compassionate_gentleman
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="ZEN_compassionate_gentleman"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_compassionate_gentleman"
+			}
+		}
+	}
+	ZEN_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_democratic_reformer
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="ZEN_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_captain_of_industry"
+			}
+		}
+	}	
+	ZEN_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_economist
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="ZEN_economist"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_economist"
+			}
+		}
+	}
+	ZEN_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_editor
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="ZEN_editor"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_editor"
+			}
+		}
+	}
+	ZEN_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_fascist_demagogue
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="ZEN_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_fascist_demagogue"
+			}
+		}
+	}
+	ZEN_financial_expert={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_financial_expert
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="ZEN_financial_expert"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_financial_expert"
+			}
+		}
+	}
+	ZEN_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_head_of_intelligence
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="ZEN_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_head_of_intelligence"
+			}
+		}
+	}
+	ZEN_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_ideological_crusader
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="ZEN_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_ideological_crusader"
+			}
+		}
+	}
+	ZEN_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_popular_figurehead
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="ZEN_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_popular_figurehead"
+			}
+		}
+	}
+	ZEN_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_prince_of_terror
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="ZEN_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_prince_of_terror"
+			}
+		}
+	}
+	ZEN_silent_workhorse={
+		name=ZEN_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_ZEN_silent_workhorse"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_silent_workhorse
+			allowed  = {
+				original_tag  = ZEN
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	ZEN_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_smooth_talking_charmer
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="ZEN_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_smooth_talking_charmer"
+			}
+		}
+	}
+	
+	ZEN_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = ZEN_war_industrialist
+			allowed  = {
+					original_tag  = ZEN
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="ZEN_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_war_industrialist"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	ZEN_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ZEN_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = ZEN
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="ZEN_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	ZEN_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = ZEN_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = ZEN
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="ZEN_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	ZEN_naval_theorist={
+		name=ZEN_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_ZEN_naval_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ZEN_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = ZEN
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+	ZEN_naval_aviation_pioneer={
+		name=ZEN_naval_aviation_pioneer
+		portraits={
+			army={
+				small="GFX_idea_ZEN_naval_aviation_pioneer"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ZEN_naval_aviation_pioneer
+			ledger = navy
+			allowed = {
+				original_tag = ZEN
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+
+	ZEN_victory_through_airpower={
+		name=ZEN_victory_through_airpower
+		portraits={
+			army={
+				small="GFX_idea_ZEN_victory_through_airpower"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ZEN_victory_through_airpower
+			ledger = air
+			allowed = {
+				original_tag = ZEN
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+	ZEN_nuclear_scientist={
+		name=ZEN_nuclear_scientist
+		portraits={
+			army={
+				small="GFX_idea_ZEN_nuclear_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ZEN_nuclear_scientist
+			ledger = army
+			allowed = {
+				original_tag = ZEN
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	ZEN_rocket_scientist={
+		name=ZEN_rocket_scientist
+		portraits={
+			army={
+				small="GFX_idea_ZEN_rocket_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ZEN_rocket_scientist
+			ledger = air
+			allowed = {
+				original_tag = ZEN
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	ZEN_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = ZEN_army_chief_defensive_2
+			allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_chief_defensive_2"
+			}
+		}
+	}
+	ZEN_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = ZEN_army_chief_drill_2
+			allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_chief_drill_2"
+			}
+		}
+	}
+	ZEN_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = ZEN_army_chief_maneuver_2
+			allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_chief_maneuver_2"
+			}
+		}
+	}
+	ZEN_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = ZEN_army_chief_morale_2
+			allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_chief_morale_2"
+			}
+		}
+	}
+	ZEN_army_chief_offensive_2={
+		name=ZEN_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_chief_offensive_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ZEN_army_chief_offensive_2
+			allowed = {
+				original_tag = ZEN
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ZEN_army_chief_organizational_1={
+		name=ZEN_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_chief_organizational_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ZEN_army_chief_organizational_1
+			allowed = {
+				original_tag = ZEN
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	ZEN_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = ZEN_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	ZEN_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = ZEN_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	ZEN_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = ZEN_air_chief_ground_support_2
+			allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	ZEN_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = ZEN_air_chief_reform_2
+			allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	ZEN_army_armored_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_ZEN_army_armored_1"
+			}
+		}
+	}
+	ZEN_army_entrenchment_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_entrenchment_1"
+			}
+		}
+	}
+	ZEN_army_infantry_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_infantr_1"
+			}
+		}
+	}
+	ZEN_army_logistics_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_army_logistics_2"
+			}
+		}
+	}
+	ZEN_air_bomber_interception_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_air_bomber_interception_2"
+			}
+		}
+	}
+	ZEN_air_close_air_support_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_air_close_air_support_2"
+			}
+		}
+	}
+	ZEN_navy_screen_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_navy_screen_2"
+			}
+		}
+	}
+	ZEN_navy_anti_submarine_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_navy_anti_submarine_1"
+			}
+		}
+	}
+	ZEN_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = ZEN_navy_naval_air_defense
+			ledger = navy
+				allowed = {
+					original_tag = ZEN
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ZEN_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_ZEN_navy_naval_air_defense_2"
+			}
+		}
+	}
+}
