@@ -4517,3 +4517,102 @@ focus_tree = {
 			}
 		}
 	}
+	
+#Military
+
+focus = {
+		id = PRJ_modernization
+		prerequisite = { focus = PRJ_abandon_ethiopia focus = PRJ_save_ethiopia }
+		x = 20
+		y = 1
+		relative_position_id = PRJ_abandon_ethiopia
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 25
+			air_experience = 25
+		}
+	}
+	
+	focus = {
+		id = PRJ_land
+		prerequisite = { focus = PRJ_modernization }
+		x = -2
+		y = 1
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			remove_ideas = PRJ_lagging_army
+		}
+	}
+	
+	focus = {
+		id = PRJ_sky
+		prerequisite = { focus = PRJ_modernization }
+		x = 2
+		y = 1
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			#
+		}
+	}
