@@ -45,7 +45,7 @@ focus = {
 	}
 focus = {
 		id = TRS_cut_back_spending
-		icon = GFX_focus_mex_privatisation
+		icon = GFX_seize_money
 		prerequisite = { focus = TRS_state_of_the_economy }
 		mutually_exclusive = { focus = TRS_military_uprising }
 		relative_position_id = TRS_state_of_the_economy
@@ -133,7 +133,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {		
+		completion_reward = {
 			CHI_hyper_inflation_level_down = yes
 			add_manpower = -40000
 			add_stability = -0.1
@@ -559,9 +559,9 @@ focus = {
 					}
 			}
 			trade_opinion_factor = -0.5
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				#any_country= { #how to make this target all countries?
-					target = PREV modifier = trs_bankrupt_dirtbags_focus 
+					target = PREV modifier = trs_bankrupt_dirtbags_focus
 						}
 					#}
 		}
@@ -871,7 +871,7 @@ focus = {
 	}
 focus = {
 		id = TRS_reject_further_jap_investments
-		icon = GFX_TRS_politics
+		icon = GFX_money_grab
 		prerequisite = { focus = TRS_japanese_zaibatsu_payments }
 		relative_position_id = TRS_japanese_zaibatsu_payments
 		mutually_exclusive = { focus = TRS_allow_further_jap_investments }
@@ -903,7 +903,7 @@ focus = {
 	}
 focus = {
 		id = TRS_default_on_loans
-		icon = GFX_TRS_politics
+		icon = GFX_focus_attack_japan
 		prerequisite = { focus = TRS_reject_further_jap_investments }
 		relative_position_id = TRS_reject_further_jap_investments
 		x = 0
@@ -1009,7 +1009,7 @@ focus = {
 	}
 focus = {
 		id = TRS_allow_further_jap_investments
-		icon = GFX_TRS_politics
+		icon = GFX_bailout_money
 		prerequisite = { focus = TRS_japanese_zaibatsu_payments }
 		relative_position_id = TRS_japanese_zaibatsu_payments
 		mutually_exclusive = { focus = TRS_reject_further_jap_investments }
@@ -1039,7 +1039,7 @@ focus = {
 	}
 focus = {
 		id = TRS_blood_money
-		icon = GFX_TRS_politics
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = TRS_allow_further_jap_investments }
 		relative_position_id = TRS_allow_further_jap_investments
 		x = 0
@@ -1245,7 +1245,7 @@ focus = {
 
 focus = {
 		id = TRS_military_uprising
-		icon = GFX_TRS_politics
+		icon = GFX_r56_goal_generic_uprising
 		prerequisite = { focus = TRS_state_of_the_economy }
 		mutually_exclusive = { focus = TRS_cut_back_spending }
 		relative_position_id = TRS_state_of_the_economy
@@ -2158,7 +2158,7 @@ focus = {
 				25 = {
 					army_experience = 100
 				}
-			}			
+			}
 				fixed_random_seed = no
 		}
 	}
@@ -2234,7 +2234,7 @@ focus = {
 				25 = {
 					army_experience = 100
 				}
-			}			
+			}
 				fixed_random_seed = no
 		}
 	}
@@ -3360,7 +3360,7 @@ focus = {
 			type = convoy
 			amount = -200
 				}
-			
+
 			}
 		}
 	}
