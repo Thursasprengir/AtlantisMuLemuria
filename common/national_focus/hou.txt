@@ -53,7 +53,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#decrease war support, increase manpower and stability
+			add_war_support = -0.1
+			add_manpower = 100000
+			add_stability = 0.05
 		}
 	}
 
@@ -90,7 +92,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#decrease democratic support
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.15
+				}
 		}
 	}
 	focus = {
@@ -152,6 +157,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			set_capital = {state = 836}
+						836 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 			#Wainuiomu is the new capital, add some civ factories there
 		}
 	}
@@ -185,6 +199,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_manpower = 80000
+			HOU = {
+			production_speed_buildings_factor = 0.1 
+			}
 			#incr manpower, inc production
 		}
 	}
@@ -217,6 +235,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.15
+				}
 			#signif malus to SOV relations. Communist ideology boost.
 		}
 	}
@@ -279,6 +301,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			production_speed_buildings_factor = 0.2 
+			add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+			add_manpower = 80000
 			#production bonus, ideology boost, manpower boost
 		}
 	}
@@ -309,6 +337,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				name = HOU_peoples_army
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine	
+			}
 			#add brigades, add army points, land doctrine bonus
 		}
 	}
@@ -342,6 +377,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_to_variable = {production_speed_industrial_complex_factor = 0.25}
+			license_infantry_eq_purchase_cost_factor = 0.5
+			license_light_tank_eq_purchase_cost_factor = 0.5
 			#boost to SOV relations, factory construction bonus. Bonus to purchase inf/arty/light tank designs?
 		}
 	}
@@ -373,6 +411,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			production_speed_fortification_factor = 0.25
 			#fortification construction bonus
 		}
 	}
@@ -396,6 +435,8 @@ focus_tree = {
 		}
 
 		bypass = {
+			is_in_faction = yes
+			is_in_faction_with = SOV
 
 		}
 
@@ -404,7 +445,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#Join Comintern
+			SOV = { add_to_faction = HOU }
 		}
 	}
 	focus = {
@@ -434,6 +475,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			navy_experience = 20
+
+			add_doctrine_cost_reduction = {
+				name = HOU_peoples_navy
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 			#add navy points, naval doctrine bonus
 		}
 	}
@@ -468,6 +517,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_manpower = 150000
+			HOU = {army_org_regain = 0.3}
 			#inc manpower, inc division org
 		}
 	}
@@ -500,6 +551,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			IKA = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.15
+				}
+			}
+			MHN = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.15
+				}
+			}
+			AWA = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.15
+				}
+			}
 			#communism boost to all Kanagan nations
 		}
 	}
