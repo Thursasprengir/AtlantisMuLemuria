@@ -4613,6 +4613,559 @@ focus = {
 		}
 
 		completion_reward = {
-			#
+			add_ideas = PRJ_trained_airforce
 		}
 	}
+	
+	#Army Branch
+	
+	focus = {
+		id = PRJ_blitzkrieg
+		mutually_exclusive = { focus = PRJ_grand_plan}
+		prerequisite = { focus = PRJ_land }
+		x = -6
+		y = 2
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_hit_n_run
+				bonus = 1.0
+				uses = 2
+				category = cat_mobile_warfare
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_light_med_tanks
+		prerequisite = { focus = PRJ_blitzkrieg }
+		x = -7
+		y = 3
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_light_tanks
+				bonus = 1.0
+				uses = 2
+				category = cat_light_armor
+
+			}
+			add_tech_bonus = {
+				name = PRJ_medium_tanks
+				bonus = 1.0
+				uses = 2
+				category = cat_medium_armor
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_mechanization
+		prerequisite = { focus = PRJ_blitzkrieg }
+		x = -5
+		y = 3
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_mechanized_trucks
+				bonus = 1.0
+				uses = 2
+				category = cat_mechanized_equipment
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_support
+		prerequisite = { focus = PRJ_mechanization  focus = PRJ_light_med_tanks }
+		x = -6
+		y = 4
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_support_equiptment
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = PRJ_grand_plan
+		prerequisite = { focus = PRJ_land }
+		mutually_exclusive = { focus = PRJ_blitzkrieg }
+		x = -2
+		y = 2
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_planning
+				bonus = 1.0
+				uses = 2
+				category = cat_grand_battle_plan
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_infantry_gear
+		prerequisite = { focus = PRJ_grand_plan }
+		x = -3
+		y = 3
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_infantry_tech
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_artillery_gear
+		prerequisite = { focus = PRJ_grand_plan }
+		x = -1
+		y = 3
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_artillery_tech
+				bonus = 1.0
+				uses = 2
+				category = artillery
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_train_gear
+		prerequisite = { focus = PRJ_infantry_gear focus = PRJ_artillery_gear }
+		x = -2
+		y = 4
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_train_tech
+				bonus = 1.0
+				uses = 2
+				category = train_tech
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_strategic_destruction
+		mutually_exclusive = { focus = PRJ_battlefield_support }
+		prerequisite = { focus = PRJ_sky }
+		x = 2
+		y = 2
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_strategic_tech
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_destruction
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_heavy_fighter
+	
+		prerequisite = { focus = PRJ_strategic_destruction }
+		x = 1
+		y = 3
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_strategic_tech
+				bonus = 1.0
+				uses = 2
+				category = cat_heavy_fighter
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_tac_bomber
+	
+		prerequisite = { focus = PRJ_strategic_destruction }
+		x = 3
+		y = 3
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_strategic_tech
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+
+			}
+		}
+	}
+	
+
+	
+	focus = {
+		id = PRJ_battlefield_support
+		prerequisite = { focus = PRJ_sky }
+		mutually_exclusive = { focus = PRJ_strategic_destruction }
+		x = 6
+		y = 2
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 75
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_strategic_tech
+				bonus = 1.0
+				uses = 2
+				category = cat_battlefield_support
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_light_fighter
+		prerequisite = { focus = PRJ_battlefield_support }
+		x = 5
+		y = 3
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 75
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_light_fighter_tech
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+
+			}
+		}
+	}
+	
+	focus = {
+		id = PRJ_cas_bomber
+		prerequisite = { focus = PRJ_battlefield_support }
+		x = 7
+		y = 3
+		relative_position_id = PRJ_modernization
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 75
+		}
+
+		available = {	
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_cas_bomber_tech
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+
+			}
+		}
+	}
+}
+	
+	

@@ -12,6 +12,7 @@ ideas = {
 			modifier = {
 				intelligence_agency_defense = 0.3
 				root_out_resistance_effectiveness_factor = 0.3
+				crypto_strength = 1
 			}
 		}
 		PRJ_lagging_army = {
@@ -36,6 +37,31 @@ ideas = {
 				conscription = 0.01
 			}
 		}
+		PRJ_trained_airforce = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				air_agility_factor = 0.25
+				air_accidents_factor = -0.25
+			}
+		}
+		PRJ_ = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
+		PRJ_ = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
 		PRJ_free_african_nations = {
 			allowed = {always = no}
 			picture = usa_tank_destroyer_board
@@ -54,7 +80,7 @@ ideas = {
 			}
 		}
 	
-	PRJ_core_priority = {
+		PRJ_core_priority = {
 			allowed = {always = no}
 			picture = usa_tank_destroyer_board
 			removal_cost = -1
@@ -64,7 +90,7 @@ ideas = {
 			}
 		
 		}
-	PRJ_outer_priority = {
+		PRJ_outer_priority = {
 			allowed = {always = no}
 			picture = usa_tank_destroyer_board
 			removal_cost = -1
