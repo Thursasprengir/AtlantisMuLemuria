@@ -7,6 +7,7 @@ ATL_gang_warfare = {
 		cost = 50
 		days_remove = 30
 		remove_effect = {
+			custom_effect_tooltip = spy_defense_tooltip
 			set_country_flag = spy_defense_flag
 			add_to_variable = {var = var_kapra_cooldown value = 25 }
 			add_to_variable = {var = var_itork_cooldown value = 25 }
@@ -16,9 +17,10 @@ ATL_gang_warfare = {
 		icon = recruit_operative
 		available = { has_done_agency_upgrade = upgrade_anti_partisan}
 		visible = { NOT = {has_country_flag = spy_partisan_flag}}
-		cost = 50
+		cost = 25
 		days_remove = 40
 		remove_effect = {
+			custom_effect_tooltip = spy_partisan_tooltip
 			set_country_flag = spy_partisan_flag
 			subtract_from_variable = {var = var_police_cost value = 75}
 			add_to_variable = {var = var_political_power_block value = 25}
@@ -31,6 +33,7 @@ ATL_gang_warfare = {
 		cost = 50
 		days_remove = 45
 		remove_effect = {
+			custom_effect_tooltip = spy_interrogation_tooltip
 			set_country_flag = spy_interrogation_flag
 			add_to_variable = {var = var_political_power_block value = 25}
 			subtract_from_variable = {var = var_police_cost value = 50}
@@ -44,6 +47,7 @@ ATL_gang_warfare = {
 		cost = 50
 		days_remove = 10
 		remove_effect = {
+			custom_effect_tooltip = fortify_tooltip
 			set_country_flag = fortify_flag
 			subtract_from_variable = {var = ATL.kapra_success_array^0 value = 25 }
 			add_to_variable = {var = ATL.kapra_success_array^2 value = 25 }
@@ -59,6 +63,7 @@ ATL_gang_warfare = {
 		remove_effect = {
 			if = {
 				limit = {has_country_flag = factory_curfew_flag}
+				custom_effect_tooltip = factory_curfews_off_tooltip
 				remove_ideas = ATL_factory_curfew_idea
 				add_to_variable = {var = ATL.kapra_success_array^0 value = 30 }
 				add_to_variable = {var = ATL.kapra_success_array^1 value = 30 }
@@ -66,6 +71,7 @@ ATL_gang_warfare = {
 				subtract_from_variable = {var = ATL.kapra_success_array^3 value = 30 }
 			}
 			else = {
+				custom_effect_tooltip = factory_curfews_on_tooltip
 				add_ideas = ATL_factory_curfew_idea
 				set_country_flag = factory_curfew_flag
 				subtract_from_variable = {var = ATL.kapra_success_array^0 value = 30 }
@@ -83,6 +89,7 @@ ATL_gang_warfare = {
 		remove_effect = {
 			if = {
 				limit = {has_country_flag = dockyard_curfew_flag}
+				custom_effect_tooltip = dockyard_curfews_off_tooltip
 				remove_ideas = ATL_dockyard_curfew_idea
 				add_to_variable = {var = ATL.itork_success_array^0 value = 30 }
 				add_to_variable = {var = ATL.itork_success_array^1 value = 30 }
@@ -90,6 +97,7 @@ ATL_gang_warfare = {
 				subtract_from_variable = {var = ATL.itork_success_array^3 value = 30 }
 			}
 			else = {
+				custom_effect_tooltip = dockyard_curfews_on_tooltip
 				add_ideas = ATL_dockyard_curfew_idea
 				set_country_flag = dockyard_curfew_flag
 				subtract_from_variable = {var = ATL.itork_success_array^0 value = 30 }
@@ -106,8 +114,9 @@ ATL_gang_warfare = {
 		cost = 50
 		days_remove = 10
 		remove_effect = {
+			custom_effect_tooltip = training_tooltip
 			set_country_flag = training_flag
-			add_to_variable = {var = var_police_casualties value = 2000 }
+			add_to_variable = {var = var_police_casualties value = 1000 }
 			subtract_from_variable = {var = ATL.kapra_success_array^0 value = 10 }
 			subtract_from_variable = {var = ATL.kapra_success_array^1 value = 10 }
 			add_to_variable = {var = ATL.kapra_success_array^2 value = 10 }
@@ -125,15 +134,15 @@ ATL_gang_warfare = {
 			has_equipment = {support_equipment > 199}
 		}
 		visible = { NOT = {has_country_flag = equip_flag}}
-		cost = 50
 		days_remove = 10
 		complete_effect	= {
 			add_equipment_to_stockpile = {type = infantry_equipment amount = -5000}
 			add_equipment_to_stockpile = {type = support_equipment amount = -200}
 		}
 		remove_effect = {
+			custom_effect_tooltip = equip_tooltip
 			set_country_flag = equip_flag
-			add_to_variable = {var = var_police_casualties value = 1000 }
+			add_to_variable = {var = var_police_casualties value = 2000 }
 		}
 	}
 }
