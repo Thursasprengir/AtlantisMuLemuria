@@ -80,7 +80,162 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+	division = {
+		name = "9th Division"
+		location = 13284
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "10th Division"
+		location = 13284
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "11th Division"
+		location = 13284
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "12th Division"
+		location = 13284
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "13th Division"
+		location = 13284
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "14th Division"
+		location = 13284
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "15th Division"
+		location = 13284
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "16th Division"
+		location = 13284
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	fleet = {
+		name = "Maritime Defense Command"
+		naval_base = 13283
+		task_force = {
+			name = "Scout Fleet"
+			location = 13283
+			ship = {name = "Moku-17" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Fakafutuna Class"}}}
+			ship = {name = "Moku-18" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Fakafutuna Class"}}}
+			ship = {name = "Moku-19" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Fakafutuna Class"}}}
+			ship = {name = "Moku-20" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Fakafutuna Class"}}}
+			ship = {name = "Moku-21" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Fakafutuna Class"}}}
+			ship = {name = "Moku-22" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Fakafutuna Class"}}}
+			ship = {name = "Moku-23" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Fakafutuna Class"}}}
+			ship = {name = "Moku-24" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Fakafutuna Class"}}}
+			ship = {name = "Hanaiakamalama" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Nai'a" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Nu'uanu" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Namahoe" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Keho'oea" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Kaheiheionakeiki" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Kalupeokawelo" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Pimoe" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Kamakaunuiomaui" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+			ship = {name = "Nahiku" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Rarotongan Class"}}}
+		}
+		task_force = {
+			name = "Heavy Combat Fleet"
+			location = 13283
+			ship = {name = "A'a" definition = carrier start_experience_factor = 0.25 equipment = {ship_hull_carrier_1 = {amount = 1 owner = MHN version_name = "Niuafoʻou Class"}}
+				air_wings = {
+					cv_fighter_equipment_0 = {owner = "MHN" amount = 25}
+					cv_nav_bomber_equipment_1 = {owner = "MHN" amount = 15}
+				}
+			}
+			ship = {name = "Hokulei" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = MHN version_name = "Nukuoro Class"}}}
+			ship = {name = "Puanakau" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = MHN version_name = "Rakahanga Class"}}}
+			ship = {name = "Puana" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = MHN version_name = "Rakahanga Class"}}}
+			ship = {name = "Kauluakoko" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = MHN version_name = "Rakahanga Class"}}}
+			ship = {name = "Kalanikauleleaiwi" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = MHN version_name = "Rakahanga Class"}}}
+			ship = {name = "Kamailemua" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Anuta Class"}}}
+			ship = {name = "Humu" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Anuta Class"}}}
+			ship = {name = "Kamolehonua" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Anuta Class"}}}
+			ship = {name = "Lehuakona" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Tikopia Class"}}}
+			ship = {name = "Nanahope" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Tikopia Class"}}}
+			ship = {name = "Kukaniloko" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Tikopia Class"}}}
+			ship = {name = "Hawa'iki" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Tikopia Class"}}}
+			ship = {name = "Kauli'a'ama" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = MHN version_name = "Tikopia Class"}}}
+		}
+	}
+	fleet = {
+		name = "Submarine Command"
+		naval_base = 13281
+		task_force = {
+			name = "1st Submarine Fleet"
+			location = 13021
+			ship = {name = "Pil-1" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+			ship = {name = "Pil-2" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+			ship = {name = "Pil-3" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+			ship = {name = "Pil-4" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+			ship = {name = "Pil-5" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+		}
+		task_force = {
+			name = "2nd Submarine Fleet"
+			location = 13281
+			ship = {name = "Pil-6" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+			ship = {name = "Pil-7" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+			ship = {name = "Pil-8" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+			ship = {name = "Pil-9" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+			ship = {name = "Pil-10" definition = submarine equipment = {ship_hull_submarine_1 = {amount = 1 owner = MHN version_name = "Easter Class"}}}
+		}
+	}
+	fleet = {
+		name = "Convoy Protection Command"
+		naval_base = 13305
+		task_force = {
+			name = "Scout Force"
+			location = 13305
+			ship = {name = "Moku-1" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-2" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-3" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-4" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-5" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-6" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-7" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-8" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-9" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+			ship = {name = "Moku-10" definition = destroyer start_experience_factor = 0 equipment = {ship_hull_light_1 = {amount = 1 owner = MHN version_name = "Penrhyn Class"}}}
+		}
+	}
 }
+
 
 ## STARTING PRODUCTION ##
 instant_effect = {
