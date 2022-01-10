@@ -2044,7 +2044,7 @@ focus = {
 
 focus = {
 		id = TRS_chinese_immigrants
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_china1
 		relative_position_id = TRS_state_of_the_economy
 		x = 28
 		y = 0
@@ -2089,7 +2089,7 @@ focus = {
 	}
 focus = {
 		id = TRS_citizenship_for_all
-		icon = GFX_TRS_politics
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { focus = TRS_chinese_immigrants}
 		relative_position_id = TRS_chinese_immigrants
 		mutually_exclusive = { focus = TRS_temporary_immigration }
@@ -2121,7 +2121,7 @@ focus = {
 	}
 focus = {
 		id = TRS_nation_of_immigrants
-		icon = GFX_TRS_politics
+		icon = GFX_focus_POL_sanation_right
 		prerequisite = { focus = TRS_citizenship_for_all}
 		relative_position_id = TRS_citizenship_for_all
 		x = 0
@@ -2164,7 +2164,7 @@ focus = {
 	}
 focus = {
 		id = TRS_temporary_immigration
-		icon = GFX_TRS_politics
+		icon = GFX_r56_goal_generic_economics_reform
 		prerequisite = { focus = TRS_chinese_immigrants}
 		relative_position_id = TRS_chinese_immigrants
 		mutually_exclusive = { focus = TRS_citizenship_for_all }
@@ -2197,7 +2197,7 @@ focus = {
 	}
 focus = {
 		id = TRS_reinforce_our_culture
-		icon = GFX_TRS_politics
+		icon = GFX_r56_goal_nic_immigration
 		prerequisite = { focus = TRS_temporary_immigration}
 		relative_position_id = TRS_temporary_immigration
 		x = 0
@@ -2240,7 +2240,7 @@ focus = {
 	}
 focus = {
 		id = TRS_expand_mil_factories
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = TRS_nation_of_immigrants focus = TRS_reinforce_our_culture}
 		relative_position_id = TRS_nation_of_immigrants
 		x = 1
@@ -2285,7 +2285,7 @@ focus = {
 	}
 focus = {
 		id = TRS_continue_mil_fact_expansion
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = TRS_expand_mil_factories}
 		relative_position_id = TRS_expand_mil_factories
 		x = 0
@@ -2334,7 +2334,7 @@ focus = {
 
 focus = {
 		id = TRS_army_modernization
-		icon = GFX_TRS_politics
+		icon = GFX_r56_goal_generic_army_mobilization
 		relative_position_id = TRS_chinese_immigrants
 		x = 10
 		y = 0
@@ -2362,7 +2362,7 @@ focus = {
 	}
 focus = {
 		id = TRS_mobile_forces
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_army_motorized
 		relative_position_id = TRS_army_modernization
 		prerequisite = { focus = TRS_army_modernization}
 		mutually_exclusive = { focus = TRS_armored_forces }
@@ -2392,7 +2392,7 @@ focus = {
 	}
 focus = {
 		id = TRS_work_with_maisata
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_production2
 		relative_position_id = TRS_weapons_research
 		x = -2
 		y = 0
@@ -2420,7 +2420,7 @@ focus = {
 	}
 focus = {
 		id = TRS_fighter_designs
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_air_fighter2
 		relative_position_id = TRS_work_with_maisata
 		prerequisite = { focus = TRS_work_with_maisata}
 		x = -1
@@ -2449,7 +2449,7 @@ focus = {
 	}
 focus = {
 		id = TRS_interceptor_designs
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_air_fighter
 		relative_position_id = TRS_fighter_designs
 		prerequisite = { focus = TRS_fighter_designs}
 		x = -1
@@ -2478,7 +2478,7 @@ focus = {
 	}
 focus = {
 		id = TRS_bomber_designs
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_air_naval_bomber
 		relative_position_id = TRS_fighter_designs
 		prerequisite = { focus = TRS_fighter_designs}
 		prerequisite = { focus = TRS_dulgwa_mabong_airbases}
@@ -2508,7 +2508,7 @@ focus = {
 	}
 focus = {
 		id = TRS_tac_bombers
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_air_bomber
 		relative_position_id = TRS_bomber_designs
 		prerequisite = { focus = TRS_bomber_designs}
 		x = -2
@@ -2537,7 +2537,7 @@ focus = {
 	}
 focus = {
 		id = TRS_strat_bombers
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_air_bomber
 		relative_position_id = TRS_bomber_designs
 		prerequisite = { focus = TRS_bomber_designs}
 		x = 0
@@ -2566,7 +2566,7 @@ focus = {
 	}
 focus = {
 		id = TRS_naval_bombers
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_air_bomber
 		relative_position_id = TRS_bomber_designs
 		prerequisite = { focus = TRS_bomber_designs}
 		x = 2
@@ -2595,7 +2595,7 @@ focus = {
 	}
 focus = {
 		id = TRS_weapons_research
-		icon = GFX_TRS_politics
+		icon = GFX_focus_chi_army_reform
 		relative_position_id = TRS_mobile_forces
 		prerequisite = { focus = TRS_mobile_forces}
 		x = 0
@@ -2624,7 +2624,7 @@ focus = {
 	}
 focus = {
 		id = TRS_air_power
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_air_doctrine
 		relative_position_id = TRS_weapons_research
 		prerequisite = { focus = TRS_work_with_maisata}
 		prerequisite = { focus = TRS_weapons_research}
@@ -2654,7 +2654,7 @@ focus = {
 	}
 focus = {
 		id = TRS_dulgwa_mabong_airbases
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = TRS_air_power
 		prerequisite = { focus = TRS_air_power}
 		x = -1
@@ -2683,7 +2683,7 @@ focus = {
 	}
 focus = {
 		id = TRS_tsetsai_airbases
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = TRS_air_power
 		prerequisite = { focus = TRS_air_power}
 		x = 1
@@ -2712,7 +2712,7 @@ focus = {
 	}
 focus = {
 		id = TRS_armored_forces
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_army_tanks
 		relative_position_id = TRS_army_modernization
 		prerequisite = { focus = TRS_army_modernization}
 		mutually_exclusive = { focus = TRS_mobile_forces }
@@ -2742,7 +2742,7 @@ focus = {
 	}
 focus = {
 		id = TRS_light_tanks
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_tank_production
 		relative_position_id = TRS_armored_forces
 		prerequisite = { focus = TRS_armored_forces}
 		x = 0
@@ -2771,7 +2771,7 @@ focus = {
 	}
 focus = {
 		id = TRS_land_doctrines
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = TRS_light_tanks
 		prerequisite = { focus = TRS_weapons_research focus = TRS_light_tanks}
 		x = -1
@@ -2800,7 +2800,7 @@ focus = {
 	}
 focus = {
 		id = TRS_kiue_paa_tsear
-		icon = GFX_TRS_politics
+		icon = GFX_r56_focus_generic_army_modernizations
 		relative_position_id = TRS_army_modernization
 		prerequisite = { focus = TRS_army_modernization}
 		x = 2
@@ -2829,7 +2829,7 @@ focus = {
 	}
 focus = {
 		id = TRS_special_forces_training
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_special_forces
 		relative_position_id = TRS_kiue_paa_tsear
 		prerequisite = { focus = TRS_kiue_paa_tsear}
 		x = 0
@@ -2858,7 +2858,7 @@ focus = {
 	}
 focus = {
 		id = TRS_retrain_marines
-		icon = GFX_TRS_politics
+		icon = GFX_r56_goal_generic_army_elite
 		relative_position_id = TRS_special_forces_training
 		prerequisite = { focus = TRS_special_forces_training}
 		x = 0
@@ -2887,7 +2887,7 @@ focus = {
 	}
 focus = {
 		id = TRS_found_paratrooper_divisions
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_paratrooper
 		relative_position_id = TRS_special_forces_training
 		prerequisite = { focus = TRS_special_forces_training}
 		x = 2
@@ -2918,7 +2918,7 @@ focus = {
 
 focus = {
 		id = TRS_third_naval_modernization
-		icon = GFX_TRS_politics
+		icon = GFX_r56_goal_generic_navy_schematics
 		relative_position_id = TRS_army_modernization
 		x = 10
 		y = 0
@@ -2952,7 +2952,7 @@ focus = {
 	}
 focus = {
 		id = TRS_capital_ship_doctrine
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_navy_battleship
 		relative_position_id = TRS_third_naval_modernization
 		prerequisite = { focus = TRS_third_naval_modernization}
 		mutually_exclusive = { focus = TRS_light_ship_doctrine }
@@ -2989,7 +2989,7 @@ focus = {
 	}
 focus = {
 		id = TRS_increase_hull_size
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		relative_position_id = TRS_capital_ship_doctrine
 		prerequisite = { focus = TRS_capital_ship_doctrine}
 		x = 0
@@ -3018,7 +3018,7 @@ focus = {
 	}
 focus = {
 		id = TRS_air_integration
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_navy_carrier
 		relative_position_id = TRS_increase_hull_size
 		prerequisite = { focus = TRS_increase_hull_size}
 		x = -1
@@ -3047,7 +3047,7 @@ focus = {
 	}
 focus = {
 		id = TRS_national_naval_arsenal
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_build_navy
 		relative_position_id = TRS_increase_hull_size
 		prerequisite = { focus = TRS_increase_hull_size focus = TRS_cruiser_focus}
 		x = 1
@@ -3076,7 +3076,7 @@ focus = {
 	}
 focus = {
 		id = TRS_light_ship_doctrine
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_destroyer
 		relative_position_id = TRS_third_naval_modernization
 		prerequisite = { focus = TRS_third_naval_modernization}
 		mutually_exclusive = { focus = TRS_capital_ship_doctrine }
@@ -3112,7 +3112,7 @@ focus = {
 	}
 focus = {
 		id = TRS_cruiser_focus
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_cruiser2
 		relative_position_id = TRS_light_ship_doctrine
 		prerequisite = { focus = TRS_light_ship_doctrine}
 		mutually_exclusive = { focus = TRS_submarine_focus }
@@ -3148,7 +3148,7 @@ focus = {
 	}
 focus = {
 		id = TRS_submarine_focus
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_navy_submarine
 		relative_position_id = TRS_light_ship_doctrine
 		prerequisite = { focus = TRS_light_ship_doctrine}
 		mutually_exclusive = { focus = TRS_cruiser_focus }
@@ -3183,7 +3183,7 @@ focus = {
 	}
 focus = {
 		id = TRS_expand_merchant_fleet
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_positive_trade_relations
 		relative_position_id = TRS_submarine_focus
 		prerequisite = { focus = TRS_cruiser_focus focus = TRS_submarine_focus}
 		x = 0
@@ -3215,7 +3215,7 @@ focus = {
 	}
 focus = {
 		id = TRS_upgrade_emperors_chain
-		icon = GFX_TRS_politics
+		icon = GFX_focus_generic_coastal_fort
 		relative_position_id = TRS_third_naval_modernization
 		prerequisite = { focus = TRS_third_naval_modernization}
 		x = 1
@@ -3244,7 +3244,7 @@ focus = {
 	}
 focus = {
 		id = TRS_national_dockyards
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_navy_cruiser
 		relative_position_id = TRS_third_naval_modernization
 		prerequisite = { focus = TRS_third_naval_modernization}
 		x = 4
@@ -3283,7 +3283,7 @@ focus = {
 	}
 focus = {
 		id = TRS_increase_construction_slips
-		icon = GFX_TRS_politics
+		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = TRS_national_dockyards
 		prerequisite = { focus = TRS_national_dockyards}
 		x = -1
@@ -3319,7 +3319,7 @@ focus = {
 	}
 focus = {
 		id = TRS_purchase_japanese_convoys
-		icon = GFX_TRS_politics
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		relative_position_id = TRS_national_dockyards
 		prerequisite = { focus = TRS_national_dockyards}
 		x = 1
