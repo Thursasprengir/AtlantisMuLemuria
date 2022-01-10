@@ -202,6 +202,9 @@ kapra_up_2 = {
 		if = { limit = { state = 963 } if = { limit = {check_variable = {var = ATL.963_array^1 value = 0 compare = equals}} 963 = {itork_down_2 = yes}}}
 		if = { limit = { state = 964 } if = { limit = {check_variable = {var = ATL.964_array^1 value = 0 compare = equals}} 964 = {itork_down_2 = yes}}}
 		if = { limit = { state = 965 } if = { limit = {check_variable = {var = ATL.965_array^1 value = 0 compare = equals}} 965 = {itork_down_2 = yes}}}
+		if = { limit = { state = 1079 } if = { limit = {check_variable = {var = ATL.1079_array^1 value = 0 compare = equals}} 1079 = {itork_down_2 = yes}}}
+		if = { limit = { state = 1080 } if = { limit = {check_variable = {var = ATL.1080_array^1 value = 0 compare = equals}} 1080 = {itork_down_2 = yes}}}
+		if = { limit = { state = 1081 } if = { limit = {check_variable = {var = ATL.1081_array^1 value = 0 compare = equals}} 1081 = {itork_down_2 = yes}}}
 		if = {
 			limit = { has_state_flag = kapra_flag_1 }
 			clr_state_flag = kapra_flag_1
@@ -211,7 +214,12 @@ kapra_up_2 = {
 			if = { limit = { state = 963 } set_variable = {var = ATL.963_array^2 value = 0 }}
 			if = { limit = { state = 964 } set_variable = {var = ATL.964_array^2 value = 0 }}
 			if = { limit = { state = 965 } set_variable = {var = ATL.965_array^2 value = 0 }}
-			if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_4}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_4 add_idea = ATL_kapra_small_cities_5}}}
+			if = { limit = { state = 1079 } set_variable = {var = ATL.1079_array^2 value = 0 }}
+			if = { limit = { state = 1080 } set_variable = {var = ATL.1080_array^2 value = 0 }}
+			if = { limit = { state = 1081 } set_variable = {var = ATL.1081_array^2 value = 0 }}
+			if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_6}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_6 add_idea = ATL_kapra_small_cities_7}}}
+			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_5}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_5 add_idea = ATL_kapra_small_cities_6}}}
+			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_4}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_4 add_idea = ATL_kapra_small_cities_5}}}
 			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_3}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_3 add_idea = ATL_kapra_small_cities_4}}}
 			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_2}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_2 add_idea = ATL_kapra_small_cities_3}}}
 			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_1}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_1 add_idea = ATL_kapra_small_cities_2}}}
@@ -223,6 +231,9 @@ kapra_up_2 = {
 		if = { limit = { state = 963 } subtract_from_variable = {var = ATL.963_array^1 value = 1 }}
 		if = { limit = { state = 964 } subtract_from_variable = {var = ATL.964_array^1 value = 1 }}
 		if = { limit = { state = 965 } subtract_from_variable = {var = ATL.965_array^1 value = 1 }}
+		if = { limit = { state = 1079 } subtract_from_variable = {var = ATL.1079_array^1 value = 1 }}
+		if = { limit = { state = 1080 } subtract_from_variable = {var = ATL.1080_array^1 value = 1 }}
+		if = { limit = { state = 1081 } subtract_from_variable = {var = ATL.1081_array^1 value = 1 }}
 	}
 }
 kapra_down_2 = {
@@ -237,7 +248,12 @@ kapra_down_2 = {
 			if = { limit = { state = 963 } set_variable = {var = ATL.963_array^2 value = 5 }}
 			if = { limit = { state = 964 } set_variable = {var = ATL.964_array^2 value = 5 }}
 			if = { limit = { state = 965 } set_variable = {var = ATL.965_array^2 value = 5 }}
-			if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_5}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_5 add_idea = ATL_kapra_small_cities_4}}}
+			if = { limit = { state = 1079 } set_variable = {var = ATL.1079_array^2 value = 5 }}
+			if = { limit = { state = 1080 } set_variable = {var = ATL.1080_array^2 value = 5 }}
+			if = { limit = { state = 1081 } set_variable = {var = ATL.1081_array^2 value = 5 }}
+			if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_7}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_7 add_idea = ATL_kapra_small_cities_6}}}
+			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_6}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_6 add_idea = ATL_kapra_small_cities_5}}}
+			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_5}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_5 add_idea = ATL_kapra_small_cities_4}}}
 			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_4}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_4 add_idea = ATL_kapra_small_cities_3}}}
 			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_3}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_3 add_idea = ATL_kapra_small_cities_2}}}
 			else_if = { limit = {ATL = { has_idea = ATL_kapra_small_cities_2}} ATL = { swap_ideas = {remove_idea = ATL_kapra_small_cities_2 add_idea = ATL_kapra_small_cities_1}}}
@@ -249,6 +265,9 @@ kapra_down_2 = {
 		if = { limit = { state = 963 } add_to_variable = {var = ATL.963_array^1 value = 1 }}
 		if = { limit = { state = 964 } add_to_variable = {var = ATL.964_array^1 value = 1 }}
 		if = { limit = { state = 965 } add_to_variable = {var = ATL.965_array^1 value = 1 }}
+		if = { limit = { state = 1079 } add_to_variable = {var = ATL.1079_array^1 value = 1 }}
+		if = { limit = { state = 1080 } add_to_variable = {var = ATL.1080_array^1 value = 1 }}
+		if = { limit = { state = 1081 } add_to_variable = {var = ATL.1081_array^1 value = 1 }}
 	}
 }
 
@@ -451,6 +470,9 @@ itork_up_2 = {
 		if = { limit = { state = 963 } if = { limit = {check_variable = {var = ATL.963_array^1 value = 0 compare = equals}} 963 = {kapra_down_2 = yes}}}
 		if = { limit = { state = 964 } if = { limit = {check_variable = {var = ATL.964_array^1 value = 0 compare = equals}} 964 = {kapra_down_2 = yes}}}
 		if = { limit = { state = 965 } if = { limit = {check_variable = {var = ATL.965_array^1 value = 0 compare = equals}} 965 = {kapra_down_2 = yes}}}
+		if = { limit = { state = 1079 } if = { limit = {check_variable = {var = ATL.1079_array^1 value = 0 compare = equals}} 1079 = {kapra_down_2 = yes}}}
+		if = { limit = { state = 1080 } if = { limit = {check_variable = {var = ATL.1080_array^1 value = 0 compare = equals}} 1080 = {kapra_down_2 = yes}}}
+		if = { limit = { state = 1081 } if = { limit = {check_variable = {var = ATL.1081_array^1 value = 0 compare = equals}} 1081 = {kapra_down_2 = yes}}}
 		if = {
 			limit = { has_state_flag = itork_flag_1 }
 			clr_state_flag = itork_flag_1
@@ -460,7 +482,12 @@ itork_up_2 = {
 			if = { limit = { state = 963 } set_variable = {var = ATL.963_array^3 value = 0 }}
 			if = { limit = { state = 964 } set_variable = {var = ATL.964_array^3 value = 0 }}
 			if = { limit = { state = 965 } set_variable = {var = ATL.965_array^3 value = 0 }}
-			if = { limit = {ATL = { has_idea = ATL_itork_small_cities_4}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_4 add_idea = ATL_itork_small_cities_5}}}
+			if = { limit = { state = 1079 } set_variable = {var = ATL.1079_array^3 value = 0 }}
+			if = { limit = { state = 1080 } set_variable = {var = ATL.1080_array^3 value = 0 }}
+			if = { limit = { state = 1081 } set_variable = {var = ATL.1081_array^3 value = 0 }}
+			if = { limit = {ATL = { has_idea = ATL_itork_small_cities_6}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_6 add_idea = ATL_itork_small_cities_7}}}
+			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_5}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_5 add_idea = ATL_itork_small_cities_6}}}
+			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_4}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_4 add_idea = ATL_itork_small_cities_5}}}
 			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_3}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_3 add_idea = ATL_itork_small_cities_4}}}
 			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_2}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_2 add_idea = ATL_itork_small_cities_3}}}
 			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_1}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_1 add_idea = ATL_itork_small_cities_2}}}
@@ -472,6 +499,9 @@ itork_up_2 = {
 		if = { limit = { state = 963 } subtract_from_variable = {var = ATL.963_array^1 value = 1 }}
 		if = { limit = { state = 964 } subtract_from_variable = {var = ATL.964_array^1 value = 1 }}
 		if = { limit = { state = 965 } subtract_from_variable = {var = ATL.965_array^1 value = 1 }}
+		if = { limit = { state = 1079 } subtract_from_variable = {var = ATL.1079_array^1 value = 1 }}
+		if = { limit = { state = 1080 } subtract_from_variable = {var = ATL.1080_array^1 value = 1 }}
+		if = { limit = { state = 1081 } subtract_from_variable = {var = ATL.1081_array^1 value = 1 }}
 	}
 }
 itork_down_2 = {
@@ -486,7 +516,12 @@ itork_down_2 = {
 			if = { limit = { state = 963 } set_variable = {var = ATL.963_array^3 value = 5 }}
 			if = { limit = { state = 964 } set_variable = {var = ATL.964_array^3 value = 5 }}
 			if = { limit = { state = 965 } set_variable = {var = ATL.965_array^3 value = 5 }}
-			if = { limit = {ATL = { has_idea = ATL_itork_small_cities_5}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_5 add_idea = ATL_itork_small_cities_4}}}
+			if = { limit = { state = 1079 } set_variable = {var = ATL.1079_array^3 value = 5 }}
+			if = { limit = { state = 1080 } set_variable = {var = ATL.1080_array^3 value = 5 }}
+			if = { limit = { state = 1081 } set_variable = {var = ATL.1081_array^3 value = 5 }}
+			if = { limit = {ATL = { has_idea = ATL_itork_small_cities_7}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_7 add_idea = ATL_itork_small_cities_6}}}
+			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_6}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_6 add_idea = ATL_itork_small_cities_5}}}
+			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_5}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_5 add_idea = ATL_itork_small_cities_4}}}
 			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_4}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_4 add_idea = ATL_itork_small_cities_3}}}
 			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_3}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_3 add_idea = ATL_itork_small_cities_2}}}
 			else_if = { limit = {ATL = { has_idea = ATL_itork_small_cities_2}} ATL = { swap_ideas = {remove_idea = ATL_itork_small_cities_2 add_idea = ATL_itork_small_cities_1}}}
@@ -498,6 +533,9 @@ itork_down_2 = {
 		if = { limit = { state = 963 } add_to_variable = {var = ATL.963_array^1 value = 1 }}
 		if = { limit = { state = 964 } add_to_variable = {var = ATL.964_array^1 value = 1 }}
 		if = { limit = { state = 965 } add_to_variable = {var = ATL.965_array^1 value = 1 }}
+		if = { limit = { state = 1079 } add_to_variable = {var = ATL.1079_array^1 value = 1 }}
+		if = { limit = { state = 1080 } add_to_variable = {var = ATL.1080_array^1 value = 1 }}
+		if = { limit = { state = 1081 } add_to_variable = {var = ATL.1081_array^1 value = 1 }}
 	}
 }
 ###############################################################################################

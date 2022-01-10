@@ -13,7 +13,7 @@ ATL_gang_warfare = {
 		}
 	}
 	ATL_spy_partisan = {
-		icon = generic_political_discourse
+		icon = recruit_operative
 		available = { has_done_agency_upgrade = upgrade_anti_partisan}
 		visible = { NOT = {has_country_flag = spy_partisan_flag}}
 		cost = 50
@@ -146,7 +146,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = akitselo_k_3 trigger = {ATL = { has_idea = ATL_kapra_burmiunean_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { has_idea = ATL_kapra_burmiunean_1 has_idea = ATL_kapra_burmiunean_2 has_idea = ATL_kapra_burmiunean_3 }}
-		highlight_state_targets = { state = 944 }
+		highlight_states = { highlight_state_targets = { state = 944 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -161,7 +161,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = mutsarna_k_4 trigger = {ATL = { has_idea = ATL_kapra_4_4}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { has_idea = ATL_kapra_4_1 has_idea = ATL_kapra_4_2 has_idea = ATL_kapra_4_3 has_idea = ATL_kapra_4_4 }}
-		highlight_state_targets = { state = 945 }
+		highlight_states = { highlight_state_targets = { state = 945 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -174,7 +174,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_2 trigger = {946 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 946 = {has_state_flag = kapra_flag_1} 946 = {has_state_flag = kapra_flag_2} }}
-		highlight_state_targets = { state = 946 }
+		highlight_states = { highlight_state_targets = { state = 946 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -187,7 +187,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_2 trigger = {947 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 947 = {has_state_flag = kapra_flag_1} 947 = {has_state_flag = kapra_flag_2} }}
-		highlight_state_targets = { state = 947 }
+		highlight_states = { highlight_state_targets = { state = 947 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -201,7 +201,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = akitselo_k_3 trigger = {ATL = { has_idea = ATL_kapra_yamylaik_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { has_idea = ATL_kapra_yamylaik_1 has_idea = ATL_kapra_yamylaik_2 has_idea = ATL_kapra_yamylaik_3 }}
-		highlight_state_targets = { state = 948 }
+		highlight_states = { highlight_state_targets = { state = 948 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -215,7 +215,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = akitselo_k_3 trigger = {ATL = { has_idea = ATL_kapra_anoixte_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { has_idea = ATL_kapra_anoixte_1 has_idea = ATL_kapra_anoixte_2 has_idea = ATL_kapra_anoixte_3 }}
-		highlight_state_targets = { state = 949 }
+		highlight_states = { highlight_state_targets = { state = 949 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -228,7 +228,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_2 trigger = {963 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 963 = {has_state_flag = kapra_flag_1} 963 = {has_state_flag = kapra_flag_2} }}
-		highlight_state_targets = { state = 963 }
+		highlight_states = { highlight_state_targets = { state = 963 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -241,7 +241,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_2 trigger = {964 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 964 = {has_state_flag = kapra_flag_1} 964 = {has_state_flag = kapra_flag_2} }}
-		highlight_state_targets = { state = 964 }
+		highlight_states = { highlight_state_targets = { state = 964 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -254,7 +254,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_2 trigger = {965 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 965 = {has_state_flag = kapra_flag_1} 965 = {has_state_flag = kapra_flag_2} }}
-		highlight_state_targets = { state = 965 }
+		highlight_states = { highlight_state_targets = { state = 965 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -267,7 +267,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_2 trigger = {1079 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 1079 = {has_state_flag = kapra_flag_1} 1079 = {has_state_flag = kapra_flag_2} }}
-		highlight_state_targets = { state = 1079 }
+		highlight_states = { highlight_state_targets = { state = 1079 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -280,7 +280,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_2 trigger = {1080 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 1080 = {has_state_flag = kapra_flag_1} 1080 = {has_state_flag = kapra_flag_2} }}
-		highlight_state_targets = { state = 1080 }
+		highlight_states = { highlight_state_targets = { state = 1080 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -293,7 +293,7 @@ ATL_kaprastiak_war_category = {
 		icon = { key = small_city_k_2 trigger = {1081 = {has_state_flag = kapra_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 1081 = {has_state_flag = kapra_flag_1} 1081 = {has_state_flag = kapra_flag_2} }}
-		highlight_state_targets = { state = 1081 }
+		highlight_states = { highlight_state_targets = { state = 1081 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -306,7 +306,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 944 }
+		highlight_states = { highlight_state_targets = { state = 944 }}
 		is_good = no
 		selectable_mission = yes
 		days_remove = 5
@@ -321,7 +321,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 945 }
+		highlight_states = { highlight_state_targets = { state = 945 }}
 		timeout_effect = {945 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_4 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -336,7 +336,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 946 }
+		highlight_states = { highlight_state_targets = { state = 946 }}
 		timeout_effect = {946 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -351,7 +351,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 947 }
+		highlight_states = { highlight_state_targets = { state = 947 }}
 		timeout_effect = {947 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -366,7 +366,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 948 }
+		highlight_states = { highlight_state_targets = { state = 948 }}
 		timeout_effect = {948 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_yamylaik = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -381,7 +381,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 949 }
+		highlight_states = { highlight_state_targets = { state = 949 }}
 		timeout_effect = {949 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_anoixte = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -396,7 +396,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 963 }
+		highlight_states = { highlight_state_targets = { state = 963 }}
 		timeout_effect = {963 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -411,7 +411,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 964 }
+		highlight_states = { highlight_state_targets = { state = 964 }}
 		timeout_effect = {964 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -426,7 +426,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 965 }
+		highlight_states = { highlight_state_targets = { state = 965 }}
 		timeout_effect = {965 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -441,7 +441,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 1079 }
+		highlight_states = { highlight_state_targets = { state = 1079 }}
 		timeout_effect = {1079 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -456,7 +456,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 1080 }
+		highlight_states = { highlight_state_targets = { state = 1080 }}
 		timeout_effect = {1080 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -471,7 +471,7 @@ ATL_kaprastiak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 1081 }
+		highlight_states = { highlight_state_targets = { state = 1081 }}
 		timeout_effect = {1081 = { random_list = {ATL.kapra_success_array^2 = {} ATL.kapra_success_array^0 = {kapra_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -527,6 +527,18 @@ ATL_kaprastiak_war_category = {
 					if = {limit = {check_variable = {ATL.965_array^1 > 0}} activate_mission = ATL_kapra_965_attack}
 					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes}}}
 				}
+				ATL.1079_array^2 = {
+					if = {limit = {check_variable = {ATL.1079_array^1 > 0}} activate_mission = ATL_kapra_1079_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes}}}
+				}
+				ATL.1080_array^2 = {
+					if = {limit = {check_variable = {ATL.1080_array^1 > 0}} activate_mission = ATL_kapra_1080_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes}}}
+				}
+				ATL.1081_array^2 = {
+					if = {limit = {check_variable = {ATL.1081_array^1 > 0}} activate_mission = ATL_kapra_1081_attack}
+					else = {random_list = {1 = {} 1 = {kapra_up_2 = yes}}}
+				}
 			}
 			activate_mission = ATL_cooldown_kapra
 		}
@@ -549,7 +561,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = akitselo_i_3 trigger = {ATL = { has_idea = ATL_itork_burmiunean_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { has_idea = ATL_itork_burmiunean_1 has_idea = ATL_itork_burmiunean_2 has_idea = ATL_itork_burmiunean_3 }}
-		highlight_state_targets = { state = 944 }
+		highlight_states = { highlight_state_targets = { state = 944 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -564,7 +576,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = mutsarna_i_4 trigger = {ATL = { has_idea = ATL_itork_4_4}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { has_idea = ATL_itork_4_1 has_idea = ATL_itork_4_2 has_idea = ATL_itork_4_3 has_idea = ATL_itork_4_4 }}
-		highlight_state_targets = { state = 945 }
+		highlight_states = { highlight_state_targets = { state = 945 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -577,7 +589,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = small_city_i_2 trigger = {946 = {has_state_flag = itork_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 946 = {has_state_flag = itork_flag_1} 946 = {has_state_flag = itork_flag_2} }}
-		highlight_state_targets = { state = 946 }
+		highlight_states = { highlight_state_targets = { state = 946 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -590,7 +602,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = small_city_i_2 trigger = {947 = {has_state_flag = itork_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 947 = {has_state_flag = itork_flag_1} 947 = {has_state_flag = itork_flag_2} }}
-		highlight_state_targets = { state = 947 }
+		highlight_states = { highlight_state_targets = { state = 947 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -604,7 +616,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = akitselo_i_3 trigger = {ATL = { has_idea = ATL_itork_yamylaik_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { has_idea = ATL_itork_yamylaik_1 has_idea = ATL_itork_yamylaik_2 has_idea = ATL_itork_yamylaik_3 }}
-		highlight_state_targets = { state = 948 }
+		highlight_states = { highlight_state_targets = { state = 948 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -618,7 +630,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = akitselo_i_3 trigger = {ATL = { has_idea = ATL_itork_anoixte_3}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { has_idea = ATL_itork_anoixte_1 has_idea = ATL_itork_anoixte_2 has_idea = ATL_itork_anoixte_3 }}
-		highlight_state_targets = { state = 949 }
+		highlight_states = { highlight_state_targets = { state = 949 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -631,7 +643,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = small_city_i_2 trigger = {963 = {has_state_flag = itork_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 963 = {has_state_flag = itork_flag_1} 963 = {has_state_flag = itork_flag_2} }}
-		highlight_state_targets = { state = 963 }
+		highlight_states = { highlight_state_targets = { state = 963 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -644,7 +656,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = small_city_i_2 trigger = {964 = {has_state_flag = itork_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 964 = {has_state_flag = itork_flag_1} 964 = {has_state_flag = itork_flag_2} }}
-		highlight_state_targets = { state = 964 }
+		highlight_states = { highlight_state_targets = { state = 964 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -657,7 +669,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = small_city_i_2 trigger = {965 = {has_state_flag = itork_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 965 = {has_state_flag = itork_flag_1} 965 = {has_state_flag = itork_flag_2} }}
-		highlight_state_targets = { state = 965 }
+		highlight_states = { highlight_state_targets = { state = 965 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -670,7 +682,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = small_city_i_2 trigger = {1079 = {has_state_flag = itork_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 1079 = {has_state_flag = itork_flag_1} 1079 = {has_state_flag = itork_flag_2} }}
-		highlight_state_targets = { state = 1079 }
+		highlight_states = { highlight_state_targets = { state = 1079 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -683,7 +695,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = small_city_i_2 trigger = {1080 = {has_state_flag = itork_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 1080 = {has_state_flag = itork_flag_1} 1080 = {has_state_flag = itork_flag_2} }}
-		highlight_state_targets = { state = 1080 }
+		highlight_states = { highlight_state_targets = { state = 1080 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -696,7 +708,7 @@ ATL_itorkanak_war_category = {
 		icon = { key = small_city_i_2 trigger = {1081 = {has_state_flag = itork_flag_2}} }
 		available = { ATL = { NOT = { has_country_flag = ATL_police_acting}}}
 		visible = { OR = { 1081 = {has_state_flag = itork_flag_1} 1081 = {has_state_flag = itork_flag_2} }}
-		highlight_state_targets = { state = 1081 }
+		highlight_states = { highlight_state_targets = { state = 1081 }}
 		on_map_mode = map_only
 		cost = var_police_cost
 		days_remove = var_police_cooldown
@@ -709,7 +721,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 944 }
+		highlight_states = { highlight_state_targets = { state = 944 }}
 		timeout_effect = {944 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_burmiunean = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -724,7 +736,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 945 }
+		highlight_states = { highlight_state_targets = { state = 945 }}
 		timeout_effect = {945 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_4 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -739,7 +751,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 946 }
+		highlight_states = { highlight_state_targets = { state = 946 }}
 		timeout_effect = {946 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -754,7 +766,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 947 }
+		highlight_states = { highlight_state_targets = { state = 947 }}
 		timeout_effect = {947 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -769,7 +781,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 948 }
+		highlight_states = { highlight_state_targets = { state = 948 }}
 		timeout_effect = {948 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_yamylaik = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -784,7 +796,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 949 }
+		highlight_states = { highlight_state_targets = { state = 949 }}
 		timeout_effect = {949 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_anoixte = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -799,7 +811,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 963 }
+		highlight_states = { highlight_state_targets = { state = 963 }}
 		timeout_effect = {963 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -814,7 +826,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 964 }
+		highlight_states = { highlight_state_targets = { state = 964 }}
 		timeout_effect = {964 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -829,7 +841,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_scorched_earth
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 965 }
+		highlight_states = { highlight_state_targets = { state = 965 }}
 		timeout_effect = {965 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -844,7 +856,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 1079 }
+		highlight_states = { highlight_state_targets = { state = 1079 }}
 		timeout_effect = {1079 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -859,7 +871,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 1080 }
+		highlight_states = { highlight_state_targets = { state = 1080 }}
 		timeout_effect = {1080 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -874,7 +886,7 @@ ATL_itorkanak_war_category = {
 		icon = generic_ignite_civil_war
 		activation = { always = no }
 		days_mission_timeout = 14
-		highlight_state_targets = { state = 1081 }
+		highlight_states = { highlight_state_targets = { state = 1081 }}
 		timeout_effect = {1081 = { random_list = {ATL.itork_success_array^2 = {} ATL.itork_success_array^0 = {itork_up_2 = yes}}}}
 		is_good = no
 		selectable_mission = yes
@@ -928,6 +940,18 @@ ATL_itorkanak_war_category = {
 				}
 				ATL.965_array^3 = {
 					if = {limit = {check_variable = {ATL.965_array^1 > 0}} activate_mission = ATL_itork_965_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_2 = yes}}}
+				}
+				ATL.1079_array^3 = {
+					if = {limit = {check_variable = {ATL.1079_array^1 > 0}} activate_mission = ATL_itork_1079_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_2 = yes}}}
+				}
+				ATL.1080_array^3 = {
+					if = {limit = {check_variable = {ATL.1080_array^1 > 0}} activate_mission = ATL_itork_1080_attack}
+					else = {random_list = {1 = {} 1 = {itork_up_2 = yes}}}
+				}
+				ATL.1081_array^3 = {
+					if = {limit = {check_variable = {ATL.1081_array^1 > 0}} activate_mission = ATL_itork_1081_attack}
 					else = {random_list = {1 = {} 1 = {itork_up_2 = yes}}}
 				}
 			}
