@@ -200,9 +200,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_manpower = 80000
-			HOU = {
-			production_speed_buildings_factor = 0.1 
-			}
+			add_ideas = HOU_pure_marxism_idea
 			#incr manpower, inc production
 		}
 	}
@@ -238,6 +236,18 @@ focus_tree = {
 				add_popularity = {
 					ideology = communism
 					popularity = 0.15
+				}
+				HOU = {  
+					add_opinion_modifier = {
+						target = SOV
+						modifier = HOU_insult_SOV
+					}
+				}
+				SOV = {  
+					add_opinion_modifier = {
+						target = HOU
+						modifier = HOU_insult_SOV
+					}
 				}
 			#signif malus to SOV relations. Communist ideology boost.
 		}
@@ -301,7 +311,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			production_speed_buildings_factor = 0.2 
+			add_ideas = HOU_establish_kafakafas_idea
 			add_popularity = {
 					ideology = communism
 					popularity = 0.10
@@ -377,9 +387,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			add_to_variable = {production_speed_industrial_complex_factor = 0.25}
-			license_infantry_eq_purchase_cost_factor = 0.5
-			license_light_tank_eq_purchase_cost_factor = 0.5
+			add_ideas = HOU_stalinism_idea
 			#boost to SOV relations, factory construction bonus. Bonus to purchase inf/arty/light tank designs?
 		}
 	}
@@ -411,7 +419,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			production_speed_fortification_factor = 0.25
+			add_idea = HOU_bastion_of_the_revolution_idea
 			#fortification construction bonus
 		}
 	}
@@ -518,7 +526,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_manpower = 150000
-			HOU = {army_org_regain = 0.3}
+			add_ideas = HOU_kanagan_communism_idea
 			#inc manpower, inc division org
 		}
 	}
@@ -631,7 +639,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#may send volunteers
+			set_rule = {
+				can_send_volunteers = yes
+			}
 		}
 	}
 	focus = {
@@ -662,7 +672,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#extra research slot
+			add_research_slot = 1 
 		}
 	}
 	focus = {
@@ -693,7 +703,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#communist infiltration decisions (incr communism in neighboring nations)
+			#communist infiltration decisions (incr communism in neighboring nations) 
 		}
 	}
 	focus = {
@@ -724,7 +734,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#incr research speed
+			add_ideas = HOU_communist_research_idea
 		}
 	}
 	focus = {
@@ -753,8 +763,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			#nuclear weapons research bonus
+		completion_reward = { nuclear
+			add_tech_bonus = {
+				name = HOU_nuclear_tech
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+
+			}
 		}
 	}
 
@@ -791,6 +807,38 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			 random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			#add some civ factories, decrease factory construction speed
 		}
 	}
@@ -822,7 +870,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#add manpower and/or recruitable population ratio increase
+		add_ideas = HOU_racial_superiority_idea
+			#add manpower and/or recruitable population ratio increase #k: no sense, research it is
 		}
 	}
 	focus = {
@@ -853,6 +902,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_ideas = HOU_new_houpoean_man_idea
 			#attack bonus, bonus to movement in jungle and forest
 		}
 	}
@@ -884,6 +934,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_stability = 0.10
 			#increase stability
 		}
 	}
@@ -916,7 +967,33 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#bonus to relations with Kanagan nations, malus to neighboring non-kanagan nations
+			HOU = {  
+					add_opinion_modifier = {
+						target = IKA
+						modifier = neighbor_love
+					}
+					add_opinion_modifier = {
+						target = MNQ
+						modifier = neighbor_love
+					}
+					add_opinion_modifier = {
+						target = MHN
+						modifier = neighbor_love
+					}
+					add_opinion_modifier = {
+						target = BSD
+						modifier = neighbor_malus
+					}
+					add_opinion_modifier = {
+						target = GEQ
+						modifier = neighbor_malus
+					}
+					add_opinion_modifier = {
+						target = VSH
+						modifier = neighbor_malus
+					}
+				}
+			#bonus to relations with Kanagan nations, malus to neighboring non-kanagan nations K;: left Writsylvania out of it they friends to all.
 		}
 	}
 	focus = {
@@ -947,6 +1024,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			IKA = {
+					add_popularity = {
+					ideology = democratic
+					popularity = -0.10
+				}
+			}
+			MHN = {
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.10
+				}
+			}
+			AWA = {
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.10
+				}
+			}
 			#decr democracy in neighboring kanagan nations
 		}
 	}
@@ -978,6 +1073,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_idea = HOU_infrastructure_plan_idea
 			#infrastructure construction bonus, production bonus
 		}
 	}
@@ -1016,6 +1112,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_stability = 0.05
 			#increase stability, decrease opinion from democratic nations
 		}
 	}
@@ -1047,6 +1144,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_stability = 0.05
 			#increase stability, decrease opinion from democratic nations
 		}
 	}
@@ -1079,6 +1177,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			HOU = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.15
+				}
+			}
 			#neutral ideology boost
 		}
 	}
@@ -1111,6 +1215,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			HOU = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+			}
 			#fascism ideology boost
 		}
 	}
@@ -1141,7 +1251,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
-		completion_reward = {
+		completion_reward = { 
+			add_tech_bonus = {
+				name = HOU_industry_tech
+				bonus = 1.0
+				uses = 2
+				category = industry
+
+			}
 			#2x industrial research bonus, inc construction speed
 		}
 	}
@@ -1173,6 +1290,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas = HOU_trade_idea 
+		add_convoys = 100
 			#imp trade opinions, lowers cost of trade laws, adds convoys, incr resources to market, lowers required consumer goods
 		}
 	}
@@ -1204,6 +1323,38 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			1007 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			836 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1113 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			837 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			#add infrastructure to central provinces, add building slots
 		}
 	}
@@ -1235,6 +1386,78 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			1009 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1110 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1108 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1106 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1105 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			835 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1072 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			839 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			838 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			#add infrastructure to outlying provinces, add building slots
 		}
 	}
@@ -1266,6 +1489,47 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_industry_tech
+				bonus = 1.0
+				uses = 2
+				category = industry
+
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = HOU_working_public_idea
+			
 			#add civ/mil industries, inc factory and dockyard output, 2x industrial research bonus
 		}
 	}
@@ -1297,6 +1561,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas = HOU_expand_armed_forces_idea
 			#imp reinforce rate, inc mobilization speed, inc recruitable factor
 		}
 	}
@@ -1329,6 +1594,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_timed_idea = {
+				idea = HOU_blessed_isolation
+				days = 180
+			}
 			#massive temporary bonus to fortification construction
 		}
 	}
@@ -1360,6 +1629,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_research_slot = 1
 			#extra research slot
 		}
 	}
@@ -1392,6 +1662,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas = HOU_defensive_offense_idea
+		add_war_support = 0.10
 			#core attack and defense, offense bonus, incr war support
 		}
 	}
@@ -1423,7 +1695,18 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#war goals on neighbors
+			create_wargoal = {
+				target = MHN
+				type = annex_everything  
+			}
+			create_wargoal = {
+				target = MNQ
+				type = annex_everything  
+			}
+			create_wargoal = {
+				target = IKA
+				type = annex_everything  
+			}
 		}
 	}
 
