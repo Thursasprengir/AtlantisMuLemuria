@@ -122,7 +122,99 @@ ideas = {
 				army_core_defence_factor = 0.2
 			}
 		}
+		HOU_look_to_your_brother_idea= {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10 
+			}
+		}
+		HOU_great_science_academy= {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
 		
+		HOU_full_investigation_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.30 
+				production_factory_efficiency_gain_factor = -0.30 
+			}
+		}
+		HOU_northwestern_enemies_ideas = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		HOU_pyrrhic_fighting_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.50
+			}
+		}
+		HOU_bitter_end_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 1.0
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		#capitulation threshhold
+		HOU_capitulation_threashold_left_1_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		HOU_capitulation_threashold_left_2_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.10
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+				industry_air_damage_factor = -0.10
+			}
+		}
+		HOU_capitulation_threashold_right_1_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.10
+			}
+		}
+		HOU_capitulation_threashold_right_2_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.20
+			}
+		}
 	}
 	political_advisor = {
 

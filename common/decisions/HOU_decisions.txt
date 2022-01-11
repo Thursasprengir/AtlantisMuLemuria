@@ -1233,3 +1233,1245 @@ prospect_for_resources = {
 		}
 	}
 }
+#################
+##Investments
+################
+HOU_investment_decisions_category = { 
+	HOU_invite_politicians_for_investment_talks_in_capital = { #GERMANY
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1942.1.1
+			NOT = {
+				has_war_with = GER
+				has_country_flag = HOU_germany_rebuffed
+				GER = {
+					has_capitulated = yes
+					is_puppet = yes
+					has_government = communism
+					has_government = democratic
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = GER
+			}
+		}
+
+		days_remove = 20
+
+		cost = 75
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			
+			NOT = {
+				has_country_flag = HOU_germany_rebuffed
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			GER = {
+				country_event = { id = bftb_houpoe.166 days = 1 }
+			}
+		}
+	}
+	HOU_hold_national_showcase_for_investors_ger = { #GERMANY
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1942.1.1
+			NOT = {
+				has_war_with = GER
+				has_country_flag = HOU_germany_rebuffed
+				GER = {
+					has_capitulated = yes
+					is_puppet = yes
+					has_government = communism
+					has_government = democratic
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = GER
+			}
+		}
+
+		days_remove = 45
+
+		cost = 150
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			
+			NOT = {
+				has_country_flag = HOU_germany_rebuffed
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			GER = {
+				country_event = { id = bftb_houpoe.167 days = 1 }
+			}
+		}
+	}
+	HOU_exploit_errata_in_schachtplan = { #GERMANY
+
+		icon = generic_construction
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			NOT = {
+				has_war_with = GER
+				is_puppet_of = GER
+				has_country_flag = HOU_germany_rebuffed
+				GER = {
+					has_capitulated = yes
+					is_puppet = yes
+					has_government = communism
+					has_government = democratic
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = GER
+			}
+		}
+
+		days_remove = 15
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 10
+				has_completed_focus = HOU_seek_int_investment
+			}
+
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			
+			NOT = {
+				has_country_flag = HOU_germany_rebuffed
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			GER = {
+				country_event = { id = bftb_houpoe.168 days = 1 }
+			}
+		}
+	}
+	HOU_rebuke_german_investment = { #GERMANY
+
+		icon = generic_break_treaty
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			NOT = { 
+				is_puppet_of = GER
+				is_in_faction_with = GER
+				has_completed_focus = HOU_seek_int_investment
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = GER
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				date > 1940.1.1
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_completed_focus = HOU_seek_int_investment
+				}
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			
+			NOT = {
+				has_country_flag = HOU_germany_rebuffed
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = HOU_germany_rebuffed
+			
+		}
+	}
+	
+	HOU_invite_entrepreneurs_for_investment_talks_in_capital = { #BRITAIN
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1942.1.1
+			NOT = {
+				has_war_with = ENG
+				has_country_flag = HOU_britain_rebuffed
+				ENG = {
+					has_capitulated = yes
+					is_puppet = yes
+					NOT = { 
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ENG
+			}
+		}
+
+		days_remove = 20
+
+		cost = 75
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_britain_rebuffed
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			ENG = {
+				country_event = { id = bftb_houpoe.173 days = 1 }
+			}
+		}
+	}	
+	HOU_hold_national_showcase_for_investors_eng = { #BRITAIN
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1942.1.1
+			NOT = {
+				has_war_with = ENG
+				has_country_flag = HOU_britain_rebuffed
+				ENG = {
+					has_capitulated = yes
+					is_puppet = yes
+					NOT = { 
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ENG
+			}
+		}
+
+		days_remove = 45
+
+		cost = 150
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_britain_rebuffed
+			}
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			ENG = {
+				country_event = { id = bftb_houpoe.174 days = 1 }
+			}
+		}
+	}
+	HOU_trade_manufactured_ship_parts_for_investment = { #BRITAIN
+
+		icon = generic_construction
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			num_of_naval_factories > 60
+			NOT = {
+				has_war_with = ENG
+				has_country_flag = HOU_britain_rebuffed
+				ENG = {
+					has_capitulated = yes
+					is_puppet = yes
+					NOT = { 
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ENG
+			}
+		}
+
+		days_remove = 40
+
+		cost = 100
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 30
+				has_completed_focus = HOU_seek_int_investment
+			}
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_britain_rebuffed
+				check_variable = { var = HOU_ship_parts_for_investment value = 2 compare = equals }
+			}
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			ENG = {
+				country_event = { id = bftb_houpoe.175 days = 1 }
+			}
+			add_to_variable = { HOU_ship_parts_for_investment = 1 }
+		}
+	}	
+	HOU_rebuke_british_investment = { #BRITAIN
+
+		icon = generic_break_treaty
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			NOT = {
+				is_puppet_of = ENG
+				is_in_faction_with = ENG
+				has_completed_focus = HOU_seek_int_investment
+				
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ENG
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment	
+			NOT = {
+				has_country_flag = HOU_britain_rebuffed
+			}
+		}
+
+		complete_effect = {
+			if = { 
+				limit = { 
+					check_variable = { var = HOU_debt_to_the_ifc_britain_var value = 2.5 compare = greater_than_or_equals } 
+				}
+				custom_effect_tooltip = HOU_force_debt_clearance_tt
+			}
+			set_country_flag = HOU_britain_rebuffed
+			
+		}
+	}
+	HOU_go_to_paris_to_negotiate_investment_talks = { #FRANCE
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1942.1.1
+			NOT = {
+				has_war_with = FRA
+				has_country_flag = HOU_france_rebuffed
+			}
+			FRA = {
+				NOT = { has_capitulated = yes }
+				owns_state = 16 
+				is_puppet = no
+				OR = { 
+					NOT = { has_government = fascism }
+					NOT = { has_government = neutrality }
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = FRA
+			}
+		}
+
+		days_remove = 30
+
+		cost = 75
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 20
+				has_completed_focus = HOU_seek_int_investment
+				NOT = {
+					has_country_flag = HOU_go_to_paris_to_negotiate_investment_talks_AI_flag
+				}
+			}
+			modifier = {
+				factor = 5
+				has_completed_focus = HOU_seek_int_investment
+				has_country_flag = HOU_go_to_paris_to_negotiate_investment_talks_AI_flag
+			}
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_france_rebuffed
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			FRA = {
+				country_event = { id = bftb_houpoe.179 days = 1 }
+			}
+			set_country_flag = HOU_go_to_paris_to_negotiate_investment_talks_AI_flag
+		}
+	}
+	HOU_hold_national_showcase_for_investors_fra = { #FRANCE
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1942.1.1
+			NOT = {
+				has_war_with = FRA
+				has_country_flag = HOU_france_rebuffed
+				FRA = {
+					has_capitulated = yes 
+					is_puppet = yes
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = FRA
+			}
+		}
+
+		days_remove = 45
+
+		cost = 150
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_france_rebuffed
+			}
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			FRA = {
+				country_event = { id = bftb_houpoe.180 days = 1 }
+			}
+		}
+	}
+	HOU_bribe_french_trade_unions_to_pressure_government_into_investment = { #FRANCE
+
+		icon = generic_construction 
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1943.1.1
+			NOT = {
+				has_war_with = FRA
+				has_country_flag = HOU_france_rebuffed
+				FRA = {
+					has_capitulated = yes 
+					is_puppet = yes
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			FRA = { 
+				communism > 0.3
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = FRA
+			}
+		}
+
+		days_remove = 20
+
+		cost = 100 
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 30
+				has_completed_focus = HOU_seek_int_investment
+			}
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_france_rebuffed
+				check_variable = { var = HOU_trade_union_pressure_on_france value = 3 compare = equals }
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			FRA = {
+				country_event = { id = bftb_houpoe.181 days = 1 }
+			}
+			add_to_variable = { HOU_trade_union_pressure_on_france = 1 }
+		}
+	}
+	HOU_rebuke_french_investment = { #FRANCE
+
+		icon = generic_break_treaty
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			NOT = {
+				is_puppet_of = FRA
+				is_in_faction_with = FRA
+				
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = FRA
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_france_rebuffed
+			}
+		}
+
+		complete_effect = {
+			if = { 
+				limit = { 
+					check_variable = { var = HOU_debt_to_the_ifc_france_var value = 2.5 compare = greater_than_or_equals } 
+				}
+				custom_effect_tooltip = HOU_force_debt_clearance_tt
+			}
+			set_country_flag = HOU_france_rebuffed
+			
+		}
+	}
+	HOU_request_italian_assistance_with_industrialisation = { #ITALY
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1943.1.1
+			NOT = {
+				has_war_with = ITA
+				has_country_flag = HOU_italy_rebuffed
+				ITA = {
+					has_capitulated = yes 
+					is_puppet = yes
+					has_completed_focus = ITA_HOUece_war_goal
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ITA
+			}
+		}
+
+		days_remove = 30
+
+		cost = 100
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 20
+				has_completed_focus = HOU_seek_int_investment
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_italy_rebuffed
+				is_puppet = yes
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = HOU_italian_influence_tt
+		}
+
+		remove_effect = {
+			ITA = {
+				country_event = { id = bftb_houpoe.185 days = 1 }
+			}
+		}
+	}
+	HOU_temper_italian_colonial_ambitions_in_HOUece = { #ITALY
+
+		icon = generic_political_discourse
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1943.1.1
+			NOT = {
+				has_country_flag = HOU_italy_rebuffed
+				has_war_with = ITA
+				ITA = {
+					has_capitulated = yes 
+					is_puppet = yes
+					has_completed_focus = ITA_HOUece_war_goal
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ITA
+			}
+		}
+
+		days_remove = 90
+
+		cost = 150
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 20
+				has_completed_focus = HOU_seek_int_investment
+			}
+			modifier = {
+				factor = 80
+				check_variable = {
+    				HOU_italian_influence_over_HOUek_government > 12
+				}
+			}
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_italy_rebuffed
+				is_puppet = yes
+			}
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			ITA = {
+				country_event = { id = bftb_houpoe.186 days = 10 }
+			}
+		}
+	}
+	HOU_rebuke_italian_investment = { #ITALY
+
+		icon = generic_break_treaty
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			NOT = {
+				is_puppet_of = ITA
+				is_in_faction_with = ITA
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ITA
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				date > 1940.1.1
+				is_historical_focus_on = yes
+			}
+			
+			modifier = {
+				factor = 0
+				check_variable = {
+   					HOU_italian_influence_over_HOUek_government > 6
+				}
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment	
+			NOT = {
+				has_country_flag = HOU_italy_rebuffed
+			}
+		}
+
+		complete_effect = {
+			if = { 
+				limit = { 
+					check_variable = { var = HOU_debt_to_the_ifc_italy_var value = 2.5 compare = greater_than_or_equals } 
+				}
+				custom_effect_tooltip = HOU_force_debt_clearance_tt
+			}
+			set_country_flag = HOU_italy_rebuffed
+			custom_effect_tooltip = HOU_italian_influence_shunned_tt
+		}
+	}	
+	HOU_attend_talks_with_the_presidium = { #SOVIETS
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1943.1.1
+			NOT = {
+				has_war_with = SOU
+				has_country_flag = HOU_soviets_rebuffed
+				SOU = {
+					has_capitulated = yes
+					is_puppet = yes
+					NOT = { has_government = communism }
+					has_completed_focus = SOV_demand_balkan_submission
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = SOU
+				has_government = communism
+			}
+		}
+
+		days_remove = 15
+
+		cost = 75
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 20
+				has_completed_focus = HOU_seek_int_investment
+			}
+		}
+
+		visible = { 
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_soviets_rebuffed
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = HOU_soviet_influence_tt
+		}
+
+		remove_effect = {
+			SOU = {
+				country_event = { id = bftb_houpoe.190 days = 10 }
+			}
+		}
+	}
+	HOU_host_soviet_bureaucrats_in_HOUece = { #SOVIETS
+
+		icon = generic_political_discourse
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			has_completed_focus = HOU_soviet_subsidised_railways
+			date < 1943.1.1
+			NOT = {
+				has_war_with = SOV
+				has_country_flag = HOU_soviets_rebuffed
+				SOV = {
+					has_capitulated = yes
+					is_puppet = yes
+					NOT = { has_government = communism }
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = SOV
+			}
+		}
+
+		days_remove = 30
+
+		cost = 100
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 20
+				has_completed_focus = HOU_seek_int_investment
+			}
+		}
+
+		visible = {
+			OR = { 
+				has_completed_focus = HOU_seek_int_investment
+			}
+			NOT = {
+				has_country_flag = HOU_soviets_rebuffed
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = HOU_host_soviet_bureaucrats_in_HOUece_tt
+			custom_effect_tooltip = HOU_soviet_influence_tt
+		}
+
+		remove_effect = {
+			SOV = {
+				country_event = { id = bftb_houpoe.191 days = 1 }
+			}
+		}
+	}
+	HOU_invest_back_into_neglected_siberian_regions = { #SOVIETS
+
+		icon = generic_construction
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			is_puppet = no
+			NOT = {
+				has_war_with = SOV
+				has_country_flag = HOU_soviets_rebuffed
+				SOV = {
+					has_capitulated = yes
+					is_puppet = yes
+					NOT = { has_government = communism }
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = SOV
+			}
+		}
+
+		days_remove = 90
+
+		cost = 120
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 20
+				has_completed_focus = HOU_seek_int_investment
+			}
+			modifier = {
+				factor = 80
+				check_variable = { HOU_soviet_influence_over_HOUek_government = 8 compare = greater_than_or_equals }
+			}
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment
+			NOT = {
+				has_country_flag = HOU_soviets_rebuffed
+			}
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			SOV = {
+				country_event = { id = bftb_houpoe.192 days = 1 }
+			}
+		}
+	}
+	HOU_rebuke_soviet_investment = { #ITALY
+
+		icon = generic_break_treaty
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			NOT = {
+				is_puppet_of = SOV
+				is_in_faction_with = SOV
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = SOV
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				date > 1940.1.1
+				is_historical_focus_on = yes
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_seek_int_investment	
+			NOT = {
+				has_country_flag = HOU_soviets_rebuffed
+				check_variable = { var = HOU_soviet_influence_over_HOUek_government value = 12 compare = greater_than_or_equals }
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = HOU_soviets_rebuffed
+			custom_effect_tooltip = HOU_soviet_influence_shunned_tt
+			
+		}
+	}					
+}
+#####################
+##Gold Supply Evacuatoin
+#######################
+HOU_gold_evacuation = { 
+	HOU_invite_politicians_for_investment_talks_in_capital = { #GERMANY
+
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = HOU
+		}
+
+		available = {
+			date < 1942.1.1
+			TRS = {
+				NOT = {
+					has_war_with = MAN
+				}
+				
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = MAN
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+			
+		}
+
+		visible = {
+			has_completed_focus = HOU_evacuate_gold_supply
+			
+		}
+
+		complete_effect = {
+			add_to_variable = { HOU_gold_supply = -10 }
+		}
+
+		remove_effect = {
+			add_to_variable = { var = HOU_gold_supply = -10 }
+		}
+	}
+	
+}

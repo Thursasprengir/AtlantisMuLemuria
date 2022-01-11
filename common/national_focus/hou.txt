@@ -1629,7 +1629,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-		add_research_slot = 1
+			add_research_slot = 1
 			#extra research slot
 		}
 	}
@@ -1741,6 +1741,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			HOU = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.10
+				}
+			}
+			add_stability = -0.05
+		
 			#decrease communism support, decrease manpower, decrease stability
 		}
 	}
@@ -1772,6 +1780,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_manpower = -20000
 			#decrease manpower by X, subtract weapons and supplies
 		}
 	}
@@ -1803,7 +1812,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#infrastructure construction speed boost
+			build_railway = {
+				level = 1
+				path = { 13431 13432 13450 13454 13463 13474 13470 13471 }
+			}
+			#infrastructure construction speed boost #K: railways it is 
 		}
 	}
 	focus = {
@@ -1834,6 +1847,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_ideas = HOU_capitulation_threashold_left_1_idea
 			#incr capitulation threshold, incr core attack and defense
 		}
 	}
@@ -1865,7 +1879,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#incr stability, incr production, incr monthly population growth
+			add_ideas = HOU_look_to_your_brother_idea
+			add_stability = 0.05
+			#incr stability, incr production, incr monthly population growth K:pop_growth dosent work as intended
 		}
 	}
 	focus = {
@@ -1896,7 +1912,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#add naval base, add dockyard
+			1109 = {
+				add_victory_points = {
+					province = 13367
+					value = 10
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					instant_build = yes
+					province = 13367
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1915,7 +1947,15 @@ focus_tree = {
 		}
 
 		available = {
-
+			1107 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+				}
+					
+			}
 		}
 
 		bypass = {
@@ -1927,6 +1967,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		
+			unlock_decision_category_tooltip = HOU_investment_decisions_category
+			custom_effect_tooltip = HOU_investment_decisions_tt
 			#mirror Greek Investment Events. No longer valid once Loto Aai falls.
 		}
 	}
@@ -1958,6 +2001,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas = HOU_great_science_academy
 			#incr research speed
 		}
 	}
@@ -1989,6 +2033,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		remove_ideas = HOU_capitulation_threashold_left_1_idea
+		add_ideas = HOU_capitulation_threashold_left_2_idea
 			#incr capitulation threshold, decrease factory bomb vulnerability, ?incr core defense?
 		}
 	}
@@ -2020,6 +2066,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_research_slot = 1
 			#add research slot
 		}
 	}
@@ -2070,11 +2117,43 @@ focus_tree = {
 		}
 
 		available = {
-
+			1107 = {
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
+			}
+			835 = {
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
+			}
+			1113 = {
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
+			}
 		}
 
 		bypass = {
-
+			1107 = {
+				NOT = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+			}
+			835 = {
+				NOT = {
+					OR = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			1113 = {
+				NOT = {
+					OR = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2082,6 +2161,63 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			1107 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			835 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			1113 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			#add civ & mil factories in core areas
 		}
 	}
@@ -2113,6 +2249,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		
+			add_stability = -0.40
+			retire_character = HOU_mako_oriata
+			
+				promote_character = HOU_haifatu_manutea
+				promote_character = {
+					character = HOU_haifatu_manutea
+					Ideology = democratic
+				}
+			
 			#Kill Pres Mako Oriata. Haifatu Manutea becomes president. Incr manpower. Huge stability decrease.
 		}
 	}
@@ -2145,6 +2291,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_timed_idea = {
+				idea = HOU_full_investigation_idea
+				days = 180
+			}
 			#decr speed on all construction and production for a period of time
 		}
 	}
@@ -2177,6 +2327,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_ideas = HOU_capitulation_threashold_right_1_idea
 			#incr surrender threshold
 		}
 	}
@@ -2209,6 +2360,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_war_support = 0.10 
+			add_stability = -0.10
+			add_popularity = {
+					ideology = communism
+					popularity = -0.10
+				}
 			#incr war support, decr stability, decr communism support
 		}
 	}
@@ -2240,6 +2397,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			
+			retire_character = HOU_corps_commander_2
+			retire_character = HOU_corps_commander_4
+			retire_character = HOU_corps_commander_3
+			retire_character = HOU_naval_leader_2
+			retire_character = HOU_naval_leader_1
+			retire_character = HOU_naval_leader_4
+			retire_character = HOU_naval_leader_5
+			custom_effect_tooltip = several_military_leaders_die
 			#kill a number of generals and admirals
 		}
 	}
@@ -2271,7 +2437,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#form KDP, invites Malihini
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = "Kanagan Defense Pact"
+			HOU = { add_to_faction = MHN }
 		}
 	}
 	focus = {
@@ -2302,7 +2472,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#USA loans production capacity to HOU
+			USA = { 
+				diplomatic_relation = {
+					country = HOU
+					relation = docking_rights
+					active = yes
+				}
+			}
+			HOU = { 
+				diplomatic_relation = {
+					country = USA
+					relation = docking_rights
+					active = yes
+				}
+			}
+			remove_ideas = HOU_capitulation_threashold_right_1_idea
+			add_ideas = HOU_capitulation_threashold_right_2_idea
+			#USA loans production capacity to HOU #K: This was to allow houpo'e to run to friendly ports!
 		}
 	}
 	focus = {
@@ -2333,6 +2519,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			hidden_effect = {
+				set_variable = { HOU_gold_supply = 100 }
+			} 
+			unlock_decision_category_tooltip = HOU_gold_evacuation
+			custom_effect_tooltip = HOU_gold_evacuation_tt
 			#decision to evacuate gold supply: with each X% that gets evacuated it increases defense by X, like by 10% increments
 		}
 	}
@@ -2365,6 +2556,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
 			#switch gov to communism
 		}
 	}
@@ -2397,6 +2594,28 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.8
+				only_own_territory = no
+				capital = 836
+				states = { 
+					836 837 838 839
+				}
+				keep_political_leader = yes
+				keep_political_party_members = yes
+				transfer_units_fraction= {
+					target = PREV
+					size = 0.5
+					stockpile_ratio = 0.5
+					army_ratio = 0.5
+					navy_ratio = 0.5
+					air_ratio = 0.5
+				
+				}
+			}
+			
 			#Fires Civil War event
 		}
 	}
@@ -2428,6 +2647,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			load_oob = "HOU_Brigades"
 			#creates numerous volunteer brigades
 		}
 	}
@@ -2459,6 +2679,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			dismantle_faction = yes
+			SOV = { add_to_faction = HOU }
+			
 			#dissolve KDP, joins Comintern
 		}
 	}
@@ -2490,6 +2713,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			set_capital = {
+				state = 836 
+				remember_old_capital = no
+			}
 			#Capital to Wainuiomu
 		}
 	}
@@ -2524,6 +2751,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_manpower = -100000
+			add_stability = -0.10
+			HOU = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.20
+				}
+			}
 			#decr stability. Drastic decrease in communism support. Decr manpower.
 		}
 	}
@@ -2555,6 +2790,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			HOU = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.20
+				}
+			}
 			#incr support for fascism
 		}
 	}
@@ -2587,6 +2828,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas = HOU_northwestern_enemies_ideas
 			#??? Maybe incr defense/attack on core?
 		}
 	}
@@ -2618,6 +2860,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			MHN = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.20
+				}
+			}
+			IKA = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.20
+				}
+			}
+			MNQ = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.20
+				}
+			}
 			#incr fascism in neighboring kanagan nations
 		}
 	}
@@ -2649,6 +2909,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = "Kanagan Defense Pact"
+			HOU = { add_to_faction = MHN }	
+			HOU = { add_to_faction = MQN }	
+			HOU = { add_to_faction = IKA }	
+			HOU = { add_to_faction = AWA }	
+			HOU = { add_to_faction = TAH }
+			HOU = { add_to_faction = WAP }				
 			#form Kanagan Defense Pact, invites Malihini, Ikaika, Awarurua, Waponi and Tahiti
 		}
 	}
@@ -2680,6 +2950,39 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			1107 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+				}
+			}
+			835 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+				}
+			}
+			1113 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+				}
+			}
 			#fortification construction bonus. Add sea-fort levels in Loto Aai
 		}
 	}
@@ -2712,6 +3015,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		
+			add_war_support = 0.10
+			add_stability = 0.10
+			HOU = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.10
+				}
+			}
 			#incr war support, incr stability, decr communism support
 		}
 	}
@@ -2743,7 +3055,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#'Request Assistance' decisions for US, UK, France, Germany, Atlantis, Italy
+			#'Request Assistance' decisions for US, UK, France, Germany, Atlantis, Italy 
 		}
 	}
 	focus = {
@@ -2775,6 +3087,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			HOU = { add_to_faction = IKA }		
 			#invites Ikaika to KDP
 		}
 	}
@@ -2807,6 +3120,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas = HOU_pyrrhic_fighting_idea
 			#Major boost to core territory defense
 		}
 	}
@@ -2839,6 +3153,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas =HOU_bitter_end_idea
 			#Incr defense, attack on core territory. Incr capitulation threshold
 		}
 	}
@@ -2850,7 +3165,7 @@ focus_tree = {
 		mutually_exclusive = { focus = HOU_bitter_end }
 
 		x = 1
-		y = 1
+		y = 1 
 
 		cost = 5
 
