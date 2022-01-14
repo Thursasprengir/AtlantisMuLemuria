@@ -1004,7 +1004,7 @@ focus_tree = {
 	#clients North of Yohannia
 	focus = {
 		id = PRJ_client_sudan
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_free_africa  }
 		x = -1
 		y = 8
@@ -1094,7 +1094,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_zerzura
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_sudan }
 		x = -1
 		y = 9
@@ -1184,7 +1184,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_egypt
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_zerzura  }
 		x = -1
 		y = 10
@@ -1315,7 +1315,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_tripoli
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_egypt  }
 		x = -3
 		y = 11
@@ -1432,7 +1432,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_israel
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_egypt  }
 		mutually_exclusive = { focus = PRJ_client_palestine }
 		x = -1
@@ -1495,7 +1495,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_palestine
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_egypt  }
 		mutually_exclusive = { focus = PRJ_client_israel }
 		x = 1
@@ -1558,7 +1558,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_jordon
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_palestine focus = PRJ_client_israel }
 		x = 0
 		y = 12
@@ -1619,7 +1619,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_syria
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_jordon }
 		x = 0
 		y = 13
@@ -1722,7 +1722,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_tunisia
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_tripoli  }
 		x = -3
 		y = 12
@@ -1835,7 +1835,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRJ_client_morocco
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_tunisia  }
 		x = -3
 		y = 13
@@ -1923,7 +1923,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_congo
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_free_africa }
 		x = 1
 		y = 8
@@ -2012,7 +2012,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_chad
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_congo }
 		x = 1
 		y = 9
@@ -2126,7 +2126,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRJ_client_gabon #May he bless us with steam sales
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_chad }
 		x = 1
 		y = 10
@@ -2222,7 +2222,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_tanzania
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_free_africa }
 		x = 3
 		y = 8
@@ -2286,7 +2286,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_client_zambia
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRJ_client_tanzania }
 		x = 3
 		y = 9
@@ -2373,6 +2373,7 @@ focus_tree = {
 	focus = {
 		id = PRJ_client_malawi
 		prerequisite = { focus = PRJ_client_tanzania }
+		icon = GFX_focus_generic_treaty
 		x = 5
 		y = 9
 		relative_position_id = PRJ_abandon_ethiopia
@@ -2435,6 +2436,7 @@ focus_tree = {
 	focus = {
 		id = PRJ_client_zimbabwe
 		prerequisite = { focus = PRJ_client_zambia }
+		icon = GFX_focus_generic_treaty
 		x = 3
 		y = 10
 		relative_position_id = PRJ_abandon_ethiopia
@@ -2497,6 +2499,7 @@ focus_tree = {
 	focus = {
 		id = PRJ_client_mozambique #Nya<3 (=^･ω･^=)
 		prerequisite = { focus = PRJ_client_malawi }
+		icon = GFX_focus_generic_treaty
 		x = 5
 		y = 10
 		relative_position_id = PRJ_abandon_ethiopia
