@@ -9,5 +9,31 @@ country_event = {
 	option = {
 		ai_chance = {factor = 300}
 		name = atlantis_gangster.1.a
+		kapra_end = yes
+		set_variable = {var = var_kapra_capture value = 0}
+		if = {
+			limit = {ATL = { has_country_flag = surrender_flag}}
+			remove_mission = ATL_police_search_cyclic
+			remove_mission = ATL_police_search_cooldown
+		}
+	}
+}
+country_event = {
+	id = atlantis_gangster.2
+	title = atlantis_gangster.2.t
+	desc = atlantis_gangster.2.d
+	picture = GFX_news_event_fighting_gangsters
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {factor = 300}
+		name = atlantis_gangster.2.a
+		itork_end = yes
+		set_variable = {var = var_itork_capture value = 0}
+		if = {
+			limit = {ATL = { has_country_flag = surrender_flag}}
+			remove_mission = ATL_police_search_cyclic
+			remove_mission = ATL_police_search_cooldown
+		}
 	}
 }

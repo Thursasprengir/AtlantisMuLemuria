@@ -129,6 +129,7 @@ focus = {
 		
 		completion_reward = {
 			custom_effect_tooltip = ATL_attack_itorkanak_tooltip
+			subtract_from_variable = {var = var_capture_offset value = 50}
 		}
 	}
 focus = {
@@ -151,6 +152,7 @@ focus = {
 		
 		completion_reward = {
 			custom_effect_tooltip = ATL_attack_kaprastiak_tooltip
+			subtract_from_variable = {var = var_capture_offset value = 50}
 		}
 	}
 focus = {
@@ -174,6 +176,7 @@ focus = {
 		completion_reward = {
 			add_ideas = { ATL_kaprastiak_in_government}
 			kapra_end = yes
+			set_country_flag = surrender_flag
 		}
 	}
 focus = {
@@ -197,6 +200,7 @@ focus = {
 		
 		completion_reward = {
 			custom_effect_tooltip = ATL_attack_all_tooltip
+			subtract_from_variable = {var = var_capture_offset value = 100}
 		}
 	}
 focus = {
@@ -220,13 +224,14 @@ focus = {
 		completion_reward = {
 			add_ideas = {ATL_itorkanak_in_government}
 			itork_end = yes
+			set_country_flag = surrender_flag
 		}
 	}
 focus = {
 		id = ATL_isolation
 		icon = GFX_ATL_military
 		prerequisite = {focus = ATL_befriend_kaprastiak}
-		
+
 		x = 4
 		y = 5
 		cost = 10
