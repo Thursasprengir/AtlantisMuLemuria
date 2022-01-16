@@ -419,7 +419,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			add_idea = HOU_bastion_of_the_revolution_idea
+			add_ideas = HOU_bastion_of_the_revolution_idea
 			#fortification construction bonus
 		}
 	}
@@ -1073,7 +1073,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			add_idea = HOU_infrastructure_plan_idea
+			add_ideas = HOU_infrastructure_plan_idea
 			#infrastructure construction bonus, production bonus
 		}
 	}
@@ -3055,6 +3055,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			#k:impossible
 			#'Request Assistance' decisions for US, UK, France, Germany, Atlantis, Italy 
 		}
 	}
@@ -3222,6 +3223,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_ideas = HOU_national_improvement_idea
 			#decrease factory production time
 		}
 	}
@@ -3238,7 +3240,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 100
-		}
+		} 
 
 		available = {
 
@@ -3253,6 +3255,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			build_railway = {
+				level = 2
+				path = { 13412 13413 13419 13420 13421 13431 }
+			}
 			#adds/increases central province railways
 		}
 	}
@@ -3284,6 +3290,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 50
+				state = 837
+			}
 			#adds rubber production to central areas
 		}
 	}
@@ -3316,6 +3327,62 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			1072 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+			1107 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+			836 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+			838 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 			#adds factories in central provinces
 		}
 	}
@@ -3348,6 +3415,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 50
+				state = 835
+			}
 			#adds steel production to northern provinces
 		}
 	}
@@ -3379,6 +3451,48 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			1072 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			1107 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			836 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 			#adds infrastructure to central provinces
 		}
 	}
@@ -3410,6 +3524,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_manpower = 100000
 			#incr manpower and stability
 		}
 	}
@@ -4151,8 +4266,8 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				add_idea = HOU_coastal_defense_ships_2
-				remove_idea = HOU_coastal_defense_ships
+				add_ideas = HOU_coastal_defense_ships_2
+				remove_ideas = HOU_coastal_defense_ships
 			}
 		}
 	}

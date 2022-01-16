@@ -138,7 +138,24 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
-		
+		HOU_purchase_designs = {
+
+			picture = generic_license_production
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = HOU
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				license_air_purchase_cost = -0.1
+			}
+		}
 		HOU_full_investigation_idea = {
 			allowed = {always = no}
 			picture = usa_tank_destroyer_board
@@ -148,6 +165,16 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.30 
 			}
 		}
+		
+		HOU_national_improvement_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10 
+			}
+		}
+		
 		HOU_northwestern_enemies_ideas = {
 			allowed = {always = no}
 			picture = usa_tank_destroyer_board
