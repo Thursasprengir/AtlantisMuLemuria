@@ -1,5 +1,75 @@
 ideas = {
-
+	country = {
+		TRS_nat_youth_programs_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = 0.3
+			}
+		}
+		TRS_every_woman_a_goddess_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10 
+				production_factory_efficiency_gain_factor = 0.10 
+			}
+		}
+		TRS_downsize_army_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.50
+			}
+		}
+		TRS_downsize_navy_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				naval_accidents_chance = 0.3
+				naval_critical_effect_factor = 0.3
+				naval_defense_factor = -0.3
+				naval_damage_factor = -0.3
+			}
+		}
+		TRS_increase_conscription_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.50
+			}
+		}
+		TRS_expand_navy_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.3
+			}
+		}
+		TRS_declare_all_debts_waived_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = -0.5
+				research_speed_factor = -0.5
+			}
+		}
+		TRS_youthful_education_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+	}
 	political_advisor = {
 
 		TRS_chiang_ching_kuo = {

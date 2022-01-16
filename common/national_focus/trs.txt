@@ -197,7 +197,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			mobilization_speed = 0.3
+			add_ideas = TRS_nat_youth_programs_idea
 		}
 	}
 focus = {
@@ -257,6 +257,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
 			#
 		}
 	}
@@ -287,6 +293,30 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			TRS = {
+				create_wargoal = {
+					type = annex_everything
+					target = JAP
+				}
+			}
+			TRS = {
+				create_wargoal = {
+					type = annex_everything
+					target = ENG
+				}
+			}
+			TRS = {
+				create_wargoal = {
+					type = annex_everything
+					target = HOU
+				}
+			}
+			TRS = {
+				create_wargoal = {
+					type = annex_everything
+					target = MHN
+				}
+			}
 			#
 		}
 	}
@@ -316,6 +346,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = TRS_every_woman_a_goddess_idea
+			add_stability = 0.10
 			#
 		}
 	}
@@ -345,6 +377,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_war_support = 0.15
 			#
 		}
 	}
@@ -376,7 +409,7 @@ focus = {
 
 		completion_reward = {
 			CHI_hyper_inflation_level_down = yes
-			conscription_factor = -0.50
+			add_ideas = TRS_downsize_army_idea
 		}
 	}
 focus = {
@@ -405,9 +438,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = TRS_downsize_navy_idea
 			CHI_hyper_inflation_level_down = yes
 		}
-	}
+	} 
 focus = {
 		id = TRS_finalize_economic_austerity
 		icon = GFX_focus_generic_industry_1
@@ -464,7 +498,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			conscription_factor = 0.50
+			
 		}
 	}
 focus = {
@@ -493,10 +527,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_stability = -0.10
+			add_idea = TRS_expand_navy_idea
 		}
 	}
-focus = {
+	focus = {
 		id = TRS_declare_all_debts_waived
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = TRS_expand_navy }
@@ -558,12 +593,12 @@ focus = {
 					add_idea = CHI_hyper_inflation_5
 					}
 			}
-			trade_opinion_factor = -0.5
-			add_opinion_modifier = {
-				#any_country= { #how to make this target all countries?
-					target = PREV modifier = trs_bankrupt_dirtbags_focus
-						}
-					#}
+			add_ideas = TRS_declare_all_debts_waived_idea
+			#add_opinion_modifier = {
+			#	all_enemy_country = { #how to make this target all countries?
+			#		target = PREV modifier = trs_bankrupt_dirtbags_focus
+			#	}
+			#} 
 		}
 	}
 focus = {
@@ -658,7 +693,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_popularity = { ideology = communism popularity = 0.25 }
+			add_popularity = { ideology = communism popularity = 0.10 }
 		}
 	}
 focus = {
@@ -687,6 +722,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.10 }
+			add_manpower = 20000
+			add_stability = 0.10
 			#
 		}
 	}
@@ -716,6 +754,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = TRS_youthful_education_idea	
 			#
 		}
 	}
@@ -746,7 +785,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
 		}
 	}
 focus = {
@@ -775,7 +819,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			SOV = { add_to_faction = TRS }
 		}
 	}
 focus = {
@@ -804,7 +848,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			set_rule = { can_send_volunteers = yes }
 		}
 	}
 focus = {
@@ -833,7 +877,20 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			SOV = { 
+				diplomatic_relation = {
+					country = TRS
+					relation = docking_rights
+					active = yes
+				}
+			}
+			TRS = { 
+				diplomatic_relation = {
+					country = SOV
+					relation = docking_rights
+					active = yes
+				}
+			}
 		}
 	}
 focus = {

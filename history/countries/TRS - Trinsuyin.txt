@@ -115,7 +115,10 @@ set_popularities = {
 		}
 
 set_convoys = 280
-
+set_rule = {
+	can_send_volunteers = no
+	can_create_factions = no
+}
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
