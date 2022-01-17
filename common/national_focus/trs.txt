@@ -1283,11 +1283,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_building_construction = {
-				type = arms_factory
-				level = 5
-				instant_build = yes
-}			}
+			1 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 focus = {
@@ -1316,7 +1318,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			1 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1347,7 +1355,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			JAP = { puppet = TRS}
 		}
 	}
 focus = {
@@ -1376,7 +1384,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+		add_popularity = { ideology = democratic popularity = -0.10 }
+
 		}
 	}
 focus = {
@@ -1405,6 +1414,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.10
 			#
 		}
 	}
@@ -1434,6 +1444,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_stability = 0.10
 			#
 		}
 	}
@@ -1464,6 +1475,7 @@ focus = {
 
 		completion_reward = {
 			#
+			add_research_slot = 1
 		}
 	}
 focus = {
@@ -1493,6 +1505,7 @@ focus = {
 
 		completion_reward = {
 			#
+			add_ideas = TRS_martial_training_idea
 		}
 	}
 focus = {

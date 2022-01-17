@@ -13,8 +13,8 @@ ideas = {
 			picture = usa_tank_destroyer_board
 			removal_cost = -1
 			modifier = {
-				production_speed_buildings_factor = 0.10 
-				production_factory_efficiency_gain_factor = 0.10 
+				production_speed_buildings_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
 			}
 		}
 		TRS_downsize_army_idea = {
@@ -69,39 +69,76 @@ ideas = {
 				conscription_factor = 0.05
 			}
 		}
+
+	TRS_factory_conversions_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				conversion_cost_mil_to_civ_factor = 0.10
+				conversion_cost_civ_to_mil_factor = 0.10
+			}
+		}
+
+		TRS_martial_training_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				training_time_factor = 0.3
+			}
+		}
+		TRS_kawasaki_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				training_time_factor = 0.3
+			}
+		}
+
+
+
+
+
+
+
+
+
+
 	}
 	political_advisor = {
 
 		TRS_chiang_ching_kuo = {
 
 			picture = chi_chiang_ching_kuo
-			
+
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { silent_workhorse }
 		}
 
 		TRS_h_h_kung = {
 
 			picture = CHI_h_h_kung
-				
+
 			allowed = {
 				original_tag = CHI
 			}
-			
+
 			traits = { captain_of_industry }
 		}
 
 		TRS_chen_yi = {
 
 			picture = chi_chen_yi
-			
+
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { compassionate_gentleman }
 		}
 
@@ -110,18 +147,18 @@ ideas = {
 			name = CHI_generic_democratic_reformer
 
 			picture = generic_political_advisor_asia_1
-			
+
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { democratic_reformer }
 		}
 
 		TRS_dai_li = {
 
 			picture = GFX_idea_chi_dai_li
-			
+
 			allowed = {
 				OR = {
 					original_tag = TRS
@@ -129,28 +166,28 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-			
+
 			traits = { prince_of_terror }
 		}
 
 		TRS_lin_sen = {
 
 			picture = GFX_idea_chi_lin_sen
-			
+
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { popular_figurehead }
 		}
 		TRS_chen_guofu = {
 
 			picture = GFX_idea_chi_chen_guofu
-			
+
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { backroom_backstabber }
 		}
 
@@ -161,7 +198,7 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { first_lady }
 		}
 
@@ -172,21 +209,21 @@ ideas = {
 			available = {
 				has_completed_focus = CHI_financial_policy
 			}
-			
+
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { financial_expert }
 		}
-	}	
+	}
 
 	army_chief = {
-		
+
 		#Communist
 
 		TRS_zhu_de = {
-			
+
 			picture = generic_army_asia_4
 
 			allowed = {
@@ -194,7 +231,7 @@ ideas = {
 			}
 			ledger = army
 			traits = { army_chief_offensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -209,11 +246,11 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-			
 
-			
+
+
 			traits = { army_chief_organizational_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -222,7 +259,7 @@ ideas = {
 		#Nationalist
 
 		TRS_li_zongren = {
-			
+
 			picture = generic_army_asia_2
 
 			allowed = {
@@ -230,22 +267,22 @@ ideas = {
 			}
 					ledger = army
 			traits = { army_chief_defensive_3 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		TRS_he_yingqin = {
-			
+
 			picture = generic_army_asia_1
 
 			allowed = {
 				original_tag = TRS
 			}
-					ledger = army	
+					ledger = army
 			traits = { army_chief_maneuver_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -253,8 +290,8 @@ ideas = {
 	}
 
 	air_chief = {
-		
-		
+
+
 		#Communist
 		#Fang Zeyi
 		#army_aviation_doctrine
@@ -263,17 +300,17 @@ ideas = {
 		#Clique
 
 		TRS_wang_shuming = {
-			
+
 			picture = generic_air_asia_1
 			ledger = air
 			allowed = {
 				original_tag = TRS
 			}
-			
 
-			
+
+
 			traits = { air_chief_ground_support_2 }
-			
+
 			ai_will_do = {
 				factor = 0.5
 			}
@@ -288,23 +325,23 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-			
 
-			
+
+
 			traits = { air_chief_old_guard }
-			
+
 			ai_will_do = {
 				factor = 0.5
 			}
 		}
 	}
-	
+
 	navy_chief = {
-		
+
 		#Communist
 
 		TRS_xiao_jinguang = {
-			
+
 			picture = generic_navy_asia_1
 
 			allowed = {
@@ -312,7 +349,7 @@ ideas = {
 			}
 					ledger = navy
 			traits = { navy_chief_commerce_raiding_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -321,15 +358,15 @@ ideas = {
 		#Clique
 
 		TRS_bai_chongxi = {
-			
+
 			picture = generic_navy_asia_2
 
 			allowed = {
 				original_tag = TRS
 			}
-				ledger = navy	
+				ledger = navy
 			traits = { navy_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 0.2
 			}
@@ -344,9 +381,9 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-					
+
 			traits = { navy_chief_decisive_battle_2 }
-			
+
 			ai_will_do = {
 				factor = 0.2
 			}
@@ -355,11 +392,11 @@ ideas = {
 
 
 	# TECHNOLOGY
-	
+
 	aircraft_manufacturer = { #
-			
+
 		designer = yes
-		
+
 		TRS_camco = {
 
 			picture = generic_air_manufacturer_3
@@ -367,15 +404,15 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+
 			traits = { medium_aircraft_manufacturer }
-			
+
 			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
-						
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -384,10 +421,10 @@ ideas = {
 
 
 	theorist = {
-		TRS_bo_yibo = { 
+		TRS_bo_yibo = {
 
 			picture = generic_army_asia_2
-			
+
 			allowed = {
 				original_tag = TRS
 			}
@@ -395,14 +432,14 @@ ideas = {
 			research_bonus = {
 				land_doctrine = 0.10
 			}
-			
+
 			traits = { military_theorist }
 		}
-		
-		TRS_fang_zeyi = { 
+
+		TRS_fang_zeyi = {
 
 			picture = generic_air_asia_2
-			
+
 			allowed = {
 				original_tag = TRS
 			}
@@ -410,7 +447,7 @@ ideas = {
 			research_bonus = {
 				air_doctrine = 0.10
 			}
-			
+
 			traits = { air_warfare_theorist }
 		}
 
@@ -421,11 +458,11 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			research_bonus = {
 				naval_doctrine = 0.10
 			}
-			
+
 			traits = { naval_theorist }
 		}
 
@@ -441,24 +478,24 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { air_air_superiority_3 }
-			
+
 			ai_will_do = {
 				factor = 0.2
 			}
 		}
-		
+
 		TRS_xiao_yisu = {
 
 			picture = generic_army_asia_2
-			
+
 			allowed = {
 				original_tag = TRS
 			}
 			ledger = army
 			traits = { army_infantry_2 }
-			
+
 			ai_will_do = {
 				factor = 2
 			}
@@ -471,9 +508,9 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { army_regrouping_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -486,9 +523,9 @@ ideas = {
 			allowed = {
 				original_tag = TRS
 			}
-			
+
 			traits = { army_logistics_2 }
-			
+
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -499,14 +536,14 @@ ideas = {
 
 		TRS_mining_commission = {
 
-			picture = generic_industrial_concern_3		
-			
+			picture = generic_industrial_concern_3
+
 			allowed = {
 				original_tag = TRS
 			}
 
 			cost = 0
-			
+
 			ai_will_do = {
 				factor = 1
 			}
