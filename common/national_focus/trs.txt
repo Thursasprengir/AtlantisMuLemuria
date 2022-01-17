@@ -528,7 +528,7 @@ focus = {
 
 		completion_reward = {
 			add_stability = -0.10
-			add_idea = TRS_expand_navy_idea
+			add_ideas = TRS_expand_navy_idea
 		}
 	}
 	focus = {
@@ -1252,7 +1252,7 @@ focus = {
 
 		completion_reward = {
 			TRS_factory_conversions_idea = {
-				idea = my_idea
+				idea = TRS_factory_conversions_idea
 				days = 360
 			}
 		}
@@ -1283,11 +1283,32 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			1 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+			1055 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			1112 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1318,11 +1339,32 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			1 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
+			1062 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			1059 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1592,7 +1634,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			1059 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 13262
+					}
+				}
+			}
 		}
 	}
 focus = {
@@ -1622,7 +1678,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			1111 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 13252
+					}
+				}
+			}
 		}
 	}
 focus = {
@@ -1651,7 +1721,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			JAP = { 
+				add_ideas = TRS_tokyo_weyluchanao_cable_idea
+			}
+			add_ideas = TRS_tokyo_weyluchanao_cable_idea
 		}
 	}
 focus = {
@@ -1680,7 +1753,21 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			1055 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 14301
+					}
+				}
+			}
 		}
 	}
 focus = {
@@ -1710,7 +1797,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			JAP = { 
+				transfer_state = 1088
+			}
 		}
 	}
 focus = {
@@ -1740,10 +1829,17 @@ focus = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1774,11 +1870,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+			938 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1809,11 +1912,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+			998 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1844,7 +1954,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_ideas = TRS_mitsubishi_idea
 		}
 	}
 focus = {
@@ -1945,12 +2055,12 @@ focus = {
 			add_resource = {
     		type = steel
     		amount = 20
-    		state = 1
+    		state = 998
 			}
 			add_resource = {
     		type = steel
     		amount = 20
-    		state = 1
+    		state = 1053
 			}
 		}
 	}
@@ -1985,7 +2095,7 @@ focus = {
 			add_resource = {
     		type = aluminium
     		amount = 20
-    		state = 1
+    		state = 1112
 			}
 		}
 	}
@@ -2015,7 +2125,28 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			all_owned_state = {
+			938 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			997 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			998 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1111 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2054,7 +2185,7 @@ focus = {
 			add_resource = {
 				type = chrome
 				amount = 20
-				state = 1
+				state = 1055
 			}
 		}
 	}
@@ -2089,7 +2220,7 @@ focus = {
 			add_resource = {
 				type = rubber
 				amount = 20
-				state = 1
+				state = 1059
 			}
 		}
 	}
@@ -2139,7 +2270,7 @@ focus = {
 			factor = 2
 		}
 		available = {
-			date > 1939.11.1
+			date > 1939.1.1
 		}
 
 		bypass = {
@@ -2151,7 +2282,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_state_claim = 1082
+			add_state_claim = 1104
+			add_state_claim = 840
+			add_state_claim = 1103
+			add_state_claim = 1102
+			add_state_claim = 630
+			declare_war_on = {
+				target = HOU
+				type = annex_everything
+			}
 		}
 	}
 focus = {
@@ -2180,16 +2320,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = PRJ_african_freedom
-			add_stability = -.2
-			declare_war_on = {
-				target = HOU
-				type = take_core_state
-			}
-			declare_war_on = {
-				target = TRS
-				type = take_core_state
-			}
+			add_stability = .2
+			
 		}
 	}
 
@@ -2576,7 +2708,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				name = TRS_air_equipment_tech
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+
+			}
 		}
 	}
 focus = {
@@ -2606,6 +2744,13 @@ focus = {
 
 		completion_reward = {
 			#
+			add_tech_bonus = {
+				name = TRS_light_fighter_tech
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+
+			}
 		}
 	}
 focus = {
@@ -2636,10 +2781,10 @@ focus = {
 		completion_reward = {
 			#
 			add_tech_bonus = {
-				name = PRJ_light_fighter_tech
+				name = TRS_light_fighter_tech
 				bonus = 1.0
-				uses = 2
-				category = light_fighter
+				uses = 1
+				category = cas_bomber
 
 			}
 		}
@@ -2673,9 +2818,9 @@ focus = {
 		completion_reward = {
 			#
 			add_tech_bonus = {
-				name = PRJ_strategic_tech
+				name = TRS_cat_heavy_fighter_tech
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cat_heavy_fighter
 
 			}
@@ -2709,9 +2854,9 @@ focus = {
 		completion_reward = {
 			#
 			add_tech_bonus = {
-				name = PRJ_strategic_tech
+				name = TRS_tactical_bomber_tech
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = tactical_bomber
 
 			}
@@ -2744,6 +2889,13 @@ focus = {
 
 		completion_reward = {
 			#
+			add_tech_bonus = {
+				name = TRS_cat_strategic_bomber_tech
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+
+			}
 		}
 	}
 focus = {
@@ -2773,6 +2925,13 @@ focus = {
 
 		completion_reward = {
 			#
+			add_tech_bonus = {
+				name = TRS_naval_bomber_tech
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+
+			}
 		}
 	}
 focus = {
@@ -2801,7 +2960,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				name = TRS_infantry_tech
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 focus = {
@@ -2832,7 +2996,12 @@ focus = {
 
 		completion_reward = {
 			#
-			
+			add_tech_bonus = {
+				name = TRS_air_equipment_tech
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
 		}
 	}
 focus = {
@@ -2861,7 +3030,20 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			1055 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 focus = {
@@ -2890,7 +3072,20 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			1059 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 focus = {
@@ -2920,7 +3115,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				name = TRS_armor_tech
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
 		}
 	}
 focus = {
@@ -2950,6 +3150,12 @@ focus = {
 
 		completion_reward = {
 			#
+			add_tech_bonus = {
+				name = TRS_cat_light_armor_tech
+				bonus = 1.0
+				uses = 2
+				category = cat_light_armor
+			}
 		}
 	}
 focus = {
@@ -2979,6 +3185,12 @@ focus = {
 
 		completion_reward = {
 			#
+			add_tech_bonus = {
+				name = TRS_cat_light_armor_tech
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+			}
 		}
 	}
 focus = {
@@ -3007,7 +3219,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_ideas = TRS_kiue_paa_tsear_idea
 		}
 	}
 focus = {
@@ -3036,7 +3248,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_ideas = TRS_special_forces_training_idea
 		}
 	}
 focus = {
@@ -3065,7 +3277,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				name = TRS_marine_tech
+				bonus = 1.0
+				uses = 1
+				technology = marine_tech
+			}
 		}
 	}
 focus = {
@@ -3094,7 +3311,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				name = TRS_para_tech
+				bonus = 1.0
+				uses = 1
+				technology = para_tech
+			}
 		}
 	}
 
@@ -3124,13 +3346,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			TRS = {
-				modifier = {
-			navy_refit_speed = 0.5
-			experience_gain_navy = 0.02
-			naval_speed_factor = 0.3
-				}
-			}
+			add_ideas= TRS_third_naval_modernization_idea
+			
 		}
 	}
 focus = {
@@ -3225,7 +3442,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_ideas = TRS_increase_hull_size_idea
 		}
 	}
 focus = {
@@ -3254,7 +3471,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_ideas TRS_national_naval_arsenal_idea
 		}
 	}
 focus = {
