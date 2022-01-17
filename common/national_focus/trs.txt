@@ -1125,11 +1125,15 @@ focus = {
 		completion_reward = {
 			JAP = { add_to_faction = TRS }
 			add_to_war = {
-    		targeted_alliance = PREV
+    		targeted_alliance = JAP
     		enemy = CHI
     		hostility_reason = asked_to_join
 			}
-			#
+			ROOT = {
+				1088 = {
+					transfer_state_to = JAP
+				}
+			}
 		}
 	}
 focus = {
