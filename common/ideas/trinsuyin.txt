@@ -93,10 +93,22 @@ ideas = {
 			picture = usa_tank_destroyer_board
 			removal_cost = -1
 			modifier = {
-				training_time_factor = 0.3
+				production_cost_max_ship_hull_carrier = 0.3
+				production_cost_max_ship_hull_cruiser = 0.3
+				production_cost_max_ship_hull_heavy = 0.3
+				production_cost_max_ship_hull_light = 0.3
+				production_cost_max_ship_hull_submarine = 0.3
+
 			}
 		}
-
+		TRS_bolster_aircraft_production_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
 
 
 
