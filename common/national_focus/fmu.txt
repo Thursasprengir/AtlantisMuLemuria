@@ -2994,14 +2994,27 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#starts Elect Kaiser event/decision chain. 3 candidates: Liberal, Moderate, Hardliner
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
 				last_election = "1935.12.17"
 				election_frequency = 48
 			}
-
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = FMU_neutrality_party_kaiser_long 
+				name = FMU_neutrality_party_kaiser 
+			}
+			create_country_leader = {
+				name = "Kaiser Sigismund"
+				desc = "POLITICS_KAISER_SIGISMUND_DESC"
+				picture = GFX_portrait_fmu_kaiser_sigismund
+				expire = "1965.1.1"
+				ideology = monarchy
+				traits = {
+					stout_defender
+				}
+			}
 		}
 	}
 
