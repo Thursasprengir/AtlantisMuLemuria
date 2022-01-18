@@ -202,7 +202,84 @@ ideas = {
 				army_core_defence_factor = 0.10
 			}
 		}
-
+		HOU_invite_trotsky_idea = {
+			allowed = {always = no}
+			picture = chi_army_corruption3
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.03
+				army_core_defence_factor = 0.10
+					production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		HOU_export_the_revolution_idea = {
+			allowed = {always = no}
+			picture = chi_army_corruption3
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.01
+			}
+		}
+		HOU_build_on_strength_idea = {
+			allowed = {always = no}
+			picture = chi_army_corruption3
+			removal_cost = -1
+			modifier = {
+				special_forces_cap = 0.3
+			}
+		}
+		HOU_coastal_defense_navy_idea = {
+			allowed = {always = no}
+			picture = chi_army_corruption3
+			removal_cost = -1
+			modifier = {
+				naval_damage_factor = 0.1
+				naval_retreat_speed = 0.3
+			}
+		}
+		HOU_power_projection_idea = {
+			allowed = {always = no}
+			picture = chi_army_corruption3
+			removal_cost = -1
+			modifier = {
+				naval_speed_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+			}
+		}
+		HOU_torpedo_boats_idea = {
+			allowed = {always = no}
+			picture = chi_army_corruption3
+			removal_cost = -1
+			modifier = {
+				naval_torpedo_hit_chance_factor = 0.1
+				naval_torpedo_screen_penetration_factor = 0.1
+			}
+		}
+		HOU_begin_army_reforms_ideas = {
+			allowed = {always = no}
+			picture = chi_army_corruption3
+			removal_cost = -1
+			modifier = {
+				training_time_factor = -0.1
+			}
+		}
+		HOU_landborne_designs_idea = {
+			allowed = {always = no}
+			picture = generic_fortify_the_borders
+			removal_cost = -1
+			modifier = {
+				offence = 0.1
+			}
+		}
+		HOU_special_forces_idea = {
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				special_forces_cap = 0.2
+				special_forces_training_time_factor = -0.1
+			}
+		}
 		#capitulation threshhold
 		HOU_capitulation_threashold_left_1_idea = {
 			allowed = {always = no}

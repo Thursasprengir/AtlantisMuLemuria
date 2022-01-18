@@ -222,6 +222,7 @@ focus_tree = {
 
 		available = {
 			#Trotsky has been assassinated
+			has_global_flag = flag_trotsky_dead 
 		}
 
 		bypass = {
@@ -269,6 +270,7 @@ focus_tree = {
 		}
 
 		available = {
+			NOT = { has_global_flag = flag_trotsky_dead }
 			#Trotsky has survives assassination attempt
 		}
 
@@ -281,6 +283,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_ideas = HOU_invite_trotsky_idea
 			#Country modifier: boost to communism, production bonus, better defense on core territory
 		}
 	}
@@ -609,6 +612,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+			create_wargoal = {
+				type = topple_government 
+				target = CHI
+			}
+			add_opinion_modifier = {
+				target = PRC
+				modifier = HOU_commie_friends
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = HOU
+					modifier = HOU_commie_friends
+				}
+			}
 			#Offers Sino-Houpo'ean Alliance, with chances for other warlord states to drop the Chinese United Front and join, declaring war on Japan, but also declaring a war against the Rep of China as soon as possible (triggered by NOT at war with Jap, or something like that.)
 		}
 	}
@@ -703,6 +724,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			MNQ = {
+				add_timed_idea = {
+					idea = HOU_export_the_revolution_idea
+					days = 180
+				}
+			}
+			MHN = {
+				add_timed_idea = {
+					idea = HOU_export_the_revolution_idea
+					days = 180
+				}
+			}
+			IKA = {
+				add_timed_idea = {
+					idea = HOU_export_the_revolution_idea
+					days = 180
+				}
+			}
 			#communist infiltration decisions (incr communism in neighboring nations)
 		}
 	}
@@ -2098,6 +2137,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas = HOU_build_on_strength_idea
 			#incr special forces limit, bonus to special forces
 		}
 	}
@@ -3027,38 +3067,38 @@ focus_tree = {
 			#incr war support, incr stability, decr communism support
 		}
 	}
-	focus = {
-		id = HOU_request_int_lend_lease
-		icon = GFX_focus_generic_treaty
-		relative_position_id = HOU_continue_purge_communists
-		prerequisite = { focus = HOU_continue_purge_communists }
-
-		x = 0
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			#k:impossible
-			#'Request Assistance' decisions for US, UK, France, Germany, Atlantis, Italy
-		}
-	}
+	#focus = {
+	#	id = HOU_request_int_lend_lease
+	#	icon = GFX_focus_generic_treaty
+	#	relative_position_id = HOU_continue_purge_communists
+	#	prerequisite = { focus = HOU_continue_purge_communists }
+#
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#
+#		}
+#
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#k:impossible
+#			#'Request Assistance' decisions for US, UK, France, Germany, Atlantis, Italy
+#		}
+#	}
 	focus = {
 		id = HOU_expand_KDP
 		icon = GFX_goal_generic_improve_relations
@@ -3095,13 +3135,12 @@ focus_tree = {
 	focus = {
 		id = HOU_pyrrhic_fighting
 		icon = GFX_goal_generic_defence
-		relative_position_id = HOU_request_int_lend_lease
-		prerequisite = { focus = HOU_request_int_lend_lease focus = HOU_prepare_defenses }
+		relative_position_id = HOU_continue_purge_communists
+		prerequisite = { focus = HOU_continue_purge_communists focus = HOU_prepare_defenses }
 		mutually_exclusive = { focus = HOU_expand_KDP }
 
-		x = 0
-		y = 1
-
+		x = 1
+		y = 2
 		cost = 5
 
 		ai_will_do = {
@@ -3154,7 +3193,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-		add_ideas =HOU_bitter_end_idea
+			add_ideas = HOU_bitter_end_idea
 			#Incr defense, attack on core territory. Incr capitulation threshold
 		}
 	}
@@ -3187,6 +3226,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			white_peace = JAP
+			white_peace = TRS
+			TRS = {
+				transfer_state = 840
+
+			}
+			JAP = {
+		
+				transfer_state = 1082
+			}
 			#Event cedes territory to Japan and Trinsuyin, ends war, becomes puppet of Japan
 		}
 	}
@@ -4161,8 +4210,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HOU_coastal_defense_navy_designer
+			add_ideas = HOU_coastal_defense_navy_idea
 		}
 	}
 
@@ -4193,12 +4241,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = HOU_coastal_defense_ships
-			#custom_effect_tooltip = HOU_coastal_defense_ships_tech_tt
-			if = {
-				limit = { has_dlc = "Man the Guns" }
-				set_technology = { coastal_defense_ships = 1 }
-			}
+			set_technology = { coastal_defense_ships = 1 }
 		}
 	}
 
@@ -4265,10 +4308,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-				add_ideas = HOU_coastal_defense_ships_2
-				remove_ideas = HOU_coastal_defense_ships
-			}
+			add_ideas = HOU_torpedo_boats_idea
 		}
 	}
 
@@ -4336,8 +4376,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HOU_power_projection_designer
+			add_ideas = HOU_power_projection_idea
 		}
 	}
 
@@ -4519,19 +4558,6 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
-			random_owned_controlled_state = {
-				#prioritize = { 46 }
-				limit = {
-
-				}
-				#add_extra_state_shared_building_slots = 2
-				#add_building_construction = {
-				#	type = dockyard
-				#	level = 2
-				#	instant_build = yes
-				#}
-				#set_state_flag = HOU_expand_the_inuhumuku_shipyards_AB
-			}
 		}
 	}
 	focus = {
@@ -4562,6 +4588,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_ideas = HOU_begin_army_reforms_ideas
 			#decrease recruitment time, add army exp
 		}
 	}
@@ -4593,6 +4620,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+		add_ideas = HOU_landborne_designs_idea
 			#bonus to infantry fighting in forest and jungle
 		}
 	}
@@ -4625,7 +4653,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				name = HOU_motorized_equipment
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+
+			}
 		}
 	}
 	focus = {
@@ -4656,7 +4690,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#
+			add_ideas = HOU_special_forces_idea
 		}
 	}
 	focus = {
@@ -4687,6 +4721,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_tech_bonus = {
+				name = HOU_cat_mass_assault
+				bonus = 1.0
+				uses = 2
+				category = cat_mass_assault
+
+			}
 			#
 		}
 	}
@@ -4719,6 +4760,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			#
+			add_tech_bonus = {
+				name = HOU_cat_mobile_warfare
+				bonus = 1.0
+				uses = 2
+				category = cat_mobile_warfare
+
+			}
 		}
 	}
 	focus = {
@@ -4750,7 +4798,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				name = HOU_motorized_equipment
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 	focus = {
@@ -4782,6 +4835,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			#
+			add_tech_bonus = {
+				name = HOU_cat_light_armor
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+
+			}
 		}
 	}
 	focus = {
@@ -4812,73 +4872,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			#
+			add_tech_bonus = {
+				name = HOU_mechanized_trucks
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 	}
-	focus = {
-		id = HOU_offensive_designs
-		icon = GFX_focus_generic_little_entente
-		relative_position_id = HOU_armored_designs
-		mutually_exclusive = { focus = HOU_defensive_designs }
-		prerequisite = { focus = HOU_mechanized_designs focus = HOU_armored_designs }
-
-		x = 0
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			#
-		}
-	}
-	focus = {
-		id = HOU_defensive_designs
-		icon = GFX_goal_generic_build_tank
-		relative_position_id = HOU_mechanized_designs
-		mutually_exclusive = { focus = HOU_offensive_designs }
-		prerequisite = { focus = HOU_mechanized_designs focus = HOU_armored_designs }
-
-		x = 0
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			#
-		}
-	}
-
-
 }

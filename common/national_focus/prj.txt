@@ -922,7 +922,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		puppet = ETH
+			puppet = ETH
 		}
 	}
 
@@ -3865,6 +3865,9 @@ focus_tree = {
 		}
 
 		available = {
+			ETH = {
+				is_puppet_of = PRJ
+			}
 		}
 		bypass = {
 			has_war_with = ENG
@@ -3879,11 +3882,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = PRJ_down_with_europe
 			annex_country = {
 				target = ETH
 				transfer_troops = yes
 			}
-			custom_effect_tooltip = PRJ_down_with_europe
 			add_stability = -0.2
 			declare_war_on = {
 				target = ENG
@@ -4784,7 +4787,6 @@ focus = {
 				bonus = 1.0
 				uses = 2
 				category = cat_mechanized_equipment
-
 			}
 		}
 	}
