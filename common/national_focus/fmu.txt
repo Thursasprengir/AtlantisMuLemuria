@@ -187,7 +187,9 @@ focus = {
 			factor = 40
 		}
 		available = {
-
+			MNU = {
+				exists = no 
+			}
 		}
 
 		#bypass = {
@@ -199,6 +201,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = FMU_mass_blob_technique 
+			country_event = fmu.4
+			country_event = fmu.12
+			country_event = fmu.20
 			#event chain to try to annex other Muan German nations
 		}
 	}
@@ -232,7 +238,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#event chain to bring other Muan Germans into the Axis
+			custom_effect_tooltip = FMU_mass_axis_invite
+			NYB = { country_event = generic.5 }
+			SCH = { country_event = generic.5 }
+			VGI = { country_event = generic.5 }
 		}
 	}
 
@@ -2150,9 +2159,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			annex_country = { target = MNU transfer_troops = yes }
-			add_political_power = 60
-			add_named_threat = { threat = 3 name = FMU_manu_threat }
+			country_event = fmu.4
 			#annexes Manu
 			#small political power boost
 			#malus to international relations for 3 years
@@ -2218,8 +2225,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#IF = {
-			#	all_country = {
+			#If = {
+			#	any_country = {
 			#		is_on_continent = europe
 			#	}
 			#	add_opinion_modifier = FMU_diplo_outreach
