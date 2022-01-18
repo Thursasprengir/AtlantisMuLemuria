@@ -2349,6 +2349,25 @@ focus = {
 		completion_reward = {
 			#trade relations bonus
 			#general relations bonus
+			add_ideas = FMU_charmed_idea
+			every_other_country = {
+				limit = {
+					capital_scope = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+							is_on_continent = africa
+							is_on_continent = europe
+							is_on_continent = asia
+							is_on_continent = lemuria
+							is_on_continent = australia
+							is_on_continent = mu
+							
+						}
+					}
+				}
+				add_opinion_modifier = { target = FMU modifier = FMU_charmed }
+			}
 		}
 	}
 
@@ -2386,6 +2405,11 @@ focus = {
 		completion_reward = {
 			#decrease justify war goal time
 			#tiny world tension increase
+			add_ideas = FMU_velvet_glove_iron_fist_idea
+			add_named_threat = { 
+				threat = 5 
+				name = FMU_velvet_gloves
+			}
 		}
 	}
 
@@ -2880,6 +2904,12 @@ focus = {
 
 		completion_reward = {
 			#starts Elect Kaiser event/decision chain. 3 candidates: Liberal, Moderate, Hardliner
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
 
 		}
 	}
@@ -2991,7 +3021,7 @@ focus = {
 		prerequisite = { focus = FMU_renegotiate_versailles }
 		mutually_exclusive = {
 			focus = FMU_modern_germanic_state
-			focus = FMU_twee_talen
+			focus = FMU_twee_talen 
 		}
 		x = 8
 		y = 1
@@ -3648,9 +3678,14 @@ focus = {
 		}
 		available = {
 			#is member of Allies
+			BRG = { is_in_faction_with = ENG }
 		}
 
 		bypass = {
+			BRG = {
+				exists = no
+			}
+				
 			#baraga does not exist
 		}
 
@@ -3659,6 +3694,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			BRG = { country_event = generic.5}
 			#fires event trying to influence Baraga to join the Allies
 		}
 	}
@@ -3678,10 +3714,13 @@ focus = {
 		}
 		available = {
 			#is member of Allies
+			TIQ = { is_in_faction_with = ENG }
 		}
 
 		bypass = {
-			#tiquea does not exist
+			TIQ = {
+				exists = no
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3689,6 +3728,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			TIQ = { country_event = generic.5}
 			#fires event trying to influence tiquea to join the Allies
 		}
 	}
@@ -3708,17 +3748,20 @@ focus = {
 		}
 		available = {
 			#is member of Allies
+			CNJ = { is_in_faction_with = ENG }
 		}
 
 		bypass = {
-			#canaje does not exist
+			CNJ = {
+				exists = no
+			}
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
+			CNJ = { country_event = generic.5}
 			#fires event trying to influence canaje to join the Allies
 		}
 	}
@@ -3738,6 +3781,7 @@ focus = {
 		}
 		available = {
 			#is member of Allies
+			FMU+  = { is_in_faction_with = ENG }
 		}
 
 		bypass = {
@@ -3769,17 +3813,20 @@ focus = {
 		}
 		available = {
 			#is member of Allies
+			MCH = { is_in_faction_with = ENG }
 		}
 
 		bypass = {
-			#CdM does not exist
+			MCH = {
+				exists = no
+			}
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
+			MCH = { country_event = generic.5}
 			#fires event trying to influence Cote des Manchots to join the Allies
 		}
 	}
@@ -3800,10 +3847,13 @@ focus = {
 		}
 		available = {
 			#is member of Allies
+			TOD = { is_in_faction_with = ENG }
 		}
 
 		bypass = {
-			#TOD does not exist
+			TOD = {
+				exists = no
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3811,6 +3861,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			TOD = { country_event = generic.5}
 			#fires event trying to influence TOD to join the Allies (only 0.5% chance of success)
 		}
 	}
@@ -3879,6 +3930,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			SOV = {
+				send_equipment_fraction = {
+					value = 0.1
+					target = FMU
+				}
+			}
 			#decision chain, offers SOV chance to send war materiel, chance to get dragged into war in Europe
 		}
 	}
