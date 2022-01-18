@@ -1581,6 +1581,7 @@ focus = {
 
 		completion_reward = {
 			#
+			add_stability = 0.10
 		}
 	}
 focus = {
@@ -3285,7 +3286,7 @@ focus = {
 				name = TRS_marine_tech
 				bonus = 1.0
 				uses = 1
-				technology = marine_tech
+				category = marine_tech
 			}
 		}
 	}
@@ -3319,7 +3320,7 @@ focus = {
 				name = TRS_para_tech
 				bonus = 1.0
 				uses = 1
-				technology = para_tech
+				category = para_tech
 			}
 		}
 	}
@@ -3386,7 +3387,6 @@ focus = {
 				bonus = 1.0
 				uses = 2
 				category = bb_tech
-				category = cv_tech
 			}
 			navy_capital_ship_attack_factor = 0.3
 		}
@@ -3417,7 +3417,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#
+			add_ideas = TRS_increase_hull_size_idea
 		}
 	}
 focus = {
@@ -3446,7 +3446,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = TRS_increase_hull_size_idea
+			add_tech_bonus = {
+				name = TRS_capital_primacy
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
 		}
 	}
 focus = {
@@ -3475,14 +3480,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas TRS_national_naval_arsenal_idea
+			add_ideas = TRS_national_naval_arsenal_idea
 		}
 	}
-focus = {
+	focus = {
 		id = TRS_light_ship_doctrine
 		icon = GFX_focus_generic_destroyer
 		relative_position_id = TRS_third_naval_modernization
-		prerequisite = { focus = TRS_third_naval_modernization}
+		prerequisite = { focus = TRS_third_naval_modernization }
 		mutually_exclusive = { focus = TRS_capital_ship_doctrine }
 		x = -1
 		y = 1
