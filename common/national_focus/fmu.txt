@@ -1285,6 +1285,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			annex_country = {
+				target = VGI
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = CTI
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = ARA
+				transfer_troops = yes
+			}
 			#event that annexes Prometida, Arisla and Vogelinsel or goes to war with them
 		}
 	}
@@ -1314,6 +1326,52 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			857 = {	
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border  = yes
+					}
+				}
+			}
+			858 = {	
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border  = yes
+					}
+				}
+			}
+			860 = {	
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border  = yes
+					}
+				}
+			}
+			859 = {	
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border  = yes
+					}
+				}
+			}
+	
+			
 			#lots of land forts along Mu/Houpo'e border
 			#relations malus with Japan and Trinsuyin
 		}
@@ -1344,6 +1402,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = FMU_our_mighty_home_idea
 			#fortification construction bonus
 			#civilian construction bonus
 			#repair bonus
@@ -2122,6 +2181,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			 add_ideas = FMU_unternehmen_sternenmacher_idea
 			#atomic weapons research bonus
 		}
 	}

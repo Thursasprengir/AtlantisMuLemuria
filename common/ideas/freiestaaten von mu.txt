@@ -1052,6 +1052,24 @@ ideas = {
 				justify_war_goal_time = -0.1
 			}
 		}
+		FMU_our_mighty_home_idea = 
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				repair_speed_factor = 0.3
+				production_speed_industrial_complex_factor = 0.1 
+				production_speed_bunker_factor = 0.1 
+			}
+		}
+		FMU_unternehmen_sternenmacher_idea = 
+			allowed = {always = no}
+			picture = usa_tank_destroyer_board
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
 	#New Military Ideas
 	FMU_shipping_lane_bonus = {
 
