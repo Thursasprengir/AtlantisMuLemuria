@@ -3816,6 +3816,7 @@ focus_tree = {
 		id = PRJ_fufill_promise
 		prerequisite = { focus = PRJ_purchase_kenya }
 		prerequisite = { focus = PRJ_ETH_purchase_somaliland }
+		mutually_exclusive = { focus = PRJ_renegade}
 		icon = GFX_goal_anschluss
 		x = 11
 		y = 11
@@ -3851,6 +3852,7 @@ focus_tree = {
 		id = PRJ_renegade
 		prerequisite = { focus = PRJ_purchase_kenya }
 		prerequisite = { focus = PRJ_ETH_purchase_somaliland }
+		mutually_exclusive = { focus = PRJ_fufill_promise}
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 13
 		y = 11
@@ -3877,16 +3879,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ETH= {
-				custom_effect_tooltip = PRJ_down_with_europe
-				add_stability = -.2
-				declare_war_on = {
-					target = ENG
-					type = take_core_state
-				}
+			annex_country = {
+				target = ETH
+				transfer_troops = yes
 			}
 			custom_effect_tooltip = PRJ_down_with_europe
-			add_stability = -.2
+			add_stability = -0.2
 			declare_war_on = {
 				target = ENG
 				type = take_core_state

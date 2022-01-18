@@ -28,7 +28,7 @@ focus_tree = {
 	continuous_focus_position = { x = 70 y = 1100 }
 
 	focus = {
-		id = MEX_focus_plan_of_agua_prieta #will now be called Plan of Durango as Agua Prieta is now in RGR
+		id = MEX_focus_plan_of_agua_prieta #will now be called Plan of Durango as Agua Prieta is now in RGD
 		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 23
 		y = 0
@@ -82,8 +82,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_stability = -0.05
-			#add RGR states as cores
-			#negative relations with RGR
+			#add RGD states as cores
+			#negative relations with RGD
 		}
 	}
 
@@ -6108,7 +6108,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEX_focus_reclaim_rio_grande
-		icon = GFX_reclaim_rio_grande
+		icon = GFX_focus_reclaim_rio_grande
 		prerequisite = { focus = MEX_focus_seize_the_panama_canal }
 		x = -3
 		y = 1
@@ -6128,10 +6128,10 @@ focus_tree = {
 		available = {
 			threat > 0.5
 			NOT = {
-				is_in_faction_with = RGR
+				is_in_faction_with = RGD
 			}
 			NOT = {
-				has_non_aggression_pact_with = RGR
+				has_non_aggression_pact_with = RGD
 			}
 		}
 
@@ -6150,26 +6150,26 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					country_exists = RGR
+					country_exists = RGD
 				}
 				create_wargoal = {
 					type = take_state_focus
-					target = RGR
+					target = RGD
 					expire = 0
-					generator = { 375 376 377 378 379 380 382 }
+					generator = { 483 482 480 1083 479 }
 				}
 			}
 			every_other_country = {
 				limit = {
-					NOT = { tag = RGR }
-					original_tag = RGR
+					NOT = { tag = RGD }
+					original_tag = RGD
 				}
 				ROOT = {
 					create_wargoal = {
 						type = take_state_focus
 						target = PREV
 						expire = 0
-						generator = { 375 376 377 378 379 380 382 }
+						generator = { 483 482 480 1083 479 }
 					}
 				}
 			}
@@ -6177,13 +6177,11 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
-						state = 375
-						state = 376
-						state = 377
-						state = 378
-						state = 379
-						state = 380
-						state = 382
+						state = 483
+						state = 482
+						state = 480
+						state = 1083
+						state = 479
 					}
 					NOT = {
 						is_core_of = ROOT
@@ -6195,7 +6193,7 @@ focus_tree = {
 				add_claim_by = ROOT
 			}
 		}
-		will_lead_to_war_with = RGR
+		will_lead_to_war_with = RGD
 	}
 	
 	focus = {
