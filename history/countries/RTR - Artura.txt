@@ -37,8 +37,6 @@ if = {
 	add_to_tech_sharing_group = new_brittania_research
 }
 
-set_convoys = 80
-
 recruit_character = RTR_robert_haining
 recruit_character = RTR_reginald_p_duckman
 recruit_character = RTR_alistair_bruce
@@ -87,55 +85,3 @@ recruit_character = RTR_fascist_demagogue
 recruit_character = RTR_smooth_talking_charmer
 #recruit_character = RTR_war_industrialist
 
-
-create_country_leader = {
-	name = "Robert Haining"
-	desc = "POLITICS_ROBERT_HAINING_DESC"
-	picture = "Portrait_RTR_R_Haining.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Reginald P. Duckman"
-	desc = "POLITICS_REGINALD_P_DUCKMAN_DESC"
-	picture = "Portrait_RTR_R_P_Duckman.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alistair Bruce"
-	desc = "POLITICS_ALISTAIR_BRUCE_DESC"
-	picture = "Portrait_RTR_A_Bruce.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Edgar Houses"
-	desc = "POLITICS_EDGAR_HOUSES_DESC"
-	picture = "Portrait_RTR_E_Houses.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-
-create_corps_commander = {
-	name = "Andrew Wiggin"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
-	skill = 3
-}

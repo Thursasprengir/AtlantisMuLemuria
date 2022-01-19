@@ -31,7 +31,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 
 }
 set_popularities = {
@@ -63,50 +63,3 @@ recruit_character = MNU_franz_bohme
 recruit_character = MNU_wilhelm_zehner
 recruit_character = MNU_alexander_lohr
 recruit_character = MNU_ernst_kaltenbrunner
-
-create_country_leader = {
-	name = "Harald Neumann"
-	desc = "POLITICS_HARALD_NEUMANN_DESC"
-	picture = "Portrait_MNU_H_Neumann.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Marcus Größel"
-	desc = "POLITICS_M_Groessel_DESC"
-	picture = "Portrait_MNU_M_Groessel.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "August Ritter"
-	desc = "POLITICS_AUGUST_RITTER_DESC"
-	picture = "Portrait_MNU_A_Ritter.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = " Jörg Strauss"
-	desc = "POLITICS_JORG_STRAUSS_DESC"
-	picture = "Portrait_MNU_Jorg_Strauss.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-
-create_field_marshal = {
-	name = "Konrad Keller"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine offensive_doctrine }
-	skill = 3
-}
