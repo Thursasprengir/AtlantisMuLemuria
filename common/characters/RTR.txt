@@ -258,28 +258,6 @@ characters={
 			}
 		}
 	}
-	RTR_naval_theorist={
-		advisor={
-			slot = theorist
-			idea_token = RTR_naval_theorist
-			ledger  = navy 
-				allowed  = {
-					original_tag  = RTR
-				}
-				research_bonus  = {
-					naval_doctrine  = 0.100
-				}
-				traits  = {
-					naval_theorist 
-				}
-		}
-		name="RTR_naval_theorist"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_south_america_1"
-			}
-		}
-	}
 	RTR_air_theorist={
 		advisor={
 			slot = theorist
@@ -427,24 +405,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_south_america_1"
-			}
-		}
-	}
-	RTR_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = RTR_prince_of_terror
-			allowed  = {
-					original_tag  = RTR
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="RTR_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_south_america_3"
 			}
 		}
 	}

@@ -99,66 +99,6 @@ characters={
 			logistics_skill = 4
 		}
 	}
-	
-	ZER_silent_workhorse={
-		name = ZER_silent_workhorse
-		portraits ={
-			army ={
-				small="generic_political_advisor_africa_1"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ZER_silent_workhorse
-			allowed  = {original_tag  = ZER}
-			traits  = {silent_workhorse}
-			ai_will_do  = {factor  = 2.000}
-		}		
-	}
-	ZER_war_industrialist = {
-		name = ZER_war_industrialist
-		portraits = {army = {small = "generic_political_advisor_africa_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZER_war_industrialist
-			allowed  = {original_tag  = ZER}
-			traits  = {war_industrialist}
-			ai_will_do  = {factor  = 2.000}
-		}
-	}
-	ZER_backroom_backstabber = {
-		name = ZER_backroom_backstabber
-		portraits = {army = {small = "generic_political_advisor_africa_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZER_backroom_backstabber
-			allowed  = {original_tag  = ZER}
-			traits  = {backroom_backstabber}
-			ai_will_do  = {factor  = 2.000}
-		}
-	}
-	ZER_prince_of_terror = {
-		name = ZER_prince_of_terror
-		portraits = {army = {small = "generic_political_advisor_africa_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZER_prince_of_terror
-			allowed  = {original_tag  = ZER}
-			traits  = {prince_of_terror}
-			ai_will_do  = {factor  = 10.000}
-		}
-	}
-	ZER_armaments_organizer = {
-		name = ZER_armaments_organizer
-		portraits = {army = {small = "generic_political_advisor_africa_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZER_armaments_organizer
-			allowed  = {original_tag  = ZER}
-			traits  = {armaments_organizer}
-			ai_will_do  = {factor  = 2.000}
-		}
-	}
 	ZER_democratic_politician = {
 		name = ZER_democratic_politician
 		portraits = {army = {small = "generic_political_advisor_africa_1"}}
@@ -167,28 +107,6 @@ characters={
 			idea_token = ZER_democratic_politician
 			allowed  = {original_tag  = ZER}
 			traits  = {democratic_reformer}
-			ai_will_do  = {factor  = 1.000}
-		}
-	}
-	ZER_fascist_demagogue = {
-		name = ZER_fascist_demagogue
-		portraits = {army = {small = "generic_political_advisor_africa_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZER_fascist_demagogue
-			allowed  = {original_tag  = ZER}
-			traits  = {fascist_demagogue}
-			ai_will_do  = {factor  = 1.000}
-		}
-	}
-	ZER_communist_revolutionary = {
-		name = ZER_communist_revolutionary
-		portraits = {army = {small = "generic_political_advisor_africa_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZER_communist_revolutionary
-			allowed  = {original_tag  = ZER}
-			traits  = {communist_revolutionary}
 			ai_will_do  = {factor  = 1.000}
 		}
 	}
@@ -202,91 +120,6 @@ characters={
 			ledger = navy
 			allowed = {original_tag = ZER}
 			traits = {grand_fleet_proponent}
-		}
-	}
-	ZER_victory_through_airpower = {
-		name = ZER_victory_through_airpower
-		portraits = {army={small="GFX_idea_generic_air_africa_2"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = ZER_victory_through_airpower
-			ledger = air
-			allowed = {original_tag = ZER}			
-			traits = {victory_through_airpower}
-		}
-	}
-	ZER_rocket_scientist = {
-		name = ZER_rocket_scientist
-		portraits = {army={small="GFX_idea_generic_air_africa_1"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = ZER_rocket_scientist
-			ledger = air
-			allowed = {original_tag = ZER}	
-			research_bonus = {rocketry = 0.15}		
-			traits = {rocket_scientist}
-		}
-	}
-	ZER_naval_theorist = {
-		name = ZER_naval_theorist
-		portraits = {army={small="GFX_idea_generic_navy_africa_3"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = ZER_naval_theorist
-			ledger = navy
-			allowed = {original_tag = ZER}			
-			traits = {naval_theorist}
-		}
-	}
-	ZER_military_theorist = {
-		name = ZER_military_theorist
-		portraits = {army={small="GFX_idea_generic_army_africa_5"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = ZER_military_theorist
-			ledger = army
-			allowed = {original_tag = ZER}			
-			traits = {military_theorist}
-		}
-	}
-	ZER_army_chief_morale_2={
-		name=ZER_army_chief_morale_2
-		portraits={army={small="GFX_idea_generic_army_africa_2"}}
-		advisor={
-			slot = army_chief
-			idea_token = ZER_army_chief_morale_2
-			allowed = {original_tag = ZER}
-			traits = {army_chief_morale_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
-		}
-	}
-	ZER_army_chief_offensive_2={
-		name=ZER_army_chief_offensive_2
-		portraits={army={small="GFX_idea_generic_army_africa_4"}}
-		advisor={
-			slot = army_chief
-			idea_token = ZER_army_chief_offensive_2
-			allowed = {original_tag = ZER}
-			traits = {army_chief_offensive_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
-		}
-	}
-	ZER_army_chief_drill_2={
-		name=ZER_army_chief_drill_2
-		portraits={army={small="GFX_idea_generic_army_africa_3"}}
-		advisor={
-			slot = army_chief
-			idea_token = ZER_army_chief_drill_2
-			allowed = {original_tag = ZER}
-			traits = {army_chief_drill_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
 		}
 	}
 	ZER_army_chief_planning_2={
@@ -337,18 +170,6 @@ characters={
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	ZER_navy_naval_air_defense_2={
-		name=ZER_navy_naval_air_defense_2
-		portraits={army={small="GFX_idea_generic_navy_africa_3"}}
-		advisor={
-			slot = navy_chief
-			idea_token = ZER_navy_naval_air_defense_2
-			allowed = {original_tag = ZER}
-			traits = {navy_naval_air_defense_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
-		}
-	}
 	ZER_air_strategic_bombing_2={
 		name=ZER_air_strategic_bombing_2
 		portraits={army={small="GFX_idea_generic_air_africa_3"}}
@@ -386,19 +207,6 @@ characters={
 			ai_will_do = {factor = 2.000}
 		}
 	}	
-	ZER_navy_screen_2={
-		name=ZER_navy_screen_2
-		portraits={army={small="GFX_idea_generic_navy_africa_3"}}
-		advisor={
-			slot = high_command
-			idea_token = ZER_navy_screen_2
-			ledger = army
-			allowed = {original_tag = ZER}
-			traits = {navy_screen_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
-		}
-	}
 	ZER_army_regrouping_1={
 		name=ZER_army_regrouping_1
 		portraits={army={small="GFX_idea_generic_army_africa_1"}}

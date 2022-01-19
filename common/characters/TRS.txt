@@ -126,65 +126,8 @@ characters={
 	### THEORISTS ###
 
 	
-	TRS_silent_workhorse={
-		name = TRS_silent_workhorse
-		portraits ={
-			army ={
-				small="generic_political_advisor_asia_1"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_silent_workhorse
-			allowed  = {original_tag  = TRS}
-			traits  = {silent_workhorse}
-			ai_will_do  = {factor  = 2.000}
-		}		
-	}
-	TRS_war_industrialist = {
-		name = TRS_war_industrialist
-		portraits = {army = {small = "generic_political_advisor_asia_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRS_war_industrialist
-			allowed  = {original_tag  = TRS}
-			traits  = {war_industrialist}
-			ai_will_do  = {factor  = 2.000}
-		}
-	}
-	TRS_backroom_backstabber = {
-		name = TRS_backroom_backstabber
-		portraits = {army = {small = "generic_political_advisor_asia_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRS_backroom_backstabber
-			allowed  = {original_tag  = TRS}
-			traits  = {backroom_backstabber}
-			ai_will_do  = {factor  = 2.000}
-		}
-	}
-	TRS_prince_of_terror = {
-		name = TRS_prince_of_terror
-		portraits = {army = {small = "generic_political_advisor_asia_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRS_prince_of_terror
-			allowed  = {original_tag  = TRS}
-			traits  = {prince_of_terror}
-			ai_will_do  = {factor  = 10.000}
-		}
-	}
-	TRS_armaments_organizer = {
-		name = TRS_armaments_organizer
-		portraits = {army = {small = "generic_political_advisor_asia_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRS_armaments_organizer
-			allowed  = {original_tag  = TRS}
-			traits  = {armaments_organizer}
-			ai_will_do  = {factor  = 2.000}
-		}
-	}
+	
+	
 	TRS_democratic_politician = {
 		name = TRS_democratic_politician
 		portraits = {army = {small = "generic_political_advisor_asia_1"}}
@@ -194,125 +137,6 @@ characters={
 			allowed  = {original_tag  = TRS}
 			traits  = {democratic_reformer}
 			ai_will_do  = {factor  = 1.000}
-		}
-	}
-	TRS_fascist_demagogue = {
-		name = TRS_fascist_demagogue
-		portraits = {army = {small = "generic_political_advisor_asia_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRS_fascist_demagogue
-			allowed  = {original_tag  = TRS}
-			traits  = {fascist_demagogue}
-			ai_will_do  = {factor  = 1.000}
-		}
-	}
-	TRS_communist_revolutionary = {
-		name = TRS_communist_revolutionary
-		portraits = {army = {small = "generic_political_advisor_asia_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRS_communist_revolutionary
-			allowed  = {original_tag  = TRS}
-			traits  = {communist_revolutionary}
-			ai_will_do  = {factor  = 1.000}
-		}
-	}
-	TRS_grand_fleet_proponent={
-		name = TRS_grand_fleet_proponent
-		portraits={army={small="GFX_idea_asia_generic_navy_3"}}
-		advisor={
-			cost = 200
-			slot = theorist
-			idea_token = james_somerville
-			ledger = navy
-			allowed = {original_tag = TRS}
-			traits = {grand_fleet_proponent}
-		}
-	}
-	TRS_victory_through_airpower = {
-		name = TRS_victory_through_airpower
-		portraits = {army={small="GFX_idea_generic_air_asia_2"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = TRS_victory_through_airpower
-			ledger = air
-			allowed = {original_tag = TRS}			
-			traits = {victory_through_airpower}
-		}
-	}
-	TRS_rocket_scientist = {
-		name = TRS_rocket_scientist
-		portraits = {army={small="GFX_idea_generic_air_asia_1"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = TRS_rocket_scientist
-			ledger = air
-			allowed = {original_tag = TRS}	
-			research_bonus = {rocketry = 0.15}		
-			traits = {rocket_scientist}
-		}
-	}
-	TRS_naval_theorist = {
-		name = TRS_naval_theorist
-		portraits = {army={small="GFX_idea_generic_navy_asia_3"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = TRS_naval_theorist
-			ledger = navy
-			allowed = {original_tag = TRS}			
-			traits = {naval_theorist}
-		}
-	}
-	TRS_military_theorist = {
-		name = TRS_military_theorist
-		portraits = {army={small="GFX_idea_generic_army_asia_5"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = TRS_military_theorist
-			ledger = army
-			allowed = {original_tag = TRS}			
-			traits = {military_theorist}
-		}
-	}
-	TRS_army_chief_morale_2={
-		name=TRS_army_chief_morale_2
-		portraits={army={small="GFX_idea_generic_army_asia_2"}}
-		advisor={
-			slot = army_chief
-			idea_token = TRS_army_chief_morale_2
-			allowed = {original_tag = TRS}
-			traits = {army_chief_morale_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
-		}
-	}
-	TRS_army_chief_offensive_2={
-		name=TRS_army_chief_offensive_2
-		portraits={army={small="GFX_idea_generic_army_asia_4"}}
-		advisor={
-			slot = army_chief
-			idea_token = TRS_army_chief_offensive_2
-			allowed = {original_tag = TRS}
-			traits = {army_chief_offensive_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
-		}
-	}
-	TRS_army_chief_drill_2={
-		name=TRS_army_chief_drill_2
-		portraits={army={small="GFX_idea_generic_army_asia_3"}}
-		advisor={
-			slot = army_chief
-			idea_token = TRS_army_chief_drill_2
-			allowed = {original_tag = TRS}
-			traits = {army_chief_drill_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
 		}
 	}
 	TRS_army_chief_planning_2={
@@ -363,18 +187,6 @@ characters={
 			ai_will_do = {factor = 2.000}
 		}
 	}
-	TRS_navy_naval_air_defense_2={
-		name=TRS_navy_naval_air_defense_2
-		portraits={army={small="GFX_idea_generic_navy_asia_3"}}
-		advisor={
-			slot = navy_chief
-			idea_token = TRS_navy_naval_air_defense_2
-			allowed = {original_tag = TRS}
-			traits = {navy_naval_air_defense_2}
-			cost = 100
-			ai_will_do = {factor = 2.000}
-		}
-	}
 	TRS_air_strategic_bombing_2={
 		name=TRS_air_strategic_bombing_2
 		portraits={army={small="GFX_idea_generic_air_asia_3"}}
@@ -409,19 +221,6 @@ characters={
 			allowed = {original_tag = TRS}
 			traits = {air_strategic_bombing_1}
 			cost = 50
-			ai_will_do = {factor = 2.000}
-		}
-	}	
-	TRS_navy_screen_2={
-		name=TRS_navy_screen_2
-		portraits={army={small="GFX_idea_generic_navy_asia_3"}}
-		advisor={
-			slot = high_command
-			idea_token = TRS_navy_screen_2
-			ledger = army
-			allowed = {original_tag = TRS}
-			traits = {navy_screen_2}
-			cost = 100
 			ai_will_do = {factor = 2.000}
 		}
 	}
