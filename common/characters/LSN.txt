@@ -96,24 +96,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	LSN_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = LSN_prince_of_terror
-			allowed  = {
-					original_tag  = LSN
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="LSN_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_south_america_3"
-			}
-		}
-	}
 	LSN_maneuver_2={
 		advisor={
 			slot = navy_chief
@@ -154,28 +136,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_south_america_2"
-			}
-		}
-	}
-	LSN_naval_theorist={
-		advisor={
-			slot = theorist
-			idea_token = LSN_naval_theorist
-			ledger  = navy 
-				allowed  = {
-					original_tag  = LSN
-				}
-				research_bonus  = {
-					naval_doctrine  = 0.100
-				}
-				traits  = {
-					naval_theorist 
-				}
-		}
-		name="LSN_naval_theorist"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_south_america_1"
 			}
 		}
 	}

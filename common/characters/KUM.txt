@@ -142,17 +142,6 @@ characters={
 			ai_will_do  = {factor  = 2.000}
 		}
 	}
-	KUM_prince_of_terror = {
-		name = KUM_prince_of_terror
-		portraits = {army = {small = "generic_political_advisor_asia_1"}}
-		advisor = {
-			slot = political_advisor
-			idea_token = KUM_prince_of_terror
-			allowed  = {original_tag  = KUM}
-			traits  = {prince_of_terror}
-			ai_will_do  = {factor  = 10.000}
-		}
-	}
 	KUM_armaments_organizer = {
 		name = KUM_armaments_organizer
 		portraits = {army = {small = "generic_political_advisor_asia_1"}}
@@ -232,18 +221,6 @@ characters={
 			allowed = {original_tag = KUM}	
 			research_bonus = {rocketry = 0.15}		
 			traits = {rocket_scientist}
-		}
-	}
-	KUM_naval_theorist = {
-		name = KUM_naval_theorist
-		portraits = {army={small="GFX_idea_generic_navy_asia_3"}}
-		advisor = {
-			cost = 200
-			slot = theorist
-			idea_token = KUM_naval_theorist
-			ledger = navy
-			allowed = {original_tag = KUM}			
-			traits = {naval_theorist}
 		}
 	}
 	KUM_military_theorist = {
