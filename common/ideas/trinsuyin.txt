@@ -148,7 +148,7 @@ ideas = {
 				naval_speed_factor = 0.3
 			}
 		}
-		TRS_increase_hull_size_idea = 
+		TRS_increase_hull_size_idea = {
 			allowed = {always = no}
 			picture = usa_tank_destroyer_board
 			removal_cost = -1
@@ -156,14 +156,15 @@ ideas = {
 				repair_speed_factor = 0.3
 			}
 		}
-		TRS_national_naval_arsenal_idea = 
+		TRS_national_naval_arsenal_idea = {
 			allowed = {always = no}
 			picture = usa_tank_destroyer_board
 			removal_cost = -1
 			modifier = {
 				naval_damage_factor = 0.3
 			}
-		
+		}
+	}
 	political_advisor = {
 
 		TRS_chiang_ching_kuo = {
