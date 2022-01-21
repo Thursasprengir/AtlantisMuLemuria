@@ -1430,7 +1430,26 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		add_popularity = { ideology = democratic popularity = -0.10 }
+		add_political_power = 120
+			create_country_leader = {
+				name = "Emperor Neiwakxinguk"
+				desc = "POLITICS_NEIWAKXINGUK_DESC"
+				picture = "gfx/leaders/TRS/Portrait_TRS_neiwakxinguk.dds"
+				expire = "1965.1.1"
+				ideology = monarchy
+				traits = {
+					
+				}
+				id = -1
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 65
+			}
 
 		}
 	}
