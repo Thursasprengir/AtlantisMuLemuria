@@ -126,6 +126,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			set_popularities = {
+					democratic = 0
+					neutrality = 10
+					fascism = 5
+					communism = 85
+			}
 			#bans democracy, civil war if democratic support is too high
 		}
 	}
@@ -2294,15 +2300,17 @@ focus_tree = {
 		completion_reward = {
 
 			add_stability = -0.40
-			retire_character = HOU_mako_oriata
+			kill_country_leader = HOU_mako_oriata
+			create_country_leader = {
+					name = "Ikaro Unifamate"
+					desc = "POLITICS_IKARO_UNIFAMATE_DESC"
+					picture = "gfx/leaders/HOU/Portrait_HOU_Ikaro_Unifamate.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = { }
+				}	
 
-				promote_character = HOU_haifatu_manutea
-				promote_character = {
-					character = HOU_haifatu_manutea
-					Ideology = democratic
-				}
-
-			#Kill Pres Mako Oriata. Haifatu Manutea becomes president. Incr manpower. Huge stability decrease.
+			#Kill Pres Mako Oriata. Ikaro Unifamate becomes president. Incr manpower. Huge stability decrease.
 		}
 	}
 	focus = {
