@@ -1428,7 +1428,7 @@ theorist = {
 		designer = yes
 		
 		FMU_gnaf = {
-			picture = generic_air_manufacturer_3
+			picture = messerschmitt_south
 			allowed = {	original_tag = FMU}
 			research_bonus = {air_equipment = 0.14}
 			traits = { light_aircraft_manufacturer }
@@ -1440,13 +1440,13 @@ theorist = {
 			traits = {naval_aircraft_manufacturer}
 		}
 		FMU_heavy_aircraft_manufacturer = {
-			picture = generic_air_manufacturer_3
+			picture = wolkenberg
 			allowed = {original_tag = FMU}
 			research_bonus = {air_equipment = 0.15}
 			traits = {heavy_aircraft_manufacturer}
 		}
 		FMU_medium_aircraft_manufacturer = {
-			picture = generic_air_manufacturer_3
+			picture = geissner
 			allowed = {original_tag = FMU}
 			research_bonus = {air_equipment = 0.15}
 			traits = {medium_aircraft_manufacturer}
@@ -1458,25 +1458,25 @@ theorist = {
 		designer = yes
 		
 		FMU_royal_hellenic_naval_shipyard = {
-			picture = generic_naval_manufacturer_1
+			picture = niebelunge
 			allowed = {	original_tag = FMU	}
 			research_bonus = {naval_equipment = 0.10}
 			traits = { naval_manufacturer }
 		}
 		FMU_pacific_fleet_naval_manufacturer = {
-			picture = generic_naval_manufacturer_1
+			picture = schwarzewelle
 			allowed = {original_tag = FMU}
 			research_bonus = {naval_equipment = 0.15}
 			traits = {pacific_fleet_naval_manufacturer}
 		}
 		FMU_battlefleet_designer = {
-			picture = generic_naval_manufacturer_1
+			picture = KF
 			allowed = {original_tag = FMU}
 			research_bonus = {naval_equipment = 0.15}
 			traits = {battlefleet_designer}
 		}
 		FMU_private_shipyards = {
-			picture = generic_naval_manufacturer_1
+			picture = ziegelhafen
 			allowed = {	original_tag = FMU	}
 			research_bonus = {	naval_equipment = 0.15	}
 			traits = { naval_manufacturer }
@@ -1485,7 +1485,7 @@ theorist = {
 	}
 	tank_manufacturer = {
 		FMU_heavy_tank_manufacturer = {
-			picture = generic_political_advisor_europe_1
+			picture = bdpf
 			allowed = {original_tag = FMU}
 			research_bonus = {armor = 0.15}
 			traits = {heavy_tank_manufacturer}
@@ -1506,6 +1506,7 @@ theorist = {
 			picture = Triangle_Lion
 			allowed = {original_tag = FMU}
 			research_bonus = {armor = 0.15}
+			traits = { tank_manufacturer }
 			equipment_bonus = {
 				medium_tank_equipment = {
 					build_cost_ic = -0.1
@@ -1531,7 +1532,7 @@ theorist = {
 			traits = {artillery_manufacturer}
 		}
 		FMU_motorized_manufacturer = {
-			picture = generic_air_europe_1
+			picture = silber
 			allowed = {original_tag = FMU}
 			research_bonus = {motorized_equipment = 0.15}
 			traits = {motorized_equipment_manufacturer}
