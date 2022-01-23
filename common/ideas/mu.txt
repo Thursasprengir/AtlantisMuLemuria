@@ -1148,7 +1148,7 @@ ideas = {
 		#designer = yes
 	
 		murumuq_nasajjin = {
-			picture = generic_industrial_concern_1
+			picture = mu_mobile_tank
 			
 			
 			allowed = {
@@ -1167,7 +1167,7 @@ ideas = {
 		}
 		
 		yollohtli_tamu = {
-			picture = generic_industrial_concern_1
+			picture = yollo
 			
 			
 			allowed = {
@@ -1187,7 +1187,7 @@ ideas = {
 		}
 		qashimshi_tamu = {
 			
-			picture = generic_industrial_concern_1
+			picture = qt
 			allowed = {
 				original_tag = MUU
 			}
@@ -1199,7 +1199,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { }
+			traits = { tank_manufacturer }
 			
 			equipment_bonus = {
 				medium_tank_equipment = {
@@ -1217,7 +1217,7 @@ ideas = {
 		
 		qashimshitara_mu_tamu = {
 			
-			picture = generic_industrial_concern_1
+			picture = qmt
 			allowed = {
 				original_tag = MUU
 			}
@@ -1260,7 +1260,7 @@ ideas = {
 		designer = yes
 		
 		muror_national_yards = {
-			
+			picture = mu_nat_yards
 			
 			allowed = {
 				original_tag = MUU
@@ -1280,7 +1280,7 @@ ideas = {
 		
 		orqiq_otumatiq_ijrri = {
 			
-			picture = generic_naval_manufacturer_1
+			picture = ooi
 
 			
 			allowed = {
@@ -1293,44 +1293,6 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 		}
-		
-		droade_maude = {
-			
-			
-			allowed = {
-				original_tag = MUU
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		qaisur_naumenden = {
-			
-			
-			allowed = {
-				original_tag = MUU
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { pacific_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
 	}
 	
 	aircraft_manufacturer = { 
@@ -1339,7 +1301,7 @@ ideas = {
 		
 		tebred_saba_ijrri = {
 			
-			picture = generic_air_manufacturer_2
+			picture = tebred
 
 			
 			allowed = {
@@ -1361,32 +1323,9 @@ ideas = {
 			}
 		}
 		
-		suubits_sabajiriq = {
-			
-			picture = generic_air_manufacturer_1
-
-			
-			allowed = {
-				original_tag = MUU
-			}
-			
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# assembled license aircrafts from across the world 
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
 		qasbaijju_sabajiriq = {
 			
+			picture = muu_cas
 			
 			allowed = {
 				original_tag = MUU
@@ -1407,6 +1346,7 @@ ideas = {
 		
 		dzaisaindier = {
 			
+			picture = dzai
 			
 			allowed = {
 				original_tag = MUU
@@ -1419,24 +1359,6 @@ ideas = {
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
-		progrusaz_sabajiriq = {
-			
-			
-			allowed = {
-				original_tag = MUU
-			}
-			
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { naval_aircraft_manufacturer }
 			
 			modifier = {
 			}
@@ -1514,6 +1436,7 @@ ideas = {
 	industrial_concern = {
 					
 		muror_national_oil = {
+			picture = mno
 			
 			
 			allowed = {
@@ -1534,6 +1457,7 @@ ideas = {
 		}
 		
 		eliqtriq_mejjine_tsirarr = {
+			picture = EMT
 			
 			
 			allowed = {
@@ -1553,7 +1477,7 @@ ideas = {
 		}
 		qusulli_arbeit_mejjine = {
 			
-			picture = usa_general_motors
+			picture = qam
 			allowed = {
 				original_tag = MUU
 			}
