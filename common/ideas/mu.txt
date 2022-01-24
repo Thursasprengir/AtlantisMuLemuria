@@ -1272,7 +1272,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { coastal_defence_naval_manufacturer }
+			traits = { naval_manufacturer }
 			
 			modifier = {
 			}
@@ -1309,10 +1309,10 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.05
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { light_aircraft_manufacturer medium_aircraft_manufacturer }
 			
 			equipment_bonus = {
 				# trainers, and air ambulances?
@@ -1334,10 +1334,10 @@ ideas = {
 
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.05
 			}
 			
-			traits = { CAS_manufacturer }
+			traits = { CAS_manufacturer naval_aircraft_manufacturer}
 			
 			modifier = {
 			}
@@ -1372,7 +1372,7 @@ ideas = {
 		
 		quudjer_tsirarr = {
 			
-			picture = generic_infantry_equipment_manufacturer_3
+			picture = mu_infantry
 
 			
 			allowed = {
@@ -1392,7 +1392,7 @@ ideas = {
 		
 		heruq_tsirarr = {
 			
-			
+			picture = heruq
 			allowed = {
 				original_tag = MUU
 			}
@@ -1412,7 +1412,7 @@ ideas = {
 	
 		
 		iqurdun_detsamilli = {
-			
+			picture = mu_artillery
 			
 			allowed = {
 				original_tag = MUU
