@@ -201,7 +201,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = FMU_mass_blob_technique 
+			
 			SCH = { country_event = fmu.12 }
 			VGI = { country_event = fmu.20 }
 			#event chain to try to annex other Muan German nations
@@ -237,7 +237,6 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = FMU_mass_axis_invite
 			NYB = { country_event = generic.5 }
 			SCH = { country_event = generic.5 }
 			VGI = { country_event = generic.5 }
@@ -2285,6 +2284,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_political_power = 120
 			#Decrease generate war tension
 		}
 	}
@@ -3697,7 +3697,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			can_send_volunteers = yes
+			set_rule = {
+				can_send_volunteers = yes
+				}
 		}
 	}
 
@@ -5287,9 +5289,18 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		#available = {
-		#date < 1936.4.3
-		#}
+		available = {
+			913 = {
+				limit = {
+				is_controlled_by = FMU
+				}
+			}
+			912 = {
+				limit = {
+					is_controlled_by = FMU
+				}
+			}
+		}
 
 		bypass = {
 		}
