@@ -14,6 +14,7 @@ ideas = {
 				operative_slot = 1
 			}
 		}
+		
 		ATL_trading_empire = {
 			allowed = {
 				always = no
@@ -22,13 +23,16 @@ ideas = {
 			removal_cost = -1
 
 			picture = trading_empire
-
+			
 			modifier = {
-				operative_slot = 2
-				trade_opinion_factor = 0.7
-				convoy_escort_efficiency = 0.25
-			}
+				trade_opinion_factor = 0.4
+				convoy_escort_efficiency = 0.20
+				civilian_intel_to_others = 10.0
+				navy_intel_to_others = 5.0
+				trade_laws_cost_factor = -0.10
+			}		
 		}
+		
 		ATL_trading_empire_2 = {
 			allowed = {
 				always = no
@@ -39,12 +43,15 @@ ideas = {
 			picture = trading_empire
 
 			modifier = {
-				operative_slot = 2
-				trade_opinion_factor = 0.7
-				convoy_escort_efficiency = 0.25
+				trade_opinion_factor = 0.5
+				convoy_escort_efficiency = 0.30
+				civilian_intel_to_others = 15.0
+				navy_intel_to_others = 10.0
+				trade_laws_cost_factor = -0.15
 				consumer_goods_factor = -0.05 
 			}
 		}
+		
 		ATL_trading_empire_3 = {
 			allowed = {
 				always = no
@@ -55,13 +62,16 @@ ideas = {
 			picture = trading_empire
 
 			modifier = {
-				operative_slot = 2
-				trade_opinion_factor = 1
-				convoy_escort_efficiency = 0.25
+				trade_opinion_factor = 0.5
+				convoy_escort_efficiency = 0.35
+				civilian_intel_to_others = 15.0
+				navy_intel_to_others = 10.0
+				trade_laws_cost_factor = -0.15
 				consumer_goods_factor = -0.05 
 				license_purchase_cost = -0.5 
 			}
 		}
+		
 		ATL_naval_power = {
 			allowed = {
 				always = no
@@ -72,11 +82,18 @@ ideas = {
 			picture = naval_tradition
 
 			modifier = {
-				naval_coordination = 0.01
-				naval_speed_factor = 0.05
-				navy_max_range_factor = 0.15 
+				naval_doctrine_cost_factor = -0.05
+				naval_coordination = 0.05
+				positioning = 0.05 
+			}
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
 			}
 		}
+		
 		ATL_useless_air_force = {
 			allowed = {
 				always = no
@@ -97,6 +114,7 @@ ideas = {
 				air_accidents_factor = 0.4 
 			}
 		}
+
 		ATL_useless_air_force_2 = {
 			allowed = {
 				always = no

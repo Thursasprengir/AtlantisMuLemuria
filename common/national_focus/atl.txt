@@ -43,7 +43,7 @@ focus = {
 	}
 focus = {
 		id = ATL_gostudi
-		icon = GFX_blue_flame
+		icon = GFX_aml_goal_ATL_gostudi
 		mutually_exclusive = {focus = ATL_deimila}
 		prerequisite = {focus = ATL_main}
 		
@@ -67,7 +67,7 @@ focus = {
 	}
 focus = {
 		id = ATL_deimila
-		icon = GFX_deimila_eye
+		icon = GFX_aml_goal_ATL_deimila
 		mutually_exclusive = {focus = ATL_gostudi}
 		prerequisite = {focus = ATL_main}
 		
@@ -89,7 +89,7 @@ focus = {
 	}
 focus = {
 		id = ATL_crime
-		icon = GFX_cuffs_truncheon
+		icon = GFX_goal_generic_arrests
 		prerequisite = {focus = ATL_deimila focus = ATL_gostudi}
 		
 		x = 8
@@ -111,7 +111,7 @@ focus = {
 	}
 focus = {
 		id = ATL_attack_itorkanak
-		icon = GFX_crush_itorkanak
+		icon = GFX_aml_goal_ATL_crush_itorkanak
 		prerequisite = {focus = ATL_crime}
 		mutually_exclusive = {focus = ATL_attack_kaprastiak}
 		
@@ -134,7 +134,7 @@ focus = {
 	}
 focus = {
 		id = ATL_attack_kaprastiak
-		icon = GFX_crush_kaprastiak
+		icon = GFX_aml_goal_ATL_crush_kaprastiak
 		prerequisite = {focus = ATL_crime}
 		mutually_exclusive = {focus = ATL_attack_itorkanak}
 		
@@ -2167,7 +2167,7 @@ focus = {
 	}
 focus = {
 		id = ATL_nav_bombers
-		icon = GFX_naval_bomber
+		icon = GFX_goal_generic_air_naval_bomber_new
 		prerequisite = {focus = ATL_fighters}
 		
 		x = 19
@@ -2600,15 +2600,20 @@ focus = {
 	
 focus = {
 		id = ATL_africa_main
-		icon = GFX_goal_continuous_increase_nu
+		icon = GFX_goal_generic_national_unity
 		prerequisite = {}
 		
 		x = 30
 		y = 0
-		cost = 10
+		cost = 7
 
 		ai_will_do = {factor = 2}
-		available = {}
+		available = {
+			has_full_control_of_state = 966
+			AND = {
+				has_full_control_of_state = 967
+			}
+		}
 		bypass = {}
 
 		cancel_if_invalid = yes
@@ -2616,8 +2621,22 @@ focus = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_political_power = 30
+			add_political_power = 100
+			add_stability = 0.05
+			966 =
+				add_state_modifier = {
+					modifier = {
+						local_non_core_manpower = 0.1
+					}
+				}
+			967 =
+				add_state_modifier = {
+					modifier = {
+						local_non_core_manpower = 0.1
+					}
+			}	
 		}
+		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 focus = {
 		id = ATL_african_ports
@@ -2629,7 +2648,12 @@ focus = {
 		cost = 10
 
 		ai_will_do = {factor = 2}
-		available = {}
+		available = {
+			has_full_control_of_state = 966
+			AND = {
+				has_full_control_of_state = 967
+			}
+		}
 		bypass = {}
 
 		cancel_if_invalid = yes
@@ -2671,7 +2695,12 @@ focus = {
 		cost = 10
 
 		ai_will_do = {factor = 2}
-		available = {}
+		available = {
+			has_full_control_of_state = 966
+			AND = {
+				has_full_control_of_state = 967
+			}
+		}
 		bypass = {}
 
 		cancel_if_invalid = yes
@@ -2693,7 +2722,12 @@ focus = {
 		cost = 10
 
 		ai_will_do = {factor = 2}
-		available = {}
+		available = {
+			has_full_control_of_state = 966
+			AND = {
+				has_full_control_of_state = 967
+			}
+		}
 		bypass = {}
 
 		cancel_if_invalid = yes
@@ -2715,7 +2749,12 @@ focus = {
 		cost = 10
 
 		ai_will_do = {factor = 2}
-		available = {}
+		available = {
+			has_full_control_of_state = 966
+			AND = {
+				has_full_control_of_state = 967
+			}
+		}
 		bypass = {}
 
 		cancel_if_invalid = yes
@@ -2737,7 +2776,12 @@ focus = {
 		cost = 10
 
 		ai_will_do = {factor = 2}
-		available = {}
+		available = {
+			has_full_control_of_state = 966
+			AND = {
+				has_full_control_of_state = 967
+			}
+		}
 		bypass = {}
 
 		cancel_if_invalid = yes
@@ -2757,7 +2801,7 @@ focus = {
 	}
 focus = {
 		id = ATL_african_airfields
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_goal_generic_airport
 		prerequisite = {focus = ATL_african_forts}
 		
 		x = 31
@@ -2765,7 +2809,12 @@ focus = {
 		cost = 10
 
 		ai_will_do = {factor = 2}
-		available = {}
+		available = {
+			has_full_control_of_state = 966
+			AND = {
+				has_full_control_of_state = 967
+			}
+		}
 		bypass = {}
 
 		cancel_if_invalid = yes
