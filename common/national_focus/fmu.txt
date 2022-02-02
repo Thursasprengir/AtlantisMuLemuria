@@ -333,7 +333,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_war_support = .1 war support
+			add_war_support = 0.1 #war support
 			#bonus mobilization speed
 		}
 	}
@@ -742,10 +742,9 @@ focus = {
 				ruling_party = fascism
 				ideology = democratic
 				size = 0.8
-				only_own_territory = no
+				#only_own_territory = no
 				capital = 
-				states = { 
-				
+				states = {
 				}
 				keep_political_leader = yes
 				keep_political_party_members = yes
@@ -781,8 +780,14 @@ focus = {
 			factor = 40
 		}
 		available = {
-			#NZL exists and has more than 300 convoys
-		}
+				NZL = {
+					country_exists = NZL
+					has_war_with = FMU
+					has_equipment = {
+						convoy > 299
+					}
+				}
+			}
 
 		#bypass = {
 		#date > 1936.4.3
@@ -793,13 +798,23 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+				add_equipment_to_stockpile = {
+				type = convoy
+				amount = 300	
+			}
+			NZL = {
+				add_equipment_to_stockpile = {
+				type = convoy
+				amount = -300
+				} 
+			}			
 			#remove 300 convoys from NZL and give to FMU
 			every_country = {
 				has_war_with = FMU
 					add_opinion_modifier = {
 					target = ROOT
 					modifier = FMU_modern_pirates
-					}
+				}
 			}
 			#"Modern Day Piracy" relations modifier with all enemy nations
 		}

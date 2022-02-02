@@ -170,15 +170,16 @@ characters={
 		}
 	}
 	GOP_dzam_jumrir={
+		allowed_civil_war = {
+			has_government = communism 
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = GOP_dzam_jumrir
-			allowed  = {
+			allowed = {
 					original_tag  = GOP
 				}
-				allowed_civil_war  = {
-					has_government  = communism 
-				}
+				
 				available  = {
 				}
 				traits  = {
@@ -678,14 +679,14 @@ characters={
 		}
 	}
 	GOP_qunlunuq_irimudzu={
+		allowed_civil_war = {
+			has_government  = communism 
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = GOP_qunlunuq_irimudzu
 			allowed  = {
 					original_tag  = GOP
-				}
-				allowed_civil_war  = {
-					has_government  = communism 
 				}
 				available  = {
 				}
@@ -943,16 +944,16 @@ characters={
 		}
 	}
 	GOP_dulutli_amerziad={
+		allowed_civil_war = {
+			not  = {
+				has_government  = communism 
+			}
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = GOP_dulutli_amerziad
 			allowed  = {
 					original_tag  = GOP
-				}
-				allowed_civil_war  = {
-					not  = {
-						has_government  = communism 
-					}
 				}
 				available  = {
 				}
@@ -1040,14 +1041,15 @@ characters={
 		}
 	}
 	GOP_ahyumui_nendamru={
+		allowed_civil_war = {
+			has_government = communism 
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = GOP_ahyumui_nendamru
+
 			allowed  = {
 					original_tag  = GOP
-				}
-				allowed_civil_war  = {
-					has_government  = communism 
 				}
 				available  = {
 				}

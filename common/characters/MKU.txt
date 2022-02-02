@@ -355,22 +355,22 @@ characters={
 		}
 	}
 	MKU_liqorin_ertusul={
+		allowed_civil_war = {
+			not  = {
+				has_government  = communism 
+			}
+			not  = {
+				has_government  = democratic 
+			}
+			not  = {
+				has_government  = fascism 
+			}
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = liqorin_ertusul
 			allowed  = {
 					original_tag  = MKU
-				}
-				allowed_civil_war  = {
-					not  = {
-						has_government  = communism 
-					}
-					not  = {
-						has_government  = democratic 
-					}
-					not  = {
-						has_government  = fascism 
-					}
 				}
 				available  = {
 				}
@@ -670,16 +670,16 @@ characters={
 		}
 	}
 	MKU_lanshatri_narbaha={
+		allowed_civil_war  = {
+			not = {
+				has_government  = communism 
+				}
+			}	
 		advisor={
 			slot = political_advisor
 			idea_token = lanshatri_narbaha
 			allowed  = {
 					original_tag  = MKU
-				}
-				allowed_civil_war  = {
-					not  = {
-						has_government  = communism 
-					}
 				}
 				available  = {
 				}
@@ -955,14 +955,14 @@ characters={
 		}
 	}
 	MKU_predigar_tatamize={
+		allowed_civil_war = {
+			has_government = communism 
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = predigar_tatamize
 			allowed  = {
 					original_tag  = MKU
-				}
-				allowed_civil_war  = {
-					has_government  = communism 
 				}
 				available  = {
 				}
@@ -983,22 +983,22 @@ characters={
 		}
 	}
 	MKU_atahiman_nayanendra={
+		allowed_civil_war  = {
+			not  = {
+				has_government  = communism 
+			}
+			not  = {
+				has_government  = democratic 
+			}
+			not  = {
+				has_government  = fascism 
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = atahiman_nayanendra
 			allowed  = {
 					original_tag  = MKU
-				}
-				allowed_civil_war  = {
-					not  = {
-						has_government  = communism 
-					}
-					not  = {
-						has_government  = democratic 
-					}
-					not  = {
-						has_government  = fascism 
-					}
 				}
 				available  = {
 				}

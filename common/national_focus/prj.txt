@@ -65,12 +65,12 @@ focus_tree = {
 	focus = {
 		id = PRJ_abandon_ethiopia
 		icon = GFX_goal_generic_cavalry
-
 		#prerequisite = { focus = }
-		mutually_exclusive = { focus = PRJ_save_ethiopia  }
+		mutually_exclusive = { 
+			focus = PRJ_save_ethiopia 
+		}
 		x = 20
 		y = 0
-		relative_position_id =
 
 		cost = 10
 
@@ -104,10 +104,11 @@ focus_tree = {
 		icon = GFX_r56_goal_generic_centralize_power
 
 		#prerequisite = { focus = }
-		mutually_exclusive = { focus = PRJ_abandon_ethiopia }
+		mutually_exclusive = { 
+			focus = PRJ_abandon_ethiopia 
+		}
 		x = 22
 		y = 0
-		relative_position_id =
 
 		cost = 10
 

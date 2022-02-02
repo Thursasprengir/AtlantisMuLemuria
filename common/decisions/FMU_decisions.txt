@@ -399,7 +399,7 @@ FMU_pay_back_debt_to_the_ifc_category = {
 		remove_effect = {
 			remove_ideas = FMU_paying_off_debt_small
 			FROM = { add_political_power = 25 }
-			FMU_small_payment_to_british_debt_effect = yes
+			GRE_small_payment_to_british_debt_effect = yes
 		}
 	}
 	FMU_small_installment_payment_FRA = {
@@ -482,7 +482,7 @@ FMU_pay_back_debt_to_the_ifc_category = {
 		remove_effect = {
 			remove_ideas = FMU_paying_off_debt_small
 			FROM = { add_political_power = 25 }
-			FMU_small_payment_to_french_debt_effect = yes
+			GRE_small_payment_to_french_debt_effect = yes
 		}
 	}
 	FMU_small_installment_payment_ITA = {
@@ -562,7 +562,7 @@ FMU_pay_back_debt_to_the_ifc_category = {
 		remove_effect = {
 			remove_ideas = FMU_paying_off_debt_small
 			FROM = { add_political_power = 25 }
-			FMU_small_payment_to_italians_debt_effect = yes
+			GRE_small_payment_to_italians_debt_effect = yes
 		}
 	}
 	
@@ -623,7 +623,7 @@ FMU_pay_back_debt_to_the_ifc_category = {
 		}
 
 		complete_effect = {
-			FMU_debt_restructuring_effect = yes
+			GRE_debt_restructuring_effect = yes
 		}
 	}
 
@@ -701,7 +701,7 @@ FMU_pay_back_debt_to_the_ifc_category = {
 		}
 
 		complete_effect = {
-			FMU_default_on_debt_effect = yes
+			GRE_default_on_debt_effect = yes
 		}
 	}			
 }

@@ -2287,8 +2287,8 @@ HOU_investment_decisions_category = {
 #####################
 ##Gold Supply Evacuatoin
 #######################
-HOU_gold_evacuation = { 
-	HOU_invite_politicians_for_investment_talks_in_capital = { #GERMANY
+HOU_gold_evacuation_category = { 
+	HOU_gold_evacuation = { #GERMANY
 
 		icon = generic_factory
 
@@ -2337,8 +2337,11 @@ HOU_gold_evacuation = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = HOU_gold_supply = -10 }
+			add_to_variable = { 
+			var = { 
+				HOU_gold_supply = -10 
+				}
+			}
 		}
-	}
-	
+	}	
 }

@@ -1,3 +1,11 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
 focus_tree = {
 	id = atl_focus
 
@@ -2605,7 +2613,7 @@ focus = {
 		
 		x = 30
 		y = 0
-		cost = 7
+		cost = 5
 
 		ai_will_do = {factor = 2}
 		available = {
@@ -2623,20 +2631,9 @@ focus = {
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.05
-			966 =
-				add_state_modifier = {
-					modifier = {
-						local_non_core_manpower = 0.1
-					}
-				}
-			967 =
-				add_state_modifier = {
-					modifier = {
-						local_non_core_manpower = 0.1
-					}
-			}	
+			add_manpower = 2000
 		}
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
 	}
 focus = {
 		id = ATL_african_ports

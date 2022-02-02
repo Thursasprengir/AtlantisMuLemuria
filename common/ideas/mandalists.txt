@@ -15,6 +15,7 @@ ideas = {
 				army_core_defence_factor = 0.25
 			}
 		}
+		
 		MAN_defeatism = {
 			allowed = {
 				always = no
@@ -22,9 +23,10 @@ ideas = {
 			removal_cost = -1
 			picture = generic_army_problems
 			modifier = {
-				surrender_limit = -0.1 
+				surrender_limit = -0.10
 			}
 		}
+		
 		MAN_nonaligned_idea = {
 			allowed = {
 				always = no
@@ -35,6 +37,7 @@ ideas = {
 				neutrality_drift = 0.02
 			}
 		}
+		
 		MAN_democratic_idea = {
 			allowed = {
 				always = no
@@ -45,6 +48,7 @@ ideas = {
 				democratic_drift = 0.05
 			}
 		}
+		
 		MAN_mandalist_guerrillas_debuff = {
 			allowed = {
 				always = no
@@ -55,6 +59,7 @@ ideas = {
 				stability_factor = -0.05
 			}	
 		}
+		
 		MAN_mandalist_guerrillas_debuff_1 = {
 			allowed = {
 				always = no
@@ -65,6 +70,7 @@ ideas = {
 				stability_factor = -0.09
 			}
 		}
+		
 		MAN_mandalist_guerrillas_debuff_2 = {
 			allowed = {
 				always = no
@@ -72,9 +78,10 @@ ideas = {
 			removal_cost = -1
 			picture = naval_tradition
 			modifier = {
-				stability_factor = -0.2
+				stability_factor = -0.20
 			}
 		}
+		
 		MAN_mandalist_guerrillas_debuff_3 = {
 			allowed = {
 				always = no
@@ -85,9 +92,13 @@ ideas = {
 				stability_factor = -0.35
 			}
 		}
+		
 		MAN_angry_mandalists = {
-			surrender_limit = -0.1
-			stability_factor = -0.15
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.10
+				stability_factor = -0.15
+			}
 		}
 	}
 }

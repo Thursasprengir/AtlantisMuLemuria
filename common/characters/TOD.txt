@@ -733,14 +733,14 @@ characters={
 		}
 	}
 	TOD_queso_diego={
+		allowed_civil_war = {
+			has_government  = communism 
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = queso_diego
 			allowed  = {
 					original_tag  = TOD
-				}
-				allowed_civil_war  = {
-					has_government  = communism 
 				}
 				available  = {
 				}
@@ -919,14 +919,14 @@ characters={
 		}
 	}
 	TOD_go_diego={
+		allowed_civil_war = {
+			has_government = communism 
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = go_diego
 			allowed  = {
 					original_tag  = TOD
-				}
-				allowed_civil_war  = {
-					has_government  = communism 
 				}
 				available  = {
 				}
@@ -1100,16 +1100,16 @@ characters={
 		}
 	}
 	TOD_manzana_diego={
+		allowed_civil_war  = {
+			not  = {
+				has_government  = communism 
+			}
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = manzana_diego
 			allowed  = {
 					original_tag  = TOD
-				}
-				allowed_civil_war  = {
-					not  = {
-						has_government  = communism 
-					}
 				}
 				available  = {
 				}
@@ -1385,14 +1385,14 @@ characters={
 		}
 	}
 	TOD_digo_digo={
+		allowed_civil_war = {
+			has_government = communism 
+		}	
 		advisor={
 			slot = political_advisor
 			idea_token = digo_digo
 			allowed  = {
 					original_tag  = TOD
-				}
-				allowed_civil_war  = {
-					has_government  = communism 
 				}
 				available  = {
 				}

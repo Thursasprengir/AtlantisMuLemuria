@@ -2,6 +2,7 @@ ideas = {
 
 
 	country = {
+	
 		FMU_unfair_sufferage = {
 			allowed = {always = no}
 			allowed_civil_war = {always = yes}
@@ -1062,7 +1063,7 @@ ideas = {
 				production_speed_bunker_factor = 0.1 
 			}
 		}
-		FMU_unternehmen_sternenmacher_idea = 
+		FMU_unternehmen_sternenmacher_idea = {
 			allowed = {always = no}
 			removal_cost = -1
 			picture = usa_tank_destroyer_board
@@ -1070,6 +1071,7 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
+		
 	#New Military Ideas
 		FMU_shipping_lane_bonus = {
 			allowed = {
@@ -1098,16 +1100,15 @@ ideas = {
 			}
 
 		}
-	political_advisor = {
+	}
+	
+		political_advisor = {
 		FMU_thanikas_bousinissi = {
-			
 			
 			allowed = {
 				original_tag = "FMU"
 			}
-			
 
-			
 			traits = { communist_revolutionary }
 	
 			on_add = {
@@ -1123,7 +1124,7 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 			}
-		}	
+		}
 			
 		FMU_anakistas_gobriski = {
 			
@@ -1158,7 +1159,6 @@ ideas = {
 				original_tag = "FMU"
 			}
 			
-
 			
 			traits = { fascist_demagogue }
 	
@@ -1177,73 +1177,74 @@ ideas = {
 			}
 		}
 
-#NAMES CHANGED UP TO THIS POINT
-	FMU_damaskinos = {
+	#NAMES CHANGED UP TO THIS POINT
+		FMU_damaskinos = {
 
-		picture = generic_political_advisor_europe_5
-		
-		allowed = {
-			original_tag = FMU
-		}
-		
-		traits = { compassionate_gentleman }
-	}
-
-	FMU_georgios_papandreou = {
-
-		picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_5
 			
-		allowed = {
-			original_tag = FMU
+			allowed = {
+				original_tag = FMU
+			}
+			
+			traits = { compassionate_gentleman }
 		}
-		
-		traits = { silent_workhorse }
-	}
 
-	FMU_evripidis_bakirtris = {
+		FMU_georgios_papandreou = {
 
-		picture = generic_political_advisor_europe_3
-		
-		allowed = {
-			original_tag = FMU
-		}
-		
-		traits = { war_industrialist }
-	}
-}
-
-theorist = {
-
-	FMU_nikolaos_plastiras = {
+			picture = generic_political_advisor_europe_2
 				
-		picture = generic_army_europe_3
-		ledger = army
-		allowed = {
-			original_tag = FMU
+			allowed = {
+				original_tag = FMU
+			}
+			
+			traits = { silent_workhorse }
 		}
-		
-		research_bonus = {
-			land_doctrine = 0.07
+
+		FMU_evripidis_bakirtris = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = FMU
+			}
+			
+			traits = { war_industrialist }
 		}
-		
-		traits = { military_theorist }
 	}
 
-	FMU_eleftherios_venizelos = {
-				
-		picture = generic_political_advisor_europe_1
-			ledger = air
-		allowed = {
-			original_tag = FMU
+	theorist = {
+
+		FMU_nikolaos_plastiras = {
+					
+			picture = generic_army_europe_3
+				ledger = army
+			allowed = {
+				original_tag = FMU
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
 		}
-		
-		research_bonus = {
-			air_doctrine = 0.07
+
+		FMU_eleftherios_venizelos = {
+					
+			picture = generic_political_advisor_europe_1
+				ledger = air
+			allowed = {
+				original_tag = FMU
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
 		}
-		
-		traits = { air_warfare_theorist }
 	}
-}
+	
 	# MILITARY
 	army_chief = {
 		
@@ -1293,8 +1294,6 @@ theorist = {
 				original_tag = FMU
 			}
 			
-
-			
 			traits = { air_chief_reform_2 }
 			
 			ai_will_do = {
@@ -1309,9 +1308,7 @@ theorist = {
 			allowed = {
 				original_tag = FMU
 			}
-			
 
-			
 			traits = { air_chief_safety_2 }
 			
 			ai_will_do = {
@@ -1330,9 +1327,7 @@ theorist = {
 			allowed = {
 				original_tag = FMU
 			}
-			
-
-			
+		
 			traits = { navy_chief_commerce_raiding_2 }
 			
 			ai_will_do = {
@@ -1347,9 +1342,7 @@ theorist = {
 			allowed = {
 				original_tag = FMU
 			}
-			
 
-			
 			traits = { navy_chief_maneuver_2 }
 			
 			ai_will_do = {
@@ -1423,7 +1416,8 @@ theorist = {
 			}
 		}
 	}
-	aircraft_manufacturer = { 
+	
+	aircraft_manufacturer = {
 			
 		designer = yes
 		
@@ -1483,7 +1477,9 @@ theorist = {
 		}
 		
 	}
+	
 	tank_manufacturer = {
+	
 		FMU_heavy_tank_manufacturer = {
 			picture = bdpf
 			allowed = {original_tag = FMU}
@@ -1516,7 +1512,8 @@ theorist = {
 				}
 			}
 		}		
-	}	
+	}
+	
 	materiel_manufacturer = {
 		designer = yes
 		FMU_infantry_equipment_manufacturer = {
@@ -1538,6 +1535,7 @@ theorist = {
 			traits = {motorized_equipment_manufacturer}
 		}
 	}
+	
 	industrial_concern = {
 		FMU_refinery_concern = {
 			picture = Neue_Volkswerft
