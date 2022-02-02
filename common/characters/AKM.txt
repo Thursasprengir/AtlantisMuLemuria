@@ -66,7 +66,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trickster offensive_doctrine guerilla_fighter }
+			traits={ guerilla_fighter }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -273,42 +273,6 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	AKM_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_anti_communist_crusader
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="AKM_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_AKM_anti_communist_crusader"
-			}
-		}
-	}
-	AKM_armaments_organizer={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_armaments_organizer
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="AKM_armaments_organizer"
-		portraits={
-			army={
-				small="GFX_idea_AKM_armaments_organizer"
-			}
-		}
-	}
 	AKM_backroom_backstabber={
 		advisor={
 			slot = political_advisor
@@ -323,25 +287,7 @@ characters={
 		name="AKM_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_AKM_backroom_backstabber"
-			}
-		}
-	}
-	AKM_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_captain_of_industry
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="AKM_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_AKM_captain_of_industry"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -359,25 +305,7 @@ characters={
 		name="AKM_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_AKM_communist_revolutionary"
-			}
-		}
-	}
-	AKM_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_compassionate_gentleman
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="AKM_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_AKM_compassionate_gentleman"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 	}
@@ -395,46 +323,10 @@ characters={
 		name="AKM_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_AKM_captain_of_industry"
+				small="GFX_idea_africa_generic_3"
 			}
 		}
 	}	
-	AKM_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_economist
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="AKM_economist"
-		portraits={
-			army={
-				small="GFX_idea_AKM_economist"
-			}
-		}
-	}
-	AKM_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_editor
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="AKM_editor"
-		portraits={
-			army={
-				small="GFX_idea_AKM_editor"
-			}
-		}
-	}
 	AKM_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -449,61 +341,7 @@ characters={
 		name="AKM_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_AKM_fascist_demagogue"
-			}
-		}
-	}
-	AKM_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_financial_expert
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="AKM_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_AKM_financial_expert"
-			}
-		}
-	}
-	AKM_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_head_of_intelligence
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="AKM_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_AKM_head_of_intelligence"
-			}
-		}
-	}
-	AKM_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_ideological_crusader
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="AKM_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_AKM_ideological_crusader"
+				small="GFX_idea_africa_generic_2"
 			}
 		}
 	}
@@ -521,7 +359,7 @@ characters={
 		name="AKM_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_AKM_popular_figurehead"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -539,62 +377,7 @@ characters={
 		name="AKM_prince_of_terror"
 		portraits={
 			army={
-				small="GFX_idea_AKM_prince_of_terror"
-			}
-		}
-	}
-	AKM_silent_workhorse={
-		name=AKM_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_AKM_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_silent_workhorse
-			allowed  = {
-				original_tag  = AKM
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	AKM_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_smooth_talking_charmer
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="AKM_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_AKM_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	AKM_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = AKM_war_industrialist
-			allowed  = {
-					original_tag  = AKM
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="AKM_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_AKM_war_industrialist"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -618,7 +401,7 @@ characters={
 		name="AKM_military_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -640,116 +423,7 @@ characters={
 		name="AKM_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
-			}
-		}
-	}
-	AKM_naval_theorist={
-		name=AKM_naval_theorist
-		portraits={
-			army={
-				small="GFX_idea_AKM_naval_theorist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = AKM_naval_theorist
-			ledger = navy
-			allowed = {
-				original_tag = AKM
-			}
-			traits = { 
-					naval_theorist 
-				}
-		}
-	}
-
-	AKM_naval_aviation_pioneer={
-		name=AKM_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_AKM_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = AKM_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = AKM
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	AKM_victory_through_airpower={
-		name=AKM_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_AKM_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = AKM_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = AKM
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	AKM_nuclear_scientist={
-		name=AKM_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_AKM_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = AKM_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = AKM
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	AKM_rocket_scientist={
-		name=AKM_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_AKM_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = AKM_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = AKM
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
+				small="GFX_idea_africa_generic_navy_3"
 			}
 		}
 	}
@@ -775,51 +449,7 @@ characters={
 		name="AKM_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_AKM_army_chief_defensive_2"
-			}
-		}
-	}
-	AKM_army_chief_drill_2={
-		advisor={
-			slot = army_chief
-			idea_token = AKM_army_chief_drill_2
-			allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_army_chief_drill_2"
-		portraits={
-			army={
-				small="GFX_idea_AKM_army_chief_drill_2"
-			}
-		}
-	}
-	AKM_army_chief_maneuver_2={
-		advisor={
-			slot = army_chief
-			idea_token = AKM_army_chief_maneuver_2
-			allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_army_chief_maneuver_2"
-		portraits={
-			army={
-				small="GFX_idea_AKM_army_chief_maneuver_2"
+				small="GFX_idea_south_africa_army_generic_2"
 			}
 		}
 	}
@@ -841,29 +471,7 @@ characters={
 		name="AKM_army_chief_morale_2"
 		portraits={
 			army={
-				small="GFX_idea_AKM_army_chief_morale_2"
-			}
-		}
-	}
-	AKM_army_chief_offensive_2={
-		name=AKM_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_AKM_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = AKM_army_chief_offensive_2
-			allowed = {
-				original_tag = AKM
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				small="GFX_idea_south_africa_army_generic"
 			}
 		}
 	}
@@ -871,7 +479,7 @@ characters={
 		name=AKM_army_chief_organizational_1
 		portraits={
 			army={
-				small="GFX_idea_AKM_army_chief_organizational_1"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 		advisor={
@@ -911,31 +519,7 @@ characters={
 		name="AKM_navy_chief_decisive_battle_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2"
-			}
-		}
-	}
-	AKM_navy_chief_naval_aviation_2={
-		advisor={
-			
-			
-			slot = navy_chief
-			idea_token = AKM_navy_chief_naval_aviation_2
-			allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					navy_chief_naval_aviation_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_navy_chief_naval_aviation_2"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_1"
+				small="GFX_idea_africa_generic_navy_3"
 			}
 		}
 	}
@@ -961,7 +545,7 @@ characters={
 		name="AKM_air_chief_ground_support_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_3"
+				small="GFX_idea_africa_generic_navy_2"
 			}
 		}
 	}
@@ -983,7 +567,7 @@ characters={
 		name="AKM_air_chief_reform_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_1"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -991,29 +575,6 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	AKM_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = AKM_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_AKM_army_armored_1"
-			}
-		}
-	}
 	AKM_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
@@ -1033,7 +594,7 @@ characters={
 		name="AKM_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_AKM_army_entrenchment_1"
+				small="GFX_idea_south_africa_army_generic_2"
 			}
 		}
 	}
@@ -1056,30 +617,7 @@ characters={
 		name="AKM_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_AKM_army_infantr_1"
-			}
-		}
-	}
-	AKM_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = AKM_army_logistics
-			ledger = army
-				allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_army_logistics_2"
-		portraits={
-			army={
-				small="GFX_idea_AKM_army_logistics_2"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -1102,99 +640,7 @@ characters={
 		name="AKM_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_AKM_air_bomber_interception_2"
-			}
-		}
-	}
-	AKM_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = AKM_air_close_air_support_2
-			ledger = army
-				allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					air_close_air_support_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_air_close_air_support_2"
-		portraits={
-			army={
-				small="GFX_idea_AKM_air_close_air_support_2"
-			}
-		}
-	}
-	AKM_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = AKM_navy_screen_2
-			ledger = navy
-				allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					navy_screen_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_navy_screen_2"
-		portraits={
-			army={
-				small="GFX_idea_AKM_navy_screen_2"
-			}
-		}
-	}
-	AKM_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = AKM_navy_anti_submarine_1
-			ledger = navy
-				allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					navy_anti_submarine_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_navy_anti_submarine_1"
-		portraits={
-			army={
-				small="GFX_idea_AKM_navy_anti_submarine_1"
-			}
-		}
-	}
-	AKM_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = AKM_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = AKM
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="AKM_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_AKM_navy_naval_air_defense_2"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
