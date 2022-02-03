@@ -1883,6 +1883,7 @@ focus = {
 focus = {
 		id = MUU_soviet_aid
 		icon = GFX_goal_support_communism
+		mutually_exclusive = { focus = MUU_state_first }
 		prerequisite = {focus = MUU_impeach_ollun}
 		x = 12
 		y = 6
@@ -2533,6 +2534,7 @@ focus = {
 	
 focus = {
 		id = MUU_state_first
+		mutually_exclusive = { focus = MUU_soviet_aid }
 		icon = GFX_goal_continuous_suppression
 		prerequisite = {focus = MUU_impeach_ollun}
 		x = 16
