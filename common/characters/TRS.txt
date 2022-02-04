@@ -4,15 +4,13 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/TRS/Portrait_TRS_neiwakxinguk.dds"
-				small="gfx/interface/ideas/idea_TRS_neiwakxinguk.dds"
 			}
 			civilian={
 				large="gfx/leaders/TRS/Portrait_TRS_neiwakxinguk.dds"
-				small="gfx/interface/ideas/idea_TRS_neiwakxinguk.dds"
 			}
 		}
 		field_marshal={
-			traits={ trait_cautious politically_connected defensive_doctrine }
+			traits={ politically_connected defensive_doctrine }
 			skill=4
 			attack_skill=2
 			defense_skill=4
@@ -33,7 +31,6 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/TRS/Portrait_TRS_hong_ji_jin.dds"
-				small="GFX_idea_TRS_hong_ji_jin"
 			}
 		}
 		advisor={
@@ -86,7 +83,7 @@ characters={
 		}
 		country_leader={
 			ideology=fascism_ideology
-			traits={ financial_expert armaments_organizer }
+			traits={ armaments_organizer }
 			expire="1956.1.1.12"
 			id=-1
 		}
@@ -130,7 +127,7 @@ characters={
 	
 	TRS_democratic_politician = {
 		name = TRS_democratic_politician
-		portraits = {army = {small = "generic_political_advisor_asia_1"}}
+		portraits = {army = {small = "GFX_idea_generic_political_advisor_asia_1"}}
 		advisor = {
 			slot = political_advisor
 			idea_token = TRS_democratic_politician
@@ -369,7 +366,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={ naval_lineage }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -388,7 +385,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={ bold   }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -407,7 +404,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={ spotter }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -426,7 +423,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={ cuts_corners   }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -457,24 +454,6 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	TRS_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_anti_communist_crusader
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="TRS_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_TRS_anti_communist_crusader"
-			}
-		}
-	}
 	TRS_armaments_organizer={
 		advisor={
 			slot = political_advisor
@@ -489,7 +468,7 @@ characters={
 		name="TRS_armaments_organizer"
 		portraits={
 			army={
-				small="GFX_idea_TRS_armaments_organizer"
+				small="GFX_idea_asia_generic_democracy"
 			}
 		}
 	}
@@ -507,25 +486,7 @@ characters={
 		name="TRS_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_TRS_backroom_backstabber"
-			}
-		}
-	}
-	TRS_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_captain_of_industry
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="TRS_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_TRS_captain_of_industry"
+				small="GFX_idea_asia_generic_2"
 			}
 		}
 	}
@@ -543,25 +504,7 @@ characters={
 		name="TRS_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_TRS_communist_revolutionary"
-			}
-		}
-	}
-	TRS_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_compassionate_gentleman
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="TRS_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_TRS_compassionate_gentleman"
+				small="GFX_idea_JAP_hatazo_adachi"
 			}
 		}
 	}
@@ -579,46 +522,10 @@ characters={
 		name="TRS_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_TRS_captain_of_industry"
+				small="GFX_idea_JAP_kyuichi_tokuda"
 			}
 		}
 	}	
-	TRS_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_economist
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="TRS_economist"
-		portraits={
-			army={
-				small="GFX_idea_TRS_economist"
-			}
-		}
-	}
-	TRS_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_editor
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="TRS_editor"
-		portraits={
-			army={
-				small="GFX_idea_TRS_editor"
-			}
-		}
-	}
 	TRS_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -633,79 +540,7 @@ characters={
 		name="TRS_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_TRS_fascist_demagogue"
-			}
-		}
-	}
-	TRS_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_financial_expert
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="TRS_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_TRS_financial_expert"
-			}
-		}
-	}
-	TRS_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_head_of_intelligence
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="TRS_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_TRS_head_of_intelligence"
-			}
-		}
-	}
-	TRS_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_ideological_crusader
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="TRS_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_TRS_ideological_crusader"
-			}
-		}
-	}
-	TRS_popular_figurehead={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_popular_figurehead
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					popular_figurehead 
-				}
-		}
-		name="TRS_popular_figurehead"
-		portraits={
-			army={
-				small="GFX_idea_TRS_popular_figurehead"
+				small="GFX_idea_JAP_kenkichi_ueda"
 			}
 		}
 	}
@@ -723,7 +558,7 @@ characters={
 		name="TRS_prince_of_terror"
 		portraits={
 			army={
-				small="GFX_idea_TRS_prince_of_terror"
+				small="GFX_idea_JAP_gengo_hyakutake"
 			}
 		}
 	}
@@ -731,7 +566,7 @@ characters={
 		name=TRS_silent_workhorse
 		portraits={
 			army={
-				small="GFX_idea_TRS_silent_workhorse"
+				small="GFX_idea_JAP_nobuyoshi_muto"
 			}
 		}
 		advisor={
@@ -744,26 +579,7 @@ characters={
 				silent_workhorse 
 			}
 		}
-	}
-	TRS_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = TRS_smooth_talking_charmer
-			allowed  = {
-					original_tag  = TRS
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="TRS_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_TRS_smooth_talking_charmer"
-			}
-		}
-	}
-	
+	}	
 	TRS_war_industrialist={
 		advisor={
 			slot = political_advisor
@@ -778,7 +594,7 @@ characters={
 		name="TRS_war_industrialist"
 		portraits={
 			army={
-				small="GFX_idea_TRS_war_industrialist"
+				small="GFX_idea_asia_generic_warlord2"
 			}
 		}
 	}
