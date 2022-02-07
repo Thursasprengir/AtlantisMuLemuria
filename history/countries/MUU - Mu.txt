@@ -20,6 +20,8 @@ set_technology = {
 	basic_battery = 1
 	basic_light_battery = 1
 	basic_depth_charges = 1
+	basic_train = 1
+	motorized_equipment = 1	
 }
 
 if = {
@@ -39,20 +41,18 @@ add_ideas = {
 
 
 set_politics = {
-
-
-	
 	ruling_party = democratic
 	last_election = "1935.10.22"
 	election_frequency = 36
 	elections_allowed = yes
 }
-	set_popularities = {
-		democratic = 57
-		fascism = 16
-		communism = 27
-	
-	}
+
+set_popularities = {
+	democratic = 57
+	fascism = 16
+	communism = 27
+}
+
 set_convoys = 80
 
 ###GLORIOUS MUROR SHIPS###

@@ -11,25 +11,22 @@ set_technology = {
 	gw_artillery = 1
 	early_destroyer = 1
 	transport = 1
+	basic_train = 1
 }
 
-add_political_power = 250
-
-
 set_politics = {
-
-	
-	
 	ruling_party = democratic
 	last_election = "1935.10.22"
 	election_frequency = 36
 	elections_allowed = yes
 }
+
 set_popularities = {
-		democratic = 86
-		fascism = 8
-		communism = 6
-	}
+	democratic = 86
+	fascism = 8
+	communism = 6
+}
+
 if = {
 	limit = { has_dlc = "Together for Victory" }
 
@@ -37,7 +34,6 @@ if = {
 }
 
 set_convoys = 80
-
 
 #characters
 #political leaders

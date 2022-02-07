@@ -11,28 +11,21 @@ set_technology = {
 	gw_artillery = 1
 	early_destroyer = 1
 	transport = 1
+	basic_train = 1
 }
 
-
-add_political_power = 250
-
-
-
 set_politics = {
-
-	
-	
 	ruling_party = communism
 	last_election = "1935.10.22"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
-		democratic = 40
+		democratic = 45
 		fascism = 0
-		communism = 40
-		neutrality = 20
-	}
+		communism = 55
+}
+
 if = {
 	limit = { has_dlc = "Together for Victory" }
 

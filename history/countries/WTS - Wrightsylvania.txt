@@ -28,6 +28,7 @@ set_technology = {
 	early_destroyer = 1
 	early_light_cruiser = 1
 	transport = 1
+	basic_train = 1
 }
 
 if = {
@@ -67,17 +68,12 @@ if = {
 	}
 }
 
-add_political_power = 270
-
 add_ideas = {
 	WTS_british_rejection
 	WTS_struggling_economy
 }
 
-set_politics = {
-
-	
-	
+set_politics = {	
 	ruling_party = democratic
 	last_election = "1935.10.22"
 	election_frequency = 36
@@ -85,10 +81,10 @@ set_politics = {
 }
 
 set_popularities = {
-		democratic = 51
-		fascism = 25
-		communism = 24
-	}
+	democratic = 51
+	fascism = 25
+	communism = 24
+}
 	
 set_convoys = 180
 
