@@ -13,13 +13,13 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		x = 13
 		y = 0
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-					country_event = { id = blm.1 }
+				country_event = { id = blm.1 }
 			}
 	}
 
@@ -31,7 +31,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 16
 		y = 1
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_second_anglosaxon_reforms }
 		mutually_exclusive = {
@@ -52,7 +52,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		x = 10
 		y = 1
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_second_anglosaxon_reforms }
 		mutually_exclusive = {
@@ -145,7 +145,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability = 0.10
+			add_stability = 0.05
+			add_timed_idea = {
+			idea = FRA_strengthen_government_support_focus
+			days = 180
+			}			
 		}
 	}
 
@@ -154,7 +158,7 @@ focus_tree = {
 		icon = GFX_goal_cuba_nine_cents_law
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_nobility_issue }
 		ai_will_do = {
@@ -208,7 +212,7 @@ focus_tree = {
 		icon = GFX_r56_goal_FRA_BLMss_collaboration
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_act_283 }
 		ai_will_do = {
@@ -237,7 +241,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 7
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_act_283 }
 		mutually_exclusive = {
@@ -247,7 +251,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability = 0.15
+			add_stability = 0.05
+			add_political_power = 100
 		}
 	}
 
@@ -321,8 +326,11 @@ focus_tree = {
 		icon = GFX_r56_goal_generic_citizens
 		x = 9
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
+		available = {
+			has_war = no
+		}		
 		prerequisite = { focus = BLM_act_283 }
 		mutually_exclusive = {
 			focus = BLM_federal_sympathies
@@ -331,7 +339,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability = 0.40
+			add_stability = -0.05
+			add_war_support = -0.05	
 		}
 	}
 		focus = {
@@ -339,9 +348,10 @@ focus_tree = {
 		icon = GFX_r56_goal_generic_consitution
 		x = 9
 		y = 3
-		cost = 10
+		cost = 15
 		available_if_capitulated = yes
 		available = {
+			has_war = no
 			is_subject = no
 		}
 		prerequisite = { focus = BLM_completedecentralization }
@@ -351,6 +361,11 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_timed_idea = {
+			idea = FRA_strengthen_government_support_focus
+			days = 720
+			}
+		hidden_effect = {
 		AUD = {
 					transfer_state = 984
 					984 = { add_core_of = ARG }
@@ -380,6 +395,7 @@ focus_tree = {
 					1051 = { add_core_of = WRB }
 					add_opinion_modifier = { target = BLM modifier = medium_increase  }
 				}
+			}
 			puppet = AUD
 			puppet = QLA
 			puppet = WRB
@@ -804,7 +820,7 @@ focus_tree = {
 		icon = GFX_goal_localalliance
 		x = 17
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BLM_royal_cadet_corps }
 		mutually_exclusive = {
@@ -814,7 +830,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_command_power = 10
+			army_experience = 50
+			add_command_power = 30
 		}
 	}
 	########## cadet corps is recon school, have it give a bonus to recon school and radio
@@ -833,8 +850,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = military_youth_focus
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = recon_tech
 			}
@@ -857,9 +875,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				name = special_bonus
+				bonus = 1.0
 				uses = 1
-				category = signal_company_tech
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3				
 			}
 		}
 	}
