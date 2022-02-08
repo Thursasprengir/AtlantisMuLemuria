@@ -36,6 +36,19 @@ characters={
 
 		}
 	}
+	MUU_Nalangqu_Gahrijjeom={
+		name=MUU_Nalangqu_Gahrijjeom
+		portraits={
+			civilian={
+				large="gfx/leaders/MUU/Portrait_MUU_Nalangqu_Gahrijjeom.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchy
+			expire="1965.1.1.1"
+
+		}
+	}
 	MUU_Iqajj_Donaquaq={
 		name=MUU_Iqajj_Donaquaq
 		portraits={
@@ -53,13 +66,44 @@ characters={
 		name=MUU_iaod_milinjui
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+				large="gfx/leaders/MUU/Portrait_MUU_iaod_milinjui.dds"
 			}
 		}
 		corps_commander={
-			traits={ trickster organizer }
-			skill=3
+			traits={ organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	MUU_naqir_angasapit={
+		name=MUU_naqir_angasapit
+		portraits={
+			army={
+				large="gfx/leaders/MUU/Portrait_MUU_naqir_angasapit.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	MUU_talliq_resqanle={
+		name=MUU_talliq_resqanle
+		portraits={
+			army={
+				large="gfx/leaders/MUU/Portrait_MUU_talliq_resqanle.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
 			attack_skill=2
 			defense_skill=3
 			planning_skill=3
