@@ -8,7 +8,6 @@ tags={
 replace_path="history/states"
 replace_path="gfx/loadingscreens"
 replace_path="map/strategicregions"
-replace_path="common/characters"
 replace_path="common/generation"
 replace_path="history/general"
 name="Atlantis Mu Lemuria DEV"
