@@ -1,0 +1,470 @@
+
+
+characters={
+###############
+###DEMOCRATIC
+###############
+	ARC_felice_pallavicino={
+		name="Felice Pallavicino"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARC/Portrait_ARC_felice_pallavicino.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+###############
+###COMMUNISM
+###############
+	ARC_cesare_cagni={
+		name="Cesare Cagni"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARC/Portrait_ARC_cesare_cagni.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	
+
+###############
+###FASCISM
+###############
+	ARC_adone_ziccardi={
+		name="Adone Ziccardi"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARC/Portrait_ARC_adone_ziccardi.dds"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			expire="1949.1.1.12"
+			id=-1
+		}
+	}
+	
+
+###############
+###NEUTRALITY
+###############
+	ARC_federico_pelloux={
+		name="Federico Pelloux"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARC/Portrait_ARC_federico_pelloux.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+	ARC_corps_commander_1={
+		name="ARC_corps_commander_1"
+		portraits={
+			army={
+				large="gfx/leaders/ARC/Portrait_ARC_corps_commander_1.dds"
+				small="gfx/interface/ideas/idea_ARC_corps_commander_1.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	ARC_corps_commander_2={
+		name=ARC_corps_commander_2
+		portraits={
+			army={
+				large="gfx/leaders/ARC/Portrait_ARC_corps_commander_2.dds"
+				small="gfx/interface/ideas/idea_ARC_corps_commander_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	ARC_corps_commander_3={
+		name=ARC_corps_commander_3
+		portraits={
+			army={
+				large="gfx/leaders/ARC/Portrait_ARC_corps_commander_3.dds"
+				small="gfx/interface/ideas/idea_ARC_corps_commander_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer  }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	ARC_corps_commander_4={
+		name=ARC_corps_commander_4
+		portraits={
+			army={
+				large="gfx/leaders/ARC/Portrait_ARC_corps_commander_4.dds"
+				small="gfx/interface/ideas/idea_ARC_corps_commander_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	ARC_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = ARC_backroom_backstabber
+			allowed  = {
+					original_tag  = ARC
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="ARC_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_BRA_plinio_salgado"
+			}
+		}
+	}
+	ARC_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = ARC_communist_revolutionary
+			allowed  = {
+					original_tag  = ARC
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="ARC_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_ARG_agustin_pedro_justo"
+			}
+		}
+	}
+	ARC_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = ARC_democratic_reformer
+			allowed  = {
+					original_tag  = ARC
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="ARC_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_BUL_georgi_dimitrov"
+			}
+		}
+	}
+	ARC_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = ARC_fascist_demagogue
+			allowed  = {
+					original_tag  = ARC
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="ARC_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_ELS_maximiliano_hernandez_martinez"
+			}
+		}
+	}
+	ARC_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = ARC_ideological_crusader
+			allowed  = {
+					original_tag  = ARC
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="ARC_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_DEN_erik_scavenius"
+			}
+		}
+	}
+	ARC_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = ARC_prince_of_terror
+			allowed  = {
+					original_tag  = ARC
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="ARC_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_EST_konstantin_pats"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	ARC_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ARC_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = ARC
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="ARC_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_FRA_philippe_leclerc"
+			}
+		}
+	}
+	ARC_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = ARC_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = ARC
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="ARC_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_FRA_francois_darlan"
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	ARC_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = ARC_army_chief_defensive_2
+			allowed = {
+					original_tag = ARC
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARC_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_ITA_ferdinando_adalberto"
+			}
+		}
+	}
+	ARC_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = ARC_army_chief_drill_2
+			allowed = {
+					original_tag = ARC
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARC_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_ITA_carlo_bergamini"
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	
+#################
+###AIRFORCE CHIEF
+#################
+	ARC_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = ARC_air_chief_ground_support_2
+			allowed = {
+					original_tag = ARC
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARC_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_ITA_giuseppe_fioravanzo"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	ARC_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARC_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = ARC
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARC_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_ITA_inigo_campioni"
+			}
+		}
+	}
+	ARC_army_entrenchment_3={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARC_army_entrenchment_3
+			ledger = army
+				allowed = {
+					original_tag = ARC
+				}
+				traits = {
+					army_entrenchment_3
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="Giancarlo Tomassetti"
+		portraits={
+			army={
+				small="GFX_idea_ITA_italo_balbo"
+			}
+		}
+	}
+	ARC_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARC_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = ARC
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARC_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_ITA_palmiro_togliatti"
+			}
+		}
+	}
+}

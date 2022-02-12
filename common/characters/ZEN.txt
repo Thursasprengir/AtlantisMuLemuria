@@ -6,7 +6,7 @@ characters={
 		name="ZEN_socialism_leader"
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/ZEN/Portrait_ZEN_socialism_leader.dds"
 			}
 		}
 		country_leader={
@@ -21,7 +21,7 @@ characters={
 		name="ZEN_anarchist_communism_leader"
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/Portrait_ZEN_anarchist_communism_leader.dds"
 			}
 		}
 		country_leader={
@@ -34,7 +34,7 @@ characters={
 		name="ZEN_generic_fascism_leader"
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/ZEN/Portrait_ZEN_generic_fascism_leader.dds"
 			}
 		}
 		country_leader={
@@ -48,7 +48,7 @@ characters={
 		name="ZEN_anarchism_leader"
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/ZEN/Portrait_ZEN_anarchism_leader.dds"
 			}
 		}
 		country_leader={
@@ -242,42 +242,6 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	ZEN_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_anti_communist_crusader
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="ZEN_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_anti_communist_crusader"
-			}
-		}
-	}
-	ZEN_armaments_organizer={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_armaments_organizer
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="ZEN_armaments_organizer"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_armaments_organizer"
-			}
-		}
-	}
 	ZEN_backroom_backstabber={
 		advisor={
 			slot = political_advisor
@@ -292,25 +256,7 @@ characters={
 		name="ZEN_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_backroom_backstabber"
-			}
-		}
-	}
-	ZEN_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_captain_of_industry
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="ZEN_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_captain_of_industry"
+				small="gfx/interface/ideas/idea_africa_generic_2.dds"
 			}
 		}
 	}
@@ -328,25 +274,7 @@ characters={
 		name="ZEN_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_communist_revolutionary"
-			}
-		}
-	}
-	ZEN_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_compassionate_gentleman
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="ZEN_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_compassionate_gentleman"
+				small="gfx/interface/ideas/idea_africa_generic_land_3.dds"
 			}
 		}
 	}
@@ -364,46 +292,10 @@ characters={
 		name="ZEN_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_captain_of_industry"
+				small="gfx/interface/ideas/idea_africa_generic_3.dds"
 			}
 		}
 	}	
-	ZEN_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_economist
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="ZEN_economist"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_economist"
-			}
-		}
-	}
-	ZEN_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_editor
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="ZEN_editor"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_editor"
-			}
-		}
-	}
 	ZEN_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -418,61 +310,7 @@ characters={
 		name="ZEN_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_fascist_demagogue"
-			}
-		}
-	}
-	ZEN_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_financial_expert
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="ZEN_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_financial_expert"
-			}
-		}
-	}
-	ZEN_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_head_of_intelligence
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="ZEN_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_head_of_intelligence"
-			}
-		}
-	}
-	ZEN_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_ideological_crusader
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="ZEN_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_ideological_crusader"
+				small="gfx/interface/ideas/idea_south_africa_political_leader_generic.dds"
 			}
 		}
 	}
@@ -490,7 +328,7 @@ characters={
 		name="ZEN_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_popular_figurehead"
+				small="gfx/interface/ideas/idea_africa_generic_1.dds"
 			}
 		}
 	}
@@ -508,62 +346,7 @@ characters={
 		name="ZEN_prince_of_terror"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_prince_of_terror"
-			}
-		}
-	}
-	ZEN_silent_workhorse={
-		name=ZEN_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_ZEN_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_silent_workhorse
-			allowed  = {
-				original_tag  = ZEN
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	ZEN_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_smooth_talking_charmer
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="ZEN_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	ZEN_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = ZEN_war_industrialist
-			allowed  = {
-					original_tag  = ZEN
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="ZEN_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_war_industrialist"
+				small="gfx/interface/ideas/idea_south_africa_political_leader_generic_2.dds"
 			}
 		}
 	}
@@ -587,29 +370,7 @@ characters={
 		name="ZEN_military_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-	}
-	ZEN_air_warfare_theorist={
-		advisor={
-			cost = 100
-			
-			slot = theorist
-			idea_token = ZEN_air_warfare_theorist
-			ledger = air
-				allowed = {
-					original_tag = ZEN
-				}
-				
-				traits = {
-					air_warfare_theorist
-				}
-		}
-		name="ZEN_air_warfare_theorist"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="gfx/interface/ideas/idea_africa_generic_land_1.dds"
 			}
 		}
 	}
@@ -617,7 +378,7 @@ characters={
 		name=ZEN_naval_theorist
 		portraits={
 			army={
-				small="GFX_idea_ZEN_naval_theorist"
+				small="gfx/interface/ideas/idea_africa_generic_navy_1.dds"
 			}
 		}
 		advisor={
@@ -631,95 +392,6 @@ characters={
 			traits = { 
 					naval_theorist 
 				}
-		}
-	}
-
-	ZEN_naval_aviation_pioneer={
-		name=ZEN_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_ZEN_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = ZEN_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = ZEN
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	ZEN_victory_through_airpower={
-		name=ZEN_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_ZEN_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = ZEN_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = ZEN
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	ZEN_nuclear_scientist={
-		name=ZEN_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_ZEN_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = ZEN_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = ZEN
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	ZEN_rocket_scientist={
-		name=ZEN_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_ZEN_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = ZEN_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = ZEN
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
 		}
 	}
 
@@ -744,29 +416,7 @@ characters={
 		name="ZEN_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_army_chief_defensive_2"
-			}
-		}
-	}
-	ZEN_army_chief_drill_2={
-		advisor={
-			slot = army_chief
-			idea_token = ZEN_army_chief_drill_2
-			allowed = {
-					original_tag = ZEN
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="ZEN_army_chief_drill_2"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_army_chief_drill_2"
+				small="gfx/interface/ideas/idea_africa_generic_land_2.dds"
 			}
 		}
 	}
@@ -788,73 +438,7 @@ characters={
 		name="ZEN_army_chief_maneuver_2"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_army_chief_maneuver_2"
-			}
-		}
-	}
-	ZEN_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = ZEN_army_chief_morale_2
-			allowed = {
-					original_tag = ZEN
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="ZEN_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_army_chief_morale_2"
-			}
-		}
-	}
-	ZEN_army_chief_offensive_2={
-		name=ZEN_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_ZEN_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = ZEN_army_chief_offensive_2
-			allowed = {
-				original_tag = ZEN
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	ZEN_army_chief_organizational_1={
-		name=ZEN_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_ZEN_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = ZEN_army_chief_organizational_1
-			allowed = {
-				original_tag = ZEN
-			}
-			traits = {
-				army_chief_organizational_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				small="gfx/interface/ideas/idea_africa_generic_land_3.dds"
 			}
 		}
 	}
@@ -880,7 +464,7 @@ characters={
 		name="ZEN_navy_chief_decisive_battle_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2"
+				small="gfx/interface/ideas/idea_africa_generic_navy_2.dds"
 			}
 		}
 	}
@@ -904,7 +488,7 @@ characters={
 		name="ZEN_navy_chief_naval_aviation_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_1"
+				small="gfx/interface/ideas/idea_africa_generic_navy_3.dds"
 			}
 		}
 	}
@@ -930,7 +514,7 @@ characters={
 		name="ZEN_air_chief_ground_support_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_3"
+				small="gfx/interface/ideas/idea_africa_generic_land_2.dds"
 			}
 		}
 	}
@@ -952,7 +536,7 @@ characters={
 		name="ZEN_air_chief_reform_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_1"
+				small="gfx/interface/ideas/idea_africa_generic_land_3.dds"
 			}
 		}
 	}
@@ -960,29 +544,6 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	ZEN_army_armored_1={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = ZEN_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = ZEN
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="ZEN_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_ZEN_army_armored_1"
-			}
-		}
-	}
 	ZEN_army_entrenchment_1={ #_1 Specialist, _2 Expert
 		advisor={
 			slot = high_command
@@ -1002,7 +563,7 @@ characters={
 		name="ZEN_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_army_entrenchment_1"
+				small="gfx/interface/ideas/idea_south_africa_political_leader_generic_2.dds"
 			}
 		}
 	}
@@ -1025,30 +586,7 @@ characters={
 		name="ZEN_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_army_infantr_1"
-			}
-		}
-	}
-	ZEN_army_logistics_2={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = ZEN_army_logistics
-			ledger = army
-				allowed = {
-					original_tag = ZEN
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="ZEN_army_logistics_2"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_army_logistics_2"
+				small="gfx/interface/ideas/idea_south_africa_army_generic.dds"
 			}
 		}
 	}
@@ -1071,7 +609,7 @@ characters={
 		name="ZEN_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_air_bomber_interception_2"
+				small="gfx/interface/ideas/idea_south_africa_political_leader_generic.dds"
 			}
 		}
 	}
@@ -1094,7 +632,7 @@ characters={
 		name="ZEN_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_air_close_air_support_2"
+				small="gfx/interface/ideas/idea_south_africa_army_generic_2.dds"
 			}
 		}
 	}
@@ -1117,53 +655,7 @@ characters={
 		name="ZEN_navy_screen_2"
 		portraits={
 			army={
-				small="GFX_idea_ZEN_navy_screen_2"
-			}
-		}
-	}
-	ZEN_navy_anti_submarine_1={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = ZEN_navy_anti_submarine_1
-			ledger = navy
-				allowed = {
-					original_tag = ZEN
-				}
-				traits = {
-					navy_anti_submarine_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="ZEN_navy_anti_submarine_1"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_navy_anti_submarine_1"
-			}
-		}
-	}
-	ZEN_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = ZEN_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = ZEN
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="ZEN_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_ZEN_navy_naval_air_defense_2"
+				small="gfx/interface/ideas/idea_AFG_mohammed_zahir_shah.dds"
 			}
 		}
 	}
