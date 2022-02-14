@@ -67,7 +67,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trickster offensive_doctrine guerilla_fighter }
+			traits={ guerilla_fighter }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -140,7 +140,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -161,7 +161,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={   }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -181,7 +181,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={  }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -202,7 +202,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer }
+			traits={  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -228,7 +228,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={  }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -249,7 +249,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={  }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -270,7 +270,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={ spotter }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -291,7 +291,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={  }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -311,7 +311,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			traits={  }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -338,25 +338,7 @@ characters={
 		name="CLA_anti_communist_crusader"
 		portraits={
 			army={
-				small="GFX_idea_CLA_anti_communist_crusader"
-			}
-		}
-	}
-	CLA_armaments_organizer={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_armaments_organizer
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="CLA_armaments_organizer"
-		portraits={
-			army={
-				small="GFX_idea_CLA_armaments_organizer"
+				small="GFX_idea_YUG_josef_depre"
 			}
 		}
 	}
@@ -374,61 +356,7 @@ characters={
 		name="CLA_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_CLA_backroom_backstabber"
-			}
-		}
-	}
-	CLA_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_captain_of_industry
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="CLA_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_CLA_captain_of_industry"
-			}
-		}
-	}
-	CLA_communist_revolutionary={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_communist_revolutionary
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					communist_revolutionary 
-				}
-		}
-		name="CLA_communist_revolutionary"
-		portraits={
-			army={
-				small="GFX_idea_CLA_communist_revolutionary"
-			}
-		}
-	}
-	CLA_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_compassionate_gentleman
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="CLA_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_CLA_compassionate_gentleman"
+				small="GFX_idea_EGY_generic_3"
 			}
 		}
 	}
@@ -446,46 +374,10 @@ characters={
 		name="CLA_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_CLA_captain_of_industry"
+				small="GFX_idea_ELS_maximiliano_hernandez_martinez"
 			}
 		}
 	}	
-	CLA_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_economist
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="CLA_economist"
-		portraits={
-			army={
-				small="GFX_idea_CLA_economist"
-			}
-		}
-	}
-	CLA_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_editor
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="CLA_editor"
-		portraits={
-			army={
-				small="GFX_idea_CLA_editor"
-			}
-		}
-	}
 	CLA_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -500,43 +392,7 @@ characters={
 		name="CLA_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_CLA_fascist_demagogue"
-			}
-		}
-	}
-	CLA_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_financial_expert
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="CLA_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_CLA_financial_expert"
-			}
-		}
-	}
-	CLA_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_head_of_intelligence
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="CLA_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_CLA_head_of_intelligence"
+				small="GFX_idea_YEM_imam_yaha"
 			}
 		}
 	}
@@ -554,7 +410,7 @@ characters={
 		name="CLA_ideological_crusader"
 		portraits={
 			army={
-				small="GFX_idea_CLA_ideological_crusader"
+				small="GFX_idea_CHL_arturo_alessandri"
 			}
 		}
 	}
@@ -572,7 +428,7 @@ characters={
 		name="CLA_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_CLA_popular_figurehead"
+				small="GFX_idea_HAI_stenio_vincent"
 			}
 		}
 	}
@@ -590,62 +446,7 @@ characters={
 		name="CLA_prince_of_terror"
 		portraits={
 			army={
-				small="GFX_idea_CLA_prince_of_terror"
-			}
-		}
-	}
-	CLA_silent_workhorse={
-		name=CLA_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_CLA_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_silent_workhorse
-			allowed  = {
-				original_tag  = CLA
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	CLA_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_smooth_talking_charmer
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="CLA_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_CLA_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	CLA_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = CLA_war_industrialist
-			allowed  = {
-					original_tag  = CLA
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="CLA_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_CLA_war_industrialist"
+				small="GFX_idea_HON_tiburcio_carias_andino"
 			}
 		}
 	}
@@ -691,7 +492,7 @@ characters={
 		name="CLA_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_PAR_rafael_franco"
 			}
 		}
 	}
@@ -699,7 +500,7 @@ characters={
 		name=CLA_naval_theorist
 		portraits={
 			army={
-				small="GFX_idea_CLA_naval_theorist"
+				small="GFX_idea_LEB_generic_navy_1"
 			}
 		}
 		advisor={
@@ -713,95 +514,6 @@ characters={
 			traits = { 
 					naval_theorist 
 				}
-		}
-	}
-
-	CLA_naval_aviation_pioneer={
-		name=CLA_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_CLA_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = CLA_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = CLA
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	CLA_victory_through_airpower={
-		name=CLA_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_CLA_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = CLA_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = CLA
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	CLA_nuclear_scientist={
-		name=CLA_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_CLA_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CLA_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = CLA
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	CLA_rocket_scientist={
-		name=CLA_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_CLA_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CLA_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = CLA
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
 		}
 	}
 
@@ -826,7 +538,7 @@ characters={
 		name="CLA_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_CLA_army_chief_defensive_2"
+				small="GFX_idea_JAP_generic_navy_2"
 			}
 		}
 	}
@@ -848,7 +560,7 @@ characters={
 		name="CLA_army_chief_drill_2"
 		portraits={
 			army={
-				small="GFX_idea_CLA_army_chief_drill_2"
+				small="GFX_idea_USA_generic_land_3"
 			}
 		}
 	}
@@ -870,77 +582,10 @@ characters={
 		name="CLA_army_chief_maneuver_2"
 		portraits={
 			army={
-				small="GFX_idea_CLA_army_chief_maneuver_2"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
-	CLA_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = CLA_army_chief_morale_2
-			allowed = {
-					original_tag = CLA
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CLA_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_CLA_army_chief_morale_2"
-			}
-		}
-	}
-	CLA_army_chief_offensive_2={
-		name=CLA_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_CLA_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CLA_army_chief_offensive_2
-			allowed = {
-				original_tag = CLA
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	CLA_army_chief_organizational_1={
-		name=CLA_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_CLA_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CLA_army_chief_organizational_1
-			allowed = {
-				original_tag = CLA
-			}
-			traits = {
-				army_chief_organizational_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 #################
 ###NAVY CHIEF
 #################
@@ -1042,29 +687,6 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	CLA_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = CLA_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = CLA
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CLA_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_CLA_army_armored_1"
-			}
-		}
-	}
 	CLA_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
@@ -1084,7 +706,7 @@ characters={
 		name="CLA_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_CLA_army_entrenchment_1"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -1107,30 +729,7 @@ characters={
 		name="CLA_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_CLA_army_infantr_1"
-			}
-		}
-	}
-	CLA_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = CLA_army_logistics
-			ledger = army
-				allowed = {
-					original_tag = CLA
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CLA_army_logistics_2"
-		portraits={
-			army={
-				small="GFX_idea_CLA_army_logistics_2"
+				small="GFX_idea_SOV_leonid_govorov"
 			}
 		}
 	}
@@ -1153,7 +752,7 @@ characters={
 		name="CLA_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_CLA_air_bomber_interception_2"
+				small="GFX_idea_RAJ_army_generic"
 			}
 		}
 	}
@@ -1176,30 +775,7 @@ characters={
 		name="CLA_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_CLA_air_close_air_support_2"
-			}
-		}
-	}
-	CLA_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = CLA_navy_screen_2
-			ledger = navy
-				allowed = {
-					original_tag = CLA
-				}
-				traits = {
-					navy_screen_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CLA_navy_screen_2"
-		portraits={
-			army={
-				small="GFX_idea_CLA_navy_screen_2"
+				small="GFX_idea_RAJ_army_generic_2"
 			}
 		}
 	}
@@ -1222,7 +798,7 @@ characters={
 		name="CLA_navy_anti_submarine_1"
 		portraits={
 			army={
-				small="GFX_idea_CLA_navy_anti_submarine_1"
+				small="GFX_idea_RAJ_generic_navy_1"
 			}
 		}
 	}
@@ -1245,7 +821,7 @@ characters={
 		name="CLA_navy_naval_air_defense_2"
 		portraits={
 			army={
-				small="GFX_idea_CLA_navy_naval_air_defense_2"
+				small="GFX_idea_RAJ_generic_navy_2"
 			}
 		}
 	}
