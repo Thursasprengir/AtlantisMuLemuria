@@ -79,11 +79,11 @@ characters={
 		name="Lucas Williams"
 		portraits={
 			army={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 			}
 		}
 		field_marshal={
-			traits={ brilliant_strategist offensive_doctrine }
+			traits={ offensive_doctrine }
 			skill=1
 			attack_skill=3
 			defense_skill=1
@@ -96,11 +96,11 @@ characters={
 		name="Jim Walker"
 		portraits={
 			army={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader armor_officer }
+			traits={  armor_officer }
 			skill=1
 			attack_skill=2
 			defense_skill=1
@@ -113,7 +113,7 @@ characters={
 		name="Jim Taylor"
 		portraits={
 			navy={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
 			}
 		}
 		navy_leader={
@@ -163,7 +163,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={ career_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -183,7 +183,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={   }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -204,7 +204,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer }
+			traits={  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -230,7 +230,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={  }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -251,7 +251,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={ spotter }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -272,7 +272,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={  }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -293,7 +293,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={ }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -313,7 +313,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			traits={ fleet_protector }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -326,24 +326,6 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	BRG_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_anti_communist_crusader
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="BRG_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_BRG_anti_communist_crusader"
-			}
-		}
-	}
 	BRG_armaments_organizer={
 		advisor={
 			slot = political_advisor
@@ -358,7 +340,7 @@ characters={
 		name="BRG_armaments_organizer"
 		portraits={
 			army={
-				small="GFX_idea_BRG_armaments_organizer"
+				small="GFX_idea_SOV_generic_navy_3"
 			}
 		}
 	}
@@ -376,7 +358,7 @@ characters={
 		name="BRG_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_BRG_backroom_backstabber"
+				small="GFX_idea_south_america_generic_land_3"
 			}
 		}
 	}
@@ -394,7 +376,7 @@ characters={
 		name="BRG_captain_of_industry"
 		portraits={
 			army={
-				small="GFX_idea_BRG_captain_of_industry"
+				small="GFX_idea_RAJ_political_leader_generic_2"
 			}
 		}
 	}
@@ -412,25 +394,7 @@ characters={
 		name="BRG_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_BRG_communist_revolutionary"
-			}
-		}
-	}
-	BRG_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_compassionate_gentleman
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="BRG_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_BRG_compassionate_gentleman"
+				small="GFX_idea_SAU_generic_1"
 			}
 		}
 	}
@@ -448,46 +412,10 @@ characters={
 		name="BRG_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_BRG_captain_of_industry"
+				small="GFX_idea_europe_generic_land_1"
 			}
 		}
 	}	
-	BRG_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_economist
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="BRG_economist"
-		portraits={
-			army={
-				small="GFX_idea_BRG_economist"
-			}
-		}
-	}
-	BRG_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_editor
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="BRG_editor"
-		portraits={
-			army={
-				small="GFX_idea_BRG_editor"
-			}
-		}
-	}
 	BRG_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -502,25 +430,7 @@ characters={
 		name="BRG_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_BRG_fascist_demagogue"
-			}
-		}
-	}
-	BRG_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_financial_expert
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="BRG_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_BRG_financial_expert"
+				small="GFX_idea_europe_generic_4"
 			}
 		}
 	}
@@ -538,7 +448,7 @@ characters={
 		name="BRG_head_of_intelligence"
 		portraits={
 			army={
-				small="GFX_idea_BRG_head_of_intelligence"
+				small="GFX_idea_europe_generic_land_19"
 			}
 		}
 	}
@@ -556,43 +466,7 @@ characters={
 		name="BRG_ideological_crusader"
 		portraits={
 			army={
-				small="GFX_idea_BRG_ideological_crusader"
-			}
-		}
-	}
-	BRG_popular_figurehead={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_popular_figurehead
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					popular_figurehead 
-				}
-		}
-		name="BRG_popular_figurehead"
-		portraits={
-			army={
-				small="GFX_idea_BRG_popular_figurehead"
-			}
-		}
-	}
-	BRG_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_prince_of_terror
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="BRG_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_BRG_prince_of_terror"
+				small="GFX_idea_asia_generic_3"
 			}
 		}
 	}
@@ -600,7 +474,7 @@ characters={
 		name=BRG_silent_workhorse
 		portraits={
 			army={
-				small="GFX_idea_BRG_silent_workhorse"
+				small="GFX_idea_africa_generic_1"
 			}
 		}
 		advisor={
@@ -611,43 +485,6 @@ characters={
 			}
 			traits  = {
 				silent_workhorse 
-			}
-		}
-	}
-	BRG_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_smooth_talking_charmer
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="BRG_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_BRG_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	BRG_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = BRG_war_industrialist
-			allowed  = {
-					original_tag  = BRG
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="BRG_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_BRG_war_industrialist"
 			}
 		}
 	}
@@ -693,7 +530,7 @@ characters={
 		name="BRG_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -701,7 +538,7 @@ characters={
 		name=BRG_naval_theorist
 		portraits={
 			army={
-				small="GFX_idea_BRG_naval_theorist"
+				small="GFX_idea_EGY_generic_2"
 			}
 		}
 		advisor={
@@ -715,95 +552,6 @@ characters={
 			traits = { 
 					naval_theorist 
 				}
-		}
-	}
-
-	BRG_naval_aviation_pioneer={
-		name=BRG_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_BRG_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = BRG_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = BRG
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	BRG_victory_through_airpower={
-		name=BRG_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_BRG_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = BRG_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = BRG
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	BRG_nuclear_scientist={
-		name=BRG_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_BRG_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = BRG_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = BRG
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	BRG_rocket_scientist={
-		name=BRG_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_BRG_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = BRG_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = BRG
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
 		}
 	}
 
@@ -828,7 +576,7 @@ characters={
 		name="BRG_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_BRG_army_chief_defensive_2"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -850,99 +598,10 @@ characters={
 		name="BRG_army_chief_drill_2"
 		portraits={
 			army={
-				small="GFX_idea_BRG_army_chief_drill_2"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
-	BRG_army_chief_maneuver_2={
-		advisor={
-			slot = army_chief
-			idea_token = BRG_army_chief_maneuver_2
-			allowed = {
-					original_tag = BRG
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="BRG_army_chief_maneuver_2"
-		portraits={
-			army={
-				small="GFX_idea_BRG_army_chief_maneuver_2"
-			}
-		}
-	}
-	BRG_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = BRG_army_chief_morale_2
-			allowed = {
-					original_tag = BRG
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="BRG_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_BRG_army_chief_morale_2"
-			}
-		}
-	}
-	BRG_army_chief_offensive_2={
-		name=BRG_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_BRG_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = BRG_army_chief_offensive_2
-			allowed = {
-				original_tag = BRG
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	BRG_army_chief_organizational_1={
-		name=BRG_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_BRG_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = BRG_army_chief_organizational_1
-			allowed = {
-				original_tag = BRG
-			}
-			traits = {
-				army_chief_organizational_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 #################
 ###NAVY CHIEF
 #################
@@ -1044,29 +703,6 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	BRG_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = BRG_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = BRG
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="BRG_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_BRG_army_armored_1"
-			}
-		}
-	}
 	BRG_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
@@ -1086,7 +722,7 @@ characters={
 		name="BRG_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_BRG_army_entrenchment_1"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -1109,30 +745,7 @@ characters={
 		name="BRG_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_BRG_army_infantr_1"
-			}
-		}
-	}
-	BRG_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = BRG_army_logistics
-			ledger = army
-				allowed = {
-					original_tag = BRG
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="BRG_army_logistics_2"
-		portraits={
-			army={
-				small="GFX_idea_BRG_army_logistics_2"
+				small="GFX_idea_south_america_generic_land_2"
 			}
 		}
 	}
@@ -1155,7 +768,7 @@ characters={
 		name="BRG_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_BRG_air_bomber_interception_2"
+				small="GFX_idea_south_america_generic_land_5"
 			}
 		}
 	}
@@ -1178,7 +791,7 @@ characters={
 		name="BRG_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_BRG_air_close_air_support_2"
+				small="GFX_idea_south_america_generic_navy_1"
 			}
 		}
 	}
@@ -1201,53 +814,7 @@ characters={
 		name="BRG_navy_screen_2"
 		portraits={
 			army={
-				small="GFX_idea_BRG_navy_screen_2"
-			}
-		}
-	}
-	BRG_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = BRG_navy_anti_submarine_1
-			ledger = navy
-				allowed = {
-					original_tag = BRG
-				}
-				traits = {
-					navy_anti_submarine_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="BRG_navy_anti_submarine_1"
-		portraits={
-			army={
-				small="GFX_idea_BRG_navy_anti_submarine_1"
-			}
-		}
-	}
-	BRG_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = BRG_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = BRG
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="BRG_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_BRG_navy_naval_air_defense_2"
+				small="GFX_idea_south_america_generic_navy_2"
 			}
 		}
 	}

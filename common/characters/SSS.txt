@@ -8,7 +8,7 @@ characters={
 		name="SSS_conservatism_leader"
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
+				large="gfx/leaders/SSS/Portrait_SSS_LGD.dds"
 			}
 		}
 		country_leader={
@@ -17,51 +17,11 @@ characters={
 			id=-1
 		}
 	}
-	SSS_liberalism_leader={
-		name="SSS_liberalism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	SSS_socialism_leader={
-		name="SSS_socialism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=socialism
-			traits={ captain_of_industry dealbroker }
-			expire="1955.1.1.12"
-			id=-1
-		}
-	}
 
 
 ###############
 ###COMMUNISM
 ###############
-	SSS_marxism_leader={
-		name="SSS_marxism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1944.1.1.12"
-			id=-1
-		}
-	}
 	SSS_leninism_leader={
 		name="SSS_leninism_leader"
 		portraits={
@@ -75,63 +35,11 @@ characters={
 			id=-1
 		}
 	}
-	SSS_stalinism_leader={
-		name="SSS_stalinism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=stalinism
-			expire="1944.1.1.12"
-			id=-1
-		}
-	}
-	SSS_anti_revisionism_leader={
-		name="SSS_anti_revisionism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=anti_revisionism
-			expire="1944.1.1.12"
-			id=-1
-		}
-	}	
-	SSS_anarchist_communism_leader={
-		name="SSS_anarchist_communism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=anarchist_communism
-			expire="1944.1.1.12"
-			id=-1
-		}
-	}
 	
 
 ###############
 ###FASCISM
 ###############
-	SSS_nazism_leader={
-		name="SSS_nazism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=nazism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
 	SSS_gen_nazism_leader={
 		name="SSS_gen_nazism_leader"
 		portraits={
@@ -145,63 +53,11 @@ characters={
 			id=-1
 		}
 	}
-	SSS_generic_fascism_leader={
-		name="SSS_generic_fascism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-	SSS_falangism_leader={
-		name="SSS_falangism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=falangism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-	SSS_rexism_leader={
-		name="SSS_rexism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=rexism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
 	
 
 ###############
 ###NEUTRALITY
 ###############
-	SSS_despotism_leader={
-		name="SSS_despotism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	SSS_oligarchism_leader={
 		name=SSS_oligarchism_leader
 		portraits={
@@ -215,49 +71,7 @@ characters={
 			expire="1953.1.1.12"
 			id=-1
 		}
-	}
-	SSS_anarchism_leader={
-		name="SSS_anarchism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=anarchism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-	SSS_moderatism_leader={
-		name="SSS_moderatism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=moderatism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-	SSS_centrism_leader={
-		name=SSS_centrism_leader
-		portraits={
-			civilian={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-			}
-		}
-		country_leader={
-			ideology=centrism
-			traits={ financial_expert }
-			expire="1953.1.1.12"
-			id=-1
-		}
-	}
-	
-	
+	}	
 	
 	
 ###################
@@ -273,7 +87,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -292,7 +106,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={   }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -310,7 +124,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={  }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -329,7 +143,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer }
+			traits={  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -353,7 +167,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={  }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -372,7 +186,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={ aviation_enthusiast }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -391,7 +205,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={  }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -410,7 +224,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={  }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -428,7 +242,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			traits={ }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -441,24 +255,6 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	SSS_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_anti_communist_crusader
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="SSS_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_SSS_anti_communist_crusader"
-			}
-		}
-	}
 	SSS_armaments_organizer={
 		advisor={
 			slot = political_advisor
@@ -473,25 +269,7 @@ characters={
 		name="SSS_armaments_organizer"
 		portraits={
 			army={
-				small="GFX_idea_SSS_armaments_organizer"
-			}
-		}
-	}
-	SSS_backroom_backstabber={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_backroom_backstabber
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					backroom_backstabber 
-				}
-		}
-		name="SSS_backroom_backstabber"
-		portraits={
-			army={
-				small="GFX_idea_SSS_backroom_backstabber"
+				small="GFX_idea_GER_generic_3"
 			}
 		}
 	}
@@ -509,7 +287,7 @@ characters={
 		name="SSS_captain_of_industry"
 		portraits={
 			army={
-				small="GFX_idea_SSS_captain_of_industry"
+				small="GFX_idea_FRA_generic_1"
 			}
 		}
 	}
@@ -527,25 +305,7 @@ characters={
 		name="SSS_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_SSS_communist_revolutionary"
-			}
-		}
-	}
-	SSS_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_compassionate_gentleman
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="SSS_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_SSS_compassionate_gentleman"
+				small="GFX_idea_ENG_generic_land_6"
 			}
 		}
 	}
@@ -563,46 +323,10 @@ characters={
 		name="SSS_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_SSS_captain_of_industry"
+				small="GFX_idea_europe_generic_2"
 			}
 		}
 	}	
-	SSS_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_economist
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="SSS_economist"
-		portraits={
-			army={
-				small="GFX_idea_SSS_economist"
-			}
-		}
-	}
-	SSS_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_editor
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="SSS_editor"
-		portraits={
-			army={
-				small="GFX_idea_SSS_editor"
-			}
-		}
-	}
 	SSS_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -617,7 +341,7 @@ characters={
 		name="SSS_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_SSS_fascist_demagogue"
+				small="GFX_idea_europe_generic_land_13"
 			}
 		}
 	}
@@ -635,61 +359,7 @@ characters={
 		name="SSS_financial_expert"
 		portraits={
 			army={
-				small="GFX_idea_SSS_financial_expert"
-			}
-		}
-	}
-	SSS_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_head_of_intelligence
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="SSS_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_SSS_head_of_intelligence"
-			}
-		}
-	}
-	SSS_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_ideological_crusader
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="SSS_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_SSS_ideological_crusader"
-			}
-		}
-	}
-	SSS_popular_figurehead={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_popular_figurehead
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					popular_figurehead 
-				}
-		}
-		name="SSS_popular_figurehead"
-		portraits={
-			army={
-				small="GFX_idea_SSS_popular_figurehead"
+				small="GFX_idea_europe_generic_4"
 			}
 		}
 	}
@@ -707,7 +377,7 @@ characters={
 		name="SSS_prince_of_terror"
 		portraits={
 			army={
-				small="GFX_idea_SSS_prince_of_terror"
+				small="GFX_idea_europe_generic_6"
 			}
 		}
 	}
@@ -715,7 +385,7 @@ characters={
 		name=SSS_silent_workhorse
 		portraits={
 			army={
-				small="GFX_idea_SSS_silent_workhorse"
+				small="GFX_idea_europe_generic_5"
 			}
 		}
 		advisor={
@@ -726,43 +396,6 @@ characters={
 			}
 			traits  = {
 				silent_workhorse 
-			}
-		}
-	}
-	SSS_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_smooth_talking_charmer
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="SSS_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_SSS_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	SSS_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = SSS_war_industrialist
-			allowed  = {
-					original_tag  = SSS
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="SSS_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_SSS_war_industrialist"
 			}
 		}
 	}
@@ -786,7 +419,7 @@ characters={
 		name="SSS_military_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
+				small="GFX_idea_ENG_generic_land_1"
 			}
 		}
 	}
@@ -808,7 +441,7 @@ characters={
 		name="SSS_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_europe_generic_land_19"
 			}
 		}
 	}
@@ -816,7 +449,7 @@ characters={
 		name=SSS_naval_theorist
 		portraits={
 			army={
-				small="GFX_idea_SSS_naval_theorist"
+				small="GFX_idea_ENG_generic_navy_3"
 			}
 		}
 		advisor={
@@ -830,95 +463,6 @@ characters={
 			traits = { 
 					naval_theorist 
 				}
-		}
-	}
-
-	SSS_naval_aviation_pioneer={
-		name=SSS_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_SSS_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = SSS_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = SSS
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	SSS_victory_through_airpower={
-		name=SSS_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_SSS_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = SSS_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = SSS
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	SSS_nuclear_scientist={
-		name=SSS_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_SSS_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SSS_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = SSS
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	SSS_rocket_scientist={
-		name=SSS_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_SSS_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SSS_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = SSS
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
 		}
 	}
 
@@ -943,7 +487,7 @@ characters={
 		name="SSS_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_SSS_army_chief_defensive_2"
+				small="GFX_idea_ENG_generic_land_2"
 			}
 		}
 	}
@@ -965,99 +509,10 @@ characters={
 		name="SSS_army_chief_drill_2"
 		portraits={
 			army={
-				small="GFX_idea_SSS_army_chief_drill_2"
+				small="GFX_idea_ENG_generic_land_3"
 			}
 		}
 	}
-	SSS_army_chief_maneuver_2={
-		advisor={
-			slot = army_chief
-			idea_token = SSS_army_chief_maneuver_2
-			allowed = {
-					original_tag = SSS
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SSS_army_chief_maneuver_2"
-		portraits={
-			army={
-				small="GFX_idea_SSS_army_chief_maneuver_2"
-			}
-		}
-	}
-	SSS_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = SSS_army_chief_morale_2
-			allowed = {
-					original_tag = SSS
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SSS_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_SSS_army_chief_morale_2"
-			}
-		}
-	}
-	SSS_army_chief_offensive_2={
-		name=SSS_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_SSS_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = SSS_army_chief_offensive_2
-			allowed = {
-				original_tag = SSS
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	SSS_army_chief_organizational_1={
-		name=SSS_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_SSS_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = SSS_army_chief_organizational_1
-			allowed = {
-				original_tag = SSS
-			}
-			traits = {
-				army_chief_organizational_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 #################
 ###NAVY CHIEF
 #################
@@ -1079,7 +534,7 @@ characters={
 		name="SSS_navy_chief_decisive_battle_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2"
+				small="GFX_idea_ENG_generic_navy_2"
 			}
 		}
 	}
@@ -1103,7 +558,7 @@ characters={
 		name="SSS_navy_chief_naval_aviation_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_1"
+				small="GFX_idea_ENG_generic_navy_1"
 			}
 		}
 	}
@@ -1129,7 +584,7 @@ characters={
 		name="SSS_air_chief_ground_support_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_3"
+				small="GFX_idea_europe_generic_land_5"
 			}
 		}
 	}
@@ -1151,7 +606,7 @@ characters={
 		name="SSS_air_chief_reform_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_1"
+				small="GFX_idea_europe_generic_land_4"
 			}
 		}
 	}
@@ -1159,29 +614,6 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	SSS_army_armored_1={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = SSS_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = SSS
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SSS_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_SSS_army_armored_1"
-			}
-		}
-	}
 	SSS_army_entrenchment_1={ #_1 Specialist, _2 Expert
 		advisor={
 			slot = high_command
@@ -1201,7 +633,7 @@ characters={
 		name="SSS_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_SSS_army_entrenchment_1"
+				small="GFX_idea_ENG_generic_land_4"
 			}
 		}
 	}
@@ -1224,30 +656,7 @@ characters={
 		name="SSS_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_SSS_army_infantr_1"
-			}
-		}
-	}
-	SSS_army_logistics_2={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = SSS_army_logistics
-			ledger = army
-				allowed = {
-					original_tag = SSS
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SSS_army_logistics_2"
-		portraits={
-			army={
-				small="GFX_idea_SSS_army_logistics_2"
+				small="GFX_idea_ENG_generic_land_5"
 			}
 		}
 	}
@@ -1270,7 +679,7 @@ characters={
 		name="SSS_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_SSS_air_bomber_interception_2"
+				small="GFX_idea_GER_generic_navy_2"
 			}
 		}
 	}
@@ -1293,7 +702,7 @@ characters={
 		name="SSS_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_SSS_air_close_air_support_2"
+				small="GFX_idea_GER_generic_navy_3"
 			}
 		}
 	}
@@ -1316,7 +725,7 @@ characters={
 		name="SSS_navy_screen_2"
 		portraits={
 			army={
-				small="GFX_idea_SSS_navy_screen_2"
+				small="GFX_idea_FRA_generic_navy_2"
 			}
 		}
 	}
@@ -1339,30 +748,7 @@ characters={
 		name="SSS_navy_anti_submarine_1"
 		portraits={
 			army={
-				small="GFX_idea_SSS_navy_anti_submarine_1"
-			}
-		}
-	}
-	SSS_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = SSS_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = SSS
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SSS_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_SSS_navy_naval_air_defense_2"
+				small="GFX_idea_FRA_generic_navy_1"
 			}
 		}
 	}

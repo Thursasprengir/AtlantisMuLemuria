@@ -37,23 +37,9 @@ set_convoys = 80
 #characters
 #political leaders
 recruit_character = SSS_conservatism_leader
-#recruit_character = SSS_liberalism_leader
-#recruit_character = SSS_socialism_leader
-#recruit_character = SSS_marxism_leader
 recruit_character = SSS_leninism_leader
-#recruit_character = SSS_stalinism_leader
-#recruit_character = SSS_anti_revisionism_leader
-#recruit_character = SSS_anarchist_communism_leader
-#recruit_character = SSS_nazism_leader
 recruit_character = SSS_gen_nazism_leader
-#recruit_character = SSS_generic_fascism_leader
-#recruit_character = SSS_falangism_leader
-#recruit_character = SSS_rexism_leader
-#recruit_character = SSS_despotism_leader
 recruit_character = SSS_oligarchism_leader
-#recruit_character = SSS_anarchism_leader
-#recruit_character = SSS_moderatism_leader
-#recruit_character = SSS_centrism_leader
 #military leaders
 recruit_character = SSS_corps_commander_1
 recruit_character = SSS_corps_commander_2
@@ -65,101 +51,28 @@ recruit_character = SSS_naval_leader_3
 recruit_character = SSS_naval_leader_4
 recruit_character = SSS_naval_leader_5
 #advisors
-#recruit_character = SSS_anti_communist_crusader
 recruit_character = SSS_armaments_organizer
-#recruit_character = SSS_backroom_backstabber
 recruit_character = SSS_captain_of_industry
 recruit_character = SSS_communist_revolutionary
-#recruit_character = SSS_compassionate_gentleman
 recruit_character = SSS_democratic_reformer
-#recruit_character = SSS_economist
-#recruit_character = SSS_editor
 recruit_character = SSS_fascist_demagogue
 recruit_character = SSS_financial_expert
-#recruit_character = SSS_head_of_intelligence
-#recruit_character = SSS_ideological_crusader
-#recruit_character = SSS_popular_figurehead
 recruit_character = SSS_prince_of_terror
 recruit_character = SSS_silent_workhorse
-#recruit_character = SSS_smooth_talking_charmer
-#recruit_character = SSS_war_industrialist
 #theorists
 recruit_character = SSS_military_theorist
 recruit_character = SSS_air_warfare_theorist
 recruit_character = SSS_naval_theorist
-#recruit_character = SSS_naval_aviation_pioneer
-#recruit_character = SSS_victory_through_airpower
-#recruit_character = SSS_nuclear_scientist
-#recruit_character = SSS_rocket_scientist
 #military chiefs
 recruit_character = SSS_army_chief_defensive_2
 recruit_character = SSS_army_chief_drill_2
-recruit_character = SSS_army_chief_maneuver_2
-#recruit_character = SSS_army_chief_morale_2
-#recruit_character = SSS_army_chief_offensive_2
-#recruit_character = SSS_army_chief_organizational_1
 recruit_character = SSS_navy_chief_decisive_battle_2
 recruit_character = SSS_navy_chief_naval_aviation_2
 recruit_character = SSS_air_chief_ground_support_2
 recruit_character = SSS_air_chief_reform_2
-#recruit_character = SSS_army_armored_1
 recruit_character = SSS_army_entrenchment_1
 recruit_character = SSS_army_infantry_1
-#recruit_character = SSS_army_logistics_2
 recruit_character = SSS_air_bomber_interception_2
 recruit_character = SSS_air_close_air_support_2
 recruit_character = SSS_navy_screen_2
 recruit_character = SSS_navy_anti_submarine_1
-#recruit_character = SSS_navy_naval_air_defense_2
-
-create_country_leader = {
-	name = "Andre Persson"
-	desc = "POLITICS_ANDRE_PERSSON_DESC"
-	picture = "Portrait_SSS_A_Persson.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alexandre du Champs"
-	desc = "POLITICS_ALEXANDRE_DU_CHAMPS_DESC"
-	picture = "Portrait_SSS_A_du_Champs.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Charles Weddersal"
-	desc = "POLITICS_CHARLES_WEDDERSAL_DESC"
-	picture = "Portrait_SSS_C_Weddersal.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Jaques Parquinette"
-	desc = "POLITICS_J_PARQUINETTE_DESC"
-	picture = "Portrait_SSS_J_Parquinette.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-
-create_corps_commander = {
-	name = "Paul Mandrake"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
-	skill = 2
-}
