@@ -634,430 +634,430 @@ ideas = {
 		}
 	}
 		
-	tank_manufacturer = {
-		
-		tod_national_arms = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}			
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		diego_and_diego = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-						
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		pablo_y_diazabal = {
-			
-			picture = generic_industrial_concern_1
-			allowed = {
-				original_tag = TOD
-			}
-			available = {
-			}
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { }
-			
-			equipment_bonus = {
-				medium_tank_equipment = {
-					build_cost_ic = -0.1
-				}
-				light_tank_equipment = {
-					build_cost_ic = -0.1
-				}
-			}
-
-			modifier = {
-
-			}
-		}
-		
-		tanques_tanques = {
-			
-			picture = usa_tank_destroyer_board
-			allowed = {
-				original_tag = TOD
-			}
-			available = {
-			}
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { }
-			
-			equipment_bonus = {
-				light_tank_destroyer_equipment = {
-					build_cost_ic = -0.1
-					ap_attack = 0.1
-					hard_attack = 0.25
-				}
-				medium_tank_destroyer_equipment = {
-					build_cost_ic = -0.1
-					ap_attack = 0.1
-					hard_attack = 0.25
-				}
-				heavy_tank_destroyer_equipment = {
-					build_cost_ic = -0.1
-					ap_attack = 0.1
-					hard_attack = 0.25
-				}
-			}
-
-			modifier = {
-
-			}
-		}
-	}
+	#tank_manufacturer = {
+	#	
+	#	tod_national_arms = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}			
+	#		
+	#		research_bonus = {
+	#			armor = 0.15
+	#		}
+	#		
+	#		traits = { fast_tank_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#	
+	#	diego_and_diego = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#					
+	#		research_bonus = {
+	#			armor = 0.15
+	#		}
+	#		
+	#		traits = { medium_tank_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#	
+	#	pablo_y_diazabal = {
+	#		
+	#		picture = generic_industrial_concern_1
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		available = {
+	#		}
+	#
+	#		
+	#		research_bonus = {
+	#			armor = 0.15
+	#		}
+	#		
+	#		traits = { }
+	#		
+	#		equipment_bonus = {
+	#			medium_tank_equipment = {
+	#				build_cost_ic = -0.1
+	#			}
+	#			light_tank_equipment = {
+	#				build_cost_ic = -0.1
+	#			}
+	#		}
+	#
+	#		modifier = {
+	#
+	#		}
+	#	}
+	#	
+	#	tanques_tanques = {
+	#		
+	#		picture = usa_tank_destroyer_board
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		available = {
+	#		}
+	#
+	#		
+	#		research_bonus = {
+	#			armor = 0.15
+	#		}
+	#		
+	#		traits = { }
+	#		
+	#		equipment_bonus = {
+	#			light_tank_destroyer_equipment = {
+	#				build_cost_ic = -0.1
+	#				ap_attack = 0.1
+	#				hard_attack = 0.25
+	#			}
+	#			medium_tank_destroyer_equipment = {
+	#				build_cost_ic = -0.1
+	#				ap_attack = 0.1
+	#				hard_attack = 0.25
+	#			}
+	#			heavy_tank_destroyer_equipment = {
+	#				build_cost_ic = -0.1
+	#				ap_attack = 0.1
+	#				hard_attack = 0.25
+	#			}
+	#		}
+	#
+	#		modifier = {
+	#
+	#		}
+	#	}
+	#}
 	
-	naval_manufacturer = { 
+	#naval_manufacturer = { 
+	#
+	#	designer = yes
+	#	
+	#	TOD_national_yards = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			naval_equipment = 0.15
+	#		}
+	#		
+	#		traits = { coastal_defence_naval_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#	
+	#	austral_shipyards= {
+	#		
+	#		picture = generic_naval_manufacturer_1
+	#
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#		research_bonus = {
+	#			naval_equipment = 0.10
+	#		}
+	#		
+	#		traits = { raiding_fleet_naval_manufacturer }
+	#	}
+	#	
+	#	t_m_e = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			naval_equipment = 0.15
+	#		}
+	#		
+	#		traits = { atlantic_fleet_naval_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#	
+	#	armas_navales = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			naval_equipment = 0.15
+	#		}
+	#		
+	#		traits = { pacific_fleet_naval_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#}
 	
-		designer = yes
-		
-		TOD_national_yards = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		austral_shipyards= {
-			
-			picture = generic_naval_manufacturer_1
-
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { raiding_fleet_naval_manufacturer }
-		}
-		
-		t_m_e = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		armas_navales = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { pacific_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
-	
-	aircraft_manufacturer = { 
-		
-		designer = yes
-		
-		tod_aguila = {
-			
-			picture = generic_air_manufacturer_2
-
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { light_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# trainers, and air ambulances?
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		ad_astra = {
-			
-			picture = generic_air_manufacturer_1
-
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				# assembled license aircrafts from across the world 
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		per_portam = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { CAS_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		
-		santander = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
-		enaltecido = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}		
-	}
+	#aircraft_manufacturer = { 
+	#	
+	#	designer = yes
+	#	
+	#	tod_aguila = {
+	#		
+	#		picture = generic_air_manufacturer_2
+	#
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#		research_bonus = {
+	#			air_equipment = 0.10
+	#		}
+	#		
+	#		traits = { light_aircraft_manufacturer }
+	#		
+	#		equipment_bonus = {
+	#			# trainers, and air ambulances?
+	#		}
+	#		
+	#		ai_will_do = {
+	#			factor = 1
+	#		}
+	#	}
+	#	
+	#	ad_astra = {
+	#		
+	#		picture = generic_air_manufacturer_1
+	#
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#		research_bonus = {
+	#			air_equipment = 0.10
+	#		}
+	#		
+	#		traits = { medium_aircraft_manufacturer }
+	#		
+	#		equipment_bonus = {
+	#			# assembled license aircrafts from across the world 
+	#		}
+	#		
+	#		ai_will_do = {
+	#			factor = 1
+	#		}
+	#	}
+	#	
+	#	per_portam = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			air_equipment = 0.15
+	#		}
+	#		
+	#		traits = { CAS_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#
+	#	
+	#	santander = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			air_equipment = 0.15
+	#		}
+	#		
+	#		traits = { heavy_aircraft_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#	enaltecido = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			air_equipment = 0.15
+	#		}
+	#		
+	#		traits = { naval_aircraft_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}		
+	#}
 	
 	
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		mfg_generico = {
-			
-			picture = generic_infantry_equipment_manufacturer_3
-
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}
-			
-			equipment_bonus = {
-				# rifles and pistols
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-		}
-		
-		mfg_generico2 = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				motorized_equipment = 0.15
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-	
-		
-		mfg_generico3 = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				artillery = 0.15
-			}
-			
-			traits = { artillery_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
+	#materiel_manufacturer = {
+	#		
+	#	designer = yes
+	#	
+	#	mfg_generico = {
+	#		
+	#		picture = generic_infantry_equipment_manufacturer_3
+	#
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#		research_bonus = {
+	#			infantry_weapons = 0.10
+	#		}
+	#		
+	#		equipment_bonus = {
+	#			# rifles and pistols
+	#		}
+	#		
+	#		traits = { infantry_equipment_manufacturer }
+	#	}
+	#	
+	#	mfg_generico2 = {
+	#
+	#
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			motorized_equipment = 0.15
+	#		}
+	#		
+	#		traits = { motorized_equipment_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#	
+	#
+	#	
+	#	mfg_generico3 = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			artillery = 0.15
+	#		}
+	#		
+	#		traits = { artillery_manufacturer }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#}
 	
 
 	
-	industrial_concern = {
-					
-		tod_national_oil = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.15
-			}
-			
-			traits = { refinery_concern }
-			
-			modifier = {
-			}
-		}
+	#industrial_concern = {
+	#				
+	#	tod_national_oil = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			industry = 0.05
+	#			synth_resources = 0.15
+	#		}
+	#		
+	#		traits = { refinery_concern }
+	#		
+	#		modifier = {
+	#		}
+	#	}
 		
-		maquinas_de_todorovia = {
-			
-			
-			allowed = {
-				original_tag = TOD
-			}
-			
-
-			
-			research_bonus = {
-				electronics = 0.15
-			}
-			
-			traits = { electronics_concern }
-			
-			modifier = {
-			}
-		}
-		industria_coral = {
-			
-			picture = usa_general_motors
-			allowed = {
-				original_tag = TOD
-			}
-			available = {
-			}
-			
-
-			
-			research_bonus = {
-				industry = 0.15
-			}
-			
-			traits = { industrial_concern }
-			
-			modifier = {
-				industrial_capacity_factory = 0.05
-			}
-		}
-	}
+	#	maquinas_de_todorovia = {
+	#		
+	#		
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			electronics = 0.15
+	#		}
+	#		
+	#		traits = { electronics_concern }
+	#		
+	#		modifier = {
+	#		}
+	#	}
+	#	industria_coral = {
+	#		
+	#		picture = usa_general_motors
+	#		allowed = {
+	#			original_tag = TOD
+	#		}
+	#		available = {
+	#		}
+	#		
+	#
+	#		
+	#		research_bonus = {
+	#			industry = 0.15
+	#		}
+	#		
+	#		traits = { industrial_concern }
+	#		
+	#		modifier = {
+	#			industrial_capacity_factory = 0.05
+	#		}
+	#	}
+	#}
 	
 	
 	theorist = {
