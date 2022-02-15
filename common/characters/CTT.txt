@@ -66,7 +66,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ defensive_doctrine organisational_leader }
+			traits={ organisational_leader }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -92,7 +92,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -113,7 +113,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={  }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -133,7 +133,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={ }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -154,7 +154,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer }
+			traits={  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -180,7 +180,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={  }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -201,7 +201,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={  }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -222,7 +222,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={  spotter }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -243,7 +243,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={  }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -263,7 +263,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			traits={  }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -760,94 +760,6 @@ characters={
 #################
 ###ARMY CHIEF
 #################
-	CTT_army_chief_defensive_2={
-		advisor={
-			slot = army_chief
-			idea_token = CTT_army_chief_defensive_2
-			allowed = {
-					original_tag = CTT
-				}
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CTT_army_chief_defensive_2"
-		portraits={
-			army={
-				small="GFX_idea_CTT_army_chief_defensive_2"
-			}
-		}
-	}
-	CTT_army_chief_drill_2={
-		advisor={
-			slot = army_chief
-			idea_token = CTT_army_chief_drill_2
-			allowed = {
-					original_tag = CTT
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CTT_army_chief_drill_2"
-		portraits={
-			army={
-				small="GFX_idea_CTT_army_chief_drill_2"
-			}
-		}
-	}
-	CTT_army_chief_maneuver_2={
-		advisor={
-			slot = army_chief
-			idea_token = CTT_army_chief_maneuver_2
-			allowed = {
-					original_tag = CTT
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CTT_army_chief_maneuver_2"
-		portraits={
-			army={
-				small="GFX_idea_CTT_army_chief_maneuver_2"
-			}
-		}
-	}
-	CTT_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = CTT_army_chief_morale_2
-			allowed = {
-					original_tag = CTT
-				}
-				traits = {
-					army_chief_morale
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CTT_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_CTT_army_chief_morale_2"
-			}
-		}
-	}
 	CTT_army_chief_offensive_2={
 		name=CTT_army_chief_offensive_2
 		portraits={

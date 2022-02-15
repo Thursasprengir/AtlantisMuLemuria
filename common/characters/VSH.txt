@@ -66,36 +66,13 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trickster offensive_doctrine guerilla_fighter }
+			traits={ }
 			skill=3
 			attack_skill=1
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=-1
-		}
-	}
-	VSH_gadriz_dzulei={
-		advisor={
-			slot = theorist
-			idea_token = VSH_gadriz_dzulei
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = air 
-				cost  = 250.000
-				research_bonus  = {
-					cat_strategic_destruction  = 0.150
-				}
-				traits  = {
-					victory_through_airpower 
-				}
-		}
-		name="VSH_gadriz_dzulei"
-		portraits={
-			army={
-				small="GFX_idea_VSH_gadriz_dzulei"
-			}
 		}
 	}
 	VSH_ergun_landiq={
@@ -144,7 +121,7 @@ characters={
 		name="VSH_harul_ijjris"
 		portraits={
 			army={
-				small="GFX_idea_VSH_harul_ijjris"
+				small="GFX_idea_africa_generic_3"
 			}
 		}
 	}
@@ -162,7 +139,7 @@ characters={
 		name="VSH_bijjo_pundrapez"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_6"
+				small="GFX_idea_JOR_generic_2"
 			}
 		}
 	}
@@ -186,29 +163,7 @@ characters={
 		name="VSH_orutli_usamirez"
 		portraits={
 			army={
-				small="GFX_idea_VSH_orutli_usamirez"
-			}
-		}
-	}
-	VSH_maigul_guruz={
-		advisor={
-			slot = high_command
-			idea_token = VSH_maigul_guruz
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = army 
-				traits  = {
-					army_infantry_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_maigul_guruz"
-		portraits={
-			army={
-				small="GFX_idea_VSH_maigul_guruz"
+				small="GFX_idea_generic_political_advisor_arab_2"
 			}
 		}
 	}
@@ -230,69 +185,7 @@ characters={
 		name="VSH_laqanziz_djuntsa"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_3"
-			}
-		}
-	}
-	VSH_badtsiz_maldriave={
-		advisor={
-			slot = high_command
-			idea_token = VSH_badtsiz_maldriave
-			ledger  = navy 
-				allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					navy_fleet_logistics_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_badtsiz_maldriave"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_2"
-			}
-		}
-	}
-	VSH_dzamiz_suzareq={
-		advisor={
-			slot = high_command
-			idea_token = VSH_dzamiz_suzareq
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = navy 
-				traits  = {
-					navy_amphibious_assault_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_dzamiz_suzareq"
-		portraits={
-			army={
-				small="GFX_idea_VSH_dzamiz_suzareq"
-			}
-		}
-	}
-	VSH_pena_qimram={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_pena_qimram
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="VSH_pena_qimram"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -314,7 +207,7 @@ characters={
 		name="VSH_chameru_dahijjiq"
 		portraits={
 			army={
-				small="GFX_idea_VSH_chameru_dahijjiq"
+				small="GFX_idea_generic_air_arab_3"
 			}
 		}
 	}
@@ -336,49 +229,7 @@ characters={
 		name="VSH_mairat_hyrden"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_1"
-			}
-		}
-	}
-	VSH_dzozef_magadi={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_dzozef_magadi
-			allowed  = {
-					original_tag  = VSH
-				}
-				available  = {
-				}
-				traits  = {
-					anti_communist_crusader 
-				}
-		}
-		name="VSH_dzozef_magadi"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
-	VSH_fuusniq_aroqsats={
-		advisor={
-			slot = high_command
-			idea_token = VSH_fuusniq_aroqsats
-			ledger  = navy 
-				allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					navy_screen_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_fuusniq_aroqsats"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_1"
+				small="GFX_idea_generic_air_arab_1"
 			}
 		}
 	}
@@ -401,7 +252,7 @@ characters={
 		name="VSH_surumuj_anuasid"
 		portraits={
 			army={
-				small="GFX_idea_VSH_surumuj_anuasid"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -433,29 +284,7 @@ characters={
 		name="VSH_dzaris_tseminui"
 		portraits={
 			army={
-				small="GFX_idea_VSH_dzaris_tseminui"
-			}
-		}
-	}
-	VSH_leimun_lumul={
-		advisor={
-			slot = high_command
-			idea_token = VSH_leimun_lumul
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = navy 
-				traits  = {
-					navy_naval_air_defense_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_leimun_lumul"
-		portraits={
-			army={
-				small="GFX_idea_VSH_leimun_lumul"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -477,29 +306,7 @@ characters={
 		name="VSH_marejja_dzor"
 		portraits={
 			army={
-				small="GFX_idea_VSH_marejja_dzor"
-			}
-		}
-	}
-	VSH_ridjart_nahunmund={
-		advisor={
-			slot = navy_chief
-			idea_token = VSH_ridjart_nahunmund
-			ledger  = navy 
-				allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					navy_chief_old_guard 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_ridjart_nahunmund"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -514,11 +321,6 @@ characters={
 				}
 				traits  = {
 					communist_revolutionary 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism 
-					}
 				}
 				ai_will_do  = {
 					factor  = 10.000
@@ -542,29 +344,7 @@ characters={
 		name="VSH_duqum_nietalli"
 		portraits={
 			army={
-				small="GFX_idea_VSH_duqum_nietalli"
-			}
-		}
-	}
-	VSH_guhalaq_jimurru={
-		advisor={
-			slot = navy_chief
-			idea_token = VSH_guhalaq_jimurru
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = navy 
-				traits  = {
-					navy_chief_commerce_raiding_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_guhalaq_jimurru"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
+				small="GFX_idea_africa_generic_2"
 			}
 		}
 	}
@@ -582,25 +362,7 @@ characters={
 		name="VSH_lobur_dashim"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
-	VSH_tonalu_zimsem={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_tonalu_zimsem
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="VSH_tonalu_zimsem"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
+				small="GFX_idea_LIB_edwin_barclay"
 			}
 		}
 	}
@@ -622,7 +384,7 @@ characters={
 		name="VSH_murjiq_orqijun"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_2"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 	}
@@ -644,7 +406,7 @@ characters={
 		name="VSH_dzor_gindi"
 		portraits={
 			army={
-				small="GFX_idea_VSH_dzor_gindi"
+				small="GFX_idea_south_africa_army_generic_2"
 			}
 		}
 	}
@@ -666,47 +428,7 @@ characters={
 		name="VSH_gordnau_hajjise"
 		portraits={
 			army={
-				small="GFX_idea_VSH_gordnau_hajjise"
-			}
-		}
-	}
-	VSH_hobrair_qotarj={
-		advisor={
-			slot = theorist
-			idea_token = VSH_hobrair_qotarj
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = air 
-				research_bonus  = {
-					rocketry  = 0.150
-				}
-				traits  = {
-					rocket_scientist 
-				}
-		}
-		name="VSH_hobrair_qotarj"
-		portraits={
-			army={
-				small="GFX_idea_VSH_hobrair_qotarj"
-			}
-		}
-	}
-	VSH_ezizi_gyulqun={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_ezizi_gyulqun
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="VSH_ezizi_gyulqun"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -728,47 +450,7 @@ characters={
 		name="VSH_midja_mahriq"
 		portraits={
 			army={
-				small="GFX_idea_sabiha_gocen"
-			}
-		}
-	}
-	VSH_dzin_tamisin={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_dzin_tamisin
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="VSH_dzin_tamisin"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-	}
-	VSH_gulaq_trasmidj={
-		advisor={
-			slot = navy_chief
-			idea_token = VSH_gulaq_trasmidj
-			ledger  = navy 
-				allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					navy_chief_decisive_battle_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_gulaq_trasmidj"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
+				small="GFX_idea_generic_political_advisor_arab_2"
 			}
 		}
 	}
@@ -790,7 +472,7 @@ characters={
 		name="VSH_enli_usasor"
 		portraits={
 			army={
-				small="GFX_idea_VSH_enli_usasor"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -812,103 +494,7 @@ characters={
 		name="VSH_sayado_puulran"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
-	VSH_gurdurum_nalimtsi={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_gurdurum_nalimtsi
-			allowed  = {
-					original_tag  = VSH
-				}
-				available  = {
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="VSH_gurdurum_nalimtsi"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_6"
-			}
-		}
-	}
-	VSH_tanjiq_muhadow={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_tanjiq_muhadow
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="VSH_tanjiq_muhadow"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-	}
-	VSH_ahyumui_nendamru={
-		allowed_civil_war = {
-			has_government = communism 
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_ahyumui_nendamru
-			allowed  = {
-					original_tag  = VSH
-				}
-				available  = {
-				}
-				traits  = {
-					financial_expert 
-				}
-				cost  = 0.000
-				do_effect  = {
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="VSH_ahyumui_nendamru"
-		portraits={
-			army={
-				small="GFX_idea_USA_harry_white"
-			}
-		}
-	}
-	VSH_qunlunuq_irimudzu={
-		allowed_civil_war = {
-			has_government = communism 
-		}	
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_qunlunuq_irimudzu
-			allowed  = {
-					original_tag  = VSH
-				}
-				available  = {
-				}
-				traits  = {
-					editor 
-				}
-				cost  = 0.000
-				do_effect  = {
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="VSH_qunlunuq_irimudzu"
-		portraits={
-			army={
-				small="GFX_idea_USA_whittaker_chambers"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -932,29 +518,7 @@ characters={
 		name="VSH_hualpor_dusur"
 		portraits={
 			army={
-				small="GFX_idea_USA_walter_krueger"
-			}
-		}
-	}
-	VSH_arpren_tsisram={
-		advisor={
-			slot = army_chief
-			idea_token = VSH_arpren_tsisram
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = army 
-				traits  = {
-					army_chief_offensive_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_arpren_tsisram"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -976,112 +540,7 @@ characters={
 		name="VSH_djrov_tsuus"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_3"
-			}
-		}
-	}
-	VSH_bargiz_defumun={
-		advisor={
-			slot = theorist
-			idea_token = VSH_bargiz_defumun
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = air 
-				cost  = 250.000
-				research_bonus  = {
-					cat_base_strike  = 0.150
-				}
-				traits  = {
-					naval_aviation_pioneer 
-				}
-		}
-		name="VSH_bargiz_defumun"
-		portraits={
-			army={
-				small="GFX_idea_VSH_bargiz_defumun"
-			}
-		}
-	}
-	VSH_dulutli_amerziad={
-		allowed_civil_war  = {
-			not  = {
-				has_government  = communism 
-			}
-		}	
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_dulutli_amerziad
-			allowed  = {
-					original_tag  = VSH
-				}
-				available  = {
-				}
-				traits  = {
-					editor 
-				}
-				cost  = 50.000
-				do_effect  = {
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="VSH_dulutli_amerziad"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
-	VSH_dzam_jumrir={
-		allowed_civil_war  = {
-			has_government  = communism 
-		}	
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_dzam_jumrir
-			allowed  = {
-					original_tag  = VSH
-				}
-				available  = {
-				}
-				traits  = {
-					economist 
-				}
-				cost  = 0.000
-				do_effect  = {
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="VSH_dzam_jumrir"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
-	VSH_hisqitla_manilli={
-		advisor={
-			slot = theorist
-			idea_token = VSH_hisqitla_manilli
-			allowed  = {
-					original_tag  = VSH
-				}
-				ledger  = navy 
-				research_bonus  = {
-					naval_doctrine  = 0.100
-				}
-				traits  = {
-					naval_theorist 
-				}
-		}
-		name="VSH_hisqitla_manilli"
-		portraits={
-			army={
-				small="GFX_idea_VSH_hisqitla_manilli"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -1266,929 +725,24 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	VSH_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_anti_communist_crusader
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="VSH_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_VSH_anti_communist_crusader"
-			}
-		}
-	}
-	VSH_armaments_organizer={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_armaments_organizer
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="VSH_armaments_organizer"
-		portraits={
-			army={
-				small="GFX_idea_VSH_armaments_organizer"
-			}
-		}
-	}
-	VSH_backroom_backstabber={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_backroom_backstabber
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					backroom_backstabber 
-				}
-		}
-		name="VSH_backroom_backstabber"
-		portraits={
-			army={
-				small="GFX_idea_VSH_backroom_backstabber"
-			}
-		}
-	}
-	VSH_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_captain_of_industry
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="VSH_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_VSH_captain_of_industry"
-			}
-		}
-	}
-	VSH_communist_revolutionary={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_communist_revolutionary
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					communist_revolutionary 
-				}
-		}
-		name="VSH_communist_revolutionary"
-		portraits={
-			army={
-				small="GFX_idea_VSH_communist_revolutionary"
-			}
-		}
-	}
-	VSH_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_compassionate_gentleman
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="VSH_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_VSH_compassionate_gentleman"
-			}
-		}
-	}
-	VSH_democratic_reformer={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_democratic_reformer
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					democratic_reformer 
-				}
-		}
-		name="VSH_democratic_reformer"
-		portraits={
-			army={
-				small="GFX_idea_VSH_captain_of_industry"
-			}
-		}
-	}	
-	VSH_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_economist
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="VSH_economist"
-		portraits={
-			army={
-				small="GFX_idea_VSH_economist"
-			}
-		}
-	}
-	VSH_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_editor
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="VSH_editor"
-		portraits={
-			army={
-				small="GFX_idea_VSH_editor"
-			}
-		}
-	}
-	VSH_fascist_demagogue={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_fascist_demagogue
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					fascist_demagogue 
-				}
-		}
-		name="VSH_fascist_demagogue"
-		portraits={
-			army={
-				small="GFX_idea_VSH_fascist_demagogue"
-			}
-		}
-	}
-	VSH_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_financial_expert
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="VSH_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_VSH_financial_expert"
-			}
-		}
-	}
-	VSH_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_head_of_intelligence
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="VSH_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_VSH_head_of_intelligence"
-			}
-		}
-	}
-	VSH_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_ideological_crusader
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="VSH_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_VSH_ideological_crusader"
-			}
-		}
-	}
-	VSH_popular_figurehead={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_popular_figurehead
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					popular_figurehead 
-				}
-		}
-		name="VSH_popular_figurehead"
-		portraits={
-			army={
-				small="GFX_idea_VSH_popular_figurehead"
-			}
-		}
-	}
-	VSH_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_prince_of_terror
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="VSH_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_VSH_prince_of_terror"
-			}
-		}
-	}
-	VSH_silent_workhorse={
-		name=VSH_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_VSH_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_silent_workhorse
-			allowed  = {
-				original_tag  = VSH
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	VSH_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_smooth_talking_charmer
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="VSH_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_VSH_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	VSH_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = VSH_war_industrialist
-			allowed  = {
-					original_tag  = VSH
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="VSH_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_VSH_war_industrialist"
-			}
-		}
-	}
+
 ###############
 ###THEORISTS
 ###############
-	VSH_military_theorist={
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = VSH_military_theorist
-			ledger = army
-				allowed = {
-					original_tag = VSH
-				}
-				
-				traits = {
-					military_theorist
-				}
-		}
-		name="VSH_military_theorist"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-	}
-	VSH_air_warfare_theorist={
-		advisor={
-			cost = 100
-			
-			slot = theorist
-			idea_token = VSH_air_warfare_theorist
-			ledger = air
-				allowed = {
-					original_tag = VSH
-				}
-				
-				traits = {
-					air_warfare_theorist
-				}
-		}
-		name="VSH_air_warfare_theorist"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
-			}
-		}
-	}
-	VSH_naval_theorist={
-		name=VSH_naval_theorist
-		portraits={
-			army={
-				small="GFX_idea_VSH_naval_theorist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = VSH_naval_theorist
-			ledger = navy
-			allowed = {
-				original_tag = VSH
-			}
-			traits = { 
-					naval_theorist 
-				}
-		}
-	}
-
-	VSH_naval_aviation_pioneer={
-		name=VSH_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_VSH_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = VSH_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = VSH
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	VSH_victory_through_airpower={
-		name=VSH_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_VSH_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = VSH_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = VSH
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	VSH_nuclear_scientist={
-		name=VSH_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_VSH_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = VSH_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = VSH
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	VSH_rocket_scientist={
-		name=VSH_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_VSH_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = VSH_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = VSH
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
-		}
-	}
 
 #################
 ###ARMY CHIEF
 #################
-	VSH_army_chief_defensive_2={
-		advisor={
-			slot = army_chief
-			idea_token = VSH_army_chief_defensive_2
-			allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_army_chief_defensive_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_chief_defensive_2"
-			}
-		}
-	}
-	VSH_army_chief_drill_2={
-		advisor={
-			slot = army_chief
-			idea_token = VSH_army_chief_drill_2
-			allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_army_chief_drill_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_chief_drill_2"
-			}
-		}
-	}
-	VSH_army_chief_maneuver_2={
-		advisor={
-			slot = army_chief
-			idea_token = VSH_army_chief_maneuver_2
-			allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_army_chief_maneuver_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_chief_maneuver_2"
-			}
-		}
-	}
-	VSH_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = VSH_army_chief_morale_2
-			allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_chief_morale_2"
-			}
-		}
-	}
-	VSH_army_chief_offensive_2={
-		name=VSH_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = VSH_army_chief_offensive_2
-			allowed = {
-				original_tag = VSH
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	VSH_army_chief_organizational_1={
-		name=VSH_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = VSH_army_chief_organizational_1
-			allowed = {
-				original_tag = VSH
-			}
-			traits = {
-				army_chief_organizational_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
 
 #################
 ###NAVY CHIEF
 #################
-	VSH_navy_chief_decisive_battle_2={
-		advisor={
-			slot = navy_chief
-			idea_token = VSH_navy_chief_decisive_battle_2
-			allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					navy_chief_decisive_battle_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_navy_chief_decisive_battle_2"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_2"
-			}
-		}
-	}
-	VSH_navy_chief_naval_aviation_2={
-		advisor={
-			
-			
-			slot = navy_chief
-			idea_token = VSH_navy_chief_naval_aviation_2
-			allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					navy_chief_naval_aviation_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_navy_chief_naval_aviation_2"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_1"
-			}
-		}
-	}
 	
 #################
 ###AIRFORCE CHIEF
 #################
-	VSH_air_chief_ground_support_2={
-		advisor={
-			slot = air_chief
-			idea_token = VSH_air_chief_ground_support_2
-			allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					air_chief_ground_support_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_air_chief_ground_support_2"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_3"
-			}
-		}
-	}
-	VSH_air_chief_reform_2={
-		advisor={
-			slot = air_chief
-			idea_token = VSH_air_chief_reform_2
-			allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					air_chief_reform_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_air_chief_reform_2"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_1"
-			}
-		}
-	}
 
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	VSH_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_VSH_army_armored_1"
-			}
-		}
-	}
-	VSH_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_army_entrenchment_1
-			ledger = army
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					army_entrenchment_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_army_entrenchment_1"
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_entrenchment_1"
-			}
-		}
-	}
-	VSH_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_army_infantry
-			ledger = army
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					army_infantry_1
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_army_infantry_1"
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_infantr_1"
-			}
-		}
-	}
-	VSH_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_army_logistics
-			ledger = army
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_army_logistics_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_army_logistics_2"
-			}
-		}
-	}
-	VSH_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_air_bomber_interception_2
-			ledger = army
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					air_bomber_interception_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_air_bomber_interception_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_air_bomber_interception_2"
-			}
-		}
-	}
-	VSH_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_air_close_air_support_2
-			ledger = army
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					air_close_air_support_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_air_close_air_support_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_air_close_air_support_2"
-			}
-		}
-	}
-	VSH_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_navy_screen_2
-			ledger = navy
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					navy_screen_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_navy_screen_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_navy_screen_2"
-			}
-		}
-	}
-	VSH_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_navy_anti_submarine_1
-			ledger = navy
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					navy_anti_submarine_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_navy_anti_submarine_1"
-		portraits={
-			army={
-				small="GFX_idea_VSH_navy_anti_submarine_1"
-			}
-		}
-	}
-	VSH_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = VSH_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = VSH
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="VSH_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_VSH_navy_naval_air_defense_2"
-			}
-		}
-	}
 }

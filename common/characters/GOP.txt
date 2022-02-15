@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	GOP_bob={
-		name="Bob, but he's from Goprug"
+		name="Vop Degovrujj"
 		portraits={
 			civilian={
 				large="gfx/leaders/GOP/Portrait_GOP_P_Sioqrus.dds"
@@ -66,7 +66,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster guerilla_fighter }
+			traits={ guerilla_fighter }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -116,7 +116,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ brilliant_strategist offensive_doctrine aggressive_assaulter }
+			traits={ aggressive_assaulter }
 			skill=2
 			attack_skill=3
 			defense_skill=1
@@ -143,97 +143,7 @@ characters={
 		name="GOP_murjiq_orqijun"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_2"
-			}
-		}
-	}
-	GOP_leimun_lumul={
-		advisor={
-			slot = high_command
-			idea_token = GOP_leimun_lumul
-			allowed  = {
-					original_tag  = GOP
-				}
-				ledger  = navy 
-				traits  = {
-					navy_naval_air_defense_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_leimun_lumul"
-		portraits={
-			army={
-				small="GFX_idea_GOP_leimun_lumul"
-			}
-		}
-	}
-	GOP_dzam_jumrir={
-		allowed_civil_war = {
-			has_government = communism 
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_dzam_jumrir
-			allowed = {
-					original_tag  = GOP
-				}
-				
-				available  = {
-				}
-				traits  = {
-					economist 
-				}
-				cost  = 0.000
-				do_effect  = {
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="GOP_dzam_jumrir"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
-	GOP_tanjiq_muhadow={
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_tanjiq_muhadow
-			allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="GOP_tanjiq_muhadow"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-	}
-	GOP_gurdurum_nalimtsi={
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_gurdurum_nalimtsi
-			allowed  = {
-					original_tag  = GOP
-				}
-				available  = {
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="GOP_gurdurum_nalimtsi"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_6"
+				small="GFX_idea_africa_generic_3"
 			}
 		}
 	}
@@ -255,7 +165,7 @@ characters={
 		name="GOP_sayado_puulran"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
+				small="GFX_idea_JOR_generic_2"
 			}
 		}
 	}
@@ -273,7 +183,7 @@ characters={
 		name="GOP_ezizi_gyulqun"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -295,29 +205,7 @@ characters={
 		name="GOP_midja_mahriq"
 		portraits={
 			army={
-				small="GFX_idea_sabiha_gocen"
-			}
-		}
-	}
-	GOP_fuusniq_aroqsats={
-		advisor={
-			slot = high_command
-			idea_token = GOP_fuusniq_aroqsats
-			ledger  = navy 
-				allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					navy_screen_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_fuusniq_aroqsats"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_1"
+				small="GFX_idea_africa_generic_2"
 			}
 		}
 	}
@@ -339,29 +227,7 @@ characters={
 		name="GOP_chameru_dahijjiq"
 		portraits={
 			army={
-				small="GFX_idea_GOP_chameru_dahijjiq"
-			}
-		}
-	}
-	GOP_ridjart_nahunmund={
-		advisor={
-			slot = navy_chief
-			idea_token = GOP_ridjart_nahunmund
-			ledger  = navy 
-				allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					navy_chief_old_guard 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_ridjart_nahunmund"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
+				small="GFX_idea_LIB_edwin_barclay"
 			}
 		}
 	}
@@ -383,7 +249,7 @@ characters={
 		name="GOP_maigul_guruz"
 		portraits={
 			army={
-				small="GFX_idea_GOP_maigul_guruz"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 	}
@@ -415,30 +281,7 @@ characters={
 		name="GOP_dzaris_tseminui"
 		portraits={
 			army={
-				small="GFX_idea_GOP_dzaris_tseminui"
-			}
-		}
-	}
-	GOP_bargiz_defumun={
-		advisor={
-			slot = theorist
-			idea_token = GOP_bargiz_defumun
-			allowed  = {
-					original_tag  = GOP
-				}
-				ledger  = air 
-				cost  = 250.000
-				research_bonus  = {
-					cat_base_strike  = 0.150
-				}
-				traits  = {
-					naval_aviation_pioneer 
-				}
-		}
-		name="GOP_bargiz_defumun"
-		portraits={
-			army={
-				small="GFX_idea_GOP_bargiz_defumun"
+				small="GFX_idea_south_africa_army_generic_2"
 			}
 		}
 	}
@@ -460,47 +303,7 @@ characters={
 		name="GOP_ergun_landiq"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_5"
-			}
-		}
-	}
-	GOP_guhalaq_jimurru={
-		advisor={
-			slot = navy_chief
-			idea_token = GOP_guhalaq_jimurru
-			allowed  = {
-					original_tag  = GOP
-				}
-				ledger  = navy 
-				traits  = {
-					navy_chief_commerce_raiding_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_guhalaq_jimurru"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
-			}
-		}
-	}
-	GOP_bijjo_pundrapez={
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_bijjo_pundrapez
-			allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="GOP_bijjo_pundrapez"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_6"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -522,52 +325,7 @@ characters={
 		name="GOP_laqanziz_djuntsa"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_3"
-			}
-		}
-	}
-	GOP_gadriz_dzulei={
-		advisor={
-			slot = theorist
-			idea_token = GOP_gadriz_dzulei
-			allowed  = {
-					original_tag  = GOP
-				}
-				ledger  = air 
-				cost  = 250.000
-				research_bonus  = {
-					cat_strategic_destruction  = 0.150
-				}
-				traits  = {
-					victory_through_airpower 
-				}
-		}
-		name="GOP_gadriz_dzulei"
-		portraits={
-			army={
-				small="GFX_idea_GOP_gadriz_dzulei"
-			}
-		}
-	}
-	GOP_hobrair_qotarj={
-		advisor={
-			slot = theorist
-			idea_token = GOP_hobrair_qotarj
-			allowed  = {
-					original_tag  = GOP
-				}
-				ledger  = air 
-				research_bonus  = {
-					rocketry  = 0.150
-				}
-				traits  = {
-					rocket_scientist 
-				}
-		}
-		name="GOP_hobrair_qotarj"
-		portraits={
-			army={
-				small="GFX_idea_GOP_hobrair_qotarj"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -582,11 +340,6 @@ characters={
 				}
 				traits  = {
 					communist_revolutionary 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism 
-					}
 				}
 				ai_will_do  = {
 					factor  = 10.000
@@ -610,47 +363,7 @@ characters={
 		name="GOP_duqum_nietalli"
 		portraits={
 			army={
-				small="GFX_idea_GOP_duqum_nietalli"
-			}
-		}
-	}
-	GOP_dzin_tamisin={
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_dzin_tamisin
-			allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="GOP_dzin_tamisin"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-	}
-	GOP_dzamiz_suzareq={
-		advisor={
-			slot = high_command
-			idea_token = GOP_dzamiz_suzareq
-			allowed  = {
-					original_tag  = GOP
-				}
-				ledger  = navy 
-				traits  = {
-					navy_amphibious_assault_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_dzamiz_suzareq"
-		portraits={
-			army={
-				small="GFX_idea_GOP_dzamiz_suzareq"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -674,36 +387,7 @@ characters={
 		name="GOP_orutli_usamirez"
 		portraits={
 			army={
-				small="GFX_idea_GOP_orutli_usamirez"
-			}
-		}
-	}
-	GOP_qunlunuq_irimudzu={
-		allowed_civil_war = {
-			has_government  = communism 
-		}	
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_qunlunuq_irimudzu
-			allowed  = {
-					original_tag  = GOP
-				}
-				available  = {
-				}
-				traits  = {
-					editor 
-				}
-				cost  = 0.000
-				do_effect  = {
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="GOP_qunlunuq_irimudzu"
-		portraits={
-			army={
-				small="GFX_idea_USA_whittaker_chambers"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -725,25 +409,7 @@ characters={
 		name="GOP_mairat_hyrden"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_1"
-			}
-		}
-	}
-	GOP_lobur_dashim={
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_lobur_dashim
-			allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					silent_workhorse 
-				}
-		}
-		name="GOP_lobur_dashim"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -763,43 +429,7 @@ characters={
 		name="GOP_dzozef_magadi"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
-	GOP_pena_qimram={
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_pena_qimram
-			allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="GOP_pena_qimram"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-	}
-	GOP_tonalu_zimsem={
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_tonalu_zimsem
-			allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="GOP_tonalu_zimsem"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
+				small="GFX_idea_generic_air_arab_3"
 			}
 		}
 	}
@@ -823,7 +453,7 @@ characters={
 		name="GOP_hualpor_dusur"
 		portraits={
 			army={
-				small="GFX_idea_USA_walter_krueger"
+				small="GFX_idea_generic_air_arab_1"
 			}
 		}
 	}
@@ -845,29 +475,7 @@ characters={
 		name="GOP_arpren_tsisram"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
-			}
-		}
-	}
-	GOP_gulaq_trasmidj={
-		advisor={
-			slot = navy_chief
-			idea_token = GOP_gulaq_trasmidj
-			ledger  = navy 
-				allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					navy_chief_decisive_battle_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_gulaq_trasmidj"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
+				small="GFX_idea_south_africa_army_generic"
 			}
 		}
 	}
@@ -889,7 +497,7 @@ characters={
 		name="GOP_enli_usasor"
 		portraits={
 			army={
-				small="GFX_idea_GOP_enli_usasor"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 	}
@@ -917,7 +525,7 @@ characters={
 		name="GOP_harul_ijjris"
 		portraits={
 			army={
-				small="GFX_idea_GOP_harul_ijjris"
+				small="GFX_idea_africa_generic_3"
 			}
 		}
 	}
@@ -939,38 +547,7 @@ characters={
 		name="GOP_dzor_gindi"
 		portraits={
 			army={
-				small="GFX_idea_GOP_dzor_gindi"
-			}
-		}
-	}
-	GOP_dulutli_amerziad={
-		allowed_civil_war = {
-			not  = {
-				has_government  = communism 
-			}
-		}	
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_dulutli_amerziad
-			allowed  = {
-					original_tag  = GOP
-				}
-				available  = {
-				}
-				traits  = {
-					editor 
-				}
-				cost  = 50.000
-				do_effect  = {
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_dulutli_amerziad"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -992,29 +569,7 @@ characters={
 		name="GOP_marejja_dzor"
 		portraits={
 			army={
-				small="GFX_idea_GOP_marejja_dzor"
-			}
-		}
-	}
-	GOP_hisqitla_manilli={
-		advisor={
-			slot = theorist
-			idea_token = GOP_hisqitla_manilli
-			allowed  = {
-					original_tag  = GOP
-				}
-				ledger  = navy 
-				research_bonus  = {
-					naval_doctrine  = 0.100
-				}
-				traits  = {
-					naval_theorist 
-				}
-		}
-		name="GOP_hisqitla_manilli"
-		portraits={
-			army={
-				small="GFX_idea_GOP_hisqitla_manilli"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -1036,37 +591,7 @@ characters={
 		name="GOP_gordnau_hajjise"
 		portraits={
 			army={
-				small="GFX_idea_GOP_gordnau_hajjise"
-			}
-		}
-	}
-	GOP_ahyumui_nendamru={
-		allowed_civil_war = {
-			has_government = communism 
-		}	
-		advisor={
-			slot = political_advisor
-			idea_token = GOP_ahyumui_nendamru
-
-			allowed  = {
-					original_tag  = GOP
-				}
-				available  = {
-				}
-				traits  = {
-					financial_expert 
-				}
-				cost  = 0.000
-				do_effect  = {
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="GOP_ahyumui_nendamru"
-		portraits={
-			army={
-				small="GFX_idea_USA_harry_white"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -1089,51 +614,7 @@ characters={
 		name="GOP_surumuj_anuasid"
 		portraits={
 			army={
-				small="GFX_idea_GOP_surumuj_anuasid"
-			}
-		}
-	}
-	GOP_djrov_tsuus={
-		advisor={
-			slot = air_chief
-			idea_token = GOP_djrov_tsuus
-			allowed  = {
-					original_tag  = GOP
-				}
-				ledger  = air 
-				traits  = {
-					air_chief_night_operations_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_djrov_tsuus"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_europe_3"
-			}
-		}
-	}
-	GOP_badtsiz_maldriave={
-		advisor={
-			slot = high_command
-			idea_token = GOP_badtsiz_maldriave
-			ledger  = navy 
-				allowed  = {
-					original_tag  = GOP
-				}
-				traits  = {
-					navy_fleet_logistics_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="GOP_badtsiz_maldriave"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_2"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -1334,7 +815,7 @@ characters={
 		name="GOP_anti_communist_crusader"
 		portraits={
 			army={
-				small="GFX_idea_GOP_anti_communist_crusader"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -1352,7 +833,7 @@ characters={
 		name="GOP_armaments_organizer"
 		portraits={
 			army={
-				small="GFX_idea_GOP_armaments_organizer"
+				small="GFX_idea_south_africa_army_generic_2"
 			}
 		}
 	}
@@ -1370,7 +851,7 @@ characters={
 		name="GOP_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_GOP_backroom_backstabber"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 	}
@@ -1388,7 +869,7 @@ characters={
 		name="GOP_captain_of_industry"
 		portraits={
 			army={
-				small="GFX_idea_GOP_captain_of_industry"
+				small="GFX_idea_LIB_edwin_barclay"
 			}
 		}
 	}
@@ -1406,7 +887,7 @@ characters={
 		name="GOP_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_GOP_communist_revolutionary"
+				small="GFX_idea_africa_generic_2"
 			}
 		}
 	}
@@ -1424,7 +905,7 @@ characters={
 		name="GOP_compassionate_gentleman"
 		portraits={
 			army={
-				small="GFX_idea_GOP_compassionate_gentleman"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -1442,7 +923,7 @@ characters={
 		name="GOP_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_GOP_captain_of_industry"
+				small="GFX_idea_JOR_generic_2"
 			}
 		}
 	}	
@@ -1460,7 +941,7 @@ characters={
 		name="GOP_economist"
 		portraits={
 			army={
-				small="GFX_idea_GOP_economist"
+				small="GFX_idea_africa_generic_3"
 			}
 		}
 	}
@@ -1478,7 +959,7 @@ characters={
 		name="GOP_editor"
 		portraits={
 			army={
-				small="GFX_idea_GOP_editor"
+				small="GFX_idea_africa_generic_3"
 			}
 		}
 	}
@@ -1496,7 +977,7 @@ characters={
 		name="GOP_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_GOP_fascist_demagogue"
+				small="GFX_idea_JOR_generic_2"
 			}
 		}
 	}
@@ -1514,7 +995,7 @@ characters={
 		name="GOP_financial_expert"
 		portraits={
 			army={
-				small="GFX_idea_GOP_financial_expert"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -1532,7 +1013,7 @@ characters={
 		name="GOP_head_of_intelligence"
 		portraits={
 			army={
-				small="GFX_idea_GOP_head_of_intelligence"
+				small="GFX_idea_africa_generic_2"
 			}
 		}
 	}
@@ -1550,7 +1031,7 @@ characters={
 		name="GOP_ideological_crusader"
 		portraits={
 			army={
-				small="GFX_idea_GOP_ideological_crusader"
+				small="GFX_idea_LIB_edwin_barclay"
 			}
 		}
 	}
@@ -1568,7 +1049,7 @@ characters={
 		name="GOP_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_GOP_popular_figurehead"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 	}
@@ -1586,7 +1067,7 @@ characters={
 		name="GOP_prince_of_terror"
 		portraits={
 			army={
-				small="GFX_idea_GOP_prince_of_terror"
+				small="GFX_idea_south_africa_army_generic_2"
 			}
 		}
 	}
@@ -1594,7 +1075,7 @@ characters={
 		name=GOP_silent_workhorse
 		portraits={
 			army={
-				small="GFX_idea_GOP_silent_workhorse"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 		advisor={
@@ -1622,7 +1103,7 @@ characters={
 		name="GOP_smooth_talking_charmer"
 		portraits={
 			army={
-				small="GFX_idea_GOP_smooth_talking_charmer"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -1641,7 +1122,7 @@ characters={
 		name="GOP_war_industrialist"
 		portraits={
 			army={
-				small="GFX_idea_GOP_war_industrialist"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -1687,116 +1168,7 @@ characters={
 		name="GOP_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
-			}
-		}
-	}
-	GOP_naval_theorist={
-		name=GOP_naval_theorist
-		portraits={
-			army={
-				small="GFX_idea_GOP_naval_theorist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = GOP_naval_theorist
-			ledger = navy
-			allowed = {
-				original_tag = GOP
-			}
-			traits = { 
-					naval_theorist 
-				}
-		}
-	}
-
-	GOP_naval_aviation_pioneer={
-		name=GOP_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_GOP_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = GOP_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = GOP
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	GOP_victory_through_airpower={
-		name=GOP_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_GOP_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = GOP_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = GOP
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	GOP_nuclear_scientist={
-		name=GOP_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_GOP_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = GOP_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = GOP
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	GOP_rocket_scientist={
-		name=GOP_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_GOP_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = GOP_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = GOP
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -1822,7 +1194,7 @@ characters={
 		name="GOP_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_GOP_army_chief_defensive_2"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -1844,7 +1216,7 @@ characters={
 		name="GOP_army_chief_drill_2"
 		portraits={
 			army={
-				small="GFX_idea_GOP_army_chief_drill_2"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}

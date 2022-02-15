@@ -28,7 +28,7 @@ characters={
 		}
 	}
 	GEQ_jjimi_henjriqs={
-		name="Jjimi Henjriqs"
+		name="Anganjj Limishtal"
 		portraits={
 			civilian={
 				large="gfx/leaders/GEQ/Portrait_GEQ_J_Henjriqs.dds"
@@ -42,7 +42,7 @@ characters={
 		}
 	}
 	GEQ_bob_is_back={
-		name="Bob is back, now in Geq"
+		name="Vob Isvaq"
 		portraits={
 			civilian={
 				large="gfx/leaders/leader_unknown.dds"
@@ -66,7 +66,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trickster offensive_doctrine guerilla_fighter }
+			traits={ guerilla_fighter }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -156,7 +156,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -175,7 +175,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={ }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -193,7 +193,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={ commando }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -212,7 +212,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer }
+			traits={ }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -236,8 +236,8 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
-			skill=5
+			traits={  }
+			skill=1
 			attack_skill=3
 			defense_skill=3
 			maneuvering_skill=5
@@ -245,121 +245,10 @@ characters={
 			legacy_id=0
 		}
 	}
-
-	GEQ_naval_leader_2={
-		name=GEQ_naval_leader_2
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			}
-		}
-		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
-			skill=4
-			attack_skill=5
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=2
-			legacy_id=0
-		}
-	}
-
-	GEQ_naval_leader_3={
-		name=GEQ_naval_leader_3
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			}
-		}		
-		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=0
-		}
-	}
-	
-	GEQ_naval_leader_4={
-		name=GEQ_naval_leader_4
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			}
-		}
-		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
-			legacy_id=0
-		}
-	}
-	GEQ_naval_leader_5={
-		name=GEQ_naval_leader_5
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=4
-			legacy_id=0
-		}
-	}
 	
 #####################
 ###POLITICAL ADVISORS
 #####################
-	GEQ_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_anti_communist_crusader
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="GEQ_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_anti_communist_crusader"
-			}
-		}
-	}
-	GEQ_armaments_organizer={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_armaments_organizer
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="GEQ_armaments_organizer"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_armaments_organizer"
-			}
-		}
-	}
 	GEQ_backroom_backstabber={
 		advisor={
 			slot = political_advisor
@@ -374,25 +263,7 @@ characters={
 		name="GEQ_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_backroom_backstabber"
-			}
-		}
-	}
-	GEQ_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_captain_of_industry
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="GEQ_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_captain_of_industry"
+				small="GFX_idea_africa_generic_3"
 			}
 		}
 	}
@@ -410,25 +281,7 @@ characters={
 		name="GEQ_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_communist_revolutionary"
-			}
-		}
-	}
-	GEQ_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_compassionate_gentleman
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="GEQ_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_compassionate_gentleman"
+				small="GFX_idea_JOR_generic_2"
 			}
 		}
 	}
@@ -446,46 +299,10 @@ characters={
 		name="GEQ_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_captain_of_industry"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}	
-	GEQ_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_economist
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="GEQ_economist"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_economist"
-			}
-		}
-	}
-	GEQ_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_editor
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="GEQ_editor"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_editor"
-			}
-		}
-	}
 	GEQ_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -500,7 +317,7 @@ characters={
 		name="GEQ_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_fascist_demagogue"
+				small="GFX_idea_africa_generic_2"
 			}
 		}
 	}
@@ -518,7 +335,7 @@ characters={
 		name="GEQ_financial_expert"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_financial_expert"
+				small="GFX_idea_LIB_edwin_barclay"
 			}
 		}
 	}
@@ -536,25 +353,7 @@ characters={
 		name="GEQ_head_of_intelligence"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_head_of_intelligence"
-			}
-		}
-	}
-	GEQ_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_ideological_crusader
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="GEQ_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_ideological_crusader"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 	}
@@ -572,7 +371,7 @@ characters={
 		name="GEQ_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_popular_figurehead"
+				small="GFX_idea_south_africa_army_generic_2"
 			}
 		}
 	}
@@ -590,62 +389,7 @@ characters={
 		name="GEQ_prince_of_terror"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_prince_of_terror"
-			}
-		}
-	}
-	GEQ_silent_workhorse={
-		name=GEQ_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_GEQ_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_silent_workhorse
-			allowed  = {
-				original_tag  = GEQ
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	GEQ_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_smooth_talking_charmer
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="GEQ_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	GEQ_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = GEQ_war_industrialist
-			allowed  = {
-					original_tag  = GEQ
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="GEQ_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_war_industrialist"
+				small="GFX_idea_south_africa_political_leader_generic"
 			}
 		}
 	}
@@ -691,116 +435,7 @@ characters={
 		name="GEQ_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
-			}
-		}
-	}
-	GEQ_naval_theorist={
-		name=GEQ_naval_theorist
-		portraits={
-			army={
-				small="GFX_idea_GEQ_naval_theorist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = GEQ_naval_theorist
-			ledger = navy
-			allowed = {
-				original_tag = GEQ
-			}
-			traits = { 
-					naval_theorist 
-				}
-		}
-	}
-
-	GEQ_naval_aviation_pioneer={
-		name=GEQ_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_GEQ_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = GEQ_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = GEQ
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	GEQ_victory_through_airpower={
-		name=GEQ_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_GEQ_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = GEQ_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = GEQ
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	GEQ_nuclear_scientist={
-		name=GEQ_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_GEQ_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = GEQ_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = GEQ
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	GEQ_rocket_scientist={
-		name=GEQ_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_GEQ_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = GEQ_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = GEQ
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 	}
@@ -808,28 +443,6 @@ characters={
 #################
 ###ARMY CHIEF
 #################
-	GEQ_army_chief_defensive_2={
-		advisor={
-			slot = army_chief
-			idea_token = GEQ_army_chief_defensive_2
-			allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_army_chief_defensive_2"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_army_chief_defensive_2"
-			}
-		}
-	}
 	GEQ_army_chief_drill_2={
 		advisor={
 			slot = army_chief
@@ -848,7 +461,7 @@ characters={
 		name="GEQ_army_chief_drill_2"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_army_chief_drill_2"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -870,51 +483,7 @@ characters={
 		name="GEQ_army_chief_maneuver_2"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_army_chief_maneuver_2"
-			}
-		}
-	}
-	GEQ_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = GEQ_army_chief_morale_2
-			allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_army_chief_morale_2"
-			}
-		}
-	}
-	GEQ_army_chief_offensive_2={
-		name=GEQ_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_GEQ_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = GEQ_army_chief_offensive_2
-			allowed = {
-				original_tag = GEQ
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -922,7 +491,7 @@ characters={
 		name=GEQ_army_chief_organizational_1
 		portraits={
 			army={
-				small="GFX_idea_GEQ_army_chief_organizational_1"
+				small="GFX_idea_africa_generic_land_1"
 			}
 		}
 		advisor={
@@ -944,52 +513,6 @@ characters={
 #################
 ###NAVY CHIEF
 #################
-	GEQ_navy_chief_decisive_battle_2={
-		advisor={
-			slot = navy_chief
-			idea_token = GEQ_navy_chief_decisive_battle_2
-			allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					navy_chief_decisive_battle_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_navy_chief_decisive_battle_2"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_2"
-			}
-		}
-	}
-	GEQ_navy_chief_naval_aviation_2={
-		advisor={
-			
-			
-			slot = navy_chief
-			idea_token = GEQ_navy_chief_naval_aviation_2
-			allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					navy_chief_naval_aviation_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_navy_chief_naval_aviation_2"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_1"
-			}
-		}
-	}
 	
 #################
 ###AIRFORCE CHIEF
@@ -1042,29 +565,6 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	GEQ_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = GEQ_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_GEQ_army_armored_1"
-			}
-		}
-	}
 	GEQ_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
@@ -1084,30 +584,7 @@ characters={
 		name="GEQ_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_army_entrenchment_1"
-			}
-		}
-	}
-	GEQ_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = GEQ_army_infantry
-			ledger = army
-				allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					army_infantry_1
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_army_infantry_1"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_army_infantr_1"
+				small="GFX_idea_south_africa_army_generic"
 			}
 		}
 	}
@@ -1130,7 +607,7 @@ characters={
 		name="GEQ_army_logistics_2"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_army_logistics_2"
+				small="GFX_idea_south_africa_political_leader_generic_2"
 			}
 		}
 	}
@@ -1153,7 +630,7 @@ characters={
 		name="GEQ_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_air_bomber_interception_2"
+				small="GFX_idea_africa_generic_3"
 			}
 		}
 	}
@@ -1176,76 +653,7 @@ characters={
 		name="GEQ_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_GEQ_air_close_air_support_2"
-			}
-		}
-	}
-	GEQ_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = GEQ_navy_screen_2
-			ledger = navy
-				allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					navy_screen_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_navy_screen_2"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_navy_screen_2"
-			}
-		}
-	}
-	GEQ_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = GEQ_navy_anti_submarine_1
-			ledger = navy
-				allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					navy_anti_submarine_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_navy_anti_submarine_1"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_navy_anti_submarine_1"
-			}
-		}
-	}
-	GEQ_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = GEQ_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = GEQ
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="GEQ_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_GEQ_navy_naval_air_defense_2"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}

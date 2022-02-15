@@ -65,7 +65,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ offensive_doctrine defensive_doctrine }
+			traits={ offensive_doctrine }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -105,7 +105,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -124,7 +124,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={ career_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -142,7 +142,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={ cavalry_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -185,7 +185,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={  blue_water_expert }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -204,7 +204,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={ bold  }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -223,7 +223,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={ gunnery_expert }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -242,7 +242,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={ blockade_runner }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -260,7 +260,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			traits={ superior_tactician }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -273,24 +273,6 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	SCH_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_anti_communist_crusader
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="SCH_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_SCH_anti_communist_crusader"
-			}
-		}
-	}
 	SCH_armaments_organizer={
 		advisor={
 			slot = political_advisor
@@ -305,7 +287,7 @@ characters={
 		name="SCH_armaments_organizer"
 		portraits={
 			army={
-				small="GFX_idea_SCH_armaments_organizer"
+				small="GFX_idea_hjalmar_schacht"
 			}
 		}
 	}
@@ -323,25 +305,7 @@ characters={
 		name="SCH_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_SCH_backroom_backstabber"
-			}
-		}
-	}
-	SCH_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_captain_of_industry
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="SCH_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_SCH_captain_of_industry"
+				small="GFX_idea_walther_funk"
 			}
 		}
 	}
@@ -359,25 +323,7 @@ characters={
 		name="SCH_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_SCH_communist_revolutionary"
-			}
-		}
-	}
-	SCH_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_compassionate_gentleman
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="SCH_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_SCH_compassionate_gentleman"
+				small="GFX_idea_ernst_thalmann"
 			}
 		}
 	}
@@ -395,46 +341,10 @@ characters={
 		name="SCH_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_SCH_captain_of_industry"
+				small="GFX_idea_kurt_schumacher"
 			}
 		}
 	}	
-	SCH_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_economist
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="SCH_economist"
-		portraits={
-			army={
-				small="GFX_idea_SCH_economist"
-			}
-		}
-	}
-	SCH_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_editor
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="SCH_editor"
-		portraits={
-			army={
-				small="GFX_idea_SCH_editor"
-			}
-		}
-	}
 	SCH_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -449,43 +359,7 @@ characters={
 		name="SCH_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_SCH_fascist_demagogue"
-			}
-		}
-	}
-	SCH_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_financial_expert
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="SCH_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_SCH_financial_expert"
-			}
-		}
-	}
-	SCH_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_head_of_intelligence
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="SCH_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_SCH_head_of_intelligence"
+				small="GFX_idea_joseph_goebbels"
 			}
 		}
 	}
@@ -503,7 +377,7 @@ characters={
 		name="SCH_ideological_crusader"
 		portraits={
 			army={
-				small="GFX_idea_SCH_ideological_crusader"
+				small="GFX_idea_martin_bormann"
 			}
 		}
 	}
@@ -521,80 +395,7 @@ characters={
 		name="SCH_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_SCH_popular_figurehead"
-			}
-		}
-	}
-	SCH_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_prince_of_terror
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="SCH_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_SCH_prince_of_terror"
-			}
-		}
-	}
-	SCH_silent_workhorse={
-		name=SCH_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_SCH_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_silent_workhorse
-			allowed  = {
-				original_tag  = SCH
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	SCH_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_smooth_talking_charmer
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="SCH_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_SCH_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	SCH_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = SCH_war_industrialist
-			allowed  = {
-					original_tag  = SCH
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="SCH_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_SCH_war_industrialist"
+				small="GFX_idea_joachim_von_ribbentrop"
 			}
 		}
 	}
@@ -618,7 +419,7 @@ characters={
 		name="SCH_military_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
+				small="GFX_idea_europe_generic_land_2"
 			}
 		}
 	}
@@ -640,7 +441,7 @@ characters={
 		name="SCH_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_heisenberg"
 			}
 		}
 	}
@@ -648,7 +449,7 @@ characters={
 		name=SCH_naval_theorist
 		portraits={
 			army={
-				small="GFX_idea_SCH_naval_theorist"
+				small="GFX_idea_wolfram_von_richthofen"
 			}
 		}
 		advisor={
@@ -662,95 +463,6 @@ characters={
 			traits = { 
 					naval_theorist 
 				}
-		}
-	}
-
-	SCH_naval_aviation_pioneer={
-		name=SCH_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_SCH_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = SCH_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = SCH
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	SCH_victory_through_airpower={
-		name=SCH_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_SCH_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = SCH_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = SCH
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	SCH_nuclear_scientist={
-		name=SCH_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_SCH_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SCH_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = SCH
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	SCH_rocket_scientist={
-		name=SCH_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_SCH_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SCH_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = SCH
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
 		}
 	}
 
@@ -775,29 +487,7 @@ characters={
 		name="SCH_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_SCH_army_chief_defensive_2"
-			}
-		}
-	}
-	SCH_army_chief_drill_2={
-		advisor={
-			slot = army_chief
-			idea_token = SCH_army_chief_drill_2
-			allowed = {
-					original_tag = SCH
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SCH_army_chief_drill_2"
-		portraits={
-			army={
-				small="GFX_idea_SCH_army_chief_drill_2"
+				small="GFX_idea_ludwig_beck"
 			}
 		}
 	}
@@ -819,51 +509,7 @@ characters={
 		name="SCH_army_chief_maneuver_2"
 		portraits={
 			army={
-				small="GFX_idea_SCH_army_chief_maneuver_2"
-			}
-		}
-	}
-	SCH_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = SCH_army_chief_morale_2
-			allowed = {
-					original_tag = SCH
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SCH_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_SCH_army_chief_morale_2"
-			}
-		}
-	}
-	SCH_army_chief_offensive_2={
-		name=SCH_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_SCH_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = SCH_army_chief_offensive_2
-			allowed = {
-				original_tag = SCH
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				small="GFX_idea_wilhelm_keitel"
 			}
 		}
 	}
@@ -871,7 +517,7 @@ characters={
 		name=SCH_army_chief_organizational_1
 		portraits={
 			army={
-				small="GFX_idea_SCH_army_chief_organizational_1"
+				small="GFX_idea_franz_halder"
 			}
 		}
 		advisor={
@@ -911,7 +557,7 @@ characters={
 		name="SCH_navy_chief_decisive_battle_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2"
+				small="GFX_idea_otto_ciliax"
 			}
 		}
 	}
@@ -935,7 +581,7 @@ characters={
 		name="SCH_navy_chief_naval_aviation_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_1"
+				small="GFX_idea_gunther_lutjens"
 			}
 		}
 	}
@@ -961,7 +607,7 @@ characters={
 		name="SCH_air_chief_ground_support_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_3"
+				small="GFX_idea_ludwig_beck"
 			}
 		}
 	}
@@ -983,7 +629,7 @@ characters={
 		name="SCH_air_chief_reform_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_1"
+				small="GFX_idea_wilhelm_keitel"
 			}
 		}
 	}
@@ -991,52 +637,6 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	SCH_army_armored_1={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = SCH_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = SCH
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SCH_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_SCH_army_armored_1"
-			}
-		}
-	}
-	SCH_army_entrenchment_1={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = SCH_army_entrenchment_1
-			ledger = army
-				allowed = {
-					original_tag = SCH
-				}
-				traits = {
-					army_entrenchment_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SCH_army_entrenchment_1"
-		portraits={
-			army={
-				small="GFX_idea_SCH_army_entrenchment_1"
-			}
-		}
-	}
 	SCH_army_infantry_1={ #_1 Specialist, _2 Expert
 		advisor={
 			slot = high_command
@@ -1056,7 +656,7 @@ characters={
 		name="SCH_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_SCH_army_infantr_1"
+				small="GFX_idea_franz_halder"
 			}
 		}
 	}
@@ -1079,7 +679,7 @@ characters={
 		name="SCH_army_logistics_2"
 		portraits={
 			army={
-				small="GFX_idea_SCH_army_logistics_2"
+				small="GFX_idea_walther_von_brauchitsch"
 			}
 		}
 	}
@@ -1102,7 +702,7 @@ characters={
 		name="SCH_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_SCH_air_bomber_interception_2"
+				small="GFX_idea_hugo_sperrle"
 			}
 		}
 	}
@@ -1125,7 +725,7 @@ characters={
 		name="SCH_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_SCH_air_close_air_support_2"
+				small="GFX_idea_erhard_milch"
 			}
 		}
 	}
@@ -1148,7 +748,7 @@ characters={
 		name="SCH_navy_screen_2"
 		portraits={
 			army={
-				small="GFX_idea_SCH_navy_screen_2"
+				small="GFX_idea_erich_bey"
 			}
 		}
 	}
@@ -1171,30 +771,7 @@ characters={
 		name="SCH_navy_anti_submarine_1"
 		portraits={
 			army={
-				small="GFX_idea_SCH_navy_anti_submarine_1"
-			}
-		}
-	}
-	SCH_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert
-		advisor={
-			slot = high_command
-			idea_token = SCH_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = SCH
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SCH_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_SCH_navy_naval_air_defense_2"
+				small="GFX_idea_viktor_schutze"
 			}
 		}
 	}

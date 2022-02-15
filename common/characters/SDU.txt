@@ -102,7 +102,7 @@ characters={
 		name=SDU_army_entrenchment
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_2"
+				small="GFX_idea_generic_political_advisor_arab_2"
 			}
 		}
 	}
@@ -124,7 +124,7 @@ characters={
 		name=SDU_air_chief_reform
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_1"
+				small="GFX_idea_PAR_rafael_franco"
 			}
 		}
 	}
@@ -146,7 +146,7 @@ characters={
 		name=SDU_navy_chief_decisive_battle
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_1"
+				small="GFX_idea_LEB_generic_navy_1"
 			}
 		}
 	}
@@ -169,7 +169,7 @@ characters={
 		name=SDU_army_regrouping
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_4"
+				small="GFX_idea_JAP_generic_navy_2"
 			}
 		}
 	}
@@ -191,7 +191,7 @@ characters={
 		name=SDU_navy_chief_naval_aviation
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_3"
+				small="GFX_idea_generic_navy_arab_2"
 			}
 		}
 	}
@@ -213,7 +213,7 @@ characters={
 		name=SDU_air_chief_ground_support
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_2"
+				small="GFX_idea_generic_navy_arab_1"
 			}
 		}
 	}
@@ -236,7 +236,7 @@ characters={
 		name=SDU_air_bomber_interception
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_2"
+				small="GFX_idea_generic_air_arab_3"
 			}
 		}
 	}
@@ -259,7 +259,7 @@ characters={
 		name=SDU_army_infantry
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_USA_generic_land_3"
 			}
 		}
 	}
@@ -281,7 +281,7 @@ characters={
 		name=SDU_army_chief_defensive
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_2"
+				small="GFX_idea_africa_generic_land_2"
 			}
 		}
 	}
@@ -305,7 +305,7 @@ characters={
 		name=SDU_army_chief_offensive
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -327,7 +327,7 @@ characters={
 		name=SDU_army_chief_maneuver
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_SOV_leonid_govorov"
 			}
 		}
 	}
@@ -350,7 +350,7 @@ characters={
 		name=SDU_army_commando
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_5"
+				small="GFX_idea_RAJ_army_generic"
 			}
 		}
 	}
@@ -359,7 +359,7 @@ characters={
 		name=SDU_quartermaster_general
 		portraits={
 			army={
-				small="GFX_idea_AST_alexander_hore_ruthven" #small="GFX_idea_generic_political_advisor_europe_1"
+				small="GFX_idea_RAJ_army_generic_2" 
 			}
 		}
 		advisor={
@@ -554,60 +554,6 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	SDU_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_anti_communist_crusader
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="SDU_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_SDU_anti_communist_crusader"
-			}
-		}
-	}
-	SDU_armaments_organizer={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_armaments_organizer
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="SDU_armaments_organizer"
-		portraits={
-			army={
-				small="GFX_idea_SDU_armaments_organizer"
-			}
-		}
-	}
-	SDU_backroom_backstabber={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_backroom_backstabber
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					backroom_backstabber 
-				}
-		}
-		name="SDU_backroom_backstabber"
-		portraits={
-			army={
-				small="GFX_idea_SDU_backroom_backstabber"
-			}
-		}
-	}
 	SDU_captain_of_industry={
 		advisor={
 			slot = political_advisor
@@ -622,7 +568,7 @@ characters={
 		name="SDU_captain_of_industry"
 		portraits={
 			army={
-				small="GFX_idea_SDU_captain_of_industry"
+				small="GFX_idea_YUG_josef_depre"
 			}
 		}
 	}
@@ -640,7 +586,7 @@ characters={
 		name="SDU_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_SDU_communist_revolutionary"
+				small="GFX_idea_EGY_generic_3"
 			}
 		}
 	}
@@ -658,7 +604,7 @@ characters={
 		name="SDU_compassionate_gentleman"
 		portraits={
 			army={
-				small="GFX_idea_SDU_compassionate_gentleman"
+				small="GFX_idea_ELS_maximiliano_hernandez_martinez"
 			}
 		}
 	}
@@ -676,46 +622,10 @@ characters={
 		name="SDU_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_SDU_captain_of_industry"
+				small="GFX_idea_CHL_arturo_alessandri"
 			}
 		}
 	}	
-	SDU_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_economist
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="SDU_economist"
-		portraits={
-			army={
-				small="GFX_idea_SDU_economist"
-			}
-		}
-	}
-	SDU_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_editor
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="SDU_editor"
-		portraits={
-			army={
-				small="GFX_idea_SDU_editor"
-			}
-		}
-	}
 	SDU_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -727,64 +637,10 @@ characters={
 					fascist_demagogue 
 				}
 		}
-		name="SDU_fascist_demagogue"
+		name="Yanichildra Henpardavva"
 		portraits={
 			army={
-				small="GFX_idea_SDU_fascist_demagogue"
-			}
-		}
-	}
-	SDU_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_financial_expert
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="SDU_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_SDU_financial_expert"
-			}
-		}
-	}
-	SDU_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_head_of_intelligence
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="SDU_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_SDU_head_of_intelligence"
-			}
-		}
-	}
-	SDU_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_ideological_crusader
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="SDU_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_SDU_ideological_crusader"
+				small="GFX_idea_HAI_stenio_vincent"
 			}
 		}
 	}
@@ -802,80 +658,7 @@ characters={
 		name="SDU_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_SDU_popular_figurehead"
-			}
-		}
-	}
-	SDU_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_prince_of_terror
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="SDU_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_SDU_prince_of_terror"
-			}
-		}
-	}
-	SDU_silent_workhorse={
-		name=SDU_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_SDU_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_silent_workhorse
-			allowed  = {
-				original_tag  = SDU
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	SDU_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_smooth_talking_charmer
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="SDU_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_SDU_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	SDU_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = SDU_war_industrialist
-			allowed  = {
-					original_tag  = SDU
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="SDU_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_SDU_war_industrialist"
+				small="GFX_idea_HON_tiburcio_carias_andino"
 			}
 		}
 	}
@@ -896,7 +679,7 @@ characters={
 					military_theorist
 				}
 		}
-		name="SDU_military_theorist"
+		name="Tilmina Kalkinpadri"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_2"
@@ -926,10 +709,10 @@ characters={
 		}
 	}
 	SDU_naval_theorist={
-		name=SDU_naval_theorist
+		name="Bhalimath Nandringeravva
 		portraits={
 			army={
-				small="GFX_idea_SDU_naval_theorist"
+				small="GFX_idea_EGY_generic_navy_3"
 			}
 		}
 		advisor={
@@ -946,94 +729,6 @@ characters={
 		}
 	}
 
-	SDU_naval_aviation_pioneer={
-		name=SDU_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_SDU_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = SDU_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = SDU
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	SDU_victory_through_airpower={
-		name=SDU_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_SDU_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = SDU_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = SDU
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	SDU_nuclear_scientist={
-		name=SDU_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_SDU_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SDU_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = SDU
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	SDU_rocket_scientist={
-		name=SDU_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_SDU_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SDU_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = SDU
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
-		}
-	}
 
 #################
 ###ARMY CHIEF
@@ -1060,28 +755,6 @@ characters={
 			}
 		}
 	}
-	SDU_army_chief_drill_2={
-		advisor={
-			slot = army_chief
-			idea_token = SDU_army_chief_drill_2
-			allowed = {
-					original_tag = SDU
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SDU_army_chief_drill_2"
-		portraits={
-			army={
-				small="GFX_idea_SDU_army_chief_drill_2"
-			}
-		}
-	}
 	SDU_army_chief_maneuver_2={
 		advisor={
 			slot = army_chief
@@ -1104,28 +777,6 @@ characters={
 			}
 		}
 	}
-	SDU_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = SDU_army_chief_morale_2
-			allowed = {
-					original_tag = SDU
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SDU_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_SDU_army_chief_morale_2"
-			}
-		}
-	}
 	SDU_army_chief_offensive_2={
 		name=SDU_army_chief_offensive_2
 		portraits={
@@ -1141,28 +792,6 @@ characters={
 			}
 			traits = {
 				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	SDU_army_chief_organizational_1={
-		name=SDU_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_SDU_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = SDU_army_chief_organizational_1
-			allowed = {
-				original_tag = SDU
-			}
-			traits = {
-				army_chief_organizational_1
 			}
 			cost = 100
 			ai_will_do = {
@@ -1341,29 +970,6 @@ characters={
 			}
 		}
 	}
-	SDU_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = SDU_army_logistics
-			ledger = army
-				allowed = {
-					original_tag = SDU
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SDU_army_logistics_2"
-		portraits={
-			army={
-				small="GFX_idea_SDU_army_logistics_2"
-			}
-		}
-	}
 	SDU_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
@@ -1407,75 +1013,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_SDU_air_close_air_support_2"
-			}
-		}
-	}
-	SDU_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = SDU_navy_screen_2
-			ledger = navy
-				allowed = {
-					original_tag = SDU
-				}
-				traits = {
-					navy_screen_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SDU_navy_screen_2"
-		portraits={
-			army={
-				small="GFX_idea_SDU_navy_screen_2"
-			}
-		}
-	}
-	SDU_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = SDU_navy_anti_submarine_1
-			ledger = navy
-				allowed = {
-					original_tag = SDU
-				}
-				traits = {
-					navy_anti_submarine_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SDU_navy_anti_submarine_1"
-		portraits={
-			army={
-				small="GFX_idea_SDU_navy_anti_submarine_1"
-			}
-		}
-	}
-	SDU_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = SDU_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = SDU
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="SDU_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_SDU_navy_naval_air_defense_2"
 			}
 		}
 	}

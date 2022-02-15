@@ -479,7 +479,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -500,7 +500,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={ armor_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -520,7 +520,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={ cavalry_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -567,7 +567,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={ gentlemanly  }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -588,7 +588,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={ aviation_enthusiast }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -609,7 +609,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={ gunnery_expert }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -630,7 +630,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={ cuts_corners  }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -650,7 +650,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			traits={ fleet_protector }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -677,7 +677,7 @@ characters={
 		name="CNJ_anti_communist_crusader"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_anti_communist_crusader"
+				small="GFX_idea_south_america_generic_1"
 			}
 		}
 	}
@@ -695,25 +695,7 @@ characters={
 		name="CNJ_armaments_organizer"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_armaments_organizer"
-			}
-		}
-	}
-	CNJ_backroom_backstabber={
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_backroom_backstabber
-			allowed  = {
-					original_tag  = CNJ
-				}
-				traits  = {
-					backroom_backstabber 
-				}
-		}
-		name="CNJ_backroom_backstabber"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_backroom_backstabber"
+				small="GFX_idea_south_america_generic_4"
 			}
 		}
 	}
@@ -731,7 +713,7 @@ characters={
 		name="CNJ_captain_of_industry"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_captain_of_industry"
+				small="GFX_idea_south_america_generic_land_3"
 			}
 		}
 	}
@@ -749,25 +731,7 @@ characters={
 		name="CNJ_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_communist_revolutionary"
-			}
-		}
-	}
-	CNJ_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_compassionate_gentleman
-			allowed  = {
-					original_tag  = CNJ
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="CNJ_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_compassionate_gentleman"
+				small="GFX_idea_south_america_generic_land_4"
 			}
 		}
 	}
@@ -785,28 +749,10 @@ characters={
 		name="CNJ_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_captain_of_industry"
+				small="GFX_idea_europe_generic_1"
 			}
 		}
 	}	
-	CNJ_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_economist
-			allowed  = {
-					original_tag  = CNJ
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="CNJ_economist"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_economist"
-			}
-		}
-	}
 	CNJ_editor={
 		advisor={
 			slot = political_advisor
@@ -821,7 +767,7 @@ characters={
 		name="CNJ_editor"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_editor"
+				small="GFX_idea_europe_generic_5"
 			}
 		}
 	}
@@ -839,61 +785,7 @@ characters={
 		name="CNJ_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_fascist_demagogue"
-			}
-		}
-	}
-	CNJ_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_financial_expert
-			allowed  = {
-					original_tag  = CNJ
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="CNJ_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_financial_expert"
-			}
-		}
-	}
-	CNJ_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_head_of_intelligence
-			allowed  = {
-					original_tag  = CNJ
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="CNJ_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_head_of_intelligence"
-			}
-		}
-	}
-	CNJ_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_ideological_crusader
-			allowed  = {
-					original_tag  = CNJ
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="CNJ_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_ideological_crusader"
+				small="GFX_idea_south_america_generic_land_5"
 			}
 		}
 	}
@@ -915,42 +807,6 @@ characters={
 			}
 		}
 	}
-	CNJ_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_prince_of_terror
-			allowed  = {
-					original_tag  = CNJ
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="CNJ_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_prince_of_terror"
-			}
-		}
-	}
-	CNJ_silent_workhorse={
-		name=CNJ_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_CNJ_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_silent_workhorse
-			allowed  = {
-				original_tag  = CNJ
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
 	CNJ_smooth_talking_charmer={
 		advisor={
 			slot = political_advisor
@@ -965,320 +821,17 @@ characters={
 		name="CNJ_smooth_talking_charmer"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	CNJ_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = CNJ_war_industrialist
-			allowed  = {
-					original_tag  = CNJ
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="CNJ_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_war_industrialist"
+				small="GFX_idea_south_america_generic_land_2"
 			}
 		}
 	}
 ###############
 ###THEORISTS
 ###############
-	CNJ_military_theorist={
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CNJ_military_theorist
-			ledger = army
-				allowed = {
-					original_tag = CNJ
-				}
-				
-				traits = {
-					military_theorist
-				}
-		}
-		name="CNJ_military_theorist"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-	}
-	CNJ_air_warfare_theorist={
-		advisor={
-			cost = 100
-			
-			slot = theorist
-			idea_token = CNJ_air_warfare_theorist
-			ledger = air
-				allowed = {
-					original_tag = CNJ
-				}
-				
-				traits = {
-					air_warfare_theorist
-				}
-		}
-		name="CNJ_air_warfare_theorist"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
-			}
-		}
-	}
-	CNJ_naval_theorist={
-		name=CNJ_naval_theorist
-		portraits={
-			army={
-				small="GFX_idea_CNJ_naval_theorist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CNJ_naval_theorist
-			ledger = navy
-			allowed = {
-				original_tag = CNJ
-			}
-			traits = { 
-					naval_theorist 
-				}
-		}
-	}
-
-	CNJ_naval_aviation_pioneer={
-		name=CNJ_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_CNJ_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = CNJ_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = CNJ
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	CNJ_victory_through_airpower={
-		name=CNJ_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_CNJ_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = CNJ_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = CNJ
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	CNJ_nuclear_scientist={
-		name=CNJ_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_CNJ_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CNJ_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = CNJ
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	CNJ_rocket_scientist={
-		name=CNJ_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_CNJ_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CNJ_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = CNJ
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
-		}
-	}
 
 #################
 ###ARMY CHIEF
 #################
-	CNJ_army_chief_defensive_2={
-		advisor={
-			slot = army_chief
-			idea_token = CNJ_army_chief_defensive_2
-			allowed = {
-					original_tag = CNJ
-				}
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CNJ_army_chief_defensive_2"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_army_chief_defensive_2"
-			}
-		}
-	}
-	CNJ_army_chief_drill_2={
-		advisor={
-			slot = army_chief
-			idea_token = CNJ_army_chief_drill_2
-			allowed = {
-					original_tag = CNJ
-				}
-				traits = {
-					army_chief_drill_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CNJ_army_chief_drill_2"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_army_chief_drill_2"
-			}
-		}
-	}
-	CNJ_army_chief_maneuver_2={
-		advisor={
-			slot = army_chief
-			idea_token = CNJ_army_chief_maneuver_2
-			allowed = {
-					original_tag = CNJ
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CNJ_army_chief_maneuver_2"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_army_chief_maneuver_2"
-			}
-		}
-	}
-	CNJ_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = CNJ_army_chief_morale_2
-			allowed = {
-					original_tag = CNJ
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CNJ_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_CNJ_army_chief_morale_2"
-			}
-		}
-	}
-	CNJ_army_chief_offensive_2={
-		name=CNJ_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_CNJ_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CNJ_army_chief_offensive_2
-			allowed = {
-				original_tag = CNJ
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	CNJ_army_chief_organizational_1={
-		name=CNJ_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_CNJ_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CNJ_army_chief_organizational_1
-			allowed = {
-				original_tag = CNJ
-			}
-			traits = {
-				army_chief_organizational_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
 
 #################
 ###NAVY CHIEF
@@ -1400,7 +953,7 @@ characters={
 		name="CNJ_army_armored_1"
 		portraits={
 			army={
-				small="GFX_idea_generic_CNJ_army_armored_1"
+				small="GFX_idea_south_america_generic_land_5"
 			}
 		}
 	}
@@ -1423,7 +976,7 @@ characters={
 		name="CNJ_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_army_entrenchment_1"
+				small="GFX_idea_south_america_generic_land_2"
 			}
 		}
 	}
@@ -1446,7 +999,7 @@ characters={
 		name="CNJ_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_army_infantr_1"
+				small="GFX_idea_ENG_james_fownes_somerville"
 			}
 		}
 	}
@@ -1469,7 +1022,7 @@ characters={
 		name="CNJ_army_logistics_2"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_army_logistics_2"
+				small="GFX_idea_ENG_generic_land_5"
 			}
 		}
 	}
@@ -1492,7 +1045,7 @@ characters={
 		name="CNJ_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_air_bomber_interception_2"
+				small="GFX_idea_ENG_generic_land_6"
 			}
 		}
 	}
@@ -1515,7 +1068,7 @@ characters={
 		name="CNJ_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_air_close_air_support_2"
+				small="GFX_idea_generic_air_arab_3"
 			}
 		}
 	}
@@ -1538,7 +1091,7 @@ characters={
 		name="CNJ_navy_screen_2"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_navy_screen_2"
+				small="GFX_idea_generic_navy_arab_1"
 			}
 		}
 	}
@@ -1561,7 +1114,7 @@ characters={
 		name="CNJ_navy_anti_submarine_1"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_navy_anti_submarine_1"
+				small="GFX_idea_generic_navy_arab_2"
 			}
 		}
 	}
@@ -1584,7 +1137,7 @@ characters={
 		name="CNJ_navy_naval_air_defense_2"
 		portraits={
 			army={
-				small="GFX_idea_CNJ_navy_naval_air_defense_2"
+				small="GFX_idea_ENG_generic_navy_2"
 			}
 		}
 	}
