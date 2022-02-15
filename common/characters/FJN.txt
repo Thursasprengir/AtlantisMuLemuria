@@ -80,7 +80,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trickster organisational_leader guerilla_fighter }
+			traits={ organisational_leader  }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -157,7 +157,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={ career_officer  }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -175,7 +175,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={ cavalry_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -218,7 +218,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={ gentlemanly  }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -237,7 +237,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={ bold  }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -256,7 +256,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={ gunnery_expert }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -275,7 +275,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={ blockade_runner }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -293,8 +293,8 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
-			skill=4
+			traits={ old_guard_navy  }
+			skill=3
 			attack_skill=3
 			defense_skill=3
 			maneuvering_skill=3
@@ -320,7 +320,7 @@ characters={
 		name="FJN_anti_communist_crusader"
 		portraits={
 			army={
-				small="GFX_idea_FJN_anti_communist_crusader"
+				small="GFX_idea_generic_political_advisor_europe_2"
 			}
 		}
 	}
@@ -338,7 +338,7 @@ characters={
 		name="FJN_armaments_organizer"
 		portraits={
 			army={
-				small="GFX_idea_FJN_armaments_organizer"
+				small="GFX_idea_generic_army_europe_1"
 			}
 		}
 	}
@@ -356,7 +356,7 @@ characters={
 		name="FJN_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_FJN_backroom_backstabber"
+				small="GFX_idea_generic_army_europe_3"
 			}
 		}
 	}
@@ -374,7 +374,7 @@ characters={
 		name="FJN_captain_of_industry"
 		portraits={
 			army={
-				small="GFX_idea_FJN_captain_of_industry"
+				small="GFX_idea_generic_political_advisor_europe_2"
 			}
 		}
 	}
@@ -392,7 +392,7 @@ characters={
 		name="FJN_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_FJN_communist_revolutionary"
+				small="GFX_idea_generic_army_europe_2"
 			}
 		}
 	}
@@ -410,7 +410,7 @@ characters={
 		name="FJN_compassionate_gentleman"
 		portraits={
 			army={
-				small="GFX_idea_FJN_compassionate_gentleman"
+				small="GFX_idea_generic_political_advisor_europe_1"
 			}
 		}
 	}
@@ -428,7 +428,7 @@ characters={
 		name="FJN_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_FJN_captain_of_industry"
+				small="GFX_idea_generic_army_europe_4"
 			}
 		}
 	}	
@@ -446,7 +446,7 @@ characters={
 		name="FJN_economist"
 		portraits={
 			army={
-				small="GFX_idea_FJN_economist"
+				small="GFX_idea_generic_air_europe_2"
 			}
 		}
 	}
@@ -464,7 +464,7 @@ characters={
 		name="FJN_editor"
 		portraits={
 			army={
-				small="GFX_idea_FJN_editor"
+				small="GFX_idea_generic_political_advisor_europe_4"
 			}
 		}
 	}
@@ -482,7 +482,7 @@ characters={
 		name="FJN_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_FJN_fascist_demagogue"
+				small="GFX_idea_generic_air_europe_1"
 			}
 		}
 	}
@@ -500,7 +500,7 @@ characters={
 		name="FJN_financial_expert"
 		portraits={
 			army={
-				small="GFX_idea_FJN_financial_expert"
+				small="GFX_idea_generic_political_advisor_europe_3"
 			}
 		}
 	}
@@ -518,61 +518,7 @@ characters={
 		name="FJN_head_of_intelligence"
 		portraits={
 			army={
-				small="GFX_idea_FJN_head_of_intelligence"
-			}
-		}
-	}
-	FJN_ideological_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = FJN_ideological_crusader
-			allowed  = {
-					original_tag  = FJN
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="FJN_ideological_crusader"
-		portraits={
-			army={
-				small="GFX_idea_FJN_ideological_crusader"
-			}
-		}
-	}
-	FJN_popular_figurehead={
-		advisor={
-			slot = political_advisor
-			idea_token = FJN_popular_figurehead
-			allowed  = {
-					original_tag  = FJN
-				}
-				traits  = {
-					popular_figurehead 
-				}
-		}
-		name="FJN_popular_figurehead"
-		portraits={
-			army={
-				small="GFX_idea_FJN_popular_figurehead"
-			}
-		}
-	}
-	FJN_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = FJN_prince_of_terror
-			allowed  = {
-					original_tag  = FJN
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="FJN_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_FJN_prince_of_terror"
+				small="GFX_idea_generic_army_europe_5"
 			}
 		}
 	}
@@ -580,7 +526,7 @@ characters={
 		name=FJN_silent_workhorse
 		portraits={
 			army={
-				small="GFX_idea_FJN_silent_workhorse"
+				small="GFX_idea_ENG_edward_halifax"
 			}
 		}
 		advisor={
@@ -608,7 +554,7 @@ characters={
 		name="FJN_smooth_talking_charmer"
 		portraits={
 			army={
-				small="GFX_idea_FJN_smooth_talking_charmer"
+				small="GFX_idea_BRA_plinio_salgado"
 			}
 		}
 	}
@@ -627,7 +573,7 @@ characters={
 		name="FJN_war_industrialist"
 		portraits={
 			army={
-				small="GFX_idea_FJN_war_industrialist"
+				small="GFX_idea_COL_alfonso_lopez_pumarejo"
 			}
 		}
 	}
@@ -651,7 +597,7 @@ characters={
 		name="FJN_military_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
+				small="GFX_idea_ENG_archibald_wavell"
 			}
 		}
 	}
@@ -673,7 +619,7 @@ characters={
 		name="FJN_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_AST_john_curtin"
 			}
 		}
 	}
@@ -681,7 +627,7 @@ characters={
 		name=FJN_naval_theorist
 		portraits={
 			army={
-				small="GFX_idea_FJN_naval_theorist"
+				small="GFX_idea_europe_generic_navy_1"
 			}
 		}
 		advisor={
@@ -697,96 +643,6 @@ characters={
 				}
 		}
 	}
-
-	FJN_naval_aviation_pioneer={
-		name=FJN_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_FJN_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = FJN_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = FJN
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	FJN_victory_through_airpower={
-		name=FJN_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_FJN_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = FJN_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = FJN
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	FJN_nuclear_scientist={
-		name=FJN_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_FJN_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = FJN_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = FJN
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	FJN_rocket_scientist={
-		name=FJN_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_FJN_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = FJN_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = FJN
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
-		}
-	}
-
 #################
 ###ARMY CHIEF
 #################
@@ -808,7 +664,7 @@ characters={
 		name="FJN_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_chief_defensive_2"
+				small="GFX_idea_europe_generic_land_5"
 			}
 		}
 	}
@@ -830,7 +686,7 @@ characters={
 		name="FJN_army_chief_drill_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_chief_drill_2"
+				small="GFX_idea_europe_generic_land_4"
 			}
 		}
 	}
@@ -852,7 +708,7 @@ characters={
 		name="FJN_army_chief_maneuver_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_chief_maneuver_2"
+				small="GFX_idea_europe_generic_land_3"
 			}
 		}
 	}
@@ -874,7 +730,7 @@ characters={
 		name="FJN_army_chief_morale_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_chief_morale_2"
+				small="GFX_idea_europe_generic_land_2"
 			}
 		}
 	}
@@ -882,7 +738,7 @@ characters={
 		name=FJN_army_chief_offensive_2
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_chief_offensive_2"
+				small="GFX_idea_europe_generic_6"
 			}
 		}
 		advisor={
@@ -904,7 +760,7 @@ characters={
 		name=FJN_army_chief_organizational_1
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_chief_organizational_1"
+				small="GFX_idea_europe_generic_land_13"
 			}
 		}
 		advisor={
@@ -944,7 +800,7 @@ characters={
 		name="FJN_navy_chief_decisive_battle_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2"
+				small="GFX_idea_europe_generic_navy_2"
 			}
 		}
 	}
@@ -968,7 +824,7 @@ characters={
 		name="FJN_navy_chief_naval_aviation_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_1"
+				small="GFX_idea_europe_generic_navy_3"
 			}
 		}
 	}
@@ -1016,7 +872,7 @@ characters={
 		name="FJN_air_chief_reform_2"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_1"
+				small="GFX_idea_europe_generic_land_5"
 			}
 		}
 	}
@@ -1043,7 +899,7 @@ characters={
 		name="FJN_army_armored_1"
 		portraits={
 			army={
-				small="GFX_idea_generic_FJN_army_armored_1"
+				small="GFX_idea_ENG_oliver_leese"
 			}
 		}
 	}
@@ -1066,7 +922,7 @@ characters={
 		name="FJN_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_entrenchment_1"
+				small="GFX_idea_ENG_generic_land_3"
 			}
 		}
 	}
@@ -1089,7 +945,7 @@ characters={
 		name="FJN_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_infantr_1"
+				small="GFX_idea_ENG_generic_land_4"
 			}
 		}
 	}
@@ -1112,7 +968,7 @@ characters={
 		name="FJN_army_logistics_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_army_logistics_2"
+				small="GFX_idea_ENG_generic_land_5"
 			}
 		}
 	}
@@ -1135,7 +991,7 @@ characters={
 		name="FJN_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_air_bomber_interception_2"
+				small="GFX_idea_ENG_oswald_mosley"
 			}
 		}
 	}
@@ -1158,7 +1014,7 @@ characters={
 		name="FJN_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_air_close_air_support_2"
+				small="GFX_idea_ENG_henry_maitland_wilson"
 			}
 		}
 	}
@@ -1181,7 +1037,7 @@ characters={
 		name="FJN_navy_screen_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_navy_screen_2"
+				small="GFX_idea_ENG_james_fownes_somerville"
 			}
 		}
 	}
@@ -1204,7 +1060,7 @@ characters={
 		name="FJN_navy_anti_submarine_1"
 		portraits={
 			army={
-				small="GFX_idea_FJN_navy_anti_submarine_1"
+				small="GFX_idea_ENG_generic_navy_3"
 			}
 		}
 	}
@@ -1227,7 +1083,7 @@ characters={
 		name="FJN_navy_naval_air_defense_2"
 		portraits={
 			army={
-				small="GFX_idea_FJN_navy_naval_air_defense_2"
+				small="GFX_idea_ENG_generic_navy_1"
 			}
 		}
 	}
