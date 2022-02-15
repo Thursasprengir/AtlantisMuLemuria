@@ -71,7 +71,6 @@ recruit_character = MCT_naval_leader_3
 recruit_character = MCT_naval_leader_4
 recruit_character = MCT_naval_leader_5
 #advisors
-recruit_character = MCT_backroom_backstabber
 recruit_character = MCT_communist_revolutionary
 recruit_character = MCT_democratic_reformer
 recruit_character = MCT_fascist_demagogue
@@ -79,15 +78,12 @@ recruit_character = MCT_popular_figurehead
 recruit_character = MCT_prince_of_terror
 recruit_character = MCT_smooth_talking_charmer
 #theorists
-recruit_character = MCT_air_warfare_theorist
 recruit_character = MCT_naval_theorist
 #military chiefs
-recruit_character = MCT_army_chief_defensive_2
 recruit_character = MCT_army_chief_drill_2
 recruit_character = MCT_army_chief_maneuver_2
 recruit_character = MCT_navy_chief_decisive_battle_2
 recruit_character = MCT_navy_chief_naval_aviation_2
-recruit_character = MCT_air_chief_ground_support_2
 recruit_character = MCT_air_chief_reform_2
 recruit_character = MCT_army_armored_1
 recruit_character = MCT_army_entrenchment_1
@@ -98,55 +94,3 @@ recruit_character = MCT_air_close_air_support_2
 recruit_character = MCT_navy_screen_2
 recruit_character = MCT_navy_anti_submarine_1
 
-
-create_country_leader = {
-	name = "Morigare Wensada"
-	desc = "POLITICS_MORIGARE_WENSADA_DESC"
-	picture = "Portrait_MCT_M_Wensada.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "General Laazalikamal"
-	desc = "POLITICS_GEN_LAAZALIKAMAL_DESC"
-	picture = "Portrait_MCT_Gen_L.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		nationalist_symbol
-	}
-}
-
-create_country_leader = {
-	name = "Ongbede Denguprii"
-	desc = "POLITICS_ONGBEDE_DENGUPRII_DESC"
-	picture = "Portrait_MCT_O_Denguprii.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Laazalikamal"
-	picture = "Portrait_MCT_Gen_L.dds"
-	traits = { defensive_doctrine urban_assault_specialist old_guard }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-	id = 106
-}
-
-create_corps_commander = {
-	name = "Gawban Nuwasmale"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
-	skill = 3
-}
