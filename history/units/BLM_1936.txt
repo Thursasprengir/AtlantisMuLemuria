@@ -1,12 +1,16 @@
 ﻿division_template = {
 	name = "Infantry Division"
+	division_names_group = BLM_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
-		artillery_brigade = { x = 1 y = 0 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 	support = {
 		recon = {x = 0 y = 0}
@@ -15,44 +19,49 @@
 }
 division_template = {
 	name = "Cavalry Brigade"
+	division_names_group = BLM_CAV_02
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 0 y = 3 }
-		cavalry = { x = 0 y = 4 }
 	}
 	support = {
 		recon = {x = 0 y = 0}
-		artillery = {x = 0 y = 0}
 	}
 }
 division_template = {
-	name = "Military Police"
+	name = "Garrison Division"
+	division_names_group = BLM_GAR_01
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		cavalry = { x = 0 y = 4 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
-	support = {
-		military_police = {x = 0 y = 0}
-	}
+	priority = 0
 }
 
 
 units = {
 	division = {
-		name = "Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 14463
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
-		name = "Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 14319
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -60,7 +69,10 @@ units = {
 
 	}
 	division = {
-		name = "Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 6815
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -68,7 +80,10 @@ units = {
 
 	}
 	division = {
-		name = "Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 14813
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -76,7 +91,10 @@ units = {
 
 	}
 	division = {
-		name = "Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 5323
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -84,7 +102,10 @@ units = {
 
 	}
 	division = {
-		name = "Cavalry Brigade"
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 8703
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
@@ -92,7 +113,10 @@ units = {
 
 	}
 	division = {
-		name = "Cavalry Brigade"
+			division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 14312
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
@@ -100,7 +124,10 @@ units = {
 
 	}
 	division = {
-		name = "Cavalry Brigade"
+			division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 14491
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
