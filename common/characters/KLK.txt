@@ -57,7 +57,7 @@ characters={
 		country_leader={
 			ideology=anarchist_communism
 			traits={ tenacious_negotiator silent_workhorse }
-			expire="1955.1.1.12"
+			expire="1965.1.1.12"
 			id=-1
 		}
 	}
@@ -70,7 +70,7 @@ characters={
 		}
 		country_leader={
 			ideology=moderatism
-			traits={ editor financial_expert }
+			traits={ financial_expert }
 			expire="1942.1.1.12"
 			id=-1
 		}
@@ -100,7 +100,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ inflexible_strategist trait_cautious recently_promoted }
+			traits={ trait_cautious  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -122,7 +122,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -141,7 +141,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer }
+			traits={ career_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -159,7 +159,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer trait_engineer commando }
+			traits={  }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -178,7 +178,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer }
+			traits={  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -202,7 +202,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={ naval_lineage  }
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -221,7 +221,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
+			traits={ bold  }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -240,7 +240,7 @@ characters={
 			}
 		}		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
+			traits={ spotter }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -259,7 +259,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
+			traits={ }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -277,7 +277,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			traits={ old_guard_navy  }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -290,42 +290,6 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	KLK_anti_communist_crusader={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_anti_communist_crusader
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					anti_communist_crusader
-				}
-		}
-		name="KLK_anti_communist_crusader"
-		portraits={
-			army={
-				small="GFX_idea_KLK_anti_communist_crusader"
-			}
-		}
-	}
-	KLK_armaments_organizer={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_armaments_organizer
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					armaments_organizer 
-				}
-		}
-		name="KLK_armaments_organizer"
-		portraits={
-			army={
-				small="GFX_idea_KLK_armaments_organizer"
-			}
-		}
-	}
 	KLK_backroom_backstabber={
 		advisor={
 			slot = political_advisor
@@ -340,25 +304,7 @@ characters={
 		name="KLK_backroom_backstabber"
 		portraits={
 			army={
-				small="GFX_idea_KLK_backroom_backstabber"
-			}
-		}
-	}
-	KLK_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_captain_of_industry
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="KLK_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_KLK_captain_of_industry"
+				small="GFX_idea_YUG_josef_depre"
 			}
 		}
 	}
@@ -376,25 +322,7 @@ characters={
 		name="KLK_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_KLK_communist_revolutionary"
-			}
-		}
-	}
-	KLK_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_compassionate_gentleman
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="KLK_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_KLK_compassionate_gentleman"
+				small="GFX_idea_generic_political_advisor_india_2"
 			}
 		}
 	}
@@ -412,46 +340,10 @@ characters={
 		name="KLK_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_KLK_captain_of_industry"
+				small="GFX_idea_generic_political_advisor_india_1"
 			}
 		}
 	}	
-	KLK_economist={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_economist
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					economist 
-				}
-		}
-		name="KLK_economist"
-		portraits={
-			army={
-				small="GFX_idea_KLK_economist"
-			}
-		}
-	}
-	KLK_editor={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_editor
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					editor 
-				}
-		}
-		name="KLK_editor"
-		portraits={
-			army={
-				small="GFX_idea_KLK_editor"
-			}
-		}
-	}
 	KLK_fascist_demagogue={
 		advisor={
 			slot = political_advisor
@@ -466,43 +358,7 @@ characters={
 		name="KLK_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_KLK_fascist_demagogue"
-			}
-		}
-	}
-	KLK_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_financial_expert
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="KLK_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_KLK_financial_expert"
-			}
-		}
-	}
-	KLK_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_head_of_intelligence
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="KLK_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_KLK_head_of_intelligence"
+				small="GFX_idea_EGY_generic_3"
 			}
 		}
 	}
@@ -520,7 +376,7 @@ characters={
 		name="KLK_ideological_crusader"
 		portraits={
 			army={
-				small="GFX_idea_KLK_ideological_crusader"
+				small="GFX_idea_ELS_maximiliano_hernandez_martinez"
 			}
 		}
 	}
@@ -538,7 +394,7 @@ characters={
 		name="KLK_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_KLK_popular_figurehead"
+				small="GFX_idea_generic_political_advisor_arab_3"
 			}
 		}
 	}
@@ -556,62 +412,7 @@ characters={
 		name="KLK_prince_of_terror"
 		portraits={
 			army={
-				small="GFX_idea_KLK_prince_of_terror"
-			}
-		}
-	}
-	KLK_silent_workhorse={
-		name=KLK_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_KLK_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_silent_workhorse
-			allowed  = {
-				original_tag  = KLK
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	KLK_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_smooth_talking_charmer
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="KLK_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_KLK_smooth_talking_charmer"
-			}
-		}
-	}
-	
-	KLK_war_industrialist={
-		advisor={
-			slot = political_advisor
-			idea_token = KLK_war_industrialist
-			allowed  = {
-					original_tag  = KLK
-				}
-				traits  = {
-					war_industrialist 
-				}
-		}
-		name="KLK_war_industrialist"
-		portraits={
-			army={
-				small="GFX_idea_KLK_war_industrialist"
+				small="GFX_idea_CHL_arturo_alessandri"
 			}
 		}
 	}
@@ -635,7 +436,7 @@ characters={
 		name="KLK_military_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
+				small="GFX_idea_HAI_stenio_vincent"
 			}
 		}
 	}
@@ -657,7 +458,7 @@ characters={
 		name="KLK_air_warfare_theorist"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_HON_tiburcio_carias_andino"
 			}
 		}
 	}
@@ -665,7 +466,7 @@ characters={
 		name=KLK_naval_theorist
 		portraits={
 			army={
-				small="GFX_idea_KLK_naval_theorist"
+				small="GFX_idea_RAJ_political_leader_generic"
 			}
 		}
 		advisor={
@@ -679,95 +480,6 @@ characters={
 			traits = { 
 					naval_theorist 
 				}
-		}
-	}
-
-	KLK_naval_aviation_pioneer={
-		name=KLK_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_KLK_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = KLK_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = KLK
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	KLK_victory_through_airpower={
-		name=KLK_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_KLK_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = KLK_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = KLK
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
-	KLK_nuclear_scientist={
-		name=KLK_nuclear_scientist
-		portraits={
-			army={
-				small="GFX_idea_KLK_nuclear_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = KLK_nuclear_scientist
-			ledger = army
-			allowed = {
-				original_tag = KLK
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	KLK_rocket_scientist={
-		name=KLK_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_KLK_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = KLK_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = KLK
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
 		}
 	}
 
@@ -792,7 +504,7 @@ characters={
 		name="KLK_army_chief_defensive_2"
 		portraits={
 			army={
-				small="GFX_idea_KLK_army_chief_defensive_2"
+				small="GFX_idea_JAP_generic_navy_2"
 			}
 		}
 	}
@@ -814,95 +526,7 @@ characters={
 		name="KLK_army_chief_drill_2"
 		portraits={
 			army={
-				small="GFX_idea_KLK_army_chief_drill_2"
-			}
-		}
-	}
-	KLK_army_chief_maneuver_2={
-		advisor={
-			slot = army_chief
-			idea_token = KLK_army_chief_maneuver_2
-			allowed = {
-					original_tag = KLK
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="KLK_army_chief_maneuver_2"
-		portraits={
-			army={
-				small="GFX_idea_KLK_army_chief_maneuver_2"
-			}
-		}
-	}
-	KLK_army_chief_morale_2={
-		advisor={
-			slot = army_chief
-			idea_token = KLK_army_chief_morale_2
-			allowed = {
-					original_tag = KLK
-				}
-				traits = {
-					army_chief_morale_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="KLK_army_chief_morale_2"
-		portraits={
-			army={
-				small="GFX_idea_KLK_army_chief_morale_2"
-			}
-		}
-	}
-	KLK_army_chief_offensive_2={
-		name=KLK_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_KLK_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = KLK_army_chief_offensive_2
-			allowed = {
-				original_tag = KLK
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	KLK_army_chief_organizational_1={
-		name=KLK_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_KLK_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = KLK_army_chief_organizational_1
-			allowed = {
-				original_tag = KLK
-			}
-			traits = {
-				army_chief_organizational_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				small="GFX_idea_USA_generic_land_3"
 			}
 		}
 	}
@@ -1027,7 +651,7 @@ characters={
 		name="KLK_army_armored_1"
 		portraits={
 			army={
-				small="GFX_idea_generic_KLK_army_armored_1"
+				small="GFX_idea_africa_generic_land_3"
 			}
 		}
 	}
@@ -1050,7 +674,7 @@ characters={
 		name="KLK_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_KLK_army_entrenchment_1"
+				small="GFX_idea_SOV_leonid_govorov"
 			}
 		}
 	}
@@ -1073,7 +697,7 @@ characters={
 		name="KLK_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_KLK_army_infantr_1"
+				small="GFX_idea_RAJ_army_generic"
 			}
 		}
 	}
@@ -1096,7 +720,7 @@ characters={
 		name="KLK_army_logistics_2"
 		portraits={
 			army={
-				small="GFX_idea_KLK_army_logistics_2"
+				small="GFX_idea_RAJ_army_generic_2"
 			}
 		}
 	}
@@ -1119,7 +743,7 @@ characters={
 		name="KLK_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_KLK_air_bomber_interception_2"
+				small="GFX_idea_generic_air_arab_1"
 			}
 		}
 	}
@@ -1142,7 +766,7 @@ characters={
 		name="KLK_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_KLK_air_close_air_support_2"
+				small="GFX_idea_generic_air_arab_2"
 			}
 		}
 	}
@@ -1165,53 +789,7 @@ characters={
 		name="KLK_navy_screen_2"
 		portraits={
 			army={
-				small="GFX_idea_KLK_navy_screen_2"
-			}
-		}
-	}
-	KLK_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = KLK_navy_anti_submarine_1
-			ledger = navy
-				allowed = {
-					original_tag = KLK
-				}
-				traits = {
-					navy_anti_submarine_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="KLK_navy_anti_submarine_1"
-		portraits={
-			army={
-				small="GFX_idea_KLK_navy_anti_submarine_1"
-			}
-		}
-	}
-	KLK_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = KLK_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = KLK
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="KLK_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_KLK_navy_naval_air_defense_2"
+				small="GFX_idea_RAJ_generic_navy_1"
 			}
 		}
 	}
