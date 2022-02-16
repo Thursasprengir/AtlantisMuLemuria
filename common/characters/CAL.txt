@@ -2,19 +2,6 @@ characters={
 ###############
 ###DEMOCRATIC
 ###############
-	CAL_conservatism_leader={
-		name="CAL_conservatism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	CAL_liberalism_leader={
 		name="CAL_liberalism_leader"
 		portraits={
@@ -60,89 +47,10 @@ characters={
 			id=-1
 		}
 	}
-	CAL_leninism_leader={
-		name="CAL_leninism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=leninism
-			expire="1944.1.1.12"
-			id=-1
-		}
-	}
-	CAL_stalinism_leader={
-		name="CAL_stalinism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=stalinism
-			expire="1944.1.1.12"
-			id=-1
-		}
-	}
-	CAL_anti_revisionism_leader={
-		name="CAL_anti_revisionism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=anti_revisionism
-			expire="1944.1.1.12"
-			id=-1
-		}
-	}	
-	CAL_anarchist_communism_leader={
-		name="CAL_anarchist_communism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=anarchist_communism
-			expire="1944.1.1.12"
-			id=-1
-		}
-	}
-	
 
 ###############
 ###FASCISM
 ###############
-	CAL_nazism_leader={
-		name="CAL_nazism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=nazism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-	CAL_gen_nazism_leader={
-		name="CAL_gen_nazism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=gen_nazism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
 	CAL_generic_fascism_leader={
 		name="CAL_generic_fascism_leader"
 		portraits={
@@ -156,50 +64,10 @@ characters={
 			id=-1
 		}
 	}
-	CAL_falangism_leader={
-		name="CAL_falangism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=falangism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-	CAL_rexism_leader={
-		name="CAL_rexism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=rexism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-	
 
 ###############
 ###NEUTRALITY
 ###############
-	CAL_despotism_leader={
-		name="CAL_despotism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	CAL_oligarchism_leader={
 		name=CAL_oligarchism_leader
 		portraits={
@@ -214,19 +82,6 @@ characters={
 			id=-1
 		}
 	}
-	CAL_anarchism_leader={
-		name="CAL_anarchism_leader"
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=anarchism
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
 	CAL_moderatism_leader={
 		name="CAL_moderatism_leader"
 		portraits={
@@ -237,20 +92,6 @@ characters={
 		country_leader={
 			ideology=moderatism
 			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-	CAL_centrism_leader={
-		name=CAL_centrism_leader
-		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
-		}
-		country_leader={
-			ideology=centrism
-			traits={ financial_expert }
-			expire="1953.1.1.12"
 			id=-1
 		}
 	}
@@ -466,42 +307,6 @@ characters={
 			}
 		}
 	}
-	CAL_backroom_backstabber={
-		advisor={
-			slot = political_advisor
-			idea_token = CAL_backroom_backstabber
-			allowed  = {
-					original_tag  = CAL
-				}
-				traits  = {
-					backroom_backstabber 
-				}
-		}
-		name="CAL_backroom_backstabber"
-		portraits={
-			army={
-				small="GFX_idea_CAL_backroom_backstabber"
-			}
-		}
-	}
-	CAL_captain_of_industry={
-		advisor={
-			slot = political_advisor
-			idea_token = CAL_captain_of_industry
-			allowed  = {
-					original_tag  = CAL
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="CAL_captain_of_industry"
-		portraits={
-			army={
-				small="GFX_idea_CAL_captain_of_industry"
-			}
-		}
-	}
 	CAL_communist_revolutionary={
 		advisor={
 			slot = political_advisor
@@ -517,24 +322,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_CAL_communist_revolutionary"
-			}
-		}
-	}
-	CAL_compassionate_gentleman={
-		advisor={
-			slot = political_advisor
-			idea_token = CAL_compassionate_gentleman
-			allowed  = {
-					original_tag  = CAL
-				}
-				traits  = {
-					compassionate_gentleman 
-				}
-		}
-		name="CAL_compassionate_gentleman"
-		portraits={
-			army={
-				small="GFX_idea_CAL_compassionate_gentleman"
 			}
 		}
 	}
@@ -610,42 +397,6 @@ characters={
 			}
 		}
 	}
-	CAL_financial_expert={
-		advisor={
-			slot = political_advisor
-			idea_token = CAL_financial_expert
-			allowed  = {
-					original_tag  = CAL
-				}
-				traits  = {
-					financial_expert 
-				}
-		}
-		name="CAL_financial_expert"
-		portraits={
-			army={
-				small="GFX_idea_CAL_financial_expert"
-			}
-		}
-	}
-	CAL_head_of_intelligence={
-		advisor={
-			slot = political_advisor
-			idea_token = CAL_head_of_intelligence
-			allowed  = {
-					original_tag  = CAL
-				}
-				traits  = {
-					head_of_intelligence 
-				}
-		}
-		name="CAL_head_of_intelligence"
-		portraits={
-			army={
-				small="GFX_idea_CAL_head_of_intelligence"
-			}
-		}
-	}
 	CAL_ideological_crusader={
 		advisor={
 			slot = political_advisor
@@ -679,60 +430,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_CAL_popular_figurehead"
-			}
-		}
-	}
-	CAL_prince_of_terror={
-		advisor={
-			slot = political_advisor
-			idea_token = CAL_prince_of_terror
-			allowed  = {
-					original_tag  = CAL
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-		name="CAL_prince_of_terror"
-		portraits={
-			army={
-				small="GFX_idea_CAL_prince_of_terror"
-			}
-		}
-	}
-	CAL_silent_workhorse={
-		name=CAL_silent_workhorse
-		portraits={
-			army={
-				small="GFX_idea_CAL_silent_workhorse"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = CAL_silent_workhorse
-			allowed  = {
-				original_tag  = CAL
-			}
-			traits  = {
-				silent_workhorse 
-			}
-		}
-	}
-	CAL_smooth_talking_charmer={
-		advisor={
-			slot = political_advisor
-			idea_token = CAL_smooth_talking_charmer
-			allowed  = {
-					original_tag  = CAL
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name="CAL_smooth_talking_charmer"
-		portraits={
-			army={
-				small="GFX_idea_CAL_smooth_talking_charmer"
 			}
 		}
 	}
@@ -822,47 +519,6 @@ characters={
 		}
 	}
 
-	CAL_naval_aviation_pioneer={
-		name=CAL_naval_aviation_pioneer
-		portraits={
-			army={
-				small="GFX_idea_CAL_naval_aviation_pioneer"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = CAL_naval_aviation_pioneer
-			ledger = navy
-			allowed = {
-				original_tag = CAL
-			}
-			traits = {
-				naval_aviation_pioneer
-			}
-		}
-	}
-
-	CAL_victory_through_airpower={
-		name=CAL_victory_through_airpower
-		portraits={
-			army={
-				small="GFX_idea_CAL_victory_through_airpower"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = CAL_victory_through_airpower
-			ledger = air
-			allowed = {
-				original_tag = CAL
-			}
-			traits = {
-				victory_through_airpower
-			}
-		}
-	}
 	CAL_nuclear_scientist={
 		name=CAL_nuclear_scientist
 		portraits={
@@ -887,55 +543,9 @@ characters={
 		}
 	}
 
-	CAL_rocket_scientist={
-		name=CAL_rocket_scientist
-		portraits={
-			army={
-				small="GFX_idea_CAL_rocket_scientist"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CAL_rocket_scientist
-			ledger = air
-			allowed = {
-				original_tag = CAL
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
-		}
-	}
-
 #################
 ###ARMY CHIEF
 #################
-	CAL_army_chief_defensive_2={
-		advisor={
-			slot = army_chief
-			idea_token = CAL_army_chief_defensive_2
-			allowed = {
-					original_tag = CAL
-				}
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CAL_army_chief_defensive_2"
-		portraits={
-			army={
-				small="GFX_idea_CAL_army_chief_defensive_2"
-			}
-		}
-	}
 	CAL_army_chief_drill_2={
 		advisor={
 			slot = army_chief
@@ -958,28 +568,6 @@ characters={
 			}
 		}
 	}
-	CAL_army_chief_maneuver_2={
-		advisor={
-			slot = army_chief
-			idea_token = CAL_army_chief_maneuver_2
-			allowed = {
-					original_tag = CAL
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CAL_army_chief_maneuver_2"
-		portraits={
-			army={
-				small="GFX_idea_CAL_army_chief_maneuver_2"
-			}
-		}
-	}
 	CAL_army_chief_morale_2={
 		advisor={
 			slot = army_chief
@@ -999,50 +587,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_CAL_army_chief_morale_2"
-			}
-		}
-	}
-	CAL_army_chief_offensive_2={
-		name=CAL_army_chief_offensive_2
-		portraits={
-			army={
-				small="GFX_idea_CAL_army_chief_offensive_2"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CAL_army_chief_offensive_2
-			allowed = {
-				original_tag = CAL
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	CAL_army_chief_organizational_1={
-		name=CAL_army_chief_organizational_1
-		portraits={
-			army={
-				small="GFX_idea_CAL_army_chief_organizational_1"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CAL_army_chief_organizational_1
-			allowed = {
-				original_tag = CAL
-			}
-			traits = {
-				army_chief_organizational_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 	}
@@ -1148,29 +692,6 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	CAL_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = CAL_army_armored_1
-			ledger = army
-				allowed = {
-					original_tag = CAL
-				}
-				traits = {
-					army_armored_1
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CAL_army_armored_1"
-		portraits={
-			army={
-				small="GFX_idea_generic_CAL_army_armored_1"
-			}
-		}
-	}
 	CAL_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
@@ -1214,29 +735,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_CAL_army_infantr_1"
-			}
-		}
-	}
-	CAL_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = CAL_army_logistics
-			ledger = army
-				allowed = {
-					original_tag = CAL
-				}
-				traits = {
-					army_logistics_2
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CAL_army_logistics_2"
-		portraits={
-			army={
-				small="GFX_idea_CAL_army_logistics_2"
 			}
 		}
 	}
@@ -1329,29 +827,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_CAL_navy_anti_submarine_1"
-			}
-		}
-	}
-	CAL_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
-		advisor={
-			slot = high_command
-			idea_token = CAL_navy_naval_air_defense
-			ledger = navy
-				allowed = {
-					original_tag = CAL
-				}
-				traits = {
-					navy_naval_air_defense_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="CAL_navy_naval_air_defense_2"
-		portraits={
-			army={
-				small="GFX_idea_CAL_navy_naval_air_defense_2"
 			}
 		}
 	}
