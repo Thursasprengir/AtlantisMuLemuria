@@ -623,13 +623,14 @@ guiTypes = {
 			quadTextureSprite ="GFX_country_selection_bg"
 		}
 		
+		#Removed but still active to allow "ESCAPE" during the map screen.
 		ButtonType = {
 			name = "back_button"
-			position = { x = -158 y = -52 }
+			position = { x = 1000000 y = 1000000 } #Removes it from the screen, obviously.
 			quadTextureSprite ="GFX_button_148x34"	
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
-			Orientation = "CENTER_DOWN"
+			Orientation = "CENTER"
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
@@ -637,15 +638,15 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "select_button"
-			position = { x = 10 y = -52 }
+			position = { x = -75 y = 300 } #10
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "FE_SELECT_COUNTRY"
 			buttonFont = "hoi_18mbs"
-			Orientation = "CENTER_DOWN"
+			Orientation = "CENTER"
 			clicksound = click_default
 			oversound = ui_menu_over
 			shortcut = "RETURN"
-		}			
+		}				
 
 		containerWindowType = {
 			name ="countries"
@@ -1839,7 +1840,7 @@ guiTypes = {
 				
 				ButtonType = {
 					name = "scenario_button"
-					position = { x = -136 y = 115 }
+					position = { x = 1000000 y = 1000000 } #Removes it from the screen, obviously. Prevents errors.
 					quadTextureSprite ="GFX_button_261x34"	
 					buttonText = "FE_CHANGE_SCENARIO"
 					buttonFont = "hoi_20b"
