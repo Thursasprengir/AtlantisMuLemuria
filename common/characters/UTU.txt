@@ -17,7 +17,7 @@ characters={
 		name="UTU_E_Samprivana"
 		portraits={
 			civilian={
-				large="GFX_UTU_E_Samprivana"
+				large="gfx/leaders/India/Portrait_India_Generic_new_5.dds"
 			}
 		}
 		country_leader={
@@ -31,7 +31,7 @@ characters={
 		name=UTU_O_Newansvraba
 		portraits={
 			civilian={
-				large="GFX_UTU_O_Newansvraba"
+				large="gfx/leaders/India/Portrait_India_Generic_new_4.dds"
 			}
 		}
 		country_leader={
@@ -45,7 +45,7 @@ characters={
 		name=UTU_J_Nalvahal
 		portraits={
 			civilian={
-				large="GFX_UTU_J_Nalvahal"
+				large="gfx/leaders/India/Portrait_India_Generic_land_new_4.dds"
 			}
 		}
 		country_leader={
@@ -152,7 +152,7 @@ characters={
 			}
 		}
 	}
-	
+
 	UTU_ajarhruna_devingahal = {
 		name=UTU_ajarhruna_devingahal
 		portraits={
@@ -172,7 +172,7 @@ characters={
 			}
 		}
 	}
-	
+
 	UTU_vijayanu_igenshamparath = {
 		name=UTU_vijayanu_igenshamparath
 		portraits={
@@ -190,18 +190,18 @@ characters={
 		name=UTU_sahanil_amanprahal
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2" 
+				small="GFX_idea_generic_political_advisor_arab_2"
 			}
 		}
 		advisor={
-			cost = 100	
+			cost = 100
 			slot = theorist
 			idea_token = UTU_sahanil_amanprahal
 			ledger = army
 			allowed = {
 				original_tag = UTU
 			}
-			
+
 			traits = {
 				military_theorist
 			}
@@ -223,7 +223,7 @@ characters={
 			allowed = {
 				original_tag = UTU
 			}
-			
+
 			traits = {
 				air_warfare_theorist
 			}
@@ -245,7 +245,7 @@ characters={
 			allowed = {
 				original_tag = UTU
 			}
-			
+
 			traits = {
 				naval_theorist
 			}
@@ -307,7 +307,7 @@ characters={
 		name=UTU_laksheth_vattachay
 		portraits={
 			army={
-				small="GFX_idea_USA_generic_land_3" 
+				small="GFX_idea_USA_generic_land_3"
 			}
 		}
 		advisor={
@@ -402,7 +402,7 @@ characters={
 		name=UTU_kijiran_vrishejath
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2" 
+				small="GFX_idea_generic_navy_arab_2"
 			}
 		}
 		advisor={
@@ -489,7 +489,7 @@ characters={
 			}
 		}
 	}
-	
+
 
 	### AIR CHIEFS ###
 
@@ -596,7 +596,7 @@ characters={
 				small="GFX_idea_SOV_leonid_govorov"
 			}
 		}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = UTU_vihs_mashangmahal
 			ledger = air
@@ -617,7 +617,7 @@ characters={
 		name=UTU_praveesh_kamhathevvan
 		portraits={
 			army={
-				small="GFX_idea_RAJ_army_generic" 
+				small="GFX_idea_RAJ_army_generic"
 			}
 		}
 		advisor={
@@ -634,14 +634,14 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
-		}		
+		}
 	}
 
 	UTU_shakwan_banshigath={
 		name=UTU_shakwan_banshigath
 		portraits={
 			army={
-				small="GFX_idea_RAJ_army_generic_2" 
+				small="GFX_idea_RAJ_army_generic_2"
 			}
 		}
 		advisor={
@@ -682,7 +682,7 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
-		}		
+		}
 	}
 
 
@@ -702,12 +702,12 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				democratic_reformer 
+				democratic_reformer
 			}
 			ai_will_do = {
 				factor = 0.000
 			}
-		}		
+		}
 	}
 
 	UTU_yangkath_ramamahal={
@@ -724,7 +724,7 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				communist_revolutionary 
+				communist_revolutionary
 			}
 			ai_will_do = {
 				factor = 0.000
@@ -736,7 +736,7 @@ characters={
 		name=UTU_hiten_bhame
 		portraits={
 			army={
-				small="GFX_idea_EGY_generic_3" 
+				small="GFX_idea_EGY_generic_3"
 			}
 			civilian ={
 				large = "GFX_UTU_hiten_bhame" #Can become country leader (Communism -> Stalinism) (Fascism -> Nazism)
@@ -749,14 +749,14 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				fascist_demagogue 
+				fascist_demagogue
 			}
 			ai_will_do = {
 				factor = 0.000
 			}
-		}		
+		}
 	}
-	
+
 	UTU_jaan_varshamgahal={
 		name=UTU_jaan_varshamgahal
 		portraits={
@@ -771,11 +771,11 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				silent_workhorse 
+				silent_workhorse
 			}
 		}
 	}
-	
+
 	UTU_pranpat_rebimathavva={
 		name=UTU_pranpat_rebimathavva
 		portraits={
@@ -790,7 +790,7 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				popular_figurehead 
+				popular_figurehead
 			}
 		}
 	}
@@ -809,9 +809,9 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				compassionate_gentleman 
+				compassionate_gentleman
 			}
-		}		
+		}
 	}
 
 	UTU_jagwarap_senbahathy={
@@ -828,7 +828,7 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				captain_of_industry 
+				captain_of_industry
 			}
 		}
 	}
@@ -847,14 +847,14 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				backroom_backstabber 
+				backroom_backstabber
 			}
 			ai_will_do = {
 				factor = 0.000
 			}
 		}
 	}
-	
+
 	UTU_jayesh_t_sanswethi={
 		name=UTU_jayesh_t_sanswethi
 		portraits={
@@ -869,14 +869,14 @@ characters={
 				original_tag = UTU
 			}
 			traits = {
-				ideological_crusader 
+				ideological_crusader
 			}
 		}
 	}
 ###################
 ###CORPS COMMANDERS
 ###################
-	
+
 	UTU_corps_commander_1={
 		name="UTU_corps_commander_1"
 		portraits={
@@ -951,9 +951,9 @@ characters={
 			legacy_id=0
 		}
 	}
-	
-	
-	
+
+
+
 ################
 ###NAVAL LEADERS
 ################
@@ -964,7 +964,7 @@ characters={
 				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
 				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 			}
-		}		
+		}
 		navy_leader={
 			traits={ }
 			skill=5
@@ -1002,7 +1002,7 @@ characters={
 				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
 				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 			}
-		}		
+		}
 		navy_leader={
 			traits={ spotter }
 			skill=3
@@ -1013,7 +1013,7 @@ characters={
 			legacy_id=0
 		}
 	}
-	
+
 	UTU_naval_leader_4={
 		name=UTU_naval_leader_4
 		portraits={
@@ -1050,7 +1050,7 @@ characters={
 			legacy_id=0
 		}
 	}
-	
+
 #####################
 ###POLITICAL ADVISORS
 #####################
@@ -1080,7 +1080,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					armaments_organizer 
+					armaments_organizer
 				}
 		}
 		name="UTU_armaments_organizer"
@@ -1098,7 +1098,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					backroom_backstabber 
+					backroom_backstabber
 				}
 		}
 		name="UTU_backroom_backstabber"
@@ -1116,7 +1116,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					captain_of_industry 
+					captain_of_industry
 				}
 		}
 		name="UTU_captain_of_industry"
@@ -1134,7 +1134,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					communist_revolutionary 
+					communist_revolutionary
 				}
 		}
 		name="UTU_communist_revolutionary"
@@ -1152,7 +1152,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					compassionate_gentleman 
+					compassionate_gentleman
 				}
 		}
 		name="UTU_compassionate_gentleman"
@@ -1170,7 +1170,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					democratic_reformer 
+					democratic_reformer
 				}
 		}
 		name="UTU_democratic_reformer"
@@ -1179,7 +1179,7 @@ characters={
 				small="GFX_idea_UTU_captain_of_industry"
 			}
 		}
-	}	
+	}
 	UTU_economist={
 		advisor={
 			slot = political_advisor
@@ -1188,7 +1188,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					economist 
+					economist
 				}
 		}
 		name="UTU_economist"
@@ -1206,7 +1206,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					editor 
+					editor
 				}
 		}
 		name="UTU_editor"
@@ -1224,7 +1224,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					fascist_demagogue 
+					fascist_demagogue
 				}
 		}
 		name="UTU_fascist_demagogue"
@@ -1242,7 +1242,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					financial_expert 
+					financial_expert
 				}
 		}
 		name="UTU_financial_expert"
@@ -1260,7 +1260,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					head_of_intelligence 
+					head_of_intelligence
 				}
 		}
 		name="UTU_head_of_intelligence"
@@ -1278,7 +1278,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					ideological_crusader 
+					ideological_crusader
 				}
 		}
 		name="UTU_ideological_crusader"
@@ -1296,7 +1296,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					popular_figurehead 
+					popular_figurehead
 				}
 		}
 		name="UTU_popular_figurehead"
@@ -1314,7 +1314,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					prince_of_terror 
+					prince_of_terror
 				}
 		}
 		name="UTU_prince_of_terror"
@@ -1338,7 +1338,7 @@ characters={
 				original_tag  = UTU
 			}
 			traits  = {
-				silent_workhorse 
+				silent_workhorse
 			}
 		}
 	}
@@ -1350,7 +1350,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					smooth_talking_charmer 
+					smooth_talking_charmer
 				}
 		}
 		name="UTU_smooth_talking_charmer"
@@ -1360,7 +1360,7 @@ characters={
 			}
 		}
 	}
-	
+
 	UTU_war_industrialist={
 		advisor={
 			slot = political_advisor
@@ -1369,7 +1369,7 @@ characters={
 					original_tag  = UTU
 				}
 				traits  = {
-					war_industrialist 
+					war_industrialist
 				}
 		}
 		name="UTU_war_industrialist"
@@ -1391,7 +1391,7 @@ characters={
 				allowed = {
 					original_tag = UTU
 				}
-				
+
 				traits = {
 					military_theorist
 				}
@@ -1406,14 +1406,14 @@ characters={
 	UTU_air_warfare_theorist={
 		advisor={
 			cost = 100
-			
+
 			slot = theorist
 			idea_token = UTU_air_warfare_theorist
 			ledger = air
 				allowed = {
 					original_tag = UTU
 				}
-				
+
 				traits = {
 					air_warfare_theorist
 				}
@@ -1440,8 +1440,8 @@ characters={
 			allowed = {
 				original_tag = UTU
 			}
-			traits = { 
-					naval_theorist 
+			traits = {
+					naval_theorist
 				}
 		}
 	}
@@ -1698,8 +1698,8 @@ characters={
 	}
 	UTU_navy_chief_naval_aviation_2={
 		advisor={
-			
-			
+
+
 			slot = navy_chief
 			idea_token = UTU_navy_chief_naval_aviation_2
 			allowed = {
@@ -1720,7 +1720,7 @@ characters={
 			}
 		}
 	}
-	
+
 #################
 ###AIRFORCE CHIEF
 #################
@@ -1771,7 +1771,7 @@ characters={
 
 ###################
 ###MIL HIGH COMMAND
-###################	
+###################
 	UTU_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
