@@ -3,7 +3,7 @@ characters={
 		name="Neqrumunj Drmudril"
 		portraits={
 			civilian={
-				large="gfx/leaders/VSH/Portrait_VSH_Neqrumunj_Drmudril.dds"
+				large="gfx/leaders/India/Portrait_India_Generic_new_1.dds"
 			}
 		}
 		country_leader={
@@ -17,7 +17,7 @@ characters={
 		name="Zojjua Qsars"
 		portraits={
 			civilian={
-				large="gfx/leaders/VSH/Portrait_VSH_Zojjua_Qsars.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_15.dds"
 			}
 		}
 		country_leader={
@@ -31,7 +31,7 @@ characters={
 		name="Vrepil Oruqijjla"
 		portraits={
 			civilian={
-				large="gfx/leaders/VSH/Portrait_VSH_Vrepil_Oruqijjla.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_new_7.dds"
 			}
 		}
 		country_leader={
@@ -79,12 +79,12 @@ characters={
 		advisor={
 			slot = army_chief
 			idea_token = VSH_ergun_landiq
-			ledger  = army 
+			ledger  = army
 				allowed  = {
 					original_tag  = VSH
 				}
 				traits  = {
-					army_chief_defensive_2 
+					army_chief_defensive_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -107,11 +107,11 @@ characters={
 				available  = {
 				}
 				traits  = {
-					democratic_reformer 
+					democratic_reformer
 				}
 				do_effect  = {
 					not  = {
-						has_government  = democratic 
+						has_government  = democratic
 					}
 				}
 				ai_will_do  = {
@@ -133,7 +133,7 @@ characters={
 					original_tag  = VSH
 				}
 				traits  = {
-					smooth_talking_charmer 
+					smooth_talking_charmer
 				}
 		}
 		name="VSH_bijjo_pundrapez"
@@ -152,9 +152,9 @@ characters={
 				}
 				available  = {
 				}
-				ledger  = army 
+				ledger  = army
 				traits  = {
-					army_chief_morale_2 
+					army_chief_morale_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -174,9 +174,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = army 
+				ledger  = army
 				traits  = {
-					army_armored_2 
+					army_armored_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -196,9 +196,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = air 
+				ledger  = air
 				traits  = {
-					air_tactical_bombing_2 
+					air_tactical_bombing_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -218,9 +218,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = air 
+				ledger  = air
 				traits  = {
-					air_chief_ground_support_2 
+					air_chief_ground_support_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -244,9 +244,9 @@ characters={
 				research_bonus  = {
 					cat_mobile_warfare  = 0.150
 				}
-				ledger  = army 
+				ledger  = army
 				traits  = {
-					mobile_warfare_expert 
+					mobile_warfare_expert
 				}
 		}
 		name="VSH_surumuj_anuasid"
@@ -266,17 +266,17 @@ characters={
 				available  = {
 				}
 				traits  = {
-					fascist_demagogue 
+					fascist_demagogue
 				}
 				do_effect  = {
 					not  = {
-						has_government  = fascism 
+						has_government  = fascism
 					}
 				}
 				ai_will_do  = {
 					factor  = 10.000
 					modifier  = {
-						is_historical_focus_on  = yes 
+						is_historical_focus_on  = yes
 						factor  = 0.000
 					}
 				}
@@ -295,9 +295,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = army 
+				ledger  = army
 				traits  = {
-					army_chief_drill_2 
+					army_chief_drill_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -320,20 +320,20 @@ characters={
 				available  = {
 				}
 				traits  = {
-					communist_revolutionary 
+					communist_revolutionary
 				}
 				ai_will_do  = {
 					factor  = 10.000
 					modifier  = {
-						is_historical_focus_on  = yes 
+						is_historical_focus_on  = yes
 						has_game_rule  = {
-							rule  = USA_ai_behavior 
-							option  = default 
+							rule  = USA_ai_behavior
+							option  = default
 						}
 						factor  = 0.000
 					}
 					modifier  = {
-						is_historical_focus_on  = yes 
+						is_historical_focus_on  = yes
 						not  = {
 							has_dlc = "Man the Guns"
 						}
@@ -356,7 +356,7 @@ characters={
 					original_tag  = VSH
 				}
 				traits  = {
-					silent_workhorse 
+					silent_workhorse
 				}
 		}
 		name="VSH_lobur_dashim"
@@ -373,12 +373,12 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = army 
+				ledger  = army
 				research_bonus  = {
 					land_doctrine  = 0.070
 				}
 				traits  = {
-					military_theorist 
+					military_theorist
 				}
 		}
 		name="VSH_murjiq_orqijun"
@@ -395,9 +395,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = air 
+				ledger  = air
 				traits  = {
-					air_chief_safety_2 
+					air_chief_safety_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -417,9 +417,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = army 
+				ledger  = army
 				traits  = {
-					army_commando_2 
+					army_commando_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -439,9 +439,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = air 
+				ledger  = air
 				traits  = {
-					air_strategic_bombing_3 
+					air_strategic_bombing_3
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -461,9 +461,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = air 
+				ledger  = air
 				traits  = {
-					air_chief_reform_3 
+					air_chief_reform_3
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -483,12 +483,12 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = air 
+				ledger  = air
 				research_bonus  = {
 					air_doctrine  = 0.070
 				}
 				traits  = {
-					air_warfare_theorist 
+					air_warfare_theorist
 				}
 		}
 		name="VSH_sayado_puulran"
@@ -507,9 +507,9 @@ characters={
 				}
 				available  = {
 				}
-				ledger  = army 
+				ledger  = army
 				traits  = {
-					army_chief_planning_2 
+					army_chief_planning_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -529,9 +529,9 @@ characters={
 			allowed  = {
 					original_tag  = VSH
 				}
-				ledger  = air 
+				ledger  = air
 				traits  = {
-					air_chief_night_operations_2 
+					air_chief_night_operations_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -547,7 +547,7 @@ characters={
 ###################
 ###CORPS COMMANDERS
 ###################
-	
+
 	VSH_corps_commander_1={
 		name="VSH_corps_commander_1"
 		portraits={
@@ -622,9 +622,9 @@ characters={
 			legacy_id=0
 		}
 	}
-	
-	
-	
+
+
+
 ################
 ###NAVAL LEADERS
 ################
@@ -635,7 +635,7 @@ characters={
 				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
 				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 			}
-		}		
+		}
 		navy_leader={
 			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
 			skill=5
@@ -673,7 +673,7 @@ characters={
 				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
 				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 			}
-		}		
+		}
 		navy_leader={
 			traits={ gunnery_expert superior_tactician spotter }
 			skill=3
@@ -684,7 +684,7 @@ characters={
 			legacy_id=0
 		}
 	}
-	
+
 	VSH_naval_leader_4={
 		name=VSH_naval_leader_4
 		portraits={
@@ -721,7 +721,7 @@ characters={
 			legacy_id=0
 		}
 	}
-	
+
 #####################
 ###POLITICAL ADVISORS
 #####################
@@ -737,12 +737,12 @@ characters={
 #################
 ###NAVY CHIEF
 #################
-	
+
 #################
 ###AIRFORCE CHIEF
 #################
 
 ###################
 ###MIL HIGH COMMAND
-###################	
+###################
 }
