@@ -9,7 +9,7 @@
 #Name is how you refer to the rule in adjecencies.csv
 
 #Suez Canal
-adjacency_rule = 
+adjacency_rule
 {
 	name = "SUEZ_CANAL"
 
@@ -57,7 +57,7 @@ adjacency_rule =
 }
 
 #Gibraltar Strait
-adjacency_rule = 
+adjacency_rule
 {
 	name = "GIBRALTAR_STRAIT"
 
@@ -93,11 +93,11 @@ adjacency_rule =
 	required_provinces = { 4135 9945 }
 	
 	icon = 5407	
-	offset = { -18.0 0.0 0 }
+	offset = { -31.0 0.0 -2.0 }
 }
 
 #Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
-adjacency_rule = 
+adjacency_rule
 {
 	name = "DANISH_BELTS_STRAIT"
 
@@ -130,14 +130,14 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 6287 3277 3325 3260 }
+	required_provinces = { 6287 3277 3325 3260 394 }
 	
-	icon = 2408
-	offset = { 0 0 0 }
+	icon = 2455
+	offset = { -26 0 -13 }
 }
 
 #Panama Canal
-adjacency_rule = 
+adjacency_rule
 {
 	name = "PANAMA_CANAL"
 
@@ -185,7 +185,7 @@ adjacency_rule =
 }
 
 #Turkish Straits
-adjacency_rule = 
+adjacency_rule
 {
 	name = "BOSPHORUS_STRAIT"
 
@@ -221,11 +221,11 @@ adjacency_rule =
 	required_provinces = { 9833 11829 }
 	
 	icon = 9833
-	offset = { 8 0 0 }
+	offset = { -2 0 -9 }
 }
 
 #Kiel Canal
-adjacency_rule = 
+adjacency_rule
 {
 	name = "KIEL_CANAL"
 
@@ -262,334 +262,4 @@ adjacency_rule =
 		
 	icon = 11366
 	offset = { 5 0 -6 }
-}
-
-
-#Keewatin Strait
-adjacency_rule = 
-{
-	name = "KEEWATIN_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = { 10585 5239 14204 }
-	
-	icon = 14254
-	offset = { 0 0 0 }
-}
-
-#Chinook Strait
-adjacency_rule = 
-{
-	name = "CHINOOK_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = yes
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = { 10183 4398 }
-	
-	icon = 13184
-	offset = { -40 0 10 }
-}
-
-#Rearden Strait
-adjacency_rule = 
-{
-	name = "REARDEN_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = { 1832 4838 }
-	
-	icon = 14248
-	offset = { 8 0 24 }
-}
-
-#Mackenzie Strait
-adjacency_rule = 
-{
-	name = "MACKENZIE_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = { 917 7858 }
-	
-	icon = 14215
-	offset = { -6 0 22 }
-}
-
-
-
-#Bella Coola Strait
-adjacency_rule = 
-{
-	name = "BELLA_COOLA_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = {1799 10228}
-	
-	icon = 13166
-	offset = { -21 0 -6 }
-}
-
-#Golden Gate
-adjacency_rule = 
-{
-	name = "GOLDEN_GATE_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = {677 9671}
-	
-	icon = 2875
-	offset = { -15 0 -10 }
-}
-
-#Gates of Hadu
-adjacency_rule = 
-{
-	name = "HADU_STRAIT"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = {13903 13904}
-	
-	icon = 2427
-	offset = { -30 0 -17 }
-}
-
-adjacency_rule = 
-{
-	name = "ANDAMOOKA_CANAL"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = { 8186 10927 5225 2205 }
-
-	is_disabled = {
-		OR = {
-			has_global_flag = ANDAMOOKA_CANAL_BLOCKED
-			has_country_flag = ANDAMOOKA_CANAL_BLOCKED_FOR_COUNTRY
-		}
-		tooltip = disable_canal_tt
-	}
-		
-	icon = 8186
-	offset = { 1 0 -6 }
 }

@@ -1,0 +1,2224 @@
+focus_tree = {
+	id = BLM
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BLM
+		}
+	}
+		continuous_focus_position = { x = 50 y = 1500 }
+	focus = {
+		id = BLM_second_anglosaxon_reforms
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 13
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				country_event = { id = blm.1 }
+			}
+	}
+
+
+
+	#The 3 paths
+	focus = {
+		id = BLM_continue_the_reforms
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 16
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_second_anglosaxon_reforms }
+		mutually_exclusive = {
+				focus = BLM_act_283
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+					country_event = { id = blm.2 }
+			}
+	}
+
+
+###########ends the reforms, avoids civil war, forms a democratic federation in lemuria
+	focus = {
+		id = BLM_act_283
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 10
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_second_anglosaxon_reforms }
+		mutually_exclusive = {
+				focus = BLM_continue_the_reforms
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+					country_event = { id = sasr.3 }
+			}
+	}
+
+
+	#ENG = { puppet = BLM }
+
+
+
+	# Lemuria's "manifest destiny" or in other words, British Lemurians trying to figure out their identity and place in Lemuria and the commonwealth.
+
+#	focus = {
+#		id = BLM_our_culture
+#		icon = GFX_goal_unknown
+#		x = 11
+#		y = 10
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = BLM_our_people }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+
+#	focus = {
+#		id = BLM_our_place
+#		icon = GFX_goal_unknown
+#		x = 11
+#		y = 9
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = BLM_federal_lemuria focus = BLM_imperial_lemuria }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+
+#	focus = {
+#		id = BLM_our_people
+#		icon = GFX_goal_unknown
+#		x = 11
+#		y = 11
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = BLM_our_place }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+
+#	focus = {
+#		id = BLM_our_lemuria
+#		icon = GFX_goal_unknown
+#		x = 11
+#		y = 12
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = BLM_our_culture }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+
+
+
+
+
+
+
+# Act 283 path
+
+	focus = {
+		id = BLM_government_reform
+		icon = GFX_r56_goal_SIA_fire_paper_peoples
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_federal_sympathies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_timed_idea = {
+			idea = FRA_strengthen_government_support_focus
+			days = 180
+			}			
+		}
+	}
+
+	focus = {
+		id = BLM_land_reform
+		icon = GFX_goal_cuba_nine_cents_law
+		x = 1
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_nobility_issue }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			1008 = { add_extra_state_shared_building_slots = 1 }
+			990 = { add_extra_state_shared_building_slots = 1 }
+			1010 = { add_extra_state_shared_building_slots = 1 }
+			976 = { add_extra_state_shared_building_slots = 1 }
+			1007 = { add_extra_state_shared_building_slots = 1 }
+			978 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+
+	focus = {
+		id = BLM_local_garrisons
+		icon = GFX_goal_italy_besagliari
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_disband_the_ig }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			division_template = {
+				name = "Local Garrison"
+				is_locked = yes
+				division_names_group = USA_INF_01
+					priority = 0
+				template_counter = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+				}
+			}
+
+
+
+			load_oob = "BLM_local_garrisons"
+		}
+	}
+	focus = {
+		id = BLM_nobility_issue
+		icon = GFX_r56_goal_FRA_BLMss_collaboration
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { country_event = sasr.97 }
+	}
+	focus = {
+		id = BLM_disband_the_ig
+		icon = GFX_r56_goal_generic_break_army
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = imperial_garrison
+		}
+	}
+
+	focus = {
+		id = BLM_federal_sympathies
+		icon = GFX_goal_generic_national_unity
+		x = 7
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		mutually_exclusive = {
+			focus = BLM_completedecentralization
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+
+	focus = {
+		id = BLM_home_islands_agreement
+		icon = GFX_goal_generic_improve_relations
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_act_283 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		country_event = { id = sasr.96 }
+		}
+
+	}
+
+	focus = {
+		id = BLM_5_year_compensation
+		icon = GFX_focus_mex_privatisation
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_home_islands_agreement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		country_event = { id = sasr.93 }
+
+		}
+	}
+
+		focus = {
+		id = BLM_local_industry
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_land_reform }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			}
+	}
+		focus = {
+		id = BLM_completedecentralization
+		icon = GFX_r56_goal_generic_citizens
+		x = 9
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			has_war = no
+		}		
+		prerequisite = { focus = BLM_act_283 }
+		mutually_exclusive = {
+			focus = BLM_federal_sympathies
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = -0.05	
+		}
+	}
+		focus = {
+		id = BLM_independentrepublics
+		icon = GFX_r56_goal_generic_consitution
+		x = 9
+		y = 3
+		cost = 15
+		available_if_capitulated = yes
+		available = {
+			has_war = no
+			is_subject = no
+		}
+		prerequisite = { focus = BLM_completedecentralization }
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		completion_reward = {
+			add_timed_idea = {
+			idea = FRA_strengthen_government_support_focus
+			days = 720
+			}
+		hidden_effect = {
+		AUD = {
+					transfer_state = 984
+					984 = { add_core_of = ARG }
+					transfer_state = 1013
+					1013 = { add_core_of = ARG }
+					add_opinion_modifier = { target = BLM modifier = medium_increase  }
+				}
+		QLA = {
+					transfer_state = 1006
+					1006 = { add_core_of = QLA }
+					transfer_state = 988
+					988 = { add_core_of = QLA }
+					transfer_state = 986
+					986 = { add_core_of = QLA }
+					add_opinion_modifier = { target = BLM modifier = medium_increase  }
+				}
+		WRB = {
+					transfer_state = 1050
+					1050 = { add_core_of = WRB }
+					transfer_state = 974
+					974 = { add_core_of = WRB }
+					transfer_state = 975
+					975 = { add_core_of = WRB }
+					transfer_state = 1052
+					1052 = { add_core_of = WRB }
+					transfer_state = 1051
+					1051 = { add_core_of = WRB }
+					add_opinion_modifier = { target = BLM modifier = medium_increase  }
+				}
+			}
+			puppet = AUD
+			puppet = QLA
+			puppet = WRB
+
+		}
+	}
+		focus = {
+		id = BLM_alliedrelations
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+		focus = BLM_5_year_compensation
+		focus = BLM_local_garrisons
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = large_increase
+				}
+			}
+			AST = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = AST
+					modifier = large_increase
+				}
+			}
+			NZL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = NZL
+					modifier = large_increase
+				}
+			}
+			RAJ = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = RAJ
+					modifier = large_increase
+				}
+			}
+			SAF = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = SAF
+					modifier = large_increase
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = large_increase
+				}
+			}
+			MAL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = MAL
+					modifier = large_increase
+				}
+			}
+			CAN = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = CAN
+					modifier = large_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = BLM_go_through_educational_reforms
+		icon = GFX_focus_generic_military_academy
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+		focus = BLM_alliedrelations
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = BLM_federate_assembly
+		icon = GFX_r56_goal_generic_election
+		x = 3
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+		focus = BLM_go_through_educational_reforms
+		focus = BLM_lemurianindustrialcentre
+		#focus =
+			}
+		completion_reward = {
+			#country_event =
+			}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = BLM_minority_rights
+		icon = GFX_r56_goal_generic_fist_with_flags
+		x = 3
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_federate_assembly }
+		prerequisite = { focus = BLM_flagissues }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 120000
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = BLM_liberty_beacon
+		icon = GFX_r56_goal_FRA_victor
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_flagissues }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.2
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BLM_suspend_persecution_permanently
+		icon = GFX_focus_bra_federalism
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_flagissues }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = BLM_final
+		}
+	}
+	focus = {
+		id = BLM_federal_lemuria
+		icon = GFX_goal_mexico_litteracy_program
+		x = 6
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_liberty_beacon }
+		prerequisite = { focus = BLM_suspend_persecution_permanently }
+		prerequisite = { focus = BLM_minority_rights }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BLM_final
+				add_idea = BLM_final2
+			}
+		}
+	}
+
+
+		focus = {
+		id = BLM_lemuriandefenseforce
+		icon = GFX_focus_generic_license_production
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+		focus = BLM_5_year_compensation
+		focus = BLM_local_garrisons
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			load_oob = BLM_prof_army
+		}
+	}
+		focus = {
+		id = BLM_lemurianindustrialcentre
+		icon = GFX_factoryplanning
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+		focus = BLM_alliedrelations
+		focus = BLM_local_industry
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level =3
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+		}
+	}
+	focus = {
+		id = BLM_colonistissues
+		icon = GFX_focus_bra_populism
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+		focus = BLM_independentrepublics
+		focus = BLM_government_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = -0.1
+		}
+	}
+		focus = {
+		id = BLM_flagissues
+		icon = GFX_focus_AST_never_gallipoli
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_colonistissues }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+		focus = {
+		id = BLM_newmilitaryindustry
+		icon = GFX_r56_goal_FRA_increase_military_spendings
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_local_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BLM_unrestmeeting
+		icon = GFX_r56_goal_AUS_emergency_powers
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+		focus = BLM_continue_the_reforms
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = iac
+		}
+	}
+	focus = {
+		id = BLM_expand_the_ig
+		icon = GFX_goal_italy_restructure_the_divisions
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+		focus = BLM_unrestmeeting
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = imperial_garrison
+			add_ideas = better_imperial_garrison
+		}
+	}
+
+#########
+	focus = {
+		id = BLM_the_queens_lemuria
+		prerequisite = { focus = BLM_continue_the_reforms }
+		icon = GFX_focus_generic_monarchy_2
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = the_old_order
+			add_ideas = the_imperial_order
+		}
+	}
+	focus = {
+		id = BLM_attract_british_settlers
+		icon = GFX_goal_british_come
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_queens_lemuria }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			1008 = { add_extra_state_shared_building_slots = 2 }
+			990 = { add_extra_state_shared_building_slots = 2 }
+			1010 = { add_extra_state_shared_building_slots = 2 }
+		}
+	}
+	focus = {
+		id = BLM_australian_british-lemurian_summit
+		icon = GFX_goal_localalliance
+		x = 17
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_royal_cadet_corps }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 50
+			add_command_power = 30
+		}
+	}
+	########## cadet corps is recon school, have it give a bonus to recon school and radio
+	focus = {
+		id = BLM_royal_cadet_corps
+		icon = GFX_r56_goal_generic_BLMss_a_reservists
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_queens_lemuria }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = military_youth_focus
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}
+	focus = {
+		id = BLM_lemurian_waysmen
+		icon = GFX_youth_brigade
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_australian_british-lemurian_summit }
+		prerequisite = { focus = BLM_expand_the_ig }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 1.0
+				uses = 1
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3				
+			}
+		}
+	}
+	focus = {
+		id = BLM_abolish_anglish_societies
+		icon = GFX_goal_destroy_anglish
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_attract_british_settlers }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+					country_event = { id = sasr.99 }
+			}
+
+	}
+	focus = {
+		id = BLM_incentivize_british_industries
+		icon = GFX_goal_italy_bring_industry_to_the_mezzogiorno
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_abolish_anglish_societies }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = BLM_suppress_natives #abolish Anglishism
+		icon = GFX_r56_goal_generic_supremacy_of_will
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_incentivize_british_industries }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_reform_the_army #Modern Army
+		icon = GFX_focus_generic_military_mission
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_incentivize_british_industries}
+		prerequisite = { focus = BLM_lemurian_waysmen }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+
+		}
+	}
+	focus = {
+		id = BLM_the_queens_industry
+		icon = GFX_r56_goal_generic_royal_industry
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_continue_the_reforms }
+		mutually_exclusive = {
+
+				}
+				completion_reward = {
+		add_ideas = royalindustry
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_the_industrial_new_hampstead
+		icon = GFX_r56_goal_SIA_improve_industry
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_queens_industry }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			}
+	}
+	focus = {
+		id = BLM_fix_the_shipyards
+		icon = GFX_r56_goal_generic_expand_the_naval_industry
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_industrial_new_hampstead }
+		prerequisite = { focus = BLM_attract_british_settlers }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+							}
+
+
+	}
+	focus = {
+		id = BLM_found_the_new_hampstead_university
+		icon = GFX_r56_goal_SIA_increase_science
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_queens_industry }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = BLM_new_british_education
+		icon = GFX_goal_new_british_education
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_found_the_new_hampstead_university }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = newbritisheducation
+		}
+	}
+	focus = {
+		id = BLM_the_roads
+		icon = GFX_r56_goal_generic_road
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_new_british_education focus = BLM_fix_the_shipyards }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_greatest_monument
+		icon = GFX_focus_eng_imperial_federation
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_the_roads }
+		prerequisite = { focus = BLM_suppress_natives }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_new_titles
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_suppress_natives }
+		prerequisite = { focus = BLM_reform_the_army }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = BLM_british_man
+		icon = GFX_goal_british_man
+		x = 17
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_reform_the_army }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+					country_event = { id = sasr.98 }
+			}
+	}
+	focus = {
+		id = BLM_imperial_lemuria
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BLM_new_titles }
+		prerequisite = { focus = BLM_greatest_monument }
+		prerequisite = { focus = BLM_british_man }
+		mutually_exclusive = {
+
+				}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	######## 		x = 6	y = 8
+	######## 		x = 15	y = 8
+ 
+ focus = {
+		id = BLM_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 22
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BLM_army_effort }
+		x = -1
+		y = 1
+		relative_position_id = BLM_army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = BLM_army_effort }
+		bypass = { has_tech = motorised_infantry }
+		x = 1
+		y = 1
+		relative_position_id = BLM_army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus 
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BLM_army_effort }
+		x = 0
+		y = 2
+		relative_position_id = BLM_army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = BLM_equipment_effort }
+		x = 0
+		y = 2
+		relative_position_id = BLM_equipment_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_mechanization_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = BLM_motorization_effort }
+		x = 0
+		y = 2
+		relative_position_id = BLM_motorization_effort
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_doctrine_effort_2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BLM_doctrine_effort }
+		x = 0
+		y = 2
+		relative_position_id = BLM_doctrine_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = BLM_equipment_effort_2 }
+		x = 0
+		y = 2
+		relative_position_id = BLM_equipment_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = BLM_mechanization_effort }
+		x = 0
+		y = 2
+		relative_position_id = BLM_mechanization_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = BLM_equipment_effort_3 }
+		prerequisite = { focus = BLM_doctrine_effort_2 }
+		prerequisite = { focus = BLM_armor_effort }
+		x = 1
+		y = 1
+		relative_position_id = BLM_equipment_effort_3
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+	focus = {
+		id = BLM_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		x = 28
+		y = 0
+		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+
+		completion_reward = {
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = BLM_aviation_effort }
+		mutually_exclusive = { focus = BLM_bomber_focus }
+		x = -1
+		y = 1
+		relative_position_id = BLM_aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = BLM_aviation_effort }
+		mutually_exclusive = { focus = BLM_fighter_focus }
+		x = 1
+		y = 1
+		relative_position_id = BLM_aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_aviation_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = BLM_bomber_focus focus = BLM_fighter_focus }
+		x = -1
+		y = 1
+		relative_position_id = BLM_bomber_focus
+		cost = 10
+
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_CAS_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = BLM_aviation_effort_2 }
+		prerequisite = { focus = BLM_motorization_effort }
+		x = -1
+		y = 1
+		relative_position_id = BLM_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_rocket_effort
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = BLM_aviation_effort_2 }
+		x = 0
+		y = 2
+		relative_position_id = BLM_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_NAV_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = BLM_aviation_effort_2 }
+		prerequisite = { focus = BLM_flexible_navy }
+		x = 1
+		y = 1
+		relative_position_id = BLM_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_naval_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 35
+		y = 0
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = BLM_flexible_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = BLM_naval_effort }
+		mutually_exclusive = { focus = BLM_large_navy }
+		x = -1
+		y = 1
+		relative_position_id = BLM_naval_effort
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_large_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = BLM_naval_effort }
+		mutually_exclusive = { focus = BLM_flexible_navy }
+		x = 1
+		y = 1
+		relative_position_id = BLM_naval_effort
+		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = BLM_flexible_navy focus = BLM_large_navy }
+		x = 0
+		y = 1
+		relative_position_id = BLM_flexible_navy
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = BLM_large_navy focus = BLM_flexible_navy }
+		x = 0
+		y = 1
+		relative_position_id = BLM_large_navy
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_destroyer_effort
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = BLM_submarine_effort }
+		x = 0
+		y = 1
+		relative_position_id = BLM_submarine_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BLM_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = BLM_cruiser_effort }
+		x = 0
+		y = 1
+		relative_position_id = BLM_cruiser_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+}
