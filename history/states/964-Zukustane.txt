@@ -1,6 +1,11 @@
+
 state={
 	id=964
-	name="STATE_964" #Zukustane
+	name="STATE_964"
+	resources={
+		steel=20.000
+		tungsten=31.000
+	}
 
 	history={
 		owner = ATL
@@ -12,22 +17,22 @@ state={
 			air_base = 1
 			14156 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_core_of = ATL
 		victory_points = {
-			14156 10 #Chuzaseit
+			14156 10 
 		}
 
 	}
-	
-	provinces={
-		14156 14199
-	}
-	manpower= 1129203
-	state_category = town
-	resources = {steel = 20 tungsten = 31}
 
+	provinces={
+		14156 15497 15540 
+	}
+	manpower=1129203
 	buildings_max_level_factor=1.000
-	local_supplies=4.0
+	state_category=town
+	local_supplies=4.000
 }

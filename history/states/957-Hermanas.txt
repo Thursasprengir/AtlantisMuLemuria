@@ -1,11 +1,10 @@
+
 state={
 	id=957
-	name="STATE_957" #Hermanas
+	name="STATE_957"
 	resources={
-		steel=3 
+		steel=3.000
 	}
-
-	state_category = rural
 
 	history={
 		owner = MEX
@@ -14,11 +13,27 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 1
-			14217 = {naval_base = 2}
-			14218 = {naval_base = 1}
-			14219 = {naval_base = 1}
-			14220 = {naval_base = 1}
-			14221 = {naval_base = 1}
+			14217 = {
+				naval_base = 2
+
+			}
+			14218 = {
+				naval_base = 1
+
+			}
+			14219 = {
+				naval_base = 1
+
+			}
+			14220 = {
+				naval_base = 1
+
+			}
+			14221 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = MEX
 		victory_points = {
@@ -35,9 +50,10 @@ state={
 	}
 
 	provinces={
-		14217 14218 14219 14220 14221
+		14217 14218 14219 14220 14221 15558 15559 15560 15561 15562 
 	}
 	manpower=85302
 	buildings_max_level_factor=1.000
-	local_supplies=1.0
+	state_category=rural
+	local_supplies=1.000
 }
