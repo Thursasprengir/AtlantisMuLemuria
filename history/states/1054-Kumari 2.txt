@@ -1,7 +1,11 @@
+
 state={
 	id=1054
 	name="STATE_1054"
-	state_category = megalopolis
+	resources={
+		steel=48.000
+		aluminium=12.000
+	}
 
 	history={
 		owner = KUM
@@ -13,20 +17,22 @@ state={
 			dockyard = 3
 			14346 = {
 				naval_base = 10
+
 			}
+
 		}
-		
 		victory_points = {
-			14346 30
+			14346 30 
 		}
 		add_core_of = KUM
 
 	}
+
 	provinces={
-			4916 7488 14346 14349 14350 14351 14354 14369 
+		4916 7488 14346 14350 14351 14354 14369 14469 15687 15690 15691 15692 15695 15710 
 	}
 	manpower=8961520
 	buildings_max_level_factor=1.000
-	resources = {steel = 48 aluminium = 12}
-	local_supplies=1.0
+	state_category=megalopolis
+	local_supplies=1.000
 }
