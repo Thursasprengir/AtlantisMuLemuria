@@ -2,6 +2,11 @@
 state={
 	id=984
 	name="STATE_984"
+	resources={
+		steel=11.000
+		oil=4.000
+		chromium=2.000
+	}
 
 	history={
 		owner = BLM
@@ -15,9 +20,10 @@ state={
 			anti_air_building = 2
 			14430 = {
 				naval_base = 8
+
 			}
+
 		}
-		
 		victory_points = {
 			14430 30 
 		}
@@ -25,12 +31,10 @@ state={
 	}
 
 	provinces={
-		8671 14306
-		14428 14429 14430 14431 14432 14433 14434 
+		8671 14306 14428 14431 14432 14433 14434 
 	}
 	manpower=1230515
 	buildings_max_level_factor=1.000
 	state_category=metropolis
-	resources = {steel = 11 oil = 4 chromium = 2}
-	local_supplies=4.0
+	local_supplies=4.000
 }

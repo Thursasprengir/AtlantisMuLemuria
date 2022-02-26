@@ -1,9 +1,8 @@
-state = {
+
+state={
 	id=484
 	name="STATE_484"
-	manpower = 108841
-	state_category = rural
-	
+
 	history={
 		owner = USA
 		buildings = {
@@ -11,24 +10,27 @@ state = {
 			air_base = 3
 			12736 = {
 				naval_base = 1
+
 			}
-			}
+
+		}
 		add_core_of = USA
 		add_core_of = MEX
 		add_core_of = CAL
-
 		victory_points = {
-			12461 10
+			12461 10 
 		}
-
 		victory_points = {
-			12736 2
-		}
+			12736 2 
 		}
 
-	provinces= {
-	1892 1904 7964 12461 12736 13216 14223 
-	14224 14225 14226 14227 14228 14229 14230
 	}
-		local_supplies=0.0 
+
+	provinces={
+		1892 1904 7964 12461 12736 13216 14223 14224 14225 14226 14227 14228 14229 14230 15564 15565 15566 15567 15568 15569 15570 15571 
+	}
+	manpower=108841
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

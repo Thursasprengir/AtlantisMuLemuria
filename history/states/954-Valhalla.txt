@@ -2,27 +2,29 @@
 state={
 	id=954
 	name="STATE_954"
-	manpower = 320450
 	resources={
-		oil=1 # was: 2
+		oil=1.000
 	}
-	
-	state_category = town
 
 	history={
 		owner = CAN
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = CAN
 		add_core_of = CAS
 		victory_points = {
-			14208 3 #Ollebo
+			14208 3 
 		}
+
 	}
 
 	provinces={
-		4877 7761 10644 14207 14208 14209 14210 
+		4877 7761 10644 14207 14208 14209 14210 15548 15549 15550 15551 
 	}
-	local_supplies=2.0
+	manpower=320450
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=2.000
 }

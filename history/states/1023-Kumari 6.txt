@@ -2,6 +2,9 @@
 state={
 	id=1023
 	name="STATE_1023"
+	resources={
+		oil=12.000
+	}
 
 	history={
 		owner = KUM
@@ -12,22 +15,22 @@ state={
 			dockyard = 2
 			14379 = {
 				naval_base = 4
+
 			}
+
 		}
-		
 		victory_points = {
-			14379 15
+			14379 15 
 		}
 		add_core_of = KUM
 
 	}
 
 	provinces={
-		8818 14376 14377 14379 14384 
+		8818 14376 14379 14384 
 	}
 	manpower=7156582
 	buildings_max_level_factor=1.000
 	state_category=large_town
-	resources = {oil = 12}
-	local_supplies=1.0
+	local_supplies=1.000
 }

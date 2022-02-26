@@ -1,7 +1,11 @@
+
 state={
 	id=1042
 	name="STATE_1042"
-	state_category = town
+	resources={
+		steel=14.000
+		oil=2.000
+	}
 
 	history={
 		owner = KBS
@@ -11,20 +15,22 @@ state={
 			industrial_complex = 2
 			14917 = {
 				naval_base = 3
+
 			}
+
 		}
-		
 		victory_points = {
-			14917 10
+			14917 10 
 		}
 		add_core_of = KBS
 
 	}
-	provinces={ 
-		14334 14915 14917 14918 14919 14920 14921 14922 14926 14927 14937
+
+	provinces={
+		14334 14926 14927 14937 15675 16253 16256 16258 16259 16260 16261 16262 16263 16267 16268 16278 
 	}
 	manpower=5468115
 	buildings_max_level_factor=1.000
-	resources = {steel = 14 oil = 2}
-	local_supplies=1.0
+	state_category=town
+	local_supplies=1.000
 }
