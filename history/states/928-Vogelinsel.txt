@@ -1,3 +1,4 @@
+
 state={
 	id=928
 	name="STATE_928"
@@ -13,8 +14,14 @@ state={
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 2
-			2724 = {naval_base = 4}
-			2794 = {naval_base = 5}
+			2724 = {
+				naval_base = 4
+
+			}
+			2794 = {
+				naval_base = 5
+
+			}
 
 		}
 		add_core_of = VGI
@@ -22,16 +29,16 @@ state={
 			2794 10 
 		}
 		victory_points = {
-			2724 3
+			2724 3 
 		}
 
 	}
+
 	provinces={
-		2674 2724 2699 2794 2770 2747 2797 2819 2842 
+		14404 14405 14406 14407 14408 14409 14410 14411 14412 
 	}
 	manpower=2852698
-	state_category = large_town
-
 	buildings_max_level_factor=1.000
-	local_supplies=5.0 
+	state_category=large_town
+	local_supplies=5.000
 }
