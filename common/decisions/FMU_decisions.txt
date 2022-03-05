@@ -249,459 +249,440 @@ prospect_for_resources = {
 		}
 	}
 }
-FMU_immigration = {
-	FMU_immigration1 = {
-		icon = generic_political_discourse
-		allowed = {}
-		available = {
-			has_country_flag = {flag = FMU_democratic2 value < 5}
-		}
-		visible = {
-			has_country_flag = {flag = FMU_democratic2 value < 5}
-		}
-		cost = 25
-		days_remove = 140
-
-		modifier = {
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_political_power < 200
-				factor = 0
-			}
-		}
-
-		remove_effect = {
-			add_manpower = 20000
-			modify_country_flag = {
-				flag = FMU_democratic2
-				value = 1
-			}
-		}
-
-		complete_effect = {
-		}
-	}
-	FMU_immigration2 = {
-		icon = generic_political_discourse
-		allowed = {}
-		available = {
-			has_country_flag = {flag = FMU_democratic5 value < 6}
-		}
-		visible = {
-			has_country_flag = {flag = FMU_democratic5 value < 6}
-		}
-		cost = 25
-		days_remove = 140
-
-		modifier = {
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_political_power < 200
-				factor = 0
-			}
-		}
-
-		remove_effect = {
-			add_manpower = 15000
-			modify_country_flag = {
-				flag = FMU_democratic5
-				value = 1
-			}
-		}
-
-		complete_effect = {
-		}
-	}
-}
-
-FMU_pay_back_debt_to_the_ifc_category = { 
-
-	FMU_small_installment_payment_ENG = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = FMU
-		}
-
-		available = {
-			
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = ENG
-			}
-		}
-
-		days_remove = 60
-
-		cost = 25
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 5
-				date < 1938.01.01
-			}
-			modifier = {
-				factor = 15
-				date > 1938.01.01
-				NOT = { 
-					ENG = { has_government = communism }
-				}
-			}
-			modifier = {
-				factor = 0
-				ENG = { has_completed_focus = ENG_concessions_to_the_trade_unions }
-			}
-		}
-
-		visible = {
-			has_completed_focus = FMU_renegotiate_versailles
-			OR = { 
-				has_idea = FMU_debt_to_the_ifc
-				has_idea = FMU_debt_to_the_ifc_2
-				has_idea = FMU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_completed_focus = FMU_horror_and_fear
-					has_completed_focus = FMU_depose_the_reactionaries
-					has_completed_focus = FMU_realign_ourselves_with_the_central_powers
-					has_completed_focus = FMU_the_modern_movement
-					has_country_flag = FMU_small_installment_payment_flag
-					has_country_flag = FMU_large_installment_payment_flag
-					check_variable = { var = FMU_debt_to_the_ifc_britain_var value = 0 compare = equals }
-				}
-			}
-		}
-
-		complete_effect = {
-			add_ideas = FMU_paying_off_debt_small
-			hidden_effect = { 
-				set_country_flag = { flag = FMU_small_installment_payment_flag value = 1 days = 60 }
-			}
-		}
-
-		remove_effect = {
-			remove_ideas = FMU_paying_off_debt_small
-			FROM = { add_political_power = 25 }
-			GRE_small_payment_to_british_debt_effect = yes
-		}
-	}
-	FMU_small_installment_payment_FRA = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = FMU
-		}
-
-		available = {
-			NOT = {
-				OR = {
-					has_country_flag = FMU_completely_debt_free
-					has_country_flag = FMU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = FRA
-			}
-		}
-
-		days_remove = 60
-
-		cost = 25
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 5
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 10
-				date > 1938.01.01
-				date < 1942.01.01
-			}
-			modifier = {
-				factor = 0
-				date > 1942.01.01
-			}
-			modifier = {
-				factor = 0
-				FRA = { has_capitulated = yes }
-			}
-		}
-
-		visible = {
-			has_completed_focus = FMU_renegotiate_versailles
-			OR = { 
-				has_idea = FMU_debt_to_the_ifc
-				has_idea = FMU_debt_to_the_ifc_2
-				has_idea = FMU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_completed_focus = FMU_horror_and_fear
-					has_completed_focus = FMU_depose_the_reactionaries
-					has_completed_focus = FMU_realign_ourselves_with_the_central_powers
-					has_completed_focus = FMU_the_modern_movement
-					has_country_flag = FMU_small_installment_payment_flag
-					has_country_flag = FMU_large_installment_payment_flag
-					check_variable = { var = FMU_debt_to_the_ifc_france_var value = 0 compare = equals }
-				}
-			}
-		}
-
-		complete_effect = {
-			add_ideas = FMU_paying_off_debt_small
-			hidden_effect = { 
-				set_country_flag = { flag = FMU_small_installment_payment_flag value = 1 days = 60 }
-			}
-		}
-
-		remove_effect = {
-			remove_ideas = FMU_paying_off_debt_small
-			FROM = { add_political_power = 25 }
-			GRE_small_payment_to_french_debt_effect = yes
-		}
-	}
-	FMU_small_installment_payment_ITA = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = FMU
-		}
-
-		available = {
-			NOT = {
-				OR = {
-					has_country_flag = FMU_completely_debt_free
-					has_country_flag = FMU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = ITA
-			}
-		}
-
-		days_remove = 60
-
-		cost = 25
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 2
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 10
-				date > 1938.01.01
-				date < 1940.01.01
-			}
-			modifier = {
-				factor = 0
-				date > 1940.01.01
-			}
-		}
-
-		visible = {
-			has_completed_focus = FMU_renegotiate_versailles
-			OR = { 
-				has_idea = FMU_debt_to_the_ifc
-				has_idea = FMU_debt_to_the_ifc_2
-				has_idea = FMU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_completed_focus = FMU_horror_and_fear
-					has_completed_focus = FMU_depose_the_reactionaries
-					has_completed_focus = FMU_realign_ourselves_with_the_central_powers
-					has_completed_focus = FMU_restoring_our_home
-					has_completed_focus = FMU_the_right_to_rule
-					has_country_flag = FMU_small_installment_payment_flag
-					has_country_flag = FMU_large_installment_payment_flag
-					check_variable = { var = FMU_debt_to_the_ifc_italy_var value = 0 compare = equals }
-				}
-			}
-		}
-
-		complete_effect = {
-			add_ideas = FMU_paying_off_debt_small
-			hidden_effect = { 
-				set_country_flag = { flag = FMU_small_installment_payment_flag value = 1 days = 60 }
-			}
-		}
-
-		remove_effect = {
-			remove_ideas = FMU_paying_off_debt_small
-			FROM = { add_political_power = 25 }
-			GRE_small_payment_to_italians_debt_effect = yes
-		}
-	}
-	
-	FMU_restructuring_our_debt = {
-
-		icon = FMU_paying_ifc_debt
-
-		allowed = { 
-			original_tag = FMU
-		}
-
-		available = {
-			NOT = {
-				OR = {
-					has_country_flag = FMU_completely_debt_free
-					has_country_flag = FMU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		cost = 200
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 3
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 15
-				num_of_factories < 25
-			}
-			modifier = {
-				factor = 20
-				date > 1940.01.01
-			}
-		}
-
-		visible = {
-			date > 1939.01.01
-			AND = {
-				check_variable = { 
-					var = FMU_debt_to_the_ifc_paid_var
-					value = 15
-					compare = less_than
-				}
-				OR = {
-					has_idea = FMU_debt_to_the_ifc
-					has_idea = FMU_debt_to_the_ifc_2
-					has_idea = FMU_debt_to_the_ifc_3
-				}
-			}
-			NOT = {
-				has_country_flag = FMU_restructuring_our_debt_flag
-			}
-		}
-
-		complete_effect = {
-			GRE_debt_restructuring_effect = yes
-		}
-	}
-
-	FMU_defaulting_on_our_debt = {
-
-		icon = generic_break_treaty
-
-		allowed = { 
-			original_tag = FMU
-		}
-
-		available = {
-			NOT = {
-				OR = {
-					has_country_flag = FMU_completely_debt_free
-					has_country_flag = FMU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		cost = 300
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 10
-				FMU = { 
-					OR = { 
-						has_completed_focus = FMU_the_modern_movement
-						has_completed_focus = FMU_realign_ourselves_with_the_central_powers
-					}
-				}
-			}
-			modifier = {
-				factor = 30
-				FMU = { 
-					OR = { 
-						has_completed_focus = FMU_depose_the_reactionaries
-						has_completed_focus = FMU_horror_and_fear
-					}
-				}
-			}
-		}
-
-		visible = {
-			OR = { 
-				AND = {
-					date > 1941.01.01
-					OR = {
-						has_idea = FMU_debt_to_the_ifc
-						has_idea = FMU_debt_to_the_ifc_2
-						has_idea = FMU_debt_to_the_ifc_3
-					}
-				}
-				AND = {
-					OR = {
-						has_completed_focus = FMU_depose_the_reactionaries
-						has_completed_focus = FMU_reviving_the_double_headed_eagle
-						has_completed_focus = FMU_the_modern_movement
-						has_completed_focus = FMU_realign_ourselves_with_the_central_powers
-					}
-					OR = {
-						has_idea = FMU_debt_to_the_ifc
-						has_idea = FMU_debt_to_the_ifc_2
-						has_idea = FMU_debt_to_the_ifc_3
-					}
-				}
-			}
-		}
-
-		complete_effect = {
-			GRE_default_on_debt_effect = yes
-		}
-	}			
-}
+#FMU_immigration = {
+#	FMU_immigration1 = {
+#		icon = generic_political_discourse
+#		allowed = {}
+#		available = {
+#			has_country_flag = {flag = FMU_democratic2 value < 5}
+#		}
+#		visible = {
+#			has_country_flag = {flag = FMU_democratic2 value < 5}
+#		}
+#		cost = 25
+#		days_remove = 140
+#
+#		modifier = {
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				has_political_power < 200
+#				factor = 0
+#			}
+#		}
+#
+#		remove_effect = {
+#			add_manpower = 20000
+#			modify_country_flag = {
+#				flag = FMU_democratic2
+#				value = 1
+#			}
+#		}
+#
+#		complete_effect = {
+#		}
+#	}
+#	FMU_immigration2 = {
+#		icon = generic_political_discourse
+#		allowed = {}
+#		available = {
+#			has_country_flag = {flag = FMU_democratic5 value < 6}
+#		}
+#		visible = {
+#			has_country_flag = {flag = FMU_democratic5 value < 6}
+#		}
+#		cost = 25
+#		days_remove = 140
+#
+#		modifier = {
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				has_political_power < 200
+#				factor = 0
+#			}
+#		}
+#
+#		remove_effect = {
+#			add_manpower = 15000
+#			modify_country_flag = {
+#				flag = FMU_democratic5
+#				value = 1
+#			}
+#		}
+#
+#		complete_effect = {
+#		}
+#	}
+#}
+#
+#FMU_pay_back_debt_to_the_ifc_category = { 
+#
+#	FMU_small_installment_payment_ENG = {
+#
+#		icon = hol_attract_foreign_investors 
+#
+#		allowed = { 
+#			original_tag = FMU
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		target_trigger = {
+#			FROM = {
+#				tag = ENG
+#			}
+#		}
+#
+#		days_remove = 60
+#
+#		cost = 25
+#
+#		fire_only_once = no
+#
+#		ai_will_do = {
+#			factor = 5
+#			modifier = {
+#				factor = 10
+#				is_historical_focus_on = yes
+#			}
+#			modifier = {
+#				factor = 5
+#				date < 1938.01.01
+#			}
+#			modifier = {
+#				factor = 15
+#				date > 1938.01.01
+#				NOT = { 
+#					ENG = { has_government = communism }
+#				}
+#			}
+#			modifier = {
+#				factor = 0
+#				ENG = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+#			}
+#		}
+#
+#		visible = {
+#			has_completed_focus = FMU_renegotiate_versailles
+#			OR = { 
+#				has_idea = FMU_debt_to_the_ifc
+#				has_idea = FMU_debt_to_the_ifc_2
+#				has_idea = FMU_debt_to_the_ifc_3
+#			}
+#			NOT = {
+#				OR = {
+#					
+#					has_country_flag = FMU_small_installment_payment_flag
+#					has_country_flag = FMU_large_installment_payment_flag
+#					check_variable = { var = FMU_debt_to_the_ifc_britain_var value = 0 compare = equals }
+#				}
+#			}
+#		}
+#
+#		complete_effect = {
+#			add_ideas = FMU_paying_off_debt_small
+#			hidden_effect = { 
+#				set_country_flag = { flag = FMU_small_installment_payment_flag value = 1 days = 60 }
+#			}
+#		}
+#
+#		remove_effect = {
+#			remove_ideas = FMU_paying_off_debt_small
+#			FROM = { add_political_power = 25 }
+#			GRE_small_payment_to_british_debt_effect = yes
+#		}
+#	}
+#	FMU_small_installment_payment_FRA = {
+#
+#		icon = hol_attract_foreign_investors 
+#
+#		allowed = { 
+#			original_tag = FMU
+#		}
+#
+#		available = {
+#			NOT = {
+#				OR = {
+#					has_country_flag = FMU_completely_debt_free
+#					has_country_flag = FMU_defaulted_on_debt_flag
+#				}
+#			}
+#		}
+#
+#		target_trigger = {
+#			FROM = {
+#				tag = FRA
+#			}
+#		}
+#
+#		days_remove = 60
+#
+#		cost = 25
+#
+#		fire_only_once = no
+#
+#		ai_will_do = {
+#			factor = 5
+#			modifier = {
+#				factor = 5
+#				is_historical_focus_on = yes
+#			}
+#			modifier = {
+#				factor = 10
+#				date > 1938.01.01
+#				date < 1942.01.01
+#			}
+#			modifier = {
+#				factor = 0
+#				date > 1942.01.01
+#			}
+#			modifier = {
+#				factor = 0
+#				FRA = { has_capitulated = yes }
+#			}
+#		}
+#
+#		visible = {
+#			has_completed_focus = FMU_renegotiate_versailles
+#			OR = { 
+#				has_idea = FMU_debt_to_the_ifc
+#				has_idea = FMU_debt_to_the_ifc_2
+#				has_idea = FMU_debt_to_the_ifc_3
+#			}
+#			NOT = {
+#				OR = {
+#					has_country_flag = FMU_small_installment_payment_flag
+#					has_country_flag = FMU_large_installment_payment_flag
+#					check_variable = { var = FMU_debt_to_the_ifc_france_var value = 0 compare = equals }
+#				}
+#			}
+#		}
+#
+#		complete_effect = {
+#			add_ideas = FMU_paying_off_debt_small
+#			hidden_effect = { 
+#				set_country_flag = { flag = FMU_small_installment_payment_flag value = 1 days = 60 }
+#			}
+#		}
+#
+#		remove_effect = {
+#			remove_ideas = FMU_paying_off_debt_small
+#			FROM = { add_political_power = 25 }
+#			GRE_small_payment_to_french_debt_effect = yes
+#		}
+#	}
+#	FMU_small_installment_payment_ITA = {
+#
+#		icon = hol_attract_foreign_investors 
+#
+#		allowed = { 
+#			original_tag = FMU
+#		}
+#
+#		available = {
+#			NOT = {
+#				OR = {
+#					has_country_flag = FMU_completely_debt_free
+#					has_country_flag = FMU_defaulted_on_debt_flag
+#				}
+#			}
+#		}
+#
+#		target_trigger = {
+#			FROM = {
+#				tag = ITA
+#			}
+#		}
+#
+#		days_remove = 60
+#
+#		cost = 25
+#
+#		fire_only_once = no
+#
+#		ai_will_do = {
+#			factor = 5
+#			modifier = {
+#				factor = 2
+#				is_historical_focus_on = yes
+#			}
+#			modifier = {
+#				factor = 10
+#				date > 1938.01.01
+#				date < 1940.01.01
+#			}
+#			modifier = {
+#				factor = 0
+#				date > 1940.01.01
+#			}
+#		}
+#
+#		visible = {
+#			has_completed_focus = FMU_renegotiate_versailles
+#			OR = { 
+#				has_idea = FMU_debt_to_the_ifc
+#				has_idea = FMU_debt_to_the_ifc_2
+#				has_idea = FMU_debt_to_the_ifc_3
+#			}
+#			NOT = {
+#				OR = {
+#					has_country_flag = FMU_small_installment_payment_flag
+#					has_country_flag = FMU_large_installment_payment_flag
+#					check_variable = { var = FMU_debt_to_the_ifc_italy_var value = 0 compare = equals }
+#				}
+#			}
+#		}
+#
+#		complete_effect = {
+#			add_ideas = FMU_paying_off_debt_small
+#			hidden_effect = { 
+#				set_country_flag = { flag = FMU_small_installment_payment_flag value = 1 days = 60 }
+#			}
+#		}
+#
+#		remove_effect = {
+#			remove_ideas = FMU_paying_off_debt_small
+#			FROM = { add_political_power = 25 }
+#			GRE_small_payment_to_italians_debt_effect = yes
+#		}
+#	}
+#	
+#	FMU_restructuring_our_debt = {
+#
+#		icon = FMU_paying_ifc_debt
+#
+#		allowed = { 
+#			original_tag = FMU
+#		}
+#
+#		available = {
+#			NOT = {
+#				OR = {
+#					has_country_flag = FMU_completely_debt_free
+#					has_country_flag = FMU_defaulted_on_debt_flag
+#				}
+#			}
+#		}
+#
+#		cost = 200
+#
+#		fire_only_once = yes
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 3
+#				is_historical_focus_on = yes
+#			}
+#			modifier = {
+#				factor = 15
+#				num_of_factories < 25
+#			}
+#			modifier = {
+#				factor = 20
+#				date > 1940.01.01
+#			}
+#		}
+#
+#		visible = {
+#			date > 1939.01.01
+#			AND = {
+#				check_variable = { 
+#					var = FMU_debt_to_the_ifc_paid_var
+#					value = 15
+#					compare = less_than
+#				}
+#				OR = {
+#					has_idea = FMU_debt_to_the_ifc
+#					has_idea = FMU_debt_to_the_ifc_2
+#					has_idea = FMU_debt_to_the_ifc_3
+#				}
+#			}
+#			NOT = {
+#				has_country_flag = FMU_restructuring_our_debt_flag
+#			}
+#		}
+#
+#		complete_effect = {
+#			GRE_debt_restructuring_effect = yes
+#		}
+#	}
+#
+#	FMU_defaulting_on_our_debt = {
+#
+#		icon = generic_break_treaty
+#
+#		allowed = { 
+#			original_tag = FMU
+#		}
+#
+#		available = {
+#			NOT = {
+#				OR = {
+#					has_country_flag = FMU_completely_debt_free
+#					has_country_flag = FMU_defaulted_on_debt_flag
+#				}
+#			}
+#		}
+#
+#		cost = 300
+#
+#		fire_only_once = yes
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				is_historical_focus_on = yes
+#			}
+#			modifier = {
+#				factor = 10
+#				FMU = { 
+#					OR = { 
+#						has_completed_focus = FMU_the_modern_movement
+#						has_completed_focus = FMU_realign_ourselves_with_the_central_powers
+#					}
+#				}
+#			}
+#			modifier = {
+#			}
+#		}
+#
+#		visible = {
+#			OR = { 
+#				AND = {
+#					date > 1941.01.01
+#					OR = {
+#						has_idea = FMU_debt_to_the_ifc
+#						has_idea = FMU_debt_to_the_ifc_2
+#						has_idea = FMU_debt_to_the_ifc_3
+#					}
+#				}
+#				AND = {
+#					OR = {
+#						has_completed_focus = FMU_depose_the_reactionaries
+#						has_completed_focus = FMU_reviving_the_double_headed_eagle
+#						has_completed_focus = FMU_the_modern_movement
+#						has_completed_focus = FMU_realign_ourselves_with_the_central_powers
+#					}
+#					OR = {
+#						has_idea = FMU_debt_to_the_ifc
+#						has_idea = FMU_debt_to_the_ifc_2
+#						has_idea = FMU_debt_to_the_ifc_3
+#					}
+#				}
+#			}
+#		}
+#
+#		complete_effect = {
+#			GRE_default_on_debt_effect = yes
+#		}
+#	}			
+#}
