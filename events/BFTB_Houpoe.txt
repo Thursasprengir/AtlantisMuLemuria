@@ -1,11 +1,11 @@
 ###########################
-# HOUek Events
+# HOU Events
 ###########################
 
 add_namespace = bftb_houpoe
 
 #Investment Events
-#German investment events - German politicians return from investment negotiations in HOUek capital
+#German investment events - German politicians return from investment negotiations in HOU capital
 country_event = {
 	id = bftb_houpoe.166
 	title = bftb_houpoe.166.t
@@ -26,7 +26,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_german_influence_over_HOUek_government
+					var = HOU_german_influence_over_HOU_government
 					value = 5
 				}
 			}
@@ -70,12 +70,12 @@ country_event = {
 		}
 	}	
 }
-#German investment events - German businessmen attend HOUek national showcase to lure investors
+#German investment events - German businessmen attend HOU national showcase to lure investors
 country_event = {
 	id = bftb_houpoe.167
 	title = bftb_houpoe.167.t
 	desc = bftb_houpoe.167.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -91,7 +91,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_german_influence_over_HOUek_government
+					var = HOU_german_influence_over_HOU_government
 					value = 10
 				}
 			}
@@ -135,12 +135,12 @@ country_event = {
 		}
 	}	
 }
-#German investment events - The HOUeks manipulate the fine print of the Schachtplan to their own advantage
+#German investment events - The HOU manipulate the fine print of the Schachtplan to their own advantage
 country_event = {
 	id = bftb_houpoe.168
 	title = bftb_houpoe.168.t
 	desc = bftb_houpoe.168.desc
-	picture = GFX_report_event_HOU_diplomacy
+	picture = GFX_report_event_GRE_diplomacy
 
 	is_triggered_only = yes
 	
@@ -164,7 +164,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_german_influence_over_HOUek_government
+					var = HOU_german_influence_over_HOU_government
 					value = 25
 				}
 				country_event = { id = bftb_houpoe.169 days = 2 }
@@ -190,7 +190,7 @@ country_event = {
 			}
 			HOU = { 
 				add_to_variable = {
-					var = HOU_german_influence_over_HOUek_government
+					var = HOU_german_influence_over_HOU_government
 					value = 15
 				}
 			}
@@ -247,7 +247,7 @@ country_event = {
 	id = bftb_houpoe.169
 	title = bftb_houpoe.169.t
 	desc = bftb_houpoe.169.desc
-	picture = GFX_report_event_HOU_allied_diplomacy
+	picture = GFX_report_event_GRE_allied_diplomacy
 
 	is_triggered_only = yes
 	
@@ -310,7 +310,7 @@ country_event = {
 	id = bftb_houpoe.170
 	title = bftb_houpoe.170.t
 	desc = bftb_houpoe.170.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -325,7 +325,7 @@ country_event = {
 	id = bftb_houpoe.171
 	title = bftb_houpoe.171.t
 	desc = bftb_houpoe.171.desc
-	picture = GFX_report_event_HOU_cabinet_meeting
+	picture = GFX_report_event_GRE_cabinet_meeting
 
 	is_triggered_only = yes
 	
@@ -333,7 +333,7 @@ country_event = {
 		name = bftb_houpoe.171.a 
 		add_stability = -0.1	
 		hidden_effect = {
-			clear_variable = HOU_german_influence_over_HOUek_government
+			clear_variable = HOU_german_influence_over_HOU_government
 		}
 	}
 }
@@ -342,7 +342,7 @@ country_event = {
 	id = bftb_houpoe.172
 	title = bftb_houpoe.172.t
 	desc = bftb_houpoe.172.desc
-	picture = GFX_report_event_HOU_megali_conference_signing
+	picture = GFX_report_event_GRE_megali_conference_signing
 
 	is_triggered_only = yes
 	
@@ -365,12 +365,12 @@ country_event = {
 		}
 	}
 }
-#British investment events - British entrepreneurs return from investment negotiations in HOUek capital and seek permission from government to invest 
+#British investment events - British entrepreneurs return from investment negotiations in HOU capital and seek permission from government to invest 
 country_event = {
 	id = bftb_houpoe.173
 	title = bftb_houpoe.173.t
 	desc = bftb_houpoe.173.desc
-	picture = GFX_report_event_HOU_allied_diplomacy
+	picture = GFX_report_event_GRE_allied_diplomacy
 
 	is_triggered_only = yes
 	
@@ -386,7 +386,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_british_influence_over_HOUek_government
+					var = HOU_british_influence_over_HOU_government
 					value = 5
 				}
 			}
@@ -430,12 +430,12 @@ country_event = {
 		}
 	}	
 }
-#British investment events - British officials attend HOUek national showcase to lure investors
+#British investment events - British officials attend HOU national showcase to lure investors
 country_event = {
 	id = bftb_houpoe.174
 	title = bftb_houpoe.174.t
 	desc = bftb_houpoe.174.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -451,7 +451,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_british_influence_over_HOUek_government
+					var = HOU_british_influence_over_HOU_government
 					value = 10
 				}
 			}
@@ -495,12 +495,12 @@ country_event = {
 		}
 	}	
 }
-#British investment events - The HOUeks offer manufactured ship parts for more intensive investment into their country
+#British investment events - The HOU offer manufactured ship parts for more intensive investment into their country
 country_event = {
 	id = bftb_houpoe.175
 	title = bftb_houpoe.175.t
 	desc = bftb_houpoe.175.desc
-	picture = GFX_report_event_HOU_diplomacy
+	picture = GFX_report_event_GRE_diplomacy
 
 	is_triggered_only = yes
 	
@@ -518,7 +518,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_british_influence_over_HOUek_government
+					var = HOU_british_influence_over_HOU_government
 					value = 25
 				}
 			}
@@ -556,7 +556,7 @@ country_event = {
 	id = bftb_houpoe.176
 	title = bftb_houpoe.176.t
 	desc = bftb_houpoe.176.desc
-	picture = GFX_report_event_HOU_allied_diplomacy
+	picture = GFX_report_event_GRE_allied_diplomacy
 
 	is_triggered_only = yes
 	
@@ -619,7 +619,7 @@ country_event = {
 	id = bftb_houpoe.177
 	title = bftb_houpoe.177.t
 	desc = bftb_houpoe.177.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -634,7 +634,7 @@ country_event = {
 	id = bftb_houpoe.178
 	title = bftb_houpoe.178.t
 	desc = bftb_houpoe.178.desc
-	picture = GFX_report_event_HOU_cabinet_meeting
+	picture = GFX_report_event_GRE_cabinet_meeting
 
 	is_triggered_only = yes
 	
@@ -644,19 +644,19 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					check_variable = { var = HOU_debt_to_the_ifc_britain_var value = 2.5 compare = HOUater_than_or_equals } 
+					check_variable = { var = HOU_debt_to_the_ifc_britain_var value = 2.5 compare = greater_than_or_equals } 
 				}
 				HOU_default_on_british_debt_effect = yes
 			}
 		}
 	}
 }
-#French investment events - HOUek officials petition us in our capital for investment
+#French investment events - HOU officials petition us in our capital for investment
 country_event = {
 	id = bftb_houpoe.179
 	title = bftb_houpoe.179.t
 	desc = bftb_houpoe.179.desc
-	picture = GFX_report_event_HOU_allied_diplomacy
+	picture = GFX_report_event_GRE_allied_diplomacy
 
 	is_triggered_only = yes
 	
@@ -672,7 +672,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_french_influence_over_HOUek_government
+					var = HOU_french_influence_over_HOU_government
 					value = 5
 				}
 			}
@@ -716,12 +716,12 @@ country_event = {
 		}
 	}	
 }
-#French investment events - French officials attend HOUek national showcase to lure investors
+#French investment events - French officials attend HOU national showcase to lure investors
 country_event = {
 	id = bftb_houpoe.180
 	title = bftb_houpoe.180.t
 	desc = bftb_houpoe.180.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -737,7 +737,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_french_influence_over_HOUek_government
+					var = HOU_french_influence_over_HOU_government
 					value = 10
 				}
 			}
@@ -781,12 +781,12 @@ country_event = {
 		}
 	}	
 }
-#French investment events - Taking payments from the HOUeks, the trade unions threaten to strike unless we employ Frenchmen to build in HOUece
+#French investment events - Taking payments from the HOU, the trade unions threaten to strike unless we employ Frenchmen to build in HOU
 country_event = {
 	id = bftb_houpoe.181
 	title = bftb_houpoe.181.t
 	desc = bftb_houpoe.181.desc
-	picture = GFX_report_event_HOU_diplomacy
+	picture = GFX_report_event_GRE_diplomacy
 
 	is_triggered_only = yes
 	
@@ -806,7 +806,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_french_influence_over_HOUek_government
+					var = HOU_french_influence_over_HOU_government
 					value = 25
 				}
 			}
@@ -860,7 +860,7 @@ country_event = {
 	id = bftb_houpoe.182
 	title = bftb_houpoe.182.t
 	desc = bftb_houpoe.182.desc
-	picture = GFX_report_event_HOU_allied_diplomacy
+	picture = GFX_report_event_GRE_allied_diplomacy
 
 	is_triggered_only = yes
 	
@@ -924,7 +924,7 @@ country_event = {
 	id = bftb_houpoe.183
 	title = bftb_houpoe.183.t
 	desc = bftb_houpoe.183.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -939,7 +939,7 @@ country_event = {
 	id = bftb_houpoe.184
 	title = bftb_houpoe.184.t
 	desc = bftb_houpoe.184.desc
-	picture = GFX_report_event_HOU_cabinet_meeting
+	picture = GFX_report_event_GRE_cabinet_meeting
 
 	is_triggered_only = yes
 	
@@ -949,19 +949,19 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					check_variable = { var = HOU_debt_to_the_ifc_france_var value = 2.5 compare = HOUater_than_or_equals } 
+					check_variable = { var = HOU_debt_to_the_ifc_france_var value = 2.5 compare = greater_than_or_equals } 
 				}
 				HOU_default_on_french_debt_effect = yes
 			}
 		}
 	}
 }
-#Italian investment events - the HOUeks approach us for help with industrialising their country
+#Italian investment events - the HOU approach us for help with industrialising their country
 country_event = {
 	id = bftb_houpoe.185
 	title = bftb_houpoe.185.t
 	desc = bftb_houpoe.185.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -977,7 +977,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_italian_influence_over_HOUek_government
+					var = HOU_italian_influence_over_HOU_government
 					value = 4
 				}
 			}
@@ -1017,12 +1017,12 @@ country_event = {
 		}
 	}	
 }
-#Italian investment events - HOUek diplomats hope to soften Italian ambitions in the region
+#Italian investment events - HOU diplomats hope to soften Italian ambitions in the region
 country_event = {
 	id = bftb_houpoe.186
 	title = bftb_houpoe.186.t
 	desc = bftb_houpoe.186.desc
-	picture = GFX_report_event_HOU_fascism
+	picture = GFX_report_event_GRE_fascism
 
 	is_triggered_only = yes
 	
@@ -1044,7 +1044,7 @@ country_event = {
 			}
 			HOU = { 
 				subtract_from_variable = {
-					var = HOU_italian_influence_over_HOUek_government
+					var = HOU_italian_influence_over_HOU_government
 					value = 6
 				}
 			}
@@ -1089,7 +1089,7 @@ country_event = {
 	id = bftb_houpoe.187
 	title = bftb_houpoe.187.t
 	desc = bftb_houpoe.187.desc
-	picture = GFX_report_event_HOU_allied_diplomacy
+	picture = GFX_report_event_GRE_allied_diplomacy
 
 	is_triggered_only = yes
 	
@@ -1131,7 +1131,7 @@ country_event = {
 	id = bftb_houpoe.188
 	title = bftb_houpoe.188.t
 	desc = bftb_houpoe.188.desc
-	picture = GFX_report_event_HOU_george_ii_victorious
+	picture = GFX_report_event_GRE_george_ii_victorious
 
 	is_triggered_only = yes
 	
@@ -1145,7 +1145,7 @@ country_event = {
 	id = bftb_houpoe.189
 	title = bftb_houpoe.189.t
 	desc = bftb_houpoe.189.desc
-	picture = GFX_report_event_HOU_cabinet_meeting
+	picture = GFX_report_event_GRE_cabinet_meeting
 
 	is_triggered_only = yes
 	
@@ -1154,26 +1154,26 @@ country_event = {
 		add_stability = -0.1
 		add_war_support = 0.05	
 		hidden_effect = {
-			clear_variable = HOU_italian_influence_over_HOUek_government
+			clear_variable = HOU_italian_influence_over_HOU_government
 			if = {
 				limit = {
-					check_variable = { var = HOU_debt_to_the_ifc_italy_var value = 2.5 compare = HOUater_than_or_equals } 
+					check_variable = { var = HOU_debt_to_the_ifc_italy_var value = 2.5 compare = greater_than_or_equals } 
 				}
 				HOU_default_on_italian_debt_effect = yes
 			}
 		}
 	}
 }
-#Soviet investment events - HOUek officials finish their visit to the Presidium
+#Soviet investment events - HOU officials finish their visit to the Presidium
 country_event = {
 	id = bftb_houpoe.190
 	title = bftb_houpoe.190.t
 	desc = bftb_houpoe.190.desc
-	picture = GFX_report_event_HOU_allied_diplomacy
+	picture = GFX_report_event_GRE_allied_diplomacy
 
 	is_triggered_only = yes
 	
-	option = { #Invest in HOUece
+	option = { #Invest in HOU
 		name = bftb_houpoe.190.a 
 		ai_chance = {
 			base = 5
@@ -1185,7 +1185,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_soviet_influence_over_HOUek_government
+					var = HOU_soviet_influence_over_HOU_government
 					value = 10
 				}
 			}
@@ -1225,12 +1225,12 @@ country_event = {
 		}
 	}	
 }
-#Soviet investment events - Soviet bureaucrats finish their tour of HOUece 
+#Soviet investment events - Soviet bureaucrats finish their tour of HOUe
 country_event = {
 	id = bftb_houpoe.191
 	title = bftb_houpoe.191.t
 	desc = bftb_houpoe.191.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -1247,7 +1247,7 @@ country_event = {
 		hidden_effect = {
 			HOU = { 
 				add_to_variable = {
-					var = HOU_soviet_influence_over_HOUek_government
+					var = HOU_soviet_influence_over_HOU_government
 					value = 25
 				}
 			}
@@ -1287,12 +1287,12 @@ country_event = {
 		}
 	}	
 }
-#Soviet investment events - HOUek officials come up with blueprint to invest back into neglected Siberian regions
+#Soviet investment events - HOU officials come up with blueprint to invest back into neglected Siberian regions
 country_event = {
 	id = bftb_houpoe.192
 	title = bftb_houpoe.192.t
 	desc = bftb_houpoe.192.desc
-	picture = GFX_report_event_HOU_officers_chatting
+	picture = GFX_report_event_GRE_officers_chatting
 
 	is_triggered_only = yes
 	
@@ -1358,7 +1358,7 @@ country_event = {
 			}
 			HOU = { 
 				subtract_from_variable = {
-					var = HOU_soviet_influence_over_HOUek_government
+					var = HOU_soviet_influence_over_HOU_government
 					value = 30
 				}
 			}
@@ -1394,7 +1394,7 @@ country_event = {
 	id = bftb_houpoe.193
 	title = bftb_houpoe.193.t
 	desc = bftb_houpoe.193.desc
-	picture = GFX_report_event_HOU_allied_diplomacy
+	picture = GFX_report_event_GRE_allied_diplomacy
 
 	is_triggered_only = yes
 
@@ -1417,7 +1417,7 @@ country_event = {
 	id = bftb_houpoe.194
 	title = bftb_houpoe.194.t
 	desc = bftb_houpoe.194.desc
-	picture = GFX_report_event_HOU_athens
+	picture = GFX_report_event_GRE_athens
 
 	is_triggered_only = yes
 	
@@ -1431,7 +1431,7 @@ country_event = {
 	id = bftb_houpoe.195
 	title = bftb_houpoe.195.t
 	desc = bftb_houpoe.195.desc
-	picture = GFX_report_event_HOU_cabinet_meeting
+	picture = GFX_report_event_GRE_cabinet_meeting
 
 	is_triggered_only = yes
 	
@@ -1440,16 +1440,16 @@ country_event = {
 		add_stability = -0.1
 		add_war_support = 0.05
 		hidden_effect = {
-			clear_variable = HOU_soviet_influence_over_HOUek_government
+			clear_variable = HOU_soviet_influence_over_HOU_government
 		}
 	}
 }
-#Debt to the I.F.C. events - the HOUeks default on their debt! notification event
+#Debt to the I.F.C. events - the HOU default on their debt! notification event
 country_event = {
 	id = bftb_houpoe.213
 	title = bftb_houpoe.213.t
 	desc = bftb_houpoe.213.desc
-	picture = GFX_report_event_HOU_balkan_pact
+	picture = GFX_report_event_GRE_balkan_pact
 
 	is_triggered_only = yes
 	
@@ -1488,481 +1488,5 @@ country_event = {
 	option = {
 		name = bftb_houpoe.213.b 
 		add_political_power = -150
-	}
-}
-#Fascist Council Leader Choosing
-country_event = {
-	id = bftb_houpoe.217
-	title = bftb_houpoe.217.t
-	desc = bftb_houpoe.217.desc
-	picture = GFX_report_event_HOU_fascism
-
-	is_triggered_only = yes
-	
-	option = {
-		name = bftb_houpoe.217.a #Metaxasist monarchy
-		
-		promote_character = {
-			character = HOU_ioannis_metaxas 
-			ideology = fascism_ideology
-		}
-		custom_effect_tooltip = HOU_metaxist_monarchist_fascism_tt
-		hidden_effect = { 
-			set_party_name = { ideology = fascism long_name = HOU_metaxas_party_long name = HOU_metaxas_party }
-			set_politics = { ruling_party = fascism elections_allowed = no }
-			set_variable = { HOU_fascist_loyalty = 2 }
-			set_variable = { HOU_monarchist_loyalty = 1 }
-			set_temp_variable = { 
-				var = metaxist_support_var
-				value = party_popularity@neutrality
-			}
-			add_popularity = { 
-				ideology = fascism
-				popularity = metaxist_support_var
-			}
-			add_country_leader_role = {
-				character = HOU_emmanouil_tsouderos
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = centrism
-						traits = {
-							the_banker
-						}
-					}
-				promote_leader = yes
-			}
-			set_party_name = { 
-				ideology = neutrality
-				long_name = HOU_neutrality_party
-				name = HOU_neutrality_party
-			}
-		}		
-	}
-	option = {
-		name = bftb_houpoe.217.b #NatSoc republic with Mercouris
-		effect_tooltip = { 
-			add_country_leader_role = {
-			character = "HOU_george_mercouris"
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = gen_nazism
-				traits = {
-					polemarch
-				}
-			}
-			promote_leader = yes
-			}			
-		}
-		effect_tooltip = { remove_ideas = HOU_metaxism }
-		custom_effect_tooltip = HOU_republican_national_socialism_tt
-		hidden_effect = { 
-			set_politics = { ruling_party = fascism elections_allowed = no }
-			set_variable = { HOU_fascist_loyalty = 2 }
-			set_variable = { HOU_monarchist_loyalty = -2 }
-			remove_ideas = HOU_george_ii
-			add_popularity = { 
-				ideology = fascism
-				popularity = 0.15
-			}
-			add_popularity = { 
-				ideology = neutrality
-				popularity = -0.1
-			}
-			if = {
-				limit = { 
-					has_idea = HOU_metaxism
-				}	
-				remove_ideas = HOU_metaxism
-			} 
-			if = {
-				limit = { 
-					has_idea = HOU_metaxism_2
-				}	
-				remove_ideas = HOU_metaxism_2
-			}
-			if = {
-				limit = { 
-					has_idea = HOU_metaxism_3
-				}	
-				remove_ideas = HOU_metaxism_3
-			}
-			if = {
-				limit = { 
-					has_idea = HOU_metaxism_4
-				}	
-				remove_ideas = HOU_metaxism_4
-			}
-			if = {
-				limit = { 
-					has_idea = HOU_metaxism_5
-				}	
-				remove_ideas = HOU_metaxism_5
-			}
-			if = {
-				limit = { 
-					has_idea = HOU_metaxism_6
-				}	
-				remove_ideas = HOU_metaxism_6
-			}
-			if = {
-				limit = { 
-					has_idea = HOU_metaxism_7
-				}	
-				remove_ideas = HOU_metaxism_7
-			}
-		}	
-	}
-}
-#Anatolian fascists rebel!
-country_event = {
-	id = bftb_houpoe.218
-	title = bftb_houpoe.218.t
-	desc = bftb_houpoe.218.desc
-	picture = GFX_report_event_HOU_italian_troops
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bftb_houpoe.218.a #for Venizelos!
-		if = { 
-			limit = { 
-				fascism > 0.5
-			}
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = fascism
-				size = 0.5
-				capital = 731
-				states = { 
-					187 731 184 185
-				}
-				keep_unit_leaders = {
-				    301 307 302
-				}
-				keep_unit_leaders_trigger = {
-					NOT = { has_trait = trait_HOU_fascist_sympathizer }
-				}
-			}
-		}
-		else_if = {
-			limit = { 
-				fascism < 0.5
-				fascism > 0.25
-			}
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = fascism
-				size = 0.3
-				capital = 731
-				states = { 
-			    	731 185 186
-				}
-			    keep_unit_leaders = {
-			        301 307 302
-				}
-				keep_unit_leaders_trigger = {
-					NOT = { has_trait = trait_HOU_fascist_sympathizer }
-				}
-			}
-		}
-		else = { 
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = fascism
-				size = 0.15
-				capital = 47
-				states = { 
-					731 185
-				}
-				keep_unit_leaders = {
-				    301 307 302
-				}
-				keep_unit_leaders_trigger = {
-					NOT = { has_trait = trait_HOU_fascist_sympathizer }
-				}
-			}
-		}
-		hidden_effect = {
-			clr_country_flag = HOU_fascist_civil_war_plot
-			set_variable = {
-				var = HOU_fascist_loyalty
-				value = -2
-			}
-			random_country = { 
-				limit = { 
-					original_tag = HOU 
-					has_government = fascism 
-				}
-				set_cosmetic_tag = HOU_byz_republic
-			}
-		}
-	}
-	option = {
-		name = bftb_houpoe.218.b #for Kosmidis!
-		set_politics = { ruling_party = fascism elections_allowed = no }
-		set_capital = { state = 797 }
-		add_manpower = 20000
-		if = { 
-			limit = { 
-				fascism > 0.5
-			}
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = democratic
-				size = 0.25
-				capital = 47
-				states = { 
-					47
-				}
-				keep_unit_leaders = {
-				    303 309 302
-				}
-				keep_unit_leaders_trigger = {
-					has_trait = trait_HOU_fascist_sympathizer
-				}
-			}
-		}
-		else_if = {
-			limit = { 
-				fascism < 0.5
-				fascism > 0.25
-			}
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = democratic
-				size = 0.5
-				capital = 47
-				states = { 
-			    	47 186
-				}
-			    keep_unit_leaders = {
-			        303 309 302
-				}
-				keep_unit_leaders_trigger = {
-					has_trait = trait_HOU_fascist_sympathizer
-				}
-			}
-		}
-		else = { 
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = democratic
-				size = 0.6
-				capital = 47
-				states = { 
-					47 187 731 184 185 186 182
-				}
-				keep_unit_leaders = {
-				    303 309 302
-				}
-				keep_unit_leaders_trigger = {
-					has_trait = trait_HOU_fascist_sympathizer
-				}
-			}
-		}
-		hidden_effect = {
-			clr_country_flag = HOU_fascist_civil_war_plot
-			set_country_flag = HOU_an_invite_for_an_emperor
-			set_variable = {
-				var = HOU_fascist_loyalty
-				value = 2
-			}
-			set_variable = {
-				var = HOU_republican_loyalty
-				value = -1
-			}
-			set_cosmetic_tag = HOU_byz_republic
-		}
-	}
-}
-#Country event - Ioannis Metaxas passes away
-country_event = {
-	id = bftb_houpoe.233
-	title = bftb_houpoe.233.t
-	desc = bftb_houpoe.233.desc
-	picture = GFX_report_event_HOU_city_siege
-
-	trigger = {
-		original_tag = HOU
-		date > 1941.1.1
-		has_capitulated = yes
-		has_government = neutrality
-		has_country_leader = {
-			character = HOU_ioannis_metaxas
-			ruling_only = yes
-		}
-	}
-
-	fire_only_once = yes
-	
-	option = {
-		name = bftb_houpoe.233.a
-		retire_country_leader = yes
-		add_country_leader_role = {
-			character = HOU_emmanouil_tsouderos
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = centrism
-				traits = {
-					the_banker
-				}
-			}
-			promote_leader = yes				
-		}
-		hidden_effect = {
-			set_party_name = { 
-				ideology = neutrality
-				long_name = HOU_neutrality_party
-				name = HOU_neutrality_party
-			}
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = yes
-				#last_election = 1936.1.26
-				election_frequency = 96
-			}
-		}
-	}
-}
-
-#Notification event for Romania, being informed the Megali Idea was approved and they may well be dragged into a war with major powers
-country_event = {
-	id = bftb_houpoe.234
-	title = bftb_houpoe.234.t
-	desc = bftb_houpoe.234.desc
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	trigger = {
-		has_guaranteed = TUR
-	}
-	
-	option = {
-		name = bftb_houpoe.234.a
-		ai_chance = {
-			base = 50
-			modifier = {
-				factor = 0.8
-				strength_ratio = {
-				    tag = ENG
-				    ratio > 0.2
-				}
-			}
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-				    tag = ENG
-				    ratio > 0.4
-				}
-			}
-			modifier = {
-				factor = 0.8
-				strength_ratio = {
-				    tag = FRA
-				    ratio > 0.2
-				}
-			}
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-				    tag = FRA
-				    ratio > 0.4
-				}
-			}
-			modifier = {
-				factor = 0
-				has_opinion = {
-				    target = TUR
-				    value > 90
-				}
-				NOT = { surrender_proHOUss > 0.1 }
-			}
-		}
-		add_political_power = -25
-		diplomatic_relation = {
-		    country = TUR
-		    relation = guarantee
-		    active = no
-		}
-		TUR = { 
-			add_opinion_modifier = { 
-				target = ROOT
-				modifier = BFTB_ROM_abandoned_us
-			}
-		}
-		TUR = { country_event = bftb_houpoe.235 }
-	}
-
-	option = {
-		name = bftb_houpoe.234.b
-		ai_chance = {
-			base = 50
-			modifier = {
-				factor = 2
-				has_opinion = {
-				    target = TUR
-				    value > 50
-				}
-			}
-			modifier = {
-				factor = 2
-				has_opinion = {
-				    target = TUR
-				    value > 75
-				}
-			}
-			modifier = {
-				factor = 0.2
-				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				surrender_proHOUss > 0.1
-			}
-		}
-		TUR = { 
-			add_opinion_modifier = { 
-				target = ROOT
-				modifier = BFTB_ROM_stood_by_us
-			}
-		}
-	}
-}
-
-#Notification event for Turkey, informing them the Romanians abandoned them
-country_event = {
-	id = bftb_houpoe.235
-	title = bftb_houpoe.235.t
-	desc = bftb_houpoe.235.desc
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	trigger = {
-		has_guaranteed = TUR
-	}
-	
-	option = {
-		name = bftb_houpoe.235.a
-		effect_tooltip = {
-			ROM = {
-				diplomatic_relation = {
-				    country = TUR
-				    relation = guarantee
-				    active = no
-				}
-			}
-			add_opinion_modifier = { 
-				target = ROM
-				modifier = BFTB_ROM_abandoned_us
-			}
-		}
 	}
 }

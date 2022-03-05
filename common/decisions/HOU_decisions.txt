@@ -1931,7 +1931,6 @@ HOU_investment_decisions_category = {
 				ITA = {
 					has_capitulated = yes 
 					is_puppet = yes
-					has_completed_focus = ITA_HOUece_war_goal
 				}
 			}
 		}
@@ -2016,7 +2015,7 @@ HOU_investment_decisions_category = {
 			modifier = {
 				factor = 0
 				check_variable = {
-   					HOU_italian_influence_over_HOUek_government > 6
+   					HOU_italian_influence_over_HOU_government > 6
 				}
 			}
 			
@@ -2104,7 +2103,7 @@ HOU_investment_decisions_category = {
 			}
 		}
 	}
-	HOU_host_soviet_bureaucrats_in_HOUece = { #SOVIETS
+	HOU_host_soviet_bureaucrats_in_HOU = { #SOVIETS
 
 		icon = generic_political_discourse
 
@@ -2159,7 +2158,7 @@ HOU_investment_decisions_category = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = HOU_host_soviet_bureaucrats_in_HOUece_tt
+			custom_effect_tooltip = HOU_host_soviet_bureaucrats_in_HOU_tt
 			custom_effect_tooltip = HOU_soviet_influence_tt
 		}
 
@@ -2214,7 +2213,7 @@ HOU_investment_decisions_category = {
 			}
 			modifier = {
 				factor = 80
-				check_variable = { HOU_soviet_influence_over_HOUek_government = 8 compare = greater_than_or_equals }
+				check_variable = { HOU_soviet_influence_over_HOU_government = 8 compare = greater_than_or_equals }
 			}
 		}
 
@@ -2273,7 +2272,7 @@ HOU_investment_decisions_category = {
 			has_completed_focus = HOU_seek_int_investment	
 			NOT = {
 				has_country_flag = HOU_soviets_rebuffed
-				check_variable = { var = HOU_soviet_influence_over_HOUek_government value = 12 compare = greater_than_or_equals }
+				check_variable = { var = HOU_soviet_influence_over_HOU_government value = 12 compare = greater_than_or_equals }
 			}
 		}
 
