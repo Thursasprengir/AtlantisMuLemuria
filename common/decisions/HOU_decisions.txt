@@ -293,18 +293,18 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
-			state = 834
+			state = 1072
 		}
 
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 		}
 
 		visible = {
-			controls_state = 834
-			834 = {
+			controls_state = 1072
+			1072 = {
 				NOT = {
 					has_state_flag = haiie_industrial_district_developed
 				}
@@ -324,8 +324,8 @@ prospect_for_resources = {
 			factor = 1
 		}
 		remove_effect = { 
-			834 = { set_state_flag = haiie_industrial_district_developed } 
-			834 = {
+			1072 = { set_state_flag = haiie_industrial_district_developed } 
+			1072 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -335,7 +335,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_haiie_plantations = { #834
+	develop_haiie_plantations = { #1072
 		
 		icon = rubber
 
@@ -343,17 +343,17 @@ prospect_for_resources = {
 
 		}
 		highlight_states = {
-			state = 834
+			state = 1072
 		}
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 		}
 
 		visible = {
-			controls_state = 834
-			834 = {
+			controls_state = 1072
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -383,7 +383,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = HOU_haiie_rubber_duration value = 30 }
-			834 = {
+			1072 = {
 				if = {
 					limit = {
 						NOT = {
@@ -402,7 +402,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			834 = {
+			1072 = {
 				add_resource = {
 					type = rubber
 					amount = 9
@@ -419,7 +419,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	further_develop_haiie_plantations = { #834
+	further_develop_haiie_plantations = { #1072
 		
 		icon = rubber
 
@@ -427,17 +427,17 @@ prospect_for_resources = {
 
 		}
 		highlight_states = {
-			state = 834
+			state = 1072
 		}
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 		}
 
 		visible = {
-			controls_state = 834
-			834 = {
+			controls_state = 1072
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -471,7 +471,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = HOU_haiie_rubber_duration2 value = 30 }
-			834 = {
+			1072 = {
 				if = {
 					limit = {
 						NOT = {
@@ -490,7 +490,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			834 = {
+			1072 = {
 				add_extra_state_shared_building_slots = 1
 				add_resource = {
 					type = rubber
@@ -508,7 +508,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_vashparaq_plantations = { #834
+	develop_vashparaq_plantations = { #1072
 		
 		icon = rubber
 
@@ -521,14 +521,14 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 838
 		}
 
 		visible = {
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 838
-			834 = {
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -609,14 +609,14 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 838
 		}
 
 		visible = {
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 838
-			834 = {
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -689,7 +689,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_houlaana_plantations = { #834
+	develop_houlaana_plantations = { #1072
 		
 		icon = rubber
 
@@ -702,14 +702,14 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 837
 		}
 
 		visible = {
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 837
-			834 = {
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -790,14 +790,14 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 837
 		}
 
 		visible = {
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 837
-			834 = {
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -870,7 +870,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_tiare_plantations = { #834
+	develop_tiare_plantations = { #1072
 		
 		icon = rubber
 
@@ -883,14 +883,14 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 825
 		}
 
 		visible = {
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 825
-			834 = {
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -971,14 +971,14 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 825
 		}
 
 		visible = {
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 825
-			834 = {
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -1051,7 +1051,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_rahi_plantations = { #834
+	develop_rahi_plantations = { #1072
 		
 		icon = rubber
 
@@ -1064,14 +1064,14 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 826
 		}
 
 		visible = {
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 826
-			834 = {
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
@@ -1152,14 +1152,14 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 826
 		}
 
 		visible = {
-			controls_state = 834
+			controls_state = 1072
 			controls_state = 826
-			834 = {
+			1072 = {
 				has_state_flag = {
 					flag = haiie_industrial_district_developed
 				}
