@@ -197,9 +197,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_modifier = {
-				modifier = {
-					local_resources = 0.1
+			every_owned_state = {
+				add_state_modifier = {
+					modifier = {
+						local_resources_factor  = 0.1
+					}
 				}
 			}
 		}

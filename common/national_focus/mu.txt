@@ -1984,24 +1984,16 @@ focus = {
 					add_ai_strategy = {type = support id = ROOT value = 100}
 				}
 			}
+			if = {limit = {BSD = {has_government = communism}}
+				BSD = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+					add_ai_strategy = {type = alliance id = ROOT value = 100}
+					add_ai_strategy = {type = protect id = ROOT value = 100}
+					add_ai_strategy = {type = send_volunteers_desire id = ROOT value = 100}
+					add_ai_strategy = {type = support id = ROOT value = 100}
+				}
+			}
 			if = {limit = {NLI = {has_government = communism}}
 				NLI = {add_opinion_modifier = {target = ROOT modifier = large_increase}
-					add_ai_strategy = {type = alliance id = ROOT value = 100}
-					add_ai_strategy = {type = protect id = ROOT value = 100}
-					add_ai_strategy = {type = send_volunteers_desire id = ROOT value = 100}
-					add_ai_strategy = {type = support id = ROOT value = 100}
-				}
-			}
-			if = {limit = {NHI = {has_government = communism}}
-				NHI = {add_opinion_modifier = {target = ROOT modifier = large_increase}
-					add_ai_strategy = {type = alliance id = ROOT value = 100}
-					add_ai_strategy = {type = protect id = ROOT value = 100}
-					add_ai_strategy = {type = send_volunteers_desire id = ROOT value = 100}
-					add_ai_strategy = {type = support id = ROOT value = 100}
-				}
-			}
-			if = {limit = {NCA = {has_government = communism}}
-				NCA = {add_opinion_modifier = {target = ROOT modifier = large_increase}
 					add_ai_strategy = {type = alliance id = ROOT value = 100}
 					add_ai_strategy = {type = protect id = ROOT value = 100}
 					add_ai_strategy = {type = send_volunteers_desire id = ROOT value = 100}
@@ -2271,8 +2263,7 @@ focus = {
 				if = {limit = {NYB = {has_government = communism}} puppet = NYB}
 				if = {limit = {MNQ = {has_government = communism}} puppet = MNQ}
 				if = {limit = {NLI = {has_government = communism}} puppet = NLI}
-				if = {limit = {NHI = {has_government = communism}} puppet = NHI}
-				if = {limit = {NCA = {has_government = communism}} puppet = NCA}
+				if = {limit = {BSD = {has_government = communism}} puppet = BSD}
 				if = {limit = {WAP = {has_government = communism}} puppet = WAP}
 				if = {limit = {ZIE = {has_government = communism}} puppet = ZIE}
 				if = {limit = {VGI = {has_government = communism}} puppet = VGI}
@@ -2893,23 +2884,13 @@ focus = {
 				value = 200
 			}
 			create_wargoal = {
-				target = "NCA"
+				target = "BSD"
 				type = annex_everything
 				expire = 0
 			}
 			add_ai_strategy = {
 				type = conquer
-				id = "NCA"
-				value = 200
-			}
-			create_wargoal = {
-				target = "NHI"
-				type = annex_everything
-				expire = 0
-			}
-			add_ai_strategy = {
-				type = conquer
-				id = "NHI"
+				id = "BSD"
 				value = 200
 			}
 			create_wargoal = {

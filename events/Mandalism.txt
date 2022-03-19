@@ -328,30 +328,26 @@ country_event = {
 	option = {
 		name = mandalism.11.a
 		if = {
-			limit = {
-				KLK = {has_idea = KLK_razed_country}
+			limit = { KLK = {has_idea = KLK_razed_country} }
 				swap_ideas = {
 					remove_idea = KLK_razed_country
 					add_idea = KLK_razed_country_2
 				}
 				country_event = {id = mandalism.11 days = 100}
-			}
 		}
 		if = {
-			limit = {
-				KLK = {has_idea = KLK_razed_country_2}
-				swap_ideas = {
-					remove_idea = KLK_razed_country_2
-					add_idea = KLK_razed_country_3
-				}
-				country_event = {id = mandalism.11 days = 100}
+			limit = { KLK = {has_idea = KLK_razed_country_2} }
+			swap_ideas = {
+				remove_idea = KLK_razed_country_2
+				add_idea = KLK_razed_country_3
 			}
+			country_event = {id = mandalism.11 days = 100}
 		}
 		if = {
 			limit = {
 				KLK = {has_idea = KLK_razed_country_3}
-				remove_ideas = KLK_razed_country_3
 			}
+			remove_ideas = KLK_razed_country_3
 		}
 	}
 }
@@ -366,20 +362,18 @@ country_event = {
 	option = {
 		name = mandalism.12.a
 		if = {
-			limit = {
-				KLK = {has_idea = KLK_FUD}
-				swap_ideas = {
-					remove_idea = KLK_FUD
-					add_idea = KLK_FUD_2
-				}
-				country_event = {id = mandalism.12 days = 120}
+			limit = { KLK = {has_idea = KLK_FUD} }
+			swap_ideas = {
+				remove_idea = KLK_FUD
+				add_idea = KLK_FUD_2
 			}
+			country_event = {id = mandalism.12 days = 120}
 		}
 		if = {
 			limit = {
 				KLK = {has_idea = KLK_FUD_2}
-				remove_ideas = KLK_FUD_2
 			}
+			remove_ideas = KLK_FUD_2
 		}
 	}
 }

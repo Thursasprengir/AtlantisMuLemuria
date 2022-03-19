@@ -119,7 +119,7 @@ country_event = {
 			target = SSS
 			transfer_troops = yes
 		}
-		set_country_leader_ideology = neutrality
+		set_country_leader_ideology = centrism
 		hidden_effect = {
 			country_event = {id = blm.6 days = 90 random = 300}
 			country_event = {id = blm.60 days = 15 random = 300}
@@ -343,7 +343,6 @@ country_event = {
 	#picture = 
 	is_triggered_only = yes
 	option = {
-		limit = { has_country_flag = BL_independence_movements_suppressed}
 		name = blm.9.a #Damn them!
 		KLK = {
 			set_state_owner = 1006
@@ -416,7 +415,6 @@ country_event = {
  		} 		
  	}
 	option = {
-		limit = { has_country_flag = BL_independence_movements_suppressed}
 		name = blm.11.a #We'll fight them, too!
 		hidden_effect = {		
 		FAN = {
@@ -442,12 +440,14 @@ country_event = {
 			load_oob = "FAN_rebellion"
 			}
 			if = {
-				NOT = {
-				has_country_flag = diminished_dominion
-				has_country_flag = BLM_audenshyre_attack
+				limit = {
+					NOT = {
+						has_country_flag = diminished_dominion
+						has_country_flag = BLM_audenshyre_attack
 					}
 				}
 			country_event = {id = blm.12 days = 150 random = 300}}
+			}
 		}
    }
 	
@@ -467,11 +467,9 @@ country_event = {
 		}
 		hidden_effect = {
 			if = {
-			NOT = {
-				has_country_flag = diminished_dominion
-				}
+				limit = { NOT = {has_country_flag = diminished_dominion} }
+				country_event = {id = blm.13 days = 150 random = 300}}
 			}
-			country_event = {id = blm.13 days = 150 random = 300}}
 		}
    } 
 	
@@ -523,7 +521,7 @@ country_event = {
 		name = blm.13.b #We must end this war now.
 		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
 		add_political_power = -500
-		set_country_leader_ideology = democratic
+		set_country_leader_ideology = liberalism
 		clr_country_flag = BL_civil_war
 		remove_state_core = 985
 		remove_state_core = 1005
@@ -531,9 +529,7 @@ country_event = {
 		remove_state_core = 1012
 		hidden_effect = {
 			if = {
-				NOT = {
-					has_country_flag = diminished_dominion
-					}
+					limit = { NOT = { has_country_flag = diminished_dominion }}
 				}
 			country_event = {id = blm.14 days = 60 random = 300}}
 		}
@@ -599,14 +595,14 @@ country_event = {
 			target = RTR
 			transfer_troops = yes
 		}
-		hidden_effect = {ARC = {can_join_factions = yes}}
-		hidden_effect = {WRB = {can_join_factions = yes}}
-		hidden_effect = {AUD = {can_join_factions = yes}}
-		hidden_effect = {QLA = {can_join_factions = yes}}
-		hidden_effect = {FAN = {can_join_factions = yes}}
-		hidden_effect = {WUL = {can_join_factions = yes}}
-		hidden_effect = {FLM = {can_join_factions = yes}}
-		hidden_effect = {FCT = {can_join_factions = yes}}
+		hidden_effect = {ARC = { set_rule = {can_join_factions = yes}}}
+		hidden_effect = {WRB = { set_rule = {can_join_factions = yes}}}
+		hidden_effect = {AUD = { set_rule = {can_join_factions = yes}}}
+		hidden_effect = {QLA = { set_rule = {can_join_factions = yes}}}
+		hidden_effect = {FAN = { set_rule = {can_join_factions = yes}}}
+		hidden_effect = {WUL = { set_rule = {can_join_factions = yes}}}
+		hidden_effect = {FLM = { set_rule = {can_join_factions = yes}}}
+		hidden_effect = {FCT = { set_rule = {can_join_factions = yes}}}
 		hidden_effect = {
 			country_event = {id = blm.16 days = 30 random = 300}}
 		}
@@ -726,7 +722,6 @@ country_event = {
  		} 		
  	}
 	option = {
-		limit = { has_country_flag = BL_independence_movements_allowed}
 		name = blm.46.a #Grant Werreurbrian Independence
 		hidden_effect = {
 		WRB = {
@@ -781,7 +776,6 @@ country_event = {
  		} 		
  	}
 	option = {
-		limit = { has_country_flag = BL_independence_movements_allowed}
 		name = blm.48.a #Grant Native Independence
 		hidden_effect = {
 		QLA = {		
@@ -807,7 +801,6 @@ country_event = {
  		} 		
  	}
 	option = {
-		limit = { has_country_flag = BL_independence_movements_suppressed}
 		name = blm.49.a #Damn them!
 		KLK = {
 			set_state_owner = 1006
@@ -830,7 +823,6 @@ country_event = {
  		} 		
  	}
 	option = {
-		limit = { has_country_flag = BL_independence_movements_allowed}
 		name = blm.50.a #Grant WUL Independence 
 		hidden_effect = {
 		WUL = {
@@ -861,7 +853,6 @@ country_event = {
  		} 		
  	}
 	option = {
-		limit = { has_country_flag = BL_independence_movements_allowed}
 		name = blm.51.a #How is this our problem?
 		hidden_effect = {
 		FAN = {
@@ -889,7 +880,6 @@ country_event = {
  		} 		
  	}
 	option = {
-		limit = { has_country_flag = BL_independence_movements_allowed}
 		name = blm.60.a #How is this our problem?
 		WUL = {
 			add_state_core = 980

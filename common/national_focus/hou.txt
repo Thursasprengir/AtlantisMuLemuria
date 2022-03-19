@@ -813,8 +813,7 @@ focus_tree = {
 				name = HOU_nuclear_tech
 				bonus = 1.0
 				uses = 1
-				category = nuclear_tech
-
+				category = nuclear
 			}
 		}
 	}
@@ -2298,18 +2297,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-
-			add_stability = -0.40
-			kill_country_leader = HOU_mako_oriata
+			add_stability = -0.4
+			kill_country_leader = yes
 			create_country_leader = {
-					name = "Ikaro Unifamate"
-					desc = "POLITICS_IKARO_UNIFAMATE_DESC"
-					picture = "gfx/leaders/HOU/Portrait_HOU_Ikaro_Unifamate.dds"
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = { }
-				}	
-
+				name = "Ikaro Unifamate"
+				desc = "POLITICS_IKARO_UNIFAMATE_DESC"
+				picture = "gfx/leaders/HOU/Portrait_HOU_Ikaro_Unifamate.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = { }
+			}
 			#Kill Pres Mako Oriata. Ikaro Unifamate becomes president. Incr manpower. Huge stability decrease.
 		}
 	}
@@ -2490,7 +2487,7 @@ focus_tree = {
 		completion_reward = {
 			set_rule = {
 				can_create_factions = yes
-				can_join_factions_not_allowed_diplomacy
+				can_join_factions_not_allowed_diplomacy = yes
 			}
 			create_faction = "Kanagan Defense Pact"
 			HOU = { add_to_faction = MHN }
@@ -2633,14 +2630,6 @@ focus_tree = {
 			factor = 100
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2650,7 +2639,6 @@ focus_tree = {
 				ruling_party = democratic
 				ideology = communism
 				size = 0.8
-				only_own_territory = no
 				capital = 836
 				states = {
 					836 837 838 839
@@ -2666,9 +2654,7 @@ focus_tree = {
 					air_ratio = 0.5
 
 				}
-			}
-
-			#Fires Civil War event
+			}#Fires Civil War event
 		}
 	}
 	focus = {
