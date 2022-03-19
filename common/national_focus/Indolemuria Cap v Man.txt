@@ -167,7 +167,9 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-		add_extra_state_shared_building_slots = 1
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
 			random_owned_state = {
 				add_building_construction = {
 					type = synthetic_refinery
@@ -175,7 +177,6 @@
 					instant_build = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 1
 			random_owned_state = {
 				add_building_construction = {
 					type = synthetic_refinery
@@ -1513,7 +1514,6 @@
 		prerequisite = { focus = INDOLEM2_statues}
 		prerequisite = { focus = INDOLEM2_regional_tax}
 		prerequisite = { focus = INDOLEM2_deal_with_abandon_factories}
-		mutually_exclusive = { focus = INDOLEM2_join_kalari }
 		x = 0
 		y = 10
 		relative_position_id = INDOLEM2_founding_documents

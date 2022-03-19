@@ -2286,61 +2286,36 @@ HOU_investment_decisions_category = {
 #####################
 ##Gold Supply Evacuatoin
 #######################
-HOU_gold_evacuation_category = { 
-	HOU_gold_evacuation = { #GERMANY
-
-		icon = generic_factory
-
-		allowed = { 
-			original_tag = HOU
-		}
-
-		available = {
-			date < 1942.1.1
-			TRS = {
-				NOT = {
-					has_war_with = MAN
-				}
-				
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = MAN
-			}
-		}
-
-		days_remove = 70
-
-		cost = 75
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 2
-				is_historical_focus_on = yes
-			}
-			
-		}
-
-		visible = {
-			has_completed_focus = HOU_evacuate_gold_supply
-			
-		}
-
-		complete_effect = {
-			add_to_variable = { HOU_gold_supply = -10 }
-		}
-
-		remove_effect = {
-			add_to_variable = { 
-			var = { 
-				HOU_gold_supply = -10 
-				}
-			}
-		}
-	}	
-}
+#HOU_gold_evacuation_category = {
+#	HOU_gold_evacuation = { #GERMANY
+#		icon = generic_factory
+#		allowed = {original_tag = HOU}
+#		available = {
+#			date < 1942.1.1
+#			TRS = { NOT = {has_war_with = MAN} }
+#		}
+#		target_trigger = { FROM = {tag = MAN} }
+#		days_remove = 70
+#		cost = 75
+#
+#		fire_only_once = no
+#
+#		ai_will_do = {
+#			factor = 5
+#			modifier = {
+#				factor = 2
+#				is_historical_focus_on = yes
+#			}
+#		}
+#
+#		visible = {has_completed_focus = HOU_evacuate_gold_supply}
+#
+#		complete_effect = {
+#			add_to_variable = { HOU_gold_supply = -10 }
+#		}
+#
+#		remove_effect = {
+#			add_to_variable = { var = {HOU_gold_supply = -10}}
+#		}
+#	}
+#}

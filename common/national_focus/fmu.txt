@@ -810,7 +810,7 @@ focus = {
 			}			
 			#remove 300 convoys from NZL and give to FMU
 			every_country = {
-				has_war_with = FMU
+				limit = {has_war_with = FMU}
 					add_opinion_modifier = {
 					target = ROOT
 					modifier = FMU_modern_pirates
@@ -926,8 +926,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_war_support = 2
-			surrender_limit = 0.1
+			add_war_support = 0.05
 			add_political_power = 200
 			add_tech_bonus = {
 				name = naval_doc_bonus
@@ -3378,36 +3377,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			If ={
-				any_country = {
-					has_government = democratic
-				}
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_democratic_reachout
-				}
-			}#K: idk if this works
-			USA = {
+			every_country ={
+				limit = {has_government = democratic}
 				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_democratic_reachout
 				}
 			}
-			ATL = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_democratic_reachout
-				}
-			}
-			ENG = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_democratic_reachout
-				}
-			}
-			set_rule = {
-				can_send_volunteers = yes
-			}
+			set_rule = {can_send_volunteers = yes}
 			#massive relations boost with democratic nations
 			#allow volunteers
 		}
@@ -5308,55 +5285,31 @@ focus = {
 			factor = 2
 		}
 		available = {
-			913 = {
-				limit = {
-				is_controlled_by = FMU
-				}
-			}
-			912 = {
-				limit = {
-					is_controlled_by = FMU
-				}
-			}
+			913 = {is_controlled_by = FMU}
+			912 = {is_controlled_by = FMU}
 		}
-
-		bypass = {
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
-		 913 = {
-			if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
+			913 = {
+				add_compliance = 15
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
-		912 = {
-			if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
+			912 = {
+				add_compliance = 15
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-			}
-			#adds civ industry in Fijnland, slight increase in compliance in Fijnland
+			} #adds civ industry in Fijnland, slight increase in compliance in Fijnland
 		}
 	}
 
