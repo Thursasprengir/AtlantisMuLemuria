@@ -562,6 +562,8 @@ itork_down_2 = {
 itork_end = {
 	custom_effect_tooltip = ATL_itork_buddies
 	hidden_effect = {
+		set_variable = {var = var_itork_capture value = 0}
+		set_country_flag = surrender_flag
 		remove_ideas = ATL_itork_4_1
 		remove_ideas = ATL_itork_4_2
 		remove_ideas = ATL_itork_4_3
@@ -617,6 +619,8 @@ itork_end = {
 kapra_end = {
 	custom_effect_tooltip = ATL_kapra_buddies
 	hidden_effect = {
+		set_variable = {var = var_kapra_capture value = 0}
+		set_country_flag = surrender_flag
 		remove_ideas = ATL_kapra_4_1
 		remove_ideas = ATL_kapra_4_2
 		remove_ideas = ATL_kapra_4_3
@@ -669,8 +673,13 @@ kapra_end = {
 		1081 = { clr_state_flag = kapra_flag_2}
 	}
 }
-kapra_find_target = {
+gangsta_wars_end = {
+	custom_effect_tooltip = ATL_kapra_buddies
 	hidden_effect = {
+		remove_ideas = ATL_kapra_4_1
+		remove_mission = ATL_select_target_kapra
+		remove_mission = ATL_cooldown_kapra
+		946 = { clr_state_flag = kapra_flag_1}
 	}
 }
 
