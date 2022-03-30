@@ -1,0 +1,762 @@
+
+
+characters={
+###############
+###DEMOCRATIC
+###############
+	NCA_liberalism_leader={
+	name = "Harold London"
+		portraits={
+			civilian={
+				large="gfx/leaders/NCA/Portrait_NCA_H_London.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ captain_of_industry dealbroker }
+			expire="1965.1.1.1"
+			
+		}
+	}
+
+
+###############
+###COMMUNISM
+###############
+	NCA_stalinism_leader={
+	name = "Sean O'Shaughnessy"
+		portraits={
+			civilian={
+				large="gfx/leaders/NCA/Portrait_NCA_S_OShaughnessy.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1966.1.1.12"
+			
+		}
+	}
+	
+
+###############
+###FASCISM
+###############
+	NCA_generic_fascism_leader={
+	name = "Landon A. Fitzgerald"
+		portraits={
+			civilian={
+				large="gfx/leaders/NCA/Portrait_NCA_LA_Fitzgerald.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.12"
+			
+		}
+	}
+###############
+###NEUTRALITY
+###############
+	NCA_centrism_leader={
+	name = "John Ordway"
+		portraits={
+			civilian={
+				large="gfx/leaders/NCA/Portrait_NCA_J_Ordway.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ financial_expert }
+			expire="1965.1.1.12"
+			
+		}
+	}
+	
+	
+	
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+	NCA_corps_commander_1={
+	name = "Joshua Howell"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=2
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
+
+	NCA_corps_commander_2={
+		name=NCA_corps_commander_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	NCA_corps_commander_3={
+		name=NCA_corps_commander_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	NCA_corps_commander_4={
+		name=NCA_corps_commander_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	NCA_naval_leader_1={
+		name=NCA_naval_leader_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}		
+		navy_leader={
+			traits={  }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	NCA_naval_leader_2={
+		name=NCA_naval_leader_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	NCA_naval_leader_3={
+		name=NCA_naval_leader_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}		
+		navy_leader={
+			traits={ spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	NCA_naval_leader_4={
+		name=NCA_naval_leader_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	NCA_naval_leader_5={
+		name=NCA_naval_leader_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	NCA_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = NCA_armaments_organizer
+			allowed  = {
+					original_tag  = NCA
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="NCA_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_1"
+			}
+		}
+	}
+	NCA_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = NCA_communist_revolutionary
+			allowed  = {
+					original_tag  = NCA
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="NCA_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_4"
+			}
+		}
+	}
+	NCA_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = NCA_democratic_reformer
+			allowed  = {
+					original_tag  = NCA
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="NCA_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_navy_3"
+			}
+		}
+	}	
+	NCA_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = NCA_editor
+			allowed  = {
+					original_tag  = NCA
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="NCA_editor"
+		portraits={
+			army={
+				small="GFX_idea_SOV_generic_1"
+			}
+		}
+	}
+	NCA_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = NCA_fascist_demagogue
+			allowed  = {
+					original_tag  = NCA
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="NCA_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_RAJ_political_leader_generic_2"
+			}
+		}
+	}
+	NCA_silent_workhorse={
+		name=NCA_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = NCA_silent_workhorse
+			allowed  = {
+				original_tag  = NCA
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}	
+	NCA_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = NCA_war_industrialist
+			allowed  = {
+					original_tag  = NCA
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="NCA_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_GER_generic_1"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	NCA_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = NCA_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = NCA
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="NCA_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_4"
+			}
+		}
+	}
+	NCA_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = NCA_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = NCA
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="NCA_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	NCA_naval_theorist={
+		name=NCA_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_navy_3"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = NCA_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = NCA
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	NCA_army_chief_offensive_2={
+		name=NCA_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = NCA_army_chief_offensive_2
+			allowed = {
+				original_tag = NCA
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	NCA_army_chief_organizational_1={
+		name=NCA_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_13"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = NCA_army_chief_organizational_1
+			allowed = {
+				original_tag = NCA
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	NCA_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = NCA_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	NCA_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = NCA_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	NCA_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = NCA_air_chief_ground_support_2
+			allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	NCA_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = NCA_air_chief_reform_2
+			allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	NCA_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = NCA_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_3"
+			}
+		}
+	}
+	NCA_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = NCA_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_5"
+			}
+		}
+	}
+	NCA_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = NCA_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_4"
+			}
+		}
+	}
+	NCA_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = NCA_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_NCA_army_logistics_2"
+			}
+		}
+	}
+	NCA_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = NCA_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_navy_2"
+			}
+		}
+	}
+	NCA_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = NCA_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_navy_1"
+			}
+		}
+	}
+	NCA_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = NCA_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = NCA
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NCA_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_navy_3"
+			}
+		}
+	}
+}

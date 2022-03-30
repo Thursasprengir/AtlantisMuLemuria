@@ -78,7 +78,9 @@ country_event = {
 	option = { # Support Communists
 		name = tahiti.1.b
 		hidden_effect = {
-			set_capital = 899
+			set_capital = {
+				state = 899
+			}
 			start_civil_war = {
 				ruling_party = communism
 				ideology = democratic
@@ -164,7 +166,9 @@ country_event = {
 	option = {
 		ai_chance = { factor = 1 }
 		name = tahiti.8.a
-		set_capital = 41 #XYZ
+		set_capital = {
+			state = 41 #XYZ
+			}
 	}
 	option = {
 		ai_chance = { factor = 0 }

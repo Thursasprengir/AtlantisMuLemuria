@@ -1,0 +1,76 @@
+﻿capital = 865
+
+oob = "NHI_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	transport = 1
+	basic_train = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 86
+	fascism = 8
+	communism = 6
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = new_brittania_research
+}
+
+set_convoys = 80
+
+#characters
+#political leaders
+recruit_character = NHI_liberalism_leader
+recruit_character = NHI_stalinism_leader
+recruit_character = NHI_generic_fascism_leader
+recruit_character = NHI_moderatism_leader
+#military leaders
+recruit_character = NHI_corps_commander_1
+recruit_character = NHI_corps_commander_2
+recruit_character = NHI_corps_commander_3
+recruit_character = NHI_corps_commander_4
+recruit_character = NHI_naval_leader_1
+recruit_character = NHI_naval_leader_2
+recruit_character = NHI_naval_leader_3
+recruit_character = NHI_naval_leader_4
+recruit_character = NHI_naval_leader_5
+#advisors
+recruit_character = NHI_backroom_backstabber
+recruit_character = NHI_captain_of_industry
+recruit_character = NHI_communist_revolutionary
+recruit_character = NHI_democratic_reformer
+recruit_character = NHI_fascist_demagogue
+recruit_character = NHI_prince_of_terror
+#theorists
+recruit_character = NHI_military_theorist
+recruit_character = NHI_air_warfare_theorist
+recruit_character = NHI_naval_theorist
+#military chiefs
+recruit_character = NHI_army_chief_defensive_2
+recruit_character = NHI_army_chief_drill_2
+recruit_character = NHI_navy_chief_decisive_battle_2
+recruit_character = NHI_navy_chief_naval_aviation_2
+recruit_character = NHI_air_chief_ground_support_2
+recruit_character = NHI_air_chief_reform_2
+recruit_character = NHI_army_logistics_2
+recruit_character = NHI_air_bomber_interception_2
+recruit_character = NHI_air_close_air_support_2
+recruit_character = NHI_navy_screen_2
+recruit_character = NHI_navy_anti_submarine_1
