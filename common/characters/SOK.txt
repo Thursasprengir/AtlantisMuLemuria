@@ -1,0 +1,780 @@
+characters={
+###############
+###DEMOCRATIC
+###############
+	SOK_socialism_leader={
+		name="SOK_socialism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_16.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ captain_of_industry dealbroker }
+			expire="1955.1.1.12"
+			
+		}
+	}
+
+
+###############
+###COMMUNISM
+###############
+	SOK_marxism_leader={
+		name="SOK_marxism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_1.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1944.1.1.12"
+			
+		}
+	}
+
+###############
+###FASCISM
+###############
+	SOK_generic_fascism_leader={
+		name="SOK_generic_fascism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_9.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1949.1.1.12"
+			
+		}
+	}
+
+###############
+###NEUTRALITY
+###############
+	SOK_oligarchism_leader={
+		name=SOK_oligarchism_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_8.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ financial_expert }
+			expire="1953.1.1.12"
+			
+		}
+	}
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+	SOK_corps_commander_1={
+		name="SOK_corps_commander_1"
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
+
+	SOK_corps_commander_2={
+		name=SOK_corps_commander_2
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	SOK_corps_commander_3={
+		name=SOK_corps_commander_3
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	SOK_corps_commander_4={
+		name=SOK_corps_commander_4
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	SOK_naval_leader_1={
+		name=SOK_naval_leader_1
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	SOK_naval_leader_2={
+		name=SOK_naval_leader_2
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast superior_tactician spotter }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	SOK_naval_leader_3={
+		name=SOK_naval_leader_
+		portraits={
+			navy={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gunnery_expert superior_tactician spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	SOK_naval_leader_4={
+		name=SOK_naval_leader_4
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	SOK_naval_leader_5={
+		name=SOK_naval_leader_5
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	SOK_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_anti_communist_crusader
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="SOK_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_SOK_anti_communist_crusader"
+			}
+		}
+	}
+	SOK_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_armaments_organizer
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="SOK_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_SOK_armaments_organizer"
+			}
+		}
+	}
+	SOK_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_communist_revolutionary
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="SOK_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_SOK_communist_revolutionary"
+			}
+		}
+	}
+	SOK_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_democratic_reformer
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="SOK_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_SOK_captain_of_industry"
+			}
+		}
+	}	
+	SOK_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_economist
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="SOK_economist"
+		portraits={
+			army={
+				small="GFX_idea_SOK_economist"
+			}
+		}
+	}
+	SOK_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_editor
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="SOK_editor"
+		portraits={
+			army={
+				small="GFX_idea_SOK_editor"
+			}
+		}
+	}
+	SOK_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_fascist_demagogue
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="SOK_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_SOK_fascist_demagogue"
+			}
+		}
+	}
+	SOK_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_ideological_crusader
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="SOK_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_SOK_ideological_crusader"
+			}
+		}
+	}
+	SOK_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_popular_figurehead
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="SOK_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_SOK_popular_figurehead"
+			}
+		}
+	}
+	
+	SOK_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = SOK_war_industrialist
+			allowed  = {
+					original_tag  = ATC
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="SOK_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_SOK_war_industrialist"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	SOK_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SOK_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = ATC
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="SOK_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	SOK_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = SOK_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = ATC
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="SOK_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	SOK_naval_theorist={
+		name=SOK_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_SOK_naval_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SOK_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = ATC
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	SOK_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = SOK_army_chief_drill_2
+			allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_SOK_army_chief_drill_2"
+			}
+		}
+	}
+	SOK_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = SOK_army_chief_morale_2
+			allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_SOK_army_chief_morale_2"
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	SOK_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = SOK_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	SOK_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = SOK_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	SOK_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = SOK_air_chief_ground_support_2
+			allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	SOK_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = SOK_air_chief_reform_2
+			allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	SOK_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = SOK_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_SOK_army_entrenchment_1"
+			}
+		}
+	}
+	SOK_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = SOK_army_infantry
+			ledger = army
+				allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_SOK_army_infantr_1"
+			}
+		}
+	}
+	SOK_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = SOK_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_SOK_air_bomber_interception_2"
+			}
+		}
+	}
+	SOK_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = SOK_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_SOK_air_close_air_support_2"
+			}
+		}
+	}
+	SOK_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = SOK_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_SOK_navy_screen_2"
+			}
+		}
+	}
+	SOK_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = SOK_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag  = ATC
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="SOK_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_SOK_navy_anti_submarine_1"
+			}
+		}
+	}
+}
