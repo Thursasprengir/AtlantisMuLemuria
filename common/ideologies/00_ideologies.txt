@@ -27,7 +27,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 0 0 255 }
+		color = { 252 186 3 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -152,7 +152,7 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 		
-		color = { 150 75 0 }
+		color = { 84 84 84 }
 		
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
@@ -177,65 +177,62 @@ ideologies = {
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
 	
-	neutrality = {
+	monarchism = {
 	
 		types = {
 		
-			despotism  = {
-			}
-			
-			oligarchism  = {
+			absolutist = {
 			}
 
-			anarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			enlightened = {
 			}
 			
-			moderatism = {
+			elective = {
 			}
 			
-			centrism = {
+			emirate = {
 			}
+			
 		}
-
+		
 		dynamic_faction_names = {
-			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
-			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
+			"FACTION_NAME_MONARCHISM_1"
+			"FACTION_NAME_MONARCHISM_2"
+			"FACTION_NAME_MONARCHISM_3"
+			"FACTION_NAME_MONARCHISM_4"
+			"FACTION_NAME_MONARCHISM_5"
 		}
 		
-		color = { 124 124 124 }
+		color = { 70 130 180 }
 		
-		
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
+		war_impact_on_world_tension = 0.5
+		faction_impact_on_world_tension = 1.0
 		
 		rules = {
-			can_force_government = no
+			can_force_government = yes
+			can_send_volunteers = yes
 			can_puppet = yes
-			can_send_volunteers = no
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
 		}
+		
+		can_collaborate = yes
 		
 		modifiers = {
-			#increased_influence_factor = 0.3 #30% easier to influence
-			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
-			lend_lease_tension = 0.4
-			send_volunteers_tension = 0.4
-			guarantee_tension = 0.4
-			drift_defence_factor = -0.3	
-			civilian_intel_to_others = 20.0
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 15.0
 			army_intel_to_others = 10.0
-			navy_intel_to_others = 20.0
+			navy_intel_to_others = 10.0
 			airforce_intel_to_others = 10.0
-		}
-		
-		faction_modifiers = {
+			send_volunteers_tension = 0.15
+			hidden_modifier = { join_faction_tension = -0.1 }
 		}
 
-		ai_neutral = yes # 
+		ai_fascist = yes # uses the fascist AI behaviour
 	}
 	
 	islamism = {
@@ -297,64 +294,6 @@ ideologies = {
 		}
 
 		ai_neutral = yes # 
-	}
-	
-	monarchism = {
-	
-		types = {
-		
-			absolutist = {
-			}
-
-			enlightened = {
-			}
-			
-			elective = {
-			}
-			
-			emirate = {
-			}
-			
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_MONARCHISM_1"
-			"FACTION_NAME_MONARCHISM_2"
-			"FACTION_NAME_MONARCHISM_3"
-			"FACTION_NAME_MONARCHISM_4"
-			"FACTION_NAME_MONARCHISM_5"
-		}
-		
-		color = { 70 130 180 }
-		
-		war_impact_on_world_tension = 0.5
-		faction_impact_on_world_tension = 1.0
-		
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-			can_create_collaboration_government = yes
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = yes
-		}
-		
-		can_collaborate = yes
-		
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.80
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 10.0
-			send_volunteers_tension = 0.15
-			hidden_modifier = { join_faction_tension = -0.1 }
-		}
-
-		ai_fascist = yes # uses the fascist AI behaviour
 	}
 
 
@@ -418,5 +357,66 @@ ideologies = {
 			
 		}
 
+	}
+	
+	neutrality = {
+	
+		types = {
+		
+			despotism  = {
+			}
+			
+			oligarchism  = {
+			}
+
+			anarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+			
+			moderatism = {
+			}
+			
+			centrism = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 199 217 217 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes # 
 	}
 }
