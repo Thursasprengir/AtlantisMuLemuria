@@ -3004,7 +3004,10 @@ form_byzantine_empire_category = {
 		visible = {
 			AND = { 
 				has_completed_focus = GRE_horror_and_fear
-				has_government = fascism
+				OR = {
+					has_government = fascism
+					has_government = monarchism
+					}
 			}
 			NOT = { has_global_flag = form_byzantine_empire_flag }
 		}
