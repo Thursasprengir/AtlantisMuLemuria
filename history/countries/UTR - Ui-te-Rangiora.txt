@@ -1,0 +1,292 @@
+﻿capital = 1135
+
+oob = "HOU_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	early_ship_hull_carrier = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_light = 1
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	basic_battery = 1
+	basic_secondary_battery =1
+	mtg_transport = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+	basic_train = 1
+	motorised_infantry = 1	
+}
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+		democratic = 50
+		fascism = 10
+		communism = 40
+		
+	}
+set_rule = {
+	can_send_volunteers = no
+	can_create_factions = no
+}
+
+###INTIMIDATING HOUPO'EAN SHIPS###
+
+create_equipment_variant = {
+	name = "Hō'ailona Class"
+	type = ship_hull_carrier_conversion_bb
+	name_group = HOU_CV_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space
+		fixed_ship_deck_slot_2 = ship_armor_carrier_deck
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		mid_1_custom_slot = ship_deck_space
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Nalu Class"
+	type = ship_hull_carrier_conversion_ca
+	name_group = HOU_CV_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space
+		fixed_ship_deck_slot_2 = ship_deck_space
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_secondaries_slot = empty
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Kohola Class"
+	type = ship_hull_heavy_1
+	name_group = HOU_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = ship_anti_air_1
+		mid_2_custom_slot = ship_anti_air_1
+		rear_1_custom_slot = ship_heavy_battery_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Kahiala Class"
+	type = ship_hull_heavy_1
+	name_group = HOU_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_secondaries_1
+		rear_1_custom_slot = ship_anti_air_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Hū'uki Class"
+	type = ship_hull_pre_dreadnought
+	name_group = HOU_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_anti_air_1
+		mid_1_custom_slot = ship_secondaries_1
+		rear_1_custom_slot = ship_anti_air_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Aveese Class"
+	type = ship_hull_cruiser_coastal_defense_ship
+	name_group = HOU_CA_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		front_1_custom_slot = ship_anti_air_1		
+		mid_1_custom_slot = ship_anti_air_1
+		mid_2_custom_slot = ship_anti_air_1
+		rear_1_custom_slot = ship_medium_battery_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Malie Class"
+	type = ship_hull_cruiser_1
+	name_group = HOU_CA_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		mid_1_custom_slot = ship_anti_air_1
+		mid_2_custom_slot = ship_anti_air_1
+		rear_1_custom_slot = ship_light_medium_battery_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Pīpaka Class"
+	type = ship_hull_cruiser_1
+	name_group = HOU_CL_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		mid_1_custom_slot = ship_anti_air_1
+		mid_2_custom_slot = ship_anti_air_1
+		rear_1_custom_slot = ship_airplane_launcher_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Togi Class"
+	type = ship_hull_light_1
+	name_group = HOU_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_torpedo_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		mid_1_custom_slot = ship_depth_charge_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Kōeke Class"
+	type = ship_hull_light_1
+	name_group = HOU_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		fixed_ship_engine_slot = light_ship_engine_1
+		mid_1_custom_slot = ship_anti_air_1
+		rear_1_custom_slot = ship_anti_air_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Lae Class"
+	type = ship_hull_submarine_1
+	name_group = HOU_SS_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+	obsolete = no
+}
+
+recruit_character = HOU_mako_oriata
+recruit_character = HOU_raanui_tahitoa
+recruit_character = HOU_tehei_poe
+recruit_character = HOU_haifatu_manutea
+recruit_character = HOU_heiva_maohinui
+recruit_character = HOU_houana_muhiui
+recruit_character = HOU_alekanekelo_kelekolio
+recruit_character = HOU_havika_kaanaana
+recruit_character = HOU_ekewaka_opunui
+recruit_character = HOU_etera_simotu
+
+#military leaders
+recruit_character = HOU_corps_commander_1
+recruit_character = HOU_corps_commander_2
+recruit_character = HOU_corps_commander_3
+recruit_character = HOU_corps_commander_4
+recruit_character = HOU_naval_leader_1
+recruit_character = HOU_naval_leader_2
+recruit_character = HOU_naval_leader_3
+recruit_character = HOU_naval_leader_4
+recruit_character = HOU_naval_leader_5
+#advisors
+recruit_character = HOU_armaments_organizer
+recruit_character = HOU_communist_revolutionary
+recruit_character = HOU_democratic_reformer
+recruit_character = HOU_fascist_demagogue
+recruit_character = HOU_ideological_crusader
+recruit_character = HOU_war_industrialist
+#theorists
+recruit_character = HOU_military_theorist
+recruit_character = HOU_air_warfare_theorist
+recruit_character = HOU_naval_theorist
+#military chiefs
+recruit_character = HOU_army_chief_defensive_2
+recruit_character = HOU_army_chief_drill_2
+recruit_character = HOU_army_chief_morale_2
+recruit_character = HOU_navy_chief_decisive_battle_2
+recruit_character = HOU_navy_chief_naval_aviation_2
+recruit_character = HOU_air_chief_ground_support_2
+recruit_character = HOU_air_chief_reform_2
+recruit_character = HOU_army_armored_1
+recruit_character = HOU_army_entrenchment_1
+recruit_character = HOU_army_infantry_1
+recruit_character = HOU_air_bomber_interception_2
+recruit_character = HOU_air_close_air_support_2
+recruit_character = HOU_navy_screen_2
+
+
+set_convoys = 40
