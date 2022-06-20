@@ -201,10 +201,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
-			SCH = { country_event = fmu.12 }
-			VGI = { country_event = fmu.20 }
-			#event chain to try to annex other Muan German nations
+			SCH = { country_event = fmu.5 }
+			VGI = { country_event = fmu.9 }
 		}
 	}
 
@@ -2268,8 +2266,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event = fmu.4
-			#annexes Manu
+			MNU = {
+				country_event = fmu.1
+				country_event = fmu.1
+				}
 			#small political power boost
 			#malus to international relations for 3 years
 		}
