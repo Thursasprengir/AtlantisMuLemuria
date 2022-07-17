@@ -1,125 +1,42 @@
 ﻿add_namespace = fmu
 
+#Manu Annexation Event
 country_event = {
 
 	id = fmu.1
 	title = fmu.1.t
 	desc = fmu.1.d
 
-	fire_only_once = yes
-	
-	trigger = {
-		tag = FMU
-		has_defensive_war = no
-		date > 1936.4.3
-		NOT = { has_idea = FMU_unfair_sufferage }
-	}
-	mean_time_to_happen = {
-		days = 2
-	}
+	is_triggered_only = yes
 	
 	option = {
 		ai_chance = { factor = 100 }
 		name = fmu.1.a
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.2
-		}
-		set_politics = {
-			ruling_party = democratic
-			elections_allowed = yes
-		}
-	}
-}
-
-country_event = {
-
-	id = fmu.2
-	title = fmu.2.t
-	desc = fmu.2.d
-	fire_only_once = yes
-	trigger = {
-		tag = FMU
-		has_defensive_war = no
-		date > 1936.4.3
-		has_idea = FMU_unfair_sufferage
-	}
-	mean_time_to_happen = {
-		days = 12
-	}
-	
-	option = {
-		ai_chance = { factor = 100 }
-		name = fmu.2.a
-	}
-}
-
-#DMS-GdEA Merger Announced
-country_event = {
-
-	id = fmu.3
-	title = fmu.3.t
-	desc = fmu.3.d
-	is_triggered_only = yes
-	option = {
-		ai_chance = { factor = 100 }
-		name = fmu.3.a
-		set_party_name = { ideology = communism long_name = FMU_communism_coalition_long name = FMU_communism_coalition }
-		 hidden_effect = {
-
-				 if = {
-    				limit = {
-        					has_government = communism
-   						 }
-   						 kill_country_leader = yes #kills current leader
-						}
-		 }
-        create_country_leader = {
-            name = "Sumukivi Aepa’ato"
-            desc = "POLITICS_SUMUKIVI_AEP'ATO_DESC" #description of the new leader.Can be blank
-            picture = "Portrait_Sumukivi_Aep'ato.dds"
-            expire = "1965.1.1" 
-            ideology = leninism
-            traits = {
-            }
-        }
-	}
-}
-#Manu Annexation Event
-country_event = {
-
-	id = fmu.4
-	title = fmu.4.t
-	desc = fmu.4.d
-
-	is_triggered_only = yes
-	
-	option = {
-		ai_chance = { factor = 100 }
-		name = fmu.4.a
 		FMU = {
-			country_event = { hours = 2 id = fmu.5 }
+			country_event = { hours = 2 id = fmu.2 }
 		}
 	}
 	option = {
 		ai_chance = { factor = 0 }
-		name = fmu.4.b
-		country_event = { hours = 2 id = fmu.14 }
+		name = fmu.1.b
+		FMU = {
+			country_event = { hours = 2 id = fmu.3 }
+			}
 	}
 }
 
 #Manu Accepts
 country_event = {
 
-	id = fmu.5
-	title = fmu.5.t
-	desc = fmu.5.d
+	id = fmu.2
+	title = fmu.2.t
+	desc = fmu.2.d
 
 	is_triggered_only = yes
 	
 		
 	option = {
-		name = fmu.5.a
+		name = fmu.2.a
 		927 = {
 			if = {
 				limit = { is_owned_by = MNU }
@@ -136,38 +53,19 @@ country_event = {
 		set_country_flag = MNU_annexed
 	}
 }
-#Manu Rejects / Revolts
+#Manu Rejects - Uprising
 country_event = {
 
-	id = fmu.13
-	title = fmu.13.t
-	desc = fmu.13.d
-
-	is_triggered_only = yes
-	
-	option = {
-		ai_chance = { factor = 50 }
-		name = fmu.13.a
-	}
-	option = {
-		ai_chance = { factor = 50 }
-		name = fmu.13.b
-		create_wargoal = { type = annex_everything target = MNU }
-	}
-}
-#Manu Uprising
-country_event = {
-
-	id = fmu.14
-	title = fmu.14.t
-	desc = fmu.14.d
+	id = fmu.3
+	title = fmu.3.t
+	desc = fmu.3.d
 
 	is_triggered_only = yes
 
 	immediate = { 
 		FMU = {
 		end_puppet = MNU
-		country_event = { hours = 2 id = fmu.13 }
+		country_event = { hours = 2 id = fmu.4 }
 		}
 		set_politics = {
 			ruling_party = fascism
@@ -179,61 +77,100 @@ country_event = {
 	}
 	
 	option = {
-		ai_chance = { factor = 50 }
-		name = fmu.13.a
+		ai_chance = { factor = 100 }
+		name = fmu.3.a
+	}
+}
+#Manu Rejects / Revolts
+country_event = {
+
+	id = fmu.4
+	title = fmu.4.t
+	desc = fmu.4.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 80 }
+		name = fmu.4.a
+	}
+	option = {
+		ai_chance = { factor = 20 }
+		name = fmu.4.b
+		create_wargoal = { type = annex_everything target = MNU }
 	}
 }
 
-#German Kaiser Invite
+#Schoenesland Annexation
+country_event = {
+
+	id = fmu.5
+	title = fmu.5.t
+	desc = fmu.5.d
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 3 }
+		name = fmu.5.a
+		FMU = {
+			country_event = { hours = 2 id = fmu.6 }
+			}
+	}
+	
+	option = {
+		ai_chance = { factor = 30 }
+		name = fmu.5.b
+		FMU = {
+			country_event = { hours = 2 id = fmu.7 }
+			}
+		}
+		
+	option = {
+		ai_chance = { factor = 66 }
+		name = fmu.5.c		
+		GER = {add_to_faction = SCH}
+		FMU = {
+			country_event = { hours = 2 id = fmu.8 }
+			}
+		}
+	}
+
+#Schoenesland rejects
 country_event = {
 
 	id = fmu.6
 	title = fmu.6.t
 	desc = fmu.6.d
-	
-	is_triggered_only = yes
 
+	is_triggered_only = yes
+	
 	option = {
 		ai_chance = { factor = 100 }
 		name = fmu.6.a
-		if = {
- 			limit = { is_in_faction = yes 
-    		}
-    	add_to_faction = FMU
-    	else = {
-        	create_faction = "Pan-German Union"
-        	add_to_faction = FMU
-        	}
+		FMU = {
+			create_wargoal = { type = annex_everything target = SCH }
 		}
 	}
-	option = {
-		ai_chance = { factor = 0 }
-		name = fmu.6.b
-	}
 }
-#Snap Elections for Fascism
+#Schoenesland Succeed
 country_event = {
 
 	id = fmu.7
 	title = fmu.7.t
 	desc = fmu.7.d
-
-	is_triggered_only = yes
 	
+	is_triggered_only = yes
+
 	option = {
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 33 }
 		name = fmu.7.a
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.2
-		}
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = no
+		FMU = {
+			annex_country = { target = SCH transfer_troops = yes }
+			}
 		}
 	}
-}
-#Axis Invite
+#Schoenesland joins Axis
 country_event = {
 
 	id = fmu.8
@@ -243,24 +180,12 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 33 }
 		name = fmu.8.a
-		if = {
- 			limit = { is_in_faction = yes 
-    		}
-    	add_to_faction = FMU
-    	else = {
-        	create_faction = "placeholder_faction_pangerman"
-        	add_to_faction = FMU
-        	}
 		}
 	}
-	option = {
-		ai_chance = { factor = 0 }
-		name = fmu.8.b
-	}
-}
-#Allies Invite
+	
+#Vogelinsel Annexation
 country_event = {
 
 	id = fmu.9
@@ -270,16 +195,34 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 33 }
 		name = fmu.9.a
-		add_to_faction = FMU
-	}
+		FMU = {
+			country_event = { hours = 2 id = fmu.10 }
+			}
+		}
+	
 	option = {
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 33 }
 		name = fmu.9.b
+		FMU = {
+			country_event = { hours = 2 id = fmu.11 }
+			}
+		}
+		
+	option = {
+		ai_chance = { factor = 33 }
+		name = fmu.9.c
+		every_unit_leader = {
+				set_nationality = FMU
+			}
+		FMU = {
+			country_event = { hours = 2 id = fmu.12 }
+			}
+		}
 	}
-}
-#Fjinland Takeover
+
+#Vogelinsel Rejects
 country_event = {
 
 	id = fmu.10
@@ -289,107 +232,38 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 90 }
 		name = fmu.10.a
 	}
-}
-#Tiquea Destiny
+
+	option = {
+		ai_chance = { factor = 10 }
+		name = fmu.10.b
+		FMU = {
+			create_wargoal = { type = annex_everything target = VGI }
+		}
+		}
+	}
+
+	#Vogelinsel Puppet
 country_event = {
 
 	id = fmu.11
 	title = fmu.11.t
 	desc = fmu.11.d
 	
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-
-
-	trigger = {
-		tag = FMU
-		OR = {
-			AND = {
-				OR = {
-							controls_state = 924
-							controls_state = 925
-							controls_state = 926
-							controls_state = 923
-							}
-				TIQ = {
-					has_war_with = FMU
-					has_capitulated = yes
-					is_in_faction = yes
-					}
-				}
-			AND = {
-				OR = {
-							controls_state = 924
-							controls_state = 925
-							controls_state = 926
-							controls_state = 923
-							}
-				NOT = {
-					country_exists = TIQ
-					}
-				}
-			}
-		}
+	is_triggered_only = yes
 
 	option = {
 		ai_chance = { factor = 100 }
 		name = fmu.11.a
-		puppet = TIQ
-		if = {
-		limit = {
-			 controls_state = 923
+		FMU = {
+			puppet = VGI
+			}
 		}
-		transfer_state = 923
-		923 = { set_state_name = "Jillilstaat" }
-		}
-
-
-
-		TIQ ={
-	if = {
-		limit = {
-			FMU = { controls_state = 924 } 
-		}
-		transfer_state = 924
-		}
-	if = {
-		limit = {
-			FMU = { controls_state = 925 } 
-		}
-		transfer_state = 925
-		}
-	if = {
-		limit = {
-			FMU = { controls_state = 926 } 
-		}
-		transfer_state = 926
-		}
-
-		}
-
-	
 	}
-	option = {
-		ai_chance = { factor = 100 }
-		name = fmu.11.b
-		if = {
-		limit = {
-			 controls_state = 923
-		}
-		transfer_state = 923
-		923 = { set_state_name = "Jillilstaat" }
-		}
 
-	}
-}
-#Schoenesland Annexation
+#Vogelinsel Annex
 country_event = {
 
 	id = fmu.12
@@ -401,175 +275,274 @@ country_event = {
 	option = {
 		ai_chance = { factor = 33 }
 		name = fmu.12.a
-	}
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.12.b
 		FMU = {
-		puppet = SCH
-		}
-		}
-	}
-
-#Australia PNG
-country_event = {
-
-	id = fmu.15
-	title = fmu.15.t
-	desc = fmu.15.d
-	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 100 }
-		name = fmu.15.a
-		add_to_faction = FMU
-		release = PNG
-		FMU = {
-		puppet = PNG
-		}
-	}
-
-	option = {
-		ai_chance = { factor = 0 }
-		name = fmu.15.b
-		}
-	}
-#PNG Fail
-country_event = {
-
-	id = fmu.16
-	title = fmu.16.t
-	desc = fmu.16.d
-	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 0 }
-		name = fmu.16.a
-		}
-	}
-#PNG Succeed
-country_event = {
-
-	id = fmu.17
-	title = fmu.17.t
-	desc = fmu.17.d
-	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 0 }
-		name = fmu.17.a
-		}
-	}
-
-#Schoenesland Fail
-country_event = {
-
-	id = fmu.18
-	title = fmu.18.t
-	desc = fmu.18.d
-	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.18.a
-	}
-	}
-#Schoenesland Succeed
-country_event = {
-
-	id = fmu.19
-	title = fmu.19.t
-	desc = fmu.19.d
-	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.19.a
-	}
-	}
-
-#Vogelinsel Annexation
-country_event = {
-
-	id = fmu.20
-	title = fmu.20.t
-	desc = fmu.20.d
-	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.20.a
-	}
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.20.b
-		FMU = {
-		puppet = VGI
-		}
-		}
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.20.c
-		every_unit_leader = {
-				set_nationality = FMU
+			annex_country = { target = VGI transfer_troops = yes }
 			}
-			FMU = {
-		annex_country = { target = VGI transfer_troops = yes }
-		}
 		}
 	}
-
-
-#Vogelinsel Fail
-country_event = {
-
-	id = fmu.21
-	title = fmu.21.t
-	desc = fmu.21.d
 	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.21.a
-	}
-	}
-
-	#Vogelinsel Puppet
-country_event = {
-
-	id = fmu.22
-	title = fmu.22.t
-	desc = fmu.22.d
 	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.22.a
-	}
-	}
-
-#Vogelinsel Annex
-country_event = {
-
-	id = fmu.23
-	title = fmu.23.t
-	desc = fmu.23.d
 	
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 33 }
-		name = fmu.23.a
-	}
-	}
+	
+	
+##German Kaiser Invite
+#country_event = {
+#
+#	id = fmu.6
+#	title = fmu.6.t
+#	desc = fmu.6.d
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		ai_chance = { factor = 100 }
+#		name = fmu.6.a
+#		if = {
+# 			limit = { is_in_faction = yes 
+#    		}
+#    	add_to_faction = FMU
+#    	else = {
+#        	create_faction = "Pan-German Union"
+#        	add_to_faction = FMU
+#        	}
+#		}
+#	}
+#	option = {
+#		ai_chance = { factor = 0 }
+#		name = fmu.6.b
+#	}
+#}
+##Snap Elections for Fascism
+#country_event = {
+#
+#	id = fmu.7
+#	title = fmu.7.t
+#	desc = fmu.7.d
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		ai_chance = { factor = 100 }
+#		name = fmu.7.a
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.2
+#		}
+#		set_politics = {
+#			ruling_party = fascism
+#			elections_allowed = no
+#		}
+#	}
+#}
+##Axis Invite
+#country_event = {
+#
+#	id = fmu.8
+#	title = fmu.8.t
+#	desc = fmu.8.d
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		ai_chance = { factor = 100 }
+#		name = fmu.8.a
+#		if = {
+# 			limit = { is_in_faction = yes 
+#    		}
+#    	add_to_faction = FMU
+#    	else = {
+#        	create_faction = "placeholder_faction_pangerman"
+#        	add_to_faction = FMU
+#        	}
+#		}
+#	}
+#	option = {
+#		ai_chance = { factor = 0 }
+#		name = fmu.8.b
+#	}
+#}
+##Allies Invite
+#country_event = {
+#
+#	id = fmu.9
+#	title = fmu.9.t
+#	desc = fmu.9.d
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		ai_chance = { factor = 100 }
+#		name = fmu.9.a
+#		add_to_faction = FMU
+#	}
+#	option = {
+#		ai_chance = { factor = 0 }
+#		name = fmu.9.b
+#	}
+#}
+##Fjinland Takeover
+#country_event = {
+#
+#	id = fmu.10
+#	title = fmu.10.t
+#	desc = fmu.10.d
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		ai_chance = { factor = 100 }
+#		name = fmu.10.a
+#	}
+#}
+##Tiquea Destiny
+#country_event = {
+#
+#	id = fmu.11
+#	title = fmu.11.t
+#	desc = fmu.11.d
+#	
+#	fire_only_once = yes
+#
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+#	
+#
+#
+#	trigger = {
+#		tag = FMU
+#		OR = {
+#			AND = {
+#				OR = {
+#							controls_state = 924
+#							controls_state = 925
+#							controls_state = 926
+#							controls_state = 923
+#							}
+#				TIQ = {
+#					has_war_with = FMU
+#					has_capitulated = yes
+#					is_in_faction = yes
+#					}
+#				}
+#			AND = {
+#				OR = {
+#							controls_state = 924
+#							controls_state = 925
+#							controls_state = 926
+#							controls_state = 923
+#							}
+#				NOT = {
+#					country_exists = TIQ
+#					}
+#				}
+#			}
+#		}
+#
+#	option = {
+#		ai_chance = { factor = 100 }
+#		name = fmu.11.a
+#		puppet = TIQ
+#		if = {
+#		limit = {
+#			 controls_state = 923
+#		}
+#		transfer_state = 923
+#		923 = { set_state_name = "Jijilstaat" }
+#		}
+#
+#
+#
+#		TIQ ={
+#	if = {
+#		limit = {
+#			FMU = { controls_state = 924 } 
+#		}
+#		transfer_state = 924
+#		}
+#	if = {
+#		limit = {
+#			FMU = { controls_state = 925 } 
+#		}
+#		transfer_state = 925
+#		}
+#	if = {
+#		limit = {
+#			FMU = { controls_state = 926 } 
+#		}
+#		transfer_state = 926
+#		}
+#
+#		}
+#
+#	
+#	}
+#	option = {
+#		ai_chance = { factor = 100 }
+#		name = fmu.11.b
+#		if = {
+#		limit = {
+#			 controls_state = 923
+#		}
+#		transfer_state = 923
+#		923 = { set_state_name = "Jijilstaat" }
+#		}
+#
+#	}
+#}
+#
+##Australia PNG
+#country_event = {
+#
+#	id = fmu.15
+#	title = fmu.15.t
+#	desc = fmu.15.d
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		ai_chance = { factor = 100 }
+#		name = fmu.15.a
+#		add_to_faction = FMU
+#		release = PNG
+#		FMU = {
+#		puppet = PNG
+#		}
+#	}
+#
+#	option = {
+#		ai_chance = { factor = 0 }
+#		name = fmu.15.b
+#		}
+#	}
+##PNG Fail
+#country_event = {
+#
+#	id = fmu.16
+#	title = fmu.16.t
+#	desc = fmu.16.d
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		ai_chance = { factor = 0 }
+#		name = fmu.16.a
+#		}
+#	}
+##PNG Succeed
+#country_event = {
+#
+#	id = fmu.17
+#	title = fmu.17.t
+#	desc = fmu.17.d
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		ai_chance = { factor = 0 }
+#		name = fmu.17.a
+#		}
+#	}
 
 #Invite from FMU
 country_event = {
