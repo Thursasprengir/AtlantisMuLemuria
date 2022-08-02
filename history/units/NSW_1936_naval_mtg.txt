@@ -1,0 +1,16 @@
+units = {
+	fleet = {
+		name = "Deutschesmu Marine"		
+		naval_base = 14206
+		task_force = {
+			name = "Battle Fleet"
+			location = 14206
+			ship = {name = "Pitkairn" definition = heavy_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = NSW version_name = "Holtzendorff Class" } } }
+			ship = {name = "Königshafen" definition = heavy_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = NSW version_name = "Holtzendorff Class" } } }
+			ship = {name = "Pitkairn" definition = heavy_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = NSW version_name = "Holtzendorff Class" } } }
+			ship = {name = "Königshafen" definition = heavy_cruiser start_experience_factor = 0 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = NSW version_name = "Valkyria Class" } } }
+			ship = {name = "Kriegsengel" pride_of_the_fleet = yes definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_1 = { amount = 1 owner = NSW version_name = "Derfflinger Class" } } }
+		}
+		
+	}
+}
