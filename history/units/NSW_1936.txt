@@ -1,0 +1,164 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = FMU_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}	
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Kavallerie-Brigade"
+
+	division_names_group = FMU_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Sicherungs-Division" 
+
+	division_names_group = FMU_GAR_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }	
+		infantry = { x = 1 y = 0 }	
+		infantry = { x = 1 y = 1 }	
+	}
+}
+
+units = {
+	### Oberkommando des Heeres ###
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14435
+		division_template = "Infanterie-Division"		
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 14435
+		division_template = "Infanterie-Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 14435
+		division_template = "Infanterie-Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 14435
+		division_template = "Infanterie-Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 14435
+		division_template = "Infanterie-Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 14435
+		division_template = "Infanterie-Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 14435
+		division_template = "Infanterie-Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 14435
+		division_template = "Infanterie-Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14435
+		division_template = "Kavallerie-Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}
+
+## STARTING PRODUCTION ##
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FMU"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}
