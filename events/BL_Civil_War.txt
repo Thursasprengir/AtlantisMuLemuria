@@ -5,7 +5,7 @@
 add_namespace = blm
 
 country_event = {
-	id = blm.1 #Second Anglo-Saxon Reforms
+	id = blm.1 #The Path of Enforcement
 	title = blm.1.t
 	desc = blm.1.d
 	#picture = 
@@ -13,904 +13,938 @@ country_event = {
 	option = {
 		name = blm.1.1
 		add_stability = -0.15
-		add_political_power = 50
+		add_political_power = 200
 	}
 }
-	
+
 country_event = {
-	id = blm.2 #Continue the Reforms
+	id = blm.2 #Second Anglo-Saxon Reforms
 	title = blm.2.t
 	desc = blm.2.d
 	#picture = 
 	is_triggered_only = yes
 	option = {
-		name = blm.2.1
-		add_stability = -0.10
-		add_political_power = -150
-		hidden_effect = {country_event = {id = blm.3 days = 15 random = 72}}
+		name = blm.2.2
+		add_stability = -0.15
+		add_political_power = 200
 	}
 }
-	
-country_event = {
-	id = blm.3 #Quell Major Riots
-	title = blm.3.t
-	desc = blm.3.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.3.1
-		hidden_effect = {
-			country_event = {id = blm.4 days = 60 random = 300}}
-			add_to_variable = {var = piss_off_index value = 10}
-			every_owned_state = {
-				limit = {NOT = {is_core_of = BLM}}
-				add_compliance = -20
-				add_resistance_target = {
-					amount = 10
-					tooltip = people_pissed_off_tt
-				}
-			}
-		}
-   }
-country_event = {
-	id = blm.4 #Arcadia Rebels!
-	title = blm.4.t
-	desc = blm.4.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.4.a #Declare Military Government, declare war on Arcadia
-		ai_chance = {factor = 1}
-		add_political_power = -50
-		set_country_flag = BL_independence_movements_suppressed
-		set_country_flag = BL_civil_war
-		hidden_effect = {set_country_flag = BLM_arcadia_attack}
-		release = ARC
-		hidden_effect = {ARC = { set_rule = {can_join_factions = no}}}
-		declare_war_on = {
-			target = ARC
-			type = annex_everything
-		}
-		add_state_claim = 977
-		hidden_effect = {
-			add_to_variable = {var = piss_off_index value = 10}
-			every_owned_state = {
-				limit = {NOT = {is_core_of = BLM}}
-				add_compliance = -20
-				add_resistance_target = {
-					amount = 10
-					tooltip = ARCpeople_pissed_off_tt
-				}
-			}
-		ARC = {load_oob = "ARC_rebellion"}}
-		hidden_effect = {country_event = {id = blm.5 days = 45 random = 300}}
-	}
-	option = {
-		name = blm.4.b #Allow Them Some Independence
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		add_stability = 0.05
-		set_country_flag = ARC_independence_movements_allowed
-		release_puppet = ARC
-		hidden_effect = {ARC = {load_oob = "ARC_rebellion"}}
-		hidden_effect = {country_event = {id = blm.46 days = 60 random = 300}}
-		}
-	option = {
-		name = blm.4.b #Allow Them Full Independence
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		add_stability = 0.10
-		set_country_flag = ARC_independence_movements_allowed
-		release = ARC
-		hidden_effect = {
-			ARC = {load_oob = "ARC_rebellion"}
-		}
-		hidden_effect = {country_event = {id = blm.46 days = 60 random = 300}}
-	}
-}
-country_event = {
-	id = blm.5 #Absorb Suisse (declared Military Government)
-	title = blm.5.t
-	desc = blm.5.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.5.a #Begin integrating their bureaucracy
-		add_political_power = -50
-		annex_country = {
-			target = SSS
-			transfer_troops = yes
-		}
-		set_country_leader_ideology = centrism
-		hidden_effect = {
-			country_event = {id = blm.6 days = 90 random = 300}
-			country_event = {id = blm.60 days = 15 random = 300}
-		}
-	}
-}
-	
-country_event = {
-	id = blm.6 #The Werreurbro Rebellion
-	title = blm.6.t
-	desc = blm.6.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.6.a #Attack Werreurbro
-		ai_chance = {factor = 1}
-		add_political_power = -50
-		hidden_effect = {
-			add_to_variable = {var = piss_off_index value = 10}
-			every_owned_state = {
-				limit = {NOT = {is_core_of = BLM}}
-				add_compliance = -20
-				add_resistance_target = {
-					amount = 15
-					tooltip = WRBpeople_pissed_off_tt
-				}
-			}
-			set_country_flag = BLM_werreurbro_attack
-		}
-		release = WRB
-		hidden_effect = {WRB = {set_rule = {can_join_factions = no}}}
-		declare_war_on = {
-			target = WRB
-			type = annex_everything
-		}
-		add_state_claim = 974
-		add_state_claim = 1050
-		add_state_claim = 1051
-		add_state_claim = 1052
-		hidden_effect = {
-			WRB = {load_oob = "WRB_rebellion"}
-			remove_state_core = 974
-			remove_state_core = 1050
-			remove_state_core = 1051
-			remove_state_core = 1052
-		}
-		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
-	}
-	option = {
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		name = blm.6.b #Grant Werreurbrian Independence
-		hidden_effect = {
-			WRB = {
-				add_state_core = 974
-				add_state_core = 1050
-				add_state_core = 1051
-				add_state_core = 1052
-			}
-		}
-		release_puppet = WRB
-		hidden_effect = {
-			WRB = {load_oob = "WRB_rebellion"}
-			remove_state_core = 974
-			remove_state_core = 1050
-			remove_state_core = 1051
-			remove_state_core = 1052
-		}
-		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
-		set_country_flag = BLM_wimp_out_werrerbro
-	}
-	option = {
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		name = blm.6.c #Grant Werreurbrian Independence
-		hidden_effect = {
-			WRB = {
-				add_state_core = 974
-				add_state_core = 1050
-				add_state_core = 1051
-				add_state_core = 1052
-			}
-		}
-		release = WRB
-		hidden_effect = {
-			WRB = {load_oob = "WRB_rebellion"}
-			remove_state_core = 974
-			remove_state_core = 1050
-			remove_state_core = 1051
-			remove_state_core = 1052
-		}
-		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
-		set_country_flag = BLM_wimp_out_werrerbro
-	}
-}
-country_event = {
-	id = blm.7 #Audenshyre Declares Independence
-	title = blm.7.t
-	desc = blm.7.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.7.a #Don't attack Audenshyre, yet
-		ai_chance = {factor = 1}
-		add_political_power = -50
-		release = AUD
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = AUD
-		}
-		hidden_effect = {AUD = {load_oob = "AUD_rebellion"}}
-		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
-	}
-	option = {
-		name = blm.7.b #Kill them all (Attack)
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		add_political_power = -50
-		hidden_effect = {
-			add_to_variable = {var = piss_off_index value = 10}
-			every_owned_state = {
-				limit = {NOT = {is_core_of = BLM}}
-				add_compliance = -20
-				add_resistance_target = {
-					amount = 15
-					tooltip = AUDpeople_pissed_off_tt
-				}
-			}
-			set_country_flag = BLM_audenshyre_attack
-		}
-		release = AUD
-		hidden_effect = {AUD = {set_rule = {can_join_factions = no}}}
-		declare_war_on = {
-			target = AUD
-			type = annex_everything
-		}
-		add_state_claim = 984
-		hidden_effect = {
-			AUD = {load_oob = "AUD_rebellion"}
-		}
-		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
-	}
-	option = {
-		name = blm.7.c #Grant Audenshyrian Independence
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		add_stability = 0.10
-		release = AUD
-		hidden_effect = {
-			AUD = {load_oob = "AUD_rebellion"}
-		}
-		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
-		set_country_flag = BLM_wimp_out_audenshyre
-	}
-}
-	
-country_event = {
-	id = blm.8 #The Qlach Avengers
-	title = blm.8.t
-	desc = blm.8.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.8.a #Attack the Natives
-		ai_chance = {factor = 1}
-		add_political_power = -50
-		hidden_effect = {
-			add_to_variable = {var = piss_off_index value = 10}
-			every_owned_state = {
-				limit = {NOT = {is_core_of = BLM}}
-				add_compliance = -20
-				add_resistance_target = {
-					amount = 10
-					tooltip = QLApeople_pissed_off_tt
-				}
-			}
-			QLA = {add_state_core = 986}
-			set_country_flag = BLM_qlach_attack
-		}
-		release = QLA
-		hidden_effect = {QLA = {set_rule = {can_join_factions = no}}}
-		declare_war_on = {
-			target = QLA
-			type = annex_everything
-		}
-		add_state_claim = 986
-		hidden_effect = {
-			QLA = {load_oob = "QLA_rebellion"}
-			remove_state_core = 986
-		}
-		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}}
-	option = {
-		name = blm.8.b #Allow the Natives Freedom
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		add_stability = 0.05
-		add_political_power = -50
-		hidden_effect = {QLA = {add_state_core = 986}}
-		release_puppet = QLA
-		hidden_effect = {
-			QLA = {load_oob = "QLA_rebellion"}
-			remove_state_core = 986}
-		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}
-		set_country_flag = BLM_wimp_out_qlach
-		}
-	option = {
-		name = blm.8.c #Allow the Natives Complete Freedom
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		add_stability = 0.10
-		add_political_power = -50
-		hidden_effect = {QLA = {add_state_core = 986}}
-		release = QLA
-		hidden_effect = {
-			QLA = {load_oob = "QLA_rebellion"}
-			remove_state_core = 986
-		}
-		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}
-		set_country_flag = BLM_wimp_out_qlach
-	}
-}
-	
-country_event = {
-	id = blm.9 #Northern Ackerson Desert Seized
-	title = blm.9.t
-	desc = blm.9.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.9.a #Damn them!
-		KLK = {
-			set_state_owner = 1006
-			set_state_controller = 1006
-			add_ai_strategy = {
-				type = force_build_armies
-				value = 100
-			}
-		}
-		hidden_effect = {country_event = {id = blm.10 days = 150 random = 300}}}
-   }
-	
-country_event = {
-	id = blm.10 #The Workers Union of Lemuria
-	title = blm.10.t
-	desc = blm.10.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.10.a #We shall eliminate them
-		ai_chance = {factor = 1}
-		hidden_effect = {
-		WUL = {
-			add_state_core = 980
-			add_state_core = 979
-			add_state_core = 978
-		}
-		set_country_flag = BLM_WUL_attack}
-		release = WUL
-		hidden_effect = {WUL = {set_rule = {can_join_factions = no}}}
-		declare_war_on = {
-			target = WUL
-			type = annex_everything
-		}
-		add_state_claim = 980
-		add_state_claim = 979
-		add_state_claim = 978
-		hidden_effect = {
-			WUL = {load_oob = "WUL_rebellion"}
-			remove_state_core = 980
-			remove_state_core = 979
-			remove_state_core = 978
-		}
-		hidden_effect = {country_event = {id = blm.11 days = 150 random = 300}}}
-	option = {
-		name = blm.10.b #Acknowledge the Workers Union
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		add_stability = 0.10
-		add_political_power = -50
-		release = WUL
-		hidden_effect = {
-		WUL = { 
-			load_oob = "WUL_rebellion"
-			}
-		}
-		hidden_effect = {country_event = {id = blm.11 days = 150 random = 300}}
-		set_country_flag = BLM_wimp_out_workersunion
-		}
-   }
-	
-country_event = {
-	id = blm.11 #The Rise of the Anarchists
-	title = blm.11.t
-	desc = blm.11.d
-	#picture = 
-	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.11.a #We'll fight them, too!
-		hidden_effect = {		
-		FAN = {
-		add_state_core = 978
-		}
-			}
-		WUL = {
-		release = FAN
-		hidden_effect = {FAN = {set_rule = {can_join_factions = no}}}
-		declare_war_on = {
-			target = FAN
-			type = annex_everything
-				}
-		add_state_claim = 978
-			}
-		declare_war_on = {
-			target = FAN
-			type = annex_everything
-				}
-		add_state_claim = 978
-		hidden_effect = {
-		FAN = { 
-			load_oob = "FAN_rebellion"
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = diminished_dominion
-						has_country_flag = BLM_audenshyre_attack
-					}
-				}
-			country_event = {id = blm.12 days = 150 random = 300}}
-			}
-		}
-   }
-	
-country_event = {
-	id = blm.12 #Approach Audenshyre
-	title = blm.12.t
-	desc = blm.12.d
-	#picture = 
-	is_triggered_only = yes
-	option = {
-		name = blm.12.1 #We're sure this is a good deal
-		add_stability = 0.05
-		add_political_power = -50
-		annex_country = {
-			target = AUD
-			transfer_troops = yes
-		}
-		hidden_effect = {
-			if = {
-				limit = { NOT = {has_country_flag = diminished_dominion} }
-				country_event = {id = blm.13 days = 150 random = 300}}
-			}
-		}
-   } 
-	
-country_event = {
-	id = blm.13 #Rise of the Republicans
-	title = blm.13.t
-	desc = blm.13.d
-	#picture = 
-	
-	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.13.a #They're rebels, no matter their goals!
-		ai_chance = {factor = 1}
-		hidden_effect = {set_country_flag = BLM_FLM_attack}
-		release = FLM
-		hidden_effect = {FLM = {set_rule = {can_join_factions = no}}}
-		declare_war_on = {
-			target = FLM
-			type = annex_everything
-		}
-		add_state_claim = 985
-		add_state_claim = 1005
-		add_state_claim = 1009
-		add_state_claim = 1012
-		hidden_effect = {
-			add_to_variable = {var = piss_off_index value = 10}
-			every_owned_state = {
-				limit = {NOT = {is_core_of = BLM}}
-				add_compliance = -20
-				add_resistance_target = {
-					amount = 20
-					tooltip = FLMpeople_pissed_off_tt
-				}
-			}
-			FLM = {load_oob = "FLM_rebellion"}
-			remove_state_core = 985
-			remove_state_core = 1005
-			remove_state_core = 1009
-			remove_state_core = 1012
-			country_event = {id = blm.14 days = 60 random = 300}
-		}
-	}
-	option = {
-		name = blm.13.b #We must end this war now.
-		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
-		add_political_power = -500
-		set_country_leader_ideology = liberalism
-		clr_country_flag = BL_civil_war
-		remove_state_core = 985
-		remove_state_core = 1005
-		remove_state_core = 1009
-		remove_state_core = 1012
-		hidden_effect = {
-			if = {
-					limit = { NOT = { has_country_flag = diminished_dominion }}
-				}
-			country_event = {id = blm.14 days = 60 random = 300}}
-		}
-   }
-	
-country_event = {
-	id = blm.14 #Declaration of the Free Cities
-	title = blm.14.t
-	desc = blm.14.d
-	#picture = 
-	
-	is_triggered_only = yes
-	option = {
-		name = blm.14.a #Britain will keep them safe
-		add_stability = 0.05
-		add_political_power = -50
-		hidden_effect = {
-		FCT = {
-		add_state_core = 976
-		add_state_core = 975
-		}
-		}
-		release = FCT
-		hidden_effect = {FCT = {set_rule = {can_join_factions = no}}}
-		FCT = { 
-			load_oob = "FCT_freedom"
-			}
-		hidden_effect = {
-		remove_state_core = 976
-		remove_state_core = 975
-		}
-		ENG = {puppet = FCT}
-		hidden_effect = {country_event = {id = blm.15 days = 350 random = 300}}
-		}
-   }
-	
-country_event = {
-	id = blm.15 #The End of the Civil War (absorb Artura, whether they like it or not)
-	title = blm.15.t
-	desc = blm.15.d
-	#picture = 
-	is_triggered_only = yes
-	trigger = {
-		NOT = {
-			OR = {
-			has_war_with = ARC
-			has_war_with = WRB
-			has_war_with = AUD
-			has_war_with = QLA
-			has_war_with = FAN
-			has_war_with = WUL
-			has_war_with = FLM
-			has_war_with = FCT
-			}
-		}
-	}
-	option = {
-		name = blm.15.a #Finally, some peace!
-		add_stability = 0.05
-		clr_country_flag = BL_civil_war
-		set_country_flag = BL_civil_war_over
-		annex_country = {
-			target = RTR
-			transfer_troops = yes
-		}
-		hidden_effect = {ARC = { set_rule = {can_join_factions = yes}}}
-		hidden_effect = {WRB = { set_rule = {can_join_factions = yes}}}
-		hidden_effect = {AUD = { set_rule = {can_join_factions = yes}}}
-		hidden_effect = {QLA = { set_rule = {can_join_factions = yes}}}
-		hidden_effect = {FAN = { set_rule = {can_join_factions = yes}}}
-		hidden_effect = {WUL = { set_rule = {can_join_factions = yes}}}
-		hidden_effect = {FLM = { set_rule = {can_join_factions = yes}}}
-		hidden_effect = {FCT = { set_rule = {can_join_factions = yes}}}
-		hidden_effect = {
-			country_event = {id = blm.16 days = 30 random = 300}}
-		}
-   }
-	
-country_event = {
-	id = blm.16 #Petition the Allies for Support (to regain N Ackerson Desert)
-	title = blm.16.t
-	desc = blm.16.d
-	#picture = 
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = blm.16.a #We must restore order!
-		#fire event for Britain, France, and US to support or not support BL reclaiming N Ack. Desert)
-		hidden_effect = {country_event = {id = blm.17 days = 15 random = 300}}
-		}
-   }
-	
-country_event = {
-	id = blm.17 #Make Clear Demands for Northern Ackerson Desert
-	title = blm.17.t
-	desc = blm.17.d
-	#picture = 
-	
-	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.17.a #Our claim will hold for now (back down)
-		ai_chance = {factor = 1 modifier = {KLK = {is_in_faction_with = KUM}}}
-		add_stability = -0.10
-		add_political_power = -150
-	}
-	option = {
-		name = blm.17.b #We shall fight for our land!
-		ai_chance = {factor = 1 modifier = {KLK = {is_in_faction_with = KUM} factor = 0}}
-		add_political_power = 50
-		create_wargoal = {
-			type = take_state_focus
-			target = KLK
-			generator = { 1006 }
-		}
-		add_ai_strategy = {
-			type = declare_war
-			id = KLK
-			value = 100
-		}
-	}
-}
-   
-   
-   
-   
-   
-   
-   
-	
-country_event = {
-	id = blm.20 #A Diminished Dominion
-	title = blm.20.t
-	desc = blm.20.d
-	#picture = 
-	
-	trigger = {
-		tag = BLM
-		OR = {
-			AND = {
-				has_country_flag = BLM_wimp_out_audenshyre
-				has_country_flag = BLM_wimp_out_qlach
-				has_country_flag = BLM_wimp_out_werrerbro
-				}
-			AND = {
-				has_country_flag = BLM_wimp_out_audenshyre
-				has_country_flag = BLM_wimp_out_workersunion
-				}
-			AND = {
-				has_country_flag = BLM_wimp_out_qlach
-				has_country_flag = BLM_wimp_out_workersunion
-				}
-			AND = {
-				has_country_flag = BLM_wimp_out_werrerbro
-				has_country_flag = BLM_wimp_out_workersunion
-				}
-			}
-	}
-	mean_time_to_happen = {days = 60}
-	
-	option = {
-		name = blm.20.a #British Lemuria is better now, despite our losses
-		add_stability = 0.10
-		add_political_power = -50
-		set_country_flag = diminished_dominion
-		}
-		
-   }
- 
-   
-   
-####WIMP OUT PATH### 
-   
-	
-country_event = {
-	id = blm.46 #The Werreurbro Rebellion
-	title = blm.46.t
-	desc = blm.46.d
-	#picture = 
-	
-	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.46.a #Grant Werreurbrian Independence
-		hidden_effect = {
-		WRB = {
-		add_state_core = 974
-		add_state_core = 1050
-		add_state_core = 1051
-		add_state_core = 1052
-		}
-		}
-		release = WRB
-		hidden_effect = {
-		remove_state_core = 974
-		remove_state_core = 1050
-		remove_state_core = 1051
-		remove_state_core = 1052
-		}
-		hidden_effect = {country_event = {id = blm.47 days = 15 random = 300}}
-		}
-   }
-	
-country_event = {
-	id = blm.47 #Audenshyre Declares Independence
-	title = blm.47.t
-	desc = blm.47.d
-	#picture = 
-	
-	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.47.a #Grant Audenshyrian Independence
-		add_stability = 0.1
-		hidden_effect = {
-		}
-		release_puppet = AUD
-		hidden_effect = {country_event = {id = blm.48 days = 15 random = 300}}
-		}
-   }
-	
-country_event = {
-	id = blm.48 #The Qlach Avengers
-	title = blm.48.t
-	desc = blm.48.d
-	#picture = 
-	is_triggered_only = yes
-		
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.48.a #Grant Native Independence
-		hidden_effect = {
-		QLA = {		
-		add_state_core = 986
-		}
-		}
-		release = QLA
-		hidden_effect = {remove_state_core = 986}
-		hidden_effect = {country_event = {id = blm.49 days = 15 random = 300}}
-   }
-   }
-	
-country_event = {
-	id = blm.49 #Northern Ackerson Desert Seized
-	title = blm.9.t
-	desc = blm.9.d
-	#picture = 
-	
-	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.49.a #Damn them!
-		KLK = {
-			set_state_owner = 1006
-			set_state_controller = 1006
-			}
-		hidden_effect = {country_event = {id = blm.50 days = 15 random = 300}}
-		}
-   }
-	
-country_event = {
-	id = blm.50 #The Workers Union of Lemuria
-	title = blm.50.t
-	desc = blm.50.d
-	#picture = 
-	is_triggered_only = yes
-	
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.50.a #Grant WUL Independence 
-		hidden_effect = {
-		WUL = {
-		add_state_core = 980
-		add_state_core = 979
-		add_state_core = 978
-		}
-		}
-		release = WUL
-		hidden_effect = {
-		remove_state_core = 980
-		remove_state_core = 979
-		remove_state_core = 978
-		}
-		hidden_effect = {country_event = {id = blm.51 days = 15 random = 300}}
-		}
-   }
-	
-country_event = {
-	id = blm.51 #The Rise of the Anarchists
-	title = blm.51.t
-	desc = blm.51.d
-	#picture = 
-	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.51.a #How is this our problem?
-		hidden_effect = {
-		FAN = {
-		add_state_core = 978
-		}
-		}
-		WUL = {
-		release = FAN
-		declare_war_on = {
-			target = FAN
-			type = annex_everything
-				}
-			}
-		}
-   }
-country_event = {
-	id = blm.60 #core lose
-	title = blm.60.t
-	desc = blm.60.d
-	#picture = 
-	is_triggered_only = yes
-	
- 	immediate = {
- 		hidden_effect = {
- 		} 		
- 	}
-	option = {
-		name = blm.60.a #How is this our problem?
-		WUL = {
-			add_state_core = 980
-			add_state_core = 979
-			add_state_core = 978
-		}
-		980 = {
-			add_building_construction = {
-			type = arms_factory
-			level = 1
-			instant_build = yes
-			}
-		}
-		979 = {
-			add_building_construction = {
-			type = arms_factory
-			level = 1
-			instant_build = yes
-			}
-		}
-		978 = {
-			add_building_construction = {
-			type = arms_factory
-			level = 1
-			instant_build = yes
-			}
-		}
-		remove_state_core = 980
-		remove_state_core = 979
-		remove_state_core = 978
-		
-	}
-}
+
+
+
+
+
+
+
+
+
+#country_event = {
+#	id = blm.1 #Second Anglo-Saxon Reforms
+#	title = blm.1.t
+#	desc = blm.1.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.1.1
+#		add_stability = -0.15
+#		add_political_power = 50
+#	}
+#}
+#	
+#country_event = {
+#	id = blm.2 #Continue the Reforms
+#	title = blm.2.t
+#	desc = blm.2.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.2.1
+#		add_stability = -0.10
+#		add_political_power = -150
+#		hidden_effect = {country_event = {id = blm.3 days = 15 random = 72}}
+#	}
+#}
+#	
+#country_event = {
+#	id = blm.3 #Quell Major Riots
+#	title = blm.3.t
+#	desc = blm.3.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.3.1
+#		hidden_effect = {
+#			country_event = {id = blm.4 days = 60 random = 300}}
+#			add_to_variable = {var = piss_off_index value = 10}
+#			every_owned_state = {
+#				limit = {NOT = {is_core_of = BLM}}
+#				add_compliance = -20
+#				add_resistance_target = {
+#					amount = 10
+#					tooltip = people_pissed_off_tt
+#				}
+#			}
+#		}
+#   }
+#country_event = {
+#	id = blm.4 #Arcadia Rebels!
+#	title = blm.4.t
+#	desc = blm.4.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.4.a #Declare Military Government, declare war on Arcadia
+#		ai_chance = {factor = 1}
+#		add_political_power = -50
+#		set_country_flag = BL_independence_movements_suppressed
+#		set_country_flag = BL_civil_war
+#		hidden_effect = {set_country_flag = BLM_arcadia_attack}
+#		release = ARC
+#		hidden_effect = {ARC = { set_rule = {can_join_factions = no}}}
+#		declare_war_on = {
+#			target = ARC
+#			type = annex_everything
+#		}
+#		add_state_claim = 977
+#		hidden_effect = {
+#			add_to_variable = {var = piss_off_index value = 10}
+#			every_owned_state = {
+#				limit = {NOT = {is_core_of = BLM}}
+#				add_compliance = -20
+#				add_resistance_target = {
+#					amount = 10
+#					tooltip = ARCpeople_pissed_off_tt
+#				}
+#			}
+#		ARC = {load_oob = "ARC_rebellion"}}
+#		hidden_effect = {country_event = {id = blm.5 days = 45 random = 300}}
+#	}
+#	option = {
+#		name = blm.4.b #Allow Them Some Independence
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		add_stability = 0.05
+#		set_country_flag = ARC_independence_movements_allowed
+#		release_puppet = ARC
+#		hidden_effect = {ARC = {load_oob = "ARC_rebellion"}}
+#		hidden_effect = {country_event = {id = blm.46 days = 60 random = 300}}
+#		}
+#	option = {
+#		name = blm.4.b #Allow Them Full Independence
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		add_stability = 0.10
+#		set_country_flag = ARC_independence_movements_allowed
+#		release = ARC
+#		hidden_effect = {
+#			ARC = {load_oob = "ARC_rebellion"}
+#		}
+#		hidden_effect = {country_event = {id = blm.46 days = 60 random = 300}}
+#	}
+#}
+#country_event = {
+#	id = blm.5 #Absorb Suisse (declared Military Government)
+#	title = blm.5.t
+#	desc = blm.5.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.5.a #Begin integrating their bureaucracy
+#		add_political_power = -50
+#		annex_country = {
+#			target = SSS
+#			transfer_troops = yes
+#		}
+#		set_country_leader_ideology = centrism
+#		hidden_effect = {
+#			country_event = {id = blm.6 days = 90 random = 300}
+#			country_event = {id = blm.60 days = 15 random = 300}
+#		}
+#	}
+#}
+#	
+#country_event = {
+#	id = blm.6 #The Werreurbro Rebellion
+#	title = blm.6.t
+#	desc = blm.6.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.6.a #Attack Werreurbro
+#		ai_chance = {factor = 1}
+#		add_political_power = -50
+#		hidden_effect = {
+#			add_to_variable = {var = piss_off_index value = 10}
+#			every_owned_state = {
+#				limit = {NOT = {is_core_of = BLM}}
+#				add_compliance = -20
+#				add_resistance_target = {
+#					amount = 15
+#					tooltip = WRBpeople_pissed_off_tt
+#				}
+#			}
+#			set_country_flag = BLM_werreurbro_attack
+#		}
+#		release = WRB
+#		hidden_effect = {WRB = {set_rule = {can_join_factions = no}}}
+#		declare_war_on = {
+#			target = WRB
+#			type = annex_everything
+#		}
+#		add_state_claim = 974
+#		add_state_claim = 1050
+#		add_state_claim = 1051
+#		add_state_claim = 1052
+#		hidden_effect = {
+#			WRB = {load_oob = "WRB_rebellion"}
+#			remove_state_core = 974
+#			remove_state_core = 1050
+#			remove_state_core = 1051
+#			remove_state_core = 1052
+#		}
+#		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
+#	}
+#	option = {
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		name = blm.6.b #Grant Werreurbrian Independence
+#		hidden_effect = {
+#			WRB = {
+#				add_state_core = 974
+#				add_state_core = 1050
+#				add_state_core = 1051
+#				add_state_core = 1052
+#			}
+#		}
+#		release_puppet = WRB
+#		hidden_effect = {
+#			WRB = {load_oob = "WRB_rebellion"}
+#			remove_state_core = 974
+#			remove_state_core = 1050
+#			remove_state_core = 1051
+#			remove_state_core = 1052
+#		}
+#		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
+#		set_country_flag = BLM_wimp_out_werrerbro
+#	}
+#	option = {
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		name = blm.6.c #Grant Werreurbrian Independence
+#		hidden_effect = {
+#			WRB = {
+#				add_state_core = 974
+#				add_state_core = 1050
+#				add_state_core = 1051
+#				add_state_core = 1052
+#			}
+#		}
+#		release = WRB
+#		hidden_effect = {
+#			WRB = {load_oob = "WRB_rebellion"}
+#			remove_state_core = 974
+#			remove_state_core = 1050
+#			remove_state_core = 1051
+#			remove_state_core = 1052
+#		}
+#		hidden_effect = {country_event = {id = blm.7 days = 150 random = 300}}
+#		set_country_flag = BLM_wimp_out_werrerbro
+#	}
+#}
+#country_event = {
+#	id = blm.7 #Audenshyre Declares Independence
+#	title = blm.7.t
+#	desc = blm.7.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.7.a #Don't attack Audenshyre, yet
+#		ai_chance = {factor = 1}
+#		add_political_power = -50
+#		release = AUD
+#		create_wargoal = {
+#			type = puppet_wargoal_focus
+#			target = AUD
+#		}
+#		hidden_effect = {AUD = {load_oob = "AUD_rebellion"}}
+#		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
+#	}
+#	option = {
+#		name = blm.7.b #Kill them all (Attack)
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		add_political_power = -50
+#		hidden_effect = {
+#			add_to_variable = {var = piss_off_index value = 10}
+#			every_owned_state = {
+#				limit = {NOT = {is_core_of = BLM}}
+#				add_compliance = -20
+#				add_resistance_target = {
+#					amount = 15
+#					tooltip = AUDpeople_pissed_off_tt
+#				}
+#			}
+#			set_country_flag = BLM_audenshyre_attack
+#		}
+#		release = AUD
+#		hidden_effect = {AUD = {set_rule = {can_join_factions = no}}}
+#		declare_war_on = {
+#			target = AUD
+#			type = annex_everything
+#		}
+#		add_state_claim = 984
+#		hidden_effect = {
+#			AUD = {load_oob = "AUD_rebellion"}
+#		}
+#		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
+#	}
+#	option = {
+#		name = blm.7.c #Grant Audenshyrian Independence
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		add_stability = 0.10
+#		release = AUD
+#		hidden_effect = {
+#			AUD = {load_oob = "AUD_rebellion"}
+#		}
+#		hidden_effect = {country_event = {id = blm.8 days = 150 random = 300}}
+#		set_country_flag = BLM_wimp_out_audenshyre
+#	}
+#}
+#	
+#country_event = {
+#	id = blm.8 #The Qlach Avengers
+#	title = blm.8.t
+#	desc = blm.8.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.8.a #Attack the Natives
+#		ai_chance = {factor = 1}
+#		add_political_power = -50
+#		hidden_effect = {
+#			add_to_variable = {var = piss_off_index value = 10}
+#			every_owned_state = {
+#				limit = {NOT = {is_core_of = BLM}}
+#				add_compliance = -20
+#				add_resistance_target = {
+#					amount = 10
+#					tooltip = QLApeople_pissed_off_tt
+#				}
+#			}
+#			QLA = {add_state_core = 986}
+#			set_country_flag = BLM_qlach_attack
+#		}
+#		release = QLA
+#		hidden_effect = {QLA = {set_rule = {can_join_factions = no}}}
+#		declare_war_on = {
+#			target = QLA
+#			type = annex_everything
+#		}
+#		add_state_claim = 986
+#		hidden_effect = {
+#			QLA = {load_oob = "QLA_rebellion"}
+#			remove_state_core = 986
+#		}
+#		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}}
+#	option = {
+#		name = blm.8.b #Allow the Natives Freedom
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		add_stability = 0.05
+#		add_political_power = -50
+#		hidden_effect = {QLA = {add_state_core = 986}}
+#		release_puppet = QLA
+#		hidden_effect = {
+#			QLA = {load_oob = "QLA_rebellion"}
+#			remove_state_core = 986}
+#		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}
+#		set_country_flag = BLM_wimp_out_qlach
+#		}
+#	option = {
+#		name = blm.8.c #Allow the Natives Complete Freedom
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		add_stability = 0.10
+#		add_political_power = -50
+#		hidden_effect = {QLA = {add_state_core = 986}}
+#		release = QLA
+#		hidden_effect = {
+#			QLA = {load_oob = "QLA_rebellion"}
+#			remove_state_core = 986
+#		}
+#		hidden_effect = {country_event = {id = blm.9 days = 40 random = 300}}
+#		set_country_flag = BLM_wimp_out_qlach
+#	}
+#}
+#	
+#country_event = {
+#	id = blm.9 #Northern Ackerson Desert Seized
+#	title = blm.9.t
+#	desc = blm.9.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.9.a #Damn them!
+#		KLK = {
+#			set_state_owner = 1006
+#			set_state_controller = 1006
+#			add_ai_strategy = {
+#				type = force_build_armies
+#				value = 100
+#			}
+#		}
+#		hidden_effect = {country_event = {id = blm.10 days = 150 random = 300}}}
+#   }
+#	
+#country_event = {
+#	id = blm.10 #The Workers Union of Lemuria
+#	title = blm.10.t
+#	desc = blm.10.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.10.a #We shall eliminate them
+#		ai_chance = {factor = 1}
+#		hidden_effect = {
+#		WUL = {
+#			add_state_core = 980
+#			add_state_core = 979
+#			add_state_core = 978
+#		}
+#		set_country_flag = BLM_WUL_attack}
+#		release = WUL
+#		hidden_effect = {WUL = {set_rule = {can_join_factions = no}}}
+#		declare_war_on = {
+#			target = WUL
+#			type = annex_everything
+#		}
+#		add_state_claim = 980
+#		add_state_claim = 979
+#		add_state_claim = 978
+#		hidden_effect = {
+#			WUL = {load_oob = "WUL_rebellion"}
+#			remove_state_core = 980
+#			remove_state_core = 979
+#			remove_state_core = 978
+#		}
+#		hidden_effect = {country_event = {id = blm.11 days = 150 random = 300}}}
+#	option = {
+#		name = blm.10.b #Acknowledge the Workers Union
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		add_stability = 0.10
+#		add_political_power = -50
+#		release = WUL
+#		hidden_effect = {
+#		WUL = { 
+#			load_oob = "WUL_rebellion"
+#			}
+#		}
+#		hidden_effect = {country_event = {id = blm.11 days = 150 random = 300}}
+#		set_country_flag = BLM_wimp_out_workersunion
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.11 #The Rise of the Anarchists
+#	title = blm.11.t
+#	desc = blm.11.d
+#	#picture = 
+#	is_triggered_only = yes
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.11.a #We'll fight them, too!
+#		hidden_effect = {		
+#		FAN = {
+#		add_state_core = 978
+#		}
+#			}
+#		WUL = {
+#		release = FAN
+#		hidden_effect = {FAN = {set_rule = {can_join_factions = no}}}
+#		declare_war_on = {
+#			target = FAN
+#			type = annex_everything
+#				}
+#		add_state_claim = 978
+#			}
+#		declare_war_on = {
+#			target = FAN
+#			type = annex_everything
+#				}
+#		add_state_claim = 978
+#		hidden_effect = {
+#		FAN = { 
+#			load_oob = "FAN_rebellion"
+#			}
+#			if = {
+#				limit = {
+#					NOT = {
+#						has_country_flag = diminished_dominion
+#						has_country_flag = BLM_audenshyre_attack
+#					}
+#				}
+#			country_event = {id = blm.12 days = 150 random = 300}}
+#			}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.12 #Approach Audenshyre
+#	title = blm.12.t
+#	desc = blm.12.d
+#	#picture = 
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.12.1 #We're sure this is a good deal
+#		add_stability = 0.05
+#		add_political_power = -50
+#		annex_country = {
+#			target = AUD
+#			transfer_troops = yes
+#		}
+#		hidden_effect = {
+#			if = {
+#				limit = { NOT = {has_country_flag = diminished_dominion} }
+#				country_event = {id = blm.13 days = 150 random = 300}}
+#			}
+#		}
+#   } 
+#	
+#country_event = {
+#	id = blm.13 #Rise of the Republicans
+#	title = blm.13.t
+#	desc = blm.13.d
+#	#picture = 
+#	
+#	is_triggered_only = yes
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.13.a #They're rebels, no matter their goals!
+#		ai_chance = {factor = 1}
+#		hidden_effect = {set_country_flag = BLM_FLM_attack}
+#		release = FLM
+#		hidden_effect = {FLM = {set_rule = {can_join_factions = no}}}
+#		declare_war_on = {
+#			target = FLM
+#			type = annex_everything
+#		}
+#		add_state_claim = 985
+#		add_state_claim = 1005
+#		add_state_claim = 1009
+#		add_state_claim = 1012
+#		hidden_effect = {
+#			add_to_variable = {var = piss_off_index value = 10}
+#			every_owned_state = {
+#				limit = {NOT = {is_core_of = BLM}}
+#				add_compliance = -20
+#				add_resistance_target = {
+#					amount = 20
+#					tooltip = FLMpeople_pissed_off_tt
+#				}
+#			}
+#			FLM = {load_oob = "FLM_rebellion"}
+#			remove_state_core = 985
+#			remove_state_core = 1005
+#			remove_state_core = 1009
+#			remove_state_core = 1012
+#			country_event = {id = blm.14 days = 60 random = 300}
+#		}
+#	}
+#	option = {
+#		name = blm.13.b #We must end this war now.
+#		ai_chance = {factor = 1 modifier = {is_historical_focus_on = yes factor = 0}}
+#		add_political_power = -500
+#		set_country_leader_ideology = liberalism
+#		clr_country_flag = BL_civil_war
+#		remove_state_core = 985
+#		remove_state_core = 1005
+#		remove_state_core = 1009
+#		remove_state_core = 1012
+#		hidden_effect = {
+#			if = {
+#					limit = { NOT = { has_country_flag = diminished_dominion }}
+#				}
+#			country_event = {id = blm.14 days = 60 random = 300}}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.14 #Declaration of the Free Cities
+#	title = blm.14.t
+#	desc = blm.14.d
+#	#picture = 
+#	
+#	is_triggered_only = yes
+#	option = {
+#		name = blm.14.a #Britain will keep them safe
+#		add_stability = 0.05
+#		add_political_power = -50
+#		hidden_effect = {
+#		FCT = {
+#		add_state_core = 976
+#		add_state_core = 975
+#		}
+#		}
+#		release = FCT
+#		hidden_effect = {FCT = {set_rule = {can_join_factions = no}}}
+#		FCT = { 
+#			load_oob = "FCT_freedom"
+#			}
+#		hidden_effect = {
+#		remove_state_core = 976
+#		remove_state_core = 975
+#		}
+#		ENG = {puppet = FCT}
+#		hidden_effect = {country_event = {id = blm.15 days = 350 random = 300}}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.15 #The End of the Civil War (absorb Artura, whether they like it or not)
+#	title = blm.15.t
+#	desc = blm.15.d
+#	#picture = 
+#	is_triggered_only = yes
+#	trigger = {
+#		NOT = {
+#			OR = {
+#			has_war_with = ARC
+#			has_war_with = WRB
+#			has_war_with = AUD
+#			has_war_with = QLA
+#			has_war_with = FAN
+#			has_war_with = WUL
+#			has_war_with = FLM
+#			has_war_with = FCT
+#			}
+#		}
+#	}
+#	option = {
+#		name = blm.15.a #Finally, some peace!
+#		add_stability = 0.05
+#		clr_country_flag = BL_civil_war
+#		set_country_flag = BL_civil_war_over
+#		annex_country = {
+#			target = RTR
+#			transfer_troops = yes
+#		}
+#		hidden_effect = {ARC = { set_rule = {can_join_factions = yes}}}
+#		hidden_effect = {WRB = { set_rule = {can_join_factions = yes}}}
+#		hidden_effect = {AUD = { set_rule = {can_join_factions = yes}}}
+#		hidden_effect = {QLA = { set_rule = {can_join_factions = yes}}}
+#		hidden_effect = {FAN = { set_rule = {can_join_factions = yes}}}
+#		hidden_effect = {WUL = { set_rule = {can_join_factions = yes}}}
+#		hidden_effect = {FLM = { set_rule = {can_join_factions = yes}}}
+#		hidden_effect = {FCT = { set_rule = {can_join_factions = yes}}}
+#		hidden_effect = {
+#			country_event = {id = blm.16 days = 30 random = 300}}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.16 #Petition the Allies for Support (to regain N Ackerson Desert)
+#	title = blm.16.t
+#	desc = blm.16.d
+#	#picture = 
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = blm.16.a #We must restore order!
+#		#fire event for Britain, France, and US to support or not support BL reclaiming N Ack. Desert)
+#		hidden_effect = {country_event = {id = blm.17 days = 15 random = 300}}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.17 #Make Clear Demands for Northern Ackerson Desert
+#	title = blm.17.t
+#	desc = blm.17.d
+#	#picture = 
+#	
+#	is_triggered_only = yes
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.17.a #Our claim will hold for now (back down)
+#		ai_chance = {factor = 1 modifier = {KLK = {is_in_faction_with = KUM}}}
+#		add_stability = -0.10
+#		add_political_power = -150
+#	}
+#	option = {
+#		name = blm.17.b #We shall fight for our land!
+#		ai_chance = {factor = 1 modifier = {KLK = {is_in_faction_with = KUM} factor = 0}}
+#		add_political_power = 50
+#		create_wargoal = {
+#			type = take_state_focus
+#			target = KLK
+#			generator = { 1006 }
+#		}
+#		add_ai_strategy = {
+#			type = declare_war
+#			id = KLK
+#			value = 100
+#		}
+#	}
+#}
+#   
+#   
+#   
+#   
+#   
+#   
+#   
+#	
+#country_event = {
+#	id = blm.20 #A Diminished Dominion
+#	title = blm.20.t
+#	desc = blm.20.d
+#	#picture = 
+#	
+#	trigger = {
+#		tag = BLM
+#		OR = {
+#			AND = {
+#				has_country_flag = BLM_wimp_out_audenshyre
+#				has_country_flag = BLM_wimp_out_qlach
+#				has_country_flag = BLM_wimp_out_werrerbro
+#				}
+#			AND = {
+#				has_country_flag = BLM_wimp_out_audenshyre
+#				has_country_flag = BLM_wimp_out_workersunion
+#				}
+#			AND = {
+#				has_country_flag = BLM_wimp_out_qlach
+#				has_country_flag = BLM_wimp_out_workersunion
+#				}
+#			AND = {
+#				has_country_flag = BLM_wimp_out_werrerbro
+#				has_country_flag = BLM_wimp_out_workersunion
+#				}
+#			}
+#	}
+#	mean_time_to_happen = {days = 60}
+#	
+#	option = {
+#		name = blm.20.a #British Lemuria is better now, despite our losses
+#		add_stability = 0.10
+#		add_political_power = -50
+#		set_country_flag = diminished_dominion
+#		}
+#		
+#   }
+# 
+#   
+#   
+#####WIMP OUT PATH### 
+#   
+#	
+#country_event = {
+#	id = blm.46 #The Werreurbro Rebellion
+#	title = blm.46.t
+#	desc = blm.46.d
+#	#picture = 
+#	
+#	is_triggered_only = yes
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.46.a #Grant Werreurbrian Independence
+#		hidden_effect = {
+#		WRB = {
+#		add_state_core = 974
+#		add_state_core = 1050
+#		add_state_core = 1051
+#		add_state_core = 1052
+#		}
+#		}
+#		release = WRB
+#		hidden_effect = {
+#		remove_state_core = 974
+#		remove_state_core = 1050
+#		remove_state_core = 1051
+#		remove_state_core = 1052
+#		}
+#		hidden_effect = {country_event = {id = blm.47 days = 15 random = 300}}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.47 #Audenshyre Declares Independence
+#	title = blm.47.t
+#	desc = blm.47.d
+#	#picture = 
+#	
+#	is_triggered_only = yes
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.47.a #Grant Audenshyrian Independence
+#		add_stability = 0.1
+#		hidden_effect = {
+#		}
+#		release_puppet = AUD
+#		hidden_effect = {country_event = {id = blm.48 days = 15 random = 300}}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.48 #The Qlach Avengers
+#	title = blm.48.t
+#	desc = blm.48.d
+#	#picture = 
+#	is_triggered_only = yes
+#		
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.48.a #Grant Native Independence
+#		hidden_effect = {
+#		QLA = {		
+#		add_state_core = 986
+#		}
+#		}
+#		release = QLA
+#		hidden_effect = {remove_state_core = 986}
+#		hidden_effect = {country_event = {id = blm.49 days = 15 random = 300}}
+#   }
+#   }
+#	
+#country_event = {
+#	id = blm.49 #Northern Ackerson Desert Seized
+#	title = blm.9.t
+#	desc = blm.9.d
+#	#picture = 
+#	
+#	is_triggered_only = yes
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.49.a #Damn them!
+#		KLK = {
+#			set_state_owner = 1006
+#			set_state_controller = 1006
+#			}
+#		hidden_effect = {country_event = {id = blm.50 days = 15 random = 300}}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.50 #The Workers Union of Lemuria
+#	title = blm.50.t
+#	desc = blm.50.d
+#	#picture = 
+#	is_triggered_only = yes
+#	
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.50.a #Grant WUL Independence 
+#		hidden_effect = {
+#		WUL = {
+#		add_state_core = 980
+#		add_state_core = 979
+#		add_state_core = 978
+#		}
+#		}
+#		release = WUL
+#		hidden_effect = {
+#		remove_state_core = 980
+#		remove_state_core = 979
+#		remove_state_core = 978
+#		}
+#		hidden_effect = {country_event = {id = blm.51 days = 15 random = 300}}
+#		}
+#   }
+#	
+#country_event = {
+#	id = blm.51 #The Rise of the Anarchists
+#	title = blm.51.t
+#	desc = blm.51.d
+#	#picture = 
+#	is_triggered_only = yes
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.51.a #How is this our problem?
+#		hidden_effect = {
+#		FAN = {
+#		add_state_core = 978
+#		}
+#		}
+#		WUL = {
+#		release = FAN
+#		declare_war_on = {
+#			target = FAN
+#			type = annex_everything
+#				}
+#			}
+#		}
+#   }
+#country_event = {
+#	id = blm.60 #core lose
+#	title = blm.60.t
+#	desc = blm.60.d
+#	#picture = 
+#	is_triggered_only = yes
+#	
+# 	immediate = {
+# 		hidden_effect = {
+# 		} 		
+# 	}
+#	option = {
+#		name = blm.60.a #How is this our problem?
+#		WUL = {
+#			add_state_core = 980
+#			add_state_core = 979
+#			add_state_core = 978
+#		}
+#		980 = {
+#			add_building_construction = {
+#			type = arms_factory
+#			level = 1
+#			instant_build = yes
+#			}
+#		}
+#		979 = {
+#			add_building_construction = {
+#			type = arms_factory
+#			level = 1
+#			instant_build = yes
+#			}
+#		}
+#		978 = {
+#			add_building_construction = {
+#			type = arms_factory
+#			level = 1
+#			instant_build = yes
+#			}
+#		}
+#		remove_state_core = 980
+#		remove_state_core = 979
+#		remove_state_core = 978
+#		
+#	}
+#}
    
