@@ -20,7 +20,7 @@ focus = {
 		mutually_exclusive = {
 			focus = FMU_renegotiate_versailles
 		}
-		x = 4
+		x = 8
 		y = 0
 
 		cost = 10
@@ -113,12 +113,178 @@ focus = {
 	}
 
 focus = {
-		id = FMU_german_peoples_compact
-		icon = GFX_goal_generic_national_unity
-		x = 0
+		id = FMU_sudencreutz_volk
+		icon = GFX_goal_generic_major_alliance
+		x = -1
 		y = 2
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_GER_relations }
+		mutually_exclusive = {
+				focus = FMU_federation_of_brothers
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			MNU = {
+				exists = no 
+			}
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			SCH = { country_event = fmu.5 }
+			VGI = { country_event = fmu.9 }
+		}
+	}
+
+focus = {
+		id = FMU_federation_of_brothers
+		icon = GFX_goal_generic_alliance
+		x = 1
+		y = 2
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_GER_relations }
+		mutually_exclusive = {
+				focus = FMU_sudencreutz_volk
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}  
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			NYB = { country_event = fmu.24 }
+			SCH = { country_event = fmu.24 } 
+			VGI = { country_event = fmu.24 }
+		}
+	}
+
+focus = {
+		id = FMU_emphasize_german_identity
+		icon = GFX_focus_ger_reichskommisariats
+		x = -4
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_sudencreutz_volk }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = FMU_we_are_german
+		}
+	}
+
+	focus = {
+		id = FMU_nur_deutsch
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = -4
+		y = 4
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_emphasize_german_identity }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = FMU_no_dutch
+				days = 1825
+			}
+		}
+	}
+
+focus = {
+		id = FMU_kriegspfad
+		icon = GFX_focus_generic_combined_arms
+		x = 0
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_sudencreutz_volk focus = FMU_federation_of_brothers }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1 #war support
+			#bonus mobilization speed
+		}
+	}
+
+focus = {
+		id = FMU_german_peoples_compact
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 3
+		relative_position_id = FMU_reject_versailles
+		prerequisite = { focus = FMU_sudencreutz_volk focus = FMU_federation_of_brothers }
 
 		cost = 7
 
@@ -156,178 +322,12 @@ focus = {
 	}
 
 focus = {
-		id = FMU_sudencreutz_volk
-		icon = GFX_goal_generic_major_alliance
-		x = -1
-		y = 3
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_german_peoples_compact }
-		mutually_exclusive = {
-				focus = FMU_federation_of_brothers
-				}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-			MNU = {
-				exists = no 
-			}
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			SCH = { country_event = fmu.5 }
-			VGI = { country_event = fmu.9 }
-		}
-	}
-
-focus = {
-		id = FMU_federation_of_brothers
-		icon = GFX_goal_generic_alliance
-		x = 1
-		y = 3
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_german_peoples_compact }
-		mutually_exclusive = {
-				focus = FMU_sudencreutz_volk
-				}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}  
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			NYB = { country_event = fmu.24 }
-			SCH = { country_event = fmu.24 } 
-			VGI = { country_event = fmu.24 }
-		}
-	}
-
-focus = {
-		id = FMU_emphasize_german_identity
-		icon = GFX_focus_ger_reichskommisariats
-		x = -3
-		y = 4
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_sudencreutz_volk }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_stability = 0.1
-			add_ideas = FMU_we_are_german
-		}
-	}
-
-	focus = {
-		id = FMU_nur_deutsch
-		icon = GFX_focus_generic_strike_at_democracy1
-		x = -3
-		y = 5
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_emphasize_german_identity }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = FMU_no_dutch
-				days = 1825
-			}
-		}
-	}
-
-focus = {
-		id = FMU_kriegspfad
-		icon = GFX_focus_generic_combined_arms
-		x = 0
-		y = 4
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_sudencreutz_volk focus = FMU_federation_of_brothers }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_war_support = 0.1 #war support
-			#bonus mobilization speed
-		}
-	}
-
-focus = {
 		id = FMU_germanic_research_pact
 		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 3
+		x = 4
 		y = 4
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_sudencreutz_volk focus = FMU_federation_of_brothers }
+		prerequisite = { focus = FMU_german_peoples_compact }
 
 		cost = 10
 
@@ -358,8 +358,8 @@ focus = {
 focus = {
 		id = FMU_ocean_destiny
 		icon = GFX_focus_generic_cruiser2
-		x = 0
-		y = 5
+		x = -2
+		y = 4
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_kriegspfad }
 		mutually_exclusive = {
@@ -391,8 +391,8 @@ focus = {
 focus = {
 		id = FMU_pitkairn_schiffwerke
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = -3
-		y = 6
+		x = -2
+		y = 5
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_ocean_destiny }
 
@@ -433,9 +433,9 @@ focus = {
 focus = {
 		id = FMU_ship_bounties
 		icon = GFX_focus_mex_privatisation
-		x = 0
-		y = 6
-		relative_position_id = FMU_reject_versailles
+		x = -4
+		y = 1
+		relative_position_id = FMU_ocean_destiny
 		prerequisite = { focus = FMU_ocean_destiny }
 
 		cost = 10
@@ -464,8 +464,8 @@ focus = {
 focus = {
 		id = FMU_weapons_drills
 		icon = GFX_goal_generic_navy_cruiser
-		x = 2
-		y = 6
+		x = -4
+		y = 5
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_ocean_destiny }
 
@@ -496,14 +496,11 @@ focus = {
 focus = {
 		id = FMU_success_breeds_success
 		icon = GFX_goal_support_fascism
-		x = -3
-		y = 7
+		x = -2
+		y = 6
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
 			focus = FMU_pitkairn_schiffwerke
-				}
-		prerequisite = {
-			focus = FMU_ship_bounties
 				}
 		prerequisite = {
 			focus = FMU_weapons_drills
@@ -534,14 +531,11 @@ focus = {
 focus = {
 		id = FMU_walls_of_steel
 		icon = GFX_goal_generic_construct_military
-		x = 0
-		y = 7
+		x = -4
+		y = 6
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
 			focus = FMU_pitkairn_schiffwerke
-				}
-		prerequisite = {
-			focus = FMU_ship_bounties
 				}
 		prerequisite = {
 			focus = FMU_weapons_drills
@@ -573,8 +567,8 @@ focus = {
 focus = {
 		id = FMU_schimmelpferds_address
 		icon = GFX_focus_ger_oppose_hitler
-		x = -3
-		y = 8
+		x = -2
+		y = 7
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
 			focus = FMU_success_breeds_success
@@ -607,8 +601,8 @@ focus = {
 focus = {
 		id = FMU_austral_ocean
 		icon = GFX_focus_generic_navy_battleship2
-		x = 0
-		y = 8
+		x = -4
+		y = 7
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
 			focus = FMU_success_breeds_success
@@ -661,8 +655,8 @@ focus = {
 focus = {
 		id = FMU_defend_defend_defend
 		icon = GFX_goal_generic_defence
-		x = -3
-		y = 9
+		x = -2
+		y = 8
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
 			focus = FMU_schimmelpferds_address
@@ -697,8 +691,8 @@ focus = {
 focus = {
 		id = FMU_veranderungen_tag
 		icon = GFX_focus_focus_fra_fascist_threat
-		x = -3
-		y = 10
+		x = -2
+		y = 9
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
 			focus = FMU_defend_defend_defend
@@ -750,9 +744,9 @@ focus = {
 focus = {
 		id = FMU_wellington_raid
 		icon = GFX_red_sails
-		x = 2
-		y = 9
-		relative_position_id = FMU_reject_versailles
+		x = -2
+		y = 1
+		relative_position_id = FMU_austral_ocean
 		prerequisite = {
 			focus = FMU_austral_ocean
 				}
@@ -806,9 +800,9 @@ focus = {
 focus = {
 		id = FMU_pacific_dominance
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = -1
-		y = 10
-		relative_position_id = FMU_reject_versailles
+		x = -2
+		y = 1
+		relative_position_id = FMU_unternehmen_lowenherz
 		prerequisite = {
 			focus = FMU_unternehmen_lowenherz
 				}
@@ -838,9 +832,9 @@ focus = {
 focus = {
 		id = FMU_southern_atlantic_gambit
 		icon = GFX_goal_generic_navy_submarine
-		x = 1
-		y = 10
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 1
+		relative_position_id = FMU_unternehmen_lowenherz
 		prerequisite = {
 			focus = FMU_unternehmen_lowenherz
 				}
@@ -870,8 +864,8 @@ focus = {
 focus = {
 		id = FMU_unternehmen_lowenherz
 		icon = GFX_goal_generic_navy_battleship
-		x = 0
-		y = 9
+		x = -4
+		y = 8
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
 			focus = FMU_austral_ocean
@@ -923,8 +917,8 @@ focus = {
 focus = {
 		id = FMU_our_land
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 5
-		y = 5
+		x = 2
+		y = 4
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_kriegspfad }
 		mutually_exclusive = {
@@ -957,9 +951,9 @@ focus = {
 focus = {
 		id = FMU_never_a_neutral_nation
 		icon = GFX_focus_RAJ_lions_of_the_great_war
-		x = 5
-		y = 6
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 1
+		relative_position_id = FMU_our_land
 		prerequisite = { focus = FMU_our_land }
 
 		cost = 10
@@ -995,9 +989,9 @@ focus = {
 focus = {
 		id = FMU_prepare_take_southern_coasts
 		icon = GFX_goal_generic_position_armies
-		x = 3
-		y = 7
-		relative_position_id = FMU_reject_versailles
+		x = -2
+		y = 1
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_never_a_neutral_nation }
 
 		cost = 10
@@ -1033,9 +1027,9 @@ focus = {
 focus = {
 		id = FMU_spine_of_the_continent
 		icon = GFX_focus_ger_oppose_hitler
-		x = 5
-		y = 7
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 1
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_never_a_neutral_nation }
 
 		cost = 10
@@ -1072,9 +1066,9 @@ focus = {
 focus = {
 		id = FMU_northeastern_offensive
 		icon = GFX_goal_generic_occupy_start_war
-		x = 7
-		y = 7
-		relative_position_id = FMU_reject_versailles
+		x = 2
+		y = 1
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_never_a_neutral_nation }
 
 		cost = 10
@@ -1111,9 +1105,9 @@ focus = {
 focus = {
 		id = FMU_western_offensive
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 3
-		y = 8
-		relative_position_id = FMU_reject_versailles
+		x = -2
+		y = 2
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_prepare_take_southern_coasts }
 
 		cost = 10
@@ -1160,9 +1154,9 @@ focus = {
 focus = {
 		id = FMU_mines_of_baraga
 		icon = GFX_goal_generic_demand_territory
-		x = 5
-		y = 8
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 2
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_spine_of_the_continent }
 
 		cost = 10
@@ -1200,10 +1194,11 @@ focus = {
 focus = {
 		id = FMU_unternehmen_faust
 		icon = GFX_goal_generic_major_war
-		x = 5
-		y = 9
-		relative_position_id = FMU_reject_versailles
+		x = -1
+		y = 3
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_western_offensive }
+		prerequisite = { focus = FMU_mines_of_baraga }
 
 		cost = 10
 
@@ -1239,9 +1234,9 @@ focus = {
 focus = {
 		id = FMU_unternehmen_kreissage
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 7
-		y = 8
-		relative_position_id = FMU_reject_versailles
+		x = 2
+		y = 2
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_northeastern_offensive }
 
 		cost = 10
@@ -1278,9 +1273,9 @@ focus = {
 focus = {
 		id = FMU_dagger_in_the_back
 		icon = GFX_goal_generic_forceful_treaty
-		x = 7
-		y = 9
-		relative_position_id = FMU_reject_versailles
+		x = 2
+		y = 3
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_unternehmen_kreissage }
 
 		cost = 10
@@ -1320,9 +1315,9 @@ focus = {
 focus = {
 		id = FMU_east_to_west_invasion
 		icon = GFX_focus_attack_japan
-		x = 3
-		y = 10
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 4
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_unternehmen_faust }
 
 		cost = 7
@@ -1402,9 +1397,9 @@ focus = {
 focus = {
 		id = FMU_our_mighty_home
 		icon = GFX_goal_generic_fortify_city
-		x = 5
-		y = 10
-		relative_position_id = FMU_reject_versailles
+		x = -2
+		y = 4
+		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_unternehmen_faust }
 
 		cost = 10
@@ -2188,7 +2183,6 @@ focus = {
 		y = 10
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
-			focus = FMU_unternehmen_faust
 			focus = FMU_einsteins_theorem
 			}
 
@@ -2519,7 +2513,7 @@ focus = {
 		mutually_exclusive = {
 			focus = FMU_reject_versailles
 		}
-		x = 25
+		x = 28
 		y = 0
 		#relative_position_id = FMU_renegotiate_versailles
 
@@ -3308,9 +3302,9 @@ focus = {
 	focus = {
 		id = FMU_regional_development_authorities
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = FMU_tapestry_many_colors}
-		x = 8
-		y = 3
+		prerequisite = { focus = FMU_twee_talen focus = FMU_tapestry_many_colors}
+		x = 3
+		y = 2
 		relative_position_id = FMU_renegotiate_versailles
 
 		cost = 10
@@ -4204,7 +4198,7 @@ focus = {
 	focus = {
 		id = FMU_law_14056
 		icon = GFX_focus_generic_military_mission
-		x = 26
+		x = 24
 		y = 0
 		relative_position_id = FMU_renegotiate_versailles
 
