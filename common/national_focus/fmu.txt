@@ -43,62 +43,35 @@ focus = {
 		completion_reward = {
 			add_stability = -0.15
 			remove_ideas = FMU_sanctions
-			ENG = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
+			
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_major = yes
+							has_government = democratic
+							NOT = {
+								original_tag = MUU
+								original_tag = MUU
+							}
+						}
+						AND = {
+							ENG = {
+								OR = {
+									has_government = democratic
+									has_government = neutrality
+								}
+							}
+							is_puppet_of = ENG
+						}
+					}
 				}
 			}
-			AST = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
-				}
-			}
-			BLM = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
-				}
-			}
-			NZL = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
-				}
-			}
-			SAF = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
-				}
-			}
-			RAJ = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
-				}
-			}
-			FRA = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
-				}
-			}
-			ATL = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
-				}
-			}
-			USA = {
-				add_opinion_modifier = {
-					target = FMU
-					modifier = FMU_broke_versailles
-				}
-			}
+			add_opinion_modifier = { target = FMU modifier = FMU_broke_versailles }
+			929 = { set_demilitarized_zone = no } #Why? Because why not? -Abbus
 		}
 	}
+
 
 focus = {
 		id = FMU_GER_relations
@@ -108,7 +81,7 @@ focus = {
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_reject_versailles }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -135,8 +108,7 @@ focus = {
 			add_opinion_modifier = {
 					target = GER
 					modifier = FMU_shared_heritage
-				}
-			929 = { set_demilitarized_zone = no } #Why?
+			}
 		}
 	}
 
@@ -148,7 +120,7 @@ focus = {
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_GER_relations }
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 40
@@ -157,16 +129,29 @@ focus = {
 
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
+		bypass = {
+			GER = {
+				OR = {
+					has_war = yes
+					NOT = {
+						has_government = fascism
+						has_government = neutrality
+					}
+					is_subject = yes
+				}
+			}
+		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			GER = {add_to_faction = FMU}
+			GER = {
+				give_guarantee = FMU
+			}
+			
+			give_guarantee = GER
 		}
 	}
 
@@ -2266,14 +2251,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			MNU = {
-				country_event = fmu.1
-				country_event = fmu.1
+				hidden = {
+					MNU = {
+						country_event = fmu.1
+					}
 				}
+				country_event = fmu.1
+			}
 			#small political power boost
 			#malus to international relations for 3 years
 		}
-	}
 
 focus = {
 		id = FMU_diplomatic_outreach
