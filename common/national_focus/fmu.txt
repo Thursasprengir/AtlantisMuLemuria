@@ -299,11 +299,8 @@ focus = {
 			GER = {
 				OR = {
 					has_war = yes
-					NOT = {
-						has_government = fascism
-						has_government = neutrality
-					}
 					is_subject = yes
+					has_government = communism
 				}
 			}
 		}
@@ -704,6 +701,7 @@ focus = {
 			factor = 40
 		}
 		available = {
+			surrender_progress > 0.4
 		}
 
 		#bypass = {
@@ -1435,12 +1433,11 @@ focus = {
 focus = {
 		id = FMU_develop_west_coast
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 5
+		x = 2
 		y = 1
-		relative_position_id = FMU_reject_versailles
+		relative_position_id = FMU_national_dev_campaign
 		prerequisite = {
-			focus = FMU_reject_versailles
-			focus = FMU_renegotiate_versailles
+			focus = FMU_national_dev_campaign
 				}
 
 		cost = 10
@@ -1523,12 +1520,11 @@ focus = {
 focus = {
 		id = FMU_develop_east_coast
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 7
+		x = -2
 		y = 1
-		relative_position_id = FMU_reject_versailles
+		relative_position_id = FMU_national_dev_campaign
 		prerequisite = {
-			focus = FMU_reject_versailles
-			focus = FMU_renegotiate_versailles
+			focus = FMU_national_dev_campaign
 				}
 
 		cost = 10
@@ -1597,11 +1593,10 @@ focus = {
 focus = {
 		id = FMU_blauwasser_shipping_lanes
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 6
-		y = 2
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_develop_east_coast }
-		prerequisite = { focus = FMU_develop_west_coast }
+		x = 0
+		y = 3
+		relative_position_id = FMU_national_dev_campaign
+		prerequisite = { focus = FMU_ebenen_autobahn}
 
 		cost = 10
 
@@ -1666,7 +1661,7 @@ focus = {
 focus = {
 		id = FMU_national_dev_campaign
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 10
+		x = 9
 		y = 1
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
@@ -1700,9 +1695,9 @@ focus = {
 focus = {
 		id = FMU_eisenbahnen
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 8
-		y = 2
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 1
+		relative_position_id = FMU_national_dev_campaign
 		prerequisite = { focus = FMU_national_dev_campaign }
 
 		cost = 10
@@ -1758,9 +1753,9 @@ focus = {
 focus = {
 		id = FMU_eisengewolbe
 		icon = GFX_goal_generic_oil_refinery
-		x = 7
-		y = 3
-		relative_position_id = FMU_reject_versailles
+		x = -2
+		y = 2
+		relative_position_id = FMU_national_dev_campaign
 		prerequisite = { focus = FMU_eisenbahnen }
 
 		cost = 10
@@ -1830,13 +1825,12 @@ focus = {
 focus = {
 		id = FMU_blauwasser_stockmarket
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 6
-		y = 4
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_blauwasser_shipping_lanes }
+		x = -2
+		y = 3
+		relative_position_id = FMU_national_dev_campaign
 		prerequisite = { focus = FMU_eisengewolbe }
 		prerequisite = { focus = FMU_ebenen_autobahn }
-
+		
 
 		cost = 10
 
@@ -1844,6 +1838,9 @@ focus = {
 			factor = 40
 		}
 		available = {
+			NOT = {
+				has_government = communism
+			}
 
 		}
 
@@ -1866,9 +1863,9 @@ focus = {
 focus = {
 		id = FMU_civil_works_research_admin
 		icon = GFX_focus_research2
-		x = 11
-		y = 2
-		relative_position_id = FMU_reject_versailles
+		x = 4
+		y = 1
+		relative_position_id = FMU_national_dev_campaign
 		prerequisite = { focus = FMU_national_dev_campaign }
 
 		cost = 10
@@ -1897,9 +1894,9 @@ focus = {
 focus = {
 		id = FMU_1938_domestic_tech_fair
 		icon = GFX_focus_research2
-		x = 11
-		y = 3
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 1
+		relative_position_id = FMU_civil_works_research_admin
 		prerequisite = { focus = FMU_civil_works_research_admin }
 
 		cost = 5
@@ -1927,9 +1924,9 @@ focus = {
 focus = {
 		id = FMU_1940_domestic_tech_fair
 		icon = GFX_focus_research2
-		x = 11
-		y = 4
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 2
+		relative_position_id = FMU_civil_works_research_admin
 		prerequisite = { focus = FMU_1938_domestic_tech_fair }
 
 		cost = 5
@@ -1957,9 +1954,9 @@ focus = {
 focus = {
 		id = FMU_1942_domestic_tech_fair
 		icon = GFX_focus_research2
-		x = 11
-		y = 5
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 3
+		relative_position_id = FMU_civil_works_research_admin
 		prerequisite = { focus = FMU_1940_domestic_tech_fair }
 
 		cost = 5
@@ -1987,9 +1984,9 @@ focus = {
 focus = {
 		id = FMU_1944_domestic_tech_fair
 		icon = GFX_focus_research2
-		x = 11
-		y = 6
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 4
+		relative_position_id = FMU_civil_works_research_admin
 		prerequisite = { focus = FMU_1942_domestic_tech_fair }
 
 		cost = 5
@@ -2017,10 +2014,14 @@ focus = {
 focus = {
 		id = FMU_kings_university
 		icon = GFX_focus_research
-		x = 9
-		y = 7
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_1944_domestic_tech_fair }
+		x = -3
+		y = 4
+		relative_position_id = FMU_national_dev_campaign
+		mutually_exclusive = {
+			focus = FMU_national_university
+			focus = FMU_peoples_university
+		}	
+		prerequisite = { focus = FMU_blauwasser_stockmarket }
 
 		cost = 10
 
@@ -2048,10 +2049,14 @@ focus = {
 focus = {
 		id = FMU_national_university
 		icon = GFX_focus_research
-		x = 11
-		y = 7
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_1944_domestic_tech_fair }
+		x = -1
+		y = 4
+		relative_position_id = FMU_national_dev_campaign
+		prerequisite = { focus = FMU_blauwasser_stockmarket }
+		mutually_exclusive = {
+			focus = FMU_kings_university
+			focus = FMU_peoples_university
+		}		
 
 		cost = 10
 
@@ -2083,10 +2088,14 @@ focus = {
 focus = {
 		id = FMU_peoples_university
 		icon = GFX_focus_research
-		x = 13
-		y = 7
-		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_1944_domestic_tech_fair }
+		x = 1
+		y = 4
+		relative_position_id = FMU_national_dev_campaign
+		prerequisite = { focus = FMU_ebenen_autobahn }
+		mutually_exclusive = {
+			focus = FMU_kings_university
+			focus = FMU_national_university
+		}			
 
 		cost = 10
 
@@ -2114,9 +2123,9 @@ focus = {
 focus = {
 		id = FMU_national_research_dev
 		icon = GFX_goal_generic_scientific_exchange
-		x = 11
-		y = 8
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 1
+		relative_position_id = FMU_national_university
 		prerequisite = {
 			focus = FMU_kings_university
 			focus = FMU_national_university
@@ -2146,9 +2155,9 @@ focus = {
 focus = {
 		id = FMU_einsteins_theorem
 		icon = GFX_goal_continuous_research
-		x = 11
-		y = 9
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 1
+		relative_position_id = FMU_national_research_dev
 		prerequisite = { focus = FMU_national_research_dev }
 
 		cost = 10
@@ -2179,9 +2188,9 @@ focus = {
 focus = {
 		id = FMU_unternehmen_sternenmacher
 		icon = GFX_focus_wonderweapons
-		x = 11
-		y = 10
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 2
+		relative_position_id = FMU_national_research_dev
 		prerequisite = {
 			focus = FMU_einsteins_theorem
 			}
@@ -2259,7 +2268,7 @@ focus = {
 focus = {
 		id = FMU_diplomatic_outreach
 		icon = GFX_goal_continuous_increase_nu
-		x = 15
+		x = 17
 		y = 1
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
@@ -2293,9 +2302,9 @@ focus = {
 focus = {
 		id = FMU_european_section
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 13
-		y = 2
-		relative_position_id = FMU_reject_versailles
+		x = -2
+		y = 1
+		relative_position_id = FMU_diplomatic_outreach
 		prerequisite = { focus = FMU_diplomatic_outreach }
 
 		cost = 10
@@ -2330,9 +2339,9 @@ focus = {
 focus = {
 		id = FMU_muan_section
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 15
-		y = 2
-		relative_position_id = FMU_reject_versailles
+		x = 0
+		y = 1
+		relative_position_id = FMU_diplomatic_outreach
 		prerequisite = { focus = FMU_diplomatic_outreach }
 
 		cost = 10
@@ -2368,9 +2377,9 @@ focus = {
 focus = {
 		id = FMU_american_section
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 17
-		y = 2
-		relative_position_id = FMU_reject_versailles
+		x = 2
+		y = 1
+		relative_position_id = FMU_diplomatic_outreach
 		prerequisite = { focus = FMU_diplomatic_outreach }
 
 		cost = 10
@@ -2409,9 +2418,9 @@ focus = {
 focus = {
 		id = FMU_charm_offensive
 		icon = GFX_goal_generic_major_alliance
-		x = 14
-		y = 3
-		relative_position_id = FMU_reject_versailles
+		x = -1
+		y = 2
+		relative_position_id = FMU_diplomatic_outreach
 		prerequisite = {
 			focus = FMU_european_section
 			focus = FMU_muan_section
@@ -2465,9 +2474,9 @@ focus = {
 focus = {
 		id = FMU_velvet_glove_iron_fist
 		icon = GFX_goal_generic_dangerous_deal
-		x = 16
-		y = 3
-		relative_position_id = FMU_reject_versailles
+		x = 1
+		y = 2
+		relative_position_id = FMU_diplomatic_outreach
 		prerequisite = {
 			focus = FMU_european_section
 			focus = FMU_muan_section
@@ -2513,7 +2522,7 @@ focus = {
 		mutually_exclusive = {
 			focus = FMU_reject_versailles
 		}
-		x = 28
+		x = 30
 		y = 0
 		#relative_position_id = FMU_renegotiate_versailles
 
