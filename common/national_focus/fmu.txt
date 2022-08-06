@@ -52,17 +52,19 @@ focus = {
 							has_government = democratic
 							NOT = {
 								original_tag = MUU
-								original_tag = MUU
+								original_tag = HOU
 							}
 						}
+						ENG = {
+							has_government = democratic
+							has_government = neutrality
+						}
 						AND = {
-							ENG = {
-								OR = {
-									has_government = democratic
-									has_government = neutrality
-								}
+							is_in_faction_with = ENG
+							OR = {
+								has_government = democratic
+								has_government = neutrality
 							}
-							is_puppet_of = ENG
 						}
 					}
 				}
@@ -796,6 +798,59 @@ focus = {
 	}
 
 focus = {
+		id = FMU_unternehmen_lowenherz
+		icon = GFX_goal_generic_navy_battleship
+		x = -4
+		y = 8
+		relative_position_id = FMU_reject_versailles
+		prerequisite = {
+			focus = FMU_austral_ocean
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_global_flag = unternehmen_lowenherz
+			AND = {
+				AST = {
+					has_navy_size = {
+								type = capital_ship
+								size < 2
+						}
+					}
+				NZL = {
+					has_navy_size = {
+								type = capital_ship
+								size < 1
+						}
+					}
+				}
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 200
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+focus = {
 		id = FMU_pacific_dominance
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = -2
@@ -859,58 +914,6 @@ focus = {
 		}
 	}
 
-focus = {
-		id = FMU_unternehmen_lowenherz
-		icon = GFX_goal_generic_navy_battleship
-		x = -4
-		y = 8
-		relative_position_id = FMU_reject_versailles
-		prerequisite = {
-			focus = FMU_austral_ocean
-				}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-			has_global_flag = unternehmen_lowenherz
-			AND = {
-				AST = {
-					has_navy_size = {
-								type = capital_ship
-								size < 2
-						}
-					}
-				NZL = {
-					has_navy_size = {
-								type = capital_ship
-								size < 1
-						}
-					}
-				}
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_war_support = 0.05
-			add_political_power = 200
-			add_tech_bonus = {
-				name = naval_doc_bonus
-				bonus = 0.5
-				uses = 2
-				category = naval_doctrine
-			}
-		}
-	}
 
 focus = {
 		id = FMU_our_land
@@ -1431,6 +1434,40 @@ focus = {
 	#industry#
 
 focus = {
+		id = FMU_national_dev_campaign
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 9
+		y = 1
+		relative_position_id = FMU_reject_versailles
+		prerequisite = {
+			focus = FMU_reject_versailles
+			focus = FMU_renegotiate_versailles
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = FMU_national_dev_1
+			#bonus to construction of infrastructure and factories
+		}
+	}
+	
+focus = {
 		id = FMU_develop_west_coast
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 2
@@ -1588,109 +1625,7 @@ focus = {
 				}
 			}
 		}
-	}
-
-focus = {
-		id = FMU_blauwasser_shipping_lanes
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 0
-		y = 3
-		relative_position_id = FMU_national_dev_campaign
-		prerequisite = { focus = FMU_ebenen_autobahn}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			933 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			931 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			931 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 3
-						province = 5659
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-focus = {
-		id = FMU_national_dev_campaign
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 9
-		y = 1
-		relative_position_id = FMU_reject_versailles
-		prerequisite = {
-			focus = FMU_reject_versailles
-			focus = FMU_renegotiate_versailles
-				}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = FMU_national_dev_1
-			#bonus to construction of infrastructure and factories
-		}
-	}
+	}	
 
 focus = {
 		id = FMU_eisenbahnen
@@ -1821,6 +1756,74 @@ focus = {
 			#infrastructure bonuses across nation (west and south maybe?)
 		}
 	}
+	
+focus = {
+		id = FMU_blauwasser_shipping_lanes
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 3
+		relative_position_id = FMU_national_dev_campaign
+		prerequisite = { focus = FMU_ebenen_autobahn}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			933 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			931 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			931 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 5659
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}	
 
 focus = {
 		id = FMU_blauwasser_stockmarket
@@ -2254,7 +2257,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				hidden = {
+				hidden_effect = {
 					MNU = {
 						country_event = fmu.1
 					}
