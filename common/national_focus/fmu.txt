@@ -1,3 +1,12 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
 focus_tree = {
 	id = fmu_focus
 
@@ -8,7 +17,6 @@ focus_tree = {
 			tag = FMU
 		}
 	}
-
 
 	default = no
 
@@ -39,7 +47,8 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
 			add_stability = -0.15
 			remove_ideas = FMU_sanctions
@@ -99,7 +108,8 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			GER = {
 				add_opinion_modifier = {
@@ -143,7 +153,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			SCH = { country_event = fmu.5 }
 			VGI = { country_event = fmu.9 }
@@ -177,7 +187,8 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
 			NYB = { country_event = fmu.24 }
 			SCH = { country_event = fmu.24 } 
@@ -185,9 +196,9 @@ focus = {
 		}
 	}
 
-focus = {
-		id = FMU_emphasize_german_identity
-		icon = GFX_focus_ger_reichskommisariats
+	focus = {
+		id = FMU_nur_deutsch
+		icon = GFX_focus_generic_strike_at_democracy1
 		x = -4
 		y = 3
 		relative_position_id = FMU_reject_versailles
@@ -211,20 +222,22 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.1
-			add_ideas = FMU_we_are_german
+			add_timed_idea = {
+				idea = FMU_no_dutch
+				days = 365
+			}
 		}
 	}
-
-	focus = {
-		id = FMU_nur_deutsch
-		icon = GFX_focus_generic_strike_at_democracy1
+	
+focus = {
+		id = FMU_emphasize_german_identity
+		icon = GFX_focus_ger_reichskommisariats
 		x = -4
 		y = 4
 		relative_position_id = FMU_reject_versailles
-		prerequisite = { focus = FMU_emphasize_german_identity }
+		prerequisite = { focus = FMU_nur_deutsch }
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 40
@@ -240,14 +253,13 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		
 		completion_reward = {
-			add_timed_idea = {
-				idea = FMU_no_dutch
-				days = 1825
-			}
+			add_stability = 0.1
+			add_ideas = FMU_we_are_german
 		}
-	}
+	}	
 
 focus = {
 		id = FMU_kriegspfad
@@ -276,7 +288,8 @@ focus = {
 
 		completion_reward = {
 			add_war_support = 0.1 #war support
-			#bonus mobilization speed
+			add_ideas = FMU_inevitable_war
+			#bonus mobilization speed Got u fam - Abbus
 		}
 	}
 
@@ -328,7 +341,7 @@ focus = {
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_german_peoples_compact }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -365,7 +378,7 @@ focus = {
 				focus = FMU_our_land
 				}
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 90
@@ -926,7 +939,7 @@ focus = {
 				focus = FMU_ocean_destiny
 				}
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 10

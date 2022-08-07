@@ -15,7 +15,6 @@ ideas = {
 		
 		FMU_associate_state = {
 			
-			
 			allowed = {
 				always = no
 			}
@@ -394,31 +393,8 @@ ideas = {
 			}
 		}
 		#New Ideas
-		FMU_we_are_german = {
-
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				non_core_manpower = 0.01
-				consumer_goods_factor = -0.1
-			}
-
-			picture = eng_imperial_conscription
-			
-			removal_cost = -1	
-
-		}
 
 		FMU_no_dutch = {
-
-
 			allowed = {
 				always = no
 			}
@@ -431,12 +407,11 @@ ideas = {
 				stability_factor = -0.2
 			}
 
-			
 			removal_cost = -1	
 
 		}
 		
-		FMU_boat_production = {
+		FMU_we_are_german = {
 
 
 			allowed = {
@@ -448,13 +423,58 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = -0.03
+				non_core_manpower = 0.1
+				line_change_production_efficiency_factor = 0.05
 			}
 
+			picture = eng_imperial_conscription
 			
 			removal_cost = -1	
 
 		}
+
+		FMU_inevitable_war = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				mobilization_speed = 0.1
+				war_stability_factor = 0.1
+				max_command_power = 50
+			}
+
+			picture = eng_imperial_conscription
+			
+			removal_cost = -1	
+
+		}			
+		
+		FMU_boat_production = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = -0.1
+			}
+
+			removal_cost = -1	
+
+		}
+
 		FMU_boat_bounty = {
 
 
@@ -615,7 +635,8 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = -0.1
 			}
 
 			
