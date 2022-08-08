@@ -16,11 +16,14 @@ ATL_prevent_early_allies_historical = {
 	}
 
 	enable = {
-		is_historical_focus_on = yes
 		OR = {
-			date < 1941.6.1
-			USA = {
-				has_war = no
+			date < 1941.1.1
+			AND = {
+				date < 1941.6.1
+				is_historical_focus_on = yes
+				USA = {
+					has_war = no
+				}
 			}
 		}
 	}
@@ -30,6 +33,30 @@ ATL_prevent_early_allies_historical = {
 	ai_strategy = {
 		type = alliance
 		id = "ENG"
+		value = -300
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -300
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -300
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -300
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "ITA"
 		value = -300
 	}
 
