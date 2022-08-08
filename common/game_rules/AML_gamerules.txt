@@ -1,0 +1,113 @@
+############################
+### Custom Country Paths ###
+############################
+
+### Atlantis ###
+
+ATL_ai_behavior = {
+	name = "ATL_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_COMMUNIST"
+		desc = "RULE_OPTION_COMMUNIST_ATL_AI_DESC"
+	}
+	option = {
+		name = DEMOCRATIC_HISTORICAL
+		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
+		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_ATL_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DEMOCRATIC_ALTERNATE
+		text = "RULE_OPTION_DEMOCRATIC_ALTERNATE"
+		desc = "RULE_DEMOCRATIC_ALTERNATE_ATL_AI_DESC"
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_FASCIST"
+		desc = "RULE_FASCIST_ATL_AI_DESC"
+	}
+	option = {
+		name = MONARCHIST
+		text = "RULE_OPTION_ATL_MONARCHIST"
+		desc = "RULE_MONARCHIST_ATL_AI_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
+### FEDRAL REPUBLIC OF MUU ###
+MUU_ai_behavior = {
+	name = "MUU_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_COMMUNIST"
+		desc = "RULE_OPTION_COMMUNIST_MUU_AI_DESC"
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC"
+		desc = "RULE_DEMOCRATIC_MUU_AI_DESC"
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_FASCIST"
+		desc = "RULE_FASCIST_MUU_AI_DESC"
+	}
+	option = {
+		name = MONARCHIST
+		text = "RULE_OPTION_MUU_MONARCHIST"
+		desc = "RULE_MONARCHIST_MUU_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
+### Friestaat of MU ###
+FSM_ai_behavior = {
+	name = "FSM_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_COMMUNISTnot_work_yet"
+		desc = "RULE_OPTION_COMMUNIST_FSM_AI_DESC"
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATICnot_work_yet"
+		desc = "RULE_DEMOCRATIC_FSM_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_FSM_HISTORICAL"
+		desc = "RULE_HISTORICAL_FSM_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}

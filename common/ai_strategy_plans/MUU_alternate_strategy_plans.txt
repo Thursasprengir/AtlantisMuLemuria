@@ -1,0 +1,321 @@
+MUU_democratic = {
+	name = "FDR of MUU DEMOCRAT plan"
+	desc = ""
+
+	enable = {
+		original_tag = MUU
+		OR = {
+			has_country_flag = MUU_AI_RANDOM_DEMOCRATIC
+			has_game_rule = {
+				rule = MUU_ai_behavior
+				option = DEMOCRATIC
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		MUU_national_tragedy
+		MUU_emergency_meeting									
+		MUU_emergency_reform		
+		MUU_lower_reform
+		MUU_connect_countryside
+		MUU_yes_talk
+		#1937			
+		MUU_incorporate_communists							
+		MUU_westernization							
+		MUU_voice_public				
+		MUU_extend_voting
+		MUU_rural_infrastructure
+		MUU_rural_manpower
+		#1938					
+		MUU_transport_infrastructure				
+		MUU_modernize_industry
+		MUU_expand_ports
+		MUU_expand_dockyards
+		MUU_economic_reforms
+		#1939
+		MUU_rural_workforce
+		MUU_limit_influence
+		MUU_bribe_politicians		
+		MUU_deradicalize_youth		
+		MUU_rural_schools
+		#1940					
+		MUU_military_reforms	
+		MUU_infantry_equip
+		MUU_artillery_equip
+		MUU_special_forces
+		MUU_join_allies	
+		MUU_acquire_weapons
+		#1941							
+		MUU_acquire_ships
+		MUU_invite_companies
+		MUU_infantry_marsh
+		MUU_doctrine_research_1
+		MUU_motorized_equip
+		MUU_motorized_marsh	
+		#1942						
+		MUU_dd_focus					
+		MUU_cl_focus					
+		MUU_sub_focus
+		MUU_light_fighter_focus
+		MUU_cas_focus
+		MUU_tank_equip
+		MUU_heavy_fighter_focus
+		MUU_tac_bomber_focus
+		MUU_strat_bomber_focus
+		MUU_nav_bomber_focus
+		#1943
+		MUU_tank_marsh
+		MUU_ca_focus
+		MUU_bb_focus
+		MUU_experimental_airfield
+		MUU_expand_airfield
+		#1944
+		MUU_jet_research
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+
+MUU_fascist = {
+	name = "FDR of MUU	fascist plan"
+	desc = ""
+
+	enable = {
+		original_tag = MUU
+		OR = {
+			has_country_flag = MUU_AI_RANDOM_FASCIST
+			has_game_rule = {
+				rule = MUU_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		MUU_national_tragedy						
+		MUU_government_purges					
+		MUU_gov_pogrom				
+		MUU_scapegoats					
+		MUU_impeach_ollun
+		#1937	
+		MUU_connect_countryside
+		MUU_no_talk			
+		MUU_suppress_communists							
+		MUU_state_first							
+		MUU_fascist_conscription				
+		MUU_expropriate_foreigners
+		MUU_rural_infrastructure
+		MUU_rural_manpower
+		#1938
+		MUU_rural_workforce
+		MUU_limit_influence
+		MUU_bribe_politicians		
+		MUU_deradicalize_youth		
+		MUU_rural_schools
+		#1939				
+		MUU_claim_muror			
+		MUU_conscript_muror
+		MUU_convert_factories
+		MUU_declare_empire
+		MUU_claim_neighbours
+		#1940	
+		MUU_nationalize_1
+		MUU_nationalize_2
+		MUU_nationalize_conscription	
+		MUU_military_reforms	
+		MUU_infantry_equip
+		#1941
+		MUU_artillery_equip
+		MUU_special_forces
+		MUU_convert_factories2
+		MUU_existential_war							
+		MUU_claim_continent
+		MUU_unified_empire
+		MUU_infantry_marsh
+		MUU_doctrine_research_1
+		MUU_motorized_equip
+		MUU_motorized_marsh	
+		#1942						
+		MUU_dd_focus					
+		MUU_cl_focus					
+		MUU_sub_focus
+		MUU_light_fighter_focus
+		MUU_cas_focus
+		MUU_tank_equip
+		MUU_heavy_fighter_focus
+		MUU_tac_bomber_focus
+		MUU_strat_bomber_focus
+		MUU_nav_bomber_focus
+		#1943
+		MUU_tank_marsh
+		MUU_ca_focus
+		MUU_bb_focus
+		MUU_experimental_airfield
+		MUU_expand_airfield
+		#1944
+		MUU_jet_research
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+MUU_communist = {
+	name = "FDR of MUU Communist plan"
+	desc = ""
+
+	enable = {
+		original_tag = MUU
+		OR = {
+			has_country_flag = MUU_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = MUU_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		MUU_national_tragedy						
+		MUU_government_purges					
+		MUU_gov_pogrom				
+		MUU_scapegoats					
+		MUU_impeach_ollun
+		#1937		
+		MUU_connect_countryside
+		MUU_embrace_communists	
+		MUU_yes_talk	
+		MUU_absorb_militias
+		MUU_expand_influence
+		MUU_rural_infrastructure
+		MUU_rural_manpower
+		#1938
+		MUU_control_cities		
+		MUU_rural_schools		
+		MUU_nationalize_1
+		MUU_nationalize_2
+		MUU_nationalize_conscription
+		#1939						
+		MUU_soviet_aid					
+		MUU_fellow_socialists
+		MUU_expropriate_bourgeoisie	
+		MUU_puppet_republics		
+		MUU_support_revolutions
+		#1940
+		MUU_forced_collectivization
+		MUU_develop_poor
+		MUU_land_reclamation
+		MUU_persecute_religion	
+		MUU_military_reforms	
+		MUU_infantry_equip
+		#1941
+		MUU_artillery_equip
+		MUU_special_forces
+		MUU_join_comintern	
+		MUU_infantry_marsh
+		MUU_doctrine_research_1
+		MUU_motorized_equip
+		MUU_motorized_marsh	
+		#1942						
+		MUU_dd_focus					
+		MUU_cl_focus					
+		MUU_sub_focus
+		MUU_light_fighter_focus
+		MUU_cas_focus
+		MUU_tank_equip
+		MUU_heavy_fighter_focus
+		MUU_tac_bomber_focus
+		MUU_strat_bomber_focus
+		MUU_nav_bomber_focus
+		#1943
+		MUU_tank_marsh
+		MUU_ca_focus
+		MUU_bb_focus
+		MUU_experimental_airfield
+		MUU_expand_airfield
+		#1944
+		MUU_jet_research
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
