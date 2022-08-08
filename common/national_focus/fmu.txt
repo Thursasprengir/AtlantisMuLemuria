@@ -306,8 +306,21 @@ focus = {
 		ai_will_do = {
 			factor = 40
 		}
-		available = {
-
+		available = {	
+				is_subject = no
+			
+			GER = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+				NOT = {
+					OR = {
+						has_war = yes
+						is_subject = yes
+					}
+				}
+			}
 		}
 
 		bypass = {
@@ -316,8 +329,11 @@ focus = {
 					has_war = yes
 					is_subject = yes
 					has_government = communism
+					has_government = democratic
 				}
 			}
+			
+			is_in_faction_with = GER
 		}
 		
 		cancel_if_invalid = yes
@@ -346,13 +362,12 @@ focus = {
 		ai_will_do = {
 			factor = 40
 		}
-		available = {
-
+		available = {	
+			is_in_faction_with = GER
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -437,8 +452,23 @@ focus = {
 						level = 2
 						instant_build = yes
 					}
+					add_extra_state_shared_building_slots = 2
 				}
 			}
+			935 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}			
 		}
 	}
 
@@ -450,7 +480,7 @@ focus = {
 		relative_position_id = FMU_ocean_destiny
 		prerequisite = { focus = FMU_ocean_destiny }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -525,41 +555,6 @@ focus = {
 focus = {
 		id = FMU_success_breeds_success
 		icon = GFX_goal_support_fascism
-		x = -2
-		y = 6
-		relative_position_id = FMU_reject_versailles
-		prerequisite = {
-			focus = FMU_pitkairn_schiffwerke
-				}
-		prerequisite = {
-			focus = FMU_weapons_drills
-				}
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-
-		}
-
-		#bypass = {
-		#date > 1936.4.3
-		#}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 200
-		}
-	}
-
-focus = {
-		id = FMU_walls_of_steel
-		icon = GFX_goal_generic_construct_military
 		x = -4
 		y = 6
 		relative_position_id = FMU_reject_versailles
@@ -588,15 +583,15 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = FMU_build_forts
-			#unlocks 18 width Marine Template, spawns two divisions in capital
+			add_ideas = fascist_influence
+			add_political_power = 200
 		}
 	}
 
 focus = {
 		id = FMU_schimmelpferds_address
 		icon = GFX_focus_ger_oppose_hitler
-		x = -2
+		x = -3
 		y = 7
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
@@ -609,6 +604,11 @@ focus = {
 			factor = 40
 		}
 		available = {
+			FMU = {
+					has_navy_size = {
+								size < 11
+					}
+			}
 			#unlocks when x% of navy from peak numbers no longer exists
 		}
 
@@ -630,7 +630,7 @@ focus = {
 focus = {
 		id = FMU_austral_ocean
 		icon = GFX_focus_generic_navy_battleship2
-		x = -4
+		x = -5
 		y = 7
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
@@ -684,7 +684,7 @@ focus = {
 focus = {
 		id = FMU_defend_defend_defend
 		icon = GFX_goal_generic_defence
-		x = -2
+		x = -3
 		y = 8
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
@@ -716,11 +716,44 @@ focus = {
 			#large bonus to neutral and democratic parties
 		}
 	}
+	
+focus = {
+		id = FMU_walls_of_steel
+		icon = GFX_goal_generic_construct_military
+		x = -1
+		y = 8
+		relative_position_id = FMU_reject_versailles
+		prerequisite = {
+			focus = FMU_schimmelpferds_address
+				}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+
+		}
+
+		#bypass = {
+		#date > 1936.4.3
+		#}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = FMU_build_forts
+			#unlocks 18 width Marine Template, spawns two divisions in capital
+		}
+	}	
 
 focus = {
 		id = FMU_veranderungen_tag
 		icon = GFX_focus_focus_fra_fascist_threat
-		x = -2
+		x = -3
 		y = 9
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
@@ -745,6 +778,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		remove_ideas = fascist_influence
 			start_civil_war = {
 				ruling_party = fascism
 				ideology = democratic
@@ -830,7 +864,7 @@ focus = {
 focus = {
 		id = FMU_unternehmen_lowenherz
 		icon = GFX_goal_generic_navy_battleship
-		x = -4
+		x = -5
 		y = 8
 		relative_position_id = FMU_reject_versailles
 		prerequisite = {
