@@ -1,0 +1,44 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+ATL_prevent_early_allies_historical = {
+	allowed = {
+		original_tag = ATL
+	}
+
+	enable = {
+		is_historical_focus_on = yes
+		OR = {
+			date < 1941.6.1
+			USA = {
+				has_war = no
+			}
+		}
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = -300
+	}
+
+}
+
+
+
+
+
+
+
+
