@@ -1514,7 +1514,7 @@
 		prerequisite = { focus = INDOLEM2_statues}
 		prerequisite = { focus = INDOLEM2_regional_tax}
 		prerequisite = { focus = INDOLEM2_deal_with_abandon_factories}
-		x = 0
+		x = 1
 		y = 10
 		relative_position_id = INDOLEM2_founding_documents
 		cost = 10
@@ -1544,7 +1544,39 @@
 			}
 		}
 	}
+shared_focus = {
+		id = INDOLEM2_Kumari_Kandam
+		icon = GFX_
+		prerequisite = { focus = INDOLEM2_statues}
+		prerequisite = { focus = INDOLEM2_regional_tax}
+		prerequisite = { focus = INDOLEM2_deal_with_abandon_factories}
+		x = -1
+		y = 10
+		relative_position_id = INDOLEM2_founding_documents
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
 
+		available = {
+			IS = { 
+				tag = KUM
+			}
+			THIS = {
+					has_government = mandalism
+				}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			KUM = {
+				set_cosmetic_tag = KUM_KKA					
+			}
+		}
+	}
 	#Spycraft
 
 	shared_focus = {
