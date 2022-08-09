@@ -278,70 +278,70 @@ ideologies = {
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
 	
-	islamism = {
-	
-		types = {
-		
-			reactionary  = {
-			}
-			
-			salafism  = {
-			}
-
-			jihadist = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-			
-			takfirism = {
-			}
-			
-			musalahism = {
-			}
-			
-			caliph = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_ISLAMISM_1"
-			"FACTION_NAME_ISLAMISM_2"
-			"FACTION_NAME_ISLAMISM_3"
-			"FACTION_NAME_ISLAMISM_4"
-			"FACTION_NAME_ISLAMISM_5"
-		}
-		
-		color = { 0 128 0 }
-		
-		
-		war_impact_on_world_tension = 0.35		
-		faction_impact_on_world_tension = 0.1
-		
-		rules = {
-			can_force_government = no
-			can_puppet = yes
-			can_send_volunteers = yes
-		}
-		
-		modifiers = {
-			#increased_influence_factor = -0.3 #-30% easier to influence
-			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
-			lend_lease_tension = 0.4
-			send_volunteers_tension = 0.4
-			guarantee_tension = 0.4
-			drift_defence_factor = -0.3	
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 10.0
-		}
-		
-		faction_modifiers = {
-		}
-
-		ai_neutral = yes # 
-	}
+#	islamism = {
+#	
+#		types = {
+#		
+#			reactionary  = {
+#			}
+#			
+#			salafism  = {
+#			}
+#
+#			jihadist = {
+#				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#			
+#			takfirism = {
+#			}
+#			
+#			musalahism = {
+#			}
+#			
+#			caliph = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#		}
+#
+#		dynamic_faction_names = {
+#			"FACTION_NAME_ISLAMISM_1"
+#			"FACTION_NAME_ISLAMISM_2"
+#			"FACTION_NAME_ISLAMISM_3"
+#			"FACTION_NAME_ISLAMISM_4"
+#			"FACTION_NAME_ISLAMISM_5"
+#		}
+#		
+#		color = { 0 128 0 }
+#		
+#		
+#		war_impact_on_world_tension = 0.35		
+#		faction_impact_on_world_tension = 0.1
+#		
+#		rules = {
+#			can_force_government = no
+#			can_puppet = yes
+#			can_send_volunteers = yes
+#		}
+#		
+#		modifiers = {
+#			#increased_influence_factor = -0.3 #-30% easier to influence
+#			generate_wargoal_tension = 0.5
+#			join_faction_tension = 0.4
+#			lend_lease_tension = 0.4
+#			send_volunteers_tension = 0.4
+#			guarantee_tension = 0.4
+#			drift_defence_factor = -0.3	
+#			civilian_intel_to_others = 20.0
+#			army_intel_to_others = 10.0
+#			navy_intel_to_others = 20.0
+#			airforce_intel_to_others = 10.0
+#		}
+#		
+#		faction_modifiers = {
+#		}
+#
+#		ai_neutral = yes # 
+#	}
 
 
 	mandalism = {
