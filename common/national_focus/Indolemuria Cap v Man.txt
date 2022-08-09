@@ -1524,7 +1524,10 @@
 		}
 
 		available = {
-		THIS = {
+			NOT = { 
+				tag = KUM
+			}
+			THIS = {
 					has_government = mandalism
 				}
 		}
@@ -1533,7 +1536,12 @@
 		continue_if_invalid = no
 
 		completion_reward = {
-			KLK = { add_to_faction = ROOT }
+			KUM = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				} 					
+			}
 		}
 	}
 
