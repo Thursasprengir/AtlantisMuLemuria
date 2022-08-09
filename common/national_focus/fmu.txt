@@ -981,7 +981,7 @@ focus = {
 
 focus = {
 		id = FMU_our_land
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		x = 2
 		y = 4
 		relative_position_id = FMU_reject_versailles
@@ -1015,7 +1015,7 @@ focus = {
 
 focus = {
 		id = FMU_never_a_neutral_nation
-		icon = GFX_focus_RAJ_lions_of_the_great_war
+		icon = GFX_goal_generic_barrack_industry
 		x = 0
 		y = 1
 		relative_position_id = FMU_our_land
@@ -1046,6 +1046,34 @@ focus = {
 					modifier = FMU_expansion_plans
 					}
 			}
+			936 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			935 = {
+				if = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}			
 			#bonus resource production, reduce resources to market #to much
 			add_ideas = FMU_our_land_1
 		}
