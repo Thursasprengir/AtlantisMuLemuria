@@ -80,9 +80,42 @@ MUU_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
+### Kingdom of Yohannia ###
+PRJ_ai_behavior = {
+	name = "PRJ_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_PRJ_HISTORICAL"
+		desc = "RULE_OPTION_PRJ_HISTORICAL_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = INTERVENE
+		text = "RULE_OPTION_PRJ_INTERVENE"
+		desc = "RULE_OPTION_PRJ_INTERVENE_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = PUPPET_ETHIOPIA
+		text = "RULE_OPTION_PRJ_PUPPET_ETHIOPIA"
+		desc = "RULE_OPTION_PRJ_PUPPET_ETHIOPIA_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
 ### Friestaat of MU ###
-FSM_ai_behavior = {
-	name = "FSM_AI_BEHAVIOR"
+FMU_ai_behavior_notwork = {
+	name = "FMU_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
 		name = DEFAULT
@@ -92,17 +125,17 @@ FSM_ai_behavior = {
 	option = {
 		name = COMMUNIST
 		text = "RULE_OPTION_COMMUNISTnot_work_yet"
-		desc = "RULE_OPTION_COMMUNIST_FSM_AI_DESC"
+		desc = "RULE_OPTION_COMMUNIST_FMU_AI_DESC"
 	}
 	option = {
 		name = DEMOCRATIC
 		text = "RULE_OPTION_DEMOCRATICnot_work_yet"
-		desc = "RULE_DEMOCRATIC_FSM_AI_DESC"
+		desc = "RULE_DEMOCRATIC_FMU_AI_DESC"
 	}
 	option = {
 		name = HISTORICAL
-		text = "RULE_OPTION_FSM_HISTORICAL"
-		desc = "RULE_HISTORICAL_FSM_AI_DESC"
+		text = "RULE_OPTION_FMU_HISTORICAL"
+		desc = "RULE_HISTORICAL_FMU_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {

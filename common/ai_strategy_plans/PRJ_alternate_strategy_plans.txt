@@ -1,0 +1,192 @@
+PRJ_ahistorical_ethiopa = {
+	name = "Brothers in Arms"
+	desc = ""
+
+	enable = {
+		original_tag = PRJ
+		OR = {
+			has_country_flag = PRJ_AI_RANDOM_ETHIOPA
+			has_game_rule = {
+				rule = PRJ_ai_behavior
+				option = INTERVENE
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		PRJ_save_ethiopia						
+		PRJ_supply_ethiopia
+		PRJ_emergancy_fortifications
+		PRJ_heavy_rail_ETH_capital		
+		PRJ_industrial_park
+		PRJ_pushed_to_sea
+		PRJ_white_peace
+		#1937		
+		PRJ_finish_modern_rails	
+		PRJ_modernization										
+		PRJ_turkana_cleanup							
+		PRJ_land					
+		PRJ_sky
+
+		#1938	
+		PRJ_proper_alliance					
+		PRJ_blitzkrieg			
+		PRJ_light_med_tanks		
+		PRJ_mechanization							
+		PRJ_support	
+		#1939							
+		PRJ_civilian_projects		
+		PRJ_military_projects							
+		PRJ_prepare_for_more						
+		PRJ_battlefield_support			
+		PRJ_ETH_kicking_and_screaming
+		#1940					
+		PRJ_fund_ETH_docks	
+		PRJ_ETH_military_factory						
+		PRJ_ETH_steel_factory		
+		PRJ_ETH_alumin_factory		
+		PRJ_ETH_sea_rails
+		#1941							
+		PRJ_ETH_chemicals		
+		PRJ_ETH_war_command_focus	
+		PRJ_free_africa		
+		PRJ_light_fighter
+		PRJ_cas_bomber
+		PRJ_purchase_kenya	
+		#1942		
+		PRJ_ETH_purchase_somaliland
+		PRJ_fufill_promise				
+		
+		#1943
+
+		#1944
+
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+PRJ_ahistorical_ethiopa_2 = {
+	name = "Puppet Master"
+	desc = ""
+
+	enable = {
+		original_tag = PRJ
+		OR = {
+			has_country_flag = PRJ_AI_RANDOM_PUPPET_ETHIOPA
+			has_game_rule = {
+				rule = PRJ_ai_behavior
+				option = PUPPET_ETHIOPIA
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		PRJ_save_ethiopia						
+		PRJ_supply_ethiopia
+		PRJ_emergancy_fortifications
+		PRJ_heavy_rail_ETH_capital		
+		PRJ_industrial_park
+		PRJ_pushed_to_sea
+		PRJ_white_peace
+		#1937		
+		PRJ_finish_modern_rails	
+		PRJ_modernization										
+		PRJ_turkana_cleanup							
+		PRJ_land					
+		PRJ_sky
+
+		#1938	
+		PRJ_control_ethiopia					
+		PRJ_blitzkrieg			
+		PRJ_light_med_tanks		
+		PRJ_mechanization							
+		PRJ_support	
+		#1939							
+		PRJ_civilian_projects		
+		PRJ_military_projects							
+		PRJ_prepare_for_more						
+		PRJ_battlefield_support			
+		PRJ_ETH_kicking_and_screaming
+		#1940					
+		PRJ_fund_ETH_docks	
+		PRJ_ETH_military_factory						
+		PRJ_ETH_steel_factory		
+		PRJ_ETH_alumin_factory		
+		PRJ_ETH_sea_rails
+		#1941							
+		PRJ_ETH_chemicals		
+		PRJ_ETH_war_command_focus	
+		PRJ_free_africa		
+		PRJ_light_fighter
+		PRJ_cas_bomber
+		PRJ_purchase_kenya	
+		#1942		
+		PRJ_ETH_purchase_somaliland
+		PRJ_renegade				
+		PRJ_client_sudan							
+		PRJ_client_tanzania
+		PRJ_client_zerzura	
+		PRJ_client_malawi
+		PRJ_client_zambia
+		#1943
+
+		#1944
+
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
