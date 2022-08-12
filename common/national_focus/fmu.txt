@@ -1784,7 +1784,7 @@ focus = {
 				level = 1 
 				build_only_on_allied = yes
 				instant_build = yes
-				path = { 14572 14565 14519
+				path = { 14565 14519
 					}
 				}	
 			}
@@ -1817,6 +1817,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = excavation_tech
+		}
 		add_resource = {
 			type = oil
 			amount = 20
@@ -1828,7 +1833,7 @@ focus = {
 			state = 935
 			}
 			#add resources to mountains
-			#resource extraction efficiency gain
+			#resource extraction efficiency gain - I personally prefer a extraction tech speedup - having too much permermant buff is just eh
 		}
 	}
 

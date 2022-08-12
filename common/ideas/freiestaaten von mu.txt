@@ -128,6 +128,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 	
 			modifier = {
+					min_export = -0.1
 					economy_cost_factor = -0.25	
 					trade_opinion_factor = 0.3
 			}
@@ -148,9 +149,10 @@ ideas = {
 			picture = generic_goods_red_bonus
 	
 			modifier = {
-			consumer_goods_factor = 0.2
-			economy_cost_factor = -0.25	
-					trade_opinion_factor = 0.3
+			min_export = -0.1
+			consumer_goods_factor = -0.05
+			economy_cost_factor = -0.25
+			trade_opinion_factor = 0.3
 			}
 		}
 
@@ -170,9 +172,10 @@ ideas = {
 			picture = generic_goods_red_bonus
 	
 			modifier = {
-					industrial_capacity_factory = 0.1
-					economy_cost_factor = -0.25	
-					trade_opinion_factor = 0.3
+				min_export = -0.1
+				industrial_capacity_factory = 0.1
+				economy_cost_factor = -0.25	
+				trade_opinion_factor = 0.3
 			}
 		}
 		FMU_companies_kohn = {
