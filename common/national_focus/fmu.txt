@@ -1777,12 +1777,16 @@ focus = {
 				level = 1 
 				build_only_on_allied = yes
 				instant_build = yes
-				path = { 14535 14537 14541 14555 14572 14565 14519
+				path = { 14535 14537 14541 14555 14572 14573
 					}
 				}
-				path = { 14573
+			build_railway = {
+				level = 1 
+				build_only_on_allied = yes
+				instant_build = yes
+				path = { 14572 14565 14519
 					}
-				}
+				}	
 			}
 			#increases infrastructure (and railroads when available) - yeah yeah - Abbus
 	}
