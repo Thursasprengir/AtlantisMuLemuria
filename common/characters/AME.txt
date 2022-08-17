@@ -1,0 +1,1102 @@
+
+
+characters={
+###############
+###DEMOCRATIC
+###############
+	AME_conservatism_leader={
+		name="AME_conservatism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_3.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+###############
+###COMMUNISM
+###############
+	AME_marxism_leader={
+		name="AME_marxism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_5.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	
+
+###############
+###FASCISM
+###############
+	AME_generic_fascism_leader={
+		name="AME_generic_fascism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_7.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1949.1.1.12"
+			id=-1
+		}
+	}
+	
+###############
+###NEUTRALITY
+###############
+	AME_oligarchism_leader={
+		name=AME_oligarchism_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_9.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ financial_expert }
+			expire="1953.1.1.12"
+			id=-1
+		}
+	}
+	
+###############
+###Monarch
+###############
+	AME_king_leader={
+		name="AME_king_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_11.dds"
+			}
+		}
+		country_leader={
+			ideology=flavor
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+
+	AME_corps_commander_1={
+		name=AME_corps_commander_1
+		portraits={
+			army={
+				large="gfx/leaders/AME/Portrait_AME_corps_commander_1.dds"
+				small="gfx/interface/ideas/idea_AME_corps_commander_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	AME_naval_leader_1={
+		name=AME_naval_leader_1
+		portraits={
+			army={
+				large="gfx/leaders/AME/Portrait_AME_naval_leader_1.dds"
+			}
+			army={
+				small="GFX_idea_AME_naval_leader_1"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	AME_naval_leader_2={
+		name=AME_naval_leader_2
+		portraits={
+			army={
+				large="gfx/leaders/AME/Portrait_AME_naval_leader_2.dds"
+				small="gfx/interface/ideas/idea_AME_naval_leader_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	AME_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_anti_communist_crusader
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="AME_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_AME_anti_communist_crusader"
+			}
+		}
+	}
+	AME_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_armaments_organizer
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="AME_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_AME_armaments_organizer"
+			}
+		}
+	}
+	AME_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_backroom_backstabber
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="AME_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_AME_backroom_backstabber"
+			}
+		}
+	}
+	AME_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_captain_of_industry
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="AME_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_AME_captain_of_industry"
+			}
+		}
+	}
+	AME_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_communist_revolutionary
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="AME_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_AME_communist_revolutionary"
+			}
+		}
+	}
+	AME_compassionate_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_compassionate_gentleman
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="AME_compassionate_gentleman"
+		portraits={
+			army={
+				small="GFX_idea_AME_compassionate_gentleman"
+			}
+		}
+	}
+	AME_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_democratic_reformer
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="AME_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_AME_captain_of_industry"
+			}
+		}
+	}	
+	AME_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_economist
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="AME_economist"
+		portraits={
+			army={
+				small="GFX_idea_AME_economist"
+			}
+		}
+	}
+	AME_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_editor
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="AME_editor"
+		portraits={
+			army={
+				small="GFX_idea_AME_editor"
+			}
+		}
+	}
+	AME_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_fascist_demagogue
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="AME_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_AME_fascist_demagogue"
+			}
+		}
+	}
+	AME_financial_expert={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_financial_expert
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="AME_financial_expert"
+		portraits={
+			army={
+				small="GFX_idea_AME_financial_expert"
+			}
+		}
+	}
+	AME_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_head_of_intelligence
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="AME_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_AME_head_of_intelligence"
+			}
+		}
+	}
+	AME_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_ideological_crusader
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="AME_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_AME_ideological_crusader"
+			}
+		}
+	}
+	AME_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_popular_figurehead
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="AME_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_AME_popular_figurehead"
+			}
+		}
+	}
+	AME_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_prince_of_terror
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="AME_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_AME_prince_of_terror"
+			}
+		}
+	}
+	AME_silent_workhorse={
+		name=AME_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_AME_silent_workhorse"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AME_silent_workhorse
+			allowed  = {
+				original_tag  = AME
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	AME_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_smooth_talking_charmer
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="AME_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_AME_smooth_talking_charmer"
+			}
+		}
+	}
+	
+	AME_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = AME_war_industrialist
+			allowed  = {
+					original_tag  = AME
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="AME_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_AME_war_industrialist"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	AME_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = AME_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = AME
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="AME_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	AME_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = AME_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = AME
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="AME_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	AME_naval_theorist={
+		name=AME_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_AME_naval_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = AME_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = AME
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+	AME_naval_aviation_pioneer={
+		name=AME_naval_aviation_pioneer
+		portraits={
+			army={
+				small="GFX_idea_AME_naval_aviation_pioneer"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = AME_naval_aviation_pioneer
+			ledger = navy
+			allowed = {
+				original_tag = AME
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+
+	AME_victory_through_airpower={
+		name=AME_victory_through_airpower
+		portraits={
+			army={
+				small="GFX_idea_AME_victory_through_airpower"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = AME_victory_through_airpower
+			ledger = air
+			allowed = {
+				original_tag = AME
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+	AME_nuclear_scientist={
+		name=AME_nuclear_scientist
+		portraits={
+			army={
+				small="GFX_idea_AME_nuclear_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = AME_nuclear_scientist
+			ledger = army
+			allowed = {
+				original_tag = AME
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	AME_rocket_scientist={
+		name=AME_rocket_scientist
+		portraits={
+			army={
+				small="GFX_idea_AME_rocket_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = AME_rocket_scientist
+			ledger = air
+			allowed = {
+				original_tag = AME
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	AME_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = AME_army_chief_defensive_2
+			allowed = {
+					original_tag = AME
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_army_chief_defensive_2"
+			}
+		}
+	}
+	AME_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = AME_army_chief_drill_2
+			allowed = {
+					original_tag = AME
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_army_chief_drill_2"
+			}
+		}
+	}
+	AME_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = AME_army_chief_maneuver_2
+			allowed = {
+					original_tag = AME
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_army_chief_maneuver_2"
+			}
+		}
+	}
+	AME_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = AME_army_chief_morale_2
+			allowed = {
+					original_tag = AME
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_army_chief_morale_2"
+			}
+		}
+	}
+	AME_army_chief_offensive_2={
+		name=AME_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_AME_army_chief_offensive_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = AME_army_chief_offensive_2
+			allowed = {
+				original_tag = AME
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	AME_army_chief_organizational_1={
+		name=AME_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_AME_army_chief_organizational_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = AME_army_chief_organizational_1
+			allowed = {
+				original_tag = AME
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	AME_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = AME_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = AME
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	AME_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = AME_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = AME
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	AME_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = AME_air_chief_ground_support_2
+			allowed = {
+					original_tag = AME
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	AME_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = AME_air_chief_reform_2
+			allowed = {
+					original_tag = AME
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	AME_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_AME_army_armored_1"
+			}
+		}
+	}
+	AME_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_AME_army_entrenchment_1"
+			}
+		}
+	}
+	AME_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_AME_army_infantr_1"
+			}
+		}
+	}
+	AME_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_army_logistics_2"
+			}
+		}
+	}
+	AME_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_air_bomber_interception_2"
+			}
+		}
+	}
+	AME_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_air_close_air_support_2"
+			}
+		}
+	}
+	AME_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_navy_screen_2"
+			}
+		}
+	}
+	AME_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_AME_navy_anti_submarine_1"
+			}
+		}
+	}
+	AME_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = AME_navy_naval_air_defense
+			ledger = navy
+				allowed = {
+					original_tag = AME
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="AME_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_AME_navy_naval_air_defense_2"
+			}
+		}
+	}
+}
+
+
+########################################################################################
+#############PLACE THESE LINES IN THE history/countries file############################
+##########Delete whatever lines won't apply/that you don't need#########################
+############CONVERT AME to the Nation's 3-letter country code###########################
+########################################################################################
+
+
+
