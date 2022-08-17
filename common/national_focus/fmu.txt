@@ -590,7 +590,7 @@ focus = {
 
 focus = {
 		id = FMU_schimmelpferds_address
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_generic_admirality
 		x = -3
 		y = 7
 		relative_position_id = FMU_reject_versailles
@@ -745,7 +745,32 @@ focus = {
 
 		completion_reward = {
 			add_ideas = FMU_build_forts
-			#unlocks 18 width Marine Template, spawns two divisions in capital
+			division_template = {
+				name = "Seelande-Division"
+				is_locked = no
+				division_names_group = FMU_MAR_01
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					}
+				}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1. Seelande-Division\" division_template = \"Seelande-Division\" start_experience_factor = 0.7"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2. Seelande-Division\" division_template = \"Seelande-Division\" start_experience_factor = 0.7"  
+					owner = ROOT
+				}
+			}
 		}
 	}	
 
@@ -1995,7 +2020,7 @@ focus = {
 			factor = 40
 		}
 		available = {
-
+			has_war = no
 		}
 
 		#bypass = {
@@ -2014,7 +2039,7 @@ focus = {
 
 focus = {
 		id = FMU_1938_domestic_tech_fair
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_double_research
 		x = 0
 		y = 1
 		relative_position_id = FMU_civil_works_research_admin
@@ -2044,7 +2069,7 @@ focus = {
 
 focus = {
 		id = FMU_1940_domestic_tech_fair
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_double_research
 		x = 0
 		y = 2
 		relative_position_id = FMU_civil_works_research_admin
@@ -2068,13 +2093,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = FMU_tech_fair_2 #should also stop FMU_tech_fair_1
+			swap_ideas = {
+				remove_idea = FMU_tech_fair_1
+				add_idea = FMU_tech_fair_2
+			}
 		}
 	}
 
 focus = {
 		id = FMU_1942_domestic_tech_fair
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_double_research
 		x = 0
 		y = 3
 		relative_position_id = FMU_civil_works_research_admin
@@ -2098,13 +2126,17 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = FMU_tech_fair_3 #should also stop FMU_tech_fair_2
+			swap_ideas = {
+			remove_idea = FMU_tech_fair_1
+			remove_idea = FMU_tech_fair_2
+			add_idea = FMU_tech_fair_3
+			}
 		}
 	}
 
 focus = {
 		id = FMU_1944_domestic_tech_fair
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_double_research
 		x = 0
 		y = 4
 		relative_position_id = FMU_civil_works_research_admin
@@ -2128,13 +2160,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = FMU_tech_fair_4 #should also stop FMU_tech_fair_3
+			swap_ideas = {
+			remove_idea = FMU_tech_fair_1
+			remove_idea = FMU_tech_fair_2
+			remove_idea = FMU_tech_fair_3
+			add_idea = FMU_tech_fair_4
+			}
 		}
 	}
 
 focus = {
 		id = FMU_kings_university
-		icon = GFX_focus_research
+		icon = GFX_goal_constitution
 		x = -3
 		y = 4
 		relative_position_id = FMU_national_dev_campaign
@@ -2143,7 +2180,7 @@ focus = {
 			focus = FMU_peoples_university
 		}	
 		prerequisite = { focus = FMU_blauwasser_stockmarket }
-
+ 
 		cost = 10
 
 		ai_will_do = {
@@ -2151,6 +2188,7 @@ focus = {
 		}
 		available = {
 			has_government = monarchism
+			num_of_factories > 70
 		}
 
 		bypass = {
@@ -2169,7 +2207,7 @@ focus = {
 
 focus = {
 		id = FMU_national_university
-		icon = GFX_focus_research
+		icon = GFX_goal_generic_education
 		x = -1
 		y = 4
 		relative_position_id = FMU_national_dev_campaign
@@ -2188,6 +2226,8 @@ focus = {
 			OR = {
 				has_government = democratic
 				has_government = fascism
+				has_government = neutrality
+				num_of_factories > 70
 			}
 		#government is democratic or fascist
 		}
@@ -2208,7 +2248,7 @@ focus = {
 
 focus = {
 		id = FMU_peoples_university
-		icon = GFX_focus_research
+		icon = GFX_goal_communist_brain
 		x = 1
 		y = 4
 		relative_position_id = FMU_national_dev_campaign
@@ -2259,6 +2299,7 @@ focus = {
 			factor = 40
 		}
 		available = {
+			num_of_factories > 85
 		}
 
 		bypass = {
@@ -2388,7 +2429,7 @@ focus = {
 
 focus = {
 		id = FMU_diplomatic_outreach
-		icon = GFX_goal_continuous_increase_nu
+		icon = GFX_goal_generic_major_diplo
 		x = 17
 		y = 1
 		relative_position_id = FMU_reject_versailles
@@ -2403,12 +2444,12 @@ focus = {
 			factor = 40
 		}
 		available = {
-
+			has_war = no
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			has_war = yes
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2431,15 +2472,15 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
+			factor = 1
 		}
 		available = {
-
+			has_war = no
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			has_war = yes
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2471,12 +2512,12 @@ focus = {
 			factor = 40
 		}
 		available = {
-
+			has_war = no
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			has_war = yes
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2509,12 +2550,12 @@ focus = {
 			factor = 40
 		}
 		available = {
-
+			has_war = no
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			has_war = yes
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2550,18 +2591,17 @@ focus = {
 			focus = FMU_velvet_glove_iron_fist
 		}
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 40
 		}
 		available = {
-
+			has_war = no
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2626,9 +2666,16 @@ focus = {
 		completion_reward = {
 			#decrease justify war goal time
 			#tiny world tension increase
+			set_rule = {
+				can_declare_war_on_same_ideology = yes
+
+			}
+			set_rule = {
+				can_only_justify_war_on_threat_country = no
+			}			
 			add_ideas = FMU_velvet_glove_iron_fist_idea
 			add_named_threat = { 
-				threat = 5 
+				threat = 2 
 				name = FMU_velvet_gloves
 			}
 		}
