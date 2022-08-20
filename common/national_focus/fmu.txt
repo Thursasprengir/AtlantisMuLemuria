@@ -1223,7 +1223,7 @@ focus = {
 
 focus = {
 		id = FMU_western_offensive
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_attack_tod
 		x = -2
 		y = 2
 		relative_position_id = FMU_never_a_neutral_nation
@@ -4642,18 +4642,79 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			navy_experience = 75
 			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = bc_tech
-			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
+				bonus = 1
+				uses = 2
 				category = cat_fleet_in_being
 			}
-			#cruiser design bonus
-			#fleet in being doctrine bonus
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					add_equipment_production = {
+							equipment = {
+								type = ship_hull_heavy_1
+								creator = "FMU"
+								version_name = "Blücher Class"
+							}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_heavy_1
+							creator = "FMU"
+							version_name = "Blücher Class"
+						}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_heavy_1
+							creator = "FMU"
+							version_name = "Blücher Class"
+						}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
+					}
+				}
+				else = {
+					add_equipment_production = {
+						equipment = {
+							type = battleship_1
+							creator = "FMU" 
+						}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = battleship_1
+							creator = "FMU" 
+						}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = battleship_1
+							creator = "FMU" 
+						}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
+					}
+				}
+			}
+		custom_effect_tooltip = FMU_strike_fleets_tt
 		}
 	}
 
@@ -4685,24 +4746,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			navy_experience = 75
 			add_tech_bonus = {
 				bonus = 1
-				uses = 1
-				category = bc_tech
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = cv_tech
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
+				uses = 2
 				category = cat_base_strike
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
 					}
 					add_equipment_production = {
 						equipment = {
@@ -4737,13 +4790,32 @@ focus = {
 				}
 				else = {
 					add_equipment_production = {
-					equipment = {
-						type = carrier_2
-						creator = "FMU" 
+						equipment = {
+							type = carrier_1
+							creator = "FMU" 
+						}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
 					}
-					requested_factories = 1
-					progress = 0.35
-					amount = 3
+					add_equipment_production = {
+						equipment = {
+							type = carrier_1
+							creator = "FMU" 
+						}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = carrier_1
+							creator = "FMU" 
+						}
+						requested_factories = 1
+						progress = 0.5
+						amount = 1
+					}
 				}
 			}
 			#cruiser and capital ship design bonus
