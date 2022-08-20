@@ -301,7 +301,7 @@ focus = {
 		relative_position_id = FMU_reject_versailles
 		prerequisite = { focus = FMU_sudencreutz_volk focus = FMU_federation_of_brothers }
 
-		cost = 7
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 40
@@ -393,7 +393,7 @@ focus = {
 				focus = FMU_our_land
 				}
 
-		cost = 7
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 90
@@ -727,7 +727,7 @@ focus = {
 			focus = FMU_schimmelpferds_address
 				}
 
-		cost = 7
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 40
@@ -1015,7 +1015,7 @@ focus = {
 				focus = FMU_ocean_destiny
 				}
 
-		cost = 7
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 10
@@ -1229,7 +1229,7 @@ focus = {
 		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_prepare_take_southern_coasts }
 
-		cost = 7
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 40
@@ -1439,7 +1439,7 @@ focus = {
 		relative_position_id = FMU_never_a_neutral_nation
 		prerequisite = { focus = FMU_unternehmen_faust }
 
-		cost = 7
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 40
@@ -1803,14 +1803,12 @@ focus = {
 			build_railway = {
 				level = 1 
 				build_only_on_allied = yes
-				instant_build = yes
 				path = { 14535 14537 14541 14555 14572 14573
 					}
 				}
 			build_railway = {
 				level = 1 
 				build_only_on_allied = yes
-				instant_build = yes
 				path = { 14565 14519
 					}
 				}	
@@ -2106,10 +2104,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FMU_tech_fair_1
-				add_idea = FMU_tech_fair_2
-			}
+			add_ideas = FMU_tech_fair_2
 		}
 	}
 
@@ -2139,11 +2134,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-			remove_idea = FMU_tech_fair_1
-			remove_idea = FMU_tech_fair_2
-			add_idea = FMU_tech_fair_3
-			}
+			add_ideas = FMU_tech_fair_3
 		}
 	}
 
@@ -2173,12 +2164,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-			remove_idea = FMU_tech_fair_1
-			remove_idea = FMU_tech_fair_2
-			remove_idea = FMU_tech_fair_3
-			add_idea = FMU_tech_fair_4
-			}
+			add_ideas = FMU_tech_fair_4
 		}
 	}
 
@@ -2742,7 +2728,7 @@ focus = {
 		y = 1
 		relative_position_id = FMU_renegotiate_versailles
 
-		cost = 7
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 2
@@ -4393,14 +4379,14 @@ focus = {
 		y = 0
 		relative_position_id = FMU_renegotiate_versailles
 
-		cost = 10
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 2
 		}
-		#available = {
-		#date < 1936.4.3
-		#}
+		available = {
+			threat > 0.1
+		}
 
 		bypass = {
 		}
@@ -4410,9 +4396,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 75
-			navy_experience = 75
-			air_experience = 75
+			add_ideas = low_economic_mobilisation
+			army_experience = 30
+			navy_experience = 30
+			air_experience = 30
 			#add 75 points to Army, Navy and Air Force
 		}
 	}
