@@ -412,6 +412,7 @@ focus = {
 
 		completion_reward = {
 			add_ideas = FMU_boat_production #I cant make boatsproduce faster but i can make more docks
+			add_ideas = fascist_influence
 		}
 	}
 
@@ -583,7 +584,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = fascist_influence
+			
 			add_political_power = 200
 		}
 	}
@@ -637,7 +638,7 @@ focus = {
 			focus = FMU_success_breeds_success
 				}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -664,7 +665,7 @@ focus = {
 							heavy_cruiser = 0.5
 						}
 					}
-					}
+				}
 		}
 
 		#bypass = {
@@ -787,10 +788,10 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 40
+			factor = 0
 		}
 		available = {
-			surrender_progress > 0.4
+			surrender_progress > 0.3
 		}
 
 		#bypass = {
@@ -1033,6 +1034,7 @@ focus = {
 
 		completion_reward = {
 			add_ideas = FMU_army_production
+			add_ideas = fascist_influence
 		}
 	}
 
@@ -1105,7 +1107,7 @@ focus = {
 
 focus = {
 		id = FMU_prepare_take_southern_coasts
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_generic_attack_cnj
 		x = -2
 		y = 1
 		relative_position_id = FMU_never_a_neutral_nation
@@ -1143,7 +1145,7 @@ focus = {
 
 focus = {
 		id = FMU_spine_of_the_continent
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_generic_attack_gop
 		x = 0
 		y = 1
 		relative_position_id = FMU_never_a_neutral_nation
@@ -1221,7 +1223,7 @@ focus = {
 
 focus = {
 		id = FMU_western_offensive
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_goal_generic_demand_territory
 		x = -2
 		y = 2
 		relative_position_id = FMU_never_a_neutral_nation
@@ -1270,7 +1272,7 @@ focus = {
 
 focus = {
 		id = FMU_mines_of_baraga
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_attack_brg
 		x = 0
 		y = 2
 		relative_position_id = FMU_never_a_neutral_nation
@@ -1310,7 +1312,7 @@ focus = {
 
 focus = {
 		id = FMU_unternehmen_faust
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_generic_attack_muu
 		x = -1
 		y = 3
 		relative_position_id = FMU_never_a_neutral_nation
@@ -1537,6 +1539,7 @@ focus = {
 
 		completion_reward = {
 			add_ideas = FMU_our_mighty_home_idea 
+			remove_ideas = fascist_influence
 			#fortification construction bonus
 			#civilian construction bonus
 			#repair bonus
@@ -1846,6 +1849,11 @@ focus = {
 			uses = 1
 			category = excavation_tech
 		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = synth_resources
+		}
 		add_resource = {
 			type = oil
 			amount = 20
@@ -1938,6 +1946,11 @@ focus = {
 						level = 1
 						instant_build = yes
 					}
+					add_building_construction = {
+						type = fuel_silo
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			931 = {
@@ -1960,7 +1973,7 @@ focus = {
 					add_building_construction = {
 						type = naval_base
 						level = 3
-						province = 5659
+						province = 14449
 						instant_build = yes
 					}
 				}
@@ -2729,7 +2742,7 @@ focus = {
 		y = 1
 		relative_position_id = FMU_renegotiate_versailles
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 2
@@ -2746,7 +2759,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_war_support = .20
+			add_war_support = .1
+	
 			every_neighbor_country = {
 					add_opinion_modifier = {
 					target = root
@@ -2787,7 +2801,7 @@ focus = {
 
 		completion_reward = {
 			#increase factory output #K says no
-			add_stability = 0.05
+			add_stability = 0.15
 			add_ideas = FMU_double_identity
 			#increase need for consumer goods
 		}
@@ -3290,7 +3304,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = -0.1
+			add_stability = -0.15
 			add_ideas = FMU_golden_factory
 			#MAJOR increase in production capacity
 			#MAJOR increase in factory construction speed
@@ -4445,9 +4459,7 @@ focus = {
 		id = FMU_commerce_focus
 		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = FMU_clause_a }
-		mutually_exclusive = {
-			focus = FMU_surface_fleet_focus
-		}
+
 		x = -5
 		y = 2
 		relative_position_id = FMU_law_14056
@@ -4567,9 +4579,6 @@ focus = {
 		id = FMU_surface_fleet_focus
 		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = { focus = FMU_clause_a }
-		mutually_exclusive = {
-			focus = FMU_commerce_focus
-		}
 		x = -1
 		y = 2
 		relative_position_id = FMU_law_14056
@@ -4677,22 +4686,69 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = bc_tech
 			}
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cv_tech
 			}
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_base_strike
 			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_conversion_bb
+							creator = "FMU"
+							version_name = "Valkyria Class"
+						}
+						requested_factories = 1
+						progress = 0.35
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_conversion_bb
+							creator = "FMU"
+							version_name = "Valkyria Class"
+						}
+						requested_factories = 1
+						progress = 0.35
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_conversion_bb
+							creator = "FMU"
+							version_name = "Valkyria Class"
+						}
+						requested_factories = 1
+						progress = 0.35
+						amount = 1
+					}
+				}
+				else = {
+					add_equipment_production = {
+					equipment = {
+						type = carrier_2
+						creator = "FMU" 
+					}
+					requested_factories = 1
+					progress = 0.35
+					amount = 3
+				}
+			}
 			#cruiser and capital ship design bonus
 			#base strike doctrine bonus
+			custom_effect_tooltip = FMU_theater_groups_tt
 		}
 	}
 
