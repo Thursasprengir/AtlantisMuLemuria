@@ -178,6 +178,9 @@ country_event = {
 	option = {
 		name = mandalism.5.a
 		set_country_flag = mandalists_victorious
+		set_rule = {
+			can_puppet = no
+		}
 		add_ideas = KLK_razed_country
 		add_ideas = KLK_FUD
 		set_politics = {ruling_party = neutrality elections_allowed = no}
