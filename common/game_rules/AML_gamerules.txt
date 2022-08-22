@@ -99,13 +99,11 @@ PRJ_ai_behavior = {
 		name = INTERVENE
 		text = "RULE_OPTION_PRJ_INTERVENE"
 		desc = "RULE_OPTION_PRJ_INTERVENE_AI_DESC"
-		allow_achievements = yes
 	}
 	option = {
 		name = PUPPET_ETHIOPIA
 		text = "RULE_OPTION_PRJ_PUPPET_ETHIOPIA"
 		desc = "RULE_OPTION_PRJ_PUPPET_ETHIOPIA_AI_DESC"
-		allow_achievements = yes
 	}
 	option = {
 		name = RANDOM
@@ -136,6 +134,50 @@ FMU_ai_behavior_notwork = {
 		name = HISTORICAL
 		text = "RULE_OPTION_FMU_HISTORICAL"
 		desc = "RULE_HISTORICAL_FMU_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
+HOU_ai_behavior = {
+	name = "HOU_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "HOU_AI_RANDOM_HISTORICAL"
+		desc = "RULE_HISTORICAL_HOU_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FASCIST
+		text = "HOU_AI_RANDOM_FASCIST"
+		desc = "RULE_FASCIST_HOU_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST_TROTSKY
+		text = "HOU_AI_RANDOM_COMMUNIST_TROTSKY"
+		desc = "RULE_COMMUNIST_TROTSKY_HOU_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST_STALIN
+		text = "HOU_AI_RANDOM_COMMUNIST_STALIN"
+		desc = "RULE_COMMUNIST_STALIN_HOU_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST_HOME_GROWN
+		text = "HOU_AI_RANDOM_COMMUNIST_HOME_GROWN"
+		desc = "RULE_COMMUNIST_HOME_GROWN_HOU_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {

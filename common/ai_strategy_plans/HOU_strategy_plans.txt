@@ -1,0 +1,107 @@
+ATL_historical = {
+	name = "Houpo'e Historical Plan"
+	desc = ""
+
+	enable = {
+		original_tag = HOU
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = HOU_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = HOU_AI_RANDOM_HISTORICAL 
+			has_game_rule = {
+				rule = HOU_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HOU_crush_the_communists #G
+		HOU_anticommunist_campaign #G						
+		HOU_national_improvement					
+		HOU_nat_railway_proj
+		HOU_nat_highways_proj
+		HOU_factory_of_the_world			
+		HOU_strong_army						
+		HOU_fund_inuhumuku_shipyards	
+		#1937										
+		HOU_industrial_buildup #G
+		HOU_day_of_mourning #G
+		HOU_full_investigation	#G						
+		HOU_begin_army_reforms						
+		HOU_landborne_designs
+		#1938
+		HOU_power_projection
+		HOU_found_the_air_force						
+		HOU_home_designs
+		HOU_national_conections #G
+		HOU_bonds_of_blood	#G	
+		#1939	
+		HOU_look_to_your_brother #G
+		HOU_expand_ports #G
+		HOU_rapprochement_communists #g					
+		HOU_air_superiority							
+		HOU_anuenue_09
+		#1940					
+		HOU_respond_to_japan #G
+		HOU_kanagan_defense_pact #g
+		HOU_rubber_planations	
+		HOU_houpoean_steel				
+		HOU_negotiate_port_access #G	
+		HOU_inland_shelter_camps #G
+		#1941							
+		HOU_modern_destroyers		
+		HOU_capital_ships							
+		HOU_aircraft_carriers						
+		HOU_standardized_vehicle_templates
+		HOU_mass_assault_doctrine
+		HOU_seek_int_investment #G
+		HOU_great_science_academy #G		
+		#1942
+		HOU_cas
+		HOU_valley_of_maui
+		HOU_modern_submarines	
+		HOU_expand_KDP		#G			
+		HOU_evacuate_gold_supply	#G		
+		#1943						
+		HOU_legitimate_government #G					
+		HOU_volunteers_aplenty	#G					
+		HOU_abandon_kdp #G
+		HOU_move_capital	#G						
+
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

@@ -1,0 +1,360 @@
+HOU_fascist = {
+	name = "Houpo'e goes fascist"
+	desc = "Uhhhhhhhhhhhhhhhhhh"
+
+	enable = {
+		original_tag = HOU
+		OR = {
+			has_country_flag = HOU_AI_RANDOM_FASCIST 
+			has_game_rule = {
+			rule = HOU_ai_behavior
+			option = FASCIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HOU_peacetalks #G
+		HOU_moderation_governance #G						
+		HOU_national_improvement					
+		HOU_nat_railway_proj
+		HOU_nat_highways_proj
+		HOU_factory_of_the_world			
+		HOU_strong_army						
+		HOU_fund_inuhumuku_shipyards	
+		#1937										
+		HOU_inward_focus #G
+		HOU_national_highway_system #G
+		HOU_working_public	#G						
+		HOU_begin_army_reforms						
+		HOU_landborne_designs
+		#1938
+		HOU_power_projection
+		HOU_found_the_air_force						
+		HOU_home_designs
+		HOU_extend_road_network #G
+		HOU_expand_armed_forces	#G	
+		#1939	
+		HOU_defensive_offense #G
+		HOU_expand_ports 					
+		HOU_air_superiority							
+		HOU_anuenue_09
+		HOU_time_is_now #G
+		#1940					
+		HOU_rubber_planations	
+		HOU_houpoean_steel											
+		HOU_modern_destroyers		
+		HOU_capital_ships							
+		HOU_aircraft_carriers						
+		HOU_standardized_vehicle_templates
+		HOU_mass_assault_doctrine	
+		#1942
+		HOU_cas
+		HOU_valley_of_maui
+		HOU_modern_submarines							
+
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+HOU_communist_1 = {
+	name = "Houpo'e goes communist"
+	desc = "Uhhhhhhhhhhhhhhhhhh"
+
+	enable = {
+		original_tag = HOU
+		OR = {
+			has_country_flag = HOU_AI_RANDOM_COMMUNIST_TROTSKY
+			has_game_rule = {
+			rule = HOU_ai_behavior
+			option = COMMUNIST_TROTSKY
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HOU_peacetalks #G
+		HOU_antidemocracracy_propaganda #G						
+		HOU_national_improvement					
+		HOU_nat_railway_proj
+		HOU_nat_highways_proj
+		HOU_factory_of_the_world			
+		HOU_strong_army						
+		HOU_fund_inuhumuku_shipyards	
+		#1937										
+		HOU_new_capital #G
+		HOU_pure_marxism #G
+		HOU_first_five_year_plan	#G						
+		HOU_begin_army_reforms						
+		HOU_landborne_designs
+		#1938
+		HOU_power_projection
+		HOU_found_the_air_force						
+		HOU_home_designs
+		HOU_invite_trotsky #G
+		HOU_establish_kafakafas	#G	
+		#1939	
+		HOU_peoples_army #G
+		HOU_expand_ports 					
+		HOU_air_superiority							
+		HOU_anuenue_09
+		HOU_peoples_navy #G
+		#1940					
+		HOU_rubber_planations	
+		HOU_houpoean_steel
+		HOU_int_support_for_revolution #G										
+		HOU_modern_destroyers		
+		HOU_capital_ships	
+		#1941						
+		HOU_aircraft_carriers						
+		HOU_standardized_vehicle_templates
+		HOU_mass_assault_doctrine	
+		HOU_cas
+		HOU_valley_of_maui
+		HOU_modern_submarines	
+		#1942
+		HOU_peoples_academy_of_science #G
+		HOU_export_the revolution #g
+		HOU_culture_of_inovation #g
+		HOU_secret_weapons #g						
+
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+HOU_communist_2 = {
+	name = "Houpo'e goes communist"
+	desc = "Uhhhhhhhhhhhhhhhhhh"
+
+	enable = {
+		original_tag = HOU
+		OR = {
+			has_country_flag = HOU_AI_RANDOM_COMMUNIST_STALIN
+			has_game_rule = {
+			rule = HOU_ai_behavior
+			option = COMMUNIST_STALIN
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HOU_peacetalks #G
+		HOU_antidemocracracy_propaganda #G						
+		HOU_national_improvement					
+		HOU_nat_railway_proj
+		HOU_nat_highways_proj
+		HOU_factory_of_the_world			
+		HOU_strong_army						
+		HOU_fund_inuhumuku_shipyards	
+		#1937										
+		HOU_new_capital #G
+		HOU_stalinism #G
+		HOU_first_five_year_plan	#G						
+		HOU_begin_army_reforms						
+		HOU_landborne_designs
+		#1938
+		HOU_power_projection
+		HOU_found_the_air_force						
+		HOU_home_designs
+		HOU_bastion_of_revolution #G
+		HOU_puaa_molotov	#G	
+		#1939	
+		HOU_peoples_army #G
+		HOU_expand_ports 					
+		HOU_air_superiority							
+		HOU_anuenue_09
+		HOU_peoples_navy #G
+		#1940					
+		HOU_rubber_planations	
+		HOU_houpoean_steel
+		HOU_int_support_for_revolution #G										
+		HOU_modern_destroyers		
+		HOU_capital_ships	
+		#1941						
+		HOU_aircraft_carriers						
+		HOU_standardized_vehicle_templates
+		HOU_mass_assault_doctrine	
+		HOU_cas
+		HOU_valley_of_maui
+		HOU_modern_submarines	
+		#1942
+		HOU_peoples_academy_of_science #G
+		HOU_export_the revolution #g
+		HOU_culture_of_inovation #g
+		HOU_secret_weapons #g						
+
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+HOU_communist_3 = {
+	name = "Houpo'e goes communist"
+	desc = "Uhhhhhhhhhhhhhhhhhh"
+
+	enable = {
+		original_tag = HOU
+		OR = {
+			has_country_flag = HOU_AI_RANDOM_COMMUNIST_HOME_GROWN
+			has_game_rule = {
+			rule = HOU_ai_behavior
+			option = COMMUNIST_HOME_GROWN
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		HOU_peacetalks #G
+		HOU_antidemocracracy_propaganda #G						
+		HOU_national_improvement					
+		HOU_nat_railway_proj
+		HOU_nat_highways_proj
+		HOU_factory_of_the_world			
+		HOU_strong_army						
+		HOU_fund_inuhumuku_shipyards	
+		#1937										
+		HOU_new_capital #G
+		HOU_kanagan_communism #G
+		HOU_first_five_year_plan	#G						
+		HOU_begin_army_reforms						
+		HOU_landborne_designs
+		#1938
+		HOU_power_projection
+		HOU_found_the_air_force						
+		HOU_home_designs
+		HOU_chastise_int_communists #G
+		HOU_sinohoupoean_treaty	#G	
+		#1939	
+		HOU_peoples_army #G
+		HOU_expand_ports 					
+		HOU_air_superiority							
+		HOU_anuenue_09
+		HOU_peoples_navy #G
+		#1940					
+		HOU_rubber_planations	
+		HOU_houpoean_steel
+		HOU_int_support_for_revolution #G										
+		HOU_modern_destroyers		
+		HOU_capital_ships	
+		#1941						
+		HOU_aircraft_carriers						
+		HOU_standardized_vehicle_templates
+		HOU_mass_assault_doctrine	
+		HOU_cas
+		HOU_valley_of_maui
+		HOU_modern_submarines	
+		#1942
+		HOU_peoples_academy_of_science #G
+		HOU_export_the revolution #g
+		HOU_culture_of_inovation #g
+		HOU_secret_weapons #g						
+
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+
+
