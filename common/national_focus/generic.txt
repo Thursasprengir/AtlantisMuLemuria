@@ -1737,7 +1737,7 @@ focus_tree = {
 	focus = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 19
+		x = 21
 		y = 0
 		cost = 10
 	
@@ -1754,7 +1754,8 @@ focus_tree = {
 		id = collectivist_ethos
 		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = political_effort }
-		mutually_exclusive = { focus = liberty_ethos}
+		mutually_exclusive = { focus = liberty_ethos}		
+		mutually_exclusive = { focus = monarchism_ethos }
 		available = {
 			OR = {
 				has_government = fascism
@@ -1762,7 +1763,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = -1
+		x = -4
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
@@ -1806,7 +1807,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = collectivist_ethos
 		cost = 10
@@ -1863,7 +1864,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = collectivist_ethos
 		cost = 10
@@ -1904,13 +1905,14 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = political_effort }
 		mutually_exclusive = { focus = collectivist_ethos }
+		mutually_exclusive = { focus = monarchism_ethos }
 		available = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
 			}
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
@@ -1997,7 +1999,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = liberty_ethos }
 		mutually_exclusive = { focus = interventionism_focus }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = liberty_ethos
 		cost = 10
@@ -2034,7 +2036,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = liberty_ethos }
 		mutually_exclusive = { focus = neutrality_focus }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = liberty_ethos
 		cost = 10
@@ -2282,7 +2284,7 @@ focus_tree = {
 	focus = {
 		id = technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = ideological_fanaticism focus = why_we_fight }
+		prerequisite = { focus = ideological_fanaticism focus = why_we_fight focus = predictable_society focus = all_for_our_leader }
 		available = {
 			has_war = yes
 			is_in_faction = yes
@@ -2294,7 +2296,7 @@ focus_tree = {
 				}
 			}
 		}		
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = ideological_fanaticism
 		cost = 10
@@ -2336,5 +2338,288 @@ focus_tree = {
 			}			
 		}
 	}	
+	
+		
+
+	focus = {
+		id = monarchism_ethos
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = political_effort }
+		mutually_exclusive = { focus = liberty_ethos_ethos }
+		mutually_exclusive = { focus = collectivist_ethos }
+		available = {
+			OR = {
+				has_government = monarchism
+				has_government = neutrality
+			}
+		}
+		x = 4
+		y = 1
+		relative_position_id = political_effort
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_ideas = monarchism_ethos_focus
+		}
+	}
+
+	focus = {
+		id = strongman_focus
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = monarchism_ethos }
+		mutually_exclusive = { focus = feudal_focus }
+		
+		x = -1
+		y = 1
+		relative_position_id = monarchism_ethos
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = loyal_subordinates
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = strongman_focus }
+		
+		x = 0
+		y = 1
+		relative_position_id = strongman_focus
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = streamlined_economy
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = loyal_subordinates }
+		
+		x = 0
+		y = 1
+		relative_position_id = loyal_subordinates
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = all_for_our_leader
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = streamlined_economy }
+		
+		x = 0
+		y = 1
+		relative_position_id = streamlined_economy
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			every_core_state = {
+				add_compliance = 30
+			}
+		}
+	}
+
+	focus = {
+		id = feudal_focus
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = monarchism_ethos }
+		mutually_exclusive = { focus = strongman_focus}
+		
+		x = 1
+		y = 1
+		relative_position_id = monarchism_ethos
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ties_that_bind
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = feudal_focus }
+		
+		x = 0
+		y = 1
+		relative_position_id = feudal_focus
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = social_hierarchy
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = ties_that_bind }
+		
+		x = 0
+		y = 1
+		relative_position_id = ties_that_bind
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
+	}
+	
+	focus = {
+		id = predictable_society
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = social_hierarchy }
+		
+		x = 0
+		y = 1
+		relative_position_id = social_hierarchy
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
 
 }
