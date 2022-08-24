@@ -1401,7 +1401,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			JAP = { puppet = TRS}
+			JAP = {	set_autonomy = {
+						target = TRS
+						autonomous_state = autonomy_wtt_imperial_subject
+						freedom_level = 0.1
+					}
+				}
 			remove_ideas = CHI_hyper_inflation_4
 		}
 	}
