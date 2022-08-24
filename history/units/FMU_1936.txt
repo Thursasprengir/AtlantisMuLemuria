@@ -152,13 +152,94 @@ units = {
 
 ## STARTING PRODUCTION ##
 instant_effect = {
+
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
 			creator = "FMU"
 		}
+		requested_factories = 7
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FMU" 
+		}
 		requested_factories = 1
-		progress = 0.75
-		efficiency = 100
+		progress = 0.3
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "FMU" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = heavy_fighter_equipment_1
+			creator = "FMU" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_1
+			creator = "FMU" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}	
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_CAS_equipment_1
+			creator = "FMU" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = nav_bomber_equipment_1
+			creator = "FMU" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_0
+			creator = "FMU" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "FMU" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
 	}
 }
