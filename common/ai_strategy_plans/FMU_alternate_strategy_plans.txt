@@ -1,0 +1,541 @@
+FMU_ahistorical_land_war = {
+	name = "Brothers in Arms"
+	desc = ""
+
+	enable = {
+		original_tag = FMU
+		OR = {
+			has_country_flag = FMU_AI_RANDOM_LAND_WAR
+			has_game_rule = {
+				rule = FMU_ai_behavior
+				option = FASCIST_ALTERNATE
+			}
+		}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		FMU_law_14056
+		#1936
+		FMU_reject_versailles #70 #G
+		FMU_GER_relations #35 #G
+		FMU_national_dev_campaign #70						
+		FMU_civil_works_research_admin #70				
+		FMU_develop_east_coast #70						
+		FMU_develop_west_coast #70	
+		#1937										
+		FMU_sudencreutz_volk #70 #G							
+		FMU_kriegspfad #70							
+		FMU_our_land #50 #G
+		FMU_never_a_neutral_nation #70 #G						
+		FMU_german_peoples_compact #50 #G
+		FMU_integrate_manu #35
+		#1938	
+		FMU_1938_domestic_tech_fair #35
+		FMU_law_14056 #50 To do this asap early on
+		FMU_eisenbahnen #70	
+		FMU_ebenen_autobahn #70				
+		FMU_blauwasser_shipping_lanes #70
+		FMU_eisengewolbe #70
+		#1939
+		FMU_clause_a #70
+		FMU_diplomatic_outreach #35		
+		FMU_surface_fleet_focus #70			
+		FMU_theater_groups #70		
+		FMU_commerce_focus #70
+		FMU_blauwasser_stockmarket #70
+		#1940					
+		FMU_1940_domestic_tech_fair #35
+		FMU_weapons_drills #70
+		FMU_national_university #70
+		FMU_ship_bounties #35
+		FMU_clause_b #70
+		FMU_crucial_industry #70
+		FMU_invite_civ_designers #70
+		#1941	
+		FMU_addendum_9f #70
+		FMU_northeastern_offensive #35 #G
+		FMU_prepare_take_southern_coasts #35 #G
+		FMU_spine_of_the_continent #35 #G						
+		FMU_nationalize_uli_traktor #70
+		FMU_zilver_industrieel #70
+		FMU_jagdflugzeuge #70	
+		#1942		
+		FMU_raketentechnik #70
+		FMU_mines_of_baraga #35 #G
+		FMU_western_offensive #35 #G
+		FMU_unternehmen_kreissage #35 #G
+		FMU_defend_shipping #70
+		FMU_1942_domestic_tech_fair #35
+		FMU_national_university #70
+		#1943
+		FMU_advanced_rocketry #70
+		FMU_dagger_in_the_back #70 G
+		FMU_luftaufklarung #70
+		FMU_early_ramjet_engines
+		FMU_nat_airbase_production #70
+		#1944
+		FMU_long_range_bomber #70
+		FMU_jet_strat_bombers #70
+		FMU_high_alt_spy_planes #70
+		FMU_unternehmen_faust #70 #G
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+FMU_ahistorical_monarchism = {
+	name = "Brothers in Arms"
+	desc = ""
+
+	enable = {
+		original_tag = FMU
+		OR = {
+			has_country_flag = FMU_AI_RANDOM_MONARCHIST
+			has_game_rule = {
+				rule = FMU_ai_behavior
+				option = MONARCHIST
+			}
+		}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		FMU_law_14056
+		#1936
+		FMU_renegotiate_versailles #70 #G
+		FMU_twee_talen #35 #G
+		FMU_national_dev_campaign #70						
+		FMU_civil_works_research_admin #70				
+		FMU_develop_east_coast #70						
+		FMU_develop_west_coast #70	
+		#1937										
+		FMU_heartland_development #70 #G							
+		FMU_regional_development_authorities #70 #G							
+		FMU_compensate_landowners 70 #G
+		FMU_limit_democratic_reforms 35 #G						
+		FMU_reform_voting_laws #70 #G
+		FMU_integrate_manu #35
+		#1938	
+		FMU_1938_domestic_tech_fair #35
+		FMU_law_14056 #50 To do this asap early on
+		FMU_eisenbahnen #70	
+		FMU_ebenen_autobahn #70	
+		FMU_new_constitution #70 #G			
+		FMU_blauwasser_shipping_lanes #70
+		#1939	
+		FMU_strengthen_central #70 #G
+		FMU_install_noble_houses #70 #G
+		FMU_elect_kaiser #70 #G
+		FMU_eisengewolbe #70
+		FMU_clause_a #70
+		#1940
+		FMU_diplomatic_outreach #35		
+		FMU_surface_fleet_focus #70			
+		FMU_theater_groups #70		
+		FMU_commerce_focus #70
+		FMU_blauwasser_stockmarket #70
+		#1941				
+		FMU_1940_domestic_tech_fair #35
+		FMU_weapons_drills #70
+		FMU_kings_university #70
+		FMU_ship_bounties #35
+		FMU_clause_b #70
+		FMU_crucial_industry #70
+		FMU_invite_civ_designers #70
+		#1942
+		FMU_addendum_9f #70					
+		FMU_nationalize_uli_traktor #70
+		FMU_zilver_industrieel #70
+		FMU_jagdflugzeuge #70	
+		#1943	
+		FMU_raketentechnik #70
+		FMU_defend_shipping #70
+		FMU_1942_domestic_tech_fair #35
+		FMU_national_university #70
+		#1944
+		FMU_advanced_rocketry #70
+		FMU_luftaufklarung #70
+		FMU_early_ramjet_engines
+		FMU_nat_airbase_production #70
+		#1945
+		FMU_long_range_bomber #70
+		FMU_jet_strat_bombers #70
+		FMU_high_alt_spy_planes #70
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+
+FMU_ahistorical_democratic = {
+	name = "Brothers in Arms"
+	desc = ""
+
+	enable = {
+		original_tag = FMU
+		OR = {
+			has_country_flag = FMU_AI_RANDOM_DEMOCRATIC
+			has_game_rule = {
+				rule = FMU_ai_behavior
+				option = DEMOCRATIC
+			}
+		}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		FMU_law_14056
+		#1936
+		FMU_renegotiate_versailles #70 #G
+		FMU_tapestry_many_colors #70 #G
+		FMU_national_dev_campaign #70						
+		FMU_civil_works_research_admin #70				
+		FMU_develop_east_coast #70						
+		FMU_develop_west_coast #70	
+		#1937										
+		FMU_commit_to_neutrality #70 #G							
+		FMU_increase_product_profits #70 #G							
+		FMU_cont_democratic_reforms 70 #G
+		FMU_womens_suffrage 35 #G						
+		FMU_strengthen_ties #70 #G
+		FMU_integrate_manu #35
+		#1938	
+		FMU_1938_domestic_tech_fair #35
+		FMU_law_14056 #50 To do this asap early on
+		FMU_eisenbahnen #70	
+		FMU_ebenen_autobahn #70	
+		FMU_ache_of_war #70 #G		
+		FMU_blauwasser_shipping_lanes #70
+		#1939	
+		FMU_eisengewolbe #70
+		FMU_clause_a #70
+		FMU_diplomatic_outreach #35		
+		FMU_surface_fleet_focus #70			
+		FMU_theater_groups #70		
+		FMU_commerce_focus #70
+		FMU_blauwasser_stockmarket #70
+		#1941				
+		FMU_1940_domestic_tech_fair #35
+		FMU_weapons_drills #70
+		FMU_national_university #70
+		FMU_ship_bounties #35
+		FMU_clause_b #70
+		FMU_crucial_industry #70
+		FMU_invite_civ_designers #70
+		#1942
+		FMU_addendum_9f #70					
+		FMU_nationalize_uli_traktor #70
+		FMU_zilver_industrieel #70
+		FMU_jagdflugzeuge #70	
+		#1943	
+		FMU_raketentechnik #70
+		FMU_defend_shipping #70
+		FMU_1942_domestic_tech_fair #35
+		FMU_national_university #70
+		#1944
+		FMU_advanced_rocketry #70
+		FMU_luftaufklarung #70
+		FMU_early_ramjet_engines
+		FMU_nat_airbase_production #70
+		#1945
+		FMU_long_range_bomber #70
+		FMU_jet_strat_bombers #70
+		FMU_high_alt_spy_planes #70
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+FMU_ahistorical_soviet = {
+	name = "Brothers in Arms"
+	desc = ""
+
+	enable = {
+		original_tag = FMU
+		OR = {
+			has_country_flag = FMU_AI_RANDOM_SOVIET_COMMUNIST
+			has_game_rule = {
+				rule = FMU_ai_behavior
+				option = SOVIET_COMMUNIST
+			}
+		}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		FMU_law_14056
+		#1936
+		FMU_renegotiate_versailles #70 #G
+		FMU_tapestry_many_colors #70 #G
+		FMU_national_dev_campaign #70						
+		FMU_civil_works_research_admin #70				
+		FMU_develop_east_coast #70						
+		FMU_develop_west_coast #70	
+		#1937										
+		FMU_path_of_socialism #70 #G							
+		FMU_soviet_brethren #70 #G							
+		FMU_unite_with_comintern 70 #G
+		FMU_womens_suffrage 35 #G						
+		FMU_prepare_revolutionary_front #70 #G
+		FMU_integrate_manu #35
+		#1938	
+		FMU_1938_domestic_tech_fair #35
+		FMU_law_14056 #50 To do this asap early on
+		FMU_eisenbahnen #70	
+		FMU_ebenen_autobahn #70	
+		FMU_discuss_with_SOV #70 #G		
+		FMU_blauwasser_shipping_lanes #70
+		#1939	
+		FMU_eisengewolbe #70
+		FMU_clause_a #70
+		FMU_diplomatic_outreach #35		
+		FMU_surface_fleet_focus #70			
+		FMU_theater_groups #70		
+		FMU_commerce_focus #70
+		FMU_blauwasser_stockmarket #70
+		#1941				
+		FMU_1940_domestic_tech_fair #35
+		FMU_weapons_drills #70
+		FMU_national_university #70
+		FMU_ship_bounties #35
+		FMU_clause_b #70
+		FMU_crucial_industry #70
+		FMU_invite_civ_designers #70
+		#1942
+		FMU_addendum_9f #70					
+		FMU_nationalize_uli_traktor #70
+		FMU_zilver_industrieel #70
+		FMU_jagdflugzeuge #70	
+		#1943	
+		FMU_raketentechnik #70
+		FMU_defend_shipping #70
+		FMU_1942_domestic_tech_fair #35
+		FMU_national_university #70
+		#1944
+		FMU_advanced_rocketry #70
+		FMU_luftaufklarung #70
+		FMU_early_ramjet_engines
+		FMU_nat_airbase_production #70
+		#1945
+		FMU_long_range_bomber #70
+		FMU_jet_strat_bombers #70
+		FMU_high_alt_spy_planes #70
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+FMU_ahistorical_muan_communist = {
+	name = "Brothers in Arms"
+	desc = ""
+
+	enable = {
+		original_tag = FMU
+		OR = {
+			has_country_flag = FMU_AI_RANDOM_MUAN_COMMUNIST
+			has_game_rule = {
+				rule = FMU_ai_behavior
+				option = MUAN_COMMUNIST
+			}
+		}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		FMU_law_14056
+		#1936
+		FMU_renegotiate_versailles #70 #G
+		FMU_tapestry_many_colors #70 #G
+		FMU_national_dev_campaign #70						
+		FMU_civil_works_research_admin #70				
+		FMU_develop_east_coast #70						
+		FMU_develop_west_coast #70	
+		#1937										
+		FMU_path_of_socialism #70 #G							
+		FMU_soviet_brethren #70 #G							
+		FMU_unite_with_comintern 70 #G
+		FMU_womens_suffrage 35 #G						
+		FMU_prepare_revolutionary_front #70 #G
+		FMU_integrate_manu #35
+		#1938	
+		FMU_1938_domestic_tech_fair #35
+		FMU_law_14056 #50 To do this asap early on
+		FMU_eisenbahnen #70	
+		FMU_ebenen_autobahn #70	
+		FMU_discuss_with_SOV #70 #G		
+		FMU_blauwasser_shipping_lanes #70
+		#1939	
+		FMU_eisengewolbe #70
+		FMU_clause_a #70
+		FMU_diplomatic_outreach #35		
+		FMU_surface_fleet_focus #70			
+		FMU_theater_groups #70		
+		FMU_commerce_focus #70
+		FMU_blauwasser_stockmarket #70
+		#1941				
+		FMU_1940_domestic_tech_fair #35
+		FMU_weapons_drills #70
+		FMU_national_university #70
+		FMU_ship_bounties #35
+		FMU_clause_b #70
+		FMU_crucial_industry #70
+		FMU_invite_civ_designers #70
+		#1942
+		FMU_addendum_9f #70					
+		FMU_nationalize_uli_traktor #70
+		FMU_zilver_industrieel #70
+		FMU_jagdflugzeuge #70	
+		#1943	
+		FMU_raketentechnik #70
+		FMU_defend_shipping #70
+		FMU_1942_domestic_tech_fair #35
+		FMU_national_university #70
+		#1944
+		FMU_advanced_rocketry #70
+		FMU_luftaufklarung #70
+		FMU_early_ramjet_engines
+		FMU_nat_airbase_production #70
+		#1945
+		FMU_long_range_bomber #70
+		FMU_jet_strat_bombers #70
+		FMU_high_alt_spy_planes #70
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

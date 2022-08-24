@@ -121,14 +121,24 @@ FMU_ai_behavior_notwork = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
-		name = COMMUNIST
-		text = "RULE_OPTION_COMMUNISTnot_work_yet"
-		desc = "RULE_OPTION_COMMUNIST_FMU_AI_DESC"
+		name = SOVIET_COMMUNIST
+		text = "RULE_OPTION_SOVIET_COMMUNIST"
+		desc = "RULE_OPTION_SOVIET_COMMUNIST_FMU_AI_DESC"
+	}
+	option = {
+		name = MUAN_COMMUNIST
+		text = "RULE_OPTION_MUAN_COMMUNIST"
+		desc = "RULE_OPTION_MUAN_COMMUNIST_FMU_AI_DESC"
 	}
 	option = {
 		name = DEMOCRATIC
-		text = "RULE_OPTION_DEMOCRATICnot_work_yet"
+		text = "RULE_OPTION_DEMOCRATIC"
 		desc = "RULE_DEMOCRATIC_FMU_AI_DESC"
+	}
+	option = {
+		name = FASCIST_ALTERNATE
+		text = "RULE_OPTION_FASCIST_ALTERNATE"
+		desc = "RULE_FASCIST_ALTERNATE_FMU_AI_DESC"
 	}
 	option = {
 		name = HISTORICAL
@@ -137,10 +147,16 @@ FMU_ai_behavior_notwork = {
 		allow_achievements = yes
 	}
 	option = {
+		name = MONARCHIST
+		text = "RULE_OPTION_MONARCHIST"
+		desc = "RULE_MONARCHIST_FMU_AI_DESC"
+	}
+	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
+
 }
 HOU_ai_behavior = {
 	name = "HOU_AI_BEHAVIOR"

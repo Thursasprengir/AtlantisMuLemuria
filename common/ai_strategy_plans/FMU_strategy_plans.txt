@@ -1,15 +1,32 @@
-ATL_historical = {
+FMU_historical = {
 	name = "Freiestaaten von Mu Historical Plan"
 	desc = ""
 
 	enable = {
 		original_tag = FMU
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = FMU_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = FMU_AI_RANDOM_HISTORICAL 
+			has_game_rule = {
+				rule = FMU_ai_behavior
+				option = HISTORICAL
+			}
+		}
 	}
 	abort = {
 		
 	}
 
 	ai_national_focuses = {
+		#ASAP
+		FMU_law_14056 
+		#1936
 		FMU_reject_versailles #70 
 		FMU_GER_relations #35
 		FMU_national_dev_campaign #70						
@@ -45,8 +62,10 @@ ATL_historical = {
 		FMU_clause_b #70
 		FMU_crucial_industry #70
 		FMU_invite_civ_designers #70
-		#1941							
+		#1941		
+		FMU_addendum_9f					
 		FMU_nationalize_uli_traktor #70
+		FMU_zilver_industrieel #70
 		#1942						
 							
 
