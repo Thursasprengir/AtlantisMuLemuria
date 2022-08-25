@@ -25,7 +25,9 @@ set_technology = {
 	formation_flying = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
-	fuel_refining = 1	
+	fuel_refining = 1
+
+}
 	
 if = {
 	limit = {
@@ -37,15 +39,13 @@ if = {
 		early_destroyer = 1
 		basic_destroyer = 1
 		early_light_cruiser = 1
-		basic_light_cruiser = 1
 		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
 		early_battleship = 1
-		basic_battleship = 1
 		early_battlecruiser = 1
-		basic_carrier = 1
 		early_carrier = 1
 		transport = 1
+		basic_light_cruiser = 1
+		basic_carrier = 1
 	}
 }
 
@@ -54,35 +54,36 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {	
-	basic_naval_mines = 1
-	submarine_mine_laying = 1
-	early_ship_hull_light = 1
-	basic_ship_hull_light = 1
-	early_ship_hull_cruiser = 1
-	basic_ship_hull_cruiser = 1
-	early_ship_hull_heavy = 1
-	basic_ship_hull_heavy = 1
-	basic_ship_hull_carrier = 1
-	early_ship_hull_carrier = 1
-	panzerschiffe = 1
-	pre_dreadnoughts = 1
-	early_ship_hull_submarine = 1
-	basic_ship_hull_submarine = 1
-	mtg_transport = 1
-	basic_torpedo = 1
-	improved_ship_torpedo_launcher = 1
-	basic_battery = 1
-	basic_light_battery = 1
-	basic_medium_battery = 1
-	basic_heavy_battery = 1
-	basic_secondary_battery = 1
-	improved_secondary_battery = 1
-	basic_depth_charges = 1
-	sonar = 1
-	basic_cruiser_armor_scheme = 1
+		panzerschiffe = 1
+		pre_dreadnoughts = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
 	}	
 }
-
 
 starting_train_buffer = 2
 set_research_slots = 3
@@ -202,7 +203,7 @@ if = {
 		puppet = MNU
 	}
 }
-	###DREADFUL FMU SHIPS###
+
 	create_equipment_variant = {
 		name = "Derfflinger Class"
 		type = ship_hull_heavy_1
@@ -303,8 +304,8 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
-			mid_1_custom_slot = ship_deck_space
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = ship_deck_armor
 		}
 	}
 
@@ -327,7 +328,6 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-
 
 1936.1.1 = {
 	if = {
