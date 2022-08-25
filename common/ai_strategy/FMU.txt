@@ -25,12 +25,6 @@ FMU_unit_production = {
 	# Using 100 points
 	ai_strategy = {
 		type = role_ratio
-		id = infantry
-		value = 85
-	}
-	
-	ai_strategy = {
-		type = role_ratio
 		id = mobile
 		value = 2
 	}
@@ -116,10 +110,34 @@ FMU_unit_production = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = 40
+		type = role_ratio
+		id = naval_capital_bb
+		value = 90
 	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 90
+	}	
+	
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 110
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = -50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -50
+	}	
 	
 	### EQUIPMENT PRODUCTION FACTORS
 	# Using 1000 points
@@ -214,6 +232,8 @@ FMU_unit_production = {
 		id = strategic_bomber
 		value = 50
 	}
+	
+	### NAVAL
 }
 
 FMU_row_row_row_some_boats = {
