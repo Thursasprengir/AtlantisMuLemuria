@@ -1,78 +1,13 @@
-# befriend
-# conquer
-# antagonize
-# build_ship
-# build_army
-# unit_ratio
-# build_building
-# research_tech
-# garrison
-# protect
-# influence
-
-ATL_prevent_early_allies_historical = {
+ENG_stop_soviet_from_falling = {
 	allowed = {
-		original_tag = ATL
-	}
-
-	enable = {
-		OR = {
-			date < 1941.1.1
-			AND = {
-				date < 1941.6.1
-				is_historical_focus_on = yes
-				USA = {
-					has_war = no
-				}
-			}
+		original_tag = ENG
+		NOT = {
+			country_exists = ADR
 		}
-	}
-	
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = alliance
-		id = "ENG"
-		value = -999
-	}
-	ai_strategy = {
-		type = pp_spend_priority
-		id = guarantee
-		value = -9999
-	}
-	ai_strategy = {
-		type = alliance
-		id = "GER"
-		value = -999
-	}
-	
-	ai_strategy = {
-		type = alliance
-		id = "SOV"
-		value = -999
-	}
-	
-	ai_strategy = {
-		type = alliance
-		id = "JAP"
-		value = -999
-	}
-	
-	ai_strategy = {
-		type = alliance
-		id = "ITA"
-		value = -999
-	}
-
-}
-
-ATL_stop_soviet_from_falling = {
-	allowed = {
-		original_tag = ATL
 	}
 	enable = {
 		has_war = no
-		num_divisions > 40 # we must have some divisions ourselves
+		num_divisions > 50 # we must have some divisions ourselves
 
 		NOT = { has_government = fascism }
 		NOT = { is_in_faction_with = GER }
@@ -114,9 +49,9 @@ ATL_stop_soviet_from_falling = {
 }
 
 # this one is same as above, but if you have entered the war yourself
-ATL_stop_soviet_from_falling_2 = {
+ENG_stop_soviet_from_falling_2 = {
 	allowed = {
-		original_tag = ATL
+		original_tag = ENG
 		NOT = {
 			country_exists = ADR
 		}
@@ -128,7 +63,7 @@ ATL_stop_soviet_from_falling_2 = {
 		NOT = { has_war_with = SOV }
 		GER = { 
 			has_war_with = SOV 
-			has_war_with = ATL
+			has_war_with = ENG
 		}
 		SOV = {
 			surrender_progress > 0.05
@@ -160,8 +95,3 @@ ATL_stop_soviet_from_falling_2 = {
 		value = 500
 	}
 }
-
-
-
-
-
