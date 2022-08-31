@@ -1,0 +1,119 @@
+MUU_historical = {
+	name = "FDR of MUU historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = MUU
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = MUU_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = MUU_AI_RANDOM_MONARCHIST
+			has_game_rule = {
+				rule = MUU_ai_behavior
+				option = MONARCHIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		MUU_national_tragedy						
+		MUU_emergency_meeting					
+		MUU_upper_reform				
+		MUU_lower_reform						
+		MUU_connect_countryside
+		#1937			
+		MUU_no_talk			
+		MUU_suppress_communists							
+		MUU_old_system							
+		MUU_power_ojjamun				
+		MUU_purge_fascists
+		#1938					
+		MUU_persecute_democratic	
+		MUU_new_elite
+		MUU_national_holidays						
+		MUU_dismantle_militias	
+		MUU_rural_infrastructure
+		#1939	
+		MUU_rural_manpower
+		MUU_civic_education						
+		MUU_limit_influence
+		MUU_bribe_politicians		
+		MUU_deradicalize_youth	
+		#1940
+		MUU_rural_schools
+		MUU_general_education				
+		MUU_one_people
+		MUU_defense_ministry
+		MUU_development_ministry
+		#1941
+		MUU_nonaligned_civ1
+		MUU_nonaligned_civ2							
+		MUU_military_reforms	
+		MUU_infantry_equip
+		MUU_artillery_equip
+		MUU_special_forces	
+		#1942
+		MUU_infantry_marsh
+		MUU_doctrine_research_1
+		MUU_motorized_equip
+		MUU_motorized_marsh				
+		MUU_dd_focus					
+		MUU_cl_focus					
+		MUU_sub_focus
+		MUU_light_fighter_focus
+		MUU_cas_focus
+		#1943
+		MUU_tank_equip
+		MUU_heavy_fighter_focus
+		MUU_tac_bomber_focus
+		MUU_strat_bomber_focus
+		MUU_nav_bomber_focus
+		MUU_tank_marsh
+		MUU_ca_focus
+		MUU_bb_focus
+		#1944
+		MUU_experimental_airfield
+		MUU_expand_airfield
+		MUU_nonaligned_milciv1
+		MUU_nonaligned_milciv2
+		MUU_nonaligned_mil1
+		#1945
+		MUU_nonaligned_mil2
+		MUU_nonaligned_final
+		MUU_jet_research
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

@@ -4,15 +4,47 @@ state={
 	name="STATE_1144"
 
 	history={
-		owner = ATC
+		owner = AME
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			dockyard = 1
+			13960 = {
+				naval_base = 1
+			}
+			13339 = {
+				naval_base = 1
+			}
+			13340 = {
+				naval_base = 1
+			}
+			13938 = {
+				naval_base = 1
+			}
+			13929 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = ATC
 		add_core_of = AME
-		victory_points = {
-			13339 1 
+		victory_points = { 
+			13960 5 #Silver Town
+		}
+		victory_points = { 
+			13339 5 #Gold town
+		}
+		victory_points = { 
+			13987 15 #capital
+		}
+		victory_points = { 
+			13340 2 #on the big island to the side
+		}
+		victory_points = { 
+			13938 2 #copper town
+		}
+		victory_points = { 
+			13929 2 #copper town
 		}
 
 	}
@@ -22,6 +54,6 @@ state={
 	}
 	manpower=250974
 	buildings_max_level_factor=1.000
-	state_category=enclave
+	state_category=city
 	local_supplies=0.000
 }

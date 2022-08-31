@@ -1,0 +1,99 @@
+FMU_historical = {
+	name = "Freiestaaten von Mu Historical Plan"
+	desc = ""
+
+	enable = {
+		original_tag = FMU
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = FMU_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = FMU_AI_RANDOM_HISTORICAL 
+			has_game_rule = {
+				rule = FMU_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#ASAP
+		FMU_law_14056 
+		#1936
+		FMU_reject_versailles #70 
+		FMU_GER_relations #35
+		FMU_national_dev_campaign #70						
+		FMU_civil_works_research_admin #70				
+		FMU_develop_east_coast #70						
+		FMU_develop_west_coast #70	
+		#1937										
+		FMU_sudencreutz_volk #70							
+		FMU_kriegspfad #70							
+		FMU_ocean_destiny #50
+		FMU_pitkairn_schiffwerke #70						
+		FMU_german_peoples_compact #50
+		FMU_integrate_manu #35
+		#1938	
+		FMU_1938_domestic_tech_fair #35
+		FMU_law_14056 #50 To do this asap early on
+		FMU_eisenbahnen #70	
+		FMU_ebenen_autobahn #70				
+		FMU_blauwasser_shipping_lanes #70
+		FMU_eisengewolbe #70
+		#1939
+		FMU_clause_a #70
+		FMU_diplomatic_outreach #35		
+		FMU_surface_fleet_focus #70			
+		FMU_theater_groups #70		
+		FMU_commerce_focus #70
+		FMU_blauwasser_stockmarket #70
+		#1940					
+		FMU_1940_domestic_tech_fair #35
+		FMU_weapons_drills #70
+		FMU_national_university #70
+		FMU_ship_bounties #35
+		FMU_clause_b #70
+		FMU_crucial_industry #70
+		FMU_invite_civ_designers #70
+		#1941		
+		FMU_addendum_9f					
+		FMU_nationalize_uli_traktor #70
+		FMU_zilver_industrieel #70
+		#1942						
+							
+
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

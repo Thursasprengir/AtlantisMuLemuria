@@ -1,0 +1,94 @@
+ATL_historical = {
+	name = "Atlantis Historical Plan"
+	desc = ""
+
+	enable = {
+		original_tag = ATL
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = ATL_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = ATL_AI_RANDOM_DEMOCRATIC_HISTORICAL 
+			has_game_rule = {
+				rule = ATL_ai_behavior
+				option = DEMOCRATIC_HISTORICAL
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		ATL_main						
+		ATL_mil_main						
+		ATL_deimila				
+		ATL_crime						
+		ATL_attack_itorkanak	
+		#1937										
+		ATL_intervention							
+		ATL_SS							
+		ATL_sumendia
+		ATL_sumendia_2						
+		ATL_trade_interdiction	
+		#1938	
+		ATL_attack_all						
+		ATL_attack_kaprastiak				
+		ATL_karistig		
+		ATL_karistig_2							
+		ATL_central_1	
+		#1939							
+		ATL_central_2 		
+		ATL_naval_aviation							
+		ATL_heavy_fighters						
+		ATL_central_3			
+		ATL_central_allies
+		#1940					
+		ATL_central_allies_2	
+		ATL_amphibious						
+		ATL_central_allies_3		
+		ATL_armor_focus
+		ATL_VLFP
+		#1941							
+		ATL_light_bombers		
+		ATL_africa_main		
+		ATL_african_ports				
+		ATL_african_infra							
+		ATL_african_factories_1	
+		#1942						
+		ATL_african_factories_2						
+		ATL_african_forts							
+		ATL_african_airfields								
+
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

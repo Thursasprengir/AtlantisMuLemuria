@@ -323,7 +323,10 @@ country_event = {
 		ai_chance = {factor = 10}
 		name = mandgeneric.5.a
 		set_country_flag = mandalists_victorious
-		set_politics = {ruling_party = neutrality elections_allowed = no}
+		set_rule = {
+			can_puppet = no
+		}
+		set_politics = {ruling_party = mandalism elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_ideas = MAN_nonaligned_idea
 		country_event = {id = mandcapital.2 days = 5}
@@ -517,7 +520,10 @@ country_event = {
 		name = mandgeneric.10.a
 		ai_chance = {base = 10 factor = 1}
 		set_country_flag = mandalists_victorious
-		set_politics = {ruling_party = neutrality elections_allowed = no}
+		set_rule = {
+			can_puppet = no
+		}
+		set_politics = {ruling_party = mandalism elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_ideas = MAN_nonaligned_idea
 		country_event = {id = mandcapital.2 days = 5}
@@ -903,8 +909,11 @@ country_event = {
 			factor = 1
 		}
 		set_country_flag = mandalists_victorious
+		set_rule = {
+			can_puppet = no
+		}
 		country_event = {id = mandcapital.2 days = 5}
-		set_politics = {ruling_party = neutrality elections_allowed = no}
+		set_politics = {ruling_party = mandalism elections_allowed = no}
 		complete_national_focus = INDOLEM2_the_hooks
 		add_ideas = MAN_nonaligned_idea
 		if = {

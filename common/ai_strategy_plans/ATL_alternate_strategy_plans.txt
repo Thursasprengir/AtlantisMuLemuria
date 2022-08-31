@@ -1,0 +1,343 @@
+ATL_democratic_alternate = {
+	name = "Atlantis Infiltration"
+	desc = "Give us your steel."
+
+	enable = {
+		original_tag = ATL
+		OR = {
+			has_country_flag = ATL_AI_RANDOM_DEMOCRATIC_ALTERNATE
+			has_game_rule = {
+rule = ATL_ai_behavior
+option = DEMOCRATIC_ALTERNATE
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		ATL_main		
+		ATL_mil_main		
+		ATL_deimila
+		ATL_crime		
+		ATL_attack_kaprastiak	
+		#1937
+		ATL_intervention	
+		ATL_SS		
+		ATL_sumendia	
+		ATL_befriend_itorkanak	
+		ATL_open
+		#1938		
+		ATL_befriend_sicilians		
+		ATL_befriend_siegels
+		ATL_befriend_ringvereine			
+		ATL_rothschilds		
+		ATL_rothschilds_2		
+		#1939
+		ATL_trade_interdiction	
+		ATL_heavy_fighters
+		ATL_armor_focus			
+		ATL_naval_aviation
+		ATL_VLFP		
+		#1940
+		ATL_USA_1		
+		ATL_UK_1			
+		ATL_USA_2 		
+		ATL_UK_2		
+		ATL_sumendia_2
+		#1941
+		ATL_allies_final		
+		ATL_light_bombers
+		ATL_africa_main		
+		ATL_african_ports
+		ATL_african_infra
+		#1942
+		ATL_african_factories_1			
+		ATL_african_factories_2		
+		ATL_african_forts			
+		ATL_african_airfields
+		ATL_amphibious
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+ATL_fascist = {
+	name = "Atlantis goes fascist"
+	desc = "Uhhhhhhhhhhhhhhhhhh"
+
+	enable = {
+		original_tag = ATL
+		OR = {
+			has_country_flag = ATL_AI_RANDOM_FASCIST 
+			has_game_rule = {
+rule = ATL_ai_behavior
+option = FASCIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		ATL_main
+		ATL_mil_main
+		ATL_gostudi	
+		ATL_crime		
+		ATL_attack_itorkanak
+		#1937			
+		ATL_attack_all
+		ATL_attack_kaprastiak
+		ATL_intervention			
+		ATL_SS			
+		ATL_sumendia
+		#1938			
+		ATL_tensapiak			
+		ATL_UBG	
+		ATL_orange_masks		
+		ATL_green_brigade		
+		ATL_axis_1			
+		#1939
+		ATL_trade_interdiction
+		ATL_naval_aviation
+		ATL_africa_main	
+		ATL_axis_2			
+		ATL_heavy_fighters			
+		#1940
+		ATL_VLFP	
+		ATL_axis_3			
+		ATL_light_bombers		
+		ATL_sumendia_2	
+		ATL_african_ports		
+		#1941
+		ATL_african_infra
+		ATL_african_factories_1			
+		ATL_african_factories_2		
+		ATL_african_forts			
+		ATL_african_airfields
+		#1942			
+		ATL_amphibious	
+		ATL_armor_focus	
+		ATL_hastugudak
+		ATL_hastugudak_2
+		ATL_hastugudak_3		
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+ATL_communist = {
+	name = "Atlantis goes communist"
+	desc = "Uhhhhhhhhhhhhhhhhhh"
+
+	enable = {
+		original_tag = ATL
+		OR = {
+			has_country_flag = ATL_AI_RANDOM_COMMUNIST 
+			has_game_rule = {
+rule = ATL_ai_behavior
+option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		ATL_main		
+		ATL_mil_main		
+		ATL_gostudi
+		ATL_crime		
+		ATL_attack_itorkanak	
+		#1937			
+		ATL_attack_all		
+		ATL_attack_kaprastiak			
+		ATL_intervention			
+		ATL_SS			
+		ATL_sumendia
+		#1938			
+		ATL_tensapiak			
+		ATL_UBG	
+		ATL_orange_masks		
+		ATL_red_bandanas		
+		ATL_com_1			
+		#1939
+		ATL_trade_interdiction
+		ATL_naval_aviation
+		ATL_africa_main	
+		ATL_com_2			
+		ATL_sumendia_2			
+		#1940
+		ATL_heavy_fighters	
+		ATL_VLFP		
+		ATL_light_bombers
+		ATL_com_3		
+		ATL_african_ports		
+		#1941
+		ATL_african_infra
+		ATL_african_factories_1			
+		ATL_african_factories_2		
+		ATL_african_forts			
+		ATL_african_airfields
+		#1942			
+		ATL_amphibious	
+		ATL_armor_focus			
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+ATL_monarchist = {
+	name = "Atlantis goes to empire"
+	desc = "empires"
+
+	enable = {
+		original_tag = ATL
+		OR = {
+			has_country_flag = ATL_AI_RANDOM_MONARCHIST 
+			has_game_rule = {
+rule = ATL_ai_behavior
+option = MONARCHIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		ATL_main		
+		ATL_mil_main		
+		ATL_gostudi
+		ATL_crime		
+		ATL_attack_itorkanak	
+		#1937
+		ATL_befriend_kaprastiak	
+		ATL_isolation		
+		ATL_home_defense			
+		ATL_DD			
+		ATL_sumendia
+		#1938			
+		ATL_hexanchials		
+		ATL_hexanchials_2	
+		ATL_isolation_2
+		#1939
+		ATL_fleet_in_being
+		ATL_radars
+		ATL_africa_main	
+		ATL_hastugudak			
+		ATL_sumendia_2			
+		#1940
+		ATL_hastugudak_2	
+		ATL_hastugudak_3		
+		ATL_mainland_forts
+		ATL_kaiturn	
+		ATL_kaiturn_2		
+		#1941
+		ATL_isolation_final_1	
+		ATL_fighters		
+		ATL_mech
+		ATL_naval_bombers	
+		ATL_isolation_final_2	
+		#1942
+		ATL_central_isolation
+		ATL_parasite
+		ATL_strat_bombers
+		ATL_african_ports		
+		ATL_african_infra
+		#1943
+		ATL_african_factories_1		
+		ATL_african_factories_2
+		ATL_african_forts	
+		ATL_african_airfields
+		ATL_amphibious
+		ATL_armor_focus			
+	}
+
+	research = {
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

@@ -15,7 +15,6 @@ ideas = {
 		
 		FMU_associate_state = {
 			
-			
 			allowed = {
 				always = no
 			}
@@ -129,6 +128,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 	
 			modifier = {
+					min_export = -0.1
 					economy_cost_factor = -0.25	
 					trade_opinion_factor = 0.3
 			}
@@ -149,9 +149,10 @@ ideas = {
 			picture = generic_goods_red_bonus
 	
 			modifier = {
-			consumer_goods_factor = 0.2
-			economy_cost_factor = -0.25	
-					trade_opinion_factor = 0.3
+			min_export = -0.1
+			consumer_goods_factor = -0.05
+			economy_cost_factor = -0.25
+			trade_opinion_factor = 0.3
 			}
 		}
 
@@ -171,9 +172,10 @@ ideas = {
 			picture = generic_goods_red_bonus
 	
 			modifier = {
-					industrial_capacity_factory = 0.1
-					economy_cost_factor = -0.25	
-					trade_opinion_factor = 0.3
+				min_export = -0.1
+				industrial_capacity_factory = 0.1
+				economy_cost_factor = -0.25	
+				trade_opinion_factor = 0.3
 			}
 		}
 		FMU_companies_kohn = {
@@ -394,31 +396,8 @@ ideas = {
 			}
 		}
 		#New Ideas
-		FMU_we_are_german = {
-
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				non_core_manpower = 0.01
-				consumer_goods_factor = -0.1
-			}
-
-			picture = eng_imperial_conscription
-			
-			removal_cost = -1	
-
-		}
 
 		FMU_no_dutch = {
-
-
 			allowed = {
 				always = no
 			}
@@ -431,12 +410,13 @@ ideas = {
 				stability_factor = -0.2
 			}
 
-			
 			removal_cost = -1	
+			
+			picture = ger_revive_the_kaiserreich
 
 		}
 		
-		FMU_boat_production = {
+		FMU_we_are_german = {
 
 
 			allowed = {
@@ -448,13 +428,61 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = -0.03
+				non_core_manpower = 0.1
+				line_change_production_efficiency_factor = 0.05
 			}
 
+			picture = eng_imperial_conscription
 			
 			removal_cost = -1	
 
 		}
+
+		FMU_inevitable_war = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				mobilization_speed = 0.1
+				war_stability_factor = 0.1
+				max_command_power = 50
+			}
+
+			picture = eng_imperial_conscription
+			
+			removal_cost = -1	
+
+		}			
+		
+		FMU_boat_production = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = -0.1
+				
+			}
+			
+			picture = jap_interservice_rivalry_navy_strengthened
+
+			removal_cost = -1	
+
+		}
+
 		FMU_boat_bounty = {
 
 
@@ -467,7 +495,11 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.03
+				naval_morale_factor = 0.15
+				naval_critical_score_chance_factor = 0.1
+				navy_org = 5
+				naval_retreat_chance = -0.1
 			}
 
 			
@@ -487,19 +519,11 @@ ideas = {
 			}
 
 			modifier = {
-				navy_fuel_consumption_factor = 0.2
-				navy_submarine_attack_factor = 0.2
-				navy_submarine_defence_factor = 0.2
-				navy_submarine_detection_factor = 0.2
-				navy_screen_attack_factor = 0.2
-				navy_screen_defence_factor = 0.2
-
-				navy_capital_ship_attack_factor = 0.2
-				navy_capital_ship_defence_factor = 0.2
-
-				navy_carrier_air_attack_factor = 0.2
-				navy_carrier_air_targetting_factor = 0.2
-				navy_carrier_air_agility_factor = 0.2
+				positioning = 0.1
+				naval_damage_factor = 0.1
+				naval_hit_chance = 0.1
+				sortie_efficiency = 0.1
+				navy_fuel_consumption_factor = 0.07
 			}
 
 			
@@ -564,7 +588,6 @@ ideas = {
 		}
 		FMU_build_forts = {
 
-
 			allowed = {
 				always = no
 			}
@@ -574,7 +597,8 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_bunker_factor = 0.2
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
 			}
 
 			
@@ -593,7 +617,7 @@ ideas = {
 			}
 
 			modifier = {
-				naval_coordination = 1
+				naval_coordination = 0.05
 			}
 
 			
@@ -615,11 +639,13 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = -0.1
 			}
-
 			
 			removal_cost = -1	
+			
+			picture = jap_interservice_rivalry_army_strengthened
 
 		}
 
@@ -768,7 +794,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_local_self_management
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 		FMU_tech_fair_2 = {
@@ -776,7 +802,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_local_self_management
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
+				research_speed_factor = 0.03
 			}
 		}
 		FMU_tech_fair_3 = {
@@ -792,7 +818,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_local_self_management
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.2
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		
@@ -803,7 +829,7 @@ ideas = {
 				original_tag = FMU
 			}
 			
-			picture = GRE_debt_to_the_ifc
+			picture = gre_debt_to_the_ifc
 				
 			removal_cost = -1
 				
@@ -828,7 +854,7 @@ ideas = {
 				}
 			}
 
-			picture = GRE_debt_to_the_ifc
+			picture = gre_debt_to_the_ifc
 				
 			removal_cost = -1
 				
@@ -853,7 +879,7 @@ ideas = {
 				}
 			}
 
-			picture = GRE_debt_to_the_ifc
+			picture = gre_debt_to_the_ifc
 				
 			removal_cost = -1
 				
@@ -915,6 +941,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.1
+				conscription_factor = 0.03
+				local_non_core_manpower = 0.15 
 			}
 
 			picture = eng_imperial_conscription
@@ -945,9 +973,9 @@ ideas = {
 			removal_cost = -1
 			picture = ger_revive_the_kaiserreich
 			modifier = {
-				industrial_capacity_factory = 0.3
-				industrial_capacity_dockyard = 0.3
-				production_factory_max_efficiency_factor = 0.5 
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.2 
 			}
 		}
 		
@@ -1050,7 +1078,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_local_self_management
 			modifier = {
-				justify_war_goal_time = -0.1
+				justify_war_goal_time = -0.15
+				generate_wargoal_tension = -0.85
 			}
 		}
 		FMU_our_mighty_home_idea = {

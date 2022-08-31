@@ -1,0 +1,2858 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CHI_INFLATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+### search_filters = {FOCUS_FILTER_TFV_AUTONOMY}
+### search_filters = {FOCUS_FILTER_MEX_CHURCH_AUTHORITY}
+### search_filters = {FOCUS_FILTER_MEX_CAUDILLO_REBELLION}
+
+#focus_tree = {
+#	id = rio_grande_focus_tree
+#	
+#	country = {
+#		factor = 0
+#		modifier = {
+#			add = 10
+#			tag = RGD
+#		}
+#	}
+#	
+#	default = no
+#
+#	continuous_focus_position = { x = 70 y = 1100 }
+#
+#	focus = {
+#		id = RGD_seek_statehood
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		x = 16
+#		y = 0
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			add_stability = 0.05
+#			#serious malus to relations with USA
+#		}
+#	}
+#
+#
+#############################
+### Rio Grande Communist
+#############################
+#	focus = {
+#		id = RGD_finish_the_revolution
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		relative_position_id = RGD_seek_statehood	
+#		prerequisite = { focus = RGD_seek_statehood }
+#		mutually_exclusive = { focus = RGD_gain_true_independence }	
+#		mutually_exclusive = { focus = RGD_submit_to_usa }
+#		mutually_exclusive = { focus = RGD_reunite_with_mexico }	
+#		
+#		x = -11
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#some sort of major swing toward communism
+#		}
+#	}
+#
+#	focus = {
+#		id = RGD_assassination_villa
+#		icon = GFX_focus_mex_exile_calles
+#		prerequisite = { focus = RGD_finish_the_revolution }
+#		relative_position_id = RGD_finish_the_revolution
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			#add_ideas = RGD_shadow_of_pancho_villa
+#		}
+#	}
+#
+#	focus = {
+#		id = RGD_el_movimiento
+#		icon = GFX_focus_mex_jefe_maximo
+#		prerequisite = { focus = RGD_assassination_villa}	
+#		relative_position_id = RGD_assassination_villa
+#		x = -3
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#			
+#			modifier = {
+#				factor = 0.1
+#				is_historical_focus_on = yes
+#			}
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
+#		completion_reward = {	
+#			#hit to stability, more civilian industry?
+#		}
+#	}
+#	
+#	focus = {
+#		id = RGD_villa_zapatismo
+#		icon = GFX_focus_usa_reestablish_the_gold_standard
+#		prerequisite = { focus = RGD_el_movimiento}	
+#		relative_position_id = RGD_el_movimiento
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			swap_ideas = {
+#				remove_idea = RGD_shadow_of_pancho_villa
+#				add_idea = RGD_villa_zapatismo
+#			}				
+#		}
+#	}
+#
+#	focus = {
+#		id = RGD_equal_rights_fights
+#		icon = GFX_goal_generic_construct_civilian
+#		prerequisite = { focus = RGD_villa_zapatismo }
+#		relative_position_id = RGD_villa_zapatismo
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#			
+#			modifier = {
+#				factor = 10
+#				has_government = communism
+#			}
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			#manpowe boost, enable females in military
+#		}
+#	}
+#	
+#	focus = {
+#		id = RGD_rio_us_relations
+#		icon = GFX_goal_generic_national_unity
+#		prerequisite = { focus = RGD_assassination_villa }
+#		relative_position_id = RGD_assassination_villa
+#		x = 0
+#		y = 1
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_POLITICAL}
+#		completion_reward = {
+#			#massive malus to US relations, increased war support
+#		}
+#	}
+#	focus = {
+#		id = RGD_reach_out_soviets
+#		icon = GFX_focus_generic_self_management
+#		prerequisite = { focus = RGD_rio_us_relations }
+#		relative_position_id = RGD_rio_us_relations
+#		x = -1
+#		y = 1
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#bonus to relations with SOV
+#			#
+#		}
+#	}
+#	focus = {
+#		id = RGD_seize_us_assets
+#		icon = GFX_focus_YUG_pan_slavic_congress
+#		prerequisite = { focus = RGD_rio_us_relations }
+#		relative_position_id = RGD_rio_us_relations
+#		x = 1
+#		y = 1
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
+#		completion_reward = {
+#			#more factories? US threats?
+#		}
+#	}
+#	
+#	focus = {
+#		id = RGD_time_for_change
+#		icon = GFX_goal_support_communism
+#		prerequisite = { 
+#			focus = RGD_villa_zapatismo
+#			focus = RGD_reach_out_soviets
+#			focus = RGD_rio_us_relations}
+#		relative_position_id = RGD_reach_out_soviets
+#		x = 0
+#		y = 1
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
+#		completion_reward = {
+#			add_popularity = {
+#				ideology = communism
+#				popularity = 0.25
+#			}
+#			
+#			add_stability = 0.05
+#			add_war_support = 0.05
+#
+#			if = {
+#				limit = {
+#					NOT = {
+#						has_government = communism
+#					}
+#				}
+#				set_politics = {
+#					ruling_party = communism
+#					elections_allowed = yes
+#				}
+#			}
+#		}
+#	}
+#	
+#	focus = {
+#		id = RGD_peoples_development_campaign
+#		icon = GFX_goal_generic_construct_infrastructure
+#		prerequisite = { focus = RGD_time_for_change }
+#		x = -2
+#		y = 1
+#		relative_position_id = RGD_time_for_change
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_INDUSTRY}
+#		completion_reward = {
+#			every_state = {
+#				limit = {
+#					is_owned_by = ROOT
+#					is_controlled_by = ROOT
+#					OR = {
+#						state = 477
+#						state = 485
+#						state = 478
+#						state = 479
+#						state = 480
+#						state = 481
+#					}
+#				}
+#				add_building_construction = {
+#					type = infrastructure
+#					level = 1
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = RGD_working_education
+#		icon = GFX_goal_generic_construct_infrastructure
+#		mutually_exclusive = { focus = RGD_educate_children }
+#		prerequisite = { focus = RGD_time_for_change }
+#		x = 0
+#		y = 1
+#		relative_position_id = RGD_time_for_change
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_INDUSTRY}
+#		completion_reward = {
+#			#manpower bonus? Bonus to civ factories?
+#		}
+#	}
+#
+#	focus = {
+#		id = RGD_educate_children
+#		icon = GFX_focus_research
+#		mutually_exclusive = { focus = RGD_working_education }
+#		prerequisite = { focus = RGD_time_for_change }
+#		x = 2
+#		y = 1
+#		relative_position_id = RGD_time_for_change
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_RESEARCH}
+#		completion_reward = {
+#			#stability bonus?
+#		}
+#	}
+#	
+#	
+#############################
+### Rio Grande Independence/Democracy
+#############################
+#	focus = {
+#		id = RGD_gain_true_independence
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_seek_statehood }
+#		relative_position_id = RGD_seek_statehood
+#		mutually_exclusive = { focus = RGD_finish_the_revolution }		
+#		mutually_exclusive = { focus = RGD_submit_to_usa }
+#		mutually_exclusive = { focus = RGD_reunite_with_mexico }	
+#		
+#		x = -4
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#stability boost?
+#		}
+#	}
+#	focus = {
+#		id = RGD_form_national_identity
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_gain_true_independence focus = RGD_finish_the_revolution }
+#		relative_position_id = RGD_gain_true_independence		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#???
+#		}
+#	}
+#	focus = {
+#		id = RGD_encourage_latino_immigration
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_form_national_identity }
+#		relative_position_id = RGD_form_national_identity		
+#		x = -2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#weekly manpower boost
+#		}
+#	}
+#	focus = {
+#		id = RGD_northern_mexicans
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_form_national_identity }
+#		relative_position_id = RGD_form_national_identity		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#weekly manpower boost
+#		}
+#	}
+#	focus = {
+#		id = RGD_international_catholic
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_encourage_latino_immigration }
+#		relative_position_id = RGD_encourage_latino_immigration		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#weekly manpower boost, stability boost
+#		}
+#	}
+#	focus = {
+#		id = RGD_black_immigrants
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_encourage_latino_immigration }
+#		relative_position_id = RGD_encourage_latino_immigration		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#weekly manpower boost
+#		}
+#	}
+#	focus = {
+#		id = RGD_offer_protection
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_northern_mexicans }
+#		relative_position_id = RGD_northern_mexicans		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Sinaloa and Durango defect from Mexico to Rio Grande
+#		}
+#	}
+#	focus = {
+#		id = RGD_act_193
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_black_immigrants }
+#		relative_position_id = RGD_black_immigrants		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#increase resources available, some sort of malus to stability
+#		}
+#	}
+#	focus = {
+#		id = RGD_constitutional_reform
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_offer_protection }
+#		relative_position_id = RGD_offer_protection		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#political power boost
+#		}
+#	}
+#	
+#	
+#	
+#	focus = {
+#		id = RGD_celebrate_indep
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_gain_true_independence focus = RGD_submit_to_usa}
+#		relative_position_id = RGD_gain_true_independence	
+#		x = 4
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#political power boost, stability & manpower boost?
+#		}
+#	}
+#	focus = {
+#		id = RGD_calm_caudillos
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_celebrate_indep}
+#		relative_position_id = RGD_celebrate_indep
+#		mutually_exclusive = { focus = RGD_crush_caudillos }		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds army units
+#		}
+#	}
+#	focus = {
+#		id = RGD_crush_caudillos
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_celebrate_indep}
+#		relative_position_id = RGD_celebrate_indep
+#		mutually_exclusive = { focus = RGD_calm_caudillos }		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#army experience bonus
+#		}
+#	}
+#	focus = {
+#		id = RGD_abandon_spanish
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_calm_caudillos focus = RGD_crush_caudillos}
+#		relative_position_id = RGD_calm_caudillos
+#		mutually_exclusive = { focus = RGD_enforce_spanish }		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#stability hit, bonus to foreign relations, bonus to spy infiltration
+#		}
+#	}
+#	focus = {
+#		id = RGD_enforce_spanish
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_calm_caudillos focus = RGD_crush_caudillos}
+#		relative_position_id = RGD_crush_caudillos
+#		mutually_exclusive = { focus = RGD_abandon_spanish }		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#stability bonus, manpower bonus, political power
+#		}
+#	}
+#	
+#	
+#	
+#	
+#############################
+### Rio Grande Neutrality/US Puppet
+#############################
+#	focus = {
+#		id = RGD_submit_to_usa
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_seek_statehood }
+#		relative_position_id = RGD_seek_statehood
+#		mutually_exclusive = { focus = RGD_finish_the_revolution }	
+#		mutually_exclusive = { focus = RGD_gain_true_independence }	
+#		mutually_exclusive = { focus = RGD_reunite_with_mexico }	
+#		
+#		x = 4
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#massive relations bonus with US. Trade bonus with US? Boost to neutrality
+#		}
+#	}
+#	focus = {
+#		id = RGD_intervene_mexican_civil_war
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_submit_to_usa}
+#		relative_position_id = RGD_submit_to_usa
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#massive relations malus with Mex, can send vounteers, increase defense on core territory
+#		}
+#	}
+#	focus = {
+#		id = RGD_mexican_refugees
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_intervene_mexican_civil_war}
+#		relative_position_id = RGD_intervene_mexican_civil_war
+#		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#stability drop, large manpower increase
+#		}
+#	}
+#	focus = {
+#		id = RGD_spanish_refugees
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_intervene_mexican_civil_war}
+#		relative_position_id = RGD_intervene_mexican_civil_war
+#		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#increase civil factory production, increase political power
+#		}
+#	}
+#	focus = {
+#		id = RGD_expand_borders
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_mexican_refugees}
+#		relative_position_id = RGD_mexican_refugees
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#war score requirements drop?
+#		}
+#	}
+#	focus = {
+#		id = RGD_invite_durango
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_expand_borders}
+#		relative_position_id = RGD_expand_borders
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#durango leaves mexico and joins RGD
+#		}
+#	}
+#	focus = {
+#		id = RGD_invite_sinaloa
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_invite_durango}
+#		relative_position_id = RGD_invite_durango
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#owns and controls Durango
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#sinaloa leaves mexico and joins RGD
+#		}
+#	}
+#	focus = {
+#		id = RGD_revoke_gadsden_purchase
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_invite_sinaloa}
+#		relative_position_id = RGD_invite_sinaloa
+#		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#area of Gadsden Purchase gains RGD cores
+#		}
+#	}
+#	focus = {
+#		id = RGD_invite_hermanas
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_invite_sinaloa}
+#		relative_position_id = RGD_invite_sinaloa
+#		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#gain core on Hermanas Islands, DOES NOT give Hermanas to RGD
+#		}
+#	}
+#	
+#############################
+### Rio Grande Stronk & Nationalist
+#############################
+#	focus = {
+#		id = RGD_reunite_with_mexico
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_seek_statehood }
+#		relative_position_id = RGD_seek_statehood
+#		mutually_exclusive = { focus = RGD_finish_the_revolution }		
+#		mutually_exclusive = { focus = RGD_submit_to_usa }
+#		mutually_exclusive = { focus = RGD_gain_true_independence }		
+#		
+#		x = 8
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#rise in nationalist sentiment
+#		}
+#	}
+#	focus = {
+#		id = RGD_rightful_government
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_reunite_with_mexico }
+#		relative_position_id = RGD_reunite_with_mexico	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#massive malus to Mexico, puppet/Annex MEX wargoal, rise in nationalist sentiment
+#		}
+#	}
+#	focus = {
+#		id = RGD_break_ties_us
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_reunite_with_mexico }
+#		relative_position_id = RGD_reunite_with_mexico	
+#		
+#		x = 2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#massive malus to relations with USA. add modifier "US owned businesses seized"
+#		}
+#	}
+#	focus = {
+#		id = RGD_state_of_yucatan
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_rightful_government}
+#		relative_position_id = RGD_rightful_government	
+#		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Yucatan joins RGD
+#		}
+#	}
+#	focus = {
+#		id = RGD_western_states
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_rightful_government}
+#		relative_position_id = RGD_rightful_government	
+#		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Durango and Sinaloa join RGD
+#		}
+#	}
+#	focus = {
+#		id = RGD_mayan_lands
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_state_of_yucatan}
+#		relative_position_id = RGD_state_of_yucatan	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Oaxaca and Chiapas join RGD
+#		}
+#	}
+#	focus = {
+#		id = RGD_southern_states
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_western_states}
+#		relative_position_id = RGD_western_states	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Guerrero, Michoacan and Jalisco join RGD
+#		}
+#	}
+#	focus = {
+#		id = RGD_aztec_core
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_southern_states}
+#		prerequisite = { focus = RGD_mayan_lands}
+#		relative_position_id = RGD_mayan_lands	
+#		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#RGD inherits MEX
+#		}
+#	}
+#	focus = {
+#		id = RGD_we_are_mexico
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_aztec_core}
+#		relative_position_id = RGD_aztec_core	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#change tag to Mex, massive stability and manpower boost
+#		}
+#	}
+#	focus = {
+#		id = RGD_mantle_of_freedom
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_we_are_mexico}
+#		relative_position_id = RGD_we_are_mexico	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#foreign relations boost, division attack boost
+#		}
+#	}
+#	focus = {
+#		id = RGD_centroamerican_states
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_mantle_of_freedom}
+#		relative_position_id = RGD_mantle_of_freedom	
+#		
+#		x = -2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Cores Guatemala, Honduras and Nicaragua. Adds puppet/annex wargoal
+#		}
+#	}
+#	focus = {
+#		id = RGD_rest_of_centroamerica
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_centroamerican_states}
+#		relative_position_id = RGD_centroamerican_states	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Cores Costa Rica and Panama. Adds puppet/annex wargoal
+#		}
+#	}
+#	focus = {
+#		id = RGD_demand_panama_canal
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_rest_of_centroamerica}
+#		relative_position_id = RGD_rest_of_centroamerica	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#US agrees and cedes Panama Canal
+#			#OR
+#			#Cores Panama Canal. Adds wargoal
+#		}
+#	}
+#	focus = {
+#		id = RGD_demand_caribbean_colonies
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_demand_panama_canal}
+#		relative_position_id = RGD_demand_panama_canal	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#must own Panama Canal
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Cores all Carribean provinces. Event for every Caribbean Province: owner can choose to give up land and get massive relations boost and trade boost with RGD or they can insult RGD and have the Canal completely closed to them.
+#		}
+#	}
+#	focus = {
+#		id = RGD_belize_question
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_mantle_of_freedom}
+#		relative_position_id = RGD_mantle_of_freedom	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#must own Yucatan
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Event: UK can surrender Belize if RGD has X% of UK's military strength or is at war OR it can insult RGD and risk war. 
+#			#OR
+#			#Cores Belize. Reconquer wargoal against UK
+#		}
+#	}
+#	focus = {
+#		id = RGD_gulf_islands
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_mantle_of_freedom}
+#		relative_position_id = RGD_mantle_of_freedom	
+#		
+#		x = 2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#must own Yucatan
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Core Cuba and get wargoal
+#			#OR
+#			#Annex Cuba
+#		}
+#	}
+#	focus = {
+#		id = RGD_jamaica_is_ours
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_belize_question}
+#		prerequisite = { focus = RGD_gulf_islands}
+#		relative_position_id = RGD_belize_question	
+#		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#must own Cuba
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Core Jamaica and get wargoal
+#			#OR
+#			#Annex Jamaica
+#		}
+#	}
+#	focus = {
+#		id = RGD_dominican_brethren
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_jamaica_is_ours}
+#		relative_position_id = RGD_jamaica_is_ours	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#must own Cuba and Jamaica
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Annex Dominican Republic
+#		}
+#	}
+#	focus = {
+#		id = RGD_unify_hispanosphere
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_demand_caribbean_colonies}
+#		prerequisite = { focus = RGD_dominican_brethren}
+#		relative_position_id = RGD_demand_caribbean_colonies	
+#		
+#		x = 2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Cores all Spanish speaking territories in the world. Adds wargoal.
+#		}
+#	}
+#	
+###############################
+### Rio Grande Economics
+###############################	
+#	
+#	
+#	focus = {
+#		id = RGD_parras_oil_field #in Coahuila
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		relative_position_id = RGD_seek_statehood	
+#		
+#		x = 16
+#		y = 0
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Adds oil production to Coahuila
+#		}
+#	}
+#	focus = {
+#		id = RGD_hermosillo_docks
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_parras_oil_field}
+#		relative_position_id = RGD_parras_oil_field	
+#		
+#		x = -2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds dockyards in Sonora
+#		}
+#	}
+#	focus = {
+#		id = RGD_mon_rey_mat_met
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_parras_oil_field}
+#		relative_position_id = RGD_parras_oil_field	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds mil & civ factories & infrastructure to Monterrey, Reynosa and Matamoros
+#		}
+#	}
+#	focus = {
+#		id = RGD_industrialize_chihuahua
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_parras_oil_field}
+#		relative_position_id = RGD_parras_oil_field	
+#		
+#		x = 2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds civ factories and resource bonus to Chihuahua
+#		}
+#	}
+#	focus = {
+#		id = RGD_rio_grande_nat_rail
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_mon_rey_mat_met}
+#		relative_position_id = RGD_mon_rey_mat_met	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds railways from capital to Chihuaha
+#		}
+#	}
+#	focus = {
+#		id = RGD_revalue_the_dolar
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_rio_grande_nat_rail}
+#		relative_position_id = RGD_rio_grande_nat_rail	
+#		
+#		x = -4
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#trade bonus, stability bonus
+#		}
+#	}
+#	focus = {
+#		id = RGD_expanded_silver_mines
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_revalue_the_dolar}
+#		relative_position_id = RGD_revalue_the_dolar	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#increase civilian factory output?
+#		}
+#	}
+#	focus = {
+#		id = RGD_chihuahua_resource_survey
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_rio_grande_nat_rail}
+#		relative_position_id = RGD_rio_grande_nat_rail	
+#		
+#		x = -2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds resources to Chihuaha
+#		}
+#	}
+#	focus = {
+#		id = RGD_sonora_resource_survey
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_chihuahua_resource_survey}
+#		relative_position_id = RGD_chihuahua_resource_survey	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds resources to Sonora
+#		}
+#	}
+#	focus = {
+#		id = RGD_dams_on_rio_grande
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_rio_grande_nat_rail}
+#		relative_position_id = RGD_rio_grande_nat_rail	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds infrastructure and a civ factory to XXX
+#		}
+#	}
+#	focus = {
+#		id = RGD_rio_grande_irrigation
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_dams_on_rio_grande}
+#		relative_position_id = RGD_dams_on_rio_grande	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds??? Malus to relations with USA.
+#		}
+#	}
+#	focus = {
+#		id = RGD_limit_cash_crops
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_rio_grande_irrigation}
+#		relative_position_id = RGD_rio_grande_irrigation	
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds??? Manpower???
+#		}
+#	}
+#	focus = {
+#		id = RGD_tamaulipas_resource_survey
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_rio_grande_nat_rail}
+#		relative_position_id = RGD_rio_grande_nat_rail	
+#		
+#		x = 2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds resources to Tamaulipas
+#		}
+#	}
+#	focus = {
+#		id = RGD_coahuila_resource_survey
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_tamaulipas_resource_survey}
+#		relative_position_id = RGD_tamaulipas_resource_survey
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds resources to Coahuila
+#		}
+#	}
+#	focus = {
+#		id = RGD_tamaulipas_food
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_tamaulipas_resource_survey}
+#		relative_position_id = RGD_tamaulipas_resource_survey	
+#		
+#		x = 2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#adds ??? to Tamaulipas
+#		}
+#	}
+#	
+#	
+#
+#	
+###############################
+### Rio Grande Military
+###############################
+#	
+#	focus = {
+#		id = RGD_armed_forces
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		relative_position_id = RGD_parras_oil_field
+#		
+#		x = 12
+#		y = 0
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Adds army experience
+#		}
+#	}
+#	focus = {
+#		id = RGD_organize_national_army
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_armed_forces}
+#		relative_position_id = RGD_armed_forces
+#		
+#		x = -3
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Adds manpower
+#		}
+#	}
+#	focus = {
+#		id = RGD_american_model_air_force
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_organize_national_army}
+#		relative_position_id = RGD_organize_national_army
+#		
+#		x = -3
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#US has researched B-17s
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Adds 20 B-17s
+#		}
+#	}
+#	focus = {
+#		id = RGD_develop_own_strategic_bombers
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_american_model_air_force}
+#		relative_position_id = RGD_american_model_air_force
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#US has researched B-17s
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#decrease strat bomber research time
+#		}
+#	}
+#	focus = {
+#		id = RGD_import_raf_fighters
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_develop_own_strategic_bombers}
+#		relative_position_id = RGD_develop_own_strategic_bombers
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#US has researched B-17s
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#add 40 RAF fighters
+#		}
+#	}
+#	focus = {
+#		id = RGD_design_own_fighters
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_import_raf_fighters}
+#		relative_position_id = RGD_import_raf_fighters
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#Is = or later than June 1941
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#add 40 RAF fighters
+#		}
+#	}
+#	focus = {
+#		id = RGD_import_stukas
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_american_model_air_force}
+#		relative_position_id = RGD_american_model_air_force
+#		
+#		x = 2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#GER has researched Ju 87s
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#research bonus to CAS
+#		}
+#	}
+#	focus = {
+#		id = RGD_design_own_cas
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_import_stukas}
+#		relative_position_id = RGD_import_stukas
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#Adds 15 Stukas
+#		}
+#	}
+#	focus = {
+#		id = RGD_design_own_naval_bombers
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_import_stukas}
+#		relative_position_id = RGD_import_stukas
+#		
+#		x = 2
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#naval bomber research bonus
+#		}
+#	}
+#	focus = {
+#		id = RGD_modernize_equipment
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_organize_national_army}
+#		relative_position_id = RGD_organize_national_army
+#		
+#		x = 3
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#equipment research bonus
+#		}
+#	}
+#	focus = {
+#		id = RGD_mechanization
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_modernize_equipment}
+#		relative_position_id = RGD_modernize_equipment
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#mechanization research bonus
+#		}
+#	}
+#	focus = {
+#		id = RGD_tank_battalion
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_mechanization}
+#		relative_position_id = RGD_mechanization
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#add basic tank template, add 2 tank units
+#		}
+#	}
+#	focus = {
+#		id = RGD_develop_own_tank_designs
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_tank_battalion}
+#		relative_position_id = RGD_tank_battalion
+#		
+#		x = 0
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#research bonus for med tank
+#		}
+#	}
+#	
+#	focus = {
+#		id = RGD_found_blue_water_fleet
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_armed_forces}
+#		relative_position_id = RGD_armed_forces
+#		
+#		x = 4
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#naval research bonus
+#		}
+#	}
+#	focus = {
+#		id = RGD_american_destroyers
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_found_blue_water_fleet}
+#		relative_position_id = RGD_found_blue_water_fleet
+#		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#add 7 US design destroyers
+#		}
+#	}
+#	focus = {
+#		id = RGD_american_cruisers
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_found_blue_water_fleet}
+#		relative_position_id = RGD_found_blue_water_fleet
+#		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#add 3 US design cruisers
+#		}
+#	}
+#	focus = {
+#		id = RGD_gulf_fleet
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_american_destroyers focus = RGD_american_cruisers}
+#		relative_position_id = RGD_american_cruisers
+#		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#bonus to battleship research
+#		}
+#	}
+#	focus = {
+#		id = RGD_submarines
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_gulf_fleet}
+#		relative_position_id = RGD_gulf_fleet
+#		
+#		x = -1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#bonus to submarine research
+#		}
+#	}
+#	focus = {
+#		id = RGD_gulf_airfleet
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = RGD_gulf_fleet}
+#		relative_position_id = RGD_gulf_fleet
+#		
+#		x = 1
+#		y = 1
+#
+#		cost = 5
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		available = {
+#			#must be 1940 or later
+#		}
+#
+#		bypass = {
+#			
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#		search_filters = {FOCUS_FILTER_STABILITY}
+#		completion_reward = {
+#			#bonus to carrier research, add 1 early aircraft carrier
+#		}
+#	}
+#	
+#}

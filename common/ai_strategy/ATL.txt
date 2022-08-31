@@ -1,0 +1,167 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+ATL_prevent_early_allies_historical = {
+	allowed = {
+		original_tag = ATL
+	}
+
+	enable = {
+		OR = {
+			date < 1941.1.1
+			AND = {
+				date < 1941.6.1
+				is_historical_focus_on = yes
+				USA = {
+					has_war = no
+				}
+			}
+		}
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = -999
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -9999
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -999
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -999
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -999
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "ITA"
+		value = -999
+	}
+
+}
+
+ATL_stop_soviet_from_falling = {
+	allowed = {
+		original_tag = ATL
+	}
+	enable = {
+		has_war = no
+		num_divisions > 40 # we must have some divisions ourselves
+
+		NOT = { has_government = fascism }
+		NOT = { is_in_faction_with = GER }
+		NOT = { has_war_with = SOV }
+		GER = { 
+			has_war_with = SOV 
+			has_war_with = ENG
+			has_government = fascism
+		}
+		SOV = {
+			surrender_progress > 0.05
+			has_capitulated = no
+		}
+	}
+
+	abort = {
+		OR = {
+			has_war = yes
+			has_war_with = SOV
+			NOT = { GER = { has_war_with = SOV } }
+			is_in_faction_with = GER
+			has_government = fascism
+			SOV = { has_war = no }
+			SOV = { surrender_progress < 0.01 }
+		}
+	}
+	
+	ai_strategy = {
+		type = support
+		id = "SOV"
+		value = 200
+	}	
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SOV"
+		value = 200
+	}
+}
+
+# this one is same as above, but if you have entered the war yourself
+ATL_stop_soviet_from_falling_2 = {
+	allowed = {
+		original_tag = ATL
+		NOT = {
+			country_exists = ADR
+		}
+	}
+	enable = {
+		has_war = yes
+		NOT = { has_government = fascism }
+		NOT = { is_in_faction_with = GER }
+		NOT = { has_war_with = SOV }
+		GER = { 
+			has_war_with = SOV 
+			has_war_with = ATL
+		}
+		SOV = {
+			surrender_progress > 0.05
+			has_capitulated = no
+		}
+	}
+
+	abort = {
+		OR = {
+			has_war = no
+			has_war_with = SOV
+			NOT = { GER = { has_war_with = SOV } }
+			is_in_faction_with = GER
+			has_government = fascism
+			SOV = { has_war = no }
+			SOV = { surrender_progress < 0.01 }
+		}
+	}
+	
+	ai_strategy = {
+		type = support
+		id = "SOV"
+		value = 300
+	}	
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SOV"
+		value = 500
+	}
+}
+
+
+
+
+
