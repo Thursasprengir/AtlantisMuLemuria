@@ -31,3 +31,361 @@ SOV_dont_join_HOU = {
 		value = -99999
 	}
 }
+HOU_dont_join_china = {
+	allowed = { always = yes }
+	enable = {
+			original_tag = HOU
+	}
+	abort = {
+		date > 1945.1.1
+	}
+	ai_strategy = {
+		type = alliance
+		id = CHI
+		# target_country = CHI
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = PRC
+		# target_country = PRC
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = GCX
+		# target_country = GCX
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = YUN
+		# target_country = YUN
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = XSM
+		# target_country = XSM
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = SIK
+		# target_country = SIK
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = SHX
+		# target_country = SHX
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = TIB
+		# target_country = TIB
+		value = -99999
+	}
+}
+
+HOU_you_should_be_prepared_for_war = {
+	allowed = { 
+		original_tag = HOU 
+	}
+	enable = {
+		always = yes
+	} 
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}
+
+HOU_unit_production = {
+	allowed = {
+		original_tag = HOU
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 1
+	}
+
+	# Old garrison system against resistance
+	# ai_strategy = {
+	# 	type = role_ratio
+	# 	id = suppression
+	# 	value = 3
+	# }
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 40 #because doctrine 70
+	}
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 40
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 2 #because doctrine this = 15
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -50 # we can add a strategy later to increase this once Germany is beaten
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 4
+	}
+
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 1
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 1
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 30
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 100
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 4
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 5
+	}
+}
+
+HOU_template_design_1 = {
+	allowed = {
+		original_tag = HOU
+	}
+	enable = {
+		date < 1940.1.1
+	}
+	abort = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 50
+	}
+}
+
+HOU_template_design_2 = {
+	allowed = {
+		original_tag = HOU
+	}
+	enable = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 60
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 10
+	}
+}
