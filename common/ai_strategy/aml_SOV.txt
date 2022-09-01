@@ -1,0 +1,45 @@
+SOV_abandon_houpoe_against_japan_if_at_war_with_major = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {
+		SOV = {
+			has_government = communism
+			NOT = { has_war_with = JAP }
+			NOT = { has_war_with = HOU }
+		}
+		any_country = {
+			is_major = yes
+			NOT = {
+				tag = SOV
+			}
+			has_war_with = SOV		
+		}		
+		country_exists = JAP
+		country_exists = HOU
+
+	}
+
+	abort = {
+		NOT = { country_exists = HOU }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "HOU"			
+		value = -1500
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "HOU"			
+		value = -375 #somehow was able to overcome that high number in some cases...
+	}	
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "HOU"
+		value = -375
+	}	
+}
