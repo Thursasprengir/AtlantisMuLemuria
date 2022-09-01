@@ -1403,10 +1403,10 @@ focus = {
 		completion_reward = {
 			JAP = {	set_autonomy = {
 						target = TRS
-						autonomous_state = autonomy_wtt_imperial_subject
-						freedom_level = 0.1
+						autonomy_state = autonomy_wtt_imperial_subject
+						freedom_level = 3.0
 					}
-				}
+				}	
 			remove_ideas = CHI_hyper_inflation_4
 		}
 	}
@@ -1456,7 +1456,7 @@ focus = {
 				ideology = monarchism
 				popularity = 65
 			}
-
+	
 		}
 	}
 focus = {
@@ -3711,7 +3711,7 @@ focus = {
 		}
 	}
 focus = {
-		id = TRS_increase_construction_slips
+		id = TRS_increase_construction_ships
 		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = TRS_national_dockyards
 		prerequisite = { focus = TRS_national_dockyards}
