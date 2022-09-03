@@ -113,3 +113,54 @@ USA_stop_soviet_from_falling_2 = {
 		value = 500
 	}
 }
+
+USA_dont_join_houpoe = {
+	allowed = { always = yes }
+	enable = {
+		original_tag = USA
+		has_war_with = JAP
+	}
+	abort = {
+		date > 1945.1.1
+	}
+	ai_strategy = {
+		type = alliance
+		id = ENG
+		# target_country = ENG
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = HOU
+		# target_country = HOU
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = MHN
+		# target_country = MHN
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = IKA
+		# target_country = IKA
+		value = -99999
+	}
+}
+
+USA_kick out tryns_f rom_mu = {
+	enable = {
+		has_war_with = TRS	
+		is_in_faction_with = IKA
+	}
+	abort = {
+	}
+
+
+	ai_strategy = {
+		type = front_unit_request  
+		area = mu
+		value = 30
+	}
+}

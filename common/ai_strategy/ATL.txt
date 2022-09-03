@@ -162,6 +162,32 @@ ATL_stop_soviet_from_falling_2 = {
 }
 
 
-
+ATL_dont_join_houpoe = {
+	allowed = { always = yes }
+	enable = {
+			original_tag = ATL
+	}
+	abort = {
+		date > 1945.1.1
+	}
+	ai_strategy = {
+		type = alliance
+		id = HOU
+		# target_country = HOU
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = MHN
+		# target_country = MHN
+		value = -99999
+	}
+	ai_strategy = {
+		type = alliance
+		id = IKA
+		# target_country = IKA
+		value = -99999
+	}
+}
 
 
