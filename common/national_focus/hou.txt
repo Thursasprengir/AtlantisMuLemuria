@@ -2385,6 +2385,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_ideas = HOU_capitulation_threashold_right_1_idea
+			add_ideas = communist_influence 
 			#incr surrender threshold
 		}
 	}
@@ -2620,6 +2621,11 @@ focus_tree = {
 				last_election = "1935.12.17"
 				election_frequency = 48
 			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			add_stability = 0.4
 			#switch gov to communism
 		}
 	}
@@ -2726,8 +2732,38 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			dismantle_faction = yes
-			SOV = { add_to_faction = HOU }
+			add_opinion_modifier = {
+				target = IKA
+				modifier = HOU_defense_chaos
+			}
+			add_opinion_modifier = {
+				target = MHN
+				modifier = HOU_defense_chaos
+			}
+			add_timed_idea = {
+					idea = kanagan_chaos
+					days = 730
+				}
+			IKA = {
+				add_opinion_modifier = {
+					target = HOU
+					modifier = HOU_defense_chaos
+				}
+				add_timed_idea = {
+					idea = kanagan_chaos
+					days = 730
+				}
+			}
+			MHN = {
+				add_opinion_modifier = {
+					target = HOU
+					modifier = HOU_defense_chaos
+				}
+				add_timed_idea = {
+					idea = kanagan_chaos
+					days = 730
+				}
+			}
 
 			#dissolve KDP, joins Comintern
 		}
