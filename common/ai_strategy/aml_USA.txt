@@ -149,10 +149,9 @@ USA_dont_join_houpoe = {
 	}
 }
 
-USA_kick out tryns_f rom_mu = {
+USA_kick_out_tryns_from_mu = {
 	enable = {
 		has_war_with = TRS	
-		is_in_faction_with = IKA
 	}
 	abort = {
 	}
@@ -162,5 +161,25 @@ USA_kick out tryns_f rom_mu = {
 		type = front_unit_request  
 		area = mu
 		value = 30
+	}
+}
+
+USA_stay_out_of_africa = {
+	enable = {
+		has_war_with = PRJ	
+	}
+	abort = {
+	}
+
+
+	ai_strategy = {
+		type = front_unit_request  
+		area = africa
+		value = -5000
+	}
+	ai_strategy = {
+		type = front_unit_request  
+		area = garison
+		value = -5000
 	}
 }

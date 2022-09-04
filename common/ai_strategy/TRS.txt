@@ -55,22 +55,43 @@ TRS_avoid_fighting_china_2 = {
 			631
 			1088
 		}
-		value = 100
+		value = 1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		states = {
+			1053
+			938
+			997
+			1055
+			1127
+			1111
+			998
+			1062
+			1059
+			1112
+			1082
+			1103
+			1102
+			1104
+			840
+			630
+			632
+			631
+			1088
+		}
+		value = 50
 	}
 	ai_strategy = {
 		type = invade
 		area = mu
 		value = 50
 	}
-	ai_strategy = {
-		type = front_unit_request
-		area = mu
-		value = 50
-	}
+
 	ai_strategy = {
 		type = front_unit_request
 		area = asia
-		value = -90
+		value = -100
 	}
 }
 TRS_defend_home = {
@@ -92,6 +113,11 @@ TRS_defend_home = {
 		value = 30
 	}
 	ai_strategy = {
+		type = invade
+		area = northern_mu
+		value = 30
+	}
+	ai_strategy = {
   	  type = naval_invasion_focus
   	  value = 50
 	}
@@ -106,11 +132,20 @@ TRS_fight_houpoe = {
 		has_war_with = HOU
 	}
 	abort_when_not_enabled = yes
-
 	ai_strategy = {
 		type = invade
-		area = mu
-		value = 95
+		id = "HOU"
+		value = 90
+	}
+	ai_strategy = {
+		type = invade
+		id = "MHN"
+		value = 90
+	}
+	ai_strategy = {
+		type = invade
+		id = "IKA"
+		value = 90
 	}
 	ai_strategy = {
   		type = garrison
