@@ -1353,7 +1353,7 @@ focus = {
 		prerequisite = {focus = KLK_synd_center_right_2}
 		prerequisite = {focus = KLK_synd_center_left_2}
 		
-		x = 19
+		x = 18
 		y = 8
 		cost = 10
 
@@ -1367,6 +1367,46 @@ focus = {
 		
 		completion_reward = {
 			add_ideas = {KLK_red_kingdom}
+		}
+	}
+	
+	focus = {
+		id = KLK_synd_final_ai
+		icon = GFX_r56_goal_generic_farm_tractor
+		prerequisite = {focus = KLK_synd_center_right_2}
+		prerequisite = {focus = KLK_synd_center_left_2}
+		x = 20
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			NOT = { 
+				tag = KUM
+			}
+			THIS = {
+					has_government = mandalism
+				}
+			THIS = {
+				KUM = {
+					has_government = mandalism
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			KUM = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				} 					
+			}
 		}
 	}
 #################

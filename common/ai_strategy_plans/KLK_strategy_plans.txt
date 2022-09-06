@@ -1,0 +1,77 @@
+KLK_historical = {
+	name = "Kalari Historical Plan"
+	desc = ""
+
+	enable = {
+		original_tag = KLK
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = KLK_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = KLK_AI_RANDOM_HISTORICAL 
+			has_game_rule = {
+				rule = KLK_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		KLK_main
+		KLK_leftism
+		KLK_syndicalism
+		KLK_synd_right_1
+		KLK_synd_dead_branch
+		#1937
+		KLK_synd_center_1
+		KLK_final_center
+		KLK_youth
+		KLK_foriegner_forces
+		KLK_synd_dead_branch_2
+		#1938
+		KLK_synd_right_2
+		KLK_synd_right_A
+		KLK_synd_right_B
+		KLK_synd_right_C
+		KLK_synd_center_2
+		#1939
+		KLK_synd_center_left_1
+		KLK_synd_center_left_2
+		KLK_synd_center_right_1
+		KLK_synd_center_right_2
+		KLK_synd_final_ai
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
