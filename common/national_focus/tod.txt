@@ -892,16 +892,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Foreign Education Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
-						owner = TOD
-					}
-					create_unit = {
-						division = "name = \"2nd Foreign Education Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
-						owner = TOD
-					}
-				}
+			load_oob = TOD_advisors
 		}
 	}
 
@@ -2874,16 +2865,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Loyalist Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
-						owner = TOD
-					}
-					create_unit = {
-						division = "name = \"2nd Loyalist Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
-						owner = TOD
-					}
-				}
+			load_oob = TOD_reckoning
 		}
 	}
 
