@@ -1,13 +1,14 @@
 
 TRS_avoid_fighting_china = {
+    allowed = {
+        original_tag = TRS
+    }
 
 	enable = {
-		OR = {
-			tag = TRS
-		}
 		has_war_with = CHI
 		has_war_together_with = JAP
 	}
+	
 	abort = {
 		has_war_with = USA
 	}
@@ -25,68 +26,70 @@ TRS_avoid_fighting_china = {
 }
 
 TRS_avoid_fighting_china_2 = {
+    allowed = {
+        original_tag = TRS
+    }
 
 	enable = {
 		has_war_with = USA
 	}
 	abort = {
+		NOT = {
+			has_war_with = USA
+		}
 	}
 
 	ai_strategy = {
 		type = invade
-		states = {
-			1053
-			938
-			997
-			1055
-			1127
-			1111
-			998
-			1062
-			1059
-			1112
-			1082
-			1103
-			1102
-			1104
-			840
-			630
-			632
-			631
-			1088
-		}
+		id = USA
+		#states = {
+		#	1053
+		#	938
+		#	997
+		#	1055
+		#	1127
+		#	1111
+		#	998
+		#	1062
+		#	1059
+		#	1112
+		#	1082
+		#	1103
+		#	1102
+		#	1104
+		#	840
+		#	630
+		#	632
+		#	631
+		#	1088
+		#}
 		value = 1000
 	}
-	ai_strategy = {
-		type = front_unit_request
-		states = {
-			1053
-			938
-			997
-			1055
-			1127
-			1111
-			998
-			1062
-			1059
-			1112
-			1082
-			1103
-			1102
-			1104
-			840
-			630
-			632
-			631
-			1088
-		}
-		value = 50
-	}
-	ai_strategy = {
-		type = invade
-		area = mu
-		value = 50
-	}
+	#ai_strategy = {
+	#	type = front_unit_request
+	#	states = {
+	#		1053
+	#		938
+	#		997
+	#		1055
+	#		1127
+	#		1111
+	#		998
+	#		1062
+	#		1059
+	#		1112
+	#		1082
+	#		1103
+	#		1102
+	#		1104
+	#		840
+	#		630
+	#		632
+	#		631
+	#		1088
+	#	}
+	#	value = 50
+	#}
 
 	ai_strategy = {
 		type = front_unit_request
@@ -94,29 +97,35 @@ TRS_avoid_fighting_china_2 = {
 		value = -100
 	}
 }
+
 TRS_defend_home = {
+	allowed = {
+        original_tag = TRS
+    }
 	enable = {
 		has_war_with = USA
 	}
 	abort = {
+		NOT = {
+			has_war_with = USA
+		}
 	}
-
 
 	ai_strategy = {
 		type = front_unit_request  
 		id = 95 #sea of MAzu
 		value = 20
 	}
-	ai_strategy = {
-		type = invade
-		area = pacific
-		value = 30
-	}
-	ai_strategy = {
-		type = invade
-		area = northern_mu
-		value = 30
-	}
+#	ai_strategy = {
+#		type = invade
+#		area = pacific
+#		value = 30
+#	}
+#	ai_strategy = {
+#		type = invade
+#		area = northern_mu
+#		value = 30
+#	}
 	ai_strategy = {
   	  type = naval_invasion_focus
   	  value = 50
@@ -124,13 +133,14 @@ TRS_defend_home = {
 }
 
 TRS_fight_houpoe = {
+	allowed = {
+        original_tag = TRS
+    }
 
 	enable = {
-		OR = {
-			tag = TRS
-		}
 		has_war_with = HOU
 	}
+
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = invade

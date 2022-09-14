@@ -115,11 +115,14 @@ USA_stop_soviet_from_falling_2 = {
 }
 
 USA_dont_join_houpoe = {
-	allowed = { always = yes }
+	allowed = {
+        original_tag = USA
+    }
+	
 	enable = {
-		original_tag = USA
 		has_war_with = JAP
 	}
+	
 	abort = {
 		date > 1945.1.1
 	}
@@ -150,36 +153,38 @@ USA_dont_join_houpoe = {
 }
 
 USA_kick_out_tryns_from_mu = {
+	allowed = {
+        original_tag = USA
+    }
+
 	enable = {
 		has_war_with = TRS	
 	}
 	abort = {
 	}
 
-
 	ai_strategy = {
 		type = front_unit_request  
-		area = mu
+		area = northern_mu
 		value = 30
 	}
 }
 
 USA_stay_out_of_africa = {
+	allowed = {
+        original_tag = USA
+    }
+	
 	enable = {
 		has_war_with = PRJ	
 	}
+	
 	abort = {
 	}
-
 
 	ai_strategy = {
 		type = front_unit_request  
 		area = africa
-		value = -5000
-	}
-	ai_strategy = {
-		type = front_unit_request  
-		area = garison
 		value = -5000
 	}
 }
