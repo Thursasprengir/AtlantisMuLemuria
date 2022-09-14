@@ -1,5 +1,7 @@
 ﻿division_template = {
-	name = "Ma'ele"
+	name = "Texedleserasak"
+
+	division_names_group = ATL_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -10,8 +12,9 @@
 	}
 }
 division_template = {
-	name = "Koalio"
+	name = "Čuzehedeknanhade-Kiux"
 
+	division_names_group = ATL_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -31,8 +34,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13354
-		division_template = "Ma'ele"		
+		location = 13960
+		division_template = "Texedleserasak"		
 		start_experience_factor = 0.3
 
 	}
@@ -41,8 +44,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 13354
-		division_template = "Ma'ele"		
+		location = 13960
+		division_template = "Texedleserasak"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -52,8 +55,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 13354
-		division_template = "Ma'ele"		
+		location = 13960
+		division_template = "Texedleserasak"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -63,8 +66,19 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 13354
-		division_template = "Ma'ele"		
+		location = 13960
+		division_template = "Texedleserasak"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 13960
+		division_template = "Texedleserasak"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -74,8 +88,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13354
-		division_template = "Koalio"		
+		location = 13960
+		division_template = "Čuzehedeknanhade-Kiux"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -87,7 +101,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "UTR"
+			creator = "AME"
 		}
 		requested_factories = 1
 		progress = 0.75
