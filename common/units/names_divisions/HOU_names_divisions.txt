@@ -31,11 +31,11 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
-TAH_INF_01 = 
+HOU_INF_01 = 
 {
 	name = "Infantry Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 
@@ -104,11 +104,11 @@ TAH_INF_01 =
 	}
 }
 
-TAH_CAV_01 = 
+HOU_CAV_01 = 
 {
 	name = "Cavalry Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 
@@ -179,18 +179,18 @@ TAH_CAV_01 =
 	}
 }
 
-TAH_MOT_01 = 
+HOU_MOT_01 = 
 {
 	name = "Motorised Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
-	# link_numbering_with = { TAH_ARM_01 TAH_MEC_01 }
+	# link_numbering_with = { HOU_ARM_01 HOU_MEC_01 }
 
 	fallback_name = "Tua% Totoinativisiona"
 
@@ -235,18 +235,18 @@ TAH_MOT_01 =
 	}
 }
 
-TAH_ARM_01 = 
+HOU_ARM_01 = 
 {
 	name = "Armoured Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { TAH_MOT_01 }
+	link_numbering_with = { HOU_MOT_01 }
 
 	fallback_name = "Tua% Faʻaolainativisiona"
 
@@ -291,18 +291,18 @@ TAH_ARM_01 =
 	}
 }
 
-TAH_MEC_01 = 
+HOU_MEC_01 = 
 {
 	name = "Mechanised Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 
 	division_types = { "mechanized"  }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { TAH_MOT_01 }
+	link_numbering_with = { HOU_MOT_01 }
 
 	fallback_name = "Tua% Hikihohiativisiona"
 
@@ -347,18 +347,18 @@ TAH_MEC_01 =
 	}
 }
 
-TAH_GAR_01 = 
+HOU_GAR_01 = 
 {
 	name = "Garrison Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { TAH_INF_01 }
+	link_numbering_with = { HOU_INF_01 }
 
 	fallback_name = "Tua% Vaegaau"
 
@@ -421,18 +421,18 @@ TAH_GAR_01 =
 	}
 }
 
-TAH_MAR_01 = 
+HOU_MAR_01 = 
 {
 	name = "Marine Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 
 	division_types = { "marine" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { TAH_GAR_01 }
+	#link_numbering_with = { HOU_GAR_01 }
 
 	fallback_name = "Tua% Kahakaitivisiona"
 
@@ -474,18 +474,18 @@ TAH_MAR_01 =
 	}
 }
 
-TAH_MTN_01 = 
+HOU_MTN_01 = 
 {
 	name = "Mountain Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { TAH_INF_01 }
+	#link_numbering_with = { HOU_INF_01 }
 
 	fallback_name = "Tua% Maungativisiona"
 
@@ -551,11 +551,11 @@ TAH_MTN_01 =
 	}
 }
 
-TAH_PAR_01 = 
+HOU_PAR_01 = 
 {
 	name = "Paratrooper Divisions"
 
-	for_countries = { TAH }
+	for_countries = { HOU }
 
 	can_use = { always = yes }
 

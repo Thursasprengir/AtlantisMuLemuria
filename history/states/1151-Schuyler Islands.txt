@@ -6,7 +6,22 @@ state={
 	history={
 		owner = ZEI
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			13975 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 
+			13975 15 #capital
+		}
+		victory_points = { 
+			13985 5 #
+		}
+	victory_points = { 
+			13969 5 #
 		}
 		add_core_of = ZEI
 
@@ -15,8 +30,8 @@ state={
 	provinces={
 		13969 13970 13972 13975 13978 13981 13982 13983 13985 14022 14348
 	}
-	manpower=154355
+	manpower=554355
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }
