@@ -16,12 +16,12 @@ TRS_avoid_fighting_china = {
 	ai_strategy = {
 		type = front_unit_request
 		area = asia
-		value = -80
+		value = -99
 	}
 
 	ai_strategy = {
   		type = garrison
-   		value = 5
+   		value = -95
    	}
 }
 
@@ -42,54 +42,54 @@ TRS_avoid_fighting_china_2 = {
 	ai_strategy = {
 		type = invade
 		id = USA
-		#states = {
-		#	1053
-		#	938
-		#	997
-		#	1055
-		#	1127
-		#	1111
-		#	998
-		#	1062
-		#	1059
-		#	1112
-		#	1082
-		#	1103
-		#	1102
-		#	1104
-		#	840
-		#	630
-		#	632
-		#	631
-		#	1088
-		#}
+		states = {
+			1053
+			938
+		997
+			1055
+			1127
+			1111
+			998
+			1062
+			1059
+			1112
+			1082
+			1103
+			1102
+			1104
+			840
+			630
+			632
+			631
+			1088
+		}
 		value = 1000
 	}
-	#ai_strategy = {
-	#	type = front_unit_request
-	#	states = {
-	#		1053
-	#		938
-	#		997
-	#		1055
-	#		1127
-	#		1111
-	#		998
-	#		1062
-	#		1059
-	#		1112
-	#		1082
-	#		1103
-	#		1102
-	#		1104
-	#		840
-	#		630
-	#		632
-	#		631
-	#		1088
-	#	}
-	#	value = 50
-	#}
+	ai_strategy = {
+		type = front_unit_request
+		states = {
+			1053
+			938
+			997
+			1055
+			1127
+			1111
+			998
+			1062
+			1059
+			1112
+			1082
+			1103
+			1102
+			1104
+			840
+			630
+			632
+			631
+			1088
+		}
+		value = 50
+	}
 
 	ai_strategy = {
 		type = front_unit_request
@@ -116,16 +116,16 @@ TRS_defend_home = {
 		id = 95 #sea of MAzu
 		value = 20
 	}
-#	ai_strategy = {
-#		type = invade
-#		area = pacific
-#		value = 30
-#	}
-#	ai_strategy = {
-#		type = invade
-#		area = northern_mu
-#		value = 30
-#	}
+	ai_strategy = {
+		type = invade
+		area = pacific
+		value = 30
+	}
+	ai_strategy = {
+		type = invade
+		area = northern_mu
+		value = 30
+	}
 	ai_strategy = {
   	  type = naval_invasion_focus
   	  value = 50
@@ -144,17 +144,42 @@ TRS_fight_houpoe = {
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = invade
-		id = "HOU"
+		id = HOU
+		value = 90
+	}
+
+	ai_strategy = {
+   		type = naval_invasion_focus
+    		value = 100
+	}
+	ai_strategy = {
+   		type = invasion_unit_request
+   		strategic_region = 272
+  		value = 100
+	}
+	ai_strategy = {
+   		type = invasion_unit_request
+   		strategic_region = 237
+  		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = northern_mu
+		value = 100
+	}
+	ai_strategy = {
+  	 	 type = front_armor_score
+  	 	 id = HOU
+   		 value = 100
+	}
+	ai_strategy = {
+		type = invade
+		id = MHN
 		value = 90
 	}
 	ai_strategy = {
 		type = invade
-		id = "MHN"
-		value = 90
-	}
-	ai_strategy = {
-		type = invade
-		id = "IKA"
+		id = IKA
 		value = 90
 	}
 	ai_strategy = {
@@ -185,10 +210,172 @@ TRS_hush_its_gonna_be_ok = {
 
 	ai_strategy = {
 		type = consider_weak
-		id = "HOU"
+		id = HOU
 		value = 75
 	}
 }
+TRS_build_some_factories_jeez = {
+	allowed = {
+		original_tag = TRS
+	}
+	enable = {
+		date > 1939.1.2
+	}
+	abort = {
+		OR = {
+			num_of_military_factories > 50
+			HOU = { is_subject_of = TRS }
+		}
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 80
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 12
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -80
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = armor
+		value = -80
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -80
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mountaineers
+		value = -80
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 5 #10 to 5
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 20 #From 40 to 20
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_chassis
+		value = -50
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 5
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 15
+	}
+}
+
+TRS_template_design = {
+	allowed = {
+		original_tag = TRS
+	}
+	enable = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 40
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 10
+	}
+}
+
+
 TRS_building_boats_is_great = {
 	allowed = {
 		original_tag = TRS
