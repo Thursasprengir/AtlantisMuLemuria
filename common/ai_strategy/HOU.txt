@@ -89,31 +89,6 @@ HOU_dont_join_china = {
 	}
 }
 
-HOU_dont_mess_with_volunteers = { # Reverse strategy
-	reversed = yes
-
-	enable = {
-		tag = HOU
-		date < 1942.6.1
-	}
-
-	abort = {
-		date > 1942.6.1 #lets go global later yo
-		JAP = {
-			OR = {
-				NOT = {	has_government = fascism }
-				NOT = {	has_government = neutrality }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "HOU"
-		value = -500
-	}
-}
-
 HOU_you_should_be_prepared_for_war = {
 	allowed = { 
 		original_tag = HOU 
@@ -170,7 +145,7 @@ HOU_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = marines
-		value = 1
+		value = 0
 	}
 
 	ai_strategy = {
