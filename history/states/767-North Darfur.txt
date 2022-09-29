@@ -1,35 +1,22 @@
-
-state={
+state=
+{
 	id=767
-	name="STATE_767"
-
-	history={
-		victory_points = {
-			16392 15
-		}
-		victory_points = {
-			16390 5
-		}
-		victory_points = {
-			16395 5
-		}
-		victory_points = {
-			16384 5
-		}
-		add_core_of = ZER
+	name="STATE_767" # North Darfur
+	manpower = 8143
+	
+	state_category = wasteland
+	impassable = yes
+	
+	history= {
+		add_core_of = SUD
 		owner = ENG
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 0
 		}
-
 	}
-
 	provinces={
-		4138 4961 7987 8103 10900 12836 16381 16382 16383 16384 16385 16386 16387 16389 16390 16391 16392 16393 16394 16395 16396 
+		7987 8103 10900
 	}
-	manpower=3358143
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	local_supplies=0.0 
 }
