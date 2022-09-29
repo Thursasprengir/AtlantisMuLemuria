@@ -1,14 +1,16 @@
-state = {
-	id = 1067
-	name = "STATE_1067"
 
-	history = {
+state={
+	id=1067
+	name="STATE_1067"
+
+	history={
 		set_variable = {
 			908.ETH_state_development_production_speed = -0.3
 
 		}
 		set_variable = {
 			ETH_state_development_local_building_slots_factor = -0.3
+
 		}
 		add_dynamic_modifier = {
 			modifier = ETH_state_development_dynamic_modifier
@@ -17,6 +19,7 @@ state = {
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
+
 		}
 		victory_points = {
 			13240 2 
@@ -32,11 +35,11 @@ state = {
 
 	}
 
-	provinces = {
-		5041 13236 13240 
+	provinces={
+		5041 13236 13236 13240 
 	}
-	manpower = 560000
-	buildings_max_level_factor = 1.000
-	state_category = rural
-	local_supplies = 0.000
+	manpower=560000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
