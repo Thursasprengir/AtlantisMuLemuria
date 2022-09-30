@@ -1,17 +1,20 @@
-state = {
-	id = 1147
-	name = "STATE_1147" #Russian Far East Island
 
-	history = {
+state={
+	id=1147
+	name="STATE_1147"
+
+	history={
 		owner = SOV
 		victory_points = {
 			13063 1 
 		}
 		buildings = {
 			infrastructure = 1
-			13204 ={
+			13204 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = SOV
 		add_core_of = CKK
@@ -19,12 +22,11 @@ state = {
 
 	}
 
-	provinces = {
-		13063 13204
+	provinces={
+		13063 13204 13254 
 	}
-	manpower = 4182
-	buildings_max_level_factor = 1
-	state_category = "pastoral"
-
-	local_supplies = 0.0 
+	manpower=4182
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }
