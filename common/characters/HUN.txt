@@ -58,7 +58,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=emperor
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -381,10 +381,6 @@ characters={
 		}
 	}
 
-
-
-	### MILITARY HIGH COMMAND ###
-
 	HUN_sandor_magyarossy={
 		name=HUN_sandor_magyarossy
 		portraits={
@@ -393,7 +389,7 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command
+			slot = air_chief
 			idea_token = HUN_sandor_magyarossy
 			allowed = {
 				original_tag = HUN
@@ -407,6 +403,9 @@ characters={
 			}
 		}
 	}
+
+
+	### MILITARY HIGH COMMAND ###
 
 	HUN_gusztav_jany={
 		name=HUN_gusztav_jany
