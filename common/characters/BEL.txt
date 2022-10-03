@@ -1,4 +1,30 @@
 characters={
+	BEL_leopold_iii={
+		name=BEL_leopold_iii
+		portraits={
+			civilian={
+				large=GFX_portrait_BEL_leopold_iii
+			}
+		}
+		country_leader={
+			ideology=king
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BEL_karel={
+		name=BEL_karel
+		portraits={
+			civilian={
+				large=GFX_portrait_BEL_karel
+			}
+		}
+		country_leader={
+			ideology=prince
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	BEL_hubert_pierlot={
 		name=BEL_hubert_pierlot
 		portraits={
@@ -63,7 +89,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_mountaineer hill_fighter cavalry_officer }
+			traits={ trait_mountaineer hill_fighter }
 			skill=4
 			attack_skill=3
 			defense_skill=2
