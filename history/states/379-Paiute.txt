@@ -1,31 +1,32 @@
 
 state={
 	id=379
-	name="STATE_379" #Paiute
-	manpower = 1980400
-	
-	state_category = rural
-	
+	name="STATE_379"
 	resources={
-		steel=70 # was: 136
-		tungsten=32 # was: 62
-		aluminium=25 # was: 44
+		steel=70.000
+		tungsten=32.000
+		aluminium=25.000
 	}
 
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = USA
 		add_core_of = DES
 		victory_points = {
-			4607 3 #Oneida
+			4607 3 
 		}
+
 	}
 
 	provinces={
-		1862 4607 4736 4816 7756 7827 7879 10422 10591 12134 12399  
+		1601 1862 4607 4736 4816 7756 7827 7879 10422 10591 12134 12399 
 	}
-		local_supplies=0.0 
+	manpower=1980400
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

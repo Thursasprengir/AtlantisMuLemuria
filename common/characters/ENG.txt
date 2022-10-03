@@ -46,51 +46,6 @@ characters={
 		}
 	}
 
-	ENG_george_v={
-		name=ENG_george_v
-		portraits={
-			civilian={
-				large=GFX_portrait_ENG_george_v
-			}
-		}
-		country_leader={
-			ideology=king
-			traits={  }
-			expire="1936.1.20.1"
-			id=-1
-		}
-	}
-
-	ENG_edward_viii={
-		name=ENG_edward_viii
-		portraits={
-			civilian={
-				large=GFX_portrait_ENG_edward_viii
-			}
-		}
-		country_leader={
-			ideology=king
-			traits={  }
-			expire="1972.5.28.1" #abdicated 1936.12.11.1
-			id=-1
-		}
-	}
-
-	ENG_george_vi={
-		name=ENG_george_vi
-		portraits={
-			civilian={
-				large=GFX_portrait_ENG_george_vi
-			}
-		}
-		country_leader={
-			ideology=king
-			traits={  }
-			expire="1952.2.15.1"
-			id=-1
-		}
-	}
-
 	ENG_stanley_baldwin={
 		name=ENG_stanley_baldwin
 		portraits={
@@ -1280,7 +1235,9 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			
+			research_bonus = {
+				nuclear = 0.2
+			}
 			traits = {
 				nuclear_enthusiast
 			}
@@ -1918,14 +1875,38 @@ characters={
 				has_government  = communism 
 			}
 			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
+				OR = {
+					AND = {
+						original_tag  = ENG
+						has_dlc = "Man the Guns"
+					}
+					AND = {
+						original_tag = ETH
+						has_dlc = "By Blood Alone"
+					}
+				}
+				
 			}
 			traits  = {
 				red_suffragette 
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			on_add = {
+				owner = {
+					IF = {
+						limit = {
+							has_power_balance = {
+								id = ETH_centralization_balance
+							}
+						}
+						
+						hidden_effect = {
+							ETH_BOP_decentralization_large_effect = yes
+						}
+					}				
+				}
 			}
 		}
 	}
