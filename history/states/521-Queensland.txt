@@ -1,15 +1,15 @@
 
 state={
 	id=521
-	name="STATE_521" #South Queensland
+	name="STATE_521"
 	resources={
-		tungsten=16.000
+		tungsten=24.000
 	}
 
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
 			7564 = {
@@ -17,22 +17,27 @@ state={
 				coastal_bunker = 1
 
 			}
+			7566 = {
+				naval_base = 1
+
+			}
 
 		}
 		victory_points = {
 			7564 15 
+		}
+		victory_points = {
+			7566 1 
 		}
 		add_core_of = AST
 
 	}
 
 	provinces={
-		1472 1570 2116 2221 4481 4502 4517 4530 4546 4632 5198 5227 7522 7535 7564 7592 7651 7666 10430 10445 10458 10941 10991 11006 12308 12451 12949 
-		8206 10336 
+		1472 1570 4481 4502 4517 4530 4546 4632 5227 7522 7535 7564 7592 7651 7666 10430 10445 10458 11006 12308 12451 
 	}
-	manpower=613202
+	manpower=816800
 	buildings_max_level_factor=1.000
 	state_category=town
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }
