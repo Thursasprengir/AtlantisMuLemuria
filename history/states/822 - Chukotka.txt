@@ -1,16 +1,17 @@
+state = {
+	id = 822
+	name = "STATE_822" #Chukotka
 
-state={
-	id=822
-	name="STATE_822"
-
-	history={
+	history = {
 		owner = SOV
 		victory_points = {
-			13063 1 
+			13062 1 
 		}
 		buildings = {
 			infrastructure = 1
-
+			#13204 ={
+			#	naval_base = 1
+			#}
 		}
 		add_core_of = SOV
 		add_core_of = CKK
@@ -18,11 +19,12 @@ state={
 
 	}
 
-	provinces={
-		4744 5264 13062 
+	provinces = {
+		4744 5264 13062
 	}
-	manpower=31182
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+	manpower = 30182
+	buildings_max_level_factor = 1
+	state_category = "pastoral"
+
+	local_supplies = 0.0 
 }

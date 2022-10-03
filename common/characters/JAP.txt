@@ -12,6 +12,12 @@ characters={
 			expire="1989.1.1.1"
 			id=700
 		}
+		country_leader={
+			ideology=emperor
+			traits={ warrior_code emperor_showa imperial_sanction }
+			expire="1989.1.1.1"
+			id=700
+		}
 	}
 
 	JAP_kyuichi_tokuda={
@@ -218,9 +224,9 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 2.500
+				factor = 3.000
 				modifier = {
-					factor = 1.500
+					factor = 3.000
 					not = {
 						JAP = {
 							has_war_with = USA

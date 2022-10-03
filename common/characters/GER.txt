@@ -43,21 +43,63 @@ characters={
 		}
 	}
 
-	GER_wilhelm_ii={ #Empty Wilhelm II so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_ii={ 
 		name=GER_wilhelm_ii
 		portraits={
 			civilian={
 				large="GFX_portrait_ger_wilhelm_ii"
 			}	
 		}
+		country_leader={
+			ideology=kaiser
+			traits={ }
+			expire="1941.6.4.1"
+			id=-1
+		}
 	}
 
-	GER_wilhelm_iii={ #Empty Wilhelm III so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_iii={ 
 		name=GER_wilhelm_iii
 		portraits={
 			civilian={
 				large="GFX_portrait_ger_wilhelm_iii"
 			}	
+		}
+		country_leader={
+			ideology=kaiser
+			traits={ }
+			expire="1951.7.20.1"
+			id=-1
+		}
+	}
+
+	GER_wilhelm_iv={ 
+		name=GER_wilhelm_iv
+		portraits={
+			civilian={
+				large="GFX_portrait_ger_wilhelm_iv"
+			}	
+		}
+		country_leader={
+			ideology=kaiser
+			traits={ }
+			expire="1940.5.26.1" #OTL died in France fighting in Wehrmacht, could be assassinated in AML
+			id=-1
+		}
+	}
+
+	GER_louis_ferdidnand={ 
+		name=GER_louis_ferdidnand
+		portraits={
+			civilian={
+				large="GFX_portrait_ger_louis_ferdinand"
+			}	
+		}
+		country_leader={
+			ideology=kaiser
+			traits={ }
+			expire="1994.9.26.1"
+			id=-1
 		}
 	}
 

@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology=king
 			traits = { the_last_romanov_maybe }
 			expire="1965.1.1.1"
 			id=-1
@@ -22,7 +22,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology=king
 			traits = { patriot_king }
 			expire="1965.1.1.1"
 			id=-1
@@ -37,7 +37,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology=king
 			expire="1965.1.1.1"
 			id=-1
 			traits = { royal_legitimist }
@@ -708,7 +708,7 @@ characters = {
 		name=POL_wincenty_kowalski
 		portraits = {
 			army = {
-				large="GFX_portrait_POL_wincenty_kowalski"
+				large="GFX_POL_wincenty_kowalski"
 				small = "GFX_idea_POL_wincenty_kowalski"
 			}
 		}
@@ -1352,6 +1352,7 @@ characters = {
 				has_completed_focus = POL_assemble_the_regency_council
 				OR = {
 					has_government = neutrality
+					has_government = monarchism
 					has_government = fascism
 				}
 			}
@@ -1366,7 +1367,10 @@ characters = {
 				modifier = {
 					factor = 0.000
 					NOT = {
+						OR = {
+						has_government = monarchism
 						has_government = neutrality 
+						}
 					}
 				}
 			}
@@ -1447,6 +1451,7 @@ characters = {
 				has_completed_focus = POL_assemble_the_regency_council
 				OR = {
 					has_government = neutrality
+					has_government = monarchism
 					has_government = fascism
 				}
 			}
@@ -1458,7 +1463,10 @@ characters = {
 				modifier = {
 					factor = 0.000
 					NOT = {
+						OR = {
+						has_government = monarchism 
 						has_government = neutrality 
+						}
 					}
 				}
 			}
