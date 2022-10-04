@@ -38,6 +38,7 @@ set_technology = {
 }
 if = {
     limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "ATL_1936_air_bba"
         set_technology = {
             aa_lmg = 1
             engines_1 = 1
@@ -51,6 +52,7 @@ if = {
             basic_small_airframe = 1
         }
     else = {
+		set_air_oob = "ATL_1936_air_legacy"
         set_technology = {
             early_fighter = 1
             cv_early_fighter = 1
@@ -415,6 +417,92 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_heavy_battery_1
 	}
 	obsolete = no
+}
+
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+	create_equipment_variant = {
+		name = "Żavók" #also covers Gloster Gauntlet, Hawker Demon
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ħorodoŧ" 
+		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Čiénet" 
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Anavile" 
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "GFX_ATL_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Vuluámax" 
+		type = small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
+	}
+	create_equipment_variant = {
+		name = "Ledež" 
+		type = cv_small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_ENG_naval_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "Toxnaxa" 
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Nalaħak" 
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_ENG_heavy_fighter1_medium"
+	}
 }
 #Political advisors
 recruit_character = ATL_silent_workhorse
