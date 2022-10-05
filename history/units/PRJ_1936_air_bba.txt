@@ -1,0 +1,52 @@
+﻿
+
+###Add an Airforcce ###
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1064 = { 
+		small_plane_airframe_0 = {
+			owner = "PRJ" 
+			amount = 100
+			version_name = "Basileia"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "PRJ" 
+			amount = 50
+			version_name = "Princeps"
+		}
+		medium_plane_airframe_0 =  {
+			owner = "PRJ" 
+			amount = 50
+			version_name = "Imperium"
+		}
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "PRJ" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_0
+			creator = "PRJ" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+	}
+
+	
+}
+
+#################################

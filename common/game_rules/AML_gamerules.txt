@@ -112,7 +112,7 @@ PRJ_ai_behavior = {
 	}
 }
 ### Friestaat of MU ###
-FMU_ai_behavior_notwork = {
+FMU_ai_behavior = {
 	name = "FMU_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
@@ -232,5 +232,61 @@ TRS_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
+
+KLK_ai_behavior = {
+	name = "KLK_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "KLK_AI_RANDOM_HISTORICAL"
+		desc = "RULE_HISTORICAL_KLK_AI_DESC"
+		allow_achievements = yes
+	}
+}
+
+
+
+
+
+
+obsolete_focus_branches_visibility = {
+	name = "OBSOLETE_FOCUS_BRANCHES_VISIBILITY"
+	required_dlc = "No Step Back"
+	group = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = HIDE
+		text = "RULE_OPTION_HIDE"
+		desc = "RULE_OPTION_HIDE_DESC"
+	}
+	option = {
+		name = SHOW
+		text = "RULE_OPTION_SHOW"
+		desc = "RULE_OPTION_SHOW_DESC_DESC"
+		allow_achievements = yes
+	}
+}
+
+#We could add stuff for political advisor visibility filters here too, in the future
+
+west_fragmentation_status = {
+	name = "WEST_FRAGMENTATION_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = WEST_FRAGMENTED
+		text = "RULE_OPTION_WEST_FRAGMENTED"
+		desc = "RULE_OPTION_WEST_FRAGMENTED_DESC"
 	}
 }

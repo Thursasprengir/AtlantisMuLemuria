@@ -2,13 +2,9 @@
 state={
 	id=950
 	name="STATE_950"
-	manpower = 3077248
-	
-	state_category = metropolis
-	
 	resources={
-		oil=18 # was: 350
-		aluminium=3 # was: 14
+		oil=18.000
+		aluminium=3.000
 	}
 
 	history={
@@ -20,7 +16,9 @@ state={
 			dockyard = 2
 			610 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = USA
 		add_core_of = ORE
@@ -28,17 +26,23 @@ state={
 			610 1 
 		}
 		victory_points = {
-			11658 7 #Manzanita
+			11658 7 
 		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7
+
 			}
+
 		}
+
 	}
 
 	provinces={
 		610 677 710 766 768 781 3588 3644 4331 6482 6665 6681 6745 6757 6772 9730 10159 11658 11698 
 	}
-	local_supplies=6.0 
+	manpower=3077248
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=6.000
 }

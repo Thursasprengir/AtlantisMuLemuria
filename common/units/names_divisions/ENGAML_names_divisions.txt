@@ -35,7 +35,7 @@
 	# BRENGL_xxx = British English (or universal English) naming convention
 	# AMENGL_xxx = American English naming convention
 	
-BLM_INF_01 = 
+ENGAML_INF_01 = 
 {
 	name = "Infantry Division"
 
@@ -46,7 +46,7 @@ BLM_INF_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Infantry Division"
 
@@ -80,7 +80,7 @@ BLM_INF_01 =
 	}
 }
 
-BLM_INFB_01 = 
+ENGAML_INFB_01 = 
 {
 	name = "Infantry Brigade"
 
@@ -91,7 +91,7 @@ BLM_INFB_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Infantry Brigade"
 
@@ -125,7 +125,7 @@ BLM_INFB_01 =
 	}
 }
 
-BLM_CAV_01 = 
+ENGAML_CAV_01 = 
 {
 	name = "Cavalry Division"
 
@@ -136,7 +136,7 @@ BLM_CAV_01 =
 	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Cavalry Division"
 
@@ -157,7 +157,7 @@ BLM_CAV_01 =
 	}
 }
 
-BLM_CAV_02 = 
+ENGAML_CAV_02 = 
 {
 	name = "Cavalry Brigade"
 
@@ -168,7 +168,7 @@ BLM_CAV_02 =
 	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Cavalry Brigade"
 
@@ -189,7 +189,7 @@ BLM_CAV_02 =
 	}
 }
 
-BLM_MOT_01 = 
+ENGAML_MOT_01 = 
 {
 	name = "Motorised Division"
 
@@ -200,7 +200,7 @@ BLM_MOT_01 =
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { BLM_INF_01 }
+	link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Motorised Division"
 
@@ -222,7 +222,7 @@ BLM_MOT_01 =
 }
 
 
-BLM_MEC_01 = 
+ENGAML_MEC_01 = 
 {
 	name = "Mechanised Division"
 
@@ -233,7 +233,7 @@ BLM_MEC_01 =
 	division_types = { "mechanized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { BLM_INF_01 }
+	link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Mechanised Division"
 
@@ -254,7 +254,7 @@ BLM_MEC_01 =
 	}
 }
 
-BLM_ARM_01 = 
+ENGAML_ARM_01 = 
 {
 	name = "Armoured Division"
 
@@ -265,7 +265,7 @@ BLM_ARM_01 =
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Armoured Division"
 
@@ -286,7 +286,7 @@ BLM_ARM_01 =
 	}
 }
 
-BLM_ARM_02 = 
+ENGAML_ARM_02 = 
 {
 	name = "Tank Brigade"
 
@@ -297,7 +297,7 @@ BLM_ARM_02 =
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Tank Brigade"
 
@@ -318,7 +318,7 @@ BLM_ARM_02 =
 	}
 }
 
-BLM_PAR_01 = 
+ENGAML_PAR_01 = 
 {
 	name = "Airborne Division"
 
@@ -329,7 +329,7 @@ BLM_PAR_01 =
 	division_types = { "paratrooper" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Airborne Division"
 
@@ -350,7 +350,7 @@ BLM_PAR_01 =
 	}
 }
 
-BLM_MAR_01 = 
+ENGAML_MAR_01 = 
 {
 	name = "Marine Division"
 
@@ -361,7 +361,7 @@ BLM_MAR_01 =
 	division_types = { "marine" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Marine Division"
 
@@ -382,7 +382,7 @@ BLM_MAR_01 =
 	}
 }
 
-BLM_MNT_01 = 
+ENGAML_MNT_01 = 
 {
 	name = "Mountain Division"
 
@@ -393,7 +393,7 @@ BLM_MNT_01 =
 	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { BLM_INF_01 }
+	link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Mountain Division"
 
@@ -414,7 +414,7 @@ BLM_MNT_01 =
 	}
 }
 
-BLM_GAR_01 = 
+ENGAML_GAR_01 = 
 {
 	name = "Garrison Division"
 
@@ -425,7 +425,7 @@ BLM_GAR_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { BLM_INF_01 }
+	#link_numbering_with = { ENGAML_INF_01 }
 
 	fallback_name = "%dth Garrison Division"
 

@@ -14,14 +14,7 @@ set_technology = {
 	marines  = 1
 	gw_artillery = 1
 	basic_light_tank = 1
-	cv_early_fighter = 1
 	tech_special_forces = 1
-	cv_CAS1 = 1
-	cv_naval_bomber1 = 1
-	early_fighter = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	CAS1 = 1
 	bicycle_infantry = 1
 	trench_warfare = 1
 	base_strike = 1
@@ -30,6 +23,31 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 	motorised_infantry = 1	
+}
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+        set_technology = {
+            aa_lmg = 1
+            engines_1 = 1
+            engines_2 = 1
+            early_bombs = 1
+            aircraft_construction = 1
+            iw_small_airframe = 1
+            iw_medium_airframe = 1
+            iw_large_airframe = 1
+            basic_medium_airframe = 1
+            basic_small_airframe = 1
+        }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            cv_naval_bomber1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
 }
 
 if = {
@@ -62,6 +80,24 @@ if = {
 		cruiser_submarines = 1
 	}
 	set_naval_oob = "TRS_1936_naval"
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
 }
 
 if = {

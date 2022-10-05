@@ -14,8 +14,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	early_bomber = 1
 	synth_oil_experiments = 1
 	radio = 1
 	radio_detection = 1
@@ -38,7 +36,33 @@ set_technology = {
 	damage_control_1 = 1
 	basic_train = 1
 }
-
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "ATL_1936_air_bba"
+        set_technology = {
+            aa_lmg = 1
+            engines_1 = 1
+            engines_2 = 1
+            early_bombs = 1
+            aircraft_construction = 1
+            iw_small_airframe = 1
+            iw_medium_airframe = 1
+            iw_large_airframe = 1
+            basic_medium_airframe = 1
+            basic_small_airframe = 1
+        }
+    else = {
+		set_air_oob = "ATL_1936_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            cv_naval_bomber1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
+}
 
 if = {
 	limit = {
@@ -68,7 +92,6 @@ add_ideas = {
 }
 
 set_research_slots = 4
-set_convoys = 200
 set_stability = 0.8
 
 set_popularities = {
@@ -395,6 +418,92 @@ create_equipment_variant = {
 	}
 	obsolete = no
 }
+
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+	create_equipment_variant = {
+		name = "Żavók" #also covers Gloster Gauntlet, Hawker Demon
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ħorodoŧ" 
+		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Čiénet" 
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Anavile" 
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "GFX_ATL_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Vuluámax" 
+		type = small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
+	}
+	create_equipment_variant = {
+		name = "Ledež" 
+		type = cv_small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_ENG_naval_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "Toxnaxa" 
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Nalaħak" 
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_ENG_heavy_fighter1_medium"
+	}
+}
 #Political advisors
 recruit_character = ATL_silent_workhorse
 recruit_character = ATL_war_industrialist
@@ -432,6 +541,9 @@ recruit_character = ATL_Zannaz_Terzha
 recruit_character = ATL_Shava_Valliz
 recruit_character = ATL_Naizaretal
 #MilCom
+recruit_character = ATL_Brodsom_Wegxaral
+recruit_character = ATL_Tunnaton_Zhvin
+recruit_character = ATL_Rexet_Nalingrat
 recruit_character = ATL_Auvizumon_Vannezik
 recruit_character = ATL_Takez_Vazilake
 recruit_character = ATL_Oviron_Muziviz
@@ -445,7 +557,7 @@ recruit_character = ATL_Erstama_Hurdnial
 recruit_character = ATL_Meran_Jelastiek
 recruit_character = ATL_Jestitze_Munurak
 
-
+set_convoys = 200
 
 
 

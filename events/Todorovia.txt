@@ -1,0 +1,90 @@
+﻿###########################
+# Todorovia Events
+###########################
+
+add_namespace = tod
+
+# Todorovia Hungy
+country_event = {
+	id = tod.1
+	title = tod.1.t
+	desc = tod.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAH = {
+			has_global_flag = tahitian_civil_war
+		}
+
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	} 
+	
+	option = { #yoink
+		name = tod.1.a
+			country_event = { hours = 2 id = tod.2 }
+		}
+	option = { #PP
+		name = tod.1.b
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = tod.2
+	title = tod.2.t
+	desc = tod.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAH = {
+			has_global_flag = tahitian_civil_war
+		}
+
+	}
+	
+	option = { #ceedes but core
+		name = tod.2.a
+		ai_chance = {
+            base = 100        # Never pick this option.
+        }
+		TOD = { 
+			add_state_core = 1068
+		}
+		1068 = {
+			transfer_state_to = TOD
+		}
+	}
+	option = { # fight
+		name = tod.2.b
+		ai_chance = {
+            base = 0        # Never pick this option.
+        }
+		TAH = {
+            declare_war_on = {
+                target = TOD
+                type = annex_everything
+            }
+		}
+	}
+	option = { # ceedes but loses core
+		name = tod.2.c
+		ai_chance = {
+            base = 0        # Never pick this option.
+        }
+		TOD = { 
+			add_state_core = 1068
+		}
+		1068 = {
+			remove_core_of = TAH
+			transfer_state_to = TOD
+
+		}
+	}
+}

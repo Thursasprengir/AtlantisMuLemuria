@@ -10,90 +10,457 @@
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
 	}
 }
+division_template = {
+	name = "Motorised Division" 	
 
-
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Tank Division"				
+	regiments = {
+		light_armor = { x = 0 y = 0 }		
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Cavalry Division"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Marine Division"
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+}
+division_template = {
+	name = "Paratrooper Division"				
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+}
 units = {
 	### Army High Command ###
 	division = {
-		name = "1st Division"
+		name = "Ma'ele 1"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "2nd Division"
+		name = "Ma'ele 2"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "3rd Division"
+		name = "Ma'ele 3"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "4th Division"
+		name = "Ma'ele 6"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "5th Division"
+		name = "Ma'ele 13"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "6th Division"
+		name = "Ma'ele 16"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "7th Division"
+		name = "Ma'ele 17"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "8th Division"
+		name = "Ma'ele 9"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "9th Division"
+		name = "Ma'ele 10"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
-		name = "10th Division"
+		name = "Ma'ele 4"
 		location = 14753
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Ma'ele 5"
+		location = 14753
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Ma'ele 7"
+		location = 14753
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Ma'ele 8"
+		location = 14753
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Ma'ele 11"
+		location = 14753
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Ma'ele 12"
+		location = 14753
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Ma'ele 14"
+		location = 14753
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Pahukaua 1"
+		location = 14753
+		division_template = "Tank Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Pahukaua 2"
+		location = 14753
+		division_template = "Tank Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Pahukaua 3"
+		location = 14753
+		division_template = "Tank Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Pahukaua 4"
+		location = 14753
+		division_template = "Tank Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koa'ao 1"
+		location = 14753
+		division_template = "Paratrooper Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koa'ao 2"
+		location = 14753
+		division_template = "Paratrooper Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koa'ao 3"
+		location = 14753
+		division_template = "Paratrooper Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koa'ao 4"
+		location = 14753
+		division_template = "Paratrooper Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamoana 1"
+		location = 14753
+		division_template = "Marine Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamoana 2"
+		location = 14753
+		division_template = "Marine Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamoana 3"
+		location = 14753
+		division_template = "Marine Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamoana 4"
+		location = 14753
+		division_template = "Marine Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamoana 5"
+		location = 14753
+		division_template = "Marine Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamoana 6"
+		location = 14753
+		division_template = "Marine Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamoana 7"
+		location = 14753
+		division_template = "Marine Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamoana 8"
+		location = 14753
+		division_template = "Marine Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koalio 1"
+		location = 14753
+		division_template = "Cavalry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koalio 2"
+		location = 14753
+		division_template = "Cavalry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koalio 3"
+		location = 14753
+		division_template = "Cavalry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koalio 4"
+		location = 14753
+		division_template = "Cavalry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koalio 5"
+		location = 14753
+		division_template = "Cavalry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koalio 6"
+		location = 14753
+		division_template = "Cavalry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koalio 7"
+		location = 14753
+		division_template = "Cavalry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koalio 8"
+		location = 14753
+		division_template = "Cavalry Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamotika 1"
+		location = 14753
+		division_template = "Motorised Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamotika 2"
+		location = 14753
+		division_template = "Motorised Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamotika 3"
+		location = 14753
+		division_template = "Motorised Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamotika 4"
+		location = 14753
+		division_template = "Motorised Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamotika 5"
+		location = 14753
+		division_template = "Motorised Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamotika 6"
+		location = 14753
+		division_template = "Motorised Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Koamotika 7"
+		location = 14753
+		division_template = "Motorised Division"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
 
 	}
 	fleet = {
@@ -125,22 +492,22 @@ units = {
 			name = "Heavy Combat Fleet"
 			location = 14753
 			ship = {name = "A'a" definition = carrier start_experience_factor = 0.25 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Hō'ailona Class"}}
-				air_wings = {
-					cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
-					cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
-				}
+			#	air_wings = {
+			#		cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
+			#		cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
+			#	}
 			}
 			ship = {name = "Keali'iokona" definition = carrier start_experience_factor = 0.25 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Hō'ailona Class"}}
-				air_wings = {
-					cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
-					cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
-				}
+			#	air_wings = {
+			#		cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
+			#		cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
+			#	}
 			}
 			ship = {name = "Kamailehope" definition = carrier start_experience_factor = 0.50 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Nalu Class"}}
-				air_wings = {
-					cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
-					cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
-				}
+			#	air_wings = {
+			#		cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
+			#		cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
+			#	}
 			}
 			ship = {name = "Hokule'a" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Kohola Class"}}}
 			ship = {name = "Keoe" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Kahiala Class"}}}

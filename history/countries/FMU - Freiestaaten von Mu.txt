@@ -11,15 +11,6 @@ set_technology = {
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	cv_early_fighter = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	fighter1 = 1	
-	cv_fighter1 = 1
-	CAS1 = 1
-	cv_CAS1 = 1
-	heavy_fighter1 = 1
 	basic_train = 1
 	motorised_infantry = 1
 	formation_flying = 1
@@ -27,6 +18,31 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 
+}
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+        set_technology = {
+            aa_lmg = 1
+            engines_1 = 1
+            engines_2 = 1
+            early_bombs = 1
+            aircraft_construction = 1
+            iw_small_airframe = 1
+            iw_medium_airframe = 1
+            iw_large_airframe = 1
+            basic_medium_airframe = 1
+            basic_small_airframe = 1
+        }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            cv_naval_bomber1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
 }
 	
 if = {
@@ -305,7 +321,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = empty
-			mid_1_custom_slot = ship_deck_armor
+			mid_1_custom_slot = ship_armor_carrier_deck
 		}
 	}
 

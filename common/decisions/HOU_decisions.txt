@@ -91,10 +91,9 @@ prospect_for_resources = {
 			836 = { set_state_flag = houkehaka_industrial_district_developed } 
 			836 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
+				add_resource = {
+					type = steel
+					amount = 10
 				}
 			}
 		}
@@ -327,10 +326,9 @@ prospect_for_resources = {
 			1072 = { set_state_flag = haiie_industrial_district_developed } 
 			1072 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				add_resource = {
+					type = rubber
+					amount = 12
 				}
 			}
 		}

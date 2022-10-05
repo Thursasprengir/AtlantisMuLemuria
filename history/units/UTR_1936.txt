@@ -1,0 +1,96 @@
+﻿division_template = {
+	name = "Ma'ele"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+	}	
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Koalio"
+
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
+	}
+}
+
+
+units = {
+	### Oberkommando des Heeres ###
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13354
+		division_template = "Ma'ele"		
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 13354
+		division_template = "Ma'ele"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 13354
+		division_template = "Ma'ele"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 13354
+		division_template = "Ma'ele"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13354
+		division_template = "Koalio"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}
+
+## STARTING PRODUCTION ##
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "UTR"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}
