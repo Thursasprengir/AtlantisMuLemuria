@@ -1,0 +1,79 @@
+﻿
+
+###Add an Airforcce ###
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1220 = { 
+		small_plane_airframe_0 = {
+			owner = "MUU" 
+			amount = 100
+			version_name = "Tier 0 Plane"
+		}
+		small_plane_airframe_0 = {
+			owner = "MUU" 
+			amount = 100
+			version_name = "Tier 0 Plane"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "MUU" 
+			amount = 100
+			version_name = "Tier 0 CAS"
+		}
+		medium_plane_airframe_0 =  {
+			owner = "MUU" 
+			amount = 100
+			version_name = "Tier 0 Bomber"
+		}
+	}
+	1213 = { 
+		small_plane_airframe_0 = {
+			owner = "MUU" 
+			amount = 100
+			version_name = "Tier 0 Plane"
+		}
+		small_plane_airframe_0 = {
+			owner = "MUU" 
+			amount = 100
+			version_name = "Tier 0 Plane"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "MUU" 
+			amount = 100
+			version_name = "Tier 0 CAS"
+		}
+		medium_plane_airframe_0 =  {
+			owner = "MUU" 
+			amount = 100
+			version_name = "Tier 0 Bomber"
+		}
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "MUU" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_0
+			creator = "MUU" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+	}
+
+	
+}
+
+#################################

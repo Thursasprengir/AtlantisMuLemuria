@@ -1,0 +1,58 @@
+﻿
+add an Airforcce ###
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1220 = { 
+		fighter_equipment_0 = {
+			owner = "MUU" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "MUU" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "MUU" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "MUU" 
+			amount = 100
+		}
+	}
+	1213 = { 
+		fighter_equipment_0 = {
+			owner = "MUU" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "MUU" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "MUU" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "MUU" 
+			amount = 100
+		}
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "MUU" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+}
+
+#################################
