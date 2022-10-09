@@ -24,6 +24,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 }
 if = {
     limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "HOU_1936_air_bba"
         set_technology = {
 			aa_lmg = 1
 			aa_cannon_1 = 1
@@ -38,6 +39,7 @@ if = {
 			iw_large_airframe = 1
 		}
     else = {
+		set_air_oob = "HOU_1936_air_legacy"
         set_technology = {
             early_fighter = 1
             cv_early_fighter = 1
@@ -437,7 +439,6 @@ if = {
 				engine_type_slot = engine_1_2x
 				special_type_slot_1 = empty
 			}
-			obsolete = yes
 		}
 	}
 	

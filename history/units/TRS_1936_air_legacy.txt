@@ -1,0 +1,88 @@
+﻿
+add an Airforcce ###
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1107 = { 
+		fighter_equipment_0 = {
+			owner = "TRS" 
+			amount = 100
+			
+		}
+		fighter_equipment_0 = {
+			owner = "TRS" 
+			amount = 100
+			
+		}
+		fighter_equipment_0 = {
+			owner = "TRS" 
+			amount = 100
+			
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "TRS" 
+			amount = 100
+			
+		}
+	}
+	1176 = { 
+		fighter_equipment_0 = {
+			owner = "TRS" 
+			amount = 100
+			
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "TRS" 
+			amount = 100
+			
+		}
+	}
+	"Ryujo"  = { 
+		cv_fighter_equipment_0 =  { owner = "TRS" amount = 10 } # historical 24
+		cv_fighter_equipment_0 =  { owner = "TRS" amount = 8 } # historical 24
+		cv_CAS_equipment_1 = { owner = "TRS" amount = 10 } 	# historical 12
+		cv_CAS_equipment_1 = { owner = "TRS" amount = 2 } 	# historical 12
+	}
+			
+	"Tsaam"  = { 
+		cv_fighter_equipment_0 =  { owner = "TRS" amount = 10 } # historical 16
+		cv_fighter_equipment_0 =  { owner = "TRS" amount = 2 } # historical 16
+		cv_CAS_equipment_1 = { owner = "TRS" amount = 10 } # historical 16
+		cv_CAS_equipment_1 = { owner = "TRS" amount = 2 } # historical 16
+		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 10 } # historical 28
+		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 10 } # historical 28
+	}
+			
+	"Gelungtso"  = { 
+		cv_fighter_equipment_0 =  { owner = "TRS" amount = 9 } 	# historical 12
+		cv_CAS_equipment_1 = { owner = "TRS" amount = 10 } 			# historical 18
+		cv_CAS_equipment_1 = { owner = "TRS" amount = 2 } 			# historical 18
+		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 10 } 	# historical 36
+		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 10 } 	# historical 36
+		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 4 } 	# historical 36
+	}
+	"Daibalnaang"  = { 
+		cv_fighter_equipment_0 =  { owner = "TRS" amount = 9 } 	# historical 12
+		cv_CAS_equipment_1 = { owner = "TRS" amount = 10 } 			# historical 18
+		cv_CAS_equipment_1 = { owner = "TRS" amount = 2 } 			# historical 18
+		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 10 } 	# historical 36
+		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 10 } 	# historical 36
+		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 4 } 	# historical 36
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "HOU" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+}
+
+#################################

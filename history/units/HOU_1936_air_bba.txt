@@ -37,25 +37,24 @@ air_wings = {
 			version_name = "Tier 0 Bomber"
 		}
 	}
-	"A'a"  = {
-		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 version_name = "Tier 0 CV fighter"  }				
-		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 version_name = "Tier 0 CV fighter" }				
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 version_name = "Tier 0 CV Nav Bomber" }			
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 version_name = "Tier 0 CV Nav Bomber" }			
+	"A'a" = {
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 creator = "HOU" version_name = "Tier 0 CV fighter"  }				
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 creator = "HOU" version_name = "Tier 0 CV fighter" }				
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
 	}
-	"Keali'iokona"  = {
-		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 version_name = "Tier 0 CV fighter"  }				
-		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 version_name = "Tier 0 CV fighter" }				
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 version_name = "Tier 0 CV Nav Bomber" }			
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 version_name = "Tier 0 CV Nav Bomber" }			
+	"Keali'iokona" = {
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 creator = "HOU" version_name = "Tier 0 CV fighter"  }				
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 creator = "HOU" version_name = "Tier 0 CV fighter" }				
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
 	}
-	"Kamailehope"  = {
-		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 version_name = "Tier 0 CV fighter"  }				
-		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 version_name = "Tier 0 CV fighter" }				
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 version_name = "Tier 0 CV Nav Bomber" }			
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 version_name = "Tier 0 CV Nav Bomber" }			
+	"Kamailehope" = {
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 creator = "HOU" version_name = "Tier 0 CV fighter"  }				
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 creator = "HOU" version_name = "Tier 0 CV fighter" }				
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
 	}
-	
 }
 #########################
 ## STARTING PRODUCTION ##
@@ -64,7 +63,7 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_airframe_0
+			type = cv_small_plane_airframe_0
 			creator = "HOU" 
 		}
 		requested_factories = 1
@@ -74,7 +73,7 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = medium_plane_airframe_0
+			type = cv_small_plane_naval_bomber_airframe_0
 			creator = "HOU" 
 		}
 		requested_factories = 1
