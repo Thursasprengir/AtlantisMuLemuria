@@ -64,13 +64,12 @@ ideas = {
 				autonomy_gain = 0.1
 			}
 		}
-		PRJ_ETH_war_command = {
+		PRJ_chemical_warfare_idea = {
 			allowed = {always = no}
-			picture = usa_tank_destroyer_board
+			picture = SPA_carlism
 			removal_cost = -1
 			modifier = {
 				offence = 0.1
-				defence = 0.1
 			}
 		}
 
@@ -91,6 +90,26 @@ ideas = {
 			modifier = {
 				subjects_autonomy_gain = 0.5
 				master_ideology_drift = 0.03
+			}
+		}
+		PRJ_extremist_tactics_idea = {
+			allowed = {always = no}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				dig_in_speed_factor = -0.05
+			}
+		}
+		PRJ_extremist_tactics_idea_2 = {
+			allowed = {always = no}
+			picture = tur_sectarian_troubles_kurdistan
+			removal_cost = -1
+			modifier = {
+				offence = 0.1
+				defence = 0.1
+				dig_in_speed_factor = -0.10
 			}
 		}
 	}

@@ -62,20 +62,18 @@ focus_tree = {
 	######### POLITICS ##########
 	############################
 
+	
 	focus = {
 		id = PRJ_abandon_ethiopia
-		icon = GFX_goal_generic_cavalry
-		#prerequisite = { focus = }
-		mutually_exclusive = { 
-			focus = PRJ_save_ethiopia 
-		}
+		icon = GFX_goal_generic_neutrality_focus
+
 		x = 20
-		y = 0
+		y = 1
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
-			factor = 90
+			factor = 1
 		}
 
 		available = {
@@ -95,50 +93,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 20
 		}
 	}
-
-	focus = {
-		id = PRJ_save_ethiopia
-		icon = GFX_r56_goal_generic_centralize_power
-
-		#prerequisite = { focus = }
-		mutually_exclusive = { 
-			focus = PRJ_abandon_ethiopia 
-		}
-		x = 22
-		y = 0
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_faction = "Emergency War Command"
-			PRJ = {add_to_faction = ETH}
-		}
-	}
-
+	
 	############################
 	######### LEFT POLITICS ##########
 	############################
@@ -416,7 +374,38 @@ focus_tree = {
 			add_ideas = PRJ_mobilization
 		}
 	}
+	focus = {
+		id = PRJ_david_university
+		prerequisite = { focus = PRJ_the_mausoleum }
+		icon = GFX_focus_research2
+		x = -7
+		y = 5
+		relative_position_id = PRJ_abandon_ethiopia
 
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 	focus = {
 		id = PRJ_kings_vendetta
 		icon = GFX_goal_generic_occupy_start_war
@@ -490,10 +479,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = .1
-			add_named_threat = {
-				threat = 5
-				name = PRJ_total_war
-			}
 		}
 	}
 	focus = {
@@ -540,7 +525,7 @@ focus_tree = {
 		icon = GFX_r56_goal_generic_royal_industry
 		prerequisite = { focus = PRJ_warrior_king }
 		mutually_exclusive = { focus = PRJ_new_subjects }
-		x = -13
+		x = -8
 		y = 7
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -576,7 +561,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = PRJ_warrior_king }
 		mutually_exclusive = { focus = PRJ_core_teritory }
-		x = -11
+		x = -6
 		y = 7
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -612,353 +597,6 @@ focus_tree = {
 	######### Right POLITICS ##########
 	############################
 
-	focus = {
-		id = PRJ_supply_ethiopia
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = PRJ_save_ethiopia }
-
-		x = 10
-		y = 1
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ETH = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 10000
-					producer = PRJ
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = PRJ_emergancy_fortifications
-		icon = GFX_goal_generic_fortify_city
-		prerequisite =  { focus = PRJ_supply_ethiopia }
-
-		x = 11
-		y = 2
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-				1065 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = 7912
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = 10734
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = 8062
-					}
-				}
-				271 = {
-					add_building_construction = {
-						type = bunker
-						level = 5
-						instant_build = yes
-						province = 5010
-					}
-				}
-			}
-	}
-
-
-
-	focus = {
-		id = PRJ_heavy_rail_ETH_capital
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = PRJ_supply_ethiopia }
-
-		x = 9
-		y = 2
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			build_railway = {
-				level = 2
-				path = { 16345 8019 10734 5010 }
-			}
-			
-		}
-	}
-
-
-
-	focus = {
-		id = PRJ_pushed_to_sea
-		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = PRJ_heavy_rail_ETH_capital }
-		prerequisite = { focus = PRJ_emergancy_fortifications }
-		x = 10
-		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ETH = {
-			 add_state_core = 550
-			 add_state_core = 559
-			}
-		}
-	}
-	focus = {
-		id = PRJ_white_peace
-		icon = GFX_r56_goal_generic_peaceful_diplomacy
-		prerequisite = { focus = PRJ_pushed_to_sea }
-		x = 10
-		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			559 = {
-				AND = {
-					is_owned_by = ETH
-					is_controlled_by = ETH
-				}
-			}
-			550 = {
-				AND = {
-					is_owned_by = ETH
-					is_controlled_by = ETH
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			white_peace = ITA
-			dismantle_faction = yes
-		}
-	}
-	focus = {
-		id = PRJ_proper_alliance
-		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = PRJ_white_peace }
-		x = 9
-		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
-		mutually_exclusive = {	focus = PRJ_control_ethiopia }
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			create_faction = "Free Africa Movement"
-			}
-		}
-
-	focus = {
-		id = PRJ_control_ethiopia
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = PRJ_white_peace }
-		x = 11
-		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
-		mutually_exclusive = {	focus = PRJ_proper_alliance	}
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			puppet = ETH
-			set_autonomy = {
-				target = ETH
-				autonomy_state = autonomy_wtt_imperial_subject
-				end_wars = no
-				end_civil_wars = no
-			}
-		}
-	}
-
-	focus = {
-		id = PRJ_prepare_for_more
-		icon = GFX_r56_goal_SIA_improve_industry
-		prerequisite = { focus = PRJ_control_ethiopia focus = PRJ_proper_alliance }
-		x = 10
-		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		PRJ = {
-			every_owned_state = {
-					add_extra_state_shared_building_slots = 2
-					}
-			}
-		}
-	}
 
 	####PUPPETS Middle####
 
@@ -966,7 +604,7 @@ focus_tree = {
 		id = PRJ_free_africa
 		icon = GFX_r56_goal_generic_uprising
 		prerequisite = { focus = PRJ_faith_and_arms focus = PRJ_prepare_for_more }
-		x = 1
+		x = -12
 		y = 7
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -997,1592 +635,7 @@ focus_tree = {
 		}
 	}
 	#clients North of Yohannia
-	focus = {
-		id = PRJ_client_sudan
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_free_africa  }
-		x = -1
-		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
 
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			549 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-			551 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			SUD = {
-				remove_state_core = 1067
-				set_cosmetic_tag = PRJ_SUD_puppet
-			}
-
-			549 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			551 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = SUD
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_zerzura
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_sudan }
-		x = -1
-		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			767 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-			1117 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ZER = {
-				remove_state_core = 1067
-				set_cosmetic_tag = PRJ_ZER_puppet
-			}
-
-			767 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			1117 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = ZER
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_egypt
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_zerzura  }
-		x = -1
-		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			452 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-			447 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-			446 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-			456 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-			457 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-			453 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			EGY = {
-				set_cosmetic_tag = PRJ_EGY_puppet
-			}
-			456 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			446 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			447 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = EGY
-
-		}
-	}
-
-
-	focus = {
-		id = PRJ_client_tripoli
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_egypt  }
-		x = -3
-		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			451 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			450 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			449 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			448 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			663 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			662 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			661 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			LBA = {
-				set_cosmetic_tag = PRJ_LBA_puppet
-			}
-			448 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			450 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = LBA
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_israel
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_egypt  }
-		mutually_exclusive = { focus = PRJ_client_palestine }
-		x = -1
-		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			454 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ISR = {
-				set_cosmetic_tag = PRJ_ISR_puppet
-			}
-			454 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = ISR
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_palestine
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_egypt  }
-		mutually_exclusive = { focus = PRJ_client_israel }
-		x = 1
-		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			454 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			PAL = {
-				set_cosmetic_tag = PRJ_PAL_puppet
-			}
-			454 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = PAL
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_jordon
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_palestine focus = PRJ_client_israel }
-		x = 0
-		y = 12
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			455 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			JOR = {
-				set_cosmetic_tag = PRJ_JOR_puppet
-			}
-			455 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = JOR
-		}
-	}
-
-	focus = {
-		id = PRJ_client_syria
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_jordon }
-		x = 0
-		y = 13
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			553 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			554 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			680 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			677 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			SYR = {
-				set_cosmetic_tag = PRJ_SYR_puppet
-			}
-			553 = {
-				add_core_of = SYR
-			}
-			554 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			667 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = SYR
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_tunisia
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_tripoli  }
-		x = -3
-		y = 12
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			458 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			665 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			460 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			513 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			TUN = {
-				set_cosmetic_tag = PRJ_TUN_puppet
-				set_province_name = {
-					id = 11969
-					name = Carthage
-				}
-			}
-			513 = {
-				add_core_of = TUN
-			}
-			514 = {
-				add_core_of = TUN
-			}
-			460 = {
-				add_core_of = TUN
-			}
-			458 = {
-				add_core_of = TUN
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			459 = {
-				add_core_of = TUN
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = TUN
-
-		}
-	}
-	focus = {
-		id = PRJ_client_morocco
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_tunisia  }
-		x = -3
-		y = 13
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			461 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			462 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			MOR = {
-				set_cosmetic_tag = PRJ_MOR_puppet
-			}
-			461 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			462 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = MOR
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_congo
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_free_africa }
-		x = 1
-		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			718 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-			1115 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			COG = {
-				remove_state_core = 1069
-				set_cosmetic_tag = PRJ_COG_puppet
-			}
-			718 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			1115 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = COG
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_chad
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_congo }
-		x = 1
-		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			774 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			660 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			773 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			CHA = {
-				add_state_core = 660
-				add_state_core = 773
-				set_cosmetic_tag = PRJ_CHA_puppet
-			}
-			773 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			774 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			660 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = CHA
-
-		}
-	}
-	focus = {
-		id = PRJ_client_gabon #May he bless us with steam sales
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_chad }
-		x = 1
-		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			297 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			539 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-			772 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			GAB = {
-				add_state_core = 297
-				add_state_core = 772
-				set_cosmetic_tag = PRJ_GAB_puppet
-			}
-			772 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			539 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = GAB
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_tanzania
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_free_africa }
-		x = 3
-		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			546 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			TZN = {
-				remove_state_core = 1071
-				set_cosmetic_tag = PRJ_TZN_puppet
-			}
-			546 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			release_puppet_on_controlled = TZN
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_zambia
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRJ_client_tanzania }
-		x = 3
-		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			771 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ZAM = {
-				add_state_core = 1116
-				set_cosmetic_tag = PRJ_ZAM_puppet
-			}
-			COG = {
-				remove_state_core = 1116
-			}
-			771 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			1116 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			release_puppet_on_controlled = ZAM
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_malawi
-		prerequisite = { focus = PRJ_client_tanzania }
-		icon = GFX_focus_generic_treaty
-		x = 5
-		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			770 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			MLW = {
-				set_cosmetic_tag = PRJ_MLW_puppet
-			}
-			770 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			release_puppet_on_controlled = MLW
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_zimbabwe
-		prerequisite = { focus = PRJ_client_zambia }
-		icon = GFX_focus_generic_treaty
-		x = 3
-		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			545 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ZIM = {
-				set_cosmetic_tag = PRJ_ZIM_puppet
-			}
-			545 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			release_puppet_on_controlled = ZIM
-
-		}
-	}
-
-	focus = {
-		id = PRJ_client_mozambique #Nya<3 (=^･ω･^=)
-		prerequisite = { focus = PRJ_client_malawi }
-		icon = GFX_focus_generic_treaty
-		x = 5
-		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			544 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-					is_controlled_by = ITA
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			MZB = {
-				set_cosmetic_tag = PRJ_MZB_puppet
-			}
-			544 = {
-				if = {
-					limit = {
-						is_owned_by = ROOT
-						is_controlled_by = ROOT
-						is_controlled_by = ITA
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			release_puppet_on_controlled = MZB
-
-		}
-	}
 
 		############################
 	######### LEft POLITICS 2 ##########
@@ -2592,7 +645,7 @@ focus_tree = {
 		id = PRJ_greater_yohannia
 		icon = GFX_focus_eng_global_defense
 		prerequisite = { focus = PRJ_faith_and_arms }
-		x = -9
+		x = -10
 		y = 7
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -2626,7 +679,7 @@ focus_tree = {
 		id = PRJ_annex_uganda
 		prerequisite = { focus = PRJ_greater_yohannia }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -9
+		x = -11
 		y = 8
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -2668,10 +721,10 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_annex_rawanda
-		prerequisite = { focus = PRJ_annex_uganda }
+		prerequisite = { focus = PRJ_greater_yohannia }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -10
-		y = 9
+		x = -9
+		y = 8
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -2724,10 +777,10 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_annex_east_zaire
-		prerequisite = { focus = PRJ_annex_rawanda }
+		prerequisite = { focus = PRJ_greater_yohannia }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -10
-		y = 10
+		x = -13
+		y = 8
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -2767,10 +820,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRJ_annex_wakanda
-		prerequisite = { focus = PRJ_annex_uganda }
+		id = PRJ_expanded_logging
+		prerequisite = { focus = PRJ_annex_east_zaire }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -8
+		x = -14
 		y = 9
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -2781,7 +834,7 @@ focus_tree = {
 		}
 
 		available = {
-			1067 = {
+			1069 = {
 				OR = {
 					is_owned_by = PRJ
 					is_controlled_by = PRJ
@@ -2801,65 +854,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_core = 1067
-			1067 = {
-				if = {
-					add_extra_state_shared_building_slots = 2
-				}
+			1069 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 			}
 		}
 	}
-
-	focus = {
-		id = PRJ_annex_rift
-		prerequisite = { focus = PRJ_annex_wakanda }
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -8
-		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			1071 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_state_core = 1070
-			1070 = {
-				if = {
-					add_extra_state_shared_building_slots = 2
-				}
-			}
-		}
-	}
-
 	focus = {
 		id = PRJ_railway_east
-		prerequisite = { focus = PRJ_annex_rift focus = PRJ_annex_east_zaire }
+		prerequisite = { focus = PRJ_annex_rawanda focus = PRJ_annex_south_province }
 		icon = GFX_focus_generic_africa_infrastructure
-		x = -11
-		y = 11
+		x = -9
+		y = 9
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -2869,13 +878,13 @@ focus_tree = {
 		}
 
 		available = {
-			1070 = {
+			904 = {
 				OR = {
 					is_owned_by = PRJ
 					is_controlled_by = PRJ
 				}
 			}
-			548 = {
+			905 = {
 				OR = {
 					is_owned_by = PRJ
 					is_controlled_by = PRJ
@@ -2899,7 +908,7 @@ focus_tree = {
 				level = 2
 				path = { 16340 5160 10860 1939 5196 5210 }
 			}
-			1070 = {
+			904 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -2909,7 +918,7 @@ focus_tree = {
 					}
 				}
 			}
-			548 = {
+			905 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -2922,14 +931,56 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = PRJ_rift_tungsten
+		prerequisite = { focus = PRJ_railway_east }
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x = -9
+		y = 10
+		relative_position_id = PRJ_abandon_ethiopia
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			904 = {
+				OR = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			904 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+				
+			}
+		}
+	}
 	focus = {
 		id = PRJ_annex_south_province
-		prerequisite = { focus = PRJ_annex_rift }
-		prerequisite = { focus = PRJ_annex_east_zaire }
+		prerequisite = { focus = PRJ_greater_yohannia }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -9
-		y = 11
+		x = -7
+		y = 8
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -2970,10 +1021,11 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_railway_west
-		prerequisite = { focus = PRJ_annex_rift focus = PRJ_annex_east_zaire }
+		prerequisite = { focus = PRJ_annex_east_zaire }
+		prerequisite = { focus = PRJ_annex_uganda }
 		icon = GFX_focus_generic_africa_infrastructure
-		x = -7
-		y = 11
+		x = -12
+		y = 9
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -3025,8 +1077,8 @@ focus_tree = {
 		id = PRJ_railway_south_shore
 		prerequisite = { focus = PRJ_annex_south_province }
 		icon = GFX_focus_generic_africa_infrastructure
-		x = -10
-		y = 12
+		x = -6
+		y = 9+
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -3077,7 +1129,122 @@ focus_tree = {
 		id = PRJ_march_to_sea
 		prerequisite = { focus = PRJ_annex_south_province }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -8
+		x = -7
+		y = 10
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			905 = {
+				OR = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+			903 = {
+				OR = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_state_core = 905
+			add_state_core = 903
+		}
+		
+	}
+	focus = {
+		id = PRJ_chemical_warfare
+		prerequisite = { focus = PRJ_annex_south_province }
+		icon = GFX_goal_generic_secret_weapon
+		x = -5
+		y = 10
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = PRJ_chemical_warfare_idea
+			add_stability = -0.1
+		}
+		
+	}
+	focus = {
+		id = PRJ_extremist_tactics
+		prerequisite = { focus = PRJ_chemical_warfare }
+		icon = GFX_goal_generic_CAS
+		x = -5
+		y = 11
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = PRJ_extremist_tactics_idea
+		}
+		
+	}
+	focus = {
+		id = PRJ_extremist_tactics_2
+		prerequisite = { focus = PRJ_extremist_tactics }
+		icon = GFX_focus_wonderweapons
+		x = -5
 		y = 12
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -3088,12 +1255,6 @@ focus_tree = {
 		}
 
 		available = {
-			547 = {
-				OR = {
-					is_owned_by = PRJ
-					is_controlled_by = PRJ
-				}
-			}
 		}
 		bypass = {
 
@@ -3108,16 +1269,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_core = 547
+			remove_ideas = PRJ_extremist_tactics_idea
+			add_ideas = PRJ_extremist_tactics_idea_2
 		}
+		
 	}
-
 	focus = {
 		id = PRJ_kenya_naval
 		prerequisite = { focus = PRJ_march_to_sea }
 		icon = GFX_goal_generic_navy_cruiser
-		x = -10
-		y = 13
+		x = -11
+		y = 11
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -3127,7 +1289,7 @@ focus_tree = {
 		}
 
 		available = {
-			547 = {
+			905 = {
 				OR = {
 					is_owned_by = PRJ
 					is_controlled_by = PRJ
@@ -3147,7 +1309,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			547 = {
+			905 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
@@ -3162,8 +1324,8 @@ focus_tree = {
 		id = PRJ_red_sea_naval
 		prerequisite = { focus = PRJ_march_to_sea }
 		icon = GFX_goal_generic_build_navy
-		x = -8
-		y = 13
+		x = -9
+		y = 11
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -3173,7 +1335,7 @@ focus_tree = {
 		}
 
 		available = {
-			551 = {
+			883 = {
 				OR = {
 					is_owned_by = PRJ
 					is_controlled_by = PRJ
@@ -3197,7 +1359,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			551 = {
+			883 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
@@ -3212,8 +1374,8 @@ focus_tree = {
 		id = PRJ_fortress_yohannia
 		prerequisite = { focus = PRJ_march_to_sea }
 		icon = GFX_goal_generic_fortify_city
-		x = -6
-		y = 13
+		x = -7
+		y = 11
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -3247,632 +1409,7 @@ focus_tree = {
 
 
 
-	focus = {
-		id = PRJ_ETH_kicking_and_screaming
-		prerequisite = { focus = PRJ_prepare_for_more }
-		icon = GFX_goal_italy_bring_industry_to_the_mezzogiorno
-		x = 7
-		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ETH = {
-				every_owned_state = {
-					add_extra_state_shared_building_slots = 2
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = PRJ_fund_ETH_docks
-		prerequisite = { focus = PRJ_prepare_for_more }
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 10
-		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ETH = {
-				559 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-
-	focus = {
-		id = PRJ_ETH_coastal_defence
-		prerequisite = { focus = PRJ_prepare_for_more }
-		icon = GFX_focus_generic_coastal_fort
-		x = 12
-		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ETH = {
-				559 = {
-					add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 12941
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 8164
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 10928
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 12991
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 5065
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 12840
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 10818
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 10891
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 1966
-					}
-				}
-			550 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 8043
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 12766
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 5091
-					}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = 5047
-					}
-				}
-			}
-		}
-	}
-
-
-	focus = {
-		id = PRJ_ETH_military_factory
-		prerequisite = { focus = PRJ_ETH_kicking_and_screaming }
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 6
-		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			271 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = PRJ_ETH_steel_factory
-		prerequisite = { focus = PRJ_ETH_kicking_and_screaming focus = PRJ_fund_ETH_docks }
-		icon = GFX_focus_generic_steel
-		x = 8
-		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			1065 = {
-				add_resource = {
-					type = steel
-					amount = 24
-					}
-				}
-			}
-	}
-	focus = {
-		id = PRJ_ETH_alumin_factory
-		prerequisite = { focus = PRJ_fund_ETH_docks }
-		icon = GFX_focus_generic_aluminum
-		x = 10
-		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			1065 = {
-				add_resource = {
-					type = aluminium
-					amount = 16
-					}
-				}
-			}
-	}
-	focus = {
-		id = PRJ_ETH_occupy_yemen
-		prerequisite = { focus = PRJ_ETH_coastal_defence }
-		prerequisite = { focus = PRJ_fund_ETH_docks }
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 12
-		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = YEM
-			}
-		}
-	}
-
-	focus = {
-		id = PRJ_ETH_sea_rails
-		prerequisite = { focus = PRJ_ETH_military_factory }
-		prerequisite = { focus = PRJ_ETH_steel_factory }
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 7
-		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			build_railway = {
-				path = { 8019 8062 4995 }
-			}
-			build_railway = {
-				path = { 5010 5097 7944 2072 12766 }
-			}
-		}
-	}
-
-	focus = {
-		id = PRJ_ETH_chemicals
-		prerequisite = { focus = PRJ_ETH_alumin_factory }
-		prerequisite = { focus = PRJ_ETH_steel_factory }
-		icon = GFX_factoryplanning
-		x = 9
-		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			1066 = {
-				add_resource = {
-					type = rubber
-					amount = 3
-				}
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = PRJ_ETH_war_command_focus
-		prerequisite = { focus = PRJ_ETH_occupy_yemen }
-		icon = GFX_focus_generic_military_mission
-		x = 12
-		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ETH = {
-				add_ideas = PRJ_ETH_war_command
-				}
-			add_ideas = PRJ_ETH_war_command
-		}
-	}
-	focus = {
-		id = PRJ_ETH_purchase_somaliland
-		prerequisite = { focus = PRJ_ETH_war_command_focus }
-		icon = GFX_bailout_money
-		x = 11
-		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-			has_war_with = ENG
-			has_war_with = FRA
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ETH = {
-				transfer_state = 269
-				transfer_state = 268
-			}
-		}
-	}
-
-	focus = {
-		id = PRJ_purchase_kenya
-		prerequisite = { focus = PRJ_ETH_war_command_focus }
-		icon = GFX_money_grab
-		x = 13
-		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-			has_war_with = ENG
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-
-			transfer_state = 1070
-			transfer_state = 547
-			add_state_core = 547
-			add_state_core = 1070
-			1070 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			547 = {
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-	}
-	focus = {
-		id = PRJ_fufill_promise
-		prerequisite = { focus = PRJ_purchase_kenya }
-		prerequisite = { focus = PRJ_ETH_purchase_somaliland }
-		mutually_exclusive = { focus = PRJ_renegade}
-		icon = GFX_goal_anschluss
-		x = 11
-		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		bypass = {
-			has_war_with = ENG
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			ENG = {add_to_faction = ETH}
-			ENG = {add_to_faction = PRJ}
-		}
-	}
-	focus = {
-		id = PRJ_renegade
-		prerequisite = { focus = PRJ_purchase_kenya }
-		prerequisite = { focus = PRJ_ETH_purchase_somaliland }
-		mutually_exclusive = { focus = PRJ_fufill_promise}
-		icon = GFX_focus_generic_strike_at_democracy2
-		x = 13
-		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			ETH = {
-				is_puppet_of = PRJ
-			}
-		}
-		bypass = {
-			has_war_with = ENG
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = PRJ_down_with_europe
-			annex_country = {
-				target = ETH
-				transfer_troops = yes
-			}
-			add_stability = -0.2
-			declare_war_on = {
-				target = ENG
-				type = take_core_state
-			}
-		}
-	}
+	
 
 	###INDUSTRY###
 	focus = {
@@ -3880,7 +1417,7 @@ focus_tree = {
 		icon = GFX_goal_reichsautobahn
 		prerequisite = { focus = PRJ_save_ethiopia focus = PRJ_abandon_ethiopia }
 
-		x = 1
+		x = 10
 		y = 1
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -3926,9 +1463,9 @@ focus_tree = {
 		icon = GFX_focus_generic_africa_infrastructure
 		prerequisite = { focus = PRJ_industrial_park }
 
-		x = 0
-		y = 2
-		relative_position_id = PRJ_abandon_ethiopia
+		x = -1
+		y = 1
+		relative_position_id = PRJ_industrial_park
 
 		cost = 10
 
@@ -3952,24 +1489,30 @@ focus_tree = {
 
 		completion_reward = {
 			build_railway = {
-				level = 3
-				path = { 16340 12929 }
+				level = 1
+				path = { 11145 16511 16343 }
+			}
+			
+			build_railway = {
+				level = 1
+				path = { 12929 11145 16344 }
+			}
+			
+			build_railway = {
+				level = 1
+				path = { 12929 16340 16509 16341 16342 16512 16514 }
 			}
 			build_railway = {
-				level = 2
-				path = { 12929 11145 16344 2096 }
+				level = 1
+				path = { 16344 16513 16345 16514 }
 			}
 			build_railway = {
-				level = 2
-				path = { 16340 16341 16343 16345 }
+				level = 1
+				path = { 16345 16343 16341 }
 			}
 			build_railway = {
-				level = 2
-				path = { 16344 16345 16343 }
-			}
-			build_railway = {
-				level = 2
-				path = { 16340 16341 16342 16345 }
+				level = 1
+				path = { 12929 16510 14576 16509 }
 			}
 		}
 	}
@@ -3978,9 +1521,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = PRJ_finish_modern_rails }
 
-		x = -2
-		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		x = -3
+		y = 2
+		relative_position_id = PRJ_industrial_park
 
 		cost = 10
 
@@ -4043,9 +1586,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = PRJ_civilian_projects }
 
-		x = -2
+		x = -3
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_industrial_park
 
 		cost = 10
 
@@ -4108,9 +1651,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = PRJ_civilian_projects_2 }
 
-		x = -2
-		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		x = -3
+		y = 6
+		relative_position_id = PRJ_industrial_park
 
 		cost = 10
 
@@ -4173,9 +1716,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = PRJ_finish_modern_rails }
 
-		x = 0
-		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		x = -1
+		y = 2
+		relative_position_id = PRJ_industrial_park
 
 		cost = 10
 
@@ -4238,9 +1781,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = PRJ_military_projects }
 
-		x = 0
+		x = -1
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_industrial_park
 
 		cost = 10
 
@@ -4303,9 +1846,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = PRJ_military_projects_2 }
 
-		x = 0
-		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		x = -1
+		y = 6
+		relative_position_id = PRJ_industrial_park
 
 		cost = 5
 
@@ -4362,15 +1905,102 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = PRJ_increase_aluminium
+		prerequisite = { focus = PRJ_civilian_projects focus = PRJ_military_projects }
+		icon = GFX_focus_generic_aluminum
+		x = -2
+		y = 3
+		relative_position_id = PRJ_industrial_park
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			904 = {
+				OR = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1073 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = PRJ_increase_steel
+		prerequisite = { focus = PRJ_civilian_projects_2 focus = PRJ_military_projects_2 }
+		icon = GFX_focus_generic_steel
+		x = -2
+		y = 5
+		relative_position_id = PRJ_industrial_park
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			904 = {
+				OR = {
+					is_owned_by = PRJ
+					is_controlled_by = PRJ
+				}
+			}
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1073 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+				
+			}
+		}
+	}
 	focus = {
 		id = PRJ_turkana_cleanup
 		icon = GFX_goal_continuous_repairments
 		prerequisite = { focus = PRJ_industrial_park }
 
-		x = 2
-		y = 2
-		relative_position_id = PRJ_abandon_ethiopia
+		x = 1
+		y = 1
+		relative_position_id = PRJ_industrial_park
 
 		cost = 5
 
@@ -4402,9 +2032,9 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = PRJ_turkana_cleanup }
 
-		x = 2
-		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		x = 1
+		y = 2
+		relative_position_id = PRJ_industrial_park
 
 		cost = 5
 
@@ -4440,9 +2070,9 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = PRJ_oil }
 
-		x = 2
+		x = 1
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_industrial_park
 
 		cost = 5
 
@@ -4479,9 +2109,9 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = PRJ_turkana_cleanup }
 
-		x = 4
-		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		x = 3
+		y = 2
+		relative_position_id = PRJ_industrial_park
 
 		cost = 5
 
@@ -4516,9 +2146,9 @@ focus_tree = {
 		id = PRJ_rubber_2
 		prerequisite = { focus = PRJ_rubber }
 		icon = GFX_focus_generic_rubber
-		x = 4
+		x = 3
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_industrial_park
 
 		cost = 5
 
@@ -4549,6 +2179,39 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = PRJ_chemical_research
+		prerequisite = { focus = PRJ_rubber_2 }
+		prerequisite = { focus = PRJ_oil_2 }
+		icon = GFX_focus_research2
+		x = 2
+		y = 5
+		relative_position_id = PRJ_industrial_park
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 #Military
 
@@ -4556,7 +2219,7 @@ focus = {
 		id = PRJ_modernization
 		prerequisite = { focus = PRJ_abandon_ethiopia focus = PRJ_save_ethiopia }
 		icon = GFX_r56_focus_generic_army_modernizations
-		x = 20
+		x = 25
 		y = 1
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -4726,14 +2389,14 @@ focus = {
 			add_tech_bonus = {
 				name = PRJ_light_tanks
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cat_light_armor
 
 			}
 			add_tech_bonus = {
 				name = PRJ_medium_tanks
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cat_medium_armor
 
 			}
@@ -4772,7 +2435,7 @@ focus = {
 			add_tech_bonus = {
 				name = PRJ_mechanized_trucks
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cat_mechanized_equipment
 			}
 		}
@@ -4816,7 +2479,92 @@ focus = {
 			}
 		}
 	}
+	
+	focus = {
+		id = PRJ_light_med_tanks_2
+		prerequisite = { focus = PRJ_support }
+		mutually_exclusive = { focus = PRJ_mechanization_2 }
+		icon = GFX_goal_generic_army_tanks
+		x = -7
+		y = 5
+		relative_position_id = PRJ_modernization
 
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_light_tanks
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+
+			}
+			add_tech_bonus = {
+				name = PRJ_medium_tanks
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
+
+			}
+		}
+	}
+
+	focus = {
+		id = PRJ_mechanization_2
+		prerequisite = { focus = PRJ_support }
+		mutually_exclusive = { focus = PRJ_light_med_tanks }
+		icon = GFX_focus_generic_rubber
+		x = -5
+		y = 5
+		relative_position_id = PRJ_modernization
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_mechanized_trucks
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
 
 	focus = {
 		id = PRJ_grand_plan
@@ -4890,7 +2638,7 @@ focus = {
 			add_tech_bonus = {
 				name = PRJ_infantry_tech
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = infantry_weapons
 
 			}
@@ -4929,7 +2677,7 @@ focus = {
 			add_tech_bonus = {
 				name = PRJ_artillery_tech
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = artillery
 
 			}
@@ -4974,7 +2722,87 @@ focus = {
 			}
 		}
 	}
+	
+	focus = {
+		id = PRJ_infantry_gear_2
+		prerequisite = { focus = PRJ_train_gear }
+		mutually_exclusive = { focus = PRJ_artillery_gear_2 }
+		icon = GFX_r56_goal_generic_small_infantry
+		x = -3
+		y = 5
+		relative_position_id = PRJ_modernization
 
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_infantry_tech
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+
+			}
+		}
+	}
+
+	focus = {
+		id = PRJ_artillery_gear_2
+		prerequisite = { focus = PRJ_train_gear }
+		mutually_exclusive = { focus = PRJ_infantry_gear_2 }
+		icon = GFX_r56_goal_generic_army_mobilization2
+		x = -1
+		y = 5
+		relative_position_id = PRJ_modernization
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_artillery_tech
+				bonus = 1.0
+				uses = 1
+				category = artillery
+
+			}
+		}
+	}
+	
 	focus = {
 		id = PRJ_strategic_destruction
 		mutually_exclusive = { focus = PRJ_battlefield_support }
@@ -5047,7 +2875,7 @@ focus = {
 			add_tech_bonus = {
 				name = PRJ_strategic_tech
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cat_heavy_fighter
 
 			}
@@ -5086,13 +2914,91 @@ focus = {
 			add_tech_bonus = {
 				name = PRJ_strategic_tech
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = tactical_bomber
 
 			}
 		}
 	}
+	focus = {
+		id = PRJ_heavy_fighter_2
+		prerequisite = { focus = PRJ_heavy_fighter }
+		mutually_exclusive = { focus = PRJ_tac_bomber_2 }
+		icon = GFX_goal_generic_air_fighter
+		x = 1
+		y = 4
+		relative_position_id = PRJ_modernization
 
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_strategic_tech
+				bonus = 1.0
+				uses = 1
+				category = cat_heavy_fighter
+
+			}
+		}
+	}
+
+	focus = {
+		id = PRJ_tac_bomber_2
+		prerequisite = { focus = PRJ_tac_bomber }
+		mutually_exclusive = { focus = PRJ_heavy_fighter_2 }
+		icon = GFX_goal_generic_air_bomber
+		x = 3
+		y = 4
+		relative_position_id = PRJ_modernization
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_strategic_tech
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+
+			}
+		}
+	}
 
 
 	focus = {
@@ -5167,7 +3073,7 @@ focus = {
 			add_tech_bonus = {
 				name = PRJ_light_fighter_tech
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = light_fighter
 
 			}
@@ -5206,7 +3112,86 @@ focus = {
 			add_tech_bonus = {
 				name = PRJ_cas_bomber_tech
 				bonus = 1.0
-				uses = 2
+				uses = 1
+				category = cas_bomber
+
+			}
+		}
+	}
+	focus = {
+		id = PRJ_light_fighter_2
+		prerequisite = { focus = PRJ_battlefield_support }
+		mutually_exclusive = { focus = PRJ_cas_bomber_2 }
+		icon = GFX_goal_generic_air_fighter2
+		x = 5
+		y = 4
+		relative_position_id = PRJ_modernization
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 75
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_light_fighter_tech
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+
+			}
+		}
+	}
+
+	focus = {
+		id = PRJ_cas_bomber_2
+		prerequisite = { focus = PRJ_battlefield_support }
+		mutually_exclusive = { focus = PRJ_light_fighter_2 }
+		icon = GFX_goal_generic_air_bomber
+		x = 7
+		y = 4
+		relative_position_id = PRJ_modernization
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 75
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRJ_cas_bomber_tech
+				bonus = 1.0
+				uses = 1
 				category = cas_bomber
 
 			}

@@ -1,0 +1,946 @@
+PRJ_free_africa = {
+	client_sudan = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 886
+			state = 883
+			state = 551
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 886
+			controls_state = 883
+			controls_state = 551
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			SUD = {
+				set_cosmetic_tag = PRJ_SUD_puppet
+			}
+			886 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			883 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			551 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		release_puppet_on_controlled = SUD
+		}
+	}
+	client_zerzura = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 887
+			state = 549
+			state = 1117
+			state = 767
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 549
+			controls_state = 887
+			controls_state = 1117
+			controls_state = 767
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			767 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			1117 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		release_puppet_on_controlled = ZER
+		}
+	}
+	client_egypt = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 456
+			state = 907
+			state = 457
+			state = 447
+			state = 452
+			state = 446
+			state = 453
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 456
+			controls_state = 907
+			controls_state = 457
+			controls_state = 447
+			controls_state = 452
+			controls_state = 446
+			controls_state = 453
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			EGY = {
+				set_cosmetic_tag = PRJ_EGY_puppet
+			}
+			456 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			907 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = EGY
+		}
+	}
+	client_tripoli = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 451
+			state = 450
+			state = 449
+			state = 448
+			state = 663
+			state = 662
+			state = 661
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 451
+			controls_state = 450
+			controls_state = 449
+			controls_state = 448
+			controls_state = 663
+			controls_state = 662
+			controls_state = 661
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			LBA = {
+				set_cosmetic_tag = PRJ_LBA_puppet
+			}
+			448 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			450 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = LBA
+		}
+	}
+	client_israel = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 454
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 454
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			ISR = {
+				set_cosmetic_tag = PRJ_ISR_puppet
+			}
+			454 = {add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			release_puppet_on_controlled = ISR
+		}
+	}
+	client_palestine = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 454
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 454
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			PAL = {
+				set_cosmetic_tag = PRJ_PAL_puppet
+			}
+			454 = {add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			release_puppet_on_controlled = PAL
+		}
+	}
+	client_jordon = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 455
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 455
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			JOR = {
+				set_cosmetic_tag = PRJ_JOR_puppet
+			}
+			455 = {add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			release_puppet_on_controlled = JOR
+		}
+	}
+	client_syria = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 553
+			state = 554
+			state = 680
+			state = 677
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 553
+			controls_state = 554
+			controls_state = 680
+			controls_state = 677
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			SYR = {
+				set_cosmetic_tag = PRJ_SYR_puppet
+			}
+			553 = {
+				add_core_of = SYR
+			}
+			554 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			667 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = SYR
+		}
+	}
+	client_tunisia = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 513
+			state = 665
+			state = 460
+			state = 458
+
+
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 513
+			controls_state = 665
+			controls_state = 460
+			controls_state = 458
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			TUN = {
+				set_cosmetic_tag = PRJ_TUN_puppet
+				set_province_name = {
+					id = 11969
+					name = Carthage
+				}
+			}
+			513 = {
+				add_core_of = TUN
+			}
+			514 = {
+				add_core_of = TUN
+			}
+			460 = {
+				add_core_of = TUN
+			}
+			458 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			460 = {
+				add_core_of = TUN
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			release_puppet_on_controlled = TUN
+		}
+	}
+	client_morocco = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 461
+			state = 462
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 461
+			controls_state = 462
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			MOR = {
+				set_cosmetic_tag = PRJ_MOR_puppet
+			}
+			461 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			462 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = MOR
+		}
+	}
+	client_congo = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 718
+			state = 1115
+			state = 890
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 718
+			controls_state = 890
+			controls_state = 1115
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			COG = {
+				set_cosmetic_tag = PRJ_COG_puppet
+			}
+			718 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			890 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = COG
+		}
+	}
+	client_chad = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 774
+			state = 660
+			state = 773
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 774
+			controls_state = 660
+			controls_state = 773
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			CHA = {
+				set_cosmetic_tag = PRJ_CHA_puppet
+			}
+			774 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			660 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			773 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = CHA
+		}
+	}
+client_congo = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 718
+			state = 1115
+			state = 890
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 718
+			controls_state = 890
+			controls_state = 1115
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			COG = {
+				set_cosmetic_tag = PRJ_COG_puppet
+			}
+			718 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			890 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = COG
+		}
+	}
+	client_gabon = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 297
+			state = 539
+			state = 772
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 297
+			controls_state = 539
+			controls_state = 772
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			GAB = {
+				add_state_core = 297
+				add_state_core = 772
+				set_cosmetic_tag = PRJ_GAB_puppet
+			}
+			297 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			539 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			772 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = GAB
+		}
+	}
+	client_tanzania = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 546
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 546
+
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			TZN = {
+				remove_state_core = 1071
+				set_cosmetic_tag = PRJ_TZN_puppet
+			}
+			546 = {add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			release_puppet_on_controlled = TZN
+		}
+	}
+	client_zambia = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 771
+			state = 1116
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 771
+			controls_state = 1116
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			ZAM = {
+				add_state_core = 1116
+				set_cosmetic_tag = PRJ_ZAM_puppet
+			}
+			COG = {
+				remove_state_core = 1116
+			}
+			771 = {add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			release_puppet_on_controlled = ZAM
+		}
+	}
+	client_malawi = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 770
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 770
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			MLW = {
+				set_cosmetic_tag = PRJ_MLW_puppet
+			}
+			770 = {add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			release_puppet_on_controlled = MLW
+		}
+	}
+	client_zimbabwe = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 545
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 545
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			ZIM = {
+				set_cosmetic_tag = PRJ_ZIM_puppet
+			}
+			545 = {add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			release_puppet_on_controlled = ZIM
+		}
+	}
+	client_mozambique = {
+		icon = GFX_decision_faction_gre_monarchist allowed = {}
+		highlight_states = {
+			state = 544
+			state = 896
+			state = 897
+		}
+		available = {
+			has_idea = PRJ_free_african_nations
+			controls_state = 544
+			controls_state = 896
+			controls_state = 897
+		}
+		visible = {
+			has_idea = PRJ_free_african_nations
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 10
+		ai_will_do = {factor = 1}
+		remove_effect = { 
+			MZB = {
+				set_cosmetic_tag = PRJ_MZB_puppet
+			}
+			
+			897 = {add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}
+			896 = {add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			release_puppet_on_controlled = MZB
+		}
+	}
+}
