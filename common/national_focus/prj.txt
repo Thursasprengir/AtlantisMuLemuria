@@ -67,7 +67,7 @@ focus_tree = {
 		id = PRJ_abandon_ethiopia
 		icon = GFX_goal_generic_neutrality_focus
 
-		x = 20
+		x = 40
 		y = 1
 
 		cost = 10
@@ -1078,7 +1078,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_annex_south_province }
 		icon = GFX_focus_generic_africa_infrastructure
 		x = -6
-		y = 9+
+		y = 9
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -1415,10 +1415,10 @@ focus_tree = {
 	focus = {
 		id = PRJ_industrial_park
 		icon = GFX_goal_reichsautobahn
-		prerequisite = { focus = PRJ_save_ethiopia focus = PRJ_abandon_ethiopia }
 
-		x = 10
-		y = 1
+
+		x = -18
+		y = 0
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
@@ -2217,10 +2217,9 @@ focus_tree = {
 
 focus = {
 		id = PRJ_modernization
-		prerequisite = { focus = PRJ_abandon_ethiopia focus = PRJ_save_ethiopia }
 		icon = GFX_r56_focus_generic_army_modernizations
 		x = 25
-		y = 1
+		y = 0
 		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 5
@@ -3978,6 +3977,150 @@ focus = {
 			PRJ = {
 				add_to_faction = AVA
 				add_to_faction = ETH
+			}
 		}
+	}
+	
+	#Comunism and Theocracy#
+	focus = {
+		id = PRJ_down_with_the_king
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = PRJ_abandon_ethiopia }
+		x = 12
+		y = 1
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = communist_influence
+				days = 180
+			} 
+			add_timed_idea = {
+				idea = fascist_influence
+				days = 180
+			}
+		}
+	}
+	#Theocracy#
+	focus = {
+		id = PRJ_theocracy
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = PRJ_down_with_the_king }
+		x = 8
+		y = 2
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = fascist_influence
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = PRJ_islam
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = PRJ_theocracy }
+		x = 5
+		y = 3
+		relative_position_id = PRJ_abandon_ethiopia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = PRJ_Islam
+			set_party_name = {
+				ideology = neutrality
+				long_name = PRJ_islam_long
+				name = PRJ_islam
+			}
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 60
+            }
+            PRJ_King_Roderiq = {
+                set_character_flag = PRJ_his_war
+            }
+            start_civil_war = {
+                ruling_party = monarchism
+                ideology = monarchism
+                size = 0.8
+                capital = 1073
+                states = {
+                    1073 1074
+                }
+                keep_unit_leaders = {
+                    9001
+                }
+                keep_political_leader = yes
+                keep_political_party_members = yes
+            }
+        }
 	}
 }
