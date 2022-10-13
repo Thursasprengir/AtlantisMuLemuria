@@ -62,10 +62,10 @@ focus_tree = {
 	######### POLITICS ##########
 	############################
 
-	
+
 	focus = {
 		id = PRJ_abandon_ethiopia
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_hol_the_foundations_of_defense
 
 		x = 40
 		y = 1
@@ -96,7 +96,7 @@ focus_tree = {
 			add_political_power = 20
 		}
 	}
-	
+
 	############################
 	######### LEFT POLITICS ##########
 	############################
@@ -973,7 +973,7 @@ focus_tree = {
 					type = tungsten
 					amount = 12
 				}
-				
+
 			}
 		}
 	}
@@ -1171,7 +1171,7 @@ focus_tree = {
 			add_state_core = 905
 			add_state_core = 903
 		}
-		
+
 	}
 	focus = {
 		id = PRJ_chemical_warfare
@@ -1206,7 +1206,7 @@ focus_tree = {
 			add_ideas = PRJ_chemical_warfare_idea
 			add_stability = -0.1
 		}
-		
+
 	}
 	focus = {
 		id = PRJ_extremist_tactics
@@ -1223,7 +1223,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 		bypass = {
 
@@ -1240,7 +1240,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = PRJ_extremist_tactics_idea
 		}
-		
+
 	}
 	focus = {
 		id = PRJ_extremist_tactics_2
@@ -1274,7 +1274,7 @@ focus_tree = {
 			remove_ideas = PRJ_extremist_tactics_idea
 			add_ideas = PRJ_extremist_tactics_idea_2
 		}
-		
+
 	}
 	focus = {
 		id = PRJ_kenya_naval
@@ -1411,7 +1411,7 @@ focus_tree = {
 
 
 
-	
+
 
 	###INDUSTRY###
 	focus = {
@@ -1494,12 +1494,12 @@ focus_tree = {
 				level = 1
 				path = { 11145 16511 16343 }
 			}
-			
+
 			build_railway = {
 				level = 1
 				path = { 12929 11145 16344 }
 			}
-			
+
 			build_railway = {
 				level = 1
 				path = { 12929 16340 16509 16341 16342 16512 16514 }
@@ -1947,7 +1947,7 @@ focus_tree = {
 					type = aluminium
 					amount = 12
 				}
-				
+
 			}
 		}
 	}
@@ -1991,7 +1991,7 @@ focus_tree = {
 					type = steel
 					amount = 24
 				}
-				
+
 			}
 		}
 	}
@@ -2480,7 +2480,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = PRJ_light_med_tanks_2
 		prerequisite = { focus = PRJ_support }
@@ -2723,7 +2723,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = PRJ_infantry_gear_2
 		prerequisite = { focus = PRJ_train_gear }
@@ -2803,7 +2803,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = PRJ_strategic_destruction
 		mutually_exclusive = { focus = PRJ_battlefield_support }
@@ -3198,12 +3198,12 @@ focus = {
 			}
 		}
 	}
-	
-	
+
+
 	###Democratic Path###
 	focus = {
 		id = PRJ_constitutional_reforms
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_support_democracy
 
 		prerequisite = { focus = PRJ_abandon_ethiopia }
 		mutually_exclusive = { focus = PRJ_steady_as_she_goes }
@@ -3238,7 +3238,7 @@ focus = {
 			add_timed_idea = {
 				idea = democratic_influence_weak
 				days = 70
-			} 
+			}
 		}
 	}
 	focus = {
@@ -3285,7 +3285,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = PRJ_reign_in_religion
 		icon = GFX_goal_generic_neutrality_focus
@@ -3337,7 +3337,7 @@ focus = {
 		}
 
 		available = {
-			ETH = { 
+			ETH = {
 				NOT = {
 					has_war_with = ITA
 				}
@@ -3345,7 +3345,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3378,7 +3378,7 @@ focus = {
 		}
 
 		available = {
-			ETH = { 
+			ETH = {
 				NOT = {
 					has_war_with = ITA
 				}
@@ -3386,7 +3386,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3418,7 +3418,7 @@ focus = {
 		}
 
 		available = {
-			ETH = { 
+			ETH = {
 				NOT = {
 					has_war_with = ITA
 				}
@@ -3426,7 +3426,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3459,15 +3459,15 @@ focus = {
 		}
 
 		available = {
-			
+
 			NOT = {
 				country_exists = ETH
 			}
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3533,7 +3533,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3571,7 +3571,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3611,7 +3611,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3646,7 +3646,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3683,7 +3683,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3698,7 +3698,7 @@ focus = {
 			create_wargoal = {
 				type = liberate_wargoal
 				target = ITA
-			}	
+			}
 		}
 	}
 	focus = {
@@ -3721,7 +3721,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3755,7 +3755,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3771,7 +3771,7 @@ focus = {
 				add_opinion_modifier = {
 					target = PRJ
 					modifier = PRJ_tolerated
-				} 
+				}
 			}
 			add_opinion_modifier = {
 				target = ENG
@@ -3779,7 +3779,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = PRJ_purchase_kenya
 		icon = GFX_goal_generic_neutrality_focus
@@ -3800,7 +3800,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3813,11 +3813,11 @@ focus = {
 
 		completion_reward = {
 			PRJ = {
-				transfer_state = 1067 
+				transfer_state = 1067
 				transfer_state = 904
-				transfer_state = 547 
-				transfer_state = 905 
-				transfer_state = 903 
+				transfer_state = 547
+				transfer_state = 905
+				transfer_state = 903
 			}
 			ENG = {
 				add_to_faction = PRJ
@@ -3845,7 +3845,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3859,9 +3859,9 @@ focus = {
 		completion_reward = {
 			PRJ = {
 				transfer_state = 904
-				transfer_state = 547 
-				transfer_state = 905 
-				transfer_state = 903 
+				transfer_state = 547
+				transfer_state = 905
+				transfer_state = 903
 			}
 			add_political_power = -300
 		}
@@ -3886,7 +3886,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3928,7 +3928,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3941,7 +3941,7 @@ focus = {
 
 		completion_reward = {
 			PRJ = {
-				transfer_state = 1067 
+				transfer_state = 1067
 				add_state_core = 1067
 			}
 			add_stability = 0.05
@@ -3968,7 +3968,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -3981,9 +3981,9 @@ focus = {
 
 		completion_reward = {
 			AVA = {
-				transfer_state = 559 
+				transfer_state = 559
 				add_state_core = 559
-				transfer_state = 884 
+				transfer_state = 884
 				add_state_core = 884
 			}
 			create_faction = "Horn Compact"
@@ -3993,7 +3993,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	#Comunism and Theocracy#
 	focus = {
 		id = PRJ_down_with_the_king
@@ -4031,7 +4031,7 @@ focus = {
 			add_timed_idea = {
 				idea = communist_influence
 				days = 180
-			} 
+			}
 			add_timed_idea = {
 				idea = fascist_influence
 				days = 180
@@ -4177,7 +4177,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4214,7 +4214,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4223,7 +4223,7 @@ focus = {
 				release = JOR
 				add_to_faction = PRJ
 			}
-			
+
         }
 	}
 	focus = {
@@ -4303,7 +4303,7 @@ focus = {
 		id = PRJ_christian_2
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = PRJ_christian_fascism }
-		x = 8 
+		x = 8
 		y = 4
 		relative_position_id = PRJ_abandon_ethiopia
 
@@ -4326,7 +4326,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4435,7 +4435,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4472,7 +4472,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4481,7 +4481,7 @@ focus = {
 				release = JOR
 				add_to_faction = PRJ
 			}
-			
+
         }
 	}
 	focus = {
@@ -4511,7 +4511,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4545,7 +4545,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4579,7 +4579,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4613,7 +4613,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4647,7 +4647,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4684,14 +4684,14 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
 			add_stability= 0.10
         }
 	}
-	
+
 	focus = {
 		id = PRJ_syndicalism
 		icon = GFX_goal_generic_neutrality_focus
@@ -4720,7 +4720,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4757,7 +4757,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4824,7 +4824,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4875,7 +4875,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4909,7 +4909,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
@@ -4917,7 +4917,7 @@ focus = {
 				add_opinion_modifier = {
 					target = PRJ
 					modifier = PRJ_SOV_friend
-				} 
+				}
 			}
 			add_opinion_modifier = {
 				target = SOV
@@ -4957,7 +4957,7 @@ focus = {
 		}
 
 		completion_reward = {
-			
+
 			add_intel = {
 				target = ENG
 				civilian_intel = 2
@@ -5005,7 +5005,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = PRJ_naval_infiltration
 		icon = GFX_goal_generic_amphibious_assault
@@ -5082,7 +5082,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = PRJ_civilian_infiltration
 		icon = GFX_goal_generic_consumer_goods
@@ -5127,7 +5127,7 @@ focus = {
 		prerequisite = { focus = PRJ_civilian_infiltration focus = PRJ_aviation_infiltration focus = PRJ_naval_infiltration focus = PRJ_army_infiltration}
 		x = 15
 		y = 7
-		relative_position_id = PRJ_abandon_ethiopia 
+		relative_position_id = PRJ_abandon_ethiopia
 
 		cost = 10
 
@@ -5148,7 +5148,7 @@ focus = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-				
+
 		}
 
 		completion_reward = {
