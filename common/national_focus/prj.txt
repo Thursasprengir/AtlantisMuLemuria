@@ -4114,12 +4114,6 @@ focus = {
 				long_name = PRJ_islam_long
 				name = PRJ_islam_party
 			}
-            set_politics = {
-                ruling_party = fascism
-                elections_allowed = no
-                last_election = "1935.12.17"
-                election_frequency = 60
-            }
 			set_capital = {state = 1075}
             PRJ_King_Roderiq = {
                 set_character_flag = PRJ_his_war
@@ -4127,7 +4121,6 @@ focus = {
             start_civil_war = {
                 ruling_party = monarchism
                 ideology = monarchism
-                size = 0.8
                 capital = 1064
                 states = {
                    1064 1073 1074
@@ -4141,11 +4134,17 @@ focus = {
 					target = PREV
 					size = 0.35
 					stockpile_ratio = 0.35
-					army_ratio = 0.65
-					navy_ratio = 0.65
-					air_ratio = 0.65
+					army_ratio = 0.35
+					navy_ratio = 0.35
+					air_ratio = 0.35
 
 				}
+            }
+			set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 60
             }
 			set_stability = 0.20
         }
@@ -4263,12 +4262,6 @@ focus = {
 				long_name = PRJ_christian_long
 				name = PRJ_christian_party
 			}
-            set_politics = {
-                ruling_party = fascism
-                elections_allowed = no
-                last_election = "1935.12.17"
-                election_frequency = 60
-            }
 			set_capital = {state = 1073}
             PRJ_King_Roderiq = {
                 set_character_flag = PRJ_his_war
@@ -4295,6 +4288,12 @@ focus = {
 					air_ratio = 0.35
 
 				}
+            }
+			set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 60
             }
 			set_stability = 0.20
         }
@@ -4373,12 +4372,6 @@ focus = {
 				long_name = PRJ_jewish_long
 				name = PRJ_jewish_party
 			}
-            set_politics = {
-                ruling_party = fascism
-                elections_allowed = no
-                last_election = "1935.12.17"
-                election_frequency = 60
-            }
 			set_capital = {state = 1064}
             PRJ_King_Roderiq = {
                 set_character_flag = PRJ_his_war
@@ -4399,11 +4392,17 @@ focus = {
 				transfer_units_fraction= {
 					target = PREV
 					size = 0.35
-					stockpile_ratio = 0.85
-					army_ratio = 0.85
-					navy_ratio = 0.85
-					air_ratio = 0.85
+					stockpile_ratio = 0.35
+					army_ratio = 0.35
+					navy_ratio = 0.35
+					air_ratio = 0.35
 				}
+            }
+			set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 60
             }
 			set_stability = 0.20
         }
