@@ -65,7 +65,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_abandon_ethiopia
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_hol_the_fourth_ally
 
 		x = 40
 		y = 1
@@ -3243,7 +3243,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_invite_dutch
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_mexico_litteracy_program
 
 		prerequisite = { focus = PRJ_constitutional_reforms }
 		x = -2
@@ -3288,7 +3288,7 @@ focus = {
 
 	focus = {
 		id = PRJ_reign_in_religion
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_mex_triumph_over_the_cristeros
 
 		prerequisite = { focus = PRJ_constitutional_reforms }
 		x = 0
@@ -3323,7 +3323,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_queens_taming
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_rom_handle_king
 
 		prerequisite = { focus = PRJ_constitutional_reforms }
 		x = 2
@@ -3362,47 +3362,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_roderiq_yields
-		icon = GFX_goal_generic_neutrality_focus
-
-		prerequisite = { focus = PRJ_queens_taming }
-		prerequisite = { focus = PRJ_reign_in_religion }
-		prerequisite = { focus = PRJ_invite_dutch }
-		x = 1
-		y = 2
-		relative_position_id = PRJ_constitutional_reforms
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			ETH = {
-				NOT = {
-					has_war_with = ITA
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_political_power = 20
-		}
-	}focus = {
-		id = PRJ_roderiq_yields
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_generic_treaty
 
 		prerequisite = { focus = PRJ_queens_taming }
 		prerequisite = { focus = PRJ_reign_in_religion }
@@ -3443,7 +3403,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_roderiq_refuses
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_generic_monarchy_1
 
 		prerequisite = { focus = PRJ_queens_taming }
 		prerequisite = { focus = PRJ_reign_in_religion }
@@ -3515,7 +3475,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_dutch_guarantees
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_defence
 
 		prerequisite = { focus = PRJ_roderiq_refuses focus = PRJ_roderiq_yields }
 		x = 1
@@ -3553,7 +3513,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_relinquish_hinterland
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_tear_paper
 
 		prerequisite = { focus = PRJ_roderiq_refuses focus = PRJ_roderiq_yields }
 		x = -1
@@ -3593,7 +3553,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_afrikaan_influx
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_mexico_open_the_borders
 
 		prerequisite = { focus = PRJ_relinquish_hinterland focus = PRJ_dutch_guarantees }
 		x = -1
@@ -3628,7 +3588,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_western_research
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_research
 
 		prerequisite = { focus = PRJ_relinquish_hinterland focus = PRJ_dutch_guarantees }
 		x = 1
@@ -3663,7 +3623,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_free_ethiopia
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_attack_italy
 
 		prerequisite = { focus = PRJ_afrikaan_influx }
 		x = -2
@@ -3703,7 +3663,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_french_expertise
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_chi_reach_out_to_france
 
 		prerequisite = { focus = PRJ_free_ethiopia }
 		x = -3
@@ -3738,7 +3698,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_british_relations
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_chi_british_cooperation
 
 		prerequisite = { focus = PRJ_free_ethiopia }
 		x = -1
@@ -3782,7 +3742,7 @@ focus = {
 
 	focus = {
 		id = PRJ_purchase_kenya
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_mex_privatisation
 
 		prerequisite = { focus = PRJ_british_relations }
 		prerequisite = { focus = PRJ_french_expertise }
@@ -3826,7 +3786,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_purchase_kenya_new
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_r56_goal_HOL_ditch_gold_standard
 
 		prerequisite = { focus = PRJ_afrikaan_influx }
 		prerequisite = { focus = PRJ_queens_taming }
@@ -3868,7 +3828,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_new_kenya_docks
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_positive_trade_relations
 
 		prerequisite = { focus = PRJ_purchase_kenya_new }
 		x = 1
@@ -3910,7 +3870,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_return_of_wakanda
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 
 		prerequisite = { focus = PRJ_purchase_kenya_new }
 		x = 3
@@ -3949,7 +3909,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_the_horn
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_r56_goal_FRA_reynaud_economic_reforms
 
 		prerequisite = { focus = PRJ_return_of_wakanda }
 		prerequisite = { focus = PRJ_new_kenya_docks }
