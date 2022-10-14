@@ -4068,7 +4068,6 @@ focus = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = PRJ_Islam
 			set_party_name = {
 				ideology = fascism
 				long_name = PRJ_islam_long
@@ -4081,24 +4080,22 @@ focus = {
             start_civil_war = {
                 ruling_party = monarchism
                 ideology = monarchism
-                capital = 1064
+                size = 0.65
+                capital = 1073
                 states = {
-                   1064 1073 1074
+                    1073 1074 1075
                 }
                 keep_unit_leaders = {
                     9001
                 }
                 keep_political_leader = yes
                 keep_political_party_members = yes
-				transfer_units_fraction= {
-					target = PREV
-					size = 0.35
-					stockpile_ratio = 0.35
-					army_ratio = 0.35
-					navy_ratio = 0.35
-					air_ratio = 0.35
-
-				}
+            }
+			set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 60
             }
 			set_politics = {
                 ruling_party = fascism
@@ -4107,6 +4104,7 @@ focus = {
                 election_frequency = 60
             }
 			set_stability = 0.20
+			set_cosmetic_tag = PRJ_Islam
         }
 	}
 	focus = {
@@ -4216,7 +4214,6 @@ focus = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = PRJ_Christian
 			set_party_name = {
 				ideology = fascism
 				long_name = PRJ_christian_long
@@ -4229,25 +4226,22 @@ focus = {
             start_civil_war = {
                 ruling_party = monarchism
                 ideology = monarchism
-                size = 0.8
-                capital = 1074
+                size = 0.55
+                capital = 1073
                 states = {
-                    1064 1075 1074
+                    1073 1074 1075
                 }
                 keep_unit_leaders = {
                     9001
                 }
                 keep_political_leader = yes
                 keep_political_party_members = yes
-				transfer_units_fraction= {
-					target = PREV
-					size = 0.35
-					stockpile_ratio = 0.35
-					army_ratio = 0.35
-					navy_ratio = 0.35
-					air_ratio = 0.35
-
-				}
+            }
+			set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 60
             }
 			set_politics = {
                 ruling_party = fascism
@@ -4256,6 +4250,7 @@ focus = {
                 election_frequency = 60
             }
 			set_stability = 0.20
+			set_cosmetic_tag = PRJ_Christian
         }
 	}
 	focus = {
@@ -4326,7 +4321,6 @@ focus = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = PRJ_Jewish
 			set_party_name = {
 				ideology = fascism
 				long_name = PRJ_jewish_long
@@ -4339,7 +4333,7 @@ focus = {
             start_civil_war = {
                 ruling_party = monarchism
                 ideology = monarchism
-                size = 0.8
+                size = 0.85
                 capital = 1073
                 states = {
                     1073 1074 1075
@@ -4349,14 +4343,6 @@ focus = {
                 }
                 keep_political_leader = yes
                 keep_political_party_members = yes
-				transfer_units_fraction= {
-					target = PREV
-					size = 0.35
-					stockpile_ratio = 0.35
-					army_ratio = 0.35
-					navy_ratio = 0.35
-					air_ratio = 0.35
-				}
             }
 			set_politics = {
                 ruling_party = fascism
@@ -4365,6 +4351,7 @@ focus = {
                 election_frequency = 60
             }
 			set_stability = 0.20
+			set_cosmetic_tag = PRJ_Jewish
         }
 	}
 	focus = {
@@ -4730,28 +4717,19 @@ focus = {
             PRJ_King_Roderiq = {
                 set_character_flag = PRJ_his_war
             }
-            start_civil_war = {
+           start_civil_war = {
                 ruling_party = monarchism
                 ideology = monarchism
-                size = 0.8
-                capital = 1064
+                size = 0.75
+                capital = 1073
                 states = {
-                   1064 1073
+                    1073 1074 1075
                 }
                 keep_unit_leaders = {
                     9001
                 }
                 keep_political_leader = yes
                 keep_political_party_members = yes
-				transfer_units_fraction= {
-					target = PREV
-					size = 0.50
-					stockpile_ratio = 0.50
-					army_ratio = 0.65
-					navy_ratio = 0.65
-					air_ratio = 0.35
-
-				}
             }
 			set_stability = 0.35
         }
