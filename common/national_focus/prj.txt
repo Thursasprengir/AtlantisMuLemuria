@@ -3957,7 +3957,7 @@ focus = {
 	#Comunism and Theocracy#
 	focus = {
 		id = PRJ_down_with_the_king
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_rom_handle_king
 		prerequisite = { focus = PRJ_abandon_ethiopia }
 		mutually_exclusive = { focus = PRJ_constitutional_reforms }
 		mutually_exclusive = { focus = PRJ_steady_as_she_goes }
@@ -4001,7 +4001,7 @@ focus = {
 	#Theocracy#
 	focus = {
 		id = PRJ_theocracy
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_focus_fra_national_resistance_council
 		prerequisite = { focus = PRJ_down_with_the_king }
 		mutually_exclusive = { focus = PRJ_syndicalism }
 		x = 8
@@ -4039,7 +4039,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_islam_fascism
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_TUR_turanist_ambition
 		prerequisite = { focus = PRJ_theocracy }
 		x = 5
 		y = 3
@@ -4109,7 +4109,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_islam_2
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 		prerequisite = { focus = PRJ_islam_fascism }
 		x = 5
 		y = 4
@@ -4146,7 +4146,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_islam_palestine
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		prerequisite = { focus = PRJ_islam_2 }
 		x = 5
 		y = 5
@@ -4185,7 +4185,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_christian_fascism
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_friendship_with_church
 		prerequisite = { focus = PRJ_theocracy }
 		x = 8
 		y = 3
@@ -4255,7 +4255,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_christian_2
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = PRJ_christian_fascism }
 		x = 8
 		y = 4
@@ -4292,7 +4292,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_jewish_fascism
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_christian_education
 		prerequisite = { focus = PRJ_theocracy }
 		x = 11
 		y = 3
@@ -4356,7 +4356,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_jewish_2
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = PRJ_jewish_fascism }
 		x = 11
 		y = 4
@@ -4393,7 +4393,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_jew_israel
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		prerequisite = { focus = PRJ_jewish_2 }
 		x = 11
 		y = 5
@@ -4432,7 +4432,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_theorcracic_rule
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_r56_goal_AUS_emergency_powers
 		prerequisite = { focus = PRJ_jewish_2 focus = PRJ_islam_2 focus = PRJ_christian_2}
 		x = 8
 		y = 5
@@ -4466,7 +4466,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_religious_tax
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_piles_of_money
 		prerequisite = { focus = PRJ_theorcracic_rule }
 		x = 8
 		y = 6
@@ -4500,7 +4500,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_athiest_begone
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_r56_goal_nic_immigration
 		prerequisite = { focus = PRJ_theorcracic_rule }
 		x = 6
 		y = 6
@@ -4534,7 +4534,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_religious_teachings
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_military_research
 		prerequisite = { focus = PRJ_theorcracic_rule }
 		x = 10
 		y = 6
@@ -4568,7 +4568,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_karfa_sidamo
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_attack_italy
 		prerequisite = { focus = PRJ_athiest_begone focus = PRJ_religious_tax }
 		x = 7
 		y = 7
@@ -4605,7 +4605,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_calm_atlast
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_peaceful_diplomacy
 		prerequisite = { focus = PRJ_religious_teachings focus = PRJ_religious_tax }
 		x = 9
 		y = 7
@@ -4640,7 +4640,7 @@ focus = {
 
 	focus = {
 		id = PRJ_syndicalism
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = PRJ_down_with_the_king }
 			mutually_exclusive = { focus = PRJ_theocracy }
 		x = 15
@@ -4678,7 +4678,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_syndicalism_fight
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_socialism_fist
 		prerequisite = { focus = PRJ_syndicalism }
 		x = 14
 		y = 3
@@ -4736,7 +4736,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_syndicalism_flee
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_red_freedom
 		prerequisite = { focus = PRJ_syndicalism }
 		x = 16
 		y = 3
@@ -4787,7 +4787,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_syndicalism_3
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = PRJ_syndicalism_fight focus = PRJ_syndicalism_flee }
 		x = 15
 		y = 4
@@ -4821,7 +4821,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_recognise_ussr
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = PRJ_syndicalism_3 }
 		x = 16
 		y = 5
@@ -5060,7 +5060,7 @@ focus = {
 	}
 	focus = {
 		id = PRJ_red_dawn
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_attack_britain
 		prerequisite = { focus = PRJ_civilian_infiltration focus = PRJ_aviation_infiltration focus = PRJ_naval_infiltration focus = PRJ_army_infiltration}
 		x = 15
 		y = 7
