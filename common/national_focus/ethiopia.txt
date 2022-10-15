@@ -3557,8 +3557,9 @@ focus_tree = {
 	}
 	focus = {
 		id = ETH_the_lion_stands_firm
-		icon = GFX_focus_ETH_the_lion_stands_firm
+		icon = GFX_aml_goal_PRJ_we_stand_together
 		prerequisite = { focus = ETH_the_emperor_stays }
+		mutually_exclusive = { focus = ETH_the_lion_and_owl }
 
 		x = 0
 		y = 1
@@ -8796,6 +8797,7 @@ focus_tree = {
 		id = ETH_request_supplies
 		icon = GFX_r56_goal_generic_small_infantry
 		prerequisite = { focus = ETH_the_lion_and_owl }
+		mutually_exclusive = { focus = ETH_the_lion_stands_firm }
 		x = -4
 		y = 1
 		relative_position_id = ETH_the_lion_stands_firm
