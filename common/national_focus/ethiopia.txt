@@ -3557,7 +3557,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ETH_the_lion_stands_firm
-		icon = GFX_aml_goal_PRJ_we_stand_together
+		icon = GFX_focus_ETH_the_lion_stands_firm
 		prerequisite = { focus = ETH_the_emperor_stays }
 		mutually_exclusive = { focus = ETH_the_lion_and_owl }
 
@@ -8749,9 +8749,9 @@ focus_tree = {
 	#YOhannian Addition
 	focus = {
 		id = ETH_the_lion_and_owl
-		icon = GFX_focus_ETH_the_lion_stands_firm
+		icon = GFX_aml_goal_PRJ_we_stand_together
 		prerequisite = { focus = ETH_the_emperor_stays }
-
+		mutually_exclusive = { focus = ETH_the_lion_stands_firm }
 		x = -4
 		y = 1
 		relative_position_id = ETH_the_emperor_stays
@@ -9124,7 +9124,6 @@ focus_tree = {
 			}
 			659 = {
 				add_extra_state_shared_building_slots = 6
-				transfer_state_to = YEM
 			}
 		}
 	}
