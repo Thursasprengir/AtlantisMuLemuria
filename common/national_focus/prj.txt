@@ -4737,12 +4737,12 @@ focus = {
 	focus = {
 		id = PRJ_syndicalism_flee
 		icon = GFX_goal_generic_red_freedom
-		prerequisite = { focus = PRJ_syndicalism }
 		x = 16
 		y = 3
 		relative_position_id = PRJ_abandon_ethiopia
+		prerequisite = { focus = PRJ_syndicalism }
 
-		cost = 10
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
@@ -4774,12 +4774,51 @@ focus = {
             }
 			set_capital = {state = 1074}
 			hidden_effect = {
+				delete_units = {
+					division_template = "Landship-Division"
+					disband = yes
+				}
+				delete_units = {
+					division_template = "Motorized Division"
+					disband = yes
+				}
+				NIL = {
+					Set_cosmetic_tag = NIL_PRJ_duchy_azania
+					remove_country_leader_role = {
+						character = NIL_absolutist_leader
+						ideology = absolutist
+					}
+				}
 				PRJ_King_Roderiq = {
 					set_character_flag = PRJ_his_war
 				}
 				set_nationality = {
-					target_country = FRA
+					target_country = NIL
 					character = PRJ_King_Roderiq
+				}
+				NIL = {
+					promote_character = {
+						character = PRJ_King_Roderiq
+						ideology = absolutist
+					}
+					set_politics = {
+						ruling_party = monarchism
+						elections_allowed = no
+						last_election = "1935.12.17"
+						election_frequency = 60
+					}
+				}
+				ENG = { 
+					 release_puppet = NIL
+				}
+				NIL = {
+					load_oob = NIL_flee
+					set_politics = {
+						ruling_party = monarchism
+						elections_allowed = no
+						last_election = "1935.12.17"
+						election_frequency = 60
+					}
 				}
 			}
 			set_stability = 0.45

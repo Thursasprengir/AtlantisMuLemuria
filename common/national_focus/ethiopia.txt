@@ -8765,6 +8765,7 @@ focus_tree = {
 
 		completion_reward = {
 			ETH_no_longer_alone = yes 
+			add_to_variable = { ETH.ETH_war_escalation_level = 3}
 			add_political_power = -200
 			add_command_power = 50
 			ETH_haile_selassie = {
@@ -8774,6 +8775,12 @@ focus_tree = {
 			create_faction = "African War Command"
 			ETH = { 
 				add_to_faction = PRJ 
+			}
+			PRJ = {
+				declare_war_on = {
+					target = ITA
+					type = take_core_state
+				}
 			}
 			add_to_war = {
 				targeted_alliance = PRJ
@@ -8976,6 +8983,9 @@ focus_tree = {
 				}
 			}
 			dismantle_faction = yes
+			PRJ = {
+				white_peace = ITA
+			}
 		}
 	}
 	focus = {
@@ -9147,7 +9157,7 @@ focus_tree = {
 				transfer_state_to = AVA
 				add_extra_state_shared_building_slots = 4
 			}
-			884 = {
+			844 = {
 				transfer_state_to = AVA
 				add_extra_state_shared_building_slots = 4
 			}
