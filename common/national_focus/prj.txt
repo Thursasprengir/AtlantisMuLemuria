@@ -4686,6 +4686,7 @@ focus = {
 		id = PRJ_syndicalism_fight
 		icon = GFX_goal_generic_socialism_fist
 		prerequisite = { focus = PRJ_syndicalism }
+		mutually_exclusive = { focus = PRJ_syndicalism_flee }
 		x = 14
 		y = 3
 		relative_position_id = PRJ_abandon_ethiopia
@@ -4747,6 +4748,7 @@ focus = {
 		y = 3
 		relative_position_id = PRJ_abandon_ethiopia
 		prerequisite = { focus = PRJ_syndicalism }
+		mutually_exclusive = { focus = PRJ_syndicalism_fight }
 
 		cost = 0
 
