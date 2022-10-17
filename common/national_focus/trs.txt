@@ -1401,13 +1401,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			JAP = {	set_autonomy = {
-						target = TRS
-						autonomy_state = autonomy_wtt_imperial_subject
-						freedom_level = 3.0
-					}
-				}	
-			remove_ideas = CHI_hyper_inflation_4
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 65
+			}	
 		}
 	}
 focus = {
@@ -1437,26 +1438,24 @@ focus = {
 
 		completion_reward = {
 		add_political_power = 120
-			create_country_leader = {
-				name = "Emperor Neiwakxinguk"
-				desc = "POLITICS_NEIWAKXINGUK_DESC"
-				picture = "gfx/leaders/TRS/Portrait_TRS_neiwakxinguk.dds"
-				expire = "1965.1.1"
-				ideology = absolutist
-				traits = {
-					
+		create_country_leader = {
+			name = "Emperor Neiwakxinguk"
+			desc = "POLITICS_NEIWAKXINGUK_DESC"
+			picture = "gfx/leaders/TRS/Portrait_TRS_neiwakxinguk.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+			id = -1
+		}
+		remove_ideas = CHI_hyper_inflation_4
+		JAP = {	set_autonomy = {
+					target = TRS
+					autonomy_state = autonomy_wtt_imperial_subject
+					freedom_level = 3.0
 				}
-				id = -1
 			}
-			set_politics = {
-				ruling_party = monarchism
-				elections_allowed = no
-			}
-			set_political_party = {
-				ideology = monarchism
-				popularity = 65
-			}
-	
 		}
 	}
 focus = {

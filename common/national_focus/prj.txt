@@ -605,7 +605,7 @@ focus_tree = {
 	focus = {
 		id = PRJ_free_africa
 		icon = GFX_r56_goal_generic_uprising
-		prerequisite = { focus = PRJ_faith_and_arms focus = PRJ_prepare_for_more }
+		prerequisite = { focus = PRJ_faith_and_arms }
 		x = -8
 		y = 7
 		relative_position_id = PRJ_abandon_ethiopia
@@ -2531,7 +2531,7 @@ focus = {
 	focus = {
 		id = PRJ_mechanization_2
 		prerequisite = { focus = PRJ_support }
-		mutually_exclusive = { focus = PRJ_light_med_tanks }
+		mutually_exclusive = { focus = PRJ_light_med_tanks_2 }
 		icon = GFX_focus_generic_rubber
 		x = -5
 		y = 5
@@ -3449,8 +3449,8 @@ focus = {
 				set_character_flag = PRJ_his_war
 			}
 			start_civil_war = {
-				ruling_party = monarchism
-				ideology = monarchism
+				ruling_party = neutrality
+				ideology = neutrality
 				size = 0.8
 				capital = 1073
 				states = {
@@ -4080,8 +4080,8 @@ focus = {
                 set_character_flag = PRJ_his_war
             }
             start_civil_war = {
-                ruling_party = monarchism
-                ideology = monarchism
+                ruling_party = neutrality
+                ideology = neutrality
                 size = 0.65
                 capital = 1073
                 states = {
@@ -4228,8 +4228,8 @@ focus = {
                 set_character_flag = PRJ_his_war
             }
             start_civil_war = {
-                ruling_party = monarchism
-                ideology = monarchism
+                ruling_party = neutrality
+                ideology = neutrality
                 size = 0.55
                 capital = 1073
                 states = {
@@ -4337,8 +4337,8 @@ focus = {
                 set_character_flag = PRJ_his_war
             }
             start_civil_war = {
-                ruling_party = monarchism
-                ideology = monarchism
+                ruling_party = neutrality
+                ideology = neutrality
                 size = 0.85
                 capital = 1073
                 states = {
@@ -4725,8 +4725,8 @@ focus = {
                 set_character_flag = PRJ_his_war
             }
            start_civil_war = {
-                ruling_party = monarchism
-                ideology = monarchism
+                ruling_party = neutrality
+                ideology = neutrality
                 size = 0.75
                 capital = 1073
                 states = {
@@ -4794,7 +4794,7 @@ focus = {
 					Set_cosmetic_tag = NIL_PRJ_duchy_azania
 					remove_country_leader_role = {
 						character = NIL_absolutist_leader
-						ideology = absolutist
+						ideology = despotism
 					}
 				}
 				PRJ_King_Roderiq = {
@@ -4807,10 +4807,10 @@ focus = {
 				NIL = {
 					promote_character = {
 						character = PRJ_King_Roderiq
-						ideology = absolutist
+						ideology = neutrality
 					}
 					set_politics = {
-						ruling_party = monarchism
+						ruling_party = neutrality
 						elections_allowed = no
 						last_election = "1935.12.17"
 						election_frequency = 60
@@ -4822,7 +4822,7 @@ focus = {
 				NIL = {
 					load_oob = NIL_flee
 					set_politics = {
-						ruling_party = monarchism
+						ruling_party = neutrality
 						elections_allowed = no
 						last_election = "1935.12.17"
 						election_frequency = 60
