@@ -2187,7 +2187,7 @@ focus = {
 			factor = 40
 		}
 		available = {
-			has_government = neutrality
+			has_government = monarchism
 			num_of_factories > 70
 		}
 
@@ -2913,6 +2913,10 @@ focus = {
 				ideology = neutrality
 				popularity = 0.05
 			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -2946,7 +2950,7 @@ focus = {
 			#decrease stability for 3 years
 			add_stability = -0.1
 			add_popularity = {
-				ideology = neutrality
+				ideology = monarchism
 				popularity = 0.15
 			}
 			#production bonus #k: why?
@@ -2981,7 +2985,7 @@ focus = {
 			add_political_power = 150
 			add_stability = -0.1
 			add_popularity = {
-				ideology = neutrality
+				ideology = monarchism
 				popularity = 0.15
 			}
 			#decrease stability for a while
@@ -3173,13 +3177,13 @@ focus = {
 
 		completion_reward = {
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = monarchism
 				elections_allowed = no
 				last_election = "1935.12.17"
 				election_frequency = 48
 			}
 			set_party_name = { 
-				ideology = neutrality 
+				ideology = monarchism 
 				long_name = FMU_monarchism_party_kaiser_long 
 				name = FMU_monarchism_party_kaiser 
 			}
@@ -3188,7 +3192,7 @@ focus = {
 				desc = "POLITICS_KAISER_SIGISMUND_DESC"
 				picture = GFX_portrait_fmu_kaiser_sigismund
 				expire = "1965.1.1"
-				ideology = despotism
+				ideology = enlightened
 				traits = {
 					stout_defender
 				}

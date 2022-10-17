@@ -56,6 +56,20 @@ characters={
 ###############
 ###NEUTRALITY
 ###############
+	AME_oligarchism_leader={
+		name=AME_oligarchism_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/AME/Portrait_AME_oligarchism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ financial_expert }
+			expire="1953.1.1.12"
+			id=-1
+		}
+	}
 	
 ###############
 ###Monarch
@@ -68,7 +82,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=king
 			expire="1965.1.1.1"
 			id=-1
 		}

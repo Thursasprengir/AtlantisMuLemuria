@@ -55,6 +55,20 @@ characters={
 ###############
 ###NEUTRALITY
 ###############
+	AVA_oligarchism_leader={
+		name=AVA_oligarchism_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_8.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ financial_expert }
+			expire="1953.1.1.12"
+			
+		}
+	}
 
 	AVA_shah_leader={
 		name=AVA_shah_leader
@@ -64,7 +78,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=shah
 			expire="1953.1.1.12"
 			
 		}
