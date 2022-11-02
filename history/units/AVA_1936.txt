@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infantry Division"		
+	name = "Padač Bašijan"		
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -17,7 +17,7 @@
 	}
 }
 division_template = {
-	name = "Cavalry Brigade" 		
+	name = "Ašweza  Bašijan" 		
 	regiments = {
 		cavalry = { x = 0 y = 0 }	
 		cavalry = { x = 0 y = 1 }	
@@ -29,7 +29,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Paratrooper Brigade" 		
+	name = "Amšampadač Bašijan" 		
 	regiments = {
 		paratrooper = { x = 0 y = 0 }	
 		paratrooper = { x = 0 y = 1 }	
@@ -41,55 +41,63 @@ division_template = {
 units= {
 	##### Land UNITS #####
 	division = {
-		name = "1st Division"
+		name = "1st Padač Bašijan"
 		location = 16407
-		division_template = "Infantry Division"		
+		division_template = "Padač Bašijan"		
 		start_equipment_factor = 0.5
 
 	}
 	division = {
-		name = "2nd Brigade"
+		name = "2nd Padač Bašijan"
 		location = 16407
-		division_template = "Infantry Division"		
+		division_template = "Padač Bašijan"		
 		start_equipment_factor = 0.3
 
 	}
 	division = {
-		name = "1st Paratrooper Brigade"
+		name = "1st Amšampadač Bašijan"
 		location = 16407
-		division_template = "Paratrooper Brigade"		
+		division_template = "Amšampadač Bašijan"		
 		start_experience_factor = 0.7
 		start_equipment_factor = 0.9
 
 	}
 	division = {
-		name = "2nd Paratrooper Brigade"
+		name = "2nd Amšampadač Bašijan"
 		location = 16407
-		division_template = "Paratrooper Brigade"		
+		division_template = "Amšampadač Bašijan"		
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.8
 
 	}
 	division = {
-		name = "3rd Paratrooper Brigade"
+		name = "3rd Amšampadač"
 		location = 16407
-		division_template = "Paratrooper Brigade"		
+		division_template = "Amšampadač Bašijan"		
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 
 	}
 	division = {
-		name = "1st Cavalry Brigade"
+		name = "4th Amšampadač"
 		location = 16407
-		division_template = "Cavalry Brigade"		
+		division_template = "Amšampadač Bašijan"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "1st Ašweza Bašijan"
+		location = 16407
+		division_template = "Ašweza Bašijan"		
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.3
 
 	}
 	division = {
-		name = "2nd Cavalry Brigade"
+		name = "2nd Ašweza Bašijan"
 		location = 16407
-		division_template = "Cavalry Brigade"		
+		division_template = "Ašweza Bašijan"		
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.3
 
