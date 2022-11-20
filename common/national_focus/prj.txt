@@ -64,13 +64,13 @@ focus_tree = {
 
 
 	focus = {
-		id = PRJ_abandon_ethiopia
-		icon = GFX_focus_hol_the_fourth_ally
+		id = PRJ_ethiopia_meeting
+		icon = GFX_focus_ETH_the_second_italo_ethiopian_war
 
 		x = 22
 		y = 1
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -93,7 +93,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 75
 		}
 	}
 
@@ -105,12 +105,12 @@ focus_tree = {
 		id = PRJ_steady_as_she_goes
 		icon = GFX_goal_generic_neutrality_focus
 
-		prerequisite = { focus = PRJ_abandon_ethiopia }
+		prerequisite = { focus = PRJ_ethiopia_meeting }
 		mutually_exclusive = { focus = PRJ_constitutional_reforms }
 		mutually_exclusive = { focus = PRJ_down_with_the_king }
 		x = -10
 		y = 1
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -146,7 +146,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_steady_as_she_goes }
 		x = -10
 		y = 2
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -236,7 +236,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_kings_budget }
 		x = -11
 		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -271,7 +271,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_kings_budget }
 		x = -9
 		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -312,7 +312,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_foster_war_support }
 		x = -9
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -348,7 +348,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_stir_up_ENG_hatred }
 		x = -11
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -382,7 +382,7 @@ focus_tree = {
 		icon = GFX_focus_research2
 		x = -7
 		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 5
 
@@ -415,7 +415,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_recruitment }
 		x = -10
 		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -455,7 +455,7 @@ focus_tree = {
 
 		x = -9
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -490,7 +490,7 @@ focus_tree = {
 
 		x = -11
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -529,7 +529,7 @@ focus_tree = {
 		mutually_exclusive = { focus = PRJ_new_subjects }
 		x = -14
 		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -565,7 +565,7 @@ focus_tree = {
 		mutually_exclusive = { focus = PRJ_core_teritory }
 		x = -12
 		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -608,7 +608,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_faith_and_arms focus = PRJ_prepare_for_more }
 		x = -8
 		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -649,7 +649,7 @@ focus_tree = {
 		prerequisite = { focus = PRJ_faith_and_arms }
 		x = -10
 		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -683,7 +683,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = -11
 		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -727,7 +727,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = -9
 		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -783,7 +783,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = -13
 		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -827,7 +827,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = -14
 		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -871,7 +871,7 @@ focus_tree = {
 		icon = GFX_focus_generic_africa_infrastructure
 		x = -9
 		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -939,7 +939,7 @@ focus_tree = {
 		icon = GFX_focus_GRE_a_land_of_mountains
 		x = -9
 		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -983,7 +983,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = -7
 		y = 8
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1028,7 +1028,7 @@ focus_tree = {
 		icon = GFX_focus_generic_africa_infrastructure
 		x = -12
 		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1081,7 +1081,7 @@ focus_tree = {
 		icon = GFX_focus_generic_africa_infrastructure
 		x = -6
 		y = 9
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1133,7 +1133,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = -7
 		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1179,7 +1179,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		x = -5
 		y = 10
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1214,7 +1214,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		x = -5
 		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1248,7 +1248,7 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		x = -5
 		y = 12
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1282,7 +1282,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		x = -11
 		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1328,7 +1328,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = -9
 		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1378,7 +1378,7 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		x = -7
 		y = 11
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1416,12 +1416,12 @@ focus_tree = {
 	###INDUSTRY###
 	focus = {
 		id = PRJ_industrial_park
-		icon = GFX_goal_reichsautobahn
+		icon = GFX_goal_generic_industrial_plan
 
 
 		x = -18
 		y = 0
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -1462,7 +1462,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_finish_modern_rails
-		icon = GFX_focus_generic_africa_infrastructure
+		icon = GFX_focus_generic_railroad
 		prerequisite = { focus = PRJ_industrial_park }
 
 		x = -1
@@ -1520,7 +1520,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRJ_civilian_projects
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_food_processing
 		prerequisite = { focus = PRJ_finish_modern_rails }
 
 		x = -3
@@ -1585,7 +1585,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_civilian_projects_2
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_civilian_production
 		prerequisite = { focus = PRJ_civilian_projects }
 
 		x = -3
@@ -1650,7 +1650,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_civilian_projects_3
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_building_our_industry
 		prerequisite = { focus = PRJ_civilian_projects_2 }
 
 		x = -3
@@ -1715,7 +1715,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_military_projects
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_munitions_factories
 		prerequisite = { focus = PRJ_finish_modern_rails }
 
 		x = -1
@@ -1845,7 +1845,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_military_projects_3
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_war_factory
 		prerequisite = { focus = PRJ_military_projects_2 }
 
 		x = -1
@@ -1997,7 +1997,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRJ_turkana_cleanup
-		icon = GFX_goal_continuous_repairments
+		icon = GFX_focus_generic_land_reclamation
 		prerequisite = { focus = PRJ_industrial_park }
 
 		x = 1
@@ -2031,7 +2031,7 @@ focus_tree = {
 
 	focus = {
 		id = PRJ_oil
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_goal_generic_basic_oil
 		prerequisite = { focus = PRJ_turkana_cleanup }
 
 		x = 1
@@ -2222,7 +2222,7 @@ focus = {
 		icon = GFX_r56_focus_generic_army_modernizations
 		x = 26
 		y = 0
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 5
 
@@ -3205,12 +3205,12 @@ focus = {
 		id = PRJ_constitutional_reforms
 		icon = GFX_goal_support_democracy
 
-		prerequisite = { focus = PRJ_abandon_ethiopia }
+		prerequisite = { focus = PRJ_ethiopia_meeting }
 		mutually_exclusive = { focus = PRJ_steady_as_she_goes }
 		mutually_exclusive = { focus = PRJ_down_with_the_king }
 		x = -0
 		y = 1
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -3958,12 +3958,12 @@ focus = {
 	focus = {
 		id = PRJ_down_with_the_king
 		icon = GFX_focus_rom_handle_king
-		prerequisite = { focus = PRJ_abandon_ethiopia }
+		prerequisite = { focus = PRJ_ethiopia_meeting }
 		mutually_exclusive = { focus = PRJ_constitutional_reforms }
 		mutually_exclusive = { focus = PRJ_steady_as_she_goes }
 		x = 12
 		y = 1
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4006,7 +4006,7 @@ focus = {
 		mutually_exclusive = { focus = PRJ_syndicalism }
 		x = 8
 		y = 2
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4045,7 +4045,7 @@ focus = {
 		mutually_exclusive = { focus =  PRJ_jewish_fascism }
 		x = 5
 		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4115,7 +4115,7 @@ focus = {
 		prerequisite = { focus = PRJ_islam_fascism }
 		x = 5
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4148,11 +4148,11 @@ focus = {
 	}
 	focus = {
 		id = PRJ_islam_palestine
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		icon = GFX_goal_generic_befriend_palestine
 		prerequisite = { focus = PRJ_islam_2 }
 		x = 5
 		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4187,13 +4187,13 @@ focus = {
 	}
 	focus = {
 		id = PRJ_christian_fascism
-		icon = GFX_goal_generic_friendship_with_church
+		icon = GFX_focus_generic_pope
 		prerequisite = { focus = PRJ_theocracy }
 		mutually_exclusive = { focus =  PRJ_islam_fascism }
 		mutually_exclusive = { focus =  PRJ_jewish_fascism }
 		x = 8
 		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4263,7 +4263,7 @@ focus = {
 		prerequisite = { focus = PRJ_christian_fascism }
 		x = 8
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4302,7 +4302,7 @@ focus = {
 		mutually_exclusive = { focus =  PRJ_islam_fascism }
 		x = 11
 		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4366,7 +4366,7 @@ focus = {
 		prerequisite = { focus = PRJ_jewish_fascism }
 		x = 11
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4399,11 +4399,11 @@ focus = {
 	}
 	focus = {
 		id = PRJ_jew_israel
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		icon = GFX_goal_generic_befriend_israel
 		prerequisite = { focus = PRJ_jewish_2 }
 		x = 11
 		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4442,7 +4442,7 @@ focus = {
 		prerequisite = { focus = PRJ_jewish_2 focus = PRJ_islam_2 focus = PRJ_christian_2}
 		x = 8
 		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4472,11 +4472,11 @@ focus = {
 	}
 	focus = {
 		id = PRJ_religious_tax
-		icon = GFX_piles_of_money
+		icon = GFX_goal_generic_deals
 		prerequisite = { focus = PRJ_theorcracic_rule }
 		x = 8
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4510,7 +4510,7 @@ focus = {
 		prerequisite = { focus = PRJ_theorcracic_rule }
 		x = 6
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4544,7 +4544,7 @@ focus = {
 		prerequisite = { focus = PRJ_theorcracic_rule }
 		x = 10
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4578,7 +4578,7 @@ focus = {
 		prerequisite = { focus = PRJ_athiest_begone focus = PRJ_religious_tax }
 		x = 7
 		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4615,7 +4615,7 @@ focus = {
 		prerequisite = { focus = PRJ_religious_teachings focus = PRJ_religious_tax }
 		x = 9
 		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4651,7 +4651,7 @@ focus = {
 			mutually_exclusive = { focus = PRJ_theocracy }
 		x = 15
 		y = 2
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4689,7 +4689,7 @@ focus = {
 		mutually_exclusive = { focus = PRJ_syndicalism_flee }
 		x = 14
 		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4746,7 +4746,7 @@ focus = {
 		icon = GFX_goal_generic_red_freedom
 		x = 16
 		y = 3
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 		prerequisite = { focus = PRJ_syndicalism }
 		mutually_exclusive = { focus = PRJ_syndicalism_fight }
 
@@ -4838,7 +4838,7 @@ focus = {
 		prerequisite = { focus = PRJ_syndicalism_fight focus = PRJ_syndicalism_flee }
 		x = 15
 		y = 4
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4872,7 +4872,7 @@ focus = {
 		prerequisite = { focus = PRJ_syndicalism_3 }
 		x = 16
 		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
@@ -4911,12 +4911,12 @@ focus = {
 	}
 	focus = {
 		id = PRJ_eye_britain
-		icon = GFX_focus_jap_strike_south
+		icon = GFX_focus_ETH_african_wildfire
 
 		prerequisite = { focus = PRJ_syndicalism_3}
 		x = 14
 		y = 5
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 5
 
@@ -4958,7 +4958,7 @@ focus = {
 		prerequisite = { focus = PRJ_eye_britain }
 		x = 13
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 5
 
@@ -4997,7 +4997,7 @@ focus = {
 		prerequisite = { focus = PRJ_eye_britain }
 		x = 15
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 5
 
@@ -5035,7 +5035,7 @@ focus = {
 		prerequisite = { focus = PRJ_eye_britain }
 		x = 17
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 5
 
@@ -5074,7 +5074,7 @@ focus = {
 		prerequisite = { focus = PRJ_eye_britain }
 		x = 19
 		y = 6
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 5
 
@@ -5111,7 +5111,7 @@ focus = {
 		prerequisite = { focus = PRJ_civilian_infiltration focus = PRJ_aviation_infiltration focus = PRJ_naval_infiltration focus = PRJ_army_infiltration}
 		x = 15
 		y = 7
-		relative_position_id = PRJ_abandon_ethiopia
+		relative_position_id = PRJ_ethiopia_meeting
 
 		cost = 10
 
