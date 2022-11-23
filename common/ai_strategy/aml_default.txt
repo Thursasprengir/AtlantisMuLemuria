@@ -130,41 +130,299 @@
 #	priority = 100 # ai will prefer state of the highest prio strategy
 # }
 
-default_area_priority = {
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
-	enable = {
-		always = yes
-	}
-
-	ai_strategy = { type = area_priority id = europe value = 100 }
-	ai_strategy = { type = area_priority id = north_america value = 100 }
-	ai_strategy = { type = area_priority id = south_america value = 100 }
-	ai_strategy = { type = area_priority id = asia value = 100 }
-	ai_strategy = { type = area_priority id = middle_east value = 100 }
-	ai_strategy = { type = area_priority id = pacific value = 100 }
-	ai_strategy = { type = area_priority id = oceania value = 100 }
-	ai_strategy = { type = area_priority id = africa value = 50 }
-	ai_strategy = { type = area_priority id = suez value = 100 }
-	ai_strategy = { type = area_priority id = scandinavia value = 50 }
-}
-
 default_air = {
+	enable = {
+		is_major = yes
+		NOT = {
+			country_exists = ADR
+		}		
+	}
+
+	ai_strategy = { type = air_factory_balance  value = 20 }
+}
+
+highered_armored_production_aml = {
 	allowed = {
+		ROOT = {
+			exists = yes
+		}
+		NOT = {
+			country_exists = ADR
+		}		
+	}
+
+	enable = {
+		OR = {
+			NOT = { original_tag = SOV }
+			NOT = { original_tag = GER }
+		}
+		num_of_military_factories > 69
+	}
+	abort = {
+		num_of_military_factories < 30
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 7 #was 8 stacks on other strats fyi
+	}
+}
+
+
+force_build_no_div = {
+	enable = { num_divisions < 2 }
+
+
+	abort_when_not_enabled = yes
+	
+	ai_strategy = { type = force_build_armies value = 1 }
+}
+
+
+
+# ___ ___  ___  ___  _   _  ___ _____ ___ ___  _  _ 
+#| _ \ _ \/ _ \|   \| | | |/ __|_   _|_ _/ _ \| \| |
+#|  _/   / (_) | |) | |_| | (__  | |  | | (_) | .` |
+#|_| |_|_\\___/|___/ \___/ \___| |_| |___\___/|_|\_|
+#
+
+#########################################################
+#	PRIORITY STATES
+#########################################################
+
+r56_save_army_xp = {
+	allowed = {
+		NOT = {
+			country_exists = ADR
+		}		
+	}	
+	enable = {
+		always = yes
+	}
+	
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = infantry_equipment
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = support_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = motorized_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = artillery_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = anti_air_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = anti_tank_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = armored_car_equipment
+		value = -200
+	}	
+	
+	ai_strategy = {
+		type = production_upgrade_desire_offset	
+		id = infantry_equipment
+		value = -200
+	}	
+
+	ai_strategy = {
+		type = production_upgrade_desire_offset	
+		id = support_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = production_upgrade_desire_offset	
+		id = motorized_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = production_upgrade_desire_offset	
+		id = artillery_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = production_upgrade_desire_offset	
+		id = anti_air_equipment
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = production_upgrade_desire_offset	
+		id = anti_tank_equipment
+		value = -200
+	}	
+	
+	ai_strategy = {
+		type = production_upgrade_desire_offset	
+		id = armored_car_equipment
+		value = -200
+	}	
+}
+
+r56_upgrading_convoy = {
+	allowed = {
+		NOT = {
+			country_exists = ADR
+		}		
+	}
+
+	enable = {
+		always = yes
+	}
+	
+	ai_strategy = {
+		type = production_upgrade_desire_offset
+		id = convoy
+		value = -1000
+	}
+	
+	ai_strategy = { 
+		type = navy_xp_spend_priority
+		id = convoy	
+		value = -1000 
+	}
+}
+
+
+ENG_build_priorities = {
+	allowed = {  
+		tag = ENG
 		NOT = {
 			country_exists = ADR
 		}
 	}
+
 	enable = {
 		always = yes
 	}
 
-	ai_strategy = { type = air_factory_balance                                  value = 20 }
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 133
+		value = 5
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 121
+		value = 5
+	}
 }
 
+FRA_build_priorities = {
+	allowed = {  
+		tag = FRA
+			allowed = {
+		NOT = {
+			country_exists = ADR
+		}
+	}
+
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 20
+		value = 10
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 31
+		value = 5
+	}
+}
+
+ROM_build_priorities = {
+	allowed = {  
+		tag = ROM
+		NOT = {
+			country_exists = ADR
+		}		
+	}
+
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 938
+		value = -50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 76
+		value = -50
+	}
+
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 78
+		value = -50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 80
+		value = -50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 939
+		value = -50
+	}
+}
+
+YUG_build_priorities = {
+	allowed = {  
+		tag = YUG
+		NOT = {
+			country_exists = ADR
+		}		
+	}
+
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 914
+		value = -50
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 45
+		value = -50
+	}
+}
 
 ############################################################################################################
 #	Expert AI mod - equipment production
@@ -172,11 +430,6 @@ default_air = {
 
 
 production_line_upgrades = {
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
 	enable = { always = yes }
 	
 	ai_strategy = { type = production_upgrade_desire_offset id = light_tank_chassis_2 value = 200 }
@@ -238,11 +491,6 @@ artillery_eq_production_line_upgrade = {
 }
 
 mechanized_eq_production_line_upgrade = {
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
 	enable = { has_equipment = { mechanized_equipment < 1000 } }
 	
 	abort_when_not_enabled = yes
@@ -388,7 +636,7 @@ hspart_eq_production_line_upgrade = {
 	ai_strategy = { type = production_upgrade_desire_offset id = heavy_tank_artillery_chassis_3 value = -100 }
 }
 
-htd_eq_production_line_upgrade = {
+htd_eq_production_line_upgrade = 
 	allowed = {
 		NOT = {
 			country_exists = ADR
@@ -401,7 +649,8 @@ htd_eq_production_line_upgrade = {
 	ai_strategy = { type = production_upgrade_desire_offset id = heavy_tank_destroyer_chassis_3 value = -100 }
 }
 
-hspaa_eq_production_line_upgrade = {	allowed = {
+hspaa_eq_production_line_upgrade = {
+	allowed = {
 		NOT = {
 			country_exists = ADR
 		}
@@ -432,52 +681,10 @@ floating_harbors_production = {
 
 	abort_when_not_enabled = yes
 
-	ai_strategy = { type = unit_ratio id = floating_harbor value = 10 }
+	ai_strategy = { type = unit_ratio id = floating_harbor value = 10 } #base is 10 so it is 20 -Abbus
 }
 
 #scout_plane
-
-default_spyplanes_production = {
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
-	enable = {
-		has_tech = scout_plane1
-		is_major = yes
-		num_of_military_factories > 40
-		OR = {
-			has_equipment = {
-				scout_plane_equipment > 50
-			}
-			has_deployed_air_force_size = {
-				size > 50
-				type = scout_plane
-			}
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = unit_ratio
-		id = scout_plane
-		value = -99
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = scout_plane
-		value = -99
-	}
-
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = scout_plane
-		value = 1
-	}
-}
 	
 stop_scout_plane_production_major = {
 	allowed = {
@@ -487,7 +694,11 @@ stop_scout_plane_production_major = {
 	}
 	enable = { 
 		is_major = yes
-		has_equipment = { scout_plane_equipment > 200 }
+		# has_equipment = { scout_plane_equipment > 200 }
+		has_deployed_air_force_size = {
+			size > 150
+			type = scout_plane
+		}
 	}
 
 	abort_when_not_enabled = yes
@@ -502,6 +713,7 @@ stop_scout_plane_production = {
 			country_exists = ADR
 		}
 	}
+
 	enable = { 
 		is_major = no
 	}
@@ -512,8 +724,6 @@ stop_scout_plane_production = {
 	ai_strategy = { type = equipment_production_min_factories  id = scout_plane value = -5 }
 }
 
-#convoy
-stop_convoy_production_major = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
@@ -526,6 +736,13 @@ stop_convoy_production_major = {
 
 	abort_when_not_enabled = yes
 	
+#convoy
+stop_convoy_production_major = {
+	allowed = {
+		NOT = {
+			country_exists = ADR
+		}
+	}
 	ai_strategy = { type = equipment_production_factor id = convoy value = -1000 }
 	ai_strategy = { type = equipment_production_min_factories  id = convoy value = -5 }
 }
@@ -558,7 +775,7 @@ stop_infantry_production = {
 		has_equipment = { infantry_equipment > 100000 } 
 	}
 	abort = { 
-		NOT = { has_equipment = { infantry_equipment > 80000 }  }
+		has_equipment = { infantry_equipment > 80000 }
 	}
 	
 	ai_strategy = { type = air_factory_balance value = 100 }
@@ -664,10 +881,8 @@ reduce_artillery_production_2 = { #tungsten...
 	}
 	abort = { 
 		NOT = { 
-			AND = { 
-				has_equipment = { artillery_equipment > 6000 }
-			} 
-		} 
+			has_equipment = { artillery_equipment > 6000 }
+		}
 	}
 	
 	ai_strategy = { type = equipment_production_factor id = artillery value = -1000 }
@@ -699,7 +914,7 @@ reduce_motorized_production = {
 		}
 	}
 	enable = { has_equipment = { motorized_equipment > 4000 } }
-	abort = { NOT = { AND = { has_equipment = { motorized_equipment > 500 } } } }
+	abort = { NOT = { has_equipment = { motorized_equipment > 500 } } }
 	
 	ai_strategy = { type = equipment_production_factor id = motorized value = -75 }
 	
@@ -724,6 +939,22 @@ stop_motorized_production = {
 	ai_strategy = { type = air_factory_balance value = 100 }
 }
 
+#armor_car
+armor_car_production = {
+	allowed = {
+		NOT = {
+			country_exists = ADR
+		}
+	}
+	enable = { has_equipment = { armored_car_equipment > 4000 } }
+	abort = { NOT = { has_equipment = { armored_car_equipment > 500 } } }
+	
+	ai_strategy = { type = equipment_production_factor id = motorized value = -75 }
+	
+	ai_strategy = { type = equipment_production_factor id = mechanized value = 20 }
+}
+
+
 #support
 stop_support_production = {
 	allowed = {
@@ -743,9 +974,14 @@ stop_support_production = {
 	ai_strategy = { type = air_factory_balance value = 50 }	
 }
 
-reduce_support_production = {
+reduce_support_production = 
+	allowed = {
+		NOT = {
+			country_exists = ADR
+		}
+	}
 	enable = { has_equipment = { support_equipment > 6000 } }
-	abort = { NOT = { AND = { has_equipment = { support_equipment > 700 } } } }
+	abort = { NOT = { has_equipment = { support_equipment > 700 } } }
 	
 	ai_strategy = { type = equipment_production_factor id = support value = -75 }
 	ai_strategy = { type = equipment_production_min_factories id = support value = -75 }
@@ -791,6 +1027,7 @@ reduce_anti_tank_production_2 = { #tungsten...
 			country_exists = ADR
 		}
 	}
+
 	enable = { 
 		has_equipment = { anti_tank_equipment > 3000 } 
 	}
@@ -1025,84 +1262,68 @@ production_reduction_8 = {
 ######################################
 
 #train
-train_factory_assignment_0 = {
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
-	enable = { 
-		always = yes
-	}
-	ai_strategy = { type = equipment_production_min_factories       id = train            value = 1 }
-}
 train_factory_assignment_1 = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 30 }
-	abort = { NOT = { AND = {  num_of_military_factories > 30 } } }
+	enable = { num_of_military_factories > 3 }
+	ai_strategy = { type = equipment_production_min_factories       id = train            value = 1 }
+}
+train_factory_assignment_2 = {
+	allowed = {
+		NOT = {
+			country_exists = ADR
+		}
+	}
+	enable = { num_of_military_factories > 29 }
+	abort = { num_of_military_factories < 30 }
 
 	ai_strategy = { type = equipment_production_min_factories       id = train            value = 1 }
 }
 
 #truck
-motorized_factory_assignment_0 = {
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
-	enable = { 
-		always = yes
-	}
-	ai_strategy = { type = equipment_production_min_factories       id = motorized            value = 1 }
-}
 motorized_factory_assignment_1 = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 30 }
-	abort = { NOT = { AND = {  num_of_military_factories > 30 } } }
+	enable = { num_of_military_factories > 3 }
+	ai_strategy = { type = equipment_production_min_factories       id = motorized            value = 1 }
+}
+motorized_factory_assignment_2 = {
+	allowed = {
+		NOT = {
+			country_exists = ADR
+		}
+	}
+	enable = { num_of_military_factories > 29 }
+	abort = { NOT = { num_of_military_factories > 30 } }
 
 	ai_strategy = { type = equipment_production_min_factories       id = motorized            value = 1 }
 }
-motorized_factory_assignment_1 = {
+motorized_factory_assignment_3 = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 60 }
-	abort = { NOT = { AND = {  num_of_military_factories > 60 } } }
+	enable = { num_of_military_factories > 59 }
+	abort = {  num_of_military_factories < 60 }
 
 	ai_strategy = { type = equipment_production_min_factories       id = motorized            value = 1 }
 }
 
 #convoy
-convoy_factory_assignment_0 = {
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
-	enable = { num_of_naval_factories > 1 }
-	
-	ai_strategy = { type = equipment_production_min_factories       id = convoy           value = 1 }
-}
-
 convoy_factory_assignment_1 = {
+
 	allowed = {
 		NOT = {
 			country_exists = ADR
 		}
-	}
-	enable = { num_of_naval_factories > 15 }
-	abort = { NOT = { AND = {  num_of_military_factories > 15 } } }
+	}	enable = { num_of_naval_factories > 1 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = convoy           value = 1 }
 }
@@ -1113,8 +1334,20 @@ convoy_factory_assignment_2 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_naval_factories > 30 }
-	abort = { NOT = { AND = {  num_of_military_factories > 30 } } }
+	enable = { num_of_naval_factories > 14 }
+	abort = {  num_of_military_factories < 15 }
+	
+	ai_strategy = { type = equipment_production_min_factories       id = convoy           value = 1 }
+}
+
+convoy_factory_assignment_2 = {
+	allowed = {
+		NOT = {
+			country_exists = ADR
+		}
+	}
+	enable = { num_of_naval_factories > 29 }
+	abort = {  num_of_military_factories < 30 }
 
 	ai_strategy = { type = equipment_production_min_factories       id = convoy            value = 1 }
 }
@@ -1125,8 +1358,8 @@ convoy_factory_assignment_3 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_naval_factories > 45 }
-	abort = { NOT = { AND = {  num_of_military_factories > 45 } } }
+	enable = { num_of_naval_factories > 44 }
+	abort = {  num_of_military_factories < 45 }
 
 	ai_strategy = { type = equipment_production_min_factories       id = convoy            value = 1 }
 }
@@ -1138,8 +1371,8 @@ anti_air_factory_assignment_0 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 10 }
-	abort = { NOT = { AND = {  num_of_military_factories > 10 } } }
+	enable = { num_of_military_factories > 9 }
+	abort = {  num_of_military_factories < 10 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = anti_air            value = 1 }
 }
@@ -1149,8 +1382,8 @@ anti_air_factory_assignment_1 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 30 }
-	abort = { NOT = { AND = {  num_of_military_factories > 30 } } }
+	enable = { num_of_military_factories > 29 }
+	abort = {  num_of_military_factories < 30 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = anti_air            value = 1 }
 }
@@ -1162,8 +1395,8 @@ anti_tank_factory_assignment_0 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 10 }
-	abort = { NOT = { AND = {  num_of_military_factories > 10 } } }
+	enable = { num_of_military_factories > 9 }
+	abort = {  num_of_military_factories < 10 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = anti_tank            value = 1 }
 }
@@ -1173,8 +1406,8 @@ anti_tank_factory_assignment_1 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 20 }
-	abort = { NOT = { AND = {  num_of_military_factories > 20 } } }
+	enable = { num_of_military_factories > 19 }
+	abort = {  num_of_military_factories < 20 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = anti_tank            value = 1 }
 }
@@ -1184,8 +1417,8 @@ anti_tank_factory_assignment_2 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 40 }
-	abort = { NOT = { AND = {  num_of_military_factories > 40 } } }
+	enable = { num_of_military_factories > 39 }
+	abort = {  num_of_military_factories < 40 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = anti_tank            value = 1 }
 }
@@ -1195,8 +1428,8 @@ anti_tank_factory_assignment_3 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 60 }
-	abort = { NOT = { AND = {  num_of_military_factories > 60 } } }
+	enable = { num_of_military_factories > 59 }
+	abort = {  num_of_military_factories < 60 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = anti_tank            value = 1 }
 }
@@ -1206,8 +1439,8 @@ anti_tank_factory_assignment_4 = {
 			country_exists = ADR
 		}
 	}
-	enable = { num_of_military_factories > 80 }
-	abort = { NOT = { AND = {  num_of_military_factories > 80 } } }
+	enable = { num_of_military_factories > 79 }
+	abort = {  num_of_military_factories < 80 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = anti_tank            value = 1 }
 }
@@ -1245,7 +1478,7 @@ infantry_factory_assignment_0 = {
 	ai_strategy = { type = equipment_production_min_factories id = infantry value = 2 }
 }
 
-infantry_factory_assignment_1 ={
+infantry_factory_assignment_1 = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
@@ -1277,7 +1510,7 @@ infantry_factory_assignment_1 ={
 	ai_strategy = { type = equipment_production_min_factories id = infantry value = 2 }
 }
 
-infantry_factory_assignment_2 ={
+infantry_factory_assignment_2 = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
@@ -1310,11 +1543,6 @@ infantry_factory_assignment_2 ={
 }
 
 infantry_factory_assignment_3 ={
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
 	enable = { 
 		has_equipment = { infantry_equipment < 5000 }
 
