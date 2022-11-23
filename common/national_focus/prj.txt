@@ -605,7 +605,7 @@ focus_tree = {
 	focus = {
 		id = PRJ_free_africa
 		icon = GFX_r56_goal_generic_uprising
-		prerequisite = { focus = PRJ_faith_and_arms focus = PRJ_prepare_for_more }
+		prerequisite = { focus = PRJ_faith_and_arms  }
 		x = -8
 		y = 7
 		relative_position_id = PRJ_ethiopia_meeting
@@ -2531,7 +2531,7 @@ focus = {
 	focus = {
 		id = PRJ_mechanization_2
 		prerequisite = { focus = PRJ_support }
-		mutually_exclusive = { focus = PRJ_light_med_tanks }
+		mutually_exclusive = { focus = PRJ_light_med_tanks_2 }
 		icon = GFX_focus_generic_rubber
 		x = -5
 		y = 5
