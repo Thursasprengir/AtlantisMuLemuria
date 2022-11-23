@@ -710,7 +710,7 @@ TRS_naval_light_cruiser = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_light_medium_battery_2
 				mid_1_custom_slot = ship_torpedo
 				mid_2_custom_slot = ship_airplane_launcher
@@ -749,7 +749,7 @@ TRS_naval_light_cruiser = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot > ship_secondaries_1
 				fixed_ship_armor_slot > ship_armor_cruiser_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_torpedo
@@ -761,7 +761,7 @@ TRS_naval_light_cruiser = {
 		
 		allowed_modules = {
 			ship_anti_air
-			dp_ship_secondaries
+			dp_light_battery
 			ship_torpedo
 			ship_depth_charge
 			ship_fire_control_system
@@ -789,7 +789,7 @@ TRS_naval_light_cruiser = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot > ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
@@ -801,7 +801,7 @@ TRS_naval_light_cruiser = {
 		
 		allowed_modules = {
 			ship_anti_air
-			dp_ship_secondaries
+			dp_light_battery
 			ship_torpedo
 			ship_depth_charge
 			ship_fire_control_system
@@ -864,7 +864,7 @@ TRS_naval_light_AA_cruiser = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
 				fixed_ship_armor_slot = ship_armor_cruiser_1
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot > ship_secondaries_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
 				mid_2_custom_slot = dp_light_battery
@@ -957,7 +957,7 @@ TRS_naval_cruiser_heavy = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine_1
 				fixed_ship_armor_slot = ship_armor_cruiser_1
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				mid_1_custom_slot = ship_torpedo
 				mid_2_custom_slot = ship_torpedo
 				rear_1_custom_slot = ship_anti_air
@@ -1025,7 +1025,7 @@ TRS_naval_cruiser_heavy = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_medium_battery_2
 				mid_1_custom_slot = ship_torpedo
 				mid_2_custom_slot = ship_torpedo
@@ -1099,7 +1099,7 @@ TRS_naval_cruiser_heavy = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_medium_battery_2
 				mid_1_custom_slot = ship_torpedo
 				mid_2_custom_slot = ship_torpedo
@@ -1133,7 +1133,7 @@ TRS_naval_cruiser_heavy = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_medium_battery
 				mid_1_custom_slot = ship_torpedo
 				mid_2_custom_slot = ship_airplane_launcher
@@ -1172,7 +1172,7 @@ TRS_naval_cruiser_heavy = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_torpedo
 				mid_1_custom_slot = ship_medium_battery_2
 				mid_2_custom_slot = ship_airplane_launcher
@@ -1207,7 +1207,7 @@ TRS_naval_cruiser_heavy = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_medium_battery_2
 				mid_1_custom_slot = ship_torpedo
 				mid_2_custom_slot = ship_torpedo
@@ -1306,7 +1306,7 @@ TRS_naval_capital_battleship = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = heavy_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_bb_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_secondaries
@@ -1394,7 +1394,7 @@ TRS_naval_capital_battleship = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_bb_2
 				front_1_custom_slot = ship_heavy_battery_2
 				mid_1_custom_slot = ship_anti_air
@@ -1479,7 +1479,7 @@ TRS_naval_capital_battleship = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_bc_2
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
@@ -1515,12 +1515,12 @@ TRS_naval_capital_battleship = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot > heavy_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot > ship_secondaries_1
 				fixed_ship_armor_slot = ship_heavy_armor
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
-				mid_2_custom_slot = dp_ship_secondaries
-				mid_3_custom_slot = dp_ship_secondaries
+				mid_2_custom_slot > ship_secondaries_1
+				mid_3_custom_slot > ship_secondaries_1
 				rear_1_custom_slot = ship_heavy_battery_3
 			}
 		}
@@ -1581,7 +1581,7 @@ TRS_naval_capital_super_heavy = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_shbb
 				front_1_custom_slot = ship_anti_air
 				front_2_custom_slot = empty
@@ -1623,7 +1623,7 @@ TRS_naval_capital_super_heavy = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_engine_slot = heavy_ship_engine
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_shbb
 				front_1_custom_slot = ship_anti_air
 				front_2_custom_slot = ship_anti_air
@@ -1719,7 +1719,7 @@ TRS_naval_carrier = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = heavy_ship_engine_1
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot > ship_secondaries_1
 				mid_1_custom_slot = ship_deck_space
 			}
 		}
@@ -1754,7 +1754,7 @@ TRS_naval_carrier = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_deck_space
 			}
 		}
@@ -1819,7 +1819,7 @@ TRS_naval_carrier = {
 				fixed_ship_deck_slot_2 = ship_deck_space
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_engine_slot = carrier_ship_engine
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_deck_space
 				mid_2_custom_slot = ship_armor_carrier_deck
@@ -1909,7 +1909,7 @@ TRS_naval_carrier_light = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = empty
 			}
 		}
@@ -1988,7 +1988,7 @@ TRS_naval_carrier_light = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 			}
 		}
 		

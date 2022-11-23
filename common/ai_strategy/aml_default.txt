@@ -338,7 +338,6 @@ ENG_build_priorities = {
 FRA_build_priorities = {
 	allowed = {  
 		tag = FRA
-			allowed = {
 		NOT = {
 			country_exists = ADR
 		}
@@ -636,7 +635,7 @@ hspart_eq_production_line_upgrade = {
 	ai_strategy = { type = production_upgrade_desire_offset id = heavy_tank_artillery_chassis_3 value = -100 }
 }
 
-htd_eq_production_line_upgrade = 
+htd_eq_production_line_upgrade = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
@@ -724,6 +723,9 @@ stop_scout_plane_production = {
 	ai_strategy = { type = equipment_production_min_factories  id = scout_plane value = -5 }
 }
 
+
+#convoy
+stop_convoy_production_major = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
@@ -733,16 +735,9 @@ stop_scout_plane_production = {
 		is_major = yes
 		has_equipment = { convoy > 1200 } 
 	}
-
+	
 	abort_when_not_enabled = yes
 	
-#convoy
-stop_convoy_production_major = {
-	allowed = {
-		NOT = {
-			country_exists = ADR
-		}
-	}
 	ai_strategy = { type = equipment_production_factor id = convoy value = -1000 }
 	ai_strategy = { type = equipment_production_min_factories  id = convoy value = -5 }
 }
@@ -974,7 +969,7 @@ stop_support_production = {
 	ai_strategy = { type = air_factory_balance value = 50 }	
 }
 
-reduce_support_production = 
+reduce_support_production = {
 	allowed = {
 		NOT = {
 			country_exists = ADR
