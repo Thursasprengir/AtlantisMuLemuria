@@ -193,20 +193,35 @@ bookmarks = {
 		}
 
 		"ITA"={
-			minor = yes
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
+			available = { has_dlc = "By Blood Alone" }
 			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
 			}	
 			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
+				ITA_comandante_diavolo
+				ITA_il_sol_dell_avvenire
+				ITA_a_colonial_empire
 			}		
 		}
-
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "By Blood Alone" } }
+			ideas = {
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
+			}	
+			focuses = {
+				ITA_comandante_diavolo
+				ITA_to_live_as_a_lion
+				ITA_a_colonial_empire
+			}		
+		}
 		# minors from DLC ####
 		"CAN"={
 			minor = yes
