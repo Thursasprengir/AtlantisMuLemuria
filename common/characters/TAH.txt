@@ -1,0 +1,725 @@
+characters={
+	TAH_Anapa_Tauarii={
+		name="Anapa Tauari'i"
+		portraits={
+			civilian={
+				large="gfx/leaders/TAH/Portrait_TAH_Anapa_Tauarii.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ANAPA_TAUARII_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	TAH_teiva_rahiti={
+		name="Teiva Rahiti"
+		portraits={
+			civilian={
+				large="gfx/leaders/TAH/Portrait_TAH_Teiva_Rahiti.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TEIVA_RAHITI_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	TAH_rereau_temanava={
+		name="Rereau Temanava"
+		portraits={
+			civilian={
+				large="gfx/leaders/TAH/Portrait_TAH_rereau_temanava.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_REREAU_TEMANAVA_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			
+		}
+	}
+	TAH_nohoarii_moeava={
+		name="Nohoari'i Moeava"
+		portraits={
+			civilian={
+				large="gfx/leaders/TAH/Portrait_TAH_nohoarii_moeava.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_NOHOARII_MOEAVA_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	TAH_hemi_tuitama={
+		name="Hemi Tuitama"
+		portraits={
+			civilian={
+				large="gfx/leaders/TAH/Portrait_TAH_hemi_tuitama.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HEMI_TUITAMA_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	TAH_hailani_mataafa={
+		name="Hailani Mataafa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	TAH_hailani_tuitupo={
+		name="Hailani Tuitupo"
+		portraits={
+			army={
+				small="GFX_portrait_generic_land_1_small"
+			}
+			army={
+				large="GFX_portrait_generic_land_1"
+			}
+		}
+		field_marshal={
+			traits={ recently_promoted }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+
+###################
+###CORPS COMMANDERS
+###################
+	
+	TAH_corps_commander_1={
+		name=TAH_corps_commander_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
+
+	TAH_corps_commander_2={
+		name=TAH_corps_commander_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	TAH_corps_commander_3={
+		name=TAH_corps_commander_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	TAH_corps_commander_4={
+		name=TAH_corps_commander_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	TAH_naval_leader_1={
+		name=TAH_naval_leader_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}		
+		navy_leader={
+			traits={ naval_lineage}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	TAH_naval_leader_2={
+		name=TAH_naval_leader_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	TAH_naval_leader_3={
+		name=TAH_naval_leader_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}		
+		navy_leader={
+			traits={ spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	TAH_naval_leader_4={
+		name=TAH_naval_leader_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	TAH_naval_leader_5={
+		name=TAH_naval_leader_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	TAH_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = TAH_anti_communist_crusader
+			allowed  = {
+					original_tag  = TAH
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="TAH_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	recruit_character = TAH_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = recruit_character = TAH_backroom_backstabber
+
+			allowed  = {
+					original_tag  = TAH
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="recruit_character = TAH_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	TAH_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = TAH_communist_revolutionary
+			allowed  = {
+					original_tag  = TAH
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="TAH_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	TAH_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = TAH_democratic_reformer
+			allowed  = {
+					original_tag  = TAH
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="TAH_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}	
+	TAH_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = TAH_fascist_demagogue
+			allowed  = {
+					original_tag  = TAH
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="TAH_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_land_3"
+			}
+		}
+	}
+	TAH_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = TAH_ideological_crusader
+			allowed  = {
+					original_tag  = TAH
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="TAH_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_navy_1"
+			}
+		}
+	}
+	TAH_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = TAH_prince_of_terror
+			allowed  = {
+					original_tag  = TAH
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="TAH_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_land_5"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	TAH_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = TAH_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = TAH
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="TAH_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	TAH_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = TAH_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = TAH
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="TAH_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	TAH_naval_theorist={
+		name=TAH_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = TAH_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = TAH
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+#################
+###ARMY CHIEF
+#################
+	TAH_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = TAH_army_chief_defensive_2
+			allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	TAH_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = TAH_army_chief_drill_2
+			allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	TAH_navy_chief_naval_aviation_2={
+		advisor={
+			slot = navy_chief
+			idea_token = TAH_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	TAH_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = TAH_air_chief_ground_support_2
+			allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	TAH_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = TAH_air_chief_reform_2
+			allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	TAH_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = TAH_army_logistics_2
+			ledger = army
+				allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	TAH_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = TAH_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	TAH_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = TAH_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	TAH_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = TAH_navy_screen_2
+			ledger = army
+				allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	TAH_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = TAH_navy_naval_air_defense_2
+			ledger = army
+				allowed = {
+					original_tag = TAH
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="TAH_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+}
