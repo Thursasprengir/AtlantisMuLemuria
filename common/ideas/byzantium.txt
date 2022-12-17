@@ -1,0 +1,1856 @@
+ideas = {
+
+	country = {
+		fallen_empire = {
+			
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+			
+			#allowed_civil_war = {
+			#	has_government = neutrality
+			#}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = 0.33
+				drift_defence_factor = 0.1
+				generate_wargoal_tension = -0.25
+				#army_morale_factor = -0.1
+			}
+		}
+		
+		byz_outdated_doctrine = {
+			picture = ast_volunteer_defence_corps
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = -0.1
+			}
+			
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				max_dig_in_factor = 0.1
+				planning_speed = -0.1
+			}
+		}
+		
+		BYZ_treaty_of_sevres = {
+			picture = byz_sevres
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.2
+				training_time_factor = 0.1
+				production_speed_arms_factory_factor = -0.33
+				conversion_cost_civ_to_mil_factor = 0.33
+				stability_factor = -0.05
+			}
+		}
+		
+		BYZ_armed_neutrality = {
+			picture = neutrality_idea
+			allowed = {
+				original_tag = BYZ
+				NOT = { neutrality > 0.9 }
+				always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = 0.05
+				democratic_drift = -0.01
+				communism_drift = -0.01
+				fascism_drift = -0.01
+			}
+		
+		}
+		
+		BYZ_mil_society = {
+			picture = generic_war_preparation
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+				conscription = 0.01
+				#conscription_factor = 0.2
+			}
+		
+		}
+		
+		BYZ_red_recruit_bonus = {
+			picture = generic_communist_army
+			allowed = {
+				original_tag = BYZ
+				has_government = communism
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.15
+			}
+		
+		}
+		
+		BYZ_german_advisors = {
+			picture = german_advisors
+			allowed = {
+				original_tag = BYZ
+				NOT = { has_war_with = GER }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.1
+			}
+		}
+		
+		##support Communism
+		BYZ_communist_revolution = {
+		picture = generic_communism_drift_bonus
+			allowed = {
+				original_tag = BYZ
+				NOT = { communism > 0.5 }
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+					communism_drift = 0.15
+			}
+		}
+		
+		##Support democracy
+		BYZ_democratic_fervor = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				original_tag = BYZ
+				NOT = { democratic > 0.5 }
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+					democratic_drift = 0.15
+			}
+		}
+		##support fascism
+		BYZ_fascist_movement = {
+			picture = generic_fascism_drift_bonus
+			allowed = {
+				original_tag = BYZ
+				NOT = { fascism > 0.5 }
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+					fascism_drift = 0.15
+			}
+		}
+		
+		BYZ_sevres_revanchism = {
+			picture = hun_treaty_of_trianon
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+
+		bureaucratic_government = {
+			
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture = generic_disjointed_gov
+			picture = generic_army_war_college
+			
+			modifier = {
+				political_power_cost = 0.33
+				stability_factor = -0.1
+			}
+		}
+		
+		romano_soviet_tech = {
+		
+			allowed = {
+				has_government = communism
+				OR = {
+					AND = {
+						tag = SOV
+						is_in_faction_with = BYZ
+					}
+					AND = {
+						tag = BYZ
+						is_in_faction_with = SOV
+					}
+				}
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = byz_romano_soviet
+			
+			
+
+			
+		}
+		
+		byz_ger_producing_lease_air = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_air_payment
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		byz_labor_laws = {
+			
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+			}
+		}
+		
+		glory_of_rome = {
+			
+			allowed = {
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 1
+				stability_factor = 0.15
+
+			}
+			
+			picture = e_empire
+		}
+		
+		BYZ_idea_emperor_returns = {
+			
+			allowed = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+				always = no
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.1
+				drift_defence_factor = 0.2
+				industrial_capacity_factory = 0.1
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+			
+			picture = e_empire
+		}
+		
+		byz_new_rome = {
+			
+			allowed = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+				always = no
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 1
+				stability_factor = 0.1
+				drift_defence_factor = 0.25
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+			
+			picture = byz_new_rome
+		}
+		
+		byz_eternal_revolution = {
+			
+			allowed = {
+				has_government = communism
+				always = no
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 1
+				stability_factor = 0.1
+				drift_defence_factor = 0.25
+				justify_war_goal_time = -0.2
+				army_morale_factor = 0.1
+			}
+			
+			picture = byz_eternal_revolution
+		}
+		
+		byz_purging_non_commies = {
+			
+			allowed = {
+				has_government = communism
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.75
+				fascism_drift = -0.1
+				neutrality_drift = -0.1
+			}
+			
+			#picture = trotskyite_plot
+			picture = trotskyite_plot_purged
+		}
+		
+		byz_non_commies_purged = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				army_morale_factor = -0.05
+				#research_time_factor = 0.05
+				fascism_drift = -0.05
+				neutrality_drift = -0.05
+				democratic_drift = -0.05
+			}
+			
+			picture = generic_fascism_banned
+		}
+		
+		byz_purge_army_officers = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				land_doctrine = -0.05
+				naval_doctrine = -0.05
+				air_doctrine = -0.05
+			}
+			
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+			}
+			
+			picture = officers_purged
+		}
+		
+		byz_socialist_market = {
+			
+			allowed = {
+				has_government = communism
+				always = no
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+			
+			picture = generic_goods_red_bonus
+		}
+		
+		byz_in_hoc_signo = {
+			
+			allowed = {
+				original_tag = BYZ
+				has_government = fascism
+				always = no
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+				army_morale_factor = 0.05
+				conscription = 0.005
+			}
+			
+			picture = yug_orthodox_church_support
+		}
+		
+		byz_for_the_senate = {
+			
+			allowed = {
+				original_tag = BYZ
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+				always = no
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				democratic_drift = 0.1
+			}
+			
+			picture = byz_new_rome
+		}
+		
+		byz_for_the_people = {
+			
+			allowed = {
+				original_tag = BYZ
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+				always = no
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				neutrality_drift = 0.1
+			}
+			
+			picture = byz_new_rome
+		}
+		
+		byz_shadow_council_defeated = {
+			
+			allowed = {
+				always = no
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.025
+				neutrality_drift = 0.025
+			}
+			
+			picture = generic_secret_police
+		}
+		
+		byz_id_konstantinos_xiv = {
+			
+			allowed = {
+				original_tag = BYZ
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_completed_focus = BYZ_constitutional_monarchy
+					}
+					has_government = democratic
+				}
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+					has_government = fascism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = BYZ
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+			picture = konstantinos_xiv
+			
+
+		}
+		
+		byz_id_elena_russia = {
+			
+			allowed = {
+				NOT = { has_government = communism }
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+			
+			#traits = {  }
+			
+			modifier = {
+				stability_factor = 0.05				
+			}
+			
+			picture = elena_russia
+			
+			
+		}
+		
+		# Party leader policies
+		byz_metaxas_idea = {
+			picture = generic_fortify_the_borders
+			allowed = {
+				original_tag = BYZ
+				has_government = democratic
+				always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_anti_air_building_factor = 0.1
+				production_speed_radar_station_factor = 0.1
+			}
+		}
+		byz_glinos_idea = {
+			picture = generic_morale_bonus
+			allowed = {
+				original_tag = BYZ
+				has_government = democratic
+				always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.1
+				conscription = -0.01
+			}
+		}
+		byz_tsuderos_idea = {
+			picture = generic_research_bonus
+			allowed = {
+				original_tag = BYZ
+				has_government = democratic
+				always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+			#	research_time_factor = 0.05
+			}
+		}
+		byz_tsaldaris_idea = {
+			picture = generic_constitutional_guarantee
+			allowed = {
+				original_tag = BYZ
+				has_government = democratic
+				always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.05
+				neutrality_drift = 0.05
+			}
+		}
+		byz_kafantaris_idea = {
+			picture = generic_volunteer_expedition_bonus
+			allowed = {
+				original_tag = BYZ
+				has_government = democratic
+				always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.05
+				conscription = 0.01
+			}
+		}
+		
+		byz_konstantinos_abdicated = {
+			
+			allowed = {
+				NOT = { has_government = communism }
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = konstantinos_xiv
+
+		}
+		
+		byz_committee = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.015
+			}
+			
+			picture = byz_committee
+		}
+		
+		byz_scholars = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.03
+			}
+			
+			picture = byz_scholars
+		}
+		
+		byz_convoy_raiding = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = the_long_lance
+			
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+					naval_speed = 0.1 instant = yes
+				}
+				screen_ship = {
+					naval_speed = 0.1 instant = yes
+				}
+			}
+		}
+		
+		byz_escort_carriers = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_coastal_navy
+			
+			equipment_bonus = {
+				carrier = {
+					build_cost_ic = -0.1 instant = yes
+					naval_speed = 0.15 instant = yes
+					carrier_size = -0.1 instant = yes
+				}
+			}
+		}
+		
+		byz_naval_domination = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_navy_bonus
+			
+			equipment_bonus = {
+				capital_ship = {
+			#		attack = 0.05 instant = yes
+					armor_value = 0.1 instant = yes
+				}
+				carrier = {
+				#	attack = 0.05 instant = yes
+					armor_value = 0.1 instant = yes
+				}
+				screen_ship = {
+				#	attack = 0.05 instant = yes
+					armor_value = 0.1 instant = yes
+				}
+				submarine = {
+				#	attack = 0.05 instant = yes
+					armor_value = 0.1 instant = yes
+				}
+			}
+		}
+		
+		byz_droungarios_of_the_fleet = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = german_advisors
+			
+			#modifier = {
+			#	political_power_cost = 0.05
+			#}
+			
+			equipment_bonus = {
+				capital_ship = {
+					naval_speed = 0.1 instant = yes
+				}
+				carrier = {
+					naval_speed = 0.1 instant = yes
+				}
+				screen_ship = {
+					naval_speed = 0.1 instant = yes
+				}
+				submarine = {
+					naval_speed = 0.1 instant = yes
+				}
+			}
+		}
+		
+		byz_off_tanks = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_acquire_tanks
+			
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.1
+					soft_attack = 0.05
+				}
+			}
+		}
+		
+		byz_def_tanks = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_acquire_tanks
+			
+			equipment_bonus = {
+				armor = {
+					armor_value = 0.1
+					hard_attack = 0.05
+				}
+			}
+		}
+		
+		byz_offroad_designs = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_armor
+			
+			equipment_bonus = {
+				armor = {
+					reliability = 0.1
+				}
+				cat_mechanized_equipment = {
+					reliability = 0.1
+				}
+			}
+		}
+		
+		byz_eng_arming_komnenos = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				consumer_goods_factor = 0.05
+				training_time_factor = 0.05
+			}
+		}
+		
+		BYZ_humiliated = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = byz_fist
+			
+			modifier = {
+				political_power_factor = -0.5
+				stability_factor = -0.1
+				army_morale_factor = -0.1
+				subjects_autonomy_gain = 0.05
+			}
+		}
+		
+		
+	}
+
+	political_advisor = {
+
+		BYZ_damaskinos = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		BYZ_georgios_papandreou = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		BYZ_evripidis_bakirtris = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			available = {
+				hidden_trigger = {
+					NOT = { has_country_flag = purged_BYZ_evripidis_bakirtris }
+				}
+			}
+			
+			traits = { war_industrialist }
+		}
+		
+		BYZ_theodoros_christakos = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { ideological_crusader }
+		}
+		
+		BYZ_mikhael_kostopoulos = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			available = {
+				hidden_trigger = {
+					NOT = { has_country_flag = purged_BYZ_mikhael_kostopoulos }
+				}
+			}
+			
+			traits = { backroom_backstabber }
+		}
+		
+		BYZ_charilaos_florakis = {
+			
+			#picture = generic_communist_europe
+			picture = generic_communist_revolutionary_western_european_2d
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			available = {
+				#hidden_trigger = {
+				#	has_country_flag = allow_communist_advisor
+				#}
+				has_completed_focus = BYZ_storming_the_palace
+			}
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+			
+		BYZ_themistoklis_sofoulis = {
+		
+			#picture = generic_democratic_europe
+			picture = generic_democratic_reformer_western_european_2d
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			available = {
+				#hidden_trigger = {
+				#	has_country_flag = allow_democratic_advisor
+				#}
+				has_completed_focus = BYZ_restrict_monarchy
+			}
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		BYZ_demosthenes_nicoladis = {
+
+			#picture = generic_fascist_europe
+			picture = generic_fascist_demagogue_western_european_2d
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			available = {
+				#hidden_trigger = {
+				#	has_country_flag = allow_fascist_advisor
+				#}
+				OR = {
+					has_completed_focus = BYZ_cult_of_personality
+					has_completed_focus = BYZ_imperial_authority
+				}
+			}
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+theorist = {
+
+	BYZ_nikolaos_plastiras = {
+		ledger = army
+				
+		picture = nikolaos_plastiras
+
+		allowed = {
+			original_tag = BYZ
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { grand_battle_plan_expert }
+	}
+	
+	BYZ_loukas_palaiologos = {
+		ledger = army
+				
+		picture = generic_army_europe_2
+
+		allowed = {
+			original_tag = BYZ
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { superior_firepower_expert }
+	}
+	
+	BYZ_ioseph_laskaris = {
+		ledger = army
+				
+		picture = generic_army_europe_1
+
+		allowed = {
+			original_tag = BYZ
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { mobile_warfare_expert }
+	}
+
+	BYZ_eleftherios_venizelos = {
+		ledger = air
+				
+		picture = generic_political_advisor_europe_1
+			
+		allowed = {
+			original_tag = BYZ
+		}
+		
+		research_bonus = {
+			air_doctrine = 0.07
+		}
+		
+		traits = { close_air_support_proponent }
+	}
+	
+	BYZ_andreas_kouzenros = {
+		ledger = air
+				
+		picture = generic_political_advisor_europe_2
+			
+		allowed = {
+			original_tag = BYZ
+		}
+		
+		research_bonus = {
+			air_doctrine = 0.07
+		}
+		
+		traits = { assault_avaition }
+	}
+	
+	BYZ_alexandros_palamaras = {
+		ledger = navy
+		
+		picture = generic_navy_europe_2
+		
+		allowed = {
+			original_tag = BYZ
+		}
+		
+		research_bonus = {
+			naval_doctrine = 0.07
+		}
+		
+		traits = { grand_fleet_proponent }
+	}
+	
+	BYZ_theodophlos_tanthykyros = {
+		ledger = navy
+		
+		picture = generic_navy_europe_1
+		
+		allowed = {
+			original_tag = BYZ
+		}
+		
+		research_bonus = {
+			naval_doctrine = 0.07
+		}
+		
+		traits = { naval_aviation_pioneer }
+	}
+	
+	BYZ_gyrleios_mavrovouniotis = {
+		ledger = navy
+		
+		picture = generic_navy_europe_3
+		
+		allowed = {
+			original_tag = BYZ
+		}
+		research_bonus = {
+			naval_doctrine = 0.07
+		}
+		
+		traits = { submarine_specialist }
+	}
+}
+	# MILITARY
+	army_chief = {
+		
+		BYZ_alexander_papagos = {
+			
+			picture = alexander_papagos
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			available = {
+				hidden_trigger = {
+					NOT = { has_country_flag = purged_BYZ_alexander_papagos }
+				}
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BYZ_konstantinos_ventiris = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BYZ_orestes_panagopoulos = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BYZ_valerios_palaiologos = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { army_chief_morale_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		BYZ_panagiotis_gazis = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BYZ_vasilios_tsarpalis = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BYZ_andreas_sapountzakis = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+	
+		BYZ_alexandros_sakellariou = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BYZ_petros_voulgaris = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		BYZ_aris_velouchiotis = {
+			ledger = army
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			picture = aris_velouchiotis
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BYZ_theodoros_pangalos = {
+			ledger = army
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			picture = theodoros_pangalos
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		BYZ_napoleon_zervas = {
+			ledger = army
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			picture = generic_army_europe_2
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BYZ_nikos_beloyannis = {
+			ledger = air
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			picture = generic_air_europe_2
+			
+			traits = { air_strategic_bombing_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BYZ_aristeidis_moraitinis = {
+			ledger = air
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			picture = generic_air_europe_1
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BYZ_gabriel_tsakalotos = {
+			ledger = army
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			picture = generic_army_europe_3
+			
+			traits = { army_cavalry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BYZ_georgios_kondylis = {
+			ledger = army
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			available = {
+				hidden_trigger = {
+					NOT = { has_country_flag = purged_BYZ_georgios_kondylis }
+				}
+			}
+			
+			picture = georgios_kondylis
+			
+			traits = { army_concealment_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BYZ_georgios_tsolakoglou = {
+			ledger = army
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			picture = georgios_tsolakoglou
+			
+			traits = { army_entrenchment_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	# TECHNOLOGY
+	
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		sfakianakis = {
+			
+			picture = byz_sfakianakis
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+		}
+		
+		rhomanian_defense_systems = {
+			
+			picture = generic_tank_manufacturer_2
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		elvo_thessaloniki = {
+			
+			picture = generic_tank_manufacturer_3
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		imperial_rhomanian_naval_shipyard = {
+
+			picture = byz_imperial_rhomanian_shipyard
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+		}
+		
+		motomarine_sa = {
+
+			picture = generic_naval_manufacturer_2
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		velos_oe = {
+			
+			picture = byz_velos_oe
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			# trainers for RAF, great handling
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rhomanian_aeronautical_technologies = { 
+		
+			picture = byz_rat
+		
+			allowed = {
+				original_tag = BYZ
+			}
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		aekkea_raab = { 
+			
+			picture = byz_aekkea_raab
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		state_aircraft_factory = {
+
+			picture = generic_air_manufacturer_3
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		three_sigma = {
+
+			picture = byz_3sigma
+		
+			allowed = {
+				original_tag = BYZ
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	industrial_concern = {
+		
+		basileiades = {
+			
+			picture = byz_basileiades
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		metka = {
+			
+			picture = byz_metka
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				industry = 0.10
+				
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		pyramis = {
+			
+			picture = byz_pyramis
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		elviemek = {
+			
+			picture = generic_artillery_manufacturer_3
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		pyrkal = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		national_motor_company = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+			
+			allowed = {
+				original_tag = BYZ
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+}

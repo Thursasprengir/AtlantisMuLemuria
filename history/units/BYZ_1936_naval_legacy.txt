@@ -1,0 +1,56 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	navy = {
+		###name = "Vasilikó Polemikó Naftikó"
+		name = "Aftokratorikó Naftikó"
+		base = 9833
+		location = 9833 # Constantinople
+		ship = { name = "BBN Justinian" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Georgios Averoff" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Karaiskakis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Elli" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Kolokotronis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Velestinlis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BYZ } } }
+		# Destroyer Flotilla
+		ship = { name = "BBN Aetos" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Ierax" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Leon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Panthir" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Kountouriotis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ version_name =  "Hydra Class" } } }
+		ship = { name = "BBN Hydra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ version_name =  "Hydra Class" } } }
+		ship = { name = "BBN Psara" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ version_name =  "Hydra Class" } } }
+		ship = { name = "BBN Spetsai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ version_name =  "Hydra Class" } } }
+	}
+	navy = {
+		name = "Stolískou Ypovrychíon"
+		base = 4109 
+		location = 4109 # Athens
+		ship = { name = "BBN Katsonis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BYZ } } }		
+		ship = { name = "BBN Papanikolis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BYZ } } }		
+		ship = { name = "BBN Protefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BYZ } } }		
+		ship = { name = "BBN Nirefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BYZ } } }		 
+		ship = { name = "BBN Triton" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BYZ } } }		
+		ship = { name = "BBN Glafkos" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BYZ } } }		
+	}
+	navy = {
+		name = "Naftikí Dioíkisi Aigaíou"
+		base = 4112 
+		location = 4112 # Smyrna
+		ship = { name = "BBN Kilkis" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = BYZ } } }			
+		ship = { name = "BBN Makriyannis" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = BYZ } } }			
+		ship = { name = "BBN Apostolis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Diakos" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Kriezis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Sakhtouris" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Tompazis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Androutsos" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Bouboulina" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ } } }
+		ship = { name = "BBN Alexandros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ create_if_missing = yes } } }
+		ship = { name = "BBN Patrai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ create_if_missing = yes } } }
+		ship = { name = "BBN Piraives" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ create_if_missing = yes } } }
+		ship = { name = "BBN Kikladhes" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ create_if_missing = yes } } }
+		ship = { name = "BBN Mavrogenous" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BYZ create_if_missing = yes } } }
+	}
+}
