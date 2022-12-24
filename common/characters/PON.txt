@@ -57,27 +57,20 @@ characters={
 ###############
 ###NEUTRALITY
 ###############
-	GRE_ioannis_metaxas={
-        instance={
-            allowed={ NOT = { has_dlc = "Battle for the Bosporus" } }
-            name=GRE_ioannis_metaxas
-            portraits={
-              army={
-                    large=GFX_portrait_GRE_ioannis_metaxas
-                }
-                civilian={
-                    large=GFX_portrait_GRE_ioannis_metaxas
-                }
-            }
-         
-            country_leader = {
-                expire = "1965.1.1"
-                ideology = despotism
-                traits = {
-                    arkhigos
-                }
+	PON_ioannis_metaxas={
+        name=PON_ioannis_metaxas
+        portraits={
+            civilian={
+                large=GFX_portrait_GRE_ioannis_metaxas
             }
         }
+        country_leader = {
+            expire = "1965.1.1"
+            ideology=despotism
+            traits = {
+                arkhigos
+            }
+		}
     }
 	
 	
