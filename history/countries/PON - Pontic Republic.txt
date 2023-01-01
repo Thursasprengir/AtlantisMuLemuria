@@ -85,25 +85,25 @@ add_political_power = 200
 
 set_popularities = {
  
-	democratic =18
+	democratic =48
 
 	fascism = 21
 		
 	communism = 5
 		
-	neutrality = 56
+	neutrality = 26
 }
 set_politics = {	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	election_frequency = 108
+	elections_allowed = yes
 }
 
 
 #characters
 #political leaders
-recruit_character = PON_conservatism_leader
+recruit_character = PON_despotism_leader
 recruit_character = PON_stalinism_leader
 recruit_character = PON_generic_fascism_leader
 recruit_character = PON_prince_leader
@@ -162,5 +162,5 @@ recruit_character = PON_navy_screen_2
 recruit_character = PON_navy_anti_submarine_1
 recruit_character = PON_navy_naval_air_defense_2
 
-
+set_cosmetic_tag = ATL_PON
 set_convoys = 40
