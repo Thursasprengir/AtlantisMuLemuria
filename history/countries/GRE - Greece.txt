@@ -240,6 +240,24 @@ set_politics = {
 	elections_allowed = no
 }
 
+1936.1.1 = {
+	if = { 
+		limit = { has_dlc = "Battle for the Bosporus" }	
+		341 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		347 = {
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		339 = {
+			add_dynamic_modifier = { modifier = islamist_opposition }
+		}
+		340 = {
+			add_dynamic_modifier = { modifier = islamist_sedition }
+		}
+		
+	}
+}
 set_stability = 1
 
 # Government leaders
