@@ -12,8 +12,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
-			arms_factory = 1
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		if = {
 			limit = {
@@ -21,6 +21,8 @@ state={
 			}
 
 			add_core_of = PON
+			add_core_of = TUR
+			add_core_of = ARM
 		}
 		if = {
 			limit = {
@@ -28,12 +30,13 @@ state={
 			}
 			add_core_of = TUR
 			add_core_of = PON
+			add_core_of = ARM
 		}
 	}
 
 	provinces={
 		652 4583 6935 7470 11880 12376 13121 
 	}
-	manpower = 365490
+	manpower = 465490
 	state_category = large_town
 }
