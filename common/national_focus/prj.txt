@@ -3405,7 +3405,6 @@ focus = {
 		id = PRJ_roderiq_refuses
 		icon = GFX_focus_generic_monarchy_1
 
-		prerequisite = { focus = PRJ_queens_taming }
 		prerequisite = { focus = PRJ_reign_in_religion }
 		prerequisite = { focus = PRJ_invite_dutch }
 		x = -1
@@ -3507,7 +3506,11 @@ focus = {
 		completion_reward = {
 			give_guarantee = HOL
 			HOL = {
-				give_guarantee = PRJ
+				diplomatic_relation = {
+				country = PRJ
+				relation = guarantee
+				active = yes
+			}
 			}
 		}
 	}
