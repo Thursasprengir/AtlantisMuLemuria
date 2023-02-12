@@ -42,13 +42,22 @@ characters={
 		name="AVA_generic_fascism_leader"
 		portraits={
 			civilian={
-				large="gfx/leaders/AVA/Portrait_AVA_Aurashaspa_Betab.dds"
+				large="gfx/leaders/AVA/Portrait_AVA_Shah_roya_Saher.dds"
 			}
 		}
 		country_leader={
 			ideology=fascism_ideology
 			expire="1949.1.1.12"
 			
+		}
+		field_marshal = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			visible = { has_character_flag = AVA_roya_war } 
 		}
 	}
 
@@ -59,7 +68,7 @@ characters={
 		name=AVA_oligarchism_leader
 		portraits={
 			civilian={
-				large="gfx/leaders/AVA/Portrait_AVA_Bahrom_Yazdavandi.dds"
+				large="gfx/leaders/AVA/Portrait_AVA_conflicting_reports.dds"
 			}
 		}
 		country_leader={
@@ -81,6 +90,15 @@ characters={
 			ideology=shah
 			expire="1953.1.1.12"
 			
+		}
+		field_marshal = {
+			traits = { trickster }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+			visible = { has_character_flag = AVA_parviz_war } 
 		}
 	}
 	
