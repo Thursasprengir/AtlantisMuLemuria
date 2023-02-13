@@ -262,7 +262,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			FRA = {
+				991 = { add_compliance = -20 }
+				1041 = { add_compliance = -20 }
+				1040 = { add_compliance = -20 }
+				1060 = { add_compliance = -20 }
+			}
 		}
 	}
 	focus = {
@@ -297,7 +302,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			FRA = {
+				country_event = {
+					id = ava.5
+					days = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -332,7 +342,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = MAN_nonaligned_idea
 		}
 	}
 	
@@ -413,7 +423,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = communist_influence
 		}
 	}
 	
@@ -456,7 +466,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AVA_kobaulashlivi_alliance
+		id = AVA_communist_research
 		icon = GFX_
 		prerequisite = { focus = AVA_work_with_communists focus = AVA_work_with_mandalists }
 
@@ -489,7 +499,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
 	
@@ -895,7 +905,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#factionaddition
+			ENG = {
+				add_to_faction = AVA
+			}
 		}
 	}
 	
@@ -942,7 +954,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = AVA_unstable_equilibrium
+		id = AVA_british_research_university
 		icon = GFX_
 		prerequisite = { focus = AVA_mainland_industry }
 		relative_position_id = AVA_democracy_house
@@ -973,7 +985,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
 	#fascism
