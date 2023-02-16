@@ -1355,39 +1355,36 @@ focus_tree = {
 
 
 		completion_reward = {
-			
-			
+			1170 = {
+				transfer_state_to = AVA
+			}
+			707 = {
+				transfer_state_to = AVA
+			}
+			709 = {
+				transfer_state_to = AVA
+			}
+			1168 = {
+				transfer_state_to = AVA
+			}
+			ENG = { 
+				add_opinion_modifier = {
+					target = AVA
+					modifier = western_betrayal
+				}
+			}
 		}
 	}
 	
 	
 	focus = {
-		id = AVA_abandon_west
+		id = AVA_second_war_fire_stone
 		icon = GFX_r56_goal_generic_small_infantry
 		prerequisite = { focus = AVA_yohannian_assist }
 		prerequisite = { focus = AVA_break_cardinal_lease }
 		relative_position_id = AVA_roya_house
 		x = -1
 		y = 4
-		cost = 10
-		available = {
-		}
-		ai_will_do = {
-			base = 1.5
-		}
-
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = AVA_second_war_fire_stone
-		icon = GFX_r56_goal_generic_small_infantry
-		prerequisite = { focus = AVA_abandon_west }
-		relative_position_id = AVA_roya_house
-		x = -1
-		y = 5
 		cost = 10
 		available = {
 		}
@@ -1412,7 +1409,7 @@ focus_tree = {
 		prerequisite = { focus = AVA_second_war_fire_stone }
 		relative_position_id = AVA_roya_house
 		x = -2
-		y = 6
+		y = 5
 		cost = 10
 		available = {
 		}
@@ -1437,7 +1434,7 @@ focus_tree = {
 		prerequisite = { focus = AVA_second_war_fire_stone }
 		relative_position_id = AVA_roya_house
 		x = 0
-		y = 6
+		y = 5
 		cost = 10
 		available = {
 		}
