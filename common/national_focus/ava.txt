@@ -109,7 +109,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = AVA_conflicting_reports }
 		mutually_exclusive = { focus = AVA_democracy_house }
-		mutually_exclusive = { focus = AVA_roya_house }
+		mutually_exclusive = { focus = AVA_muzumdar_house }
 		mutually_exclusive = { focus = AVA_azadeh_house }
 		x = 2
 		y = 1
@@ -143,7 +143,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = mandalism
-				popularity = 0.2
+				popularity = 0.05
 			}
 			set_politics = {
 				ruling_party = communism
@@ -599,7 +599,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = AVA_conflicting_reports }
 		mutually_exclusive = { focus = AVA_worker_victory }
-		mutually_exclusive = { focus = AVA_roya_house }
+		mutually_exclusive = { focus = AVA_muzumdar_house }
 		mutually_exclusive = { focus = AVA_azadeh_house }
 		x = 9
 		y = 1
@@ -991,7 +991,7 @@ focus_tree = {
 	#fascism
 
 	focus = {
-		id = AVA_roya_house
+		id = AVA_muzumdar_house
 		icon = GFX_
 		prerequisite = { focus = AVA_conflicting_reports }
 		mutually_exclusive = { focus = AVA_worker_victory }
@@ -1045,8 +1045,8 @@ focus_tree = {
 	focus = {
 		id = AVA_purge_azadeh
 		icon = GFX_
-		prerequisite = { focus = AVA_roya_house }
-		relative_position_id = AVA_roya_house
+		prerequisite = { focus = AVA_muzumdar_house }
+		relative_position_id = AVA_muzumdar_house
 		x = 1
 		y = 1
 
@@ -1082,8 +1082,8 @@ focus_tree = {
 	focus = {
 		id = AVA_purge_edibam
 		icon = GFX_
-		prerequisite = { focus = AVA_roya_house }
-		relative_position_id = AVA_roya_house
+		prerequisite = { focus = AVA_muzumdar_house }
+		relative_position_id = AVA_muzumdar_house
 		x = -1
 		y = 1
 
@@ -1121,7 +1121,7 @@ focus_tree = {
 		id = AVA_ally_zurvanist
 		icon = GFX_
 		prerequisite = { focus = AVA_purge_edibam }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = -1
 		y = 2
 		cost = 10
@@ -1155,7 +1155,7 @@ focus_tree = {
 		id = AVA_purge_communists
 		icon = GFX_
 		prerequisite = { focus = AVA_purge_edibam }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = -3
 		y = 2
 
@@ -1194,7 +1194,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = AVA_purge_edibam }
 		prerequisite = { focus = AVA_purge_azadeh }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = 1
 		y = 2
 
@@ -1236,7 +1236,7 @@ focus_tree = {
 		icon = GFX_r56_goal_generic_small_infantry
 		prerequisite = { focus = AVA_secret_police }
 		prerequisite = { focus = AVA_ally_zurvanist }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = 0
 	
 		y = 3
@@ -1317,7 +1317,7 @@ focus_tree = {
 		id = AVA_marines
 		icon = GFX_r56_goal_generic_small_infantry
 		prerequisite = { focus = AVA_secret_police }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = 2
 	
 		y = 3
@@ -1342,7 +1342,7 @@ focus_tree = {
 		id = AVA_break_cardinal_lease
 		icon = GFX_r56_goal_generic_small_infantry
 		prerequisite = { focus = AVA_ally_zurvanist focus = AVA_purge_communists }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = -2
 	
 		y = 3
@@ -1382,7 +1382,7 @@ focus_tree = {
 		icon = GFX_r56_goal_generic_small_infantry
 		prerequisite = { focus = AVA_yohannian_assist }
 		prerequisite = { focus = AVA_break_cardinal_lease }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = -1
 		y = 4
 		cost = 10
@@ -1407,7 +1407,7 @@ focus_tree = {
 		id = AVA_demand_somalia
 		icon = GFX_r56_goal_generic_small_infantry
 		prerequisite = { focus = AVA_second_war_fire_stone }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = -2
 		y = 5
 		cost = 10
@@ -1432,7 +1432,7 @@ focus_tree = {
 		id = AVA_princess_of_persia
 		icon = GFX_r56_goal_generic_small_infantry
 		prerequisite = { focus = AVA_second_war_fire_stone }
-		relative_position_id = AVA_roya_house
+		relative_position_id = AVA_muzumdar_house
 		x = 0
 		y = 5
 		cost = 10
@@ -1490,7 +1490,7 @@ focus_tree = {
 		prerequisite = { focus = AVA_conflicting_reports }
 		mutually_exclusive = { focus = AVA_worker_victory }
 		mutually_exclusive = { focus = AVA_democracy_house }
-		mutually_exclusive = { focus = AVA_roya_house }
+		mutually_exclusive = { focus = AVA_muzumdar_house }
 		x = 24
 		y = 1
 
@@ -1571,9 +1571,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = AVA_Roya_runs_to_Yohannia
 			add_popularity = {
 				ideology = fascism
 				popularity = -0.1
+			}
+			hidden_effect = {
+				AVA_generic_fascism_leader = {
+					set_character_flag = AVA_roya_war
+				}
+				set_nationality = {
+					target_country = PRJ
+					character = AVA_generic_fascism_leader
+				}
 			}
 		}
 	}
@@ -1754,7 +1764,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			create_equipment_variant = {
+				name = "E/F/G/H Class"
+				type = ship_hull_light_2
+				name_group = ENG_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
+				}
+			}
+			load_oob = AVA_british_purchase
 		}
 	}
 	
@@ -1789,9 +1815,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+				custom_effect_tooltip = AVA_parviz_bcomes_a_leader
 			AVA_shah_leader = {
 				set_character_flag = AVA_parviz_war
-			}
+			} 
 		}
 	}
 	
