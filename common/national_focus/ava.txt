@@ -1894,5 +1894,356 @@ focus_tree = {
 			}
 		}
 	}
+	#Industry
+	focus = {
+		id = AVA_civilian_industry
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		x = 30
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1166 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_military_industry
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		x = 32
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1167 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_shipyard
+		icon = GFX_
+		prerequisite = { focus = AVA_military_industry focus = AVA_civilian_industry }
+		x = 31
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1167 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_chrome
+		icon = GFX_
+		prerequisite = { focus = AVA_shipyard }
+		x = 29
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1167 = {
+				add_resource = {
+					type = chrome
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_chrome_2
+		icon = GFX_
+		prerequisite = { focus = AVA_chrome }
+		x = 29
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1167 = {
+				add_resource = {
+					type = chrome
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_capital_university
+		icon = GFX_
+		prerequisite = { focus = AVA_shipyard }
+		x = 31
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	} 
+	focus = {
+		id = AVA_iron
+		icon = GFX_
+		prerequisite = { focus = AVA_shipyard }
+		x = 33
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1149 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_iron_2
+		icon = GFX_
+		prerequisite = { focus = AVA_iron }
+		x = 33
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1149 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_panchaian_tungsten
+		icon = GFX_
+		prerequisite = { focus = AVA_iron_2 focus = AVA_chrome_2 }
+		x = 31
+		y = 5
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1166 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+			}
+		}
+	}
 }
+
 
