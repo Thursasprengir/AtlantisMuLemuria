@@ -2244,6 +2244,154 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = AVA_learning_civil_war
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		x = 40
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
+	}
+	focus = {
+		id = AVA_reform_army
+		icon = GFX_
+		prerequisite = { focus = AVA_learning_civil_war }
+		relative_position_id = AVA_learning_civil_war
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = AVA_infantry_equiptment
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_army }
+		relative_position_id = AVA_learning_civil_war
+		x = -3
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_infantry_tech
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_trucks
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_army }
+		relative_position_id = AVA_learning_civil_war
+		x = -1
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name =  AVA_mechanized_trucks
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
 }
 
 
