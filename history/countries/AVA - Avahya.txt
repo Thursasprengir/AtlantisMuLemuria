@@ -4,6 +4,7 @@ oob = "AVA_1936"
 
 set_research_slots = 2
 add_manpower = 20000 #Imigrated from Occupied avahyan teritory
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -81,20 +82,20 @@ if = {
 }
 
 set_popularities = {
-	democratic = 15
-	fascism = 10
-	communism = 5
+	democratic = 20
+	fascism = 20
+	communism = 20
 		#banned = no #default is no
-	monarchism = 65
-	neutrality = 5
+	monarchism = 20
+	neutrality = 20
 }
 set_politics = {
-	ruling_party = monarchism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 36
 	elections_allowed = no
 }
-
+S
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"

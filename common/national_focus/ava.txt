@@ -1,0 +1,2397 @@
+focus_tree = {
+
+	id = avahya_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = AVA
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1700 }
+
+	############################
+	######## CATEGORY ##########
+	############################
+
+#	focus = {
+#		id = AVA_
+#		icon = GFX_
+
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+
+#		x = 0
+#		y = 0
+#		relative_position_id =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = yes
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+	############################
+	######### POLITICS ##########
+	############################
+
+
+	focus = {
+		id = AVA_conflicting_reports
+		icon = GFX_
+		x = 13
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 10
+			add_stability = -0.30
+			1149 = {
+				damage_building = {
+					type = infrastructure
+					damage = 4
+				}
+			}
+		}
+	}
+#Far left Commie
+
+	focus = {
+		id = AVA_worker_victory
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		mutually_exclusive = { focus = AVA_democracy_house }
+		mutually_exclusive = { focus = AVA_muzumdar_house }
+		mutually_exclusive = { focus = AVA_azadeh_house }
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = mandalism
+				popularity = 0.05
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				last_election = "1935.12.17"
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_worker_councils
+		icon = GFX_
+		prerequisite = { focus = AVA_worker_victory }
+		relative_position_id = AVA_worker_victory
+
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = ava_labor_union
+		}
+	}
+	
+	focus = {
+		id = AVA_mainland_bound
+		icon = GFX_
+		prerequisite = { focus = AVA_worker_councils }
+		relative_position_id = AVA_worker_victory
+
+		x = 0
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+	
+		FRA = {
+			country_event = {
+				id = ava.1
+				days = 1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_pantiyan_tigers
+		icon = GFX_
+		prerequisite = { focus = AVA_mainland_bound }
+		relative_position_id = AVA_worker_victory
+
+		x = -1
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			FRA = {
+				991 = { add_compliance = -20 }
+				1041 = { add_compliance = -20 }
+				1040 = { add_compliance = -20 }
+				1060 = { add_compliance = -20 }
+			}
+		}
+	}
+	focus = {
+		id = AVA_cardinal_islands
+		icon = GFX_
+		prerequisite = { focus = AVA_mainland_bound }
+		relative_position_id = AVA_worker_victory
+
+		x = 1
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			FRA = {
+				country_event = {
+					id = ava.5
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_work_with_mandalists
+		icon = GFX_
+		prerequisite = { focus = AVA_cardinal_islands focus = AVA_pantiyan_tigers }
+		mutually_exclusive = { focus = AVA_work_with_communists }
+		relative_position_id = AVA_worker_victory
+
+		x = -1
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = MAN_nonaligned_idea
+		}
+	}
+	
+	focus = {
+		id = AVA_mandalism_is_the_way
+		icon = GFX_
+		prerequisite = { focus = AVA_work_with_mandalists }
+		mutually_exclusive = { focus = AVA_work_with_communists }
+		relative_position_id = AVA_worker_victory
+
+		x = -2
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = mandalism
+				popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = mandalism
+				elections_allowed = no
+				last_election = "1935.12.17"
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_work_with_communists
+		icon = GFX_
+		prerequisite = { focus = AVA_cardinal_islands focus = AVA_pantiyan_tigers }
+		mutually_exclusive = { focus = AVA_work_with_mandalists }
+		relative_position_id = AVA_worker_victory
+
+		x = 1
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = communist_influence
+		}
+	}
+	
+	focus = {
+		id = AVA_stalinism_is_the_way
+		icon = GFX_
+		prerequisite = { focus = AVA_work_with_communists }
+		mutually_exclusive = { focus = AVA_work_with_communists }
+		relative_position_id = AVA_worker_victory
+
+		x = 2
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = AVA_communist_research
+		icon = GFX_
+		prerequisite = { focus = AVA_work_with_communists focus = AVA_work_with_mandalists }
+
+		relative_position_id = AVA_worker_victory
+
+		x = 0
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			KBS = { has_government = communism }
+		}
+
+		bypass = {
+			NOT = {
+				KBS = { has_government = communism }
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = AVA_soviet_investment
+		icon = GFX_
+		prerequisite = { focus = AVA_stalinism_is_the_way }
+
+		relative_position_id = AVA_worker_victory
+
+		x = 2
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SOV = { has_government = communism }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1149 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_kumari_investment
+		icon = GFX_
+		prerequisite = { focus = AVA_mandalism_is_the_way }
+		relative_position_id = AVA_worker_victory
+
+		x = -2
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			KUM = { has_government = mandalism }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	#left democracy
+
+	focus = {
+		id = AVA_democracy_house
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		mutually_exclusive = { focus = AVA_worker_victory }
+		mutually_exclusive = { focus = AVA_muzumdar_house }
+		mutually_exclusive = { focus = AVA_azadeh_house }
+		x = 9
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 60
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_new_constitution
+		icon = GFX_
+		prerequisite = { focus = AVA_democracy_house }
+		relative_position_id = AVA_democracy_house
+
+		x = 0
+		y = 1
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = AVA_new_currency
+		icon = GFX_
+		prerequisite = { focus = AVA_democracy_house }
+		relative_position_id = AVA_democracy_house
+
+		x = 0
+		y = 1
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ava_new_fiat_currency
+				days = 365
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_british_lease
+		icon = GFX_
+		prerequisite = { focus = AVA_new_currency }
+		relative_position_id = AVA_democracy_house
+
+		x = 1
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			diplomatic_relation = {
+				country = ENG
+				relation = docking_rights
+				active = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_gold_for_mainland
+		icon = GFX_
+		prerequisite = { focus = AVA_new_currency }
+		relative_position_id = AVA_democracy_house
+
+		x = -1
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ava_gold_transfer
+				days = 365
+			}
+			#Event or forced
+		}
+	}
+	
+	focus = {
+		id = AVA_usa_industry_expertise
+		icon = GFX_
+		prerequisite = { focus = AVA_british_lease focus = AVA_gold_for_mainland }
+		relative_position_id = AVA_democracy_house
+
+		x = 0
+		y = 3
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_house_lords
+		icon = GFX_
+		prerequisite = { focus = AVA_usa_industry_expertise }
+		relative_position_id = AVA_democracy_house
+
+		x = 1
+		y = 4
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = AVA_anglo_avahyan_treaty
+		icon = GFX_
+		prerequisite = { focus = AVA_house_lords }
+		relative_position_id = AVA_democracy_house
+
+		x = 1
+		y = 5
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			ENG = {
+				add_to_faction = AVA
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_mainland_industry
+		icon = GFX_
+		prerequisite = { focus = AVA_usa_industry_expertise focus = AVA_gold_for_mainland }
+		relative_position_id = AVA_democracy_house
+
+		x = -1
+		y = 4
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1060 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_british_research_university
+		icon = GFX_
+		prerequisite = { focus = AVA_mainland_industry }
+		relative_position_id = AVA_democracy_house
+
+		x = -1
+		y = 5
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	#fascism
+
+	focus = {
+		id = AVA_muzumdar_house
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		mutually_exclusive = { focus = AVA_worker_victory }
+		mutually_exclusive = { focus = AVA_democracy_house }
+		mutually_exclusive = { focus = AVA_azadeh_house }
+		x = 17
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				last_election = "1935.12.17"
+			}
+			add_timed_idea = {
+				idea = ava_edibam_resistance
+				days = 180
+			}
+			add_timed_idea = {
+				idea = ava_azadeh_opposition
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = AVA_purge_azadeh
+		icon = GFX_
+		prerequisite = { focus = AVA_muzumdar_house }
+		relative_position_id = AVA_muzumdar_house
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = monarchism
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = AVA_purge_edibam
+		icon = GFX_
+		prerequisite = { focus = AVA_muzumdar_house }
+		relative_position_id = AVA_muzumdar_house
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_ally_zurvanist
+		icon = GFX_
+		prerequisite = { focus = AVA_purge_edibam }
+		relative_position_id = AVA_muzumdar_house
+		x = -1
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	
+	focus = {
+		id = AVA_purge_communists
+		icon = GFX_
+		prerequisite = { focus = AVA_purge_edibam }
+		relative_position_id = AVA_muzumdar_house
+		x = -3
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = AVA_secret_police
+		icon = GFX_
+		prerequisite = { focus = AVA_purge_edibam }
+		prerequisite = { focus = AVA_purge_azadeh }
+		relative_position_id = AVA_muzumdar_house
+		x = 1
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+	}
+	
+	
+	
+	
+	focus = {
+		id = AVA_yohannian_assist
+		icon = GFX_r56_goal_generic_small_infantry
+		prerequisite = { focus = AVA_secret_police }
+		prerequisite = { focus = AVA_ally_zurvanist }
+		relative_position_id = AVA_muzumdar_house
+		x = 0
+	
+		y = 3
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1.5
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ETH_learning_from_the_enemy_armor
+				bonus = 0.25
+				uses = 1
+				category = cat_light_armor
+			}
+			add_tech_bonus = {
+				name = ETH_learning_from_the_enemy_air
+				bonus = 0.25
+				uses = 1
+				category = medium_air
+			}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				custom_effect_tooltip = ETH_PRJ_light_tank_tt
+				hidden_effect = {
+					create_equipment_variant = {
+						name = "Neta-Axiqan"
+						type = light_tank_chassis_0
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_heavy_machine_gun
+							turret_type_slot = tank_light_one_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_riveted_armor
+							engine_type_slot = tank_gasoline_engine
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 1
+							tank_nsb_armor_upgrade = 2
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ETH_PRJ_aircraft_tt
+			hidden_effect = {
+				create_equipment_variant = {
+					name = "Holowrath 32" 
+					type = small_plane_airframe_0
+					modules = {
+						fixed_main_weapon_slot = light_mg_4x
+						engine_type_slot = engine_1_1x
+						special_type_slot_1 = empty
+					}
+				}
+				create_equipment_variant = {
+					name = "Elenium 101" 
+					type = medium_plane_airframe_0
+					modules = {
+						fixed_main_weapon_slot = medium_bomb_bay
+						engine_type_slot = engine_1_2x
+						special_type_slot_1 = empty
+					}
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 15000
+				producer = PRJ
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_marines
+		icon = GFX_r56_goal_generic_small_infantry
+		prerequisite = { focus = AVA_secret_police }
+		relative_position_id = AVA_muzumdar_house
+		x = 2
+	
+		y = 3
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1.5
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = marine_tech
+			}
+			
+		}
+	}
+	
+		focus = {
+		id = AVA_break_cardinal_lease
+		icon = GFX_r56_goal_generic_small_infantry
+		prerequisite = { focus = AVA_ally_zurvanist focus = AVA_purge_communists }
+		relative_position_id = AVA_muzumdar_house
+		x = -2
+	
+		y = 3
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1.5
+		}
+
+
+		completion_reward = {
+			1170 = {
+				transfer_state_to = AVA
+			}
+			707 = {
+				transfer_state_to = AVA
+			}
+			709 = {
+				transfer_state_to = AVA
+			}
+			1168 = {
+				transfer_state_to = AVA
+			}
+			ENG = { 
+				add_opinion_modifier = {
+					target = AVA
+					modifier = western_betrayal
+				}
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = AVA_second_war_fire_stone
+		icon = GFX_r56_goal_generic_small_infantry
+		prerequisite = { focus = AVA_yohannian_assist }
+		prerequisite = { focus = AVA_break_cardinal_lease }
+		relative_position_id = AVA_muzumdar_house
+		x = -1
+		y = 4
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1.5
+		}
+
+
+		completion_reward = {
+			AVA = { 
+				declare_war_on = {
+					target = FRA
+					type = take_core_state
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_demand_somalia
+		icon = GFX_r56_goal_generic_small_infantry
+		prerequisite = { focus = AVA_second_war_fire_stone }
+		relative_position_id = AVA_muzumdar_house
+		x = -2
+		y = 5
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1.5
+		}
+
+
+		completion_reward = {
+			559 = { 
+				add_claim_by = AVA
+			}
+			844 = {
+				add_claim_by = AVA
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_princess_of_persia
+		icon = GFX_r56_goal_generic_small_infantry
+		prerequisite = { focus = AVA_second_war_fire_stone }
+		relative_position_id = AVA_muzumdar_house
+		x = 0
+		y = 5
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1.5
+		}
+
+
+		completion_reward = {
+			410 = { 
+				add_claim_by = AVA
+			}
+			411 = {
+				add_claim_by = AVA
+			}
+			412 = {
+				add_claim_by = AVA
+			}
+			413 = {
+				add_claim_by = AVA
+			}
+			414 = {
+				add_claim_by = AVA
+			}
+			416 = {
+				add_claim_by = AVA
+			}
+			417 = {
+				add_claim_by = AVA
+			}
+			418 = {
+				add_claim_by = AVA
+			}
+			419 = {
+				add_claim_by = AVA
+			}
+			420 = {
+				add_claim_by = AVA
+			}
+			421 = {
+				add_claim_by = AVA
+			}
+			266 = {
+				add_claim_by = AVA
+			}
+		}
+	}
+	
+	#Canon Monarchy
+	focus = {
+		id = AVA_azadeh_house
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		mutually_exclusive = { focus = AVA_worker_victory }
+		mutually_exclusive = { focus = AVA_democracy_house }
+		mutually_exclusive = { focus = AVA_muzumdar_house }
+		x = 24
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = monarchism
+				elections_allowed = no
+				last_election = "1935.12.17"
+			}
+			add_timed_idea = {
+				idea = ava_green_king
+				days = 730
+			}
+			add_timed_idea = {
+				idea = ava_edibam_resistance
+				days = 180
+			}
+			add_timed_idea = {
+				idea = ava_muzumdar_resistance
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = AVA_purge_muzumdar
+		icon = GFX_
+		prerequisite = { focus = AVA_azadeh_house }
+		relative_position_id = AVA_azadeh_house
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AVA_Roya_runs_to_Yohannia
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			hidden_effect = {
+				AVA_generic_fascism_leader = {
+					set_character_flag = AVA_roya_war
+				}
+				set_nationality = {
+					target_country = PRJ
+					character = AVA_generic_fascism_leader
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_purge_edibam_m
+		icon = GFX_
+		prerequisite = { focus = AVA_azadeh_house }
+		relative_position_id = AVA_azadeh_house
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democracy
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = AVA_mazdakist_alternative
+		icon = GFX_
+		prerequisite = { focus = AVA_purge_edibam_m }
+		prerequisite = { focus = AVA_purge_muzumdar  }
+		relative_position_id = AVA_azadeh_house
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = ava_mazdakist_union
+		}
+	}
+	
+	focus = {
+		id = AVA_monarchical_socialist_blend
+		icon = GFX_
+		prerequisite = { focus = AVA_mazdakist_alternative }
+		relative_position_id = AVA_azadeh_house
+		x = 0
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = AVA_paratoopers
+		icon = GFX_
+		prerequisite = { focus = AVA_mazdakist_alternative }
+		relative_position_id = AVA_azadeh_house
+		x = -2
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = para_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_purchase_british_ship
+		icon = GFX_
+		prerequisite = { focus = AVA_mazdakist_alternative }
+		relative_position_id = AVA_azadeh_house
+		x = 2
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_equipment_variant = {
+				name = "E/F/G/H Class"
+				type = ship_hull_light_2
+				name_group = ENG_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
+				}
+			}
+			load_oob = AVA_british_purchase
+		}
+	}
+	
+	focus = {
+		id = AVA_parviz_general
+		icon = GFX_
+		prerequisite = { focus = AVA_monarchical_socialist_blend }
+		relative_position_id = AVA_azadeh_house
+		x = -1
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+				custom_effect_tooltip = AVA_parviz_bcomes_a_leader
+			AVA_shah_leader = {
+				set_character_flag = AVA_parviz_war
+			} 
+		}
+	}
+	
+	focus = {
+		id = AVA_female_aviators
+		icon = GFX_
+		prerequisite = { focus = AVA_monarchical_socialist_blend }
+		relative_position_id = AVA_azadeh_house
+		x = 1
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+	
+	focus = {
+		id = AVA_join_britain
+		icon = GFX_
+		prerequisite = { focus = AVA_female_aviators }
+		prerequisite = { focus = AVA_parviz_general }
+		relative_position_id = AVA_azadeh_house
+		x = 0
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			ENG = {
+				add_to_faction = AVA
+			}
+		}
+	}
+	#Industry
+	focus = {
+		id = AVA_civilian_industry
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		x = 30
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1166 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_military_industry
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		x = 32
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1167 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_shipyard
+		icon = GFX_
+		prerequisite = { focus = AVA_military_industry focus = AVA_civilian_industry }
+		x = 31
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1167 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_chrome
+		icon = GFX_
+		prerequisite = { focus = AVA_shipyard }
+		x = 29
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1167 = {
+				add_resource = {
+					type = chrome
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_chrome_2
+		icon = GFX_
+		prerequisite = { focus = AVA_chrome }
+		x = 29
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1167 = {
+				add_resource = {
+					type = chrome
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_capital_university
+		icon = GFX_
+		prerequisite = { focus = AVA_shipyard }
+		x = 31
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	} 
+	focus = {
+		id = AVA_iron
+		icon = GFX_
+		prerequisite = { focus = AVA_shipyard }
+		x = 33
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1149 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_iron_2
+		icon = GFX_
+		prerequisite = { focus = AVA_iron }
+		x = 33
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1149 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_panchaian_tungsten
+		icon = GFX_
+		prerequisite = { focus = AVA_iron_2 focus = AVA_chrome_2 }
+		x = 31
+		y = 5
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			1166 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = AVA_learning_civil_war
+		icon = GFX_
+		prerequisite = { focus = AVA_conflicting_reports }
+		x = 40
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
+	}
+	focus = {
+		id = AVA_reform_army
+		icon = GFX_
+		prerequisite = { focus = AVA_learning_civil_war }
+		relative_position_id = AVA_learning_civil_war
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = AVA_infantry_equiptment
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_army }
+		relative_position_id = AVA_learning_civil_war
+		x = -3
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_infantry_tech
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_trucks
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_army }
+		relative_position_id = AVA_learning_civil_war
+		x = -1
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name =  AVA_mechanized_trucks
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+}
+
+

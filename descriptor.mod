@@ -5,7 +5,6 @@ tags={
 	"Map"
 	"National Focuses"
 }
-replace_path="common/ai_areas"
 replace_path="gfx/loadingscreens"
 replace_path="history/states"
 replace_path="map/strategicregions"

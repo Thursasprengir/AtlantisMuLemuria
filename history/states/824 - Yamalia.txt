@@ -2,17 +2,27 @@
 state = {
 	id = 824
 	name = "STATE_824" # Yamalia
-	manpower = 21974
+	manpower = 221974
 	
-	state_category = pastoral
+	state_category = town
 
 	history = {
 		owner = SOV
+		victory_points = {
+			10564 10
+		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 2
+			10564 = {
+				naval_base = 3
+
+			}
+
 		}
 		add_core_of = SOV
-		add_core_of = YAM
+		add_core_of = HBO
 	}
 
 	provinces = {

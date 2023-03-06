@@ -463,6 +463,7 @@ units = {
 		start_equipment_factor = 1
 
 	}
+	
 	fleet = {
 		name = "Maritime Defense Command"
 		naval_base = 14753
@@ -491,29 +492,14 @@ units = {
 		task_force = {
 			name = "Heavy Combat Fleet"
 			location = 14753
-			ship = {name = "A'a" definition = carrier start_experience_factor = 0.25 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Hō'ailona Class"}}
-			#	air_wings = {
-			#		cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
-			#		cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
-			#	}
-			}
-			ship = {name = "Keali'iokona" definition = carrier start_experience_factor = 0.25 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Hō'ailona Class"}}
-			#	air_wings = {
-			#		cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
-			#		cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
-			#	}
-			}
-			ship = {name = "Kamailehope" definition = carrier start_experience_factor = 0.50 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Nalu Class"}}
-			#	air_wings = {
-			#		cv_fighter_equipment_0 = {owner = "HOU" amount = 25}
-			#		cv_nav_bomber_equipment_1 = {owner = "HOU" amount = 15}
-			#	}
-			}
+			ship = {name = "A'a" definition = carrier start_experience_factor = 0 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Hō'ailona Class"}}}
+			ship = {name = "Keali'iokona" definition = carrier start_experience_factor = 0 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Hō'ailona Class"}}}
+			ship = {name = "Kamailehope" definition = carrier start_experience_factor = 0 equipment = {ship_hull_carrier_1 = {amount = 1 owner = HOU version_name = "Nalu Class"}}}
 			ship = {name = "Hokule'a" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Kohola Class"}}}
 			ship = {name = "Keoe" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Kahiala Class"}}}
 			ship = {name = "Hokulei" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Kahiala Class"}}}
 			ship = {name = "Puanakau" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Hū'uki Class"}}}
-			#ship = {name = "Puana" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Hū'uki Class"}}}
+			ship = {name = "Puana" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Hū'uki Class"}}}
 			ship = {name = "Kauluakoko" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Hū'uki Class"}}}
 			ship = {name = "Kalanikauleleaiwi" definition = battleship start_experience_factor = 0 equipment = {ship_hull_heavy_1 = {amount = 1 owner = HOU version_name = "Hū'uki Class"}}}
 			ship = {name = "Kamailemua" definition = light_cruiser start_experience_factor = 0 equipment = {ship_hull_cruiser_1 = {amount = 1 owner = HOU version_name = "Aveese Class"}}}
