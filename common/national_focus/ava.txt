@@ -2050,7 +2050,7 @@ focus_tree = {
 			1167 = {
 				add_resource = {
 					type = chrome
-					amount = 12
+					amount = 24
 				}
 			}
 		}
@@ -2088,7 +2088,7 @@ focus_tree = {
 			1167 = {
 				add_resource = {
 					type = chrome
-					amount = 12
+					amount = 24
 				}
 			}
 		}
@@ -2235,20 +2235,21 @@ focus_tree = {
 			1166 = {
 				add_resource = {
 					type = tungsten
-					amount = 4
+					amount = 6
 				}
 				add_resource = {
 					type = steel
-					amount = 4
+					amount = 6
 				}
 			}
 		}
 	}
+	#Military
 	focus = {
 		id = AVA_learning_civil_war
 		icon = GFX_
 		prerequisite = { focus = AVA_conflicting_reports }
-		x = 40
+		x = 50
 		y = 1
 
 		cost = 5
@@ -2284,7 +2285,7 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = AVA_learning_civil_war }
 		relative_position_id = AVA_learning_civil_war
-		x = -2
+		x = -10
 		y = 1
 
 		cost = 5
@@ -2313,11 +2314,52 @@ focus_tree = {
 			army_experience = 25
 		}
 	}
+	
 	focus = {
-		id = AVA_infantry_equiptment
+		id = AVA_firepower
 		icon = GFX_
 		prerequisite = { focus = AVA_reform_army }
-		relative_position_id = AVA_learning_civil_war
+		relative_position_id = AVA_reform_army
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_planning
+				bonus = 1.0
+				uses = 1
+				category = cat_superior_firepower
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_infantry
+		icon = GFX_
+		prerequisite = { focus = AVA_firepower }
+		relative_position_id = AVA_reform_army
 		x = -3
 		y = 2
 
@@ -2354,11 +2396,132 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AVA_trucks
+		id = AVA_artillery
+		icon = GFX_
+		prerequisite = { focus = AVA_firepower }
+		relative_position_id = AVA_reform_army
+		x = -1
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_artillery_tech
+				bonus = 1.0
+				uses = 1
+				category = artillery
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_support
+		icon = GFX_
+		prerequisite = { focus = AVA_artillery focus = AVA_infantry }
+		relative_position_id = AVA_reform_army
+		x = -2
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_support_equiptment
+				bonus = 1.0
+				uses = 1
+				category = support_tech
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_blitzkrieg
 		icon = GFX_
 		prerequisite = { focus = AVA_reform_army }
-		relative_position_id = AVA_learning_civil_war
-		x = -1
+		relative_position_id = AVA_reform_army
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_hit_n_run
+				bonus = 1.0
+				uses = 1
+				category = cat_mobile_warfare
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_trucks
+		icon = GFX_
+		prerequisite = { focus = AVA_blitzkrieg }
+		relative_position_id = AVA_reform_army
+		x = 1
 		y = 2
 
 		cost = 5
@@ -2390,6 +2553,168 @@ focus_tree = {
 				uses = 1
 				category = cat_mechanized_equipment
 			}
+		}
+	}
+	focus = {
+		id = AVA_tanks
+		icon = GFX_
+		prerequisite = { focus = AVA_blitzkrieg }
+		relative_position_id = AVA_reform_army
+		x = 3
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_light_tanks
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+
+			}
+			add_tech_bonus = {
+				name = AVA_medium_tanks
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_trains
+		icon = GFX_
+		prerequisite = { focus = AVA_tanks focus = AVA_trucks }
+		relative_position_id = AVA_reform_army
+		x = 2
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_light_tanks
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+
+			}
+			add_tech_bonus = {
+				name = AVA_medium_tanks
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_reform_navy
+		icon = GFX_
+		prerequisite = { focus = AVA_learning_civil_war }
+		relative_position_id = AVA_learning_civil_war
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = AVA_purchase_american_ships
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_navy }
+		relative_position_id = AVA_reform_navy
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 25
 		}
 	}
 }
