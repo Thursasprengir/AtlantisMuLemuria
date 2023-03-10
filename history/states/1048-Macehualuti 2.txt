@@ -2,21 +2,24 @@
 state={
 	id=1048
 	name="STATE_1048"
+	resources={
+		steel=12.000
+	}
 
 	history={
 		owner = MCT
 		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
 			16193 = {
-				naval_base = 2
+				naval_base = 4
 
 			}
 
 		}
 		victory_points = {
-			16193 8 
+			16193 10
 		}
 		add_core_of = MCT
 
@@ -27,6 +30,6 @@ state={
 	}
 	manpower=3565187
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=3.000
 }
