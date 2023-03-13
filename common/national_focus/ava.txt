@@ -2047,9 +2047,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			1167 = {
+			1250 = {
 				add_resource = {
-					type = chrome
+					type = chromium
 					amount = 24
 				}
 			}
@@ -2085,9 +2085,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			1167 = {
+			1250 = {
 				add_resource = {
-					type = chrome
+					type = chromium
 					amount = 24
 				}
 			}
@@ -2156,10 +2156,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			1149 = {
+			1251 = {
 				add_resource = {
 					type = steel
-					amount = 6
+					amount = 16
 				}
 			}
 		}
@@ -2194,10 +2194,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			1149 = {
+			1251 = {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 22
 				}
 			}
 		}
@@ -2319,6 +2319,8 @@ focus_tree = {
 		id = AVA_firepower
 		icon = GFX_
 		prerequisite = { focus = AVA_reform_army }
+		mutually_exclusive = { focus = AVA_grand_plan }
+		mutually_exclusive = { focus = AVA_blitzkrieg }
 		relative_position_id = AVA_reform_army
 		x = -2
 		y = 1
@@ -2398,7 +2400,7 @@ focus_tree = {
 	focus = {
 		id = AVA_artillery
 		icon = GFX_
-		prerequisite = { focus = AVA_firepower }
+		prerequisite = { focus = AVA_firepower focus = AVA_grand_plan }
 		relative_position_id = AVA_reform_army
 		x = -1
 		y = 2
@@ -2438,7 +2440,8 @@ focus_tree = {
 	focus = {
 		id = AVA_support
 		icon = GFX_
-		prerequisite = { focus = AVA_artillery focus = AVA_infantry }
+		prerequisite = { focus = AVA_artillery }
+		prerequisite = { focus = AVA_infantry }
 		relative_position_id = AVA_reform_army
 		x = -2
 		y = 3
@@ -2479,6 +2482,8 @@ focus_tree = {
 		id = AVA_blitzkrieg
 		icon = GFX_
 		prerequisite = { focus = AVA_reform_army }
+		mutually_exclusive = { focus = AVA_grand_plan }
+		mutually_exclusive = { focus = AVA_firepower }
 		relative_position_id = AVA_reform_army
 		x = 2
 		y = 1
@@ -2517,9 +2522,52 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = AVA_grand_plan
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_army }
+		mutually_exclusive = { focus = AVA_firepower }
+		mutually_exclusive = { focus = AVA_blitzkrieg }
+		relative_position_id = AVA_reform_army
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_grand_battle_plan
+				bonus = 1.0
+				uses = 1
+				category = cat_grand_battle_plan
+
+			}
+		}
+	}
+	
+	focus = {
 		id = AVA_trucks
 		icon = GFX_
-		prerequisite = { focus = AVA_blitzkrieg }
+		prerequisite = { focus = AVA_blitzkrieg focus = AVA_grand_plan }
 		relative_position_id = AVA_reform_army
 		x = 1
 		y = 2
@@ -2605,7 +2653,8 @@ focus_tree = {
 	focus = {
 		id = AVA_trains
 		icon = GFX_
-		prerequisite = { focus = AVA_tanks focus = AVA_trucks }
+		prerequisite = { focus = AVA_tanks }
+		prerequisite = { focus = AVA_trucks }
 		relative_position_id = AVA_reform_army
 		x = 2
 		y = 3
@@ -2650,6 +2699,47 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = AVA_spec_ops
+		icon = GFX_
+		prerequisite = { focus = AVA_artillery }
+		prerequisite = { focus = AVA_trucks }
+		relative_position_id = AVA_reform_army
+		x = 0
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_special_forces
+				bonus = 1.0
+				uses = 1
+				category = cat_special_forces_generic
+
+			}
+		}
+	}
+	focus = {
 		id = AVA_reform_navy
 		icon = GFX_
 		prerequisite = { focus = AVA_learning_civil_war }
@@ -2680,15 +2770,586 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 25
+			navy_experience = 25
 		}
 	}
+	focus = {
+		id = AVA_purchase_british_ships
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_navy }
+		relative_position_id = AVA_reform_navy
+		x = -4
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Revenge Class"
+				type = ship_hull_heavy_1
+				name_group = ENG_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = empty
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = ship_secondaries_1
+					rear_1_custom_slot = ship_heavy_battery_1
+				}
+			}
+			create_equipment_variant = {
+				name = "A/B/C/D Class"
+				type = ship_hull_light_1
+				name_group = ENG_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_2
+					fixed_ship_anti_air_slot = empty
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
+				}
+				
+			}
+			load_oob = AVA_brit_battleship_mtg
+		}
+	}
+	
+	focus = {
+		id = AVA_fleet_being
+		icon = GFX_
+		prerequisite = { focus = AVA_purchase_british_ships }
+		relative_position_id = AVA_reform_navy
+		x = -4
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cat_fleet_in_being
+				bonus = 1.0
+				uses = 1
+				category = cat_fleet_in_being
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_destroyer
+		icon = GFX_
+		prerequisite = { focus = AVA_fleet_being }
+		relative_position_id = AVA_reform_navy
+		x = -5
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_destroyer_tech
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_battleship
+		icon = GFX_
+		prerequisite = { focus = AVA_fleet_being }
+		relative_position_id = AVA_reform_navy
+		x = -3
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_battleship_tech
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+
+			}
+		}
+	}
+	
 	focus = {
 		id = AVA_purchase_american_ships
 		icon = GFX_
 		prerequisite = { focus = AVA_reform_navy }
 		relative_position_id = AVA_reform_navy
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Type VII Class"
+				type = ship_hull_submarine_2
+				name_group = GER_SS_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_torpedo_slot = ship_torpedo_sub_2
+					fixed_ship_engine_slot = sub_ship_engine_1
+					rear_1_custom_slot = empty
+				}
+			}
+			create_equipment_variant = {
+				name = "Königsberg Class"
+				type = ship_hull_cruiser_2
+				name_group = GER_CL_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_medium_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = cruiser_ship_engine_2
+					fixed_ship_armor_slot = ship_armor_cruiser_1
+					mid_1_custom_slot = ship_torpedo_1
+					mid_2_custom_slot = ship_light_medium_battery_1
+					rear_1_custom_slot = ship_mine_layer_1
+				}
+			}
+			load_oob = AVA_ger_subs_mtg
+		}
+	}
+	
+	focus = {
+		id = AVA_base_strike
+		icon = GFX_
+		prerequisite = { focus = AVA_purchase_american_ships }
+		relative_position_id = AVA_reform_navy
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cat_fleet_in_being
+				bonus = 1.0
+				uses = 1
+				category = cat_fleet_in_being
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_battlecruiser
+		icon = GFX_
+		prerequisite = { focus = AVA_base_strike }
+		relative_position_id = AVA_reform_navy
 		x = -1
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_battlecruiser_tech
+				bonus = 1.0
+				uses = 1
+				category = bc_tech
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_carrier
+		icon = GFX_
+		prerequisite = { focus = AVA_base_strike }
+		relative_position_id = AVA_reform_navy
+		x = 1
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_carrier_tech
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_purchase_german_ships
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_navy }
+		relative_position_id = AVA_reform_navy
+		x = 4
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Portland Class"				# Portland and New Orleans classes
+				type = ship_hull_cruiser_2
+				name_group = USA_CA_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_medium_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = cruiser_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_cruiser_2
+					mid_1_custom_slot = ship_airplane_launcher_1
+					mid_2_custom_slot = empty
+					rear_1_custom_slot = ship_medium_battery_1
+				}
+			}
+			create_equipment_variant = {
+				name = "Yorktown Class"
+				type = ship_hull_carrier_1
+				name_group = USA_CV_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					front_1_custom_slot = ship_deck_space
+				}
+			}
+			load_oob = AVA_usa_carrier_mtg
+		}
+	}
+	
+	focus = {
+		id = AVA_trade_war
+		icon = GFX_
+		prerequisite = { focus = AVA_purchase_german_ships }
+		relative_position_id = AVA_reform_navy
+		x = 4
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cat_fleet_in_being
+				bonus = 1.0
+				uses = 1
+				category = cat_fleet_in_being
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_cruiser
+		icon = GFX_
+		prerequisite = { focus = AVA_trade_war }
+		relative_position_id = AVA_reform_navy
+		x = 3
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cruiser_tech
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_submarine
+		icon = GFX_
+		prerequisite = { focus = AVA_trade_war }
+		relative_position_id = AVA_reform_navy
+		x = 5
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_submarine_tech
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+
+			}
+		}
+	}
+	
+	focus = {
+		id = AVA_reform_air
+		icon = GFX_
+		prerequisite = { focus = AVA_learning_civil_war }
+		relative_position_id = AVA_learning_civil_war
+		x = 10
 		y = 1
 
 		cost = 5
