@@ -2777,6 +2777,8 @@ focus_tree = {
 		id = AVA_purchase_british_ships
 		icon = GFX_
 		prerequisite = { focus = AVA_reform_navy }
+		mutually_exclusive = { focus = AVA_purchase_american_ships }
+		mutually_exclusive = { focus = AVA_purchase_german_ships }
 		relative_position_id = AVA_reform_navy
 		x = -4
 		y = 1
@@ -2971,6 +2973,8 @@ focus_tree = {
 		id = AVA_purchase_american_ships
 		icon = GFX_
 		prerequisite = { focus = AVA_reform_navy }
+		mutually_exclusive = { focus = AVA_purchase_british_ships }
+		mutually_exclusive = { focus = AVA_purchase_german_ships }
 		relative_position_id = AVA_reform_navy
 		x = 0
 		y = 1
@@ -3157,6 +3161,8 @@ focus_tree = {
 		id = AVA_purchase_german_ships
 		icon = GFX_
 		prerequisite = { focus = AVA_reform_navy }
+		mutually_exclusive = { focus = AVA_purchase_british_ships }
+		mutually_exclusive = { focus = AVA_purchase_american_ships }
 		relative_position_id = AVA_reform_navy
 		x = 4
 		y = 1
@@ -3375,7 +3381,332 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 25
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = AVA_strategic_destruction
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_air }
+		relative_position_id = AVA_learning_civil_war
+		x = 8
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_strategic_destruction_tree_tech
+				bonus = 1.0
+				uses = 1
+				category = strategic_destruction_tree
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_battlefield_support
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_air }
+		relative_position_id = AVA_learning_civil_war
+		x = 10
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_battlefield_support_tree_tech
+				bonus = 1.0
+				uses = 1
+				category = battlefield_support_tree
+
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_operational_integrity
+		icon = GFX_
+		prerequisite = { focus = AVA_reform_air }
+		relative_position_id = AVA_learning_civil_war
+		x = 12
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_operational_integrity_tree_tech
+				bonus = 1.0
+				uses = 1
+				category = operational_integrity_tree
+
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_large_aircraft
+		icon = GFX_
+		prerequisite = { focus = AVA_strategic_destruction }
+		relative_position_id = AVA_learning_civil_war
+		x = 7
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cat_strategic_bomber_tech
+				bonus = 1.0
+				uses = 1
+				category = large_air
+
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_efficient_engines
+		icon = GFX_
+		prerequisite = { focus = AVA_strategic_destruction focus = AVA_battlefield_support }
+		relative_position_id = AVA_learning_civil_war
+		x = 9
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cat_air_engine_tech
+				bonus = 1.0
+				uses = 1
+				category = cat_air_engine
+
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_larger_guns
+		icon = GFX_
+		prerequisite = { focus = AVA_battlefield_support focus = AVA_operational_integrity }
+		relative_position_id = AVA_learning_civil_war
+		x = 11
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cat_air_guns_tech
+				bonus = 1.0
+				uses = 1
+				category = cat_air_guns
+
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_medium_aircraft
+		icon = GFX_
+		prerequisite = { focus = AVA_operational_integrity }
+		relative_position_id = AVA_learning_civil_war
+		x = 13
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cat_heavy_fighter_tech
+				bonus = 1.0
+				uses = 1
+				category = medium_air
+
+			}
+		}
+	}
+	focus = {
+		id = AVA_small_aircraft
+		icon = GFX_
+		prerequisite = { focus = AVA_large_aircraft focus = AVA_medium_aircraft  focus = AVA_efficient_engines focus = AVA_larger_guns }
+		relative_position_id = AVA_learning_civil_war
+		x = 10
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AVA_cat_heavy_fighter_tech
+				bonus = 1.0
+				uses = 1
+				category = small_air
+
+			}
 		}
 	}
 }
