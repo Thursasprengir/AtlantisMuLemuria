@@ -619,11 +619,11 @@ stop_scout_plane_production_major = {
 
 	abort_when_not_enabled = yes
 	
-	ai_strategy = { type = equipment_production_factor id = scout_plane value = -1000 }
+	ai_strategy = { type = equipment_production_factor id = scout_plane value = -50 }
 	ai_strategy = { type = equipment_production_min_factories  id = scout_plane value = -5 }
 }
 
-stop_scout_plane_production = {
+stop_scout_plane_production = { #Abbus: It would backfire when the equipment_production_factor exceed -100
 	allowed = {  
 		NOT = {
 			country_exists = ADR
@@ -635,7 +635,7 @@ stop_scout_plane_production = {
 	
 	abort_when_not_enabled = yes
 	
-	ai_strategy = { type = equipment_production_factor id = scout_plane value = -1000 }
+	ai_strategy = { type = equipment_production_factor id = scout_plane value = -50 }
 	ai_strategy = { type = equipment_production_min_factories  id = scout_plane value = -5 }
 }
 
@@ -653,7 +653,7 @@ stop_convoy_production_major = {
 
 	abort_when_not_enabled = yes
 	
-	ai_strategy = { type = equipment_production_factor id = convoy value = -1000 }
+	ai_strategy = { type = equipment_production_factor id = convoy value = -50 }
 	ai_strategy = { type = equipment_production_min_factories  id = convoy value = -5 }
 }
 
@@ -665,27 +665,27 @@ stop_convoy_production = {
 	}
 	enable = { 
 		is_major = no
-		has_equipment = { convoy > 400 } 
+		has_equipment = { convoy > 300 } 
 	}
 
 	abort_when_not_enabled = yes
 	
-	ai_strategy = { type = equipment_production_factor id = convoy value = -1000 }
+	ai_strategy = { type = equipment_production_factor id = convoy value = -50 }
 	ai_strategy = { type = equipment_production_min_factories  id = convoy value = -5 }
 }
 
-stop_armor_car_production = {
-	allowed = {  
-		NOT = {
-			country_exists = ADR
-		}	
-	}
-	enable = { 
-		always = yes
-	}
-	
-	ai_strategy = { type = equipment_variant_production_factor id = armored_car_equipment value = -9999 }
-}
+#stop_armor_car_production = {
+#	allowed = {  
+#		NOT = {
+#			country_exists = ADR
+#		}	
+#	}
+#	enable = { 
+#		always = yes
+#	}
+#	
+#	ai_strategy = { type = equipment_variant_production_factor id = armored_car_equipment value = -50 }
+#}
 
 
 ######################################
@@ -693,29 +693,29 @@ stop_armor_car_production = {
 ######################################
 
 #train
-train_factory_assignment_1 = {
-	allowed = {  
-		NOT = {
-			country_exists = ADR
-		}	
-	}
-	enable = { num_of_military_factories > 12 }
-	ai_strategy = { type = equipment_production_min_factories       id = train             value = 1 }
-}
-train_factory_assignment_2 = {
-	allowed = {  
-		NOT = {
-			country_exists = ADR
-		}	
-	}
-	enable = { num_of_military_factories > 49 }
-	abort = { num_of_military_factories < 50 }
-
-	ai_strategy = { type = equipment_production_min_factories       id = train         value = 1 }
-}
+#train_factory_assignment_1 = { #minor would make a stupid amount
+#	allowed = {  
+#		NOT = {
+#			country_exists = ADR
+#		}	
+#	}
+#	enable = { num_of_military_factories > 12 }
+#	ai_strategy = { type = equipment_production_min_factories       id = train             value = 1 }
+#}
+#train_factory_assignment_2 = { #minor would make a stupid amount
+#	allowed = {  
+#		NOT = {
+#			country_exists = ADR
+#		}	
+#	}
+#	enable = { num_of_military_factories > 49 }
+#	abort = { num_of_military_factories < 50 }
+#
+#	ai_strategy = { type = equipment_production_min_factories       id = train         value = 1 }
+#}
 
 #convoy
-convoy_factory_assignment_1 = {
+convoy_factory_assignment_1 = { 
 	allowed = {  
 		NOT = {
 			country_exists = ADR
@@ -738,7 +738,7 @@ convoy_factory_assignment_2 = {
 	ai_strategy = { type = equipment_production_min_factories       id = convoy           value = 1 }
 }
 
-convoy_factory_assignment_2 = {
+convoy_factory_assignment_3 = {
 	allowed = {  
 		NOT = {
 			country_exists = ADR
@@ -750,14 +750,14 @@ convoy_factory_assignment_2 = {
 	ai_strategy = { type = equipment_production_min_factories       id = convoy            value = 1 }
 }
 
-convoy_factory_assignment_3 = {
-	allowed = {  
-		NOT = {
-			country_exists = ADR
-		}	
-	}
-	enable = { num_of_naval_factories > 44 }
-	abort = {  num_of_naval_factories < 45 }
-
-	ai_strategy = { type = equipment_production_min_factories       id = convoy            value = 1 }
-}
+#convoy_factory_assignment_4 = { #not worth it
+#	allowed = {  
+#		NOT = {
+#			country_exists = ADR
+#		}	
+#	}
+#	enable = { num_of_naval_factories > 44 }
+#	abort = {  num_of_naval_factories < 45 }
+#
+#	ai_strategy = { type = equipment_production_min_factories       id = convoy            value = 1 }
+#}
