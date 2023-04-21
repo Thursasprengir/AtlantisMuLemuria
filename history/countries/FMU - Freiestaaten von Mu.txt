@@ -107,8 +107,8 @@ if = {
 starting_train_buffer = 2
 set_research_slots = 3
 set_convoys = 55
-set_stability = 0.85
-set_war_support = 0.25
+set_stability = 0.65
+set_war_support = 0.35
 
 set_politics = {
 	ruling_party = democratic
@@ -356,6 +356,7 @@ if = {
 			export_focus
 			limited_conscription
 			civilian_economy
+			FMU_lose_but_never_defeat
 			FMU_debt_to_the_ifc
 		}
 
@@ -373,6 +374,7 @@ if = {
 			export_focus
 			limited_conscription
 			civilian_economy
+			FMU_lose_but_never_defeat
 		}
 	}
 }

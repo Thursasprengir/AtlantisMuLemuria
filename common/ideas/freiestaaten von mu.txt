@@ -3,6 +3,28 @@ ideas = {
 
 	country = {
 	
+		FMU_lose_but_never_defeat = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes 
+			}
+			
+			removal_cost = -1
+			picture = SPR_disbanded_army
+			modifier = {
+				war_support_weekly = 0.001
+				political_power_gain = -0.1
+				economy_cost_factor = 0.1
+				conscription_factor = -0.15
+				mobilization_laws_cost_factor = 0.1
+			}
+		}
+		
+	
+	
 		FMU_unfair_sufferage = {
 			allowed = {always = no}
 			allowed_civil_war = {always = yes}
@@ -194,7 +216,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 	
 			modifier = {
-					production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		FMU_companies_kohn_military = {
