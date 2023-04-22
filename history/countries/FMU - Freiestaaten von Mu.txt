@@ -349,33 +349,13 @@ if = {
 	}
 
 1936.1.1 = {
-	if = {
-		limit = { has_dlc = "Battle for the Bosporus" }
-			
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-			FMU_lose_but_never_defeat
-			FMU_debt_to_the_ifc
-		}
-
-		set_variable = { var = FMU_debt_to_the_ifc_britain_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_france_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_italy_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_paid_var value = 0 }
-
-	
-	}
-
-	if = {
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-			FMU_lose_but_never_defeat
-		}
+	add_ideas = {
+		export_focus
+		limited_conscription
+		civilian_economy
+		FMU_lose_but_never_defeat
+		FMU_lessons_of_the_dresden
+		FMU_austral_jaguar
 	}
 }
 
