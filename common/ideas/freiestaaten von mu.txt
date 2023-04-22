@@ -9,7 +9,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = { 
-				always = yes 
+				always = no
 			}
 			
 			removal_cost = -1
@@ -57,6 +57,68 @@ ideas = {
 				experience_gain_navy_unit_factor = 0.1
 				naval_coordination = 0.03
 				naval_enemy_fleet_size_ratio_penalty_factor = 0.2
+			}
+		}
+		
+		FMU_british_coercion_selection = { #fake for selection
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				custom_modifier_tooltip = FMU_british_coercion_tt
+			}
+		}
+		
+		FMU_british_coercion = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes 
+			}
+			
+			cancel = {
+				is_in_faction_with = ENG
+            }
+			
+			on_add = {
+				FMU = {
+					add_opinion_modifier = { 
+						target = ENG 
+						modifier = FMU_revanchism
+					}
+				}
+				ENG = {
+					add_opinion_modifier = { 
+						target = FMU 
+						modifier = rejected_demands
+					}
+				}				
+			}
+			
+			on_remove = {
+				FMU = {
+					remove_opinion_modifier = { 
+						target = ENG 
+						modifier = FMU_revanchism
+					}
+				}
+				ENG = {
+					add_opinion_modifier = { 
+						target = FMU 
+						modifier = rejected_demands
+					}
+				}
+			}
+			
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				custom_modifier_tooltip = FMU_british_coercion_tt
 			}
 		}
 	
