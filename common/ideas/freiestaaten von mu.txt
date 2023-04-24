@@ -60,7 +60,7 @@ ideas = {
 			}
 		}
 		
-		FMU_british_coercion_selection = { #fake for selection
+		FMU_versailles_coercion_selection = { #fake for selection
 			allowed = {
 				always = no
 			}
@@ -68,11 +68,11 @@ ideas = {
 			removal_cost = -1
 			picture = generic_oppression
 			modifier = {
-				custom_modifier_tooltip = FMU_british_coercion_tt
+				custom_modifier_tooltip = FMU_versailles_coercion_tt
 			}
 		}
 		
-		FMU_british_coercion = {
+		FMU_versailles_coercion = {
 			allowed = {
 				always = no
 			}
@@ -82,7 +82,11 @@ ideas = {
 			}
 			
 			cancel = {
-				is_in_faction_with = ENG
+				OR = {
+					is_in_faction_with = ENG
+					is_in_faction_with = FRA
+					has_war = yes
+				}
             }
 			
 			on_add = {
@@ -92,7 +96,19 @@ ideas = {
 						modifier = FMU_revanchism
 					}
 				}
+				FMU = {
+					add_opinion_modifier = { 
+						target = FRA 
+						modifier = FMU_revanchism
+					}
+				}
 				ENG = {
+					add_opinion_modifier = { 
+						target = FMU 
+						modifier = rejected_demands
+					}
+				}
+				FRA = {
 					add_opinion_modifier = { 
 						target = FMU 
 						modifier = rejected_demands
@@ -107,18 +123,30 @@ ideas = {
 						modifier = FMU_revanchism
 					}
 				}
+				FMU = {
+					remove_opinion_modifier = { 
+						target = FRA 
+						modifier = FMU_revanchism
+					}
+				}
 				ENG = {
-					add_opinion_modifier = { 
+					remove_opinion_modifier = { 
 						target = FMU 
 						modifier = rejected_demands
 					}
 				}
+				FRA = {
+					remove_opinion_modifier = { 
+						target = FMU 
+						modifier = rejected_demands
+					}
+				}				
 			}
 			
 			removal_cost = -1
 			picture = generic_oppression
 			modifier = {
-				custom_modifier_tooltip = FMU_british_coercion_tt
+				custom_modifier_tooltip = FMU_versailles_coercion_tt
 			}
 		}
 	
