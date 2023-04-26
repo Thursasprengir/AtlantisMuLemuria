@@ -1,6 +1,7 @@
 ﻿capital = 1107
 
 oob = "HOU_1936"
+set_naval_oob = "HOU_1936_naval_mtg"
 
 set_research_slots = 3
 
@@ -22,34 +23,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	fuel_refining = 1
 	basic_train = 1
 }
-if = {
-    limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "HOU_1936_air_bba"
-        set_technology = {
-			aa_lmg = 1
-			aa_cannon_1 = 1
-			engines_1 = 1
-			engines_2 = 1
-			early_bombs = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			basic_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_medium_airframe = 1
-			iw_large_airframe = 1
-		}
-    else = {
-		set_air_oob = "HOU_1936_air_legacy"
-        set_technology = {
-            early_fighter = 1
-            cv_early_fighter = 1
-            cv_naval_bomber1 = 1
-            naval_bomber1 = 1
-            early_bomber = 1
-            CAS1 = 1
-        }
-    }
-}
+
 
 if = {
 	limit = {
@@ -114,7 +88,38 @@ if = {
 		mtg_transport = 1
 		basic_fire_control_system = 1
 		basic_dp_light_battery = 1
+		pre_dreadnoughts = 1
+		coastal_defense_ships = 1
 	}
+}
+
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "HOU_1936_air_bba"
+        set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+    else = {
+		set_air_oob = "HOU_1936_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            cv_naval_bomber1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
 }
 
 if = {
@@ -272,7 +277,7 @@ create_equipment_variant = {
 		fixed_ship_armor_slot = ship_armor_cruiser_1
 		mid_1_custom_slot = ship_anti_air_1
 		mid_2_custom_slot = ship_anti_air_1
-		rear_1_custom_slot = ship_light_medium_battery_1
+		rear_1_custom_slot = ship_medium_battery_1
 	}
 	obsolete = no
 }

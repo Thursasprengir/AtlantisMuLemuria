@@ -53,6 +53,8 @@ if = {
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
+		pre_dreadnoughts = 1
+		coastal_defense_ship = 1
 	}
 	set_naval_oob = "TRS_1936_naval"
 }
@@ -301,7 +303,7 @@ if = {
 		create_equipment_variant = {
 			name = "Morwinguen Class"
 			type = ship_hull_carrier_conversion_ca
-			name_group = CHI_CVL_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -314,7 +316,7 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Daibalnaang Class"
-			name_group = CHI_CVL_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			type = ship_hull_carrier_conversion_ca
 			parent_version = 0
 			modules = {
@@ -329,7 +331,7 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Yatauam Class"
-			name_group = CHI_CVL_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			type = ship_hull_carrier_1
 			parent_version = 0
 			modules = {
@@ -593,7 +595,7 @@ if = {
 		create_equipment_variant = {
 			name = "Iwologaraa Class"					# cruiser minelayer
 			type = ship_hull_cruiser_1
-			name_group = CHI_MINELAYERS_HISTORICAL
+			name_group = CHI_CL_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -611,7 +613,7 @@ if = {
 		create_equipment_variant = {
 			name = "Olunglu Class" #collection of various WWI and early interwar ships with similiar capabilities
 			type = ship_hull_light_1
-			name_group = CHI_DD_HISTORICAL
+			name_group = CHI_CL_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
@@ -802,6 +804,7 @@ if = {
 			}
 		obsolete = yes
 		}
+		
 		create_equipment_variant = {
 			name = "Dingwun Class" #11th AA Destroyer Design
 			type = ship_hull_light_1
@@ -819,6 +822,7 @@ if = {
 			}
 		obsolete = yes
 		}
+		
 		create_equipment_variant = {
 			name = "Beinaam Class" #432 Costal Defence
 			type = ship_hull_cruiser_coastal_defense_ship
