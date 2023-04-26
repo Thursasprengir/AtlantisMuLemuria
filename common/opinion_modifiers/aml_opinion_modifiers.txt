@@ -10,96 +10,66 @@
 
 opinion_modifiers = {
 
+###------> FMU <><> <><> <><> <><> <><>
 	
-	##############
-	#MUU ADDITIONS
-	##############
-	
-	MUU_republicanism = { value = 15 }
-	
-	MUU_sucks_up = { value = 10 }
-	
-	
-	##############
-	#TOD ADDITIONS
-	##############
-	
-	TOD_republicanism = { value = 15 }
-	
-	####################
-	#WAR PLANS ADDITIONS
-	####################
-
-	war_plan_cyan = {
-		value = -50
-	}
-	#FSM#
 	FMU_broke_versailles = {
 		value = -30
 	}
+  
 	FMU_shared_heritage = {
 		value = 75
 	}
+  
 	FMU_modern_pirates = {
 		value = -25
 	}
+  
 	FMU_expansion_plans = {
 		value = -25
 	}
+  
 	FMU_diplo_outreach = {
 		value = 20
 	}
+  
 	FMU_bad_diplo_outreach = {
 		value = -20
 	}
+  
 	FMU_angry_german_bros = {
 		value = -50
 	}
+  
 	FMU_democratic_reachout = {
 		value = 50
 	}
+  
 	FMU_communist_reachout = {
 		value = 50
 	}
+  
 	FMU_angry_communist = {
 		value = -30
 	}
+  
 	FMU_charmed = {
 		value = 10
 	}
+  
 	FMU_revanchism = {
 		value = -50
 	}
 	
-	#PRJ Yohannia
-	PRJ_hatred = {
-		value = -20
-	}
-	PRJ_tolerated = {
-		value = 20
-	}
-	PRJ_dutch_expertise = {
-		value = 20
-	}
-	PRJ_SOV_friend = {
-		value = 20
-	}
-	#HOU
+###------> HOU <><> <><> <><> <><> <><>	
+
 	HOU_insult_SOV = {
 		value = -30
 	}
+	
 	HOU_commie_friends = {
 		value = 25
 	}
-	neighbor_malus = {
-		value = -20
-	}
-	neighbor_love = {
-		value = 20
-	}
-	trs_bankrupt_dirtbags_focus  = {
-		value = -50
-	}
+	
 	HOU_strong_trading_ties = {
 		value = 50
 		trade = yes
@@ -186,19 +156,73 @@ opinion_modifiers = {
 		value = 35
 		trade = yes
 	}
+	
 	HOU_defense_chaos = {
 		value = -20
 	}
+	
+###------> Generic/Unknown <><> <><> <><> <><> <><>	
+	
 	dislikes_turkey = {
 		value = -90
 	}
+	
 	dislikes_greece = {
 		value = -90
 	}
+	
 	dislikes_italy = {
 		value = -90
 	}
-	hegemonic_imperialist
+	
+	hegemonic_imperialist = {
 		value = -90
 	}
+		
+	neighbor_malus = {
+		value = -20
+	}
+	
+	neighbor_love = {
+		value = 20
+	}
+
+###------> MUU <><> <><> <><> <><> <><>
+	
+	MUU_republicanism = { value = 15 }
+	
+	MUU_sucks_up = { value = 10 }
+
+	
+###------> PRJ <><> <><> <><> <><> <><>
+	PRJ_hatred = {
+		value = -20
+	}
+	PRJ_tolerated = {
+		value = 20
+	}
+	PRJ_dutch_expertise = {
+		value = 20
+	}
+	PRJ_SOV_friend = {
+		value = 20
+	}
+	
+	
+###------> TOD <><> <><> <><> <><> <><>
+	
+	TOD_republicanism = { value = 15 }
+
+###------> TRS <><> <><> <><> <><> <><>
+
+	trs_bankrupt_dirtbags_focus  = {
+		value = -50
+	}
+	
+###------> USA <><> <><> <><> <><> <><>
+
+	war_plan_cyan = {
+		value = -50
+	}
+	
 }	
