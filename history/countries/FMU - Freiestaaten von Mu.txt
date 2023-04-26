@@ -107,8 +107,8 @@ if = {
 starting_train_buffer = 2
 set_research_slots = 3
 set_convoys = 55
-set_stability = 0.85
-set_war_support = 0.25
+set_stability = 0.65
+set_war_support = 0.35
 
 set_politics = {
 	ruling_party = democratic
@@ -349,31 +349,14 @@ if = {
 	}
 
 1936.1.1 = {
-	if = {
-		limit = { has_dlc = "Battle for the Bosporus" }
-			
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-			FMU_debt_to_the_ifc
-		}
-
-		set_variable = { var = FMU_debt_to_the_ifc_britain_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_france_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_italy_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_paid_var value = 0 }
-
-	
-	}
-
-	if = {
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-		}
+	add_ideas = {
+		export_focus
+		limited_conscription
+		civilian_economy
+		FMU_austral_jaguar
+		FMU_lessons_of_the_dresden
+		FMU_lose_but_never_defeat
+		FMU_versailles_coercion_selection
 	}
 }
 

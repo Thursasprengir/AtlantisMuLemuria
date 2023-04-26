@@ -1,4 +1,12 @@
 on_actions = {
+    on_startup = {
+        effect = {
+            FMU = {
+				remove_ideas = FMU_versailles_coercion_selection
+                add_ideas = FMU_versailles_coercion
+            }
+        }
+    }
 	# ROOT is capitulated country, FROM is winner
 	################################################################## Rise of Mandalism
 	on_capitulation = {
