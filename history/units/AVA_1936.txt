@@ -42,21 +42,21 @@ units= {
 	##### Land UNITS #####
 	division = {
 		name = "1st Padač Bašijan"
-		location = 16407
+		location = 16409
 		division_template = "Padač Bašijan"		
 		start_equipment_factor = 0.5
 
 	}
 	division = {
 		name = "2nd Padač Bašijan"
-		location = 16407
+		location = 16409
 		division_template = "Padač Bašijan"		
 		start_equipment_factor = 0.3
 
 	}
 	division = {
 		name = "1st Amšampadač Bašijan"
-		location = 16407
+		location = 16409
 		division_template = "Amšampadač Bašijan"		
 		start_experience_factor = 0.7
 		start_equipment_factor = 0.9
@@ -64,7 +64,7 @@ units= {
 	}
 	division = {
 		name = "2nd Amšampadač Bašijan"
-		location = 16407
+		location = 16409
 		division_template = "Amšampadač Bašijan"		
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.8
@@ -72,7 +72,7 @@ units= {
 	}
 	division = {
 		name = "3rd Amšampadač"
-		location = 16407
+		location = 16409
 		division_template = "Amšampadač Bašijan"		
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
@@ -80,7 +80,7 @@ units= {
 	}
 	division = {
 		name = "4th Amšampadač"
-		location = 16407
+		location = 16409
 		division_template = "Amšampadač Bašijan"		
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
@@ -88,7 +88,7 @@ units= {
 	}
 	division = {
 		name = "1st Ašweza Bašijan"
-		location = 16407
+		location = 16409
 		division_template = "Ašweza Bašijan"		
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.3
@@ -96,7 +96,7 @@ units= {
 	}
 	division = {
 		name = "2nd Ašweza Bašijan"
-		location = 16407
+		location = 16409
 		division_template = "Ašweza Bašijan"		
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.3
@@ -104,16 +104,16 @@ units= {
 	}
 	fleet = {
 		name = "Coastal Defense Fleet"			
-		naval_base = 16407 # Avahya capital	
+		naval_base = 16409 # Avahya capital	
 		task_force = {				
 			name = "Coastal Defense Fleet"		
-			location = 16407 # Friendville					
-			ship = { name = "ANS Pahruli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AVA version_name =  "Pahruli Class" } } }
-			ship = { name = "ANS Zana" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Mirzaii Class" } } }				
-			ship = { name = "ANS Saman" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Mirzaii Class" } } }		
-			ship = { name = "ANS Bijan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Mirzaii Class" } } }
-			ship = { name = "ANS Mahan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Mirzaii Class" } } }
-			ship = { name = "ANS Mirzaii" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Mirzaii Class" } } }
+			location = 16409 # Friendville					
+			ship = { name = "ANS Pahruli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AVA version_name =  "Mirzaii Class" } } }
+			ship = { name = "ANS Zana" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Pahruli Class" } } }				
+			ship = { name = "ANS Saman" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Pahruli Class" } } }		
+			ship = { name = "ANS Bijan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Pahruli Class" } } }
+			ship = { name = "ANS Mahan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Pahruli Class" } } }
+			ship = { name = "ANS Mirzaii" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AVA version_name =  "Pahruli Class" } } }
 		}										
 	}
 }
