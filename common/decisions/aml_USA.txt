@@ -1,0 +1,28 @@
+USA_war_plans = {
+	USA_execute_war_plan_cyan = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = ATL
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = ATL
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+}
