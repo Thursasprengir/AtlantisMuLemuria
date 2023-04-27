@@ -3800,28 +3800,25 @@ focus = {
 					military_police = { x = 0 y = 0 }
 				}
 			}
-			create_unit = {
-				division = "name = \"1st People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = FMU
-				location = 5254
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1. Volksarmee\" division_template = \"Volksarmee\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = FMU
 				}
-			create_unit = {
-				division = "name = \"2nd People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = FMU
-				location = 5254
+				create_unit = {
+					division = "name = \"2. Volksarmee\" division_template = \"Volksarmee\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = FMU
 				}
-			create_unit = {
-				division = "name = \"4th People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = FMU
-				location = 5254
+				create_unit = {
+					division = "name = \"4. Volksarmee\" division_template = \"Volksarmee\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = FMU
 				}
-			create_unit = {
-				division = "name = \"3rd People's Brigade\" division_template = \"People's Brigade\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = FMU
-				location = 5254
+				create_unit = {
+					division = "name = \"3. Volksarmee\" division_template = \"Volksarmee\" 		start_experience_factor = 0.5 start_equipment_factor = 0.5"
+					owner = FMU
 				}
-
-			#spawns a few 'People's Brigade' units in capital
+				#spawns a few 'People's Brigade' units in capital
+			}
 		}
 	}
 

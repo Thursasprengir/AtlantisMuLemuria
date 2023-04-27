@@ -1,0 +1,131 @@
+ETH_centralization_balance_of_power_category = {
+	ETH_recall_balco_safo_decision = {
+		icon = GFX_decision_generic_military 
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_bop_privileges_changed }
+		}
+		visible = {
+			has_global_flag = second_italo_ethiopian_war_flag
+			OR = {
+				has_government = neutrality
+				has_government = monarchism
+				has_government = fascism
+			}
+		}
+		days_remove = 2
+		fire_only_once = yes 
+		cost = 10
+		
+		complete_effect = {
+			ETH_BOP_decentralization_small_effect = yes 
+		}
+		remove_effect = {
+			show_unit_leaders_tooltip = ETH_balcho_safo
+			custom_effect_tooltip = balcho_safo_recalled_tt
+
+			hidden_effect = {
+				ETH_balcho_safo = {
+					unit_leader_event = {
+						id = BBA_ethiopia_balance_of_power_events.30
+						hours = 0 
+					}
+				} 
+			}
+		}
+		
+		ai_will_do = {
+			base = 250
+		}
+	}
+
+	ETH_bop_increase_mesafint_privileges = {
+		icon = GFX_decision_gre_investment_decisions  #TODO_TA set correct icon
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_bop_privileges_changed }
+		}
+		visible = {
+			OR = {
+				has_government = neutrality
+				has_government = monarchism
+				has_government = fascism
+			}
+		}	
+		days_remove = 90
+		# days_re_enable = 120
+		fire_only_once = no
+		cost = 25
+		modifier = {
+			stability_weekly = -0.01
+			political_power_factor = -0.1
+		}
+		complete_effect = {
+			add_power_balance_modifier = {
+				id = ETH_centralization_balance
+				modifier = ETH_increase_priviliges_power_balance
+			}
+			set_country_flag = {
+				flag = ETH_bop_privileges_changed
+				days = 365
+				value = 1
+			}
+		}
+		remove_effect = {
+			remove_power_balance_modifier = {
+				id = ETH_centralization_balance
+				modifier = ETH_increase_priviliges_power_balance
+			}
+		}
+		
+		ai_will_do = {
+			base = 0
+			# Don't do this, too risky
+		}
+	}
+	ETH_bop_increase_the_power_of_the_mekwanint = {
+		icon = GFX_decision_gre_investment_decisions  #TODO_TA set correct icon
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_bop_privileges_changed }
+		}
+		visible = {
+			OR = {
+				has_government = neutrality
+				has_government = monarchism
+				has_government = fascism
+			}
+		}
+		days_remove = 90
+		# days_re_enable = 30 
+		fire_only_once = no
+		cost = 25
+		modifier = {
+			political_power_factor = -0.1
+			stability_weekly = -0.01
+		}
+		
+		complete_effect = {
+			add_power_balance_modifier = {
+				id = ETH_centralization_balance
+				modifier = ETH_withdraw_priviliges_power_balance
+			}
+			set_country_flag = {
+				flag = ETH_bop_privileges_changed
+				days = 365
+				value = 1
+			}
+		}
+		remove_effect = {
+			remove_power_balance_modifier = {
+				id = ETH_centralization_balance
+				modifier = ETH_withdraw_priviliges_power_balance
+			}
+		}
+		
+		ai_will_do = {
+			base = 0
+			# Don't do this, too risky
+		}
+	}
+}
