@@ -44,45 +44,45 @@ political_actions = {
         }
         remove_trigger = {ITA = { has_government = ROOT }}
     }
-	ATL_build_VLFP_dockyard = {
-		icon = VLFP
-		visible = {
-            original_tag = ATL
-        }
-		available = {
-			has_country_flag = ATL_VLFP_flag
-		}
-		cost = 25
-		fire_only_once = yes
-		days_remove = 90
-		modifier = {civilian_factory_use = 10}
-		ai_will_do = {factor = 1 modifier = {has_political_power < 200 factor = 0}}
-		remove_effect = {
-			set_technology = {carrier_VLFP = 1}
-			create_equipment_variant = {
-				name = "Hyper Carrier"
-				type = ship_hull_carrier_vlfp
-				name_group = ATL_CV_HISTORICAL 
-				parent_version = 0
-				modules = {
-				fixed_ship_deck_slot_1 = vlfp_ship_deck_space
-				fixed_ship_deck_slot_2 = ship_armor_carrier_deck
-				fixed_ship_anti_air_slot = vlfp_ship_anti_air
-				fixed_ship_radar_slot = ship_radar_1
-				fixed_ship_engine_slot = vlfp_carrier_ship_engine
-				fixed_ship_secondaries_slot = vlfp_ship_secondaries
-				front_1_custom_slot = vlfp_ship_secondaries
-				mid_1_custom_slot = vlfp_ship_deck_space
-				mid_2_custom_slot = vlfp_ship_extra_fuel_tank
-				mid_3_custom_slot = ship_armor_carrier_deck
-				mid_4_custom_slot = vlfp_ship_extra_fuel_tank
-				mid_5_custom_slot = vlfp_ship_deck_space
-				rear_1_custom_slot = vlfp_ship_secondaries
-				}
-				obsolete = no
-			}
-		}
-	}
+	#ATL_build_VLFP_dockyard = {
+	#	icon = VLFP
+	#	visible = {
+    #        original_tag = ATL
+    #    }
+	#	available = {
+	#		has_country_flag = ATL_VLFP_flag
+	#	}
+	#	cost = 25
+	#	fire_only_once = yes
+	#	days_remove = 90
+	#	modifier = {civilian_factory_use = 10}
+	#	ai_will_do = {factor = 1 modifier = {has_political_power < 200 factor = 0}}
+	#	remove_effect = {
+	#		set_technology = {carrier_VLFP = 1}
+	#		create_equipment_variant = {
+	#			name = "Hyper Carrier"
+	#			type = ship_hull_carrier_vlfp
+	#			name_group = ATL_CV_HISTORICAL 
+	#			parent_version = 0
+	#			modules = {
+	#			fixed_ship_deck_slot_1 = vlfp_ship_deck_space
+	#			fixed_ship_deck_slot_2 = ship_armor_carrier_deck
+	#			fixed_ship_anti_air_slot = vlfp_ship_anti_air
+	#			fixed_ship_radar_slot = ship_radar_1
+	#			fixed_ship_engine_slot = vlfp_carrier_ship_engine
+	#			fixed_ship_secondaries_slot = vlfp_ship_secondaries
+	#			front_1_custom_slot = vlfp_ship_secondaries
+	#			mid_1_custom_slot = vlfp_ship_deck_space
+	#			mid_2_custom_slot = vlfp_ship_extra_fuel_tank
+	#			mid_3_custom_slot = ship_armor_carrier_deck
+	#			mid_4_custom_slot = vlfp_ship_extra_fuel_tank
+	#			mid_5_custom_slot = vlfp_ship_deck_space
+	#			rear_1_custom_slot = vlfp_ship_secondaries
+	#			}
+	#			obsolete = no
+	#		}
+	#	}
+	#}
 }
 ATL_cores = {
 	core_takamafrika = {
