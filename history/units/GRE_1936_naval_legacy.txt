@@ -1,0 +1,59 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Vasilikó Polemikó Naftikó"			
+		naval_base = 4109 # Athens
+		task_force = {				
+			name = "Vasilikós Stólos"				
+			location = 4109 # Athens
+			ship = { name = "RRS Georgios Averof" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }				
+			ship = { name = "RRS Elli" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }				
+			# Destroyer Flotilla
+			ship = { name = "RRS Aetos" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RRS Ierax" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RRS Leon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RRS Panthir" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RRS Kountouriotis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Hydra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Psara" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Spetsai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+		}					
+		task_force = {					
+			name = "Stolískou Ypovrychíon"				
+			location = 4109 # Athens
+			ship = { name = "RRS Katsonis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RRS Papanikolis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RRS Protefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RRS Nirefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		 
+			ship = { name = "RRS Triton" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+			ship = { name = "RRS Glafkos" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
+		}					
+	}
+		########## After the Naval Race ##########
+	
+	fleet = {					
+		name = "Vósporos Stólo"	#After the Naval Race		
+		naval_base = 9833
+		task_force = {
+			name = "Vósporos Stólo"
+			location =  9833 
+			ship = { name = "RRS Kilkis" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RRS Thessalia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RRS Piraievs" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RRS Kikladhes" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }	
+			ship = { name = "RRS Apostolis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }	
+			ship = { name = "RRS Kriezis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }			
+			ship = { name = "RRS Sakhtouris" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RRS Vasilefs Georgios I" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Vasilissa Olga" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Salamis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Navarinon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Aspis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Kimon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RRS Lonchi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }		
+		}
+	}
+} 
+

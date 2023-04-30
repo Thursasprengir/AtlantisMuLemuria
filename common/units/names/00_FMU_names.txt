@@ -2,6 +2,89 @@ FMU = {
 	air_wing_names_template = AIR_WING_NAME_GER_FALLBACK
 
 	#Air wings can only be named through archetype
+	
+#BBA Airframe
+	small_plane_airframe = {
+		prefix = ""
+		generic = { "Jagdgeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+	
+	cv_small_plane_airframe = {
+		prefix = ""
+		generic = { "Träger-Jagdgruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+	
+	small_plane_cas_airframe = {
+		prefix = ""
+		generic = { "Schlachtgeschwader" "Stukageschwader" "Schnellkampfgeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}	
+	
+	cv_small_plane_cas_airframe = {
+		prefix = ""
+		generic = { "Träger-Stukagruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	small_plane_naval_bomber_airframe = {
+		prefix = ""
+		generic = { "Torpedobombergruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_plane_naval_bomber_airframe = {
+		prefix = ""
+		generic = { "Torpedobombergruppe" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+
+	medium_plane_airframe = {
+		prefix = ""
+		generic = { "Kampfgeschwader" "Kampfschulgeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}	
+	
+	medium_plane_scout_plane_airframe = {
+		prefix = ""
+		generic = { "Aufklärungsflugzeuggeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}	
+	
+	large_plane_airframe = {
+		prefix = ""
+		generic = { "Fernkampfgeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}
+	
+	large_plane_maritime_patrol_plane_airframe = {
+		prefix = ""
+		generic = { "Seefernaufklärergeschwader" }
+		generic_pattern = AIR_WING_NAME_GER_GENERIC
+		unique = {
+		}	
+	}	
+	
+#Regular	
 	fighter_equipment = {
 		prefix = ""
 		generic = { "Jagdgeschwader" }
