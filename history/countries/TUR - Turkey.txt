@@ -29,6 +29,7 @@ set_technology = {
 	tech_mountaineers = 1
 	tech_recon = 1
 	tech_support = 1
+	motorised_infantry = 1	
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
@@ -36,7 +37,11 @@ set_technology = {
 	CAS1 = 1
 	gwtank = 1
 	basic_light_tank = 1
+	interwar_antiair = 1
+	fuel_silos = 1
+	basic_train = 1
 }
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
