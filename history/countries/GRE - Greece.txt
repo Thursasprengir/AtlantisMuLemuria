@@ -464,7 +464,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Kilkis Class"	
+		name = "Kilkis Class" #Mississippi Class 1904–1908
 		type = ship_hull_pre_dreadnought
 		name_group = GRE_BB_HISTORICAL
 		parent_version = 0
@@ -476,12 +476,13 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
-			front_1_custom_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_anti_air_1
 		}
 		obsolete = yes
 	}
+	
 	
 	########## After the Naval Race ##########
 

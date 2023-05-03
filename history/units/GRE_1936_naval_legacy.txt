@@ -8,6 +8,8 @@ units= {
 		task_force = {				
 			name = "Vasilikós Stólos"				
 			location = 4109 # Athens
+            ship = { name = "RRS Kilkis" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GRE } } }
+            ship = { name = "RRS Limnos" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GRE } } }			
 			ship = { name = "RRS Georgios Averof" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }				
 			ship = { name = "RRS Elli" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }				
 			# Destroyer Flotilla
@@ -39,10 +41,10 @@ units= {
 		task_force = {
 			name = "Vósporos Stólo"
 			location =  9833 
-			ship = { name = "RRS Kilkis" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = GRE } } }
-			ship = { name = "RRS Thessalia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RRS Thessalia" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = GRE } } }
+			ship = { name = "RRS Romei" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GRE } } }
 			ship = { name = "RRS Piraievs" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }
-			ship = { name = "RRS Kikladhes" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }	
+			ship = { name = "RRS Kikladhes" definition = heavy_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }	
 			ship = { name = "RRS Apostolis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }	
 			ship = { name = "RRS Kriezis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GRE } } }			
 			ship = { name = "RRS Sakhtouris" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE } } }
@@ -55,5 +57,7 @@ units= {
 			ship = { name = "RRS Lonchi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }		
 		}
 	}
+	
+	
 } 
 
