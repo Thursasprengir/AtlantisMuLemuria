@@ -54,7 +54,6 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
 		pre_dreadnoughts = 1
-		coastal_defense_ship = 1
 	}
 	set_naval_oob = "TRS_1936_naval"
 }
@@ -663,7 +662,7 @@ if = {
 		create_equipment_variant = {
 			name = "Nigaala Class" 				# collection of interwar DD-sized minelayers
 			type = ship_hull_light_1
-			name_group = CHI_MINELAYERS_HISTORICAL
+			name_group = CHI_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
