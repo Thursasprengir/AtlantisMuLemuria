@@ -285,8 +285,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_war_support = 0.1 #war support
 			add_ideas = FMU_inevitable_war
+			remove_ideas = FMU_lose_but_never_defeat
+			add_war_support = 0.1 #war support
 			#bonus mobilization speed Got u fam - Abbus
 		}
 	}
@@ -1123,9 +1124,18 @@ focus = {
 			}
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			CNJ = {
+				OR = {
+					exists = no
+					is_subject = yes		
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1161,9 +1171,18 @@ focus = {
 			}
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			GOP = {
+				OR = {
+					exists = no
+					is_subject = yes		
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1200,9 +1219,18 @@ focus = {
 			}
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			TIQ = {
+				OR = {
+					exists = no
+					is_subject_of = FMU			
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1233,19 +1261,42 @@ focus = {
 			factor = 40
 		}
 		available = {
-			AWA = {
-				exists = yes
-				is_puppet = no
-			}
-			TOD = {
-				exists = yes
-				is_puppet = no
+			OR = {
+				AWA = {
+					is_puppet = no
+					exists = yes
+				}
+				TOD = {
+					is_puppet = no
+					exists = yes
+				}
 			}
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			AND = {
+				AWA = {
+					OR = {
+						exists = no
+						is_subject = yes
+						AND = {
+							is_subject = no
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+				TOD = {
+					OR = {
+						exists = no
+						is_subject = yes			
+						AND = {
+							is_subject = no
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1288,9 +1339,18 @@ focus = {
 			}
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			BRG = {
+				OR = {
+					exists = no
+					is_subject = yes			
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1329,9 +1389,19 @@ focus = {
 			}
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			MUU = {
+				OR = {
+					exists = no
+					is_subject = yes
+					is_subject_of = FMU			
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1368,9 +1438,18 @@ focus = {
 			}
 		}
 
-		#bypass = {
-		#date > 1936.4.3
-		#}
+		bypass = {
+			MCH = {
+				OR = {
+					exists = no
+					is_subject = yes		
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2977,6 +3056,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			remove_ideas = FMU_lose_but_never_defeat
 			add_political_power = 150
 			add_stability = -0.1
 			add_popularity = {
@@ -3462,11 +3542,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			remove_ideas = FMU_lose_but_never_defeat
+			#democratic support boost
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
 			}
-			#democratic support boost
 			add_stability = 0.1
 			#lend-lease tension decrease
 		}
@@ -3542,6 +3623,7 @@ focus = {
 					modifier = FMU_democratic_reachout
 				}
 			}
+			remove_ideas = FMU_versailles_coercion
 			set_rule = {can_send_volunteers = yes}
 			#massive relations boost with democratic nations
 			#allow volunteers
@@ -3611,7 +3693,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas =communist_influence
+			add_ideas = communist_influence
 		}
 	}
 
@@ -3643,6 +3725,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			remove_ideas = FMU_lose_but_never_defeat
 			SOV = {
 				add_opinion_modifier = {
 					target = FMU
@@ -3709,14 +3792,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
 			create_faction = "Vorhut"
+			set_rule = { can_create_factions = yes }
+			remove_ideas = FMU_lose_but_never_defeat
 			SOV = {
 				add_opinion_modifier = {
 					target = FMU
 					modifier = FMU_angry_communist
 				}
 			}
+			
 			#relations malus with SOV
 			#strengthen communists in nation
 			#can form factions
@@ -4377,10 +4462,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		available = {
-			threat > 0.1
-		}
-
+		
 		bypass = {
 		}
 

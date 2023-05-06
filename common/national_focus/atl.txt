@@ -410,10 +410,15 @@ focus = {
 			every_other_country = {
 				add_opinion_modifier = {
 					target = ROOT
-					modifier = large_decrease
+					modifier = ATL_legalise_cannibalism
 				}
 				add_ai_strategy = {
 					type = antagonize
+					id = ROOT
+					value = 150
+				}
+				add_ai_strategy = {
+					type = prepare_for_war
 					id = ROOT
 					value = 100
 				}
