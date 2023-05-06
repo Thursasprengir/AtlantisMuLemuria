@@ -1,0 +1,17 @@
+units = {
+	fleet = {
+		name = "New Atlantis Marine"		
+		naval_base = 13960
+		task_force = {
+			name = "New Atlantis Force"
+			location = 13960
+			ship = { name = "DD-E-AS/6" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ATL } } }
+			ship = { name = "DD-36-C/36" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ATL } } }
+			ship = { name = "DD-36-C/37" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ATL } } }
+			ship = { name = "DD-36-C/38" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ATL } } }
+			ship = { name = "CL-E-S/4" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ATL } } }
+			ship = { name = "CL-E-S/6" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ATL } } }
+			ship = { name = "BB-36-K/4" pride_of_the_fleet = yes definition = battleship equipment = { battleship_2 = { amount = 1 owner = ATL } }
+		}
+	}
+}
