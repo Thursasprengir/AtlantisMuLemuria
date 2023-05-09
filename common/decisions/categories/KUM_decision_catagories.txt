@@ -1,6 +1,13 @@
 KUM_blow_the_works = {
-	icon = category_border_conflicts
+	icon = GFX_decision_category_border_conflicts
 	allowed = {
 		original_tag = KUM
+	}
+	
+	visible = {
+		AND = {
+			has_completed_focus = KUM_sabotage_missions
+			has_country_flag = free_pantiya
+		}
 	}
 }
