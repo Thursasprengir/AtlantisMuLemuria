@@ -27,6 +27,21 @@ set_popularities = {
 	communism = 44
 }
 
+POR = {
+    if = {
+        limit = {
+            has_dlc = "Together for Victory"
+        }
+        set_autonomy = {
+            target = MCF
+            autonomous_state = autonomy_integrated_puppet
+        }
+    }
+    else = {
+        puppet = MCF
+    }
+}
+
 
 set_convoys = 80
 

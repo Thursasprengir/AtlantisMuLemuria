@@ -35,6 +35,21 @@ set_popularities = {
 	fascism = 45
 	communism = 2
 }
+
+FRA = {
+    if = {
+        limit = {
+            has_dlc = "Together for Victory"
+        }
+        set_autonomy = {
+            target = KRL
+            autonomous_state = autonomy_supervised_state
+        }
+    }
+    else = {
+        puppet = KRL
+    }
+}
 	
 recruit_character = KRL_arnold_von_ebbingen
 recruit_character = KRL_bob_the_oligarch_2

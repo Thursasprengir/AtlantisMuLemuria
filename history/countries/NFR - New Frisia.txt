@@ -32,6 +32,21 @@ set_popularities = {
 	neutrality = 10
 }
 
+HOL = {
+    if = {
+        limit = {
+            has_dlc = "Together for Victory"
+        }
+        set_autonomy = {
+            target = NFR
+            autonomous_state = autonomy_colony
+        }
+    }
+    else = {
+        puppet = NFR
+    }
+}
+
 set_convoys = 60
 
 #characters
