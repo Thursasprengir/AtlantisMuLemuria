@@ -1,0 +1,839 @@
+characters={
+	KKA_H_Tamdrinetta={
+		name=KKA_H_Tamdrinetta
+		portraits={
+			civilian={
+				large="gfx/leaders/KUM/Portrait_KUM_H_Tamdrinetta.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			
+		}
+	}
+
+	KKA_P_T_Indrimeshna={
+		name=KKA_P_T_Indrimeshna
+		portraits={
+			civilian={
+				large="gfx/leaders/KUM/Portrait_KUM_P_T_Indrimeshna.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ hawk }
+			expire="1948.1.1.12"
+			
+		}
+	}
+
+	KKA_S_Drumuvatali={
+		name=KKA_S_Drumuvatali
+		portraits={
+			civilian={
+				large="gfx/leaders/KUM/Portrait_KUM_S_Drumuvatali.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ financial_expert armaments_organizer }
+			expire="1956.1.1.12"
+			
+		}
+	}
+	
+	KKA_G_Norundenna={
+		name=KKA_G_Norundenna
+		portraits={
+			civilian={
+				large="gfx/leaders/KUM/Portrait_KUM_G_Norundenna.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ financial_expert }
+			expire="1969.1.1.12"
+			
+		}
+	}
+	
+	
+	KKA_linggruta_handruvarti={
+		name=KKA_linggruta_handruvarti
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	KKA_amshanartha_inswagatal={
+		advisor={
+			slot = army_chief
+			idea_token = KKA_amshanartha_inswagatal
+			allowed = {
+					original_tag = MUU
+				}
+				traits = {
+					army_entrenchment_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=KKA_amshanartha_inswagatal
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+
+	### THEORISTS ###
+
+	
+	KKA_silent_workhorse={
+		name = KKA_silent_workhorse
+		portraits ={
+			army ={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KKA_silent_workhorse
+			allowed  = {original_tag  = KKA}
+			traits  = {silent_workhorse}
+			ai_will_do  = {factor  = 2.000}
+		}		
+	}
+	KKA_war_industrialist = {
+		name = KKA_war_industrialist
+		portraits = {army = {small = "GFX_idea_HAI_stenio_vincent"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KKA_war_industrialist
+			allowed  = {original_tag  = KKA}
+			traits  = {war_industrialist}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	KKA_backroom_backstabber = {
+		name = KKA_backroom_backstabber
+		portraits = {army = {small = "GFX_idea_HON_tiburcio_carias_andino"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KKA_backroom_backstabber
+			allowed  = {original_tag  = KKA}
+			traits  = {backroom_backstabber}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	KKA_armaments_organizer = {
+		name = KKA_armaments_organizer
+		portraits = {army = {small = "GFX_idea_CHL_arturo_alessandri"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KKA_armaments_organizer
+			allowed  = {original_tag  = KKA}
+			traits  = {armaments_organizer}
+			ai_will_do  = {factor  = 2.000}
+		}
+	}
+	KKA_democratic_politician = {
+		name = KKA_democratic_politician
+		portraits = {army = {small = "GFX_idea_generic_political_advisor_arab_3"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KKA_democratic_politician
+			allowed  = {original_tag  = KKA}
+			traits  = {democratic_reformer}
+			ai_will_do  = {factor  = 1.000}
+		}
+	}
+	KKA_fascist_demagogue = {
+		name = KKA_fascist_demagogue
+		portraits = {army = {small = "GFX_idea_RAJ_political_leader_generic"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KKA_fascist_demagogue
+			allowed  = {original_tag  = KKA}
+			traits  = {fascist_demagogue}
+			ai_will_do  = {factor  = 1.000}
+		}
+	}
+	KKA_communist_revolutionary = {
+		name = KKA_communist_revolutionary
+		portraits = {army = {small = "GFX_idea_PAR_rafael_franco"}}
+		advisor = {
+			slot = political_advisor
+			idea_token = KKA_communist_revolutionary
+			allowed  = {original_tag  = KKA}
+			traits  = {communist_revolutionary}
+			ai_will_do  = {factor  = 1.000}
+		}
+	}
+	KKA_grand_fleet_proponent={
+		name = KKA_grand_fleet_proponent
+		portraits={army={small="GFX_idea_generic_navy_south_america_2"}}
+		advisor={
+			cost = 200
+			slot = theorist
+			idea_token = james_somerville
+			ledger = navy
+			allowed = {original_tag = KKA}
+			traits = {grand_fleet_proponent}
+		}
+	}
+	KKA_victory_through_airpower = {
+		name = KKA_victory_through_airpower
+		portraits = {army={small="GFX_idea_generic_army_south_america_4"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = KKA_victory_through_airpower
+			ledger = air
+			allowed = {original_tag = KKA}			
+			traits = {victory_through_airpower}
+		}
+	}
+	KKA_rocket_scientist = {
+		name = KKA_rocket_scientist
+		portraits = {army={small="GFX_idea_generic_air_south_america_1"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = KKA_rocket_scientist
+			ledger = air
+			allowed = {original_tag = KKA}	
+			research_bonus = {rocketry = 0.15}		
+			traits = {rocket_scientist}
+		}
+	}
+	KKA_military_theorist = {
+		name = KKA_military_theorist
+		portraits = {army={small="GFX_idea_generic_army_south_america_5"}}
+		advisor = {
+			cost = 200
+			slot = theorist
+			idea_token = KKA_military_theorist
+			ledger = army
+			allowed = {original_tag = KKA}			
+			traits = {military_theorist}
+		}
+	}
+	KKA_army_chief_morale_2={
+		name=KKA_army_chief_morale_2
+		portraits={army={small="GFX_idea_generic_army_south_america_2"}}
+		advisor={
+			slot = army_chief
+			idea_token = KKA_army_chief_morale_2
+			allowed = {original_tag = KKA}
+			traits = {army_chief_morale_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_army_chief_offensive_2={
+		name=KKA_army_chief_offensive_2
+		portraits={army={small="GFX_idea_generic_army_south_america_1"}}
+		advisor={
+			slot = army_chief
+			idea_token = KKA_army_chief_offensive_2
+			allowed = {original_tag = KKA}
+			traits = {army_chief_offensive_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_army_chief_drill_2={
+		name=KKA_army_chief_drill_2
+		portraits={army={small="GFX_idea_generic_army_south_america_3"}}
+		advisor={
+			slot = army_chief
+			idea_token = KKA_army_chief_drill_2
+			allowed = {original_tag = KKA}
+			traits = {army_chief_drill_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_army_chief_planning_2={
+		name=KKA_army_chief_planning_2
+		portraits={army={small="GFX_idea_generic_army_south_america_4"}}
+		advisor={
+			slot = army_chief
+			idea_token = KKA_army_chief_planning_2
+			allowed = {original_tag = KKA}
+			traits = {army_chief_planning_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_navy_chief_maneuver_3={
+		name=KKA_navy_chief_maneuver_3
+		portraits={army={small="GFX_idea_generic_navy_south_america_1"}}
+		advisor={
+			slot = navy_chief
+			idea_token = KKA_navy_chief_maneuver_3
+			allowed = {original_tag = KKA}
+			traits = {navy_chief_maneuver_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_navy_chief_decisive_battle_3={
+		name=KKA_navy_chief_decisive_battle_3
+		portraits={army={small="GFX_idea_generic_navy_south_america_2"}}
+		advisor={
+			slot = navy_chief
+			idea_token = KKA_navy_chief_decisive_battle_3
+			allowed = {original_tag = KKA}
+			traits = {navy_chief_decisive_battle_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_navy_fleet_logistics_3={
+		name=KKA_navy_fleet_logistics_3
+		portraits={army={small="GFX_idea_generic_navy_south_america_3"}}
+		advisor={
+			slot = navy_chief
+			idea_token = KKA_navy_fleet_logistics_3
+			allowed = {original_tag = KKA}
+			traits = {navy_fleet_logistics_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_air_strategic_bombing_2={
+		name=KKA_air_strategic_bombing_2
+		portraits={army={small="GFX_idea_generic_air_south_america_2"}}
+		advisor={
+			slot = air_chief
+			idea_token = KKA_air_strategic_bombing_2
+			allowed = {original_tag = KKA}
+			traits = {air_strategic_bombing_2}
+			cost = 100
+			ai_will_do = {factor = 1.000}
+		}
+	}
+	KKA_air_chief_old_guard={
+		name=KKA_air_chief_old_guard
+		portraits={army={small="GFX_idea_generic_air_south_america_1"}}
+		advisor={
+			slot = air_chief
+			idea_token = KKA_air_chief_old_guard
+			allowed = {original_tag = KKA}
+			traits = {air_chief_old_guard}
+			cost = 100
+			ai_will_do = {factor = 1.000}
+		}
+	}
+	KKA_air_strategic_bombing_1={
+		name=KKA_air_strategic_bombing_1
+		portraits={army={small="GFX_idea_generic_air_south_america_3"}}
+		advisor={
+			slot = high_command
+			idea_token = KKA_air_strategic_bombing_1
+			ledger = army
+			allowed = {original_tag = KKA}
+			traits = {air_strategic_bombing_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}	
+	KKA_navy_screen_2={
+		name=KKA_navy_screen_2
+		portraits={army={small="GFX_idea_generic_navy_arab_1"}}
+		advisor={
+			slot = high_command
+			idea_token = KKA_navy_screen_2
+			ledger = army
+			allowed = {original_tag = KKA}
+			traits = {navy_screen_2}
+			cost = 100
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_army_regrouping_1={
+		name=KKA_army_regrouping_1
+		portraits={army={small="GFX_idea_generic_army_asia_1"}}
+		advisor={
+			slot = high_command
+			idea_token = KKA_army_regrouping_1
+			ledger = army
+			allowed = {original_tag = KKA}
+			traits = {army_regrouping_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_navy_capital_ship_3={
+		name=KKA_navy_capital_ship_3
+		portraits={army={small="GFX_idea_generic_navy_arab_2"}}
+		advisor={
+			slot = high_command
+			idea_token = KKA_navy_capital_ship_3
+			ledger = army
+			allowed = {original_tag = KKA}
+			traits = {navy_capital_ship_3}
+			cost = 200
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_air_naval_strike_1={
+		name=KKA_air_naval_strike_1
+		portraits={army={small="GFX_idea_generic_navy_arab_3"}}
+		advisor={
+			slot = high_command
+			idea_token = KKA_air_naval_strike_1
+			ledger = army
+			allowed = {original_tag = KKA}
+			traits = {air_naval_strike_1}
+			cost = 50
+			ai_will_do = {factor = 2.000}
+		}
+	}
+	KKA_navy_carrier_2={
+		name=KKA_navy_carrier_2
+		portraits={army={small="GFX_idea_generic_navy_asia_2"}}
+		advisor={
+			slot = high_command
+			idea_token = KKA_navy_carrier_2
+			ledger = army
+			allowed = {original_tag = KKA}
+			traits = {navy_carrier_2}
+			cost = 100
+			ai_will_do = {factor = 10.000}
+		}
+	}
+	KKA_ahintu_uvruvatri={
+		name="Ahintu Uvruvatri"
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	KKA_wessampiri_civvandra={
+		name="Wessampiri Civvandra"
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	KKA_ilmoragri_vingradri={
+		name="Ilmoragri Vingradri"
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			
+		}
+	}
+	KKA_pontrimatri_selamta={
+		name="Pontrimatri Selamta"
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			
+		}
+	}
+	KKA_ashmeq_rantri={
+		name="Ashmeq Rantri"
+		portraits={
+			navy={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			
+		}
+	}
+	KKA_air_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KKA_air_theorist
+			ledger  = air 
+				allowed  = {
+					original_tag  = KKA
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="KKA_air_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	KKA_close_air_support_2={
+		advisor={
+			slot = high_command
+			idea_token = KKA_close_air_support_2
+			ledger  = air 
+				allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	KKA_naval_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KKA_naval_theorist
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KKA
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="KKA_naval_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	KKA_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = KKA_prince_of_terror
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="KKA_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	KKA_offensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KKA_offensive_2
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_offensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	KKA_mil_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KKA_mil_theorist
+			ledger  = army 
+				allowed  = {
+					original_tag  = KKA
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="KKA_mil_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	KKA_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KKA_defensive_2
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	KKA_quartermaster_gen={
+		advisor={
+			slot = political_advisor
+			idea_token = KKA_quartermaster_gen
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="KKA_quartermaster_gen"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	KKA_regrouping_2={
+		advisor={
+			slot = high_command
+			idea_token = KKA_regrouping_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_regrouping_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	KKA_maneuver_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KKA_maneuver_2
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	KKA_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = KKA_ground_support_2
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	KKA_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = KKA_backstabber
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="KKA_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	KKA_night_ops_2={
+		advisor={
+			slot = air_chief
+			idea_token = KKA_night_ops_2
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_night_ops_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	KKA_capital_ship_2={
+		advisor={
+			slot = high_command
+			idea_token = KKA_capital_ship_2
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_capital_ship_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	KKA_logistics_2={
+		advisor={
+			slot = high_command
+			idea_token = KKA_logistics_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	KKA_commerce_raiding_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KKA_commerce_raiding_2
+			allowed  = {
+					original_tag  = KKA
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KKA_commerce_raiding_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+}

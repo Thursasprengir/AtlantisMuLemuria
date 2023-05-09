@@ -3369,39 +3369,39 @@ ideas = {
 	}
 
 	theorist = {
-		TUR_mehmet_gunaltay = {
-			ledger = army
-					
-			picture = generic_army_europe_2
-	
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-			
-			traits = { military_theorist }
-		}
-	
-		TUR_refik_saydam = {
-			ledger = air
-					
-			picture = generic_political_advisor_europe_1
-	
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
+#		TUR_mehmet_gunaltay = {
+#			ledger = army
+#					
+#			picture = generic_army_europe_2
+#	
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#			
+#			research_bonus = {
+#				land_doctrine = 0.10
+#			}
+#			
+#			traits = { military_theorist }
+#		}
+#	
+#		TUR_refik_saydam = {
+#			ledger = air
+#					
+#			picture = generic_political_advisor_europe_1
+#	
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#			
+#			research_bonus = {
+#				air_doctrine = 0.10
+#			}
+#			
+#			traits = { air_warfare_theorist }
+#		}
 
 
 		TUR_ali_fuat_cebesoy_bftb = { 
@@ -3423,69 +3423,69 @@ ideas = {
 			traits = { military_theorist }
 		}
 	
-		TUR_kazim_karabekir = { 
-			ledger = army
-					
-			picture = tur_kazim_karabekir
-	
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = {
-				NOT = {
-					has_country_leader = {
-						name = "Mustafa Kemal Atatürk"
-						ruling_only = yes
-					}
-				}
-			}
-			
-			cost = 250
-
-			research_bonus = {
-				cat_grand_battle_plan = 0.15
-			}
-			
-			traits = { grand_battle_plan_expert }
-		}
-	
-		TUR_ahmet_ali_celikten = {
-			ledger = air
-					
-			picture = tur_ahmet_ali_celikten
-	
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			cost = 250
-			
-			research_bonus = {
-				cat_base_strike = 0.15
-			}
-			
-			traits = { naval_aviation_pioneer }
-		}
-	
-		TUR_vecihi_hurkus = {
-			ledger = air
-					
-			picture = tur_vecihi_hurkus
-	
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
+#		TUR_kazim_karabekir = { 
+#			ledger = army
+#					
+#			picture = tur_kazim_karabekir
+#	
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#
+#			available = {
+#				NOT = {
+#					has_country_leader = {
+#						name = "Mustafa Kemal Atatürk"
+#						ruling_only = yes
+#					}
+#				}
+#			}
+#			
+#			cost = 250
+#
+#			research_bonus = {
+#				cat_grand_battle_plan = 0.15
+#			}
+#			
+#			traits = { grand_battle_plan_expert }
+#		}
+#	
+#		TUR_ahmet_ali_celikten = {
+#			ledger = air
+#					
+#			picture = tur_ahmet_ali_celikten
+#	
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#
+#			cost = 250
+#			
+#			research_bonus = {
+#				cat_base_strike = 0.15
+#			}
+#			
+#			traits = { naval_aviation_pioneer }
+#		}
+#	
+#		TUR_vecihi_hurkus = {
+#			ledger = air
+#					
+#			picture = tur_vecihi_hurkus
+#	
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#			
+#			research_bonus = {
+#				air_doctrine = 0.10
+#			}
+#			
+#			traits = { air_warfare_theorist }
+#		}
 	
 		TUR_rauf_orbay_bftb = {
 			ledger = navy
@@ -3520,23 +3520,23 @@ ideas = {
 
 	army_chief = {
 
-		TUR_kazim_orbay = {
-			
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			
-
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		TUR_kazim_orbay = {
+#			
+#			picture = generic_army_europe_1
+#			
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#			
+#
+#			
+#			traits = { army_chief_offensive_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 		
 		TUR_fevzi_cakmak_vanilla = {
 
@@ -3611,146 +3611,146 @@ ideas = {
 			}
 		}
 
-		TUR_cemil_cahit_toydemir = {
-			
-			picture = tur_cemil_cahit_toydemir
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus" 
-			}
+#		TUR_cemil_cahit_toydemir = {
+#			
+#			picture = tur_cemil_cahit_toydemir
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus" 
+#			}
+#
+#			available = { 
+#				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
+#			}
+#			
+#			visible = { 
+#				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
+#			}
+#			
+#			traits = { army_chief_reform_2 } 
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 
-			available = { 
-				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
-			}
-			
-			visible = { 
-				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
-			}
-			
-			traits = { army_chief_reform_2 } 
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		TUR_fahrettin_altay = {
+#			
+#			picture = tur_fahrettin_altay
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus" 
+#			}
+#
+#			available = { 
+#				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
+#			}
+#			
+#			visible = {
+#				NOT = { has_country_flag = TUR_ottoman_officers_invited_back }
+#			}
+#			
+#			traits = { army_chief_maneuver_3 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 
-		TUR_fahrettin_altay = {
-			
-			picture = tur_fahrettin_altay
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus" 
-			}
-
-			available = { 
-				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
-			}
-			
-			visible = {
-				NOT = { has_country_flag = TUR_ottoman_officers_invited_back }
-			}
-			
-			traits = { army_chief_maneuver_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_fakhri_pasha = {
-			
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus" 
-			}
-			
-			visible = {
-				has_country_flag = TUR_ottoman_officers_invited_back
-			}
-			
-			traits = { army_chief_offensive_2 } 
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		TUR_fakhri_pasha = {
+#			
+#			picture = generic_air_europe_2
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus" 
+#			}
+#			
+#			visible = {
+#				has_country_flag = TUR_ottoman_officers_invited_back
+#			}
+#			
+#			traits = { army_chief_offensive_2 } 
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 	}
 
 	air_chief = {
 
-		TUR_memduh_tagmac = {
-			
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			
-
-			
-			traits = { air_chief_night_operations_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_ali_orlungat = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_muzaffer_goksenin = {
-			
-			picture = tur_muzaffer_goksenin
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			
-			traits = { air_chief_reform_2 } 
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_zeki_dogan = {
-			
-			picture = tur_zeki_dogan
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		TUR_memduh_tagmac = {
+#			
+#			picture = generic_air_europe_3
+#			
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#			
+#
+#			
+#			traits = { air_chief_night_operations_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_ali_orlungat = {
+#			
+#			picture = generic_air_europe_1
+#			
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#			
+#
+#			
+#			traits = { air_chief_ground_support_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_muzaffer_goksenin = {
+#			
+#			picture = tur_muzaffer_goksenin
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#
+#			
+#			traits = { air_chief_reform_2 } 
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_zeki_dogan = {
+#			
+#			picture = tur_zeki_dogan
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#			
+#			
+#			traits = { air_chief_ground_support_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 	}
 
 	navy_chief = {	
@@ -3773,23 +3773,23 @@ ideas = {
 			}
 		}
 
-		TUR_rauf_orbay = {
-			
-			picture = generic_navy_europe_3
-			
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			
-
-			
-			traits = { navy_chief_old_guard }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		TUR_rauf_orbay = {
+#			
+#			picture = generic_navy_europe_3
+#			
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#			
+#
+#			
+#			traits = { navy_chief_old_guard }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 
 		TUR_mehmet_ali_ungen_bftb = {
 
@@ -3810,106 +3810,106 @@ ideas = {
 			}
 		}
 
-		TUR_sukru_okan = {
-			
-			picture = tur_sukru_okan
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = { 
-				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
-			}
-
-			visible = { 
-				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
-			}
-			
-			
-			traits = { navy_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		TUR_sukru_okan = {
+#			
+#			picture = tur_sukru_okan
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#
+#			available = { 
+#				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
+#			}
+#
+#			visible = { 
+#				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
+#			}
+#			
+#			
+#			traits = { navy_chief_maneuver_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 	}
 	
 	high_command = {
 
-		TUR_sabiha_gokcen = {
-			ledger = air
-			
-			picture = sabiha_gocen
-			
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			
+#		TUR_sabiha_gokcen = {
+#			ledger = air
+#			
+#			picture = sabiha_gocen
+#			
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#			
+#
+#			
+#			traits = { air_strategic_bombing_3 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 
-			
-			traits = { air_strategic_bombing_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_abdurrahman_gurman = {
-			ledger = army
-			
-			picture = generic_army_europe_3
-			
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			
-
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_ali_fuat_cebesoy = {
-			ledger = navy
-			
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-
-			
-			traits = { navy_screen_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_erkan_gataly = {
-			ledger = navy
-			
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = TUR
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		TUR_abdurrahman_gurman = {
+#			ledger = army
+#			
+#			picture = generic_army_europe_3
+#			
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#			
+#
+#			traits = { army_armored_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_ali_fuat_cebesoy = {
+#			ledger = navy
+#			
+#			picture = generic_navy_europe_1
+#			
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#
+#			
+#			traits = { navy_screen_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_erkan_gataly = {
+#			ledger = navy
+#			
+#			picture = generic_navy_europe_2
+#			
+#			allowed = {
+#				original_tag = TUR
+#				NOT = { has_dlc = "Battle for the Bosporus" }
+#			}
+#
+#			
+#			traits = { navy_fleet_logistics_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 
 		TUR_sabiha_gokcen_bftb = {
 			ledger = air
@@ -3986,117 +3986,117 @@ ideas = {
 			}
 		}
 
-		TUR_izzettin_calislar = {
-			ledger = army
-
-			picture = tur_izzettin_calislar
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = { 
-				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
-			}
-
-			visible = { 
-				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_sadik_altincan = {
-			ledger = navy
-			
-			picture = tur_sadik_altincan
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			
-			traits = { navy_screen_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_ali_ihsan_sabis = { #Ottoman
-			ledger = army
-			
-			picture = tur_ali_ihsan_sabis
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			visible = {
-				has_country_flag = TUR_ottoman_officers_invited_back
-			}
-
-			traits = { army_chief_planning_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_halil_kut = { #Ottoman
-			ledger = army
-			
-			picture = tur_halil_kut
-			
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			visible = {
-				has_country_flag = TUR_ottoman_officers_invited_back
-			}
-
-			
-			traits = { army_logistics_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TUR_refet_bele = {
-			ledger = army
-					
-			picture = tur_refe_bele
-	
-			allowed = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-	
-			available = {
-				NOT = {
-					has_country_leader = {
-						name = "Mustafa Kemal Atatürk"
-						ruling_only = yes
-					}
-				}
-			}
-			
-			traits = { army_regrouping_2 } 
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		TUR_izzettin_calislar = {
+#			ledger = army
+#
+#			picture = tur_izzettin_calislar
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#
+#			available = { 
+#				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
+#			}
+#
+#			visible = { 
+#				NOT = { has_country_flag = TUR_ottoman_officers_invited_back } 
+#			}
+#			
+#			traits = { army_regrouping_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_sadik_altincan = {
+#			ledger = navy
+#			
+#			picture = tur_sadik_altincan
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#
+#			
+#			traits = { navy_screen_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_ali_ihsan_sabis = { #Ottoman
+#			ledger = army
+#			
+#			picture = tur_ali_ihsan_sabis
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#
+#			visible = {
+#				has_country_flag = TUR_ottoman_officers_invited_back
+#			}
+#
+#			traits = { army_chief_planning_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_halil_kut = { #Ottoman
+#			ledger = army
+#			
+#			picture = tur_halil_kut
+#			
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#
+#			visible = {
+#				has_country_flag = TUR_ottoman_officers_invited_back
+#			}
+#
+#			
+#			traits = { army_logistics_1 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		TUR_refet_bele = {
+#			ledger = army
+#					
+#			picture = tur_refe_bele
+#	
+#			allowed = {
+#				original_tag = TUR
+#				has_dlc = "Battle for the Bosporus"
+#			}
+#	
+#			available = {
+#				NOT = {
+#					has_country_leader = {
+#						name = "Mustafa Kemal Atatürk"
+#						ruling_only = yes
+#					}
+#				}
+#			}
+#			
+#			traits = { army_regrouping_2 } 
+#
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 	}
 	
 	

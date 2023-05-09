@@ -1,0 +1,778 @@
+characters={
+	NTR_axel_dingwald={
+		name="Axel Dingwald"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_11.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AXEL_DINGWALD_DESC"
+			ideology=fascism_ideology
+			traits={ assassination_survivor }
+			expire="1965.1.1.1"
+			
+		}
+	}
+	NTR_bob_the_oligarch={
+		name="Bob the Oligarch"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_12.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AXEL_DINGWALD_DESC"
+			ideology=oligarchism
+			traits={ assassination_survivor }
+			expire="1965.1.1.1"
+			
+		}
+	}
+	NTR_humbert_muller={
+		name="Humbert Müller"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTR/Portrait_NTR_H_Muller.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HUMBERT_MULLER_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	NTR_andrei_schulz={
+		name="Andrei Schulz"
+		portraits={
+			civilian={
+				large="gfx/leaders/NTR/Portrait_NTR_A_Schulz.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ANDREI_NTRULZ_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	NTR_otto_richter={
+		name="Otto Richter"
+		portraits={
+			army={
+				large="gfx/leaders/europe/Portrait_Europe_Generic_land_new_5.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	NTR_gunther_von_kluge={
+		name="Günther von Kluge"
+		portraits={
+			army={
+				large="gfx/leaders/Europe/02534-2598861787-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine organisational_leader }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+	NTR_corps_commander_1={
+		name="NTR_corps_commander_1"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/02545-2598861798-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
+
+	NTR_corps_commander_2={
+		name=NTR_corps_commander_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/02547-2598861800-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	NTR_corps_commander_3={
+		name=NTR_corps_commander_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/02556-2598861809-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	NTR_corps_commander_4={
+		name=NTR_corps_commander_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/02569-2598861822-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	NTR_naval_leader_1={
+		name=NTR_naval_leader_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/08045-4109480869-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+			}
+		}		
+		navy_leader={
+			traits={  blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	NTR_naval_leader_2={
+		name=NTR_naval_leader_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/08050-4109480874-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold  }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	NTR_naval_leader_3={
+		name=NTR_naval_leader_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/08108-4109480932-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gunnery_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	NTR_naval_leader_4={
+		name=NTR_naval_leader_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/08113-4109480937-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	NTR_naval_leader_5={
+		name=NTR_naval_leader_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/08117-4109480941-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	NTR_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = NTR_armaments_organizer
+			allowed  = {
+					original_tag  = NTR
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="NTR_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_hjalmar_schacht"
+			}
+		}
+	}
+	NTR_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = NTR_backroom_backstabber
+			allowed  = {
+					original_tag  = NTR
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="NTR_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_walther_funk"
+			}
+		}
+	}
+	NTR_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = NTR_communist_revolutionary
+			allowed  = {
+					original_tag  = NTR
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="NTR_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_ernst_thalmann"
+			}
+		}
+	}
+	NTR_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = NTR_democratic_reformer
+			allowed  = {
+					original_tag  = NTR
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="NTR_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_kurt_schumacher"
+			}
+		}
+	}	
+	NTR_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = NTR_fascist_demagogue
+			allowed  = {
+					original_tag  = NTR
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="NTR_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_joseph_goebbels"
+			}
+		}
+	}
+	NTR_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = NTR_ideological_crusader
+			allowed  = {
+					original_tag  = NTR
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="NTR_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_martin_bormann"
+			}
+		}
+	}
+	NTR_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = NTR_popular_figurehead
+			allowed  = {
+					original_tag  = NTR
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="NTR_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_joachim_von_ribbentrop"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	NTR_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = NTR_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = NTR
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="NTR_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_2"
+			}
+		}
+	}
+	NTR_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = NTR_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = NTR
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="NTR_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_heisenberg"
+			}
+		}
+	}
+	NTR_naval_theorist={
+		name=NTR_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_wolfram_von_richthofen"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = NTR_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = NTR
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	NTR_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = NTR_army_chief_defensive_2
+			allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_ludwig_beck"
+			}
+		}
+	}
+	NTR_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = NTR_army_chief_maneuver_2
+			allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_wilhelm_keitel"
+			}
+		}
+	}
+	NTR_army_chief_organizational_1={
+		name=NTR_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_franz_halder"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = NTR_army_chief_organizational_1
+			allowed = {
+				original_tag = NTR
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	NTR_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = NTR_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_otto_ciliax"
+			}
+		}
+	}
+	NTR_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = NTR_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_gunther_lutjens"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	NTR_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = NTR_air_chief_ground_support_2
+			allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_ludwig_beck"
+			}
+		}
+	}
+	NTR_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = NTR_air_chief_reform_2
+			allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_wilhelm_keitel"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	NTR_army_infantry_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NTR_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_franz_halder"
+			}
+		}
+	}
+	NTR_army_logistics_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NTR_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_walther_von_brauchitsch"
+			}
+		}
+	}
+	NTR_air_bomber_interception_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NTR_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_hugo_sperrle"
+			}
+		}
+	}
+	NTR_air_close_air_support_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NTR_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_erhard_milch"
+			}
+		}
+	}
+	NTR_navy_screen_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NTR_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_erich_bey"
+			}
+		}
+	}
+	NTR_navy_anti_submarine_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NTR_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = NTR
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NTR_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_viktor_schutze"
+			}
+		}
+	}
+}
