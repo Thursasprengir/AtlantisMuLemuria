@@ -1757,27 +1757,47 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-
+		
 		}
 
 		completion_reward = {
-			create_equipment_variant = {
-				name = "E/F/G/H Class"
-				type = ship_hull_light_2
-				name_group = ENG_DD_HISTORICAL
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = dp_light_battery_2
-					fixed_ship_anti_air_slot = ship_anti_air_1
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-					fixed_ship_radar_slot = ship_sonar_1
-					fixed_ship_engine_slot = light_ship_engine_2
-					fixed_ship_torpedo_slot = ship_torpedo_1
-					mid_1_custom_slot = ship_torpedo_1
-					rear_1_custom_slot = ship_depth_charge_1
+		
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}			
+				create_equipment_variant = {
+					name = "E/F/G/H Class"
+					type = destroyer_2
+					parent_version = 0
+					upgrades = {
+					}
 				}
+				load_oob = AVA_british_purchase_legacy
 			}
-			load_oob = AVA_british_purchase
+			
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}		
+				create_equipment_variant = {
+					name = "E/F/G/H Class"
+					type = ship_hull_light_2
+					name_group = ENG_DD_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_1
+						mid_1_custom_slot = ship_torpedo_1
+						rear_1_custom_slot = ship_depth_charge_1
+					}
+				}
+				load_oob = AVA_british_purchase_mtg
+			}
 		}
 	}
 
@@ -2770,6 +2790,7 @@ focus_tree = {
 			navy_experience = 25
 		}
 	}
+	
 	focus = {
 		id = AVA_purchase_british_ships
 		icon = GFX_focus_chi_british_cooperation
@@ -2803,43 +2824,76 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_equipment_variant = {
-				name = "Revenge Class"
-				type = ship_hull_heavy_1
-				name_group = ENG_BB_HISTORICAL
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_1
-					fixed_ship_anti_air_slot = ship_anti_air_1
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-					fixed_ship_radar_slot = empty
-					fixed_ship_engine_slot = heavy_ship_engine_1
-					fixed_ship_secondaries_slot = ship_secondaries_1
-					fixed_ship_armor_slot = ship_armor_bb_1
-					front_1_custom_slot = empty
-					mid_1_custom_slot = empty
-					mid_2_custom_slot = ship_secondaries_1
-					rear_1_custom_slot = ship_heavy_battery_1
-				}
+		
+		
+		if = {
+			limit = {
+				not = { has_dlc = "Man the Guns" }
 			}
 			create_equipment_variant = {
 				name = "A/B/C/D Class"
-				type = ship_hull_light_1
-				name_group = ENG_DD_HISTORICAL
+				type = destroyer_1
 				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = dp_light_battery_2
-					fixed_ship_anti_air_slot = empty
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-					fixed_ship_radar_slot = ship_sonar_1
-					fixed_ship_engine_slot = light_ship_engine_2
-					fixed_ship_torpedo_slot = ship_torpedo_1
-					mid_1_custom_slot = ship_torpedo_1
-					rear_1_custom_slot = ship_depth_charge_1
+				upgrades = {
+					ship_torpedo_upgrade = 1
+					destroyer_engine_upgrade = 3
+					ship_ASW_upgrade = 2
+					ship_anti_air_upgrade = 1
 				}
-
 			}
-			load_oob = AVA_brit_battleship_mtg
+			create_equipment_variant = {
+				name = "King George V Class"
+				type = battleship_1
+				parent_version = 0
+				upgrades = {
+					ship_reliability_upgrade = 1
+					ship_gun_upgrade = 1
+				}
+			}
+			load_oob = AVA_brit_battleship_legacy
+		}
+			
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+				create_equipment_variant = {
+					name = "King George V Class" #King George V Class (1911)
+					type = ship_hull_heavy_1
+					name_group = ENG_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						fixed_ship_armor_slot = ship_armor_bb_1
+						front_1_custom_slot = empty
+						mid_1_custom_slot = empty
+						mid_2_custom_slot = ship_secondaries_1
+						rear_1_custom_slot = ship_heavy_battery_1
+					}
+				}
+				create_equipment_variant = {
+					name = "A/B/C/D Class"
+					type = ship_hull_light_1
+					name_group = ENG_DD_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_2
+						fixed_ship_anti_air_slot = empty
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_1
+						mid_1_custom_slot = ship_torpedo_1
+						rear_1_custom_slot = ship_depth_charge_1
+					}
+				}
+				load_oob = AVA_brit_battleship_mtg
+			}
 		}
 	}
 
