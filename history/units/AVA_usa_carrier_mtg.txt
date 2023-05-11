@@ -1,11 +1,14 @@
-﻿##### Navy #####
-units = {	
-	navy = {					
-		name = "Transfer"				
-		base = 16409
-		location = 16409 # Constantinople
-		ship = { name = "ANS Ctephen  " definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = AVA version_name = "Yorktown Class" } } }
-		ship = { name = "ANS Pedram " definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }				ship = { name = "ANS Mehri " definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }				ship = { name = "ANS Kaveh " definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }				ship = { name = "ANS Amran " definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }	
-			
+﻿units = {	
+	fleet = {					
+		name = "American Transfer"	
+		naval_base = 16409 # New Ishdagahl
+		task_force = {			
+			name = "American Transfer"
+			location = 16409 # New Ishdagahl
+			ship = { name = "ANS Humata" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = AVA version_name = "Langley Class" } } }
+			ship = { name = "ANS Pedram" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AVA version_name = "Chester Class" } } }				
+			ship = { name = "ANS Mehri" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AVA version_name = "Chester Class" } } }				
+			ship = { name = "ANS Kaveh" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AVA version_name = "Chester Class" } } }					
+		}
 	}
 }
