@@ -14,7 +14,7 @@ equipment_modules = {
 	vlfp_ship_secondaries = {
 		abbreviation = "vaa"
 		category = vlfp_ship_secondaries
-		gfx = ship_secondaries_3
+		gfx = advanced_heavy_battery
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 10
@@ -48,7 +48,7 @@ equipment_modules = {
 		abbreviation = "vab"
 		category = vlfp_ship_anti_air
 		sfx = sfx_ui_sd_module_turret
-		gfx = anti_air_icn
+		gfx = GFX_SM_carrier_hull_fixed_anti_air
 		add_equipment_type = anti_air
 		add_stats = {
 			anti_air_attack = 8
@@ -77,7 +77,7 @@ equipment_modules = {
 		abbreviation = "vac"
 		category = vlfp_carrier_ship_engine
 		sfx = sfx_ui_sd_module_engine
-		gfx = engine_icn
+		gfx = engine_icon
 		
 		add_stats = {
 			naval_speed = 5
@@ -104,7 +104,7 @@ equipment_modules = {
 
 		add_equipment_type = capital_ship
 		add_stats = {
-			carrier_size = 100
+			carrier_size = 20
 			build_cost_ic = 1000
 		}
 		manpower = 500 #outside the add_stats section for code reasons
