@@ -1,21 +1,15 @@
 equipments = {
 
 	ship_hull_carrier_vlfp = {
-		year = 1922
-
-		can_be_produced = {
-			
-		}
-
-		is_archetype = yes
-		is_buildable = no
-		archetype = ship_hull_carrier_vlfp
-		type = carrier
-		sprite = carrier
-		group_by = archetype
+		abbreviation = "vlp"
+		year = 1936
+		visual_level = 0
+		archetype = ship_hull_carrier
 		priority = 1000
+		manpower = 10000
 		
-		interface_category = interface_category_capital_ships
+		can_be_produced = {			
+		}
 		
 		upgrades = {
 			ship_deckspace_upgrade
@@ -150,11 +144,10 @@ equipments = {
 		anti_air_attack = 0
 		
 		armor_value = 0
-
 		
 		surface_detection = 26
 		sub_detection = 5
-		surface_visibility = 30
+		surface_visibility = 35
 		naval_speed = 10
 		reliability = 0.80
 		
@@ -162,32 +155,15 @@ equipments = {
 		
 		max_strength = 2000
 		
-
 		fuel_consumption = 87
 
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
-		build_cost_ic = 5000
+		build_cost_ic = 8000
 		resources = {
 			steel = 16
 			chromium = 8
-		}
-		
-		manpower = 10000
-	}
-	ship_hull_carrier_vlfp_1 = {
-		abbreviation = "haa"
-		year = 1936
-		visual_level = 1
-		visual_tech_level_addition = 2
-		archetype = ship_hull_carrier_vlfp
-		priority = 1000
-
-		module_slots = inherit
-
-		default_modules = {
-			fixed_ship_engine_slot = vlfp_carrier_ship_engine
 		}
 	}
 }
