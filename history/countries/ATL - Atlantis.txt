@@ -17,6 +17,7 @@ set_technology = {
 	fuel_silos = 1
 	radio = 1
 	radio_detection = 1
+	carrier_VLFP = 1
 }
 
 if = {
@@ -382,6 +383,7 @@ if = {
 			ship_gun_upgrade = 2
 		}
 	}
+	
 	create_equipment_variant = {
 		name = "BB-36-K"
 		type = battleship_2
@@ -412,6 +414,28 @@ if = {
 		}
 		obsolete = no
 	}
+create_equipment_variant = {
+		name = "Hyper Carrier"
+		type = ship_hull_carrier_vlfp_1
+		name_group = ATL_CV_HISTORICAL 
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = vlfp_ship_deck_space
+			fixed_ship_deck_slot_2 = ship_armor_carrier_deck
+			fixed_ship_anti_air_slot = vlfp_ship_anti_air
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = vlfp_carrier_ship_engine
+			fixed_ship_secondaries_slot = vlfp_ship_secondaries
+			front_1_custom_slot = vlfp_ship_secondaries
+			mid_1_custom_slot = vlfp_ship_deck_space
+			mid_2_custom_slot = vlfp_ship_extra_fuel_tank
+			mid_3_custom_slot = ship_armor_carrier_deck
+			mid_4_custom_slot = vlfp_ship_extra_fuel_tank
+			mid_5_custom_slot = vlfp_ship_deck_space
+			rear_1_custom_slot = vlfp_ship_secondaries
+			}
+			obsolete = no
+		}
 	create_equipment_variant = {
 		name = "DD-E-AS"
 		type = ship_hull_light_1

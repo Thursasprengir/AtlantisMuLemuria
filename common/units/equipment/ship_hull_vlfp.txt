@@ -4,14 +4,15 @@ equipments = {
 		year = 1922
 
 		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-			}
+			
 		}
 
 		is_archetype = yes
-		archetype = ship_hull_carrier
+		is_buildable = no
+		archetype = ship_hull_carrier_vlfp
+		type = carrier
 		sprite = carrier
+		group_by = archetype
 		priority = 1000
 		
 		interface_category = interface_category_capital_ships
@@ -122,19 +123,19 @@ equipments = {
 		}
 		
 		default_modules = {
-            fixed_ship_deck_slot_1 = vlfp_ship_deck_space
-            fixed_ship_deck_slot_2 = ship_armor_carrier_deck
-            fixed_ship_anti_air_slot = vlfp_ship_anti_air
-            fixed_ship_radar_slot = ship_radar_1
+            fixed_ship_deck_slot_1 = empty
+            fixed_ship_deck_slot_2 = empty
+            fixed_ship_anti_air_slot = empty
+            fixed_ship_radar_slot = empty
             fixed_ship_engine_slot = vlfp_carrier_ship_engine
-            fixed_ship_secondaries_slot = vlfp_ship_secondaries
-            front_1_custom_slot = vlfp_ship_secondaries
-            mid_1_custom_slot = vlfp_ship_deck_space
-            mid_2_custom_slot = vlfp_ship_extra_fuel_tank
-			mid_3_custom_slot = ship_armor_carrier_deck
-			mid_4_custom_slot = vlfp_ship_extra_fuel_tank
-			mid_5_custom_slot = vlfp_ship_deck_space
-			rear_1_custom_slot = vlfp_ship_secondaries
+            fixed_ship_secondaries_slot = empty
+            front_1_custom_slot = empty
+            mid_1_custom_slot = empty
+            mid_2_custom_slot = empty
+			mid_3_custom_slot = empty
+			mid_4_custom_slot = empty
+			mid_5_custom_slot = empty
+			rear_1_custom_slot = empty
         }
 		
 		lg_armor_piercing = 0
@@ -167,12 +168,26 @@ equipments = {
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
-		build_cost_ic = 10000
+		build_cost_ic = 5000
 		resources = {
 			steel = 16
 			chromium = 8
 		}
 		
 		manpower = 10000
+	}
+	ship_hull_carrier_vlfp_1 = {
+		abbreviation = "haa"
+		year = 1936
+		visual_level = 1
+		visual_tech_level_addition = 2
+		archetype = ship_hull_carrier_vlfp
+		priority = 1000
+
+		module_slots = inherit
+
+		default_modules = {
+			fixed_ship_engine_slot = vlfp_carrier_ship_engine
+		}
 	}
 }
