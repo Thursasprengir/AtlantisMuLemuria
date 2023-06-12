@@ -1,7 +1,6 @@
 ﻿capital = 930
 
 oob = "FMU_1936"
-set_naval_oob = "FMU_1936_naval_mtg"
 
 # Starting tech
 set_technology = {
@@ -54,6 +53,7 @@ if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
 	}
+	set_naval_oob = FMU_1936_naval_legacy
 	set_technology = {
 		early_submarine = 1
 		basic_submarine = 1
@@ -74,6 +74,7 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
+	set_naval_oob = FMU_1936_naval_mtg
 	set_technology = {	
 		panzerschiffe = 1
 		pre_dreadnoughts = 1
@@ -224,6 +225,96 @@ if = {
 	}
 }
 
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+		# Submarines #
+	create_equipment_variant = {
+		name = "Hel Class"
+		type = submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 1
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Freya Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 0
+		}
+	}	
+	create_equipment_variant = {
+		name = "Siegfried Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 3
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 0
+			ship_anti_air_upgrade = 1
+		}
+	}	
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Schwarzenberg Class"
+		type = light_cruiser_1
+		parent_version = 1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 3
+			ship_anti_air_upgrade = 2
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Holtzendorff Class"
+		type = heavy_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 5
+			ship_gun_upgrade = 4
+		}
+	}
+	# Battlecruisers #
+	create_equipment_variant = {
+		name = "Derfflinger Class"
+		type = battle_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 2
+		}
+	}
+	# Carriers #
+	create_equipment_variant = {
+		name = "Valkyria Class"
+		type = carrier_1
+		parent_version = 0
+		upgrades = {
+			ship_deckspace_upgrade = 2
+			carrier_armor_upgrade = 5
+			ship_engine_upgrade = 4
+			ship_reliability_upgrade = 4
+		}
+	}	
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
 	create_equipment_variant = {
 		name = "Derfflinger Class"
 		type = ship_hull_heavy_1
@@ -348,6 +439,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+}
 
 1936.1.1 = {
 	add_ideas = {
