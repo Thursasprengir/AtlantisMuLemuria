@@ -35,7 +35,9 @@ if = {
 		early_destroyer = 1
 		basic_destroyer = 1
 		early_light_cruiser = 1
+		basic_light_cruiser = 1
 		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
 		early_battleship = 1
 		early_battlecruiser = 1
 		early_carrier = 1
@@ -266,7 +268,7 @@ if = {
 		create_equipment_variant = {
 			name = "Nawal Class"
 			type = battleship_1
-			parent_version = 1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 3
 				ship_engine_upgrade = 4
@@ -278,7 +280,7 @@ if = {
 		create_equipment_variant = {
 			name = "Kweixam Class"
 			type = battleship_1
-			parent_version = 1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 0
 				ship_engine_upgrade = 0
@@ -290,7 +292,7 @@ if = {
 		create_equipment_variant = {
 			name = "Nunlawei Class"
 			type = battleship_1
-			parent_version = 1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 0
 				ship_engine_upgrade = 0
@@ -299,7 +301,6 @@ if = {
 			}
 			obsolete = yes
 		}
-		
 		
 		# Battlecruisers #
 		create_equipment_variant = {
@@ -316,6 +317,17 @@ if = {
 		
 		# Heavy Cruiser #
 		create_equipment_variant = {
+			name = "Polomaang Class"
+			type = heavy_cruiser_2
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 2
+				ship_engine_upgrade = 2
+				ship_armor_upgrade = 2
+				ship_gun_upgrade = 4
+			}
+		}		
+		create_equipment_variant = {
 			name = "Nolom Class"
 			type = heavy_cruiser_2
 			parent_version = 0
@@ -325,7 +337,7 @@ if = {
 				ship_armor_upgrade = 3
 				ship_gun_upgrade = 2
 			}
-		}
+		}		
 		create_equipment_variant = {
 			name = "Iomaang Class"
 			type = heavy_cruiser_1
@@ -339,6 +351,18 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
+			name = "Dedabeng Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 0
+				ship_gun_upgrade = 1
+			}
+			obsolete = yes
+		}		
+		create_equipment_variant = {
 			name = "Filaamal Class"
 			type = heavy_cruiser_1
 			parent_version = 0
@@ -348,6 +372,7 @@ if = {
 				ship_armor_upgrade = 0
 				ship_gun_upgrade = 0
 			}
+			obsolete = yes
 		}		
 		create_equipment_variant = {
 			name = "Hangwaang Class"
@@ -359,7 +384,20 @@ if = {
 				ship_armor_upgrade = 3
 				ship_gun_upgrade = 0
 			}
+			obsolete = yes
 		}
+		create_equipment_variant = {
+			name = "Beinaam Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 1
+				ship_gun_upgrade = 5
+			}
+			obsolete = yes
+		}		
 		create_equipment_variant = {
 			name = "Hangwaang Class"
 			type = heavy_cruiser_1
@@ -370,6 +408,7 @@ if = {
 				ship_armor_upgrade = 2
 				ship_gun_upgrade = 0
 			}
+			obsolete = yes
 		}		
 		
 		# Light Cruisers #
@@ -400,7 +439,7 @@ if = {
 		create_equipment_variant = {
 			name = "Seimalam Class"
 			type = light_cruiser_1
-			parent_version = 1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 1
 				ship_engine_upgrade = 0
@@ -412,7 +451,7 @@ if = {
 		create_equipment_variant = {
 			name = "Leilaamaang Class"
 			type = light_cruiser_1
-			parent_version = 1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 2
 				ship_engine_upgrade = 0
@@ -424,7 +463,7 @@ if = {
 		create_equipment_variant = {
 			name = "Sulalamaang Class"
 			type = light_cruiser_1
-			parent_version = 1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 2
 				ship_engine_upgrade = 1
@@ -436,7 +475,7 @@ if = {
 		create_equipment_variant = {
 			name = "Iwologaraa Class"
 			type = light_cruiser_1
-			parent_version = 1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 0
 				ship_engine_upgrade = 0
@@ -516,7 +555,19 @@ if = {
 				ship_anti_air_upgrade = 4
 			}
 			obsolete = yes
-		}		
+		}	
+		create_equipment_variant = {
+			name = "Olunglu Class"
+			type = destroyer_1
+			parent_version = 0
+			upgrades = {
+				ship_torpedo_upgrade = 1
+				destroyer_engine_upgrade = 1
+				ship_ASW_upgrade = 1
+				ship_anti_air_upgrade = 1
+			}
+			obsolete = yes
+		}	
 		### Submarine Variants	
 		create_equipment_variant = {
 			name = "Juluntawaan Class"
