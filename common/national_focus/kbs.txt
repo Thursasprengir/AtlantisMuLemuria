@@ -1,0 +1,781 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CHI_INFLATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+### search_filters = {FOCUS_FILTER_TFV_AUTONOMY}
+### search_filters = {FOCUS_FILTER_MEX_CHURCH_AUTHORITY}
+### search_filters = {FOCUS_FILTER_MEX_CAUDILLO_REBELLION}
+
+focus_tree = {
+	id = kashvan_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = kbs
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 70 y = 1100 }
+
+	focus = {
+		id = kbs_unification_trouble
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 16
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	#Dem/Com
+	focus = {
+		id = kbs_confederacy
+		icon = GFX_
+		relative_position_id = kbs_unification_trouble
+		prerequisite = { focus = kbs_unification_trouble }
+		mutually_exclusive = { focus = kbs_stratocracy focus = kbs_military_junta }
+		x = -10
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = kbs_democratic_constitution
+		icon = GFX_
+		relative_position_id = kbs_confederacy
+		prerequisite = { focus = kbs_confederacy }
+		mutually_exclusive = { focus = kbs_workers_union }
+		x = -1
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			add_ideas = kbs_recently_unified_dem_com
+			remove_ideas = kbs_recently_unified_1
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = kbs_equal_languages
+		icon = GFX_
+		relative_position_id = kbs_democratic_constitution
+		prerequisite = { focus = kbs_democratic_constitution }
+		x = -1
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = kbs_reorganise_states
+		icon = GFX_
+		relative_position_id = kbs_democratic_constitution
+		prerequisite = { focus = kbs_democratic_constitution focus = kbs_workers_union }
+		x = 1
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05	
+			add_ideas = kbs_confederated_union 
+		}
+	}
+	
+	focus = {
+		id = kbs_foreign_investment
+		icon = GFX_
+		relative_position_id = kbs_equal_languages
+		prerequisite = { focus = kbs_equal_languages }
+		x = 0
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			995 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1043 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = kbs_rescind_claims
+		icon = GFX_
+		relative_position_id = kbs_equal_languages
+		prerequisite = { focus = kbs_equal_languages }
+		x = -2
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_state_core = 993
+		}
+	}
+	focus = {
+		id = kbs_university
+		icon = GFX_
+		relative_position_id = kbs_foreign_investment
+		prerequisite = { focus = kbs_foreign_investment }
+		x = 0
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = kbs_cede_gawete
+		icon = GFX_
+		relative_position_id = kbs_foreign_investment
+		prerequisite = { focus = kbs_foreign_investment }
+		x = -2
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_stability = -0.10
+				remove_state_core = 1004
+				BLM = { 
+					set_state_owner = 1004
+				}
+		}
+	}
+	#Right
+	focus = {
+		id = kbs_workers_union
+		icon = GFX_
+		relative_position_id = kbs_confederacy
+		prerequisite = { focus = kbs_confederacy }
+		mutually_exclusive = { focus = kbs_democratic_constitution }
+		x = 1
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = { idea = internationalism days = 1095 }
+		}
+	}
+	focus = {
+		id = kbs_people_rights
+		icon = GFX_
+		relative_position_id = kbs_workers_union
+		prerequisite = { focus = kbs_workers_union }
+		x = 1
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = kbs_recently_unified_dem_com
+			remove_ideas = kbs_recently_unified_1
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = kbs_standardise_rail
+		icon = GFX_
+		relative_position_id = kbs_people_rights
+		prerequisite = { focus = kbs_people_rights focus = kbs_equal_languages }
+		prerequisite = { focus = kbs_reorganise_states }
+		x = -2
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = kbs_railway_standard_idea
+				days = 530
+			}
+		}
+	}
+	focus = {
+		id = kbs_ban_politics
+		icon = GFX_
+		relative_position_id = kbs_people_rights
+		prerequisite = { focus = kbs_people_rights }
+
+		x = 0
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.20
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = kbs_seize_forign_assets
+		icon = GFX_
+		relative_position_id = kbs_ban_politics
+		prerequisite = { focus = kbs_ban_politics }
+
+		x = 0
+		y = 1
+		
+	
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Fascism Squared
+	focus = {
+		id = kbs_stratocracy
+		icon = GFX_
+		relative_position_id = kbs_unification_trouble
+		prerequisite = { focus = kbs_unification_trouble }
+		mutually_exclusive = { focus = kbs_confederacy focus = kbs_military_junta }
+		x = 10
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		add_ideas = kbs_recently_unified_fac_oli
+			remove_ideas = kbs_recently_unified_1
+			add_timed_idea = {
+				idea = nationalism
+				days = 720
+			}
+		}
+	}
+	focus = {
+		id = kbs_military_voting
+		icon = GFX_
+		relative_position_id = kbs_stratocracy
+		prerequisite = { focus = kbs_stratocracy }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+	}
+	
+	focus = {
+		id = kbs_military_youth
+		icon = GFX_
+		relative_position_id = kbs_military_voting
+		prerequisite = { focus = kbs_military_voting }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			add_ideas = military_youth_focus
+		}
+	}
+	#Junta
+	focus = {
+		id = kbs_military_junta
+		icon = GFX_
+		relative_position_id = kbs_unification_trouble
+		prerequisite = { focus = kbs_unification_trouble }
+		mutually_exclusive = { focus = kbs_stratocracy focus = kbs_military_junta }
+		x = 16
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = kbs_recently_unified_fac_oli
+			remove_ideas = kbs_recently_unified_1
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+			}
+			add_stability = 0.10
+		}
+	}
+
+
+
+

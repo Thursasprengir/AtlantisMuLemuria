@@ -1,7 +1,93 @@
 ideas = {
 	
-	political_advisor = {
+	country = {
+		kbs_recently_unified_1 = {
+			allowed = {
+				always = no
+			}
 
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				intel_network_gain_factor = -0.50
+				political_power_gain = -0.5
+			}
+		}
+		kbs_recently_unified_dem_com = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				intel_network_gain_factor = -0.50
+			}
+		}
+		kbs_equal_language_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				intel_network_gain_factor = -0.25
+			}
+		}
+		kbs_railway_standard_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				production_speed_rail_way_factor = 0.5 
+				production_speed_supply_node_factor = 0.5 
+			}
+		}
+		kbs_confederated_union = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				conscription = 0.02
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		kbs_recently_unified_fac_oli = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				political_power_gain = -0.5
+				conscription = 0.01
+			}
+		}
+		
+	}
+	
+	political_advisor = {
+	
 		KBS_quartermaster_gen_idea = {
 
 			picture = generic_political_advisor_south_america_2
