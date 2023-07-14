@@ -1,0 +1,201 @@
+add_namespace = kbs
+country_event = {
+
+	id = kbs.1
+	title = kbs.1.t
+	desc = kbs.1.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { tag = FROM }
+						is_in_faction_with = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = { # Increase it again if other bordering nations are in the enemy faction
+				any_neighbor_country = {
+					NOT = { tag = FROM }
+					is_in_faction_with = FROM
+				}
+				factor = 2.0
+			}
+		}
+		name = kbs.1.a
+		FROM = {
+			country_event = { hours = 2 id = kbs.2 }
+		}
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+		}
+		name = kbs.1.b
+		FROM = {
+			country_event = { hours = 2 id = kbs.4 }
+		}
+	}
+}
+
+#Manu Accepts
+country_event = {
+
+	id = kbs.2
+	title = kbs.2.t
+	desc = kbs.2.d
+
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = kbs.2.a
+		FROM = {
+			1040 = {
+				transfer_state_to = kbs
+			}
+		}
+	}	
+}
+#Manu Rejects - Uprising
+
+#Manu Rejects / Revolts
+country_event = {
+
+	id = kbs.4
+	title = kbs.4.t
+	desc = kbs.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kbs.4.a
+		create_wargoal = { type = take_core_state target = FRA }
+	}
+}
+
+
+country_event = {
+
+	id = kbs.6
+	title = kbs.6.t
+	desc = kbs.6.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { tag = FROM }
+						is_in_faction_with = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = { # Increase it again if other bordering nations are in the enemy faction
+				any_neighbor_country = {
+					NOT = { tag = FROM }
+					is_in_faction_with = FROM
+				}
+				factor = 2.0
+			}
+		}
+		name = kbs.6.a
+		FROM = {
+			country_event = { hours = 2 id = kbs.8 }
+		}
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+		}
+		name = kbs.6.b
+		FROM = {
+			country_event = { hours = 2 id = kbs.10 }
+		}
+	}
+}
+
+#Manu Accepts
+country_event = {
+
+	id = kbs.8
+	title = kbs.8.t
+	desc = kbs.8.d
+
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = kbs.2.a
+		FROM = {
+			KBS = {
+				puppet = AKM
+			}
+		}
+	}	
+}
+#Manu Rejects - Uprising
+
+#Manu Rejects / Revolts
+country_event = {
+
+	id = kbs.10
+	title = kbs.10.t
+	desc = kbs.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kbs.4.a
+		create_wargoal = { type = annex target = AKM }
+	}
+}

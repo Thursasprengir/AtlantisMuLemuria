@@ -1353,7 +1353,7 @@ focus_tree = {
 
 		completion_reward = {
 			1170 = {
-				transfer_state_to = AVA
+				transfer_state_to = AVA 
 			}
 			707 = {
 				transfer_state_to = AVA
@@ -1391,10 +1391,10 @@ focus_tree = {
 
 
 		completion_reward = {
-			AVA = {
-				declare_war_on = {
-					target = FRA
-					type = take_core_state
+			FRA = {
+				country_event = {
+					id = ava.10
+					days = 1
 				}
 			}
 		}
