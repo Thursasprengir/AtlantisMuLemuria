@@ -199,3 +199,36 @@ country_event = {
 		create_wargoal = { type = annex target = AKM }
 	}
 }
+
+#National Language
+country_event = {
+
+	id = kbs.20
+	title = kbs.20.t
+	desc = kbs.20.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = kbs.20.a
+		add_stability = 0.10
+		
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+		}
+		name = kbs.20.b
+		add_stability = -0.10
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+		}
+		name = kbs.20.c
+		add_stability = -0.10
+	}
+}

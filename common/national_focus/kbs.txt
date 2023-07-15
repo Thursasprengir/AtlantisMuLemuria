@@ -1780,5 +1780,309 @@ focus_tree = {
 	}
 
 
+#National Stability
 
+	focus = {
+		id = kbs_language_stability
+		icon = GFX_
+		relative_position_id = kbs_unification_trouble
+		x = 14
+		y = 1
 
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = kbs.20
+		}
+	}
+	focus = {
+		id = kbs_national_workforce
+		icon = GFX_
+		relative_position_id = kbs_language_stability
+		prerequisite = { focus = kbs_language_stability }
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = -10000
+			add_ideas = kbs_nationalized_workforce
+		}
+	}
+	
+	focus = {
+		id = kbs_national_road_maintenance
+		icon = GFX_
+		relative_position_id = kbs_national_workforce
+		prerequisite = { focus = kbs_national_workforce }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = kbs_road_maintenence
+		}
+	}
+	focus = {
+		id = kbs_national_railway_project
+		icon = GFX_
+		relative_position_id = kbs_national_workforce
+		prerequisite = { focus = kbs_national_workforce }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = kbs_national_railway
+		}
+	}
+	focus = {
+		id = kbs_capital_highway
+		icon = GFX_
+		relative_position_id = kbs_national_road_maintenance
+		prerequisite = { focus = kbs_national_road_maintenance }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = kbs_road_maintenence
+		}
+	}
+	
+	focus = {
+		id = kbs_peoples_house
+		icon = GFX_
+		relative_position_id = kbs_language_stability
+		prerequisite = { focus = kbs_language_stability }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = kbs_combined_legislature
+		}
+	}
+	
+	focus = {
+		id = kbs_primary_education
+		icon = GFX_
+		relative_position_id = kbs_peoples_house
+		prerequisite = { focus = kbs_peoples_house }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = kbs_primary_research
+		}
+	}
+	
+	focus = {
+		id = kbs_trade_schools
+		icon = GFX_
+		relative_position_id = kbs_primary_education
+		prerequisite = { focus = kbs_primary_education }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = kbs_trade_school_efficiency
+		}
+	}
+	
+	focus = {
+		id = kbs_mace_navy
+		icon = GFX_
+		relative_position_id = kbs_unification_trouble
+		x = 20
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	
+	focus = {
+		id = kbs_koba_army
+		icon = GFX_
+		relative_position_id = kbs_unification_trouble
+		x = 30
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
