@@ -160,9 +160,65 @@ ideas = {
 			picture = 
 
 			modifier = {
-				research_speed_factor = 0.25
+				research_speed_factor = 0.15
 			}
 		}
+		
+		kbs_military_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		kbs_doctrine_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				land_doctrine_cost_factor = -0.05 
+			}
+		}
+		
+		kbs_planning_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				planning_speed = 0.2
+			}
+		}
+		
+		kbs_recovery_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = 
+
+			modifier = {
+				army_morale_factor = 0.2
+			}
+		}
+		
 		kbs_trade_school_efficiency = {
 			allowed = {
 				always = no
