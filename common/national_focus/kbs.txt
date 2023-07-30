@@ -772,7 +772,7 @@ focus_tree = {
 		id = kbs_german_engineers
 		icon = GFX_
 		relative_position_id = kbs_stratocracy
-		prerequisite = { focus = kbs_stratocracy focus = kbs_military_junta }
+		prerequisite = { focus = kbs_stratocracy focus = kbs_confederacy }
 
 		x = 1
 		y = 1
@@ -2544,7 +2544,7 @@ focus_tree = {
 		relative_position_id = kbs_unification_trouble
 		prerequisite = { focus = kbs_koba_army }
 		relative_position_id = kbs_koba_army
-		mutually_exclusive = { focus = kbs_good_tech }
+		mutually_exclusive = { focus = kbs_good_doctrine }
 		x = 0
 		y = 1
 
@@ -2601,7 +2601,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = add_tech_bonus = {
+			add_tech_bonus = {
 				name = kbs_support_equiptment
 				bonus = 1.0
 				uses = 1
