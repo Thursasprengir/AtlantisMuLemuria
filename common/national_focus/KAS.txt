@@ -22,7 +22,7 @@ focus_tree = {
 	continuous_focus_position = { x = 70 y = 1100 }
 
 	focus = {
-		id = kbs_unification_trouble
+		id = kas_unification_trouble
 		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 10
 		y = 0
@@ -51,11 +51,11 @@ focus_tree = {
 	}
 	#Dem/Com
 	focus = {
-		id = kbs_confederacy
+		id = kas_confederacy
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_unification_trouble }
-		mutually_exclusive = { focus = kbs_stratocracy focus = kbs_military_junta }
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_unification_trouble }
+		mutually_exclusive = { focus = kas_stratocracy focus = kas_military_junta }
 		x = -4
 		y = 1
 
@@ -83,11 +83,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_democratic_constitution
+		id = kas_democratic_constitution
 		icon = GFX_
-		relative_position_id = kbs_confederacy
-		prerequisite = { focus = kbs_confederacy }
-		mutually_exclusive = { focus = kbs_workers_union }
+		relative_position_id = kas_confederacy
+		prerequisite = { focus = kas_confederacy }
+		mutually_exclusive = { focus = kas_workers_union }
 		x = -1
 		y = 1
 		
@@ -118,16 +118,16 @@ focus_tree = {
 				last_election = "1935.12.17"
 				election_frequency = 48
 			}
-			add_ideas = kbs_recently_unified_dem_com
-			remove_ideas = kbs_recently_unified_1
+			add_ideas = kas_recently_unified_dem_com
+			remove_ideas = kas_recently_unified_1
 			add_ideas = liberty_ethos_focus
 		}
 	}
 	focus = {
-		id = kbs_equal_languages
+		id = kas_equal_languages
 		icon = GFX_
-		relative_position_id = kbs_democratic_constitution
-		prerequisite = { focus = kbs_democratic_constitution }
+		relative_position_id = kas_democratic_constitution
+		prerequisite = { focus = kas_democratic_constitution }
 		x = -1
 		y = 1
 		
@@ -157,10 +157,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_reorganise_states
+		id = kas_reorganise_states
 		icon = GFX_
-		relative_position_id = kbs_democratic_constitution
-		prerequisite = { focus = kbs_democratic_constitution focus = kbs_workers_union }
+		relative_position_id = kas_democratic_constitution
+		prerequisite = { focus = kas_democratic_constitution focus = kas_workers_union }
 		x = 1
 		y = 1
 		
@@ -186,15 +186,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05	
-			add_ideas = kbs_confederated_union 
+			add_ideas = kas_confederated_union 
 		}
 	}
 	
 	focus = {
-		id = kbs_foreign_investment
+		id = kas_foreign_investment
 		icon = GFX_
-		relative_position_id = kbs_equal_languages
-		prerequisite = { focus = kbs_equal_languages }
+		relative_position_id = kas_equal_languages
+		prerequisite = { focus = kas_equal_languages }
 		x = 0
 		y = 1
 		
@@ -282,10 +282,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_rescind_claims
+		id = kas_rescind_claims
 		icon = GFX_
-		relative_position_id = kbs_equal_languages
-		prerequisite = { focus = kbs_equal_languages }
+		relative_position_id = kas_equal_languages
+		prerequisite = { focus = kas_equal_languages }
 		x = -2
 		y = 1
 		
@@ -314,10 +314,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_university
+		id = kas_university
 		icon = GFX_
-		relative_position_id = kbs_foreign_investment
-		prerequisite = { focus = kbs_foreign_investment }
+		relative_position_id = kas_foreign_investment
+		prerequisite = { focus = kas_foreign_investment }
 		x = 0
 		y = 1
 		
@@ -346,10 +346,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_cede_gawete
+		id = kas_cede_gawete
 		icon = GFX_
-		relative_position_id = kbs_foreign_investment
-		prerequisite = { focus = kbs_foreign_investment }
+		relative_position_id = kas_foreign_investment
+		prerequisite = { focus = kas_foreign_investment }
 		x = -2
 		y = 1
 		
@@ -383,11 +383,11 @@ focus_tree = {
 	}
 	#Right
 	focus = {
-		id = kbs_workers_union
+		id = kas_workers_union
 		icon = GFX_
-		relative_position_id = kbs_confederacy
-		prerequisite = { focus = kbs_confederacy }
-		mutually_exclusive = { focus = kbs_democratic_constitution }
+		relative_position_id = kas_confederacy
+		prerequisite = { focus = kas_confederacy }
+		mutually_exclusive = { focus = kas_democratic_constitution }
 		x = 1
 		y = 1
 		
@@ -416,10 +416,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_people_rights
+		id = kas_people_rights
 		icon = GFX_
-		relative_position_id = kbs_workers_union
-		prerequisite = { focus = kbs_workers_union }
+		relative_position_id = kas_workers_union
+		prerequisite = { focus = kas_workers_union }
 		x = 1
 		y = 1
 		
@@ -444,8 +444,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_recently_unified_dem_com
-			remove_ideas = kbs_recently_unified_1
+			add_ideas = kas_recently_unified_dem_com
+			remove_ideas = kas_recently_unified_1
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -456,11 +456,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_standardise_rail
+		id = kas_standardise_rail
 		icon = GFX_
-		relative_position_id = kbs_people_rights
-		prerequisite = { focus = kbs_people_rights focus = kbs_equal_languages }
-		prerequisite = { focus = kbs_reorganise_states }
+		relative_position_id = kas_people_rights
+		prerequisite = { focus = kas_people_rights focus = kas_equal_languages }
+		prerequisite = { focus = kas_reorganise_states }
 		x = -2
 		y = 1
 		
@@ -486,16 +486,16 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = kbs_railway_standard_idea
+				idea = kas_railway_standard_idea
 				days = 530
 			}
 		}
 	}
 	focus = {
-		id = kbs_ban_politics
+		id = kas_ban_politics
 		icon = GFX_
-		relative_position_id = kbs_people_rights
-		prerequisite = { focus = kbs_people_rights }
+		relative_position_id = kas_people_rights
+		prerequisite = { focus = kas_people_rights }
 
 		x = 0
 		y = 1
@@ -529,10 +529,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_seize_forign_assets
+		id = kas_seize_forign_assets
 		icon = GFX_
-		relative_position_id = kbs_ban_politics
-		prerequisite = { focus = kbs_ban_politics }
+		relative_position_id = kas_ban_politics
+		prerequisite = { focus = kas_ban_politics }
 
 		x = 0
 		y = 1
@@ -622,11 +622,11 @@ focus_tree = {
 	}
 	#Fascism Squared
 	focus = {
-		id = kbs_stratocracy
+		id = kas_stratocracy
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_unification_trouble }
-		mutually_exclusive = { focus = kbs_confederacy focus = kbs_military_junta }
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_unification_trouble }
+		mutually_exclusive = { focus = kas_confederacy focus = kas_military_junta }
 		x = 3
 		y = 1
 
@@ -649,8 +649,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_ideas = kbs_recently_unified_fac_oli
-			remove_ideas = kbs_recently_unified_1
+		add_ideas = kas_recently_unified_fac_oli
+			remove_ideas = kas_recently_unified_1
 			add_timed_idea = {
 				idea = nationalism
 				days = 720
@@ -658,10 +658,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_confirm_stratocracy
+		id = kas_confirm_stratocracy
 		icon = GFX_
-		relative_position_id = kbs_stratocracy
-		prerequisite = { focus = kbs_stratocracy }
+		relative_position_id = kas_stratocracy
+		prerequisite = { focus = kas_stratocracy }
 
 		x = -1
 		y = 1
@@ -690,10 +690,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_military_youth
+		id = kas_military_youth
 		icon = GFX_
-		relative_position_id = kbs_confirm_stratocracy
-		prerequisite = { focus = kbs_confirm_stratocracy }
+		relative_position_id = kas_confirm_stratocracy
+		prerequisite = { focus = kas_confirm_stratocracy }
 
 		x = 0
 		y = 1
@@ -727,10 +727,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_our_strength
+		id = kas_our_strength
 		icon = GFX_
-		relative_position_id = kbs_military_youth
-		prerequisite = { focus = kbs_military_youth }
+		relative_position_id = kas_military_youth
+		prerequisite = { focus = kas_military_youth }
 
 		x = 0
 		y = 1
@@ -764,10 +764,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_german_engineers
+		id = kas_german_engineers
 		icon = GFX_
-		relative_position_id = kbs_stratocracy
-		prerequisite = { focus = kbs_stratocracy focus = kbs_confederacy }
+		relative_position_id = kas_stratocracy
+		prerequisite = { focus = kas_stratocracy focus = kas_confederacy }
 
 		x = 1
 		y = 1
@@ -792,16 +792,16 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = kbs_german_construction_engineers
+				idea = kas_german_construction_engineers
 				days 530
 			}
 		}
 	}
 	focus = {
-		id = kbs_military_designs
+		id = kas_military_designs
 		icon = GFX_
-		relative_position_id = kbs_german_engineers
-		prerequisite = { focus = kbs_german_engineers }
+		relative_position_id = kas_german_engineers
+		prerequisite = { focus = kas_german_engineers }
 
 		x = 0
 		y = 1
@@ -851,10 +851,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_franco_kash_war
+		id = kas_franco_kash_war
 		icon = GFX_
-		relative_position_id = kbs_military_designs
-		prerequisite = { focus = kbs_military_designs focus = kbs_military_youth focus = kbs_miliary_expansion }
+		relative_position_id = kas_military_designs
+		prerequisite = { focus = kas_military_designs focus = kas_military_youth focus = kas_miliary_expansion }
 
 		x = 0
 		y = 1
@@ -888,10 +888,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_integrate_aka
+		id = kas_integrate_aka
 		icon = GFX_
-		relative_position_id = kbs_franco_kash_war
-		prerequisite = { focus = kbs_franco_kash_war focus = kbs_our_strength }
+		relative_position_id = kas_franco_kash_war
+		prerequisite = { focus = kas_franco_kash_war focus = kas_our_strength }
 
 		x = 0
 		y = 1
@@ -922,11 +922,11 @@ focus_tree = {
 	}
 	#Junta
 	focus = {
-		id = kbs_military_junta
+		id = kas_military_junta
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_unification_trouble }
-		mutually_exclusive = { focus = kbs_stratocracy focus = kbs_military_junta }
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_unification_trouble }
+		mutually_exclusive = { focus = kas_stratocracy focus = kas_confederacy }
 		x = 6
 		y = 1
 
@@ -949,8 +949,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_recently_unified_fac_oli
-			remove_ideas = kbs_recently_unified_1
+			add_ideas = kas_recently_unified_fac_oli
+			remove_ideas = kas_recently_unified_1
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
@@ -960,10 +960,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_the_generals
+		id = kas_the_generals
 		icon = GFX_
-		relative_position_id = kbs_military_junta
-		prerequisite = { focus = kbs_military_junta }
+		relative_position_id = kas_military_junta
+		prerequisite = { focus = kas_military_junta }
 		x = 0
 		y = 1
 
@@ -990,10 +990,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_miliary_expansion
+		id = kas_miliary_expansion
 		icon = GFX_
-		relative_position_id = kbs_the_generals
-		prerequisite = { focus = kbs_the_generals }
+		relative_position_id = kas_the_generals
+		prerequisite = { focus = kas_the_generals }
 		x = 0
 		y = 1
 
@@ -1080,10 +1080,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_miliary_expansion_2
+		id = kas_miliary_expansion_2
 		icon = GFX_
-		relative_position_id = kbs_miliary_expansion
-		prerequisite = { focus = kbs_miliary_expansion }
+		relative_position_id = kas_miliary_expansion
+		prerequisite = { focus = kas_miliary_expansion }
 		x = 0
 		y = 1
 
@@ -1169,10 +1169,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_miliary_expansion_3
+		id = kas_miliary_expansion_3
 		icon = GFX_
-		relative_position_id = kbs_miliary_expansion_2
-		prerequisite = { focus = kbs_miliary_expansion_2 }
+		relative_position_id = kas_miliary_expansion_2
+		prerequisite = { focus = kas_miliary_expansion_2 }
 		x = 0
 		y = 1
 
@@ -1259,10 +1259,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_industrial_expansion
+		id = kas_industrial_expansion
 		icon = GFX_
-		relative_position_id = kbs_the_generals
-		prerequisite = { focus = kbs_the_generals }
+		relative_position_id = kas_the_generals
+		prerequisite = { focus = kas_the_generals }
 		x = 2
 		y = 1
 
@@ -1349,10 +1349,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_industrial_expansion_2
+		id = kas_industrial_expansion_2
 		icon = GFX_
-		relative_position_id = kbs_industrial_expansion
-		prerequisite = { focus = kbs_industrial_expansion }
+		relative_position_id = kas_industrial_expansion
+		prerequisite = { focus = kas_industrial_expansion }
 		x = 0
 		y = 1
 
@@ -1439,10 +1439,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_industrial_expansion_3
+		id = kas_industrial_expansion_3
 		icon = GFX_
-		relative_position_id = kbs_industrial_expansion_2
-		prerequisite = { focus = kbs_industrial_expansion_2 }
+		relative_position_id = kas_industrial_expansion_2
+		prerequisite = { focus = kas_industrial_expansion_2 }
 		x = 0
 		y = 1
 
@@ -1529,10 +1529,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_tortoise_shell #Is this a Korea Refference?
+		id = kas_tortoise_shell #Is this a Korea reference?
 		icon = GFX_
-		relative_position_id = kbs_industrial_expansion_3
-		prerequisite = { focus = kbs_industrial_expansion_3 focus = kbs_miliary_expansion_3 }
+		relative_position_id = kas_industrial_expansion_3
+		prerequisite = { focus = kas_industrial_expansion_3 focus = kas_miliary_expansion_3 }
 		x = -1
 		y = 1
 
@@ -1681,10 +1681,10 @@ focus_tree = {
 #Middle Bottom
 
 	focus = {
-		id = kbs_propganda
+		id = kas_propganda
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_military_youth  focus = kbs_people_rights }
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_military_youth  focus = kas_people_rights }
 
 		x = 0
 		y = 4
@@ -1712,10 +1712,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_landlords
+		id = kas_landlords
 		icon = GFX_
-		relative_position_id = kbs_propganda
-		prerequisite = { focus = kbs_propganda }
+		relative_position_id = kas_propganda
+		prerequisite = { focus = kas_propganda }
 
 		x = 0
 		y = 1
@@ -1743,10 +1743,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_university_complex
+		id = kas_university_complex
 		icon = GFX_
-		relative_position_id = kbs_landlords
-		prerequisite = { focus = kbs_landlords }
+		relative_position_id = kas_landlords
+		prerequisite = { focus = kas_landlords }
 
 		x = 0
 		y = 1
@@ -1778,9 +1778,9 @@ focus_tree = {
 #National Stability
 
 	focus = {
-		id = kbs_language_stability
+		id = kas_language_stability
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
+		relative_position_id = kas_unification_trouble
 		x = 14
 		y = 1
 
@@ -1803,14 +1803,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = kbs.20
+			country_event = kas.20
 		}
 	}
 	focus = {
-		id = kbs_national_workforce
+		id = kas_national_workforce
 		icon = GFX_
-		relative_position_id = kbs_language_stability
-		prerequisite = { focus = kbs_language_stability }
+		relative_position_id = kas_language_stability
+		prerequisite = { focus = kas_language_stability }
 		x = -2
 		y = 1
 
@@ -1834,15 +1834,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_manpower = -10000
-			add_ideas = kbs_nationalized_workforce
+			add_ideas = kas_nationalized_workforce
 		}
 	}
 	
 	focus = {
-		id = kbs_national_road_maintenance
+		id = kas_national_road_maintenance
 		icon = GFX_
-		relative_position_id = kbs_national_workforce
-		prerequisite = { focus = kbs_national_workforce }
+		relative_position_id = kas_national_workforce
+		prerequisite = { focus = kas_national_workforce }
 		x = -1
 		y = 1
 
@@ -1865,14 +1865,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_road_maintenence
+			add_ideas = kas_road_maintenence
 		}
 	}
 	focus = {
-		id = kbs_national_railway_project
+		id = kas_national_railway_project
 		icon = GFX_
-		relative_position_id = kbs_national_workforce
-		prerequisite = { focus = kbs_national_workforce }
+		relative_position_id = kas_national_workforce
+		prerequisite = { focus = kas_national_workforce }
 		x = 1
 		y = 1
 
@@ -1895,14 +1895,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_national_railway
+			add_ideas = kas_national_railway
 		}
 	}
 	focus = {
-		id = kbs_capital_highway
+		id = kas_capital_highway
 		icon = GFX_
-		relative_position_id = kbs_national_road_maintenance
-		prerequisite = { focus = kbs_national_road_maintenance }
+		relative_position_id = kas_national_road_maintenance
+		prerequisite = { focus = kas_national_road_maintenance }
 		x = 0
 		y = 1
 
@@ -1925,15 +1925,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_road_maintenence
+			add_ideas = kas_road_maintenence
 		}
 	}
 	
 	focus = {
-		id = kbs_peoples_house
+		id = kas_peoples_house
 		icon = GFX_
-		relative_position_id = kbs_language_stability
-		prerequisite = { focus = kbs_language_stability }
+		relative_position_id = kas_language_stability
+		prerequisite = { focus = kas_language_stability }
 		x = 1
 		y = 1
 
@@ -1956,15 +1956,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_combined_legislature
+			add_ideas = kas_combined_legislature
 		}
 	}
 	
 	focus = {
-		id = kbs_primary_education
+		id = kas_primary_education
 		icon = GFX_
-		relative_position_id = kbs_peoples_house
-		prerequisite = { focus = kbs_peoples_house }
+		relative_position_id = kas_peoples_house
+		prerequisite = { focus = kas_peoples_house }
 		x = 0
 		y = 1
 
@@ -1987,15 +1987,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_primary_research
+			add_ideas = kas_primary_research
 		}
 	}
 	
 	focus = {
-		id = kbs_trade_schools
+		id = kas_trade_schools
 		icon = GFX_
-		relative_position_id = kbs_primary_education
-		prerequisite = { focus = kbs_primary_education }
+		relative_position_id = kas_primary_education
+		prerequisite = { focus = kas_primary_education }
 		x = 0
 		y = 1
 
@@ -2018,14 +2018,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_trade_school_efficiency
+			add_ideas = kas_trade_school_efficiency
 		}
 	}
 	
 	focus = {
-		id = kbs_mace_navy
+		id = kas_mace_navy
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
+		relative_position_id = kas_unification_trouble
 		
 		x = 24
 		y = 0
@@ -2054,13 +2054,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_dockyard_estimations
+		id = kas_dockyard_estimations
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = -3
 		y = 1
 		cost = 10
-		relative_position_id = kbs_mace_navy
-		prerequisite = { focus = kbs_mace_navy }
+		relative_position_id = kas_mace_navy
+		prerequisite = { focus = kas_mace_navy }
 		available_if_capitulated = yes
 
 
@@ -2146,13 +2146,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_dockyard_estimations_2
+		id = kas_dockyard_estimations_2
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = kbs_dockyard_estimations
-		prerequisite = { focus = kbs_dockyard_estimations }
+		relative_position_id = kas_dockyard_estimations
+		prerequisite = { focus = kas_dockyard_estimations }
 		available_if_capitulated = yes
 
 
@@ -2238,10 +2238,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_cruiser_effort
+		id = kas_cruiser_effort
 		icon = GFX_
-		relative_position_id = kbs_mace_navy
-		prerequisite = { focus = kbs_mace_navy }
+		relative_position_id = kas_mace_navy
+		prerequisite = { focus = kas_mace_navy }
 		x = 0
 		y = 1
 
@@ -2276,10 +2276,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_battleship_effort
+		id = kas_battleship_effort
 		icon = GFX_
-		relative_position_id = kbs_cruiser_effort
-		prerequisite = { focus = kbs_cruiser_effort }
+		relative_position_id = kas_cruiser_effort
+		prerequisite = { focus = kas_cruiser_effort }
 		x = -1
 		y = 1
 
@@ -2313,12 +2313,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_destroyer_effort
+		id = kas_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = kbs_battleship_effort }
+		prerequisite = { focus = kas_battleship_effort }
 		x = 0
 		y = 1
-		relative_position_id = kbs_battleship_effort
+		relative_position_id = kas_battleship_effort
 		cost = 10
 		
 		available_if_capitulated = yes
@@ -2349,12 +2349,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_fleet_in_being
+		id = kas_fleet_in_being
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = kbs_battleship_effort }
+		prerequisite = { focus = kas_battleship_effort }
 		x = -2
 		y = 1
-		relative_position_id = kbs_battleship_effort
+		relative_position_id = kas_battleship_effort
 		cost = 10
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
@@ -2385,10 +2385,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_carrier_effort
+		id = kas_carrier_effort
 		icon = GFX_
-		relative_position_id = kbs_cruiser_effort
-		prerequisite = { focus = kbs_cruiser_effort }
+		relative_position_id = kas_cruiser_effort
+		prerequisite = { focus = kas_cruiser_effort }
 		x = 1
 		y = 1
 
@@ -2421,10 +2421,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = kbs_base_strike
+		id = kas_base_strike
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = kbs_carrier_effort }
-		relative_position_id = kbs_carrier_effort
+		prerequisite = { focus = kas_carrier_effort }
+		relative_position_id = kas_carrier_effort
 		x = 0
 		y = 1
 
@@ -2452,7 +2452,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_cat_base_strike
+				name = kas_cat_base_strike
 				bonus = 1.0
 				uses = 1
 				category = cat_base_strike
@@ -2462,10 +2462,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_submarine
+		id = kas_submarine
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = kbs_carrier_effort }
-		relative_position_id = kbs_carrier_effort
+		prerequisite = { focus = kas_carrier_effort }
+		relative_position_id = kas_carrier_effort
 		x = 2
 		y = 1
 
@@ -2493,7 +2493,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_submarine_tech
+				name = kas_submarine_tech
 				bonus = 1.0
 				uses = 1
 				category = ss_tech
@@ -2504,9 +2504,9 @@ focus_tree = {
 	
 	
 	focus = {
-		id = kbs_koba_army
+		id = kas_koba_army
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
+		relative_position_id = kas_unification_trouble
 		x = 38
 		y = 0
 
@@ -2534,12 +2534,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_good_tech
+		id = kas_good_tech
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_koba_army }
-		relative_position_id = kbs_koba_army
-		mutually_exclusive = { focus = kbs_good_doctrine }
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_koba_army }
+		relative_position_id = kas_koba_army
+		mutually_exclusive = { focus = kas_good_doctrine }
 		x = 0
 		y = 1
 
@@ -2562,18 +2562,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_military_research
+			add_ideas = kas_military_research
 		}
 	}
 	
 	
 	focus = {
-		id = kbs_armament
+		id = kas_armament
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_good_tech }
-		relative_position_id = kbs_good_tech
-		mutually_exclusive = { focus = kbs_vehicles }
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_good_tech }
+		relative_position_id = kas_good_tech
+		mutually_exclusive = { focus = kas_vehicles }
 		x = -2
 		y = 1
 
@@ -2597,7 +2597,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_support_equiptment
+				name = kas_support_equiptment
 				bonus = 1.0
 				uses = 1
 				category = support_tech
@@ -2607,11 +2607,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_artilery
+		id = kas_artilery
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_armament }
-		relative_position_id = kbs_armament
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_armament }
+		relative_position_id = kas_armament
 		x = -1
 		y = 1
 
@@ -2635,7 +2635,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = _kbs_artillery_tech
+				name = _kas_artillery_tech
 				bonus = 1.0
 				uses = 1
 				category = artillery
@@ -2645,10 +2645,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_infantry
+		id = kas_infantry
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		prerequisite = { focus = kbs_armament }
-		relative_position_id = kbs_armament
+		prerequisite = { focus = kas_armament }
+		relative_position_id = kas_armament
 		x = 1
 		y = 1
 
@@ -2676,7 +2676,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_infantry_tech
+				name = kas_infantry_tech
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
@@ -2689,12 +2689,12 @@ focus_tree = {
 	
 	
 	focus = {
-		id = kbs_vehicles
+		id = kas_vehicles
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_good_tech }
-		relative_position_id = kbs_good_tech
-		mutually_exclusive = { focus = kbs_armament }
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_good_tech }
+		relative_position_id = kas_good_tech
+		mutually_exclusive = { focus = kas_armament }
 		x = 2
 		y = 1
 
@@ -2718,7 +2718,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name =  kbs_mechanized_trucks
+				name =  kas_mechanized_trucks
 				bonus = 1.0
 				uses = 1
 				category = cat_mechanized_equipment
@@ -2727,11 +2727,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_trains
+		id = kas_trains
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_vehicles }
-		relative_position_id = kbs_vehicles
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_vehicles }
+		relative_position_id = kas_vehicles
 
 		x = -1
 		y = 1
@@ -2756,7 +2756,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name =  kbs_trains
+				name =  kas_trains
 				bonus = 1.0
 				uses = 1
 				category = train_tech
@@ -2765,11 +2765,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_tractor_tank_pipeline
+		id = kas_tractor_tank_pipeline
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_vehicles }
-		relative_position_id = kbs_vehicles
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_vehicles }
+		relative_position_id = kas_vehicles
 
 		x = 1
 		y = 1
@@ -2794,14 +2794,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_light_tanks
+				name = kas_light_tanks
 				bonus = 1.0
 				uses = 1
 				category = cat_light_armor
 
 			}
 			add_tech_bonus = {
-				name = kbs_medium_tanks
+				name = kas_medium_tanks
 				bonus = 1.0
 				uses = 1
 				category = cat_medium_armor
@@ -2816,12 +2816,12 @@ focus_tree = {
 	
 	
 	focus = {
-		id = kbs_good_doctrine
+		id = kas_good_doctrine
 		icon = GFX_
-		relative_position_id = kbs_unification_trouble
-		prerequisite = { focus = kbs_koba_army }
-		mutually_exclusive = { focus = kbs_good_tech }
-		relative_position_id = kbs_koba_army
+		relative_position_id = kas_unification_trouble
+		prerequisite = { focus = kas_koba_army }
+		mutually_exclusive = { focus = kas_good_tech }
+		relative_position_id = kas_koba_army
 		x = 8
 		y = 1
 
@@ -2844,18 +2844,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = kbs_doctrine_research
+			add_ideas = kas_doctrine_research
 		}
 	}
 	
 	focus = {
-		id = kbs_blitzkrieg
+		id = kas_blitzkrieg
 		icon = GFX_r56_goal_generic_tank_offensive
-		prerequisite = { focus = kbs_good_doctrine }
-		mutually_exclusive = { focus = kbs_grand_plan }
-		mutually_exclusive = { focus = kbs_firepower }
-		mutually_exclusive = { focus = kbs_mass_assault }
-		relative_position_id = kbs_good_doctrine
+		prerequisite = { focus = kas_good_doctrine }
+		mutually_exclusive = { focus = kas_grand_plan }
+		mutually_exclusive = { focus = kas_firepower }
+		mutually_exclusive = { focus = kas_mass_assault }
+		relative_position_id = kas_good_doctrine
 		x = -1
 		y = 1
 
@@ -2883,7 +2883,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_hit_n_run
+				name = kas_hit_n_run
 				bonus = 1.0
 				uses = 1
 				category = cat_mobile_warfare
@@ -2893,10 +2893,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_synth_oil
+		id = kas_synth_oil
 		icon = GFX_r56_goal_generic_tank_offensive
-		prerequisite = { focus = kbs_blitzkrieg }
-		relative_position_id = kbs_blitzkrieg
+		prerequisite = { focus = kas_blitzkrieg }
+		relative_position_id = kas_blitzkrieg
 		x = 0
 		y = 1
 
@@ -2924,7 +2924,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_synth_oil
+				name = kas_synth_oil
 				bonus = 1.0
 				uses = 1
 				category = cat_synth_oil
@@ -2934,13 +2934,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = kbs_grand_plan
+		id = kas_grand_plan
 		icon = GFX_r56_goal_generic_plan
-		prerequisite = { focus = kbs_good_doctrine }
-		mutually_exclusive = { focus = kbs_firepower }
-		mutually_exclusive = { focus = kbs_blitzkrieg }
-		mutually_exclusive = { focus = kbs_mass_assault }
-		relative_position_id = kbs_good_doctrine
+		prerequisite = { focus = kas_good_doctrine }
+		mutually_exclusive = { focus = kas_firepower }
+		mutually_exclusive = { focus = kas_blitzkrieg }
+		mutually_exclusive = { focus = kas_mass_assault }
+		relative_position_id = kas_good_doctrine
 		x = 1
 		y = 1
 
@@ -2968,7 +2968,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_grand_battle_plan
+				name = kas_grand_battle_plan
 				bonus = 1.0
 				uses = 1
 				category = cat_grand_battle_plan
@@ -2978,10 +2978,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_planning_speed
+		id = kas_planning_speed
 		icon = GFX_r56_goal_generic_plan
-		prerequisite = { focus = kbs_grand_plan }
-		relative_position_id = kbs_grand_plan
+		prerequisite = { focus = kas_grand_plan }
+		relative_position_id = kas_grand_plan
 		x = 0
 		y = 1
 
@@ -3008,17 +3008,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = kbs_planning_research
+			add_ideas = kas_planning_research
 		}
 	}
 	focus = {
-		id = kbs_firepower
+		id = kas_firepower
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_good_doctrine }
-		mutually_exclusive = { focus = kbs_grand_plan }
-		mutually_exclusive = { focus = kbs_blitzkrieg }
-		mutually_exclusive = { focus = kbs_mass_assault }
-		relative_position_id = kbs_good_doctrine
+		prerequisite = { focus = kas_good_doctrine }
+		mutually_exclusive = { focus = kas_grand_plan }
+		mutually_exclusive = { focus = kas_blitzkrieg }
+		mutually_exclusive = { focus = kas_mass_assault }
+		relative_position_id = kas_good_doctrine
 		x = 3
 		y = 1
 
@@ -3046,7 +3046,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_planning
+				name = kas_planning
 				bonus = 1.0
 				uses = 1
 				category = cat_superior_firepower
@@ -3056,10 +3056,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_raido_spotting
+		id = kas_raido_spotting
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_firepower }
-		relative_position_id = kbs_firepower
+		prerequisite = { focus = kas_firepower }
+		relative_position_id = kas_firepower
 		x = 0
 		y = 1
 
@@ -3087,7 +3087,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_planning
+				name = kas_planning
 				bonus = 1.0
 				uses = 1
 				category = electronics
@@ -3097,13 +3097,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_mass_assault
+		id = kas_mass_assault
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_good_doctrine }
-		mutually_exclusive = { focus = kbs_grand_plan }
-		mutually_exclusive = { focus = kbs_blitzkrieg }
-		mutually_exclusive = { focus = kbs_firepower }
-		relative_position_id = kbs_good_doctrine
+		prerequisite = { focus = kas_good_doctrine }
+		mutually_exclusive = { focus = kas_grand_plan }
+		mutually_exclusive = { focus = kas_blitzkrieg }
+		mutually_exclusive = { focus = kas_firepower }
+		relative_position_id = kas_good_doctrine
 		x = -3
 		y = 1
 
@@ -3131,7 +3131,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_mass_assault_tech
+				name = kas_mass_assault_tech
 				bonus = 1.0
 				uses = 1
 				category = cat_mass_assault
@@ -3141,11 +3141,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_manpower_recovery
+		id = kas_manpower_recovery
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_mass_assault }
+		prerequisite = { focus = kas_mass_assault }
 
-		relative_position_id = kbs_mass_assault
+		relative_position_id = kas_mass_assault
 		x = 0
 		y = 1
 
@@ -3172,16 +3172,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = kbs_recovery_research
+			add_ideas = kas_recovery_research
 		}
 	}
 	
 	focus = {
-		id = kbs_fighter_investment
+		id = kas_fighter_investment
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_koba_army focus = kbs_mace_navy}
+		prerequisite = { focus = kas_koba_army focus = kas_mace_navy}
 
-		relative_position_id = kbs_mace_navy
+		relative_position_id = kas_mace_navy
 		x = 8
 		y = 1
 
@@ -3213,11 +3213,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_fighter_range
+		id = kas_fighter_range
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_fighter_investment }
+		prerequisite = { focus = kas_fighter_investment }
 
-		relative_position_id = kbs_fighter_investment
+		relative_position_id = kas_fighter_investment
 		x = -1
 		y = 1
 
@@ -3245,7 +3245,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_cat_air_engine_tech
+				name = kas_cat_air_engine_tech
 				bonus = 1.0
 				uses = 1
 				category = cat_air_engine
@@ -3256,11 +3256,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kbs_strat_bomber
+		id = kas_strat_bomber
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_fighter_range }
-mutually_exclusive = { focus = kbs_fighter_guns }
-		relative_position_id = kbs_fighter_range
+		prerequisite = { focus = kas_fighter_range }
+mutually_exclusive = { focus = kas_fighter_guns }
+		relative_position_id = kas_fighter_range
 		x = 0
 		y = 1
 
@@ -3288,7 +3288,7 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_cat_strategic_bomber_tech
+				name = kas_cat_strategic_bomber_tech
 				bonus = 1.0
 				uses = 1
 				category = heavy_air
@@ -3297,11 +3297,11 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 	}
 	
 	focus = {
-		id = kbs_fighters
+		id = kas_fighters
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_fighter_investment }
+		prerequisite = { focus = kas_fighter_investment }
 
-		relative_position_id = kbs_fighter_investment
+		relative_position_id = kas_fighter_investment
 		x = 1
 		y = 1
 
@@ -3329,7 +3329,7 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_air_equipment
+				name = kas_air_equipment
 				bonus = 1.0
 				uses = 1
 				category = air_equipment
@@ -3338,11 +3338,11 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 	}
 	
 	focus = {
-		id = kbs_fighter_guns
+		id = kas_fighter_guns
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_fighters }
- mutually_exclusive = { focus = kbs_strat_bomber }
-		relative_position_id = kbs_fighters
+		prerequisite = { focus = kas_fighters }
+ mutually_exclusive = { focus = kas_strat_bomber }
+		relative_position_id = kas_fighters
 		x = 0
 		y = 1
 
@@ -3370,7 +3370,7 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_cat_air_guns_tech
+				name = kas_cat_air_guns_tech
 				bonus = 1.0
 				uses = 1
 				category = cat_air_guns
@@ -3381,11 +3381,11 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 	}
 	
 	focus = {
-		id = kbs_operational_integrity
+		id = kas_operational_integrity
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_fighter_guns }
-		mutually_exclusive = { focus = kbs_battlefield_support }
-		relative_position_id = kbs_fighter_guns
+		prerequisite = { focus = kas_fighter_guns }
+		mutually_exclusive = { focus = kas_battlefield_support }
+		relative_position_id = kas_fighter_guns
 		x = -1
 		y = 1
 
@@ -3413,7 +3413,7 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_operational_integrity_tree_tech
+				name = kas_operational_integrity_tree_tech
 				bonus = 1.0
 				uses = 1
 				category = operational_integrity_tree
@@ -3424,11 +3424,11 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 	}
 	
 	focus = {
-		id = kbs_battlefield_support
+		id = kas_battlefield_support
 		icon = GFX_goal_generic_railway_artillery
-		prerequisite = { focus = kbs_fighter_guns }
-		mutually_exclusive = { focus = kbs_operational_integrity }
-		relative_position_id = kbs_fighter_guns
+		prerequisite = { focus = kas_fighter_guns }
+		mutually_exclusive = { focus = kas_operational_integrity }
+		relative_position_id = kas_fighter_guns
 		x = 1
 		y = 1
 
@@ -3456,7 +3456,7 @@ mutually_exclusive = { focus = kbs_fighter_guns }
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = kbs_battlefield_support_tree_tech
+				name = kas_battlefield_support_tree_tech
 				bonus = 1.0
 				uses = 1
 				category = battlefield_support_tree
