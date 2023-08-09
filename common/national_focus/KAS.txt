@@ -2280,6 +2280,7 @@ focus_tree = {
 		icon = GFX_
 		relative_position_id = kas_cruiser_effort
 		prerequisite = { focus = kas_cruiser_effort }
+		mutually_exclusive = { focus = kas_carrier_effort }
 		x = -1
 		y = 1
 
@@ -2389,6 +2390,7 @@ focus_tree = {
 		icon = GFX_
 		relative_position_id = kas_cruiser_effort
 		prerequisite = { focus = kas_cruiser_effort }
+		mutually_exclusive = { focus = kas_battleship_effort }
 		x = 1
 		y = 1
 
@@ -2607,7 +2609,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kas_artilery
+		id = kas_artillery
 		icon = GFX_
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_armament }
@@ -3056,7 +3058,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = kas_raido_spotting
+		id = kas_radio_spotting
 		icon = GFX_goal_generic_railway_artillery
 		prerequisite = { focus = kas_firepower }
 		relative_position_id = kas_firepower
