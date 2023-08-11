@@ -2,8 +2,8 @@ characters={
 ###############
 ###DEMOCRATIC
 ###############
-	MRT_conservatism_leader={
-		name="MRT_socialism_leader"
+	MRR_conservatism_leader={
+		name="MRR_conservatism_leader"
 		portraits={
 			civilian={
 				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_1.dds"
@@ -21,8 +21,8 @@ characters={
 ###############
 ###COMMUNISM
 ###############
-	MRT_leninism_leader={
-		name="MRT_marxism_leader"
+	MRR_leninism_leader={
+		name="MRR_leninism_leader"
 		portraits={
 			civilian={
 				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_6.dds"
@@ -38,8 +38,8 @@ characters={
 ###############
 ###FASCISM
 ###############
-	MRT_gen_nazism_leader={
-		name="MRT_generic_fascism_leader"
+	MRR_gen_nazism_leader={
+		name="MRR_gen_nazism_leader"
 		portraits={
 			civilian={
 				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_9.dds"
@@ -55,8 +55,8 @@ characters={
 ###############
 ###NEUTRALITY
 ###############
-	MRT_oligarchism_leader={
-		name=MRT_oligarchism_leader
+	MRR_oligarchism_leader={
+		name=MRR_oligarchism_leader
 		portraits={
 			civilian={
 				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_8.dds"
@@ -74,7 +74,7 @@ characters={
 ###CORPS COMMANDERS
 ###################
 	
-	MRT_corps_commander_1={
+	MRR_corps_commander_1={
 		name="Gene Antony Ridley"
 		portraits={
 			army={
@@ -92,7 +92,7 @@ characters={
 		}
 	}
 
-	MRT_corps_commander_2={
+	MRR_corps_commander_2={
 		name="Tevin Ripley Chadwick"
 		portraits={
 			army={
@@ -109,7 +109,7 @@ characters={
 			legacy_id=0
 		}
 	}
-	MRT_corps_commander_3={
+	MRR_corps_commander_3={
 		name="Reggie Rowntree"
 		portraits={
 			army={
@@ -127,7 +127,7 @@ characters={
 		}
 	}
 
-	MRT_corps_commander_4={
+	MRR_corps_commander_4={
 		name="Callan Derrick Verity"
 		portraits={
 			army={
@@ -150,7 +150,7 @@ characters={
 ################
 ###NAVAL LEADERS
 ################
-	MRT_naval_leader_1={
+	MRR_naval_leader_1={
 		name="A. Zechariah Hamilton"
 		portraits={
 			army={
@@ -168,7 +168,7 @@ characters={
 		}
 	}
 
-	MRT_naval_leader_2={
+	MRR_naval_leader_2={
 		name="Rearden Darwin"
 		portraits={
 			army={
@@ -186,7 +186,7 @@ characters={
 		}
 	}
 
-	MRT_naval_leader_3={
+	MRR_naval_leader_3={
 		name="Reuben T. Harris"
 		portraits={
 			navy={
@@ -204,7 +204,7 @@ characters={
 		}
 	}
 	
-	MRT_naval_leader_4={
+	MRR_naval_leader_4={
 		name="Alden P. Tracey"
 		portraits={
 			army={
@@ -221,7 +221,7 @@ characters={
 			legacy_id=0
 		}
 	}
-	MRT_naval_leader_5={
+	MRR_naval_leader_5={
 		name="E. Grosvenor-Carlisle"
 		portraits={
 			army={
@@ -242,10 +242,10 @@ characters={
 #####################
 ###POLITICAL ADVISORS
 #####################
-	MRT_anti_communist_crusader={
+	MRR_anti_communist_crusader={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_anti_communist_crusader
+			idea_token = MRR_anti_communist_crusader
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -253,17 +253,17 @@ characters={
 					anti_communist_crusader
 				}
 		}
-		name="MRT_anti_communist_crusader"
+		name="MRR_anti_communist_crusader"
 		portraits={
 			army={
-				small="GFX_idea_MRT_anti_communist_crusader"
+				small="GFX_idea_MRR_anti_communist_crusader"
 			}
 		}
 	}
-	MRT_armaments_organizer={
+	MRR_armaments_organizer={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_armaments_organizer
+			idea_token = MRR_armaments_organizer
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -271,17 +271,17 @@ characters={
 					armaments_organizer 
 				}
 		}
-		name="MRT_armaments_organizer"
+		name="MRR_armaments_organizer"
 		portraits={
 			army={
-				small="GFX_idea_MRT_armaments_organizer"
+				small="GFX_idea_MRR_armaments_organizer"
 			}
 		}
 	}
-	MRT_communist_revolutionary={
+	MRR_communist_revolutionary={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_communist_revolutionary
+			idea_token = MRR_communist_revolutionary
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -289,17 +289,17 @@ characters={
 					communist_revolutionary 
 				}
 		}
-		name="MRT_communist_revolutionary"
+		name="MRR_communist_revolutionary"
 		portraits={
 			army={
-				small="GFX_idea_MRT_communist_revolutionary"
+				small="GFX_idea_MRR_communist_revolutionary"
 			}
 		}
 	}
-	MRT_democratic_reformer={
+	MRR_democratic_reformer={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_democratic_reformer
+			idea_token = MRR_democratic_reformer
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -307,17 +307,17 @@ characters={
 					democratic_reformer 
 				}
 		}
-		name="MRT_democratic_reformer"
+		name="MRR_democratic_reformer"
 		portraits={
 			army={
-				small="GFX_idea_MRT_captain_of_industry"
+				small="GFX_idea_MRR_captain_of_industry"
 			}
 		}
 	}	
-	MRT_economist={
+	MRR_economist={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_economist
+			idea_token = MRR_economist
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -325,17 +325,17 @@ characters={
 					economist 
 				}
 		}
-		name="MRT_economist"
+		name="MRR_economist"
 		portraits={
 			army={
-				small="GFX_idea_MRT_economist"
+				small="GFX_idea_MRR_economist"
 			}
 		}
 	}
-	MRT_editor={
+	MRR_editor={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_editor
+			idea_token = MRR_editor
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -343,17 +343,17 @@ characters={
 					editor 
 				}
 		}
-		name="MRT_editor"
+		name="MRR_editor"
 		portraits={
 			army={
-				small="GFX_idea_MRT_editor"
+				small="GFX_idea_MRR_editor"
 			}
 		}
 	}
-	MRT_fascist_demagogue={
+	MRR_fascist_demagogue={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_fascist_demagogue
+			idea_token = MRR_fascist_demagogue
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -361,17 +361,17 @@ characters={
 					fascist_demagogue 
 				}
 		}
-		name="MRT_fascist_demagogue"
+		name="MRR_fascist_demagogue"
 		portraits={
 			army={
-				small="GFX_idea_MRT_fascist_demagogue"
+				small="GFX_idea_MRR_fascist_demagogue"
 			}
 		}
 	}
-	MRT_ideological_crusader={
+	MRR_ideological_crusader={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_ideological_crusader
+			idea_token = MRR_ideological_crusader
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -379,17 +379,17 @@ characters={
 					ideological_crusader 
 				}
 		}
-		name="MRT_ideological_crusader"
+		name="MRR_ideological_crusader"
 		portraits={
 			army={
-				small="GFX_idea_MRT_ideological_crusader"
+				small="GFX_idea_MRR_ideological_crusader"
 			}
 		}
 	}
-	MRT_popular_figurehead={
+	MRR_popular_figurehead={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_popular_figurehead
+			idea_token = MRR_popular_figurehead
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -397,18 +397,18 @@ characters={
 					popular_figurehead 
 				}
 		}
-		name="MRT_popular_figurehead"
+		name="MRR_popular_figurehead"
 		portraits={
 			army={
-				small="GFX_idea_MRT_popular_figurehead"
+				small="GFX_idea_MRR_popular_figurehead"
 			}
 		}
 	}
 	
-	MRT_war_industrialist={
+	MRR_war_industrialist={
 		advisor={
 			slot = political_advisor
-			idea_token = MRT_war_industrialist
+			idea_token = MRR_war_industrialist
 			allowed  = {
 					original_tag  = ATC
 				}
@@ -416,21 +416,21 @@ characters={
 					war_industrialist 
 				}
 		}
-		name="MRT_war_industrialist"
+		name="MRR_war_industrialist"
 		portraits={
 			army={
-				small="GFX_idea_MRT_war_industrialist"
+				small="GFX_idea_MRR_war_industrialist"
 			}
 		}
 	}
 ###############
 ###THEORISTS
 ###############
-	MRT_military_theorist={
+	MRR_military_theorist={
 		advisor={
 			cost = 100
 			slot = theorist
-			idea_token = MRT_military_theorist
+			idea_token = MRR_military_theorist
 			ledger = army
 				allowed = {
 					original_tag = ATC
@@ -440,19 +440,19 @@ characters={
 					military_theorist
 				}
 		}
-		name="MRT_military_theorist"
+		name="MRR_military_theorist"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_2"
 			}
 		}
 	}
-	MRT_air_warfare_theorist={
+	MRR_air_warfare_theorist={
 		advisor={
 			cost = 100
 			
 			slot = theorist
-			idea_token = MRT_air_warfare_theorist
+			idea_token = MRR_air_warfare_theorist
 			ledger = air
 				allowed = {
 					original_tag = ATC
@@ -462,24 +462,24 @@ characters={
 					air_warfare_theorist
 				}
 		}
-		name="MRT_air_warfare_theorist"
+		name="MRR_air_warfare_theorist"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_1"
 			}
 		}
 	}
-	MRT_naval_theorist={
-		name=MRT_naval_theorist
+	MRR_naval_theorist={
+		name=MRR_naval_theorist
 		portraits={
 			army={
-				small="GFX_idea_MRT_naval_theorist"
+				small="GFX_idea_MRR_naval_theorist"
 			}
 		}
 		advisor={
 			cost = 100
 			slot = theorist
-			idea_token = MRT_naval_theorist
+			idea_token = MRR_naval_theorist
 			ledger = navy
 			allowed = {
 				original_tag = ATC
@@ -493,10 +493,10 @@ characters={
 #################
 ###ARMY CHIEF
 #################
-	MRT_army_chief_drill_2={
+	MRR_army_chief_drill_2={
 		advisor={
 			slot = army_chief
-			idea_token = MRT_army_chief_drill_2
+			idea_token = MRR_army_chief_drill_2
 			allowed = {
 					original_tag  = ATC
 				}
@@ -508,17 +508,17 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_army_chief_drill_2"
+		name="MRR_army_chief_drill_2"
 		portraits={
 			army={
-				small="GFX_idea_MRT_army_chief_drill_2"
+				small="GFX_idea_MRR_army_chief_drill_2"
 			}
 		}
 	}
-	MRT_army_chief_morale_2={
+	MRR_army_chief_morale_2={
 		advisor={
 			slot = army_chief
-			idea_token = MRT_army_chief_morale_2
+			idea_token = MRR_army_chief_morale_2
 			allowed = {
 					original_tag  = ATC
 				}
@@ -530,10 +530,10 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_army_chief_morale_2"
+		name="MRR_army_chief_morale_2"
 		portraits={
 			army={
-				small="GFX_idea_MRT_army_chief_morale_2"
+				small="GFX_idea_MRR_army_chief_morale_2"
 			}
 		}
 	}
@@ -541,10 +541,10 @@ characters={
 #################
 ###NAVY CHIEF
 #################
-	MRT_navy_chief_decisive_battle_2={
+	MRR_navy_chief_decisive_battle_2={
 		advisor={
 			slot = navy_chief
-			idea_token = MRT_navy_chief_decisive_battle_2
+			idea_token = MRR_navy_chief_decisive_battle_2
 			allowed = {
 					original_tag  = ATC
 				}
@@ -556,19 +556,19 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_navy_chief_decisive_battle_2"
+		name="MRR_navy_chief_decisive_battle_2"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_arab_2"
 			}
 		}
 	}
-	MRT_navy_chief_naval_aviation_2={
+	MRR_navy_chief_naval_aviation_2={
 		advisor={
 			
 			
 			slot = navy_chief
-			idea_token = MRT_navy_chief_naval_aviation_2
+			idea_token = MRR_navy_chief_naval_aviation_2
 			allowed = {
 					original_tag  = ATC
 				}
@@ -580,7 +580,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_navy_chief_naval_aviation_2"
+		name="MRR_navy_chief_naval_aviation_2"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_arab_1"
@@ -591,10 +591,10 @@ characters={
 #################
 ###AIRFORCE CHIEF
 #################
-	MRT_air_chief_ground_support_2={
+	MRR_air_chief_ground_support_2={
 		advisor={
 			slot = air_chief
-			idea_token = MRT_air_chief_ground_support_2
+			idea_token = MRR_air_chief_ground_support_2
 			allowed = {
 					original_tag  = ATC
 				}
@@ -606,17 +606,17 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_air_chief_ground_support_2"
+		name="MRR_air_chief_ground_support_2"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_arab_3"
 			}
 		}
 	}
-	MRT_air_chief_reform_2={
+	MRR_air_chief_reform_2={
 		advisor={
 			slot = air_chief
-			idea_token = MRT_air_chief_reform_2
+			idea_token = MRR_air_chief_reform_2
 			allowed = {
 					original_tag  = ATC
 				}
@@ -628,7 +628,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_air_chief_reform_2"
+		name="MRR_air_chief_reform_2"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_arab_1"
@@ -639,10 +639,10 @@ characters={
 ###################
 ###MIL HIGH COMMAND
 ###################	
-	MRT_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+	MRR_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
-			idea_token = MRT_army_entrenchment_1
+			idea_token = MRR_army_entrenchment_1
 			ledger = army
 				allowed = {
 					original_tag  = ATC
@@ -655,17 +655,17 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_army_entrenchment_1"
+		name="MRR_army_entrenchment_1"
 		portraits={
 			army={
-				small="GFX_idea_MRT_army_entrenchment_1"
+				small="GFX_idea_MRR_army_entrenchment_1"
 			}
 		}
 	}
-	MRT_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+	MRR_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
-			idea_token = MRT_army_infantry
+			idea_token = MRR_army_infantry
 			ledger = army
 				allowed = {
 					original_tag  = ATC
@@ -678,17 +678,17 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_army_infantry_1"
+		name="MRR_army_infantry_1"
 		portraits={
 			army={
-				small="GFX_idea_MRT_army_infantr_1"
+				small="GFX_idea_MRR_army_infantr_1"
 			}
 		}
 	}
-	MRT_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+	MRR_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
-			idea_token = MRT_air_bomber_interception_2
+			idea_token = MRR_air_bomber_interception_2
 			ledger = army
 				allowed = {
 					original_tag  = ATC
@@ -701,17 +701,17 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_air_bomber_interception_2"
+		name="MRR_air_bomber_interception_2"
 		portraits={
 			army={
-				small="GFX_idea_MRT_air_bomber_interception_2"
+				small="GFX_idea_MRR_air_bomber_interception_2"
 			}
 		}
 	}
-	MRT_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+	MRR_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
-			idea_token = MRT_air_close_air_support_2
+			idea_token = MRR_air_close_air_support_2
 			ledger = army
 				allowed = {
 					original_tag  = ATC
@@ -724,17 +724,17 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_air_close_air_support_2"
+		name="MRR_air_close_air_support_2"
 		portraits={
 			army={
-				small="GFX_idea_MRT_air_close_air_support_2"
+				small="GFX_idea_MRR_air_close_air_support_2"
 			}
 		}
 	}
-	MRT_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+	MRR_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
-			idea_token = MRT_navy_screen_2
+			idea_token = MRR_navy_screen_2
 			ledger = navy
 				allowed = {
 					original_tag  = ATC
@@ -747,17 +747,17 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_navy_screen_2"
+		name="MRR_navy_screen_2"
 		portraits={
 			army={
-				small="GFX_idea_MRT_navy_screen_2"
+				small="GFX_idea_MRR_navy_screen_2"
 			}
 		}
 	}
-	MRT_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+	MRR_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
 		advisor={
 			slot = high_command
-			idea_token = MRT_navy_anti_submarine_1
+			idea_token = MRR_navy_anti_submarine_1
 			ledger = navy
 				allowed = {
 					original_tag  = ATC
@@ -770,10 +770,10 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="MRT_navy_anti_submarine_1"
+		name="MRR_navy_anti_submarine_1"
 		portraits={
 			army={
-				small="GFX_idea_MRT_navy_anti_submarine_1"
+				small="GFX_idea_MRR_navy_anti_submarine_1"
 			}
 		}
 	}

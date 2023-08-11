@@ -1,0 +1,88 @@
+﻿capital = 1156
+
+oob = "MRR_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	transport = 1
+	basic_train = 1
+}
+
+set_variable = {var = piss_off_index value = 5}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.1.22"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+add_ideas = {
+}
+
+set_popularities = {
+	democratic = 89
+	neutrality = 3
+	fascism = 6
+	communism = 2
+}
+	
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+
+set_convoys = 80
+
+#Political Leaders
+recruit_character = MRR_conservatism_leader
+recruit_character = MRR_leninism_leader
+recruit_character = MRR_gen_nazism_leader
+recruit_character = MRR_oligarchism_leader
+#MilLeaders
+recruit_character = MRR_corps_commander_1
+recruit_character = MRR_corps_commander_2
+recruit_character = MRR_corps_commander_3
+recruit_character = MRR_corps_commander_4
+recruit_character = MRR_naval_leader_1
+recruit_character = MRR_naval_leader_2
+recruit_character = MRR_naval_leader_3
+recruit_character = MRR_naval_leader_4
+recruit_character = MRR_naval_leader_5
+#advisors
+recruit_character = MRR_anti_communist_crusader
+recruit_character = MRR_armaments_organizer
+recruit_character = MRR_communist_revolutionary
+recruit_character = MRR_democratic_reformer
+recruit_character = MRR_economist
+recruit_character = MRR_editor
+recruit_character = MRR_fascist_demagogue
+recruit_character = MRR_ideological_crusader
+recruit_character = MRR_popular_figurehead
+recruit_character = MRR_war_industrialist
+#Theorists
+recruit_character = MRR_military_theorist
+recruit_character = MRR_air_warfare_theorist
+recruit_character = MRR_naval_theorist
+#Highcom
+recruit_character = MRR_army_chief_drill_2
+recruit_character = MRR_army_chief_morale_2
+recruit_character = MRR_navy_chief_decisive_battle_2
+recruit_character = MRR_navy_chief_naval_aviation_2
+recruit_character = MRR_air_chief_ground_support_2
+recruit_character = MRR_air_chief_reform_2
+recruit_character = MRR_army_entrenchment_1
+recruit_character = MRR_army_infantry_1
+recruit_character = MRR_air_bomber_interception_2
+recruit_character = MRR_air_close_air_support_2
+recruit_character = MRR_navy_screen_2
+recruit_character = MRR_navy_anti_submarine_1
