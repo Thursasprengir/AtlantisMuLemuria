@@ -23,7 +23,7 @@ focus_tree = {
 
 	focus = {
 		id = kas_unification_trouble
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_generic_major_alliance
 		x = 10
 		y = 0
 
@@ -52,7 +52,7 @@ focus_tree = {
 	#Dem/Com
 	focus = {
 		id = kas_confederacy
-		icon = GFX_
+		icon = GFX_focus_generic_improve_the_administration
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_unification_trouble }
 		mutually_exclusive = { focus = kas_stratocracy focus = kas_military_junta }
@@ -84,7 +84,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_democratic_constitution
-		icon = GFX_
+		icon = GFX_goal_uruguay_democracy_and_socialism
 		relative_position_id = kas_confederacy
 		prerequisite = { focus = kas_confederacy }
 		mutually_exclusive = { focus = kas_workers_union }
@@ -125,7 +125,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_equal_languages
-		icon = GFX_
+		icon = GFX_focus_generic_self_management
 		relative_position_id = kas_democratic_constitution
 		prerequisite = { focus = kas_democratic_constitution }
 		x = -1
@@ -158,7 +158,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_reorganise_states
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		relative_position_id = kas_democratic_constitution
 		prerequisite = { focus = kas_democratic_constitution focus = kas_workers_union }
 		x = 1
@@ -192,7 +192,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_foreign_investment
-		icon = GFX_
+		icon = GFX_focus_mex_privatisation
 		relative_position_id = kas_equal_languages
 		prerequisite = { focus = kas_equal_languages }
 		x = 0
@@ -264,7 +264,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_rescind_claims
-		icon = GFX_
+		icon = GFX_focus_chi_reach_out_to_france
 		relative_position_id = kas_equal_languages
 		prerequisite = { focus = kas_equal_languages }
 		x = -2
@@ -296,7 +296,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_university
-		icon = GFX_
+		icon = GFX_focus_research
 		relative_position_id = kas_foreign_investment
 		prerequisite = { focus = kas_foreign_investment }
 		x = 0
@@ -328,7 +328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_cede_gawete
-		icon = GFX_
+		icon = GFX_focus_chi_british_cooperation
 		relative_position_id = kas_foreign_investment
 		prerequisite = { focus = kas_foreign_investment }
 		x = -2
@@ -365,7 +365,7 @@ focus_tree = {
 	#Right
 	focus = {
 		id = kas_workers_union
-		icon = GFX_
+		icon = GFX_focus_por_workers_of_iberia
 		relative_position_id = kas_confederacy
 		prerequisite = { focus = kas_confederacy }
 		mutually_exclusive = { focus = kas_democratic_constitution }
@@ -398,7 +398,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_people_rights
-		icon = GFX_
+		icon = GFX_focus_ETH_re-convene_the_parliament
 		relative_position_id = kas_workers_union
 		prerequisite = { focus = kas_workers_union }
 		x = 1
@@ -438,7 +438,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_standardise_rail
-		icon = GFX_
+		icon = GFX_focus_generic_railroad
 		relative_position_id = kas_people_rights
 		prerequisite = { focus = kas_people_rights focus = kas_equal_languages }
 		prerequisite = { focus = kas_reorganise_states }
@@ -474,7 +474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_ban_politics
-		icon = GFX_
+		icon = GFX_focus_POL_ban_nazi_party
 		relative_position_id = kas_people_rights
 		prerequisite = { focus = kas_people_rights }
 
@@ -511,7 +511,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_seize_forign_assets
-		icon = GFX_
+		icon = GFX_seize_money
 		relative_position_id = kas_ban_politics
 		prerequisite = { focus = kas_ban_politics }
 
@@ -604,7 +604,7 @@ focus_tree = {
 	#Fascism Squared
 	focus = {
 		id = kas_stratocracy
-		icon = GFX_
+		icon = GFX_goal_molotov_ribbentrop_pact
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_unification_trouble }
 		mutually_exclusive = { focus = kas_confederacy focus = kas_military_junta }
@@ -640,7 +640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_confirm_stratocracy
-		icon = GFX_
+		icon = GFX_focus_generic_military_academy
 		relative_position_id = kas_stratocracy
 		prerequisite = { focus = kas_stratocracy }
 
@@ -672,7 +672,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_military_youth
-		icon = GFX_
+		icon = GFX_focus_generic_population_growth
 		relative_position_id = kas_confirm_stratocracy
 		prerequisite = { focus = kas_confirm_stratocracy }
 
@@ -709,7 +709,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_our_strength
-		icon = GFX_
+		icon = GFX_goal_generic_major_war
 		relative_position_id = kas_military_youth
 		prerequisite = { focus = kas_military_youth }
 
@@ -746,7 +746,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_german_engineers
-		icon = GFX_
+		icon = GFX_focus_chi_mission_to_germany
 		relative_position_id = kas_stratocracy
 		prerequisite = { focus = kas_stratocracy focus = kas_confederacy }
 
@@ -780,7 +780,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_military_designs
-		icon = GFX_
+		icon = GFX_goal_generic_army_artillery2
 		relative_position_id = kas_german_engineers
 		prerequisite = { focus = kas_german_engineers }
 
@@ -833,7 +833,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_franco_kash_war
-		icon = GFX_
+		icon = GFX_focus_attack_france
 		relative_position_id = kas_military_designs
 		prerequisite = { focus = kas_military_designs focus = kas_military_youth focus = kas_miliary_expansion }
 
@@ -870,7 +870,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_integrate_aka
-		icon = GFX_
+		icon = GFX_focus_generic_annex_country_2
 		relative_position_id = kas_franco_kash_war
 		prerequisite = { focus = kas_franco_kash_war focus = kas_our_strength }
 
@@ -904,7 +904,7 @@ focus_tree = {
 	#Junta
 	focus = {
 		id = kas_military_junta
-		icon = GFX_
+		icon = GFX_focus_generic_military_dictatorship
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_unification_trouble }
 		mutually_exclusive = { focus = kas_stratocracy focus = kas_confederacy }
@@ -942,7 +942,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_the_generals
-		icon = GFX_
+		icon = GFX_focus_ETH_re-convene_the_parliament
 		relative_position_id = kas_military_junta
 		prerequisite = { focus = kas_military_junta }
 		x = 0
@@ -972,7 +972,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_miliary_expansion
-		icon = GFX_
+		icon = GFX_goal_generic_construct_mil_factory
 		relative_position_id = kas_the_generals
 		prerequisite = { focus = kas_the_generals }
 		x = 0
@@ -1062,7 +1062,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_miliary_expansion_2
-		icon = GFX_
+		icon = GFX_r56_goal_generic_construct_war_factory
 		relative_position_id = kas_miliary_expansion
 		prerequisite = { focus = kas_miliary_expansion }
 		x = 0
@@ -1151,7 +1151,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_miliary_expansion_3
-		icon = GFX_
+		icon = GFX_r56_goal_generic_construct_war_factory
 		relative_position_id = kas_miliary_expansion_2
 		prerequisite = { focus = kas_miliary_expansion_2 }
 		x = 0
@@ -1241,7 +1241,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_industrial_expansion
-		icon = GFX_
+		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = kas_the_generals
 		prerequisite = { focus = kas_the_generals }
 		x = 2
@@ -1331,7 +1331,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_industrial_expansion_2
-		icon = GFX_
+		icon = GFX_investinfactories
 		relative_position_id = kas_industrial_expansion
 		prerequisite = { focus = kas_industrial_expansion }
 		x = 0
@@ -1421,7 +1421,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_industrial_expansion_3
-		icon = GFX_
+		icon = GFX_investinfactories
 		relative_position_id = kas_industrial_expansion_2
 		prerequisite = { focus = kas_industrial_expansion_2 }
 		x = 0
@@ -1511,7 +1511,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_tortoise_shell #Is this a Korea reference?
-		icon = GFX_
+		icon = GFX_goal_generic_fortify_city
 		relative_position_id = kas_industrial_expansion_3
 		prerequisite = { focus = kas_industrial_expansion_3 focus = kas_miliary_expansion_3 }
 		x = -1
@@ -1545,7 +1545,7 @@ focus_tree = {
 
 	focus = {
 		id = kas_propganda
-		icon = GFX_
+		icon = GFX_focus_generic_secret_service_agency
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_military_youth  focus = kas_people_rights }
 
@@ -1576,7 +1576,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_landlords
-		icon = GFX_
+		icon = GFX_focus_mex_arrest_general_cedillo
 		relative_position_id = kas_propganda
 		prerequisite = { focus = kas_propganda }
 
@@ -1607,7 +1607,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_university_complex
-		icon = GFX_
+		icon = GFX_focus_research2
 		relative_position_id = kas_landlords
 		prerequisite = { focus = kas_landlords }
 
@@ -1642,7 +1642,7 @@ focus_tree = {
 
 	focus = {
 		id = kas_language_stability
-		icon = GFX_
+		icon = GFX_focus_hol_the_foundations_of_defense
 		relative_position_id = kas_unification_trouble
 		x = 14
 		y = 1
@@ -1671,7 +1671,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_national_workforce
-		icon = GFX_
+		icon = GFX_focus_POL_complete_april_constitution
 		relative_position_id = kas_language_stability
 		prerequisite = { focus = kas_language_stability }
 		x = -2
@@ -1703,7 +1703,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_national_road_maintenance
-		icon = GFX_
+		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = kas_national_workforce
 		prerequisite = { focus = kas_national_workforce }
 		x = -1
@@ -1733,7 +1733,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_national_railway_project
-		icon = GFX_
+		icon = GFX_focus_generic_railroad
 		relative_position_id = kas_national_workforce
 		prerequisite = { focus = kas_national_workforce }
 		x = 1
@@ -1763,7 +1763,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_capital_highway
-		icon = GFX_
+		icon = GFX_focus_generic_land_reclamation
 		relative_position_id = kas_national_road_maintenance
 		prerequisite = { focus = kas_national_road_maintenance }
 		x = 0
@@ -1794,7 +1794,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_peoples_house
-		icon = GFX_
+		icon = GFX_focus_ETH_re-convene_the_parliament
 		relative_position_id = kas_language_stability
 		prerequisite = { focus = kas_language_stability }
 		x = 2
@@ -1825,7 +1825,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_primary_education
-		icon = GFX_
+		icon = GFX_focus_generic_treaty
 		relative_position_id = kas_peoples_house
 		prerequisite = { focus = kas_peoples_house }
 		x = 0
@@ -1856,7 +1856,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_trade_schools
-		icon = GFX_
+		icon = GFX_focus_generic_self_management
 		relative_position_id = kas_primary_education
 		prerequisite = { focus = kas_primary_education }
 		x = 0
@@ -1887,7 +1887,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_mace_navy
-		icon = GFX_
+		icon = GFX_goal_generic_navy_cruiser
 		relative_position_id = kas_unification_trouble
 		
 		x = 24
@@ -2102,7 +2102,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_cruiser_effort
-		icon = GFX_
+		icon = GFX_focus_generic_navy_battleship2
 		relative_position_id = kas_mace_navy
 		prerequisite = { focus = kas_mace_navy }
 		x = 0
@@ -2140,7 +2140,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_battleship_effort
-		icon = GFX_
+		icon = GFX_goal_generic_navy_battleship
 		relative_position_id = kas_cruiser_effort
 		prerequisite = { focus = kas_cruiser_effort }
 		mutually_exclusive = { focus = kas_carrier_effort }
@@ -2250,7 +2250,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kas_carrier_effort
-		icon = GFX_
+		icon = GFX_goal_generic_navy_carrier
 		relative_position_id = kas_cruiser_effort
 		prerequisite = { focus = kas_cruiser_effort }
 		mutually_exclusive = { focus = kas_battleship_effort }
@@ -2370,7 +2370,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_koba_army
-		icon = GFX_
+		icon = GFX_goal_generic_small_arms
 		relative_position_id = kas_unification_trouble
 		x = 38
 		y = 0
@@ -2400,7 +2400,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_good_tech
-		icon = GFX_
+		icon = GFX_goal_generic_military_sphere
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_koba_army }
 		relative_position_id = kas_koba_army
@@ -2434,7 +2434,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_armament
-		icon = GFX_
+		icon = GFX_goal_generic_army_artillery
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_good_tech }
 		relative_position_id = kas_good_tech
@@ -2473,7 +2473,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_artillery
-		icon = GFX_
+		icon = GFX_goal_generic_army_artillery2
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_armament }
 		relative_position_id = kas_armament
@@ -2555,7 +2555,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_vehicles
-		icon = GFX_
+		icon = GFX_r56_goal_generic_modernizing_the_cavalry
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_good_tech }
 		relative_position_id = kas_good_tech
@@ -2593,7 +2593,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_trains
-		icon = GFX_
+		icon = GFX_pan_atl_railroad
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_vehicles }
 		relative_position_id = kas_vehicles
@@ -2631,7 +2631,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_tractor_tank_pipeline
-		icon = GFX_
+		icon = GFX_goal_generic_army_tanks
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_vehicles }
 		relative_position_id = kas_vehicles
@@ -2682,7 +2682,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_good_doctrine
-		icon = GFX_
+		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = kas_unification_trouble
 		prerequisite = { focus = kas_koba_army }
 		mutually_exclusive = { focus = kas_good_tech }
@@ -2759,7 +2759,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_synth_oil
-		icon = GFX_r56_goal_generic_tank_offensive
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = kas_blitzkrieg }
 		relative_position_id = kas_blitzkrieg
 		x = 0
@@ -2844,7 +2844,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_planning_speed
-		icon = GFX_r56_goal_generic_plan
+		icon = GFX_r56_goal_generic_tank_map
 		prerequisite = { focus = kas_grand_plan }
 		relative_position_id = kas_grand_plan
 		x = 0
@@ -2922,7 +2922,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_radio_spotting
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_goal_generic_radar
 		prerequisite = { focus = kas_firepower }
 		relative_position_id = kas_firepower
 		x = 0
@@ -3007,7 +3007,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_manpower_recovery
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_focus_SOV_mobilization_plan
 		prerequisite = { focus = kas_mass_assault }
 
 		relative_position_id = kas_mass_assault
