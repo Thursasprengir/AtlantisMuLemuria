@@ -3043,7 +3043,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_fighter_investment
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = kas_koba_army focus = kas_mace_navy}
 
 		relative_position_id = kas_mace_navy
@@ -3079,7 +3079,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_fighter_range
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_focus_generic_long_range_aircraft
 		prerequisite = { focus = kas_fighter_investment }
 
 		relative_position_id = kas_fighter_investment
@@ -3122,7 +3122,7 @@ focus_tree = {
 	
 	focus = {
 		id = kas_strat_bomber
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = kas_fighter_range }
 mutually_exclusive = { focus = kas_fighter_guns }
 		relative_position_id = kas_fighter_range
@@ -3163,7 +3163,7 @@ mutually_exclusive = { focus = kas_fighter_guns }
 	
 	focus = {
 		id = kas_fighters
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = kas_fighter_investment }
 
 		relative_position_id = kas_fighter_investment
@@ -3204,7 +3204,7 @@ mutually_exclusive = { focus = kas_fighter_guns }
 	
 	focus = {
 		id = kas_fighter_guns
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = { focus = kas_fighters }
  mutually_exclusive = { focus = kas_strat_bomber }
 		relative_position_id = kas_fighters
@@ -3247,7 +3247,7 @@ mutually_exclusive = { focus = kas_fighter_guns }
 	
 	focus = {
 		id = kas_operational_integrity
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = kas_fighter_guns }
 		mutually_exclusive = { focus = kas_battlefield_support }
 		relative_position_id = kas_fighter_guns
@@ -3290,7 +3290,7 @@ mutually_exclusive = { focus = kas_fighter_guns }
 	
 	focus = {
 		id = kas_battlefield_support
-		icon = GFX_goal_generic_railway_artillery
+		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = kas_fighter_guns }
 		mutually_exclusive = { focus = kas_operational_integrity }
 		relative_position_id = kas_fighter_guns
