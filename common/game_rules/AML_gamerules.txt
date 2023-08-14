@@ -266,6 +266,36 @@ KLK_ai_behavior = {
 	}
 }
 
+KAS_ai_behavior = {
+	name = "KAS_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "KAS_AI_RANDOM_HISTORICAL"
+		desc = "RULE_HISTORICAL_KAS_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FASCIST
+		text = "KAS_AI_RANDOM_JUNTA"
+		desc = "KAS_AI_RANDOM_JUNTA_DESC"
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "KAS_AI_RANDOM_DEMOCRACY"
+		desc = "KAS_AI_RANDOM_DEMOCRACY_DESC"
+	}
+	option = {
+		name = COMMUNIST
+		text = "KAS_AI_RANDOM_COMMUNISM"
+		desc = "KAS_AI_RANDOM_COMMUNISM_DESC"
+	}
+}
 
 
 

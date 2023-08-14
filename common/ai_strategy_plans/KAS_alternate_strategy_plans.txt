@@ -1,0 +1,296 @@
+KAS_ahistorical_democracy = {
+	name = "KAS Confederacy"
+	desc = ""
+
+	enable = {
+		original_tag = KAS
+		OR = {
+			has_country_flag = KAS_AI_RANDOM_DEMOCRACY
+			has_game_rule = {
+				rule = KAS_ai_behavior
+				option = DEMOCRACY
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		kas_unification_trouble						
+		kas_confederacy						
+		kas_mace_navy			
+		kas_koba_army				
+		kas_democratic_constitution	
+		#1937										
+		kas_equal_languages							
+		kas_good_tech					
+		kas_armament
+		kas_national_workforce					
+		kas_national_railway_project
+		#1938	
+		kas_cruiser_effort					
+		kas_language_stability			
+		kas_reorganise_states		
+		kas_battleship_effort							
+		kas_destroyer_effort	
+		#1939							
+		kas_dockyard_estimations		
+		kas_dockyard_estimations_2
+		kas_fighter_investment
+		kas_fleet_in_being
+		kas_peoples_house						
+		kas_primary_education			
+		kas_foreign_investment
+		kas_university
+		#1940					
+		kas_artillery	
+		kas_rescind_claims						
+		kas_capital_highway		
+		kas_infantry		
+		kas_peoples_house
+		#1941							
+		kas_primary_education		
+		kas_trade_schools	
+		kas_fighter_range		
+		kas_fighters
+		kas_fighter_guns							
+		kas_operational_integrity	
+		#1942
+		
+		#1943	
+
+		#1944
+		
+	}
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+KAS_ahistorical_junta = {
+	name = "Military Junta"
+	desc = ""
+
+	enable = {
+		original_tag = KAS
+		OR = {
+			has_country_flag = KAS_AI_RANDOM_JUNTA
+			has_game_rule = {
+				rule = KAS_ai_behavior
+				option = JUNTA
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		kas_unification_trouble						
+		kas_military_junta						
+		kas_mace_navy			
+		kas_koba_army				
+		kas_the_generals	
+		#1937										
+		kas_miliary_expansion							
+		kas_good_tech					
+		kas_armament
+		kas_national_workforce					
+		kas_national_railway_project
+		#1938	
+		kas_cruiser_effort					
+		kas_language_stability			
+		kas_miliary_expansion_2	
+		kas_battleship_effort							
+		kas_destroyer_effort	
+		#1939							
+		kas_dockyard_estimations		
+		kas_dockyard_estimations_2
+		kas_fighter_investment
+		kas_fleet_in_being
+		kas_industrial_expansion						
+		kas_primary_education			
+		kas_german_engineers
+		#1940					
+		kas_artillery	
+		kas_franco_kash_war						
+		kas_capital_highway		
+		kas_infantry		
+		kas_miliary_expansion_2
+		#1941							
+		kas_primary_education		
+		kas_trade_schools	
+		kas_fighter_range		
+		kas_fighters
+		kas_fighter_guns							
+		kas_operational_integrity	
+		#1942
+		
+		#1943	
+
+		#1944
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+KAS_ahistorical_communism = {
+	name = "Communism"
+	desc = ""
+
+	enable = {
+		original_tag = KAS
+		OR = {
+			has_country_flag = KAS_AI_RANDOM_COMMUNISM
+			has_game_rule = {
+				rule = KAS_ai_behavior
+				option = COMMUNISM
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		kas_unification_trouble						
+		kas_workers_union						
+		kas_mace_navy			
+		kas_koba_army				
+		kas_democratic_constitution	
+		#1937										
+		kas_cruiser_effort					
+		kas_good_tech					
+		kas_armament
+		kas_national_workforce					
+		kas_national_railway_project
+		#1938	
+		kas_people_rights					
+		kas_ban_politics			
+		kas_reorganise_states		
+		kas_battleship_effort							
+		kas_destroyer_effort
+		#1939							
+		kas_dockyard_estimations		
+		kas_dockyard_estimations_2
+		kas_fighter_investment
+		kas_fleet_in_being
+		kas_peoples_house									
+		kas_seize_forign_assets
+		kas_propganda
+		#1940					
+		kas_artillery	
+		kas_landlords
+		kas_university_complex		
+		kas_capital_highway		
+		kas_infantry		
+		kas_peoples_house
+		#1941							
+		kas_primary_education		
+		kas_trade_schools	
+		kas_fighter_range		
+		kas_fighters
+		kas_fighter_guns							
+		kas_operational_integrity	
+		#1942
+		
+		#1943	
+
+		#1944
+		
+	}
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
