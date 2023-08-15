@@ -8,7 +8,7 @@ KAS_ahistorical_democracy = {
 			has_country_flag = KAS_AI_RANDOM_DEMOCRACY
 			has_game_rule = {
 				rule = KAS_ai_behavior
-				option = DEMOCRACY
+				option = DEMOCRATIC
 			}
 		}
 	}
@@ -99,7 +99,7 @@ KAS_ahistorical_junta = {
 			has_country_flag = KAS_AI_RANDOM_JUNTA
 			has_game_rule = {
 				rule = KAS_ai_behavior
-				option = JUNTA
+				option = FASCIST
 			}
 		}
 	}
@@ -189,7 +189,7 @@ KAS_ahistorical_communism = {
 			has_country_flag = KAS_AI_RANDOM_COMMUNISM
 			has_game_rule = {
 				rule = KAS_ai_behavior
-				option = COMMUNISM
+				option = COMMUNIST
 			}
 		}
 	}
@@ -244,31 +244,6 @@ KAS_ahistorical_communism = {
 		#1944
 		
 	}
-	research = {
-
-	}
-
-	ideas = {
-		
-	}
-
-	traits = {
-	}
-
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
-	weight = {
-		factor = 1.0
-		modifier = {
-			factor = 1.0
-		}
-	}
-
-	focus_factors = {
-		
-	}
-
-}
 	research = {
 
 	}

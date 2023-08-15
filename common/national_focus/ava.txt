@@ -69,7 +69,7 @@ focus_tree = {
 		x = 13
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -250,7 +250,6 @@ focus_tree = {
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -479,12 +478,12 @@ focus_tree = {
 		}
 
 		available = {
-			KBS = { has_government = communism }
+			KAS = { has_government = communism }
 		}
 
 		bypass = {
 			NOT = {
-				KBS = { has_government = communism }
+				KAS = { has_government = communism }
 			}
 		}
 
@@ -788,7 +787,10 @@ focus_tree = {
 				idea = ava_gold_transfer
 				days = 365
 			}
-			#Event or forced
+			AVA = {
+				set_state_owner = 1040
+				set_state_owner = 1060
+			}
 		}
 	}
 
@@ -3071,43 +3073,43 @@ focus_tree = {
 				load_oob = AVA_usa_carrier_legacy
 			}
 
-			#if = {
-			#	limit = {
-			#		has_dlc = "Man the Guns"
-			#	}
-			#	create_equipment_variant = {
-			#		name = "Chester Class"
-			#		type = ship_hull_cruiser_1
-			#		name_group = USA_CL_HISTORICAL
-			#		parent_version = 0
-			#		modules = {
-			#			fixed_ship_battery_slot = ship_light_medium_battery_1
-			#			fixed_ship_anti_air_slot = ship_anti_air_1
-			#			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			#			fixed_ship_radar_slot = empty
-			#			fixed_ship_engine_slot = cruiser_ship_engine_1
-			#			fixed_ship_armor_slot = empty
-			#			mid_1_custom_slot = ship_torpedo_1
-			#			mid_2_custom_slot = empty
-			#			rear_1_custom_slot = ship_light_medium_battery_1
-			#		}
-			#	}
-			#	create_equipment_variant = {
-			#		name = "Langley Class"
-			#		type = ship_hull_carrier_conversion_ca
-			#		name_group = USA_CV_HISTORICAL
-			#		parent_version = 0
-			#		modules = {
-			#			fixed_ship_deck_slot_1 = ship_deck_space
-			#			fixed_ship_deck_slot_2 = ship_deck_space
-			#			fixed_ship_anti_air_slot = ship_anti_air_1
-			#			fixed_ship_radar_slot = empty
-			#			fixed_ship_engine_slot = carrier_ship_engine_1
-			#			fixed_ship_secondaries_slot = ship_secondaries_1
-			#		}
-			#	}
-			#	load_oob = AVA_usa_carrier_mtg
-			#}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Chester Class"
+					type = ship_hull_cruiser_1
+					name_group = USA_CL_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_1
+						fixed_ship_armor_slot = empty
+						mid_1_custom_slot = ship_torpedo_1
+						mid_2_custom_slot = empty
+						rear_1_custom_slot = ship_light_medium_battery_1
+					}
+				}
+				create_equipment_variant = {
+					name = "Langley Class"
+					type = ship_hull_carrier_conversion_ca
+					name_group = USA_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+					}
+				}
+				load_oob = AVA_usa_carrier_mtg
+			}
 		}
 	}
 

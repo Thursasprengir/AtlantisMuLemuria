@@ -297,7 +297,36 @@ KAS_ai_behavior = {
 	}
 }
 
-
+AVA_ai_behavior = {
+	name = "AVA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "AVA_AI_RANDOM_HISTORICAL"
+		desc = "RULE_HISTORICAL_AVA_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FASCIST
+		text = "AVA_AI_RANDOM_FASCISM"
+		desc = "AVA_AI_RANDOM_FASCISM_DESC"
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "AVA_AI_RANDOM_DEMOCRACY"
+		desc = "AVA_AI_RANDOM_DEMOCRACY_DESC"
+	}
+	option = {
+		name = COMMUNIST
+		text = "AVA_AI_RANDOM_COMMUNISM"
+		desc = "AVA_AI_RANDOM_COMMUNISM_DESC"
+	}
+}
 
 
 

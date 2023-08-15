@@ -1,0 +1,100 @@
+AVA_historical = {
+	name = "Avahaya Historical Plan"
+	desc = ""
+
+	enable = {
+		original_tag = AVA
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = AVA_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = AVA_AI_RANDOM_HISTORICAL 
+			has_game_rule = {
+				rule = AVA_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		AVA_conflicting_reports
+		AVA_azadeh_house
+		AVA_purge_muzumdar						
+		AVA_purge_edibam_m			
+		AVA_learning_civil_war				
+		AVA_reform_army	
+		#1937										
+		AVA_firepower							
+		AVA_civilian_industry						
+		AVA_military_industry	
+		AVA_shipyard					
+		AVA_mazdakist_alternative
+		#1938	
+		AVA_infantry					
+		AVA_support			
+		AVA_capital_university	
+		AVA_paratoopers							
+		AVA_purchase_british_ship	
+		#1939							
+		AVA_artillery		
+		AVA_reform_navy
+		AVA_purchase_american_ships
+		AVA_base_strike
+		AVA_reform_air						
+		AVA_battlefield_support			
+		AVA_chrome
+		#1940					
+		AVA_efficient_engines	
+		AVA_larger_guns						
+		AVA_small_aircraft		
+		AVA_monarchical_socialist_blend		
+		AVA_parviz_general
+		#1941							
+		AVA_female_aviators		
+		AVA_iron	
+		AVA_chrome_2		
+		AVA_iron_2
+		AVA_panchaian_tungsten							
+		AVA_battlecruiser	
+		#1942
+		AVA_carrier
+		AVA_join_britain
+		#1943	
+
+		#1944
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
