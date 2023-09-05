@@ -743,3 +743,42 @@ adjacency_rule =
 	icon = 1832
 	offset = { 9 0 6 }
 }
+
+#Silver Gate Bridge
+adjacency_rule =
+{
+	name = "kolpo_strait" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 15533 15523 }
+		
+	icon = 15533
+	offset = { 9 0 6 }
+}
