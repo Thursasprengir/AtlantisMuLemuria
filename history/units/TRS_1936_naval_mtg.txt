@@ -1,0 +1,498 @@
+﻿
+
+
+##### OOB #####
+units = {
+	fleet = {
+		name = "Ladenshua Gunaan"			
+		naval_base = 15635  
+		task_force = {
+			name = "1 Gunaan"
+			location = 15635  
+			#Dai 1 Anluwaam
+			ship = { name = "Chamanao"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Nawal Class" } } }
+			ship = { name = "Meiwensu" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TRS version_name = "Weinuaang Class" } } }
+			ship = { name = "Angshu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TRS version_name = "Nawal Class" } } }
+			ship = { name = "Deshuleng" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Nawal Class" } } }
+			#Dai 8 Anluwaam
+			ship = { name = "Wetsubang" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = TRS version_name = "Nolom Class" } } }
+			ship = { name = "Nuludzu" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = TRS version_name = "Nolom Class" } } }
+			ship = { name = "Sasatsa" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = TRS version_name = "Nolom Class" } } }
+		}
+		task_force = {
+			name = "1 Gunaan Daliam" #Minlayer/torp
+			location = 15635  
+			#Flagship
+			ship = { name = "Gutsam" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = TRS version_name = "Nolom Class" } } }
+			#Dai 9 Kuchikutai
+			ship = { name = "Atamsagli" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Folashiu Class" } } }
+			ship = { name = "Lyunlan" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Folashiu Class" } } }
+			#Dai 21 Kuchikutai
+			ship = { name = "Henshuitsal" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Folashiu Class" } } }
+			ship = { name = "Onaam" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Folashiu Class" } } }	
+			ship = { name = "Watsuli" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Folashiu Class" } } }		
+			ship = { name = "Patsili" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Folashiu Class" } } }
+			#Dai 30 Kuchikutai
+			ship = { name = "Bubali" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Nigaala Class" } } }
+			ship = { name = "Tsetsangali" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Nigaala Class" } } }
+			ship = { name = "Utseng" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Nigaala Class"  } } }
+			ship = { name = "Ibasaang" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Nigaala Class" } } }
+		}
+		task_force = {
+			name = "1 Gunaan Daliam"
+			location = 15635  
+			#Kaidai-class Submarines
+			ship = { name = "S-14" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-71" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }		
+			ship = { name = "S-72" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }			
+			ship = { name = "S-73" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }	
+			ship = { name = "S-74" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }	
+			ship = { name = "S-75" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-76" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }	
+			ship = { name = "S-77" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-81" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-82" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-83" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-89" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }	
+			ship = { name = "S-90" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }	
+			ship = { name = "S-91" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-92" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }	
+			ship = { name = "S-93" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }	
+			ship = { name = "S-94" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-95" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-96" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-99" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+			ship = { name = "S-98" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Juluntawaan Class" } } }
+		}
+		task_force = {
+			name = "1 Nalamang Anluwaam" 
+			location = 15635  
+			ship = { name = "Yatauam" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = TRS version_name = "Yatauam Class" } }
+			#	air_wings = { 
+			#		cv_fighter_equipment_0 =  { owner = "TRS" amount = 24 } # historical 24
+			#		cv_CAS_equipment_1 = { owner = "TRS" amount = 12 } 	# historical 12
+			#	}
+			}
+			#Dai 5 Kuchikutai
+			ship = { name = "Denangxi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+			ship = { name = "Pungloi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+			ship = { name = "Fengtsu" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+			ship = { name = "Ungang" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+		}
+		task_force = {
+			name = "Guanshuim Gunaan" # Patrol and reserve fleet, including ships under modernization
+			location = 15635  
+			ship = { name = "Tubulu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = TRS version_name = "Nawal Class" } } }
+			ship = { name = "Ximaa" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Filaamal Class" } } }
+			ship = { name = "Tengtsiu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Filaamal Class" } } }
+			ship = { name = "Hungtsushi" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Filaamal Class" } } }
+			ship = { name = "Uzulu" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Filaamal Class" } } }
+			ship = { name = "Lipilimung" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Filaamal Class" } } }
+			# Dai 3 Kuchikutai
+			ship = { name = "Teikungtsa" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+			ship = { name = "Inungaam" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+			ship = { name = "Laiponglui" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+			ship = { name = "Tsuwei" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+			ship = { name = "Mashentsi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+			ship = { name = "Shexitsu" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Olunglu Class" } } }
+		}
+	}
+	
+	
+	fleet = {
+		name = "Huxamteng Gunaan"			
+		naval_base = 14595  
+		task_force = {	
+			name = "2 Gunaan"
+			location = 14595  
+			#Dai 5 Anluwaam
+			ship = { name = "Paling" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Itsamaan" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Tsi" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Ashuetsi" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Aningtso" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			#Dai 7 Anluwaam
+			ship = { name = "Tangtsi" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Liguntso" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			# Dai 2 Koku Anluwaam
+			ship = { name = "Tsaam" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = TRS version_name = "Shuxileng Class" } } 			
+			#	air_wings = { 
+			#		cv_fighter_equipment_0 =  { owner = "TRS" amount = 16 } # historical 16
+			#		cv_CAS_equipment_1 = { owner = "TRS" amount = 16 } # historical 16
+			#		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 28 } # historical 28
+			#	}
+			}
+		}
+		task_force = {	
+			name = "2 Naxishui Anluwaam"
+			location = 14595  
+			#Flagship
+			ship = { name = "Kainangaam" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Yonomaang Class" } } }
+			#Dai 6 Kuchikutai, Type III Owongtumaaxi-class destroyers
+			ship = { name = "Pesangtsashue" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Ingasaa" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }		
+			ship = { name = "Tsuhaam" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }	
+			ship = { name = "Hetsamsaani" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }	
+			#Dai 8 Kuchikutai
+			ship = { name = "Simsaamu" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }			
+			ship = { name = "Sinangaam" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			#Dai 19 Kuchikutai
+			ship = { name = "Loitsaang" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }	
+			ship = { name = "Letaamshui" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }	
+			ship = { name = "Gamsaang" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			#Dai 20 Kuchikutai
+			ship = { name = "Fetsong" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }	
+			ship = { name = "Molongtsi" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Lomtsu" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			#Dai 28 Kuchikutai
+			ship = { name = "Nenangshaa" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Gatseshi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+		}
+		task_force = {	
+			name = "2 Gunaan Daliam"
+			location = 14595  
+			#Flagship
+			ship = { name = "Tsubaam" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Seimalam Class" } } }	
+			#Junsen-class Submarines
+			ship = { name = "S-78" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }	
+			ship = { name = "S-79" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }	
+			ship = { name = "S-80" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }	
+			ship = { name = "S-101" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }		
+			ship = { name = "S-102" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }	
+			ship = { name = "S-103" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }	
+		}
+		task_force = {
+			name = "3 Gunaan Daliam"
+			location = 14595 
+			ship = { name = "S-109" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }		
+			ship = { name = "S-110" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }			
+			ship = { name = "S-111" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }		
+			ship = { name = "S-112" definition = submarine start_experience_factor = 0.5 equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }	
+		}
+		task_force = {
+			name = "Tsai Gunaan" # Patrol and reserve fleet, including ships under modernization
+			location = 14595  
+			ship = { name = "Dongtsue" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_pre_dreadnought = {amount = 1 owner = TRS version_name = "Kweixam Class" } } }
+			ship = { name = "Detsunaang" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_pre_dreadnought = {amount = 1 owner = TRS version_name = "Kweixam Class" } } }
+			ship = { name = "Gelungtso" definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = TRS version_name = "Shulxineng Class" } } 				
+			#	air_wings = { 
+			#		cv_fighter_equipment_0 =  { owner = "TRS" amount = 12 } 	# historical 12
+			#		cv_CAS_equipment_1 = { owner = "TRS" amount = 12 } 			# historical 18
+			#		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 36 } 	# historical 36
+			#	}
+			}	
+			ship = { name = "Daibalnaang" definition = carrier equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = TRS version_name = "Daibalnaang Class" } } 				
+			#	air_wings = { 
+			#		cv_fighter_equipment_0 =  { owner = "TRS" amount = 10 } 	
+			#		cv_nav_bomber_equipment_1 =  { owner = "TRS" amount = 5 } 	
+			#	}
+			}
+			ship = { name = "Tselo" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Nilaa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Tisaang" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Iltsaam" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			#Dai 22 Kuchikutai
+			ship = { name = "Laitsushe" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Tsedong" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Nailung" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Nakwaxung" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			# Dai 23 Kuchikutai 
+			ship = { name = "Letsong" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Peitsaam" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Unongtsai" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Kwatseng" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+		}
+	}
+	
+	
+	fleet = {
+		name = "Baxenguaam Gunaan"				
+		naval_base = 14595	
+		task_force = {
+			name = "3 Gunaan" 
+			location = 14595	
+			#Dai 10 Anluwaam
+			ship = { name = "Tso" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = TRS version_name = "Beinaam Class" } } }
+			ship = { name = "Dulaming" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			#Dai 11 Anluwaam, Lu-class destroyers
+			#Dai 25 Kuchikutai
+			ship = { name = "Sheshang" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Gatsingshe" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Gengtsi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			#Dai 26 Kuchikutai
+			ship = { name = "Yimtsang" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Nongtse" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Litsuaam" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Saguatsi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			#Dai 27 Kuchikutai
+			ship = { name = "Ebitsi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Limsaam" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Petsui" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			#Former Dai 28 Kuchikutai
+			ship = { name = "Wingtso" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Faigaang" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Deybingdao" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			#Other Lu-Class destroyers
+			ship = { name = "Ungitsu" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Oluioi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Tsalisi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Enangtsi" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Ilinguli" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Dengtsu" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			#Minelayers
+			ship = { name = "Amilu" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Tsanglaam" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Sisulaam" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+		}
+		task_force = {
+			name = "5 Naxishui Anluwaam" #A part of "Dai 3 Gunaan"
+			location = 14595	
+			#Flagship
+			ship = { name = "Ulilaiseng" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } } 
+			#Dai 13 Kuchikutai
+			ship = { name = "Letsa" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Ikungaam" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Tsuliu" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			##Dai 16 Kuchikutai
+			ship = { name = "Fuyo" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Danglu" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }		
+			ship = { name = "Lengtse" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+		}
+		task_force = {
+			name = "Kinamalaan Anluwaam"
+			location = 14595	
+			#Dai 4 Kuchikutai
+			ship = { name = "Pamang" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Dangglawaa" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Dulgwa" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Aketsaam" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+		}
+	}
+
+
+	fleet = {
+		name = "Salandulang Gunaan"			
+		naval_base = 14595  
+		task_force = {
+			name = "Shenamaa Gunaan" # Patrol and reserve fleet, including ships under modernization
+			location = 14595  
+			ship = { name = "Kopeng" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_pre_dreadnought = {amount = 1 owner = TRS version_name = "Nunlawei Class" } } }		
+			ship = { name = "Ushingaam" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_pre_dreadnought = {amount = 1 owner = TRS version_name = "Nunlawei Class" } } }
+			ship = { name = "Dilenshu" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Elaamung" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Palaam" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Pulung" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Ang" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Yengtso" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } }
+			ship = { name = "Tsulaang" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = TRS version_name = "Dedabeng Class" } } } # at Maizuru
+			# Dai 11 Kuchikutai
+			ship = { name = "Hepingtso" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			ship = { name = "Geptsuung" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }
+			# Dai 12 Kuchikutai
+			ship = { name = "Fultsao" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Dingwun Class" } } }		
+			ship = { name = "Mainaang" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }	
+			ship = { name = "Hashingsu" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			# Dai 7 Kuchikutai
+			ship = { name = "Tsetsole" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }	
+			ship = { name = "Kaimeng" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }	
+			ship = { name = "Delie" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+			ship = { name = "Opong" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = TRS version_name = "Pinlaa Class" } } }
+		}
+		task_force = {
+			name = "3 Tsengalu Gunaan"
+			location = 14595  
+			#Kaichu-class Submarines
+			ship = { name = "S-21" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-27" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-28" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-30" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-31" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-32" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-33" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			#Type L-class Submarines
+			ship = { name = "S-51" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-56" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-57" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-58" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-59" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-60" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-61" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-62" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-63" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-64" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-65" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-66" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-67" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+			ship = { name = "S-68" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = TRS version_name = "Ansushaang Class" } } }
+		}
+	}
+}
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	
+### Ongoing Naval Production Jan 1 1936 ###
+		# BB (x1): "Iganatsai"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_heavy_1
+				creator = "TRS"
+				version_name = "Weinuaang Class"
+			}
+			requested_factories = 1
+			progress = 0.2
+			amount = 1
+		}
+		# CV (x1): "Putselaang"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_carrier_1
+				creator = "TRS" 
+				version_name = "Qihaang Class"
+			}
+			requested_factories = 1
+			progress = 0.66
+			amount = 2
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_carrier_conversion_ca
+				creator = "TRS" 
+				version_name = "Morwinguen Class"
+			}
+			requested_factories = 1
+			progress = 0.15
+			amount = 2
+		}
+		# CA (x1): "Yaanyung"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "TRS" 
+				version_name = "Polomaang Class"
+			}
+			requested_factories = 1
+			progress = 0.2
+			amount = 2
+		}	
+		# CL(CM) (x1): "Moilon"
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_cruiser_1
+				creator = "TRS" 
+				version_name = "Iwologaraa Class"
+			}
+			requested_factories = 1
+			progress = 0.15
+			amount = 1
+		}		
+#		# DD (x5): "Ipingtsi" "Naitsaang" "Tsaitsaang" "Ikusung" "Pai"
+#		add_equipment_production = {				
+#			equipment = {
+#				type = ship_hull_light_1
+#				creator = "TRS" 
+#				version_name = "Folashiu Class"
+#			}
+#			requested_factories = 1
+#			progress = 0.7
+#			amount = 2
+#		}	
+#		add_equipment_production = {				
+#			equipment = {
+#				type = ship_hull_light_1
+#				creator = "TRS" 
+#				version_name = "Folashiu Class"
+#			}
+#			requested_factories = 1
+#			progress = 0.6
+#			amount = 1
+#		}		
+#		add_equipment_production = {				
+#			equipment = {
+#				type = ship_hull_light_1
+#				creator = "TRS" 
+#				version_name = "Folashiu Class"
+#			}
+#			requested_factories = 1
+#			progress = 0.5
+#			amount = 2
+#		}		
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_1
+				creator = "TRS" 
+				version_name = "Folashiu Class"
+			}
+			requested_factories = 1
+			progress = 0.4
+			amount = 1
+		}		
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_1
+				creator = "TRS" 
+				version_name = "Folashiu Class"
+			}
+			requested_factories = 1
+			progress = 0.3
+			amount = 1
+		}		
+#		# SS (x4): "S-217" "S-218" "S-219" "S-220"
+#		add_equipment_production = {				
+#			equipment = {
+#				type = ship_hull_submarine_1
+#				creator = "TRS" 
+#				version_name = "Juluntawaan Class"
+#			}
+#			requested_factories = 1
+#			progress = 0.7
+#			amount = 2
+#		}
+#		add_equipment_production = {				
+#			equipment = {
+#				type = ship_hull_submarine_1
+#				creator = "TRS" 
+#				version_name = "Juluntawaan Class"
+#			}
+#			requested_factories = 1
+#			progress = 0.6
+#			amount = 2
+#		}
+#		# SS (x2): "S-115" "S-116"
+#		add_equipment_production = {				
+#			equipment = {
+#				type = ship_hull_submarine_1
+#				creator = "TRS" 
+#				version_name = "Juluntawaan Class"
+#			}
+#			requested_factories = 1
+#			progress = 0.7
+#			amount = 1
+#		}
+#		add_equipment_production = {				
+#			equipment = {
+#				type = ship_hull_submarine_1
+#				creator = "TRS" 
+#				version_name = "Juluntawaan Class"
+#			}
+#			requested_factories = 1
+#			progress = 0.6
+#			amount = 1
+#		}
+#		# SS (x1): "As-98"
+#		add_equipment_production = {				
+#			equipment = {
+#				type = ship_hull_submarine_1
+#				creator = "TRS" 
+#				version_name = "Ansushaang Class"
+#			}
+#			requested_factories = 1
+#			progress = 0.80
+#			amount = 1
+#		}
+}

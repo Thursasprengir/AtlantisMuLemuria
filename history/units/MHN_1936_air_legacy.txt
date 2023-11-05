@@ -1,0 +1,38 @@
+﻿air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1094 = { 
+		fighter_equipment_0 = {
+			owner = "MHN" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "MHN" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "MHN" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "MHN" 
+			amount = 100
+		}
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "MHN" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+}
+
+#################################

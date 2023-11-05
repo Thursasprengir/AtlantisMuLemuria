@@ -33,6 +33,22 @@ set_popularities = {
 
 	}
 
+
+DEN = {
+    if = {
+        limit = {
+            has_dlc = "Together for Victory"
+        }
+        set_autonomy = {
+            target = FRS
+            autonomous_state = autonomy_dominion
+        }
+    }
+    else = {
+        puppet = FRS
+    }
+}
+
 set_convoys = 40
 
 recruit_character = FRS_arnulf_svartsson

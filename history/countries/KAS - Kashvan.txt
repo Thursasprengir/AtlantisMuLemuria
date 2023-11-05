@@ -1,0 +1,299 @@
+﻿capital = 1043
+
+oob = "KAS_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	basic_train = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		early_battleship = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_submarine = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_dp_light_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "KAS_1936_naval_mtg"
+	else = {
+		set_naval_oob = "KAS_1936_naval_legacy"
+	}
+}
+set_stability = 0.72
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.10.22"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 18
+	fascism = 57
+	neutrality = 16
+	communism = 9
+}
+
+add_ideas = {
+	KAS_recently_unified_1
+}
+
+set_convoys = 20
+
+recruit_character = KAS_abmahalav_khumalo
+recruit_character = KAS_petela_wetmeri
+recruit_character = KAS_upweonu_bembigre
+recruit_character = KAS_leitu_nuwesde
+recruit_character = KAS_pambre_elusiti
+recruit_character = KAS_pakaristre_shamshkio
+#Political from MCT
+recruit_character = KAS_morigare_wensada
+recruit_character = KAS_general_laazalikamal
+recruit_character = KAS_nilu_erbandon
+recruit_character = KAS_ongbede_denguprii
+recruit_character = KAS_gawban_nuwasmale
+recruit_character = KAS_laazalikamal
+recruit_character = KAS_bandramutri_evanuusu
+
+recruit_character = KAS_logistics_2
+recruit_character = KAS_regrouping_2
+recruit_character = KAS_prince_of_terror
+recruit_character = KAS_ground_support_2
+recruit_character = KAS_maneuver_2
+recruit_character = KAS_offensive_2
+recruit_character = KAS_defensive_2
+recruit_character = KAS_naval_theorist
+recruit_character = KAS_mil_theorist
+recruit_character = KAS_air_theorist
+recruit_character = KAS_commerce_raiding_2
+recruit_character = KAS_backstabber
+recruit_character = KAS_night_ops_2
+recruit_character = KAS_close_air_support_2
+recruit_character = KAS_quartermaster_gen
+recruit_character = KAS_capital_ship_2
+
+#military leaders
+recruit_character = KAS_corps_commander_1
+recruit_character = KAS_corps_commander_2
+recruit_character = KAS_corps_commander_3
+recruit_character = KAS_corps_commander_4
+recruit_character = KAS_naval_leader_1
+recruit_character = KAS_naval_leader_2
+recruit_character = KAS_naval_leader_3
+recruit_character = KAS_naval_leader_4
+recruit_character = KAS_naval_leader_5
+#advisors
+recruit_character = KAS_armaments_organizer
+recruit_character = KAS_communist_revolutionary
+recruit_character = KAS_democratic_reformer
+recruit_character = KAS_fascist_demagogue
+#theorists
+#military chiefs
+recruit_character = KAS_army_chief_defensive_2
+recruit_character = KAS_army_chief_offensive_2
+recruit_character = KAS_navy_chief_decisive_battle_2
+recruit_character = KAS_navy_chief_naval_aviation_2
+recruit_character = KAS_air_chief_ground_support_2
+recruit_character = KAS_air_chief_reform_2
+recruit_character = KAS_army_armored_1
+recruit_character = KAS_army_entrenchment_1
+recruit_character = KAS_army_infantry_1
+recruit_character = KAS_army_logistics_2
+recruit_character = KAS_air_bomber_interception_2
+recruit_character = KAS_air_close_air_support_2
+recruit_character = KAS_navy_screen_2
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Isibhakabhaka Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 2
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Asikho Class"
+		type = destroyer_1
+		obsolete = yes
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Akukho Class"
+		type = submarine_1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 2
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 2
+		}
+	}create_equipment_variant = {
+		name = "Dumlupinar Class"
+		type = submarine_2
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 2
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 2
+		}
+	}
+	
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Lwandle Class"				
+		type = ship_hull_submarine_1
+		name_group = ETH_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Akukho Class"				
+		type = ship_hull_submarine_2
+		name_group = ETH_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Ulwandle Class"								# represents Ulwandle  and Gur classes
+		type = ship_hull_submarine_1
+		name_group = ETH_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Dumlupinar Class"								# represents Ulwandle  and Gur classes
+		type = ship_hull_submarine_2
+		name_group = ETH_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Umkhonto Class"									# large torpedo boats		
+		type = ship_hull_light_1
+		name_group = ETH_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Isibhakabhaka Class"								# represents Isibhakabhaka and Umbhubhisi classes
+		type = ship_hull_light_1
+		name_group = ETH_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "Omkhulu Class"					
+		type = ship_hull_heavy_1
+		name_group = ETH_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}

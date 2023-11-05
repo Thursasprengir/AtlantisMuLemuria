@@ -1,0 +1,718 @@
+characters={
+	ARK_democratic_leader={
+		name="Qhispi Ninahuamán Arnoldo Sihui"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARK/ARK_democratic_leader.dds"
+			}
+		}
+		country_leader={
+			desc="DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	ARK_communism_leader={
+		name="Guillermo Yanaqhoyllur Huaman"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARK/ARK_communism_leader.dds"
+			}
+		}
+		country_leader={
+			desc="DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	ARK_fascism_leader={
+		name="Qorichullpi Q. Paukarchuko"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARK/ARK_fascism_leader.dds"
+			}
+		}
+		country_leader={
+			desc="DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			
+		}
+	}
+	ARK_neutrality_leader={
+		name="Chaska Paukar Herrera"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARK/ARK_neutrality_leader.dds"
+			}
+		}
+		country_leader={
+			desc="DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	
+	ARK_monarchism_leader={
+		name="Tiunqhi Fidel de Antirunakuna"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARK/ARK_monarchism_leader.dds"
+			}
+		}
+		country_leader={
+			desc="DESC"
+			ideology=absolutist
+			expire="1965.1.1.1"
+			
+		}
+	}
+	
+	
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+	ARK_corps_commander_1={
+		name="ARK_corps_commander_1"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/ARK/Ark_mil_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
+
+	ARK_corps_commander_2={
+		name="ARK_corps_commander_2"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/ARK/Ark_mil_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	ARK_corps_commander_3={
+		name="ARK_corps_commander_3"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/ARK/Ark_mil_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	ARK_corps_commander_4={
+		name="ARK_corps_commander_4"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/ARK/Ark_mil_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	ARK_naval_leader_1={
+		name="ARK_naval_leader_1"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/ARK/ARK_mil_7.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	ARK_naval_leader_2={
+		name="ARK_naval_leader_2"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/ARK/Ark_mil_6.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast superior_tactician spotter }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	ARK_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_anti_communist_crusader
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="ARK_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_6"
+			}
+		}
+	}
+	ARK_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_backroom_backstabber
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="ARK_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_land_5"
+			}
+		}
+	}
+	ARK_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_communist_revolutionary
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="ARK_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_land_1"
+			}
+		}
+	}
+	ARK_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_democratic_reformer
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="ARK_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_ENG_generic_land_2"
+			}
+		}
+	}	
+	ARK_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_economist
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="ARK_economist"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_5"
+			}
+		}
+	}
+	ARK_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_fascist_demagogue
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="ARK_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_ENG_generic_1"
+			}
+		}
+	}
+	ARK_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_head_of_intelligence
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="ARK_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_YUG_milan_stojadinovic"
+			}
+		}
+	}
+	ARK_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_prince_of_terror
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="ARK_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_YUG_milan_grol"
+			}
+		}
+	}
+	ARK_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = ARK_smooth_talking_charmer
+			allowed  = {
+					original_tag  = ARK
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="ARK_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_SOV_gordey_levchenko"
+			}
+		}
+	}
+	
+###############
+###THEORISTS
+###############
+	ARK_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ARK_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = ARK
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="ARK_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_ITA_sebastiano_visconti_prasca"
+			}
+		}
+	}
+	ARK_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = ARK_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = ARK
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="ARK_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_ITA_ugo_cavallero"
+			}
+		}
+	}
+	ARK_naval_theorist={
+		name=ARK_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_ITA_giovanni_messe"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ARK_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = ARK
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	ARK_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = ARK_army_chief_defensive_2
+			allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_land_2"
+			}
+		}
+	}
+	ARK_army_chief_offensive_2={
+		name=ARK_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_south_america_generic_land_4"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ARK_army_chief_offensive_2
+			allowed = {
+				original_tag = ARK
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	ARK_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = ARK_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	ARK_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = ARK_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	ARK_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = ARK_air_chief_ground_support_2
+			allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_USA_generic_land_2"
+			}
+		}
+	}
+	ARK_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = ARK_air_chief_reform_2
+			allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	ARK_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARK_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_SOV_generic_land_1"
+			}
+		}
+	}
+	ARK_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARK_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_SOV_generic_land_4"
+			}
+		}
+	}
+	ARK_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARK_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_SOV_generic_navy_2"
+			}
+		}
+	}
+	ARK_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARK_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_SOV_generic_land_2"
+			}
+		}
+	}
+	ARK_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARK_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_GER_generic_navy_3"
+			}
+		}
+	}
+	ARK_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = ARK_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = ARK
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="ARK_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_GER_generic_navy_2"
+			}
+		}
+	}
+}

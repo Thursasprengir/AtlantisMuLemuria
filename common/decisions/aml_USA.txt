@@ -1,0 +1,233 @@
+USA_war_plans = {
+	USA_execute_war_plan_viridian = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = RGD
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = RGD
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	USA_execute_war_plan_cyan = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = ATL
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = ATL
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	USA_execute_war_plan_sable = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = FMU
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = FMU
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	USA_execute_war_plan_brown = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = MUU
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = MUU
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	USA_execute_war_plan_ochre = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = GEQ
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = GEQ
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	USA_execute_war_plan_khaki = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = VSH
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = VSH
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	USA_execute_war_plan_violet = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = HOU
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = HOU
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	USA_execute_war_plan_lilac = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = MHN
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = MHN
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	USA_execute_war_plan_butter = {
+		allowed = {
+			original_tag = USA
+		}
+		icon = generic_operation
+		available = {
+			has_war_with = TRS
+		}
+		visible = {
+			has_completed_focus = USA_war_plans_division
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = TRS
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	
+}

@@ -1,7 +1,7 @@
 ﻿capital = 930
 
 oob = "FMU_1936"
-set_naval_oob = "FMU_1936_naval_mtg"
+
 # Starting tech
 set_technology = {
 	tech_recon = 1
@@ -20,35 +20,40 @@ set_technology = {
 
 }
 if = {
-    limit = { has_dlc = "By Blood Alone" }
-        set_technology = {
-            aa_lmg = 1
-            engines_1 = 1
-            engines_2 = 1
-            early_bombs = 1
-            aircraft_construction = 1
-            iw_small_airframe = 1
-            iw_medium_airframe = 1
-            iw_large_airframe = 1
-            basic_medium_airframe = 1
-            basic_small_airframe = 1
-        }
-    else = {
-        set_technology = {
-            early_fighter = 1
-            cv_early_fighter = 1
-            cv_naval_bomber1 = 1
-            naval_bomber1 = 1
-            early_bomber = 1
-            CAS1 = 1
-        }
-    }
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "FMU_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+	else = {
+		set_air_oob = "FMU_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+			naval_bomber1 = 1
+		}
+	}
 }
 	
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
 	}
+	set_naval_oob = FMU_1936_naval_legacy
 	set_technology = {
 		early_submarine = 1
 		basic_submarine = 1
@@ -69,6 +74,7 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
+	set_naval_oob = FMU_1936_naval_mtg
 	set_technology = {	
 		panzerschiffe = 1
 		pre_dreadnoughts = 1
@@ -92,11 +98,10 @@ if = {
 		sonar = 1
 		smoke_generator = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
+		basic_dp_light_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 	}	
 }
@@ -104,8 +109,8 @@ if = {
 starting_train_buffer = 2
 set_research_slots = 3
 set_convoys = 55
-set_stability = 0.85
-set_war_support = 0.25
+set_stability = 0.65
+set_war_support = 0.35
 
 set_politics = {
 	ruling_party = democratic
@@ -120,7 +125,7 @@ set_popularities = {
 	neutrality = 36
 }
 set_rule = {
-	can_send_volunteers = no
+	can_send_volunteers = yes
 	can_create_factions = no
 }
 #Leaders
@@ -219,6 +224,96 @@ if = {
 		puppet = MNU
 	}
 }
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+		# Submarines #
+	create_equipment_variant = {
+		name = "Hel Class"
+		type = submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 1
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Freya Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 0
+		}
+	}	
+	create_equipment_variant = {
+		name = "Siegfried Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 3
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 0
+			ship_anti_air_upgrade = 1
+		}
+	}	
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Schwarzenberg Class"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 3
+			ship_anti_air_upgrade = 2
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Holtzendorff Class"
+		type = heavy_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 5
+			ship_gun_upgrade = 4
+		}
+	}
+	# Battlecruisers #
+	create_equipment_variant = {
+		name = "Derfflinger Class"
+		type = battle_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 2
+		}
+	}
+	# Carriers #
+	create_equipment_variant = {
+		name = "Valkyria Class"
+		type = carrier_1
+		parent_version = 0
+		upgrades = {
+			ship_deckspace_upgrade = 2
+			carrier_armor_upgrade = 5
+			ship_engine_upgrade = 4
+			ship_reliability_upgrade = 4
+		}
+	}	
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
 
 	create_equipment_variant = {
 		name = "Derfflinger Class"
@@ -344,36 +439,159 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+}
 
 1936.1.1 = {
-	if = {
-		limit = { has_dlc = "Battle for the Bosporus" }
-			
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-			FMU_debt_to_the_ifc
-		}
-
-		set_variable = { var = FMU_debt_to_the_ifc_britain_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_france_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_italy_var value = 10 }
-		set_variable = { var = FMU_debt_to_the_ifc_paid_var value = 0 }
-
-	
-	}
-
-	if = {
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-		}
+	add_ideas = {
+		export_focus
+		limited_conscription
+		civilian_economy
+		FMU_austral_jaguar
+		FMU_lessons_of_the_dresden
+		FMU_lose_but_never_defeat
+		FMU_versailles_coercion_selection
 	}
 }
 
 
 
 
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	create_equipment_variant = {
+		name = "Ju 86"
+		type = tac_bomber_equipment_0
+		upgrades = {
+			plane_tac_bomb_upgrade = 5
+			plane_range_upgrade = 5
+			plane_engine_upgrade = 5
+			plane_reliability_upgrade = 5
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Blohm & Voss Ha 137"
+		type = tac_bomber_equipment_0
+		upgrades = {
+			plane_tac_bomb_upgrade = 5
+			plane_range_upgrade = 1
+			plane_engine_upgrade = 1
+			plane_reliability_upgrade = 5
+		}
+		obsolete = yes
+	}
+}
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	create_equipment_variant = {
+		name = "Do 23"
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = empty
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ju 86"
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = empty
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = fuel_tanks_medium
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Fokker T.V"
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = lmg_defense_turret_2x
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_FMU_tactical_bomber1_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "Blohm & Voss Ha 57"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		icon = "GFX_FMU_CAS1_medium"
+	}
+
+	create_equipment_variant = {
+		name = "Fokker D.XVII" #also covers Ar 68
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Fokker D.XXI"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_FMU_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "Blohm & Voss Ha 137"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = dive_brakes_small
+		}
+		icon = "GFX_FMU_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Arado Ar 195"
+		type = small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = floats
+		}
+		icon = "GFX_FMU_naval_bomber1_medium"
+	}
+}

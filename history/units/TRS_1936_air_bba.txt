@@ -1,0 +1,106 @@
+﻿
+
+###Add an Airforcce ###
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1111 = { 
+		small_plane_airframe_0 = {
+			owner = "TRS" 
+			amount = 100
+			version_name = "Ki-10"
+		}
+		# 16 Hiko Rentai -- Kawasaki Ki-10
+		small_plane_airframe_0 = {
+			owner = "TRS" 
+			amount = 100
+			version_name = "Ki-10"
+		}
+		# 6 Hiko Rentai -- Mitsubishi Ki-2
+		small_plane_cas_airframe_0 =  {
+			owner = "TRS" 
+			amount = 100
+			version_name = "Ki-2"
+		}
+		# 9 Hiko Rentai -- Mitsubishi Ki-1
+		medium_plane_airframe_0 =  {
+			owner = "TRS" 
+			amount = 100
+			version_name = "Ki-1"
+		}
+	}
+
+	997 = { 
+		small_plane_airframe_0 = {
+			owner = "TRS" 
+			amount = 100
+			version_name = "Ki-10"
+		}
+		medium_plane_airframe_0 =  {
+			owner = "TRS" 
+			amount = 100
+			version_name = "Ki-1"
+		}
+	}
+	"Yatauam"  = { 
+		cv_small_plane_airframe_0 =  { owner = "TRS" amount = 10  version_name = "A4N" } # historical 24
+		cv_small_plane_airframe_0 =  { owner = "TRS" amount = 8  version_name = "A4N" } # historical 24
+		cv_small_plane_cas_airframe_0 = { owner = "TRS" amount = 10  version_name = "Aichi D1A2" } 	# historical 12
+		cv_small_plane_cas_airframe_0 = { owner = "TRS" amount = 2  version_name = "Aichi D1A2" } 	# historical 12
+	}
+			
+	"Tsaam" = { 
+		cv_small_plane_airframe_0 =  { owner = "TRS" amount = 10  version_name = "A4N" } # historical 16
+		cv_small_plane_airframe_0 =  { owner = "TRS" amount = 2  version_name = "A4N" } # historical 16
+		cv_small_plane_cas_airframe_0 = { owner = "TRS" amount = 10  version_name = "Aichi D1A2" } # historical 16
+		cv_small_plane_cas_airframe_0 = { owner = "TRS" amount = 2  version_name = "Aichi D1A2" } # historical 16
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "TRS" amount = 10  version_name = "B2M" } # historical 28
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "TRS" amount = 10  version_name = "B2M" } # historical 28
+	}
+			
+	"Gelungtso"  = { 
+		cv_small_plane_airframe_0 =  { owner = "TRS" amount = 9  version_name = "A4N" } 	# historical 12
+		cv_small_plane_cas_airframe_0 = { owner = "TRS" amount = 10  version_name = "Aichi D1A2" } 			# historical 18
+		cv_small_plane_cas_airframe_0 = { owner = "TRS" amount = 2  version_name = "Aichi D1A2" } 			# historical 18
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "TRS" amount = 10  version_name = "B2M" } 	# historical 36
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "TRS" amount = 10  version_name = "B2M" } 	# historical 36
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "TRS" amount = 4  version_name = "B2M" } 	# historical 36
+	}
+	"Daibalnaang"  = { 
+		cv_small_plane_airframe_0 =  { owner = "TRS" amount = 9  version_name = "A4N" } 	# historical 12
+		cv_small_plane_cas_airframe_0 = { owner = "TRS" amount = 10  version_name = "Aichi D1A2" } 			# historical 18
+		cv_small_plane_cas_airframe_0 = { owner = "TRS" amount = 2  version_name = "Aichi D1A2" } 			# historical 18
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "TRS" amount = 10  version_name = "B2M" } 	# historical 36
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "TRS" amount = 10  version_name = "B2M" } 	# historical 36
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "TRS" amount = 4  version_name = "B2M" } 	# historical 36
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = cv_small_plane_airframe_0
+			creator = "TRS" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_small_plane_naval_bomber_airframe_0
+			creator = "TRS" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+	}
+
+	
+}
+
+#################################

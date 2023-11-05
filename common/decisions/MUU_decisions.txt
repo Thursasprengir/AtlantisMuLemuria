@@ -1,25 +1,25 @@
 prospect_for_resources = {
 	develop_xd_aluminium_plants = {
-		
+
 		icon = aluminium
 
 		allowed = {
-			
+
 		}
 
 		highlight_states = {
-			state = 880
+			state = 1221
 		}
 
 		available = {
 			has_tech = construction1
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 880
+			controls_state = 1221
 		}
 
 		visible = {
-			controls_state = 880
-			880 = {
+			controls_state = 1221
+			1221 = {
 				NOT = {
 					has_state_flag = xd_aluminium_developed
 				}
@@ -38,9 +38,9 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			880 = { set_state_flag = xd_aluminium_developed } 
-			880 = {
+		remove_effect = {
+			1221 = { set_state_flag = xd_aluminium_developed }
+			1221 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
@@ -48,26 +48,26 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_dustartajare_aluminium_deposits = { #882
-		
+	develop_dustartajare_aluminium_deposits = { #1222
+
 		icon = aluminium
 
 		allowed = {
 
 		}
 		highlight_states = {
-			state = 882
+			state = 1222
 		}
 		available = {
 			has_tech = excavation2
 			882 = {has_state_flag = {flag = dustartajare_developed}}
 			num_of_civilian_factories_available_for_projects > 7
-			controls_state = 882
+			controls_state = 1222
 		}
 
 		visible = {
-			controls_state = 882
-			882 = {
+			controls_state = 1222
+			1222 = {
 				NOT = {
 					has_state_flag = {
 						flag = dustartajare_aluminium_developed
@@ -94,7 +94,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = MUU_dustartajare_aluminium_duration value = 15 }
-			882 = {
+			1222 = {
 				if = {
 					limit = {
 						NOT = {
@@ -113,7 +113,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			882 = {
+			1222 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -136,25 +136,25 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_atulsan_aluminium_deposits = { #881
-		
+	develop_atulsan_aluminium_deposits = { #1221
+
 		icon = aluminium
 
 		allowed = {
 
 		}
 		highlight_states = {
-			state = 881
+			state = 1221
 		}
 		available = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 881
+			controls_state = 1221
 		}
 
 		visible = {
-			controls_state = 881
-			881 = {
+			controls_state = 1221
+			1221 = {
 				NOT = {
 					has_state_flag = {
 						flag = atulsan_aluminium_developed
@@ -181,7 +181,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = MUU_atulsan_aluminium_duration value = 30 }
-			881 = {
+			1221 = {
 				if = {
 					limit = {
 						NOT = {
@@ -200,7 +200,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			881 = {
+			1221 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
@@ -217,25 +217,25 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_atulsan_tungsten_deposits = { #881
-		
+	develop_atulsan_tungsten_deposits = { #1221
+
 		icon = tungsten
 
 		allowed = {
 
 		}
 		highlight_states = {
-			state = 881
+			state = 1221
 		}
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 881
+			controls_state = 1221
 		}
 
 		visible = {
-			controls_state = 881
-			881 = {
+			controls_state = 1221
+			1221 = {
 				NOT = {
 					has_state_flag = {
 						flag = atulsan_tungsten_developed
@@ -262,7 +262,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = MUU_atulsan_tungsten_duration value = 30 }
-			881 = {
+			1221 = {
 				if = {
 					limit = {
 						NOT = {
@@ -281,7 +281,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			881 = {
+			1221 = {
 				add_resource = {
 					type = tungsten
 					amount = 12
@@ -298,25 +298,25 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_tollang_iron_deposits = { #884
-		
+	develop_tollang_iron_deposits = { #1224
+
 		icon = steel
 
 		allowed = {
 
 		}
 		highlight_states = {
-			state = 884
+			state = 1224
 		}
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 884
+			controls_state = 1224
 		}
 
 		visible = {
-			controls_state = 884
-			884 = {
+			controls_state = 1224
+			1224 = {
 				NOT = {
 					has_state_flag = {
 						flag = tollang_steel_developed
@@ -343,7 +343,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = MUU_tollang_steel_duration value = 30 }
-			884 = {
+			1224 = {
 				if = {
 					limit = {
 						NOT = {
@@ -362,7 +362,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			884 = {
+			1224 = {
 				add_resource = {
 					type = steel
 					amount = 12
@@ -379,25 +379,25 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_teqsitlti_iron_deposits = { #883
-		
+	develop_teqsitlti_iron_deposits = { #1223
+
 		icon = steel
 
 		allowed = {
 
 		}
 		highlight_states = {
-			state = 883
+			state = 1223
 		}
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 883
+			controls_state = 1223
 		}
 
 		visible = {
-			controls_state = 883
-			883 = {
+			controls_state = 1223
+			1223 = {
 				NOT = {
 					has_state_flag = {
 						flag = teqsitlti_steel_developed
@@ -424,7 +424,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = MUU_teqsitlti_steel_duration value = 30 }
-			883 = {
+			1223 = {
 				if = {
 					limit = {
 						NOT = {
@@ -443,7 +443,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			883 = {
+			1223 = {
 				add_resource = {
 					type = steel
 					amount = 12
@@ -460,25 +460,25 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_mirida_iron_deposits = { #875
-		
+	develop_mirida_iron_deposits = { #1215
+
 		icon = steel
 
 		allowed = {
 
 		}
 		highlight_states = {
-			state = 875
+			state = 1215
 		}
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 875
+			controls_state = 1215
 		}
 
 		visible = {
-			controls_state = 875
-			875 = {
+			controls_state = 1215
+			1215 = {
 				NOT = {
 					has_state_flag = {
 						flag = mirida_steel_developed
@@ -505,7 +505,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = MUU_mirida_steel_duration value = 30 }
-			875 = {
+			1215 = {
 				if = {
 					limit = {
 						NOT = {
@@ -524,7 +524,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			875 = {
+			1215 = {
 				add_resource = {
 					type = steel
 					amount = 12
@@ -541,27 +541,27 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_qtir_industrial_district = {
-		
+	develop_qtir_industrial_district = { #1226
+
 		icon = generic_construction
 
 		allowed = {
-			
+
 		}
 
 		highlight_states = {
-			state = 873
+			state = 1226
 		}
 
 		available = {
 			has_tech = construction3
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 873
+			controls_state = 1226
 		}
 
 		visible = {
-			controls_state = 873
-			873 = {
+			controls_state = 1226
+			1226 = {
 				NOT = {
 					has_state_flag = qtir_industrial_district_developed
 				}
@@ -580,9 +580,9 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			873 = { set_state_flag = qtir_industrial_district_developed } 
-			873 = {
+		remove_effect = {
+			1226 = { set_state_flag = qtir_industrial_district_developed }
+			1226 = {
 				add_resource = {
 					type = oil
 					amount = 4
@@ -596,25 +596,25 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_qtir_steel_refineries = { #873
-		
+	develop_qtir_steel_refineries = { #1226
+
 		icon = steel
 
 		allowed = {
 
 		}
 		highlight_states = {
-			state = 873
+			state = 1226
 		}
 		available = {
 			has_tech = construction4
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 873
+			controls_state = 1226
 		}
 
 		visible = {
-			controls_state = 873
-			873 = {
+			controls_state = 1226
+			1226 = {
 				has_state_flag = {
 					flag = qtir_industrial_district_developed
 				}
@@ -644,7 +644,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = MUU_qtir_steel_duration value = 30 }
-			873 = {
+			1226 = {
 				if = {
 					limit = {
 						NOT = {
@@ -663,7 +663,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			873 = {
+			1226 = {
 				add_resource = {
 					type = steel
 					amount = 12
@@ -680,25 +680,25 @@ prospect_for_resources = {
 			}
 		}
 	}
-	further_develop_qtir_refineries = { #873
-		
+	further_develop_qtir_refineries = { #1226
+
 		icon = steel
 
 		allowed = {
 
 		}
 		highlight_states = {
-			state = 873
+			state = 1226
 		}
 		available = {
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 11
-			controls_state = 873
+			controls_state = 1226
 		}
 
 		visible = {
-			controls_state = 873
-			873 = {
+			controls_state = 1226
+			1226 = {
 				has_state_flag = {
 					flag = qtir_industrial_district_developed
 				}
@@ -732,7 +732,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = MUU_qtir_steel_duration2 value = 60 }
-			873 = {
+			1226 = {
 				if = {
 					limit = {
 						NOT = {
@@ -751,7 +751,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			873 = {
+			1226 = {
 				add_resource = {
 					type = steel
 					amount = 12
@@ -776,63 +776,63 @@ prospect_for_resources = {
 MUU_drainage = {
 	drain_labn = {
 		icon = generic_construction allowed = {}
-		highlight_states = {state = 888}
+		highlight_states = {state = 1228}
 		available = {
 			has_idea = MUU_land_reclamation1
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 888
+			controls_state = 1228
 		}
 		visible = {
-			controls_state = 888
+			controls_state = 1228
 			has_idea = MUU_land_reclamation1
-			888 = {NOT = {has_state_flag = marshes_drained}}
+			1228 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
 		days_remove = 70
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
-		remove_effect = { 
-			888 = {set_state_flag = marshes_drained} 
-			888 = {add_extra_state_shared_building_slots = 5}
+		remove_effect = {
+			1228 = {set_state_flag = marshes_drained}
+			1228 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
 	drain_zochtli = {
 		icon = generic_construction allowed = {}
-		highlight_states = {state = 886}
+		highlight_states = {state = 1226}
 		available = {
 			has_idea = MUU_land_reclamation1
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 886
+			controls_state = 1226
 		}
 		visible = {
-			controls_state = 886
+			controls_state = 1226
 			has_idea = MUU_land_reclamation1
-			886 = {NOT = {has_state_flag = marshes_drained}}
+			1226 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
 		days_remove = 70
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
-		remove_effect = { 
-			886 = { set_state_flag = marshes_drained } 
-			886 = {add_extra_state_shared_building_slots = 5}
+		remove_effect = {
+			1226 = { set_state_flag = marshes_drained }
+			1226 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
 	drain_vatpagchi = {
 		icon = generic_construction allowed = {}
-		highlight_states = {state = 880}
+		highlight_states = {state = 1220}
 		available = {
 			has_idea = MUU_land_reclamation1
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 880
+			controls_state = 1220
 		}
 		visible = {
-			controls_state = 880
+			controls_state = 1220
 			has_idea = MUU_land_reclamation1
 			880 = {NOT = {has_state_flag = marshes_drained}}
 		}
@@ -841,129 +841,129 @@ MUU_drainage = {
 		days_remove = 70
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
-		remove_effect = { 
-			880 = { set_state_flag = marshes_drained } 
-			880 = {add_extra_state_shared_building_slots = 5}
+		remove_effect = {
+			1220 = { set_state_flag = marshes_drained }
+			1220 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
 	drain_asetale = {
 		icon = generic_construction allowed = {}
-		highlight_states = {state = 879}
+		highlight_states = {state = 1219}
 		available = {
 			has_idea = MUU_land_reclamation1
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 879
+			controls_state = 1219
 		}
 		visible = {
-			controls_state = 879
+			controls_state = 1219
 			has_idea = MUU_land_reclamation1
-			879 = {NOT = {has_state_flag = marshes_drained}}
+			1219 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
 		days_remove = 70
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
-		remove_effect = { 
-			879 = { set_state_flag = marshes_drained } 
-			879 = {add_extra_state_shared_building_slots = 5}
+		remove_effect = {
+			1219 = { set_state_flag = marshes_drained }
+			1219 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
 	drain_virqq = {
 		icon = generic_construction allowed = {}
-		highlight_states = {state = 878}
+		highlight_states = {state = 1218}
 		available = {
 			has_idea = MUU_land_reclamation1
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 878
+			controls_state = 1218
 		}
 		visible = {
-			controls_state = 878
+			controls_state = 1218
 			has_idea = MUU_land_reclamation1
-			878 = {NOT = {has_state_flag = marshes_drained}}
+			1218 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
 		days_remove = 70
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
-		remove_effect = { 
-			878 = { set_state_flag = marshes_drained } 
-			878 = {add_extra_state_shared_building_slots = 5}
+		remove_effect = {
+			1218 = { set_state_flag = marshes_drained }
+			1218 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
 	drain_neji = {
 		icon = generic_construction allowed = {}
-		highlight_states = {state = 877}
+		highlight_states = {state = 1217}
 		available = {
 			has_idea = MUU_land_reclamation1
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 877
+			controls_state = 1217
 		}
 		visible = {
-			controls_state = 877
+			controls_state = 1217
 			has_idea = MUU_land_reclamation1
-			877 = {NOT = {has_state_flag = marshes_drained}}
+			1217 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
 		days_remove = 70
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
-		remove_effect = { 
-			877 = { set_state_flag = marshes_drained } 
-			877 = {add_extra_state_shared_building_slots = 5}
+		remove_effect = {
+			1217 = { set_state_flag = marshes_drained }
+			1217 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
 	drain_qtir = {
 		icon = generic_construction allowed = {}
-		highlight_states = {state = 873}
+		highlight_states = {state = 1226}
 		available = {
 			has_idea = MUU_land_reclamation1
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 873
+			controls_state = 1226
 		}
 		visible = {
-			controls_state = 873
+			controls_state = 1226
 			has_idea = MUU_land_reclamation1
-			873 = {NOT = {has_state_flag = marshes_drained}}
+			1226 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
 		days_remove = 70
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
-		remove_effect = { 
-			873 = { set_state_flag = marshes_drained } 
-			873 = {add_extra_state_shared_building_slots = 5}
+		remove_effect = {
+			1226 = { set_state_flag = marshes_drained }
+			1226 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
 	drain_qnaa = {
 		icon = generic_construction allowed = {}
-		highlight_states = {state = 871}
+		highlight_states = {state = 1211}
 		available = {
 			has_idea = MUU_land_reclamation1
 			has_tech = construction5
 			num_of_civilian_factories_available_for_projects > 5
-			controls_state = 871
+			controls_state = 1211
 		}
 		visible = {
-			controls_state = 871
+			controls_state = 1211
 			has_idea = MUU_land_reclamation1
-			871 = {NOT = {has_state_flag = marshes_drained}}
+			1211 = {NOT = {has_state_flag = marshes_drained}}
 		}
 		fire_only_once = yes
 		cost = 25
 		days_remove = 70
 		modifier = {civilian_factory_use = 5 stability_weekly = -0.002}
 		ai_will_do = {factor = 1}
-		remove_effect = { 
-			871 = { set_state_flag = marshes_drained } 
-			871 = {add_extra_state_shared_building_slots = 5}
+		remove_effect = {
+			1211 = { set_state_flag = marshes_drained }
+			1211 = {add_extra_state_shared_building_slots = 5}
 		}
 	}
 }

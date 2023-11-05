@@ -12,13 +12,13 @@ technologies = {
 	@1945 = 18
 	@1946 = 20
 	chemical_experimentation_geq = {
-        research_cost = 1.0
-        start_year = 1918
-        folder = {
-            name = support_folder
-            position = { x = 0 y = @1918 }
-        }
-        army_speed_factor = 0.03
+        #research_cost = 1.0
+        #start_year = 1918
+        #folder = {
+        #    name = support_folder
+        #    position = { x = 0 y = @1918 }
+        #}
+        #army_speed_factor = 0.03
         category_front_line = {
              soft_attack = 0.3
              casualty_trickleback = 0.4
@@ -26,12 +26,12 @@ technologies = {
         }
     }
 	MUU_marsh_standard = {
-		research_cost = 1.0
-		start_year = 1918
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1918 }
-		}
+		#research_cost = 1.0
+		#start_year = 1918
+		#folder = {
+		#	name = support_folder
+		#	position = { x = 0 y = @1918 }
+		#}
 		category_all_infantry = {
 			marsh = {
 				attack = 0.10
@@ -40,12 +40,12 @@ technologies = {
 		}
 	}
 	marsh_infantry = {
-		research_cost = 1.0
-		start_year = 1918
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1918 }
-		}
+		#research_cost = 1.0
+		#start_year = 1918
+		#folder = {
+		#	name = support_folder
+		#	position = { x = 0 y = @1918 }
+		#}
 		category_all_infantry = {
 			marsh = {
 				attack = 0.10
@@ -66,12 +66,12 @@ technologies = {
 		}
 	}
 	marsh_motorized = {
-		research_cost = 1.0
-		start_year = 1918
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1918 }
-		}
+		#research_cost = 1.0
+		#start_year = 1918
+		#folder = {
+		#	name = support_folder
+		#	position = { x = 0 y = @1918 }
+		#}
 		motorized = {
 			marsh = {
 				attack = 0.10
@@ -104,12 +104,12 @@ technologies = {
 		}
 	}
 	marsh_armor = {
-		research_cost = 1.0
-		start_year = 1918
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1918 }
-		}
+		#research_cost = 1.0
+		#start_year = 1918
+		#folder = {
+		#	name = support_folder
+		#	position = { x = 0 y = @1918 }
+		#}
 		category_all_armor = {
 			marsh = {
 				attack = 0.10
@@ -121,12 +121,12 @@ technologies = {
 		#enable_equipments = {
 		#	mothership_equipment
 		#}
-		research_cost = 1.0
-		start_year = 1918
-		folder = {
-			name = air_techs_folder
-			position = { x = -2 y = 8 }
-		}
+		#research_cost = 1.0
+		#start_year = 1918
+		#folder = {
+		#	name = air_techs_folder
+		#	position = { x = -2 y = 8 }
+		#}
 		category_strat_bomber = {
 			air_attack = 1
 			air_defence = 0.2
@@ -140,12 +140,12 @@ technologies = {
 		#enable_equipments = {
 		#	light_bomber_equipment
 		#}
-		research_cost = 1.0
-		start_year = 1918
-		folder = {
-			name = air_techs_folder
-			position = { x = -2 y = 9 }
-		}
+		#research_cost = 1.0
+		#start_year = 1918
+		#folder = {
+		#	name = air_techs_folder
+		#	position = { x = -2 y = 9 }
+		#}
 		category_cas = {
 			air_range = 0.5
 			air_defence = 0.2
@@ -154,27 +154,21 @@ technologies = {
 			air_equipment
 		}
 	}
-	ATL_VLFP_tech = {
-		research_cost = 1.0
-		start_year = 1918
-		folder = {
-			name = support_folder
-			position = { x = -2 y = 10 }
-		}
-		carrier = {
-			naval_speed = -0.9
-			surface_visibility = 4
-			anti_air_attack = 0.3
-			carrier_size = 3
-			armor_value = -0.6
-		}
-	}
+	
+	###Special snowflake hulls for special snowflake nations
 	carrier_VLFP = {
-
+		
 		enable_equipments = { 
 			ship_hull_carrier_vlfp
 		}
-
+		
+		enable_equipment_modules = {
+			vlfp_ship_deck_space
+			ship_carrier_armor
+			vlfp_ship_secondaries
+			vlfp_ship_extra_fuel_tank
+		}
+		
 		research_cost = 1
 		start_year = 1936
 

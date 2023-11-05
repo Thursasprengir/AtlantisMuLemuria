@@ -1,0 +1,166 @@
+﻿capital = 354
+
+#oob = "PON_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	basic_light_tank = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_battleship = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_dp_light_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+	}
+}
+
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+        set_technology = {
+            aa_lmg = 1
+            engines_1 = 1
+            engines_2 = 1
+            early_bombs = 1
+            aircraft_construction = 1
+            iw_small_airframe = 1
+            iw_medium_airframe = 1
+            iw_large_airframe = 1
+            basic_medium_airframe = 1
+            basic_small_airframe = 1
+        }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
+}
+add_political_power = 200
+
+set_popularities = {
+ 
+	democratic =48
+
+	fascism = 21
+		
+	communism = 5
+		
+	neutrality = 26
+}
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 108
+	elections_allowed = yes
+}
+
+
+#characters
+#political leaders
+recruit_character = PON_despotism_leader
+recruit_character = PON_stalinism_leader
+recruit_character = PON_generic_fascism_leader
+recruit_character = PON_prince_leader
+recruit_character = PON_ioannis_metaxas
+#military leaders
+recruit_character = PON_corps_commander_1
+recruit_character = PON_corps_commander_2
+recruit_character = PON_corps_commander_3
+recruit_character = PON_naval_leader_1
+recruit_character = PON_naval_leader_2
+#advisors
+recruit_character = PON_anti_communist_crusader
+recruit_character = PON_armaments_organizer
+recruit_character = PON_backroom_backstabber
+recruit_character = PON_captain_of_industry
+recruit_character = PON_communist_revolutionary
+recruit_character = PON_compassionate_gentleman
+recruit_character = PON_democratic_reformer
+recruit_character = PON_economist
+recruit_character = PON_editor
+recruit_character = PON_fascist_demagogue
+recruit_character = PON_financial_expert
+recruit_character = PON_head_of_intelligence
+recruit_character = PON_ideological_crusader
+recruit_character = PON_popular_figurehead
+recruit_character = PON_prince_of_terror
+recruit_character = PON_silent_workhorse
+recruit_character = PON_smooth_talking_charmer
+recruit_character = PON_war_industrialist
+#theorists
+recruit_character = PON_military_theorist
+recruit_character = PON_air_warfare_theorist
+recruit_character = PON_naval_theorist
+recruit_character = PON_naval_aviation_pioneer
+recruit_character = PON_victory_through_airpower
+recruit_character = PON_nuclear_scientist
+recruit_character = PON_rocket_scientist
+#military chiefs
+recruit_character = PON_army_chief_defensive_2
+recruit_character = PON_army_chief_drill_2
+recruit_character = PON_army_chief_maneuver_2
+recruit_character = PON_army_chief_morale_2
+recruit_character = PON_army_chief_offensive_2
+recruit_character = PON_army_chief_organizational_1
+recruit_character = PON_navy_chief_decisive_battle_2
+recruit_character = PON_navy_chief_naval_aviation_2
+recruit_character = PON_air_chief_ground_support_2
+recruit_character = PON_air_chief_reform_2
+recruit_character = PON_army_armored_1
+recruit_character = PON_army_entrenchment_1
+recruit_character = PON_army_infantry_1
+recruit_character = PON_army_logistics_2
+recruit_character = PON_air_bomber_interception_2
+recruit_character = PON_air_close_air_support_2
+recruit_character = PON_navy_screen_2
+recruit_character = PON_navy_anti_submarine_1
+recruit_character = PON_navy_naval_air_defense_2
+
+set_cosmetic_tag = ATL_PON
+set_convoys = 40

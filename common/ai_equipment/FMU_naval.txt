@@ -108,7 +108,7 @@ FMU_destroyers = {
 		}
 		role_icon_index = 2
 		enable = { 
-			has_tech = dp_secondary_battery 
+			has_tech = basic_dp_light_battery 
 			not = { has_tech = improved_ship_hull_light }
 		}
 		target_variant = {
@@ -149,7 +149,7 @@ FMU_destroyers = {
 		}
 		role_icon_index = 2
 		enable = { 
-			has_tech = dp_secondary_battery 
+			has_tech = basic_dp_light_battery 
 			not = { has_tech = advanced_ship_hull_light }
 		}
 		target_variant = {
@@ -190,7 +190,7 @@ FMU_destroyers = {
 		}
 		role_icon_index = 2
 		enable = { 
-			has_tech = dp_secondary_battery 
+			has_tech = basic_dp_light_battery 
 			has_tech = advanced_ship_hull_light
 		}
 		target_variant = {
@@ -494,7 +494,7 @@ FMU_naval_light_cruiser = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_3
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_light_medium_battery_2
 				mid_1_custom_slot = ship_airplane_launcher
 				mid_2_custom_slot = ship_anti_air
@@ -536,7 +536,7 @@ FMU_naval_light_cruiser = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot < ship_armor_cruiser_3
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
@@ -579,7 +579,7 @@ FMU_naval_light_cruiser = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot > ship_secondaries_1
 				fixed_ship_armor_slot > ship_armor_cruiser_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_secondaries
@@ -590,7 +590,7 @@ FMU_naval_light_cruiser = {
 		
 		allowed_modules = {
 			ship_anti_air
-			dp_ship_secondaries
+			dp_light_battery
 			ship_torpedo
 			ship_depth_charge
 			ship_fire_control_system
@@ -640,7 +640,7 @@ FMU_naval_light_AA_cruiser = {
 		role_icon_index = 2
 		
 		enable = {
-			has_tech = dp_secondary_battery
+			has_tech = basic_dp_light_battery
 		}
 		
 		target_variant = {
@@ -654,7 +654,7 @@ FMU_naval_light_AA_cruiser = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
 				fixed_ship_armor_slot = ship_armor_cruiser_1
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot > ship_secondaries_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
 				mid_2_custom_slot = dp_light_battery
@@ -745,7 +745,7 @@ FMU_naval_cruiser_heavy = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_engine_slot = cruiser_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				mid_1_custom_slot = ship_medium_battery_1
 				mid_2_custom_slot = ship_anti_air
@@ -817,7 +817,7 @@ FMU_naval_cruiser_heavy = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_engine_slot = cruiser_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_cruiser_2
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_airplane_launcher_1
@@ -852,7 +852,7 @@ FMU_naval_cruiser_heavy = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_cruiser_3
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_airplane_launcher
@@ -888,7 +888,7 @@ FMU_naval_cruiser_heavy = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot > cruiser_ship_engine_1
 				fixed_ship_armor_slot > ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
 				mid_2_custom_slot = ship_airplane_launcher
@@ -1062,7 +1062,7 @@ FMU_naval_capital_battleship = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = heavy_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_bb_2
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_secondaries
@@ -1098,7 +1098,7 @@ FMU_naval_capital_battleship = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = heavy_ship_engine_3
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_bb_2
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
@@ -1134,11 +1134,11 @@ FMU_naval_capital_battleship = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = heavy_ship_engine
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_bb_2
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
-				mid_2_custom_slot = dp_ship_secondaries
+				mid_2_custom_slot = dp_light_battery
 				mid_3_custom_slot = ship_airplane_launcher
 				rear_1_custom_slot = ship_heavy_battery_3
 			}
@@ -1228,7 +1228,7 @@ FMU_naval_carrier = {
 				fixed_ship_deck_slot_2 = ship_deck_space
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_deck_space
 			}
 		}
@@ -1304,7 +1304,7 @@ FMU_naval_carrier = {
 				fixed_ship_deck_slot_2 = ship_deck_space
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_engine_slot = carrier_ship_engine
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot > ship_secondaries_1
 				front_1_custom_slot = ship_deck_space
 				mid_1_custom_slot = ship_deck_space
 				mid_2_custom_slot = ship_deck_space
@@ -1372,7 +1372,7 @@ FMU_naval_carrier_light = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
-				fixed_ship_secondaries_slot = ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries_1
 			}
 		}
 		
@@ -1603,7 +1603,7 @@ FMU_naval_mine_sweeper = {
 		role_icon_index = 5
 		
 		enable = {
-			has_tech = dp_secondary_battery
+			has_tech = basic_dp_light_battery
 			has_tech = basic_naval_mines
 		}
 		

@@ -3,25 +3,207 @@
 oob = "AVA_1936"
 
 set_research_slots = 2
+add_manpower = 20000 #Imigrated from Occupied avahyan teritory
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "AVA_1936_naval_mtg"
+	else = {
+		set_naval_oob = "AVA_1936_naval_legacy"
+	}
+}
+
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	support_weapons = 1
+	basic_train = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
-	early_destroyer = 1
-	transport = 1
+	interwar_antiair = 1
 }
 
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
 
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_dp_light_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+	}
+}
+
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "AVA_1936_air_bba"
+        set_technology = {
+            aa_lmg = 1
+            engines_1 = 1
+            engines_2 = 1
+            early_bombs = 1
+            aircraft_construction = 1
+            iw_small_airframe = 1
+            iw_medium_airframe = 1
+            iw_large_airframe = 1
+            basic_medium_airframe = 1
+            basic_small_airframe = 1
+        }
+    else = {
+		set_air_oob = "AVA_1936_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
+}
 
 set_popularities = {
-	democratic = 15
-	fascism = 10
-	communism = 5
+	democratic = 20
+	fascism = 20
+	communism = 20
 		#banned = no #default is no
-	monarchism = 65
-	neutrality = 5
+	monarchism = 20
+	neutrality = 20
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Lazvard" 
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Uzmurud" 
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	create_equipment_variant = {
+		name = "Pahruli Class" # Royal Navy 'Yarrow' S-class that sold to Avahya, modified with better Anti-Air weapon
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			#ship_torpedo_upgrade = 0
+			#destroyer_engine_upgrade = 0
+			#ship_ASW_upgrade = 0
+			ship_anti_air_upgrade = 2
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "Mirzaii Class" # Royal Navy C-class cruiser (Caroline Class)
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			#ship_reliability_upgrade = 0
+			#ship_engine_upgrade = 0
+			#ship_gun_upgrade = 0
+			ship_anti_air_upgrade = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	create_equipment_variant = {
+		name = "Pahruli Class" # Royal Navy 'Yarrow' S-class that sold to Avahya, modified with better Anti-Air weapon
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "Mirzaii Class" # Royal Navy C-class cruiser (Caroline Class)
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_anti_air_1
+		}
+	}
 }
 
 set_convoys = 80
@@ -29,29 +211,40 @@ set_convoys = 80
 #characters
 #political leaders
 recruit_character = AVA_conservatism_leader
-recruit_character = AVA_leninism_leader
-recruit_character = AVA_gen_nazism_leader
+recruit_character = AVA_marxism_leader
+recruit_character = AVA_generic_fascism_leader
 recruit_character = AVA_oligarchism_leader
-recruit_character = AVA_king_leader
+recruit_character = AVA_shah_leader
 #military leaders
 recruit_character = AVA_corps_commander_1
-recruit_character = AVA_corps_commander_2
-recruit_character = AVA_corps_commander_3
-recruit_character = AVA_corps_commander_4
+recruit_character = AVA_naval_leader_1
+recruit_character = AVA_naval_leader_2
+
 #advisors
-recruit_character = AVA_backroom_backstabber
+recruit_character = AVA_anti_communist_crusader
+recruit_character = AVA_armaments_organizer
 recruit_character = AVA_communist_revolutionary
 recruit_character = AVA_democratic_reformer
+recruit_character = AVA_economist
+recruit_character = AVA_editor
 recruit_character = AVA_fascist_demagogue
 recruit_character = AVA_ideological_crusader
-recruit_character = AVA_prince_of_terror
+recruit_character = AVA_popular_figurehead
+recruit_character = AVA_war_industrialist
 #theorists
 recruit_character = AVA_military_theorist
 recruit_character = AVA_air_warfare_theorist
+recruit_character = AVA_naval_theorist
 #military chiefs
-recruit_character = AVA_army_chief_defensive_2
 recruit_character = AVA_army_chief_drill_2
+recruit_character = AVA_army_chief_morale_2
+recruit_character = AVA_navy_chief_decisive_battle_2
+recruit_character = AVA_navy_chief_naval_aviation_2
 recruit_character = AVA_air_chief_ground_support_2
-recruit_character = AVA_army_armored_1
-recruit_character = AVA_army_entrenchment_3
+recruit_character = AVA_air_chief_reform_2
+recruit_character = AVA_army_entrenchment_1
+recruit_character = AVA_army_infantry_1
+recruit_character = AVA_air_bomber_interception_2
 recruit_character = AVA_air_close_air_support_2
+recruit_character = AVA_navy_screen_2
+recruit_character = AVA_navy_anti_submarine_1

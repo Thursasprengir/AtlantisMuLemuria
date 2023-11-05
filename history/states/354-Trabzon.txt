@@ -2,34 +2,42 @@
 state={
 	id=354
 	name="STATE_354"
-	manpower = 1031129
-	
-	state_category = town
+	manpower=1531129
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	resources={
+		steel=14.000
+	}
 
 	history={
-		owner = TUR
+		owner = PON
 		
 		victory_points = {
 			9932 15
 		}
 		victory_points = {
-			10472 5
+			10472 10
 		}
 		victory_points = {
-			3979 3 
+			3979 5 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			dockyard = 2
+			industrial_complex = 2
+			arms_factory = 1
 			9932 = {
-				naval_base = 2
+				naval_base = 5
+
 			}
+
 		}
 		add_core_of = TUR
+		add_core_of = PON
+		add_claim_by = ARM
 	}
 
 	provinces={
 		789 3714 3979 6976 6991 7454 9886 9932 10403 10472 11753 11853
 	}
-
-	local_supplies=0.0 
 }

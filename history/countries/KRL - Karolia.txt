@@ -1,0 +1,130 @@
+﻿capital = 928
+
+oob = "KRL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+	basic_train = 1
+}
+
+set_research_slots = 2
+set_convoys = 60
+set_stability = 0.9
+set_war_support = 0.1
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 53
+	fascism = 45
+	communism = 2
+}
+
+FRA = {
+    if = {
+        limit = {
+            has_dlc = "Together for Victory"
+        }
+        set_autonomy = {
+            target = KRL
+            autonomous_state = autonomy_supervised_state
+        }
+    }
+    else = {
+        puppet = KRL
+    }
+}
+	
+recruit_character = KRL_arnold_von_ebbingen
+recruit_character = KRL_bob_the_oligarch_2
+recruit_character = KRL_eduard_eikeman
+recruit_character = KRL_dietrich_von_mauzinglow
+recruit_character = KRL_eckhard_von_danzig
+recruit_character = KRL_felix_haubersted
+recruit_character = KRL_elias_paulanski
+recruit_character = KRL_odilo_globocnik
+recruit_character = KRL_paul_von_hegedus
+recruit_character = KRL_otto_meixner_von_zweienstamm
+recruit_character = KRL_eduard_freiherr
+recruit_character = KRL_franz_bohme
+recruit_character = KRL_wilhelm_zehner
+recruit_character = KRL_alexander_lohr
+recruit_character = KRL_ernst_kaltenbrunner
+recruit_character = KRL_julius_raab
+recruit_character = KRL_leopold_figl
+recruit_character = KRL_josef_teufl
+recruit_character = KRL_eugen_beyer
+recruit_character = KRL_lothar_rendulic
+recruit_character = KRL_otto_schobel
+recruit_character = KRL_viktor_seebauer
+recruit_character = KRL_arthur_seyss_inquart
+recruit_character = KRL_julius_yllam
+
+recruit_character = KRL_naval_leader_1
+recruit_character = KRL_naval_leader_2
+recruit_character = KRL_naval_leader_3
+recruit_character = KRL_naval_leader_4
+recruit_character = KRL_naval_leader_5
+#advisors
+#recruit_character = KRL_anti_communist_crusader
+#recruit_character = KRL_armaments_organizer
+recruit_character = KRL_backroom_backstabber
+#recruit_character = KRL_captain_of_industry
+recruit_character = KRL_communist_revolutionary
+#recruit_character = KRL_compassionate_gentleman
+recruit_character = KRL_democratic_reformer
+#recruit_character = KRL_economist
+#recruit_character = KRL_editor
+recruit_character = KRL_fascist_demagogue
+#recruit_character = KRL_financial_expert
+#recruit_character = KRL_head_of_intelligence
+#recruit_character = KRL_ideological_crusader
+#recruit_character = KRL_popular_figurehead
+#recruit_character = KRL_prince_of_terror
+recruit_character = KRL_silent_workhorse
+recruit_character = KRL_smooth_talking_charmer
+#recruit_character = KRL_war_industrialist
+#theorists
+#recruit_character = KRL_military_theorist
+#recruit_character = KRL_air_warfare_theorist
+recruit_character = KRL_naval_theorist
+#recruit_character = KRL_naval_aviation_pioneer
+#recruit_character = KRL_victory_through_airpower
+#recruit_character = KRL_nuclear_scientist
+#recruit_character = KRL_rocket_scientist
+#military chiefs
+#recruit_character = KRL_army_chief_defensive_2
+#recruit_character = KRL_army_chief_drill_2
+#recruit_character = KRL_army_chief_maneuver_2
+#recruit_character = KRL_army_chief_morale_2
+#recruit_character = KRL_army_chief_offensive_2
+#recruit_character = KRL_army_chief_organizational_1
+#recruit_character = KRL_navy_chief_decisive_battle_2
+#recruit_character = KRL_navy_chief_naval_aviation_2
+#recruit_character = KRL_air_chief_ground_support_2
+#recruit_character = KRL_air_chief_reform_2
+#recruit_character = KRL_army_armored_1
+#recruit_character = KRL_army_entrenchment_1
+#recruit_character = KRL_army_infantry_1
+recruit_character = KRL_army_logistics_2
+#recruit_character = KRL_air_bomber_interception_2
+recruit_character = KRL_air_close_air_support_2
+recruit_character = KRL_navy_screen_2
+recruit_character = KRL_navy_anti_submarine_1
+#recruit_character = KRL_navy_naval_air_defense_2

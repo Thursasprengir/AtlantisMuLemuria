@@ -1,0 +1,310 @@
+add_namespace = ava
+country_event = {
+
+	id = ava.1
+	title = ava.1.t
+	desc = ava.1.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { tag = FROM }
+						is_in_faction_with = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = { # Increase it again if other bordering nations are in the enemy faction
+				any_neighbor_country = {
+					NOT = { tag = FROM }
+					is_in_faction_with = FROM
+				}
+				factor = 2.0
+			}
+		}
+		name = ava.1.a
+		FROM = {
+			country_event = { hours = 2 id = ava.2 }
+		}
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+		}
+		name = ava.1.b
+		FROM = {
+			country_event = { hours = 2 id = ava.4 }
+		}
+	}
+}
+
+#Manu Accepts
+country_event = {
+
+	id = ava.2
+	title = ava.2.t
+	desc = ava.2.d
+
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = ava.2.a
+		FROM = {
+			1040 = {
+				transfer_state_to = AVA
+			}
+			1060 = {
+				transfer_state_to = AVA
+			}
+		}
+	}	
+}
+#Manu Rejects - Uprising
+
+#Manu Rejects / Revolts
+country_event = {
+
+	id = ava.4
+	title = ava.4.t
+	desc = ava.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ava.4.a
+		create_wargoal = { type = take_core_state target = FRA }
+	}
+}
+
+country_event = {
+
+	id = ava.5
+	title = ava.5.t
+	desc = ava.5.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { tag = FROM }
+						is_in_faction_with = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = { # Increase it again if other bordering nations are in the enemy faction
+				any_neighbor_country = {
+					NOT = { tag = FROM }
+					is_in_faction_with = FROM
+				}
+				factor = 2.0
+			}
+		}
+		name = ava.5.a
+		FROM = {
+			country_event = { hours = 2 id = ava.6 }
+		}
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+		}
+		name = ava.6.b
+		FROM = {
+			country_event = { hours = 2 id = ava.7 }
+		}
+	}
+}
+
+#Manu Accepts
+country_event = {
+
+	id = ava.6
+	title = ava.6.t
+	desc = ava.6.d
+
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = ava.6.a
+		FROM = {
+			707 = {
+				transfer_state_to = AVA
+			}
+		}
+	}	
+}
+#Manu Rejects - Uprising
+
+#Manu Rejects / Revolts
+country_event = {
+
+	id = ava.7
+	title = ava.7.t
+	desc = ava.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ava.4.a
+		create_wargoal = { type = take_core_state target = ENG }
+	}
+}
+
+
+country_event = {
+
+	id = ava.10
+	title = ava.10.t
+	desc = ava.10.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { tag = FROM }
+						is_in_faction_with = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = { # Increase it again if other bordering nations are in the enemy faction
+				any_neighbor_country = {
+					NOT = { tag = FROM }
+					is_in_faction_with = FROM
+				}
+				factor = 2.0
+			}
+		}
+		name = ava.10.a
+		FROM = {
+			country_event = { hours = 2 id = ava.2 }
+		}
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+		}
+		name = ava.10.b
+		FROM = {
+			country_event = { hours = 2 id = ava.4 }
+		}
+	}
+}
+
+#Manu Accepts
+country_event = {
+
+	id = ava.12
+	title = ava.12.t
+	desc = ava.12.d
+
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = ava.12.a
+		FROM = {
+			1040 = {
+				transfer_state_to = AVA
+			}
+			706 = {
+				transfer_state_to = AVA
+			}
+			1060 = {
+				transfer_state_to = AVA
+			}
+		}
+	}	
+}
+#Manu Rejects - Uprising
+
+#Manu Rejects / Revolts
+country_event = {
+
+	id = ava.14
+	title = ava.14.t
+	desc = ava.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ava.14.a
+		create_wargoal = { type = take_core_state target = FRA }
+	}
+}

@@ -33,6 +33,21 @@ set_popularities = {
 }
 
 
+DEN = {
+    if = {
+        limit = {
+            has_dlc = "Together for Victory"
+        }
+        set_autonomy = {
+            target = THU
+            autonomous_state = autonomy_puppet
+        }
+    }
+    else = {
+        puppet = THU
+    }
+}
+
 set_convoys = 20
 
 recruit_character = THU_bjorkar_thorsson

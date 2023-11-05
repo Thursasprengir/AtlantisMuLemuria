@@ -5,7 +5,7 @@ characters={
 		name = NIL_absolutist_leader
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/NIL/Portrait_NIL_conservatism_leader.dds"
+				large = "gfx/leaders/NIL/Portrait_NIL_absolutist_leader.dds"
 			}
 		}
 		country_leader = {
@@ -97,8 +97,8 @@ characters={
 		name="NIL_corps_commander_1"
 		portraits={
 			army={
-				large="gfx/leaders/NIL/Portrait_NIL_corps_commander_1.dds"
-				small="gfx/interface/ideas/idea_NIL_corps_commander_1.dds"
+				large="gfx/leaders/Arabia/Portrait_Arabia_Generic_land_new_4.dds"
+				#small="gfx/interface/ideas/idea_NIL_corps_commander_1.dds"
 			}
 		}
 		corps_commander={
@@ -116,8 +116,8 @@ characters={
 		name=NIL_corps_commander_2
 		portraits={
 			army={
-				large="gfx/leaders/NIL/Portrait_NIL_corps_commander_2.dds"
-				small="gfx/interface/ideas/idea_NIL_corps_commander_2.dds"
+				large="gfx/leaders/Arabia/Portrait_Arabia_Generic_land_new_6.dds"
+				#small="gfx/interface/ideas/idea_NIL_corps_commander_2.dds"
 			}
 		}
 		corps_commander={
@@ -134,8 +134,8 @@ characters={
 		name=NIL_corps_commander_3
 		portraits={
 			army={
-				large="gfx/leaders/NIL/Portrait_NIL_corps_commander_3.dds"
-				small="gfx/interface/ideas/idea_NIL_corps_commander_3.dds"
+				large="gfx/leaders/Arabia/Portrait_Arabia_Generic_land_new_5.dds"
+				#small="gfx/interface/ideas/idea_NIL_corps_commander_3.dds"
 			}
 		}
 		corps_commander={
@@ -148,26 +148,6 @@ characters={
 			legacy_id=0
 		}
 	}
-
-	NIL_corps_commander_4={
-		name=NIL_corps_commander_4
-		portraits={
-			army={
-				large="gfx/leaders/NIL/Portrait_NIL_corps_commander_4.dds"
-				small="gfx/interface/ideas/idea_NIL_corps_commander_4.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-	
 	
 	
 ################
@@ -177,10 +157,10 @@ characters={
 		name=NIL_naval_leader_1
 		portraits={
 			army={
-				large="gfx/leaders/NIL/Portrait_NIL_naval_leader_1.dds"
+				large="gfx/leaders/Arabia/Portrait_Arabia_Generic_navy_new_1.dds"
 			}
 			army={
-				small="GFX_idea_NIL_naval_leader_1"
+				#small="GFX_idea_NIL_naval_leader_1"
 			}
 		}		
 		navy_leader={
@@ -190,83 +170,6 @@ characters={
 			defense_skill=3
 			maneuvering_skill=5
 			coordination_skill=5
-			legacy_id=0
-		}
-	}
-
-	NIL_naval_leader_2={
-		name=NIL_naval_leader_2
-		portraits={
-			army={
-				large="gfx/leaders/NIL/Portrait_NIL_naval_leader_2.dds"
-				small="gfx/interface/ideas/idea_NIL_naval_leader_1.dds"
-			}
-		}
-		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
-			skill=4
-			attack_skill=5
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=2
-			legacy_id=0
-		}
-	}
-
-	NIL_naval_leader_3={
-		name=NIL_naval_leader_
-		portraits={
-			navy={
-				small="GFX_idea_NIL_naval_leader_3"
-			}
-			army={
-				large="gfx/leaders/USA/Portrait_NIL_naval_leader_3.dds"
-			}
-		}		
-		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=0
-		}
-	}
-	
-	NIL_naval_leader_4={
-		name=NIL_naval_leader_4
-		portraits={
-			army={
-				large="gfx/leaders/USA/Portrait_NIL_naval_leader_4.dds"
-				small="gfx/interface/ideas/idea_NIL_naval_leader_4.dds"
-			}
-		}
-		navy_leader={
-			traits={ cuts_corners blockade_runner spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
-			legacy_id=0
-		}
-	}
-	NIL_naval_leader_5={
-		name=NIL_naval_leader_5
-		portraits={
-			army={
-				large="gfx/leaders/USA/Portrait_NIL_naval_leader_5.dds"
-				small="gfx/interface/ideas/idea_NIL_naval_leader_5.dds"
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy bold fleet_protector superior_tactician }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=4
 			legacy_id=0
 		}
 	}

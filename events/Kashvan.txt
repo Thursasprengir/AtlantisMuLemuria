@@ -1,0 +1,234 @@
+add_namespace = kas
+country_event = {
+
+	id = kas.1
+	title = kas.1.t
+	desc = kas.1.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { tag = FROM }
+						is_in_faction_with = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = { # Increase it again if other bordering nations are in the enemy faction
+				any_neighbor_country = {
+					NOT = { tag = FROM }
+					is_in_faction_with = FROM
+				}
+				factor = 2.0
+			}
+		}
+		name = kas.1.a
+		FROM = {
+			country_event = { hours = 2 id = kas.2 }
+		}
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+		}
+		name = kas.1.b
+		FROM = {
+			country_event = { hours = 2 id = kas.4 }
+		}
+	}
+}
+
+#Manu Accepts
+country_event = {
+
+	id = kas.2
+	title = kas.2.t
+	desc = kas.2.d
+
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = kas.2.a
+		FROM = {
+			1040 = {
+				transfer_state_to = kas
+			}
+		}
+	}	
+}
+#Manu Rejects - Uprising
+
+#Manu Rejects / Revolts
+country_event = {
+
+	id = kas.4
+	title = kas.4.t
+	desc = kas.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kas.4.a
+		create_wargoal = { type = take_core_state target = FRA }
+	}
+}
+
+
+country_event = {
+
+	id = kas.6
+	title = kas.6.t
+	desc = kas.6.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+			modifier = { # If they stand a chance they will fight
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.75
+				}
+				NOT = {
+					any_neighbor_country = {
+						NOT = { tag = FROM }
+						is_in_faction_with = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.5 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = { # Increase it again if other bordering nations are in the enemy faction
+				any_neighbor_country = {
+					NOT = { tag = FROM }
+					is_in_faction_with = FROM
+				}
+				factor = 2.0
+			}
+		}
+		name = kas.6.a
+		FROM = {
+			country_event = { hours = 2 id = kas.8 }
+		}
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+		}
+		name = kas.6.b
+		FROM = {
+			country_event = { hours = 2 id = kas.10 }
+		}
+	}
+}
+
+#Manu Accepts
+country_event = {
+
+	id = kas.8
+	title = kas.8.t
+	desc = kas.8.d
+
+	is_triggered_only = yes
+	
+		
+	option = {
+		name = kas.2.a
+		FROM = {
+			KAS = {
+				puppet = AKM
+			}
+		}
+	}	
+}
+#Manu Rejects - Uprising
+
+#Manu Rejects / Revolts
+country_event = {
+
+	id = kas.10
+	title = kas.10.t
+	desc = kas.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = kas.4.a
+		create_wargoal = { type = annex_everything target = AKM }
+	}
+}
+
+#National Language
+country_event = {
+
+	id = kas.20
+	title = kas.20.t
+	desc = kas.20.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = kas.20.a
+		add_stability = 0.10
+		
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+		}
+		name = kas.20.b
+		add_stability = -0.10
+	}
+	option = {
+		ai_chance = { 
+			factor = 10 
+		}
+		name = kas.20.c
+		add_stability = -0.10
+	}
+}

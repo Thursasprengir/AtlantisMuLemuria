@@ -633,29 +633,29 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = WTS_six_year_plan
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
+			1192 = {
+				#limit = {
+				#	free_building_slots = {
+				#		building = arms_factory
+				#		size > 0
+				#		include_locked = yes
+				#	}
+				#	OR = {
+				#		is_in_home_area = yes
+				#		NOT = {
+				#			owner = {
+				#				any_owned_state = {
+				#					free_building_slots = {
+				#						building = arms_factory
+				#						size > 0
+				#						include_locked = yes
+				#					}
+				#					is_in_home_area = yes
+				#				}
+				#			}
+				#		}
+				#	}
+				#}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -663,7 +663,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			852 = {
+			1191 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -2359,14 +2359,14 @@ completion_reward = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			851 = {
+			1191 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			852 = {
+			1192 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2550,7 +2550,7 @@ completion_reward = {
 		}
 
 		available = {
-			852 = { 
+			1191 = { 
 				owner = {
 					OR = {
 						tag = WTS
@@ -2559,7 +2559,7 @@ completion_reward = {
 					}
 				}
 			}
-			851 = { 
+			1192 = { 
 				owner = {
 					OR = {
 						tag = WTS
@@ -2583,7 +2583,7 @@ completion_reward = {
 		}
 
 		completion_reward = {
-			852 = {
+			1192 = {
 				add_resource = {
 					type = steel
 					amount = 8
@@ -2607,7 +2607,7 @@ completion_reward = {
 		}
 
 		available = {
-			852 = { 
+			1192 = { 
 				owner = {
 					OR = {
 						tag = WTS
@@ -2616,7 +2616,7 @@ completion_reward = {
 					}
 				}
 			}
-			851 = { 
+			1191 = { 
 				owner = {
 					OR = {
 						tag = WTS
@@ -2640,7 +2640,7 @@ completion_reward = {
 		}
 
 		completion_reward = {
-			851 = {
+			1191 = {
 				add_resource = {
 					type = oil
 					amount = 4
@@ -2734,17 +2734,17 @@ completion_reward = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			851 = {
+			1191 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-			852 = {
+			1192 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2925,7 +2925,7 @@ completion_reward = {
 		}
 
 		available = {
-			852 = { 
+			1192 = { 
 				owner = {
 					OR = {
 						tag = WTS
@@ -2934,7 +2934,7 @@ completion_reward = {
 					}
 				}
 			}
-			851 = { 
+			1192 = { 
 				owner = {
 					OR = {
 						tag = WTS
@@ -2958,7 +2958,7 @@ completion_reward = {
 		}
 
 		completion_reward = {
-			851 = {
+			1192 = {
 				add_resource = {
 					type = aluminium
 					amount = 8
@@ -2982,7 +2982,7 @@ completion_reward = {
 		}
 
 		available = {
-			852 = { 
+			1191 = { 
 				owner = {
 					OR = {
 						tag = WTS
@@ -2991,7 +2991,7 @@ completion_reward = {
 					}
 				}
 			}
-			851 = { 
+			1192 = { 
 				owner = {
 					OR = {
 						tag = WTS
@@ -3015,7 +3015,7 @@ completion_reward = {
 		}
 
 		completion_reward = {
-			851 = {
+			1191 = {
 				add_resource = {
 					type = rubber
 					amount = 3

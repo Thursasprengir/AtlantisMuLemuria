@@ -2,19 +2,24 @@
 state={
 	id=1149
 	name="STATE_1149"
+	resources={
+		steel=12.000
+	}
 
 	history={
 		owner = AVA
 		victory_points = {
-			16407 15
+			16409 25 
 		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
+			arms_factory = 2
 			industrial_complex = 2
-			dockyard = 2
-			16407 = {
+			dockyard = 1
+			air_base = 1
+			16409 = {
 				naval_base = 3
+
 			}
 
 		}
@@ -23,9 +28,9 @@ state={
 	}
 
 	provinces={
-		16406 16407 16408 16409 16410 16411 
+		16406 16407 16408 16409 16410 16411 16550 16551 16552 
 	}
-	manpower=925408
+	manpower=3925408
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

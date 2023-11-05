@@ -753,17 +753,21 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = MUU_cores
 			hidden_effect = {
-				add_state_core = 856
-				add_state_core = 857
-				add_state_core = 858
-				add_state_core = 907
-				add_state_core = 908
-				add_state_core = 859
-				add_state_core = 860
-				add_state_core = 861
-				add_state_core = 862
-				add_state_core = 863
-				add_state_core = 864
+				#vash
+				add_state_core = 1196
+				add_state_core = 1197
+				add_state_core = 1198
+				#geq
+				add_state_core = 1199
+				add_state_core = 1200
+				add_state_core = 1201
+				add_state_core = 1202
+				add_state_core = 1203
+				add_state_core = 1204
+				add_state_core = 1147
+				#gorug
+				add_state_core = 1245
+				add_state_core = 1066
 			}
 			create_wargoal = {
 				target = "GOP"
@@ -1506,33 +1510,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			887 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			884 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			885 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			886 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
+			build_railway = {
+				level = 2
+				path = { 15219 15223 15226 15228 15229}
 			}
 		}
 	}
@@ -1628,79 +1608,35 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			873 = {
+			1217 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 4
+						province = 15149
+						instant_build = yes
+					}
+				}
+			}
+			1211 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = coastal_bunker
+						level = 4
+						province = 15097
+						instant_build = yes
+					}
+				}
+			}
+			1228 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = naval_base
 						level = 2
-						province = 13766
-						instant_build = yes
-					}
-				}
-			}
-			873 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = coastal_bunker
-						level = 4
-						province = 13766
-						instant_build = yes
-					}
-				}
-			}
-			888 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 13868
-						instant_build = yes
-					}
-				}
-			}
-			888 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = coastal_bunker
-						level = 4
-						province = 13868
-						instant_build = yes
-					}
-				}
-			}
-			871 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 13756
-						instant_build = yes
-					}
-				}
-			}
-			871 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = coastal_bunker
-						level = 4
-						province = 13756
-						instant_build = yes
-					}
-				}
-			}
-			880 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = coastal_bunker
-						level = 4
-						province = 13837
+						province = 15209
 						instant_build = yes
 					}
 				}
@@ -1823,60 +1759,7 @@ focus = {
 		}
 	}
 	
-focus = {
-		id = MUU_rural_workforce
-		icon = GFX_goal_generic_construction2
-		prerequisite = {focus = MUU_economic_reforms}
-		x = 9
-		y = 11
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			882 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			881 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			876 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			874 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
 	
 	#####GOMMUNIST :DDD#####
 	
@@ -2048,8 +1931,8 @@ focus = {
 					add_ai_strategy = {type = support id = ROOT value = 100}
 				}
 			}
-			if = {limit = {SCH = {has_government = communism}}
-				SCH = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+			if = {limit = {NTR = {has_government = communism}}
+				NTR = {add_opinion_modifier = {target = ROOT modifier = large_increase}
 					add_ai_strategy = {type = alliance id = ROOT value = 100}
 					add_ai_strategy = {type = protect id = ROOT value = 100}
 					add_ai_strategy = {type = send_volunteers_desire id = ROOT value = 100}
@@ -2168,8 +2051,8 @@ focus = {
 					add_ai_strategy = {type = support id = ROOT value = 100}
 				}
 			}
-			if = {limit = {VGI = {has_government = communism}}
-				VGI = {add_opinion_modifier = {target = ROOT modifier = large_increase}
+			if = {limit = {KRL = {has_government = communism}}
+				KRL = {add_opinion_modifier = {target = ROOT modifier = large_increase}
 					add_ai_strategy = {type = alliance id = ROOT value = 100}
 					add_ai_strategy = {type = protect id = ROOT value = 100}
 					add_ai_strategy = {type = send_volunteers_desire id = ROOT value = 100}
@@ -2259,14 +2142,14 @@ focus = {
 				if = {limit = {MCH = {has_government = communism}} puppet = MCH}
 				if = {limit = {BRG = {has_government = communism}} puppet = BRG}
 				if = {limit = {TIQ = {has_government = communism}} puppet = TIQ}
-				if = {limit = {SCH = {has_government = communism}} puppet = SCH}
+				if = {limit = {NTR = {has_government = communism}} puppet = NTR}
 				if = {limit = {NYB = {has_government = communism}} puppet = NYB}
 				if = {limit = {MNQ = {has_government = communism}} puppet = MNQ}
 				if = {limit = {NLI = {has_government = communism}} puppet = NLI}
 				if = {limit = {BSD = {has_government = communism}} puppet = BSD}
 				if = {limit = {WAP = {has_government = communism}} puppet = WAP}
 				if = {limit = {ZIE = {has_government = communism}} puppet = ZIE}
-				if = {limit = {VGI = {has_government = communism}} puppet = VGI}
+				if = {limit = {KRL = {has_government = communism}} puppet = KRL}
 				if = {limit = {ARA = {has_government = communism}} puppet = ARA}
 				if = {limit = {CTT = {has_government = communism}} puppet = CTT}
 				if = {limit = {MHN = {has_government = communism}} puppet = MHN}
@@ -2796,17 +2679,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_state_core = 856
-			add_state_core = 857
-			add_state_core = 858
-			add_state_core = 907
-			add_state_core = 908
-			add_state_core = 859
-			add_state_core = 860
-			add_state_core = 861
-			add_state_core = 862
-			add_state_core = 863
-			add_state_core = 864
+			add_state_core = 1197
+			add_state_core = 1196
+			add_state_core = 1198
+			add_state_core = 1245
+			add_state_core = 1066
+			add_state_core = 1147
+			add_state_core = 1204
+			add_state_core = 1203
+			add_state_core = 1201
+			add_state_core = 1202
+			add_state_core = 1200
+	
 		}
 	}
 	
@@ -3019,13 +2903,13 @@ focus = {
 				value = 200
 			}
 			create_wargoal = {
-				target = "SCH"
+				target = "NTR"
 				type = annex_everything
 				expire = 0
 			}
 			add_ai_strategy = {
 				type = conquer
-				id = "SCH"
+				id = "NTR"
 				value = 200
 			}
 			create_wargoal = {
@@ -3109,13 +2993,13 @@ focus = {
 				value = 200
 			}
 			create_wargoal = {
-				target = "VGI"
+				target = "KRL"
 				type = annex_everything
 				expire = 0
 			}
 			add_ai_strategy = {
 				type = conquer
-				id = "VGI"
+				id = "KRL"
 				value = 200
 			}
 			create_wargoal = {
@@ -3241,26 +3125,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			878 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			881 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			882 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
+			build_railway = {
+				level = 2
+				path = { 15137 15141 15146 15147 15153 15154 }
 			}
 		}
 	}
@@ -4131,7 +3998,7 @@ focus = {
 		bypass = {
 			has_tech = advanced_ship_hull_cruiser
 			has_tech = improved_airplane_launcher
-			has_tech = advanced_cruiser_armor_scheme
+			has_tech = basic_cruiser_armor_scheme
 		}
 
 		cancel_if_invalid = yes
@@ -4202,7 +4069,7 @@ focus = {
 		bypass = {
 			has_tech = advanced_ship_hull_cruiser
 			has_tech = improved_airplane_launcher
-			has_tech = advanced_cruiser_armor_scheme
+			has_tech = basic_cruiser_armor_scheme
 		}
 
 		cancel_if_invalid = yes

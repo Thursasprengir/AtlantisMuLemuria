@@ -1,0 +1,1166 @@
+characters={
+	KAS_abmahalav_khumalo={
+		name="Abmahalav Khumalo"
+		portraits={
+			civilian={
+				large="gfx/leaders/KBS/Portrait_KBS_A_Khumalo.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_A_KHUMALO_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	KAS_petela_wetmeri={
+		name="Petela Wetmeri"
+		portraits={
+			civilian={
+				large="gfx/leaders/KBS/Portrait_KBS_P_Wetmeri.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PETELA_WETMERI_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			
+		}
+	}
+	KAS_upweonu_bembigre={
+		name="Upweonu Bembigre"
+		portraits={
+			civilian={
+				large="gfx/leaders/KBS/Portrait_KBS_U_Bembigre.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_UPWEONU_BEMBIGRE_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	KAS_leitu_nuwesde={
+		name="Leitu Nuwesde"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_africa_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={  guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	KAS_morigare_wensada={
+		name="Morigare Wensada"
+		portraits={
+			civilian={
+				large="gfx/leaders/India/Portrait_India_Generic_new_6.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MORIGARE_WENSADA_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	KAS_general_laazalikamal={
+		name="General Laazalikamal"
+		portraits={
+			civilian={
+				large="gfx/leaders/MCT/man5.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GEN_LAAZALIKAMAL_DESC"
+			ideology=fascism_ideology
+			traits={ nationalist_symbol }
+			expire="1965.1.1.1"
+			
+		}
+	}
+	KAS_ongbede_denguprii={
+		name="Ongbede Denguprii"
+		portraits={
+			civilian={
+				large="gfx/leaders/MCT/man7.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ONGBEDE_DENGUPRII_DESC"
+			ideology=leninism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	KAS_laazalikamal={
+		name="Laazalikamal"
+		portraits={
+			army={
+				large="gfx/leaders/MCT/Portrait_MCT_Gen_L.dds"
+			}
+		}
+		field_marshal={
+			traits={ urban_assault_specialist organisational_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			#legacy_id=106
+		}
+	}
+	KAS_gawban_nuwasmale={
+		name="Gawban Nuwasmale"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ guerilla_fighter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	KAS_nilu_erbandon={
+		name="Nilu Erbandon"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ hawk }
+			expire="1955.1.1.12"
+			
+		}
+	}
+	KAS_bandramutri_evanuusu={
+		name="Bandramutri Evanu'usu"
+		portraits={
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist }
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			
+		}
+	}
+	KAS_pambre_elusiti={
+		name="Pambre Elusiti"
+		portraits={
+			civilian={
+				large="gfx/leaders/KBS/Portrait_KBS_P_Elusiti.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ dealbroker }
+			expire="1944.1.1.12"
+			
+		}
+	}
+	KAS_pakaristre_shamshkio={
+		name="Pakaristre Shamshki'o"
+		portraits={
+			army={
+				large="gfx/leaders/KBS/Afrolemurian2.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	KAS_logistics_2={
+		advisor={
+			slot = high_command
+			idea_token = KAS_logistics_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_1"
+			}
+		}
+	}
+	KAS_regrouping_2={
+		advisor={
+			slot = high_command
+			idea_token = KAS_regrouping_2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_regrouping_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_2"
+			}
+		}
+	}
+	KAS_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = KAS_ground_support_2
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_3"
+			}
+		}
+	}
+	KAS_maneuver_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KAS_maneuver_2
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_navy_1"
+			}
+		}
+	}
+	KAS_offensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KAS_offensive_2
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_offensive_2"
+		portraits={
+			army={
+				small="GFX_idea_south_africa_army_generic"
+			}
+		}
+	}
+	KAS_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KAS_defensive_2
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_south_africa_army_generic_2"
+			}
+		}
+	}
+	KAS_mil_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KAS_mil_theorist
+			ledger  = army 
+				allowed  = {
+					original_tag  = KAS
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="KAS_mil_theorist"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_1"
+			}
+		}
+	}
+	KAS_air_theorist={
+		advisor={
+			slot = theorist
+			idea_token = KAS_air_theorist
+			ledger  = air 
+				allowed  = {
+					original_tag  = KAS
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="KAS_air_theorist"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_2"
+			}
+		}
+	}
+	KAS_commerce_raiding_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KAS_commerce_raiding_2
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_commerce_raiding_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	KAS_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = KAS_backstabber
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="KAS_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_2"
+			}
+		}
+	}
+	KAS_night_ops_2={
+		advisor={
+			slot = air_chief
+			idea_token = KAS_night_ops_2
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					air_chief_night_operations_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_night_ops_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	KAS_close_air_support_2={
+		advisor={
+			slot = high_command
+			idea_token = KAS_close_air_support_2
+			ledger  = air 
+				allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	KAS_quartermaster_gen={
+		advisor={
+			slot = political_advisor
+			idea_token = KAS_quartermaster_gen
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="KAS_quartermaster_gen"
+		portraits={
+			army={
+				small="GFX_idea_south_africa_political_leader_generic_2"
+			}
+		}
+	}
+	KAS_capital_ship_2={
+		advisor={
+			slot = high_command
+			idea_token = KAS_capital_ship_2
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="KAS_capital_ship_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+###################
+###CORPS COMMANDERS
+###################
+	
+	KAS_corps_commander_1={
+		name="KAS_corps_commander_1"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
+
+	KAS_corps_commander_2={
+		name=KAS_corps_commander_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	KAS_corps_commander_3={
+		name=KAS_corps_commander_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={   }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KAS_corps_commander_4={
+		name=KAS_corps_commander_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	KAS_naval_leader_1={
+		name=KAS_naval_leader_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_africa_generic_navy_1.dds"
+				large="gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			}
+		}		
+		navy_leader={
+			traits={ spotter }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	KAS_naval_leader_2={
+		name=KAS_naval_leader_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_africa_generic_navy_2.dds"
+				large="gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	KAS_naval_leader_3={
+		name=KAS_naval_leader_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_africa_generic_navy_3.dds"
+				large="gfx/leaders/Africa/Portrait_Africa_Generic_navy_3.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gunnery_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	KAS_naval_leader_4={
+		name=KAS_naval_leader_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_africa_generic_navy_1.dds"
+				large="gfx/leaders/Africa/Portrait_Africa_Generic_navy_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	KAS_naval_leader_5={
+		name=KAS_naval_leader_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_africa_generic_navy_2.dds"
+				large="gfx/leaders/Africa/Portrait_Africa_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	KAS_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = KAS_armaments_organizer
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="KAS_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_3"
+			}
+		}
+	}
+	KAS_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = KAS_backroom_backstabber
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="KAS_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_south_africa_political_leader_generic"
+			}
+		}
+	}
+	KAS_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = KAS_communist_revolutionary
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="KAS_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_1"
+			}
+		}
+	}
+	KAS_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = KAS_democratic_reformer
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="KAS_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_2"
+			}
+		}
+	}	
+	KAS_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = KAS_fascist_demagogue
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="KAS_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_south_africa_political_leader_generic_2"
+			}
+		}
+	}
+	KAS_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = KAS_prince_of_terror
+			allowed  = {
+					original_tag  = KAS
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="KAS_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_2"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	KAS_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = KAS_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = KAS
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="KAS_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_3"
+			}
+		}
+	}
+	KAS_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = KAS_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = KAS
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="KAS_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_south_africa_army_generic_2"
+			}
+		}
+	}
+	KAS_naval_theorist={
+		name=KAS_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_navy_2"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = KAS_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = KAS
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	KAS_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KAS_army_chief_defensive_2
+			allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_1"
+			}
+		}
+	}
+	KAS_army_chief_offensive_2={
+		name=KAS_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_3"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = KAS_army_chief_offensive_2
+			allowed = {
+				original_tag = KAS
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	KAS_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KAS_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_navy_2"
+			}
+		}
+	}
+	KAS_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = KAS_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_navy_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	KAS_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = KAS_air_chief_ground_support_2
+			allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_1"
+			}
+		}
+	}
+	KAS_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = KAS_air_chief_reform_2
+			allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_south_africa_political_leader_generic_2"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	KAS_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KAS_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_south_africa_army_generic_2"
+			}
+		}
+	}
+	KAS_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KAS_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_1"
+			}
+		}
+	}
+	KAS_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KAS_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_2"
+			}
+		}
+	}
+	KAS_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KAS_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_land_3"
+			}
+		}
+	}
+	KAS_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KAS_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_navy_2"
+			}
+		}
+	}
+	KAS_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KAS_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_navy_1"
+			}
+		}
+	}
+	KAS_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KAS_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = KAS
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KAS_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_africa_generic_navy_3"
+			}
+		}
+	}
+}

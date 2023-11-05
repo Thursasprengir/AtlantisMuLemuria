@@ -1,0 +1,1129 @@
+
+
+characters={
+###############
+###NEUTRALITY
+###############
+	PON_despotism_leader={
+		name="PON_despotism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/15310-1094122978-matte painting, sharp focus, hoi4_vanilla_portrait_style, Scandinavian,.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+###############
+###COMMUNISM
+###############
+	PON_stalinism_leader={
+		name="PON_stalinism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/15392-1094123060-matte painting, sharp focus, hoi4_vanilla_portrait_style, Scandinavian,.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+
+###############
+###FASCISM
+###############
+	PON_generic_fascism_leader={
+		name="PON_generic_fascism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/15385-1094123053-matte painting, sharp focus, hoi4_vanilla_portrait_style, Scandinavian,.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1949.1.1.12"
+			id=-1
+		}
+	}
+	
+
+###############
+###DEMOCRATIC
+###############
+	PON_ioannis_metaxas={
+        name=PON_ioannis_metaxas
+        portraits={
+            civilian={
+                large=GFX_portrait_GRE_ioannis_metaxas
+            }
+        }
+        country_leader = {
+            expire = "1965.1.1"
+            ideology=conservatism
+            traits = {
+                arkhigos
+            }
+		}
+    }
+	
+	
+###############
+###Monarch
+###############
+	PON_prince_leader={
+		name="PON_prince_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/15278-1094122946-matte painting, sharp focus, hoi4_vanilla_portrait_style, Scandinavian,.dds"
+			}
+		}
+		country_leader={
+			ideology=prince
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+	PON_corps_commander_1={
+		name="PON_corps_commander_1"
+		portraits={
+			army={
+				large="gfx/leaders/Europe/02114-2598861367-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+				#small="gfx/interface/ideas/idea_PON_corps_commander_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	PON_corps_commander_2={
+		name=PON_corps_commander_2
+		portraits={
+			army={
+				large="gfx/leaders/Europe/02082-2598861335-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+				#small="gfx/interface/ideas/idea_PON_corps_commander_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	PON_corps_commander_3={
+		name=PON_corps_commander_3
+		portraits={
+			army={
+				large="gfx/leaders/Europe/02131-2598861384-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+				#small="gfx/interface/ideas/idea_PON_corps_commander_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	
+	PON_naval_leader_1={
+		name=PON_naval_leader_1
+		portraits={
+			army={
+				large="gfx/leaders/Europe/08308-4109481132-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+				#small="gfx/interface/ideas/idea_PON_naval_leader_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	PON_naval_leader_2={
+		name=PON_naval_leader_2
+		portraits={
+			army={
+				large="gfx/leaders/Europe/08247-4109481071-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+				#small="gfx/interface/ideas/idea_PON_naval_leader_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	PON_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_anti_communist_crusader
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="PON_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_PON_anti_communist_crusader"
+			}
+		}
+	}
+	PON_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_armaments_organizer
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="PON_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_PON_armaments_organizer"
+			}
+		}
+	}
+	PON_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_backroom_backstabber
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="PON_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_PON_backroom_backstabber"
+			}
+		}
+	}
+	PON_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_captain_of_industry
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="PON_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_PON_captain_of_industry"
+			}
+		}
+	}
+	PON_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_communist_revolutionary
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="PON_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_PON_communist_revolutionary"
+			}
+		}
+	}
+	PON_compassionate_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_compassionate_gentleman
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="PON_compassionate_gentleman"
+		portraits={
+			army={
+				small="GFX_idea_PON_compassionate_gentleman"
+			}
+		}
+	}
+	PON_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_democratic_reformer
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="PON_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_PON_captain_of_industry"
+			}
+		}
+	}	
+	PON_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_economist
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="PON_economist"
+		portraits={
+			army={
+				small="GFX_idea_PON_economist"
+			}
+		}
+	}
+	PON_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_editor
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="PON_editor"
+		portraits={
+			army={
+				small="GFX_idea_PON_editor"
+			}
+		}
+	}
+	PON_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_fascist_demagogue
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="PON_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_PON_fascist_demagogue"
+			}
+		}
+	}
+	PON_financial_expert={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_financial_expert
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="PON_financial_expert"
+		portraits={
+			army={
+				small="GFX_idea_PON_financial_expert"
+			}
+		}
+	}
+	PON_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_head_of_intelligence
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="PON_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_PON_head_of_intelligence"
+			}
+		}
+	}
+	PON_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_ideological_crusader
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="PON_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_PON_ideological_crusader"
+			}
+		}
+	}
+	PON_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_popular_figurehead
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="PON_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_PON_popular_figurehead"
+			}
+		}
+	}
+	PON_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_prince_of_terror
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="PON_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_PON_prince_of_terror"
+			}
+		}
+	}
+	PON_silent_workhorse={
+		name=PON_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_PON_silent_workhorse"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PON_silent_workhorse
+			allowed  = {
+				original_tag  = PON
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	PON_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_smooth_talking_charmer
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="PON_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_PON_smooth_talking_charmer"
+			}
+		}
+	}
+	
+	PON_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = PON_war_industrialist
+			allowed  = {
+					original_tag  = PON
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="PON_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_PON_war_industrialist"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	PON_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = PON_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = PON
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="PON_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	PON_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = PON_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = PON
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="PON_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	PON_naval_theorist={
+		name=PON_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_PON_naval_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = PON_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = PON
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+	PON_naval_aviation_pioneer={
+		name=PON_naval_aviation_pioneer
+		portraits={
+			army={
+				small="GFX_idea_PON_naval_aviation_pioneer"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = PON_naval_aviation_pioneer
+			ledger = navy
+			allowed = {
+				original_tag = PON
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+
+	PON_victory_through_airpower={
+		name=PON_victory_through_airpower
+		portraits={
+			army={
+				small="GFX_idea_PON_victory_through_airpower"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = PON_victory_through_airpower
+			ledger = air
+			allowed = {
+				original_tag = PON
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+	PON_nuclear_scientist={
+		name=PON_nuclear_scientist
+		portraits={
+			army={
+				small="GFX_idea_PON_nuclear_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = PON_nuclear_scientist
+			ledger = army
+			allowed = {
+				original_tag = PON
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	PON_rocket_scientist={
+		name=PON_rocket_scientist
+		portraits={
+			army={
+				small="GFX_idea_PON_rocket_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = PON_rocket_scientist
+			ledger = air
+			allowed = {
+				original_tag = PON
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	PON_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = PON_army_chief_defensive_2
+			allowed = {
+					original_tag = PON
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_army_chief_defensive_2"
+			}
+		}
+	}
+	PON_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = PON_army_chief_drill_2
+			allowed = {
+					original_tag = PON
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_army_chief_drill_2"
+			}
+		}
+	}
+	PON_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = PON_army_chief_maneuver_2
+			allowed = {
+					original_tag = PON
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_army_chief_maneuver_2"
+			}
+		}
+	}
+	PON_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = PON_army_chief_morale_2
+			allowed = {
+					original_tag = PON
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_army_chief_morale_2"
+			}
+		}
+	}
+	PON_army_chief_offensive_2={
+		name=PON_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_PON_army_chief_offensive_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PON_army_chief_offensive_2
+			allowed = {
+				original_tag = PON
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	PON_army_chief_organizational_1={
+		name=PON_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_PON_army_chief_organizational_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PON_army_chief_organizational_1
+			allowed = {
+				original_tag = PON
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	PON_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = PON_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = PON
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	PON_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = PON_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = PON
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	PON_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = PON_air_chief_ground_support_2
+			allowed = {
+					original_tag = PON
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	PON_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = PON_air_chief_reform_2
+			allowed = {
+					original_tag = PON
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	PON_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_PON_army_armored_1"
+			}
+		}
+	}
+	PON_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_PON_army_entrenchment_1"
+			}
+		}
+	}
+	PON_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_PON_army_infantr_1"
+			}
+		}
+	}
+	PON_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_army_logistics_2"
+			}
+		}
+	}
+	PON_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_air_bomber_interception_2"
+			}
+		}
+	}
+	PON_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_air_close_air_support_2"
+			}
+		}
+	}
+	PON_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_navy_screen_2"
+			}
+		}
+	}
+	PON_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_PON_navy_anti_submarine_1"
+			}
+		}
+	}
+	PON_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = PON_navy_naval_air_defense
+			ledger = navy
+				allowed = {
+					original_tag = PON
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="PON_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_PON_navy_naval_air_defense_2"
+			}
+		}
+	}
+}
+

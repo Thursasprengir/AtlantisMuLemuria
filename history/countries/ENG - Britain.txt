@@ -137,6 +137,7 @@ if = {
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
@@ -215,19 +216,19 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
-	else = {
-		puppet = MAL
-		puppet = RAJ
-	}
 	set_autonomy = {
 		target = BLM
 		autonomous_state = autonomy_dominion
-		freedom_level = 0.1
-	}	
+		freedom_level = 0.2
+	}
 	set_autonomy = {
-		target = SCP
+		target = MRR
 		autonomous_state = autonomy_dominion
-		freedom_level = 0.1
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = MAL
+		puppet = RAJ
 	}
 }
 
@@ -464,6 +465,8 @@ add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
+add_to_faction = MRR
+add_to_faction = BLM
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
@@ -1167,6 +1170,7 @@ if = {
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Queen Elizabeth Class"
@@ -1758,7 +1762,7 @@ if = {
 			modules = {
 				fixed_main_weapon_slot = large_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
-				engine_type_slot = engine_2_4x
+				engine_type_slot = engine_3_4x #Increased tier due to thrust/weight issues
 				special_type_slot_1 = lmg_defense_turret_2x
 				special_type_slot_2 = lmg_defense_turret
 				special_type_slot_3 = empty

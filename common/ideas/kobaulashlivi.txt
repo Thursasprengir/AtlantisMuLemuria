@@ -1,7 +1,257 @@
 ideas = {
 	
-	political_advisor = {
+	country = {
+		kbs_recently_unified_1 = {
+			allowed = {
+				always = no
+			}
 
+			removal_cost = -1
+
+			picture = por_colonial_assimilation
+
+			modifier = {
+				intel_network_gain_factor = -0.50
+				political_power_gain = -0.5
+			}
+		}
+		kbs_recently_unified_dem_com = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SPR_collectivized_society
+
+			modifier = {
+				intel_network_gain_factor = -0.50
+			}
+		}
+		kbs_equal_language_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = hol_the_foundations_of_defense
+
+			modifier = {
+				intel_network_gain_factor = -0.25
+			}
+		}
+		kbs_railway_standard_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_rail_way_factor = 0.5 
+				production_speed_supply_node_factor = 0.5 
+			}
+		}
+		kbs_confederated_union = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy2
+
+			modifier = {
+				conscription = 0.02
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		kbs_recently_unified_fac_oli = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = vittoria_mutilata
+
+			modifier = {
+				political_power_gain = -0.5
+				conscription = 0.01
+			}
+		}
+		kbs_german_construction_engineers = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture = 
+
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		kbs_nationalized_workforce = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		kbs_combined_legislature = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				political_power_gain = 0.5
+
+			}
+		}
+		kbs_road_maintenence = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+
+			}
+		}
+		kbs_national_railway = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_rail_way_factor = 0.25
+			}
+		}
+		kbs_primary_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_atomic_bomb_project
+
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		
+		kbs_military_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_organize_wreckers
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		kbs_doctrine_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_organize_wreckers
+
+			modifier = {
+				land_doctrine_cost_factor = -0.05 
+			}
+		}
+		
+		kbs_planning_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_organize_wreckers
+
+			modifier = {
+				planning_speed = 0.2
+			}
+		}
+		
+		kbs_recovery_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_organize_wreckers
+
+			modifier = {
+				army_morale_factor = 0.2
+			}
+		}
+		
+		kbs_trade_school_efficiency = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.25
+			}
+		}
+		
+		kas_turtles = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.5 
+				production_speed_bunker_factor = 0.5 
+			}
+		}
+		
+	}
+	
+	political_advisor = {
+	
 		KBS_quartermaster_gen_idea = {
 
 			picture = generic_political_advisor_south_america_2

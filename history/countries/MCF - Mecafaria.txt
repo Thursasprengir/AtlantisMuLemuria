@@ -8,6 +8,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_engineers = 1
+	tech_support = 1
 	gw_artillery = 1
 	early_destroyer = 1
 	transport = 1
@@ -26,6 +27,21 @@ set_popularities = {
 	communism = 44
 }
 
+POR = {
+    if = {
+        limit = {
+            has_dlc = "Together for Victory"
+        }
+        set_autonomy = {
+            target = MCF
+            autonomous_state = autonomy_integrated_puppet
+        }
+    }
+    else = {
+        puppet = MCF
+    }
+}
+
 
 set_convoys = 80
 
@@ -35,6 +51,7 @@ recruit_character = MCF_conservatism_leader
 recruit_character = MCF_leninism_leader
 recruit_character = MCF_gen_nazism_leader
 recruit_character = MCF_oligarchism_leader
+recruit_character = MCF_monarchism_leader
 #military leaders
 recruit_character = MCF_corps_commander_1
 recruit_character = MCF_corps_commander_2
@@ -46,21 +63,23 @@ recruit_character = MCF_naval_leader_3
 recruit_character = MCF_naval_leader_4
 recruit_character = MCF_naval_leader_5
 #advisors
+recruit_character = MCF_anti_communist_crusader
 recruit_character = MCF_armaments_organizer
-recruit_character = MCF_captain_of_industry
 recruit_character = MCF_communist_revolutionary
 recruit_character = MCF_democratic_reformer
+recruit_character = MCF_economist
+recruit_character = MCF_editor
 recruit_character = MCF_fascist_demagogue
-recruit_character = MCF_financial_expert
-recruit_character = MCF_prince_of_terror
-recruit_character = MCF_silent_workhorse
+recruit_character = MCF_ideological_crusader
+recruit_character = MCF_popular_figurehead
+recruit_character = MCF_war_industrialist
 #theorists
 recruit_character = MCF_military_theorist
 recruit_character = MCF_air_warfare_theorist
 recruit_character = MCF_naval_theorist
 #military chiefs
-recruit_character = MCF_army_chief_defensive_2
 recruit_character = MCF_army_chief_drill_2
+recruit_character = MCF_army_chief_morale_2
 recruit_character = MCF_navy_chief_decisive_battle_2
 recruit_character = MCF_navy_chief_naval_aviation_2
 recruit_character = MCF_air_chief_ground_support_2

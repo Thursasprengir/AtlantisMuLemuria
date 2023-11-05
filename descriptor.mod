@@ -5,11 +5,7 @@ tags={
 	"Map"
 	"National Focuses"
 }
-replace_path="common/ai_areas"
-replace_path="common/generation"
-replace_path="common/on_actions"
 replace_path="gfx/loadingscreens"
-replace_path="history/general"
 replace_path="history/states"
 replace_path="map/strategicregions"
 name="Atlantis Mu Lemuria DEV NEW MAP"

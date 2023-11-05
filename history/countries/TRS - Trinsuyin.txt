@@ -24,36 +24,32 @@ set_technology = {
 	basic_train = 1
 	motorised_infantry = 1	
 }
+
 if = {
-    limit = { has_dlc = "By Blood Alone" }
-        set_technology = {
-            aa_lmg = 1
-            engines_1 = 1
-            engines_2 = 1
-            early_bombs = 1
-            aircraft_construction = 1
-            iw_small_airframe = 1
-            iw_medium_airframe = 1
-            iw_large_airframe = 1
-            basic_medium_airframe = 1
-            basic_small_airframe = 1
-        }
-    else = {
-        set_technology = {
-            early_fighter = 1
-            cv_early_fighter = 1
-            cv_naval_bomber1 = 1
-            naval_bomber1 = 1
-            early_bomber = 1
-            CAS1 = 1
-        }
-    }
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_naval_oob = "TRS_1936_naval_legacy"
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
 }
 
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
+	set_naval_oob = "TRS_1936_naval_mtg"
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -74,13 +70,14 @@ if = {
 		basic_ship_hull_carrier = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
-		basic_secondary_battery = 1
+		basic_dp_light_battery = 1
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
+		pre_dreadnoughts = 1
 	}
-	set_naval_oob = "TRS_1936_naval"
 }
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -113,6 +110,34 @@ if = {
 		JAP_zaibatsus
 	}
 
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "TRS_1936_air_bba"
+        set_technology = {
+            aa_lmg = 1
+            engines_1 = 1
+            engines_2 = 1
+            early_bombs = 1
+            aircraft_construction = 1
+            iw_small_airframe = 1
+            iw_medium_airframe = 1
+            iw_large_airframe = 1
+            basic_medium_airframe = 1
+            basic_small_airframe = 1
+        }
+    else = {
+		set_air_oob = "TRS_1936_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            cv_naval_bomber1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
+}
+
 set_politics = {
 
 	
@@ -131,46 +156,119 @@ set_popularities = {
 		}
 
 set_convoys = 280
+
 set_rule = {
 	can_send_volunteers = no
 	can_create_factions = no
 }
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
 	}
 ### VARIANTS ###
 	# 1936 Start #
-		### Carrier Variants
+		### Carriers ###		
 		create_equipment_variant = {
-			name = "Tsuraang Class"
+			name = "Lougang Class"
 			type = carrier_1
 			parent_version = 0
 			upgrades = {
-				ship_deckspace_upgrade = 5
+				ship_deckspace_upgrade = 3
 				carrier_armor_upgrade = 2
-				ship_engine_upgrade = 2
+				ship_engine_upgrade = 0
 				ship_reliability_upgrade = 3
 			}
 			obsolete = yes
 		}
-		### Battleship Variants	
 		create_equipment_variant = {
-			name = "Xianu Class"
-			type = battleship_1
+			name = "Shuxileng Class"
+			type = carrier_1
 			parent_version = 0
 			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_armor_upgrade = 1
-				ship_gun_upgrade = 1
+				ship_deckspace_upgrade = 3
+				carrier_armor_upgrade = 2
+				ship_engine_upgrade = 0
+				ship_reliability_upgrade = 3
 			}
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Merwaxeng Class"
+			name = "Qihaang Class"
+			type = carrier_1
+			parent_version = 0
+			upgrades = {
+				ship_deckspace_upgrade = 3
+				carrier_armor_upgrade = 1
+				ship_engine_upgrade = 3
+				ship_reliability_upgrade = 5
+			}
+		}
+		create_equipment_variant = {
+			name = "Yatauam Class"
+			type = carrier_1
+			parent_version = 0
+			upgrades = {
+				ship_deckspace_upgrade = 2
+				carrier_armor_upgrade = 0
+				ship_engine_upgrade = 2
+				ship_reliability_upgrade = 4
+			}
+			obsolete = yes
+		}		
+		create_equipment_variant = {
+			name = "Morwinguen Class"
+			type = carrier_1
+			parent_version = 0
+			upgrades = {
+				ship_deckspace_upgrade = 1
+				carrier_armor_upgrade = 0
+				ship_engine_upgrade = 0
+				ship_reliability_upgrade = 0
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Daibalnaang Class"
+			type = carrier_1
+			parent_version = 0
+			upgrades = {
+				ship_deckspace_upgrade = 0
+				carrier_armor_upgrade = 0
+				ship_engine_upgrade = 0
+				ship_reliability_upgrade = 0
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Shulxineng Class"
+			type = carrier_1
+			parent_version = 0
+			upgrades = {
+				ship_deckspace_upgrade = 2
+				carrier_armor_upgrade = 4
+				ship_engine_upgrade = 1
+				ship_reliability_upgrade = 3
+			}
+			obsolete = yes
+		}		
+		
+		### Battleships ###
+		create_equipment_variant = {
+			name = "Balanalung Class"
 			type = battleship_1
-			parent_version = 1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 3
+				ship_engine_upgrade = 1
+				ship_armor_upgrade = 1
+				ship_gun_upgrade = 5
+			}
+		}
+		create_equipment_variant = {
+			name = "Nawal Class"
+			type = battleship_1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 3
 				ship_engine_upgrade = 4
@@ -179,45 +277,215 @@ if = {
 			}
 			obsolete = yes
 		}
-		### Heavy Cruiser Variants	
 		create_equipment_variant = {
-			name = "Neigirum Class"
-			type = heavy_cruiser_1
+			name = "Kweixam Class"
+			type = battleship_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 0
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 0
+				ship_gun_upgrade = 0
+			}
+			obsolete = yes
+		}	
+		create_equipment_variant = {
+			name = "Nunlawei Class"
+			type = battleship_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 0
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 0
+				ship_gun_upgrade = 0
+			}
+			obsolete = yes
+		}
+		
+		# Battlecruisers #
+		create_equipment_variant = {
+			name = "Weinuaang Class"
+			type = battle_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 3
+				ship_engine_upgrade = 4
+				ship_armor_upgrade = 3
+				ship_gun_upgrade = 0
+			}
+		}
+		
+		# Heavy Cruiser #
+		create_equipment_variant = {
+			name = "Polomaang Class"
+			type = heavy_cruiser_2
 			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 2
 				ship_engine_upgrade = 2
 				ship_armor_upgrade = 2
-				ship_gun_upgrade = 3
+				ship_gun_upgrade = 4
 			}
-			obsolete = yes
-		}
-		### Light Cruiser Variants	
+		}		
 		create_equipment_variant = {
-			name = "Faasingirum Class"
-			type = light_cruiser_1
+			name = "Nolom Class"
+			type = heavy_cruiser_2
 			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 2
 				ship_engine_upgrade = 2
+				ship_armor_upgrade = 3
+				ship_gun_upgrade = 2
+			}
+		}		
+		create_equipment_variant = {
+			name = "Iomaang Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 2
+				ship_engine_upgrade = 1
+				ship_armor_upgrade = 2
+				ship_gun_upgrade = 2
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Dedabeng Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 0
+				ship_gun_upgrade = 1
+			}
+			obsolete = yes
+		}		
+		create_equipment_variant = {
+			name = "Filaamal Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 0
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 0
+				ship_gun_upgrade = 0
+			}
+			obsolete = yes
+		}		
+		create_equipment_variant = {
+			name = "Hangwaang Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 0
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 3
+				ship_gun_upgrade = 0
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Beinaam Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 1
+				ship_gun_upgrade = 5
+			}
+			obsolete = yes
+		}		
+		create_equipment_variant = {
+			name = "Hangwaang Class"
+			type = heavy_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 0
+				ship_engine_upgrade = 0
+				ship_armor_upgrade = 2
+				ship_gun_upgrade = 0
+			}
+			obsolete = yes
+		}		
+		
+		# Light Cruisers #
+		create_equipment_variant = {
+			name = "Nangle Class"
+			type = light_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 3
+				ship_engine_upgrade = 2
+				ship_gun_upgrade = 5
+				ship_anti_air_upgrade = 2
+			}
+			obsolete = yes
+		}		
+		create_equipment_variant = {
+			name = "Yonomaang Class"
+			type = light_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_engine_upgrade = 0
+				ship_gun_upgrade = 2
+				ship_anti_air_upgrade = 0
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Seimalam Class"
+			type = light_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_engine_upgrade = 0
 				ship_gun_upgrade = 1
 				ship_anti_air_upgrade = 1
 			}
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Penalimaang Class"
+			name = "Leilaamaang Class"
 			type = light_cruiser_1
-			parent_version = 1
+			parent_version = 0
 			upgrades = {
 				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 2
+				ship_engine_upgrade = 0
+				ship_gun_upgrade = 0
+				ship_anti_air_upgrade = 0
 			}
 			obsolete = yes
 		}
-		### Destroyer Variants
+		create_equipment_variant = {
+			name = "Sulalamaang Class"
+			type = light_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 2
+				ship_engine_upgrade = 1
+				ship_gun_upgrade = 4
+				ship_anti_air_upgrade = 0
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Iwologaraa Class"
+			type = light_cruiser_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 0
+				ship_engine_upgrade = 0
+				ship_gun_upgrade = 0
+				ship_anti_air_upgrade = 1
+			}
+			obsolete = yes
+		}
+		
+		# Destroyers #
 		create_equipment_variant = {
 			name = "Owongtumaaxi Class"
 			type = destroyer_1
@@ -228,20 +496,218 @@ if = {
 				ship_ASW_upgrade = 2
 				ship_anti_air_upgrade = 2
 			}
+		}
+		create_equipment_variant = {
+			name = "Owongtumaaxi Class"
+			type = destroyer_1
+			parent_version = 0
+			upgrades = {
+				ship_torpedo_upgrade = 1
+				destroyer_engine_upgrade = 0
+				ship_ASW_upgrade = 1
+				ship_anti_air_upgrade = 1
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Folashiu Class"
+			type = destroyer_1
+			parent_version = 0
+			upgrades = {
+				ship_torpedo_upgrade = 3
+				destroyer_engine_upgrade = 2
+				ship_ASW_upgrade = 2
+				ship_anti_air_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Nigaala Class"
+			type = destroyer_1
+			parent_version = 0
+			upgrades = {
+				ship_torpedo_upgrade = 0
+				destroyer_engine_upgrade = 0
+				ship_ASW_upgrade = 2
+				ship_anti_air_upgrade = 0
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Pinlaa Class"
+			type = destroyer_1
+			parent_version = 0
+			upgrades = {
+				ship_torpedo_upgrade = 1
+				destroyer_engine_upgrade = 0
+				ship_ASW_upgrade = 4
+				ship_anti_air_upgrade = 0
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Dingwun Class"
+			type = destroyer_1
+			parent_version = 0
+			upgrades = {
+				ship_torpedo_upgrade = 1
+				destroyer_engine_upgrade = 1
+				ship_ASW_upgrade = 0
+				ship_anti_air_upgrade = 4
+			}
+			obsolete = yes
+		}	
+		create_equipment_variant = {
+			name = "Olunglu Class"
+			type = destroyer_1
+			parent_version = 0
+			upgrades = {
+				ship_torpedo_upgrade = 1
+				destroyer_engine_upgrade = 1
+				ship_ASW_upgrade = 1
+				ship_anti_air_upgrade = 1
+			}
+			obsolete = yes
 		}	
 		### Submarine Variants	
 		create_equipment_variant = {
-			name = "Limseng Class"
+			name = "Juluntawaan Class"
 			type = submarine_1
 			parent_version = 0
 			upgrades = {
-				ship_reliability_upgrade = 3
-				sub_engine_upgrade = 3
+				ship_reliability_upgrade = 2
+				sub_engine_upgrade = 1
+				sub_stealth_upgrade = 1
+				sub_torpedo_upgrade = 3
+			}
+		}
+		create_equipment_variant = {
+			name = "Ansushaang Class"
+			type = submarine_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 0
+				sub_engine_upgrade = 1
+				sub_stealth_upgrade = 1
+				sub_torpedo_upgrade = 0
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Lawetuin Class"
+			type = submarine_1
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 2
+				sub_engine_upgrade = 1
 				sub_stealth_upgrade = 1
 				sub_torpedo_upgrade = 2
 			}
 			obsolete = yes
-		}	
+		}
+
+		
+	## 1936 Start # Disabled for the future sake when we need to reenable it
+	#	### Carrier Variants
+	#	create_equipment_variant = {
+	#		name = "Tsuraang Class"
+	#		type = carrier_1
+	#		parent_version = 0
+	#		upgrades = {
+	#			ship_deckspace_upgrade = 5
+	#			carrier_armor_upgrade = 2
+	#			ship_engine_upgrade = 2
+	#			ship_reliability_upgrade = 3
+	#		}
+	#		obsolete = yes
+	#	}
+	#	### Battleship Variants	
+	#	create_equipment_variant = {
+	#		name = "Xianu Class"
+	#		type = battleship_1
+	#		parent_version = 0
+	#		upgrades = {
+	#			ship_reliability_upgrade = 2
+	#			ship_engine_upgrade = 3
+	#			ship_armor_upgrade = 1
+	#			ship_gun_upgrade = 1
+	#		}
+	#		obsolete = yes
+	#	}
+	#	create_equipment_variant = {
+	#		name = "Merwaxeng Class"
+	#		type = battleship_1
+	#		parent_version = 1
+	#		upgrades = {
+	#			ship_reliability_upgrade = 3
+	#			ship_engine_upgrade = 4
+	#			ship_armor_upgrade = 3
+	#			ship_gun_upgrade = 4
+	#		}
+	#		obsolete = yes
+	#	}
+	#	### Heavy Cruiser Variants	
+	#	create_equipment_variant = {
+	#		name = "Neigirum Class"
+	#		type = heavy_cruiser_1
+	#		parent_version = 0
+	#		upgrades = {
+	#			ship_reliability_upgrade = 2
+	#			ship_engine_upgrade = 2
+	#			ship_armor_upgrade = 2
+	#			ship_gun_upgrade = 3
+	#		}
+	#		obsolete = yes
+	#	}
+	#	### Light Cruiser Variants	
+	#	create_equipment_variant = {
+	#		name = "Faasingirum Class"
+	#		type = light_cruiser_1
+	#		parent_version = 0
+	#		upgrades = {
+	#			ship_reliability_upgrade = 2
+	#			ship_engine_upgrade = 2
+	#			ship_gun_upgrade = 1
+	#			ship_anti_air_upgrade = 1
+	#		}
+	#		obsolete = yes
+	#	}
+	#	create_equipment_variant = {
+	#		name = "Penalimaang Class"
+	#		type = light_cruiser_1
+	#		parent_version = 1
+	#		upgrades = {
+	#			ship_reliability_upgrade = 2
+	#			ship_engine_upgrade = 3
+	#			ship_gun_upgrade = 1
+	#			ship_anti_air_upgrade = 2
+	#		}
+	#		obsolete = yes
+	#	}
+	#	### Destroyer Variants
+	#	create_equipment_variant = {
+	#		name = "Owongtumaaxi Class"
+	#		type = destroyer_1
+	#		parent_version = 0
+	#		upgrades = {
+	#			ship_torpedo_upgrade = 2
+	#			destroyer_engine_upgrade = 4
+	#			ship_ASW_upgrade = 2
+	#			ship_anti_air_upgrade = 2
+	#		}
+	#	}	
+	#	### Submarine Variants	
+	#	create_equipment_variant = {
+	#		name = "Limseng Class"
+	#		type = submarine_1
+	#		parent_version = 0
+	#		upgrades = {
+	#			ship_reliability_upgrade = 3
+	#			sub_engine_upgrade = 3
+	#			sub_stealth_upgrade = 1
+	#			sub_torpedo_upgrade = 2
+	#		}
+	#		obsolete = yes
+	#	}	
 }
 if = {
 	limit = { has_dlc = "Man the Guns"}
@@ -251,7 +717,7 @@ if = {
 		create_equipment_variant = {
 			name = "Lougang Class"
 			type = ship_hull_carrier_conversion_bb
-			name_group = JAP_CV_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -267,7 +733,7 @@ if = {
 		create_equipment_variant = {
 			name = "Shuxileng Class"
 			type = ship_hull_carrier_conversion_bb
-			name_group = JAP_CV_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -283,7 +749,7 @@ if = {
 		create_equipment_variant = {
 			name = "Qihaang Class"
 			type = ship_hull_carrier_1
-			name_group = JAP_CV_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -298,7 +764,7 @@ if = {
 		create_equipment_variant = {
 			name = "Morwinguen Class"
 			type = ship_hull_carrier_conversion_ca
-			name_group = JAP_CVL_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -311,7 +777,7 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Daibalnaang Class"
-			name_group = JAP_CVL_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			type = ship_hull_carrier_conversion_ca
 			parent_version = 0
 			modules = {
@@ -326,7 +792,7 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Yatauam Class"
-			name_group = JAP_CVL_HISTORICAL
+			name_group = CHI_CV_HISTORICAL
 			type = ship_hull_carrier_1
 			parent_version = 0
 			modules = {
@@ -343,7 +809,7 @@ if = {
 		### Battleship Variants	
 		create_equipment_variant = {
 			name = "Balanalung Class"
-			name_group = JAP_BB_HISTORICAL
+			name_group = CHI_BB_HISTORICAL
 			type = ship_hull_heavy_1
 			parent_version = 0
 			modules = {
@@ -362,7 +828,7 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Weinuaang Class"
-			name_group = JAP_BB_HISTORICAL
+			name_group = CHI_BB_HISTORICAL
 			type = ship_hull_heavy_1
 			parent_version = 0
 			modules = {
@@ -382,7 +848,7 @@ if = {
 		create_equipment_variant = {
 			name = "Nawal Class"
 			type = ship_hull_heavy_1
-			name_group = JAP_BB_HISTORICAL
+			name_group = CHI_BB_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_heavy_battery_1
@@ -404,7 +870,7 @@ if = {
 		create_equipment_variant = {
 			name = "Iomaang Class"
 			type = ship_hull_cruiser_2
-			name_group = JAP_CA_HISTORICAL
+			name_group = CHI_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_2
@@ -424,7 +890,7 @@ if = {
 		create_equipment_variant = {
 			name = "Dedabeng Class"
 			type = ship_hull_cruiser_1
-			name_group = JAP_CA_HISTORICAL
+			name_group = CHI_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_1
@@ -443,7 +909,7 @@ if = {
 		create_equipment_variant = {
 			name = "Filaamal Class"
 			type = ship_hull_cruiser_1
-			name_group = JAP_CA_HISTORICAL
+			name_group = CHI_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -462,7 +928,7 @@ if = {
 		create_equipment_variant = {
 			name = "Hangwaang Class"
 			type = ship_hull_cruiser_coastal_defense_ship
-			name_group = JAP_CA_HISTORICAL
+			name_group = CHI_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_1
@@ -480,7 +946,7 @@ if = {
 		create_equipment_variant = {
 			name = "Nolom Class"
 			type = ship_hull_cruiser_2
-			name_group = JAP_CA_HISTORICAL
+			name_group = CHI_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_2
@@ -499,7 +965,7 @@ if = {
 		create_equipment_variant = {
 			name = "Polomaang Class"
 			type = ship_hull_cruiser_2
-			name_group = JAP_CL_HISTORICAL
+			name_group = CHI_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_2
@@ -518,7 +984,7 @@ if = {
 		create_equipment_variant = {
 			name = "Yonomaang Class"
 			type = ship_hull_cruiser_1
-			name_group = JAP_CL_HISTORICAL
+			name_group = CHI_CL_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -536,7 +1002,7 @@ if = {
 		create_equipment_variant = {
 			name = "Seimalam Class"
 			type = ship_hull_cruiser_1
-			name_group = JAP_CL_HISTORICAL
+			name_group = CHI_CL_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -554,7 +1020,7 @@ if = {
 		create_equipment_variant = {
 			name = "Leilaamaang Class"
 			type = ship_hull_cruiser_1
-			name_group = JAP_CL_HISTORICAL
+			name_group = CHI_CL_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -572,7 +1038,7 @@ if = {
 		create_equipment_variant = {
 			name = "Sulalamaang Class"
 			type = ship_hull_cruiser_1
-			name_group = JAP_CL_HISTORICAL
+			name_group = CHI_CL_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -585,12 +1051,11 @@ if = {
 				mid_2_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_mine_layer_1
 			}
-			obsolete = yes
 		}
 		create_equipment_variant = {
 			name = "Iwologaraa Class"					# cruiser minelayer
 			type = ship_hull_cruiser_1
-			name_group = JAP_MINELAYERS_HISTORICAL
+			name_group = CHI_CL_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -608,7 +1073,7 @@ if = {
 		create_equipment_variant = {
 			name = "Olunglu Class" #collection of various WWI and early interwar ships with similiar capabilities
 			type = ship_hull_light_1
-			name_group = JAP_DD_HISTORICAL
+			name_group = CHI_CL_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
@@ -625,7 +1090,7 @@ if = {
 		create_equipment_variant = {
 			name = "Lu Class" 
 			type = ship_hull_light_1
-			name_group = JAP_DD_HISTORICAL
+			name_group = CHI_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
@@ -642,7 +1107,7 @@ if = {
 		create_equipment_variant = {
 			name = "Folashiu Class"
 			type = ship_hull_light_1
-			name_group = JAP_DD_HISTORICAL
+			name_group = CHI_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_2
@@ -658,7 +1123,7 @@ if = {
 		create_equipment_variant = {
 			name = "Nigaala Class" 				# collection of interwar DD-sized minelayers
 			type = ship_hull_light_1
-			name_group = JAP_MINELAYERS_HISTORICAL
+			name_group = CHI_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
@@ -675,7 +1140,7 @@ if = {
 		create_equipment_variant = {
 			name = "Juluntawaan Class"
 			type = ship_hull_submarine_1
-			name_group = JAP_SS_HISTORICAL
+			name_group = CHI_SS_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_torpedo_slot = ship_torpedo_sub_1
@@ -696,7 +1161,7 @@ if = {
 		create_equipment_variant = {
 			name = "Lawetuin Class"
 			type = ship_hull_submarine_1
-			name_group = JAP_SS_HISTORICAL
+			name_group = CHI_SS_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_torpedo_slot = ship_torpedo_sub_1
@@ -721,6 +1186,7 @@ if = {
 			}
 			obsolete = yes
 		}
+		
 		create_equipment_variant = {
 			name = "Kweixam Class" #AA Battleship 12th Battleship Design
 			type = ship_hull_pre_dreadnought
@@ -738,8 +1204,9 @@ if = {
 				mid_1_custom_slot = ship_secondaries_1
 				rear_1_custom_slot = ship_anti_air_1
 			}
-		obsolete = yes
+			obsolete = yes
 		}
+		
 		create_equipment_variant = {
 			name = "Nunlawei Class" #AA Battleship 12th Battleship Design
 			type = ship_hull_pre_dreadnought
@@ -755,17 +1222,18 @@ if = {
 				fixed_ship_armor_slot = ship_armor_bb_1
 				front_1_custom_slot = ship_anti_air_1
 				mid_1_custom_slot = ship_secondaries_1
-				rear_1_custom_slot = ship_secondaries_1
+				rear_1_custom_slot = ship_anti_air_1
 			}
 		obsolete = yes
 		}
+		
 		create_equipment_variant = {
 			name = "Nangle Class" #35th Cruiser Design
 			type = ship_hull_cruiser_1
 			name_group = CHI_CA_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_battery_slot = ship_light_medium_battery_1
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
@@ -778,6 +1246,7 @@ if = {
 			}
 		obsolete = yes
 		}
+		
 		create_equipment_variant = {
 			name = "Pinlaa Class" #25th Depthcharge Destroyer Design
 			type = ship_hull_light_1
@@ -795,6 +1264,7 @@ if = {
 			}
 		obsolete = yes
 		}
+		
 		create_equipment_variant = {
 			name = "Dingwun Class" #11th AA Destroyer Design
 			type = ship_hull_light_1
@@ -812,6 +1282,7 @@ if = {
 			}
 		obsolete = yes
 		}
+		
 		create_equipment_variant = {
 			name = "Beinaam Class" #432 Costal Defence
 			type = ship_hull_cruiser_coastal_defense_ship
@@ -882,3 +1353,88 @@ recruit_character = TRS_army_regrouping_1
 recruit_character = TRS_navy_capital_ship_3
 recruit_character = TRS_air_naval_strike_1
 recruit_character = TRS_navy_carrier_2
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Ki-10"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Ki-2"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ki-1"
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+	}
+	create_equipment_variant = {
+		name = "Ki-3"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Aichi D1A2"
+		type = cv_small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = dive_brakes_small
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "A4N"
+		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "B2M"
+		type = cv_small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "GFX_JAP_cv_naval_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "B4Y"
+		type = cv_small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_JAP_cv_naval_bomber1_medium"
+	}
+}

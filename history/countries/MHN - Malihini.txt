@@ -17,25 +17,31 @@ set_technology = {
 	basic_torpedo = 1
 	early_ship_hull_submarine = 1
 	basic_battery = 1
-	basic_secondary_battery =1
+	basic_dp_light_battery = 1
 	mtg_transport = 1
 	basic_train = 1
+	pre_dreadnoughts = 1
+	coastal_defense_ships = 1	
 }
+
 if = {
     limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "MHN_1936_air_bba"
         set_technology = {
-            aa_lmg = 1
-            engines_1 = 1
-            engines_2 = 1
-            early_bombs = 1
-            aircraft_construction = 1
-            iw_small_airframe = 1
-            iw_medium_airframe = 1
-            iw_large_airframe = 1
-            basic_medium_airframe = 1
-            basic_small_airframe = 1
-        }
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+		}
     else = {
+		set_air_oob = "MHN_1936_air_legacy"
         set_technology = {
             early_fighter = 1
             cv_early_fighter = 1
@@ -187,7 +193,7 @@ create_equipment_variant = {
 		fixed_ship_armor_slot = ship_armor_cruiser_1
 		mid_1_custom_slot = ship_anti_air_1
 		mid_2_custom_slot = ship_anti_air_1
-		rear_1_custom_slot = ship_light_medium_battery_1
+		rear_1_custom_slot = ship_medium_battery_1
 	}
 	obsolete = no
 }
@@ -295,4 +301,67 @@ recruit_character = MHN_air_chief_ground_support_2
 recruit_character = MHN_air_chief_reform_2
 recruit_character = MHN_army_logistics_2
 recruit_character = MHN_air_bomber_interception_2
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+
+		create_equipment_variant = {
+			name = "Tier 0 Plane" 
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+
+		create_equipment_variant = {
+			name = "Tier 0 CAS" 
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+		
+		create_equipment_variant = {
+			name = "Tier 0 Nav Bomber" 
+			type = small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+
+		}
+		create_equipment_variant = {
+			name = "Tier 0 CV fighter" 
+			type = cv_small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "Tier 0 CV Nav Bomber" 
+			type = cv_small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "Tier 0 Bomber" 
+			type = medium_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = empty
+			}
+		}
+	}
 set_convoys = 100

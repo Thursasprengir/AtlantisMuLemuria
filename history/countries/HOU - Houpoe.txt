@@ -1,6 +1,10 @@
-﻿capital = 1107
+﻿
+
+
+capital = 1107
 
 oob = "HOU_1936"
+
 
 set_research_slots = 3
 
@@ -22,31 +26,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	fuel_refining = 1
 	basic_train = 1
 }
-if = {
-    limit = { has_dlc = "By Blood Alone" }
-        set_technology = {
-            aa_lmg = 1
-            engines_1 = 1
-            engines_2 = 1
-            early_bombs = 1
-            aircraft_construction = 1
-            iw_small_airframe = 1
-            iw_medium_airframe = 1
-            iw_large_airframe = 1
-            basic_medium_airframe = 1
-            basic_small_airframe = 1
-        }
-    else = {
-        set_technology = {
-            early_fighter = 1
-            cv_early_fighter = 1
-            cv_naval_bomber1 = 1
-            naval_bomber1 = 1
-            early_bomber = 1
-            CAS1 = 1
-        }
-    }
-}
+
 
 if = {
 	limit = {
@@ -72,35 +52,79 @@ if = {
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
+	set_naval_oob = "HOU_1936_naval_legacy"
 	set_technology = {
 		early_submarine = 1
-		basic_submarine = 1
 		early_destroyer = 1
+		basic_destroyer = 1
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
 		early_battleship = 1
 		early_battlecruiser = 1
+		early_carrier = 1
 		transport = 1
 	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "HOU_1936_naval_mtg"
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
 		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
+		basic_fire_control_system = 1
+		basic_dp_light_battery = 1
+		pre_dreadnoughts = 1
+		coastal_defense_ships = 1
 	}
+}
+
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "HOU_1936_air_bba"
+        set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+    else = {
+		set_air_oob = "HOU_1936_air_legacy"
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            cv_naval_bomber1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
 }
 
 if = {
@@ -131,201 +155,337 @@ set_rule = {
 	can_create_factions = no
 }
 
-###INTIMIDATING HOUPO'EAN SHIPS###
+###INTIMIDATING HOUPO'EAN SHIPS BUT IN BUDGET###
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Lae Class"
+		type = submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 0
+			sub_stealth_upgrade = 0
+			sub_torpedo_upgrade = 3
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Kōeke Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 2
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 0
+			ship_anti_air_upgrade = 3
+		}
+	}
+	create_equipment_variant = {
+		name = "Togi Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Pīpaka Class"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 0
+			ship_anti_air_upgrade = 3
+		}
+		obsolete = yes
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Aveese Class"
+		type = heavy_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 0
+			ship_armor_upgrade = 2
+			ship_gun_upgrade = 2
+		}
+	}
+	create_equipment_variant = {
+		name = "Malie Class"
+		type = heavy_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 0
+			ship_armor_upgrade = 0
+			ship_gun_upgrade = 2
+		}
+	}	
+	# Battleships #
+	create_equipment_variant = {
+		name = "Hū'uki Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 0
+			ship_engine_upgrade = 0
+			ship_armor_upgrade = 0
+			ship_gun_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "Kahiala Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 2
+			ship_gun_upgrade = 2
+		}
+	}
+	create_equipment_variant = {
+		name = "Kohola Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 2
+			ship_gun_upgrade = 3
+		}
+	}
+	# Carriers #	
+	create_equipment_variant = {
+		name = "Nalu Class"
+		type = carrier_1
+		parent_version = 0
+		upgrades = {
+			ship_deckspace_upgrade = 0
+			carrier_armor_upgrade = 0
+			ship_engine_upgrade = 2
+			ship_reliability_upgrade = 3
+		}
+	}	
+	create_equipment_variant = {
+		name = "Hō'ailona Class"
+		type = carrier_1
+		parent_version = 0
+		upgrades = {
+			ship_deckspace_upgrade = 1
+			carrier_armor_upgrade = 5
+			ship_engine_upgrade = 1
+			ship_reliability_upgrade = 3
+		}
+	}
+}
 
-create_equipment_variant = {
-	name = "Hō'ailona Class"
-	type = ship_hull_carrier_conversion_bb
-	name_group = HOU_CV_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = ship_armor_carrier_deck
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = heavy_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		mid_1_custom_slot = ship_deck_space
+###INTIMIDATING HOUPO'EAN SHIPS WITH A PRICE###
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	create_equipment_variant = {
+		name = "Hō'ailona Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = HOU_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_armor_carrier_deck
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Nalu Class"
-	type = ship_hull_carrier_conversion_ca
-	name_group = HOU_CV_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = ship_deck_space
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = cruiser_ship_engine_1
-		fixed_ship_secondaries_slot = empty
+	create_equipment_variant = {
+		name = "Nalu Class"
+		type = ship_hull_carrier_conversion_ca
+		name_group = HOU_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Kohola Class"
-	type = ship_hull_heavy_1
-	name_group = HOU_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = heavy_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_bb_1
-		front_1_custom_slot = ship_anti_air_1
-		mid_1_custom_slot = ship_anti_air_1
-		mid_2_custom_slot = ship_anti_air_1
-		rear_1_custom_slot = ship_heavy_battery_1
+	create_equipment_variant = {
+		name = "Kohola Class"
+		type = ship_hull_heavy_1
+		name_group = HOU_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Kahiala Class"
-	type = ship_hull_heavy_1
-	name_group = HOU_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = heavy_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_bb_1
-		front_1_custom_slot = ship_anti_air_1
-		mid_1_custom_slot = ship_secondaries_1
-		mid_2_custom_slot = ship_secondaries_1
-		rear_1_custom_slot = ship_anti_air_1
+	create_equipment_variant = {
+		name = "Kahiala Class"
+		type = ship_hull_heavy_1
+		name_group = HOU_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_anti_air_1
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Hū'uki Class"
-	type = ship_hull_pre_dreadnought
-	name_group = HOU_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = heavy_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_bb_1
-		front_1_custom_slot = ship_anti_air_1
-		mid_1_custom_slot = ship_secondaries_1
-		rear_1_custom_slot = ship_anti_air_1
+	create_equipment_variant = {
+		name = "Hū'uki Class"
+		type = ship_hull_pre_dreadnought
+		name_group = HOU_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_anti_air_1
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Aveese Class"
-	type = ship_hull_cruiser_coastal_defense_ship
-	name_group = HOU_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = cruiser_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		front_1_custom_slot = ship_anti_air_1		
-		mid_1_custom_slot = ship_anti_air_1
-		mid_2_custom_slot = ship_anti_air_1
-		rear_1_custom_slot = ship_medium_battery_1
+	create_equipment_variant = {
+		name = "Aveese Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = HOU_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = ship_anti_air_1		
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Malie Class"
-	type = ship_hull_cruiser_1
-	name_group = HOU_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = cruiser_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		mid_1_custom_slot = ship_anti_air_1
-		mid_2_custom_slot = ship_anti_air_1
-		rear_1_custom_slot = ship_light_medium_battery_1
+	create_equipment_variant = {
+		name = "Malie Class"
+		type = ship_hull_cruiser_1
+		name_group = HOU_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Pīpaka Class"
-	type = ship_hull_cruiser_1
-	name_group = HOU_CL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = cruiser_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		mid_1_custom_slot = ship_anti_air_1
-		mid_2_custom_slot = ship_anti_air_1
-		rear_1_custom_slot = ship_airplane_launcher_1
+	create_equipment_variant = {
+		name = "Pīpaka Class"
+		type = ship_hull_cruiser_1
+		name_group = HOU_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Togi Class"
-	type = ship_hull_light_1
-	name_group = HOU_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_sonar_1
-		fixed_ship_torpedo_slot = empty
-		fixed_ship_engine_slot = light_ship_engine_1
-		mid_1_custom_slot = ship_depth_charge_1
-		rear_1_custom_slot = ship_depth_charge_1
+	create_equipment_variant = {
+		name = "Togi Class"
+		type = ship_hull_light_1
+		name_group = HOU_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_torpedo_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Kōeke Class"
-	type = ship_hull_light_1
-	name_group = HOU_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_torpedo_slot = ship_torpedo_1
-		fixed_ship_engine_slot = light_ship_engine_1
-		mid_1_custom_slot = ship_anti_air_1
-		rear_1_custom_slot = ship_anti_air_1
+	create_equipment_variant = {
+		name = "Kōeke Class"
+		type = ship_hull_light_1
+		name_group = HOU_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			mid_1_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_anti_air_1
+		}
+		obsolete = no
 	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Lae Class"
-	type = ship_hull_submarine_1
-	name_group = HOU_SS_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_torpedo_slot = ship_torpedo_sub_1
-		fixed_ship_engine_slot = sub_ship_engine_1
-		rear_1_custom_slot = ship_torpedo_sub_1
+	create_equipment_variant = {
+		name = "Lae Class"
+		type = ship_hull_submarine_1
+		name_group = HOU_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+		obsolete = no
 	}
-	obsolete = no
 }
 
 recruit_character = HOU_mako_oriata
@@ -375,5 +535,68 @@ recruit_character = HOU_air_bomber_interception_2
 recruit_character = HOU_air_close_air_support_2
 recruit_character = HOU_navy_screen_2
 
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
 
+		create_equipment_variant = {
+			name = "Tier 0 Plane" 
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+
+		create_equipment_variant = {
+			name = "Tier 0 CAS" 
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+		
+		create_equipment_variant = {
+			name = "Tier 0 Nav Bomber" 
+			type = small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+
+		}
+		create_equipment_variant = {
+			name = "Tier 0 CV fighter" 
+			type = cv_small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "Tier 0 CV Nav Bomber" 
+			type = cv_small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "Tier 0 Bomber" 
+			type = medium_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = empty
+			}
+		}
+	}
+	
 set_convoys = 40

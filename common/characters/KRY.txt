@@ -1,0 +1,1102 @@
+
+
+characters={
+###############
+###DEMOCRATIC
+###############
+	KRY_conservatism_leader={
+		name="KRY_conservatism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/KRY/Portrait_KRY_conservatism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+###############
+###COMMUNISM
+###############
+	KRY_marxism_leader={
+		name="KRY_marxism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/KRY/Portrait_KRY_marxism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	
+
+###############
+###FASCISM
+###############
+	KRY_generic_fascism_leader={
+		name="KRY_generic_fascism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/KRY/Portrait_KRY_generic_fascism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1949.1.1.12"
+			id=-1
+		}
+	}
+	
+###############
+###NEUTRALITY
+###############
+	KRY_oligarchism_leader={
+		name=KRY_oligarchism_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KRY/Portrait_KRY_oligarchism_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ financial_expert }
+			expire="1953.1.1.12"
+			id=-1
+		}
+	}
+	
+###############
+###Monarch
+###############
+	KRY_king_leader={
+		name="KRY_king_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/KRY/Portrait_KRY_king_leader.dds"
+			}
+		}
+		country_leader={
+			ideology=king
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+
+	KRY_corps_commander_1={
+		name=KRY_corps_commander_1
+		portraits={
+			army={
+				large="gfx/leaders/Europe/02497-2598861750-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+				#small="gfx/interface/ideas/idea_KRY_corps_commander_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	KRY_naval_leader_1={
+		name=KRY_naval_leader_1
+		portraits={
+			army={
+				large="gfx/leaders/Europe/08172-4109480996-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+			}
+			army={
+				#small="GFX_idea_KRY_naval_leader_1"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	KRY_naval_leader_2={
+		name=KRY_naval_leader_2
+		portraits={
+			army={
+				large="gfx/leaders/Europe/08080-4109480904-matte painting, sharp focus, hoi4_vanilla_portrait_style, navy uniform, european,.dds"
+				#small="gfx/interface/ideas/idea_KRY_naval_leader_1.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	KRY_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_anti_communist_crusader
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="KRY_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_KRY_anti_communist_crusader"
+			}
+		}
+	}
+	KRY_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_armaments_organizer
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="KRY_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_KRY_armaments_organizer"
+			}
+		}
+	}
+	KRY_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_backroom_backstabber
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="KRY_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_KRY_backroom_backstabber"
+			}
+		}
+	}
+	KRY_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_captain_of_industry
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="KRY_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_KRY_captain_of_industry"
+			}
+		}
+	}
+	KRY_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_communist_revolutionary
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="KRY_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_KRY_communist_revolutionary"
+			}
+		}
+	}
+	KRY_compassionate_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_compassionate_gentleman
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="KRY_compassionate_gentleman"
+		portraits={
+			army={
+				small="GFX_idea_KRY_compassionate_gentleman"
+			}
+		}
+	}
+	KRY_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_democratic_reformer
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="KRY_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_KRY_captain_of_industry"
+			}
+		}
+	}	
+	KRY_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_economist
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="KRY_economist"
+		portraits={
+			army={
+				small="GFX_idea_KRY_economist"
+			}
+		}
+	}
+	KRY_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_editor
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="KRY_editor"
+		portraits={
+			army={
+				small="GFX_idea_KRY_editor"
+			}
+		}
+	}
+	KRY_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_fascist_demagogue
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="KRY_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_KRY_fascist_demagogue"
+			}
+		}
+	}
+	KRY_financial_expert={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_financial_expert
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="KRY_financial_expert"
+		portraits={
+			army={
+				small="GFX_idea_KRY_financial_expert"
+			}
+		}
+	}
+	KRY_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_head_of_intelligence
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="KRY_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_KRY_head_of_intelligence"
+			}
+		}
+	}
+	KRY_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_ideological_crusader
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="KRY_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_KRY_ideological_crusader"
+			}
+		}
+	}
+	KRY_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_popular_figurehead
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="KRY_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_KRY_popular_figurehead"
+			}
+		}
+	}
+	KRY_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_prince_of_terror
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="KRY_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_KRY_prince_of_terror"
+			}
+		}
+	}
+	KRY_silent_workhorse={
+		name=KRY_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_KRY_silent_workhorse"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_silent_workhorse
+			allowed  = {
+				original_tag  = KRY
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	KRY_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_smooth_talking_charmer
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="KRY_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_KRY_smooth_talking_charmer"
+			}
+		}
+	}
+	
+	KRY_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = KRY_war_industrialist
+			allowed  = {
+					original_tag  = KRY
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="KRY_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_KRY_war_industrialist"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	KRY_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = KRY_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = KRY
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="KRY_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	KRY_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = KRY_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = KRY
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="KRY_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	KRY_naval_theorist={
+		name=KRY_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_KRY_naval_theorist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = KRY_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = KRY
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+	KRY_naval_aviation_pioneer={
+		name=KRY_naval_aviation_pioneer
+		portraits={
+			army={
+				small="GFX_idea_KRY_naval_aviation_pioneer"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = KRY_naval_aviation_pioneer
+			ledger = navy
+			allowed = {
+				original_tag = KRY
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+
+	KRY_victory_through_airpower={
+		name=KRY_victory_through_airpower
+		portraits={
+			army={
+				small="GFX_idea_KRY_victory_through_airpower"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = KRY_victory_through_airpower
+			ledger = air
+			allowed = {
+				original_tag = KRY
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+	KRY_nuclear_scientist={
+		name=KRY_nuclear_scientist
+		portraits={
+			army={
+				small="GFX_idea_KRY_nuclear_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = KRY_nuclear_scientist
+			ledger = army
+			allowed = {
+				original_tag = KRY
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	KRY_rocket_scientist={
+		name=KRY_rocket_scientist
+		portraits={
+			army={
+				small="GFX_idea_KRY_rocket_scientist"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = KRY_rocket_scientist
+			ledger = air
+			allowed = {
+				original_tag = KRY
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	KRY_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = KRY_army_chief_defensive_2
+			allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_chief_defensive_2"
+			}
+		}
+	}
+	KRY_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = KRY_army_chief_drill_2
+			allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_chief_drill_2"
+			}
+		}
+	}
+	KRY_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = KRY_army_chief_maneuver_2
+			allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_chief_maneuver_2"
+			}
+		}
+	}
+	KRY_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = KRY_army_chief_morale_2
+			allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_chief_morale_2"
+			}
+		}
+	}
+	KRY_army_chief_offensive_2={
+		name=KRY_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_chief_offensive_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = KRY_army_chief_offensive_2
+			allowed = {
+				original_tag = KRY
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KRY_army_chief_organizational_1={
+		name=KRY_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_chief_organizational_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = KRY_army_chief_organizational_1
+			allowed = {
+				original_tag = KRY
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	KRY_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = KRY_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	KRY_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = KRY_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	KRY_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = KRY_air_chief_ground_support_2
+			allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	KRY_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = KRY_air_chief_reform_2
+			allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	KRY_army_armored_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_KRY_army_armored_1"
+			}
+		}
+	}
+	KRY_army_entrenchment_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_entrenchment_1"
+			}
+		}
+	}
+	KRY_army_infantry_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_infantr_1"
+			}
+		}
+	}
+	KRY_army_logistics_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_army_logistics_2"
+			}
+		}
+	}
+	KRY_air_bomber_interception_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_air_bomber_interception_2"
+			}
+		}
+	}
+	KRY_air_close_air_support_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_air_close_air_support_2"
+			}
+		}
+	}
+	KRY_navy_screen_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_navy_screen_2"
+			}
+		}
+	}
+	KRY_navy_anti_submarine_1={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_KRY_navy_anti_submarine_1"
+			}
+		}
+	}
+	KRY_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert, _3 Genuis
+		advisor={
+			slot = high_command
+			idea_token = KRY_navy_naval_air_defense
+			ledger = navy
+				allowed = {
+					original_tag = KRY
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="KRY_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_KRY_navy_naval_air_defense_2"
+			}
+		}
+	}
+}
+
+
+########################################################################################
+#############PLACE THESE LINES IN THE history/countries file############################
+##########Delete whatever lines won't apply/that you don't need#########################
+############CONVERT KRY to the Nation's 3-letter country code###########################
+########################################################################################
+
+
+

@@ -219,6 +219,55 @@ adjacency_rule={
 	offset = { -2 0 -9 }
 }
 
+#The Dardanelles
+adjacency_rule =
+{
+	name = "DARDANELLES_STRAIT"
+
+	is_friend = {
+		TUR_is_friend_for_dardanelles = yes
+	}
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 849 6864 }
+
+	is_disabled = {
+		has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
+		tooltip = dardanelles_strait_blocked_tt
+	}
+	
+	icon = 849
+	offset = { 3 0 -5 } 
+}
+
 #Kiel Canal
 adjacency_rule={
 	name = "KIEL_CANAL"
@@ -257,6 +306,48 @@ adjacency_rule={
 	icon = 11366
 	offset = { 5 0 -6 }
 }
+
+#Strait of Hormuz
+adjacency_rule =
+{
+	name = "HORMUZ_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 10904 7982 4959 }
+		
+	icon = 10904
+	offset = { 2 0 12 }
+}
+
+
 adjacency_rule = 
 {
 	name = "ANDAMOOKA_CANAL"
@@ -302,4 +393,392 @@ adjacency_rule =
 		
 	icon = 8186
 	offset = { 1 0 -6 }
+}
+
+#Strait of Otranto #TODO_Manu: TEST THIS OUT AND REMOVE IF NOT SATISFACTORY
+adjacency_rule =
+{
+	name = "OTRANTO_STRAIT" #TODO_Manu: Remove this loc key too if not necessary
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 6979 11767 }
+		
+	icon = 6979
+	offset = { 9 0 6 }
+}
+
+#Faavavau_strait #TODO_Manu: TEST THIS OUT AND REMOVE IF NOT SATISFACTORY
+adjacency_rule =
+{
+	name = "Faavavau_strait" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 15244 15245 }
+		
+	icon = 15244
+	offset = { 9 0 6 }
+}
+#Yimvate strait
+adjacency_rule =
+{
+	name = "Yimvate_strait" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 15097 15209 }
+		
+	icon = 15097
+	offset = { 9 0 6 }
+}
+
+#Golden Gate Bridge
+adjacency_rule =
+{
+	name = "Golden_gate_bridge" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 677 9671 }
+		
+	icon = 677
+	offset = { 9 0 6 }
+}
+#Chinook Strait
+adjacency_rule =
+{
+	name = "Chinook_Strait" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 4398 10183 }
+		
+	icon = 4398
+	offset = { 9 0 6 }
+}
+
+#Haida Strait
+adjacency_rule =
+{
+	name = "Haida_strait" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 10548 15541 12571 }
+		
+	icon = 10548
+	offset = { 9 0 6 }
+}
+
+#Bonneville Strait
+adjacency_rule =
+{
+	name = "Bonneville_strait" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 917 7858 }
+		
+	icon = 917
+	offset = { 9 0 6 }
+}
+
+#Fort Nelson Pass
+adjacency_rule =
+{
+	name = "nelson_strait" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 5239 15545 10585 }
+		
+	icon = 5239
+	offset = { 9 0 6 }
+}
+#Silver Gate Bridge
+adjacency_rule =
+{
+	name = "silver_gate_bridge" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 1832 4838 }
+		
+	icon = 1832
+	offset = { 9 0 6 }
+}
+
+#Silver Gate Bridge
+adjacency_rule =
+{
+	name = "kolpo_strait" 
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 15533 15523 }
+		
+	icon = 15533
+	offset = { 9 0 6 }
 }

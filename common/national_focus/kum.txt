@@ -242,8 +242,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_flag = free_pantiya
-			unlock_decision_tooltip = KUM_blow_the_works
-			custom_effect_tooltip = KUM_blow_the_works_tt
+			unlock_decision_category_tooltip = KUM_blow_the_works
 		}
 	}
 
@@ -397,7 +396,7 @@ focus_tree = {
 
 	focus = {
 		id = KUM_expel_foreign_media
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = KUM_strong_monarchy}
 		prerequisite = { focus = KUM_deny_support}
 		relative_position_id = KUM_stop_support
@@ -1034,7 +1033,7 @@ focus_tree = {
 		
 		focus = {
 		id = KUM_light_tanks
-		icon = GFX_r56_goal_BEL_light_tanks
+		icon = GFX_goal_tank_offensive
 		prerequisite = { focus = KUM_armored_trucks}
 		prerequisite = { focus = KUM_artillery}
 		mutually_exclusive = { focus = KUM_medium_tanks }

@@ -1,0 +1,87 @@
+﻿
+
+###Add an Airforcce ###
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1107 = { 
+		small_plane_airframe_0 = {
+			owner = "HOU" 
+			amount = 100
+			version_name = "Tier 0 Plane"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "HOU" 
+			amount = 50
+			version_name = "Tier 0 CAS"
+		}
+		small_plane_naval_bomber_airframe_0 = {
+			owner = "HOU" 
+			amount = 50
+			version_name = "Tier 0 Nav Bomber"
+		}
+		medium_plane_airframe_0 =  {
+			owner = "HOU" 
+			amount = 100
+			version_name = "Tier 0 Bomber"
+		}
+	}
+	1176 = { 
+		small_plane_airframe_0 = {
+			owner = "HOU" 
+			amount = 100
+			version_name = "Tier 0 Plane"
+		}
+		medium_plane_airframe_0 =  {
+			owner = "HOU" 
+			amount = 100
+			version_name = "Tier 0 Bomber"
+		}
+	}
+	"A'a" = {
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 creator = "HOU" version_name = "Tier 0 CV fighter"  }				
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 creator = "HOU" version_name = "Tier 0 CV fighter" }				
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+	}
+	"Keali'iokona" = {
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 creator = "HOU" version_name = "Tier 0 CV fighter"  }				
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 creator = "HOU" version_name = "Tier 0 CV fighter" }				
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+	}
+	"Kamailehope" = {
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 20 creator = "HOU" version_name = "Tier 0 CV fighter"  }				
+		cv_small_plane_airframe_0 =  { owner = "HOU" amount = 4 creator = "HOU" version_name = "Tier 0 CV fighter" }				
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 10 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "HOU" amount = 2 creator = "HOU" version_name = "Tier 0 CV Nav Bomber" }			
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = cv_small_plane_airframe_0
+			creator = "HOU" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_small_plane_naval_bomber_airframe_0
+			creator = "HOU" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+	}
+
+	
+}
+
+#################################

@@ -187,26 +187,37 @@ bookmarks = {
 				ATL_open
 			}	
 		}
-		
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
 
 		"ITA"={
-			minor = yes
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
+			available = { has_dlc = "By Blood Alone" }
 			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
 			}	
 			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
+				ITA_comandante_diavolo
+				ITA_il_sol_dell_avvenire
+				ITA_a_colonial_empire
 			}		
 		}
-
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "By Blood Alone" } }
+			ideas = {
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
+			}	
+			focuses = {
+				ITA_comandante_diavolo
+				ITA_to_live_as_a_lion
+				ITA_a_colonial_empire
+			}		
+		}
 		# minors from DLC ####
 		"CAN"={
 			minor = yes
@@ -542,7 +553,6 @@ bookmarks = {
 			focuses = {
 				GRE_metaxism_focus
 				GRE_resurrecting_the_megali_idea
-				GRE_stage_an_incident_in_the_bosporus
 			}
 		}
 
@@ -627,7 +637,9 @@ bookmarks = {
 			history = "FMU_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
+				FMU_austral_jaguar
+				FMU_lessons_of_the_dresden
+				FMU_lose_but_never_defeat
 			}
 			focuses = {
 				FMU_reject_versailles
@@ -669,8 +681,8 @@ bookmarks = {
 				PRJ_mobilization
 			}
 			focuses = {
-				PRJ_abandon_ethiopia
-				PRJ_stir_up_ENG_hatred
+				PRJ_constitutional_reforms
+				PRJ_down_with_the_king
 				PRJ_kings_vendetta
 			}
 		}

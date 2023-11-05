@@ -42,53 +42,13 @@ TRS_avoid_fighting_china_2 = {
 	ai_strategy = {
 		type = invade
 		id = USA
-		states = {
-			1053
-			938
-		997
-			1055
-			1127
-			1111
-			998
-			1062
-			1059
-			1112
-			1082
-			1103
-			1102
-			1104
-			840
-			630
-			632
-			631
-			1088
-		}
-		value = 1000
+		value = 200
 	}
+	
 	ai_strategy = {
 		type = front_unit_request
-		states = {
-			1053
-			938
-			997
-			1055
-			1127
-			1111
-			998
-			1062
-			1059
-			1112
-			1082
-			1103
-			1102
-			1104
-			840
-			630
-			632
-			631
-			1088
-		}
-		value = 50
+		tag = USA
+		value = 200
 	}
 
 	ai_strategy = {
@@ -116,16 +76,17 @@ TRS_defend_home = {
 		id = 95 #sea of MAzu
 		value = 20
 	}
+	
 	ai_strategy = {
 		type = invade
-		area = pacific
+		#area = pacific #You can't specific target
 		value = 30
 	}
-	ai_strategy = {
-		type = invade
-		area = northern_mu
-		value = 30
-	}
+	#ai_strategy = {
+	#	type = invade
+	#	area = northern_mu #You can't specific target
+	#	value = 30
+	#}
 	ai_strategy = {
   	  type = naval_invasion_focus
   	  value = 50

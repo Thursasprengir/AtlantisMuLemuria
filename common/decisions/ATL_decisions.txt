@@ -25,6 +25,7 @@ political_actions = {
             }
         }
     }
+	
     ATL_give_refuge_ita = {
     	icon = generic_research
         allowed = {original_tag = ATL}
@@ -44,6 +45,7 @@ political_actions = {
         }
         remove_trigger = {ITA = { has_government = ROOT }}
     }
+	
 	ATL_build_VLFP_dockyard = {
 		icon = VLFP
 		visible = {
@@ -58,7 +60,7 @@ political_actions = {
 		modifier = {civilian_factory_use = 10}
 		ai_will_do = {factor = 1 modifier = {has_political_power < 200 factor = 0}}
 		remove_effect = {
-			set_technology = {carrier_VLFP = 1}
+			set_technology = { carrier_VLFP = 1 }
 			create_equipment_variant = {
 				name = "Hyper Carrier"
 				type = ship_hull_carrier_vlfp
@@ -84,6 +86,7 @@ political_actions = {
 		}
 	}
 }
+
 ATL_cores = {
 	core_takamafrika = {
 		icon = generic_nationalism

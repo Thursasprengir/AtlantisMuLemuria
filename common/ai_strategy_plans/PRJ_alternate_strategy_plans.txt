@@ -5,10 +5,10 @@ PRJ_ahistorical_ethiopa = {
 	enable = {
 		original_tag = PRJ
 		OR = {
-			has_country_flag = PRJ_AI_RANDOM_ETHIOPA
+			has_country_flag = PRJ_AI_RANDOM_DEMOCRACY
 			has_game_rule = {
 				rule = PRJ_ai_behavior
-				option = INTERVENE
+				option = DEMOCRACY
 			}
 		}
 	}
@@ -17,48 +17,42 @@ PRJ_ahistorical_ethiopa = {
 	}
 
 	ai_national_focuses = {
-		PRJ_save_ethiopia						
-		PRJ_supply_ethiopia
-		PRJ_emergancy_fortifications
-		PRJ_heavy_rail_ETH_capital		
-		PRJ_industrial_park
-		PRJ_pushed_to_sea
-		PRJ_white_peace
+		PRJ_ethiopia_meeting						
+		PRJ_constitutional_reforms
+		PRJ_invite_dutch
+		PRJ_reign_in_religion
+		PRJ_queens_taming
 		#1937		
 		PRJ_finish_modern_rails	
 		PRJ_modernization										
 		PRJ_turkana_cleanup							
 		PRJ_land					
 		PRJ_sky
-
 		#1938	
-		PRJ_proper_alliance					
+		PRJ_roderiq_yields #1A	
+		PRJ_roderiq_refuses #1B				
 		PRJ_blitzkrieg			
 		PRJ_light_med_tanks		
 		PRJ_mechanization							
 		PRJ_support	
-		#1939							
+		#1939
+		PRJ_relinquish_hinterland
+		PRJ_dutch_guarantees							
 		PRJ_civilian_projects		
-		PRJ_military_projects							
-		PRJ_prepare_for_more						
+		PRJ_military_projects
+		PRJ_oil
+		PRJ_rubber													
 		PRJ_battlefield_support			
-		PRJ_ETH_kicking_and_screaming
 		#1940					
-		PRJ_fund_ETH_docks	
-		PRJ_ETH_military_factory						
-		PRJ_ETH_steel_factory		
-		PRJ_ETH_alumin_factory		
-		PRJ_ETH_sea_rails
+		PRJ_afrikaan_influx
+		PRJ_western_research
+		PRJ_purchase_kenya_new #3a
+		PRJ_free_ethiopia #3b
 		#1941							
-		PRJ_ETH_chemicals		
-		PRJ_ETH_war_command_focus	
-		PRJ_free_africa		
 		PRJ_light_fighter
 		PRJ_cas_bomber
-		PRJ_purchase_kenya	
-		#1942		
-		PRJ_ETH_purchase_somaliland
-		PRJ_fufill_promise				
+
+		#1942					
 		
 		#1943
 
@@ -93,16 +87,16 @@ PRJ_ahistorical_ethiopa = {
 
 }
 PRJ_ahistorical_ethiopa_2 = {
-	name = "Puppet Master"
+	name = "ISLAM_THEOCRACY"
 	desc = ""
 
 	enable = {
 		original_tag = PRJ
 		OR = {
-			has_country_flag = PRJ_AI_RANDOM_PUPPET_ETHIOPA
+			has_country_flag = PRJ_AI_RANDOM_ISLAM_THEOCRACY
 			has_game_rule = {
 				rule = PRJ_ai_behavior
-				option = PUPPET_ETHIOPIA
+				option = ISLAM_THEOCRACY
 			}
 		}
 	}
@@ -111,53 +105,289 @@ PRJ_ahistorical_ethiopa_2 = {
 	}
 
 	ai_national_focuses = {
-		PRJ_save_ethiopia						
-		PRJ_supply_ethiopia
-		PRJ_emergancy_fortifications
-		PRJ_heavy_rail_ETH_capital		
-		PRJ_industrial_park
-		PRJ_pushed_to_sea
-		PRJ_white_peace
-		#1937		
+		PRJ_ethiopia_meeting						
+		PRJ_down_with_the_king
 		PRJ_finish_modern_rails	
-		PRJ_modernization										
-		PRJ_turkana_cleanup							
-		PRJ_land					
-		PRJ_sky
-
+		PRJ_theocracy
+		PRJ_modernization
+		#1937			
+		PRJ_land									
+		PRJ_grand_plan						
+		PRJ_islam_fascism	
+		PRJ_islam_2
+		PRJ_infantry_gear	
 		#1938	
-		PRJ_control_ethiopia					
-		PRJ_blitzkrieg			
-		PRJ_light_med_tanks		
-		PRJ_mechanization							
-		PRJ_support	
-		#1939							
+		PRJ_artillery_gear		
+		PRJ_train_gear
 		PRJ_civilian_projects		
-		PRJ_military_projects							
-		PRJ_prepare_for_more						
-		PRJ_battlefield_support			
-		PRJ_ETH_kicking_and_screaming
+		PRJ_military_projects
+		PRJ_oil
+		PRJ_rubber
+		PRJ_islam_palestine
+		#1939
+		PRJ_theorcracic_rule	
+		PRJ_athiest_begone	
+		PRJ_religious_tax									
+		PRJ_chemical_research		
 		#1940					
-		PRJ_fund_ETH_docks	
-		PRJ_ETH_military_factory						
-		PRJ_ETH_steel_factory		
-		PRJ_ETH_alumin_factory		
-		PRJ_ETH_sea_rails
+		PRJ_calm_atlast
+		PRJ_karfa_sidamo
 		#1941							
-		PRJ_ETH_chemicals		
-		PRJ_ETH_war_command_focus	
-		PRJ_free_africa		
-		PRJ_light_fighter
-		PRJ_cas_bomber
-		PRJ_purchase_kenya	
+
 		#1942		
-		PRJ_ETH_purchase_somaliland
-		PRJ_renegade				
-		PRJ_client_sudan							
-		PRJ_client_tanzania
-		PRJ_client_zerzura	
-		PRJ_client_malawi
-		PRJ_client_zambia
+
+			
+		
+		#1943
+
+		#1944
+
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+PRJ_ahistorical_ethiopa_3 = {
+	name = " CHRISTIAN_THEOCRACY"
+	desc = ""
+
+	enable = {
+		original_tag = PRJ
+		OR = {
+			has_country_flag = PRJ_AI_RANDOM_CHRISTIAN_THEOCRACY
+			has_game_rule = {
+				rule = PRJ_ai_behavior
+				option = CHRISTIAN_THEOCRACY
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		PRJ_ethiopia_meeting						
+		PRJ_down_with_the_king
+		PRJ_finish_modern_rails	
+		PRJ_theocracy
+		PRJ_modernization
+		#1937			
+		PRJ_land									
+		PRJ_grand_plan						
+		PRJ_christian_fascism	
+		PRJ_christian_2
+		PRJ_infantry_gear	
+		#1938	
+		PRJ_artillery_gear		
+		PRJ_train_gear
+		PRJ_civilian_projects		
+		PRJ_military_projects
+		PRJ_oil
+		PRJ_rubber
+		#1939
+		PRJ_theorcracic_rule	
+		PRJ_athiest_begone	
+		PRJ_religious_tax									
+		PRJ_chemical_research		
+		#1940					
+		PRJ_calm_atlast
+		PRJ_karfa_sidamo
+		#1941							
+
+		#1942		
+
+			
+		
+		#1943
+
+		#1944
+
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+PRJ_ahistorical_ethiopa_4 = {
+	name = "JEWISH_THEOCRACY"
+	desc = ""
+
+	enable = {
+		original_tag = PRJ
+		OR = {
+			has_country_flag = PRJ_AI_RANDOM_JEWISH_THEOCRACY
+			has_game_rule = {
+				rule = PRJ_ai_behavior
+				option = JEWISH_THEOCRACY
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		PRJ_ethiopia_meeting						
+		PRJ_down_with_the_king
+		PRJ_finish_modern_rails	
+		PRJ_theocracy
+		PRJ_modernization
+		#1937			
+		PRJ_land									
+		PRJ_grand_plan						
+		PRJ_jewish_fascism	
+		PRJ_jewish_2
+		PRJ_infantry_gear	
+		#1938	
+		PRJ_artillery_gear		
+		PRJ_train_gear
+		PRJ_civilian_projects		
+		PRJ_military_projects
+		PRJ_oil
+		PRJ_rubber
+		PRJ_jew_israel
+		#1939
+		PRJ_theorcracic_rule	
+		PRJ_athiest_begone	
+		PRJ_religious_tax									
+		PRJ_chemical_research		
+		#1940					
+		PRJ_calm_atlast
+		PRJ_karfa_sidamo
+		#1941							
+
+		#1942		
+
+			
+		
+		#1943
+
+		#1944
+
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+PRJ_ahistorical_ethiopa_5 = {
+	name = "Communism"
+	desc = ""
+
+	enable = {
+		original_tag = PRJ
+		OR = {
+			has_country_flag = PRJ_AI_RANDOM_COMMUNISM
+			has_game_rule = {
+				rule = PRJ_ai_behavior
+				option = COMMUNISM
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		PRJ_ethiopia_meeting						
+		PRJ_down_with_the_king
+		PRJ_finish_modern_rails	
+		PRJ_syndicalism
+		PRJ_modernization
+		#1937			
+		PRJ_land									
+		PRJ_grand_plan						
+		PRJ_syndicalism_fight #2A	
+		PRJ_syndicalism_flee #2b
+		PRJ_syndicalism_3
+		PRJ_infantry_gear	
+		#1938	
+		PRJ_artillery_gear		
+		PRJ_train_gear
+		PRJ_civilian_projects		
+		PRJ_military_projects
+		PRJ_oil
+		PRJ_rubber
+		#1939
+		PRJ_recognise_ussr
+		PRJ_eye_britain	
+		PRJ_army_infiltration									
+		PRJ_naval_infiltration
+		PRJ_aviation_infiltration
+		PRJ_civilian_infiltration
+		#1940					
+		PRJ_red_dawn
+		#1941							
+
+		#1942		
+
+			
+		
 		#1943
 
 		#1944

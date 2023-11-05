@@ -7,15 +7,24 @@ state = {
 		oil=13 # was: 14
 	}
 	
-	state_category = pastoral
+	state_category = town
 
 	history = {
 		owner = SOV
+		victory_points = {
+			4730 10
+		}
+		victory_points = {
+			7685 10
+		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+
 		}
 		add_core_of = SOV
-		add_core_of = OVO
+		add_core_of = HBO
 	}
 
 	provinces = {

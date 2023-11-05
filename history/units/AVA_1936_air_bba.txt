@@ -1,0 +1,50 @@
+﻿
+
+###Add an Airforcce ###
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1149 = { 
+		small_plane_airframe_0 = {
+			owner = "AVA" 
+			amount = 80
+			version_name = "Lazvard"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "AVA" 
+			amount = 50
+			version_name = "Uzmurud"
+		}
+		transport_plane_equipment_1 = {
+			owner = "AVA" 
+			amount = 20
+		}
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "AVA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_cas_airframe_0
+			creator = "AVA" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+	}
+	
+}
+
+#################################

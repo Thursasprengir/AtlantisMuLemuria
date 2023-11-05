@@ -1,0 +1,66 @@
+﻿air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	1107 = { 
+		fighter_equipment_0 = {
+			owner = "HOU" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "HOU" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "HOU" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "HOU" 
+			amount = 100
+		}
+	}
+	1176 = { 
+		fighter_equipment_0 = {
+			owner = "HOU" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "HOU" 
+			amount = 100
+		}
+	}
+	"A'a"  = {
+		cv_fighter_equipment_0 =  { owner = "HOU" amount = 20 }				# Sea Gladiator (REVISIT -- can be variant)
+		cv_fighter_equipment_0 =  { owner = "HOU" amount = 4 }				# Sea Gladiator (REVISIT -- can be variant)
+		cv_nav_bomber_equipment_0 =  { owner = "HOU" amount = 10 }			# Swordfish
+		cv_nav_bomber_equipment_0 =  { owner = "HOU" amount = 2 }			# Swordfish
+	}
+	"Keali'iokona"  = {
+		cv_fighter_equipment_0 =  { owner = "HOU" amount = 20 }				# Sea Gladiator (REVISIT -- can be variant)
+		cv_fighter_equipment_0 =  { owner = "HOU" amount = 4 }				# Sea Gladiator (REVISIT -- can be variant)
+		cv_nav_bomber_equipment_0 =  { owner = "HOU" amount = 10 }			# Swordfish
+		cv_nav_bomber_equipment_0 =  { owner = "HOU" amount = 2 }			# Swordfish
+	}
+	"Kamailehope"  = {
+		cv_fighter_equipment_0 =  { owner = "HOU" amount = 20 }				# Sea Gladiator (REVISIT -- can be variant)
+		cv_fighter_equipment_0 =  { owner = "HOU" amount = 4 }				# Sea Gladiator (REVISIT -- can be variant)
+		cv_nav_bomber_equipment_0 =  { owner = "HOU" amount = 10 }			# Swordfish
+		cv_nav_bomber_equipment_0 =  { owner = "HOU" amount = 2 }			# Swordfish
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "HOU" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+}
+
+#################################

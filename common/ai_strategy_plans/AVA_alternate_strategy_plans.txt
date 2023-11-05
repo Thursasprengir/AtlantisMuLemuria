@@ -1,0 +1,274 @@
+AVA_ahistorical_democracy = {
+	name = "AVA Confederacy"
+	desc = ""
+
+	enable = {
+		original_tag = AVA
+		OR = {
+			has_country_flag = AVA_AI_RANDOM_DEMOCRACY
+			has_game_rule = {
+				rule = AVA_ai_behavior
+				option = DEMOCRATIC
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		AVA_conflicting_reports
+		AVA_democracy_house
+		AVA_new_constitution						
+		AVA_new_currency			
+		AVA_learning_civil_war				
+		AVA_reform_army	
+		#1937										
+		AVA_firepower							
+		AVA_civilian_industry						
+		AVA_military_industry	
+		AVA_shipyard					
+		AVA_british_lease
+		#1938	
+		AVA_infantry					
+		AVA_support			
+		AVA_capital_university	
+		AVA_gold_for_mainland
+		AVA_usa_industry_expertise	
+		#1939							
+		AVA_artillery		
+		AVA_reform_navy
+		AVA_purchase_american_ships
+		AVA_base_strike
+		AVA_reform_air						
+		AVA_battlefield_support			
+		AVA_chrome
+		#1940					
+		AVA_efficient_engines	
+		AVA_larger_guns						
+		AVA_small_aircraft		
+		AVA_house_lords		
+		AVA_anglo_avahyan_treaty
+		#1941							
+		AVA_mainland_industry		
+		AVA_iron	
+		AVA_chrome_2		
+		AVA_iron_2
+		AVA_panchaian_tungsten	
+		AVA_battlecruiser	
+		#1942
+		AVA_carrier
+		AVA_british_research_university
+		#1943	
+
+		#1944
+		
+	}
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+
+AVA_ahistorical_Fascism = {
+	name = "Royas Wrath"
+	desc = ""
+
+	enable = {
+		original_tag = AVA
+		OR = {
+			has_country_flag = AVA_AI_RANDOM_FASCISM
+			has_game_rule = {
+				rule = AVA_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		AVA_conflicting_reports
+		AVA_muzumdar_house
+		AVA_purge_azadeh						
+		AVA_purge_edibam			
+		AVA_learning_civil_war				
+		AVA_reform_army	
+		#1937										
+		AVA_firepower							
+		AVA_civilian_industry						
+		AVA_military_industry	
+		AVA_shipyard					
+		AVA_ally_zurvanist
+		#1938	
+		AVA_purge_communists
+		AVA_secret_police
+		AVA_infantry					
+		AVA_support	
+		AVA_capital_university		
+		#1939							
+		AVA_artillery		
+		AVA_reform_navy
+		AVA_purchase_american_ships
+		AVA_base_strike
+		AVA_reform_air						
+		AVA_battlefield_support			
+		AVA_chrome
+		#1940					
+		AVA_efficient_engines	
+		AVA_larger_guns						
+		AVA_small_aircraft		
+		AVA_yohannian_assist		
+		AVA_break_cardinal_lease
+		#1941							
+		AVA_marines		
+		AVA_iron	
+		AVA_chrome_2		
+		AVA_iron_2
+		AVA_panchaian_tungsten						
+		AVA_battlecruiser	
+		#1942
+		AVA_carrier
+		AVA_second_war_fire_stone
+		#1943	
+
+		#1944
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+AVA_ahistorical_communism = {
+	name = "Communism"
+	desc = ""
+
+	enable = {
+		original_tag = AVA
+		OR = {
+			has_country_flag = AVA_AI_RANDOM_COMMUNISM
+			has_game_rule = {
+				rule = AVA_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		AVA_conflicting_reports
+		AVA_worker_victory
+		AVA_worker_councils						
+		AVA_learning_civil_war				
+		AVA_reform_army	
+		AVA_mainland_bound
+		#1937										
+		AVA_firepower							
+		AVA_civilian_industry						
+		AVA_military_industry	
+		AVA_shipyard					
+		AVA_pantiyan_tigers
+		#1938	
+		AVA_infantry					
+		AVA_support			
+		AVA_capital_university	
+		AVA_cardinal_islands		
+		AVA_work_with_communists	
+		#1939							
+		AVA_artillery		
+		AVA_reform_navy
+		AVA_purchase_american_ships
+		AVA_base_strike
+		AVA_reform_air						
+		AVA_battlefield_support			
+		AVA_chrome
+		#1940					
+		AVA_efficient_engines	
+		AVA_larger_guns						
+		AVA_small_aircraft		
+		AVA_stalinism_is_the_way		
+		AVA_communist_research
+		#1941							
+		AVA_soviet_investment		
+		AVA_iron	
+		AVA_chrome_2		
+		AVA_iron_2
+		AVA_panchaian_tungsten						
+		AVA_battlecruiser	
+		#1942
+		AVA_carrier
+		#1943	
+
+		#1944
+		
+	}
+	research = {
+
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

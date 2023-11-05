@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infantry Division"		
+	name = "Padač Bašijan"		
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -11,23 +11,98 @@
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
 }
 division_template = {
-	name = "Garrison Brigade" 		
+	name = "Ašweza Bašijan" 		
 	regiments = {
-		infantry = { x = 0 y = 0 }	
-		infantry = { x = 0 y = 1 }	
-		infantry = { x = 1 y = 0 }	
-		infantry = { x = 1 y = 1 }	
+		cavalry = { x = 0 y = 0 }	
+		cavalry = { x = 0 y = 1 }	
+		cavalry = { x = 1 y = 0 }	
+		cavalry = { x = 1 y = 1 }	
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 	}
 }
-
-units = {
+division_template = {
+	name = "Amšampadač Bašijan" 		
+	regiments = {
+		paratrooper = { x = 0 y = 0 }	
+		paratrooper = { x = 0 y = 1 }	
+		paratrooper = { x = 1 y = 0 }	
+		paratrooper = { x = 1 y = 1 }	
+	}
 }
 
+units= {
+	##### Land UNITS #####
+	division = {
+		name = "1st Padač Bašijan"
+		location = 16409
+		division_template = "Padač Bašijan"		
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "2nd Padač Bašijan"
+		location = 16409
+		division_template = "Padač Bašijan"		
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "1st Amšampadač Bašijan"
+		location = 16409
+		division_template = "Amšampadač Bašijan"		
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.9
+
+	}
+	division = {
+		name = "2nd Amšampadač Bašijan"
+		location = 16409
+		division_template = "Amšampadač Bašijan"		
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "3rd Amšampadač"
+		location = 16409
+		division_template = "Amšampadač Bašijan"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "4th Amšampadač"
+		location = 16409
+		division_template = "Amšampadač Bašijan"		
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "1st Ašweza Bašijan"
+		location = 16409
+		division_template = "Ašweza Bašijan"		
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "2nd Ašweza Bašijan"
+		location = 16409
+		division_template = "Ašweza Bašijan"		
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
+
+	}
+}
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {

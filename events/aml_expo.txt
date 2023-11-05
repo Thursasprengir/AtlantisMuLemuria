@@ -2,333 +2,332 @@
 # AML News Events
 ###########################
 
-add_namespace = amlexpo
-
-# ATL
-
-news_event = {
-	id = amlexpo.0
-	title = amlexpo.0.t
-	desc = amlexpo.0.d
-
-	picture = GFX_news_event_AML
-
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = aml_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.0.a
-		trigger = {
-			original_tag = ATL
-		}
-		news_event = { id = amlexpo.1 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.b
-		trigger = {
-			original_tag = MUU
-		}
-		news_event = { id = amlexpo.10 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.c
-		trigger = {
-			original_tag = TRS
-		}
-		news_event = { id = amlexpo.20 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.de
-		trigger = {
-			original_tag = FMU
-		}
-		news_event = { id = amlexpo.30 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.e
-		trigger = {
-			original_tag = PRJ
-		}
-		news_event = { id = amlexpo.40 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.f
-		trigger = {
-			original_tag = TOD
-		}
-		news_event = { id = amlexpo.50 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.g
-		trigger = {
-			original_tag = BLM
-		}
-		news_event = { id = amlexpo.60 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.h
-		trigger = {
-			original_tag = KLR
-		}
-		news_event = { id = amlexpo.70 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.i
-		trigger = {
-			original_tag = KUM
-		}
-		news_event = { id = amlexpo.80 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.j
-		trigger = {
-			original_tag = MKU
-		}
-		news_event = { id = amlexpo.90 days = 1 }
-	}
-	option = {
-		name = amlexpo.0.k
-		trigger = {
-			original_tag = HOU
-		}
-		news_event = { id = amlexpo.100 days = 1 }
-	}
-}
-
-news_event = {
-	id = amlexpo.1
-	title = amlexpo.1.t
-	desc = amlexpo.1.d
-
-	picture = GFX_news_event_AML
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = atl_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.1.a
-		trigger = {
-			original_tag = ATL
-		}
-	}
-}
-
-news_event = {
-	id = amlexpo.10
-	title = amlexpo.10.t
-	desc = amlexpo.10.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-	
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = MUU_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.10.a
-		trigger = {
-			original_tag = MUU
-		}
-	}
-}
-
-news_event = {
-	id = amlexpo.20
-	title = amlexpo.20.t
-	desc = amlexpo.20.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = TRS_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.20.a
-		trigger = {
-			original_tag = TRS
-		}
-	}
-}
-
-
-news_event = {
-	id = amlexpo.30
-	title = amlexpo.30.t
-	desc = amlexpo.30.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = FMU_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.30.a
-		trigger = {
-			original_tag = FMU
-		}
-	}
-}
-
-news_event = {
-	id = amlexpo.40
-	title = amlexpo.40.t
-	desc = amlexpo.40.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-	
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = PRJ_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.40.a
-		trigger = {
-			original_tag = PRJ
-		}
-	}
-}
-
-news_event = {
-	id = amlexpo.50
-	title = amlexpo.50.t
-	desc = amlexpo.50.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-	
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = TOD_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.50.a
-		trigger = {
-			original_tag = TOD
-		}
-	}
-}
-
-news_event = {
-	id = amlexpo.60
-	title = amlexpo.60.t
-	desc = amlexpo.60.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-	
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = BLM_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.60.a
-		trigger = {
-			original_tag = BLM
-		}
-	}
-}
-
-news_event = {
-	id = amlexpo.70
-	title = amlexpo.70.t
-	desc = amlexpo.70.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = KLR_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.70.a
-		trigger = {
-			original_tag = KLR
-		}
-	}
-}
-news_event = {
-	id = amlexpo.80
-	title = amlexpo.80.t
-	desc = amlexpo.80.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = KUM_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.80.a
-		trigger = {
-			original_tag = KUM
-		}
-	}
-}
-news_event = {
-	id = amlexpo.90
-	title = amlexpo.90.t
-	desc = amlexpo.90.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = MKU_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.90.a
-		trigger = {
-			original_tag = MKU
-		}
-	}
-}
-news_event = {
-	id = amlexpo.100
-	title = amlexpo.100.t
-	desc = amlexpo.100.d
-	fire_only_once = yes
-	picture = GFX_news_event_AML
-
-	is_triggered_only = yes
-	
-	immediate = {
-		set_global_flag = HOU_mod_intro
-	}
-	
-	option = {
-		name = amlexpo.100.a
-		trigger = {
-			original_tag = HOU
-		}
-	}
-}
+#add_namespace = amlexpo
+#
+## ATL
+#
+#country_event = {
+#	id = amlexpo.0
+#	title = amlexpo.0.t
+#	desc = amlexpo.0.d
+#	picture = GFX_news_event_AML
+#
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = aml_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.0.a
+#		trigger = {
+#			original_tag = ATL
+#		}
+#		country_event = { id = amlexpo.1 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.b
+#		trigger = {
+#			original_tag = MUU
+#		}
+#		country_event = { id = amlexpo.10 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.c
+#		trigger = {
+#			original_tag = TRS
+#		}
+#		country_event = { id = amlexpo.20 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.de
+#		trigger = {
+#			original_tag = FMU
+#		}
+#		country_event = { id = amlexpo.30 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.e
+#		trigger = {
+#			original_tag = PRJ
+#		}
+#		country_event = { id = amlexpo.40 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.f
+#		trigger = {
+#			original_tag = TOD
+#		}
+#		country_event = { id = amlexpo.50 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.g
+#		trigger = {
+#			original_tag = BLM
+#		}
+#		country_event = { id = amlexpo.60 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.h
+#		trigger = {
+#			original_tag = KLR
+#		}
+#		country_event = { id = amlexpo.70 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.i
+#		trigger = {
+#			original_tag = KUM
+#		}
+#		country_event = { id = amlexpo.80 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.j
+#		trigger = {
+#			original_tag = MKU
+#		}
+#		country_event = { id = amlexpo.90 days = 1 }
+#	}
+#	option = {
+#		name = amlexpo.0.k
+#		trigger = {
+#			original_tag = HOU
+#		}
+#		country_event = { id = amlexpo.100 days = 1 }
+#	}
+#}
+#
+#country_event = {
+#	id = amlexpo.1
+#	title = amlexpo.1.t
+#	desc = amlexpo.1.d
+#
+#	picture = GFX_news_event_AML
+#	fire_only_once = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = atl_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.1.a
+#		trigger = {
+#			original_tag = ATL
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = amlexpo.10
+#	title = amlexpo.10.t
+#	desc = amlexpo.10.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#	
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = MUU_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.10.a
+#		trigger = {
+#			original_tag = MUU
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = amlexpo.20
+#	title = amlexpo.20.t
+#	desc = amlexpo.20.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#	fire_only_once = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = TRS_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.20.a
+#		trigger = {
+#			original_tag = TRS
+#		}
+#	}
+#}
+#
+#
+#country_event = {
+#	id = amlexpo.30
+#	title = amlexpo.30.t
+#	desc = amlexpo.30.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = FMU_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.30.a
+#		trigger = {
+#			original_tag = FMU
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = amlexpo.40
+#	title = amlexpo.40.t
+#	desc = amlexpo.40.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#	
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = PRJ_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.40.a
+#		trigger = {
+#			original_tag = PRJ
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = amlexpo.50
+#	title = amlexpo.50.t
+#	desc = amlexpo.50.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#	
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = TOD_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.50.a
+#		trigger = {
+#			original_tag = TOD
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = amlexpo.60
+#	title = amlexpo.60.t
+#	desc = amlexpo.60.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#	
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = BLM_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.60.a
+#		trigger = {
+#			original_tag = BLM
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = amlexpo.70
+#	title = amlexpo.70.t
+#	desc = amlexpo.70.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = KLR_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.70.a
+#		trigger = {
+#			original_tag = KLR
+#		}
+#	}
+#}
+#country_event = {
+#	id = amlexpo.80
+#	title = amlexpo.80.t
+#	desc = amlexpo.80.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = KUM_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.80.a
+#		trigger = {
+#			original_tag = KUM
+#		}
+#	}
+#}
+#country_event = {
+#	id = amlexpo.90
+#	title = amlexpo.90.t
+#	desc = amlexpo.90.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = MKU_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.90.a
+#		trigger = {
+#			original_tag = MKU
+#		}
+#	}
+#}
+#country_event = {
+#	id = amlexpo.100
+#	title = amlexpo.100.t
+#	desc = amlexpo.100.d
+#	fire_only_once = yes
+#	picture = GFX_news_event_AML
+#
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_global_flag = HOU_mod_intro
+#	}
+#	
+#	option = {
+#		name = amlexpo.100.a
+#		trigger = {
+#			original_tag = HOU
+#		}
+#	}
+#}
