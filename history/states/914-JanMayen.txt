@@ -1,23 +1,26 @@
 state = { # Jan Mayen
 	id = 914
 	name = "STATE_914"
-	manpower = 10
-	state_category = tiny_island
-	history = {
-		owner = NOR
-		#add_core_of = SWE		
-		add_core_of = NOR
+	history={
+		owner = THU
 		buildings = {
-			13272 = {
-				naval_base = 1
-			}
-		}	
-	}
+			industrial_complex = 1
+			infrastructure = 3
 
+		}
+		add_core_of = THU
+		victory_points = {
+			15493 4 
+		}
+
+	}
 
 	provinces = {
-		13272
+		16565 16566
 	}
-	
-	local_supplies=0.000
+	manpower=108665
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=2.000
 }
+

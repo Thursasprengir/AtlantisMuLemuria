@@ -1,18 +1,20 @@
+
 state={
 	id=941
-	name="STATE_941" #THULE
+	name="STATE_941"
 
 	history={
 		owner = THU
 		buildings = {
-			industrial_complex = 1
 			arms_factory = 1
 			dockyard = 1
 			infrastructure = 3
 			air_base = 1
 			15493 = {
 				naval_base = 3
+
 			}
+
 		}
 		add_core_of = THU
 		victory_points = {
@@ -20,13 +22,12 @@ state={
 		}
 
 	}
-	
-	provinces={
-		15493 15489
-	}
-	manpower= 108665
-	state_category = town
 
+	provinces={
+		15489 15493
+	}
+	manpower=108665
 	buildings_max_level_factor=1.000
-	local_supplies=2.0 
+	state_category=town
+	local_supplies=2.000
 }
