@@ -1,0 +1,151 @@
+﻿capital = 980
+
+oob = "RSL_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	transport = 1
+	basic_train = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1935.10.22"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+		democratic = 45
+		fascism = 0
+		communism = 55
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = new_brittania_research
+}
+
+set_convoys = 80
+
+#characters
+#political leaders
+recruit_character = RSL_socialism_leader
+recruit_character = RSL_anarchist_communism_leader
+recruit_character = RSL_generic_fascism_leader
+recruit_character = RSL_anarchism_leader
+#military leaders
+recruit_character = RSL_corps_commander_1
+recruit_character = RSL_corps_commander_2
+recruit_character = RSL_corps_commander_3
+recruit_character = RSL_corps_commander_4
+recruit_character = RSL_naval_leader_1
+recruit_character = RSL_naval_leader_2
+recruit_character = RSL_naval_leader_3
+recruit_character = RSL_naval_leader_4
+recruit_character = RSL_naval_leader_5
+#advisors
+#recruit_character = RSL_anti_communist_crusader
+#recruit_character = RSL_armaments_organizer
+recruit_character = RSL_backroom_backstabber
+#recruit_character = RSL_captain_of_industry
+recruit_character = RSL_communist_revolutionary
+#recruit_character = RSL_compassionate_gentleman
+recruit_character = RSL_democratic_reformer
+#recruit_character = RSL_economist
+#recruit_character = RSL_editor
+recruit_character = RSL_fascist_demagogue
+#recruit_character = RSL_financial_expert
+#recruit_character = RSL_head_of_intelligence
+recruit_character = RSL_ideological_crusader
+recruit_character = RSL_popular_figurehead
+recruit_character = RSL_prince_of_terror
+#recruit_character = RSL_silent_workhorse
+#recruit_character = RSL_smooth_talking_charmer
+#recruit_character = RSL_war_industrialist
+#theorists
+recruit_character = RSL_military_theorist
+recruit_character = RSL_air_warfare_theorist
+#recruit_character = RSL_naval_theorist
+#recruit_character = RSL_naval_aviation_pioneer
+#recruit_character = RSL_victory_through_airpower
+#recruit_character = RSL_nuclear_scientist
+#recruit_character = RSL_rocket_scientist
+#military chiefs
+#recruit_character = RSL_army_chief_defensive_2
+#recruit_character = RSL_army_chief_drill_2
+#recruit_character = RSL_army_chief_maneuver_2
+recruit_character = RSL_army_chief_morale_2
+recruit_character = RSL_army_chief_offensive_2
+recruit_character = RSL_army_chief_organizational_1
+recruit_character = RSL_navy_chief_decisive_battle_2
+recruit_character = RSL_navy_chief_naval_aviation_2
+recruit_character = RSL_air_chief_ground_support_2
+recruit_character = RSL_air_chief_reform_2
+#recruit_character = RSL_army_armored_1
+recruit_character = RSL_army_entrenchment_1
+recruit_character = RSL_army_infantry_1
+#recruit_character = RSL_army_logistics_2
+recruit_character = RSL_air_bomber_interception_2
+recruit_character = RSL_air_close_air_support_2
+#recruit_character = RSL_navy_screen_2
+#recruit_character = RSL_navy_anti_submarine_1
+#recruit_character = RSL_navy_naval_air_defense_2
+
+create_country_leader = {
+	name = "Cathalán Bryant Leavitt"
+	desc = "POLITICS_CB_LEAVITT_DESC"
+	picture = "Portrait_RSL_CB_Leavitt.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kalvin K. Adams"
+	desc = "POLITICS_KK_ADAMS_DESC"
+	picture = "Portrait_RSL_KK_Adams.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Cayson L. Starr"
+	desc = "POLITICS_CAYSON_L_STARR_DESC"
+	picture = "Portrait_RSL_CL_Starr.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alphonse Calhoun"
+	desc = "POLITICS_A_CALHOUN_DESC"
+	picture = "Portrait_RSL_A_Calhoun.dds"
+	expire = "1965.1.1"
+	ideology = anarchism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Monroe J. Cummins"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 1
+}

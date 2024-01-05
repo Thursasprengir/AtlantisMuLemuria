@@ -1,0 +1,77 @@
+﻿capital = 974
+
+oob = "NHL_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	transport = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 92
+	fascism = 6
+	communism = 2
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = new_brittania_research
+}
+
+set_convoys = 50
+
+recruit_character = NHL_henri_savatier
+recruit_character = NHL_kylian_bouchard
+recruit_character = NHL_gerard_louis_chaplin
+recruit_character = NHL_fiacre_eric_julien
+recruit_character = NHL_jeancharles_firmin_guillaume
+#military leaders
+recruit_character = NHL_corps_commander_2
+recruit_character = NHL_corps_commander_3
+recruit_character = NHL_corps_commander_4
+recruit_character = NHL_naval_leader_1
+recruit_character = NHL_naval_leader_2
+recruit_character = NHL_naval_leader_3
+recruit_character = NHL_naval_leader_4
+recruit_character = NHL_naval_leader_5
+#advisors
+recruit_character = NHL_armaments_organizer
+recruit_character = NHL_backroom_backstabber
+recruit_character = NHL_captain_of_industry
+recruit_character = NHL_communist_revolutionary
+recruit_character = NHL_democratic_reformer
+recruit_character = NHL_economist
+recruit_character = NHL_fascist_demagogue
+recruit_character = NHL_popular_figurehead
+#theorists
+recruit_character = NHL_military_theorist
+recruit_character = NHL_air_warfare_theorist
+recruit_character = NHL_naval_theorist
+#military chiefs
+recruit_character = NHL_army_chief_defensive_2
+recruit_character = NHL_army_chief_drill_2
+recruit_character = NHL_army_chief_maneuver_2
+recruit_character = NHL_navy_chief_decisive_battle_2
+recruit_character = NHL_navy_chief_naval_aviation_2
+recruit_character = NHL_air_chief_ground_support_2
+recruit_character = NHL_air_chief_reform_2
+recruit_character = NHL_army_entrenchment_1
+recruit_character = NHL_army_infantry_1
+recruit_character = NHL_army_logistics_2
+recruit_character = NHL_air_bomber_interception_2
+recruit_character = NHL_air_close_air_support_2
+recruit_character = NHL_navy_screen_3
