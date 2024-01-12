@@ -142,9 +142,11 @@ if = {
 	}
 	set_naval_oob = "GER_1936_naval_mtg"
 }
+
 if = {
 	limit = {
 		has_dlc = "La Resistance"
+		GER = { is_ai = no }
 	}
 	set_technology = {
 		armored_car1 = 1
