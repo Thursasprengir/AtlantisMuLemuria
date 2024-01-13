@@ -16,16 +16,19 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "1935.10.22"
 	election_frequency = 36
 	elections_allowed = no
 }
+
 set_popularities = {
-		democratic = 45
+		democratic = 55
 		fascism = 0
-		communism = 55
+		communism = 45
 }
+
+set_cosmetic_tag = RSL_ENG
 
 if = {
 	limit = { has_dlc = "Together for Victory" }
