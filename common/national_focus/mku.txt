@@ -969,7 +969,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MKU_southern_defenses #fortify southern border w/ BLM
+		id = MKU_southern_defenses #fortify southern border w/ CLM
 		icon = GFX_r56_goal_generic_city_chain_forts
 		x = 8
 		y = 6
@@ -2199,11 +2199,11 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = BLM
+					target = CLM
 					modifier = large_decrease
 				}
 			}
-			BLM = {
+			CLM = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = large_decrease

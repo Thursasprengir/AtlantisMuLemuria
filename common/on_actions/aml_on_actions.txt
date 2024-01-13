@@ -42,20 +42,30 @@ on_actions = {
 						}
 					}
 					set_autonomy = {
-						target = BLM
+						target = MRR
+						autonomous_state = autonomy_dominion
+						freedom_level = 0.2
+					}					
+					set_autonomy = {
+						target = CLM
 						autonomous_state = autonomy_dominion
 						freedom_level = 0.1
-					}	
+					}
 					set_autonomy = {
-						target = SCP
-						autonomous_state = autonomy_dominion
+						target = NHL
+						autonomous_state = autonomy_colony
+						freedom_level = 0.1
+					}					
+					set_autonomy = {
+						target = RSL
+						autonomous_state = autonomy_integrated_puppet
 						freedom_level = 0.1
 					}
 					else = {
-						puppet = BLM
-						puppet = SCP
+						puppet = NHL
+						puppet = RSL
 					}
-				}			
+				}
 			}
             FMU = {
 				remove_ideas = FMU_versailles_coercion_selection

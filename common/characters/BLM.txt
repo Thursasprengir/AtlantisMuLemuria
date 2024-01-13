@@ -1,6 +1,6 @@
 characters={
-	BLM_Homeland_Peoples_Council={
-		name=BLM_Homeland_Peoples_Council
+	CLM_Homeland_Peoples_Council={
+		name=CLM_Homeland_Peoples_Council
 		portraits={
 			civilian={
 				large="gfx/leaders/AUS/Portrait_Austria_Kurt_Schuschnigg.dds"
@@ -11,11 +11,11 @@ characters={
 			expire="1965.1.1.1"
 		}
 	}
-	BLM_Sir_A_M_Chaucer_II={
-		name=BLM_Sir_A_M_Chaucer_II
+	CLM_Sir_A_M_Chaucer_II={
+		name=CLM_Sir_A_M_Chaucer_II
 		portraits={
 			civilian={
-				large="gfx/leaders/BLM/Portrait_BLM_A_M_Chaucer_II.dds"
+				large="gfx/leaders/CLM/Portrait_CLM_A_M_Chaucer_II.dds"
 			}
 		}
 		country_leader={
@@ -23,11 +23,11 @@ characters={
 			expire="1965.1.1.1"
 		}
 	}
-	BLM_Rob_Anglow={
-		name=BLM_Rob_Anglow
+	CLM_Rob_Anglow={
+		name=CLM_Rob_Anglow
 		portraits={
 			civilian={
-				large="gfx/leaders/BLM/Portrait_BLM_R_Anglow.dds"
+				large="gfx/leaders/CLM/Portrait_CLM_R_Anglow.dds"
 				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
 			}
 		}
@@ -40,18 +40,18 @@ characters={
 			slot = political_advisor
 			idea_token = AUS_arthur_seyss-inquart
 			allowed  = {
-					original_tag  = BLM
+					original_tag  = CLM
 				}
 				traits  = {
 					prince_of_terror 
 				}
 		}
 	}
-	BLM_Finley_Phillips={
-		name=BLM_Finley_Phillips
+	CLM_Finley_Phillips={
+		name=CLM_Finley_Phillips
 		portraits={
 			civilian={
-				large="gfx/leaders/BLM/Portrait_BLM_F_Phillips.dds"
+				large="gfx/leaders/CLM/Portrait_CLM_F_Phillips.dds"
 			}
 		}
 		country_leader={
@@ -60,11 +60,11 @@ characters={
 		}
 	}
 	#MilCom
-	BLM_George_Livingston_III={
-		name=BLM_George_Livingston_III
+	CLM_George_Livingston_III={
+		name=CLM_George_Livingston_III
 		portraits={
 			army={
-				large="gfx/leaders/BLM/Portrait_BLM_George_Livingston_III.dds"
+				large="gfx/leaders/CLM/Portrait_CLM_George_Livingston_III.dds"
 				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
 			}
 		}
@@ -77,12 +77,12 @@ characters={
 			logistics_skill=2
 		}
 	}
-	BLM_army_entrenchment={
+	CLM_army_entrenchment={
 		advisor={
 			slot = army_chief
 			idea_token = AUS_odilo_globocnik
 			allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					army_entrenchment_2
@@ -92,19 +92,19 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_army_entrenchment
+		name=CLM_army_entrenchment
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
 			}
 		}
 	}
-	BLM_air_chief_reform={
+	CLM_air_chief_reform={
 		advisor={
 			slot = air_chief
 			idea_token = AUS_alexander_lohr
 			allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					air_chief_reform_2
@@ -114,19 +114,19 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_air_chief_reform
+		name=CLM_air_chief_reform
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_1"
 			}
 		}
 	}
-	BLM_navy_chief_decisive_battle={
+	CLM_navy_chief_decisive_battle={
 		advisor={		
 			slot = navy_chief
 			idea_token = AUS_paul_von_hegedus
 			allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					navy_chief_decisive_battle_2
@@ -136,21 +136,21 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_navy_chief_decisive_battle
+		name=CLM_navy_chief_decisive_battle
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_europe_1"
 			}
 		}
 	}
-	BLM_air_warfare_theorist={
+	CLM_air_warfare_theorist={
 		advisor={
 			cost = 100
 			slot = theorist
 			idea_token = AUS_julius_yllam
 			ledger = air
 				allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				
 				traits = {
@@ -164,34 +164,34 @@ characters={
 			}
 		}
 	}
-	BLM_military_theorist={
+	CLM_military_theorist={
 		advisor={
 			cost = 100
 			slot = theorist
 			idea_token = AUS_otto_meixner_von_zweienstamm
 			ledger = army
 				allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 
 				traits = {
 					military_theorist
 				}
 		}
-		name=BLM_military_theorist
+		name=CLM_military_theorist
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_3"
 			}
 		}
 	}
-	BLM_army_regrouping={
+	CLM_army_regrouping={
 		advisor={
 			slot = high_command
 			idea_token = AUS_wilhelm_zehner
 			ledger = army
 				allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					army_regrouping_2
@@ -201,19 +201,19 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_army_regrouping
+		name=CLM_army_regrouping
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_4"
 			}
 		}
 	}
-	BLM_navy_chief_naval_aviation={
+	CLM_navy_chief_naval_aviation={
 		advisor={
 			slot = navy_chief
 			idea_token = AUS_josef_teufl
 			allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					navy_chief_naval_aviation_2
@@ -223,19 +223,19 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_navy_chief_naval_aviation
+		name=CLM_navy_chief_naval_aviation
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_europe_3"
 			}
 		}
 	}
-	BLM_air_chief_ground_support={
+	CLM_air_chief_ground_support={
 		advisor={	
 			slot = air_chief
 			idea_token = AUS_otto_schobel
 			allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					air_chief_ground_support_2
@@ -245,20 +245,20 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_air_chief_ground_support
+		name=CLM_air_chief_ground_support
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_2"
 			}
 		}
 	}
-	BLM_air_bomber_interception={
+	CLM_air_bomber_interception={
 		advisor={		
 			slot = high_command
 			idea_token = AUS_viktor_seebauer
 			ledger = air
 				allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					air_bomber_interception_2
@@ -268,20 +268,20 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_air_bomber_interception
+		name=CLM_air_bomber_interception
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_2"
 			}
 		}
 	}
-	BLM_army_infantry={
+	CLM_army_infantry={
 		advisor={	
 			slot = high_command
 			idea_token = AUS_lothar_rendulic
 			ledger = army
 				allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					army_infantry_2
@@ -291,19 +291,19 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_army_infantry
+		name=CLM_army_infantry
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_1"
 			}
 		}
 	}
-	BLM_army_chief_defensive={
+	CLM_army_chief_defensive={
 		advisor={
 			slot = army_chief
 			idea_token = AUS_ernst_kaltenbrunner
 			allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					army_chief_defensive_2
@@ -313,21 +313,21 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_army_chief_defensive
+		name=CLM_army_chief_defensive
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
 			}
 		}
 	}
-	BLM_army_chief_offensive={
+	CLM_army_chief_offensive={
 		advisor={
 			
 			
 			slot = army_chief
 			idea_token = AUS_eduard_freiherr
 			allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					army_chief_offensive_2
@@ -337,19 +337,19 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_army_chief_offensive
+		name=CLM_army_chief_offensive
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_1"
 			}
 		}
 	}
-	BLM_army_chief_maneuver={
+	CLM_army_chief_maneuver={
 		advisor={
 			slot = army_chief
 			idea_token = AUS_franz_bohme
 			allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					army_chief_maneuver_2
@@ -359,20 +359,20 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_army_chief_maneuver
+		name=CLM_army_chief_maneuver
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_1"
 			}
 		}
 	}
-	BLM_army_commando={
+	CLM_army_commando={
 		advisor={	
 			slot = high_command
 			idea_token = AUS_eugen_beyer
 			ledger = army
 				allowed = {
-					original_tag = BLM
+					original_tag = CLM
 				}
 				traits = {
 					army_commando_2
@@ -382,43 +382,43 @@ characters={
 					factor = 1.000
 				}
 		}
-		name=BLM_army_commando
+		name=CLM_army_commando
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_5"
 			}
 		}
 	}
-	BLM_captain_of_industry={
+	CLM_captain_of_industry={
 		advisor={
 			slot = political_advisor
 			idea_token = AUS_julius_raab
 			allowed  = {
-					original_tag  = BLM
+					original_tag  = CLM
 				}
 				traits  = {
 					captain_of_industry 
 				}
 		}
-		name=BLM_captain_of_industry
+		name=CLM_captain_of_industry
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_3"
 			}
 		}
 	}
-	BLM_popular_figurehead={
+	CLM_popular_figurehead={
 		advisor={
 			slot = political_advisor
 			idea_token = AUS_leopold_figl
 			allowed  = {
-					original_tag  = BLM
+					original_tag  = CLM
 				}
 				traits  = {
 					popular_figurehead 
 				}
 		}
-		name=BLM_popular_figurehead
+		name=CLM_popular_figurehead
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_2"
@@ -426,8 +426,8 @@ characters={
 		}
 	}
 	
-	BLM_quartermaster_general={
-		name=BLM_quartermaster_general
+	CLM_quartermaster_general={
+		name=CLM_quartermaster_general
 		portraits={
 			army={
 				small="GFX_idea_AST_alexander_hore_ruthven" #small="GFX_idea_generic_political_advisor_europe_1"
@@ -437,7 +437,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_alexander_hore_ruthven
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
 			traits = {
 				quartermaster_general 
@@ -445,8 +445,8 @@ characters={
 		}		
 	}
 	
-	BLM_backroom_backstabber={
-		name=BLM_backroom_backstabber
+	CLM_backroom_backstabber={
+		name=CLM_backroom_backstabber
 		portraits={
 			army={
 				small="GFX_idea_AST_robert_g_menzies" #small="GFX_idea_generic_political_advisor_europe_2"
@@ -456,7 +456,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_robert_g_menzies
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
 			traits = {
 				backroom_backstabber 
@@ -464,8 +464,8 @@ characters={
 		}		
 	}
 
-	BLM_smooth_talking_charmer={
-		name=BLM_smooth_talking_charmer
+	CLM_smooth_talking_charmer={
+		name=CLM_smooth_talking_charmer
 		portraits={
 			army={
 				small="GFX_idea_AST_ben_chifley" #small="GFX_idea_generic_political_advisor_europe_3"
@@ -487,8 +487,8 @@ characters={
 		}		
 	}
 
-	BLM_silent_workhorse={
-		name=BLM_silent_workhorse
+	CLM_silent_workhorse={
+		name=CLM_silent_workhorse
 		portraits={
 			army={
 				small="GFX_idea_AST_herbert_v_evatt" #small="GFX_idea_generic_political_advisor_europe_2"
@@ -498,7 +498,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_herbert_v_evatt
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
 			cost = 100.000
 			traits = {
@@ -510,8 +510,8 @@ characters={
 		}		
 
 
-	BLM_war_industrialist={
-		name=BLM_war_industrialist
+	CLM_war_industrialist={
+		name=CLM_war_industrialist
 		portraits={
 			army={
 				small="GFX_idea_AST_jack_beasley" #small="GFX_idea_generic_political_advisor_europe_3"
@@ -521,7 +521,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_jack_beasley
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
 			traits = {
 				war_industrialist 
@@ -529,8 +529,8 @@ characters={
 		}		
 	}
 
-	BLM_compassionate_gentleman={
-		name= BLM_compassionate_gentleman
+	CLM_compassionate_gentleman={
+		name= CLM_compassionate_gentleman
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_3"
@@ -540,7 +540,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_frank_forde
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
 			traits = {
 				compassionate_gentleman 
@@ -548,8 +548,8 @@ characters={
 		}		
 	}
 
-	BLM_fascist_demagogue={
-		name= BLM_fascist_demagogue
+	CLM_fascist_demagogue={
+		name= CLM_fascist_demagogue
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_4"
@@ -559,7 +559,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_generic_fascist_demagogue
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
 			available = {
 				
@@ -578,8 +578,8 @@ characters={
 		}		
 	}
 
-	BLM_communist_revolutionary={
-		name=BLM_communist_revolutionary
+	CLM_communist_revolutionary={
+		name=CLM_communist_revolutionary
 		portraits={
 			army={
 				small="GFX_idea_AST_lance_sharkey" #small="GFX_idea_generic_communist_revolutionary_western_european_2d"
@@ -589,7 +589,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_lance_sharkey
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
 			available = {
 				
@@ -608,8 +608,8 @@ characters={
 		}		
 	}
 	
-	BLM_democratic_reformer={
-		name=BLM_democratic_reformer
+	CLM_democratic_reformer={
+		name=CLM_democratic_reformer
 		portraits={
 			army={
 				small="GFX_idea_AST_arthur_calwell" #small="GFX_idea_generic_democratic_reformer_western_european_2d"
