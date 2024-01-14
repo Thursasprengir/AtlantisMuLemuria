@@ -30,20 +30,20 @@ set_popularities = {
 	neutrality = 60
 }
 
-NOR = {
-    if = {
-        limit = {
-            has_dlc = "Together for Victory"
-        }
-        set_autonomy = {
-            target = NAA
-            autonomous_state = autonomy_colony
-        }
-    }
-    else = {
-        puppet = NAA
-    }
-}
+#NOR = {
+#    if = {
+#        limit = {
+#            has_dlc = "Together for Victory"
+#        }
+#        set_autonomy = {
+#            target = NAA
+#            autonomous_state = autonomy_colony
+#        }
+#    }
+#    else = {
+#        puppet = NAA
+#    }
+#}
 
 set_convoys = 35
 

@@ -206,6 +206,8 @@ ATL_focus_on_europe = {
 		}
 		has_global_flag = FRA_already_surrendered
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_unit_request
@@ -229,6 +231,8 @@ ATL_focus_on_europe_more = {
 		}
 		has_global_flag = FRA_already_surrendered
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_unit_request
@@ -236,11 +240,13 @@ ATL_focus_on_europe_more = {
 		value = 40
 	}
 }
+
 ATL_the_channel_is_dangerous = {
 	allowed = { original_tag = ENG }
 	enable = {
 		has_war_with = GER
 	}
+	
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
@@ -365,6 +371,7 @@ ATL_onto_the_beaches_4 = {
 	enable = {
 		date > 1944.6.1
 	}
+	
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
@@ -381,6 +388,8 @@ ATL_d_day = {
 	enable = {
 		date > 1943.9.1
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = area_priority
@@ -516,6 +525,8 @@ ATL_gang_up_GER_with_ENG = {
 		is_in_faction_with = ENG
 	}
 
+	abort_when_not_enabled = yes
+	
 	# help fronts in europe & africa
 	ai_strategy = {
 		type = force_defend_ally_borders
@@ -540,6 +551,8 @@ ATL_focus_on_africa = {
 		is_in_faction_with = ENG
 	}
 
+	abort_when_not_enabled = yes
+	
 	ai_strategy = {
 		type = front_unit_request
 		area = africa
@@ -608,6 +621,8 @@ ATL_template_design_1 = {
 	abort = {
 		date > 1940.1.1
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -657,6 +672,8 @@ ATL_template_design_2 = {
 	enable = {
 		date > 1940.1.1
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio

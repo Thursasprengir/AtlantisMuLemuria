@@ -366,14 +366,14 @@ focus_tree = {
 			days = 720
 			}
 		hidden_effect = {
-		AUD = {
+			AUD = {
 					transfer_state = 984
 					984 = { add_core_of = ARG }
 					transfer_state = 1013
 					1013 = { add_core_of = ARG }
 					add_opinion_modifier = { target = CLM modifier = medium_increase  }
 				}
-		QLA = {
+			QLA = {
 					transfer_state = 1006
 					1006 = { add_core_of = QLA }
 					transfer_state = 988
@@ -382,23 +382,23 @@ focus_tree = {
 					986 = { add_core_of = QLA }
 					add_opinion_modifier = { target = CLM modifier = medium_increase  }
 				}
-		WRB = {
-					transfer_state = 1050
-					1050 = { add_core_of = WRB }
-					transfer_state = 974
-					974 = { add_core_of = WRB }
-					transfer_state = 975
-					975 = { add_core_of = WRB }
-					transfer_state = 1052
-					1052 = { add_core_of = WRB }
-					transfer_state = 1051
-					1051 = { add_core_of = WRB }
-					add_opinion_modifier = { target = CLM modifier = medium_increase  }
-				}
+			#WRB = {
+			#		transfer_state = 1050
+			#		1050 = { add_core_of = WRB }
+			#		transfer_state = 974
+			#		974 = { add_core_of = WRB }
+			#		transfer_state = 975
+			#		975 = { add_core_of = WRB }
+			#		transfer_state = 1052
+			#		1052 = { add_core_of = WRB }
+			#		transfer_state = 1051
+			#		1051 = { add_core_of = WRB }
+			#		add_opinion_modifier = { target = CLM modifier = medium_increase  }
+			#	}
 			}
 			puppet = AUD
 			puppet = QLA
-			puppet = WRB
+			#puppet = WRB
 
 		}
 	}

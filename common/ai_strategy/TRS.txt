@@ -280,6 +280,8 @@ TRS_template_design = {
 	enable = {
 		date > 1940.1.1
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -336,7 +338,6 @@ TRS_template_design = {
 	}
 }
 
-
 TRS_building_boats_is_great = {
 	allowed = {
 		original_tag = TRS
@@ -345,9 +346,7 @@ TRS_building_boats_is_great = {
 		num_of_civilian_factories_available_for_projects > 15
 	}
 
-	abort = {
-
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = dockyard_to_military_factory_ratio
@@ -472,6 +471,8 @@ TRS_naval_role_ratios_historical_late = {
 	enable = {
 		num_of_naval_factories > 60
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
