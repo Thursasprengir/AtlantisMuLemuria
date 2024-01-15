@@ -1,31 +1,6 @@
 on_actions = {
     on_startup = {
         effect = {
-			#DEN = {
-			#	if = {
-			#		limit = {
-			#			AND = {
-			#				OR = {
-			#					has_dlc = "Together for Victory"
-			#					has_dlc = "Man the Guns"
-			#				}
-			#				OR = {
-			#					has_government = democratic
-			#					has_government = neutrality
-			#					has_government = monarchism
-			#				}
-			#			}
-			#		}
-			#		set_autonomy = {
-			#			target = ELY
-			#			autonomous_state = autonomy_dominion
-			#			freedom_level = 0.1
-			#		}
-			#		else = {
-			#			puppet = ELY
-			#		}
-			#	}
-			#}
 			ENG = {
 				if = {
 					limit = {
