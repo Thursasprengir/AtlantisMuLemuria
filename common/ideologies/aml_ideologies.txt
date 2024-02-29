@@ -1,106 +1,106 @@
 ideologies = {
 
-	monarchism = {
-
-		types = {
-
-			absolutist = {
-			}
-
-			enlightened = {
-			}
-
-			elective = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			king = {
-			}
-
-			prince = {
-			}
-
-			duke = {
-			}
-
-			kaiser = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			tsar = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			margrave = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			emperor = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			emir = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			khan = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			shah = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			sultan = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			raja = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_MONARCHISM_1"
-			"FACTION_NAME_MONARCHISM_2"
-			"FACTION_NAME_MONARCHISM_3"
-			"FACTION_NAME_MONARCHISM_4"
-			"FACTION_NAME_MONARCHISM_5"
-		}
-
-		color = { 102 51 153 }
-
-		war_impact_on_world_tension = 0.5
-		faction_impact_on_world_tension = 1.0
-
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-			can_create_collaboration_government = yes
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = yes
-		}
-
-		can_collaborate = yes
-
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.80
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 10.0
-			send_volunteers_tension = 0.15
-			hidden_modifier = { join_faction_tension = -0.1 }
-		}
-
-		ai_fascist = yes # uses the fascist AI behaviour
-	}
-
+#	monarchism = {
+#
+#		types = {
+#
+#			absolutist = {
+#			}
+#
+#			enlightened = {
+#			}
+#
+#			elective = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			king = {
+#			}
+#
+#			prince = {
+#			}
+#
+#			duke = {
+#			}
+#
+#			kaiser = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			tsar = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			margrave = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			emperor = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			emir = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			khan = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			shah = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			sultan = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#			raja = {
+#					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+#			}
+#
+#		}
+#
+#		dynamic_faction_names = {
+#			"FACTION_NAME_MONARCHISM_1"
+#			"FACTION_NAME_MONARCHISM_2"
+#			"FACTION_NAME_MONARCHISM_3"
+#			"FACTION_NAME_MONARCHISM_4"
+#			"FACTION_NAME_MONARCHISM_5"
+#		}
+#
+#		color = { 102 51 153 }
+#
+#		war_impact_on_world_tension = 0.5
+#		faction_impact_on_world_tension = 1.0
+#
+#		rules = {
+#			can_force_government = yes
+#			can_send_volunteers = yes
+#			can_puppet = yes
+#			can_create_collaboration_government = yes
+#			can_declare_war_on_same_ideology = yes
+#			can_force_government = yes
+#			can_lower_tension = yes
+#			can_only_justify_war_on_threat_country = no
+#			can_guarantee_other_ideologies = yes
+#		}
+#
+#		can_collaborate = yes
+#
+#		modifiers = {
+#			justify_war_goal_when_in_major_war_time = -0.80
+#			civilian_intel_to_others = 15.0
+#			army_intel_to_others = 10.0
+#			navy_intel_to_others = 10.0
+#			airforce_intel_to_others = 10.0
+#			send_volunteers_tension = 0.15
+#			hidden_modifier = { join_faction_tension = -0.1 }
+#		}
+#
+#		ai_fascist = yes # uses the fascist AI behaviour
+#	}
+#
 #	islamism = {
 #
 #		types = {
