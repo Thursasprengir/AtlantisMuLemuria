@@ -194,7 +194,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_nur_deutsch
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = -4
@@ -2459,10 +2459,6 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
 	focus = {
 		id = FMU_integrate_manu
 		icon = GFX_focus_CZE_german_puppet
@@ -2492,16 +2488,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				hidden_effect = {
-					MNU = {
-						country_event = fmu.1
-					}
+			hidden_effect = {
+				MNU = {
+					country_event = fmu.1
 				}
-				country_event = fmu.1
 			}
+			country_event = fmu.1
 			#small political power boost
 			#malus to international relations for 3 years
 		}
+    }
 
 	focus = {
 		id = FMU_diplomatic_outreach
@@ -2757,10 +2753,7 @@ focus_tree = {
 		}
 	}
 
-
-
-
-		focus = {
+	focus = {
 		id = FMU_renegotiate_versailles
 		icon = GFX_focus_hol_the_foundations_of_defense
 		mutually_exclusive = {
@@ -2791,7 +2784,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_modern_germanic_state
 		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = FMU_renegotiate_versailles }
@@ -2832,7 +2825,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_twee_talen
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = FMU_renegotiate_versailles }
@@ -2868,7 +2861,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_heartland_development
 		icon = GFX_goal_generic_construction
 		prerequisite = {
@@ -2928,7 +2921,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_compensate_landowners
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = FMU_heartland_development }
@@ -2958,7 +2951,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_limit_democratic_reforms
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_heartland_development }
@@ -2986,10 +2979,11 @@ focus_tree = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.1
+			}
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_reform_voting_laws
 		icon = GFX_focus_generic_treaty
 		prerequisite = {
@@ -3026,7 +3020,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_new_constitution
 		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = FMU_reform_voting_laws }
@@ -3063,7 +3057,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_strengthen_central
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = FMU_new_constitution }
@@ -3154,7 +3148,7 @@ focus_tree = {
 	#	}
 	#}
 
-		focus = {
+	focus = {
 		id = FMU_install_noble_houses
 		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = FMU_new_constitution }
@@ -3221,7 +3215,7 @@ focus_tree = {
 	#	}
 	#}
 
-		focus = {
+	focus = {
 		id = FMU_elect_kaiser
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = FMU_install_noble_houses }
@@ -3270,7 +3264,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_white_immigration
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_elect_kaiser }
@@ -3299,11 +3293,10 @@ focus_tree = {
 			#raise world tension #K:why? its imigration not industrial genocide
 			#increase core manpower
 			#decrease non-core manpower
-
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_encourage_settlement
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = FMU_elect_kaiser }
@@ -3335,7 +3328,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_factories_of_gold
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = {
@@ -3369,9 +3362,7 @@ focus_tree = {
 		}
 	}
 
-
-
-		focus = {
+	focus = {
 		id = FMU_tapestry_many_colors
 		icon = GFX_aml_goal_FMU_tapestry_of_colors
 		prerequisite = { focus = FMU_renegotiate_versailles }
@@ -3423,7 +3414,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_commit_to_neutrality
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = FMU_tapestry_many_colors}
@@ -3456,7 +3447,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_increase_product_profits
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = FMU_commit_to_neutrality}
@@ -3512,7 +3503,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_cont_democratic_reforms
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_increase_product_profits}
@@ -3548,7 +3539,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_regional_development_authorities
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = FMU_twee_talen focus = FMU_tapestry_many_colors}
@@ -3586,7 +3577,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_strengthen_ties
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_cont_democratic_reforms}
@@ -3625,7 +3616,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_womens_suffrage
 		icon = GFX_focus_generic_women_in_military
 		prerequisite = {
@@ -3660,7 +3651,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_path_of_socialism
 		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = FMU_tapestry_many_colors}
@@ -3692,7 +3683,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_soviet_brethren
 		icon = GFX_focus_SOV_the_supreme_soviet
 		prerequisite = { focus = FMU_path_of_socialism}
@@ -3730,7 +3721,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_unite_with_comintern
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = FMU_soviet_brethren}
@@ -3759,7 +3750,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_muan_socialism
 		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = FMU_path_of_socialism}
@@ -3803,7 +3794,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_educate_muan_brethren
 		icon = GFX_focus_generic_socialist_science
 		prerequisite = { focus = FMU_muan_socialism}
@@ -3838,7 +3829,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_peoples_brigades
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = FMU_path_of_socialism}
@@ -3902,7 +3893,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_int_volunteer_brigades
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = FMU_peoples_brigades}
@@ -3967,7 +3958,7 @@ focus_tree = {
 		#}
 	#}
 
-		focus = {
+	focus = {
 		id = FMU_ache_of_war
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = FMU_strengthen_ties}
@@ -3998,7 +3989,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_influence_baraga
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_ache_of_war}
@@ -4034,7 +4025,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_influence_tiquea
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_ache_of_war}
@@ -4068,7 +4059,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_influence_canaje
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_ache_of_war}
@@ -4101,7 +4092,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_tech_sharing
 		icon = GFX_goal_continuous_research
 		prerequisite = { focus = FMU_ache_of_war}
@@ -4132,7 +4123,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_influence_cdm
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_influence_baraga}
@@ -4166,7 +4157,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_influence_TOD
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FMU_influence_canaje}
@@ -4203,7 +4194,7 @@ focus_tree = {
 
 
 
-		focus = {
+	focus = {
 		id = FMU_prepare_revolutionary_front
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = {
@@ -4237,7 +4228,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_discuss_with_SOV
 		icon = GFX_focus_fra_loyalty_stalin
 		prerequisite = { focus = FMU_unite_with_comintern }
@@ -4275,7 +4266,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_finalize_plan
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_prepare_revolutionary_front }
@@ -4307,7 +4298,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_for_the_revolution
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		prerequisite = {
@@ -4367,7 +4358,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_revolution_by_word
 		icon = GFX_focus_eng_global_defense
 		prerequisite = { focus = FMU_for_the_revolution }
@@ -4404,7 +4395,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_revolution_by_sword
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = FMU_for_the_revolution }
@@ -4441,11 +4432,11 @@ focus_tree = {
 	}
 
 
-#MILITARY/Industrial PIECE OF TREE
+	#MILITARY/Industrial PIECE OF TREE
 
 
 
-		focus = {
+	focus = {
 		id = FMU_law_14056
 		icon = GFX_focus_generic_military_mission
 		x = 24
@@ -4474,7 +4465,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_clause_a
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = FMU_law_14056 }
@@ -4512,7 +4503,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_commerce_focus
 		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = FMU_clause_a }
@@ -4555,7 +4546,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_defend_shipping
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = FMU_commerce_focus }
@@ -4596,7 +4587,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_control_shipping
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = FMU_commerce_focus }
@@ -4632,7 +4623,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_surface_fleet_focus
 		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = { focus = FMU_clause_a }
@@ -4671,7 +4662,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_strike_fleets
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = FMU_surface_fleet_focus }
@@ -4775,7 +4766,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_theater_groups
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = FMU_surface_fleet_focus }
@@ -4881,7 +4872,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_uboat_docks
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = {
@@ -4927,7 +4918,7 @@ focus_tree = {
 
 
 
-		focus = {
+	focus = {
 		id = FMU_clause_b
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = FMU_law_14056 }
@@ -4971,7 +4962,7 @@ focus_tree = {
 
 
 
-		focus = {
+	focus = {
 		id = FMU_addendum_9f
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = FMU_clause_b }
@@ -5005,7 +4996,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_power_projection
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = FMU_theater_groups }
@@ -5044,7 +5035,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_luftaufklarung
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = FMU_addendum_9f }
@@ -5093,7 +5084,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_jagdflugzeuge
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = FMU_addendum_9f }
@@ -5127,7 +5118,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_nat_airbase_production
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = FMU_luftaufklarung }
@@ -5171,7 +5162,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_naval_air_designs
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = FMU_jagdflugzeuge }
@@ -5206,7 +5197,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_long_range_bomber
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = FMU_nat_airbase_production }
@@ -5240,7 +5231,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_cas_tac_designs
 		icon = GFX_focus_generic_aircraft_production
 		prerequisite = { focus = FMU_addendum_9f }
@@ -5280,7 +5271,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_raketentechnik
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = FMU_addendum_9f }
@@ -5314,7 +5305,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_advanced_rocketry
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = FMU_raketentechnik}
@@ -5348,7 +5339,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_early_ramjet_engines
 		icon = GFX_focus_eng_special_air_service
 		prerequisite = { focus = FMU_advanced_rocketry }
@@ -5383,7 +5374,7 @@ focus_tree = {
 
 
 
-		focus = {
+	focus = {
 		id = FMU_high_alt_spy_planes
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = FMU_luftaufklarung }
@@ -5420,7 +5411,7 @@ focus_tree = {
 
 
 
-		focus = {
+	focus = {
 		id = FMU_jet_strat_bombers
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = FMU_long_range_bomber }
@@ -5457,7 +5448,7 @@ focus_tree = {
 
 
 
-		focus = {
+	focus = {
 		id = FMU_crucial_industry
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = FMU_clause_b }
@@ -5514,7 +5505,7 @@ focus_tree = {
 			#add civ and mil industries
 	}
 
-		focus = {
+	focus = {
 		id = FMU_invite_civ_designers
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = FMU_crucial_industry }
@@ -5571,7 +5562,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_nationalize_uli_traktor
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = FMU_invite_civ_designers }
@@ -5618,7 +5609,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_zilver_industrieel
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = FMU_nationalize_uli_traktor }
@@ -5660,7 +5651,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = FMU_divert_engines
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = FMU_invite_civ_designers }
@@ -5692,8 +5683,6 @@ focus_tree = {
 			add_war_support = -0.05
 			add_stability = 0.05
 			#decrease need for civilian goods
-		}
-
 		}
 	}
 }
