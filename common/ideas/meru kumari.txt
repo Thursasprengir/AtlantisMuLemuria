@@ -36,7 +36,7 @@ ideas = {
 			picture = limited_conscription
 
 			modifier = {
-				conscription_factor = 0.04 
+				conscription_factor = 0.04
 			}
 		}
 #		MKU_prepare_civies = {
@@ -62,10 +62,10 @@ ideas = {
 			picture = limited_conscription
 
 			modifier = {
-				conscription_factor = 0.01 
+				conscription_factor = 0.01
 			}
 		}
-		
+
 		MKU_conscription_large = {
 			allowed = {
 				always = no
@@ -76,28 +76,28 @@ ideas = {
 			picture = limited_conscription
 
 			modifier = {
-				conscription_factor = 0.08 
+				conscription_factor = 0.08
 			}
 		}
-		
-		
-		
-		
-		
+
+
+
+
+
 	}
 
 	political_advisor = {
 		gedriza_pantashan = {
-			
+
 			picture = idea_generic_air_africa_1
 			allowed = {
 				original_tag = "MKU"
 			}
 			available = {
-				
+
 			}
 
-			
+
 			traits = { communist_revolutionary }
 
 			do_effect = {
@@ -105,7 +105,7 @@ ideas = {
 					has_government = communism
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 10
 				modifier = {
@@ -122,9 +122,9 @@ ideas = {
 					factor = 0
 				}
 			}
-		}	
+		}
 		atahiman_nayanendra = {
-			
+
 			picture = idea_generic_air_africa_2
 			allowed = {
 				original_tag = "MKU"
@@ -135,21 +135,21 @@ ideas = {
 				NOT = { has_government = fascism}
 			}
 			available = {
-				
+
 			}
-			
-			
+
+
 			traits = { financial_expert }
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 		predigar_tatamize = {
-			
+
 			picture = generic_political_advisor_europe_1
 			allowed = {
 				original_tag = "MKU"
@@ -158,21 +158,21 @@ ideas = {
 				has_government = communism
 			}
 			available = {
-				
+
 			}
-			
-			
+
+
 			traits = { economist }
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 		liqorin_ertusul = {
-			
+
 			picture = USA_whittaker_chambers
 			allowed = {
 				original_tag = "MKU"
@@ -183,20 +183,20 @@ ideas = {
 				NOT = { has_government = fascism}
 			}
 			available = {
-				
+
 			}
-			
+
 			traits = { editor }
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 		lanshatri_narbaha = {
-			
+
 			picture = generic_political_advisor_europe_1
 			allowed = {
 				original_tag = "MKU"
@@ -205,17 +205,17 @@ ideas = {
 				not = { has_government = communism }
 			}
 			available = {
-				
-			}
-			
 
-			
+			}
+
+
+
 			traits = { editor }
 			cost = 50
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -227,154 +227,154 @@ ideas = {
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			traits = { captain_of_industry }
 		}
 		opprusnal_dertisgartha = {
 
 			picture = generic_political_advisor_europe_2
-				
+
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			traits = { ideological_crusader }
 		}
 		wannantri_seksharkarthe = {
-			
-			
+
+
 			allowed = {
 				original_tag = "MKU"
 			}
-			
+
 			available = {
 				}
-			
+
 			traits = { democratic_reformer }
-	
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		
+
 		tunriska_untrimir = {
-						
+
 			allowed = {
 				original_tag = "MKU"
 			}
 			available = {
 			}
 
-			
+
 			traits = { fascist_demagogue }
-	
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 10
 				modifier = {
 					is_historical_focus_on = yes
 					factor = 0
 				}
-			}		
+			}
 		}
 
 		orburunghitha_amtrishtha= {
-			
+
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			traits = { silent_workhorse }
 		}
-		
+
 		ilmoragri_vingradri = {
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
 				original_tag = MKU
 			}
 			available = {
-				
+
 			}
-			
+
 			traits = { anti_communist_crusader }
 		}
 
 		jashasthra_buthrami = {
-			
+
 			picture = generic_political_advisor_europe_5
-			
+
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			traits = { compassionate_gentleman }
 		}
 
 		nebbriste_merimora = {
-			
+
 			picture = generic_political_advisor_europe_6
-			
+
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			traits = { smooth_talking_charmer }
 		}
 
 		cheshmirtri_meshmratme = {
 			picture = generic_political_advisor_europe_6
-			
+
 			allowed = {
 				original_tag = MKU
 			}
 			available = {
 			}
-			
+
 			traits = { financial_expert }
 		}
 		shintrantra_elintu = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			traits = { war_industrialist }
 		}
 
 		omordura_dimtristra = {
-			
+
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			traits = { armaments_organizer }
 		}
 	}
-	
+
 
 	army_chief = {
-		
-	
+
+
 		itrashantri_rinporna = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MKU
@@ -382,64 +382,64 @@ ideas = {
 			available = {
 			}
 
-			
+
 			traits = { army_chief_morale_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		ermeti_urtunrima = {
-			
+
 			picture = generic_army_europe_5
 			ledger = army
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		amran_treshtrin = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { army_chief_drill_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		kohran_rantri = {
-			
+
 			picture = generic_army_europe_1
 			ledger = army
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { army_chief_offensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		olutripan_ramnagran = {
 			ledger = army
 			picture = USA_walter_krueger
@@ -448,398 +448,398 @@ ideas = {
 			}
 			available = {
 			}
-			
 
-			
+
+
 			traits = { army_chief_planning_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	}
-	
-	air_chief = {
-		
-		
-		pontrimatri_lensashre = {
-			
-			ledger = air
-			allowed = {
-				original_tag = MKU
-			}
-			
 
-			
-			traits = { air_chief_reform_3 }
-			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+	}
+
+	air_chief = {
+
+
+		pontrimatri_lensashre = {
+
+			ledger = air
+			allowed = {
+				original_tag = MKU
+			}
+
+
+
+			traits = { air_chief_reform_3 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		vekrinta_selamta = {
-			
+
 			picture = generic_air_europe_3
 			ledger = air
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { air_chief_night_operations_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		hashtrat_uvruvatri = {
-			
+
 			picture = generic_air_europe_1
 			ledger = air
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { air_chief_ground_support_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		intornera_ongre = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { air_chief_safety_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
-	
+
 	navy_chief = {
-	
+
 		tumus_umtrishu = {
-			
+
 			picture = generic_navy_europe_3
 			ledger = navy
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		dvashrat_pameshra = {
-			
-			
-			allowed = {
-				original_tag = MKU
-			}
-			ledger = navy
-			picture = generic_navy_europe_3
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		ertushat_perginvannu = {
-			
-			picture = generic_navy_europe_3
-			ledger = navy
-			allowed = {
-				original_tag = MKU
-			}
-			
 
-			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		dvashrat_pameshra = {
+
+
+			allowed = {
+				original_tag = MKU
+			}
+			ledger = navy
+			picture = generic_navy_europe_3
+
+			traits = { navy_chief_commerce_raiding_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ertushat_perginvannu = {
+
+			picture = generic_navy_europe_3
+			ledger = navy
+			allowed = {
+				original_tag = MKU
+			}
+
+
+
 			traits = { navy_chief_old_guard }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-	
-	
+
+
 	high_command = {
 		numeshre_civvandra = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { army_commando_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		ashmeq_nelverimma = {
-			
+
 			picture = generic_army_europe_3
 			ledger = army
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 
 			traits = { army_armored_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		mekil_beppantra = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { army_infantry_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
-		}	
-		
+		}
+
 		jutri_hapnidra = {
-			
+
 			picture = sabiha_gocen
 			ledger = air
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { air_strategic_bombing_3 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		limtri_eshgashina = {
-			
+
 			picture = generic_navy_europe_1
 			ledger = navy
 			allowed = {
 				original_tag = MKU
 			}
 
-			
+
 			traits = { navy_screen_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		iloporga_wisannatra = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { air_tactical_bombing_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		avnati_dringatri = {
-			
+
 			ledger = navy
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { navy_naval_air_defense_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		trimandra_entupara = {
-			
+
 			picture = generic_navy_europe_2
 			ledger = navy
 			allowed = {
 				original_tag = MKU
 			}
 
-			
+
 			traits = { navy_fleet_logistics_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		humenin_destriga = {
-			
+
 			ledger = navy
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			traits = { navy_amphibious_assault_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-		
-	
-	
+
+
+
 	theorist = {
 		huneshar_mintetri = {
-				
+
 		picture = generic_army_europe_2
 		ledger = army
 		allowed = {
 			original_tag = MKU
 		}
-		
+
 		research_bonus = {
 			land_doctrine = 0.07
 		}
-		
+
 		traits = { military_theorist }
 	}
-		
+
 		naradrisha_gamutrandra = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			cost = 250
-			
+
 			research_bonus = {
 				cat_mobile_warfare = 0.15
 			}
-			
+
 			traits = { mobile_warfare_expert }
 		}
-		
+
 		torminel_tinshamra = {
-			
+
 			ledger = navy
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				naval_doctrine = 0.10
 			}
-			
+
 			traits = { naval_theorist }
 		}
-		
+
 		bergamun_neprintri = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			cost = 250
-			
+
 			research_bonus = {
 				cat_base_strike = 0.15
 			}
-			
+
 			traits = { naval_aviation_pioneer }
 		}
-		
+
 		semshu_minvrindri = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MKU
 			}
-			
+
 			cost = 250
-			
+
 			research_bonus = {
 				cat_strategic_destruction = 0.15
 			}
-			
+
 			traits = { victory_through_airpower }
 		}
-		
+
 		sindrin_cortanrda = {
-			ledger = air	
+			ledger = air
 			picture = generic_political_advisor_europe_1
 
 		allowed = {
 			original_tag = MKU
 		}
-		
+
 		research_bonus = {
 			air_doctrine = 0.07
 		}
-		
+
 		traits = { air_warfare_theorist }
 	}
-		
+
 		ahintu_shandrindri = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MKU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				rocketry = 0.15
 			}
-			
+
 			traits = { rocket_scientist }
 		}
 	}
-	
+
 }

@@ -20,7 +20,7 @@ on_actions = {
 						target = MRR
 						autonomous_state = autonomy_dominion
 						freedom_level = 0.2
-					}					
+					}
 					set_autonomy = {
 						target = CLM
 						autonomous_state = autonomy_dominion
@@ -30,7 +30,7 @@ on_actions = {
 						target = NHL
 						autonomous_state = autonomy_puppet
 						freedom_level = 0.1
-					}					
+					}
 					set_autonomy = {
 						target = RSL
 						autonomous_state = autonomy_colony
@@ -38,17 +38,17 @@ on_actions = {
 					}
 					MRR = {
 						set_cosmetic_tag = MRR_ENG
-					}					
+					}
 					CLM = {
 						set_cosmetic_tag = CLM_ENG
-					}				
+					}
 					else = {
 						add_to_faction = CLM
 						add_to_faction = MRR
 						add_to_faction = NHL
 						add_to_faction = RSL
 						puppet = NHL
-						puppet = RSL						
+						puppet = RSL
 					}
 				}
 			}

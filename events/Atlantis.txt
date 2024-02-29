@@ -4,14 +4,14 @@ country_event = {
 	title = atlantis.1.t
 	desc = atlantis.1.d
 	picture = GFX_news_event_fighting_gangsters
-	
+
 	trigger = {
 		tag = ATL
 		has_country_flag = ATL_searching_itorkanak
 		NOT = {has_country_flag = ATL_currently_searching_itorkanak}
 	}
 	mean_time_to_happen = {days = 10}
-	
+
 	option = {
 		ai_chance = {factor = 300}
 		name = atlantis.1.a
@@ -40,7 +40,7 @@ news_event = {
 	desc = atlantis.2.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		name = atlantis.2.a
 		hidden_effect = {
@@ -55,14 +55,14 @@ news_event = {
 	title = atlantis.3.t
 	desc = atlantis.3.d
 	picture = GFX_news_event_fighting_gangsters
-	
+
 	trigger = {
 		tag = ATL
 		has_country_flag = ATL_itorkanak_flag
 		NOT = {has_idea = ATL_itorkanak_at_war}
 	}
 	mean_time_to_happen = {days = 360}
-	
+
 	option = {
 		name = atlantis.3.a
 		if = {
@@ -92,12 +92,12 @@ news_event = {
 	id = atlantis.4
 	title = atlantis.4.t
 	desc = atlantis.4.d
-	
+
 	picture = GFX_news_event_fighting_gangsters
-	
+
 	trigger = {tag = ATL has_country_flag = ATL_itorkanak_flag}
 	mean_time_to_happen = {days = 100}
-	
+
 	option = {
 		name = atlantis.4.a
 		if = {
@@ -173,14 +173,14 @@ country_event = {
 	title = atlantis.5.t
 	desc = atlantis.5.d
 	picture = GFX_news_event_fighting_gangsters
-	
+
 	trigger = {
 		tag = ATL
 		has_country_flag = ATL_searching_kaprastiak
 		NOT = {has_country_flag = ATL_currently_searching_kaprastiak}
 	}
 	mean_time_to_happen = {days = 10}
-	
+
 	option = {
 		ai_chance = {factor = 300}
 		name = atlantis.5.a
@@ -209,7 +209,7 @@ news_event = {
 	desc = atlantis.6.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		name = atlantis.6.a
 		hidden_effect = {
@@ -224,14 +224,14 @@ news_event = {
 	title = atlantis.7.t
 	desc = atlantis.7.d
 	picture = GFX_news_event_fighting_gangsters
-	
+
 	trigger = {
 		tag = ATL
 		has_country_flag = ATL_kaprastiak_flag
 		NOT = {has_idea = ATL_kaprastiak_at_war}
 	}
 	mean_time_to_happen = {days = 360}
-	
+
 	option = {
 		name = atlantis.7.a
 		if = {
@@ -261,12 +261,12 @@ news_event = {
 	id = atlantis.8
 	title = atlantis.8.t
 	desc = atlantis.8.d
-	
+
 	picture = GFX_news_event_fighting_gangsters
-	
+
 	trigger = {tag = ATL has_country_flag = ATL_kaprastiak_flag}
 	mean_time_to_happen = {days = 100}
-	
+
 	option = {
 		name = atlantis.8.a
 		if = {
@@ -337,7 +337,7 @@ country_event = {
 	desc = atlantis.9.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = {factor = 100}
 		name = atlantis.9.a

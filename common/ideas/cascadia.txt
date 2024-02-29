@@ -1,81 +1,81 @@
 ideas = {
 
 
-	
+
 	political_advisor = {
 		CAS_thanikas_bousinissi = {
-			
-			
+
+
 			allowed = {
 				original_tag = "CAS"
 			}
-			
 
-			
+
+
 			traits = { communist_revolutionary }
-	
+
 			on_add = {
 				country_event = political.1
 			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = communism
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
-		}	
-			
+		}
+
 		CAS_anakistas_gobriski = {
-			
-			
+
+
 			allowed = {
 				original_tag = "CAS"
 			}
-			
 
-			
+
+
 			traits = { democratic_reformer }
-	
+
 			on_add = {
 				country_event = political.13
 			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		
+
 		CAS_laimaria_unismitri = {
-			
-			
+
+
 			allowed = {
 				original_tag = "CAS"
 			}
-			
 
-			
+
+
 			traits = { fascist_demagogue }
-	
+
 			on_add = {
 				country_event = political.7
 			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
@@ -85,33 +85,33 @@ ideas = {
 	CAS_damaskinos = {
 
 		picture = generic_political_advisor_europe_5
-		
+
 		allowed = {
 			original_tag = CAS
 		}
-		
+
 		traits = { compassionate_gentleman }
 	}
 
 	CAS_georgios_papandreou = {
 
 		picture = generic_political_advisor_europe_2
-			
+
 		allowed = {
 			original_tag = CAS
 		}
-		
+
 		traits = { silent_workhorse }
 	}
 
 	CAS_evripidis_bakirtris = {
 
 		picture = generic_political_advisor_europe_3
-		
+
 		allowed = {
 			original_tag = CAS
 		}
-		
+
 		traits = { war_industrialist }
 	}
 }
@@ -119,24 +119,24 @@ ideas = {
 theorist = {
 
 	CAS_nikolaos_plastiras = {
-				
+
 		picture = generic_army_europe_3
 		ledger = army
 		allowed = {
 			original_tag = CAS
 		}
-		
+
 		research_bonus = {
 			land_doctrine = 0.07
 		}
-		
+
 		traits = { military_theorist }
 	}
 
 	CAS_eleftherios_venizelos = {
-				
+
 		picture = generic_political_advisor_europe_1
-			
+
 		allowed = {
 			original_tag = CAS
 		}
@@ -144,42 +144,42 @@ theorist = {
 		research_bonus = {
 			air_doctrine = 0.07
 		}
-		
+
 		traits = { air_warfare_theorist }
 	}
 }
 	# MILITARY
 	army_chief = {
-		
+
 		CAS_alexander_papagos = {
-			
+
 			picture = generic_army_europe_3
 			ledger = army
 			allowed = {
 				original_tag = CAS
 			}
-			
 
-			
+
+
 			traits = { army_chief_offensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		CAS_konstantinos_ventiris = {
-			
+
 			picture = generic_army_europe_5
 			ledger = army
 			allowed = {
 				original_tag = CAS
 			}
-			
 
-			
+
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -187,37 +187,37 @@ theorist = {
 	}
 
 	air_chief = {
-		
-		
+
+
 		CAS_panagiotis_gazis = {
-			
+
 			picture = generic_air_europe_1
 			ledger = air
 			allowed = {
 				original_tag = CAS
 			}
-			
 
-			
+
+
 			traits = { air_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		CAS_vasilios_tsarpalis = {
-			
+
 			picture = generic_air_europe_2
 			ledger = air
 			allowed = {
 				original_tag = CAS
 			}
-			
 
-			
+
+
 			traits = { air_chief_safety_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -225,37 +225,37 @@ theorist = {
 	}
 
 	navy_chief = {
-	
-		
+
+
 		CAS_alexandros_sakellariou = {
-			
+
 			picture = generic_navy_europe_1
 			ledger = navy
 			allowed = {
 				original_tag = CAS
 			}
-			
 
-			
+
+
 			traits = { navy_chief_commerce_raiding_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		CAS_petros_voulgaris = {
-			
+
 			picture = generic_navy_europe_1
 			ledger = navy
 			allowed = {
 				original_tag = CAS
 			}
-			
 
-			
+
+
 			traits = { navy_chief_maneuver_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -265,63 +265,63 @@ theorist = {
 	high_command = {
 
 		CAS_aris_velouchiotis = {
-			
+
 			allowed = {
 				original_tag = CAS
 			}
 			ledger = army
 			picture = generic_army_europe_1
-			
+
 			traits = { army_artillery_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-	
+
 		CAS_napoleon_zervas = {
-			
-			
+
+
 			allowed = {
 				original_tag = CAS
 			}
 			ledger = army
 			picture = generic_army_europe_2
-			
+
 			traits = { army_infantry_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		CAS_nikos_beloyannis = {
-			
-			
+
+
 			allowed = {
 				original_tag = CAS
 			}
-			
+
 			picture = generic_air_europe_2
 			ledger = air
 			traits = { air_naval_strike_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		CAS_aristeidis_moraitinis = {
-			
-			
+
+
 			allowed = {
 				original_tag = CAS
 			}
-			
+
 			picture = generic_air_europe_2
 			ledger = air
 			traits = { air_bomber_interception_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}

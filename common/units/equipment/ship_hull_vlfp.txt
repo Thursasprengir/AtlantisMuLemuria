@@ -1,169 +1,169 @@
-equipments = {
-
-	ship_hull_carrier_vlfp = {
-		abbreviation = "vlp"
-		year = 1936
-		visual_level = 0
-		archetype = ship_hull_carrier
-		priority = 1000
-		manpower = 10000
-		
-		can_be_produced = {			
-		}
-		
-		upgrades = {
-			ship_deckspace_upgrade
-			carrier_armor_upgrade
-			ship_engine_upgrade
-			ship_reliability_upgrade			
-		}
-
-		module_slots = {
-			fixed_ship_deck_slot_1 = {
-				required = yes
-				allowed_module_categories = { vlfp_ship_deck_space }
-				gfx = ship_deck_space_slot
-			}
-			fixed_ship_deck_slot_2 = {
-				required = no
-				allowed_module_categories = { vlfp_ship_deck_space ship_carrier_armor }
-				gfx = ship_deck_space_slot
-			}
-			fixed_ship_anti_air_slot = {
-				required = no
-				allowed_module_categories = { vlfp_ship_anti_air }
-			}
-			fixed_ship_radar_slot = {
-				required = no
-				allowed_module_categories = { ship_radar }
-			}
-			fixed_ship_engine_slot = {
-				required = yes
-				allowed_module_categories = { vlfp_carrier_ship_engine }
-			}
-			fixed_ship_secondaries_slot = {
-				required = no
-				allowed_module_categories = { vlfp_ship_secondaries }
-			}
-			
-			front_1_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					vlfp_ship_deck_space
-					ship_carrier_armor
-					vlfp_ship_secondaries
-					vlfp_ship_extra_fuel_tank
-				}
-			}
-			mid_1_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					vlfp_ship_secondaries
-					vlfp_ship_deck_space
-					ship_carrier_armor
-					vlfp_ship_extra_fuel_tank
-				}
-			}
-			mid_2_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					vlfp_ship_secondaries
-					vlfp_ship_deck_space
-					ship_carrier_armor
-					vlfp_ship_extra_fuel_tank
-				}
-			}
-			mid_3_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					vlfp_ship_secondaries
-					vlfp_ship_deck_space
-					ship_carrier_armor
-					vlfp_ship_extra_fuel_tank
-				}
-			}
-			mid_4_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					vlfp_ship_secondaries
-					vlfp_ship_deck_space
-					ship_carrier_armor
-					vlfp_ship_extra_fuel_tank
-				}
-			}
-			mid_5_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					vlfp_ship_secondaries
-					vlfp_ship_deck_space
-					ship_carrier_armor
-					vlfp_ship_extra_fuel_tank
-				}
-			}
-			rear_1_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					vlfp_ship_secondaries
-					vlfp_ship_deck_space
-					ship_carrier_armor
-					vlfp_ship_extra_fuel_tank
-				}
-			}
-		}
-		
-		module_count_limit = {
-			category = ship_radar
-			count < 2
-		}
-		
-		default_modules = {
-            fixed_ship_deck_slot_1 = empty
-            fixed_ship_deck_slot_2 = empty
-            fixed_ship_anti_air_slot = empty
-            fixed_ship_radar_slot = empty
-            fixed_ship_engine_slot = vlfp_carrier_ship_engine
-            fixed_ship_secondaries_slot = empty
-            front_1_custom_slot = empty
-            mid_1_custom_slot = empty
-            mid_2_custom_slot = empty
-			mid_3_custom_slot = empty
-			mid_4_custom_slot = empty
-			mid_5_custom_slot = empty
-			rear_1_custom_slot = empty
-        }
-		
-		lg_armor_piercing = 0
-		lg_attack = 0
-		
-		hg_armor_piercing = 0
-		hg_attack = 0
-		
-		torpedo_attack = 0
-		sub_attack = 0
-		
-		anti_air_attack = 0
-		
-		armor_value = 0
-		
-		surface_detection = 26
-		sub_detection = 5
-		surface_visibility = 35
-		naval_speed = 5
-		reliability = 0.80
-		
-		naval_range = 500
-		
-		max_strength = 2000
-		
-		fuel_consumption = 87
-
-		# (Describes combat behaviour - hidden stat)
-		offensive_weapons = no
-		
-		build_cost_ic = 8000
-		resources = {
-			steel = 16
-			chromium = 8
-		}
-	}
-}
+#equipments = {
+#
+#	ship_hull_carrier_vlfp = {
+#		abbreviation = "vlp"
+#		year = 1936
+#		visual_level = 0
+#		archetype = ship_hull_carrier
+#		priority = 1000
+#		manpower = 10000
+#
+#		can_be_produced = {
+#		}
+#
+#		upgrades = {
+#			ship_deckspace_upgrade
+#			carrier_armor_upgrade
+#			ship_engine_upgrade
+#			ship_reliability_upgrade
+#		}
+#
+#		module_slots = {
+#			fixed_ship_deck_slot_1 = {
+#				required = yes
+#				allowed_module_categories = { vlfp_ship_deck_space }
+#				gfx = ship_deck_space_slot
+#			}
+#			fixed_ship_deck_slot_2 = {
+#				required = no
+#				allowed_module_categories = { vlfp_ship_deck_space ship_carrier_armor }
+#				gfx = ship_deck_space_slot
+#			}
+#			fixed_ship_anti_air_slot = {
+#				required = no
+#				allowed_module_categories = { vlfp_ship_anti_air }
+#			}
+#			fixed_ship_radar_slot = {
+#				required = no
+#				allowed_module_categories = { ship_radar }
+#			}
+#			fixed_ship_engine_slot = {
+#				required = yes
+#				allowed_module_categories = { vlfp_carrier_ship_engine }
+#			}
+#			fixed_ship_secondaries_slot = {
+#				required = no
+#				allowed_module_categories = { vlfp_ship_secondaries }
+#			}
+#
+#			front_1_custom_slot = {
+#				required = no
+#				allowed_module_categories = {
+#					vlfp_ship_deck_space
+#					ship_carrier_armor
+#					vlfp_ship_secondaries
+#					vlfp_ship_extra_fuel_tank
+#				}
+#			}
+#			mid_1_custom_slot = {
+#				required = no
+#				allowed_module_categories = {
+#					vlfp_ship_secondaries
+#					vlfp_ship_deck_space
+#					ship_carrier_armor
+#					vlfp_ship_extra_fuel_tank
+#				}
+#			}
+#			mid_2_custom_slot = {
+#				required = no
+#				allowed_module_categories = {
+#					vlfp_ship_secondaries
+#					vlfp_ship_deck_space
+#					ship_carrier_armor
+#					vlfp_ship_extra_fuel_tank
+#				}
+#			}
+#			mid_3_custom_slot = {
+#				required = no
+#				allowed_module_categories = {
+#					vlfp_ship_secondaries
+#					vlfp_ship_deck_space
+#					ship_carrier_armor
+#					vlfp_ship_extra_fuel_tank
+#				}
+#			}
+#			mid_4_custom_slot = {
+#				required = no
+#				allowed_module_categories = {
+#					vlfp_ship_secondaries
+#					vlfp_ship_deck_space
+#					ship_carrier_armor
+#					vlfp_ship_extra_fuel_tank
+#				}
+#			}
+#			mid_5_custom_slot = {
+#				required = no
+#				allowed_module_categories = {
+#					vlfp_ship_secondaries
+#					vlfp_ship_deck_space
+#					ship_carrier_armor
+#					vlfp_ship_extra_fuel_tank
+#				}
+#			}
+#			rear_1_custom_slot = {
+#				required = no
+#				allowed_module_categories = {
+#					vlfp_ship_secondaries
+#					vlfp_ship_deck_space
+#					ship_carrier_armor
+#					vlfp_ship_extra_fuel_tank
+#				}
+#			}
+#		}
+#
+#		module_count_limit = {
+#			category = ship_radar
+#			count < 2
+#		}
+#
+#		default_modules = {
+#            fixed_ship_deck_slot_1 = empty
+#            fixed_ship_deck_slot_2 = empty
+#            fixed_ship_anti_air_slot = empty
+#            fixed_ship_radar_slot = empty
+#            fixed_ship_engine_slot = vlfp_carrier_ship_engine
+#            fixed_ship_secondaries_slot = empty
+#            front_1_custom_slot = empty
+#            mid_1_custom_slot = empty
+#            mid_2_custom_slot = empty
+#			mid_3_custom_slot = empty
+#			mid_4_custom_slot = empty
+#			mid_5_custom_slot = empty
+#			rear_1_custom_slot = empty
+#        }
+#
+#		lg_armor_piercing = 0
+#		lg_attack = 0
+#
+#		hg_armor_piercing = 0
+#		hg_attack = 0
+#
+#		torpedo_attack = 0
+#		sub_attack = 0
+#
+#		anti_air_attack = 0
+#
+#		armor_value = 0
+#
+#		surface_detection = 26
+#		sub_detection = 5
+#		surface_visibility = 35
+#		naval_speed = 5
+#		reliability = 0.80
+#
+#		naval_range = 500
+#
+#		max_strength = 2000
+#
+#		fuel_consumption = 87
+#
+#		# (Describes combat behaviour - hidden stat)
+#		offensive_weapons = no
+#
+#		build_cost_ic = 8000
+#		resources = {
+#			steel = 16
+#			chromium = 8
+#		}
+#	}
+#}

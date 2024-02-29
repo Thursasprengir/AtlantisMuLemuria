@@ -149,7 +149,7 @@ focus_tree = {
 			add_timed_idea = {
 			idea = FRA_strengthen_government_support_focus
 			days = 180
-			}			
+			}
 		}
 	}
 
@@ -330,7 +330,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			has_war = no
-		}		
+		}
 		prerequisite = { focus = CLM_act_283 }
 		mutually_exclusive = {
 			focus = CLM_federal_sympathies
@@ -340,7 +340,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.05
-			add_war_support = -0.05	
+			add_war_support = -0.05
 		}
 	}
 		focus = {
@@ -584,7 +584,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democratic 
+				ideology = democratic
 				popularity = 0.2
 			}
 			add_political_power = 50
@@ -883,7 +883,7 @@ focus_tree = {
 				technology = tech_recon3
 				technology = tech_signal_company
 				technology = tech_signal_company2
-				technology = tech_signal_company3				
+				technology = tech_signal_company3
 			}
 		}
 	}
@@ -1030,8 +1030,8 @@ focus_tree = {
 		completion_reward = {
 		1009 = {
 				if = {
-					limit = { 
-						is_controlled_by = ROOT 
+					limit = {
+						is_controlled_by = ROOT
 					}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1062,8 +1062,8 @@ focus_tree = {
 		completion_reward = {
 			958 = {
 				if = {
-					limit = { 
-						is_controlled_by = ROOT 
+					limit = {
+						is_controlled_by = ROOT
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -1095,7 +1095,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				if = {
 					limit = {
-						is_controlled_by = ROOT 
+						is_controlled_by = ROOT
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -1108,7 +1108,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = CLM_found_the_new_hampstead_university
 		icon = GFX_r56_goal_SIA_increase_science
@@ -1296,7 +1296,7 @@ focus_tree = {
 	}
 	######## 		x = 6	y = 8
 	######## 		x = 15	y = 8
- 
+
  focus = {
 		id = CLM_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1304,7 +1304,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1328,7 +1328,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1353,12 +1353,12 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = motorized_bonus 
+				name = motorized_bonus
 				bonus = 3.0
 				technology = motorised_infantry
 			}
@@ -1375,7 +1375,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1399,7 +1399,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1421,7 +1421,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CLM_motorization_effort
 		cost = 10
-		
+
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
@@ -1446,7 +1446,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1470,7 +1470,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1494,7 +1494,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1519,7 +1519,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1543,7 +1543,7 @@ focus_tree = {
 		x = 28
 		y = 0
 		cost = 10
-		
+
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
@@ -1557,13 +1557,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}			
+			}
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1.0
 				uses = 1
 				category = air_doctrine
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -1633,7 +1633,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1663,7 +1663,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1689,7 +1689,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {   FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 
@@ -1755,7 +1755,7 @@ focus_tree = {
 						type = air_base
 						level = 2
 						instant_build = yes
-					}				
+					}
 					ROOT = { set_country_flag = aviation_effort_2_AB }
 				}
 			}
@@ -1779,7 +1779,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1803,7 +1803,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1836,7 +1836,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1858,7 +1858,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
-		
+
 		available_if_capitulated = yes
 
 
@@ -1878,7 +1878,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
 			if = {
@@ -1974,7 +1974,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -1987,7 +1987,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CLM_naval_effort
 		cost = 10
-		
+
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
@@ -2029,7 +2029,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CLM_naval_effort
 		cost = 10
-		
+
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
@@ -2066,9 +2066,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = CLM_flexible_navy
 		cost = 10
-		
+
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 
@@ -2104,7 +2104,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CLM_large_navy
 		cost = 10
-		
+
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
@@ -2145,7 +2145,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 
@@ -2183,7 +2183,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
 		available_if_capitulated = yes
 
 		ai_will_do = {

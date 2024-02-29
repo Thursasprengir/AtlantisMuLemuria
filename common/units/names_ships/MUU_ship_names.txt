@@ -6,13 +6,13 @@ MUU_DD_HISTORICAL = {
 	for_countries = { MUU }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
 	#link_numbering_with = { MUU_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
 
-	prefix = "LM "							
-	fallback_name = "Taraqlusus TL-%d"		
-	unique = {	"Dusiq" "Eshqat" "Gamaq" "Chush" "Chasuz" "Argo" "Cham" "Bada" "Bala" "Aqantu" "Ashtuchet" "Ai" "Ajjal" "Anat" "Arbeit" "Bang" "Chichet" "Chimu" "Chugun" "Dang" "Dasuq" "Deboje" "Qigowenu"}			
+	prefix = "LM "
+	fallback_name = "Taraqlusus TL-%d"
+	unique = {	"Dusiq" "Eshqat" "Gamaq" "Chush" "Chasuz" "Argo" "Cham" "Bada" "Bala" "Aqantu" "Ashtuchet" "Ai" "Ajjal" "Anat" "Arbeit" "Bang" "Chichet" "Chimu" "Chugun" "Dang" "Dasuq" "Deboje" "Qigowenu"}
 
 }
 
@@ -24,10 +24,10 @@ MUU_DD_HISTORICAL = {
 
 #	type = ship
 #	ship_types = { ship_hull_light destroyer }
-	
-	#link_numbering_with = { MUU_DD_HISTORICAL }	
 
-#	prefix = "LM "							
+	#link_numbering_with = { MUU_DD_HISTORICAL }
+
+#	prefix = "LM "
 #	fallback_name = "Taraqlusustalloj TLT-%d"
 
 #}
@@ -40,8 +40,8 @@ MUU_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
-	prefix = "LM "							
+
+	prefix = "LM "
 	fallback_name = "Qruzuranguri  QA-%d"
 	unique = {"Qijigeng" "Gijnaq" "Yiiq" "Vojjeq" "Zefarjja" "Ajjiqon" "Ningit" "Ningitjeq" "Qidasuq" "Eshqataj" "Domatu" "Domatujeq" "Imriyiiq" "Imideboje" "Qidang" "Aragamaq" "Arayiiq" "Arbeitqi" "Paraq"}
 }
@@ -54,8 +54,8 @@ MUU_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
-	prefix = "LM "							
+
+	prefix = "LM "
 	fallback_name = "Qruzurðurdi  QD-%d"
 	unique = {"Asetale" "Vashparaq" "Imiz" "Yollohtli" "Navganara" "Navdrmu" "Navjijeq" "Hatmaq" "Geq" "Duqun" "Unjarqi" "Jijeq" "Mauururu" "Ogish" "Qna'a" "Drmu" "Q'tir" "Inirliq" "Mirida" "Girgu" "Neji" "Virqq" "Vatpagchi"}
 }
@@ -68,8 +68,8 @@ MUU_CA_HISTORICAL = {
 
 #	type = ship
 #	ship_types = { ship_hull_cruiser light_cruiser }
-	
-#	prefix = "LM "							
+
+#	prefix = "LM "
 #	fallback_name = "Qruzurangurinajesaj  QANJ-%d"
 #
 #}
@@ -82,8 +82,8 @@ MUU_CA_HISTORICAL = {
 
 #	type = ship
 #	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
-	
-#	prefix = "LM "							
+
+#	prefix = "LM "
 #	fallback_name = "Baqangaqangaq  BAA-%d"
 
 #}
@@ -97,12 +97,12 @@ MUU_CA_HISTORICAL = {
 #	type = ship
 #	ship_types = { ship_hull_heavy battleship }
 #	link_numbering_with = { MUU_BC_HISTORICAL }
-	
-#	prefix = "LM "							
-#	fallback_name = "Qurangaqlesus QL-%d"		
+
+#	prefix = "LM "
+#	fallback_name = "Qurangaqlesus QL-%d"
 
 #	unique = {
-#		"Araparaq" "Navparaq" "Vash" "Du" "Ollun" "Prug" "Numura" "Nila" "Pab" "Papa" "Pinya" "Paplui" "Pov" "Omarqa" "Omonung" "Qa" #"Qerava'is" "Qon" "Qug" "Quwa" "Reizan" "Laigu" "Rijj" "Rada" "Saeli" "Sames" "Sas" "Sava'is" "Shas" "Sunug" "Talloj" "Tir" "Unap" "Ushimrigar" "Ushqur" "Uru" "Qe" "Qavayu" "Tli" "Tegzu" "Teq" "Taraq" "Ua" "Uarq" "Uidi" "Us" "Yim" "Yoll" "Yoq" "Voyus" "Vate" #"Vaizen" "Voj" "Zatuheza" "Zehi" "Zefarj" "Bouvu" "Baman" "Azta" 
+#		"Araparaq" "Navparaq" "Vash" "Du" "Ollun" "Prug" "Numura" "Nila" "Pab" "Papa" "Pinya" "Paplui" "Pov" "Omarqa" "Omonung" "Qa" #"Qerava'is" "Qon" "Qug" "Quwa" "Reizan" "Laigu" "Rijj" "Rada" "Saeli" "Sames" "Sas" "Sava'is" "Shas" "Sunug" "Talloj" "Tir" "Unap" "Ushimrigar" "Ushqur" "Uru" "Qe" "Qavayu" "Tli" "Tegzu" "Teq" "Taraq" "Ua" "Uarq" "Uidi" "Us" "Yim" "Yoll" "Yoq" "Voyus" "Vate" #"Vaizen" "Voj" "Zatuheza" "Zehi" "Zefarj" "Bouvu" "Baman" "Azta"
 #	}
 #}
 
@@ -115,9 +115,9 @@ MUU_CA_HISTORICAL = {
 #	type = ship
 #	ship_types = { ship_hull_heavy battle_cruiser }
 #	link_numbering_with = { MUU_BB_HISTORICAL }
-	
-#	prefix = "LM "							
-#	fallback_name = "Qurangaquruzur QQ-%d"		
+
+#	prefix = "LM "
+#	fallback_name = "Qurangaquruzur QQ-%d"
 
 #	unique = {
 #		"Dusiq" "Eshqat" "Gamaq" "Chush" "Chasuz" "Argo" "Cham" "Bada" "Bala" "Aqantu" "Ashtuchet" "Ai" "Ajjal" "Anat" "Arbeit" "Bang" "Chichet" "Chimu" "Chugun" "Dang" "Dasuq" "Deboje" "Qigowenu" "Qijigeng" "Gijnaq" "Yiiq" "Vojjeq" "Zefarjja" "Ajjiqon" #"Ningit" "Ningitjeq" "Qidasuq" "Eshqataj" "Domatu" "Domatujeq" "Imriyiiq" "Imideboje" "Qidang" "Aragamaq" "Arayiiq" "Arbeitqi" "Paraq" "Araparaq" "Navparaq" "Vash" "Du" "Ollun" "Prug" "Numura" "Nila" "Pab" "Papa" "Pinya" "Paplui" "Pov" "Omarqa" "Omonung" "Qa" #"Qerava'is" "Qon" "Qug" "Quwa" "Reizan" "Laigu" "Rijj" "Rada" "Saeli" "Sames" "Sas" "Sava'is" "Shas" "Sunug" "Talloj" "Tir" "Unap" "Ushimrigar" "Ushqur" "Uru" "Qe" "Qavayu" "Tli" "Tegzu" "Teq" "Taraq" "Ua" "Uarq" "Uidi" "Us" "Yim" "Yoll" "Yoq" "Voyus" "Vate" #"Vaizen" "Voj" "Zatuheza" "Zehi" "Zefarj" "Bouvu" "Baman" "Azta" "
@@ -132,9 +132,9 @@ MUU_CA_HISTORICAL = {
 
 #	type = ship
 #	ship_types = { ship_hull_carrier carrier }
-	
-#	prefix = "LM "							
-#	fallback_name = "Chugunlesus CL-%d"	
+
+#	prefix = "LM "
+#	fallback_name = "Chugunlesus CL-%d"
 
 #	unique = {
 #		"Atuslan" "Dustartajare" "Teqsitli" #"Tollang" "Zochtli" "Tesi" "Labn" "Goprug" "Tlaqua" "Uiqaqatel" "Noqale" "Pogi" "Ruju" "Jillil" "Jabash"
@@ -149,9 +149,9 @@ MUU_CA_HISTORICAL = {
 
 #	type = ship
 #	ship_types = { ship_hull_carrier carrier }
-	
-#	prefix = "LM "							
-#	fallback_name = "Chugunlesusjeq CLj-%d"	
+
+#	prefix = "LM "
+#	fallback_name = "Chugunlesusjeq CLj-%d"
 
 #	unique = {
 #		"Asetale" "Vashparaq" "Imiz" "Yollohtli" "Navganara" "Navdrmu" "Navjijeq" "Hatmaq" "Geq" "Duqun" "Unjarqi" "Jijeq" "Mauururu" "Ogish" "Qna'a" "Drmu" "Q'tir" "Inirliq" "Mirida" "Girgu" "Neji" "Virqq" "Vatpagchi" "Atuslan" "Dustartajare" "Teqsitli" #"Tollang" "Zochtli" "Tesi" "Labn" "Goprug" "Tlaqua" "Uiqaqatel" "Noqale" "Pogi" "Ruju" "Jillil" "Jabash"
@@ -166,9 +166,9 @@ MUU_CA_HISTORICAL = {
 #
 #	type = ship
 #	ship_types = { ship_hull_submarine submarine }
-	
-#	prefix = "LM "							
-#	fallback_name = "Eudjoa EJ-%d"	
+
+#	prefix = "LM "
+#	fallback_name = "Eudjoa EJ-%d"
 
 #}
 

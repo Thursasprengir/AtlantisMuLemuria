@@ -18,12 +18,12 @@
 # unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
 #             this option is available here mainly for a mods.
 #
-# ordered - Is a list of all historical names. 
-#           Numbers must start from 1 and up. 
+# ordered - Is a list of all historical names.
+#           Numbers must start from 1 and up.
 #           Numbers can't repeat in one scope.
 #           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
 #           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
-#           1st argument = The name. It must contain either: 
+#           1st argument = The name. It must contain either:
 #                          %d (for decimal number placement)
 #                          %s (for string number placement - ROMAN numbers like XIV).
 #           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
@@ -31,7 +31,7 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
-FMU_INF_01 = 
+FMU_INF_01 =
 {
 	name = "Infantry Divisions"
 
@@ -46,7 +46,7 @@ FMU_INF_01 =
 
 	fallback_name = "%d. Infanterie-Division"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -74,7 +74,7 @@ FMU_INF_01 =
 }
 
 
-FMU_LTINF_01 = 
+FMU_LTINF_01 =
 {
 	name = "Light Infantry Divisions"
 
@@ -101,11 +101,11 @@ FMU_LTINF_01 =
 		8 = { "%d. Jäger-Division" }
 		9 = { "%d. Jäger-Division" }
 		10 = { "%d. Jäger-Division" }
-				
+
 	}
 }
 
-FMU_MOT_01 = 
+FMU_MOT_01 =
 {
 	name = "Motorized Divisions"
 
@@ -122,12 +122,12 @@ FMU_MOT_01 =
 	# Names with numbers (only one number per entry)
 	ordered =
 	{
-		1 = { "%d. Infanterie-Division (mot.)" }		
+		1 = { "%d. Infanterie-Division (mot.)" }
 	}
 }
 
 
-FMU_MEC_01 = 
+FMU_MEC_01 =
 {
 	name = "Panzergrenadier Divisions"
 
@@ -160,11 +160,11 @@ FMU_MEC_01 =
 		734 = { "%d. Panzer-Grenadier-Division" }
 		735 = { "%d. Panzer-Grenadier-Division" }
 		736 = { "%d. Panzer-Grenadier-Division" }
-		
+
 	}
 }
 
-FMU_MNT_01 = 
+FMU_MNT_01 =
 {
 	name = "Mountain Divisions"
 
@@ -193,7 +193,7 @@ FMU_MNT_01 =
 	}
 }
 
-FMU_MAR_01 = 
+FMU_MAR_01 =
 {
 	name = "Marine Divisions"
 
@@ -213,11 +213,11 @@ FMU_MAR_01 =
 		3 = { "%d. Seelande-Division" }
 		4 = { "%d. Seelande-Division" }
 		5 = { "%d. Seelande-Division" }
-		
+
 	}
 }
 
-FMU_PAR_01 = 
+FMU_PAR_01 =
 {
 	name = "Paratrooper Divisions"
 
@@ -237,11 +237,11 @@ FMU_PAR_01 =
 		3 = { "%d. Fallschirmjäger-Division" }
 		4 = { "%d. Fallschirmjäger-Division" }
 		5 = { "%d. Fallschirmjäger-Division" }
-		
+
 	}
 }
 
-FMU_GAR_01 = 
+FMU_GAR_01 =
 {
 	name = "Garrison Divisions"
 
@@ -264,7 +264,7 @@ FMU_GAR_01 =
 
 
 
-FMU_ARM_01 = 
+FMU_ARM_01 =
 {
 	name = "Panzer Divisions"
 
@@ -293,7 +293,7 @@ FMU_ARM_01 =
 	}
 }
 
-FMU_LTARM_01 = 
+FMU_LTARM_01 =
 {
 	name = "Light Divisions"
 
@@ -304,7 +304,7 @@ FMU_LTARM_01 =
 	division_types = { "light_armor" }
 
 	fallback_name = "%d. leichte-Division"
-	
+
 	link_numbering_with = { FMU_ARM_01 }
 
 	# Names with numbers (only one number per entry)
@@ -315,11 +315,11 @@ FMU_LTARM_01 =
 	3 = { "%d. leichte-Division" }
 	4 = { "%d. leichte-Division" }
 	5 = { "%d. leichte-Division" }
-	
+
 	}
 }
 
-FMU_CAV_01 = 
+FMU_CAV_01 =
 {
 	name = "Cavalry Divisions"
 
@@ -338,7 +338,7 @@ FMU_CAV_01 =
 		2 = { "%d. Kavallerie-Division" }
 		3 = { "%d. Kavallerie-Division" }
 		4 = { "%d. Kavallerie-Division" }
-	
+
 	}
-	
+
 }

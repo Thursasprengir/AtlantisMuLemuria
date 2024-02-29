@@ -6,11 +6,11 @@ FMU_DD_HISTORICAL = {
 	for_countries = { FMU }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
 	#link_numbering_with = { FMU_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
-						
-	fallback_name = "Zerstörer %d"		
+
+	fallback_name = "Zerstörer %d"
 	unique = {"Blücher" "Seydlitz" "Lützow" "Roon" "Deutschland" "Herta" "Freya" "Vineta" "Siegfried" }
 }
 
@@ -22,7 +22,7 @@ FMU_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-								
+
 	fallback_name = "Leichter Kreuzer %d"
 	unique = {"Hansa" "Friedrich Carl" "Buddenbrock" "Bittenfeld" "Schwarzenberg" "Eichhorn" "Flemming" "Boyen" "Haeseler" "Woyrsch" "Mansfeld" "Kalckreuth" "Kleist" "Wrangel" "Daun" "Heyde" "Krockow"}
 }
@@ -35,7 +35,7 @@ FMU_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-							
+
 	fallback_name = "Schwerer Kreuzer -%d"
 	unique = {"Möwe" "Albatros" "Seeadler" "Greif" "Falke" "Kondor" "Wolf" "Iltis" "Gepard" "Panther" "Tiger" "Löwe"}
 }
@@ -50,8 +50,8 @@ FMU_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-							
-	fallback_name = "Schlachtkreuzer %d"		
+
+	fallback_name = "Schlachtkreuzer %d"
 
 	unique = {"Von der Tann" "Moltke" "Goeben" "Derfflinger" "Holtzendorff" "York" "Von Mackensen" "Von Lettow-Vorbeck" "Friedrich Barbarossa" "Karl der Große"}
 }
@@ -64,8 +64,8 @@ FMU_CVL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-								
-	fallback_name = "Flugzeugträger %d"	
+
+	fallback_name = "Flugzeugträger %d"
 
 	unique = {"Hans Lody" "Bernd von Arnim" "Erich Giese" "Erich Koellner" "Friedrich Ihn" "Erich Steinbrinck" "Friedrich Eckholdt" "Diether von Roeder" "Hans Lüdemann"}
 }
