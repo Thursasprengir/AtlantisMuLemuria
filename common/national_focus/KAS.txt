@@ -8,7 +8,7 @@
 
 focus_tree = {
 	id = kashvan_focus_tree
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -16,7 +16,7 @@ focus_tree = {
 			tag = KAS
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 70 y = 1100 }
@@ -34,11 +34,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -66,11 +66,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -81,7 +81,7 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
-	
+
 	focus = {
 		id = kas_democratic_constitution
 		icon = GFX_goal_uruguay_democracy_and_socialism
@@ -90,8 +90,8 @@ focus_tree = {
 		mutually_exclusive = { focus = kas_workers_union }
 		x = -1
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -100,11 +100,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -130,8 +130,8 @@ focus_tree = {
 		prerequisite = { focus = kas_democratic_constitution }
 		x = -1
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -140,11 +140,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -155,7 +155,7 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
-	
+
 	focus = {
 		id = kas_reorganise_states
 		icon = GFX_focus_generic_treaty
@@ -163,8 +163,8 @@ focus_tree = {
 		prerequisite = { focus = kas_democratic_constitution focus = kas_workers_union }
 		x = 1
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -173,11 +173,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -185,11 +185,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.05	
-			add_ideas = kas_confederated_union 
+			add_stability = 0.05
+			add_ideas = kas_confederated_union
 		}
 	}
-	
+
 	focus = {
 		id = kas_foreign_investment
 		icon = GFX_focus_mex_privatisation
@@ -197,8 +197,8 @@ focus_tree = {
 		prerequisite = { focus = kas_equal_languages }
 		x = 0
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -207,11 +207,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -261,7 +261,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_rescind_claims
 		icon = GFX_focus_chi_reach_out_to_france
@@ -269,8 +269,8 @@ focus_tree = {
 		prerequisite = { focus = kas_equal_languages }
 		x = -2
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -279,11 +279,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -301,8 +301,8 @@ focus_tree = {
 		prerequisite = { focus = kas_foreign_investment }
 		x = 0
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -311,11 +311,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -333,8 +333,8 @@ focus_tree = {
 		prerequisite = { focus = kas_foreign_investment }
 		x = -2
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -343,11 +343,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -357,7 +357,7 @@ focus_tree = {
 		completion_reward = {
 				add_stability = -0.10
 				remove_state_core = 1004
-				BLM = { 
+				CLM = {
 					set_state_owner = 1004
 				}
 		}
@@ -371,8 +371,8 @@ focus_tree = {
 		mutually_exclusive = { focus = kas_democratic_constitution }
 		x = 1
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -381,11 +381,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -403,8 +403,8 @@ focus_tree = {
 		prerequisite = { focus = kas_workers_union }
 		x = 1
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -413,11 +413,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -444,8 +444,8 @@ focus_tree = {
 		prerequisite = { focus = kas_reorganise_states }
 		x = -2
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -454,11 +454,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -480,8 +480,8 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -490,11 +490,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -517,8 +517,8 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		
-	
+
+
 
 		cost = 10
 
@@ -527,11 +527,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -618,11 +618,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -654,11 +654,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -669,7 +669,7 @@ focus_tree = {
 			add_stability = 0.25
 		}
 	}
-	
+
 	focus = {
 		id = kas_military_youth
 		icon = GFX_focus_generic_population_growth
@@ -686,11 +686,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -723,11 +723,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -743,7 +743,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_german_engineers
 		icon = GFX_focus_chi_mission_to_germany
@@ -760,11 +760,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -794,11 +794,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -816,7 +816,7 @@ focus_tree = {
 					}
 					cost_factor = 0
 				}
-			}	
+			}
 			GER = {
 				create_production_license = {
 					target = KAS
@@ -827,10 +827,10 @@ focus_tree = {
 					}
 					cost_factor = 0
 				}
-			}	
+			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_franco_kash_war
 		icon = GFX_focus_attack_france
@@ -847,11 +847,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -867,7 +867,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_integrate_aka
 		icon = GFX_focus_generic_annex_country_2
@@ -884,11 +884,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -918,11 +918,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -955,11 +955,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -985,11 +985,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1059,7 +1059,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_miliary_expansion_2
 		icon = GFX_r56_goal_generic_construct_war_factory
@@ -1075,11 +1075,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1164,11 +1164,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1238,7 +1238,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_industrial_expansion
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1254,11 +1254,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1328,7 +1328,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_industrial_expansion_2
 		icon = GFX_investinfactories
@@ -1344,11 +1344,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1418,7 +1418,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_industrial_expansion_3
 		icon = GFX_investinfactories
@@ -1434,11 +1434,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1508,7 +1508,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_tortoise_shell #Is this a Korea reference?
 		icon = GFX_goal_generic_fortify_city
@@ -1524,11 +1524,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1537,10 +1537,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = kas_turtles
-			
+
 		}
 	}
-	
+
 #Middle Bottom
 
 	focus = {
@@ -1559,11 +1559,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1590,11 +1590,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1621,11 +1621,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1652,13 +1652,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
- 
+
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1684,11 +1684,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1700,7 +1700,7 @@ focus_tree = {
 			add_ideas = kas_nationalized_workforce
 		}
 	}
-	
+
 	focus = {
 		id = kas_national_road_maintenance
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1716,11 +1716,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1746,11 +1746,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1776,11 +1776,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1791,7 +1791,7 @@ focus_tree = {
 			add_ideas = kas_road_maintenence
 		}
 	}
-	
+
 	focus = {
 		id = kas_peoples_house
 		icon = GFX_focus_ETH_re-convene_the_parliament
@@ -1807,11 +1807,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1822,7 +1822,7 @@ focus_tree = {
 			add_ideas = kas_combined_legislature
 		}
 	}
-	
+
 	focus = {
 		id = kas_primary_education
 		icon = GFX_focus_generic_treaty
@@ -1838,11 +1838,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1853,7 +1853,7 @@ focus_tree = {
 			add_ideas = kas_primary_research
 		}
 	}
-	
+
 	focus = {
 		id = kas_trade_schools
 		icon = GFX_focus_generic_self_management
@@ -1869,11 +1869,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1884,12 +1884,12 @@ focus_tree = {
 			add_ideas = kas_trade_school_efficiency
 		}
 	}
-	
+
 	focus = {
 		id = kas_mace_navy
 		icon = GFX_goal_generic_navy_cruiser
 		relative_position_id = kas_unification_trouble
-		
+
 		x = 24
 		y = 0
 
@@ -1900,11 +1900,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -1915,7 +1915,7 @@ focus_tree = {
 			navy_experience = 50
 		}
 	}
-	
+
 	focus = {
 		id = kas_dockyard_estimations
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1943,7 +1943,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+
 		completion_reward = {
 			random_core_state = {
 				limit = {
@@ -2007,7 +2007,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_dockyard_estimations_2
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -2035,7 +2035,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+
 		completion_reward = {
 			random_core_state = {
 				limit = {
@@ -2099,7 +2099,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_cruiser_effort
 		icon = GFX_focus_generic_navy_battleship2
@@ -2115,11 +2115,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2137,7 +2137,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_battleship_effort
 		icon = GFX_goal_generic_navy_battleship
@@ -2154,11 +2154,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2175,7 +2175,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
@@ -2184,7 +2184,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = kas_battleship_effort
 		cost = 10
-		
+
 		available_if_capitulated = yes
 
 
@@ -2211,7 +2211,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_fleet_in_being
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -2220,7 +2220,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = kas_battleship_effort
 		cost = 10
-		
+
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
@@ -2264,11 +2264,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2325,7 +2325,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_submarine
 		icon = GFX_goal_generic_navy_submarine
@@ -2366,8 +2366,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = kas_koba_army
 		icon = GFX_goal_generic_small_arms
@@ -2382,11 +2382,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2397,7 +2397,7 @@ focus_tree = {
 			army_experience = 50
 		}
 	}
-	
+
 	focus = {
 		id = kas_good_tech
 		icon = GFX_goal_generic_military_sphere
@@ -2415,11 +2415,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2430,8 +2430,8 @@ focus_tree = {
 			add_ideas = kas_military_research
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = kas_armament
 		icon = GFX_goal_generic_army_artillery
@@ -2449,11 +2449,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2470,7 +2470,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_artillery
 		icon = GFX_goal_generic_army_artillery2
@@ -2487,11 +2487,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2508,7 +2508,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_infantry
 		icon = GFX_focus_ETH_freedom_at_gunpoint
@@ -2549,10 +2549,10 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	focus = {
 		id = kas_vehicles
 		icon = GFX_r56_goal_generic_modernizing_the_cavalry
@@ -2570,11 +2570,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2590,7 +2590,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_trains
 		icon = GFX_pan_atl_railroad
@@ -2608,11 +2608,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2628,7 +2628,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_tractor_tank_pipeline
 		icon = GFX_goal_generic_army_tanks
@@ -2646,11 +2646,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2674,12 +2674,12 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	focus = {
 		id = kas_good_doctrine
 		icon = GFX_goal_generic_army_doctrines
@@ -2697,11 +2697,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2712,7 +2712,7 @@ focus_tree = {
 			add_ideas = kas_doctrine_research
 		}
 	}
-	
+
 	focus = {
 		id = kas_blitzkrieg
 		icon = GFX_r56_goal_generic_tank_offensive
@@ -2756,7 +2756,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_synth_oil
 		icon = GFX_goal_generic_oil_refinery
@@ -2841,7 +2841,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_planning_speed
 		icon = GFX_r56_goal_generic_tank_map
@@ -2919,7 +2919,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_radio_spotting
 		icon = GFX_goal_generic_radar
@@ -2960,7 +2960,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_mass_assault
 		icon = GFX_goal_generic_railway_artillery
@@ -3004,7 +3004,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_manpower_recovery
 		icon = GFX_focus_SOV_mobilization_plan
@@ -3040,7 +3040,7 @@ focus_tree = {
 			add_ideas = kas_recovery_research
 		}
 	}
-	
+
 	focus = {
 		id = kas_fighter_investment
 		icon = GFX_goal_generic_air_fighter2
@@ -3076,7 +3076,7 @@ focus_tree = {
 			air_experience = 25
 		}
 	}
-	
+
 	focus = {
 		id = kas_fighter_range
 		icon = GFX_focus_generic_long_range_aircraft
@@ -3119,7 +3119,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_strat_bomber
 		icon = GFX_goal_generic_air_bomber
@@ -3160,7 +3160,7 @@ mutually_exclusive = { focus = kas_fighter_guns }
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_fighters
 		icon = GFX_goal_generic_air_fighter
@@ -3201,7 +3201,7 @@ mutually_exclusive = { focus = kas_fighter_guns }
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_fighter_guns
 		icon = GFX_focus_usa_escort_fighters
@@ -3244,7 +3244,7 @@ mutually_exclusive = { focus = kas_fighter_guns }
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_operational_integrity
 		icon = GFX_goal_generic_air_doctrine
@@ -3287,7 +3287,7 @@ mutually_exclusive = { focus = kas_fighter_guns }
 			}
 		}
 	}
-	
+
 	focus = {
 		id = kas_battlefield_support
 		icon = GFX_goal_generic_air_doctrine
@@ -3329,3 +3329,4 @@ mutually_exclusive = { focus = kas_fighter_guns }
 			}
 		}
 	}
+}

@@ -5,21 +5,21 @@ country_event = { #The Meru Alliance
 	desc = merukumari.1.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = {factor = 300}
 		name = merukumari.1.a
-		
+
 	}
 	option = {
 		ai_chance = {factor = 200}
 		name = merukumari.1.b
-		
+
 	}
 	option = {
 		ai_chance = {factor = 100}
 		name = merukumari.1.c
-		
+
 	}
 }
 country_event = { #The Kumari Alliance Proposal
@@ -29,7 +29,7 @@ country_event = { #The Kumari Alliance Proposal
 	desc = merukumari.2.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		KUM = {
 			country_event = { id = merukumari.5 }
@@ -43,8 +43,8 @@ country_event = { #Kumari gets to annex Meru Kumari
 	desc = merukumari.3.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		KUM = {
 			country_event = { id = merukumari.4 }
@@ -58,7 +58,7 @@ country_event = { #The Kumari Union
 	desc = merukumari.4.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		name = merukumari.4.a
 		971 = {
@@ -88,7 +88,7 @@ country_event = { #The Kumari Union
 		set_country_flag = MKU_annexed
 		add_war_support = 0.1
 		add_stability = 0.05
-		
+
 	}
 }
 
@@ -98,7 +98,7 @@ country_event = { #The Kumari Alliance Proposal - Kumari's Decision
 	desc = merukumari.5.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = {factor = 300}
 		name = merukumari.5.a
@@ -120,7 +120,7 @@ news_event = {
 	desc = merukumari.6.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		name = merukumari.6.a
 		hidden_effect = {
@@ -136,14 +136,14 @@ news_event = {
 	title = merukumari.7.t
 	desc = merukumari.7.d
 	picture = GFX_news_event_fighting_gangsters
-	
+
 	trigger = {
 		tag = ATL
 		has_country_flag = ATL_kaprastiak_flag
 		NOT = {has_idea = ATL_kaprastiak_at_war}
 	}
 	mean_time_to_happen = {days = 280}
-	
+
 	option = {
 		name = merukumari.7.a
 		if = {
@@ -174,12 +174,12 @@ news_event = {
 	id = merukumari.8
 	title = merukumari.8.t
 	desc = merukumari.8.d
-	
+
 	picture = GFX_news_event_fighting_gangsters
-	
+
 	trigger = {tag = ATL has_country_flag = ATL_kaprastiak_flag}
 	mean_time_to_happen = {days = 100}
-	
+
 	option = {
 		name = merukumari.8.a
 		if = {
@@ -251,7 +251,7 @@ country_event = {
 	desc = merukumari.9.d
 	picture = GFX_news_event_fighting_gangsters
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = {factor = 100}
 		name = merukumari.9.a

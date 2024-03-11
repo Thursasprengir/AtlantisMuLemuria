@@ -26,9 +26,9 @@ focus_tree = {
 			add_political_power = -50
 		}
 	}
-	
+
 	#####The 4 paths#####
-	
+
 	focus = {
 		id = MKU_appeal_west #general help from the West
 		icon = GFX_goal_support_democracy
@@ -37,7 +37,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_hungry_years }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_appeal_communism
 				focus = MKU_appeal_locally
 				focus = MKU_dig_ourselves_out
@@ -62,7 +62,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_hungry_years }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_appeal_communism
 				focus = MKU_appeal_west
 				focus = MKU_dig_ourselves_out
@@ -113,7 +113,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_hungry_years }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_appeal_west
 				focus = MKU_appeal_locally
 				focus = MKU_dig_ourselves_out
@@ -163,7 +163,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_hungry_years }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_appeal_communism
 				focus = MKU_appeal_west
 				focus = MKU_appeal_locally
@@ -179,10 +179,10 @@ focus_tree = {
 			add_popularity = { ideology = neutrality popularity = 0.15 }
 		}
 	}
-	
+
 	#####West/Democracy Help#####
-	
-	
+
+
 	focus = {
 		id = MKU_west_technical_aid #get tech increasing
 		icon = GFX_focus_generic_the_giant_wakes
@@ -190,7 +190,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		prerequisite = { focus = MKU_appeal_west }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -204,7 +204,7 @@ focus_tree = {
 		add_ideas = {MKU_western_tech_aid}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_material_aid #build factories, make things
 		icon = GFX_focus_generic_industry_2
@@ -212,7 +212,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		prerequisite = { focus = MKU_appeal_west }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -243,7 +243,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_humiliating_reforms #foreign things are happening, people don't like it
 		icon = GFX_r56_goal_generic_armed_protest
@@ -253,7 +253,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_material_aid }
 		prerequisite = { focus = MKU_west_technical_aid }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -266,7 +266,7 @@ focus_tree = {
 			add_political_power = -120
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_upper_class_discontent
 		icon = GFX_r56_goal_GRE_opposition
@@ -275,7 +275,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_humiliating_reforms }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -288,7 +288,7 @@ focus_tree = {
 			add_stability = -0.05
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_urban_discontent
 		icon = GFX_r56_goal_generic_citizens
@@ -297,7 +297,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_humiliating_reforms }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -310,7 +310,7 @@ focus_tree = {
 			add_stability = -0.05
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_rural_discontent
 		icon = GFX_overturners
@@ -319,7 +319,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_humiliating_reforms }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -332,7 +332,7 @@ focus_tree = {
 			add_stability = -0.05
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_societal_reorganization
 		icon = GFX_r56_goal_FRA_reynaud_economic_reforms
@@ -343,7 +343,7 @@ focus_tree = {
 		prerequisite = { focus = MKU_west_upper_class_discontent }
 		prerequisite = { focus = MKU_west_urban_discontent }
 		prerequisite = { focus = MKU_west_rural_discontent }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -359,7 +359,7 @@ focus_tree = {
 			add_popularity = { ideology = democratic popularity = 0.10 }
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_technical_breakthroughs_1
 		icon = GFX_goal_civilian_production
@@ -368,7 +368,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_societal_reorganization }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -382,7 +382,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_technical_breakthroughs_2
 		icon = GFX_r56_goal_SIA_improve_industry
@@ -391,7 +391,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_technical_breakthroughs_1 }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -405,7 +405,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_technical_breakthroughs_3
 		icon = GFX_r56_goal_generic_power_plant
@@ -415,7 +415,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_technical_breakthroughs_2 }
 		prerequisite = { focus = MKU_west_industrial_growth_2 }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -429,7 +429,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_industrial_growth_1
 		icon = GFX_factoryplanning
@@ -437,7 +437,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 		prerequisite = { focus = MKU_west_societal_reorganization }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -467,7 +467,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_industrial_growth_2
 		icon = GFX_goal_italy_bring_industry_to_the_mezzogiorno
@@ -475,7 +475,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		prerequisite = { focus = MKU_west_industrial_growth_1 }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -505,7 +505,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_industrial_growth_3
 		icon = GFX_r56_focus_generic_expansion_of_new_towns
@@ -514,7 +514,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = MKU_west_industrial_growth_2 }
 		prerequisite = { focus = MKU_west_technical_breakthroughs_2 }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -544,7 +544,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_military_advances_1
 		icon = GFX_r56_goal_generic_army_elite
@@ -553,7 +553,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_societal_reorganization }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -580,7 +580,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_military_advances_2
 		icon = GFX_r56_goal_FRA_increase_military_spendings
@@ -589,7 +589,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_military_advances_1 }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -610,7 +610,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = MKU_west_military_advances_3
 		icon = GFX_r56_goal_generic_large_fleet
@@ -619,7 +619,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_military_advances_2 }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -641,7 +641,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_west_military_advances_4
 		icon = GFX_r56_goal_generic_zero_blue
@@ -650,7 +650,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_west_military_advances_3 }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -669,10 +669,10 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	#####Local Help#####
-	
+
 	focus = {
 		id = MKU_strengthen_ties #draw a bit closer to Kumari
 		icon = GFX_goal_localalliance
@@ -681,7 +681,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_appeal_locally }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -694,7 +694,7 @@ focus_tree = {
 			add_popularity = { ideology = mandalism popularity = 0.15 }
 		}
 	}
-	
+
 	focus = {
 		id = MKU_military_ties_only #either alliance as strong Kumari + weak Meru Kumari, or Kumari overlordship
 		icon = GFX_r56_focus_generic_army_modernizations
@@ -703,19 +703,19 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_strengthen_ties }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_complete_allies
 				focus = MKU_cultural_ties_only
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 		KUM = { create_faction = the_solemn_pact }
 		}
 	}
-	
+
 	focus = {
 		id = MKU_complete_allies #Mandalist path, eventual integration possible
 		icon = GFX_goal_generic_aristocratic_cooperation
@@ -724,14 +724,14 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_strengthen_ties }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_military_ties_only
 				focus = MKU_cultural_ties_only
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_political_power = 100
 			KUM = {
@@ -746,7 +746,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_cultural_ties_only #allows for equal alliance with Kumari
 		icon = GFX_r56_goal_AUS_emergency_powers
@@ -755,21 +755,21 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_strengthen_ties }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_military_ties_only
 				focus = MKU_complete_allies
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_stability = 0.05
 		}
 	}
-	
-	
-	
+
+
+
 	focus = {
 		id = MKU_integrated_defense #Stay independent, but allied, with Kumari
 		icon = GFX_r56_focus_generic_collective_defense
@@ -778,18 +778,18 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_military_ties_only }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_kumari_umbrella
 				}
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		completion_reward = {
 			KUM = { add_to_faction = MKU }
 		}
 	}
-	
+
 	focus = {
 		id = MKU_kumari_umbrella #Become a protectorate of Kumari
 		icon = GFX_r56_goal_generic_class_a_reservists
@@ -798,18 +798,18 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_military_ties_only }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				focus = MKU_integrated_defense
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 		KUM = { puppet = MKU }
 		}
 	}
-	
+
 	focus = {
 		id = MKU_new_military_factories
 		icon = GFX_r56_goal_generic_manufacturers_cooperation
@@ -817,19 +817,19 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 			focus = MKU_integrated_defense
 			focus = MKU_kumari_umbrella
 			focus = MKU_political_will
 			focus = MKU_we_lead
 			focus = MKU_grand_kumari_alliance
 				}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			random_owned_state = {
 				limit = {
@@ -863,8 +863,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = MKU_new_unit_designs
 		icon = GFX_r56_goal_generic_license_tanks
@@ -872,13 +872,13 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 			focus = MKU_integrated_defense
 			focus = MKU_kumari_umbrella
 			focus = MKU_political_will
 			focus = MKU_grand_kumari_alliance
 				}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -909,17 +909,17 @@ focus_tree = {
 				uses = 1
 				category = motorized_equipment
 			}
-		
+
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 1
 				category = armor
 			}
-		
+
 		}
 	}
-	
+
 	focus = {
 		id = MKU_more_military_production
 		icon = GFX_r56_goal_polish_wartime_industry
@@ -928,12 +928,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_new_military_factories}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			random_owned_state = {
 				limit = {
@@ -967,9 +967,9 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
-		id = MKU_southern_defenses #fortify southern border w/ BLM
+		id = MKU_southern_defenses #fortify southern border w/ CLM
 		icon = GFX_r56_goal_generic_city_chain_forts
 		x = 8
 		y = 6
@@ -977,12 +977,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_new_military_factories}
 		prerequisite = { focus = MKU_new_unit_designs}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			1044 = {
 			add_building_construction = {
@@ -1035,7 +1035,7 @@ focus_tree = {
 		}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_southwestern_defenses #fortify southwestern border w/ AKM
 		icon = GFX_goal_fortificationpush
@@ -1044,12 +1044,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_southern_defenses}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 		971 = {
 			add_building_construction = {
@@ -1117,11 +1117,11 @@ focus_tree = {
 				level = 2
 			}
 		}
-		
+
 		}
 	}
-		
-	
+
+
 	focus = {
 		id = MKU_political_will #sucks away all political power for X amount of time
 		icon = GFX_r56_goal_generic_election_chaos
@@ -1130,7 +1130,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_complete_allies }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1139,10 +1139,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -250
 			}
-		
+
 	}
-		
-	
+
+
 	focus = {
 		id = MKU_one_people_one_government #conversion to mandalism
 		icon = GFX_r56_goal_FRA_mobilisation
@@ -1151,18 +1151,18 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_political_will }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_popularity = { ideology = mandalism popularity = 0.10 }
 		}
 	}
-		
-	
+
+
 	focus = {
 		id = MKU_means_of_production
 		icon = GFX_r56_goal_FRA_VIC_rationing
@@ -1171,12 +1171,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_one_people_one_government }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			random_owned_state = {
 				limit = {
@@ -1210,8 +1210,8 @@ focus_tree = {
 			}
 		}
 	}
-		
-	
+
+
 	focus = {
 		id = MKU_local_komissars
 		icon = GFX_r56_goal_generic_communist_victory
@@ -1220,18 +1220,18 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_one_people_one_government }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_stability = 0.05
 		}
 	}
-		
-	
+
+
 	focus = {
 		id = MKU_political_consolidation #get some political points and stablization
 		icon = GFX_r56_goal_generic_communist_visible_hand
@@ -1240,17 +1240,17 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_local_komissars }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 		add_stability = 0.15
 		}
-	}	
-	
+	}
+
 	focus = {
 		id = MKU_kumari_union #gives Kumari the option to annex us
 		icon = GFX_r56_goal_generic_fist_with_flags
@@ -1261,12 +1261,12 @@ focus_tree = {
 		prerequisite = { focus = MKU_political_consolidation }
 		prerequisite = { focus = MKU_means_of_production}
 		available = {is_in_faction_with = KUM}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			if = {
 				random_owned_controlled_state = {
@@ -1277,7 +1277,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_we_lead #MKU tries to take the leadership of an MKU/Kumari alliance
 		icon = GFX_r56_goal_SIA_control_army_2
@@ -1286,7 +1286,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_cultural_ties_only }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 			focus = MKU_grand_kumari_alliance
 				}
 		ai_will_do = {
@@ -1298,11 +1298,11 @@ focus_tree = {
 					can_create_factions = yes
 				}
 			create_faction = MKU_meru_alliance
-					
+
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = MKU_grand_kumari_alliance #MKU and Kumari form a local power bloc
 		icon = GFX_r56_goal_generic_morale_bonus
@@ -1311,7 +1311,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_cultural_ties_only }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 			focus = MKU_we_lead
 				}
 		ai_will_do = {
@@ -1319,12 +1319,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			KUM = { 
+			KUM = {
 				country_event = { id = merukumari.2 }
 				}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_military_stabilization_act #MKU military doesn't like this turn of events
 		icon = GFX_r56_goal_generic_army_mobilization
@@ -1333,9 +1333,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_we_lead
-						 focus = MKU_grand_kumari_alliance 
+						 focus = MKU_grand_kumari_alliance
 							}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1343,10 +1343,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
-			add_ideas = MKU_conscription1		
+			add_ideas = MKU_conscription1
 		}
 	}
-	
+
 	focus = {
 		id = MKU_remind_obligations #Try to rely on their sense of duty
 		icon = GFX_r56_goal_generic_centralize_power
@@ -1364,10 +1364,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
-			add_ideas = MKU_conscription_large		
+			add_ideas = MKU_conscription_large
 		}
 	}
-	
+
 	focus = {
 		id = MKU_rely_loyalty #Try to rely on their loyalty
 		icon = GFX_r56_goal_generic_manpower
@@ -1385,10 +1385,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
-			add_ideas = MKU_conscription_tiny		
+			add_ideas = MKU_conscription_tiny
 		}
 	}
-	
+
 	focus = {
 		id = MKU_military_response #huge hit to democrats, communists, and fascists in government
 		icon = GFX_r56_goal_generic_military_government
@@ -1396,7 +1396,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 			focus = MKU_remind_obligations
 			focus = MKU_rely_loyalty
 					}
@@ -1412,8 +1412,8 @@ focus_tree = {
 			add_stability = 0.15
 		}
 	}
-	
-	
+
+
 	#####Communism Help#####
 
 	focus = {
@@ -1424,7 +1424,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_appeal_communism }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1446,12 +1446,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_glorious_communist_future }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			set_political_party = {
 				ideology = communism
@@ -1472,14 +1472,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_soviet_brethren }
 		bypass = {
-			992 = { NOT = { is_controlled_by = ROOT } } 
+			992 = { NOT = { is_controlled_by = ROOT } }
 		}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			992 = {
 				if = {
@@ -1503,7 +1503,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_soviet_brethren }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1533,7 +1533,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_soviet_naval_bases }
 		prerequisite = { focus = MKU_soviet_air_bases }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1573,7 +1573,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_appeal_communism }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1595,7 +1595,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_entrenched_local_attitudes }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1618,7 +1618,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_placate_masses }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1657,7 +1657,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_industrial_revolution }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1715,7 +1715,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_industrial_revolution_2 }
 		prerequisite = { focus = MKU_red_production_advisors }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1733,7 +1733,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_soviet_technological_revolution }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1757,7 +1757,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_soviet_technological_revolution }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1774,7 +1774,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_soviet_technological_revolution }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -1814,12 +1814,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_soviet_technological_revolution }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			971 = {
 				add_building_construction = {
@@ -1852,12 +1852,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_placate_masses }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			ROOT = {
 				add_opinion_modifier = {
@@ -1883,12 +1883,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_badboy_kumari }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			971 = {
 				add_building_construction = {
@@ -1936,10 +1936,10 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	#####Self Help#####
-	
+
 	focus = {
 		id = MKU_mountain_troops #Meru Kumari prepares for war with mountain neighbors
 		icon = GFX_goal_r56_generic_mountain_warfare
@@ -1948,12 +1948,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_dig_ourselves_out }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1.5
@@ -1962,7 +1962,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_mountain_supply #Meru Kumari prepares infrastructure into mts
 		icon = GFX_r56_goal_generic_modernizing_the_cavalry
@@ -1971,7 +1971,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_mountain_troops }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -2004,7 +2004,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_special_forces #Meru Kumari prepares special forces
 		icon = GFX_double_daggers
@@ -2013,12 +2013,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_dig_ourselves_out }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1.5
@@ -2027,8 +2027,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = MKU_support_battalions #Meru Kumari prepares artillery and tanks
 		icon = GFX_r56_goal_generic_army_mobilization2
@@ -2037,12 +2037,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_dig_ourselves_out }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 
 			add_tech_bonus = {
@@ -2052,7 +2052,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_military_industry #Meru Kumari prepares military-industrial complex
 		icon = GFX_r56_focus_generic_study_foreign_tanks
@@ -2061,12 +2061,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_support_battalions }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			if = {
 				random_owned_controlled_state = {
@@ -2087,7 +2087,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_meru_kumari_forever #Meru Kumari shifts national outlook to fascist
 		icon = GFX_goal_italy_victory_in_the_civil_war
@@ -2097,17 +2097,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_military_industry }
 		prerequisite = { focus = MKU_mountain_supply }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_war_support = .10
 		}
 	}
-	
+
 	focus = {
 		id = MKU_demand_onipravelu #Meru Kumari starts absorbing surrounding areas
 		icon = GFX_r56_goal_generic_land_seizure
@@ -2116,17 +2116,17 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_meru_kumari_forever }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_state_claim = 1047
 		}
 	}
-	
+
 	focus = {
 		id = MKU_demand_hakarnisha #Meru Kumari starts absorbing surrounding areas
 		icon = GFX_r56_goal_generic_land_seizure
@@ -2135,17 +2135,17 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_meru_kumari_forever }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_state_claim = 1020
 		}
 	}
-	
+
 	focus = {
 		id = MKU_insult_neighbors #gain political capital by pissing off neighbors
 		icon = GFX_r56_goal_generic_backstab
@@ -2154,12 +2154,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_meru_kumari_forever }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			ROOT = {
 				add_opinion_modifier = {
@@ -2199,11 +2199,11 @@ focus_tree = {
 			}
 			ROOT = {
 				add_opinion_modifier = {
-					target = BLM
+					target = CLM
 					modifier = large_decrease
 				}
 			}
-			BLM = {
+			CLM = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = large_decrease
@@ -2211,7 +2211,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_consolidation_civ #consolidate gains, civilian industry
 		icon = GFX_goal_generic_agrarian_reform_focus
@@ -2221,12 +2221,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_demand_onipravelu }
 		prerequisite = { focus = MKU_demand_hakarnisha }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 					random_owned_state = {
 				limit = {
@@ -2260,7 +2260,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_consolidation_infra #consolidate gains, build infrastructure
 		icon = GFX_r56_goal_generic_public_works_A
@@ -2270,7 +2270,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_demand_onipravelu }
 		prerequisite = { focus = MKU_demand_hakarnisha }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
@@ -2303,7 +2303,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = MKU_political_gains #gain political capital
 		icon = GFX_goal_mexico_open_the_borders
@@ -2311,19 +2311,19 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MKU_consolidation_civ 
+		prerequisite = { focus = MKU_consolidation_civ
 						 focus = MKU_consolidation_infra }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			add_political_power = 150
 		}
 	}
-	
+
 	focus = {
 		id = MKU_consolidation_mil #consolidate gains, military industry
 		icon = GFX_r56_goal_generic_infantry_offensive
@@ -2333,12 +2333,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_demand_onipravelu }
 		prerequisite = { focus = MKU_demand_hakarnisha }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 					random_owned_state = {
 				limit = {
@@ -2380,12 +2380,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MKU_consolidation_mil }
-		mutually_exclusive = { 
+		mutually_exclusive = {
 				}
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 		add_research_slot = 1
 		}

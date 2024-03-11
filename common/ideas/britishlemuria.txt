@@ -1,13 +1,13 @@
 ideas = {
 	political_advisor = {
-			BLM_peterssen = {
+			CLM_peterssen = {
 
 			picture = generic_political_advisor_europe_2
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			cost = 150
 
 			traits = { silent_workhorse }
@@ -17,94 +17,94 @@ ideas = {
 				}
 			}
 		}
-		BLM_fascist_politician = {
-			
+		CLM_fascist_politician = {
+
 			allowed = {
-				original_tag = BLM
-				
+				original_tag = CLM
+
 			}
 			available = {
 			}
 
 			picture = generic_political_advisor_europe_4
-			
+
 			traits = { fascist_demagogue }
-		
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		BLM_communist_politician = {
-			
+		CLM_communist_politician = {
+
 			allowed = {
-				original_tag = BLM
-				
+				original_tag = CLM
+
 			}
 			available = {
 			}
 
 			picture = generic_political_advisor_europe_4
-			
+
 			traits = { communist_revolutionary }
-		
+
 			do_effect = {
 				NOT = {
 					has_government = communism
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		BLM_democratic_politician = {
-			
+		CLM_democratic_politician = {
+
 			allowed = {
-				original_tag = BLM
-				
+				original_tag = CLM
+
 			}
 			available = {
 			}
 
 			picture = generic_political_advisor_europe_4
-			
+
 			traits = { democratic_reformer }
-		
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		BLM_loyalist_politician = {
-			
+		CLM_loyalist_politician = {
+
 			allowed = {
-				original_tag = BLM
-				
+				original_tag = CLM
+
 			}
 			available = {
 			}
 
 			picture = generic_political_advisor_europe_4
-			
+
 			traits = { monarchist_media_mogul }
-		
+
 			do_effect = {
 				NOT = {
 					has_government = neutrality
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 0
 			}
@@ -115,11 +115,11 @@ ideas = {
 		markusthomson = {
 
         allowed = {
-            original_tag = BLM
+            original_tag = CLM
         }
 
         available = {
-            has_completed_focus = BLM_reform_the_army
+            has_completed_focus = CLM_reform_the_army
         }
 
         traits = {
@@ -127,44 +127,44 @@ ideas = {
         }
 
         on_add = {
-            
+
         }
 
         do_effect = {
-         
+
         }
 
         ai_will_do = {
             factor = 0
         }
     }
-					
 
-		BLM_offensive_2 = {
+
+		CLM_offensive_2 = {
 
 			picture = generic_army_south_america_3
-			
+
 			allowed = {
-				original_tag = BLM
-			}		
-			
+				original_tag = CLM
+			}
+
 			traits = { army_chief_offensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		BLM_defensive_2 = {
+		CLM_defensive_2 = {
 
 			picture = generic_army_south_america_2
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -173,31 +173,31 @@ ideas = {
 
 	air_chief = {
 
-		BLM_ground_support_2 = {
+		CLM_ground_support_2 = {
 
 			picture = generic_air_south_america_3
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			traits = { air_chief_ground_support_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		BLM_night_ops_2 = {
+		CLM_night_ops_2 = {
 
 			picture = generic_air_south_america_2
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			traits = { air_chief_night_operations_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -207,31 +207,31 @@ ideas = {
 
 	navy_chief = {
 
-		BLM_maneuver_2 = {
+		CLM_maneuver_2 = {
 
 			picture = generic_navy_south_america_2
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-					
+
 			traits = { navy_chief_maneuver_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		BLM_commerce_raiding_2 = {
+		CLM_commerce_raiding_2 = {
 
 			picture = generic_navy_south_america_1
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-					
+
 			traits = { navy_chief_commerce_raiding_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -240,115 +240,115 @@ ideas = {
 
 	high_command = {
 
-		BLM_regrouping_2 = {
+		CLM_regrouping_2 = {
 			ledger = army
 			picture = generic_army_south_america_1
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			traits = { army_regrouping_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
-		BLM_logistics_2 = {
+
+		CLM_logistics_2 = {
 			ledger = army
 			picture = generic_army_south_america_4
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			traits = { army_logistics_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		BLM_close_air_support_2 = {
+		CLM_close_air_support_2 = {
 			ledger = air
 			picture = generic_air_south_america_1
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			traits = { air_close_air_support_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		BLM_capital_ship_2 = {
+		CLM_capital_ship_2 = {
 			ledger = navy
 			picture = generic_navy_south_america_2
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			traits = { navy_capital_ship_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-	}	
+	}
 
 	theorist = {
-		BLM_mil_theorist = {
+		CLM_mil_theorist = {
 			ledger = army
 			picture = generic_army_south_america_5
 
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			research_bonus = {
 				land_doctrine = 0.10
 			}
-			
+
 			traits = { military_theorist }
 		}
-		
-		BLM_naval_theorist = {
+
+		CLM_naval_theorist = {
 			ledger = navy
 			picture = generic_navy_south_america_1
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			research_bonus = {
 				naval_doctrine = 0.10
 			}
-			
-			traits = { naval_theorist }
-		}	
 
-		BLM_air_theorist = {
+			traits = { naval_theorist }
+		}
+
+		CLM_air_theorist = {
 			ledger = air
 			picture = generic_air_south_america_1
-			
+
 			allowed = {
-				original_tag = BLM
+				original_tag = CLM
 			}
-			
+
 			research_bonus = {
 				air_doctrine = 0.10
 			}
-			
+
 			traits = { air_warfare_theorist }
 		}
 
 	}
-		
+
 	country = {
 		nationalist_tensions = {
 			picture = generic_political_advisor_europe_2
@@ -361,14 +361,14 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_factor = -0.25
 				war_support_factor = -0.25
-				
+
 			}
 			rule = {
-				
+
 			}
 		}
 		the_old_order = {
@@ -381,13 +381,13 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_gain = 0.25
-				
+
 			}
 			rule = {
-				
+
 			}
 		}
 		equal_peoples = {
@@ -400,17 +400,17 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				stability_factor = 0.15
-				
+
 			}
 			rule = {
 			}
 			}
-		
+
 		######consumer_goods_factor
-		
+
 		payingbritainback = {
 			allowed = {
 				always = no
@@ -421,15 +421,15 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				consumer_goods_factor = 0.15
-				
+
 			}
 			rule = {
 			}
 			}
-		
+
 		britishlemurianpayments = {
 			allowed = {
 				always = no
@@ -440,16 +440,16 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				consumer_goods_factor = -0.05
-				
+
 			}
 			rule = {
 			}
 			}
-		
-		
+
+
 		the_imperial_order = {
 			allowed = {
 				always = no
@@ -460,16 +460,16 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_gain = 0.25
 				stability_factor = 0.1
 			}
 			rule = {
-				
+
 			}
 		}
-		BLM_final = {
+		CLM_final = {
 			allowed = {always = no}
 			allowed_civil_war = {always = yes}
 			removal_cost = -1
@@ -477,14 +477,14 @@ ideas = {
 				stability_factor = 0.1
 			}
 		}
-		BLM_final2 = {
+		CLM_final2 = {
 			allowed = {always = no}
 			allowed_civil_war = {always = yes}
 			removal_cost = -1
 			modifier = {
 				political_power_gain = 0.25
 				stability_factor = 0.1
-				drift_defence_factor = 0.25 
+				drift_defence_factor = 0.25
 			}
 		}
 		imperial_garrison = {
@@ -497,16 +497,16 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			research_bonus = {
 				battlefield_support_tree = 0.1
 			}
-			
+
 			modifier = {
 				stability_factor = 0.05
 			}
 			rule = {
-				
+
 			}
 		}
 		better_imperial_garrison = {
@@ -519,16 +519,16 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			research_bonus = {
 				battlefield_support_tree = 0.1
 			}
-			
+
 			modifier = {
 				stability_factor = 0.10
 			}
 			rule = {
-				
+
 			}
 		}
 		newbritisheducation = {
@@ -551,7 +551,7 @@ ideas = {
 		  rule = {
 		  }
 	}
-	
+
 	###############royal industry should have a construction bonus
 	royalindustry = {
 		allowed = { always = no }
@@ -563,6 +563,6 @@ ideas = {
 		  rule = {
 		  }
 	}
-	
+
 }
 }

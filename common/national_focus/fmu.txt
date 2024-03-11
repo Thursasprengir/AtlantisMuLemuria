@@ -22,7 +22,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 1800 }
 
-focus = {
+	focus = {
 		id = FMU_reject_versailles
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		mutually_exclusive = {
@@ -47,7 +47,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
 			add_stability = -0.15
@@ -82,7 +82,7 @@ focus = {
 	}
 
 
-focus = {
+	focus = {
 		id = FMU_GER_relations
 		icon = GFX_focus_chi_mission_to_germany
 		x = 0
@@ -107,7 +107,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		
+
 		completion_reward = {
 			GER = {
 				add_opinion_modifier = {
@@ -122,7 +122,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_sudencreutz_volk
 		icon = GFX_goal_generic_major_alliance
 		x = -1
@@ -140,7 +140,7 @@ focus = {
 		}
 		available = {
 			MNU = {
-				exists = no 
+				exists = no
 			}
 		}
 
@@ -158,7 +158,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_federation_of_brothers
 		icon = GFX_goal_generic_alliance
 		x = 1
@@ -180,16 +180,16 @@ focus = {
 
 		#bypass = {
 		#date > 1936.4.3
-		#}  
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		
+
 		completion_reward = {
 			NYB = { country_event = fmu.24 }
-			NTR = { country_event = fmu.24 } 
+			NTR = { country_event = fmu.24 }
 			KRL = { country_event = fmu.24 }
 		}
 	}
@@ -226,8 +226,8 @@ focus = {
 			}
 		}
 	}
-	
-focus = {
+
+	focus = {
 		id = FMU_emphasize_german_identity
 		icon = GFX_focus_ger_reichskommisariats
 		x = -4
@@ -252,14 +252,14 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		
+
 		completion_reward = {
 			add_stability = 0.1
 			add_ideas = FMU_we_are_german
 		}
-	}	
+	}
 
-focus = {
+	focus = {
 		id = FMU_kriegspfad
 		icon = GFX_focus_generic_combined_arms
 		x = 0
@@ -292,7 +292,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_german_peoples_compact
 		icon = GFX_goal_generic_national_unity
 		x = 4
@@ -305,9 +305,9 @@ focus = {
 		ai_will_do = {
 			factor = 40
 		}
-		available = {	
+		available = {
 				is_subject = no
-			
+
 			GER = {
 				OR = {
 					has_government = fascism
@@ -331,10 +331,10 @@ focus = {
 					has_government = democratic
 				}
 			}
-			
+
 			is_in_faction_with = GER
 		}
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -343,12 +343,12 @@ focus = {
 			GER = {
 				give_guarantee = FMU
 			}
-			
+
 			give_guarantee = GER
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_germanic_research_pact
 		icon = GFX_goal_tfv_generic_tech_sharing
 		x = 4
@@ -361,7 +361,7 @@ focus = {
 		ai_will_do = {
 			factor = 40
 		}
-		available = {	
+		available = {
 			is_in_faction_with = GER
 		}
 
@@ -381,7 +381,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_ocean_destiny
 		icon = GFX_focus_generic_cruiser2
 		x = -2
@@ -415,7 +415,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_pitkairn_schiffwerke
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = -2
@@ -468,11 +468,11 @@ focus = {
 					}
 					add_extra_state_shared_building_slots = 2
 				}
-			}			
+			}
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_ship_bounties
 		icon = GFX_focus_mex_privatisation
 		x = -4
@@ -503,7 +503,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_weapons_drills
 		icon = GFX_goal_generic_navy_cruiser
 		x = -4
@@ -545,14 +545,14 @@ focus = {
 				uses = 1
 				technology = damage_control_1
 				technology = damage_control_2
-				}				
-			}			
+				}
+			}
 			navy_experience = 30
 			#if MtG - research bonus on Fire Control methods and Damage Control Kiran:not possible Abbus:Possible
 			}
 		}
 
-focus = {
+	focus = {
 		id = FMU_success_breeds_success
 		icon = GFX_goal_support_fascism
 		x = -4
@@ -583,12 +583,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			add_political_power = 200
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_schimmelpferds_address
 		icon = GFX_goal_generic_admirality
 		x = -3
@@ -627,7 +627,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_austral_ocean
 		icon = GFX_focus_generic_navy_battleship2
 		x = -5
@@ -681,7 +681,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_defend_defend_defend
 		icon = GFX_goal_generic_defence
 		x = -3
@@ -715,8 +715,8 @@ focus = {
 			#large bonus to neutral and democratic parties
 		}
 	}
-	
-focus = {
+
+	focus = {
 		id = FMU_walls_of_steel
 		icon = GFX_goal_generic_construct_military
 		x = -1
@@ -763,18 +763,18 @@ focus = {
 				}
 			capital_scope = {
 				create_unit = {
-					division = "name = \"1. Seelande-Division\" division_template = \"Seelande-Division\" start_experience_factor = 0.7"  
+					division = "name = \"1. Seelande-Division\" division_template = \"Seelande-Division\" start_experience_factor = 0.7"
 					owner = ROOT
 				}
 				create_unit = {
-					division = "name = \"2. Seelande-Division\" division_template = \"Seelande-Division\" start_experience_factor = 0.7"  
+					division = "name = \"2. Seelande-Division\" division_template = \"Seelande-Division\" start_experience_factor = 0.7"
 					owner = ROOT
 				}
 			}
 		}
-	}	
+	}
 
-focus = {
+	focus = {
 		id = FMU_veranderungen_tag
 		icon = GFX_focus_focus_fra_fascist_threat
 		x = -3
@@ -808,7 +808,7 @@ focus = {
 				ideology = democratic
 				size = 0.8
 				#only_own_territory = no
-				#capital = 
+				#capital =
 				states = {
 				}
 				keep_political_leader = yes
@@ -820,7 +820,7 @@ focus = {
 					army_ratio = 0.5
 					navy_ratio = 0.0
 					air_ratio = 0.3
-				
+
 				}
 			}
 			#if neutral + democratic <30% = massive civil war
@@ -829,7 +829,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_wellington_raid
 		icon = GFX_red_sails
 		x = -2
@@ -865,14 +865,14 @@ focus = {
 		completion_reward = {
 				add_equipment_to_stockpile = {
 				type = convoy
-				amount = 300	
+				amount = 300
 			}
 			NZL = {
 				add_equipment_to_stockpile = {
 				type = convoy
 				amount = -300
-				} 
-			}			
+				}
+			}
 			#remove 300 convoys from NZL and give to FMU
 			every_country = {
 				limit = {has_war_with = FMU}
@@ -885,7 +885,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_unternehmen_lowenherz
 		icon = GFX_goal_generic_navy_battleship
 		x = -5
@@ -938,7 +938,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_pacific_dominance
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = -2
@@ -970,7 +970,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_southern_atlantic_gambit
 		icon = GFX_goal_generic_navy_submarine
 		x = 0
@@ -1003,7 +1003,7 @@ focus = {
 	}
 
 
-focus = {
+	focus = {
 		id = FMU_our_land
 		icon = GFX_goal_generic_authority
 		x = 2
@@ -1038,7 +1038,7 @@ focus = {
 	}
 
 
-focus = {
+	focus = {
 		id = FMU_never_a_neutral_nation
 		icon = GFX_goal_generic_barrack_industry
 		x = 0
@@ -1098,13 +1098,13 @@ focus = {
 					}
 					add_extra_state_shared_building_slots = 2
 				}
-			}			
+			}
 			#bonus resource production, reduce resources to market #to much
 			add_ideas = FMU_our_land_1
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_prepare_take_southern_coasts
 		icon = GFX_goal_generic_attack_cnj
 		x = -2
@@ -1128,7 +1128,7 @@ focus = {
 			CNJ = {
 				OR = {
 					exists = no
-					is_subject = yes		
+					is_subject = yes
 					AND = {
 						is_subject = no
 						is_in_faction_with = ROOT
@@ -1151,7 +1151,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_spine_of_the_continent
 		icon = GFX_goal_generic_attack_gop
 		x = 0
@@ -1160,7 +1160,7 @@ focus = {
 		prerequisite = { focus = FMU_never_a_neutral_nation }
 
 		cost = 5
-		
+
 		ai_will_do = {
 			factor = 40
 		}
@@ -1175,7 +1175,7 @@ focus = {
 			GOP = {
 				OR = {
 					exists = no
-					is_subject = yes		
+					is_subject = yes
 					AND = {
 						is_subject = no
 						is_in_faction_with = ROOT
@@ -1199,7 +1199,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_northeastern_offensive
 		icon = GFX_goal_generic_occupy_start_war
 		x = 2
@@ -1223,7 +1223,7 @@ focus = {
 			TIQ = {
 				OR = {
 					exists = no
-					is_subject_of = FMU			
+					is_subject_of = FMU
 					AND = {
 						is_subject = no
 						is_in_faction_with = ROOT
@@ -1247,7 +1247,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_western_offensive
 		icon = GFX_goal_generic_attack_tod
 		x = -2
@@ -1288,7 +1288,7 @@ focus = {
 				TOD = {
 					OR = {
 						exists = no
-						is_subject = yes			
+						is_subject = yes
 						AND = {
 							is_subject = no
 							is_in_faction_with = ROOT
@@ -1319,7 +1319,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_mines_of_baraga
 		icon = GFX_goal_generic_attack_brg
 		x = 0
@@ -1343,7 +1343,7 @@ focus = {
 			BRG = {
 				OR = {
 					exists = no
-					is_subject = yes			
+					is_subject = yes
 					AND = {
 						is_subject = no
 						is_in_faction_with = ROOT
@@ -1368,7 +1368,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_unternehmen_faust
 		icon = GFX_goal_generic_attack_muu
 		x = -1
@@ -1394,7 +1394,7 @@ focus = {
 				OR = {
 					exists = no
 					is_subject = yes
-					is_subject_of = FMU			
+					is_subject_of = FMU
 					AND = {
 						is_subject = no
 						is_in_faction_with = ROOT
@@ -1418,7 +1418,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_unternehmen_kreissage
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 2
@@ -1442,7 +1442,7 @@ focus = {
 			MCH = {
 				OR = {
 					exists = no
-					is_subject = yes		
+					is_subject = yes
 					AND = {
 						is_subject = no
 						is_in_faction_with = ROOT
@@ -1466,7 +1466,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_dagger_in_the_back
 		icon = GFX_goal_generic_forceful_treaty
 		x = 2
@@ -1508,7 +1508,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_east_to_west_invasion
 		icon = GFX_focus_attack_japan
 		x = 0
@@ -1539,7 +1539,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			857 = {	
+			857 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -1550,7 +1550,7 @@ focus = {
 					}
 				}
 			}
-			858 = {	
+			858 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -1561,7 +1561,7 @@ focus = {
 					}
 				}
 			}
-			860 = {	
+			860 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -1572,7 +1572,7 @@ focus = {
 					}
 				}
 			}
-			859 = {	
+			859 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -1583,14 +1583,14 @@ focus = {
 					}
 				}
 			}
-	
-			
+
+
 			#lots of land forts along Mu/Houpo'e border
 			#relations malus with Japan and Trinsuyin
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_our_mighty_home
 		icon = GFX_goal_generic_fortify_city
 		x = -2
@@ -1615,7 +1615,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = FMU_our_mighty_home_idea 
+			add_ideas = FMU_our_mighty_home_idea
 			remove_ideas = fascist_influence
 			#fortification construction bonus
 			#civilian construction bonus
@@ -1629,7 +1629,7 @@ focus = {
 
 	#industry#
 
-focus = {
+	focus = {
 		id = FMU_national_dev_campaign
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 9
@@ -1662,8 +1662,8 @@ focus = {
 			#bonus to construction of infrastructure and factories
 		}
 	}
-	
-focus = {
+
+	focus = {
 		id = FMU_develop_west_coast
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 2
@@ -1750,7 +1750,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_develop_east_coast
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -2
@@ -1821,9 +1821,9 @@ focus = {
 				}
 			}
 		}
-	}	
+	}
 
-focus = {
+	focus = {
 		id = FMU_eisenbahnen
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
@@ -1878,22 +1878,22 @@ focus = {
 				}
 			}
 			build_railway = {
-				level = 1 
+				level = 1
 				build_only_on_allied = yes
 				path = { 14535 14537 14541 14555 14572 14573
 					}
 				}
 			build_railway = {
-				level = 1 
+				level = 1
 				build_only_on_allied = yes
 				path = { 14565 14519
 					}
-				}	
+				}
 			}
 			#increases infrastructure (and railroads when available) - yeah yeah - Abbus
 	}
 
-focus = {
+	focus = {
 		id = FMU_eisengewolbe
 		icon = GFX_goal_generic_oil_refinery
 		x = -2
@@ -1944,7 +1944,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_ebenen_autobahn
 		icon = GFX_goal_generic_road
 		x = 9
@@ -1982,8 +1982,8 @@ focus = {
 			#infrastructure bonuses across nation (west and south maybe?)
 		}
 	}
-	
-focus = {
+
+	focus = {
 		id = FMU_blauwasser_shipping_lanes
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 0
@@ -2054,9 +2054,9 @@ focus = {
 				}
 			}
 		}
-	}	
+	}
 
-focus = {
+	focus = {
 		id = FMU_blauwasser_stockmarket
 		icon = GFX_goal_generic_positive_trade_relations
 		x = -2
@@ -2064,7 +2064,7 @@ focus = {
 		relative_position_id = FMU_national_dev_campaign
 		prerequisite = { focus = FMU_eisengewolbe }
 		prerequisite = { focus = FMU_ebenen_autobahn }
-		
+
 
 		cost = 10
 
@@ -2094,7 +2094,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_civil_works_research_admin
 		icon = GFX_focus_research2
 		x = 4
@@ -2125,7 +2125,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_1938_domestic_tech_fair
 		icon = GFX_goal_generic_double_research
 		x = 0
@@ -2155,7 +2155,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_1940_domestic_tech_fair
 		icon = GFX_goal_generic_double_research
 		x = 0
@@ -2185,7 +2185,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_1942_domestic_tech_fair
 		icon = GFX_goal_generic_double_research
 		x = 0
@@ -2215,7 +2215,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_1944_domestic_tech_fair
 		icon = GFX_goal_generic_double_research
 		x = 0
@@ -2245,7 +2245,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_kings_university
 		icon = GFX_goal_constitution
 		x = -3
@@ -2254,16 +2254,16 @@ focus = {
 		mutually_exclusive = {
 			focus = FMU_national_university
 			focus = FMU_peoples_university
-		}	
+		}
 		prerequisite = { focus = FMU_blauwasser_stockmarket }
- 
+
 		cost = 10
 
 		ai_will_do = {
 			factor = 40
 		}
 		available = {
-			has_government = monarchism
+			has_government = neutrality
 			num_of_factories > 70
 		}
 
@@ -2281,7 +2281,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_national_university
 		icon = GFX_goal_generic_education
 		x = -1
@@ -2291,7 +2291,7 @@ focus = {
 		mutually_exclusive = {
 			focus = FMU_kings_university
 			focus = FMU_peoples_university
-		}		
+		}
 
 		cost = 10
 
@@ -2322,7 +2322,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_peoples_university
 		icon = GFX_goal_communist_brain
 		x = 1
@@ -2332,7 +2332,7 @@ focus = {
 		mutually_exclusive = {
 			focus = FMU_kings_university
 			focus = FMU_national_university
-		}			
+		}
 
 		cost = 10
 
@@ -2357,7 +2357,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_national_research_dev
 		icon = GFX_goal_generic_scientific_exchange
 		x = 0
@@ -2390,7 +2390,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_einsteins_theorem
 		icon = GFX_goal_continuous_research
 		x = 0
@@ -2423,7 +2423,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_unternehmen_sternenmacher
 		icon = GFX_focus_wonderweapons
 		x = 0
@@ -2459,11 +2459,7 @@ focus = {
 		}
 	}
 
-
-
-
-
-focus = {
+	focus = {
 		id = FMU_integrate_manu
 		icon = GFX_focus_CZE_german_puppet
 		x = 12
@@ -2492,18 +2488,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				hidden_effect = {
-					MNU = {
-						country_event = fmu.1
-					}
+			hidden_effect = {
+				MNU = {
+					country_event = fmu.1
 				}
-				country_event = fmu.1
 			}
+			country_event = fmu.1
 			#small political power boost
 			#malus to international relations for 3 years
 		}
+    }
 
-focus = {
+	focus = {
 		id = FMU_diplomatic_outreach
 		icon = GFX_goal_generic_major_diplo
 		x = 17
@@ -2536,8 +2532,8 @@ focus = {
 			#Decrease generate war tension
 		}
 	}
-	
-focus = {
+
+	focus = {
 		id = FMU_european_section
 		icon = GFX_goal_generic_intelligence_exchange
 		x = -2
@@ -2574,7 +2570,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_muan_section
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
@@ -2600,7 +2596,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			every_other_country = {
 				limit = {
 					capital_scope = {
@@ -2612,7 +2608,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_american_section
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 2
@@ -2638,7 +2634,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			every_other_country = {
 				limit = {
 					capital_scope = {
@@ -2653,7 +2649,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_charm_offensive
 		icon = GFX_goal_generic_major_alliance
 		x = -1
@@ -2699,7 +2695,7 @@ focus = {
 							is_on_continent = lemuria
 							is_on_continent = australia
 							is_on_continent = mu
-							
+
 						}
 					}
 				}
@@ -2708,7 +2704,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = FMU_velvet_glove_iron_fist
 		icon = GFX_goal_generic_dangerous_deal
 		x = 1
@@ -2748,17 +2744,14 @@ focus = {
 			}
 			set_rule = {
 				can_only_justify_war_on_threat_country = no
-			}			
+			}
 			add_ideas = FMU_velvet_glove_iron_fist_idea
-			add_named_threat = { 
-				threat = 2 
+			add_named_threat = {
+				threat = 2
 				name = FMU_velvet_gloves
 			}
 		}
 	}
-
-
-
 
 	focus = {
 		id = FMU_renegotiate_versailles
@@ -2821,7 +2814,7 @@ focus = {
 
 		completion_reward = {
 			add_war_support = .1
-	
+
 			every_neighbor_country = {
 					add_opinion_modifier = {
 					target = root
@@ -2985,11 +2978,7 @@ focus = {
 		completion_reward = {
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = monarchism
-				popularity = 0.05
+				popularity = 0.1
 			}
 		}
 	}
@@ -3024,7 +3013,7 @@ focus = {
 			#decrease stability for 3 years
 			add_stability = -0.1
 			add_popularity = {
-				ideology = monarchism
+				ideology = neutrality
 				popularity = 0.15
 			}
 			#production bonus #k: why?
@@ -3060,7 +3049,7 @@ focus = {
 			add_political_power = 150
 			add_stability = -0.1
 			add_popularity = {
-				ideology = monarchism
+				ideology = neutrality
 				popularity = 0.15
 			}
 			#decrease stability for a while
@@ -3099,7 +3088,7 @@ focus = {
 		}
 	}
 
-	#focus = {
+	#	focus = {
 	#	id = FMU_ban_communists
 	#	icon = GFX_focus_generic_treaty
 	#	prerequisite = { focus = FMU_new_constitution }
@@ -3129,7 +3118,7 @@ focus = {
 	#	}
 	#}
 
-	#focus = {
+	#	focus = {
 	#	id = FMU_ban_fascists
 	#	icon = GFX_focus_generic_treaty
 	#	prerequisite = { focus = FMU_new_constitution }
@@ -3193,7 +3182,7 @@ focus = {
 		}
 	}
 
-	#focus = {
+	#	focus = {
 	#	id = FMU_ban_democrats
 	#	icon = GFX_focus_generic_treaty
 	#	prerequisite = { focus = FMU_ban_communists }
@@ -3252,22 +3241,22 @@ focus = {
 
 		completion_reward = {
 			set_politics = {
-				ruling_party = monarchism
+				ruling_party = neutrality
 				elections_allowed = no
 				last_election = "1935.12.17"
 				election_frequency = 48
 			}
-			set_party_name = { 
-				ideology = monarchism 
-				long_name = FMU_monarchism_party_kaiser_long 
-				name = FMU_monarchism_party_kaiser 
+			set_party_name = {
+				ideology = neutrality
+				long_name = FMU_monarchism_party_kaiser_long
+				name = FMU_monarchism_party_kaiser
 			}
 			create_country_leader = {
 				name = "Kaiser Sigismund"
 				desc = "POLITICS_KAISER_SIGISMUND_DESC"
 				picture = GFX_portrait_fmu_kaiser_sigismund
 				expire = "1965.1.1"
-				ideology = enlightened
+				ideology = oligarchism
 				traits = {
 					stout_defender
 				}
@@ -3304,7 +3293,6 @@ focus = {
 			#raise world tension #K:why? its imigration not industrial genocide
 			#increase core manpower
 			#decrease non-core manpower
-
 		}
 	}
 
@@ -3374,15 +3362,13 @@ focus = {
 		}
 	}
 
-
-
 	focus = {
 		id = FMU_tapestry_many_colors
 		icon = GFX_aml_goal_FMU_tapestry_of_colors
 		prerequisite = { focus = FMU_renegotiate_versailles }
 		mutually_exclusive = {
 			focus = FMU_modern_germanic_state
-			focus = FMU_twee_talen 
+			focus = FMU_twee_talen
 		}
 		x = 8
 		y = 1
@@ -3801,7 +3787,7 @@ focus = {
 					modifier = FMU_angry_communist
 				}
 			}
-			
+
 			#relations malus with SOV
 			#strengthen communists in nation
 			#can form factions
@@ -3938,7 +3924,7 @@ focus = {
 		}
 	}
 
-	#focus = {
+	#	focus = {
 	#	id = FMU_free_volunteers
 	#	icon = GFX_focus_generic_treaty
 	#	prerequisite = { focus = FMU_int_volunteer_brigades}
@@ -4025,7 +4011,7 @@ focus = {
 			BRG = {
 				exists = no
 			}
-				
+
 			#baraga does not exist
 		}
 
@@ -4446,7 +4432,7 @@ focus = {
 	}
 
 
-#MILITARY/Industrial PIECE OF TREE
+	#MILITARY/Industrial PIECE OF TREE
 
 
 
@@ -4462,7 +4448,7 @@ focus = {
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		bypass = {
 		}
 
@@ -4504,12 +4490,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			933 = {
+			1277 = {
 				add_building_construction = {
 					type = naval_base
 					level = 5
 					instant_build = yes
-					province = 8787
+					province = 14530
 				}
 			}
 			#national modifier "Baluwasser Navy" adds mild bonus for surface ships
@@ -4750,7 +4736,7 @@ focus = {
 					add_equipment_production = {
 						equipment = {
 							type = battleship_1
-							creator = "FMU" 
+							creator = "FMU"
 						}
 						requested_factories = 5
 						progress = 0.65
@@ -4759,7 +4745,7 @@ focus = {
 					add_equipment_production = {
 						equipment = {
 							type = battleship_1
-							creator = "FMU" 
+							creator = "FMU"
 						}
 						requested_factories = 5
 						progress = 0.6
@@ -4768,7 +4754,7 @@ focus = {
 					add_equipment_production = {
 						equipment = {
 							type = battleship_1
-							creator = "FMU" 
+							creator = "FMU"
 						}
 						requested_factories = 5
 						progress = 0.55
@@ -4854,7 +4840,7 @@ focus = {
 					add_equipment_production = {
 						equipment = {
 							type = carrier_1
-							creator = "FMU" 
+							creator = "FMU"
 						}
 						requested_factories = 5
 						progress = 0.65
@@ -4863,7 +4849,7 @@ focus = {
 					add_equipment_production = {
 						equipment = {
 							type = carrier_1
-							creator = "FMU" 
+							creator = "FMU"
 						}
 						requested_factories = 5
 						progress = 0.6
@@ -4872,7 +4858,7 @@ focus = {
 					add_equipment_production = {
 						equipment = {
 							type = carrier_1
-							creator = "FMU" 
+							creator = "FMU"
 						}
 						requested_factories = 5
 						progress = 0.55
@@ -5699,5 +5685,4 @@ focus = {
 			#decrease need for civilian goods
 		}
 	}
-
 }

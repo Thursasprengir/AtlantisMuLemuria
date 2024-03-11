@@ -1,0 +1,57 @@
+################
+#### others ####
+################
+
+TAH_foreign_support = {
+	icon = category_border_conflicts
+	allowed = {
+		NOT = {original_tag = TAH}
+	}
+}
+
+KLK_mercenary_decisions = {
+	icon = category_generic_arms_trade
+	allowed = {
+		original_tag = KLK
+	}
+}
+
+KLK_anti_mandalist_decisions = {
+	icon = category_military_operation
+	allowed = {
+		OR = {
+			original_tag = KLK
+			original_tag = KUM
+			original_tag = MKU
+			original_tag = LSN
+			original_tag = CLA
+			original_tag = SDU
+			original_tag = UTU
+		}
+	}
+}
+
+mandalist_decisions = {
+	icon = category_military_operation
+	allowed = {
+		OR = {
+			original_tag = MKL
+			original_tag = MKM
+			original_tag = MCL
+			original_tag = MLS
+		}
+	}
+}
+
+CLM_recore = {
+	icon = category_border_conflicts
+	allowed = {
+		original_tag = CLM
+	}
+}
+Andamooka_canal = {
+	icon = category_border_conflicts
+	allowed = {
+		original_tag = AST
+	}
+}

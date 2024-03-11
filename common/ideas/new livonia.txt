@@ -5,33 +5,33 @@ ideas = {
 		NLI_alexander_hore_ruthven_idea = {
 
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { quartermaster_general }
 		}
 
 		NLI_robert_g_menzies_idea = {
 
 			picture = generic_political_advisor_europe_2
-				
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { backroom_backstabber }
 		}
 
 		NLI_ben_chifley_idea = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			cost = 100
 
 			traits = { smooth_talking_charmer }
@@ -41,11 +41,11 @@ ideas = {
 		NLI_herbert_v_evatt_idea = {
 
 			picture = generic_political_advisor_europe_2
-			
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			cost = 100
 
 			traits = { silent_workhorse }
@@ -55,65 +55,65 @@ ideas = {
 		NLI_jack_beasley_idea = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { war_industrialist }
 		}
-		
+
 
 		NLI_frank_forde_idea = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { compassionate_gentleman }
 		}
 
 		NLI_generic_fascist_demagogue_idea = {
-			
+
 			allowed = {
 				original_tag = NLI
-				
+
 			}
 
 			picture = generic_political_advisor_europe_4
-			
+
 			traits = { fascist_demagogue }
-		
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 
 		NLI_lance_sharkey_idea = {
-			
+
 			allowed = {
 				original_tag = NLI
-				
+
 			}
 
 			picture = generic_communist_revolutionary_western_european_2d
-			
+
 			traits = { communist_revolutionary }
-		
+
 			do_effect = {
 				NOT = {
 					has_government = communism
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 0
 			}
@@ -121,21 +121,21 @@ ideas = {
 
 
 		NLI_arthur_calwell_idea = {
-			
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			picture = generic_democratic_reformer_western_european_2d
-			
+
 			traits = { democratic_reformer }
-		
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 0
 			}
@@ -146,36 +146,36 @@ ideas = {
 theorist = {
 
 	NLI_norman_makin_idea = {
-				
+
 		picture = generic_political_advisor_europe_3
 		ledger = navy
 		allowed = {
 			original_tag = NLI
 		}
-		
+
 		research_bonus = {
 			naval_doctrine = 0.10
 		}
-		
+
 		traits = { naval_theorist }
 	}
 
 	NLI_james_fairbairn_idea = {
-				
+
 		picture = generic_political_advisor_europe_2
 			ledger = air
 		allowed = {
 			original_tag = NLI
 		}
-		
+
 		research_bonus = {
 			air_doctrine = 0.10
 		}
-		
+
 		traits = { air_warfare_theorist }
 	}
 
-	
+
 }
 
 high_command = {
@@ -187,9 +187,9 @@ high_command = {
 		allowed = {
 			original_tag = NLI
 		}
-		
+
 		traits = { army_infantry_3 }
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -202,9 +202,9 @@ high_command = {
 		allowed = {
 			original_tag = NLI
 		}
-		
+
 		traits = { air_air_superiority_3 }
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -217,9 +217,9 @@ high_command = {
 		allowed = {
 			original_tag = NLI
 		}
-		
+
 		traits = { navy_capital_ship_2 }
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -232,9 +232,9 @@ high_command = {
 		allowed = {
 			original_tag = NLI
 		}
-		
+
 		traits = { army_artillery_2 }
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -246,7 +246,7 @@ high_command = {
 		allowed = {
 			original_tag = NLI
 		}
-			
+
 		traits = {air_air_combat_training_2 }
 		}
 
@@ -260,7 +260,7 @@ high_command = {
 		cost = 100
 
 		traits = { army_logistics_2 }
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -270,45 +270,45 @@ high_command = {
 	army_chief = {
 
 		NLI_john_lavarack_idea = {
-			
+
 			picture = generic_army_europe_5
 			ledger = army
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		NLI_sydney_rowell_idea = {
-			
+
 			picture = generic_army_europe_3
 			ledger = army
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { army_chief_organizational_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		NLI_vernon_sturdee_idea = {
-			
+
 			picture = generic_army_europe_5
 			ledger = army
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { army_chief_offensive_1 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -316,33 +316,33 @@ high_command = {
 	}
 
 	air_chief = {
-		
+
 
 		NLI_richard_williams_idea = {
-			
+
 			picture = generic_air_europe_1
 			ledger = air
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { air_chief_safety_3 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		NLI_charles_burnett_idea = {
-			
+
 			picture = generic_air_europe_3
 			ledger = air
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { air_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -355,13 +355,13 @@ high_command = {
 		NLI_ragnar_colvin_idea = {
 			ledger = navy
 			picture = generic_navy_europe_2
-			
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { navy_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -370,13 +370,13 @@ high_command = {
 		NLI_jack_crace_idea = {
 			ledger = navy
 			picture = generic_navy_europe_1
-			
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			traits = { navy_chief_decisive_battle_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -386,42 +386,42 @@ high_command = {
 
 	industrial_concern = {
 
-		
+
 
 		NLI_bhp_steel = {
 
 			picture = generic_industrial_concern_1
-			
+
 			allowed = {
 				original_TAG = NLI
 			}
-			
 
-			
+
+
 			research_bonus = {
 				industry = 0.10
 			}
-			
+
 			traits = { industrial_concern }
-			
+
 			modifier = {
 			}
 		}
 
 		NLI_jack_piddington = {
-					
+
 			picture = generic_political_advisor_europe_2
-				
+
 			allowed = {
 				original_tag = NLI
 			}
-			
+
 			research_bonus = {
 				electronics = 0.10
 			}
 
 			cost = 75
-			
+
 			traits = { electronics_developer }
 		}
 

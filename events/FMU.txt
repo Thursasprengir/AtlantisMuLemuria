@@ -8,7 +8,7 @@ country_event = {
 	desc = fmu.1.d
 
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = { factor = 100 }
 		name = fmu.1.a
@@ -33,8 +33,8 @@ country_event = {
 	desc = fmu.2.d
 
 	is_triggered_only = yes
-	
-		
+
+
 	option = {
 		name = fmu.2.a
 		927 = {
@@ -62,7 +62,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	immediate = { 
+	immediate = {
 		FMU = {
 		end_puppet = MNU
 		country_event = { hours = 2 id = fmu.4 }
@@ -75,7 +75,7 @@ country_event = {
     		popularity = 80
 		}
 	}
-	
+
 	option = {
 		ai_chance = { factor = 100 }
 		name = fmu.3.a
@@ -89,7 +89,7 @@ country_event = {
 	desc = fmu.4.d
 
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = { factor = 80 }
 		name = fmu.4.a
@@ -107,7 +107,7 @@ country_event = {
 	id = fmu.5
 	title = fmu.5.t
 	desc = fmu.5.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -117,7 +117,7 @@ country_event = {
 			country_event = { hours = 2 id = fmu.6 }
 			}
 	}
-	
+
 	option = {
 		ai_chance = { factor = 30 }
 		name = fmu.5.b
@@ -125,10 +125,10 @@ country_event = {
 			country_event = { hours = 2 id = fmu.7 }
 			}
 		}
-		
+
 	option = {
 		ai_chance = { factor = 66 }
-		name = fmu.5.c		
+		name = fmu.5.c
 		GER = {add_to_faction = NTR}
 		FMU = {
 			country_event = { hours = 2 id = fmu.8 }
@@ -144,7 +144,7 @@ country_event = {
 	desc = fmu.6.d
 
 	is_triggered_only = yes
-	
+
 	option = {
 		ai_chance = { factor = 100 }
 		name = fmu.6.a
@@ -159,7 +159,7 @@ country_event = {
 	id = fmu.7
 	title = fmu.7.t
 	desc = fmu.7.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -176,7 +176,7 @@ country_event = {
 	id = fmu.8
 	title = fmu.8.t
 	desc = fmu.8.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -184,14 +184,14 @@ country_event = {
 		name = fmu.8.a
 		}
 	}
-	
+
 #Karolia Annexation
 country_event = {
 
 	id = fmu.9
 	title = fmu.9.t
 	desc = fmu.9.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -201,7 +201,7 @@ country_event = {
 			country_event = { hours = 2 id = fmu.10 }
 			}
 		}
-	
+
 	option = {
 		ai_chance = { factor = 33 }
 		name = fmu.9.b
@@ -209,7 +209,7 @@ country_event = {
 			country_event = { hours = 2 id = fmu.11 }
 			}
 		}
-		
+
 	option = {
 		ai_chance = { factor = 33 }
 		name = fmu.9.c
@@ -228,7 +228,7 @@ country_event = {
 	id = fmu.10
 	title = fmu.10.t
 	desc = fmu.10.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -251,7 +251,7 @@ country_event = {
 	id = fmu.11
 	title = fmu.11.t
 	desc = fmu.11.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -269,7 +269,7 @@ country_event = {
 	id = fmu.12
 	title = fmu.12.t
 	desc = fmu.12.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -280,25 +280,25 @@ country_event = {
 			}
 		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 ##German Kaiser Invite
 #country_event = {
 #
 #	id = fmu.6
 #	title = fmu.6.t
 #	desc = fmu.6.d
-#	
+#
 #	is_triggered_only = yes
 #
 #	option = {
 #		ai_chance = { factor = 100 }
 #		name = fmu.6.a
 #		if = {
-# 			limit = { is_in_faction = yes 
+# 			limit = { is_in_faction = yes
 #    		}
 #    	add_to_faction = FMU
 #    	else = {
@@ -320,7 +320,7 @@ country_event = {
 #	desc = fmu.7.d
 #
 #	is_triggered_only = yes
-#	
+#
 #	option = {
 #		ai_chance = { factor = 100 }
 #		name = fmu.7.a
@@ -340,14 +340,14 @@ country_event = {
 #	id = fmu.8
 #	title = fmu.8.t
 #	desc = fmu.8.d
-#	
+#
 #	is_triggered_only = yes
 #
 #	option = {
 #		ai_chance = { factor = 100 }
 #		name = fmu.8.a
 #		if = {
-# 			limit = { is_in_faction = yes 
+# 			limit = { is_in_faction = yes
 #    		}
 #    	add_to_faction = FMU
 #    	else = {
@@ -367,7 +367,7 @@ country_event = {
 #	id = fmu.9
 #	title = fmu.9.t
 #	desc = fmu.9.d
-#	
+#
 #	is_triggered_only = yes
 #
 #	option = {
@@ -386,7 +386,7 @@ country_event = {
 #	id = fmu.10
 #	title = fmu.10.t
 #	desc = fmu.10.d
-#	
+#
 #	is_triggered_only = yes
 #
 #	option = {
@@ -400,13 +400,13 @@ country_event = {
 #	id = fmu.11
 #	title = fmu.11.t
 #	desc = fmu.11.d
-#	
+#
 #	fire_only_once = yes
 #
 #	mean_time_to_happen = {
 #		days = 2
 #	}
-#	
+#
 #
 #
 #	trigger = {
@@ -456,26 +456,26 @@ country_event = {
 #		TIQ ={
 #	if = {
 #		limit = {
-#			FMU = { controls_state = 924 } 
+#			FMU = { controls_state = 924 }
 #		}
 #		transfer_state = 924
 #		}
 #	if = {
 #		limit = {
-#			FMU = { controls_state = 925 } 
+#			FMU = { controls_state = 925 }
 #		}
 #		transfer_state = 925
 #		}
 #	if = {
 #		limit = {
-#			FMU = { controls_state = 926 } 
+#			FMU = { controls_state = 926 }
 #		}
 #		transfer_state = 926
 #		}
 #
 #		}
 #
-#	
+#
 #	}
 #	option = {
 #		ai_chance = { factor = 100 }
@@ -497,7 +497,7 @@ country_event = {
 #	id = fmu.15
 #	title = fmu.15.t
 #	desc = fmu.15.d
-#	
+#
 #	is_triggered_only = yes
 #
 #	option = {
@@ -521,7 +521,7 @@ country_event = {
 #	id = fmu.16
 #	title = fmu.16.t
 #	desc = fmu.16.d
-#	
+#
 #	is_triggered_only = yes
 #
 #	option = {
@@ -535,7 +535,7 @@ country_event = {
 #	id = fmu.17
 #	title = fmu.17.t
 #	desc = fmu.17.d
-#	
+#
 #	is_triggered_only = yes
 #
 #	option = {
@@ -550,7 +550,7 @@ country_event = {
 	id = fmu.24
 	title = fmu.24.t
 	desc = fmu.24.d
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -558,8 +558,8 @@ country_event = {
 		name = fmu.24.a
 		FMU = {
 		if = {
- 			limit = { 
- 			is_in_faction = yes 
+ 			limit = {
+ 			is_in_faction = yes
     		}
     	add_to_faction = ROOT
     	else = {

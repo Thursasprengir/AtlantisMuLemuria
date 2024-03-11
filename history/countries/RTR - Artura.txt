@@ -26,21 +26,6 @@ set_popularities = {
 	communism = 2
 }
 
-BLM = {
-    if = {
-        limit = {
-            has_dlc = "Together for Victory"
-        }
-        set_autonomy = {
-            target = RTR
-            autonomous_state = autonomy_dominion
-        }
-    }
-    else = {
-        puppet = RTR
-    }
-}
-
 if = {
 	limit = { has_dlc = "Together for Victory" }
 

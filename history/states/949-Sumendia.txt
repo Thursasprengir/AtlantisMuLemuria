@@ -1,12 +1,18 @@
+
 state={
 	id=949
-	name="STATE_949" #Atlantis Sumendia
+	name="STATE_949"
+	resources={
+		steel=35.000
+		chromium=23.000
+		tungsten=25.000
+	}
 
 	history={
 		owner = ATL
 		add_core_of = ATL
 		victory_points = {
-			15516 20 #Anoixte
+			15516 20 
 		}
 		buildings = {
 			infrastructure = 2
@@ -17,18 +23,18 @@ state={
 			radar_station = 1
 			15516 = {
 				naval_base = 10
+
 			}
+
 		}
 
 	}
-	
-	provinces={
-		15516
-	}
-	manpower= 2302189
-	state_category = metropolis
-	resources = {steel = 35 chromium = 23 tungsten = 25}
 
+	provinces={
+		15516 
+	}
+	manpower=2302189
 	buildings_max_level_factor=1.000
-	local_supplies=10.0 
+	state_category=metropolis
+	local_supplies=10.000
 }

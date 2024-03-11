@@ -7,7 +7,7 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	infantry_weapons = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -136,8 +136,8 @@ set_popularities = {
 		democratic = 40
 		fascism = 25
 		communism = 5
-		neutrality = 12
-		monarchism = 18
+		neutrality = 30
+		#monarchism = 18
 	}
 set_politics = {
 		ruling_party = democratic
@@ -146,7 +146,7 @@ set_politics = {
 		elections_allowed = yes
 }
 set_autonomy = {
-		target = AME
+		target = KRY
 		autonomous_state = autonomy_colony
 		freedom_level = 0.1
 }
@@ -382,7 +382,7 @@ if = {
 			ship_gun_upgrade = 2
 		}
 	}
-	
+
 	create_equipment_variant = {
 		name = "BB-36-K"
 		type = battleship_2
@@ -395,12 +395,12 @@ if = {
 		}
 	}
 }
-	
-	
+
+
 ###MIGHTY ATLANTEAN SHIPS BUT WITH A PRICE###
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	
+
 	create_equipment_variant = {
 		name = "SS-E-C"
 		type = ship_hull_submarine_1
@@ -600,7 +600,7 @@ if = {
 		obsolete = no
 	}
 }
-	
+
 	if = {
 			limit = {
 				has_dlc = "By Blood Alone"
@@ -616,7 +616,7 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Ħorodoŧ" 
+			name = "Ħorodoŧ"
 			type = cv_small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = light_mg_2x
@@ -626,7 +626,7 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Čiénet" 
+			name = "Čiénet"
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
@@ -635,7 +635,7 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Anavile" 
+			name = "Anavile"
 			type = small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
@@ -646,7 +646,7 @@ if = {
 			icon = "GFX_ATL_CAS1_medium"
 		}
 		create_equipment_variant = {
-			name = "Vuluámax" 
+			name = "Vuluámax"
 			type = small_plane_naval_bomber_airframe_0
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -656,7 +656,7 @@ if = {
 			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
 		}
 		create_equipment_variant = {
-			name = "Ledež" 
+			name = "Ledež"
 			type = cv_small_plane_naval_bomber_airframe_0
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -666,7 +666,7 @@ if = {
 			icon = "GFX_ENG_naval_bomber1_medium"
 		}
 		create_equipment_variant = {
-			name = "Toxnaxa" 
+			name = "Toxnaxa"
 			type = medium_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -676,7 +676,7 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Nalaħak" 
+			name = "Nalaħak"
 			type = medium_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -711,7 +711,7 @@ recruit_character = ATL_navy_chief_maneuver_3
 recruit_character = ATL_air_strategic_bombing_2
 recruit_character = ATL_air_chief_old_guard
 recruit_character = ATL_air_strategic_bombing_1
-recruit_character = ATL_navy_screen_2	
+recruit_character = ATL_navy_screen_2
 recruit_character = ATL_army_regrouping_1
 recruit_character = ATL_navy_capital_ship_3
 recruit_character = ATL_air_naval_strike_1

@@ -1,0 +1,1168 @@
+characters={
+
+	RSL_socialism_leader={
+		name="RSL_socialism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_8.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ captain_of_industry dealbroker }
+			expire="1955.1.1.12"
+			
+		}
+	}
+	
+	RSL_anarchist_communism_leader={
+		name="RSL_anarchist_communism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_1.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			expire="1944.1.1.12"
+			
+		}
+	}
+	RSL_generic_fascism_leader={
+		name="RSL_generic_fascism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_6.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1949.1.1.12"
+			
+		}
+	}
+	
+	RSL_anarchism_leader={
+		name="RSL_anarchism_leader"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_new_12.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchism
+			expire="1949.1.1.12"
+			
+		}
+	}
+	
+	
+	
+	
+###################
+###CORPS COMMANDERS
+###################
+	
+	RSL_corps_commander_1={
+		name="RSL_corps_commander_1"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
+
+	RSL_corps_commander_2={
+		name=RSL_corps_commander_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	RSL_corps_commander_3={
+		name=RSL_corps_commander_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	RSL_corps_commander_4={
+		name=RSL_corps_commander_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	RSL_naval_leader_1={
+		name=RSL_naval_leader_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
+
+	RSL_naval_leader_2={
+		name=RSL_naval_leader_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast superior_tactician spotter }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	RSL_naval_leader_3={
+		name=RSL_naval_leader_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}		
+		navy_leader={
+			traits={ gunnery_expert superior_tactician spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	
+	RSL_naval_leader_4={
+		name=RSL_naval_leader_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	RSL_naval_leader_5={
+		name=RSL_naval_leader_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold fleet_protector superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	RSL_anti_communist_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_anti_communist_crusader
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					anti_communist_crusader
+				}
+		}
+		name="RSL_anti_communist_crusader"
+		portraits={
+			army={
+				small="GFX_idea_ENG_andrew_cunningham"
+			}
+		}
+	}
+	RSL_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_armaments_organizer
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="RSL_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_ENG_archibald_wavell"
+			}
+		}
+	}
+	RSL_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_backroom_backstabber
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="RSL_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_ENG_arthur_percival"
+			}
+		}
+	}
+	RSL_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_captain_of_industry
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="RSL_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_ELS_maximiliano_hernandez_martinez"
+			}
+		}
+	}
+	RSL_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_communist_revolutionary
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="RSL_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_CZE_edvard_benes"
+			}
+		}
+	}
+	RSL_compassionate_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_compassionate_gentleman
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="RSL_compassionate_gentleman"
+		portraits={
+			army={
+				small="GFX_idea_CZE_jaroslav_krejci"
+			}
+		}
+	}
+	RSL_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_democratic_reformer
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="RSL_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_CZE_klement_gottwald"
+			}
+		}
+	}	
+	RSL_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_economist
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="RSL_economist"
+		portraits={
+			army={
+				small="GFX_idea_RSL_economist"
+			}
+		}
+	}
+	RSL_editor={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_editor
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					editor 
+				}
+		}
+		name="RSL_editor"
+		portraits={
+			army={
+				small="GFX_idea_CRO_vladko_macek"
+			}
+		}
+	}
+	RSL_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_fascist_demagogue
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="RSL_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_AST_john_curtin"
+			}
+		}
+	}
+	RSL_financial_expert={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_financial_expert
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					financial_expert 
+				}
+		}
+		name="RSL_financial_expert"
+		portraits={
+			army={
+				small="GFX_idea_AUS_kurt_schuschnigg"
+			}
+		}
+	}
+	RSL_head_of_intelligence={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_head_of_intelligence
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+		name="RSL_head_of_intelligence"
+		portraits={
+			army={
+				small="GFX_idea_BEL_hubert_pierlot"
+			}
+		}
+	}
+	RSL_ideological_crusader={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_ideological_crusader
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="RSL_ideological_crusader"
+		portraits={
+			army={
+				small="GFX_idea_BRA_plinio_salgado"
+			}
+		}
+	}
+	RSL_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_popular_figurehead
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="RSL_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_BUL_georgi_dimitrov"
+			}
+		}
+	}
+	RSL_prince_of_terror={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_prince_of_terror
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="RSL_prince_of_terror"
+		portraits={
+			army={
+				small="GFX_idea_ENG_edward_halifax"
+			}
+		}
+	}
+	RSL_silent_workhorse={
+		name=RSL_silent_workhorse
+		portraits={
+			army={
+				small="GFX_idea_ENG_harold_alexander"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_silent_workhorse
+			allowed  = {
+				original_tag  = RSL
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	RSL_smooth_talking_charmer={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_smooth_talking_charmer
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="RSL_smooth_talking_charmer"
+		portraits={
+			army={
+				small="GFX_idea_FIN_kyosti_kallio"
+			}
+		}
+	}
+	
+	RSL_war_industrialist={
+		advisor={
+			slot = political_advisor
+			idea_token = RSL_war_industrialist
+			allowed  = {
+					original_tag  = RSL
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="RSL_war_industrialist"
+		portraits={
+			army={
+				small="GFX_idea_EST_konstantin_pats"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	RSL_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RSL_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = RSL
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="RSL_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_ENG_oswald_mosley"
+			}
+		}
+	}
+	RSL_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = RSL_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = RSL
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="RSL_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_ENG_palme_dutt"
+			}
+		}
+	}
+	RSL_naval_theorist={
+		name=RSL_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_FRA_jean-marie_charles_abrial"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RSL_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = RSL
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+	RSL_naval_aviation_pioneer={
+		name=RSL_naval_aviation_pioneer
+		portraits={
+			army={
+				small="GFX_idea_FRA_rene-emile_godfroy"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = RSL_naval_aviation_pioneer
+			ledger = navy
+			allowed = {
+				original_tag = RSL
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+
+	RSL_victory_through_airpower={
+		name=RSL_victory_through_airpower
+		portraits={
+			army={
+				small="GFX_idea_FRA_francois_darlan"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = RSL_victory_through_airpower
+			ledger = air
+			allowed = {
+				original_tag = RSL
+			}
+			traits = {
+				victory_through_airpower
+			}
+		}
+	}
+	RSL_nuclear_scientist={
+		name=RSL_nuclear_scientist
+		portraits={
+			army={
+				small="GFX_idea_FRA_edouard_daladier"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RSL_nuclear_scientist
+			ledger = army
+			allowed = {
+				original_tag = RSL
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	RSL_rocket_scientist={
+		name=RSL_rocket_scientist
+		portraits={
+			army={
+				small="GFX_idea_FRA_paul_reynaud"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = RSL_rocket_scientist
+			ledger = air
+			allowed = {
+				original_tag = RSL
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	RSL_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = RSL_army_chief_defensive_2
+			allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_philippe_leclerc"
+			}
+		}
+	}
+	RSL_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = RSL_army_chief_drill_2
+			allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_1"
+			}
+		}
+	}
+	RSL_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = RSL_army_chief_maneuver_2
+			allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_13"
+			}
+		}
+	}
+	RSL_army_chief_morale_2={
+		advisor={
+			slot = army_chief
+			idea_token = RSL_army_chief_morale_2
+			allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_army_chief_morale_2"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_19"
+			}
+		}
+	}
+	RSL_army_chief_offensive_2={
+		name=RSL_army_chief_offensive_2
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RSL_army_chief_offensive_2
+			allowed = {
+				original_tag = RSL
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RSL_army_chief_organizational_1={
+		name=RSL_army_chief_organizational_1
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_3"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RSL_army_chief_organizational_1
+			allowed = {
+				original_tag = RSL
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	RSL_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = RSL_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_navy_1"
+			}
+		}
+	}
+	RSL_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = RSL_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_navy_2"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	RSL_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = RSL_air_chief_ground_support_2
+			allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_generic_navy_1"
+			}
+		}
+	}
+	RSL_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = RSL_air_chief_reform_2
+			allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_generic_navy_2"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	RSL_army_armored_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_army_armored_1
+			ledger = army
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_army_armored_1"
+		portraits={
+			army={
+				small="GFX_idea_europe_generic_land_5"
+			}
+		}
+	}
+	RSL_army_entrenchment_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_land_3"
+			}
+		}
+	}
+	RSL_army_infantry_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_land_1"
+			}
+		}
+	}
+	RSL_army_logistics_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_land_2"
+			}
+		}
+	}
+	RSL_air_bomber_interception_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_navy_1"
+			}
+		}
+	}
+	RSL_air_close_air_support_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_navy_3"
+			}
+		}
+	}
+	RSL_navy_screen_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_navy_screen_2
+			ledger = navy
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_navy_screen_2"
+		portraits={
+			army={
+				small="GFX_idea_GER_generic_navy_2"
+			}
+		}
+	}
+	RSL_navy_anti_submarine_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_navy_anti_submarine_1
+			ledger = navy
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					navy_anti_submarine_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_navy_anti_submarine_1"
+		portraits={
+			army={
+				small="GFX_idea_GER_generic_navy_3"
+			}
+		}
+	}
+	RSL_navy_naval_air_defense_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = RSL_navy_naval_air_defense
+			ledger = navy
+				allowed = {
+					original_tag = RSL
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="RSL_navy_naval_air_defense_2"
+		portraits={
+			army={
+				small="GFX_idea_GER_generic_navy_1"
+			}
+		}
+	}
+}

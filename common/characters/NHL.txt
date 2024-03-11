@@ -1,0 +1,765 @@
+characters={
+	NHL_henri_savatier={
+		name="Henri Savatier"
+		portraits={
+			civilian={
+				large="gfx/leaders/NHL/Portrait_NHL_henri_savatier.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HENRI_SAVATIER_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	NHL_kylian_bouchard={
+		name="Kylian Bouchard"
+		portraits={
+			civilian={
+				large="gfx/leaders/NHL/Portrait_NHL_kylian_bouchard.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KYLIAN_BOUCHARD_DESC"
+			ideology=stalinism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	NHL_gerard_louis_chaplin={
+		name="Gérard Louis Chaplin"
+		portraits={
+			civilian={
+				large="gfx/leaders/NHL/Portrait_NHL_gerard_louis_chaplin.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GL_CHAPLIN_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			
+		}
+	}
+	NHL_fiacre_eric_julien={
+		name="Fiacre Éric Julien"
+		portraits={
+			civilian={
+				large="gfx/leaders/NHL/Portrait_NHL_fiacre_eric_julien.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_FE_JULIEN_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			
+		}
+	}
+	
+###################
+###CORPS COMMANDERS
+###################
+	NHL_jeancharles_firmin_guillaume={
+		name="Jean-Charles Firmin Guillaume"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	
+
+	NHL_corps_commander_2={
+		name=NHL_corps_commander_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	NHL_corps_commander_3={
+		name=NHL_corps_commander_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	NHL_corps_commander_4={
+		name=NHL_corps_commander_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	
+	
+	
+################
+###NAVAL LEADERS
+################
+	NHL_naval_leader_1={
+		name=NHL_naval_leader_1
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}		
+		navy_leader={
+			traits={ spotter }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			
+		}
+	}
+
+	NHL_naval_leader_2={
+		name=NHL_naval_leader_2
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={  }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			
+		}
+	}
+
+	NHL_naval_leader_3={
+		name=NHL_naval_leader_3
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}		
+		navy_leader={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			
+		}
+	}
+	
+	NHL_naval_leader_4={
+		name=NHL_naval_leader_4
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ cuts_corners blockade_runner spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			
+		}
+	}
+	NHL_naval_leader_5={
+		name=NHL_naval_leader_5
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		navy_leader={
+			traits={  }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			
+		}
+	}
+	
+#####################
+###POLITICAL ADVISORS
+#####################
+	NHL_armaments_organizer={
+		advisor={
+			slot = political_advisor
+			idea_token = NHL_armaments_organizer
+			allowed  = {
+					original_tag  = NHL
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="NHL_armaments_organizer"
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_2"
+			}
+		}
+	}
+	NHL_backroom_backstabber={
+		advisor={
+			slot = political_advisor
+			idea_token = NHL_backroom_backstabber
+			allowed  = {
+					original_tag  = NHL
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="NHL_backroom_backstabber"
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_land_1"
+			}
+		}
+	}
+	NHL_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = NHL_captain_of_industry
+			allowed  = {
+					original_tag  = NHL
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="NHL_captain_of_industry"
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_land_5"
+			}
+		}
+	}
+	NHL_communist_revolutionary={
+		advisor={
+			slot = political_advisor
+			idea_token = NHL_communist_revolutionary
+			allowed  = {
+					original_tag  = NHL
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name="NHL_communist_revolutionary"
+		portraits={
+			army={
+				small="GFX_idea_ITA_ubaldo_soddu"
+			}
+		}
+	}
+	NHL_democratic_reformer={
+		advisor={
+			slot = political_advisor
+			idea_token = NHL_democratic_reformer
+			allowed  = {
+					original_tag  = NHL
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="NHL_democratic_reformer"
+		portraits={
+			army={
+				small="GFX_idea_ITA_carlo_bergamini"
+			}
+		}
+	}	
+	NHL_economist={
+		advisor={
+			slot = political_advisor
+			idea_token = NHL_economist
+			allowed  = {
+					original_tag  = NHL
+				}
+				traits  = {
+					economist 
+				}
+		}
+		name="NHL_economist"
+		portraits={
+			army={
+				small="GFX_idea_ITA_ferruccio_parri"
+			}
+		}
+	}
+	NHL_fascist_demagogue={
+		advisor={
+			slot = political_advisor
+			idea_token = NHL_fascist_demagogue
+			allowed  = {
+					original_tag  = NHL
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="NHL_fascist_demagogue"
+		portraits={
+			army={
+				small="GFX_idea_TUR_mustafa_kemal_ataturk_military"
+			}
+		}
+	}
+	NHL_popular_figurehead={
+		advisor={
+			slot = political_advisor
+			idea_token = NHL_popular_figurehead
+			allowed  = {
+					original_tag  = NHL
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="NHL_popular_figurehead"
+		portraits={
+			army={
+				small="GFX_idea_ITA_palmiro_togliatti"
+			}
+		}
+	}
+###############
+###THEORISTS
+###############
+	NHL_military_theorist={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = NHL_military_theorist
+			ledger = army
+				allowed = {
+					original_tag = NHL
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name="NHL_military_theorist"
+		portraits={
+			army={
+				small="GFX_idea_ITA_alberto_da_zara"
+			}
+		}
+	}
+	NHL_air_warfare_theorist={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = NHL_air_warfare_theorist
+			ledger = air
+				allowed = {
+					original_tag = NHL
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name="NHL_air_warfare_theorist"
+		portraits={
+			army={
+				small="GFX_idea_ITA_angelo_iachino"
+			}
+		}
+	}
+	NHL_naval_theorist={
+		name=NHL_naval_theorist
+		portraits={
+			army={
+				small="GFX_idea_ITA_generic_navy_3"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = NHL_naval_theorist
+			ledger = navy
+			allowed = {
+				original_tag = NHL
+			}
+			traits = { 
+					naval_theorist 
+				}
+		}
+	}
+
+#################
+###ARMY CHIEF
+#################
+	NHL_army_chief_defensive_2={
+		advisor={
+			slot = army_chief
+			idea_token = NHL_army_chief_defensive_2
+			allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_army_chief_defensive_2"
+		portraits={
+			army={
+				small="GFX_idea_TUR_mustafa_kemal_ataturk_military"
+			}
+		}
+	}
+	NHL_army_chief_drill_2={
+		advisor={
+			slot = army_chief
+			idea_token = NHL_army_chief_drill_2
+			allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					army_chief_drill_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_army_chief_drill_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_jean_de_lattre_de_tassigny"
+			}
+		}
+	}
+	NHL_army_chief_maneuver_2={
+		advisor={
+			slot = army_chief
+			idea_token = NHL_army_chief_maneuver_2
+			allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_army_chief_maneuver_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_maurice_gamelin"
+			}
+		}
+	}
+
+#################
+###NAVY CHIEF
+#################
+	NHL_navy_chief_decisive_battle_2={
+		advisor={
+			slot = navy_chief
+			idea_token = NHL_navy_chief_decisive_battle_2
+			allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_navy_chief_decisive_battle_2"
+		portraits={
+			army={
+				small="GFX_idea_ENG_bruce_fraser"
+			}
+		}
+	}
+	NHL_navy_chief_naval_aviation_2={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = NHL_navy_chief_naval_aviation_2
+			allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					navy_chief_naval_aviation_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_navy_chief_naval_aviation_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_jean_de_laborde"
+			}
+		}
+	}
+	
+#################
+###AIRFORCE CHIEF
+#################
+	NHL_air_chief_ground_support_2={
+		advisor={
+			slot = air_chief
+			idea_token = NHL_air_chief_ground_support_2
+			allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_air_chief_ground_support_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_francois_darlan"
+			}
+		}
+	}
+	NHL_air_chief_reform_2={
+		advisor={
+			slot = air_chief
+			idea_token = NHL_air_chief_reform_2
+			allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_air_chief_reform_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_jean-marie_charles_abrial"
+			}
+		}
+	}
+
+###################
+###MIL HIGH COMMAND
+###################	
+	NHL_army_entrenchment_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NHL_army_entrenchment_1
+			ledger = army
+				allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					army_entrenchment_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_army_entrenchment_1"
+		portraits={
+			army={
+				small="GFX_idea_FRA_generic_land_1"
+			}
+		}
+	}
+	NHL_army_infantry_1={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NHL_army_infantry
+			ledger = army
+				allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_army_infantry_1"
+		portraits={
+			army={
+				small="GFX_idea_FRA_generic_land_2"
+			}
+		}
+	}
+	NHL_army_logistics_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NHL_army_logistics
+			ledger = army
+				allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_army_logistics_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_generic_land_3"
+			}
+		}
+	}
+	NHL_air_bomber_interception_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NHL_air_bomber_interception_2
+			ledger = army
+				allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					air_bomber_interception_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_air_bomber_interception_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_generic_land_4"
+			}
+		}
+	}
+	NHL_air_close_air_support_2={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NHL_air_close_air_support_2
+			ledger = army
+				allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_air_close_air_support_2"
+		portraits={
+			army={
+				small="GFX_idea_FRA_generic_land_5"
+			}
+		}
+	}
+	NHL_navy_screen_3={ #_1 Specialist, _2 Expert
+		advisor={
+			slot = high_command
+			idea_token = NHL_navy_screen_3
+			ledger = navy
+				allowed = {
+					original_tag = NHL
+				}
+				traits = {
+					navy_screen_3
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name="NHL_navy_screen_3"
+		portraits={
+			army={
+				small="GFX_idea_FRA_generic_navy_2"
+			}
+		}
+	}
+	
+	
+	
+}

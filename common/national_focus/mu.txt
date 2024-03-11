@@ -1,6 +1,6 @@
 focus_tree = {
 	id = muu_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -8,7 +8,7 @@ focus_tree = {
 			tag = MUU
 		}
 	}
-	
+
 
 	default = no
 
@@ -40,7 +40,7 @@ focus = {
 		add_political_power = 120
 		}
 	}
-	
+
 focus = {
 		id = MUU_emergency_meeting
 		icon = GFX_focus_generic_treaty
@@ -69,7 +69,7 @@ focus = {
 			add_stability = -0.05
 		}
 	}
-	
+
 focus = {
 		id = MUU_government_purges
 		icon = GFX_goal_generic_secret_weapon
@@ -101,7 +101,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_upper_reform
 		icon = GFX_focus_generic_self_management
@@ -130,7 +130,7 @@ focus = {
 			add_stability = 0.1
 		}
 	}
-	
+
 focus = {
 		id = MUU_lower_reform
 		icon = GFX_goal_generic_intelligence_exchange
@@ -158,7 +158,7 @@ focus = {
 			add_political_power = 50
 		}
 	}
-	
+
 focus = {
 		id = MUU_emergency_reform
 		icon = GFX_goal_generic_forceful_treaty
@@ -187,7 +187,7 @@ focus = {
 			add_political_power = 200
 		}
 	}
-	
+
 focus = {
 		id = MUU_scapegoats
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
@@ -215,7 +215,7 @@ focus = {
 			add_stability = 0.05
 		}
 	}
-	
+
 focus = {
 		id = MUU_gov_pogrom
 		icon = GFX_goal_generic_political_pressure
@@ -244,7 +244,7 @@ focus = {
 			add_stability = -0.1
 		}
 	}
-	
+
 focus = {
 		id = MUU_mil_pogrom
 		icon = GFX_goal_generic_major_war
@@ -273,7 +273,7 @@ focus = {
 			add_war_support = -0.1
 		}
 	}
-	
+
 focus = {
 		id = MUU_nationalize_1
 		icon = GFX_goal_generic_construct_infrastructure
@@ -318,10 +318,10 @@ focus = {
 					}
 				}
 			}
-		
+
 		}
 	}
-	
+
 focus = {
 		id = MUU_nationalize_2
 		icon = GFX_goal_generic_construct_mil_factory
@@ -357,7 +357,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_nationalize_conscription
 		icon = GFX_focus_generic_military_mission
@@ -385,7 +385,7 @@ focus = {
 			add_ideas = MUU_extended_conscription
 		}
 	}
-	
+
 focus = {
 		id = MUU_impeach_ollun
 		icon = GFX_goal_generic_demand_territory
@@ -421,9 +421,9 @@ focus = {
 			}
 		}
 	}
-	
+
 	#####NONALIGNED#####
-	
+
 focus = {
 		id = MUU_old_system
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -449,10 +449,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_popularity = { ideology = monarchism popularity = 0.25 }
+			add_popularity = { ideology = neutrality popularity = 0.25 }
 		}
 	}
-	
+
 focus = {
 		id = MUU_power_ojjamun
 		icon = GFX_focus_rom_royal_dictatorship
@@ -482,16 +482,16 @@ focus = {
 				}
 			create_faction = MUU_muror_alliance
 			kill_country_leader = yes
-		    set_politics = { ruling_party = monarchism elections_allowed = no } 
-			add_popularity = { ideology = monarchism popularity = 0.25 }
+		    set_politics = { ruling_party = neutrality elections_allowed = no }
+			add_popularity = { ideology = neutrality popularity = 0.25 }
 					create_country_leader = {
 						name = "Nalangqu Gahrijjeom I"
 						desc = "POLITICS_NALANGQU_GAHRIJJEOM_I_DESC"
 						picture = "gfx/leaders/MUU/Portrait_MUU_nalangqu_gahrijjeom_i.dds"
 						expire = "1965.1.1"
-						ideology = absolutist
+						ideology = oligarchism
 						traits = {
-			
+
 						}
 					}
 		}
@@ -524,7 +524,7 @@ focus = {
 			add_ideas = MUU_purge_fascists1
 		}
 	}
-	
+
 focus = {
 		id = MUU_dismantle_militias
 		icon = GFX_goal_generic_political_pressure
@@ -552,7 +552,7 @@ focus = {
 			add_war_support = -0.05
 		}
 	}
-	
+
 focus = {
 		id = MUU_civic_education
 		icon = GFX_focus_generic_military_academy
@@ -580,7 +580,7 @@ focus = {
 			add_ideas = MUU_civic_education_idea
 		}
 	}
-	
+
 focus = {
 		id = MUU_general_education
 		icon = GFX_focus_research2
@@ -608,7 +608,7 @@ focus = {
 			add_research_slot = 1
 		}
 	}
-	
+
 focus = {
 		id = MUU_defense_ministry
 		icon = GFX_goal_generic_defence
@@ -667,7 +667,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_new_elite
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -695,7 +695,7 @@ focus = {
 			add_stability = 0.20
 		}
 	}
-	
+
 focus = {
 		id = MUU_national_holidays
 		icon = GFX_focus_hol_the_foundations_of_defense
@@ -726,7 +726,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_one_people
 		icon = GFX_goal_generic_national_unity
@@ -805,7 +805,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_development_ministry
 		icon = GFX_goal_generic_production2
@@ -861,7 +861,7 @@ focus = {
 			add_ideas = MUU_mil_1
 		}
 	}
-	
+
 focus = {
 		id = MUU_nonaligned_mil2
 		icon = GFX_goal_generic_position_armies
@@ -889,7 +889,7 @@ focus = {
 			add_ideas = MUU_mil_2
 		}
 	}
-	
+
 focus = {
 		id = MUU_nonaligned_milciv1
 		icon = GFX_goal_generic_construct_mil_factory
@@ -957,7 +957,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_nonaligned_milciv2
 		icon = GFX_goal_continuous_armor_production
@@ -1024,7 +1024,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_nonaligned_civ1
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1111,7 +1111,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_nonaligned_civ2
 		icon = GFX_goal_generic_construct_civilian
@@ -1150,7 +1150,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_nonaligned_final
 		icon = GFX_focus_generic_treaty
@@ -1182,7 +1182,7 @@ focus = {
 		}
 	}
 	#####DEMOCRATIC#####
-	
+
 focus = {
 		id = MUU_westernization
 		icon = GFX_focus_chi_mission_to_the_us
@@ -1237,7 +1237,7 @@ focus = {
 		}
 		}
 	}
-	
+
 focus = {
 		id = MUU_voice_public
 		icon = GFX_goal_generic_propaganda
@@ -1265,7 +1265,7 @@ focus = {
 			add_stability = 0.2
 		}
 	}
-	##democratic left branch##	
+	##democratic left branch##
 focus = {
 		id = MUU_join_allies
 		icon = GFX_goal_support_democracy
@@ -1346,7 +1346,7 @@ focus = {
 		}
 		}
 	}
-	
+
 focus = {
 		id = MUU_acquire_weapons
 		icon = GFX_goal_generic_small_arms
@@ -1393,7 +1393,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_acquire_ships
 		icon = GFX_focus_generic_cruiser2
@@ -1425,7 +1425,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_invite_companies
 		icon = GFX_goal_continuous_repairments
@@ -1454,7 +1454,7 @@ focus = {
 			add_offsite_building = { type = arms_factory level = 4 }
 		}
 	}
-	##democratic right branch##	
+	##democratic right branch##
 focus = {
 		id = MUU_extend_voting
 		icon = GFX_goal_support_democracy
@@ -1485,7 +1485,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_transport_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1516,7 +1516,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_modernize_industry
 		icon = GFX_focus_generic_industry_2
@@ -1583,7 +1583,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_expand_ports
 		icon = GFX_focus_generic_treaty
@@ -1730,7 +1730,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_economic_reforms
 		icon = GFX_focus_generic_industry_3
@@ -1758,11 +1758,11 @@ focus = {
 			add_ideas = MUU_economic_reforms1
 		}
 	}
-	
 
-	
+
+
 	#####GOMMUNIST :DDD#####
-	
+
 focus = {
 		id = MUU_soviet_aid
 		icon = GFX_goal_support_communism
@@ -2077,7 +2077,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_support_revolutions
 		icon = GFX_focus_generic_support_the_left_right
@@ -2105,7 +2105,7 @@ focus = {
 			add_ideas = MUU_volunteers
 		}
 	}
-	
+
 focus = {
 		id = MUU_puppet_republics
 		icon = GFX_focus_generic_soviet_politics
@@ -2157,7 +2157,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_join_comintern
 		icon = GFX_focus_generic_join_comintern
@@ -2234,7 +2234,7 @@ focus = {
 			if = {random_owned_controlled_state = {limit = {infrastructure<4}add_building_construction = {type = infrastructure level = 2 instant_build = yes}}}
 		}
 	}
-	
+
 focus = {
 		id = MUU_forced_collectivization
 		icon = GFX_goal_generic_soviet_construction
@@ -2279,7 +2279,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_develop_poor
 		icon = GFX_focus_generic_concessions
@@ -2310,7 +2310,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_land_reclamation
 		icon = GFX_goal_generic_construction
@@ -2341,7 +2341,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_reform_religion
 		icon = GFX_goal_continuous_increase_nu
@@ -2373,7 +2373,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_persecute_religion
 		icon = GFX_focus_eng_move_to_secure_the_dominions
@@ -2405,7 +2405,7 @@ focus = {
 		}
 	}
 	#####FASCIST#####
-	
+
 focus = {
 		id = MUU_state_first
 		mutually_exclusive = { focus = MUU_soviet_aid }
@@ -2432,7 +2432,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		    set_politics = { ruling_party = fascism elections_allowed = no } 
+		    set_politics = { ruling_party = fascism elections_allowed = no }
 			add_ideas = MUU_state_above_all
 		}
 	}
@@ -2464,7 +2464,7 @@ focus = {
 			add_ideas = MUU_fascist_conscription1
 		}
 	}
-	
+
 focus = {
 		id = MUU_expropriate_foreigners
 		icon = GFX_goal_generic_construct_civilian
@@ -2532,7 +2532,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_convert_factories1
 		icon = GFX_goal_continuous_naval_production
@@ -2565,7 +2565,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_convert_factories2
 		icon = GFX_goal_generic_construct_mil_factory
@@ -2654,7 +2654,7 @@ focus = {
 			}
 		}
 	}
-	
+
 focus = {
 		id = MUU_conscript_muror
 		icon = GFX_goal_generic_small_arms
@@ -2690,10 +2690,10 @@ focus = {
 			add_state_core = 1201
 			add_state_core = 1202
 			add_state_core = 1200
-	
+
 		}
 	}
-	
+
 focus = {
 		id = MUU_declare_empire
 		icon = GFX_goal_continuous_increase_nu
@@ -2722,7 +2722,7 @@ focus = {
 			add_stability = 0.1
 		}
 	}
-	
+
 focus = {
 		id = MUU_claim_neighbours
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -3072,9 +3072,9 @@ focus = {
 			hidden_effect = {set_cosmetic_tag = MUU_MOO}
 		}
 	}
-	
+
 	###############deal with the commies###############
-	
+
 focus = {
 		id = MUU_connect_countryside
 		icon = GFX_goal_generic_major_alliance
@@ -3364,7 +3364,7 @@ focus = {
 					type = infantry_equipment_0
 					amount = 1000
 					producer = MUU
-			}	
+			}
 		}
 	}
 focus = {
@@ -3619,9 +3619,9 @@ focus = {
 			add_research_slot = 1
 		}
 	}
-	
+
 	##########################military subtree##########################
-	
+
 focus = {
 		id = MUU_military_reforms
 		icon = GFX_goal_generic_army_doctrines
@@ -4469,5 +4469,5 @@ focus = {
 			}
 		}
 	}
-	
+
 }

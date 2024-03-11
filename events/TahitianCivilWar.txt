@@ -10,9 +10,9 @@ country_event = {
 	title = tahiti.1.t
 	desc = tahiti.1.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		NOT = { has_global_flag = tcw_over }
 		NOT = {date < 1936.1.1}
@@ -24,7 +24,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 60
 	}
-	
+
 	option = { # Support Nationalists
 		name = tahiti.1.a
 		trigger = { is_ai = no }
@@ -53,12 +53,12 @@ country_event = {
 			}
 			news_event = { hours = 6 id = tah.news.63 }
 			set_global_flag = tahitian_civil_war
-			
+
 			load_oob = "TTI_civil_war"
 			set_equipment_fraction = 0.5
 			set_stability = 0.9
 			set_war_support = 0.8
-			
+
 			add_popularity = {
 				ideology = democratic
 				popularity = 1
@@ -111,7 +111,7 @@ country_event = {
 			}
 			news_event = { hours = 6 id = tah.news.63 }
 			set_global_flag = tahitian_civil_war
-			
+
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -123,7 +123,7 @@ country_event = {
 			add_popularity = {
 				ideology = democratic
 				popularity = -1
-			}	
+			}
 			random_other_country = {
 				limit = {
 					original_tag = TAH
@@ -135,7 +135,7 @@ country_event = {
 			set_equipment_fraction = 0.5
 			set_stability = 0.9
 			set_war_support = 0.8
-			
+
 			country_event = { id = tahiti.3 days = 7 }
 		}
 		custom_effect_tooltip = tcw_republicans_chosen
@@ -149,7 +149,7 @@ country_event = {
 	title = tahiti.8.t
 	desc = tahiti.8.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
-	
+
 	trigger = {
 		original_tag = TAH
 		has_government = democratic
@@ -182,7 +182,7 @@ country_event = {
 	title = tahiti.9.t
 	desc = tahiti.9.d
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes

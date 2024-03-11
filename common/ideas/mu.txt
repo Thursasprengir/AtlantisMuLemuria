@@ -10,7 +10,7 @@ ideas = {
 			picture = MUU_rural_isolation
 
 			modifier = {
-				conscription_factor = -0.4 
+				conscription_factor = -0.4
 			}
 		}
 		MUU_rural_guerrillas = {
@@ -25,10 +25,10 @@ ideas = {
 			modifier = {
 				weekly_manpower = -1500
 				stability_factor = -0.60
-				war_support_factor = -0.30 
-				command_power_gain = -0.5 
-				surrender_limit = -0.4 
-				attrition = 0.2 
+				war_support_factor = -0.30
+				command_power_gain = -0.5
+				surrender_limit = -0.4
+				attrition = 0.2
 			}
 		}
 		MUU_government_purges_happening = {
@@ -80,7 +80,7 @@ ideas = {
 			picture = generic_army_war_college
 
 			modifier = {
-				monarchism_drift = 0.02
+				neutrality_drift = 0.02
 			}
 		}
 		MUU_ministry_of_defense = {
@@ -186,7 +186,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.02
-				consumer_goods_factor = -0.05 
+				consumer_goods_factor = -0.05
 				offensive_war_stability_factor = 0.2
 				defensive_war_stability_factor = 0.2
 			}
@@ -287,10 +287,10 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -1
-				consumer_goods_factor = -0.05 
-				army_speed_factor = 0.05 
-				army_attack_factor = 0.1 
-				army_defence_factor = -0.1 
+				consumer_goods_factor = -0.05
+				army_speed_factor = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = -0.1
 			}
 		}
 		MUU_develop_poor1 = {
@@ -486,7 +486,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 
 			modifier = {
-				experience_gain_air = 0.1 
+				experience_gain_air = 0.1
 				air_accidents_factor = -0.05
 				experience_gain_air_factor = 0.1
 			}
@@ -509,16 +509,16 @@ ideas = {
 
 	political_advisor = {
 		duqum_nietalli = {
-			
+
 			picture = idea_generic_air_africa_1
 			allowed = {
 				original_tag = "MUU"
 			}
 			available = {
-				
+
 			}
 
-			
+
 			traits = { communist_revolutionary }
 
 			do_effect = {
@@ -526,7 +526,7 @@ ideas = {
 					has_government = communism
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 10
 				modifier = {
@@ -543,9 +543,9 @@ ideas = {
 					factor = 0
 				}
 			}
-		}	
+		}
 		ahyumui_nendamru = {
-			
+
 			picture = idea_generic_air_africa_2
 			allowed = {
 				original_tag = "MUU"
@@ -554,21 +554,21 @@ ideas = {
 				has_government = communism
 			}
 			available = {
-				
+
 			}
-			
-			
+
+
 			traits = { financial_expert }
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 		dzam_jumrir = {
-			
+
 			picture = generic_political_advisor_europe_1
 			allowed = {
 				original_tag = "MUU"
@@ -577,21 +577,21 @@ ideas = {
 				has_government = communism
 			}
 			available = {
-				
+
 			}
-			
-			
+
+
 			traits = { economist }
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 		qunlunuq_irimudzu = {
-			
+
 			picture = USA_whittaker_chambers
 			allowed = {
 				original_tag = "MUU"
@@ -600,20 +600,20 @@ ideas = {
 				has_government = communism
 			}
 			available = {
-				
+
 			}
-			
+
 			traits = { editor }
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 		dulutli_amerziad = {
-			
+
 			picture = generic_political_advisor_europe_1
 			allowed = {
 				original_tag = "MUU"
@@ -622,17 +622,17 @@ ideas = {
 				not = { has_government = communism }
 			}
 			available = {
-				
-			}
-			
 
-			
+			}
+
+
+
 			traits = { editor }
 			cost = 50
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -644,153 +644,153 @@ ideas = {
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			traits = { captain_of_industry }
 		}
 		ezizi_gyulqun = {
 
 			picture = generic_political_advisor_europe_2
-				
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			traits = { prince_of_terror }
 		}
 		harul_ijjris = {
-			
-			
+
+
 			allowed = {
 				original_tag = "MUU"
 			}
-			
+
 			available = {
 				}
-			
+
 			traits = { democratic_reformer }
-	
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		
+
 		dzaris_tseminui = {
-						
+
 			allowed = {
 				original_tag = "MUU"
 			}
 			available = {
 			}
 
-			
+
 			traits = { fascist_demagogue }
-	
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 10
 				modifier = {
 					is_historical_focus_on = yes
 					factor = 0
 				}
-			}		
+			}
 		}
 
 		lobur_dashim = {
-			
+
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			traits = { silent_workhorse }
 		}
 		dzozef_magadi = {
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
 				original_tag = MUU
 			}
 			available = {
-				
+
 			}
-			
+
 			traits = { anti_communist_crusader }
 		}
 
 		dzin_tamisin = {
-			
+
 			picture = generic_political_advisor_europe_5
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			traits = { compassionate_gentleman }
 		}
 
 		bijjo_pundrapez = {
-			
+
 			picture = generic_political_advisor_europe_6
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			traits = { smooth_talking_charmer }
 		}
 
 		gurdurum_nalimtsi = {
 			picture = generic_political_advisor_europe_6
-			
+
 			allowed = {
 				original_tag = MUU
 			}
 			available = {
 			}
-			
+
 			traits = { financial_expert }
 		}
 		pena_qimram = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			traits = { war_industrialist }
 		}
 
 		tonalu_zimsem = {
-			
+
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			traits = { armaments_organizer }
 		}
 	}
-	
+
 
 	army_chief = {
-		
-	
+
+
 		orutli_usamirez = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MUU
@@ -798,59 +798,59 @@ ideas = {
 			available = {
 			}
 
-			
+
 			traits = { army_chief_morale_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		ergun_landiq = {
-			
+
 			picture = generic_army_europe_5
 			ledger = army
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		marejja_dzor = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { army_chief_drill_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		arpren_tsisram = {
-			
+
 			picture = generic_army_europe_1
 			ledger = army
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { army_chief_offensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -863,330 +863,330 @@ ideas = {
 			}
 			available = {
 			}
-			
 
-			
+
+
 			traits = { army_chief_planning_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	}
-	
-	air_chief = {
-		
-		
-		enli_usasor = {
-			
-			ledger = air
-			allowed = {
-				original_tag = MUU
-			}
-			
 
-			
-			traits = { air_chief_reform_3 }
-			
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+	}
+
+	air_chief = {
+
+
+		enli_usasor = {
+
+			ledger = air
+			allowed = {
+				original_tag = MUU
+			}
+
+
+
+			traits = { air_chief_reform_3 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		djrov_tsuus = {
-			
+
 			picture = generic_air_europe_3
 			ledger = air
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { air_chief_night_operations_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		mairat_hyrden = {
-			
+
 			picture = generic_air_europe_1
 			ledger = air
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { air_chief_ground_support_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		dzor_gindi = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { air_chief_safety_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
-	
+
 	navy_chief = {
-	
+
 		gulaq_trasmidj = {
-			
+
 			picture = generic_navy_europe_3
 			ledger = navy
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		guhalaq_jimurru = {
-			
-			
-			allowed = {
-				original_tag = MUU
-			}
-			ledger = navy
-			picture = generic_navy_europe_3
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		ridjart_nahunmund = {
-			
-			picture = generic_navy_europe_3
-			ledger = navy
-			allowed = {
-				original_tag = MUU
-			}
-			
 
-			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		guhalaq_jimurru = {
+
+
+			allowed = {
+				original_tag = MUU
+			}
+			ledger = navy
+			picture = generic_navy_europe_3
+
+			traits = { navy_chief_commerce_raiding_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ridjart_nahunmund = {
+
+			picture = generic_navy_europe_3
+			ledger = navy
+			allowed = {
+				original_tag = MUU
+			}
+
+
+
 			traits = { navy_chief_old_guard }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-	
-	
+
+
 	high_command = {
 		gordnau_hajjise = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { army_commando_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		laqanziz_djuntsa = {
-			
+
 			picture = generic_army_europe_3
 			ledger = army
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 
 			traits = { army_armored_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		maigul_guruz = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { army_infantry_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
-		}	
-		
+		}
+
 		midja_mahriq = {
-			
+
 			picture = sabiha_gocen
 			ledger = air
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { air_strategic_bombing_3 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		fuusniq_aroqsats = {
-			
+
 			picture = generic_navy_europe_1
 			ledger = navy
 			allowed = {
 				original_tag = MUU
 			}
 
-			
+
 			traits = { navy_screen_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		chameru_dahijjiq = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { air_tactical_bombing_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		leimun_lumul = {
-			
+
 			ledger = navy
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { navy_naval_air_defense_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		badtsiz_maldriave = {
-			
+
 			picture = generic_navy_europe_2
 			ledger = navy
 			allowed = {
 				original_tag = MUU
 			}
 
-			
+
 			traits = { navy_fleet_logistics_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		dzamiz_suzareq = {
-			
+
 			ledger = navy
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			traits = { navy_amphibious_assault_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-		
+
 	tank_manufacturer = {
-	
+
 		#designer = yes
-	
+
 		murumuq_nasajjin = {
 			picture = mu_mobile_tank
-			
-			
+
+
 			allowed = {
 				original_tag = MUU
-			}			
+			}
 
-			
+
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			traits = { fast_tank_manufacturer }
-			
+
 			modifier = {
 			}
 		}
-		
+
 		yollohtli_tamu = {
 			picture = yollo
-			
-			
+
+
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			traits = { medium_tank_manufacturer }
-			
+
 			modifier = {
 			}
 		}
 		qashimshi_tamu = {
-			
+
 			picture = qt
 			allowed = {
 				original_tag = MUU
@@ -1194,13 +1194,13 @@ ideas = {
 			available = {
 			}
 
-			
+
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			traits = { tank_manufacturer }
-			
+
 			equipment_bonus = {
 				medium_tank_chassis = {
 					build_cost_ic = -0.1
@@ -1214,9 +1214,9 @@ ideas = {
 
 			}
 		}
-		
+
 		qashimshitara_mu_tamu = {
-			
+
 			picture = qmt
 			allowed = {
 				original_tag = MUU
@@ -1224,13 +1224,13 @@ ideas = {
 			available = {
 			}
 
-			
+
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			traits = { }
-			
+
 			equipment_bonus = {
 				light_tank_destroyer_chassis = {
 					build_cost_ic = -0.1
@@ -1254,361 +1254,361 @@ ideas = {
 			}
 		}
 	}
-	
+
 	naval_manufacturer = {
-	
+
 		designer = yes
-		
+
 		muror_national_yards = {
 			picture = mu_nat_yards
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
+
 			traits = { naval_manufacturer }
-			
+
 			modifier = {
 			}
 		}
-		
+
 		orqiq_otumatiq_ijrri = {
-			
+
 			picture = ooi
 
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			research_bonus = {
 				naval_equipment = 0.10
 			}
-			
+
 			traits = { raiding_fleet_naval_manufacturer }
 		}
 	}
-	
-	aircraft_manufacturer = { 
-		
+
+	aircraft_manufacturer = {
+
 		designer = yes
-		
+
 		tebred_saba_ijrri = {
-			
+
 			picture = tebred
 
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.05
 			}
-			
+
 			traits = { light_aircraft_manufacturer medium_aircraft_manufacturer }
-			
+
 			equipment_bonus = {
 				# trainers, and air ambulances?
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		qasbaijju_sabajiriq = {
-			
+
 			picture = muu_cas
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				air_equipment = 0.05
 			}
-			
+
 			traits = { CAS_manufacturer naval_aircraft_manufacturer}
-			
+
 			modifier = {
 			}
 		}
 
-		
+
 		dzaisaindier = {
-			
+
 			picture = dzai
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+
 			traits = { heavy_aircraft_manufacturer }
-			
+
 			modifier = {
 			}
-		}		
+		}
 	}
-	
-	
+
+
 	materiel_manufacturer = {
-			
+
 		designer = yes
-		
+
 		quudjer_tsirarr = {
-			
+
 			picture = mu_infantry
 
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			research_bonus = {
 				infantry_weapons = 0.10
 			}
-			
+
 			equipment_bonus = {
 				# rifles and pistols
 			}
-			
+
 			traits = { infantry_equipment_manufacturer }
 		}
-		
+
 		heruq_tsirarr = {
-			
+
 			picture = heruq
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
+
 			traits = { motorized_equipment_manufacturer }
-			
+
 			modifier = {
 			}
 		}
-		
-	
-		
+
+
+
 		iqurdun_detsamilli = {
 			picture = mu_artillery
-			
+
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				artillery = 0.15
 			}
-			
+
 			traits = { artillery_manufacturer }
-			
+
 			modifier = {
 			}
 		}
 	}
-	
 
-	
+
+
 	industrial_concern = {
-					
+
 		muror_national_oil = {
 			picture = mno
-			
-			
+
+
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				industry = 0.05
 				synth_resources = 0.15
 			}
-			
+
 			traits = { refinery_concern }
-			
+
 			modifier = {
 			}
 		}
-		
+
 		eliqtriq_mejjine_tsirarr = {
 			picture = EMT
-			
-			
+
+
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				electronics = 0.15
 			}
-			
+
 			traits = { electronics_concern }
-			
+
 			modifier = {
 			}
 		}
 		qusulli_arbeit_mejjine = {
-			
+
 			picture = qam
 			allowed = {
 				original_tag = MUU
 			}
 			available = {
 			}
-			
 
-			
+
+
 			research_bonus = {
 				industry = 0.15
 			}
-			
+
 			traits = { industrial_concern }
-			
+
 			modifier = {
 				industrial_capacity_factory = 0.05
 			}
 		}
 	}
-	
-	
+
+
 	theorist = {
 		murjiq_orqijun = {
-				
+
 		picture = generic_army_europe_2
 		ledger = army
 		allowed = {
 			original_tag = MUU
 		}
-		
+
 		research_bonus = {
 			land_doctrine = 0.07
 		}
-		
+
 		traits = { military_theorist }
 	}
-		
+
 		surumuj_anuasid = {
-			
+
 			ledger = army
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			cost = 250
-			
+
 			research_bonus = {
 				cat_mobile_warfare = 0.15
 			}
-			
+
 			traits = { mobile_warfare_expert }
 		}
-		
+
 		hisqitla_manilli = {
-			
+
 			ledger = navy
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				naval_doctrine = 0.10
 			}
-			
+
 			traits = { naval_theorist }
 		}
-		
+
 		bargiz_defumun = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			cost = 250
-			
+
 			research_bonus = {
 				cat_base_strike = 0.15
 			}
-			
+
 			traits = { naval_aviation_pioneer }
 		}
-		
+
 		gadriz_dzulei = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MUU
 			}
-			
+
 			cost = 250
-			
+
 			research_bonus = {
 				cat_strategic_destruction = 0.15
 			}
-			
+
 			traits = { victory_through_airpower }
 		}
-		
+
 		sayado_puulran = {
-			ledger = air	
+			ledger = air
 		picture = generic_political_advisor_europe_1
 
 		allowed = {
 			original_tag = MUU
 		}
-		
+
 		research_bonus = {
 			air_doctrine = 0.07
 		}
-		
+
 		traits = { air_warfare_theorist }
 	}
-		
+
 		hobrair_qotarj = {
-			
+
 			ledger = air
 			allowed = {
 				original_tag = MUU
 			}
-			
 
-			
+
+
 			research_bonus = {
 				rocketry = 0.15
 			}
-			
+
 			traits = { rocket_scientist }
 		}
 	}
-	
+
 }

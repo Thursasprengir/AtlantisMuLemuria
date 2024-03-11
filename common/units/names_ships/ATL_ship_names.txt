@@ -6,14 +6,14 @@ ATL_DD_HISTORICAL = {
 	for_countries = { ATL }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
 	#link_numbering_with = { ATL_DE_HISTORICAL }				# IMPROVEMENT: Add script like this so that ships don't share same name when it occurs across multiple lists (confirmed that you can make multiple Albatross Mowe, etc. with GER currently)
 
-	prefix = "IOE "							
-	fallback_name = "Destroyer DD-%d"					
+	prefix = "IOE "
+	fallback_name = "Destroyer DD-%d"
 
-	unique = {											
+	unique = {
 		 "Kaiturun" "Eshtriat" "Eriskamen" "Gastimrid" "Hurak" "Nimarstul" "Damskritamna" "Ulurkas" "Kurnumal"
 	}
 }
@@ -26,10 +26,10 @@ ATL_DE_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }
-	
-	#link_numbering_with = { ATL_DD_HISTORICAL }	
 
-	prefix = "IOE "							
+	#link_numbering_with = { ATL_DD_HISTORICAL }
+
+	prefix = "IOE "
 	fallback_name = "Destroyer Escort DE-%d"
 
 	unique = {
@@ -45,8 +45,8 @@ ATL_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
-	prefix = "IOE "							
+
+	prefix = "IOE "
 	fallback_name = "Light Cruiser CL-%d"
 
 	unique = {
@@ -62,7 +62,7 @@ ATL_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
+
 	prefix = "IOE "
 	fallback_name = "Heavy Cruiser CA-%d"
 
@@ -79,7 +79,7 @@ ATL_CLAA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
+
 	prefix = "IOE "
 	fallback_name = "Light Cruiser CLAA-%d"
 
@@ -96,7 +96,7 @@ ATL_MINELAYERS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
-	
+
 	prefix = "IOE "
 	fallback_name = "Minelayer CM-%d"
 
@@ -113,9 +113,9 @@ ATL_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
-	prefix = "IOE "							
-	fallback_name = "Battleship BB-%d"		
+
+	prefix = "IOE "
+	fallback_name = "Battleship BB-%d"
 
 	unique = {
 		"Blaskidron" "Frunusmar" "Danskigre" "Nartsunre" "Klangashna" "Jiraz" "Hetaz" "Ougerm" "Oprisgan"
@@ -130,9 +130,9 @@ ATL_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
-	prefix = "IOE "							
-	fallback_name = "Battlecruiser BC-%d"		
+
+	prefix = "IOE "
+	fallback_name = "Battlecruiser BC-%d"
 
 	unique = {
 		"Gusm" "Hardin" "Derbut" "Polurd" "Wenidi" "Leanmi" "Keriam" "Drunime" "Reskilant" "Devisrant"
@@ -147,9 +147,9 @@ ATL_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier ship_hull_carrier_vlfp vlfp_carrier  }
-	
-	prefix = "IOE "							
-	fallback_name = "Carrier CV-%d"	
+
+	prefix = "IOE "
+	fallback_name = "Carrier CV-%d"
 
 	unique = {
 		"Firdis" "Ermat" "Remran" "Dorkil" "Wurgidan" "Namrud" "Ramridis" "Regurdmna"
@@ -164,9 +164,9 @@ ATL_CVL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "IOE "							
-	fallback_name = "Carrier CVL-%d"	
+
+	prefix = "IOE "
+	fallback_name = "Carrier CVL-%d"
 
 	unique = {
 		 "Taidrin" "Resparni" "Aldirgri" "Murunstar" "Laigrimna" "Otransin" "Wizanmer" "Elrisna"
@@ -181,9 +181,9 @@ ATL_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
-	prefix = "IOE "							
-	fallback_name = "Submarine SS-%d"	
+
+	prefix = "IOE "
+	fallback_name = "Submarine SS-%d"
 
 	unique = {
 		"Aidrna" "Greasti" "Kingrunas" "Lirstanu" "Aestaril" "Lermri" "Drenkire" "Keronir" "Erdrumzil" "Iprsetin" "Remsirtil" "Dregsirs"
@@ -198,8 +198,8 @@ ATL_HUNTING = {
 	for_countries = { ATL }
 
 	type = ship
-	
-	prefix = "IOE "							
+
+	prefix = "IOE "
 
 	unique = {
 		 #hunting deities
@@ -214,8 +214,8 @@ ATL_WIND = {
 	for_countries = { ATL }
 
 	type = ship
-	
-	prefix = "IOE "							
+
+	prefix = "IOE "
 
 	unique = {
 		#wind deities
@@ -230,8 +230,8 @@ ATL_SKY = {
 	for_countries = { ATL }
 
 	type = ship
-	
-	prefix = "IOE "							
+
+	prefix = "IOE "
 
 	unique = {
 		#sky deities
@@ -246,8 +246,8 @@ ATL_DEATH = {
 	for_countries = { ATL }
 
 	type = ship
-	
-	prefix = "IOE "							
+
+	prefix = "IOE "
 
 	unique = {
 		#Death Deities
@@ -262,8 +262,8 @@ ATL_FERTILITY = {
 	for_countries = { ATL }
 
 	type = ship
-	
-	prefix = "IOE "							
+
+	prefix = "IOE "
 
 	unique = {
 		#Fertility Deities
@@ -278,8 +278,8 @@ ATL_KNOWLEDGE = {
 	for_countries = { ATL }
 
 	type = ship
-	
-	prefix = "IOE "							
+
+	prefix = "IOE "
 
 	unique = {
 		#knowledge deities
@@ -294,8 +294,8 @@ ATL_CHIEF = {
 	for_countries = { ATL }
 
 	type = ship
-	
-	prefix = "IOE "							
+
+	prefix = "IOE "
 
 	unique = {
 		#chief deities

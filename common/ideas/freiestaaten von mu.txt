@@ -2,16 +2,16 @@ ideas = {
 
 
 	country = {
-	
+
 		FMU_lose_but_never_defeat = {
 			allowed = {
 				always = no
 			}
-			
-			allowed_civil_war = { 
+
+			allowed_civil_war = {
 				always = no
 			}
-			
+
 			removal_cost = -1
 			picture = SPR_disbanded_army
 			modifier = {
@@ -23,34 +23,34 @@ ideas = {
 				war_support_weekly = 0.001
 			}
 		}
-		
+
 		FMU_lessons_of_the_dresden = {
 			allowed = {
 				always = no
 			}
-			
-			allowed_civil_war = { 
-				always = yes 
+
+			allowed_civil_war = {
+				always = yes
 			}
-			
+
 			removal_cost = -1
 			picture = tur_disorganised_armed_forces
 			modifier = {
-				army_core_defence_factor = 0.1 
+				army_core_defence_factor = 0.1
 				army_core_attack_factor = 0.1
 				mobilization_speed = 0.15
 			}
 		}
-		 
+
 		FMU_austral_jaguar = {
 			allowed = {
 				always = no
 			}
-			
-			allowed_civil_war = { 
-				always = yes 
+
+			allowed_civil_war = {
+				always = yes
 			}
-			
+
 			removal_cost = -1
 			picture = GFX_idea_FMU_austral_jaguar
 			modifier = {
@@ -59,28 +59,28 @@ ideas = {
 				naval_enemy_fleet_size_ratio_penalty_factor = 0.2
 			}
 		}
-		
+
 		FMU_versailles_coercion_selection = { #fake for selection
 			allowed = {
 				always = no
 			}
-			
+
 			removal_cost = -1
 			picture = generic_oppression
 			modifier = {
 				custom_modifier_tooltip = FMU_versailles_coercion_tt
 			}
 		}
-		
+
 		FMU_versailles_coercion = {
 			allowed = {
 				always = no
 			}
-			
-			allowed_civil_war = { 
-				always = yes 
+
+			allowed_civil_war = {
+				always = yes
 			}
-			
+
 			cancel = {
 				OR = {
 					is_in_faction_with = ENG
@@ -88,68 +88,68 @@ ideas = {
 					has_war = yes
 				}
             }
-			
+
 			on_add = {
 				FMU = {
-					add_opinion_modifier = { 
-						target = ENG 
+					add_opinion_modifier = {
+						target = ENG
 						modifier = FMU_revanchism
 					}
 				}
 				FMU = {
-					add_opinion_modifier = { 
-						target = FRA 
+					add_opinion_modifier = {
+						target = FRA
 						modifier = FMU_revanchism
 					}
 				}
 				ENG = {
-					add_opinion_modifier = { 
-						target = FMU 
+					add_opinion_modifier = {
+						target = FMU
 						modifier = rejected_demands
 					}
 				}
 				FRA = {
-					add_opinion_modifier = { 
-						target = FMU 
+					add_opinion_modifier = {
+						target = FMU
 						modifier = rejected_demands
 					}
-				}				
+				}
 			}
-			
+
 			on_remove = {
 				FMU = {
-					remove_opinion_modifier = { 
-						target = ENG 
+					remove_opinion_modifier = {
+						target = ENG
 						modifier = FMU_revanchism
 					}
 				}
 				FMU = {
-					remove_opinion_modifier = { 
-						target = FRA 
+					remove_opinion_modifier = {
+						target = FRA
 						modifier = FMU_revanchism
 					}
 				}
 				ENG = {
-					remove_opinion_modifier = { 
-						target = FMU 
+					remove_opinion_modifier = {
+						target = FMU
 						modifier = rejected_demands
 					}
 				}
 				FRA = {
-					remove_opinion_modifier = { 
-						target = FMU 
+					remove_opinion_modifier = {
+						target = FMU
 						modifier = rejected_demands
 					}
-				}				
+				}
 			}
-			
+
 			removal_cost = -1
 			picture = generic_oppression
 			modifier = {
 				custom_modifier_tooltip = FMU_versailles_coercion_tt
 			}
 		}
-	
+
 		FMU_unfair_sufferage = {
 			allowed = {always = no}
 			allowed_civil_war = {always = yes}
@@ -159,9 +159,9 @@ ideas = {
 				drift_defence_factor = -0.5
 			}
 		}
-		
+
 		FMU_associate_state = {
-			
+
 			allowed = {
 				always = no
 			}
@@ -173,14 +173,14 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_constitutional_guarantee
-	
+
 			modifier = {
 			}
 		}
 
 		FMU_fascist_sympathizers = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -192,15 +192,15 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_fascism_drift_2
-	
+
 			modifier = {
-				fascism_drift = 0.01	
+				fascism_drift = 0.01
 			}
 		}
 
 		FMU_sanctions = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -212,15 +212,15 @@ ideas = {
 			removal_cost = -1
 
 			picture = hun_treaty_of_trianon
-	
+
 			modifier = {
 					min_export = 0.2
 			}
 		}
 
 		FMU_sanctions_modified = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -232,15 +232,15 @@ ideas = {
 			removal_cost = -1
 
 			picture = hun_treaty_of_trianon
-	
+
 			modifier = {
 					min_export = 0.1
 			}
 		}
 
 		FMU_companies = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -252,7 +252,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-	
+
 			modifier = {
 					consumer_goods_factor = -0.05
 					trade_opinion_factor = -0.2
@@ -260,8 +260,8 @@ ideas = {
 		}
 
 		FMU_companies_open_stocks = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -273,16 +273,16 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-	
+
 			modifier = {
 					min_export = -0.1
-					economy_cost_factor = -0.25	
+					economy_cost_factor = -0.25
 					trade_opinion_factor = 0.3
 			}
 		}
 		FMU_companies_open_stocks_civilian = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -294,7 +294,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-	
+
 			modifier = {
 			min_export = -0.1
 			consumer_goods_factor = -0.05
@@ -304,8 +304,8 @@ ideas = {
 		}
 
 		FMU_companies_open_stocks_military = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -317,17 +317,17 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-	
+
 			modifier = {
 				min_export = -0.1
 				industrial_capacity_factory = 0.1
-				economy_cost_factor = -0.25	
+				economy_cost_factor = -0.25
 				trade_opinion_factor = 0.3
 			}
 		}
 		FMU_companies_kohn = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -339,14 +339,14 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-	
+
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		FMU_companies_kohn_military = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -358,7 +358,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-	
+
 			modifier = {
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
@@ -366,8 +366,8 @@ ideas = {
 			}
 		}
 		FMU_companies_kohn_civilian = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -379,7 +379,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-	
+
 			modifier = {
 				consumer_goods_factor = 0.2
 					production_factory_max_efficiency_factor = 0.1
@@ -387,8 +387,8 @@ ideas = {
 			}
 		}
 		FMU_status_quo = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -400,16 +400,16 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_research_bonus
-	
+
 			modifier = {
 				drift_defence_factor = 0.5
-				stability_factor = 0.20	
+				stability_factor = 0.20
 			}
 		}
 
 		FMU_maywerken = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -421,7 +421,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = FRA_factory_strikes
-	
+
 			modifier = {
 				refit_speed	= 0.2
 				production_speed_buildings_factor = 0.1
@@ -434,9 +434,9 @@ ideas = {
 			removal_cost = -1
 			picture = air_war_plans_division_focus
 			modifier = {
-			 	offensive_war_stability_factor = 0.4 
+			 	offensive_war_stability_factor = 0.4
 				command_power_gain = 0.5
-				max_command_power = 10 
+				max_command_power = 10
 			}
 		}
 		FMU_germans_are_super_bros1 = {
@@ -445,7 +445,7 @@ ideas = {
 			picture = ger_revive_the_kaiserreich
 			modifier = {
 				conscription_factor = 0.1
-				army_core_defence_factor = 0.1 
+				army_core_defence_factor = 0.1
 			}
 		}
 		FMU_germans_are_super_bros2 = {
@@ -454,8 +454,8 @@ ideas = {
 			picture = ger_revive_the_kaiserreich
 			modifier = {
 				conscription_factor = 0.1
-				army_core_defence_factor = 0.1 
-				army_core_attack_factor = 0.15 
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.15
 			}
 		}
 		FMU_germans_are_super_bros3 = {
@@ -464,7 +464,7 @@ ideas = {
 			picture = ger_revive_the_kaiserreich
 			modifier = {
 				conscription_factor = 0.1
-				army_core_defence_factor = 0.1 
+				army_core_defence_factor = 0.1
 				army_core_attack_factor = 0.15
 				conscription = 0.05
 			}
@@ -520,8 +520,8 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				surrender_limit = 0.1
-				army_core_attack_factor = 0.15 
-				army_core_defence_factor = 0.1 
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.1
 			}
 		}
 		FMU_denazification = {
@@ -539,7 +539,7 @@ ideas = {
 			picture = liberty_ships_focus
 			modifier = {
 				spotting_chance = 0.1
-				ships_at_battle_start = 0.25 
+				ships_at_battle_start = 0.25
 			}
 		}
 		#New Ideas
@@ -557,12 +557,12 @@ ideas = {
 				stability_factor = -0.2
 			}
 
-			removal_cost = -1	
-			
+			removal_cost = -1
+
 			picture = ger_revive_the_kaiserreich
 
 		}
-		
+
 		FMU_we_are_german = {
 
 
@@ -581,8 +581,8 @@ ideas = {
 			}
 
 			picture = eng_imperial_conscription
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 
@@ -603,11 +603,11 @@ ideas = {
 			}
 
 			picture = eng_imperial_conscription
-			
-			removal_cost = -1	
 
-		}			
-		
+			removal_cost = -1
+
+		}
+
 		FMU_boat_production = {
 
 			allowed = {
@@ -621,12 +621,12 @@ ideas = {
 			modifier = {
 				industrial_capacity_dockyard = 0.1
 				industrial_capacity_factory = -0.1
-				
+
 			}
-			
+
 			picture = jap_interservice_rivalry_navy_strengthened
 
-			removal_cost = -1	
+			removal_cost = -1
 
 		}
 
@@ -649,8 +649,8 @@ ideas = {
 				naval_retreat_chance = -0.1
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 
@@ -673,11 +673,11 @@ ideas = {
 				navy_fuel_consumption_factor = 0.07
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
-		
+
 		FMU_pacific_boats= {
 
 
@@ -694,8 +694,8 @@ ideas = {
 				navy_capital_ship_defence_factor = 0.2
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		FMU_South_A_boats = {
@@ -714,8 +714,8 @@ ideas = {
 				navy_submarine_detection_factor = 0.2
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		FMU_the_long_lance = {
@@ -726,9 +726,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
-			
+
 			modifier = {
 				naval_torpedo_screen_penetration_factor = 0.2
 			}
@@ -748,8 +748,8 @@ ideas = {
 				production_speed_coastal_bunker_factor = 0.15
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		FMU_austral_cordination = {
@@ -767,8 +767,8 @@ ideas = {
 				naval_coordination = 0.05
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 
@@ -789,9 +789,9 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = -0.1
 			}
-			
-			removal_cost = -1	
-			
+
+			removal_cost = -1
+
 			picture = jap_interservice_rivalry_army_strengthened
 
 		}
@@ -811,8 +811,8 @@ ideas = {
 				#add recruitable population
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 
@@ -831,13 +831,13 @@ ideas = {
 				production_speed_arms_factory_factor = 0.15
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		######ideas end here lol#######
-	
-	
+
+
 		FMU_our_land_1 = {
 
 
@@ -850,11 +850,11 @@ ideas = {
 			}
 
 			modifier = {
-				
+
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		FMU_our_land_2 = {
@@ -869,11 +869,11 @@ ideas = {
 			}
 
 			modifier = {
-				
+
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		FMU_our_land_3 = {
@@ -888,11 +888,11 @@ ideas = {
 			}
 
 			modifier = {
-				
+
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		FMU_our_land_4 = {
@@ -907,14 +907,14 @@ ideas = {
 			}
 
 			modifier = {
-				
+
 			}
 
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
-		
+
 		FMU_national_dev_1 = {
 			allowed = {always = no}
 			removal_cost = -1
@@ -935,7 +935,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
-		
+
 		FMU_tech_fair_1 = {
 			allowed = {always = no}
 			removal_cost = -1
@@ -968,75 +968,75 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-		
+
 		######Debt#######
 		FMU_debt_to_the_ifc = {
-				
+
 			allowed = {
 				original_tag = FMU
 			}
-			
+
 			picture = gre_debt_to_the_ifc
-				
+
 			removal_cost = -1
-				
+
 			modifier = {
-				stability_factor = -0.1	
-				consumer_goods_factor = 0.15	
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
 			}
 		}
 
 		FMU_debt_to_the_ifc_2 = {
-				
+
 			allowed = {
 				original_tag = FMU
 			}
-			
+
 			allowed_civil_war = {
 				NOT = {
-					OR = { 
+					OR = {
 						has_government = communism
-						has_government = fascism 
+						has_government = fascism
 					}
 				}
 			}
 
 			picture = gre_debt_to_the_ifc
-				
+
 			removal_cost = -1
-				
+
 			modifier = {
-				stability_factor = -0.1	
-				consumer_goods_factor = 0.1	
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
 			}
 		}
 
 		FMU_debt_to_the_ifc_3 = {
-				
+
 			allowed = {
 				original_tag = FMU
 			}
 
 			allowed_civil_war = {
 				NOT = {
-					OR = { 
+					OR = {
 						has_government = communism
-						has_government = fascism 
+						has_government = fascism
 					}
 				}
 			}
 
 			picture = gre_debt_to_the_ifc
-				
+
 			removal_cost = -1
-				
+
 			modifier = {
-				stability_factor = -0.1	
-				consumer_goods_factor = 0.05	
+				stability_factor = -0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 		FMU_paying_off_debt_small = {
-				
+
 			allowed = {
 				original_tag = FMU
 			}
@@ -1046,17 +1046,17 @@ ideas = {
 			}
 
 			picture = generic_foreign_capital
-				
+
 			removal_cost = -1
-				
+
 			modifier = {
-				consumer_goods_factor = 0.05		
-				min_export = 0.1			
+				consumer_goods_factor = 0.05
+				min_export = 0.1
 			}
 		}
 
 		FMU_paying_off_debt_large = {
-				
+
 			allowed = {
 				original_tag = FMU
 			}
@@ -1066,12 +1066,12 @@ ideas = {
 			}
 
 			picture = SPR_relocate_the_gold_reserves
-				
+
 			removal_cost = -1
-				
+
 			modifier = {
-				consumer_goods_factor = 0.15		
-				min_export = 0.25			
+				consumer_goods_factor = 0.15
+				min_export = 0.25
 			}
 		}
 		#renigotiate Vesralia
@@ -1089,15 +1089,15 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.1
 				conscription_factor = 0.03
-				local_non_core_manpower = 0.15 
+				local_non_core_manpower = 0.15
 			}
 
 			picture = eng_imperial_conscription
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
-	
+
 		FMU_white_imigration = {
 			allowed = {always = no}
 			removal_cost = -1
@@ -1111,7 +1111,7 @@ ideas = {
 			removal_cost = -1
 			picture = ger_revive_the_kaiserreich
 			modifier = {
-				local_non_core_manpower = 0.3 
+				local_non_core_manpower = 0.3
 				production_speed_buildings_factor = 0.1
 			}
 		}
@@ -1122,14 +1122,14 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
-				production_factory_max_efficiency_factor = 0.2 
+				production_factory_max_efficiency_factor = 0.2
 			}
 		}
-		
-		
+
+
 		#Democratic
 		FMU_consumer_goods = {
-				
+
 			allowed = {
 				original_tag = FMU
 			}
@@ -1139,15 +1139,15 @@ ideas = {
 			}
 
 			picture = SPR_relocate_the_gold_reserves
-				
+
 			removal_cost = -1
-				
+
 			modifier = {
-				consumer_goods_factor = 0.15				
+				consumer_goods_factor = 0.15
 			}
 		}
 		FMU_regional_dev_authority = {
-				
+
 			allowed = {
 				original_tag = FMU
 			}
@@ -1157,12 +1157,12 @@ ideas = {
 			}
 
 			picture = SPR_relocate_the_gold_reserves
-				
+
 			removal_cost = -1
-				
+
 			modifier = {
-				consumer_goods_factor = -0.05	
-				production_speed_buildings_factor = 0.1				
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		FMU_womens_rights = {
@@ -1235,8 +1235,8 @@ ideas = {
 			picture = usa_tank_destroyer_board
 			modifier = {
 				repair_speed_factor = 0.3
-				production_speed_industrial_complex_factor = 0.1 
-				production_speed_bunker_factor = 0.1 
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_bunker_factor = 0.1
 			}
 		}
 		FMU_unternehmen_sternenmacher_idea = {
@@ -1247,13 +1247,13 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
-		
+
 	#New Military Ideas
 		FMU_shipping_lane_bonus = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1	
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
@@ -1261,7 +1261,7 @@ ideas = {
 				navy_submarine_attack_factor = 0.2
 				navy_submarine_defence_factor = 0.2
 			}
-			
+
 		}
 		FMU_control_shipping_bonus = {
 			allowed = {
@@ -1277,77 +1277,77 @@ ideas = {
 
 		}
 	}
-	
+
 		political_advisor = {
 		FMU_thanikas_bousinissi = {
-			
+
 			allowed = {
 				original_tag = "FMU"
 			}
 
 			traits = { communist_revolutionary }
-	
+
 			on_add = {
 				country_event = political.1
 			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = communism
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-			
+
 		FMU_anakistas_gobriski = {
-			
-			
+
+
 			allowed = {
 				original_tag = "FMU"
 			}
-			
 
-			
+
+
 			traits = { democratic_reformer }
-	
+
 			on_add = {
 				country_event = political.13
 			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		
+
 		FMU_laimaria_unismitri = {
-			
-			
+
+
 			allowed = {
 				original_tag = "FMU"
 			}
-			
-			
+
+
 			traits = { fascist_demagogue }
-	
+
 			on_add = {
 				country_event = political.7
 			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
@@ -1357,33 +1357,33 @@ ideas = {
 		FMU_damaskinos = {
 
 			picture = generic_political_advisor_europe_5
-			
+
 			allowed = {
 				original_tag = FMU
 			}
-			
+
 			traits = { compassionate_gentleman }
 		}
 
 		FMU_georgios_papandreou = {
 
 			picture = generic_political_advisor_europe_2
-				
+
 			allowed = {
 				original_tag = FMU
 			}
-			
+
 			traits = { silent_workhorse }
 		}
 
 		FMU_evripidis_bakirtris = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = FMU
 			}
-			
+
 			traits = { war_industrialist }
 		}
 	}
@@ -1391,68 +1391,68 @@ ideas = {
 	theorist = {
 
 		FMU_nikolaos_plastiras = {
-					
+
 			picture = generic_army_europe_3
 				ledger = army
 			allowed = {
 				original_tag = FMU
 			}
-			
+
 			research_bonus = {
 				land_doctrine = 0.07
 			}
-			
+
 			traits = { military_theorist }
 		}
 
 		FMU_eleftherios_venizelos = {
-					
+
 			picture = generic_political_advisor_europe_1
 				ledger = air
 			allowed = {
 				original_tag = FMU
 			}
-			
+
 			research_bonus = {
 				air_doctrine = 0.07
 			}
-			
+
 			traits = { air_warfare_theorist }
 		}
 	}
-	
+
 	# MILITARY
 	army_chief = {
-		
+
 		FMU_alexander_papagos = {
-			
+
 			picture = generic_army_europe_3
 			ledger = army
 			allowed = {
 				original_tag = FMU
 			}
-			
 
-			
+
+
 			traits = { army_chief_offensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		FMU_konstantinos_ventiris = {
-			
+
 			picture = generic_army_europe_5
 			ledger = army
 			allowed = {
 				original_tag = FMU
 			}
-			
 
-			
+
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1460,25 +1460,25 @@ ideas = {
 	}
 
 	air_chief = {
-		
-		
+
+
 		FMU_panagiotis_gazis = {
-			
+
 			picture = generic_air_europe_1
 			ledger = air
 			allowed = {
 				original_tag = FMU
 			}
-			
+
 			traits = { air_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		FMU_vasilios_tsarpalis = {
-			
+
 			picture = generic_air_europe_2
 			ledger = air
 			allowed = {
@@ -1486,7 +1486,7 @@ ideas = {
 			}
 
 			traits = { air_chief_safety_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1494,25 +1494,25 @@ ideas = {
 	}
 
 	navy_chief = {
-	
-		
+
+
 		FMU_alexandros_sakellariou = {
-			
+
 			picture = generic_navy_europe_1
 			ledger = navy
 			allowed = {
 				original_tag = FMU
 			}
-		
+
 			traits = { navy_chief_commerce_raiding_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		FMU_petros_voulgaris = {
-			
+
 			picture = generic_navy_europe_1
 			ledger = navy
 			allowed = {
@@ -1520,7 +1520,7 @@ ideas = {
 			}
 
 			traits = { navy_chief_maneuver_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1530,73 +1530,73 @@ ideas = {
 	high_command = {
 
 		FMU_aris_velouchiotis = {
-			
+
 			allowed = {
 				original_tag = FMU
 			}
 			ledger = army
 			picture = generic_army_europe_1
-			
+
 			traits = { army_artillery_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-	
+
 		FMU_napoleon_zervas = {
-			
-			
+
+
 			allowed = {
 				original_tag = FMU
 			}
 			ledger = army
 			picture = generic_army_europe_2
-			
+
 			traits = { army_infantry_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		FMU_nikos_beloyannis = {
-			
-			
+
+
 			allowed = {
 				original_tag = FMU
 			}
 			ledger = air
 			picture = generic_air_europe_2
-			
+
 			traits = { air_naval_strike_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		FMU_aristeidis_moraitinis = {
-			
-			
+
+
 			allowed = {
 				original_tag = FMU
 			}
 			ledger = air
 			picture = generic_air_europe_2
-			
+
 			traits = { air_bomber_interception_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-	
+
 	aircraft_manufacturer = {
-			
+
 		designer = yes
-		
+
 		FMU_gnaf = {
 			picture = messerschmitt_south
 			allowed = {	original_tag = FMU}
@@ -1623,10 +1623,10 @@ ideas = {
 		}
 	}
 
-	naval_manufacturer = { 
-			
+	naval_manufacturer = {
+
 		designer = yes
-		
+
 		FMU_royal_hellenic_naval_shipyard = {
 			picture = niebelunge
 			allowed = {	original_tag = FMU	}
@@ -1651,11 +1651,11 @@ ideas = {
 			research_bonus = {	naval_equipment = 0.15	}
 			traits = { naval_manufacturer }
 		}
-		
+
 	}
-	
+
 	tank_manufacturer = {
-	
+
 		FMU_heavy_tank_manufacturer = {
 			picture = bdpf
 			allowed = {original_tag = FMU}
@@ -1687,9 +1687,9 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
-		}		
+		}
 	}
-	
+
 	materiel_manufacturer = {
 		designer = yes
 		FMU_infantry_equipment_manufacturer = {
@@ -1711,7 +1711,7 @@ ideas = {
 			traits = {motorized_equipment_manufacturer}
 		}
 	}
-	
+
 	industrial_concern = {
 		FMU_refinery_concern = {
 			picture = Neue_Volkswerft

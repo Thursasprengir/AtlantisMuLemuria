@@ -16,10 +16,10 @@ focus_tree = {
 			tag = ATL
 		}
 	}
-	
+
 	initial_show_position = {
 		x = 0
-	}	
+	}
 
 	continuous_focus_position = { x = 20 y = 2200 }
 
@@ -32,7 +32,7 @@ focus = {
 		icon = GFX_focus_hol_the_foundations_of_defense
 		mutually_exclusive = {}
 		prerequisite = {}
-		
+
 		x = 8
 		y = 0
 		cost = 5
@@ -44,18 +44,18 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 250
 		}
 	}
-	
+
 focus = {
 		id = ATL_gostudi
 		icon = GFX_aml_goal_ATL_gostudi
 		mutually_exclusive = {focus = ATL_deimila}
 		prerequisite = {focus = ATL_main}
-		
+
 		x = 7
 		y = 1
 		cost = 10
@@ -67,7 +67,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {
 				ATL_gostudis_in_government
@@ -79,7 +79,7 @@ focus = {
 		icon = GFX_aml_goal_ATL_deimila
 		mutually_exclusive = {focus = ATL_gostudi}
 		prerequisite = {focus = ATL_main}
-		
+
 		x = 9
 		y = 1
 		cost = 10
@@ -91,7 +91,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_stability = 0.10
 		}
@@ -100,7 +100,7 @@ focus = {
 		id = ATL_crime
 		icon = GFX_goal_arrests
 		prerequisite = {focus = ATL_deimila focus = ATL_gostudi}
-		
+
 		x = 8
 		y = 2
 		cost = 10
@@ -112,7 +112,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_war_support = 0.05
 			add_stability = -0.1
@@ -123,7 +123,7 @@ focus = {
 		icon = GFX_aml_goal_ATL_crush_itorkanak
 		prerequisite = {focus = ATL_crime}
 		mutually_exclusive = {focus = ATL_attack_kaprastiak}
-		
+
 		x = 7
 		y = 3
 		cost = 10
@@ -135,7 +135,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			custom_effect_tooltip = ATL_attack_itorkanak_tooltip
 			subtract_from_variable = {var = var_capture_offset value = 50}
@@ -146,7 +146,7 @@ focus = {
 		icon = GFX_aml_goal_ATL_crush_kaprastiak
 		prerequisite = {focus = ATL_crime}
 		mutually_exclusive = {focus = ATL_attack_itorkanak}
-		
+
 		x = 9
 		y = 3
 		cost = 10
@@ -158,7 +158,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			custom_effect_tooltip = ATL_attack_kaprastiak_tooltip
 			subtract_from_variable = {var = var_capture_offset value = 50}
@@ -169,7 +169,7 @@ focus = {
 		icon = GFX_ATL_symbol_a
 		prerequisite = {focus = ATL_attack_itorkanak}
 		mutually_exclusive = {focus = ATL_attack_all}
-		
+
 		x = 6
 		y = 4
 		cost = 10
@@ -181,7 +181,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = { ATL_kaprastiak_in_government}
 			kapra_end = yes
@@ -193,7 +193,7 @@ focus = {
 		prerequisite = {focus = ATL_attack_kaprastiak focus = ATL_attack_itorkanak}
 		mutually_exclusive = {focus = ATL_befriend_itorkanak}
 		mutually_exclusive = {focus = ATL_befriend_kaprastiak}
-		
+
 		x = 8
 		y = 4
 		cost = 12.9
@@ -205,7 +205,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			custom_effect_tooltip = ATL_attack_all_tooltip
 			subtract_from_variable = {var = var_capture_offset value = 100}
@@ -216,7 +216,7 @@ focus = {
 		icon = GFX_ATL_symbol_b
 		prerequisite = {focus = ATL_attack_kaprastiak}
 		mutually_exclusive = {focus = ATL_attack_all}
-		
+
 		x = 10
 		y = 4
 		cost = 10
@@ -228,7 +228,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_itorkanak_in_government}
 			itork_end = yes
@@ -250,7 +250,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = { ATL_isolation_idea}
 		}
@@ -259,7 +259,7 @@ focus = {
 		id = ATL_isolation_2
 		icon = GFX_overturners
 		prerequisite = {focus = ATL_isolation}
-		
+
 		x = 2
 		y = 6
 		cost = 10
@@ -271,7 +271,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_timed_idea = {
 				idea = ATL_overturners_reforms
@@ -286,7 +286,7 @@ focus = {
 		prerequisite = {focus = ATL_isolation_2}
 		prerequisite = {focus = ATL_gostudi}
 		mutually_exclusive = {focus = ATL_hastugudak}
-		
+
 		x = 1
 		y = 7
 		cost = 10
@@ -298,7 +298,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			hidden_effect = {set_cosmetic_tag = ATL_SP}
 			add_war_support = 0.15
@@ -311,7 +311,7 @@ focus = {
 		icon = GFX_ATL_hastugudak
 		prerequisite = {focus = ATL_isolation_2}
 		mutually_exclusive = {focus = ATL_black_daggers}
-		
+
 		x = 3
 		y = 7
 		cost = 10
@@ -323,7 +323,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 20
 		}
@@ -332,7 +332,7 @@ focus = {
 		id = ATL_black_daggers_2
 		icon = GFX_focus_secret_rearmament
 		prerequisite = {focus = ATL_black_daggers}
-		
+
 		x = 1
 		y = 8
 		cost = 10
@@ -344,7 +344,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_BD_camps}
 			if = {
@@ -393,7 +393,7 @@ focus = {
 		id = ATL_kaixanarak
 		icon = GFX_legalize_cannibals
 		prerequisite = {focus = ATL_black_daggers_2}
-		
+
 		x = 1
 		y = 9
 		cost = 10
@@ -405,7 +405,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			every_other_country = {
 				add_opinion_modifier = {
@@ -431,7 +431,7 @@ focus = {
 		id = ATL_kaixanarak_left
 		icon = GFX_bundle_bones
 		prerequisite = {focus = ATL_kaixanarak}
-		
+
 		x = 0
 		y = 10
 		cost = 10
@@ -443,7 +443,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			custom_effect_tooltip = ATL_naitastarak_tooltip
 			hidden_effect = {set_country_flag = ATL_naitastarak}
@@ -453,7 +453,7 @@ focus = {
 		id = ATL_kaixanarak_right
 		icon = GFX_arrow_heart
 		prerequisite = {focus = ATL_kaixanarak}
-		
+
 		x = 2
 		y = 10
 		cost = 10
@@ -465,7 +465,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_tumurzek}
 		}
@@ -475,7 +475,7 @@ focus = {
 		icon = GFX_seize_education
 		prerequisite = {focus = ATL_kaixanarak_right}
 		prerequisite = {focus = ATL_kaixanarak_left}
-		
+
 		x = 1
 		y = 11
 		cost = 10
@@ -487,7 +487,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_BD_education}
 		}
@@ -496,7 +496,7 @@ focus = {
 		id = ATL_hastugudak_2
 		icon = GFX_rewrite_history
 		prerequisite = {focus = ATL_hastugudak}
-		
+
 		x = 3
 		y = 8
 		cost = 10
@@ -508,7 +508,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_hastugudak_education}
 		}
@@ -517,7 +517,7 @@ focus = {
 		id = ATL_hastugudak_3
 		icon = GFX_crown_lands
 		prerequisite = {focus = ATL_hastugudak_2}
-		
+
 		x = 3
 		y = 9
 		cost = 10
@@ -529,7 +529,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			944 = {add_extra_state_shared_building_slots = 2}
 			947 = {add_extra_state_shared_building_slots = 3}
@@ -546,7 +546,7 @@ focus = {
 		id = ATL_hexanchials
 		icon = GFX_hexanchials
 		prerequisite = {focus = ATL_isolation focus = ATL_karistig}
-		
+
 		x = 5
 		y = 6
 		cost = 10
@@ -558,7 +558,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_hexanchials_in_government}
 		}
@@ -567,7 +567,7 @@ focus = {
 		id = ATL_hexanchials_2
 		icon = GFX_hexanchial_industry
 		prerequisite = {focus = ATL_hexanchials}
-		
+
 		x = 5
 		y = 7
 		cost = 10
@@ -579,7 +579,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			if = {
 				random_owned_controlled_state = {
@@ -647,7 +647,7 @@ focus = {
 		id = ATL_kaiturn
 		icon = GFX_k_media
 		prerequisite = {focus = ATL_hexanchials_2}
-		
+
 		x = 5
 		y = 8
 		cost = 10
@@ -659,7 +659,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_kaiturn_media}
 		}
@@ -668,7 +668,7 @@ focus = {
 		id = ATL_kaiturn_2
 		icon = GFX_seize_money
 		prerequisite = {focus = ATL_kaiturn}
-		
+
 		x = 5
 		y = 9
 		cost = 10
@@ -680,7 +680,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_timed_idea = {
 				idea = ATL_overtax_foreign_media
@@ -697,7 +697,7 @@ focus = {
 		icon = GFX_monarchy_parliament
 		prerequisite = {focus = ATL_hastugudak_3}
 		prerequisite = {focus = ATL_kaiturn_2}
-		
+
 		x = 4
 		y = 10
 		cost = 10
@@ -709,7 +709,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_timed_idea = {
 				idea = ATL_substituting_politicians_hastugudak
@@ -721,7 +721,7 @@ focus = {
 		id = ATL_isolation_final_2
 		icon = GFX_atlantean_empire
 		prerequisite = {focus = ATL_isolation_final_1}
-		
+
 		x = 4
 		y = 11
 		cost = 10
@@ -733,16 +733,16 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			kill_country_leader = yes
-		    set_politics = { ruling_party = monarchism elections_allowed = no }
+		    set_politics = { ruling_party = neutrality elections_allowed = no }
 			create_country_leader = {
 				name = "Demedrot VI Naizaretal"
 				desc = "POLITICS_DEMEDROT_NAIZARETAL_DESC"
 				picture = "GFX_portrait_ATL_demetrot_naizaretal"
 				expire = "1965.1.1"
-				ideology = absolutist
+				ideology = oligarchism
 				traits = {}
 			}
 			hidden_effect = {set_cosmetic_tag = ATL_SP}
@@ -756,7 +756,7 @@ focus = {
 		icon = GFX_karistig
 		prerequisite = {focus = ATL_attack_all}
 		mutually_exclusive = {focus = ATL_tensapiak}
-		
+
 		x = 7
 		y = 5
 		cost = 10
@@ -768,7 +768,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 120
 			add_ideas = { ATL_karistigs_in_government}
@@ -778,7 +778,7 @@ focus = {
 		id = ATL_karistig_2
 		icon = GFX_bailout_money
 		prerequisite = {focus = ATL_karistig}
-		
+
 		x = 7
 		y = 6
 		cost = 5
@@ -790,7 +790,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ATL_karistigs_in_government
@@ -807,7 +807,7 @@ focus = {
 		icon = GFX_tensapiak
 		prerequisite = {focus = ATL_attack_all}
 		mutually_exclusive = {focus = ATL_karistig}
-		
+
 		x = 9
 		y = 5
 		cost = 10
@@ -819,7 +819,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_karistig_pissed_off}
 			add_political_power = 25
@@ -849,7 +849,7 @@ focus = {
 		id = ATL_UBG
 		icon = GFX_bankers_guild
 		prerequisite = {focus = ATL_tensapiak}
-		
+
 		x = 9
 		y = 6
 		cost = 5
@@ -861,7 +861,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_UBG_idea}
 		}
@@ -871,7 +871,7 @@ focus = {
 		icon = GFX_break_monopoly
 		prerequisite = {focus = ATL_UBG}
 		mutually_exclusive = {focus = ATL_orange_masks}
-		
+
 		x = 9
 		y = 7
 		cost = 18
@@ -883,7 +883,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ATL_karistig_pissed_off
@@ -900,7 +900,7 @@ focus = {
 		icon = GFX_money_grab
 		prerequisite = {focus = ATL_central_UBG_1}
 		prerequisite = {focus = ATL_central_2}
-		
+
 		x = 9
 		y = 9
 		cost = 10
@@ -912,7 +912,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			944 = {add_extra_state_shared_building_slots = 1}
 			947 = {add_extra_state_shared_building_slots = 2}
@@ -938,7 +938,7 @@ focus = {
 		id = ATL_central_1
 		icon = GFX_banking_monopoly
 		prerequisite = {focus = ATL_karistig_2}
-		
+
 		x = 7
 		y = 7
 		cost = 8
@@ -950,7 +950,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ATL_karistigs_bailed_out
@@ -962,7 +962,7 @@ focus = {
 		id = ATL_central_2
 		icon = GFX_books
 		prerequisite = {focus = ATL_central_1 focus = ATL_central_UBG_1}
-		
+
 		x = 8
 		y = 8
 		cost = 10
@@ -974,7 +974,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -983,7 +983,7 @@ focus = {
 		id = ATL_central_3
 		icon = GFX_factoryplanning
 		prerequisite = {focus = ATL_central_2}
-		
+
 		x = 7
 		y = 9
 		cost = 10
@@ -995,7 +995,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			if = {
 				random_owned_controlled_state = {
@@ -1045,7 +1045,7 @@ focus = {
 		icon = GFX_american_companies
 		prerequisite = {focus = ATL_central_3}
 		mutually_exclusive = {focus = ATL_central_isolation}
-		
+
 		x = 8
 		y = 10
 		cost = 10
@@ -1057,7 +1057,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ATL_funding_industries
@@ -1069,7 +1069,7 @@ focus = {
 		id = ATL_central_allies_2
 		icon = GFX_into_africa
 		prerequisite = {focus = ATL_central_allies}
-		
+
 		x = 8
 		y = 11
 		cost = 10
@@ -1081,7 +1081,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			966 = {
 				if = {
@@ -1138,7 +1138,7 @@ focus = {
 		id = ATL_central_allies_3
 		icon = GFX_colony_connection
 		prerequisite = {focus = ATL_central_allies_2}
-		
+
 		x = 8
 		y = 12
 		cost = 10
@@ -1150,7 +1150,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			272 = {add_building_construction = {type = infrastructure level = 1 instant_build = yes}}
 			701 = {add_building_construction = {type = infrastructure level = 1 instant_build = yes}}
@@ -1215,7 +1215,7 @@ focus = {
 		prerequisite = {focus = ATL_central_3}
 		prerequisite = {focus = ATL_kaiturn_2}
 		mutually_exclusive = {focus = ATL_central_allies}
-		
+
 		x = 6
 		y = 10
 		cost = 10
@@ -1227,7 +1227,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			947 = {
 				add_extra_state_shared_building_slots = 2
@@ -1251,7 +1251,7 @@ focus = {
 		id = ATL_central_isolation_2
 		icon = GFX_pan_atl_railroad
 		prerequisite = {focus = ATL_central_isolation}
-		
+
 		x = 6
 		y = 11
 		cost = 10
@@ -1263,7 +1263,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			hidden_effect = {
 				944 = {set_building_level = {type = infrastructure level = 5 instant_build = yes}}
@@ -1282,7 +1282,7 @@ focus = {
 		id = ATL_central_isolation_3
 		icon = GFX_atlantic_domination
 		prerequisite = {focus = ATL_central_isolation_2 focus = ATL_isolation_final_2}
-		
+
 		x = 5
 		y = 12
 		cost = 10
@@ -1294,7 +1294,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_atlantic_domination}
 		}
@@ -1303,7 +1303,7 @@ focus = {
 		id = ATL_open
 		icon = GFX_gates2
 		prerequisite = {focus = ATL_befriend_itorkanak}
-		
+
 		x = 12
 		y = 5
 		cost = 10
@@ -1315,7 +1315,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 50
 			swap_ideas = {
@@ -1329,7 +1329,7 @@ focus = {
 		icon = GFX_attack_cosa_nostra
 		prerequisite = {focus = ATL_open}
 		mutually_exclusive = {focus = ATL_befriend_sicilians}
-		
+
 		x = 13
 		y = 6
 		cost = 10
@@ -1341,7 +1341,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			ITA = {add_opinion_modifier = { target = ATL modifier = medium_increase }}
 			add_ideas = {ATL_sicilians_enemies}
@@ -1351,7 +1351,7 @@ focus = {
 		id = ATL_attack_ringvereine
 		icon = GFX_attack_ringvereine
 		prerequisite = {focus = ATL_attack_sicilians}
-		
+
 		x = 13
 		y = 7
 		cost = 10
@@ -1363,7 +1363,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			GER = {add_opinion_modifier = { target = ATL modifier = medium_increase }}
 			add_ideas = {ATL_ringvereine_enemies}
@@ -1373,7 +1373,7 @@ focus = {
 		id = ATL_germany
 		icon = GFX_collaborate_germany
 		prerequisite = {focus = ATL_attack_ringvereine}
-		
+
 		x = 13
 		y = 9
 		cost = 10
@@ -1385,7 +1385,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_german_influence}
 			GER = {
@@ -1421,7 +1421,7 @@ focus = {
 		icon = GFX_ally_cosa_nostra
 		prerequisite = {focus = ATL_open}
 		mutually_exclusive = {focus = ATL_attack_sicilians}
-		
+
 		x = 15
 		y = 6
 		cost = 10
@@ -1433,7 +1433,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			ITA = {add_opinion_modifier = { target = ATL modifier = medium_decrease }}
 			swap_ideas = {
@@ -1446,7 +1446,7 @@ focus = {
 		id = ATL_befriend_siegels
 		icon = GFX_siegels
 		prerequisite = {focus = ATL_befriend_sicilians}
-		
+
 		x = 15
 		y = 7
 		cost = 10
@@ -1458,7 +1458,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ATL_itorkanak_in_government_sic
@@ -1470,7 +1470,7 @@ focus = {
 		id = ATL_befriend_ringvereine
 		icon = GFX_foothold_germany
 		prerequisite = {focus = ATL_befriend_siegels}
-		
+
 		x = 15
 		y = 8
 		cost = 10
@@ -1482,7 +1482,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			GER = {add_opinion_modifier = { target = ATL modifier = large_decrease }}
 			swap_ideas = {
@@ -1496,7 +1496,7 @@ focus = {
 		icon = GFX_orange_masks
 		prerequisite = {focus = ATL_UBG}
 		mutually_exclusive = {focus = ATL_central_UBG_1}
-		
+
 		x = 11
 		y = 7
 		cost = 8
@@ -1508,7 +1508,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_stability = -0.2
 			add_ideas = {ATL_extremists}
@@ -1519,7 +1519,7 @@ focus = {
 		icon = GFX_red_bandanas
 		prerequisite = {focus = ATL_orange_masks}
 		mutually_exclusive = {focus = ATL_green_brigade}
-		
+
 		x = 10
 		y = 8
 		cost = 10
@@ -1531,7 +1531,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 125
 			swap_ideas = {
@@ -1545,7 +1545,7 @@ focus = {
 		icon = GFX_green_brigade2
 		prerequisite = {focus = ATL_orange_masks}
 		mutually_exclusive = {focus = ATL_red_bandanas}
-		
+
 		x = 12
 		y = 8
 		cost = 10
@@ -1557,7 +1557,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_war_support = 0.15
 			swap_ideas = {
@@ -1570,7 +1570,7 @@ focus = {
 		id = ATL_com_1
 		icon = GFX_collectivize_ubg
 		prerequisite = {focus = ATL_red_bandanas}
-		
+
 		x = 10
 		y = 10
 		cost = 10
@@ -1582,7 +1582,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			remove_ideas = ATL_UBG_idea
 			remove_ideas = ATL_karistig_pissed_off
@@ -1647,7 +1647,7 @@ focus = {
 		id = ATL_com_2
 		icon = GFX_ALT_communism
 		prerequisite = {focus = ATL_com_1}
-		
+
 		x = 10
 		y = 11
 		cost = 10
@@ -1659,7 +1659,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_timed_idea = {idea = ATL_socialist_tradition days = 720}
 		}
@@ -1668,7 +1668,7 @@ focus = {
 		id = ATL_com_3
 		icon = GFX_sov_atl_join
 		prerequisite = {focus = ATL_com_2}
-		
+
 		x = 10
 		y = 12
 		cost = 10
@@ -1680,7 +1680,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			SOV = {add_to_faction = ATL}
 		}
@@ -1689,7 +1689,7 @@ focus = {
 		id = ATL_axis_1
 		icon = GFX_youth_brigade
 		prerequisite = {focus = ATL_green_brigade focus = ATL_germany}
-		
+
 		x = 12
 		y = 10
 		cost = 10
@@ -1701,7 +1701,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_green_brigade_recruitment}
 		}
@@ -1710,7 +1710,7 @@ focus = {
 		id = ATL_axis_2
 		icon = GFX_atl_axis
 		prerequisite = {focus = ATL_axis_1}
-		
+
 		x = 12
 		y = 11
 		cost = 10
@@ -1722,7 +1722,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			GER = {add_to_faction = ATL}
 		}
@@ -1731,7 +1731,7 @@ focus = {
 		id = ATL_axis_3
 		icon = GFX_nationalize_banks
 		prerequisite = {focus = ATL_axis_2}
-		
+
 		x = 12
 		y = 12
 		cost = 5
@@ -1743,7 +1743,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			remove_ideas = ATL_UBG_idea
 			remove_ideas = ATL_karistig_pissed_off
@@ -1788,7 +1788,7 @@ focus = {
 		id = ATL_rothschilds
 		icon = GFX_rothschilds
 		prerequisite = {focus = ATL_befriend_ringvereine}
-		
+
 		x = 15
 		y = 9
 		cost = 10
@@ -1800,7 +1800,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 50
 			add_stability = -0.05
@@ -1811,7 +1811,7 @@ focus = {
 		id = ATL_rothschilds_2
 		icon = GFX_piles_of_money
 		prerequisite = {focus = ATL_rothschilds}
-		
+
 		x = 15
 		y = 10
 		cost = 10
@@ -1823,7 +1823,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ATL_business_with_rothschilds
@@ -1835,7 +1835,7 @@ focus = {
 		id = ATL_USA_1
 		icon = GFX_influence_us
 		prerequisite = {focus = ATL_rothschilds_2}
-		
+
 		x = 14
 		y = 11
 		cost = 10
@@ -1847,7 +1847,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			USA = {
 				add_opinion_modifier = {
@@ -1881,7 +1881,7 @@ focus = {
 		id = ATL_USA_2
 		icon = GFX_industrial_secrets
 		prerequisite = {focus = ATL_USA_1}
-		
+
 		x = 14
 		y = 12
 		cost = 10
@@ -1893,7 +1893,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -1908,7 +1908,7 @@ focus = {
 		id = ATL_UK_1
 		icon = GFX_infiltrate_uk
 		prerequisite = {focus = ATL_rothschilds_2}
-		
+
 		x = 16
 		y = 11
 		cost = 10
@@ -1920,7 +1920,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			ENG = {
 				add_opinion_modifier = {
@@ -1954,7 +1954,7 @@ focus = {
 		id = ATL_UK_2
 		icon = GFX_all_to_atlantis
 		prerequisite = {focus = ATL_UK_1}
-		
+
 		x = 16
 		y = 12
 		cost = 10
@@ -1966,7 +1966,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			hidden_effect = {
 				swap_ideas = {
@@ -1983,7 +1983,7 @@ focus = {
 		icon = GFX_enforced_alliance
 		prerequisite = {focus = ATL_USA_2}
 		prerequisite = {focus = ATL_UK_2}
-		
+
 		x = 15
 		y = 13
 		cost = 10
@@ -1995,7 +1995,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			ENG = {add_to_faction = ATL}
 		}
@@ -2007,7 +2007,7 @@ focus = {
 		id = ATL_mil_main
 		icon = GFX_focus_research
 		prerequisite = {}
-		
+
 		x = 21
 		y = 0
 		cost = 10
@@ -2019,7 +2019,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_timed_idea = {idea = ATL_building_research_center days = 180}
 			add_research_slot = 1
@@ -2030,7 +2030,7 @@ focus = {
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = {focus = ATL_mil_main}
 		mutually_exclusive = {focus = ATL_intervention}
-		
+
 		x = 19
 		y = 1
 		cost = 10
@@ -2042,7 +2042,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -2052,7 +2052,7 @@ focus = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = {focus = ATL_mil_main}
 		mutually_exclusive = {focus = ATL_home_defense}
-		
+
 		x = 23
 		y = 1
 		cost = 10
@@ -2064,7 +2064,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_war_support = 0.1
 		}
@@ -2073,7 +2073,7 @@ focus = {
 		id = ATL_DD
 		icon = GFX_r56_goal_generic_liberty_ships
 		prerequisite = {focus = ATL_home_defense}
-		
+
 		x = 19
 		y = 2
 		cost = 10
@@ -2085,7 +2085,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
@@ -2100,7 +2100,7 @@ focus = {
 		id = ATL_fleet_in_being
 		icon = GFX_r56_goal_generic_focus_battleship
 		prerequisite = {focus = ATL_DD}
-		
+
 		x = 18
 		y = 3
 		cost = 10
@@ -2112,7 +2112,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = fleet_in_being_bonus
@@ -2126,7 +2126,7 @@ focus = {
 		id = ATL_radars
 		icon = GFX_r56_goal_generic_radar2
 		prerequisite = {focus = ATL_fleet_in_being}
-		
+
 		x = 18
 		y = 4
 		cost = 10
@@ -2138,7 +2138,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = radar_focus
@@ -2152,7 +2152,7 @@ focus = {
 		id = ATL_fighters
 		icon = GFX_r56_goal_generic_liberty
 		prerequisite = {focus = ATL_radars}
-		
+
 		x = 19
 		y = 5
 		cost = 10
@@ -2164,7 +2164,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			air_experience = 25
 			set_country_flag = ATL_airforce_gap
@@ -2181,7 +2181,7 @@ focus = {
 		id = ATL_nav_bombers
 		icon = GFX_goal_generic_air_naval_bomber_new
 		prerequisite = {focus = ATL_fighters}
-		
+
 		x = 19
 		y = 6
 		cost = 10
@@ -2193,7 +2193,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
@@ -2208,7 +2208,7 @@ focus = {
 		id = ATL_strat_bombers
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = {focus = ATL_nav_bombers}
-		
+
 		x = 20
 		y = 7
 		cost = 10
@@ -2220,7 +2220,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = ATL_bomber_range
 			add_tech_bonus = {
@@ -2236,7 +2236,7 @@ focus = {
 		icon = GFX_goal_parasite_fighters
 		prerequisite = {focus = ATL_nav_bombers}
 		available = {has_tech = strategic_bomber3}
-		
+
 		x = 18
 		y = 7
 		cost = 10
@@ -2248,7 +2248,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			custom_effect_tooltip = 01_ATL_parasite
 			hidden_effect = {set_technology = {ATL_parasite_fighter = 1}}
@@ -2258,7 +2258,7 @@ focus = {
 		id = ATL_mainland_forts
 		icon = GFX_r56_goal_generic_city_chain_forts
 		prerequisite = {focus = ATL_radars}
-		
+
 		x = 17
 		y = 5
 		cost = 10
@@ -2270,7 +2270,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			hidden_effect = {
 				944 = {
@@ -2327,7 +2327,7 @@ focus = {
 		id = ATL_mech
 		icon = GFX_r56_focus_generic_study_foreign_tanks
 		prerequisite = {focus = ATL_mainland_forts}
-		
+
 		x = 17
 		y = 6
 		cost = 10
@@ -2339,7 +2339,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -2353,7 +2353,7 @@ focus = {
 		id = ATL_SS
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = {focus = ATL_intervention}
-		
+
 		x = 23
 		y = 2
 		cost = 10
@@ -2365,7 +2365,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
@@ -2380,7 +2380,7 @@ focus = {
 		id = ATL_trade_interdiction
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = {focus = ATL_SS}
-		
+
 		x = 23
 		y = 3
 		cost = 10
@@ -2392,7 +2392,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = sub_op_bonus
@@ -2410,7 +2410,7 @@ focus = {
 		id = ATL_naval_aviation
 		icon = GFX_navalairwarfare
 		prerequisite = {focus = ATL_trade_interdiction}
-		
+
 		x = 23
 		y = 4
 		cost = 10
@@ -2422,7 +2422,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -2437,7 +2437,7 @@ focus = {
 		id = ATL_amphibious
 		icon = GFX_r56_goal_generic_landing_craft
 		prerequisite = {focus = ATL_SS}
-		
+
 		x = 27
 		y = 3
 		cost = 10
@@ -2449,7 +2449,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -2463,7 +2463,7 @@ focus = {
 		id = ATL_armor_focus
 		icon = GFX_r56_goal_generic_license_tanks
 		prerequisite = {focus = ATL_amphibious}
-		
+
 		x = 27
 		y = 4
 		cost = 10
@@ -2475,7 +2475,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -2489,7 +2489,7 @@ focus = {
 		id = ATL_heavy_fighters
 		icon = GFX_focus_usa_escort_fighters
 		prerequisite = {focus = ATL_SS}
-		
+
 		x = 25
 		y = 3
 		cost = 10
@@ -2501,7 +2501,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			air_experience = 25
 			set_country_flag = ATL_airforce_gap
@@ -2513,7 +2513,7 @@ focus = {
 		icon = GFX_VLFP
 		prerequisite = {focus = ATL_heavy_fighters}
 		prerequisite = {focus = ATL_naval_aviation}
-		
+
 		x = 25
 		y = 5
 		cost = 12.9
@@ -2525,7 +2525,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			custom_effect_tooltip = 01_ATL_VLFP
 			hidden_effect = {
@@ -2538,7 +2538,7 @@ focus = {
 		id = ATL_light_bombers
 		icon = GFX_r56_goal_generic_multiple_bombers
 		prerequisite = {focus = ATL_VLFP}
-		
+
 		x = 25
 		y = 6
 		cost = 10
@@ -2550,7 +2550,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			custom_effect_tooltip = 01_ATL_light_bombers
 			hidden_effect = {set_technology = {ATL_light_bomber = 1}}
@@ -2560,7 +2560,7 @@ focus = {
 		id = ATL_sumendia
 		icon = GFX_r56_goal_generic_coastal_navy
 		prerequisite = {focus = ATL_SS focus = ATL_DD}
-		
+
 		x = 21
 		y = 3
 		cost = 10
@@ -2572,7 +2572,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			949 = {
 				add_extra_state_shared_building_slots = 6
@@ -2588,7 +2588,7 @@ focus = {
 		id = ATL_sumendia_2
 		icon = GFX_goal_generic_military_deal
 		prerequisite = {focus = ATL_sumendia}
-		
+
 		x = 21
 		y = 4
 		cost = 10
@@ -2600,21 +2600,21 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = {ATL_lend_lease}
 		}
 	}
-	
-################################################################## 
-#ATLANTEAN AFRICA 
+
 ##################################################################
-	
+#ATLANTEAN AFRICA
+##################################################################
+
 focus = {
 		id = ATL_africa_main
 		icon = GFX_goal_generic_national_unity
 		prerequisite = {}
-		
+
 		x = 30
 		y = 0
 		cost = 5
@@ -2631,7 +2631,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.05
@@ -2643,7 +2643,7 @@ focus = {
 		id = ATL_african_ports
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = {focus = ATL_africa_main}
-		
+
 		x = 30
 		y = 1
 		cost = 10
@@ -2660,7 +2660,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			966 = {
 				if = {
@@ -2690,7 +2690,7 @@ focus = {
 		id = ATL_african_infra
 		icon = GFX_r56_goal_generic_road
 		prerequisite = {focus = ATL_african_ports}
-		
+
 		x = 30
 		y = 2
 		cost = 10
@@ -2707,7 +2707,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			966 = {add_building_construction = {type = infrastructure level = 2 instant_build = yes}}
 			967 = {add_building_construction = {type = infrastructure level = 1 instant_build = yes}}
@@ -2717,7 +2717,7 @@ focus = {
 		id = ATL_african_factories_1
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {focus = ATL_african_infra}
-		
+
 		x = 29
 		y = 3
 		cost = 10
@@ -2734,7 +2734,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			966 = {add_extra_state_shared_building_slots = 2 add_building_construction = {type = industrial_complex level = 2 instant_build = yes}}
 			967 = {add_extra_state_shared_building_slots = 2 add_building_construction = {type = industrial_complex level = 2 instant_build = yes}}
@@ -2744,7 +2744,7 @@ focus = {
 		id = ATL_african_factories_2
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {focus = ATL_african_factories_1}
-		
+
 		x = 29
 		y = 4
 		cost = 10
@@ -2761,7 +2761,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			966 = {add_extra_state_shared_building_slots = 2 add_building_construction = {type = arms_factory level = 2 instant_build = yes}}
 			967 = {add_extra_state_shared_building_slots = 2 add_building_construction = {type = arms_factory level = 2 instant_build = yes}}
@@ -2771,7 +2771,7 @@ focus = {
 		id = ATL_african_forts
 		icon = GFX_goal_generic_construct_military
 		prerequisite = {focus = ATL_african_infra}
-		
+
 		x = 31
 		y = 3
 		cost = 10
@@ -2788,7 +2788,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			966 = {
 				add_building_construction = {type = bunker level = 3 instant_build = yes province = 14257}
@@ -2804,7 +2804,7 @@ focus = {
 		id = ATL_african_airfields
 		icon = GFX_goal_generic_airport
 		prerequisite = {focus = ATL_african_forts}
-		
+
 		x = 31
 		y = 4
 		cost = 5
@@ -2821,7 +2821,7 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			966 = {add_building_construction = {type = air_base level = 3 instant_build = yes}}
 			967 = {add_building_construction = {type = air_base level = 2 instant_build = yes}}

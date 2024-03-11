@@ -1,0 +1,108 @@
+﻿capital = 990
+
+oob = "CLM_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	transport = 1
+	basic_train = 1
+}
+if = {
+    limit = { has_dlc = "By Blood Alone" }
+        set_technology = {
+            aa_lmg = 1
+            engines_1 = 1
+            engines_2 = 1
+            early_bombs = 1
+            aircraft_construction = 1
+            iw_small_airframe = 1
+            iw_medium_airframe = 1
+            iw_large_airframe = 1
+            basic_medium_airframe = 1
+            basic_small_airframe = 1
+        }
+    else = {
+        set_technology = {
+            early_fighter = 1
+            cv_early_fighter = 1
+            cv_naval_bomber1 = 1
+            naval_bomber1 = 1
+            early_bomber = 1
+            CAS1 = 1
+        }
+    }
+}
+
+set_variable = {var = piss_off_index value = 5}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+add_ideas = {
+	nationalist_tensions
+	the_old_order
+	imperial_garrison
+}
+
+set_popularities = {
+	democratic = 89
+	neutrality = 3
+	fascism = 6
+	communism = 2
+}
+
+set_cosmetic_tag = CLM_ENG
+	
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_convoys = 80
+
+#Political Leaders
+recruit_character = CLM_Sir_A_M_Chaucer_II
+recruit_character = CLM_Finley_Phillips
+recruit_character = CLM_Rob_Anglow
+recruit_character = CLM_Homeland_Peoples_Council
+#Mil Leaders
+recruit_character = CLM_George_Livingston_III
+#Highcom
+recruit_character = CLM_army_entrenchment
+recruit_character = CLM_air_chief_reform
+recruit_character = CLM_navy_chief_decisive_battle
+recruit_character = CLM_air_warfare_theorist
+recruit_character = CLM_military_theorist
+recruit_character = CLM_army_regrouping
+recruit_character = CLM_navy_chief_naval_aviation
+recruit_character = CLM_air_chief_ground_support
+recruit_character = CLM_air_bomber_interception
+recruit_character = CLM_army_infantry
+recruit_character = CLM_army_chief_defensive
+recruit_character = CLM_army_chief_offensive
+recruit_character = CLM_army_chief_maneuver
+recruit_character = CLM_army_commando
+#advisors
+recruit_character = CLM_captain_of_industry
+recruit_character = CLM_popular_figurehead
+recruit_character = CLM_quartermaster_general
+recruit_character = CLM_backroom_backstabber
+recruit_character = CLM_silent_workhorse
+recruit_character = CLM_smooth_talking_charmer
+recruit_character = CLM_war_industrialist
+recruit_character = CLM_compassionate_gentleman
+recruit_character = CLM_fascist_demagogue
+recruit_character = CLM_communist_revolutionary
+recruit_character = CLM_democratic_reformer

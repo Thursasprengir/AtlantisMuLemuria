@@ -3448,8 +3448,8 @@ focus = {
 				set_character_flag = PRJ_his_war
 			}
 			start_civil_war = {
-				ruling_party = monarchism
-				ideology = monarchism
+				ruling_party = neutrality
+				ideology = neutrality
 				size = 0.8
 				capital = 1073
 				states = {
@@ -4083,8 +4083,8 @@ focus = {
                 set_character_flag = PRJ_his_war
             }
             start_civil_war = {
-                ruling_party = monarchism
-                ideology = monarchism
+                ruling_party = neutrality
+                ideology = neutrality
                 size = 0.65
                 capital = 1073
                 states = {
@@ -4231,8 +4231,8 @@ focus = {
                 set_character_flag = PRJ_his_war
             }
             start_civil_war = {
-                ruling_party = monarchism
-                ideology = monarchism
+                ruling_party = neutrality
+                ideology = neutrality
                 size = 0.55
                 capital = 1073
                 states = {
@@ -4340,8 +4340,8 @@ focus = {
                 set_character_flag = PRJ_his_war
             }
             start_civil_war = {
-                ruling_party = monarchism
-                ideology = monarchism
+                ruling_party = neutrality
+                ideology = neutrality
                 size = 0.85
                 capital = 1073
                 states = {
@@ -4728,8 +4728,8 @@ focus = {
                 set_character_flag = PRJ_his_war
             }
            start_civil_war = {
-                ruling_party = monarchism
-                ideology = monarchism
+                ruling_party = neutrality
+                ideology = neutrality
                 size = 0.75
                 capital = 1073
                 states = {
@@ -4796,8 +4796,8 @@ focus = {
 				NIL = {
 					Set_cosmetic_tag = NIL_PRJ_duchy_azania
 					remove_country_leader_role = {
-						character = NIL_absolutist_leader
-						ideology = absolutist
+						character = NIL_oligarchism_leader
+						ideology = oligarchism
 					}
 				}
 				PRJ_King_Roderiq = {
@@ -4810,22 +4810,22 @@ focus = {
 				NIL = {
 					promote_character = {
 						character = PRJ_King_Roderiq
-						ideology = absolutist
+						ideology = oligarchism
 					}
 					set_politics = {
-						ruling_party = monarchism
+						ruling_party = neutrality
 						elections_allowed = no
 						last_election = "1935.12.17"
 						election_frequency = 60
 					}
 				}
-				ENG = { 
+				ENG = {
 					 release_puppet = NIL
 				}
 				NIL = {
 					load_oob = NIL_flee
 					set_politics = {
-						ruling_party = monarchism
+						ruling_party = neutrality
 						elections_allowed = no
 						last_election = "1935.12.17"
 						election_frequency = 60

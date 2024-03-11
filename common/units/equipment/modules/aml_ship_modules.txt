@@ -1,13 +1,13 @@
-equipment_modules = {
+equipment_modules = { #Deactivation until Reborn
 
 
 
 
- ## ###  ##   ##  #  # ###   ##  ###  ### ###  ## 
-#   #   #  # #  # ## # #  # #  # #  #  #  #   #   
- #  ##  #    #  # # ## #  # #### ###   #  ##   #  
-  # #   #  # #  # #  # #  # #  # #  #  #  #     # 
-##  ###  ##   ##  #  # ###  #  # #  # ### ### ##  
+ ## ###  ##   ##  #  # ###   ##  ###  ### ###  ##
+#   #   #  # #  # ## # #  # #  # #  #  #  #   #
+ #  ##  #    #  # # ## #  # #### ###   #  ##   #
+  # #   #  # #  # #  # #  # #  # #  #  #  #     #
+##  ###  ##   ##  #  # ###  #  # #  # ### ### ##
 
 
 
@@ -25,23 +25,23 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.03
 		}
-		
+
 		add_average_stats = {
 			lg_armor_piercing = 8
 		}
 		build_cost_resources = {
 			steel = 2
 		}
-		
+
 		critical_parts = { damaged_secondaries }
 	}
 
 
- ##  #  # ### ###      ##  ### ###  
-#  # ## #  #   #      #  #  #  #  # 
-#### # ##  #   #      ####  #  ###  
-#  # #  #  #   #      #  #  #  #  # 
-#  # #  #  #  ###     #  # ### #  # 
+ ##  #  # ### ###      ##  ### ###
+#  # ## #  #   #      #  #  #  #  #
+#### # ##  #   #      ####  #  ###
+#  # #  #  #   #      #  #  #  #  #
+#  # #  #  #  ###     #  # ### #  #
 
 
 	vlfp_ship_anti_air = {
@@ -54,7 +54,7 @@ equipment_modules = {
 			anti_air_attack = 8
 			build_cost_ic = 200
 		}
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.025
 			anti_air_attack = 0.15
@@ -66,11 +66,11 @@ equipment_modules = {
 
 
 
-### #  #  ##  ### #  # ### 
-#   ## # #     #  ## # #   
-##  # ## # ##  #  # ## ##  
-#   #  # #  #  #  #  # #   
-### #  #  ##  ### #  # ### 
+### #  #  ##  ### #  # ###
+#   ## # #     #  ## # #
+##  # ## # ##  #  # ## ##
+#   #  # #  #  #  #  # #
+### #  #  ##  ### #  # ###
 
 
 	vlfp_carrier_ship_engine = {
@@ -78,13 +78,13 @@ equipment_modules = {
 		category = vlfp_carrier_ship_engine
 		sfx = sfx_ui_sd_module_engine
 		gfx = engine_icon
-		
+
 		add_stats = {
 			naval_speed = 5
 			fuel_consumption = 30
 			build_cost_ic = 400
 		}
-		
+
 		build_cost_resources = {
 			steel = 3
 			chromium = 2
@@ -92,11 +92,11 @@ equipment_modules = {
 	}
 
 
-###  ###  ##  # #      ## ###   ##   ##  ### 
-#  # #   #  # # #     #   #  # #  # #  # #   
-#  # ##  #    ##       #  ###  #### #    ##  
-#  # #   #  # # #       # #    #  # #  # #   
-###  ###  ##  # #     ##  #    #  #  ##  ### 
+###  ###  ##  # #      ## ###   ##   ##  ###
+#  # #   #  # # #     #   #  # #  # #  # #
+#  # ##  #    ##       #  ###  #### #    ##
+#  # #   #  # # #       # #    #  # #  # #
+###  ###  ##  # #     ##  #    #  #  ##  ###
 	vlfp_ship_deck_space = {
 		abbreviation = "vad"
 		category = vlfp_ship_deck_space
@@ -114,17 +114,17 @@ equipment_modules = {
 		dismantle_cost_ic = 700
 	}
 
-### #  # ### #       ###  ##  #  # # #  ## 
-#   #  # #   #        #  #  # ## # # # #   
-##  #  # ##  #        #  #### # ## ##   #  
-#   #  # #   #        #  #  # #  # # #   # 
-#    ##  ### ###      #  #  # #  # # # ##  
+### #  # ### #       ###  ##  #  # # #  ##
+#   #  # #   #        #  #  # ## # # # #
+##  #  # ##  #        #  #### # ## ##   #
+#   #  # #   #        #  #  # #  # # #   #
+#    ##  ### ###      #  #  # #  # # # ##
 
 	vlfp_ship_extra_fuel_tank = {
 		abbreviation = "vae"
 		category = vlfp_ship_extra_fuel_tank
 		gfx = fuel_tank_icn
-		
+
 		add_stats = {
 			naval_range = 2000
 		}
