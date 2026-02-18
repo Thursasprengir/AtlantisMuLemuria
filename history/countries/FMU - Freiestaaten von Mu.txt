@@ -1,4 +1,4 @@
-﻿capital = 1274
+﻿capital = 930
 
 oob = "FMU_1936"
 
@@ -48,28 +48,6 @@ if = {
 		}
 	}
 }
-	
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_naval_oob = FMU_1936_naval_legacy
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-		transport = 1
-		basic_light_cruiser = 1
-		basic_carrier = 1
-	}
-}
-
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -209,107 +187,9 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = MNU
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = MNU
-	}
-}
-
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-		# Submarines #
-	create_equipment_variant = {
-		name = "Hel Class"
-		type = submarine_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 2
-			sub_torpedo_upgrade = 1
-		}
-	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "Freya Class"
-		type = destroyer_1
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 0
-		}
-	}	
-	create_equipment_variant = {
-		name = "Siegfried Class"
-		type = destroyer_1
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 3
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 0
-			ship_anti_air_upgrade = 1
-		}
-	}	
-	# Light Cruisers #
-	create_equipment_variant = {
-		name = "Schwarzenberg Class"
-		type = light_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_gun_upgrade = 3
-			ship_anti_air_upgrade = 2
-		}
-	}
-	# Heavy Cruisers #
-	create_equipment_variant = {
-		name = "Holtzendorff Class"
-		type = heavy_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 5
-			ship_gun_upgrade = 4
-		}
-	}
-	# Battlecruisers #
-	create_equipment_variant = {
-		name = "Derfflinger Class"
-		type = battle_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 3
-			ship_gun_upgrade = 2
-		}
-	}
-	# Carriers #
-	create_equipment_variant = {
-		name = "Valkyria Class"
-		type = carrier_1
-		parent_version = 0
-		upgrades = {
-			ship_deckspace_upgrade = 2
-			carrier_armor_upgrade = 5
-			ship_engine_upgrade = 4
-			ship_reliability_upgrade = 4
-		}
-	}	
+set_autonomy = {
+	target = MNU
+	autonomous_state = autonomy_integrated_puppet
 }
 
 if = {
@@ -547,7 +427,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
 			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_1 = lmg_defense_turret_2x
 		}
 		icon = "GFX_FMU_CAS1_medium"
 	}

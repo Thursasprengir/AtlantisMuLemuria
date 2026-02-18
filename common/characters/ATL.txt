@@ -19,7 +19,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=oligarchism
+			ideology=absolutist
 			expire="1965.1.1.1"
 		}
 	}
@@ -86,7 +86,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits = {trickster}
+			traits = {trickster improvisation_exper}
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -119,7 +119,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = {panzer_leader panzer_expert armor_officer}
+			traits = {inflexible_strategist armor_officer ambusher}
 			skill = 4
 			attack_skill = 4
 			defense_skill = 4
@@ -151,7 +151,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = {naval_invader}
+			traits = {naval_invader paratroopers}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -183,12 +183,28 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = {panzer_leader}
+			traits = {panzer_leader armor_officer}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+		}
+	}
+	ATL_Stapakon_Zhantershe ={
+		name="Stapakon Zhantershe"
+		portraits={
+			army={
+				large="gfx/leaders/Europe/01833-2598861086-male, matte painting, sharp focus, hoi4_vanilla_portrait_style, military uniform, european.dds"
+			}
+		}
+		corps_commander={
+			traits = {brilliant_strategist politically_connected hidden_sympathies aggressive_assaulter defensive_doctrine naval_liaison old_guard}
+			skill = 3
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
 		}
 	}
 	
@@ -277,8 +293,26 @@ characters={
 			defense_skill = 3
 			maneuvering_skill = 4
 			coordination_skill = 4
-		}
+        }
 	}
+	ATL_Origunan_Thiaskia={
+		name="Origunan Thiaskia"
+		portraits={
+			army={
+				large="gfx/leaders/Europe/14965-888121540-matte painting, sharp focus, hoi4_vanilla_portrait_style, Scandinavian, navy uniform,.dds"
+				small="gfx/interface/ideas/idea_ENG_bernard_rawlings.dds"
+			}
+		}
+		navy_leader = {
+		traits = {gentlemanly spotter blue_water_expert aviation_enthusiast superior_tactician torpedo_bomber air_controller fighter_director dive_bomber fly_swatter}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			maneuvering_skill = 3
+			coordination_skill = 4
+
+		}
+	}	
 	ATL_Jestitze_Munurak={
 		name=ATL_Jestitze_Munurak
 		portraits={

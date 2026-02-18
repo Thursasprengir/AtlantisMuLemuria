@@ -1,0 +1,1067 @@
+####################################################
+##### British Lemurian Civil Disturbance Events#####
+####################################################
+
+add_namespace = blm
+
+
+country_event = {	id = blm.1 #Werreurbran Regional Parliament Demands Greater Autonomy
+	title = blm.1.t
+	desc = blm.1.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Allow
+		name = blm.1a
+		#Positive relations with Parti des Franques
+		#Negative relations with Anglish Nation
+		#Negative relations with Free Lemuria Faction
+		#Negative relations with High Tories
+	}
+	option = { #Deny
+		name = blm.1b
+		#Negative relations with Parti des Franques, increase arms level
+		#Small Negative relations with Lega di Protezione (Arcadia) and Mantaunu Qlache (Qlach)
+	}
+}
+	
+country_event = {
+	id = blm.2 #High Tory MP demands closure of the Werreurbran Parliament
+	title = blm.2.t
+	desc = blm.2.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Condemn Statement
+		name = blm.2a
+		#Positive relations with Parti des Franques
+		#Negative relations with High Tories
+	}
+	option = { #Support Statement
+		name = blm.2b
+		#Positive relations with High Tories
+		#Huge Negative relations with Parti des Franques
+	}
+}
+	
+country_event = {
+	id = blm.3 #Planned Naval Base expansion opposed by locals in Dielle
+	title = blm.3.t
+	desc = blm.3.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Continue with base expansion
+		name = blm.3a
+		#Naval base in Dielle expands
+		#Negative relations with Parti des Franques, increase arms level
+		#Positive relations with High Tories
+		#Small positive relations with Anglish Nation
+		#Small positive relations with Händlerinteressenpartei
+	}
+	option = { #Rethink base's location
+		name = blm.3b
+		#Negative relations with High Tories
+		#Negative relations with Anglish Nation
+		#Negative relations with Händlerinteressenpartei 
+	}
+}
+
+country_event = {
+	id = blm.4 #Anglo-Lemurian Police in Toqueville accused of abusing Werreurbran Prisoners
+	title = blm.4.t
+	desc = blm.4.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Bring them to trial
+		name = blm.4a
+		#Positive relations with Parti des Franques, chance to decrease arms level
+		#HUGE Negative relations with High Tories, Free Lemuria, Anglish Nation
+		#Anglish Nation increase arms level
+	}
+	option = { #Ignore complaints
+		name = blm.4b
+		#Positive relations with Anglish Nation
+		#Huge Negative relations with Parti des Franques, increase arms level
+	}
+}
+country_event = {
+	id = blm.5 #Public Demonstrations for Werreurbran Rights
+	title = blm.5.t
+	desc = blm.5.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Allow the demonstrations
+		name = blm.5a
+		#Small negative relations with Parti des Franques, small chance to increase arms level
+		#HUGE Negative relations with High Tories, Free Lemuria, Anglish Nation
+		#Anglish Nation increase arms level
+	}
+	option = { #Suppress the demonstrations
+		name = blm.5b
+		#Positive relations with Anglish Nation, High Tories, Free Lemuria
+		#Negative relations with Parti des Franques, increase arms level
+		#Negative relations with Lega di Protezione, Mantaunu Qlache
+	}
+}
+	
+country_event = {
+	id = blm.6 #Public library in Werreurbro refuses to stock non-English literature
+	title = blm.6.t
+	desc = blm.6.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Override the local library
+		name = blm.6a
+		#Positive relations with Parti des Franques, chance to decrease arms level
+		#HUGE Negative relations with Anglish Nation
+		#Anglish Nation increase arms level
+		#Small negative relations with High Tories, FFree Lemuria
+		#Small positive relations with Mantaunu Qlache, Lega di Protezione
+	}
+	option = { #Ignore complaints
+		name = blm.6b
+		#Positive relations with Anglish Nation
+		#Huge Negative relations with Parti des Franques, increase arms level
+	}
+}
+country_event = {
+	id = blm.7 #Local Qlachian leaders demand a rail connection to the capital to boost the local economy
+	title = blm.7.t
+	desc = blm.7.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #We shall construct the railway
+		name = blm.7a
+		#Positive relations with Mantaunu Qlache, chance to decrease arms level
+		#Negative relations with High Tories, Free Lemuria
+		#HUGE negative relations with Anglish Nation
+		#Anglish Nation small chance to increase arms level
+		#Starts a 1 year timer for completion of the railway
+	}
+	option = { #There is no benefit to such a railway
+		name = blm.7b
+		#Huge Negative relations with Mantaunu Qlache, increase arms level
+		#Small Positive relations with Anglish Nation
+	}
+}
+	
+country_event = {
+	id = blm.8 #Railway completed
+	title = blm.8.t
+	desc = blm.8.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #We did it!
+		name = blm.8a
+		#Positive relations with Mantaunu Qlache, chance to decrease arms level
+		#HUGE Negative relations with Anglish Nation
+		#Anglish Nation increase arms level
+	}
+}
+	
+country_event = {
+	id = blm.9 #Railway not completed
+	title = blm.9.t
+	desc = blm.9.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Oops
+		name = blm.9a
+		#Small positive relations with Anglish Nation, chance to decrease arms level
+		#HUGE Negative relations with Mantaunu Qlache, increase arms level
+	}
+}
+	
+country_event = {
+	id = blm.10 #Qlachians protest against economic conditions
+	title = blm.10.t
+	desc = blm.10.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #We shall help
+		name = blm.10a
+		#Positive relations with Mantaunu Qlache, chance to decrease arms level
+		#Move 2 factories from Capital to Qlach region
+		#HUGE Negative relations with High Tories, Free Lemuria, Anglish Nation
+		#Anglish Nation increase arms level
+	}
+	option = { #Work harder
+		name = blm.10b
+		#Positive relations with Anglish Nation
+		#Huge Negative relations with Mantaunu Qlache, increase arms level
+	}
+}
+	
+country_event = {
+	id = blm.11 #Anglo-Lemurian Christian missionaries accused of burning down local shrine
+	title = blm.11.t
+	desc = blm.11.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #That's too bad
+		name = blm.4a
+		#Positive relations with Anglish Nation, chance to decrease arms level
+		#HUGE Negative relations with Mantaunu Qlache, increase arms level
+	}
+}
+	
+country_event = {
+	id = blm.12 #Wanulu, self-proclaimed 'King of Qlach' is coronated in a public ceremony
+	title = blm.12.t
+	desc = blm.12.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Congratulations!
+		name = blm.12a
+		#Positive relations with Mantaunu Qlache, chance to decrease arms level
+		#Negative relations with High Tories, Free Lemuria
+		#Huge negative relations with Anglish Nation, increase arms level
+	}
+	option = { #Pathetic popinjay!
+		name = blm.12b
+		#Positive relations with Anglish Nation
+		#Huge Negative relations with Mantaunu Qlache, increase arms level
+	}
+} 
+	
+country_event = {
+	id = blm.13 #A Qlachian artist holds an art show for pro-Qlachian artists
+	title = blm.13.t
+	desc = blm.13.d
+	#picture = 
+	
+	is_triggered_only = yes
+	option = { #This is a great idea!
+		name = blm.13a
+		#Positive relations with Mantaunu Qlache, chance to decrease arms level
+		#HUGE Negative relations with High Tories, Free Lemuria, Anglish Nation
+		#Small chance Anglish Nation increase arms level
+	}
+	option = { #This is a terrible idea!
+		name = blm.13b
+		#Positive relations with Anglish Nation, High Tories, Free Lemuria
+		#Negative relations with Mantaunu Qlache, small chance to increase arms level
+	}
+}
+	
+country_event = {
+	id = blm.14 #Public demonstrations for Qlachian rights
+	title = blm.14.t
+	desc = blm.14.d
+	#picture = 
+	
+	is_triggered_only = yes
+	option = { #It's their right
+		name = blm.14a
+		#Positive relations with Parti des Franques, chance to decrease arms level
+		#HUGE Negative relations with Anglish Nation, increase arms level
+		#Small negative relations with High Tories, Free Lemuria
+		#Small positive relations with Lega di Protezione, Parti des Franques
+	}
+	option = { #Ignore complaints
+		name = blm.14b
+		#Positive relations with Anglish Nation
+		#Huge Negative relations with Parti des Franques, increase arms level
+	}
+}
+	
+country_event = {
+	id = blm.15 #Lemurian Workers Party activists strike at a factory in X
+	title = blm.15.t
+	desc = blm.15.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Send in the Imperial Garrison
+		name = blm.15a
+		#HUGE Negative relations with Lemurian Workers Party
+		#Positive relations with High Tories
+	}
+	option = { #Let them strike
+		name = blm.15b
+		#Small negative relations with Lemurian Workers Party, chance increase arms level
+		#Small negative relations with High Tories
+	}
+}
+	
+country_event = {
+	id = blm.16 #Local factory shuts down, thousands left without work
+	title = blm.16.t
+	desc = blm.16.d
+	#picture = 
+	
+	is_triggered_only = yes
+	option = { #Nationalize the factory to keep it open
+		name = blm.16a
+		#Positive relations with Lemurian Workers Party, chance to decrease arms level
+		#Positive relations with Händlerinteressenpartei
+		#Small positive relations with Anglish Nation
+		#Negative relations with High Tories, Free Lemuria
+		#Small chance Free Lemuria increase arms level
+	}
+	option = { #Businesses fail
+		name = blm.16b
+		#Negative relations with Lemurian Workers Party, increase arms level
+		#Negative relations with Händlerinteressenpartei
+	}
+}
+	
+country_event = {
+	id = blm.17 #Demonstrations in favor of higher wages and benefits
+	title = blm.17.t
+	desc = blm.17.d
+	#picture = 
+	
+	is_triggered_only = yes
+	option = { #Allow the demonstrations
+		name = blm.17a
+		#Small negative relations with Lemurian Workers Party, small chance to increase arms level
+		#HUGE negative relations with Händlerinteressenpartei
+	}
+	option = { #Suppress the demonstrations
+		name = blm.17b
+		#Huge negative relations with Lemurian Workers Party, increase arms level
+		#Small positive relations with Händlerinteressenpartei, High Tories
+	}
+}
+  	
+country_event = {
+	id = blm.18 #Newspaper runs a national story about minors being hurt in a factory because of poor safety regulations
+	title = blm.18.t
+	desc = blm.18.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Pass improved safety regulations
+		name = blm.18a
+		#Positive relations with Lemurian Workers Party, small chance to decrease arms level
+		#HUGE negative relations with Händlerinteressenpartei
+		#Negative relations with High Tories
+	}
+	option = { #Issue official rebuttal
+		name = blm.18b
+		#Huge negative relations with Lemurian Workers Party, increase arms level
+		#Positive relations with Händlerinteressenpartei
+		#Small positive relations with High Tories
+	}
+		
+}
+   	
+country_event = {
+	id = blm.19 #Soviet representative visits and speaks at a Lemurian Workers Party rally
+	title = blm.19.t
+	desc = blm.19.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #We won't allow this nonsense
+		name = blm.19a
+		#Huge negative relations with Lemurian Workers Party, increase arms level
+		#Positive relations with High Tories
+	}
+	option = { #Free speech, free thought
+		name = blm.19b
+		#Small positive relations with Lemurian Workers Party, small chance to decrease arms level
+		#Negative relations with Händlerinteressenpartei, High Tories, Free Lemuria
+	}
+		
+}
+   	
+country_event = {
+	id = blm.20 #National rally held by Lemurian Workers Party condemning Commonwealth positions on aggressions against international laborers
+	title = blm.20.t
+	desc = blm.20.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Stop the rally
+		name = blm.20a
+		#Huge negative relations with Lemurian Workers Party, increase arms level
+		#Positive relations with High Tories, Händlerinteressenpartei
+	}
+	option = { #Allow the rally
+		name = blm.20b
+		#Small negative relations with Lemurian Workers Party, chance to increase arms level
+		#Negative relations with Händlerinteressenpartei, High Tories
+	}
+		
+}
+   	
+country_event = {
+	id = blm.21 #High Torries celebrate victories in local elections
+	title = blm.21.t
+	desc = blm.21.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Huzzah
+		name = blm.21a
+		#Positive relations with High Tories
+		#Huge negative relations with Free Lemuria, Lemurian Workers Party
+		#Small negative relations with Mantaunu Qlache, Parti des Franques, Lega di Protezione, Anglish Nation
+	}
+		
+}
+   	
+country_event = {
+	id = blm.22 #Visit by British Prime Minister stokes Commonwealth ties
+	title = blm.22.t
+	desc = blm.22.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Welcome!
+		name = blm.22a
+		#Relations boost with UK and other Commonwealth Nations
+		#Positive relations with High Tories
+		#Negative relations with Free Lemuria
+	}
+	option = { #Did we invite you?
+		name = blm.22b
+		#Relations malus with UK and other Commonwealth Nations
+		#Positive relations with Free Lemuria, small chance increase arms level
+		#Negative relations with High Tories
+	}
+		
+}
+   	
+country_event = {
+	id = blm.23 #High Tory MP charged with corruption in connection with Commonwealth trade scheme
+	title = blm.23.t
+	desc = blm.23.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Curses!
+		name = blm.23a
+		#Relations malus with UK and other Commonwealth Nations
+		#Negative relations with all non-High Tory groups
+	}
+	option = { #Hang the blighter!
+		name = blm.23b
+		#Relations malus with UK and other Commonwealth Nations
+		#High negative relations with High Tories
+	}
+		
+}
+   	
+country_event = {
+	id = blm.24 #High Tory MP charged with corruption in connection with Commonwealth trade scheme
+	title = blm.24.t
+	desc = blm.24.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Curses!
+		name = blm.24a
+		#Relations malus with UK and other Commonwealth Nations
+		#Negative relations with all non-High Tory groups
+	}
+	option = { #Hang the blighter!
+		name = blm.24b
+		#Relations malus with UK and other Commonwealth Nations
+		#High negative relations with High Tories
+	}
+		
+}
+   	
+country_event = {
+	id = blm.25 #High Tory MP speaks out against Royal Family in shocking rant
+	title = blm.25.t
+	desc = blm.25.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Condemn his statement
+		name = blm.25a
+		#Relations bonus with UK and other Commonwealth Nations
+		#Positive relations with High Tories
+		#Negative relations with all non-High Tory groups
+	}
+	option = { #He speaks the truth.
+		name = blm.25b
+		#Relations malus with UK and other Commonwealth Nations
+		#High negative relations with High Tories
+		#Positive relations with all non-High Tory groups
+	}
+		
+}
+   	
+country_event = {
+	id = blm.26 #General Angus Fitzroy publicly praises and encourages better military integration with the Commonwealth
+	title = blm.26.t
+	desc = blm.26.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Generals are not politicians!
+		name = blm.26a
+		#Relations malus with UK and other Commonwealth Nations
+		#Negative relations with High Tories
+		#Positive relations with Free Lemuria, Lega di Protezione, Parti des Franques, Mantaunu Qlache
+	}
+	option = { #Praise the general's words
+		name = blm.26b
+		#Relations bonus with UK and other Commonwealth Nations
+		#Positive relations with High Tories
+		#Negative relations with Free Lemuria, Lega di Protezione, Parti des Franques, Mantaunu Qlache, chance increase arms level of each group
+	}
+		
+}
+   	
+country_event = {
+	id = blm.27 #Generals Angus Fitzroy and Miles Dempsey publicly feud about the direction of the Lemurian military and politics.
+	title = blm.27.t
+	desc = blm.27.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Side with Fitzroy
+		name = blm.27a
+		#Positive relations with High Tories
+	}
+	option = { #Side with Dempsey
+		name = blm.27b
+		#Positive relations with Free Lemuria, small chance of increasing arms level
+	}
+		
+}
+   	
+country_event = {
+	id = blm.28 #Anti-war poet Anemelia Potts reads a collection of her poems on the steps of the Parliament building. During her all day reading she is harangued by various critics from the crowd, but supporters try to interfere, causing police to be called in.
+	title = blm.28.t
+	desc = blm.28.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Can't we all just get along?
+		name = blm.28a
+		#Small positive relations with High Tories
+		#Small chance of Free Lemuria, Mantaunu Qlache, Parti des Franques, Lega di Protezione, Lemurian Workers Party increasing arms level
+	}		
+}
+   	
+country_event = {
+	id = blm.29 #Free Lemurian Party celebrates victories in local elections
+	title = blm.29.t
+	desc = blm.29.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Let freedom ring!
+		name = blm.29a
+		#Positive relations with Free Lemuria
+		#Small negative relations with High Tories, Mantaunu Qlache, Parti des Franques, Lega di Protezione, Lemurian Workers Party
+	}		
+}
+   	
+country_event = {
+	id = blm.30 #Free Lemurian parliamentarian gives a rousing speech
+	title = blm.30.t
+	desc = blm.30.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Hear hear!
+		name = blm.30a
+		#Positive relations with Free Lemuria
+		#Negative relations with High Tories
+	}
+	option = { #A trifling speech
+		name = blm.30b
+		#Positive relations with High Tories
+		#Negative relations with Free Lemuria, small chance of increase in arms level
+	}
+		
+}
+   	
+country_event = {
+	id = blm.31 #British troops stationed in Lemuria charged with raping and murdering a local prostitute, spurring anti-British/anti-Commonwealth sentiments
+	title = blm.31.t
+	desc = blm.31.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Convict and hang the bastards!
+		name = blm.31a
+		#Positive relations with Free Lemuria
+		#Small positive relations with WLP, ethnic minorities
+		#large relations malus with Britain and Commonwealth
+		#Negative relations with High Tories
+	}
+	option = { #She brought it on herself
+		name = blm.31b
+		#Huge negative relations with Free lemuria, increase arms level
+		#Small negative relations with ethnic minorities, small chance of increase in arms level
+	}
+		
+}
+   	
+country_event = {
+	id = blm.32 #Anti-Commonwealth sentiments on the rise following a scathing article in a national newspaper showing that British Lemuria receives few benefits from membership.
+	title = blm.32.t
+	desc = blm.32.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Slanderous lies!
+		name = blm.32a
+		#Positive relations with High Tories
+		#Huge negative relations with Free Lemuria, increase arms level
+	}
+	option = { #The Free Press enlightens the public
+		name = blm.32b
+		#Huge positive relations with Free lemuria
+		#Negative relations malus with Commonwealth nations
+		#Negative relations with High Tories
+	}
+		
+}
+   	
+country_event = {
+	id = blm.33 #Police raid on Free Lemurian Party membership drive in New Hampstead.
+	title = blm.33.t
+	desc = blm.33.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Imprison the traitors!
+		name = blm.33a
+		#Positive relations with High Tories
+		#Huge negative relations with Free Lemuria, increase arms level
+	}
+	option = { #Release them at once!
+		name = blm.33b
+		#Positive relations with Free lemuria
+		#Negative relations with High Tories
+	}
+		
+}
+   	
+country_event = {
+	id = blm.34 #Anti-Crown protests in several major cities
+	title = blm.34.t
+	desc = blm.34.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Let the people speak!
+		name = blm.34a
+		#Huge negative relations with High Tories
+		#Positive relations with Free Lemuria, small chance to increase arms level
+	}
+	option = { #Send in the Imperial Garrison
+		name = blm.34b
+		#Huge negative relations with Free lemuria, increase arms level
+		#Small negative relations with Lemurian Workers Party, small chance of increase arms level
+		#Positive relations with High Tories
+	}
+		
+}
+   	
+country_event = {
+	id = blm.35 #General Miles Dempsey calls for greater Lemurian independence from Britain, harshly criticizing the Commonwealth's policies as 'only good for Britain, not for the common Lemurian man.'
+	title = blm.35.t
+	desc = blm.35.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #What a rabblerouser!
+		name = blm.35a
+		#Negative relations with High Tories
+		#Positive relations with Free Lemuria, increase arms level
+		#Small positive relations with Lemurian Workers Party, small chance to increase arms level
+	}
+		
+}
+     	
+country_event = {
+	id = blm.36 #The Händlerinteressenpartei demands lowered tariffs on exported goods citing economic stifling effects to date.
+	title = blm.36.t
+	desc = blm.36.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Lower the tariffs
+		name = blm.36a
+		#Positive relations with Händlerinteressenpartei
+		#Limits factory usage for a while
+	}
+	option = { #The tariffs stay
+		name = blm.36b
+		#Negative relations with Händlerinteressenpartei
+	}
+		
+}
+     	
+country_event = {
+	id = blm.37 #The Händlerinteressenpartei entreats the government to produce more goods locally, requesting increased industry in Deutsgrenstat
+	title = blm.37.t
+	desc = blm.37.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #What a good idea!
+		name = blm.37a
+		#Positive relations with Händlerinteressenpartei
+		#Starts 1 year timer to create industry in Deutsgrenstat
+	}
+	option = { #We do not think this necessary
+		name = blm.37b
+		#Negative relations with Händlerinteressenpartei
+	}
+		
+}
+     	
+country_event = {
+	id = blm.38 #Industry created in Deutsgrenstat
+	title = blm.38.t
+	desc = blm.38.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Excellent
+		name = blm.38a
+		#Positive relations with Händlerinteressenpartei
+	}
+		
+}
+     	
+country_event = {
+	id = blm.39 #Industry NOT created in Deutsgrenstat
+	title = blm.39.t
+	desc = blm.39.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #It doesn't matter anyway
+		name = blm.39a
+		#Negative relations with Händlerinteressenpartei
+	}
+		
+}
+     	
+country_event = {
+	id = blm.40 #The Händlerinteressenpartei entreats the government to produce more goods locally, requesting increased industry in Ellesburg
+	title = blm.40.t
+	desc = blm.40.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Government investment keeps the economy healthy
+		name = blm.40a
+		#Positive relations with Händlerinteressenpartei
+		#Starts 1 year timer to create industry in Ellesburg
+	}
+	option = { #We shall have no part in this
+		name = blm.40b
+		#Negative relations with Händlerinteressenpartei
+	}
+		
+}
+     	
+country_event = {
+	id = blm.41 #Industry created in Ellesburg
+	title = blm.41.t
+	desc = blm.41.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Economic prosperity!
+		name = blm.41a
+		#Positive relations with Händlerinteressenpartei
+	}
+		
+}
+     	
+country_event = {
+	id = blm.42 #Industry NOT created in Ellesburg
+	title = blm.42.t
+	desc = blm.42.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Handouts do not help industry thrive
+		name = blm.42a
+		#Negative relations with Händlerinteressenpartei
+	}
+		
+}
+     	
+country_event = {
+	id = blm.43 #Meatpacking plant strike
+	title = blm.43.t
+	desc = blm.43.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Support industry
+		name = blm.43a
+		#Positive relations with Händlerinteressenpartei
+		#Negative relations with Lemurian Workers Party
+	}
+	option = { #Support the strikers
+		name = blm.43b
+		#Negative relations with Händlerinteressenpartei
+		#Positive relations with Lemurian Workers Party
+	}
+		
+}
+     	
+country_event = {
+	id = blm.44 #Longshoremen strike
+	title = blm.44.t
+	desc = blm.44.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Support the ship owners
+		name = blm.44a
+		#Positive relations with Händlerinteressenpartei
+		#Negative relations with Lemurian Workers Party
+	}
+	option = { #Support the longshoremen
+		name = blm.44b
+		#Negative relations with Händlerinteressenpartei
+		#Positive relations with Lemurian Workers Party
+	}
+		
+}
+     	
+country_event = {
+	id = blm.45 #General Manufacturing strike
+	title = blm.45.t
+	desc = blm.45.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Support the business owners
+		name = blm.45a
+		#Positive relations with Händlerinteressenpartei
+		#Negative relations with Lemurian Workers Party
+	}
+	option = { #Support the working man
+		name = blm.45b
+		#Negative relations with Händlerinteressenpartei
+		#Positive relations with Lemurian Workers Party
+	}
+}
+     	
+country_event = {
+	id = blm.46 #German foreign minister comes to visit regarding improvement in trade ties.
+	title = blm.46.t
+	desc = blm.46.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #The Händlerinteressenpartei must be thrilled
+		name = blm.46a
+		#Positive relations with Händlerinteressenpartei
+		#Negative relations with High Tories
+	}		
+}
+     	
+country_event = {
+	id = blm.47 #Anti-English riot, locals demand equality of Italian with English in all public education and government.
+	title = blm.47.t
+	desc = blm.47.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #How dare they!
+		name = blm.47a
+		#Negative relations with Lega di Protezione, increase in arms level
+		#Positive relations with Anglish Nation
+		#Small positive relations with High Tories, Free Lemuria
+	}
+	option = { #This is a good change
+		name = blm.47b
+		#Positive relations with Lega di Protezione, small chance of decrease in arms level
+		#Huge negative relations with Anglish Nation, increase arms level
+	}
+}
+   
+     	
+country_event = {
+	id = blm.48 #Italian foreign minister visits, the High Tories end up insulting him.
+	title = blm.48.t
+	desc = blm.48.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Oh dear.
+		name = blm.48a
+		#Negative relations with Lega di Protezione, increase in arms level
+		#Positive relations with Anglish Nation
+	}
+}
+     	
+country_event = {
+	id = blm.49 #An Arcadian paperboy is killed by Anglo-Lemurian police in Romanobile after he is mistaken for a fleeing suspect. This enrages the locals and fuels separatist sentiments.
+	title = blm.49.t
+	desc = blm.49.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Accidents happen!
+		name = blm.49a
+		#Negative relations with Lega di Protezione, increase in arms level
+		#Small positive relations with Anglish Nation
+	}
+}
+     	
+country_event = {
+	id = blm.50 #Arcadian representatives request economic protections on their goods and that local products have a Protection of Origin Status, thus making their products exclusive to Arcadia.
+	title = blm.50.t
+	desc = blm.50.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #This should help the local economy bloom
+		name = blm.50a
+		#Positive relations with Lega di Protezione, chance of decrease in arms level
+		#Negative relations with Anglish Nation
+		#Huge negative relations with Händlerinteressenpartei
+	}
+	option = { #Government overreach? No.
+		name = blm.50b
+		#Negative relations with Lega di Protezione, chance of increase in arms level
+		#Small positive relations with Anglish Nation, small chance to increase arms level
+	}
+}
+     	
+country_event = {
+	id = blm.51 #Heavy rains wash out roads in Arcadia. Arcadian representatives petition the government for help in repairing these necessary roads.
+	title = blm.51.t
+	desc = blm.51.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #We will repair their roads
+		name = blm.51a
+		#Positive relations with Lega di Protezione, chance of decrease in arms level
+
+	}
+	option = { #That's the purpose of local government
+		name = blm.51b
+		#Negative relations with Lega di Protezione, chance of increase in arms level
+		#Small positive relations with Anglish Nation, small chance to increase arms level
+	}
+}
+     	
+country_event = {
+	id = blm.52 #Arcadian playwright Enzo Scalini, loses his position at the Royal College of Arts in New Hampstead. His dismissal, called racist and politically motivated, has enraged the elites in and around Romanobile. English-only newspaper offices in Romanobile were set alight last night, fueling the tensions.
+	title = blm.52.t
+	desc = blm.52.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Violence is not the answer!
+		name = blm.52a
+		#Negative relations with Lega di Protezione, small increase in arms level
+
+	}
+}
+     	
+country_event = {
+	id = blm.53 #Upset about the treatment of Italian-Lemurians in the nation, a number of military officers have submitted their resignations.
+	title = blm.53.t
+	desc = blm.53.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #This is a troubling development
+		name = blm.53a
+		#Negative relations with Lega di Protezione, increase in arms level
+		#Some sort of negative effect to the BLM armed forces
+
+	}
+}
+     	
+country_event = {
+	id = blm.54 #A member of Parliament switches allegiance to the Anglish Nation, citing internal unrest tearing the nation apart.
+	title = blm.54.t
+	desc = blm.54.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Botheration!
+		name = blm.54a
+		#Small positive relations with Anglish Nation
+
+	}
+}
+     	
+country_event = {
+	id = blm.55 #A high ranking member of the Anglish Nation Party gives the 'Only We' speech, stoking public sentiments against minorities.
+	title = blm.55.t
+	desc = blm.55.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Dastardly freeloading minorities
+		name = blm.55a
+		#Huge positive relations with Anglish Nation, chance of decrease in arms level
+
+	}
+	option = { #No! We value all members of our society!
+		name = blm.55b
+		#Huge negative relations with Anglish Nation, increase arms level
+		#Positive relations with all minorities, small chance to decrease arms level
+	}
+}
+     	
+country_event = {
+	id = blm.56 #An Anglish MP speaks at a rally, blaming minorities for the increasing crime rates across the nation, especially against Anglo-Lemurians.
+	title = blm.56.t
+	desc = blm.56.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #He has some good points
+		name = blm.56a
+		#Positive relations with Anglish Nation, chance of decrease in arms level
+
+	}
+	option = { #What rubbish!
+		name = blm.56b
+		#Huge negative relations with Anglish Nation, increase arms level
+		#Positive relations with all minorities, small chance to decrease arms level
+	}
+}
+     	
+country_event = {
+	id = blm.57 #Anglish Nation rallies in Vikteria turn violent, with minority populations targeted.
+	title = blm.57.t
+	desc = blm.57.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #That's too bad
+		name = blm.57a
+		#Positive relations with Anglish Nation, chance of decrease in arms level
+		#Huge negative relations with all minorities, increase in arms level
+
+	}
+	option = { #Call out the Imperial Garrison to protect our citizens
+		name = blm.57b
+		#Huge negative relations with Anglish Nation, increase arms level
+		#Huge positive relations with all minorities, small chance to decrease arms level
+	}
+}
+     	
+country_event = {
+	id = blm.58 #Anglish Nation headquarters in Guhrnstown graffitied by dissidents believed to belong to minority groups. Anglish Nation MPs demand a crackdown.
+	title = blm.58.t
+	desc = blm.58.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Find the perpetrators
+		name = blm.58a
+		#Positive relations with Anglish Nation, chance of decrease in arms level
+		#Huge negative relations with all minorities, increase in arms level
+
+	}
+	option = { #Words are not violence.
+		name = blm.58b
+		#Huge negative relations with Anglish Nation, increase arms level
+		#Huge positive relations with all minorities, small chance to decrease arms level
+	}
+}
+     	
+country_event = {
+	id = blm.59 #Self-proclaimed Anglishist author, Alan Dawson-Minders, publishes a book "The Superiority of the English Language". 
+	title = blm.59.t
+	desc = blm.59.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #A literary success
+		name = blm.59a
+		#Positive relations with Anglish Nation, chance of decrease in arms level
+		#Huge negative relations with all minorities, increase in arms level
+
+	}
+	option = { #Mindless propaganda for mindless people.
+		name = blm.59b
+		#Huge negative relations with Anglish Nation, increase arms level
+		#Huge positive relations with all minorities, small chance to decrease arms level
+	}
+}
+     	
+country_event = {
+	id = blm.60 #Self-proclaimed Anglishist author, Alan Dawson-Minders, speaks at a public rally today in favour of forming Anglish militias to protect national monuments important to the English settlers of Lemuria. 
+	title = blm.60.t
+	desc = blm.60.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #Fine. Whatever.
+		name = blm.60ga
+		#Positive relations with Anglish Nation, chance of decrease in arms level
+		#Huge negative relations with all minorities, increase in arms level
+		#Shift towards Fascism
+
+	}
+	option = { #Absolutely not!
+		name = blm.60b
+		#Huge negative relations with Anglish Nation, increase arms level
+		#Huge positive relations with all minorities, small chance to decrease arms level
+		#Shift towards Democratic
+	}
+}

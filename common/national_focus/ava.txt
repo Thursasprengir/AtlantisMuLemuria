@@ -1071,7 +1071,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = neutrality
+				ideology = monarchism
 				popularity = -0.1
 			}
 		}
@@ -1515,11 +1515,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = neutrality
+				ideology = monarchism
 				popularity = 0.2
 			}
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = monarchism
 				elections_allowed = no
 				last_election = "1935.12.17"
 			}
@@ -1761,43 +1761,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
+			create_equipment_variant = {
+				name = "E/F/G/H Class"
+				type = ship_hull_light_2
+				name_group = ENG_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
 				}
-				create_equipment_variant = {
-					name = "E/F/G/H Class"
-					type = destroyer_2
-					parent_version = 0
-					upgrades = {
-					}
-				}
-				load_oob = AVA_british_purchase_legacy
 			}
-
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				create_equipment_variant = {
-					name = "E/F/G/H Class"
-					type = ship_hull_light_2
-					name_group = ENG_DD_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = dp_light_battery_2
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = ship_sonar_1
-						fixed_ship_engine_slot = light_ship_engine_2
-						fixed_ship_torpedo_slot = ship_torpedo_1
-						mid_1_custom_slot = ship_torpedo_1
-						rear_1_custom_slot = ship_depth_charge_1
-					}
-				}
-				load_oob = AVA_british_purchase_mtg
-			}
+			load_oob = AVA_british_purchase_mtg
 		}
 	}
 
@@ -2817,76 +2797,42 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-
-		if = {
-			limit = {
-				not = { has_dlc = "Man the Guns" }
+			create_equipment_variant = {
+				name = "King George V Class" #King George V Class (1911)
+				type = ship_hull_heavy_1
+				name_group = ENG_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = empty
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = ship_secondaries_1
+					rear_1_custom_slot = ship_heavy_battery_1
+				}
 			}
 			create_equipment_variant = {
 				name = "A/B/C/D Class"
-				type = destroyer_1
+				type = ship_hull_light_1
+				name_group = ENG_DD_HISTORICAL
 				parent_version = 0
-				upgrades = {
-					ship_torpedo_upgrade = 1
-					destroyer_engine_upgrade = 3
-					ship_ASW_upgrade = 2
-					ship_anti_air_upgrade = 1
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_2
+					fixed_ship_anti_air_slot = empty
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
 				}
 			}
-			create_equipment_variant = {
-				name = "King George V Class"
-				type = battleship_1
-				parent_version = 0
-				upgrades = {
-					ship_reliability_upgrade = 1
-					ship_gun_upgrade = 1
-				}
-			}
-			load_oob = AVA_brit_battleship_legacy
-		}
-
-		if = {
-			limit = {
-				has_dlc = "Man the Guns"
-			}
-				create_equipment_variant = {
-					name = "King George V Class" #King George V Class (1911)
-					type = ship_hull_heavy_1
-					name_group = ENG_BB_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = heavy_ship_engine_1
-						fixed_ship_secondaries_slot = ship_secondaries_1
-						fixed_ship_armor_slot = ship_armor_bb_1
-						front_1_custom_slot = empty
-						mid_1_custom_slot = empty
-						mid_2_custom_slot = ship_secondaries_1
-						rear_1_custom_slot = ship_heavy_battery_1
-					}
-				}
-				create_equipment_variant = {
-					name = "A/B/C/D Class"
-					type = ship_hull_light_1
-					name_group = ENG_DD_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = dp_light_battery_2
-						fixed_ship_anti_air_slot = empty
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = ship_sonar_1
-						fixed_ship_engine_slot = light_ship_engine_2
-						fixed_ship_torpedo_slot = ship_torpedo_1
-						mid_1_custom_slot = ship_torpedo_1
-						rear_1_custom_slot = ship_depth_charge_1
-					}
-				}
-				load_oob = AVA_brit_battleship_mtg
-			}
+			load_oob = AVA_brit_battleship_mtg
 		}
 	}
 
@@ -3045,71 +2991,39 @@ focus_tree = {
 
 		}
 		completion_reward = {
-
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
+			create_equipment_variant = {
+				name = "Farragut Class"				# represents Farragut, Porter, Mahan classes
+				type = ship_hull_light_1
+				name_group = USA_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = ship_sonar_1
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_1
 				}
-				create_equipment_variant = {
-					name = "Farragut Class"
-					type = destroyer_1
-					upgrades = {
-						ship_torpedo_upgrade = 3
-						destroyer_engine_upgrade = 3
-						ship_ASW_upgrade = 3
-						ship_anti_air_upgrade = 3
-					}
-				}
-				create_equipment_variant = {
-					name = "Lexington Class"
-					type = carrier_1
-					parent_version = 0
-					upgrades = {
-						ship_reliability_upgrade = 1
-						ship_gun_upgrade = 1
-					}
-				}
-				load_oob = AVA_usa_carrier_legacy
 			}
-
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
+			create_equipment_variant = {
+				name = "Lexington Class"
+				type = ship_hull_carrier_conversion_bb
+				name_group = USA_CV_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					mid_1_custom_slot = ship_deck_space
 				}
-				create_equipment_variant = {
-					name = "Farragut Class"				# represents Farragut, Porter, Mahan classes
-					type = ship_hull_light_1
-					name_group = USA_DD_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = dp_light_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = ship_sonar_1
-						fixed_ship_engine_slot = light_ship_engine_2
-						fixed_ship_torpedo_slot = ship_torpedo_1
-						mid_1_custom_slot = ship_torpedo_1
-						rear_1_custom_slot = ship_depth_charge_1
-					}
-				}
-				create_equipment_variant = {
-					name = "Lexington Class"
-					type = ship_hull_carrier_conversion_bb
-					name_group = USA_CV_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_deck_slot_1 = ship_deck_space
-						fixed_ship_deck_slot_2 = ship_deck_space
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = heavy_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_1
-						mid_1_custom_slot = ship_deck_space
-					}
-					obsolete = yes
-				}
-				load_oob = AVA_usa_carrier_mtg
+				obsolete = yes
 			}
+			load_oob = AVA_usa_carrier_mtg
 		}
 	}
 
@@ -3269,64 +3183,34 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
+			create_equipment_variant = {
+				name = "Mameli Class"
+				type = ship_hull_submarine_1
+				name_group = ITA_SS_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_torpedo_slot = ship_torpedo_sub_1
+					fixed_ship_engine_slot = sub_ship_engine_1
+					rear_1_custom_slot = empty
 				}
-				create_equipment_variant = {
-					name = "Mameli Class"
-					type = submarine_1
-					upgrades = {
-						ship_reliability_upgrade = 1
-						sub_engine_upgrade = 1
-						sub_stealth_upgrade = 1
-						sub_torpedo_upgrade = 1
-					}
-				}
-				create_equipment_variant = {
-					name = "San Giorgio Class"
-					type = heavy_cruiser_1
-					parent_version = 0
-					upgrades = {
-					}
-				}
-				load_oob = AVA_ita_subs_legacy
 			}
-
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
+			create_equipment_variant = {
+				name = "San Giorgio Class"
+				type = ship_hull_cruiser_panzerschiff
+				name_group = ITA_CA_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_cruiser_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_engine_slot = cruiser_ship_engine_1
+					rear_1_custom_slot = ship_torpedo_1
+					mid_1_custom_slot = empty
 				}
-				create_equipment_variant = {
-					name = "Mameli Class"
-					type = ship_hull_submarine_1
-					name_group = ITA_SS_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_torpedo_slot = ship_torpedo_sub_1
-						fixed_ship_engine_slot = sub_ship_engine_1
-						rear_1_custom_slot = empty
-					}
-				}
-				create_equipment_variant = {
-					name = "San Giorgio Class"
-					type = ship_hull_cruiser_panzerschiff
-					name_group = ITA_CA_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_battery_slot = ship_heavy_battery_1
-						fixed_ship_secondaries_slot = ship_secondaries_1
-						fixed_ship_armor_slot = ship_armor_cruiser_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_engine_slot = cruiser_ship_engine_1
-						rear_1_custom_slot = ship_torpedo_1
-						mid_1_custom_slot = empty
-					}
-				}
-				load_oob = AVA_ita_subs_mtg
 			}
+			load_oob = AVA_ita_subs_mtg
 		}
 	}
 
@@ -3406,7 +3290,7 @@ focus_tree = {
 				name = AVA_cruiser_tech
 				bonus = 1.0
 				uses = 1
-				category = cl_tech
+				category = ca_tech
 
 			}
 		}

@@ -231,10 +231,6 @@ set_convoys = 5
 	
 	set_technology = {
 
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -255,7 +251,7 @@ set_convoys = 5
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -263,7 +259,7 @@ set_politics = {
 IF = {
 	limit = { has_dlc = "By Blood Alone" }
 	set_popularities = {
-		neutrality = 70
+		monarchism = 70
 		fascism = 20 
 		democratic = 5
 		communism = 5

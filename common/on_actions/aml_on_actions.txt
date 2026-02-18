@@ -1,6 +1,31 @@
 on_actions = {
     on_startup = {
         effect = {
+			DEN = {
+				if = {
+					limit = {
+						AND = {
+							OR = {
+								has_dlc = "Together for Victory"
+								has_dlc = "Man the Guns"
+							}
+							OR = {
+								has_government = democratic
+								has_government = neutrality
+								has_government = monarchism
+							}
+						}
+					}
+					set_autonomy = {
+						target = SYD
+						autonomous_state = autonomy_dominion
+						freedom_level = 0.1
+					}
+					else = {
+						puppet = SYD
+					}
+				}
+			}
 			ENG = {
 				if = {
 					limit = {
@@ -12,45 +37,25 @@ on_actions = {
 							OR = {
 								has_government = democratic
 								has_government = neutrality
-								#has_government = monarchism
+								has_government = monarchism
 							}
 						}
 					}
 					set_autonomy = {
-						target = MRR
-						autonomous_state = autonomy_dominion
-						freedom_level = 0.2
-					}
-					set_autonomy = {
-						target = CLM
+						target = BLM
 						autonomous_state = autonomy_dominion
 						freedom_level = 0.1
-					}
+					}	
 					set_autonomy = {
-						target = NHL
-						autonomous_state = autonomy_puppet
+						target = SCP
+						autonomous_state = autonomy_dominion
 						freedom_level = 0.1
-					}
-					set_autonomy = {
-						target = RSL
-						autonomous_state = autonomy_colony
-						freedom_level = 0.1
-					}
-					MRR = {
-						set_cosmetic_tag = MRR_ENG
-					}
-					CLM = {
-						set_cosmetic_tag = CLM_ENG
 					}
 					else = {
-						add_to_faction = CLM
-						add_to_faction = MRR
-						add_to_faction = NHL
-						add_to_faction = RSL
-						puppet = NHL
-						puppet = RSL
+						puppet = BLM
+						puppet = SCP
 					}
-				}
+				}			
 			}
             FMU = {
 				remove_ideas = FMU_versailles_coercion_selection

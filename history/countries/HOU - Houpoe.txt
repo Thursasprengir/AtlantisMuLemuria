@@ -20,8 +20,8 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	mass_assault = 1
-	fleet_in_being = 1
+	
+	
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
@@ -48,21 +48,6 @@ if = {
 		improved_light_tank_chassis = 1
 		engine_tech_1 = 1
 		engine_tech_2 = 1
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_naval_oob = "HOU_1936_naval_legacy"
-	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-		transport = 1
 	}
 }
 if = {
@@ -130,7 +115,6 @@ if = {
 if = {
 	limit = {
 		has_dlc = "La Resistance"
-		HOU = { is_ai = no }
 	}
 	set_technology = {
 		armored_car1 = 1
@@ -154,139 +138,6 @@ set_popularities = {
 set_rule = {
 	can_send_volunteers = no
 	can_create_factions = no
-}
-
-###INTIMIDATING HOUPO'EAN SHIPS BUT IN BUDGET###
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Lae Class"
-		type = submarine_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 2
-			sub_engine_upgrade = 0
-			sub_stealth_upgrade = 0
-			sub_torpedo_upgrade = 3
-		}
-	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "Kōeke Class"
-		type = destroyer_1
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 0
-			ship_anti_air_upgrade = 3
-		}
-	}
-	create_equipment_variant = {
-		name = "Togi Class"
-		type = destroyer_1
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 1
-			ship_anti_air_upgrade = 1
-		}
-	}
-	# Light Cruisers #
-	create_equipment_variant = {
-		name = "Pīpaka Class"
-		type = light_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_gun_upgrade = 0
-			ship_anti_air_upgrade = 3
-		}
-		obsolete = yes
-	}
-	# Heavy Cruisers #
-	create_equipment_variant = {
-		name = "Aveese Class"
-		type = heavy_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 0
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "Malie Class"
-		type = heavy_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 0
-			ship_armor_upgrade = 0
-			ship_gun_upgrade = 2
-		}
-	}	
-	# Battleships #
-	create_equipment_variant = {
-		name = "Hū'uki Class"
-		type = battleship_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 0
-			ship_engine_upgrade = 0
-			ship_armor_upgrade = 0
-			ship_gun_upgrade = 0
-		}
-	}
-	create_equipment_variant = {
-		name = "Kahiala Class"
-		type = battleship_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 1
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "Kohola Class"
-		type = battleship_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 3
-		}
-	}
-	# Carriers #	
-	create_equipment_variant = {
-		name = "Nalu Class"
-		type = carrier_1
-		parent_version = 0
-		upgrades = {
-			ship_deckspace_upgrade = 0
-			carrier_armor_upgrade = 0
-			ship_engine_upgrade = 2
-			ship_reliability_upgrade = 3
-		}
-	}	
-	create_equipment_variant = {
-		name = "Hō'ailona Class"
-		type = carrier_1
-		parent_version = 0
-		upgrades = {
-			ship_deckspace_upgrade = 1
-			carrier_armor_upgrade = 5
-			ship_engine_upgrade = 1
-			ship_reliability_upgrade = 3
-		}
-	}
 }
 
 ###INTIMIDATING HOUPO'EAN SHIPS WITH A PRICE###

@@ -20,15 +20,6 @@ set_technology = {
 	basic_train = 1
 }
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-	}
-}
-if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		basic_naval_mines = 1
@@ -65,12 +56,7 @@ set_war_support = 0.05
 		infantry_weapons2 = 1
 		support_weapons = 1
 
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
+		
 
 		#electronics
 		electronic_mechanical_engineering = 1

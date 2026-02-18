@@ -137,9 +137,7 @@ default_air = {
 			country_exists = ADR
 		}		
 	}
-	
 	abort_when_not_enabled = yes
-
 	ai_strategy = { type = air_factory_balance  value = 20 }
 }
 
@@ -202,9 +200,7 @@ r56_save_army_xp = {
 	enable = {
 		always = yes
 	}
-	
 	abort_when_not_enabled = yes
-	
 	ai_strategy = {
 		type = land_xp_spend_priority
 		id = infantry_equipment
@@ -300,9 +296,7 @@ r56_upgrading_convoy = {
 	enable = {
 		always = yes
 	}
-	
 	abort_when_not_enabled = yes
-	
 	ai_strategy = {
 		type = production_upgrade_desire_offset
 		id = convoy
@@ -324,13 +318,11 @@ ENG_build_priorities = {
 			country_exists = ADR
 		}
 	}
-
+	abort_when_not_enabled = yes
 	enable = {
 		always = yes
 	}
 	
-	abort_when_not_enabled = yes
-
 	ai_strategy = {
 		type = factory_build_score_factor
 		target = 133
@@ -350,12 +342,10 @@ FRA_build_priorities = {
 			country_exists = ADR
 		}
 	}
-
+	abort_when_not_enabled = yes
 	enable = {
 		always = yes
 	}
-	
-	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = factory_build_score_factor
@@ -376,12 +366,10 @@ ROM_build_priorities = {
 			country_exists = ADR
 		}		
 	}
-
+	abort_when_not_enabled = yes
 	enable = {
 		always = yes
 	}
-	
-	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = factory_build_score_factor
@@ -418,13 +406,11 @@ YUG_build_priorities = {
 			country_exists = ADR
 		}		
 	}
-
+	abort_when_not_enabled = yes
 	enable = {
 		always = yes
 	}
 
-	abort_when_not_enabled = yes
-	
 	ai_strategy = {
 		type = factory_build_score_factor
 		target = 914
@@ -448,9 +434,8 @@ production_line_upgrades = {
 			country_exists = ADR
 		}	
 	}
-	enable = { always = yes }
-	
 	abort_when_not_enabled = yes
+	enable = { always = yes }
 	
 	ai_strategy = { type = production_upgrade_desire_offset id = light_tank_chassis_2 value = 200 }
 	ai_strategy = { type = production_upgrade_desire_offset id = light_tank_artillery_chassis_2 value = 200 }
@@ -591,9 +576,8 @@ default_supply_truck = {
 			country_exists = ADR
 		}	
 	}
-	enable = { num_of_military_factories > 6 }
-	
 	abort_when_not_enabled = yes
+	enable = { num_of_military_factories > 6 }
 
 	ai_strategy = {
 		type = min_wanted_supply_trucks
@@ -607,13 +591,13 @@ default_supply_truck_major = {
 			country_exists = ADR
 		}	
 	}
+	abort_when_not_enabled = yes
 	enable = { 
 		num_of_military_factories > 20 
 		is_major = yes
 	}
 	
-	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = min_wanted_supply_trucks
 		value = 1500
@@ -741,8 +725,7 @@ convoy_factory_assignment_1 = {
 		}	
 	}
 	enable = { num_of_naval_factories > 1 }
-	
-	abort_when_not_enabled = yes
+	abort = {  num_of_naval_factories < 13 }
 	
 	ai_strategy = { type = equipment_production_min_factories       id = convoy           value = 1 }
 }

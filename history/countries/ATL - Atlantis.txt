@@ -7,7 +7,7 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	infantry_weapons = 1
 	tech_recon = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -17,33 +17,9 @@ set_technology = {
 	fuel_silos = 1
 	radio = 1
 	radio_detection = 1
+
 }
 
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_naval_oob = ATL_1936_naval_legacy
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
 	set_naval_oob = ATL_1936_naval_mtg
 	set_technology = {
 		basic_naval_mines = 1
@@ -70,7 +46,6 @@ if = {
 		mtg_transport = 1
 		basic_fire_control_system = 1
 	}
-}
 
 if = {
     limit = { has_dlc = "By Blood Alone" }
@@ -127,6 +102,8 @@ add_ideas = {
 	ATL_trading_empire
 	ATL_naval_power
 	ATL_useless_air_force
+    MTG_naval_treaty_adherent
+	set_global_flag = MTG_second_london_conference
 }
 
 set_research_slots = 4
@@ -136,8 +113,8 @@ set_popularities = {
 		democratic = 40
 		fascism = 25
 		communism = 5
-		neutrality = 30
-		#monarchism = 18
+		neutrality = 12
+		monarchism = 18
 	}
 set_politics = {
 		ruling_party = democratic
@@ -146,7 +123,7 @@ set_politics = {
 		elections_allowed = yes
 }
 set_autonomy = {
-		target = KRY
+		target = AME
 		autonomous_state = autonomy_colony
 		freedom_level = 0.1
 }
@@ -259,148 +236,11 @@ itork_up_4 = yes
 activate_mission  = ATL_select_target_kapra
 activate_mission  = ATL_select_target_itork
 activate_mission  = ATL_police_search_cyclic
-
-###MIGHTY ATLANTEAN SHIPS BUT IN BUDGET###
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	# Submarines #
-	create_equipment_variant = {
-		name = "SS-E-C"
-		type = submarine_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 2
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "DD-E-AS"
-		type = destroyer_1
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 3
-			ship_anti_air_upgrade = 1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "DD-E-M"
-		type = destroyer_1
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 1
-			ship_anti_air_upgrade = 1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "DD-36-AS"
-		type = destroyer_2
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 1
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 1
-		}
-	}
-	create_equipment_variant = {
-		name = "DD-36-C"
-		type = destroyer_2
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 1
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-	}
-	# Light Cruisers #
-	create_equipment_variant = {
-		name = "CL-E-S"
-		type = light_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 2
-			ship_gun_upgrade = 0
-			ship_anti_air_upgrade = 1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "CL-CD-C"
-		type = light_cruiser_1
-		parent_version = 1
-		upgrades = {
-			ship_reliability_upgrade = 1
-			ship_engine_upgrade = 0
-			ship_gun_upgrade = 4
-			ship_anti_air_upgrade = 1
-		}
-	}
-	# Heavy Cruisers #
-	create_equipment_variant = {
-		name = "CA-E-C"
-		type = heavy_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
-	}
-	# Battlecruisers #
-	create_equipment_variant = {
-		name = "BC-E-C"
-		type = battle_cruiser_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 3
-			ship_gun_upgrade = 2
-		}
-	}
-	# Battleships #
-	create_equipment_variant = {
-		name = "BB-36-C"
-		type = battleship_2
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 1
-			ship_gun_upgrade = 2
-		}
-	}
-
-	create_equipment_variant = {
-		name = "BB-36-K"
-		type = battleship_2
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 1
-			ship_gun_upgrade = 5
-		}
-	}
-}
-
-
+	
 ###MIGHTY ATLANTEAN SHIPS BUT WITH A PRICE###
 if = {
 	limit = { has_dlc = "Man the Guns" }
-
+	
 	create_equipment_variant = {
 		name = "SS-E-C"
 		type = ship_hull_submarine_1
@@ -600,7 +440,7 @@ if = {
 		obsolete = no
 	}
 }
-
+	
 	if = {
 			limit = {
 				has_dlc = "By Blood Alone"
@@ -616,7 +456,7 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Ħorodoŧ"
+			name = "Ħorodoŧ" 
 			type = cv_small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = light_mg_2x
@@ -626,7 +466,7 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Čiénet"
+			name = "Čiénet" 
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
@@ -635,7 +475,7 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Anavile"
+			name = "Anavile" 
 			type = small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
@@ -646,7 +486,7 @@ if = {
 			icon = "GFX_ATL_CAS1_medium"
 		}
 		create_equipment_variant = {
-			name = "Vuluámax"
+			name = "Vuluámax" 
 			type = small_plane_naval_bomber_airframe_0
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -656,7 +496,7 @@ if = {
 			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
 		}
 		create_equipment_variant = {
-			name = "Ledež"
+			name = "Ledež" 
 			type = cv_small_plane_naval_bomber_airframe_0
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -666,7 +506,7 @@ if = {
 			icon = "GFX_ENG_naval_bomber1_medium"
 		}
 		create_equipment_variant = {
-			name = "Toxnaxa"
+			name = "Toxnaxa" 
 			type = medium_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -676,7 +516,7 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Nalaħak"
+			name = "Nalaħak" 
 			type = medium_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -711,7 +551,7 @@ recruit_character = ATL_navy_chief_maneuver_3
 recruit_character = ATL_air_strategic_bombing_2
 recruit_character = ATL_air_chief_old_guard
 recruit_character = ATL_air_strategic_bombing_1
-recruit_character = ATL_navy_screen_2
+recruit_character = ATL_navy_screen_2	
 recruit_character = ATL_army_regrouping_1
 recruit_character = ATL_navy_capital_ship_3
 recruit_character = ATL_air_naval_strike_1
@@ -725,6 +565,7 @@ recruit_character = ATL_Naizaretal
 #MilCom
 recruit_character = ATL_Brodsom_Wegxaral
 recruit_character = ATL_Tunnaton_Zhvin
+recruit_character = ATL_Stapakon_Zhantershe 
 recruit_character = ATL_Rexet_Nalingrat
 recruit_character = ATL_Auvizumon_Vannezik
 recruit_character = ATL_Takez_Vazilake
@@ -732,6 +573,8 @@ recruit_character = ATL_Oviron_Muziviz
 recruit_character = ATL_Baurizo_Nunnaka
 recruit_character = ATL_Tunnaton_Dorvanev
 #NavCom
+recruit_character = ATL_Origunan_Thiaskia 
+recruit_character = ATL_Jusemiz_Priskan
 recruit_character = ATL_Klistran_Frestiak
 recruit_character = ATL_Lenistur_Polistkamal
 recruit_character = ATL_Whedunt_Gromstinak
@@ -739,7 +582,7 @@ recruit_character = ATL_Erstama_Hurdnial
 recruit_character = ATL_Meran_Jelastiek
 recruit_character = ATL_Jestitze_Munurak
 
-set_convoys = 200
+set_convoys = 400
 
 
 

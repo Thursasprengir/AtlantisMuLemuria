@@ -54,7 +54,6 @@ bookmarks = {
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
@@ -64,21 +63,6 @@ bookmarks = {
 				ENG_imperial_federation
 				ENG_the_kings_party
 				ENG_organize_the_blackshirts
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { NOT = { has_dlc = "Man the Guns" } }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
 			}
 		}
 		"GER"={
@@ -699,9 +683,9 @@ bookmarks = {
 			}
 		}
 
-		"CLM"={
+		"BLM"={
 			minor = yes
-			history = "CLM_GATHERING_STORM_DESC"
+			history = "BLM_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {	
 				nationalist_tensions
@@ -709,9 +693,9 @@ bookmarks = {
 				equal_peoples
 			}
 			focuses = {
-				CLM_continue_the_reforms
-				CLM_local_garrisons
-				CLM_alliedrelations
+				BLM_continue_the_reforms
+				BLM_local_garrisons
+				BLM_alliedrelations
 			}
 		}
 
